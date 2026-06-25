@@ -7,7 +7,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `ROOT`
-### Object: `ROOT`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -45,7 +45,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `passives`
-### Object: `passives`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -69,10 +69,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `properties`
 
+**Definition:** General engine properties.
+**Total Count:** 600
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 600
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
@@ -84,7 +88,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array | Specific entity tag required. | 399 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 280 |
 | `movement` | Number |  | 278 |
-| `corpse_health` | Mixed |  | 195 |
+| [`corpse_health`](./Enums.md#enum-corpse_health) | Mixed |  | 195 |
 | `inherit_faction` | Boolean |  | 115 |
 | `dispersed_bonus_turns` | Number |  | 104 |
 | `base_mana_regen` | Number |  | 90 |
@@ -176,18 +180,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `two_fronts` | Boolean |  | 1 |
 | `two_fronts_switch` | Boolean |  | 1 |
 | `view_bugs_as_enemies` | Boolean |  | 1 |
-| `layer` | `Enum/String` |  | 0 |
+| [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
 
 </details>
 
 ---
 
 ### Object: `ai`
-### Object: `ai`
+
+
+**Definition:** Core block defining the AI behavior logic and weights.
+**Total Count:** 583
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 583
 
 > **Referenced by:** [`Alert`](./Characters_and_Bosses.md#object-alert), [`Angry`](./Characters_and_Bosses.md#object-angry), [`Attacker`](./Characters_and_Bosses.md#object-attacker), [`BellyFull`](./Characters_and_Bosses.md#object-bellyfull), [`Bishop`](./Characters_and_Bosses.md#object-bishop), [`BlackHole`](./Characters_and_Bosses.md#object-blackhole), [`Bully`](./Characters_and_Bosses.md#object-bully), [`CaveBaby`](./Characters_and_Bosses.md#object-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#object-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#object-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#object-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#object-cavewomanhascat), [`Charging`](./Characters_and_Bosses.md#object-charging), [`Cultist`](./Characters_and_Bosses.md#object-cultist), [`Damaged`](./Characters_and_Bosses.md#object-damaged), [`Default`](./Characters_and_Bosses.md#object-default), [`Default_Ceiling`](./Characters_and_Bosses.md#object-default_ceiling), [`Default_Ground`](./Characters_and_Bosses.md#object-default_ground), [`DesireMech`](./Characters_and_Bosses.md#object-desiremech), [`Down`](./Characters_and_Bosses.md#object-down), and 64 more...
 
@@ -226,7 +234,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `graphics`
-### Object: `graphics`
+
+
+**Definition:** Visual parameters and animation bindings.
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -282,11 +293,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `abilities`
-### Object: `abilities`
+
+
+**Definition:** Lists the ability IDs the character possesses.
+**Total Count:** 458
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 458
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
@@ -303,11 +318,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `stats`
-### Object: `stats`
+
+
+**Definition:** Core character metrics (Health, Strength, etc.).
+**Total Count:** 388
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 388
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
@@ -326,11 +345,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `pattern`
-### Object: `pattern`
+
+
+**Definition:** AI sequence logic.
+**Total Count:** 296
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 296
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root), [`ReplaceBrain`](./Characters_and_Bosses.md#object-replacebrain), [`ai`](./Characters_and_Bosses.md#object-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#object-ai_if_spawned_as_enemy)
 
@@ -410,25 +433,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BlackHole`](./Characters_and_Bosses.md#object-blackhole) | Object | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 |
 | [`Bomb`](./Characters_and_Bosses.md#object-bomb) | Object | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 |
 | [`Bully`](./Characters_and_Bosses.md#object-bully) | Object | Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 |
-| `Butcher` | Object | Applies or references the 'Butcher' effect/state. | 1 |
+| [`Butcher`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Butcher' effect/state. | 1 |
 | [`CaveBaby`](./Characters_and_Bosses.md#object-cavebaby) | Object | Character Form: Behavior and stats for the \'CaveBaby\' state. | 1 |
 | [`CaveWoman`](./Characters_and_Bosses.md#object-cavewoman) | Object | Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 |
 | [`CaveWomanHasCat`](./Characters_and_Bosses.md#object-cavewomanhascat) | Object | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |
 | [`Charging`](./Characters_and_Bosses.md#object-charging) | Object | Character Form / AI State: Behavior when charging an attack. | 1 |
 | [`Close`](./Characters_and_Bosses.md#object-close) | Object | AI Movement logic: Maneuvers into close/melee range. | 1 |
-| `Colorless` | Object | Applies or references the 'Colorless' effect/state. | 1 |
+| [`Colorless`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Applies or references the 'Colorless' effect/state. | 1 |
 | [`Cultist`](./Characters_and_Bosses.md#object-cultist) | Object | Character Form: Behavior and stats for the \'Cultist\' state. | 1 |
 | [`Damaged`](./Characters_and_Bosses.md#object-damaged) | Object | Character Form / AI State: Behavior when health is critically low. | 1 |
 | [`Default_Ceiling`](./Characters_and_Bosses.md#object-default_ceiling) | Object | Character Form: The baseline behavior state while attached to the ceiling. | 1 |
 | [`Default_Ground`](./Characters_and_Bosses.md#object-default_ground) | Object | Character Form: The baseline behavior state while on the ground. | 1 |
 | [`DesireMech`](./Characters_and_Bosses.md#object-desiremech) | Object | Character Form: Behavior and stats for the 'DesireMech' state. | 1 |
-| `Druid` | Object | Applies or references the 'Druid' effect/state. | 1 |
+| [`Druid`](./Engine_LogicKeys.md#valid-property-keys) | Object | Applies or references the 'Druid' effect/state. | 1 |
 | [`Drunker`](./Characters_and_Bosses.md#object-drunker) | Object | Character Form: Behavior and stats for the 'Drunker' state. | 1 |
 | [`DualSword`](./Characters_and_Bosses.md#object-dualsword) | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
 | [`DualSword_Primed`](./Characters_and_Bosses.md#object-dualsword_primed) | Object | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |
 | [`Dumb`](./Characters_and_Bosses.md#object-dumb) | Object | AI Profile: A simplified, less optimal decision-making profile. | 1 |
 | [`Explody`](./Characters_and_Bosses.md#object-explody) | Object | Character Form: Behavior and stats for the 'Explody' state. | 1 |
-| `Fighter` | Object | Applies or references the 'Fighter' effect/state. | 1 |
+| [`Fighter`](./Engine_LogicKeys.md#valid-property-keys) | Object | Applies or references the 'Fighter' effect/state. | 1 |
 | [`FightPhase`](./Characters_and_Bosses.md#object-fightphase) | Object | Boss Logic: Main combat phase. | 1 |
 | [`Fire`](./Characters_and_Bosses.md#object-fire) | Object | Character Form: Behavior and stats for the 'Fire' state. | 1 |
 | [`FireFull`](./Characters_and_Bosses.md#object-firefull) | Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
@@ -450,7 +473,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Hint_CrackedVisuals2`](./Characters_and_Bosses.md#object-hint_crackedvisuals2) | Object | Visual: Secondary cracked visual overlay. | 1 |
 | [`Hint_CrackedVisuals3`](./Characters_and_Bosses.md#object-hint_crackedvisuals3) | Object | Visual: Tertiary cracked visual overlay. | 1 |
 | [`HumanDead`](./Characters_and_Bosses.md#object-humandead) | Object | Character Form: Behavior and stats for the \'HumanDead\' state. | 1 |
-| `Hunter` | Object | Applies or references the 'Hunter' effect/state. | 1 |
+| [`Hunter`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Applies or references the 'Hunter' effect/state. | 1 |
 | [`InitialPhase`](./Characters_and_Bosses.md#object-initialphase) | Object | Boss Logic: The starting phase of an encounter. | 1 |
 | [`Insane_Ceiling`](./Characters_and_Bosses.md#object-insane_ceiling) | Object | Character Form: Insane behavior state while attached to the ceiling. | 1 |
 | [`Insane_Ground`](./Characters_and_Bosses.md#object-insane_ground) | Object | Character Form: Insane behavior state while on the ground. | 1 |
@@ -462,15 +485,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LastHit`](./Characters_and_Bosses.md#object-lasthit) | Object | Logic: Executes logic on the final hit of a multi-hit attack. | 1 |
 | [`Lifted`](./Characters_and_Bosses.md#object-lifted) | Object | Character Form: Behavior and stats for the \'Lifted\' state. | 1 |
 | [`Lit`](./Characters_and_Bosses.md#object-lit) | Object | Character Form: Behavior and stats for the 'Lit' state. | 1 |
-| `Mage` | Object | Applies or references the 'Mage' effect/state. | 1 |
-| `Medic` | Object | Applies or references the 'Medic' effect/state. | 1 |
-| `Monk` | Object | Applies or references the 'Monk' effect/state. | 1 |
+| [`Mage`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Mage' effect/state. | 1 |
+| [`Medic`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Applies or references the 'Medic' effect/state. | 1 |
+| [`Monk`](./Engine_LogicKeys.md#valid-property-keys) | Object | Applies or references the 'Monk' effect/state. | 1 |
 | [`Mounted`](./Characters_and_Bosses.md#object-mounted) | Object | Character Form: Behavior and stats for the \'Mounted\' state. | 1 |
 | [`MouthFull`](./Characters_and_Bosses.md#object-mouthfull) | Object | Character Form: Behavior and stats for the \'MouthFull\' state. | 1 |
 | [`Mutant`](./Characters_and_Bosses.md#object-mutant) | Object | Character Form: Behavior and stats for the \'Mutant\' state. | 1 |
-| `Necromancer` | Object | Applies or references the 'Necromancer' effect/state. | 1 |
+| [`Necromancer`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Necromancer' effect/state. | 1 |
 | [`NeutronStar`](./Characters_and_Bosses.md#object-neutronstar) | Object | Character Form: Behavior and stats for the 'NeutronStar' state. | 1 |
-| `NoDeathRattle` | Object | Applies or references the 'NoDeathRattle' effect/state. | 1 |
+| [`NoDeathRattle`](./Engine_LogicKeys.md#valid-property-keys) | Object | Applies or references the 'NoDeathRattle' effect/state. | 1 |
 | [`NoEyes`](./Characters_and_Bosses.md#object-noeyes) | Object | Character Form: Behavior and stats for the \'NoEyes\' state. | 1 |
 | [`NormalFull`](./Characters_and_Bosses.md#object-normalfull) | Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
 | [`NoStick`](./Characters_and_Bosses.md#object-nostick) | Object | Character Form: Behavior and stats for the 'NoStick' state. | 1 |
@@ -484,7 +507,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Out`](./Characters_and_Bosses.md#object-out) | Object | Character Form: Behavior and stats for the 'Out' state. | 1 |
 | [`Possessing`](./Characters_and_Bosses.md#object-possessing) | Object | Character Form: Behavior and stats for the \'Possessing\' state. | 1 |
 | [`Primed`](./Characters_and_Bosses.md#object-primed) | Object | Character Form: Behavior and stats for the 'Primed' state. | 1 |
-| `Psychic` | Object | Applies or references the 'Psychic' effect/state. | 1 |
+| [`Psychic`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Psychic' effect/state. | 1 |
 | [`Pulp2`](./Characters_and_Bosses.md#object-pulp2) | Object | Character Form: Behavior and stats for the 'Pulp2' state. | 1 |
 | [`Pulp3`](./Characters_and_Bosses.md#object-pulp3) | Object | Character Form: Behavior and stats for the 'Pulp3' state. | 1 |
 | [`Pulp4`](./Characters_and_Bosses.md#object-pulp4) | Object | Character Form: Behavior and stats for the 'Pulp4' state. | 1 |
@@ -502,20 +525,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SwordAndShield`](./Characters_and_Bosses.md#object-swordandshield) | Object | Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 |
 | [`SwordAndShield_Primed`](./Characters_and_Bosses.md#object-swordandshield_primed) | Object | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |
 | `sync_brain_patterns` | Boolean |  | 1 |
-| `Tank` | Object | Applies or references the 'Tank' effect/state. | 1 |
+| [`Tank`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Tank' effect/state. | 1 |
 | [`Tar`](./Characters_and_Bosses.md#object-tar) | Object | Character Form: Behavior and stats for the 'Tar' state. | 1 |
 | [`TarFull`](./Characters_and_Bosses.md#object-tarfull) | Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
-| `Thief` | Object | Applies or references the 'Thief' effect/state. | 1 |
+| [`Thief`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Thief' effect/state. | 1 |
 | [`Throb`](./Characters_and_Bosses.md#object-throb) | Object | Character Form: Behavior and stats for the 'Throb' state. | 1 |
 | [`ThrobBubs`](./Characters_and_Bosses.md#object-throbbubs) | Object | Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 |
 | [`ThrobHost`](./Characters_and_Bosses.md#object-throbhost) | Object | Character Form: Behavior and stats for the 'ThrobHost' state. | 1 |
 | [`ThrobNettle`](./Characters_and_Bosses.md#object-throbnettle) | Object | Character Form: Behavior and stats for the 'ThrobNettle' state. | 1 |
-| `Tinkerer` | Object | Applies or references the 'Tinkerer' effect/state. | 1 |
+| [`Tinkerer`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Applies or references the 'Tinkerer' effect/state. | 1 |
 | [`Transformed`](./Characters_and_Bosses.md#object-transformed) | Object | Character Form: Behavior and stats for the 'Transformed' state. | 1 |
 | [`TwoEyes`](./Characters_and_Bosses.md#object-twoeyes) | Object | Character Form: Behavior and stats for the 'TwoEyes' state. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 | [`Unlit`](./Characters_and_Bosses.md#object-unlit) | Object | Character Form: Behavior and stats for the 'Unlit' state. | 1 |
-| `Unmounted` | Object | Applies or references the 'Unmounted' effect/state. | 1 |
+| [`Unmounted`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Unmounted' effect/state. | 1 |
 | [`Unwashed`](./Characters_and_Bosses.md#object-unwashed) | Object | Character Form: Behavior and stats for the 'Unwashed' state. | 1 |
 | [`Washed`](./Characters_and_Bosses.md#object-washed) | Object | Character Form: Behavior and stats for the 'Washed' state. | 1 |
 | [`Washer`](./Characters_and_Bosses.md#object-washer) | Object | Character Form: Behavior and stats for the \'Washer\' state. | 1 |
@@ -523,15 +546,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`WereMan`](./Characters_and_Bosses.md#object-wereman) | Object | Character Form: Behavior and stats for the \'WereMan\' state. | 1 |
 | [`Zealot`](./Characters_and_Bosses.md#object-zealot) | Object | Character Form: Behavior and stats for the \'Zealot\' state. | 1 |
 | [`ZealotBomb`](./Characters_and_Bosses.md#object-zealotbomb) | Object | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 |
-| `Die` | `Block` | Character Form / Logic: Forces the character to die. | 0 |
-| `Rain` | `Block` | Character Form: Behavior and stats for the 'Rain' state. | 0 |
+| [`Die`](./Characters_and_Bosses.md#object-die) | Object | Character Form / Logic: Forces the character to die. | 0 |
+| [`Rain`](./Characters_and_Bosses.md#object-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 0 |
 
 </details>
 
 ---
 
 ### Object: `SpawnOnDeath`
-### Object: `SpawnOnDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -550,11 +573,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `sound`
-### Object: `sound`
+
+
+**Definition:** Audio bindings.
+**Total Count:** 62
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 62
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
@@ -568,7 +595,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Robot`
-### Object: `Robot`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -585,11 +612,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `turns`
-### Object: `turns`
+
+
+**Definition:** Turn counter tracking.
+**Total Count:** 45
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 45
 
 > **Referenced by:** [`Bishop`](./Characters_and_Bosses.md#object-bishop), [`Bully`](./Characters_and_Bosses.md#object-bully), [`Default`](./Characters_and_Bosses.md#object-default), [`Default_Ceiling`](./Characters_and_Bosses.md#object-default_ceiling), [`Default_Ground`](./Characters_and_Bosses.md#object-default_ground), [`FightPhase`](./Characters_and_Bosses.md#object-fightphase), [`Holding`](./Characters_and_Bosses.md#object-holding), [`InitialPhase`](./Characters_and_Bosses.md#object-initialphase), [`Insane_Ceiling`](./Characters_and_Bosses.md#object-insane_ceiling), [`Insane_Ground`](./Characters_and_Bosses.md#object-insane_ground), [`LastHit`](./Characters_and_Bosses.md#object-lasthit), [`Lifted`](./Characters_and_Bosses.md#object-lifted), [`Mutant`](./Characters_and_Bosses.md#object-mutant), [`Normal`](./Characters_and_Bosses.md#object-normal), [`NotPriming`](./Characters_and_Bosses.md#object-notpriming), [`Nuke`](./Characters_and_Bosses.md#object-nuke), [`OffMap`](./Characters_and_Bosses.md#object-offmap), [`OffScreen`](./Characters_and_Bosses.md#object-offscreen), [`OneAlive`](./Characters_and_Bosses.md#object-onealive), [`Possessing`](./Characters_and_Bosses.md#object-possessing), and 13 more...
 
@@ -608,11 +639,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `equipment`
-### Object: `equipment`
+
+
+**Definition:** List of item IDs the character spawns equipped with.
+**Total Count:** 44
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 44
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
@@ -628,11 +663,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mainturn_pattern`
-### Object: `mainturn_pattern`
+
+
+**Definition:** AI Logic: Determines standard ability usage during the main turn.
+**Total Count:** 44
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 44
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
@@ -649,11 +688,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Default`
-### Object: `Default`
+
+
+**Definition:** Baseline configuration.
+**Total Count:** 37
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 37
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -671,7 +714,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FormChangeWhileHasStatus`
-### Object: `FormChangeWhileHasStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -690,11 +733,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `virtual_abilities`
-### Object: `virtual_abilities`
+
+
+**Definition:** Abilities that are evaluated but not directly castable by the player.
+**Total Count:** 35
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 35
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
@@ -735,7 +782,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToBasicAttack`
-### Object: `AddStatusToBasicAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -752,7 +799,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DeathRattle`
-### Object: `DeathRattle`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -775,11 +822,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `bonusturn_pattern`
-### Object: `bonusturn_pattern`
+
+
+**Definition:** AI Logic: Determines ability usage during bonus turns.
+**Total Count:** 27
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 27
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
@@ -796,7 +847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CatPartsTransform`
-### Object: `CatPartsTransform`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -825,11 +876,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `fallback`
-### Object: `fallback`
+
+
+**Definition:** Logic executed if primary options fail.
+**Total Count:** 23
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 23
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
@@ -859,15 +914,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 |
-| `common` | `Enum/String` |  | 0 |
-| `rare` | `Enum/String` |  | 0 |
+| [`common`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
+| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
 
 </details>
 
 ---
 
 ### Object: `AbilityReaction`
-### Object: `AbilityReaction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -914,14 +969,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
   | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
   | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 0 |
 | `cant_miss` | `Boolean` |  | 0 |
-| `effects` | `Block` | Non-damaging impact triggers. | 0 |
+| [`effects`](./Characters_and_Bosses.md#object-effects) | Object | Non-damaging impact triggers. | 0 |
 
 </details>
 
 ---
 
 ### Object: `BirdRewards`
-### Object: `BirdRewards`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -939,11 +994,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ally_rewards`
-### Object: `ally_rewards`
+
+
+**Definition:** Loot logic triggered if an ally dies.
+**Total Count:** 18
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 18
 
 > **Referenced by:** [`BirdRewards`](./Characters_and_Bosses.md#object-birdrewards)
 
@@ -956,17 +1015,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `alt_spawn_pool`
-### Object: `alt_spawn_pool`
+
+
+**Definition:** Alternative pools to draw minions from.
+**Total Count:** 18
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 18
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Antidote` | Mixed | Applies or references the 'Antidote' effect/state. | 5 |
+| [`Antidote`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Applies or references the 'Antidote' effect/state. | 5 |
 | `Blessing` | Mixed | Applies or references the 'Blessing' effect/state. | 5 |
 | `BigCatnip` | Number | Applies or references the 'BigCatnip' effect/state. | 4 |
 | `BigScrap` | Number | Applies or references the 'BigScrap' effect/state. | 4 |
@@ -1018,7 +1081,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CharacterLightSource`
-### Object: `CharacterLightSource`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1037,7 +1100,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HealthPickup`
-### Object: `HealthPickup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1058,7 +1121,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ImmediateAbilityReaction`
-### Object: `ImmediateAbilityReaction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1082,6 +1145,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `effects`
 
+> **Definition:** Non-damaging impact triggers.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1101,7 +1167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AbilityHealthThreshold`
-### Object: `AbilityHealthThreshold`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1124,7 +1190,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveGroup`
-### Object: `PassiveGroup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1141,7 +1207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawnThingOnDamage`
-### Object: `SpawnThingOnDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1154,7 +1220,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Enums.md#enum-object) | Enum |  | 12 |
 | `good` | Boolean |  | 8 |
 | `spawn_on_death_hit` | Boolean |  | 6 |
-| `chance` | Mixed | Probability (0.0 to 1.0) of executing this action. | 4 |
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0) of executing this action. | 4 |
 | `coins` | Number |  | 2 |
 | [`auto_cast`](./Enums.md#enum-auto_cast) | Enum |  | 1 |
 | `consider_all_layers` | Boolean |  | 1 |
@@ -1165,11 +1231,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `round_end_bonusturn_pattern`
-### Object: `round_end_bonusturn_pattern`
+
+
+**Definition:** AI Logic: Ability usage pattern during round-end bonus turns.
+**Total Count:** 12
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 12
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
@@ -1187,11 +1257,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Normal`
-### Object: `Normal`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Normal\' state.
+**Total Count:** 11
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 11
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1208,7 +1282,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DeathRattleRevive`
-### Object: `DeathRattleRevive`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1226,7 +1300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveWhenDamaged`
-### Object: `MoveWhenDamaged`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1244,11 +1318,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Rage`
-### Object: `Rage`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Rage\' state.
+**Total Count:** 10
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 10
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1267,7 +1345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FormChangeOnElementInfluence`
-### Object: `FormChangeOnElementInfluence`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1288,7 +1366,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ReflectProjectiles`
-### Object: `ReflectProjectiles`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1305,7 +1383,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusCollector`
-### Object: `StatusCollector`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1322,7 +1400,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TransformInXTurns`
-### Object: `TransformInXTurns`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1343,7 +1421,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TransformOnElementInfluence`
-### Object: `TransformOnElementInfluence`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1361,11 +1439,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `statuses`
-### Object: `statuses`
+
+
+**Definition:** Status effects possessed by the character.
+**Total Count:** 9
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 9
 
 > **Referenced by:** [`BirdRewards`](./Characters_and_Bosses.md#object-birdrewards), [`Cat`](./Characters_and_Bosses.md#object-cat), [`NonCat`](./Characters_and_Bosses.md#object-noncat)
 
@@ -1378,7 +1460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FormChangeOffMap`
-### Object: `FormChangeOffMap`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1396,7 +1478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SmallRockBehavior`
-### Object: `SmallRockBehavior`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1415,7 +1497,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChanceToSpitOnDamage`
-### Object: `ChanceToSpitOnDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1436,7 +1518,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MovementReaction`
-### Object: `MovementReaction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1459,7 +1541,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CaveFamilyEnrage`
-### Object: `CaveFamilyEnrage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1478,7 +1560,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FormChangeWhilePrimingAbility`
-### Object: `FormChangeWhilePrimingAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1496,7 +1578,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveTowardsDamageSource`
-### Object: `MoveTowardsDamageSource`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1522,7 +1604,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SecurityBotProtect`
-### Object: `SecurityBotProtect`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1543,11 +1625,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HasCat`
-### Object: `HasCat`
+
+
+**Definition:** Character Form: Behavior and stats for the \'HasCat\' state.
+**Total Count:** 5
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 5
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1565,7 +1651,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveTowardsKillers`
-### Object: `MoveTowardsKillers`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1583,7 +1669,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhileHasStatus`
-### Object: `PassiveWhileHasStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1601,7 +1687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TransformOnDeathImmediately`
-### Object: `TransformOnDeathImmediately`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1619,7 +1705,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BaitAura`
-### Object: `BaitAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1649,18 +1735,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 |
 | `use_placeholder` | Boolean |  | 2 |
 | `do_not_pop_corpse` | `Boolean` |  | 0 |
-| `drop_on_death` | `Enum/String` |  | 0 |
+| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
 | `force_contact` | `Boolean` | If true, enforces physical overlap. | 0 |
 | `instant` | `Boolean` |  | 0 |
-| `mount_mode` | `Enum/String` | If true, treats the consumption as riding/mounting instead of eating. | 0 |
-| `struggle_ability` | `Enum/String` | Ability triggered by the consumed entity while inside the consumer. | 0 |
+| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | If true, treats the consumption as riding/mounting instead of eating. | 0 |
+| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Ability triggered by the consumed entity while inside the consumer. | 0 |
 
 </details>
 
 ---
 
 ### Object: `ForceUseAbility`
-### Object: `ForceUseAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1678,11 +1764,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveAway`
-### Object: `MoveAway`
+
+
+**Definition:** AI Movement: Moves away from the target.
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 4
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -1696,11 +1786,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveClose`
-### Object: `MoveClose`
+
+
+**Definition:** AI Movement: Moves into melee range.
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 4
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -1715,11 +1809,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `OffMap`
-### Object: `OffMap`
+
+
+**Definition:** Character Form: Behavior and stats for the 'OffMap' state.
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 4
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1733,7 +1831,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnEnd`
-### Object: `StatusEachTurnEnd`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1750,7 +1848,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnKill`
-### Object: `StatusOnKill`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1775,7 +1873,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTookDamageFromAbility`
-### Object: `StatusOnTookDamageFromAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1792,7 +1890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StunImmunity`
-### Object: `StunImmunity`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1809,7 +1907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Trapper`
-### Object: `Trapper`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1829,11 +1927,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `default`
-### Object: `default`
+
+
+**Definition:** Baseline configuration.
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 4
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1846,11 +1948,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `hot`
-### Object: `hot`
+
+
+**Definition:** Visual effect indicator.
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 4
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1865,11 +1971,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `keyword_tooltips`
-### Object: `keyword_tooltips`
+
+
+**Definition:** Forces specific UI tooltips to appear.
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 4
 
 > **Referenced by:** [`Die`](./Characters_and_Bosses.md#object-die), [`Dumb`](./Characters_and_Bosses.md#object-dumb), [`Obey`](./Characters_and_Bosses.md#object-obey), [`Stop`](./Characters_and_Bosses.md#object-stop)
 
@@ -1885,11 +1995,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AllAlive`
-### Object: `AllAlive`
+
+
+**Definition:** Encounter State: Logic executed when all specific entities are currently alive.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1902,11 +2016,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ArmorPickup`
-### Object: `ArmorPickup`
+
+
+**Definition:** Pickup Logic: Defines what happens when an armor item is collected.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
@@ -1920,7 +2038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Buddy`
-### Object: `Buddy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1937,11 +2055,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Cat`
-### Object: `Cat`
+
+
+**Definition:** Character Form: Base form for standard cats.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#object-mothertumorpassive), [`MotherTumorSpawnInCapture`](./Characters_and_Bosses.md#object-mothertumorspawnincapture)
 
@@ -1956,11 +2078,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Down`
-### Object: `Down`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Down\' state.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -1977,7 +2103,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FormChangeHealthThreshold`
-### Object: `FormChangeHealthThreshold`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1997,11 +2123,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Full`
-### Object: `Full`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Full\' state.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2018,7 +2148,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ManaPickup`
-### Object: `ManaPickup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2036,11 +2166,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NonCat`
-### Object: `NonCat`
+
+
+**Definition:** Character Form: Behavior and stats for the 'NonCat' state.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#object-mothertumorpassive), [`MotherTumorSpawnInCapture`](./Characters_and_Bosses.md#object-mothertumorspawnincapture)
 
@@ -2055,11 +2189,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `OneAlive`
-### Object: `OneAlive`
+
+
+**Definition:** Encounter State: Logic executed when exactly one target is alive.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2073,7 +2211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RandomPassivePool`
-### Object: `RandomPassivePool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2090,7 +2228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ReplaceBrain`
-### Object: `ReplaceBrain`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2110,7 +2248,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SupportFormChangeInsteadOfRun`
-### Object: `SupportFormChangeInsteadOfRun`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2128,11 +2266,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TwoAlive`
-### Object: `TwoAlive`
+
+
+**Definition:** Encounter State: Logic executed when exactly two targets are alive.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2146,11 +2288,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Up`
-### Object: `Up`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Up\' state.
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2166,7 +2312,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AbilityOnRoundEnd`
-### Object: `AbilityOnRoundEnd`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2184,7 +2330,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
-### Object: `AbilityWhenTaggedCharacterMovesNear`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2203,7 +2349,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddTemporaryEffectsToBasicAttack`
-### Object: `AddTemporaryEffectsToBasicAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2220,7 +2366,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AutocastEachRound`
-### Object: `AutocastEachRound`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2238,18 +2384,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Big`
-### Object: `Big`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'Big\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
-| `animation_suffix` | Mixed |  | 2 |
+| [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 
 </details>
@@ -2257,11 +2407,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Boris`
-### Object: `Boris`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'Boris\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2275,7 +2429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BungaEntrance`
-### Object: `BungaEntrance`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2295,11 +2449,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CaveMan`
-### Object: `CaveMan`
+
+
+**Definition:** Character Form: Behavior and stats for the \'CaveMan\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2317,11 +2475,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CaveManSpear`
-### Object: `CaveManSpear`
+
+
+**Definition:** Character Form: Behavior and stats for the \'CaveManSpear\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2339,7 +2501,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CherubimReaction`
-### Object: `CherubimReaction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2357,7 +2519,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_GoodRoll`
-### Object: `Conditional_GoodRoll`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2375,11 +2537,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DashRandomly`
-### Object: `DashRandomly`
+
+
+**Definition:** AI Movement: Dashes to a random valid tile.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -2412,11 +2578,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Empty`
-### Object: `Empty`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Empty\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2429,11 +2599,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Escape`
-### Object: `Escape`
+
+
+**Definition:** AI Movement: Logic for fleeing or escaping the map.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -2447,11 +2621,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Explosive`
-### Object: `Explosive`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Explosive\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2465,7 +2643,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FaceLastDamage`
-### Object: `FaceLastDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2482,7 +2660,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FormChangeDuringWeatherElement`
-### Object: `FormChangeDuringWeatherElement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2500,11 +2678,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Holding`
-### Object: `Holding`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Holding\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2520,11 +2702,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Holy`
-### Object: `Holy`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Holy\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2538,7 +2724,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `KnockUpAndAway`
-### Object: `KnockUpAndAway`
+
+> **Definition:** Logic: Applies vertical and horizontal displacement.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2562,7 +2751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MotherTumorSpawnInCapture`
-### Object: `MotherTumorSpawnInCapture`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2581,11 +2770,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveCenter`
-### Object: `MoveCenter`
+
+
+**Definition:** AI Movement: Moves toward the center of the map.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -2599,11 +2792,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveForThrow`
-### Object: `MoveForThrow`
+
+
+**Definition:** AI Movement: Repositions to gain line of sight for throwing.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -2618,11 +2815,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NotPriming`
-### Object: `NotPriming`
+
+
+**Definition:** Character Form: Behavior and stats when not charging an ability.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2636,7 +2837,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhileNotHasStatus`
-### Object: `PassiveWhileNotHasStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2654,11 +2855,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Priming`
-### Object: `Priming`
+
+
+**Definition:** Character Form: Behavior and stats when charging an ability.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2672,7 +2877,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ProtectTargetedAllies`
-### Object: `ProtectTargetedAllies`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2690,7 +2895,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Rain`
-### Object: `Rain`
+
+> **Definition:** Character Form: Behavior and stats for the 'Rain' state.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2707,7 +2915,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RemoveStatusStacks`
-### Object: `RemoveStatusStacks`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2725,7 +2933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SlotMachineRollPool`
-### Object: `SlotMachineRollPool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2745,11 +2953,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Small`
-### Object: `Small`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Small\' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2763,11 +2975,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpearRun`
-### Object: `SpearRun`
+
+
+**Definition:** AI Movement: Specific movement logic for Spear enemies.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -2782,11 +2998,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SquirrelForm`
-### Object: `SquirrelForm`
+
+
+**Definition:** Character Form: Behavior and stats for the 'SquirrelForm' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2802,7 +3022,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusGroup`
-### Object: `StatusGroup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2819,7 +3039,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnSpawnIn`
-### Object: `StatusOnSpawnIn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2838,7 +3058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTookDamage`
-### Object: `StatusOnTookDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2855,7 +3075,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TempPassiveUntilSettled`
-### Object: `TempPassiveUntilSettled`
+
+> **Definition:** Passive: Active only until the physics engine stops moving the character.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2872,7 +3095,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TinkererBasicAttackSwitching`
-### Object: `TinkererBasicAttackSwitching`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2890,7 +3113,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TransformOnElementInfluencex`
-### Object: `TransformOnElementInfluencex`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2908,11 +3131,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Turtled`
-### Object: `Turtled`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Turtled' state.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2929,11 +3156,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `active`
-### Object: `active`
+
+
+**Definition:** Defines actively executed abilities.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2946,11 +3177,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `alternate_energized_effect`
-### Object: `alternate_energized_effect`
+
+
+**Definition:** Overrides default energized visuals.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`Robot`](./Characters_and_Bosses.md#object-robot)
 
@@ -2963,11 +3198,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `dispersed_bonusturn_pattern`
-### Object: `dispersed_bonusturn_pattern`
+
+
+**Definition:** AI Logic: Alternative bonus turn ability pattern.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
@@ -2980,11 +3219,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `passive`
-### Object: `passive`
+
+
+**Definition:** Intrinsic passive modifier.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -2997,11 +3240,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `statuses_on_enter_form`
-### Object: `statuses_on_enter_form`
+
+
+**Definition:** Status effects instantly applied upon transitioning into this form.
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`Full`](./Characters_and_Bosses.md#object-full)
 
@@ -3015,7 +3262,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToReceivedDamage`
-### Object: `AddStatusToReceivedDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3034,7 +3281,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToSpells`
-### Object: `AddStatusToSpells`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3054,7 +3301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToTrampleDamage`
-### Object: `AddStatusToTrampleDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3073,7 +3320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToWeapons`
-### Object: `AddStatusToWeapons`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3090,7 +3337,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AdventureTokenPassivePool`
-### Object: `AdventureTokenPassivePool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3107,7 +3354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AggroTargetIsGovernedByHitEffect`
-### Object: `AggroTargetIsGovernedByHitEffect`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3124,11 +3371,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Alert`
-### Object: `Alert`
+
+
+**Definition:** AI State: The behavior profile used when the character is alerted to enemies.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3143,7 +3394,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AllStatsAura`
-### Object: `AllStatsAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3162,11 +3413,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Angry`
-### Object: `Angry`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'Angry\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3180,11 +3435,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Attacker`
-### Object: `Attacker`
+
+
+**Definition:** AI Role: Designates the character as an attacker rather than support.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3197,7 +3456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BackflipWhenTargeted`
-### Object: `BackflipWhenTargeted`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3215,7 +3474,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BattlefieldUniqueRandomPassive`
-### Object: `BattlefieldUniqueRandomPassive`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3236,11 +3495,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BellyFull`
-### Object: `BellyFull`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'BellyFull\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3255,11 +3518,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BigHolding`
-### Object: `BigHolding`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'BigHolding\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3273,11 +3540,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BigHoldingCat`
-### Object: `BigHoldingCat`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3291,11 +3562,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Bishop`
-### Object: `Bishop`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'Bishop\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3315,11 +3590,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BlackHole`
-### Object: `BlackHole`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'BlackHole\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3336,11 +3615,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Bomb`
-### Object: `Bomb`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the 'Bomb' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3354,11 +3637,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Bully`
-### Object: `Bully`
+
+
+**Definition:** Character Form / AI State: Behavior and stats for the 'Bully' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3373,7 +3660,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BungaCheers`
-### Object: `BungaCheers`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3394,11 +3681,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CaveBaby`
-### Object: `CaveBaby`
+
+
+**Definition:** Character Form: Behavior and stats for the \'CaveBaby\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3416,11 +3707,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CaveWoman`
-### Object: `CaveWoman`
+
+
+**Definition:** Character Form: Behavior and stats for the \'CaveWoman\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3438,11 +3733,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CaveWomanHasCat`
-### Object: `CaveWomanHasCat`
+
+
+**Definition:** Character Form: Behavior and stats for the \'CaveWomanHasCat\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3460,7 +3759,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CerberubsAggroTargetBehavior`
-### Object: `CerberubsAggroTargetBehavior`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3478,11 +3777,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CerberubsJumpBlind`
-### Object: `CerberubsJumpBlind`
+
+
+**Definition:** AI Logic: Blind jump attack pattern for Cerberubs.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -3496,11 +3799,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CerberubsJumpNormal`
-### Object: `CerberubsJumpNormal`
+
+
+**Definition:** AI Logic: Normal jump attack pattern for Cerberubs.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -3514,7 +3821,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChanceToBackflip`
-### Object: `ChanceToBackflip`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3532,7 +3839,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChanceToFormChangeOnAbilityDamage`
-### Object: `ChanceToFormChangeOnAbilityDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3550,7 +3857,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChaosBossFormChangeGuide`
-### Object: `ChaosBossFormChangeGuide`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3569,7 +3876,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChaosBossPieces`
-### Object: `ChaosBossPieces`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3587,7 +3894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChaosHeadDropIn`
-### Object: `ChaosHeadDropIn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3606,11 +3913,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Charging`
-### Object: `Charging`
+
+
+**Definition:** Character Form / AI State: Behavior when charging an attack.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3626,11 +3937,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Close`
-### Object: `Close`
+
+
+**Definition:** AI Movement logic: Maneuvers into close/melee range.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3643,11 +3958,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CloseConvert`
-### Object: `CloseConvert`
+
+
+**Definition:** AI State: Logic for converting adjacent units.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -3661,7 +3980,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_BadRoll`
-### Object: `Conditional_BadRoll`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3691,9 +4010,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-| `KnockUpAndAway` | `Block` | Logic: Applies vertical and horizontal displacement. | 0 |
+| [`KnockUpAndAway`](./Characters_and_Bosses.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 0 |
 | `RemoveKnockback` | `Number` | Applies or references the 'RemoveKnockback' effect/state. | 0 |
-| `TempPassiveUntilSettled` | `Block` | Passive: Active only until the physics engine stops moving the character. | 0 |
+| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 0 |
 
 </details>
 
@@ -3712,16 +4031,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-| `KnockUpAndAway` | `Block` | Logic: Applies vertical and horizontal displacement. | 0 |
+| [`KnockUpAndAway`](./Characters_and_Bosses.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 0 |
 | `RemoveKnockback` | `Number` | Applies or references the 'RemoveKnockback' effect/state. | 0 |
-| `TempPassiveUntilSettled` | `Block` | Passive: Active only until the physics engine stops moving the character. | 0 |
+| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 0 |
 
 </details>
 
 ---
 
 ### Object: `CounterAttack`
-### Object: `CounterAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3749,18 +4068,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | `BloodRain` | `Number` | Applies or references the 'BloodRain' effect/state. | 0 |
-| `LowerAmbientLight` | `Block` | Visual: Dims the map lighting. | 0 |
+| [`LowerAmbientLight`](./Characters_and_Bosses.md#object-lowerambientlight) | Object | Visual: Dims the map lighting. | 0 |
 
 </details>
 
 ---
 
 ### Object: `Cultist`
-### Object: `Cultist`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Cultist\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3778,11 +4101,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Damaged`
-### Object: `Damaged`
+
+
+**Definition:** Character Form / AI State: Behavior when health is critically low.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3795,11 +4122,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Default_Ceiling`
-### Object: `Default_Ceiling`
+
+
+**Definition:** Character Form: The baseline behavior state while attached to the ceiling.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3814,11 +4145,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Default_Ground`
-### Object: `Default_Ground`
+
+
+**Definition:** Character Form: The baseline behavior state while on the ground.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3833,7 +4168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DelayedAutoRevive`
-### Object: `DelayedAutoRevive`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3851,11 +4186,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DesireMech`
-### Object: `DesireMech`
+
+
+**Definition:** Character Form: Behavior and stats for the 'DesireMech' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3868,7 +4207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DiceBehavior`
-### Object: `DiceBehavior`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3886,7 +4225,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Die`
-### Object: `Die`
+
+> **Definition:** Character Form / Logic: Forces the character to die.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3904,7 +4246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DiesToPiercingAndSpikes`
-### Object: `DiesToPiercingAndSpikes`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3921,7 +4263,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DodgeWhenTargeted`
-### Object: `DodgeWhenTargeted`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3938,11 +4280,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Drunker`
-### Object: `Drunker`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Drunker' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3955,11 +4301,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DualSword`
-### Object: `DualSword`
+
+
+**Definition:** Character Form: Behavior and stats for the \'DualSword\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3977,11 +4327,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DualSword_Primed`
-### Object: `DualSword_Primed`
+
+
+**Definition:** Character Form: Behavior and stats for the \'DualSword_Primed\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -3999,11 +4353,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Dumb`
-### Object: `Dumb`
+
+
+**Definition:** AI Profile: A simplified, less optimal decision-making profile.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4017,7 +4375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DybbukPossessionFallback`
-### Object: `DybbukPossessionFallback`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4046,21 +4404,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 71 |
-| `Conditional_HasKnockback` | `Block` | Conditional: Executes logic if the triggering attack deals knockback. | 0 |
-| `KnockUpAndAway` | Block | Logic: Applies vertical and horizontal displacement. | 0 |
+| [`Conditional_HasKnockback`](./Characters_and_Bosses.md#object-conditional-hasknockback) | Object | Conditional: Executes logic if the triggering attack deals knockback. | 0 |
+| [`KnockUpAndAway`](./Characters_and_Bosses.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 0 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 0 |
-| `TempPassiveUntilSettled` | Block | Passive: Active only until the physics engine stops moving the character. | 0 |
+| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 0 |
 
 </details>
 
 ---
 
 ### Object: `Explody`
-### Object: `Explody`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Explody' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4077,7 +4439,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FaceAwayLastDamage`
-### Object: `FaceAwayLastDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4096,11 +4458,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FightPhase`
-### Object: `FightPhase`
+
+
+**Definition:** Boss Logic: Main combat phase.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4117,7 +4483,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FinalBossBeamQueue`
-### Object: `FinalBossBeamQueue`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4147,16 +4513,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-| `GlobalSpawnCharacter` | `Enum/String` | Applies or references the 'GlobalSpawnCharacter' effect/state. | 0 |
+| [`GlobalSpawnCharacter`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'GlobalSpawnCharacter' effect/state. | 0 |
 | `PlayBackground` | `Number` | Applies or references the 'PlayBackground' effect/state. | 0 |
-| `SwitchMusic` | `Block` | Event Trigger: Changes background music track. | 0 |
+| [`SwitchMusic`](./Characters_and_Bosses.md#object-switchmusic) | Object | Event Trigger: Changes background music track. | 0 |
 
 </details>
 
 ---
 
 ### Object: `FinalBossHitCountdownBoris`
-### Object: `FinalBossHitCountdownBoris`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4176,7 +4542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FinalBossHitCountdownExplosive`
-### Object: `FinalBossHitCountdownExplosive`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4196,7 +4562,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FinalBossHitCountdownHoly`
-### Object: `FinalBossHitCountdownHoly`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4215,7 +4581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FinalBossPupils`
-### Object: `FinalBossPupils`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4238,7 +4604,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FinalBossShieldHealth`
-### Object: `FinalBossShieldHealth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4256,7 +4622,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FinalBossSyncAnimations`
-### Object: `FinalBossSyncAnimations`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4274,11 +4640,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Fire`
-### Object: `Fire`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Fire' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4293,11 +4663,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FireFull`
-### Object: `FireFull`
+
+
+**Definition:** Character Form: Behavior and stats for the 'FireFull' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4313,11 +4687,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Flop`
-### Object: `Flop`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Flop\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4332,11 +4710,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Flop2`
-### Object: `Flop2`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Flop2\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4351,11 +4733,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Flush`
-### Object: `Flush`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Flush' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4368,11 +4754,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FlushBubs`
-### Object: `FlushBubs`
+
+
+**Definition:** Character Form: Behavior and stats for the 'FlushBubs' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4386,11 +4776,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FlushHost`
-### Object: `FlushHost`
+
+
+**Definition:** Character Form: Behavior and stats for the 'FlushHost' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4405,11 +4799,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FlushNettle`
-### Object: `FlushNettle`
+
+
+**Definition:** Character Form: Behavior and stats for the 'FlushNettle' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4423,11 +4821,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FoodMove`
-### Object: `FoodMove`
+
+
+**Definition:** AI Movement: Logic for seeking out food items.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -4441,11 +4843,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ForceTrample`
-### Object: `ForceTrample`
+
+
+**Definition:** Logic: Forces movement to act as a trample attack.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -4459,7 +4865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `GainDisorderFromPool`
-### Object: `GainDisorderFromPool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4477,11 +4883,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Grappling`
-### Object: `Grappling`
+
+
+**Definition:** Character Form / AI State: Behavior while grappling an opponent.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4495,11 +4905,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Grown`
-### Object: `Grown`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Grown\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4518,11 +4932,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `GuaranteedJackpot`
-### Object: `GuaranteedJackpot`
+
+
+**Definition:** Loot Logic: Guarantees a high-tier drop.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4535,11 +4953,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Guarding`
-### Object: `Guarding`
+
+
+**Definition:** Character Form / AI State: Defensive behavior state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4554,7 +4976,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HPAltStates`
-### Object: `HPAltStates`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4572,11 +4994,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HalfDead`
-### Object: `HalfDead`
+
+
+**Definition:** Character Form: Behavior and stats for the \'HalfDead\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4592,11 +5018,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HasDeadCat`
-### Object: `HasDeadCat`
+
+
+**Definition:** Character Form: Behavior and stats for the \'HasDeadCat\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4612,11 +5042,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HasRock`
-### Object: `HasRock`
+
+
+**Definition:** Character Form: Behavior and stats for the \'HasRock\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4631,11 +5065,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Headless`
-### Object: `Headless`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Headless\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4650,7 +5088,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HealNeighborsEachTurn`
-### Object: `HealNeighborsEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4668,11 +5106,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Hint_CrackedVisuals`
-### Object: `Hint_CrackedVisuals`
+
+
+**Definition:** Visual: Overlay effects for cracked/damaged terrain or objects.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4685,11 +5127,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Hint_CrackedVisuals2`
-### Object: `Hint_CrackedVisuals2`
+
+
+**Definition:** Visual: Secondary cracked visual overlay.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4702,11 +5148,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Hint_CrackedVisuals3`
-### Object: `Hint_CrackedVisuals3`
+
+
+**Definition:** Visual: Tertiary cracked visual overlay.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4719,7 +5169,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HitlerExecute`
-### Object: `HitlerExecute`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4738,11 +5188,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HumanDead`
-### Object: `HumanDead`
+
+
+**Definition:** Character Form: Behavior and stats for the \'HumanDead\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4757,7 +5211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `InfiniteRebirth`
-### Object: `InfiniteRebirth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4776,11 +5230,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `InitialPhase`
-### Object: `InitialPhase`
+
+
+**Definition:** Boss Logic: The starting phase of an encounter.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4797,11 +5255,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Insane_Ceiling`
-### Object: `Insane_Ceiling`
+
+
+**Definition:** Character Form: Insane behavior state while attached to the ceiling.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4817,11 +5279,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Insane_Ground`
-### Object: `Insane_Ground`
+
+
+**Definition:** Character Form: Insane behavior state while on the ground.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4837,11 +5303,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Johnny`
-### Object: `Johnny`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Johnny' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4854,11 +5324,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `JohnnyBubs`
-### Object: `JohnnyBubs`
+
+
+**Definition:** Character Form: Behavior and stats for the 'JohnnyBubs' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4872,11 +5346,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `JohnnyHost`
-### Object: `JohnnyHost`
+
+
+**Definition:** Character Form: Behavior and stats for the 'JohnnyHost' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4891,7 +5369,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `JohnnyNeedsWashing`
-### Object: `JohnnyNeedsWashing`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4909,11 +5387,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `JohnnyNettle`
-### Object: `JohnnyNettle`
+
+
+**Definition:** Character Form: Behavior and stats for the 'JohnnyNettle' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4927,11 +5409,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Joystick`
-### Object: `Joystick`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Joystick\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4945,11 +5431,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `LastHit`
-### Object: `LastHit`
+
+
+**Definition:** Logic: Executes logic on the final hit of a multi-hit attack.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -4962,11 +5452,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `LeapClose`
-### Object: `LeapClose`
+
+
+**Definition:** AI Movement: Executes a jumping maneuver to close distance.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -4980,11 +5474,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Lifted`
-### Object: `Lifted`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Lifted\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5001,11 +5499,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Lit`
-### Object: `Lit`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Lit' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5019,7 +5521,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `LowerAmbientLight`
-### Object: `LowerAmbientLight`
+
+> **Definition:** Visual: Dims the map lighting.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5037,7 +5542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MegaDinoDropController`
-### Object: `MegaDinoDropController`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5057,7 +5562,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ModularPickup`
-### Object: `ModularPickup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5075,7 +5580,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MonkCatReactionAbilities`
-### Object: `MonkCatReactionAbilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5096,7 +5601,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MotherGrowController`
-### Object: `MotherGrowController`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5114,7 +5619,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MotherTumorPassive`
-### Object: `MotherTumorPassive`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5136,7 +5641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Mount`
-### Object: `Mount`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5154,11 +5659,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Mounted`
-### Object: `Mounted`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Mounted\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5171,11 +5680,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MouthFull`
-### Object: `MouthFull`
+
+
+**Definition:** Character Form: Behavior and stats for the \'MouthFull\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5190,7 +5703,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveAfterAnyAttemptedAttack`
-### Object: `MoveAfterAnyAttemptedAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5207,7 +5720,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveAwayFromDamageSource`
-### Object: `MoveAwayFromDamageSource`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5224,7 +5737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveAwayWhenEnemyAdjacent`
-### Object: `MoveAwayWhenEnemyAdjacent`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5243,11 +5756,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveForBarrage`
-### Object: `MoveForBarrage`
+
+
+**Definition:** AI Movement: Repositions to optimize a barrage attack.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5262,11 +5779,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveForDash`
-### Object: `MoveForDash`
+
+
+**Definition:** AI Movement: Repositions to set up a dash attack line.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5281,11 +5802,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveForGrass`
-### Object: `MoveForGrass`
+
+
+**Definition:** AI Movement: Moves toward grass tiles.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5300,11 +5825,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveForPounce`
-### Object: `MoveForPounce`
+
+
+**Definition:** AI Movement: Repositions to optimize a pounce trajectory.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5319,11 +5848,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveForSpin`
-### Object: `MoveForSpin`
+
+
+**Definition:** AI Movement: Repositions into a cluster of enemies for a spin attack.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5338,11 +5871,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveOneForPuke`
-### Object: `MoveOneForPuke`
+
+
+**Definition:** AI Movement: Specific positioning logic for puke attacks.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5357,11 +5894,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveSpaced`
-### Object: `MoveSpaced`
+
+
+**Definition:** AI Movement: Moves to maintain a specific distance from targets.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5375,11 +5916,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveToHead`
-### Object: `MoveToHead`
+
+
+**Definition:** AI Movement: Navigates toward the 'head' or primary target.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5394,11 +5939,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveTowards`
-### Object: `MoveTowards`
+
+
+**Definition:** AI Movement: Moves toward the nearest target.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5413,7 +5962,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MultiSpawnOnDeath`
-### Object: `MultiSpawnOnDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5431,11 +5980,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Mutant`
-### Object: `Mutant`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Mutant\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5455,11 +6008,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NCGravecrawlFAR`
-### Object: `NCGravecrawlFAR`
+
+
+**Definition:** AI Movement: Specific grapple/crawl logic.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5473,11 +6030,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NeutronStar`
-### Object: `NeutronStar`
+
+
+**Definition:** Character Form: Behavior and stats for the 'NeutronStar' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5491,11 +6052,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NoEyes`
-### Object: `NoEyes`
+
+
+**Definition:** Character Form: Behavior and stats for the \'NoEyes\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5508,11 +6073,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NoStick`
-### Object: `NoStick`
+
+
+**Definition:** Character Form: Behavior and stats for the 'NoStick' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5526,11 +6095,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NormalFull`
-### Object: `NormalFull`
+
+
+**Definition:** Character Form: Behavior and stats for the 'NormalFull' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5546,11 +6119,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Nothing`
-### Object: `Nothing`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Nothing' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`MotherTumorSpawnInCapture`](./Characters_and_Bosses.md#object-mothertumorspawnincapture)
 
@@ -5563,11 +6140,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Nuke`
-### Object: `Nuke`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Nuke' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5585,11 +6166,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Obey`
-### Object: `Obey`
+
+
+**Definition:** AI State: Enforced compliance logic (e.g., when Charmed).
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5603,11 +6188,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Off`
-### Object: `Off`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Off' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5620,11 +6209,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `OffScreen`
-### Object: `OffScreen`
+
+
+**Definition:** Character Form: Behavior and stats for the 'OffScreen' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5638,11 +6231,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `OneEye`
-### Object: `OneEye`
+
+
+**Definition:** Character Form: Behavior and stats for the \'OneEye\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5656,11 +6253,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Open`
-### Object: `Open`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Open' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5676,11 +6277,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `OpenCat`
-### Object: `OpenCat`
+
+
+**Definition:** Character Form: Behavior and stats for the 'OpenCat' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5694,11 +6299,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Out`
-### Object: `Out`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Out' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5711,7 +6320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhenAffectedByElement`
-### Object: `PassiveWhenAffectedByElement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5729,7 +6338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhenDead`
-### Object: `PassiveWhenDead`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5750,11 +6359,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Possessing`
-### Object: `Possessing`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Possessing\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5769,11 +6382,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Primed`
-### Object: `Primed`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Primed' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5789,11 +6406,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Pulp2`
-### Object: `Pulp2`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Pulp2' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5812,11 +6433,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Pulp3`
-### Object: `Pulp3`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Pulp3' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5835,11 +6460,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Pulp4`
-### Object: `Pulp4`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Pulp4' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5858,11 +6487,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Pulp5`
-### Object: `Pulp5`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Pulp5' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5881,11 +6514,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Pulp6`
-### Object: `Pulp6`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Pulp6' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5904,11 +6541,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Pulp7`
-### Object: `Pulp7`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Pulp7' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -5927,7 +6568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RandomStatusFromPool`
-### Object: `RandomStatusFromPool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5944,11 +6585,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ReturnA`
-### Object: `ReturnA`
+
+
+**Definition:** Boss Logic: Specific phase return trigger.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5962,7 +6607,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RevengeDamage`
-### Object: `RevengeDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5981,11 +6626,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RunFar`
-### Object: `RunFar`
+
+
+**Definition:** AI Movement: Maximize distance from targets.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -5999,7 +6648,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RunWhenLastPlayerCatIsCharmed`
-### Object: `RunWhenLastPlayerCatIsCharmed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6017,7 +6666,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ScalingAttackAnimation`
-### Object: `ScalingAttackAnimation`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6035,7 +6684,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SharePickups`
-### Object: `SharePickups`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6052,11 +6701,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Sitting`
-### Object: `Sitting`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Sitting' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6074,7 +6727,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SkipFirstRounds`
-### Object: `SkipFirstRounds`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6092,11 +6745,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SmallHolding`
-### Object: `SmallHolding`
+
+
+**Definition:** Character Form: Behavior and stats for the \'SmallHolding\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6110,11 +6767,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SmallHoldingCat`
-### Object: `SmallHoldingCat`
+
+
+**Definition:** Character Form: Behavior and stats for the \'SmallHoldingCat\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6128,11 +6789,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawningPhase`
-### Object: `SpawningPhase`
+
+
+**Definition:** Boss Logic: Phase focused on summoning minions.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6146,7 +6811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpewerAltGraphics`
-### Object: `SpewerAltGraphics`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6168,7 +6833,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Brace`
-### Object: `StacyMutant_Brace`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6185,7 +6850,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Counter`
-### Object: `StacyMutant_Counter`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6202,7 +6867,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Damage`
-### Object: `StacyMutant_Damage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6219,7 +6884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_DoubleHead`
-### Object: `StacyMutant_DoubleHead`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6236,7 +6901,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Fire`
-### Object: `StacyMutant_Fire`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6253,7 +6918,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Health`
-### Object: `StacyMutant_Health`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6270,7 +6935,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Holy`
-### Object: `StacyMutant_Holy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6287,7 +6952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Ice`
-### Object: `StacyMutant_Ice`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6304,7 +6969,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Lightning`
-### Object: `StacyMutant_Lightning`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6321,7 +6986,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Mirror`
-### Object: `StacyMutant_Mirror`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6338,7 +7003,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Speed`
-### Object: `StacyMutant_Speed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6355,7 +7020,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StacyMutant_Thorns`
-### Object: `StacyMutant_Thorns`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6372,11 +7037,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Standing`
-### Object: `Standing`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Standing' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6393,11 +7062,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Standing2`
-### Object: `Standing2`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Standing2' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6414,11 +7087,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Start_Ceiling`
-### Object: `Start_Ceiling`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Start_Ceiling' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6431,7 +7108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAfterXTurns`
-### Object: `StatusAfterXTurns`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6449,7 +7126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnBeginIfHasStatus`
-### Object: `StatusEachTurnBeginIfHasStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6469,7 +7146,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnEndForEachTurn`
-### Object: `StatusEachTurnEndForEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6486,7 +7163,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnEndIfEnabledAtStartOfTurn`
-### Object: `StatusEachTurnEndIfEnabledAtStartOfTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6503,7 +7180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnDie`
-### Object: `StatusOnDie`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6520,7 +7197,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnEndMove`
-### Object: `StatusOnEndMove`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6546,7 +7223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnEnemyConfused`
-### Object: `StatusOnEnemyConfused`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6564,7 +7241,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnGainCoins`
-### Object: `StatusOnGainCoins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6581,7 +7258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOverlappingCharactersAndDie`
-### Object: `StatusOverlappingCharactersAndDie`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6598,7 +7275,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusWhenStatusCompletelyRemoved`
-### Object: `StatusWhenStatusCompletelyRemoved`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6617,11 +7294,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Stop`
-### Object: `Stop`
+
+
+**Definition:** AI Movement: Forces the character to cease movement.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6635,11 +7316,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SuckMF`
-### Object: `SuckMF`
+
+
+**Definition:** Character Form: Behavior and stats for the 'SuckMF' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -6654,7 +7339,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SupportDieInsteadOfRun`
-### Object: `SupportDieInsteadOfRun`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6672,7 +7357,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SwimmingFormChange`
-### Object: `SwimmingFormChange`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6690,7 +7375,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SwitchMusic`
-### Object: `SwitchMusic`
+
+> **Definition:** Event Trigger: Changes background music track.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6708,11 +7396,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SwordAndShield`
-### Object: `SwordAndShield`
+
+
+**Definition:** Character Form: Behavior and stats for the 'SwordAndShield' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6727,11 +7419,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SwordAndShield_Primed`
-### Object: `SwordAndShield_Primed`
+
+
+**Definition:** Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6747,7 +7443,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SyncFormsWithBuddy`
-### Object: `SyncFormsWithBuddy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6764,7 +7460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `T3HitlerSpawningPhase`
-### Object: `T3HitlerSpawningPhase`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6781,11 +7477,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TF_TargetAllies`
-### Object: `TF_TargetAllies`
+
+
+**Definition:** AI Targeting: Prioritizes allies.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -6799,11 +7499,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TF_TargetEnemies`
-### Object: `TF_TargetEnemies`
+
+
+**Definition:** AI Targeting: Prioritizes enemies.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -6840,11 +7544,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Tar`
-### Object: `Tar`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Tar' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6859,11 +7567,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TarFull`
-### Object: `TarFull`
+
+
+**Definition:** Character Form: Behavior and stats for the 'TarFull' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6879,7 +7591,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Terminator2Run`
-### Object: `Terminator2Run`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6897,7 +7609,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TerminatorChase`
-### Object: `TerminatorChase`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6915,7 +7627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TerminatorSkin`
-### Object: `TerminatorSkin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6933,11 +7645,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Throb`
-### Object: `Throb`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Throb' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6950,11 +7666,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ThrobBubs`
-### Object: `ThrobBubs`
+
+
+**Definition:** Character Form: Behavior and stats for the 'ThrobBubs' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6968,11 +7688,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ThrobHost`
-### Object: `ThrobHost`
+
+
+**Definition:** Character Form: Behavior and stats for the 'ThrobHost' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -6987,11 +7711,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ThrobNettle`
-### Object: `ThrobNettle`
+
+
+**Definition:** Character Form: Behavior and stats for the 'ThrobNettle' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7005,7 +7733,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TransformOnStatusThreshold`
-### Object: `TransformOnStatusThreshold`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7024,11 +7752,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Transformed`
-### Object: `Transformed`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Transformed' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7041,7 +7773,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TwisterFling`
-### Object: `TwisterFling`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7060,11 +7792,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TwoEyes`
-### Object: `TwoEyes`
+
+
+**Definition:** Character Form: Behavior and stats for the 'TwoEyes' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7077,11 +7813,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Unflip`
-### Object: `Unflip`
+
+
+**Definition:** Logic: Reverses a flipped state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#object-virtual_abilities)
 
@@ -7096,7 +7836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `UnlimitedDeathRattleRevive`
-### Object: `UnlimitedDeathRattleRevive`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7114,11 +7854,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Unlit`
-### Object: `Unlit`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Unlit' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7132,11 +7876,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Unwashed`
-### Object: `Unwashed`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Unwashed' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7150,7 +7898,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `UseAbility`
-### Object: `UseAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7168,7 +7916,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `UseAbilityWhenOutOfStatus`
-### Object: `UseAbilityWhenOutOfStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7186,11 +7934,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Washed`
-### Object: `Washed`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Washed' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7204,11 +7956,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Washer`
-### Object: `Washer`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Washer\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7226,11 +7982,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Water`
-### Object: `Water`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Water\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7244,11 +8004,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `WereMan`
-### Object: `WereMan`
+
+
+**Definition:** Character Form: Behavior and stats for the \'WereMan\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7266,11 +8030,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Zealot`
-### Object: `Zealot`
+
+
+**Definition:** Character Form: Behavior and stats for the \'Zealot\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7288,11 +8056,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ZealotBomb`
-### Object: `ZealotBomb`
+
+
+**Definition:** Character Form: Behavior and stats for the \'ZealotBomb\' state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
@@ -7310,11 +8082,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `additional_statuses`
-### Object: `additional_statuses`
+
+
+**Definition:** Generic statuses added to the character.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`SpawnOnDeath`](./Characters_and_Bosses.md#object-spawnondeath)
 
@@ -7327,11 +8103,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ai_if_spawned_as_enemy`
-### Object: `ai_if_spawned_as_enemy`
+
+
+**Definition:** AI logic override used only if the character is spawned as an enemy.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
@@ -7348,17 +8128,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage_instance`
 
+**Definition:** Defines damage logic on contact.
+**Total Count:** 1
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1731 |
-| `effects` | `Block` | Non-damaging impact triggers. | 0 |
+| [`effects`](./Characters_and_Bosses.md#object-effects) | Object | Non-damaging impact triggers. | 0 |
 
 </details>
 
@@ -7366,10 +8150,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `eat_damage`
 
+**Definition:** Damage dealt when this entity consumes another.
+**Total Count:** 1
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`MotherGrowController`](./Characters_and_Bosses.md#object-mothergrowcontroller)
 
@@ -7379,7 +8167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `damage` | Number | The base damage properties of an attack. | 1 |
 | `cant_miss` | `Boolean` |  | 0 |
-| `effects` | `Block` | Non-damaging impact triggers. | 0 |
+| [`effects`](./Characters_and_Bosses.md#object-effects) | Object | Non-damaging impact triggers. | 0 |
 | `makes_contact` | `Boolean` |  | 0 |
 | `piercing` | `Boolean` |  | 0 |
 
@@ -7388,11 +8176,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `exit_animations`
-### Object: `exit_animations`
+
+
+**Definition:** Animations played when leaving a form/state.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`Grappling`](./Characters_and_Bosses.md#object-grappling)
 
@@ -7405,11 +8197,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `other_form_change_abilities`
-### Object: `other_form_change_abilities`
+
+
+**Definition:** Lists secondary abilities used to change forms.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`FinalBossSyncAnimations`](./Characters_and_Bosses.md#object-finalbosssyncanimations)
 
@@ -7424,11 +8220,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `round_start_bonusturn_pattern`
-### Object: `round_start_bonusturn_pattern`
+
+
+**Definition:** AI Logic: Ability usage pattern during round-start bonus turns.
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 

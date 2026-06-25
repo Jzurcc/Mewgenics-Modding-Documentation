@@ -87,9 +87,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Numerical Contexts
+### Numerical Objects
 
-> The following contexts are numeric keys or array indices.
+> The following objects are numeric keys or array indices.
 
 ### Object: `1`
 

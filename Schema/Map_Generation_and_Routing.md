@@ -45,27 +45,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached) | Object | Applies or references the 'VolcanoAntennaAttached' effect/state. | 2 |
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum |  | 1 |
 | `advance` | Number |  | 1 |
-| `alley` | Object |  | 1 |
-| `boneyard` | Object |  | 1 |
+| [`alley`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
+| [`boneyard`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#context-boneyardunlocked) | Object | Applies or references the 'BoneyardUnlocked' effect/state. | 1 |
 | [`bumblefoot`](./Enums.md#enum-bumblefoot) | Enum |  | 1 |
-| `bunker` | Object |  | 1 |
+| [`bunker`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`BunkerUnlocked`](./Map_Generation_and_Routing.md#context-bunkerunlocked) | Object | Applies or references the 'BunkerUnlocked' effect/state. | 1 |
 | [`butchercat`](./Enums.md#enum-butchercat) | Enum |  | 1 |
 | [`cancreeper`](./Enums.md#enum-cancreeper) | Enum |  | 1 |
 | [`cavecatfamily`](./Enums.md#enum-cavecatfamily) | Enum |  | 1 |
-| `caves` | Object |  | 1 |
+| [`caves`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`CavesUnlocked`](./Map_Generation_and_Routing.md#context-cavesunlocked) | Object | Applies or references the 'CavesUnlocked' effect/state. | 1 |
 | [`cerberubs`](./Enums.md#enum-cerberubs) | Enum |  | 1 |
 | [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#context-chaosantennaattached) | Object | Applies or references the 'ChaosAntennaAttached' effect/state. | 1 |
 | [`choose_one`](./Arrays.md#array-choose_one) | Array |  | 1 |
 | [`clericcat`](./Enums.md#enum-clericcat) | Enum |  | 1 |
-| `core` | Object |  | 1 |
+| [`core`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#context-coreobeliskunlocked) | Object | Applies or references the 'CoreObeliskUnlocked' effect/state. | 1 |
 | [`CoreUnlocked`](./Map_Generation_and_Routing.md#context-coreunlocked) | Object | Applies or references the 'CoreUnlocked' effect/state. | 1 |
-| `crater` | Object |  | 1 |
+| [`crater`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`CraterUnlocked`](./Map_Generation_and_Routing.md#context-craterunlocked) | Object | Applies or references the 'CraterUnlocked' effect/state. | 1 |
-| `desert` | Object |  | 1 |
+| [`desert`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`dimensionx`](./Map_Generation_and_Routing.md#context-dimensionx) | Object |  | 1 |
 | [`dinocouple`](./Enums.md#enum-dinocouple) | Enum |  | 1 |
 | [`drmangler`](./Enums.md#enum-drmangler) | Enum |  | 1 |
@@ -88,21 +88,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#context-iceageunlocked) | Object | Applies or references the 'IceAgeUnlocked' effect/state. | 1 |
 | [`iceelemental`](./Enums.md#enum-iceelemental) | Enum |  | 1 |
 | [`infestedduo`](./Enums.md#enum-infestedduo) | Enum |  | 1 |
-| `junkyard` | Object |  | 1 |
+| [`junkyard`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#context-junkyardunlocked) | Object | Applies or references the 'JunkyardUnlocked' effect/state. | 1 |
 | [`jurassic`](./Map_Generation_and_Routing.md#context-jurassic) | Object |  | 1 |
 | [`JurassicUnlocked`](./Map_Generation_and_Routing.md#context-jurassicunlocked) | Object | Applies or references the 'JurassicUnlocked' effect/state. | 1 |
-| `lab` | Object |  | 1 |
+| [`lab`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`lenny`](./Enums.md#enum-lenny) | Enum |  | 1 |
 | [`lightningelemental`](./Enums.md#enum-lightningelemental) | Enum |  | 1 |
 | `locked` | Boolean |  | 1 |
 | [`magecat`](./Enums.md#enum-magecat) | Enum |  | 1 |
 | [`mamamaggot`](./Enums.md#enum-mamamaggot) | Enum |  | 1 |
-| `meatworld` | Object |  | 1 |
+| [`meatworld`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull) | Object | Applies or references the 'MeatWorldUnlockedFull' effect/state. | 1 |
 | [`miniboss_event`](./Map_Generation_and_Routing.md#context-miniboss_event) | Object |  | 1 |
 | [`monkcat`](./Enums.md#enum-monkcat) | Enum |  | 1 |
-| `moon` | Object |  | 1 |
+| [`moon`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#context-moonobeliskunlocked) | Object | Applies or references the 'MoonObeliskUnlocked' effect/state. | 1 |
 | [`MoonUnlocked`](./Map_Generation_and_Routing.md#context-moonunlocked) | Object | Applies or references the 'MoonUnlocked' effect/state. | 1 |
 | [`musiclayer`](./Enums.md#enum-musiclayer) | Enum |  | 1 |
@@ -123,7 +123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ratking`](./Enums.md#enum-ratking) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
 | [`rockybobo`](./Enums.md#enum-rockybobo) | Enum |  | 1 |
-| `sewers` | Object |  | 1 |
+| [`sewers`](./Engine_EventKeys.md#valid-property-keys) | Object |  | 1 |
 | [`SewersUnlocked`](./Map_Generation_and_Routing.md#context-sewersunlocked) | Object | Applies or references the 'SewersUnlocked' effect/state. | 1 |
 | [`shop_cheapwater`](./Map_Generation_and_Routing.md#context-shop_cheapwater) | Object |  | 1 |
 | [`shop_water`](./Map_Generation_and_Routing.md#context-shop_water) | Object |  | 1 |
@@ -144,15 +144,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`WallOfFleshDone`](./Map_Generation_and_Routing.md#context-walloffleshdone) | Object | Applies or references the 'WallOfFleshDone' effect/state. | 1 |
 | [`weather_event`](./Map_Generation_and_Routing.md#context-weather_event) | Object |  | 1 |
 | [`zodiac`](./Enums.md#enum-zodiac) | Enum |  | 1 |
-| `battle` | `Block` | | Field Key | Inferred Type | Example Values | Definition | | :--- | :--- | :--- | :--- | | `type` | Enum/String | `battle` | Classification type. | | 0 |
-| `rare` | `Array` |  | 0 |
+| [`battle`](./Map_Generation_and_Routing.md#object-battle) | Object | | Field Key | Inferred Type | Example Values | Definition | | :--- | :--- | :--- | :--- | | `type` | Enum/String | `battle` | Classification type. | | 0 |
+| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
 
 </details>
 
 ---
 
 ### Object: `boss`
-### Object: `boss`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -175,7 +175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `exit0`
-### Object: `exit0`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -196,7 +196,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `quest_event`
-### Object: `quest_event`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -215,7 +215,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `exit1`
-### Object: `exit1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -235,7 +235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `hard_initial`
-### Object: `hard_initial`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -253,7 +253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `time_machine`
-### Object: `time_machine`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -272,7 +272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BothObelisksUnlocked`
-### Object: `BothObelisksUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -289,7 +289,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DimensionXUnlocked`
-### Object: `DimensionXUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -306,7 +306,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `EndOfTimeUnlocked`
-### Object: `EndOfTimeUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -323,7 +323,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HardPathUnlocked`
-### Object: `HardPathUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -340,7 +340,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MeatWorldUnlocked`
-### Object: `MeatWorldUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -358,7 +358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `VolcanoAntennaAttached`
-### Object: `VolcanoAntennaAttached`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -375,7 +375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `miniboss_event`
-### Object: `miniboss_event`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -393,7 +393,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_battle1`
-### Object: `mw_battle1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -411,7 +411,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_boss`
-### Object: `mw_boss`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -431,7 +431,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_earlyhome`
-### Object: `mw_earlyhome`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -449,7 +449,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_event1`
-### Object: `mw_event1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -467,7 +467,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_hard1`
-### Object: `mw_hard1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -486,7 +486,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_home`
-### Object: `mw_home`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -504,7 +504,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_quest_event`
-### Object: `mw_quest_event`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -524,7 +524,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_treasure`
-### Object: `mw_treasure`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -542,7 +542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BoneyardUnlocked`
-### Object: `BoneyardUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -559,7 +559,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BunkerUnlocked`
-### Object: `BunkerUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -576,7 +576,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CavesUnlocked`
-### Object: `CavesUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -593,7 +593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChaosAntennaAttached`
-### Object: `ChaosAntennaAttached`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -610,7 +610,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CoreObeliskUnlocked`
-### Object: `CoreObeliskUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -627,7 +627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CoreUnlocked`
-### Object: `CoreUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -644,7 +644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CraterUnlocked`
-### Object: `CraterUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -661,7 +661,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FutureUnlocked`
-### Object: `FutureUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -678,7 +678,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `GenFlag_Boss_Spewer`
-### Object: `GenFlag_Boss_Spewer`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -695,7 +695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `GenFlag_Boss_Stacy`
-### Object: `GenFlag_Boss_Stacy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -713,7 +713,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `IceAgeUnlocked`
-### Object: `IceAgeUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -730,7 +730,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `JunkyardUnlocked`
-### Object: `JunkyardUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -747,7 +747,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `JurassicUnlocked`
-### Object: `JurassicUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -764,7 +764,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MeatWorldUnlockedFull`
-### Object: `MeatWorldUnlockedFull`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -788,7 +788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoonObeliskUnlocked`
-### Object: `MoonObeliskUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -805,7 +805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoonUnlocked`
-### Object: `MoonUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -822,7 +822,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SewersUnlocked`
-### Object: `SewersUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -839,7 +839,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TheEndUnlocked`
-### Object: `TheEndUnlocked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -856,7 +856,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ThrobbingArteryDone`
-### Object: `ThrobbingArteryDone`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -873,7 +873,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `WallOfFleshDone`
-### Object: `WallOfFleshDone`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -890,7 +890,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `battle`
-### Object: `battle`
+
+> **Definition:** | Field Key | Inferred Type | Example Values | Definition | | :--- | :--- | :--- | :--- | | `type` | Enum/String | `battle` | Classification type. |
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -907,7 +910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `dimensionx`
-### Object: `dimensionx`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -924,7 +927,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `endoftime`
-### Object: `endoftime`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -941,7 +944,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `event`
-### Object: `event`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -959,7 +962,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `exit_desert`
-### Object: `exit_desert`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -980,7 +983,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `exit_lab`
-### Object: `exit_lab`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1001,7 +1004,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `future`
-### Object: `future`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1018,7 +1021,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `home`
-### Object: `home`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1035,7 +1038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `iceage`
-### Object: `iceage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1052,7 +1055,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `jurassic`
-### Object: `jurassic`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1069,7 +1072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `mw_altar`
-### Object: `mw_altar`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1088,7 +1091,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `shop_cheapwater`
-### Object: `shop_cheapwater`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1107,7 +1110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `shop_water`
-### Object: `shop_water`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1126,7 +1129,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `start`
-### Object: `start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1143,7 +1146,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `theend`
-### Object: `theend`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1160,7 +1163,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `treasure`
-### Object: `treasure`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1178,7 +1181,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `weather_event`
-### Object: `weather_event`
+
 <details>
 <summary><b>Expand</b></summary>
 

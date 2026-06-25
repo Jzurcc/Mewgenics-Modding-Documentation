@@ -27,7 +27,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 87 |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 82 |
 | [`SpawnOnDeath`](./Enums.md#enum-spawnondeath) | Object | Event Trigger: Spawns a specific entity when killed. | 81 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 76 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 76 |
 | [`MeleeRevengeDamage`](#meleerevengedamage) | Object | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 71 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies or references the 'Fear' effect/state. | 59 |
 | [`StatusEachTurnEnd`](#statuseachturnend) | Object | Applies or references the 'StatusEachTurnEnd' effect/state. | 57 |
@@ -37,9 +37,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 52 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 48 |
 | `Robot` | Integer | Character Form: Behavior and stats for the 'Robot' state. | 48 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 48 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 48 |
 | [`StatusOnTookDamage`](#statusontookdamage) | Object | Event Trigger: Applies nested statuses when took damage. | 46 |
-| `RandomArmorPickup` | 1 | Applies or references the 'RandomArmorPickup' effect/state. | 43 |
+| `RandomArmorPickup` | Number | Applies or references the 'RandomArmorPickup' effect/state. | 43 |
 | [`StatusOnKill`](#statusonkill) | Object | Event Trigger: Applies statuses when this action occurs. | 40 |
 | [`SpawnThingOnDamage`](#spawnthingondamage) | Object | Applies or references the 'SpawnThingOnDamage' effect/state. | 38 |
 | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 38 |
@@ -59,7 +59,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum | Applies the 'MulticlassLevelUp' effect. | 28 |
 | [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 27 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 27 |
-| `Fire` | 2 | Character Form: Behavior and stats for the 'Fire' state. | 26 |
+| `Fire` | Object | Character Form: Behavior and stats for the 'Fire' state. | 26 |
 | [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Enum | Reaction: Executes an ability instantly, interrupting the current sequence. | 26 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 26 |
 | [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum | AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage). | 25 |
@@ -115,7 +115,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ReplaceSpawnedObjects`](./Arrays.md#array-replacespawnedobjects) | Array | Applies or references the 'ReplaceSpawnedObjects' effect/state. | 15 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 15 |
 | `AddLevelUpRerolls` | Integer | Applies or references the 'AddLevelUpRerolls' effect/state. | 14 |
-| `Antidote` | 2 | Applies or references the 'Antidote' effect/state. | 14 |
+| `Antidote` | Mixed | Applies or references the 'Antidote' effect/state. | 14 |
 | `Flying` | Integer | Applies or references the 'Flying' effect/state. | 14 |
 | [`MoveQuivered`](./Arrays.md#array-movequivered) | Number | Applies or references the 'MoveQuivered' effect/state. | 14 |
 | [`PassiveGroup`](#passivegroup) | Object | Passive: A collection of passives grouped together for easier management. | 14 |
@@ -160,11 +160,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CoinPickup` | Integer | Applies or references the 'CoinPickup' effect/state. | 10 |
 | [`DepressionAura`](#depressionaura) | Object | Examples: `1` | 10 |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 10 |
-| `Electric` | 1 | Examples: `{ ... }` | 10 |
+| `Electric` | Object | Examples: `{ ... }` | 10 |
 | `ExtraWeaponAttacks` | Integer | Applies the 'ExtraWeaponAttacks' effect. | 10 |
 | `FadeInsteadOfDie` | Integer | Applies or references the 'FadeInsteadOfDie' effect/state. | 10 |
 | [`GainCoins`](./Arrays.md#array-gaincoins) | Integer | Applies or references the 'GainCoins' effect/state. | 10 |
-| `Ice` | 1 | Examples: `{ ... }` | 10 |
+| `Ice` | Object | Examples: `{ ... }` | 10 |
 | `IncreaseExplosionDamage` | Integer | Applies the 'IncreaseExplosionDamage' effect. | 10 |
 | `KnockbackImmunity` | Integer | Applies the 'KnockbackImmunity' effect. | 10 |
 | `LimitDamage` | Integer | Applies or references the 'LimitDamage' effect/state. | 10 |
@@ -286,12 +286,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum | Examples: `food, catnip` | 5 |
 | [`CatchProjectiles`](#catchprojectiles) | Object | Applies or references the 'CatchProjectiles' effect/state. | 5 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 5 |
-| [`Colorless`](./Arrays.md#array-colorless) | 2 | Applies or references the 'Colorless' effect/state. | 5 |
+| [`Colorless`](./Arrays.md#array-colorless) | Object | Applies or references the 'Colorless' effect/state. | 5 |
 | `DamageOrHealConditionally` | Number | Applies or references the 'DamageOrHealConditionally' effect/state. | 5 |
 | [`DisableAbilitiesWithTag`](./Enums.md#enum-disableabilitieswithtag) | Enum | Examples: `musical, consumable` | 5 |
 | [`ElementalManaCostReduction`](#elementalmanacostreduction) | Object | Applies the 'ElementalManaCostReduction' effect. | 5 |
 | [`ExtraStatusWhenDealingDamage`](#extrastatuswhendealingdamage) | Object | Applies or references the 'ExtraStatusWhenDealingDamage' effect/state. | 5 |
-| `Food` | 2 | Applies or references the 'Food' effect/state. | 5 |
+| `Food` | Object | Applies or references the 'Food' effect/state. | 5 |
 | `HeadArmorPassiveMultiplierBonus` | Integer | Applies or references the 'HeadArmorPassiveMultiplierBonus' effect/state. | 5 |
 | `MakeSpellsRequireCharge` | Integer | Applies the 'MakeSpellsRequireCharge' effect. | 5 |
 | [`MoveTowardsKillers`](./Enums.md#enum-movetowardskillers) | Enum | AI Movement: Seeks out entities that have recently killed an ally. | 5 |
@@ -387,7 +387,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `bug` | Variable |  | 4 |
 | `equal` | Variable |  | 4 |
 | [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
 | [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Applies or references the 'AbilityEnableIfConsumedCharacterHasTag' effect/state. | 3 |
 | `AbilityEnabledOncePerRound` | Integer | Applies or references the 'AbilityEnabledOncePerRound' effect/state. | 3 |
 | `AbilityInheritsWeaponEffects` | Integer | Applies or references the 'AbilityInheritsWeaponEffects' effect/state. | 3 |
@@ -415,8 +415,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CharmedTinySpider` | Variable |  | 3 |
 | `CharmedTinyTumor` | Variable |  | 3 |
 | [`CobraReflex`](./Enums.md#enum-cobrareflex) | Enum | Applies the 'CobraReflex' effect. | 3 |
-| `Coin` | 1 | Applies or references the 'Coin' effect/state. | 3 |
-| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional block: Executes nested logic only if the target is/has Adjacent. | 3 |
+| `Coin` | Number | Applies or references the 'Coin' effect/state. | 3 |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional object: Executes nested logic only if the target is/has Adjacent. | 3 |
 | `Conditional_RandomChance` | Object | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 3 |
 | `Conditional_Shielded` | Object | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 3 |
 | `ConsumableEffectsMultiplierBonus` | Integer | Applies the 'ConsumableEffectsMultiplierBonus' effect. | 3 |
@@ -434,13 +434,13 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `FlyDamageIncrease` | Integer | Applies the 'FlyDamageIncrease' effect. | 3 |
 | [`FormChangeHealthThreshold`](#formchangehealththreshold) | Object | Logic: Changes form when health crosses a threshold. | 3 |
 | `GainExtraShield` | Integer | Applies the 'GainExtraShield' effect. | 3 |
-| `Grass` | 1 | Examples: `{ ... }` | 3 |
-| [`Holy`](./Enums.md#enum-holy) | 2 | `MegaGuppy_TransformHoly` | 3 |
+| `Grass` | Object | Examples: `{ ... }` | 3 |
+| [`Holy`](./Enums.md#enum-holy) | Object | `MegaGuppy_TransformHoly` | 3 |
 | `HouseFoodRequirementMultiplier` | Integer | Examples: `0` | 3 |
 | `IllusionTint` | Integer | Applies or references the 'IllusionTint' effect/state. | 3 |
 | [`IncAuxCounterClamped`](#incauxcounterclamped) | Object | Increments a generic auxiliary counter on the character, capped by a maximum value. | 3 |
 | [`InfiniteRebirth`](#infiniterebirth) | Object | Applies the 'InfiniteRebirth' effect. | 3 |
-| [`Jester`](./Arrays.md#array-jester) | 1 | Examples: `[ CAT_VS_BOSS_QUOTES_JESTER_1 CAT_VS_BOSS_QUOTES_JESTER_2..., [ CAT_RETURN_EA...` | 3 |
+| [`Jester`](./Arrays.md#array-jester) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_JESTER_1 CAT_VS_BOSS_QUOTES_JESTER_2..., [ CAT_RETURN_EA...` | 3 |
 | [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Object | Forces the target to drop coins. | 3 |
 | `Lava_Distortion` | Variable |  | 3 |
 | `Lifesteal` | Number | Applies or references the 'Lifesteal' effect/state. | 3 |
@@ -488,7 +488,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `UpgradeSpawnedPickups` | Integer | Applies the 'UpgradeSpawnedPickups' effect. | 3 |
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 3 |
 | `Vegan` | Integer | Examples: `1` | 3 |
-| `Water` | 2 | Character Form: Behavior and stats for the \'Water\' state. | 3 |
+| `Water` | Object | Character Form: Behavior and stats for the \'Water\' state. | 3 |
 | `WeaponDamageMultiplierBonus` | Integer | Applies the 'WeaponDamageMultiplierBonus' effect. | 3 |
 | [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | Applies or references the 'XIsMultipliedPercentHealth' effect/state. | 3 |
 | `any` | Variable |  | 3 |
@@ -563,8 +563,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DeathChill` | Integer | Applies the 'DeathChill' effect. | 2 |
 | `DejaVu` | Integer | Applies the 'DejaVu' effect. | 2 |
 | `DemonicGlyphFrames` | Integer | Applies or references the 'DemonicGlyphFrames' effect/state. | 2 |
-| `DemonicGlyph_Bite` | 1 | Applies or references the 'DemonicGlyph_Bite' effect/state. | 2 |
-| `DemonicGlyph_Summon` | 1 | Applies or references the 'DemonicGlyph_Summon' effect/state. | 2 |
+| `DemonicGlyph_Bite` | Number | Applies or references the 'DemonicGlyph_Bite' effect/state. | 2 |
+| `DemonicGlyph_Summon` | Number | Applies or references the 'DemonicGlyph_Summon' effect/state. | 2 |
 | [`DiesToElement`](./Enums.md#enum-diestoelement) | Enum | Vulnerability: Character dies instantly if hit by this element. | 2 |
 | `DirtyClaws` | Integer | Applies the 'DirtyClaws' effect. | 2 |
 | `DisablePassiveSlot` | Integer | Applies or references the 'DisablePassiveSlot' effect/state. | 2 |
@@ -572,7 +572,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DrinkWater` | Number | Applies or references the 'DrinkWater' effect/state. | 2 |
 | `DukeOfFlies` | Integer | Applies the 'DukeOfFlies' effect. | 2 |
 | [`Dyslexia`](./Arrays.md#array-dyslexia) | Array | Examples: `[ 6 9 ], [ 3 5 ]` | 2 |
-| `Earth` | 1 | Examples: `{ ... }` | 2 |
+| `Earth` | Object | Examples: `{ ... }` | 2 |
 | [`ElementalAttunement`](#elementalattunement) | Object | Applies the 'ElementalAttunement' effect. | 2 |
 | `Empath` | Integer | Applies the 'Empath' effect. | 2 |
 | `EmptyMana` | Integer | Applies the 'EmptyMana' effect. | 2 |
@@ -601,7 +601,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `FullPower` | Integer | Applies the 'FullPower' effect. | 2 |
 | `GlobalManaBurnAura` | Integer | Examples: `-1` | 2 |
 | `GoopWalk` | Integer | Applies or references the 'GoopWalk' effect/state. | 2 |
-| `GrassTile` | 1 | Examples: `80, 15` | 2 |
+| `GrassTile` | Number | Examples: `80, 15` | 2 |
 | `GrassTileHealing` | Integer | Applies the 'GrassTileHealing' effect. | 2 |
 | [`GravityWell`](#gravitywell) | Object | Applies the 'GravityWell' effect. | 2 |
 | `GrenadeExplode` | Variable |  | 2 |
@@ -756,17 +756,17 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `XIsSpellStormRampAndReset` | Integer | Math variable assignment: Evaluates X based on Spell Storm stacks, then resets them. | 2 |
 | `XIsTimesDamageTaken` | Integer | Applies or references the 'XIsTimesDamageTaken' effect/state. | 2 |
 | `Zombie` | Number | Examples: `1` | 2 |
-| `ai` | 23 | Core block defining the AI behavior logic and weights. | 2 |
+| `ai` | Object | Core block defining the AI behavior logic and weights. | 2 |
 | `all_items` | Variable |  | 2 |
-| `consumable` | 4 | `true` | 2 |
-| `euphoric` | 1 | Examples: `{ ... }` | 2 |
+| `consumable` | Number | `true` | 2 |
+| `euphoric` | Object | Examples: `{ ... }` | 2 |
 | `greater` | Variable |  | 2 |
-| `int` | 41 | `aux` | 2 |
-| `lck` | 40 | `aux` | 2 |
+| `int` | Number | `aux` | 2 |
+| `lck` | Number | `aux` | 2 |
 | `musical` | Variable |  | 2 |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | 6 | ``, `Alert`, `Angry`, `Belly`, `Button` | 2 |
-| [`passive0`](./Enums.md#enum-passive0) | 1 | `HotBlooded`, `SelfAssured` | 2 |
-| `red` | 1 | Event Node: Story branch or dialog option representing the \'Red\' action. | 2 |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | String | ``, `Alert`, `Angry`, `Belly`, `Button` | 2 |
+| [`passive0`](./Enums.md#enum-passive0) | Enum | `HotBlooded`, `SelfAssured` | 2 |
+| `red` | Object | Event Object: Story branch or dialog option representing the \'Red\' action. | 2 |
 | `triggers_limit` | Integer | Examples: `1` | 2 |
 | [`AIControlNextTurn`](#aicontrolnextturn) | Object | Applies or references the 'AIControlNextTurn' effect/state. | 1 |
 | `AOEBonus` | Integer | Applies or references the 'AOEBonus' effect/state. | 1 |
@@ -851,7 +851,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BasicTankMelee` | Variable |  | 1 |
 | [`BattlefieldUniqueRandomPassive`](#battlefielduniquerandompassive) | Object | Map Rule: Grants a unique random passive modifier to the battlefield. | 1 |
 | `BigSplashDamage` | Integer | Applies the 'BigSplashDamage' effect. | 1 |
-| `BiggestFood` | 1 | Applies or references the 'BiggestFood' effect/state. | 1 |
+| `BiggestFood` | Number | Applies or references the 'BiggestFood' effect/state. | 1 |
 | `Bionic` | Variable |  | 1 |
 | `BlackHolePassive` | Integer | Applies or references the 'BlackHolePassive' effect/state. | 1 |
 | `BlessingOfPeace` | Integer | Applies or references the 'BlessingOfPeace' effect/state. | 1 |
@@ -913,7 +913,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ChubsRage` | Variable |  | 1 |
 | [`Conditional_Flying`](#conditional_flying) | Object | Examples: `{ ... }` | 1 |
 | [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Conditional constraint. Nested properties only trigger if this is true. | 1 |
-| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Conditional block: Executes nested logic only if the target is/has SourceHasTag. | 1 |
+| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Conditional object: Executes nested logic only if the target is/has SourceHasTag. | 1 |
 | [`Conditional_Tiny`](#conditional_tiny) | Object | Examples: `{ ... }` | 1 |
 | `ConductorManaRegen` | Integer | Applies the 'ConductorManaRegen' effect. | 1 |
 | [`ConfusionEffectOnTaggedAbilities`](./Enums.md#enum-confusioneffectontaggedabilities) | Enum | Applies the 'ConfusionEffectOnTaggedAbilities' effect. | 1 |
@@ -931,9 +931,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DefaultMove` | Variable |  | 1 |
 | `DelayedPain` | Integer | Applies or references the 'DelayedPain' effect/state. | 1 |
 | `DemonicGlyphStealer` | Integer | Applies or references the 'DemonicGlyphStealer' effect/state. | 1 |
-| `DemonicGlyph_Bounce` | 1 | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 |
-| `DemonicGlyph_Fire` | 1 | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 |
-| `DemonicGlyph_Movement` | 1 | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 |
+| `DemonicGlyph_Bounce` | Number | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 |
+| `DemonicGlyph_Fire` | Number | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 |
+| `DemonicGlyph_Movement` | Number | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 |
 | `DestroyerShieldBash` | Variable |  | 1 |
 | [`Diabetes`](#diabetes) | Object | Applies the 'Diabetes' effect. | 1 |
 | [`DiceBehavior`](#dicebehavior) | Object | AI Logic: Custom behavior for Dice enemies. | 1 |
@@ -1028,7 +1028,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `HideSomeHudStuff` | Integer | Applies or references the 'HideSomeHudStuff' effect/state. | 1 |
 | [`HitlerExecute`](#hitlerexecute) | Object | Boss Logic: Specific execution or ultimate attack state. | 1 |
 | `HolyDamageMultiplierBonus` | Integer | Applies the 'HolyDamageMultiplierBonus' effect. | 1 |
-| [`Hunter`](./Arrays.md#array-hunter) | 2 | Applies or references the 'Hunter' effect/state. | 1 |
+| [`Hunter`](./Arrays.md#array-hunter) | Object | Applies or references the 'Hunter' effect/state. | 1 |
 | `Hyde` | Variable |  | 1 |
 | `Hypomania` | Integer | Applies the 'Hypomania' effect. | 1 |
 | `IDSprout` | Variable |  | 1 |
@@ -1047,7 +1047,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `LimitSelfKnockbackDamage` | Integer | Applies the 'LimitSelfKnockbackDamage' effect. | 1 |
 | [`LimitedTileTrail`](./Enums.md#enum-limitedtiletrail) | Enum | Applies the 'LimitedTileTrail' effect. | 1 |
 | [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | Applies or references the 'LockOrientationFaceTile' effect/state. | 1 |
-| `Lucky` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon | 1 |
+| `Lucky` | Enum | data/boss_elite_buffs.gon, data/elite_buffs.gon | 1 |
 | [`ManaGainRange`](#managainrange) | Object | Applies or references the 'ManaGainRange' effect/state. | 1 |
 | `ManglerEnrage` | Variable |  | 1 |
 | `ManglerMonsterDashAttack` | Variable |  | 1 |
@@ -1056,7 +1056,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MaxAccuracy` | Integer | Applies the 'MaxAccuracy' effect. | 1 |
 | `MaxStartingMana` | Integer | Applies the 'MaxStartingMana' effect. | 1 |
 | `MechExplode` | Variable |  | 1 |
-| [`Medic`](./Arrays.md#array-medic) | 2 | Applies or references the 'Medic' effect/state. | 1 |
+| [`Medic`](./Arrays.md#array-medic) | Object | Applies or references the 'Medic' effect/state. | 1 |
 | [`MegaDinoDropController`](#megadinodropcontroller) | Object | Boss Logic: Manages loot drops for the Mega Dino. | 1 |
 | `MegaFart` | Variable |  | 1 |
 | `MegaGuppy_SummonTheChild` | Variable |  | 1 |
@@ -1235,7 +1235,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ThornUp` | Variable |  | 1 |
 | `ThrobbingKing2` | Variable |  | 1 |
 | [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum | Applies or references the 'TileElementDamageImmunity' effect/state. | 1 |
-| [`Tinkerer`](./Arrays.md#array-tinkerer) | 2 | Applies or references the 'Tinkerer' effect/state. | 1 |
+| [`Tinkerer`](./Arrays.md#array-tinkerer) | Object | Applies or references the 'Tinkerer' effect/state. | 1 |
 | [`TintItem`](#tintitem) | Object | Applies or references the 'TintItem' effect/state. | 1 |
 | `TireBehavior` | Integer | Applies or references the 'TireBehavior' effect/state. | 1 |
 | `TormentorHeal` | Integer | Applies or references the 'TormentorHeal' effect/state. | 1 |
@@ -1254,7 +1254,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TunnelVision`](#tunnelvision) | Object | Applies or references the 'TunnelVision' effect/state. | 1 |
 | `TutorialBossRiggedFight` | Integer | Applies or references the 'TutorialBossRiggedFight' effect/state. | 1 |
 | [`TwisterFling`](#twisterfling) | Object | Logic: Fling behavior for tornado attacks. | 1 |
-| `Twister_loop` | 1 |  | 1 |
+| `Twister_loop` | Enum |  | 1 |
 | `UFO_BigExplode` | Variable |  | 1 |
 | `UltraSmough` | Variable |  | 1 |
 | `UncappedHPBonusStr` | Integer | Applies the 'UncappedHPBonusStr' effect. | 1 |
@@ -1267,7 +1267,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Wet` | Integer | Applies or references the 'Wet' effect/state. | 1 |
 | [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | Applies or references the 'WhitelistPickupType' effect/state. | 1 |
 | `WideBackstab` | Integer | Applies or references the 'WideBackstab' effect/state. | 1 |
-| `Wind` | 1 | Examples: `{ ... }` | 1 |
+| `Wind` | Object | Examples: `{ ... }` | 1 |
 | `WispDodge` | Integer | Applies or references the 'WispDodge' effect/state. | 1 |
 | `WobblyCat` | Integer | Applies the 'WobblyCat' effect. | 1 |
 | `Wood` | Variable |  | 1 |
@@ -1280,7 +1280,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `XIsRecycleCostReduction` | Integer | Applies or references the 'XIsRecycleCostReduction' effect/state. | 1 |
 | `ZeroKnockbackDamage` | Integer | Applies or references the 'ZeroKnockbackDamage' effect/state. | 1 |
 | `all_spells` | Variable |  | 1 |
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | 8 | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` | 1 |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | String | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` | 1 |
 | `choose_favorite_cat` | Variable |  | 1 |
 | [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 1 |
 | `end_of_round` | Boolean | `true` | 1 |
@@ -1290,10 +1290,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `face_LeechBrood` | Variable |  | 1 |
 | `fetus` | Variable |  | 1 |
 | `grub_familiar` | Variable |  | 1 |
-| `insane` | 1 | Examples: `{ ... }` | 1 |
+| `insane` | Object | Examples: `{ ... }` | 1 |
 | `meat` | Variable |  | 1 |
-| [`move`](./Arrays.md#array-move) | 25 | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 1 |
-| [`neck`](./Enums.md#enum-neck) | 4 | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` | 1 |
+| [`move`](./Arrays.md#array-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 1 |
+| [`neck`](./Enums.md#enum-neck) | Enum | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` | 1 |
 | `neck_NukeBonus` | Variable |  | 1 |
 | `neck_NukeExplode` | Variable |  | 1 |
 | `pickup` | Variable |  | 1 |
@@ -1307,9 +1307,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 
 </details>
 
-### Valid Nested Blocks
+### Valid Nested Objects
 
-The following blocks all behave as `{Status and Passive Keys}` containers. Each has its own unique parameters listed below its entry.
+The following objects all behave as `{Status and Passive Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -1322,7 +1322,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1338,7 +1338,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1353,7 +1353,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1414,7 +1414,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 2 |
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1429,7 +1429,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1446,7 +1446,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 6 |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
   | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
 
 </details>
@@ -1511,7 +1511,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1526,7 +1526,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1541,7 +1541,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1556,7 +1556,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1572,7 +1572,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Integer | Quantity. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1589,7 +1589,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | `ally_chance` | Integer | Examples: `15, 100` | 5 |
 | [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 5 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1606,7 +1606,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 8 |
 | [`Conditional_Flying`](#conditional_flying) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1622,7 +1622,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1659,7 +1659,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 10 |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
   | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
   | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
   | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
@@ -1680,7 +1680,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | [`passives`](#passives) | Object | Passives granted by equipping this. | 4 |
 | `stacks` | Integer | Number of stacks or intensity to apply. | 4 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1698,7 +1698,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 9 |
 | [`passives`](#passives) | Object | Passives granted by equipping this. | 9 |
 | `threshold` | Integer | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 9 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1716,7 +1716,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 13 |
 | [`passives`](#passives) | Object | Examples: `{ ... }` | 13 |
 | [`threshold`](#threshold) | Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 13 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1731,7 +1731,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1748,7 +1748,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 18 |
 | [`passives`](#passives) | Object | Examples: `{ ... }` | 18 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1763,7 +1763,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1796,9 +1796,9 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](#passives) | Object | Block listing intrinsic passive modifiers. | 6 |
+| [`passives`](#passives) | Object | Object listing intrinsic passive modifiers. | 6 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 6 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1813,7 +1813,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1828,7 +1828,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1843,7 +1843,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1863,7 +1863,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 5 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 3 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1878,7 +1878,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1894,7 +1894,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `stacks` | Integer | Number of stacks or intensity to apply. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1912,7 +1912,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 2 |
 | [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 1 |
 | [`Conditional_Tiny`](#conditional_tiny) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1944,7 +1944,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1960,7 +1960,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `triggers_limit` | Integer | Examples: `1` | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1975,7 +1975,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1992,7 +1992,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 5 |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2011,7 +2011,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 1 |
 | [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 |
 | [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2026,7 +2026,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2042,7 +2042,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `stacks` | Integer | Number of stacks or intensity to apply. | 8 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2057,7 +2057,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2072,7 +2072,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2121,7 +2121,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2140,7 +2140,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 6 |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
 | [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2155,7 +2155,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2170,7 +2170,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2185,7 +2185,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2200,7 +2200,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2215,7 +2215,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2231,7 +2231,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2246,7 +2246,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2300,7 +2300,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2315,7 +2315,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2332,7 +2332,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 4 |
 | [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Object | Nested conditional. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
   | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 0 |
   | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 0 |
   | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 0 |
@@ -2355,7 +2355,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2370,7 +2370,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2385,7 +2385,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2402,7 +2402,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2417,7 +2417,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2432,7 +2432,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2448,7 +2448,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Integer | Quantity. | 7 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2463,7 +2463,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2480,7 +2480,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | :--- | :--- | :--- | :--- |
 | `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 |
 | `end_of_round` | Boolean | `true` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2495,7 +2495,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2511,7 +2511,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2526,7 +2526,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2541,7 +2541,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2557,7 +2557,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2572,7 +2572,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2587,7 +2587,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2602,7 +2602,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2617,7 +2617,7 @@ The following blocks all behave as `{Status and Passive Keys}` containers. Each 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 

@@ -20,9 +20,9 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 106 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 95 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 84 |
-| [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 76 |
+| [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 76 |
 | `IgnoreSelf` | Integer | Applies or references the 'IgnoreSelf' effect/state. | 75 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 72 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 72 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 62 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 59 |
 | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 53 |
@@ -31,7 +31,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 49 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 48 |
 | [`ApplyToSource`](#applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 47 |
-| `Temporary` | Object | A wrapper block for applying status effects that automatically expire. | 46 |
+| `Temporary` | Object | A wrapper object for applying status effects that automatically expire. | 46 |
 | [`Conditional_HasTag`](#conditionalhastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 42 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 40 |
 | [`Conditional_Enemy`](#conditionalenemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 38 |
@@ -61,7 +61,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 21 |
 | [`Sleep`](./Arrays.md#array-sleep) | Array | Applies or references the 'Sleep' effect/state. | 21 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 21 |
-| [`Consumed`](#consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 18 |
+| [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 18 |
 | `VaporizeCorpse` | Integer | Applies or references the 'VaporizeCorpse' effect/state. | 18 |
 | `CollectsPickups` | Integer | Applies or references the 'CollectsPickups' effect/state. | 17 |
 | [`Conditional_Boss`](#conditionalboss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 17 |
@@ -73,7 +73,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. | 16 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 16 |
 | [`ApplyToSourceOnKill`](#applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 15 |
-| [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 15 |
+| [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 15 |
 | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 15 |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 15 |
 | `FaceAway` | Number | Applies or references the 'FaceAway' effect/state. | 15 |
@@ -92,7 +92,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Marked`](./Arrays.md#array-marked) | Array | Applies or references the 'Marked' effect/state. | 13 |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Applies or references the 'VisualFX' effect/state. | 13 |
 | `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 12 |
-| [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 12 |
+| [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |
 | `Displace` | Integer | Applies or references the 'Displace' effect/state. | 12 |
 | `instant` | Boolean | Examples: `true` | 12 |
 | [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 12 |
@@ -192,15 +192,15 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`SpecificInjury`](./Enums.md#enum-specificinjury) | Enum | Applies or references the 'SpecificInjury' effect/state. | 5 |
 | [`Stealth`](./Arrays.md#array-stealth) | Number | Applies or references the 'Stealth' effect/state. | 5 |
 | `UpgradeRandomAbility` | Integer | Applies or references the 'UpgradeRandomAbility' effect/state. | 5 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
 | [`ApplyToConsumed`](#applytoconsumed) | Object | Redirects the nested effects to apply to the entity that just consumed this object. | 4 |
 | [`ArcLightning`](#arclightning) | Object | Executes a chain-lightning logic block that bounces between targets. | 4 |
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array | Applies or references the 'BurgleCoin' effect/state. | 4 |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 4 |
 | [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional constraint. Nested properties only trigger if this is true. | 4 |
 | [`Conditional_Familiar`](#conditional_familiar) | Object | Conditional trigger: Executes nested logic if the target is a familiar. | 4 |
-| [`Default`](./Enums.md#enum-default) | 9 | `release` | 4 |
+| [`Default`](./Enums.md#enum-default) | Enum | `release` | 4 |
 | `DeleteObject` | Integer | Applies or references the 'DeleteObject' effect/state. | 4 |
 | `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. | 4 |
 | `DieViolently` | Integer | Applies or references the 'DieViolently' effect/state. | 4 |
@@ -225,7 +225,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Windy` | Integer | Examples: `{ ... }` | 4 |
 | `moonhand` | Variable |  | 4 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 3 |
-| [`ApplyMultipleTimes`](#applymultipletimes) | Object | A loop block that executes its nested logic multiple times. | 3 |
+| [`ApplyMultipleTimes`](#applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 3 |
 | `Attraction` | Integer | Applies or references the 'Attraction' effect/state. | 3 |
 | `BlackShard` | Variable |  | 3 |
 | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. | 3 |
@@ -277,7 +277,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 | [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
-| `poop` | 1 | Event Node: Story branch or dialog option representing the \'Poop\' action. | 3 |
+| `poop` | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 3 |
 | `AddLeechesStatus` | Integer | Applies or references the 'AddLeechesStatus' effect/state. | 2 |
 | `AddSpiritBombCharges` | Integer | Applies or references the 'AddSpiritBombCharges' effect/state. | 2 |
 | [`ApplyToRandomPartyMemberIfPossible`](#applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 |
@@ -336,7 +336,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Math`](#math) | Object | Triggers the Tinkerer's Math ability sequence. | 2 |
 | `MaxHPUp` | Integer | Applies or references the 'MaxHPUp' effect/state. | 2 |
 | `NextAttackSpecialCrit` | Integer | Modifies the character's next attack to have special critical properties. | 2 |
-| `OffMap` | 3 | Character Form: Behavior and stats for the 'OffMap' state. | 2 |
+| `OffMap` | Object | Character Form: Behavior and stats for the 'OffMap' state. | 2 |
 | `OilTile` | Variable |  | 2 |
 | `Ostracized` | Number | Applies or references the 'Ostracized' effect/state. | 2 |
 | [`OverHealToStatuses`](#overhealtostatuses) | Object | Converts excessive healing beyond maximum health into specific status effects. | 2 |
@@ -346,7 +346,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Pilfer` | Variable |  | 2 |
 | `Possessed` | Number | Applies or references the 'Possessed' effect/state. | 2 |
 | `PullSourceToKnockbackImmuneTarget` | Number | Applies or references the 'PullSourceToKnockbackImmuneTarget' effect/state. | 2 |
-| `Pulp2` | 1 | Character Form: Behavior and stats for the 'Pulp2' state. | 2 |
+| `Pulp2` | Object | Character Form: Behavior and stats for the 'Pulp2' state. | 2 |
 | [`QuakeAreaChance`](#quakeareachance) | Object | Provides a probability to trigger an earthquake Area of Effect. | 2 |
 | `RandomDistanceDisplace` | Integer | Displaces the target by a randomized distance. | 2 |
 | [`RandomKnockback`](#randomknockback) | Object | Applies a randomized amount of knockback force. | 2 |
@@ -373,7 +373,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`StatusCharactersOnRoundStart`](#statuscharactersonroundstart) | Object | Examples: `{ ... }` | 2 |
 | `SwallowSmallCharacter` | Integer | Applies or references the 'SwallowSmallCharacter' effect/state. | 2 |
 | [`TakeBonusTurnWithAIControl`](#takebonusturnwithaicontrol) | Object | Grants the character an immediate extra turn, but forces the AI to control them during it. | 2 |
-| `TallGrassTile` | 1 | Examples: `80, 15` | 2 |
+| `TallGrassTile` | Number | Examples: `80, 15` | 2 |
 | `TempCritChanceUp` | Integer | Applies or references the 'TempCritChanceUp' effect/state. | 2 |
 | [`TempDexterityUp`](./Enums.md#enum-tempdexterityup) | Enum | Applies or references the 'TempDexterityUp' effect/state. | 2 |
 | `TempMovement` | Number | Applies or references the 'TempMovement' effect/state. | 2 |
@@ -412,11 +412,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `BerserkDash` | Variable |  | 1 |
 | `BirthSquirrel` | Variable |  | 1 |
 | `BlackHoleSuck` | Integer | Applies or references the 'BlackHoleSuck' effect/state. | 1 |
-| `BlankTile` | 1 | Examples: `5` | 1 |
+| `BlankTile` | Number | Examples: `5` | 1 |
 | `Bloodzerked` | Integer | Applies or references the 'Bloodzerked' effect/state. | 1 |
 | `BombRatTurtle` | Integer | Applies or references the 'BombRatTurtle' effect/state. | 1 |
 | `BonusDamageBasedOnMana` | Integer | Applies or references the 'BonusDamageBasedOnMana' effect/state. | 1 |
-| [`Boris`](./Enums.md#enum-boris) | 1 | `MegaGuppy_TransformBoris` | 1 |
+| [`Boris`](./Enums.md#enum-boris) | Enum | `MegaGuppy_TransformBoris` | 1 |
 | `Boulder` | Variable |  | 1 |
 | `BrambleTile` | Variable |  | 1 |
 | `ButterflySwarm` | Integer | Examples: `2` | 1 |
@@ -472,8 +472,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `DoubleCast` | Integer | Applies or references the 'DoubleCast' effect/state. | 1 |
 | `DoubleCastSpellsEachTurn_Status` | Number | Applies or references the 'DoubleCastSpellsEachTurn_Status' effect/state. | 1 |
 | `DrainAllyCatsForFleshGolem` | Integer | Applies or references the 'DrainAllyCatsForFleshGolem' effect/state. | 1 |
-| [`Druid`](./Arrays.md#array-druid) | 2 | Applies or references the 'Druid' effect/state. | 1 |
-| `DualSword` | 1 | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
+| [`Druid`](./Arrays.md#array-druid) | Object | Applies or references the 'Druid' effect/state. | 1 |
+| `DualSword` | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
 | `DuplicateRandomEquippedItem` | Integer | Applies or references the 'DuplicateRandomEquippedItem' effect/state. | 1 |
 | `DybbukManualExitTag` | Variable |  | 1 |
 | [`DybbukPossessed`](#dybbukpossessed) | Object | Defines the abilities and behaviors available when possessing another entity. | 1 |
@@ -488,10 +488,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ExplodeCharacter_DeathBloom` | Integer | Applies or references the 'ExplodeCharacter_DeathBloom' effect/state. | 1 |
 | `ExplodeCharacter_DeathBloom2` | Integer | Applies or references the 'ExplodeCharacter_DeathBloom2' effect/state. | 1 |
 | `ExplodeCharacter_Party` | Integer | Applies or references the 'ExplodeCharacter_Party' effect/state. | 1 |
-| [`Explosive`](./Enums.md#enum-explosive) | 1 | `MegaGuppy_TransformExplosive` | 1 |
+| [`Explosive`](./Enums.md#enum-explosive) | Enum | `MegaGuppy_TransformExplosive` | 1 |
 | `FactionDisguiseSource` | Integer | Applies or references the 'FactionDisguiseSource' effect/state. | 1 |
 | `FastKnockback` | Integer | Applies or references the 'FastKnockback' effect/state. | 1 |
-| [`Fighter`](./Arrays.md#array-fighter) | 2 | Applies or references the 'Fighter' effect/state. | 1 |
+| [`Fighter`](./Arrays.md#array-fighter) | Object | Applies or references the 'Fighter' effect/state. | 1 |
 | `FinalBossQueueBeam` | Integer | Applies or references the 'FinalBossQueueBeam' effect/state. | 1 |
 | `FireArmor` | Integer | Applies or references the 'FireArmor' effect/state. | 1 |
 | `FireArmor2` | Integer | Applies or references the 'FireArmor2' effect/state. | 1 |
@@ -509,8 +509,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `GlassTile` | Variable |  | 1 |
 | `GlobalHealthRegenAura` | Integer | Examples: `3` | 1 |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
-| `Grown` | 1 | Character Form: Behavior and stats for the \'Grown\' state. | 1 |
-| `HalfDead` | 1 | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 |
+| `Grown` | Object | Character Form: Behavior and stats for the \'Grown\' state. | 1 |
+| `HalfDead` | Object | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 |
 | `HardenSkin` | Variable |  | 1 |
 | `HardenSkin2` | Variable |  | 1 |
 | `HeadTumor` | Variable |  | 1 |
@@ -524,7 +524,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`IncAuxCounterCycle`](#incauxcountercycle) | Object | Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum. | 1 |
 | `IncreaseCumulativeBlastDamage` | Integer | Applies or references the 'IncreaseCumulativeBlastDamage' effect/state. | 1 |
 | `IncreaseItemAuxOnKill` | Integer | Applies or references the 'IncreaseItemAuxOnKill' effect/state. | 1 |
-| `Infested` | 1 | data/elite_buffs.gon | 1 |
+| `Infested` | Number | data/elite_buffs.gon | 1 |
 | `InterchangeMoveActPoints` | Integer | Applies or references the 'InterchangeMoveActPoints' effect/state. | 1 |
 | `Invulnerable` | Integer | Applies or references the 'Invulnerable' effect/state. | 1 |
 | `JesterMinusColorless` | Variable |  | 1 |
@@ -548,7 +548,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `MimicMetronome` | Integer | Applies or references the 'MimicMetronome' effect/state. | 1 |
 | `MockSong` | Variable |  | 1 |
 | `MockSong2` | Variable |  | 1 |
-| [`Monk`](./Arrays.md#array-monk) | 2 | Applies or references the 'Monk' effect/state. | 1 |
+| [`Monk`](./Arrays.md#array-monk) | Object | Applies or references the 'Monk' effect/state. | 1 |
 | `MonkeyThrow` | Variable |  | 1 |
 | `MonkeyThrow2` | Variable |  | 1 |
 | `MoonHandDrop` | Variable |  | 1 |
@@ -562,8 +562,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `NextDamageReduceAndHealAllies` | Integer | Applies or references the 'NextDamageReduceAndHealAllies' effect/state. | 1 |
 | `NextTurnDoubleRangedDamage` | Integer | Applies or references the 'NextTurnDoubleRangedDamage' effect/state. | 1 |
 | `NoDeathrattle` | Variable |  | 1 |
-| `Normal` | 223 | Character Form: Behavior and stats for the \'Normal\' state. | 1 |
-| `Nuke` | 1 | Character Form: Behavior and stats for the 'Nuke' state. | 1 |
+| `Normal` | Number | Character Form: Behavior and stats for the \'Normal\' state. | 1 |
+| `Nuke` | Object | Character Form: Behavior and stats for the 'Nuke' state. | 1 |
 | [`ObjectOnHitFullyEmpty`](./Enums.md#enum-objectonhitfullyempty) | Enum | Applies or references the 'ObjectOnHitFullyEmpty' effect/state. | 1 |
 | `OverHealToShield` | Integer | Applies or references the 'OverHealToShield' effect/state. | 1 |
 | `OverrideChainKnockbackDamage` | Equation | Applies or references the 'OverrideChainKnockbackDamage' effect/state. | 1 |
@@ -604,10 +604,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ShortCircuit` | Integer | Applies or references the 'ShortCircuit' effect/state. | 1 |
 | [`ShowFakeDamage`](#showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 1 |
 | `SleepParalysis` | Variable |  | 1 |
-| `Small` | 2 | Character Form: Behavior and stats for the \'Small\' state. | 1 |
+| `Small` | Object | Character Form: Behavior and stats for the \'Small\' state. | 1 |
 | `SmallHitExplosion` | Integer | Applies or references the 'SmallHitExplosion' effect/state. | 1 |
-| `SmallHolding` | 1 | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
-| `SmallHoldingCat` | 1 | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
+| `SmallHolding` | Object | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
+| `SmallHoldingCat` | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
 | `SmellBlood` | Integer | Applies or references the 'SmellBlood' effect/state. | 1 |
 | [`SolarFlare`](#solarflare) | Object | Examples: `{ ... }` | 1 |
 | [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Applies or references the 'SoundEventOnHit' effect/state. | 1 |
@@ -618,10 +618,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `SpellShield` | Integer | Applies or references the 'SpellShield' effect/state. | 1 |
 | `SpitConsumed` | Integer | Applies or references the 'SpitConsumed' effect/state. | 1 |
 | `SplashDamage` | Number | Applies or references the 'SplashDamage' effect/state. | 1 |
-| `SquirrelForm` | 2 | Character Form: Behavior and stats for the 'SquirrelForm' state. | 1 |
+| `SquirrelForm` | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 1 |
 | `StackingSandstorm` | Number | Applies or references the 'StackingSandstorm' effect/state. | 1 |
 | `StanceSwitchToRanged` | Integer | Applies or references the 'StanceSwitchToRanged' effect/state. | 1 |
-| `Standing` | 1 | Character Form: Behavior and stats for the 'Standing' state. | 1 |
+| `Standing` | Object | Character Form: Behavior and stats for the 'Standing' state. | 1 |
 | `StatBounty` | Integer | Applies or references the 'StatBounty' effect/state. | 1 |
 | `StealDemonicGlyph` | Integer | Applies or references the 'StealDemonicGlyph' effect/state. | 1 |
 | [`StealEquipment`](./Enums.md#enum-stealequipment) | Enum | Applies or references the 'StealEquipment' effect/state. | 1 |
@@ -697,7 +697,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `chapter_corpse_medium` | Variable |  | 1 |
 | `cm_RaptorEggSpawn` | Variable |  | 1 |
 | `container` | Variable |  | 1 |
-| `deferred` | 1 | `true` | 1 |
+| `deferred` | Boolean | `true` | 1 |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
 | `flip` | Variable |  | 1 |
 | `ghost` | Variable |  | 1 |
@@ -717,9 +717,9 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 
 </details>
 
-### Valid Nested Blocks
+### Valid Nested Objects
 
-The following blocks all behave as `{Logic Keys}` containers. Each has its own unique parameters listed below its entry.
+The following objects all behave as `{Logic Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -732,8 +732,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -748,7 +748,7 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -763,7 +763,7 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -778,9 +778,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -795,10 +795,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -813,10 +813,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 | [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -831,10 +831,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -849,8 +849,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -865,9 +865,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`odds`](./Enums.md#enum-odds) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -882,9 +882,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 6 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -899,8 +899,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -915,9 +915,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -932,8 +932,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -948,9 +948,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -965,9 +965,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of applying the debuff. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -982,8 +982,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -998,8 +998,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1014,11 +1014,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 3 |
 | [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 2 |
 | [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1033,8 +1033,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1049,9 +1049,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1066,9 +1066,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1083,10 +1083,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1101,8 +1101,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1117,9 +1117,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 20 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1134,12 +1134,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 46 |
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 6 |
 | [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 4 |
 | [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1154,12 +1154,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 5 |
 | `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
 | [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Object | Nested conditional. | 1 |
 | [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1174,9 +1174,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1191,8 +1191,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1207,8 +1207,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1223,8 +1223,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1239,8 +1239,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1255,8 +1255,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1271,9 +1271,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1288,8 +1288,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1304,8 +1304,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1320,10 +1320,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 2 |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1338,8 +1338,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1354,8 +1354,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1370,9 +1370,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1387,9 +1387,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1404,9 +1404,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_IsSelf`](#conditional_isself) | Object | Nested conditional. | 3 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
   | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
   | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
 
@@ -1423,8 +1423,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1439,9 +1439,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 4 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1456,8 +1456,8 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1472,9 +1472,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1489,9 +1489,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1506,10 +1506,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1524,9 +1524,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1553,7 +1553,7 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 | `use_placeholder` | Boolean | Examples: `true` | 3 |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
 | `kill_on_consume` | Boolean | Examples: `true` | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1576,7 +1576,7 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
 | [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 1 |
 | [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1633,7 +1633,7 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 | [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Object | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 

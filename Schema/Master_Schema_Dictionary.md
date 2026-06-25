@@ -12,12 +12,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Object | Block defining the combat math and status effects applied upon successful hit. | 2343 |
-| [`meta`](./Abilities_and_Spells.md#context-meta) | Object | Block defining UI display data (Name, Description, Icon). | 2333 |
+| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 2343 |
+| [`meta`](./Abilities_and_Spells.md#context-meta) | Object | Object defining UI display data (Name, Description, Icon). | 2333 |
 | [`template`](./Enums.md#enum-template) | Enum | Inherits baseline internal logic from a hardcoded engine template. | 2174 |
-| [`graphics`](./Abilities_and_Spells.md#context-graphics) | Object | Block defining visual animations and sequence timings. | 2037 |
-| [`target`](./Abilities_and_Spells.md#context-target) | Object | Block defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
-| [`cost`](./Abilities_and_Spells.md#context-cost) | Object | Block defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
+| [`graphics`](./Abilities_and_Spells.md#context-graphics) | Object | Object defining visual animations and sequence timings. | 2037 |
+| [`target`](./Abilities_and_Spells.md#context-target) | Object | Object defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
+| [`cost`](./Abilities_and_Spells.md#context-cost) | Object | Object defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum | Inherits properties from a previously defined ability (used for upgrading tiers). | 900 |
 | [`tags`](./Arrays.md#array-tags) | Array | Array of string categories used by the engine for filtering (e.g. [weapon_throw, spell]). | 238 |
 | [`self_damage`](./Abilities_and_Spells.md#context-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 218 |
@@ -283,12 +283,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 70 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 65 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 62 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 59 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 59 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 54 |
 | `Shield` | Mixed | Applies or references the 'Shield' effect/state. | 49 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 44 |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 35 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 34 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 34 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 34 |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Spawns a physics object that visually bounces off the target. | 31 |
 | `AllStatsUp` | Mixed | Applies or references the 'AllStatsUp' effect/state. | 29 |
@@ -317,7 +317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 17 |
 | [`Freeze`](./Arrays.md#array-freeze) | Array | Applies or references the 'Freeze' effect/state. | 16 |
 | `OverrideKnockbackDamage` | Mixed | Applies or references the 'OverrideKnockbackDamage' effect/state. | 16 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 15 |
+| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 15 |
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 15 |
 | [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Applies or references the 'ChangeCatClass' effect/state. | 14 |
 | [`TransformBasicAttack`](./Enums.md#enum-transformbasicattack) | Enum | Applies or references the 'TransformBasicAttack' effect/state. | 14 |
@@ -351,7 +351,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Ammo` | Number | Applies or references the 'Ammo' effect/state. | 9 |
 | `DeferVaporize` | Number | Applies or references the 'DeferVaporize' effect/state. | 9 |
 | `SpawnCreep` | Number | Applies or references the 'SpawnCreep' effect/state. | 9 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 8 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 8 |
 | [`Rot`](./Arrays.md#array-rot) | Array | Applies or references the 'Rot' effect/state. | 8 |
 | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 8 |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 8 |
@@ -432,7 +432,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RemoveActPoints` | Number | Applies or references the 'RemoveActPoints' effect/state. | 4 |
 | `SendRock` | Number | Applies or references the 'SendRock' effect/state. | 4 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 4 |
-| [`ApplyMultipleTimes`](./Abilities_and_Spells.md#context-applymultipletimes) | Object | A loop block that executes its nested logic multiple times. | 3 |
+| [`ApplyMultipleTimes`](./Abilities_and_Spells.md#context-applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 3 |
 | [`CatPartsSizeScaleStatus`](./Abilities_and_Spells.md#context-catpartssizescalestatus) | Object | Visually scales specific body parts of a character. | 3 |
 | [`CollideWithConsumed`](./Math_Equations.md) | Equation | Applies or references the 'CollideWithConsumed' effect/state. | 3 |
 | [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Applies or references the 'DoubleStatus' effect/state. | 3 |
@@ -1124,7 +1124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 7 |
 | `BonusDamage` | Mixed | Applies or references the 'BonusDamage' effect/state. | 6 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 3 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 3 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 3 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 2 |
 | [`GainCoinsRange`](./Abilities_and_Spells.md#context-gaincoinsrange) | Object | Grants the player a randomized amount of coins within a min/max range. | 2 |
@@ -1138,18 +1138,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 2 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#context-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 1 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | [`DoDamage`](./Abilities_and_Spells.md#context-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 1 |
 | [`DybbukPossessed`](./Abilities_and_Spells.md#context-dybbukpossessed) | Object | Defines the abilities and behaviors available when possessing another entity. | 1 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 1 |
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 1 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |
 | [`ScatterCoins`](./Abilities_and_Spells.md#context-scattercoins) | Object | Throws coins out into the level randomly. | 1 |
 | [`ShowFakeDamage`](./Abilities_and_Spells.md#context-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 1 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 1 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | [`XIsTargetHealth`](./Abilities_and_Spells.md#context-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 1 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
@@ -1249,16 +1249,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 41 |
 | `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. | 6 |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 4 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 3 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 2 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 2 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 2 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 2 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 2 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 2 |
 | `Die` | Number | Applies or references the 'Die' effect/state. | 2 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 2 |
@@ -1338,7 +1338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Confusion`](./Arrays.md#array-confusion) | Array | Applies or references the 'Confusion' effect/state. | 6 |
 | `DisplaceToAbilityTarget` | Number | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 3 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
@@ -1350,7 +1350,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 1 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 1 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
 | `Charmed` | Number | Applies or references the 'Charmed' effect/state. | 1 |
@@ -1405,9 +1405,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 4 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 3 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 3 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 3 |
 | `KnockbackDamageImmuneUntilSettled` | Number | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 3 |
 | [`RandomStatUp`](./Math_Equations.md) | Equation | Applies or references the 'RandomStatUp' effect/state. | 2 |
@@ -1644,8 +1644,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 4 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 4 |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 4 |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Applies or references the 'VisualFX' effect/state. | 3 |
@@ -1726,7 +1726,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 3 |
 | `GetAggroTarget` | Number | Applies or references the 'GetAggroTarget' effect/state. | 2 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 1 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | `PreventDeathTransforms` | Number | Applies or references the 'PreventDeathTransforms' effect/state. | 1 |
 
 </details>
@@ -1776,14 +1776,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 2 |
 | `Doomed` | Number | Applies or references the 'Doomed' effect/state. | 2 |
 | `ExplodeCharacter_RockCrusher` | Number | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 2 |
 | `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 2 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 2 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 2 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies or references the 'Fear' effect/state. | 1 |
 | `PermanentCharm` | Number | Applies or references the 'PermanentCharm' effect/state. | 1 |
 
@@ -1802,7 +1802,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 13 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 6 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 2 |
@@ -1847,7 +1847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 7 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
@@ -1872,10 +1872,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 3 |
 | `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 1 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 1 |
@@ -1992,7 +1992,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
 | [`Burn`](./Math_Equations.md) | Equation | Applies or references the 'Burn' effect/state. | 2 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 2 |
@@ -2057,7 +2057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 4 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 | `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 1 |
@@ -2079,7 +2079,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 |
 | [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#context-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 1 |
@@ -2139,7 +2139,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 2 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
@@ -2170,9 +2170,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 3 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
 | `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. | 1 |
 
 </details>
@@ -2190,7 +2190,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. | 1 |
@@ -2461,7 +2461,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 2 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
@@ -2500,7 +2500,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 1 |
 
@@ -2718,7 +2718,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 2 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
@@ -2738,7 +2738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 3 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
 
@@ -2757,7 +2757,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 2 |
 | [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | Queues an ability to be cast automatically after a certain delay or trigger. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
@@ -2886,7 +2886,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
@@ -2923,7 +2923,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 2 |
 
 </details>
@@ -2995,7 +2995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 | `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 1 |
 | `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 1 |
@@ -3015,7 +3015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Immobile`](./Arrays.md#array-immobile) | Array | Applies or references the 'Immobile' effect/state. | 2 |
 
 </details>
@@ -3033,9 +3033,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
 </details>
 
@@ -3052,7 +3052,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToTile`](./Abilities_and_Spells.md#context-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 2 |
 
@@ -3071,7 +3071,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 1 |
 | `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 |
 | `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. | 1 |
@@ -3091,7 +3091,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |
 
 </details>
@@ -3109,8 +3109,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 1 |
 
 </details>
@@ -3128,7 +3128,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 2 |
 
 </details>
@@ -3146,7 +3146,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 2 |
 
 </details>
@@ -3164,7 +3164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
 | [`key`](./Enums.md#enum-key) | Enum |  | 2 |
 | `TriggerGameEnding` | Number | Applies or references the 'TriggerGameEnding' effect/state. | 2 |
@@ -3184,7 +3184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. | 2 |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 1 |
@@ -3547,7 +3547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 2 |
 
 </details>
@@ -3633,7 +3633,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Marked` | Number | Applies or references the 'Marked' effect/state. | 1 |
 
 </details>
@@ -3668,7 +3668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
 
@@ -3687,7 +3687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 1 |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 1 |
 
@@ -3706,7 +3706,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |
 
 </details>
@@ -3724,7 +3724,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 |
 
@@ -3743,7 +3743,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 1 |
 
 </details>
@@ -3761,7 +3761,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |
 | `GenericBuff` | Number | Applies or references the 'GenericBuff' effect/state. | 1 |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 1 |
@@ -3781,7 +3781,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 1 |
 
 </details>
@@ -3799,9 +3799,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 1 |
 
 </details>
@@ -3819,7 +3819,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. | 1 |
 
 </details>
@@ -3837,7 +3837,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Object | Grants the nested passive abilities dynamically. | 1 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
@@ -3856,7 +3856,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`ScatterCoins`](./Abilities_and_Spells.md#context-scattercoins) | Object | Throws coins out into the level randomly. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
@@ -3876,7 +3876,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
@@ -4057,7 +4057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Object | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
 
 </details>
@@ -4236,7 +4236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 1 |
 
 </details>
@@ -4765,7 +4765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Knockback` | Number | Examples: `2, 1` | 6 |
 | [`Bleed`](./Arrays.md#array-bleed) | Array | Examples: `[ 3 .1 ], 1` | 5 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Examples: `WaterTile, DirtTile` | 5 |
@@ -4905,7 +4905,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Examples: `1` | 2 |
 | `Knockback` | Number | Examples: `1` | 2 |
 | [`Immobile`](./Arrays.md#array-immobile) | Array | Examples: `[ 1 .1 ]` | 1 |
@@ -5050,7 +5050,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AutoReanimate` | Number | Examples: `50` | 2 |
 | `odds` | Number | Examples: `10` | 2 |
 
@@ -5088,7 +5088,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -5123,7 +5123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -5140,7 +5140,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Object | Examples: `{ ... }` | 2 |
 
 </details>
@@ -5266,7 +5266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charge` | Number | Examples: `1` | 1 |
 
 </details>
@@ -5284,7 +5284,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Examples: `TallGrassTile` | 1 |
 | `odds` | Number | Examples: `25` | 1 |
 
@@ -5513,7 +5513,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array | Examples: `5, [ 1 .5 ]` | 6 |
 
 </details>
@@ -5548,7 +5548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RangeUp` | Number | Examples: `1` | 1 |
 
 </details>
@@ -5568,7 +5568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`properties`](./Characters_and_Bosses.md#context-properties) | Object | General engine properties. | 600 |
 | [`graphics`](./Characters_and_Bosses.md#context-graphics) | Object | Visual parameters and animation bindings. | 558 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 548 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 548 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 464 |
 | [`abilities`](./Characters_and_Bosses.md#context-abilities) | Object | Lists the ability IDs the character possesses. | 458 |
 | [`stats`](./Characters_and_Bosses.md#context-stats) | Object | Core character metrics (Health, Strength, etc.). | 388 |
@@ -5747,7 +5747,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Logic: Forces execution of an ability. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Examples: `{ ... }` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | `AddCorpseHealth` | Number | Applies or references the 'AddCorpseHealth' effect/state. | 2 |
 | `AggroTargetIsBuddy` | Number | Applies or references the 'AggroTargetIsBuddy' effect/state. | 2 |
 | `AllDamageImmune_IncludingSpeculative` | Number | Applies or references the 'AllDamageImmune_IncludingSpeculative' effect/state. | 2 |
@@ -6287,7 +6287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | [`passive`](./Characters_and_Bosses.md#context-passive) | Object | Intrinsic passive modifier. | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | `partial_animation_suffix` | Number |  | 2 |
 | [`Alert`](./Characters_and_Bosses.md#context-alert) | Object | AI State: The behavior profile used when the character is alerted to enemies. | 1 |
 | [`Angry`](./Characters_and_Bosses.md#context-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 1 |
@@ -6547,7 +6547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 24 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 24 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 10 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
@@ -6633,7 +6633,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 6 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 4 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 4 |
@@ -7108,7 +7108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 10 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 10 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 5 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
@@ -7166,7 +7166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 8 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 6 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 6 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 6 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 4 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
@@ -7470,7 +7470,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 5 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 5 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 4 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 4 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 4 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
 
@@ -7507,7 +7507,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 5 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 5 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 5 |
 
 </details>
@@ -7676,7 +7676,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 3 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 2 |
 
@@ -7695,7 +7695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ExtraBasicAttacks_Status` | Number | Applies or references the 'ExtraBasicAttacks_Status' effect/state. | 2 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 |
@@ -7753,7 +7753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 3 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 3 |
 
 </details>
 
@@ -7772,7 +7772,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 4 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 4 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 4 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 4 |
 
 </details>
 
@@ -7809,7 +7809,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 3 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 3 |
 
 </details>
 
@@ -7880,7 +7880,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 3 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 3 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
@@ -7924,7 +7924,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | [`statuses_on_enter_form`](./Characters_and_Bosses.md#context-statuses_on_enter_form) | Object | Status effects instantly applied upon transitioning into this form. | 2 |
 
 </details>
@@ -7979,7 +7979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 3 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 3 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 3 |
 
 </details>
@@ -8054,7 +8054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 3 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 3 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 3 |
 
 </details>
@@ -8072,7 +8072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 3 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 3 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
@@ -8166,7 +8166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `animation_suffix` | Mixed |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -8184,7 +8184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -8224,7 +8224,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
@@ -8246,7 +8246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
@@ -8283,7 +8283,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 2 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 2 |
 
@@ -8374,7 +8374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -8428,7 +8428,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -8447,7 +8447,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -8541,7 +8541,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -8558,7 +8558,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 |
 
 </details>
@@ -8576,7 +8576,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 2 |
 
 </details>
@@ -8706,7 +8706,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 
 </details>
@@ -8741,7 +8741,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 1 |
 
@@ -8836,7 +8836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 
 </details>
 
@@ -8853,7 +8853,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 2 |
 
 </details>
 
@@ -8939,7 +8939,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Characters_and_Bosses.md#context-else) | Object | Fallback logic block for conditionals. | 1 |
 
 </details>
@@ -8957,7 +8957,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 1 |
 
 </details>
@@ -8975,7 +8975,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
 </details>
@@ -8993,7 +8993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 
 </details>
@@ -9058,7 +9058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9170,7 +9170,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9188,7 +9188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9206,7 +9206,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9227,7 +9227,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
@@ -9250,7 +9250,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -9269,7 +9269,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9287,7 +9287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -9330,7 +9330,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -9352,7 +9352,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -9374,7 +9374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -9541,7 +9541,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9558,7 +9558,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9593,7 +9593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 1 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 1 |
 
@@ -9612,7 +9612,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 |
 | [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
@@ -9632,7 +9632,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 |
 | [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
@@ -9690,7 +9690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -9726,7 +9726,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -9745,7 +9745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -9817,7 +9817,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9888,7 +9888,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | `move_speed_multiplier` | Number |  | 1 |
 
@@ -9910,7 +9910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | `move_speed_multiplier` | Number |  | 1 |
 
@@ -9930,7 +9930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -9985,7 +9985,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10024,7 +10024,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -10200,7 +10200,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10220,7 +10220,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10239,7 +10239,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10258,7 +10258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10293,7 +10293,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10312,7 +10312,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10330,7 +10330,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10423,7 +10423,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 | `weak_threshold` | Number |  | 1 |
 
@@ -10442,7 +10442,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10461,7 +10461,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10499,7 +10499,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10519,7 +10519,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10557,7 +10557,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10703,7 +10703,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -10723,7 +10723,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -10743,7 +10743,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -10779,7 +10779,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10798,7 +10798,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10834,7 +10834,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10852,7 +10852,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -10907,7 +10907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -10926,7 +10926,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11097,7 +11097,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11360,7 +11360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
@@ -11398,7 +11398,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11453,7 +11453,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11491,7 +11491,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -11510,7 +11510,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11544,7 +11544,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -11563,7 +11563,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11583,7 +11583,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11601,7 +11601,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11618,7 +11618,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11636,7 +11636,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11653,7 +11653,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddStatusToTrampleDamage`](./Characters_and_Bosses.md#context-addstatustotrampledamage) | Object | Modifier: Injects a status effect into the character's trample damage. | 1 |
 
 </details>
@@ -11672,7 +11672,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -11693,7 +11693,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -11712,7 +11712,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 | `animation_suffix` | Number |  | 1 |
@@ -11735,7 +11735,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 | `animation_suffix` | Number |  | 1 |
@@ -11758,7 +11758,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 | `animation_suffix` | Number |  | 1 |
@@ -11781,7 +11781,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 | `animation_suffix` | Number |  | 1 |
@@ -11804,7 +11804,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 | `animation_suffix` | Number |  | 1 |
@@ -11827,7 +11827,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 | `animation_suffix` | Number |  | 1 |
@@ -11977,7 +11977,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -12014,7 +12014,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12032,7 +12032,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12049,7 +12049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -12322,7 +12322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -12343,7 +12343,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Object | Turn counter tracking. | 1 |
 
 </details>
@@ -12361,7 +12361,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12452,7 +12452,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array | Applies or references the 'RemoveGlobalModifiers' effect/state. | 1 |
 | `RemoveAmbientLightEffects` | Number | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |
 
@@ -12471,7 +12471,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RemoveStatusStacks`](./Characters_and_Bosses.md#context-removestatusstacks) | Object | Logic: Removes stacks of a specific status effect. | 1 |
 | `SpeedUp_WithoutInitiative` | Number | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. | 1 |
 
@@ -12490,7 +12490,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |
 
 </details>
@@ -12542,7 +12542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`UseAbility`](./Characters_and_Bosses.md#context-useability) | Object | Logic: Forces execution of an ability. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
@@ -12562,7 +12562,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12654,7 +12654,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12674,7 +12674,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12785,7 +12785,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12805,7 +12805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12894,7 +12894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12913,7 +12913,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12931,7 +12931,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -12968,7 +12968,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -13004,7 +13004,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -13059,7 +13059,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -13131,7 +13131,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -13152,7 +13152,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -13171,7 +13171,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -13192,7 +13192,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -13214,7 +13214,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -13236,7 +13236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Block listing intrinsic passive modifiers. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
@@ -13453,32 +13453,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`intro`](./Events_and_Encounters.md#context-intro) | Object | Event Node: The initial text block when a story event first loads. | 214 |
-| [`main`](./Events_and_Encounters.md#context-main) | Object | Event Node: The central hub or recurring menu of a story event. | 214 |
+| [`intro`](./Events_and_Encounters.md#context-intro) | Object | Event Object: The initial text block when a story event first loads. | 214 |
+| [`main`](./Events_and_Encounters.md#context-main) | Object | Event Object: The central hub or recurring menu of a story event. | 214 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 37 |
 | `set_frame` | Number |  | 35 |
 | [`label`](./Strings.md#string-label) | String |  | 16 |
 | `stat` | Mixed |  | 16 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 12 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 12 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 11 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the 'Bad' action. | 10 |
 | `weight` | Mixed | Probability weight for this outcome. | 10 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 8 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 8 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the 'Good' action. | 8 |
 | [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  | 5 |
 | [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 5 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 4 |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 4 |
+| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 4 |
 | `stat_max` | Number |  | 4 |
 | `stat_min` | Number |  | 4 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 3 |
 | [`open`](./Events_and_Encounters.md#context-open) | Object | Examples: `{ ... }` | 3 |
 | `pick` | Object | Examples: `{ ... }` | 3 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum |  | 2 |
-| [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 2 |
-| [`leave`](./Events_and_Encounters.md#context-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 2 |
+| [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Object: Story branch or dialog option representing the \'Ignore\' action. | 2 |
+| [`leave`](./Events_and_Encounters.md#context-leave) | Object | Event Object: Story branch or dialog option representing the 'Leave' action. | 2 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 2 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 2 |
 | `cha` | Number |  | 2 |
@@ -13487,7 +13487,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `lck` | Number |  | 2 |
 | `spd` | Number |  | 2 |
 | `str` | Number |  | 2 |
-| [`destroy`](./Events_and_Encounters.md#context-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 |
+| [`destroy`](./Events_and_Encounters.md#context-destroy) | Object | Event Object: Story branch or dialog option representing the \'Destroy\' action. | 1 |
 | [`examine`](./Events_and_Encounters.md#context-examine) | Object | Examples: `{ ... }` | 1 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 1 |
 | [`gain_food`](./Arrays.md#array-gain_food) | Array |  | 1 |
@@ -13518,8 +13518,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`common`](./Events_and_Encounters.md#context-common) | Object | Event Node: Story branch or dialog option representing the \'Common\' action. | 633 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Node: Story branch or dialog option representing the \'Rare\' action. | 623 |
+| [`common`](./Events_and_Encounters.md#context-common) | Object | Event Object: Story branch or dialog option representing the \'Common\' action. | 633 |
+| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Object: Story branch or dialog option representing the \'Rare\' action. | 623 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 72 |
 | `set_frame` | Number |  | 54 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum |  | 24 |
@@ -13564,7 +13564,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool) | Object | Event Action: Rewards the player with an item drawn from a specific loot pool. | 71 |
 | [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 36 |
-| [`damage`](./Arrays.md#array-damage) | Array | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 |
+| [`damage`](./Arrays.md#array-damage) | Array | Event Object: Story branch or dialog option representing the 'Damage' action. | 35 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 28 |
 | `injury` | Mixed |  | 27 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 26 |
@@ -13607,7 +13607,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum |  | 1 |
 | [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum |  | 1 |
 | [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum |  | 1 |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum |  | 1 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum |  | 1 |
 | `clear_result_animation` | Number |  | 1 |
@@ -13648,8 +13648,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 22 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum |  | 22 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 18 |
+| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 18 |
+| `damage` | Number | Event Object: Story branch or dialog option representing the 'Damage' action. | 18 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 17 |
 | `next_event_bonus` | Number |  | 14 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#context-random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
@@ -13722,14 +13722,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
+| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 326 |
 | `set_frame` | Number |  | 285 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 185 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array |  | 111 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum |  | 52 |
 | [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 38 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum |  | 26 |
-| [`cutscene`](./Events_and_Encounters.md#context-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 19 |
+| [`cutscene`](./Events_and_Encounters.md#context-cutscene) | Object | Event Object: Triggers a narrative cutscene. | 19 |
 | [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum |  | 12 |
 | [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum |  | 12 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum |  | 12 |
@@ -13745,10 +13745,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `heal_disorder` | Mixed |  | 5 |
 | [`injury`](./Enums.md#enum-injury) | Enum |  | 4 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 4 |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
+| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 4 |
 | [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array |  | 4 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 4 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |
+| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 4 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum |  | 3 |
 | [`kill`](./Enums.md#enum-kill) | Enum |  | 3 |
 | [`transform_item`](./Arrays.md#array-transform_item) | Array |  | 3 |
@@ -13796,7 +13796,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
+| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 303 |
 | `set_frame` | Number |  | 219 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 38 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array |  | 10 |
@@ -13806,7 +13806,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 4 |
 | [`kill`](./Enums.md#enum-kill) | Enum |  | 4 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 |
-| [`cutscene`](./Events_and_Encounters.md#context-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 3 |
+| [`cutscene`](./Events_and_Encounters.md#context-cutscene) | Object | Event Object: Triggers a narrative cutscene. | 3 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum |  | 3 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 3 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum |  | 3 |
@@ -13864,23 +13864,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`options`](./Events_and_Encounters.md#context-options) | Object | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
+| [`options`](./Events_and_Encounters.md#context-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 208 |
-| [`setup`](./Events_and_Encounters.md#context-setup) | Object | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
+| [`setup`](./Events_and_Encounters.md#context-setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`goto`](./Enums.md#enum-goto) | Enum |  | 4 |
-| [`outcome`](./Events_and_Encounters.md#context-outcome) | Object | Event Block: Logic and text executed after selecting a specific dialog option. | 4 |
+| [`outcome`](./Events_and_Encounters.md#context-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 |
 | `max_options` | Number |  | 3 |
 | `set_frame` | Number |  | 3 |
 | `shuffle_options` | Boolean |  | 3 |
 | [`weight`](./Enums.md#enum-weight) | Enum | Probability weight for this outcome. | 2 |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  | 1 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 1 |
-| [`leave`](./Events_and_Encounters.md#context-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
+| [`leave`](./Events_and_Encounters.md#context-leave) | Object | Event Object: Story branch or dialog option representing the 'Leave' action. | 1 |
 | [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#context-party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 1 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
+| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 1 |
 | [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 1 |
 | [`self_damage`](./Arrays.md#array-self_damage) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
@@ -13902,221 +13902,221 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 |
-| [`examine`](./Events_and_Encounters.md#context-examine) | Object | Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 |
-| [`leave`](./Events_and_Encounters.md#context-leave) | Object | Event Node: Story branch or dialog option representing the \'Leave\' action. | 29 |
-| [`loot`](./Events_and_Encounters.md#context-loot) | Object | Event Node: Story branch or dialog option representing the \'Loot\' action. | 25 |
-| [`eat`](./Events_and_Encounters.md#context-eat) | Object | Event Node: Story branch or dialog option representing the \'Eat\' action. | 23 |
-| [`smash`](./Events_and_Encounters.md#context-smash) | Object | Event Node: Story branch or dialog option representing the \'Smash\' action. | 15 |
-| [`destroy`](./Events_and_Encounters.md#context-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 13 |
-| [`bash`](./Events_and_Encounters.md#context-bash) | Object | Event Node: Story branch or dialog option representing the \'Bash\' action. | 12 |
-| [`sneak`](./Events_and_Encounters.md#context-sneak) | Object | Event Node: Story branch or dialog option representing the \'Sneak\' action. | 11 |
-| [`open`](./Events_and_Encounters.md#context-open) | Object | Event Node: Story branch or dialog option representing the \'Open\' action. | 8 |
-| [`take`](./Events_and_Encounters.md#context-take) | Object | Event Node: Story branch or dialog option representing the \'Take\' action. | 8 |
-| [`a`](./Events_and_Encounters.md#context-a) | Object | Event Node: Story branch or dialog option representing the \'A\' action. | 7 |
-| [`attack`](./Events_and_Encounters.md#context-attack) | Object | Event Node: Story branch or dialog option representing the \'Attack\' action. | 7 |
-| [`b`](./Events_and_Encounters.md#context-b) | Object | Event Node: Story branch or dialog option representing the \'B\' action. | 7 |
-| [`c`](./Events_and_Encounters.md#context-c) | Object | Event Node: Story branch or dialog option representing the \'C\' action. | 7 |
-| [`charm`](./Events_and_Encounters.md#context-charm) | Object | Event Node: Story branch or dialog option representing the \'Charm\' action. | 7 |
-| [`fight`](./Events_and_Encounters.md#context-fight) | Object | Event Node: Story branch or dialog option representing the \'Fight\' action. | 7 |
-| [`touch`](./Events_and_Encounters.md#context-touch) | Object | Event Node: Story branch or dialog option representing the \'Touch\' action. | 7 |
-| [`activate_p`](./Events_and_Encounters.md#context-activate_p) | Object | Event Node: Story branch or dialog option representing the 'Activate P' action. | 6 |
-| [`activate_z`](./Events_and_Encounters.md#context-activate_z) | Object | Event Node: Story branch or dialog option representing the 'Activate Z' action. | 6 |
-| [`d`](./Events_and_Encounters.md#context-d) | Object | Event Node: Story branch or dialog option representing the \'D\' action. | 6 |
-| [`enter`](./Events_and_Encounters.md#context-enter) | Object | Event Node: Story branch or dialog option representing the \'Enter\' action. | 6 |
-| [`inspect`](./Events_and_Encounters.md#context-inspect) | Object | Event Node: Story branch or dialog option representing the \'Inspect\' action. | 6 |
-| [`lick`](./Events_and_Encounters.md#context-lick) | Object | Event Node: Story branch or dialog option representing the \'Lick\' action. | 6 |
-| [`drink`](./Events_and_Encounters.md#context-drink) | Object | Event Node: Story branch or dialog option representing the \'Drink\' action. | 5 |
-| [`kiss`](./Events_and_Encounters.md#context-kiss) | Object | Event Node: Story branch or dialog option representing the \'Kiss\' action. | 5 |
-| [`run`](./Events_and_Encounters.md#context-run) | Object | Event Node: Story branch or dialog option representing the \'Run\' action. | 5 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`bite`](./Events_and_Encounters.md#context-bite) | Object | Event Node: Story branch or dialog option representing the 'Bite' action. | 4 |
-| [`damage`](./Events_and_Encounters.md#context-damage) | Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 4 |
-| [`go_around`](./Events_and_Encounters.md#context-go_around) | Object | Event Node: Story branch or dialog option representing the \'Go Around\' action. | 4 |
-| [`home`](./Events_and_Encounters.md#context-home) | Object | Event Node: Story branch or dialog option representing the 'Home' action. | 4 |
-| [`past`](./Events_and_Encounters.md#context-past) | Object | Event Node: Story branch or dialog option representing the 'Past' action. | 4 |
-| [`skip`](./Events_and_Encounters.md#context-skip) | Object | Event Node: Story branch or dialog option representing the \'Skip\' action. | 4 |
+| [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Object: Story branch or dialog option representing the \'Ignore\' action. | 55 |
+| [`examine`](./Events_and_Encounters.md#context-examine) | Object | Event Object: Story branch or dialog option representing the \'Examine\' action. | 43 |
+| [`leave`](./Events_and_Encounters.md#context-leave) | Object | Event Object: Story branch or dialog option representing the \'Leave\' action. | 29 |
+| [`loot`](./Events_and_Encounters.md#context-loot) | Object | Event Object: Story branch or dialog option representing the \'Loot\' action. | 25 |
+| [`eat`](./Events_and_Encounters.md#context-eat) | Object | Event Object: Story branch or dialog option representing the \'Eat\' action. | 23 |
+| [`smash`](./Events_and_Encounters.md#context-smash) | Object | Event Object: Story branch or dialog option representing the \'Smash\' action. | 15 |
+| [`destroy`](./Events_and_Encounters.md#context-destroy) | Object | Event Object: Story branch or dialog option representing the \'Destroy\' action. | 13 |
+| [`bash`](./Events_and_Encounters.md#context-bash) | Object | Event Object: Story branch or dialog option representing the \'Bash\' action. | 12 |
+| [`sneak`](./Events_and_Encounters.md#context-sneak) | Object | Event Object: Story branch or dialog option representing the \'Sneak\' action. | 11 |
+| [`open`](./Events_and_Encounters.md#context-open) | Object | Event Object: Story branch or dialog option representing the \'Open\' action. | 8 |
+| [`take`](./Events_and_Encounters.md#context-take) | Object | Event Object: Story branch or dialog option representing the \'Take\' action. | 8 |
+| [`a`](./Events_and_Encounters.md#context-a) | Object | Event Object: Story branch or dialog option representing the \'A\' action. | 7 |
+| [`attack`](./Events_and_Encounters.md#context-attack) | Object | Event Object: Story branch or dialog option representing the \'Attack\' action. | 7 |
+| [`b`](./Events_and_Encounters.md#context-b) | Object | Event Object: Story branch or dialog option representing the \'B\' action. | 7 |
+| [`c`](./Events_and_Encounters.md#context-c) | Object | Event Object: Story branch or dialog option representing the \'C\' action. | 7 |
+| [`charm`](./Events_and_Encounters.md#context-charm) | Object | Event Object: Story branch or dialog option representing the \'Charm\' action. | 7 |
+| [`fight`](./Events_and_Encounters.md#context-fight) | Object | Event Object: Story branch or dialog option representing the \'Fight\' action. | 7 |
+| [`touch`](./Events_and_Encounters.md#context-touch) | Object | Event Object: Story branch or dialog option representing the \'Touch\' action. | 7 |
+| [`activate_p`](./Events_and_Encounters.md#context-activate_p) | Object | Event Object: Story branch or dialog option representing the 'Activate P' action. | 6 |
+| [`activate_z`](./Events_and_Encounters.md#context-activate_z) | Object | Event Object: Story branch or dialog option representing the 'Activate Z' action. | 6 |
+| [`d`](./Events_and_Encounters.md#context-d) | Object | Event Object: Story branch or dialog option representing the \'D\' action. | 6 |
+| [`enter`](./Events_and_Encounters.md#context-enter) | Object | Event Object: Story branch or dialog option representing the \'Enter\' action. | 6 |
+| [`inspect`](./Events_and_Encounters.md#context-inspect) | Object | Event Object: Story branch or dialog option representing the \'Inspect\' action. | 6 |
+| [`lick`](./Events_and_Encounters.md#context-lick) | Object | Event Object: Story branch or dialog option representing the \'Lick\' action. | 6 |
+| [`drink`](./Events_and_Encounters.md#context-drink) | Object | Event Object: Story branch or dialog option representing the \'Drink\' action. | 5 |
+| [`kiss`](./Events_and_Encounters.md#context-kiss) | Object | Event Object: Story branch or dialog option representing the \'Kiss\' action. | 5 |
+| [`run`](./Events_and_Encounters.md#context-run) | Object | Event Object: Story branch or dialog option representing the \'Run\' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the 'Bad' action. | 4 |
+| [`bite`](./Events_and_Encounters.md#context-bite) | Object | Event Object: Story branch or dialog option representing the 'Bite' action. | 4 |
+| [`damage`](./Events_and_Encounters.md#context-damage) | Object | Event Object: Story branch or dialog option representing the 'Damage' action. | 4 |
+| [`go_around`](./Events_and_Encounters.md#context-go_around) | Object | Event Object: Story branch or dialog option representing the \'Go Around\' action. | 4 |
+| [`home`](./Events_and_Encounters.md#context-home) | Object | Event Object: Story branch or dialog option representing the 'Home' action. | 4 |
+| [`past`](./Events_and_Encounters.md#context-past) | Object | Event Object: Story branch or dialog option representing the 'Past' action. | 4 |
+| [`skip`](./Events_and_Encounters.md#context-skip) | Object | Event Object: Story branch or dialog option representing the \'Skip\' action. | 4 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 3 |
-| [`investigate`](./Events_and_Encounters.md#context-investigate) | Object | Event Node: Story branch or dialog option representing the \'Investigate\' action. | 3 |
+| [`investigate`](./Events_and_Encounters.md#context-investigate) | Object | Event Object: Story branch or dialog option representing the \'Investigate\' action. | 3 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 3 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 3 |
-| [`repell`](./Events_and_Encounters.md#context-repell) | Object | Event Node: Story branch or dialog option representing the \'Repell\' action. | 3 |
-| [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna) | Object | Event Node: Story branch or dialog option representing the 'Attach Antenna' action. | 2 |
-| [`boogers`](./Events_and_Encounters.md#context-boogers) | Object | Event Node: Story branch or dialog option representing the \'Boogers\' action. | 2 |
-| [`copy`](./Events_and_Encounters.md#context-copy) | Object | Event Node: Story branch or dialog option representing the \'Copy\' action. | 2 |
-| [`find_another_way`](./Events_and_Encounters.md#context-find_another_way) | Object | Event Node: Story branch or dialog option representing the \'Find Another Way\' action. | 2 |
-| [`move_closer`](./Events_and_Encounters.md#context-move_closer) | Object | Event Node: Story branch or dialog option representing the \'Move Closer\' action. | 2 |
-| [`play`](./Events_and_Encounters.md#context-play) | Object | Event Node: Story branch or dialog option representing the \'Play\' action. | 2 |
-| [`poop`](./Events_and_Encounters.md#context-poop) | Object | Event Node: Story branch or dialog option representing the \'Poop\' action. | 2 |
-| [`print`](./Events_and_Encounters.md#context-print) | Object | Event Node: Story branch or dialog option representing the \'Print\' action. | 2 |
-| [`protection`](./Events_and_Encounters.md#context-protection) | Object | Event Node: Story branch or dialog option representing the \'Protection\' action. | 2 |
-| [`repair`](./Events_and_Encounters.md#context-repair) | Object | Event Node: Story branch or dialog option representing the \'Repair\' action. | 2 |
-| [`sacrifice`](./Events_and_Encounters.md#context-sacrifice) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice\' action. | 2 |
-| [`scale`](./Events_and_Encounters.md#context-scale) | Object | Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 |
-| [`turnon`](./Events_and_Encounters.md#context-turnon) | Object | Event Node: Story branch or dialog option representing the \'Turnon\' action. | 2 |
+| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 3 |
+| [`repell`](./Events_and_Encounters.md#context-repell) | Object | Event Object: Story branch or dialog option representing the \'Repell\' action. | 3 |
+| [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna) | Object | Event Object: Story branch or dialog option representing the 'Attach Antenna' action. | 2 |
+| [`boogers`](./Events_and_Encounters.md#context-boogers) | Object | Event Object: Story branch or dialog option representing the \'Boogers\' action. | 2 |
+| [`copy`](./Events_and_Encounters.md#context-copy) | Object | Event Object: Story branch or dialog option representing the \'Copy\' action. | 2 |
+| [`find_another_way`](./Events_and_Encounters.md#context-find_another_way) | Object | Event Object: Story branch or dialog option representing the \'Find Another Way\' action. | 2 |
+| [`move_closer`](./Events_and_Encounters.md#context-move_closer) | Object | Event Object: Story branch or dialog option representing the \'Move Closer\' action. | 2 |
+| [`play`](./Events_and_Encounters.md#context-play) | Object | Event Object: Story branch or dialog option representing the \'Play\' action. | 2 |
+| [`poop`](./Events_and_Encounters.md#context-poop) | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 2 |
+| [`print`](./Events_and_Encounters.md#context-print) | Object | Event Object: Story branch or dialog option representing the \'Print\' action. | 2 |
+| [`protection`](./Events_and_Encounters.md#context-protection) | Object | Event Object: Story branch or dialog option representing the \'Protection\' action. | 2 |
+| [`repair`](./Events_and_Encounters.md#context-repair) | Object | Event Object: Story branch or dialog option representing the \'Repair\' action. | 2 |
+| [`sacrifice`](./Events_and_Encounters.md#context-sacrifice) | Object | Event Object: Story branch or dialog option representing the \'Sacrifice\' action. | 2 |
+| [`scale`](./Events_and_Encounters.md#context-scale) | Object | Event Object: Story branch or dialog option representing the \'Scale\' action. | 2 |
+| [`turnon`](./Events_and_Encounters.md#context-turnon) | Object | Event Object: Story branch or dialog option representing the \'Turnon\' action. | 2 |
 | `weight` | Mixed | Probability weight for this outcome. | 2 |
 | [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice) | Object | Event Action: Triggers the altar sacrifice progression logic. | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`arm`](./Events_and_Encounters.md#context-arm) | Object | Event Node: Story branch or dialog option representing the \'Arm\' action. | 1 |
-| [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier) | Object | Event Node: Story branch or dialog option representing the 'Attach Amplifier' action. | 1 |
-| [`attach_leech`](./Events_and_Encounters.md#context-attach_leech) | Object | Event Node: Story branch or dialog option representing the 'Attach Leech' action. | 1 |
-| [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt) | Object | Event Node: Story branch or dialog option representing the \'Bash Past Alt\' action. | 1 |
-| [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off) | Object | Event Node: Story branch or dialog option representing the \'Bite It Off\' action. | 1 |
-| [`blue_needle`](./Events_and_Encounters.md#context-blue_needle) | Object | Event Node: Story branch or dialog option representing the \'Blue Needle\' action. | 1 |
-| [`blue`](./Events_and_Encounters.md#context-blue) | Object | Event Node: Story branch or dialog option representing the \'Blue\' action. | 1 |
-| [`body`](./Events_and_Encounters.md#context-body) | Object | Event Node: Story branch or dialog option representing the 'Body' action. | 1 |
-| [`book`](./Events_and_Encounters.md#context-book) | Object | Event Node: Story branch or dialog option representing the \'Book\' action. | 1 |
-| [`brace`](./Events_and_Encounters.md#context-brace) | Object | Event Node: Story branch or dialog option representing the \'Brace\' action. | 1 |
-| [`break_ice`](./Events_and_Encounters.md#context-break_ice) | Object | Event Node: Story branch or dialog option representing the \'Break Ice\' action. | 1 |
-| [`break_lock`](./Events_and_Encounters.md#context-break_lock) | Object | Event Node: Story branch or dialog option representing the \'Break Lock\' action. | 1 |
-| [`bribe`](./Events_and_Encounters.md#context-bribe) | Object | Event Node: Story branch or dialog option representing the 'Bribe' action. | 1 |
-| [`button`](./Events_and_Encounters.md#context-button) | Object | Event Node: Story branch or dialog option representing the \'Button\' action. | 1 |
-| [`buy1`](./Events_and_Encounters.md#context-buy1) | Object | Event Node: Story branch or dialog option representing the \'Buy1\' action. | 1 |
-| [`catch`](./Events_and_Encounters.md#context-catch) | Object | Event Node: Story branch or dialog option representing the \'Catch\' action. | 1 |
-| [`challenge_to_game`](./Events_and_Encounters.md#context-challenge_to_game) | Object | Event Node: Story branch or dialog option representing the \'Challenge To Game\' action. | 1 |
-| [`chaos_ending`](./Events_and_Encounters.md#context-chaos_ending) | Object | Event Node: Triggers the Chaos Boss victory sequence. | 1 |
-| [`chapter_cutscene`](./Events_and_Encounters.md#context-chapter_cutscene) | Object | Event Node: Triggers an intermission cutscene. | 1 |
-| [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt) | Object | Event Node: Story branch or dialog option representing the \'Charm Past Alt\' action. | 1 |
-| [`climb`](./Events_and_Encounters.md#context-climb) | Object | Event Node: Story branch or dialog option representing the \'Climb\' action. | 1 |
-| [`comfort`](./Events_and_Encounters.md#context-comfort) | Object | Event Node: Story branch or dialog option representing the \'Comfort\' action. | 1 |
-| [`communicate`](./Events_and_Encounters.md#context-communicate) | Object | Event Node: Story branch or dialog option representing the \'Communicate\' action. | 1 |
-| [`concheck`](./Events_and_Encounters.md#context-concheck) | Object | Event Node: Stat check branch evaluating the \'con\' attribute. | 1 |
-| [`counter`](./Events_and_Encounters.md#context-counter) | Object | Event Node: Story branch or dialog option representing the \'Counter\' action. | 1 |
-| [`crack_open`](./Events_and_Encounters.md#context-crack_open) | Object | Event Node: Story branch or dialog option representing the \'Crack Open\' action. | 1 |
-| [`cross`](./Events_and_Encounters.md#context-cross) | Object | Event Node: Story branch or dialog option representing the \'Cross\' action. | 1 |
-| [`cut_wires`](./Events_and_Encounters.md#context-cut_wires) | Object | Event Node: Story branch or dialog option representing the \'Cut Wires\' action. | 1 |
-| [`damage_1`](./Events_and_Encounters.md#context-damage_1) | Object | Event Node: Story branch or dialog option representing the \'Damage 1\' action. | 1 |
-| [`damage_full`](./Events_and_Encounters.md#context-damage_full) | Object | Event Node: Story branch or dialog option representing the \'Damage Full\' action. | 1 |
-| [`damage_half`](./Events_and_Encounters.md#context-damage_half) | Object | Event Node: Story branch or dialog option representing the \'Damage Half\' action. | 1 |
-| [`desert_cutscene`](./Events_and_Encounters.md#context-desert_cutscene) | Object | Event Node: Triggers the desert transition cutscene. | 1 |
-| [`dexcheck`](./Events_and_Encounters.md#context-dexcheck) | Object | Event Node: Stat check branch evaluating the \'dex\' attribute. | 1 |
-| [`dig`](./Events_and_Encounters.md#context-dig) | Object | Event Node: Story branch or dialog option representing the \'Dig\' action. | 1 |
-| [`disarm`](./Events_and_Encounters.md#context-disarm) | Object | Event Node: Story branch or dialog option representing the \'Disarm\' action. | 1 |
-| [`dive`](./Events_and_Encounters.md#context-dive) | Object | Event Node: Story branch or dialog option representing the \'Dive\' action. | 1 |
-| [`donate_10`](./Events_and_Encounters.md#context-donate_10) | Object | Event Node: Story branch or dialog option representing the \'Donate 10\' action. | 1 |
-| [`donate_15`](./Events_and_Encounters.md#context-donate_15) | Object | Event Node: Story branch or dialog option representing the \'Donate 15\' action. | 1 |
-| [`donate_20`](./Events_and_Encounters.md#context-donate_20) | Object | Event Node: Story branch or dialog option representing the \'Donate 20\' action. | 1 |
-| [`donate_5`](./Events_and_Encounters.md#context-donate_5) | Object | Event Node: Story branch or dialog option representing the \'Donate 5\' action. | 1 |
-| [`donate`](./Events_and_Encounters.md#context-donate) | Object | Event Node: Story branch or dialog option representing the \'Donate\' action. | 1 |
-| [`double`](./Events_and_Encounters.md#context-double) | Object | Event Node: Story branch or dialog option representing the \'Double\' action. | 1 |
-| [`eat_meat`](./Events_and_Encounters.md#context-eat_meat) | Object | Event Node: Story branch or dialog option representing the \'Eat Meat\' action. | 1 |
-| [`enter_crater`](./Events_and_Encounters.md#context-enter_crater) | Object | Event Node: Story branch or dialog option representing the \'Enter Crater\' action. | 1 |
-| [`face`](./Events_and_Encounters.md#context-face) | Object | Event Node: Story branch or dialog option representing the \'Face\' action. | 1 |
-| [`fiddle`](./Events_and_Encounters.md#context-fiddle) | Object | Event Node: Story branch or dialog option representing the 'Fiddle' action. | 1 |
-| [`fill_jar`](./Events_and_Encounters.md#context-fill_jar) | Object | Event Node: Story branch or dialog option representing the 'Fill Jar' action. | 1 |
-| [`find`](./Events_and_Encounters.md#context-find) | Object | Event Node: Story branch or dialog option representing the \'Find\' action. | 1 |
-| [`fire`](./Events_and_Encounters.md#context-fire) | Object | Event Node: Story branch or dialog option representing the \'Fire\' action. | 1 |
-| [`flush_yourself`](./Events_and_Encounters.md#context-flush_yourself) | Object | Event Node: Story branch or dialog option representing the \'Flush Yourself\' action. | 1 |
-| [`follow`](./Events_and_Encounters.md#context-follow) | Object | Event Node: Story branch or dialog option representing the \'Follow\' action. | 1 |
-| [`free`](./Events_and_Encounters.md#context-free) | Object | Event Node: Story branch or dialog option representing the \'Free\' action. | 1 |
-| [`future`](./Events_and_Encounters.md#context-future) | Object | Event Node: Story branch or dialog option representing the 'Future' action. | 1 |
+| [`arm`](./Events_and_Encounters.md#context-arm) | Object | Event Object: Story branch or dialog option representing the \'Arm\' action. | 1 |
+| [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier) | Object | Event Object: Story branch or dialog option representing the 'Attach Amplifier' action. | 1 |
+| [`attach_leech`](./Events_and_Encounters.md#context-attach_leech) | Object | Event Object: Story branch or dialog option representing the 'Attach Leech' action. | 1 |
+| [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt) | Object | Event Object: Story branch or dialog option representing the \'Bash Past Alt\' action. | 1 |
+| [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off) | Object | Event Object: Story branch or dialog option representing the \'Bite It Off\' action. | 1 |
+| [`blue_needle`](./Events_and_Encounters.md#context-blue_needle) | Object | Event Object: Story branch or dialog option representing the \'Blue Needle\' action. | 1 |
+| [`blue`](./Events_and_Encounters.md#context-blue) | Object | Event Object: Story branch or dialog option representing the \'Blue\' action. | 1 |
+| [`body`](./Events_and_Encounters.md#context-body) | Object | Event Object: Story branch or dialog option representing the 'Body' action. | 1 |
+| [`book`](./Events_and_Encounters.md#context-book) | Object | Event Object: Story branch or dialog option representing the \'Book\' action. | 1 |
+| [`brace`](./Events_and_Encounters.md#context-brace) | Object | Event Object: Story branch or dialog option representing the \'Brace\' action. | 1 |
+| [`break_ice`](./Events_and_Encounters.md#context-break_ice) | Object | Event Object: Story branch or dialog option representing the \'Break Ice\' action. | 1 |
+| [`break_lock`](./Events_and_Encounters.md#context-break_lock) | Object | Event Object: Story branch or dialog option representing the \'Break Lock\' action. | 1 |
+| [`bribe`](./Events_and_Encounters.md#context-bribe) | Object | Event Object: Story branch or dialog option representing the 'Bribe' action. | 1 |
+| [`button`](./Events_and_Encounters.md#context-button) | Object | Event Object: Story branch or dialog option representing the \'Button\' action. | 1 |
+| [`buy1`](./Events_and_Encounters.md#context-buy1) | Object | Event Object: Story branch or dialog option representing the \'Buy1\' action. | 1 |
+| [`catch`](./Events_and_Encounters.md#context-catch) | Object | Event Object: Story branch or dialog option representing the \'Catch\' action. | 1 |
+| [`challenge_to_game`](./Events_and_Encounters.md#context-challenge_to_game) | Object | Event Object: Story branch or dialog option representing the \'Challenge To Game\' action. | 1 |
+| [`chaos_ending`](./Events_and_Encounters.md#context-chaos_ending) | Object | Event Object: Triggers the Chaos Boss victory sequence. | 1 |
+| [`chapter_cutscene`](./Events_and_Encounters.md#context-chapter_cutscene) | Object | Event Object: Triggers an intermission cutscene. | 1 |
+| [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt) | Object | Event Object: Story branch or dialog option representing the \'Charm Past Alt\' action. | 1 |
+| [`climb`](./Events_and_Encounters.md#context-climb) | Object | Event Object: Story branch or dialog option representing the \'Climb\' action. | 1 |
+| [`comfort`](./Events_and_Encounters.md#context-comfort) | Object | Event Object: Story branch or dialog option representing the \'Comfort\' action. | 1 |
+| [`communicate`](./Events_and_Encounters.md#context-communicate) | Object | Event Object: Story branch or dialog option representing the \'Communicate\' action. | 1 |
+| [`concheck`](./Events_and_Encounters.md#context-concheck) | Object | Event Object: Stat check branch evaluating the \'con\' attribute. | 1 |
+| [`counter`](./Events_and_Encounters.md#context-counter) | Object | Event Object: Story branch or dialog option representing the \'Counter\' action. | 1 |
+| [`crack_open`](./Events_and_Encounters.md#context-crack_open) | Object | Event Object: Story branch or dialog option representing the \'Crack Open\' action. | 1 |
+| [`cross`](./Events_and_Encounters.md#context-cross) | Object | Event Object: Story branch or dialog option representing the \'Cross\' action. | 1 |
+| [`cut_wires`](./Events_and_Encounters.md#context-cut_wires) | Object | Event Object: Story branch or dialog option representing the \'Cut Wires\' action. | 1 |
+| [`damage_1`](./Events_and_Encounters.md#context-damage_1) | Object | Event Object: Story branch or dialog option representing the \'Damage 1\' action. | 1 |
+| [`damage_full`](./Events_and_Encounters.md#context-damage_full) | Object | Event Object: Story branch or dialog option representing the \'Damage Full\' action. | 1 |
+| [`damage_half`](./Events_and_Encounters.md#context-damage_half) | Object | Event Object: Story branch or dialog option representing the \'Damage Half\' action. | 1 |
+| [`desert_cutscene`](./Events_and_Encounters.md#context-desert_cutscene) | Object | Event Object: Triggers the desert transition cutscene. | 1 |
+| [`dexcheck`](./Events_and_Encounters.md#context-dexcheck) | Object | Event Object: Stat check branch evaluating the \'dex\' attribute. | 1 |
+| [`dig`](./Events_and_Encounters.md#context-dig) | Object | Event Object: Story branch or dialog option representing the \'Dig\' action. | 1 |
+| [`disarm`](./Events_and_Encounters.md#context-disarm) | Object | Event Object: Story branch or dialog option representing the \'Disarm\' action. | 1 |
+| [`dive`](./Events_and_Encounters.md#context-dive) | Object | Event Object: Story branch or dialog option representing the \'Dive\' action. | 1 |
+| [`donate_10`](./Events_and_Encounters.md#context-donate_10) | Object | Event Object: Story branch or dialog option representing the \'Donate 10\' action. | 1 |
+| [`donate_15`](./Events_and_Encounters.md#context-donate_15) | Object | Event Object: Story branch or dialog option representing the \'Donate 15\' action. | 1 |
+| [`donate_20`](./Events_and_Encounters.md#context-donate_20) | Object | Event Object: Story branch or dialog option representing the \'Donate 20\' action. | 1 |
+| [`donate_5`](./Events_and_Encounters.md#context-donate_5) | Object | Event Object: Story branch or dialog option representing the \'Donate 5\' action. | 1 |
+| [`donate`](./Events_and_Encounters.md#context-donate) | Object | Event Object: Story branch or dialog option representing the \'Donate\' action. | 1 |
+| [`double`](./Events_and_Encounters.md#context-double) | Object | Event Object: Story branch or dialog option representing the \'Double\' action. | 1 |
+| [`eat_meat`](./Events_and_Encounters.md#context-eat_meat) | Object | Event Object: Story branch or dialog option representing the \'Eat Meat\' action. | 1 |
+| [`enter_crater`](./Events_and_Encounters.md#context-enter_crater) | Object | Event Object: Story branch or dialog option representing the \'Enter Crater\' action. | 1 |
+| [`face`](./Events_and_Encounters.md#context-face) | Object | Event Object: Story branch or dialog option representing the \'Face\' action. | 1 |
+| [`fiddle`](./Events_and_Encounters.md#context-fiddle) | Object | Event Object: Story branch or dialog option representing the 'Fiddle' action. | 1 |
+| [`fill_jar`](./Events_and_Encounters.md#context-fill_jar) | Object | Event Object: Story branch or dialog option representing the 'Fill Jar' action. | 1 |
+| [`find`](./Events_and_Encounters.md#context-find) | Object | Event Object: Story branch or dialog option representing the \'Find\' action. | 1 |
+| [`fire`](./Events_and_Encounters.md#context-fire) | Object | Event Object: Story branch or dialog option representing the \'Fire\' action. | 1 |
+| [`flush_yourself`](./Events_and_Encounters.md#context-flush_yourself) | Object | Event Object: Story branch or dialog option representing the \'Flush Yourself\' action. | 1 |
+| [`follow`](./Events_and_Encounters.md#context-follow) | Object | Event Object: Story branch or dialog option representing the \'Follow\' action. | 1 |
+| [`free`](./Events_and_Encounters.md#context-free) | Object | Event Object: Story branch or dialog option representing the \'Free\' action. | 1 |
+| [`future`](./Events_and_Encounters.md#context-future) | Object | Event Object: Story branch or dialog option representing the 'Future' action. | 1 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 1 |
 | [`give_parasite`](./Events_and_Encounters.md#context-give_parasite) | Object | Event Action: Equips a parasite item to a character. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`hack`](./Events_and_Encounters.md#context-hack) | Object | Event Node: Story branch or dialog option representing the \'Hack\' action. | 1 |
-| [`head`](./Events_and_Encounters.md#context-head) | Object | Event Node: Story branch or dialog option representing the \'Head\' action. | 1 |
-| [`holy`](./Events_and_Encounters.md#context-holy) | Object | Event Node: Story branch or dialog option representing the \'Holy\' action. | 1 |
-| [`hp`](./Events_and_Encounters.md#context-hp) | Object | Event Node: Story branch or dialog option representing the \'Hp\' action. | 1 |
-| [`ice`](./Events_and_Encounters.md#context-ice) | Object | Event Node: Story branch or dialog option representing the \'Ice\' action. | 1 |
-| [`infinite`](./Events_and_Encounters.md#context-infinite) | Object | Event Node: A looping or endlessly repeating story branch. | 1 |
-| [`intcheck`](./Events_and_Encounters.md#context-intcheck) | Object | Event Node: Stat check branch evaluating the \'int\' attribute. | 1 |
-| [`intimidation`](./Events_and_Encounters.md#context-intimidation) | Object | Event Node: Story branch or dialog option representing the \'Intimidation\' action. | 1 |
-| [`itchies`](./Events_and_Encounters.md#context-itchies) | Object | Event Node: Story branch or dialog option representing the \'Itchies\' action. | 1 |
-| [`join`](./Events_and_Encounters.md#context-join) | Object | Event Node: Story branch or dialog option representing the \'Join\' action. | 1 |
-| [`jump_over`](./Events_and_Encounters.md#context-jump_over) | Object | Event Node: Story branch or dialog option representing the \'Jump Over\' action. | 1 |
-| [`jump`](./Events_and_Encounters.md#context-jump) | Object | Event Node: Story branch or dialog option representing the \'Jump\' action. | 1 |
-| [`keep_going`](./Events_and_Encounters.md#context-keep_going) | Object | Event Node: Story branch or dialog option representing the \'Keep Going\' action. | 1 |
-| [`kiss_meat`](./Events_and_Encounters.md#context-kiss_meat) | Object | Event Node: Story branch or dialog option representing the \'Kiss Meat\' action. | 1 |
-| [`knife`](./Events_and_Encounters.md#context-knife) | Object | Event Node: Story branch or dialog option representing the \'Knife\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`hack`](./Events_and_Encounters.md#context-hack) | Object | Event Object: Story branch or dialog option representing the \'Hack\' action. | 1 |
+| [`head`](./Events_and_Encounters.md#context-head) | Object | Event Object: Story branch or dialog option representing the \'Head\' action. | 1 |
+| [`holy`](./Events_and_Encounters.md#context-holy) | Object | Event Object: Story branch or dialog option representing the \'Holy\' action. | 1 |
+| [`hp`](./Events_and_Encounters.md#context-hp) | Object | Event Object: Story branch or dialog option representing the \'Hp\' action. | 1 |
+| [`ice`](./Events_and_Encounters.md#context-ice) | Object | Event Object: Story branch or dialog option representing the \'Ice\' action. | 1 |
+| [`infinite`](./Events_and_Encounters.md#context-infinite) | Object | Event Object: A looping or endlessly repeating story branch. | 1 |
+| [`intcheck`](./Events_and_Encounters.md#context-intcheck) | Object | Event Object: Stat check branch evaluating the \'int\' attribute. | 1 |
+| [`intimidation`](./Events_and_Encounters.md#context-intimidation) | Object | Event Object: Story branch or dialog option representing the \'Intimidation\' action. | 1 |
+| [`itchies`](./Events_and_Encounters.md#context-itchies) | Object | Event Object: Story branch or dialog option representing the \'Itchies\' action. | 1 |
+| [`join`](./Events_and_Encounters.md#context-join) | Object | Event Object: Story branch or dialog option representing the \'Join\' action. | 1 |
+| [`jump_over`](./Events_and_Encounters.md#context-jump_over) | Object | Event Object: Story branch or dialog option representing the \'Jump Over\' action. | 1 |
+| [`jump`](./Events_and_Encounters.md#context-jump) | Object | Event Object: Story branch or dialog option representing the \'Jump\' action. | 1 |
+| [`keep_going`](./Events_and_Encounters.md#context-keep_going) | Object | Event Object: Story branch or dialog option representing the \'Keep Going\' action. | 1 |
+| [`kiss_meat`](./Events_and_Encounters.md#context-kiss_meat) | Object | Event Object: Story branch or dialog option representing the \'Kiss Meat\' action. | 1 |
+| [`knife`](./Events_and_Encounters.md#context-knife) | Object | Event Object: Story branch or dialog option representing the \'Knife\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`leave_it_in`](./Events_and_Encounters.md#context-leave_it_in) | Object | Event Node: Story branch or dialog option representing the \'Leave It In\' action. | 1 |
-| [`leg`](./Events_and_Encounters.md#context-leg) | Object | Event Node: Story branch or dialog option representing the \'Leg\' action. | 1 |
-| [`lever`](./Events_and_Encounters.md#context-lever) | Object | Event Node: Story branch or dialog option representing the \'Lever\' action. | 1 |
-| [`lick_alt`](./Events_and_Encounters.md#context-lick_alt) | Object | Event Node: Story branch or dialog option representing the \'Lick Alt\' action. | 1 |
-| [`lightning`](./Events_and_Encounters.md#context-lightning) | Object | Event Node: Story branch or dialog option representing the \'Lightning\' action. | 1 |
-| [`listen`](./Events_and_Encounters.md#context-listen) | Object | Event Node: Story branch or dialog option representing the \'Listen\' action. | 1 |
-| [`looks`](./Events_and_Encounters.md#context-looks) | Object | Event Node: Story branch or dialog option representing the 'Looks' action. | 1 |
-| [`loot_heart`](./Events_and_Encounters.md#context-loot_heart) | Object | Event Node: Story branch or dialog option representing the 'Loot Heart' action. | 1 |
-| [`makeup`](./Events_and_Encounters.md#context-makeup) | Object | Event Node: Story branch or dialog option representing the \'Makeup\' action. | 1 |
-| [`mind`](./Events_and_Encounters.md#context-mind) | Object | Event Node: Story branch or dialog option representing the 'Mind' action. | 1 |
-| [`neck`](./Events_and_Encounters.md#context-neck) | Object | Event Node: Story branch or dialog option representing the \'Neck\' action. | 1 |
-| [`nothanks`](./Events_and_Encounters.md#context-nothanks) | Object | Event Node: Story branch or dialog option representing the \'Nothanks\' action. | 1 |
-| [`outsmart`](./Events_and_Encounters.md#context-outsmart) | Object | Event Node: Story branch or dialog option representing the \'Outsmart\' action. | 1 |
-| [`patch_up`](./Events_and_Encounters.md#context-patch_up) | Object | Event Node: Story branch or dialog option representing the \'Patch Up\' action. | 1 |
-| [`pick_lock`](./Events_and_Encounters.md#context-pick_lock) | Object | Event Node: Story branch or dialog option representing the \'Pick Lock\' action. | 1 |
-| [`pilfer`](./Events_and_Encounters.md#context-pilfer) | Object | Event Node: Story branch or dialog option representing the \'Pilfer\' action. | 1 |
-| [`pirouette`](./Events_and_Encounters.md#context-pirouette) | Object | Event Node: Story branch or dialog option representing the \'Pirouette\' action. | 1 |
-| [`place_gristle`](./Events_and_Encounters.md#context-place_gristle) | Object | Event Node: Story branch or dialog option representing the 'Place Gristle' action. | 1 |
+| [`leave_it_in`](./Events_and_Encounters.md#context-leave_it_in) | Object | Event Object: Story branch or dialog option representing the \'Leave It In\' action. | 1 |
+| [`leg`](./Events_and_Encounters.md#context-leg) | Object | Event Object: Story branch or dialog option representing the \'Leg\' action. | 1 |
+| [`lever`](./Events_and_Encounters.md#context-lever) | Object | Event Object: Story branch or dialog option representing the \'Lever\' action. | 1 |
+| [`lick_alt`](./Events_and_Encounters.md#context-lick_alt) | Object | Event Object: Story branch or dialog option representing the \'Lick Alt\' action. | 1 |
+| [`lightning`](./Events_and_Encounters.md#context-lightning) | Object | Event Object: Story branch or dialog option representing the \'Lightning\' action. | 1 |
+| [`listen`](./Events_and_Encounters.md#context-listen) | Object | Event Object: Story branch or dialog option representing the \'Listen\' action. | 1 |
+| [`looks`](./Events_and_Encounters.md#context-looks) | Object | Event Object: Story branch or dialog option representing the 'Looks' action. | 1 |
+| [`loot_heart`](./Events_and_Encounters.md#context-loot_heart) | Object | Event Object: Story branch or dialog option representing the 'Loot Heart' action. | 1 |
+| [`makeup`](./Events_and_Encounters.md#context-makeup) | Object | Event Object: Story branch or dialog option representing the \'Makeup\' action. | 1 |
+| [`mind`](./Events_and_Encounters.md#context-mind) | Object | Event Object: Story branch or dialog option representing the 'Mind' action. | 1 |
+| [`neck`](./Events_and_Encounters.md#context-neck) | Object | Event Object: Story branch or dialog option representing the \'Neck\' action. | 1 |
+| [`nothanks`](./Events_and_Encounters.md#context-nothanks) | Object | Event Object: Story branch or dialog option representing the \'Nothanks\' action. | 1 |
+| [`outsmart`](./Events_and_Encounters.md#context-outsmart) | Object | Event Object: Story branch or dialog option representing the \'Outsmart\' action. | 1 |
+| [`patch_up`](./Events_and_Encounters.md#context-patch_up) | Object | Event Object: Story branch or dialog option representing the \'Patch Up\' action. | 1 |
+| [`pick_lock`](./Events_and_Encounters.md#context-pick_lock) | Object | Event Object: Story branch or dialog option representing the \'Pick Lock\' action. | 1 |
+| [`pilfer`](./Events_and_Encounters.md#context-pilfer) | Object | Event Object: Story branch or dialog option representing the \'Pilfer\' action. | 1 |
+| [`pirouette`](./Events_and_Encounters.md#context-pirouette) | Object | Event Object: Story branch or dialog option representing the \'Pirouette\' action. | 1 |
+| [`place_gristle`](./Events_and_Encounters.md#context-place_gristle) | Object | Event Object: Story branch or dialog option representing the 'Place Gristle' action. | 1 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 1 |
-| [`power`](./Events_and_Encounters.md#context-power) | Object | Event Node: Story branch or dialog option representing the 'Power' action. | 1 |
-| [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out) | Object | Event Node: Story branch or dialog option representing the \'Pull It Out\' action. | 1 |
-| [`pull_lever`](./Events_and_Encounters.md#context-pull_lever) | Object | Event Node: Story branch or dialog option representing the \'Pull Lever\' action. | 1 |
-| [`pull`](./Events_and_Encounters.md#context-pull) | Object | Event Node: Story branch or dialog option representing the \'Pull\' action. | 1 |
-| [`purify`](./Events_and_Encounters.md#context-purify) | Object | Event Node: Story branch or dialog option representing the \'Purify\' action. | 1 |
-| [`push_buttons`](./Events_and_Encounters.md#context-push_buttons) | Object | Event Node: Story branch or dialog option representing the \'Push Buttons\' action. | 1 |
-| [`push_through`](./Events_and_Encounters.md#context-push_through) | Object | Event Node: Story branch or dialog option representing the \'Push Through\' action. | 1 |
-| [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins) | Object | Event Node: Story branch or dialog option representing the \'Put In Coins\' action. | 1 |
-| [`put_out_of_misery`](./Events_and_Encounters.md#context-put_out_of_misery) | Object | Event Node: Story branch or dialog option representing the \'Put Out Of Misery\' action. | 1 |
-| [`reach_inside`](./Events_and_Encounters.md#context-reach_inside) | Object | Event Node: Story branch or dialog option representing the \'Reach Inside\' action. | 1 |
-| [`read`](./Events_and_Encounters.md#context-read) | Object | Event Node: Story branch or dialog option representing the \'Read\' action. | 1 |
-| [`receive`](./Events_and_Encounters.md#context-receive) | Object | Event Node: Story branch or dialog option representing the \'Receive\' action. | 1 |
-| [`red_needle`](./Events_and_Encounters.md#context-red_needle) | Object | Event Node: Story branch or dialog option representing the \'Red Needle\' action. | 1 |
-| [`red`](./Events_and_Encounters.md#context-red) | Object | Event Node: Story branch or dialog option representing the \'Red\' action. | 1 |
-| [`reflect`](./Events_and_Encounters.md#context-reflect) | Object | Event Node: Story branch or dialog option representing the \'Reflect\' action. | 1 |
-| [`remove_the_nail`](./Events_and_Encounters.md#context-remove_the_nail) | Object | Event Node: Story branch or dialog option representing the \'Remove The Nail\' action. | 1 |
-| [`remove`](./Events_and_Encounters.md#context-remove) | Object | Event Node: Story branch or dialog option representing the \'Remove\' action. | 1 |
-| [`repair_quest`](./Events_and_Encounters.md#context-repair_quest) | Object | Event Node: Story branch or dialog option representing the 'Repair Quest' action. | 1 |
-| [`rest`](./Events_and_Encounters.md#context-rest) | Object | Event Node: Story branch or dialog option representing the \'Rest\' action. | 1 |
-| [`revive`](./Events_and_Encounters.md#context-revive) | Object | Event Node: Story branch or dialog option representing the \'Revive\' action. | 1 |
-| [`rub`](./Events_and_Encounters.md#context-rub) | Object | Event Node: Story branch or dialog option representing the \'Rub\' action. | 1 |
-| [`run_again`](./Events_and_Encounters.md#context-run_again) | Object | Event Node: Story branch or dialog option representing the \'Run Again\' action. | 1 |
-| [`run_away`](./Events_and_Encounters.md#context-run_away) | Object | Event Node: Story branch or dialog option representing the \'Run Away\' action. | 1 |
-| [`sacrifice_full_favor`](./Events_and_Encounters.md#context-sacrifice_full_favor) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice Full Favor\' action. | 1 |
-| [`sacrifice_normal`](./Events_and_Encounters.md#context-sacrifice_normal) | Object | Event Node: Story branch or dialog option representing the 'Sacrifice Normal' action. | 1 |
-| [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice Partial Favor\' action. | 1 |
-| [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest) | Object | Event Node: Story branch or dialog option representing the 'Sacrifice Quest' action. | 1 |
-| [`scream`](./Events_and_Encounters.md#context-scream) | Object | Event Node: Story branch or dialog option representing the \'Scream\' action. | 1 |
-| [`shake`](./Events_and_Encounters.md#context-shake) | Object | Event Node: Story branch or dialog option representing the \'Shake\' action. | 1 |
-| [`slip_through`](./Events_and_Encounters.md#context-slip_through) | Object | Event Node: Story branch or dialog option representing the \'Slip Through\' action. | 1 |
-| [`sneak_by`](./Events_and_Encounters.md#context-sneak_by) | Object | Event Node: Story branch or dialog option representing the \'Sneak By\' action. | 1 |
-| [`sneak_past_alt`](./Events_and_Encounters.md#context-sneak_past_alt) | Object | Event Node: Story branch or dialog option representing the \'Sneak Past Alt\' action. | 1 |
-| [`soul`](./Events_and_Encounters.md#context-soul) | Object | Event Node: Story branch or dialog option representing the 'Soul' action. | 1 |
-| [`speed`](./Events_and_Encounters.md#context-speed) | Object | Event Node: Story branch or dialog option representing the \'Speed\' action. | 1 |
+| [`power`](./Events_and_Encounters.md#context-power) | Object | Event Object: Story branch or dialog option representing the 'Power' action. | 1 |
+| [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out) | Object | Event Object: Story branch or dialog option representing the \'Pull It Out\' action. | 1 |
+| [`pull_lever`](./Events_and_Encounters.md#context-pull_lever) | Object | Event Object: Story branch or dialog option representing the \'Pull Lever\' action. | 1 |
+| [`pull`](./Events_and_Encounters.md#context-pull) | Object | Event Object: Story branch or dialog option representing the \'Pull\' action. | 1 |
+| [`purify`](./Events_and_Encounters.md#context-purify) | Object | Event Object: Story branch or dialog option representing the \'Purify\' action. | 1 |
+| [`push_buttons`](./Events_and_Encounters.md#context-push_buttons) | Object | Event Object: Story branch or dialog option representing the \'Push Buttons\' action. | 1 |
+| [`push_through`](./Events_and_Encounters.md#context-push_through) | Object | Event Object: Story branch or dialog option representing the \'Push Through\' action. | 1 |
+| [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins) | Object | Event Object: Story branch or dialog option representing the \'Put In Coins\' action. | 1 |
+| [`put_out_of_misery`](./Events_and_Encounters.md#context-put_out_of_misery) | Object | Event Object: Story branch or dialog option representing the \'Put Out Of Misery\' action. | 1 |
+| [`reach_inside`](./Events_and_Encounters.md#context-reach_inside) | Object | Event Object: Story branch or dialog option representing the \'Reach Inside\' action. | 1 |
+| [`read`](./Events_and_Encounters.md#context-read) | Object | Event Object: Story branch or dialog option representing the \'Read\' action. | 1 |
+| [`receive`](./Events_and_Encounters.md#context-receive) | Object | Event Object: Story branch or dialog option representing the \'Receive\' action. | 1 |
+| [`red_needle`](./Events_and_Encounters.md#context-red_needle) | Object | Event Object: Story branch or dialog option representing the \'Red Needle\' action. | 1 |
+| [`red`](./Events_and_Encounters.md#context-red) | Object | Event Object: Story branch or dialog option representing the \'Red\' action. | 1 |
+| [`reflect`](./Events_and_Encounters.md#context-reflect) | Object | Event Object: Story branch or dialog option representing the \'Reflect\' action. | 1 |
+| [`remove_the_nail`](./Events_and_Encounters.md#context-remove_the_nail) | Object | Event Object: Story branch or dialog option representing the \'Remove The Nail\' action. | 1 |
+| [`remove`](./Events_and_Encounters.md#context-remove) | Object | Event Object: Story branch or dialog option representing the \'Remove\' action. | 1 |
+| [`repair_quest`](./Events_and_Encounters.md#context-repair_quest) | Object | Event Object: Story branch or dialog option representing the 'Repair Quest' action. | 1 |
+| [`rest`](./Events_and_Encounters.md#context-rest) | Object | Event Object: Story branch or dialog option representing the \'Rest\' action. | 1 |
+| [`revive`](./Events_and_Encounters.md#context-revive) | Object | Event Object: Story branch or dialog option representing the \'Revive\' action. | 1 |
+| [`rub`](./Events_and_Encounters.md#context-rub) | Object | Event Object: Story branch or dialog option representing the \'Rub\' action. | 1 |
+| [`run_again`](./Events_and_Encounters.md#context-run_again) | Object | Event Object: Story branch or dialog option representing the \'Run Again\' action. | 1 |
+| [`run_away`](./Events_and_Encounters.md#context-run_away) | Object | Event Object: Story branch or dialog option representing the \'Run Away\' action. | 1 |
+| [`sacrifice_full_favor`](./Events_and_Encounters.md#context-sacrifice_full_favor) | Object | Event Object: Story branch or dialog option representing the \'Sacrifice Full Favor\' action. | 1 |
+| [`sacrifice_normal`](./Events_and_Encounters.md#context-sacrifice_normal) | Object | Event Object: Story branch or dialog option representing the 'Sacrifice Normal' action. | 1 |
+| [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor) | Object | Event Object: Story branch or dialog option representing the \'Sacrifice Partial Favor\' action. | 1 |
+| [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest) | Object | Event Object: Story branch or dialog option representing the 'Sacrifice Quest' action. | 1 |
+| [`scream`](./Events_and_Encounters.md#context-scream) | Object | Event Object: Story branch or dialog option representing the \'Scream\' action. | 1 |
+| [`shake`](./Events_and_Encounters.md#context-shake) | Object | Event Object: Story branch or dialog option representing the \'Shake\' action. | 1 |
+| [`slip_through`](./Events_and_Encounters.md#context-slip_through) | Object | Event Object: Story branch or dialog option representing the \'Slip Through\' action. | 1 |
+| [`sneak_by`](./Events_and_Encounters.md#context-sneak_by) | Object | Event Object: Story branch or dialog option representing the \'Sneak By\' action. | 1 |
+| [`sneak_past_alt`](./Events_and_Encounters.md#context-sneak_past_alt) | Object | Event Object: Story branch or dialog option representing the \'Sneak Past Alt\' action. | 1 |
+| [`soul`](./Events_and_Encounters.md#context-soul) | Object | Event Object: Story branch or dialog option representing the 'Soul' action. | 1 |
+| [`speed`](./Events_and_Encounters.md#context-speed) | Object | Event Object: Story branch or dialog option representing the \'Speed\' action. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`surprise`](./Events_and_Encounters.md#context-surprise) | Object | Event Node: Story branch or dialog option representing the \'Surprise\' action. | 1 |
-| [`sweet_talk`](./Events_and_Encounters.md#context-sweet_talk) | Object | Event Node: Story branch or dialog option representing the \'Sweet Talk\' action. | 1 |
-| [`swim`](./Events_and_Encounters.md#context-swim) | Object | Event Node: Story branch or dialog option representing the \'Swim\' action. | 1 |
-| [`tail`](./Events_and_Encounters.md#context-tail) | Object | Event Node: Story branch or dialog option representing the \'Tail\' action. | 1 |
-| [`take_blood`](./Events_and_Encounters.md#context-take_blood) | Object | Event Node: Story branch or dialog option representing the 'Take Blood' action. | 1 |
-| [`talk_to`](./Events_and_Encounters.md#context-talk_to) | Object | Event Node: Story branch or dialog option representing the \'Talk To\' action. | 1 |
-| [`talk`](./Events_and_Encounters.md#context-talk) | Object | Event Node: Story branch or dialog option representing the 'Talk' action. | 1 |
-| [`tappytoes`](./Events_and_Encounters.md#context-tappytoes) | Object | Event Node: Story branch or dialog option representing the \'Tappytoes\' action. | 1 |
-| [`teleport`](./Events_and_Encounters.md#context-teleport) | Object | Event Node: Story branch or dialog option representing the \'Teleport\' action. | 1 |
-| [`thorns`](./Events_and_Encounters.md#context-thorns) | Object | Event Node: Story branch or dialog option representing the \'Thorns\' action. | 1 |
-| [`throw`](./Events_and_Encounters.md#context-throw) | Object | Event Node: Story branch or dialog option representing the \'Throw\' action. | 1 |
-| [`timemachine`](./Events_and_Encounters.md#context-timemachine) | Object | Event Node: Story branch or dialog option representing the \'Timemachine\' action. | 1 |
-| [`traverse`](./Events_and_Encounters.md#context-traverse) | Object | Event Node: Story branch or dialog option representing the \'Traverse\' action. | 1 |
+| [`surprise`](./Events_and_Encounters.md#context-surprise) | Object | Event Object: Story branch or dialog option representing the \'Surprise\' action. | 1 |
+| [`sweet_talk`](./Events_and_Encounters.md#context-sweet_talk) | Object | Event Object: Story branch or dialog option representing the \'Sweet Talk\' action. | 1 |
+| [`swim`](./Events_and_Encounters.md#context-swim) | Object | Event Object: Story branch or dialog option representing the \'Swim\' action. | 1 |
+| [`tail`](./Events_and_Encounters.md#context-tail) | Object | Event Object: Story branch or dialog option representing the \'Tail\' action. | 1 |
+| [`take_blood`](./Events_and_Encounters.md#context-take_blood) | Object | Event Object: Story branch or dialog option representing the 'Take Blood' action. | 1 |
+| [`talk_to`](./Events_and_Encounters.md#context-talk_to) | Object | Event Object: Story branch or dialog option representing the \'Talk To\' action. | 1 |
+| [`talk`](./Events_and_Encounters.md#context-talk) | Object | Event Object: Story branch or dialog option representing the 'Talk' action. | 1 |
+| [`tappytoes`](./Events_and_Encounters.md#context-tappytoes) | Object | Event Object: Story branch or dialog option representing the \'Tappytoes\' action. | 1 |
+| [`teleport`](./Events_and_Encounters.md#context-teleport) | Object | Event Object: Story branch or dialog option representing the \'Teleport\' action. | 1 |
+| [`thorns`](./Events_and_Encounters.md#context-thorns) | Object | Event Object: Story branch or dialog option representing the \'Thorns\' action. | 1 |
+| [`throw`](./Events_and_Encounters.md#context-throw) | Object | Event Object: Story branch or dialog option representing the \'Throw\' action. | 1 |
+| [`timemachine`](./Events_and_Encounters.md#context-timemachine) | Object | Event Object: Story branch or dialog option representing the \'Timemachine\' action. | 1 |
+| [`traverse`](./Events_and_Encounters.md#context-traverse) | Object | Event Object: Story branch or dialog option representing the \'Traverse\' action. | 1 |
 | [`upgrade_yourself`](./Events_and_Encounters.md#context-upgrade_yourself) | Object | Event Reward: Upgrades an existing ability or item. | 1 |
 | [`use_item`](./Events_and_Encounters.md#context-use_item) | Object | Event Requirement: Requires the player to consume a specific item to proceed. | 1 |
-| [`use_toilet_con`](./Events_and_Encounters.md#context-use_toilet_con) | Object | Event Node: Story branch or dialog option representing the \'Use Toilet Con\' action. | 1 |
-| [`use_toilet_str`](./Events_and_Encounters.md#context-use_toilet_str) | Object | Event Node: Story branch or dialog option representing the \'Use Toilet Str\' action. | 1 |
+| [`use_toilet_con`](./Events_and_Encounters.md#context-use_toilet_con) | Object | Event Object: Story branch or dialog option representing the \'Use Toilet Con\' action. | 1 |
+| [`use_toilet_str`](./Events_and_Encounters.md#context-use_toilet_str) | Object | Event Object: Story branch or dialog option representing the \'Use Toilet Str\' action. | 1 |
 | [`use_weapon`](./Events_and_Encounters.md#context-use_weapon) | Object | Event Requirement: Uses the properties of the equipped weapon to resolve an outcome. | 1 |
-| [`w1`](./Events_and_Encounters.md#context-w1) | Object | Event Node: Story branch or dialog option representing the \'W1\' action. | 1 |
-| [`w2`](./Events_and_Encounters.md#context-w2) | Object | Event Node: Story branch or dialog option representing the \'W2\' action. | 1 |
-| [`w3`](./Events_and_Encounters.md#context-w3) | Object | Event Node: Story branch or dialog option representing the \'W3\' action. | 1 |
-| [`w4`](./Events_and_Encounters.md#context-w4) | Object | Event Node: Story branch or dialog option representing the \'W4\' action. | 1 |
-| [`w5`](./Events_and_Encounters.md#context-w5) | Object | Event Node: Story branch or dialog option representing the \'W5\' action. | 1 |
-| [`w6`](./Events_and_Encounters.md#context-w6) | Object | Event Node: Story branch or dialog option representing the \'W6\' action. | 1 |
-| [`wealth`](./Events_and_Encounters.md#context-wealth) | Object | Event Node: Story branch or dialog option representing the 'Wealth' action. | 1 |
-| [`wheezies`](./Events_and_Encounters.md#context-wheezies) | Object | Event Node: Story branch or dialog option representing the \'Wheezies\' action. | 1 |
-| [`wish_genes`](./Events_and_Encounters.md#context-wish_genes) | Object | Event Node: Story branch or dialog option representing the \'Wish Genes\' action. | 1 |
-| [`wish_items`](./Events_and_Encounters.md#context-wish_items) | Object | Event Node: Story branch or dialog option representing the \'Wish Items\' action. | 1 |
-| [`wish_levelups`](./Events_and_Encounters.md#context-wish_levelups) | Object | Event Node: Story branch or dialog option representing the \'Wish Levelups\' action. | 1 |
-| [`wish_strength`](./Events_and_Encounters.md#context-wish_strength) | Object | Event Node: Story branch or dialog option representing the \'Wish Strength\' action. | 1 |
-| [`withstand`](./Events_and_Encounters.md#context-withstand) | Object | Event Node: Story branch or dialog option representing the \'Withstand\' action. | 1 |
-| [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out) | Object | Event Node: Story branch or dialog option representing the \'Yank It Out\' action. | 1 |
-| [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle) | Object | Event Node: Story branch or dialog option representing the \'Yellow Needle\' action. | 1 |
+| [`w1`](./Events_and_Encounters.md#context-w1) | Object | Event Object: Story branch or dialog option representing the \'W1\' action. | 1 |
+| [`w2`](./Events_and_Encounters.md#context-w2) | Object | Event Object: Story branch or dialog option representing the \'W2\' action. | 1 |
+| [`w3`](./Events_and_Encounters.md#context-w3) | Object | Event Object: Story branch or dialog option representing the \'W3\' action. | 1 |
+| [`w4`](./Events_and_Encounters.md#context-w4) | Object | Event Object: Story branch or dialog option representing the \'W4\' action. | 1 |
+| [`w5`](./Events_and_Encounters.md#context-w5) | Object | Event Object: Story branch or dialog option representing the \'W5\' action. | 1 |
+| [`w6`](./Events_and_Encounters.md#context-w6) | Object | Event Object: Story branch or dialog option representing the \'W6\' action. | 1 |
+| [`wealth`](./Events_and_Encounters.md#context-wealth) | Object | Event Object: Story branch or dialog option representing the 'Wealth' action. | 1 |
+| [`wheezies`](./Events_and_Encounters.md#context-wheezies) | Object | Event Object: Story branch or dialog option representing the \'Wheezies\' action. | 1 |
+| [`wish_genes`](./Events_and_Encounters.md#context-wish_genes) | Object | Event Object: Story branch or dialog option representing the \'Wish Genes\' action. | 1 |
+| [`wish_items`](./Events_and_Encounters.md#context-wish_items) | Object | Event Object: Story branch or dialog option representing the \'Wish Items\' action. | 1 |
+| [`wish_levelups`](./Events_and_Encounters.md#context-wish_levelups) | Object | Event Object: Story branch or dialog option representing the \'Wish Levelups\' action. | 1 |
+| [`wish_strength`](./Events_and_Encounters.md#context-wish_strength) | Object | Event Object: Story branch or dialog option representing the \'Wish Strength\' action. | 1 |
+| [`withstand`](./Events_and_Encounters.md#context-withstand) | Object | Event Object: Story branch or dialog option representing the \'Withstand\' action. | 1 |
+| [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out) | Object | Event Object: Story branch or dialog option representing the \'Yank It Out\' action. | 1 |
+| [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle) | Object | Event Object: Story branch or dialog option representing the \'Yellow Needle\' action. | 1 |
 | `set_frame` | Number |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
@@ -14264,9 +14264,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 124 |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Node: Story branch or dialog option representing the \'Reward\' action. | 124 |
-| [`else`](./Events_and_Encounters.md#context-else) | Object | Event Node: Story branch or dialog option representing the \'Else\' action. | 37 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 124 |
+| [`reward`](./Events_and_Encounters.md#context-reward) | Object | Event Object: Story branch or dialog option representing the \'Reward\' action. | 124 |
+| [`else`](./Events_and_Encounters.md#context-else) | Object | Event Object: Story branch or dialog option representing the \'Else\' action. | 37 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 2 |
 
 </details>
@@ -14303,12 +14303,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 57 |
 | `label` | Mixed |  | 57 |
 | `stat` | Mixed |  | 56 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 55 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 2 |
 
 </details>
@@ -14328,8 +14328,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`stat`](./Math_Equations.md) | Equation |  | 43 |
 | `label` | Mixed |  | 43 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 32 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 41 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 32 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 1 |
@@ -14382,7 +14382,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`random_mutation`](./Events_and_Encounters.md#context-random_mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum |  | 1 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |
+| `damage` | Number | Event Object: Story branch or dialog option representing the 'Damage' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 
 </details>
@@ -14400,11 +14400,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
 | `stat` | Mixed |  | 30 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 28 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 3 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 3 |
 
 </details>
 
@@ -14422,12 +14422,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 25 |
 | [`stat`](./Math_Equations.md) | Equation |  | 25 |
 | `label` | Mixed |  | 25 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 23 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 23 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
+| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 1 |
 
 </details>
 
@@ -14448,11 +14448,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mouth` | Number |  | 11 |
 | `ears` | Number |  | 10 |
 | `eyebrows` | Number |  | 8 |
-| `head` | Number | Event Node: Story branch or dialog option representing the 'Head' action. | 7 |
+| `head` | Number | Event Object: Story branch or dialog option representing the 'Head' action. | 7 |
 | `legs` | Number |  | 7 |
 | `arms` | Number |  | 6 |
-| `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 6 |
-| `tail` | Number | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 |
+| `body` | Number | Event Object: Story branch or dialog option representing the 'Body' action. | 6 |
+| `tail` | Number | Event Object: Story branch or dialog option representing the 'Tail' action. | 6 |
 | `eye1` | Number |  | 3 |
 | `arm1` | Number |  | 2 |
 | `ear1` | Number |  | 2 |
@@ -14475,8 +14475,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 23 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 23 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 23 |
 | [`stat`](./Math_Equations.md) | Equation |  | 23 |
 | `label` | Mixed |  | 23 |
 
@@ -14540,7 +14540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`cutscene`](./Strings.md#string-cutscene) | String | Event Node: Triggers a narrative cutscene. | 21 |
+| [`cutscene`](./Strings.md#string-cutscene) | String | Event Object: Triggers a narrative cutscene. | 21 |
 | `skip_result_screen` | Boolean |  | 21 |
 
 </details>
@@ -14560,13 +14560,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `mouth` | Number |  | 9 |
 | `count` | Number | Quantity. | 8 |
-| `tail` | Number | Event Node: Story branch or dialog option representing the 'Tail' action. | 7 |
+| `tail` | Number | Event Object: Story branch or dialog option representing the 'Tail' action. | 7 |
 | `ears` | Number |  | 5 |
 | `eyes` | Number |  | 5 |
 | `legs` | Number |  | 5 |
-| `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 4 |
+| `body` | Number | Event Object: Story branch or dialog option representing the 'Body' action. | 4 |
 | `eyebrows` | Number |  | 3 |
-| `head` | Number | Event Node: Story branch or dialog option representing the 'Head' action. | 3 |
+| `head` | Number | Event Object: Story branch or dialog option representing the 'Head' action. | 3 |
 | `arm1` | Number |  | 2 |
 | `arm2` | Number |  | 2 |
 | `leg1` | Number |  | 1 |
@@ -14590,8 +14590,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
 | `stat` | Mixed |  | 15 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 12 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 14 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 12 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
 
 </details>
@@ -14609,10 +14609,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
 | [`stat`](./Math_Equations.md) | Equation |  | 14 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 13 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 13 |
 
 </details>
 
@@ -14629,11 +14629,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 12 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 12 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 12 |
 | [`label`](./Strings.md#string-label) | String |  | 12 |
 | [`stat`](./Math_Equations.md) | Equation |  | 12 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -14652,8 +14652,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 7 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
 
 </details>
@@ -14671,11 +14671,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 11 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 11 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 11 |
 | [`stat`](./Math_Equations.md) | Equation |  | 11 |
 | `label` | Mixed |  | 11 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -14712,8 +14712,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 8 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 8 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 8 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
@@ -14733,7 +14733,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
@@ -14755,9 +14755,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`rare`](./Events_and_Encounters.md#context-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 1 |
 
 </details>
 
@@ -14774,7 +14774,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
@@ -14794,7 +14794,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
@@ -14814,11 +14814,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 7 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | `label` | Mixed |  | 7 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -14835,11 +14835,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | `label` | Mixed |  | 7 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -14875,11 +14875,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 7 |
 | `label` | Mixed |  | 7 |
 | `stat` | Mixed |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 6 |
 
 </details>
 
@@ -14897,9 +14897,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 6 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
 
 </details>
@@ -14918,9 +14918,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 6 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
 
 </details>
@@ -14938,7 +14938,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
@@ -14958,9 +14958,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 6 |
 | `label` | Mixed |  | 6 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 5 |
 | `stat` | Mixed |  | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
@@ -14980,8 +14980,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`stat`](./Math_Equations.md) | Equation |  | 6 |
 
@@ -15000,12 +15000,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 6 |
 | `label` | Mixed |  | 6 |
 | `stat` | Mixed |  | 6 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -15061,8 +15061,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
 | `label` | Mixed |  | 5 |
 
@@ -15081,8 +15081,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
 
@@ -15101,11 +15101,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
@@ -15124,8 +15124,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |
 
@@ -15144,7 +15144,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 3 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 3 |
@@ -15164,8 +15164,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | `stat` | Mixed |  | 3 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
@@ -15186,7 +15186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
@@ -15250,10 +15250,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 4 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
 
 </details>
@@ -15272,7 +15272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
 
@@ -15310,8 +15310,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 3 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 3 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
 
@@ -15330,8 +15330,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 3 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 3 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
 
@@ -15350,7 +15350,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| [`mutation`](./Events_and_Encounters.md#context-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 1 |
 
 </details>
 
@@ -15386,9 +15386,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 2 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
 
 </details>
@@ -15407,7 +15407,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
 
@@ -15426,7 +15426,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 
 </details>
@@ -15444,8 +15444,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -15465,8 +15465,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
 
@@ -15523,8 +15523,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
 
@@ -15544,7 +15544,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
 
@@ -15563,7 +15563,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 
 </details>
@@ -15582,7 +15582,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
 
@@ -15601,11 +15601,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | `label` | Mixed |  | 2 |
 | `stat` | Mixed |  | 2 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -15622,11 +15622,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -15644,7 +15644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 
 </details>
@@ -15662,8 +15662,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
 
@@ -15682,7 +15682,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -15701,8 +15701,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -15722,9 +15722,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -15743,9 +15743,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -15763,10 +15763,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -15784,8 +15784,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -15825,10 +15825,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -15846,7 +15846,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -15866,7 +15866,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -15886,7 +15886,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -15905,8 +15905,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -15924,8 +15924,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -15944,8 +15944,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -15987,7 +15987,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
@@ -16011,8 +16011,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16031,8 +16031,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16051,7 +16051,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16070,7 +16070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16089,10 +16089,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -16110,8 +16110,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16130,8 +16130,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16150,8 +16150,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16170,8 +16170,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16191,7 +16191,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16210,8 +16210,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16230,8 +16230,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -16249,8 +16249,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16269,8 +16269,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16289,8 +16289,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16309,8 +16309,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16329,7 +16329,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16348,8 +16348,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16368,10 +16368,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -16389,8 +16389,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16409,8 +16409,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16430,7 +16430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16451,10 +16451,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
@@ -16476,10 +16476,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
@@ -16501,10 +16501,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
@@ -16526,10 +16526,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
@@ -16550,7 +16550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16569,8 +16569,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16589,8 +16589,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16609,7 +16609,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -16627,9 +16627,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -16648,9 +16648,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -16668,7 +16668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16688,7 +16688,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16707,9 +16707,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -16726,8 +16726,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16746,8 +16746,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16767,10 +16767,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -16821,10 +16821,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -16841,8 +16841,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16861,7 +16861,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -16880,7 +16880,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16900,7 +16900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16920,7 +16920,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -16940,10 +16940,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -16961,8 +16961,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -16982,7 +16982,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17002,7 +17002,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17021,8 +17021,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17041,8 +17041,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17061,8 +17061,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17081,8 +17081,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -17100,8 +17100,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17121,7 +17121,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17141,8 +17141,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17161,8 +17161,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17182,8 +17182,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `fixed_chance` | Number |  | 1 |
@@ -17203,10 +17203,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -17225,7 +17225,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17244,8 +17244,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17264,7 +17264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17284,9 +17284,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -17305,7 +17305,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17324,7 +17324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17343,7 +17343,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -17362,7 +17362,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17381,7 +17381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17400,8 +17400,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17420,8 +17420,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17440,8 +17440,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17461,7 +17461,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17481,9 +17481,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -17501,7 +17501,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17520,8 +17520,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17540,8 +17540,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17560,8 +17560,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -17579,8 +17579,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17599,8 +17599,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 
 </details>
@@ -17618,8 +17618,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17640,8 +17640,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
@@ -17662,8 +17662,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17700,7 +17700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17719,8 +17719,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17740,9 +17740,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -17761,8 +17761,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `fixed_chance` | Number |  | 1 |
@@ -17782,10 +17782,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -17804,7 +17804,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -17823,8 +17823,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17843,8 +17843,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17863,9 +17863,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -17883,8 +17883,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17903,8 +17903,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17923,8 +17923,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17944,10 +17944,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -17965,8 +17965,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -17986,9 +17986,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18007,9 +18007,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -18028,10 +18028,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18050,9 +18050,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18070,7 +18070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18089,8 +18089,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18109,8 +18109,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18129,8 +18129,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18149,10 +18149,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -18170,7 +18170,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18190,7 +18190,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18210,7 +18210,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18229,8 +18229,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18249,8 +18249,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18269,8 +18269,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18290,9 +18290,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18310,8 +18310,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18330,8 +18330,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18351,7 +18351,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18370,8 +18370,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18391,7 +18391,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18410,8 +18410,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18430,7 +18430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18449,7 +18449,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
@@ -18470,8 +18470,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18490,8 +18490,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18510,8 +18510,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18530,8 +18530,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18550,10 +18550,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
 
@@ -18571,7 +18571,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18591,7 +18591,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18611,7 +18611,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18631,7 +18631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18651,7 +18651,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18671,7 +18671,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18690,7 +18690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18710,7 +18710,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -18729,9 +18729,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18749,9 +18749,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18769,9 +18769,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18789,9 +18789,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -18809,8 +18809,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18829,8 +18829,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
@@ -18849,10 +18849,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Object | Event Object: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Object: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Object: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
@@ -19324,7 +19324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 10 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 9 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 6 |
@@ -19523,7 +19523,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 17 |
 | `Freeze` | Number | Applies or references the 'Freeze' effect/state. | 6 |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 3 |
@@ -19547,7 +19547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies or references the 'EquipPermanentItem' effect/state. | 1 |
 | `BrittleCharismaUp` | Number | Applies or references the 'BrittleCharismaUp' effect/state. | 1 |
 | `BrittleConstitutionUp` | Number | Applies or references the 'BrittleConstitutionUp' effect/state. | 1 |
@@ -19585,7 +19585,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. | 2 |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 1 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 1 |
-| [`Temporary`](./Items_and_Equipment.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 1 |
+| [`Temporary`](./Items_and_Equipment.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 1 |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 1 |
@@ -19674,7 +19674,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ManaGainRange`](./Items_and_Equipment.md#context-managainrange) | Object | Applies or references the 'ManaGainRange' effect/state. | 1 |
-| [`Temporary`](./Items_and_Equipment.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 1 |
+| [`Temporary`](./Items_and_Equipment.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 1 |
 | `BlessingOfPeace` | Number | Applies or references the 'BlessingOfPeace' effect/state. | 1 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
@@ -19719,7 +19719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 4 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
 | [`Quivered`](./Arrays.md#array-quivered) | Array | Applies or references the 'Quivered' effect/state. | 1 |
@@ -19798,7 +19798,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `must_do_damage` | Boolean |  | 3 |
 | [`KnockbackIfCrit`](./Items_and_Equipment.md#context-knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 1 |
 | `Rot` | Number | Applies or references the 'Rot' effect/state. | 1 |
@@ -19915,7 +19915,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`CreateGlobalModifiers`](./Items_and_Equipment.md#context-createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 1 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 1 |
 | [`GainCoinsRange`](./Items_and_Equipment.md#context-gaincoinsrange) | Object | Grants the player a randomized amount of coins within a min/max range. | 1 |
@@ -19937,7 +19937,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 3 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 3 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |
@@ -20055,7 +20055,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 4 |
 | [`ApplyToSource`](./Items_and_Equipment.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |
 | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 1 |
@@ -20247,8 +20247,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`Else`](./Items_and_Equipment.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`Else`](./Items_and_Equipment.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 
 </details>
 
@@ -20301,7 +20301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -20318,7 +20318,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AutocastEachRound`](./Items_and_Equipment.md#context-autocasteachround) | Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 1 |
 | [`StatusEachRoundEnd`](./Items_and_Equipment.md#context-statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 1 |
 | [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin) | Object | Applies or references the 'StatusEachTurnBegin' effect/state. | 1 |
@@ -20489,7 +20489,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 2 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 1 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
@@ -20509,7 +20509,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
@@ -20528,7 +20528,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 1 |
 
 </details>
@@ -20637,7 +20637,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -20654,8 +20654,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`Temporary`](./Items_and_Equipment.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`Temporary`](./Items_and_Equipment.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 3 |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 
 </details>
@@ -20673,7 +20673,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 
 </details>
@@ -20691,7 +20691,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ShowText`](./Strings.md#string-showtext) | String | Applies or references the 'ShowText' effect/state. | 1 |
 | [`key`](./Enums.md#enum-key) | Enum |  | 1 |
 | `ReduceManaCost` | Number | Applies or references the 'ReduceManaCost' effect/state. | 1 |
@@ -20955,7 +20955,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 1 |
 | [`Craft`](./Items_and_Equipment.md#context-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 1 |
 
@@ -21280,7 +21280,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array | Applies or references the 'RepairWeapon' effect/state. | 1 |
 
 </details>
@@ -21298,7 +21298,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 
 </details>
@@ -21316,7 +21316,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 1 |
 
 </details>
@@ -21404,7 +21404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Enum | Applies or references the 'GainDisorderFromPool' effect/state. | 2 |
 
 </details>
@@ -21546,7 +21546,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 1 |
 
 </details>
@@ -21564,7 +21564,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RandomMutation` | Number | Applies or references the 'RandomMutation' effect/state. | 1 |
 
 </details>
@@ -21582,7 +21582,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Leeches` | Number | Applies or references the 'Leeches' effect/state. | 1 |
 
 </details>
@@ -21600,7 +21600,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 1 |
 | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. | 1 |
 | `OverrideChainKnockback` | Number | Applies or references the 'OverrideChainKnockback' effect/state. | 1 |
@@ -21620,7 +21620,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 1 |
 
 </details>
@@ -21638,7 +21638,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |
 | `threshold_flat` | Number |  | 1 |
 
@@ -21657,7 +21657,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
 
 </details>
@@ -21675,7 +21675,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyPassives`](./Items_and_Equipment.md#context-applypassives) | Object | Grants the nested passive abilities dynamically. | 1 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
@@ -21694,7 +21694,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`SetItemAux`](./Items_and_Equipment.md#context-setitemaux) | Object | Applies or references the 'SetItemAux' effect/state. | 1 |
 
 </details>
@@ -21944,7 +21944,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`MovementReaction`](./Items_and_Equipment.md#context-movementreaction) | Object | Applies or references the 'MovementReaction' effect/state. | 1 |
 
 </details>
@@ -22091,7 +22091,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -22230,7 +22230,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -22385,7 +22385,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `FillMana` | Number | Applies or references the 'FillMana' effect/state. | 1 |
 | `HealRandomInjury` | Number | Applies or references the 'HealRandomInjury' effect/state. | 1 |
@@ -28209,7 +28209,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Bleed`](./Arrays.md#array-bleed) | Array | Examples: `[ 3 .1 ], 2, 1` | 30 |
 | [`Poison`](./Arrays.md#array-poison) | Array | Examples: `2, 1, [ 1 .5 ]` | 29 |
 | `Knockback` | Number | Examples: `3, 2, 1` | 24 |
@@ -29540,7 +29540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `humanoid, bonusbird, food` | 46 |
 | `FloatingRockTrap` | Number | Examples: `1` | 6 |
 | `IgnoreDamage` | Number | Examples: `1` | 4 |
@@ -29656,7 +29656,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Confusion`](./Arrays.md#array-confusion) | Array | Examples: `3, 1, [ 1 .2 ]` | 9 |
 | `DisplaceToAbilityTarget` | Number | Examples: `1` | 3 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 2 |
@@ -29762,7 +29762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `HealthGain` | Number | Examples: `4, 5` | 5 |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Examples: `BoneClub` | 3 |
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Examples: `GenericRage, BBTransformZealot` | 3 |
@@ -29980,7 +29980,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DamageUp` | Number | Examples: `2, 1` | 5 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array | Examples: `1, [ 1 .5 ]` | 4 |
 | `OverrideDamage` | Number | Examples: `-10, 0` | 4 |
@@ -30023,7 +30023,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `odds` | Number | Examples: `25, 15, 100` | 37 |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Examples: `forbidden_spell_consequences` | 7 |
 | `Freeze` | Number | Examples: `1` | 6 |
@@ -30957,7 +30957,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 4 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Examples: `Petrify` | 4 |
 | `OverrideDamage` | Number | Examples: `25, 10` | 4 |
@@ -31054,7 +31054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Undead, Freeze, Petrify` | 20 |
 | `BonusDamage` | Number | Examples: `20, 10` | 6 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Object | Examples: `{ ... }` | 3 |
@@ -31269,7 +31269,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CaptureFamiliar` | Number | Examples: `1` | 2 |
 | `Doomed` | Number | Examples: `1` | 2 |
 | `ExplodeCharacter_RockCrusher` | Number | Examples: `9, 5` | 2 |
@@ -31648,7 +31648,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `must_do_damage` | Boolean | Examples: `true` | 3 |
 | `LeaveBehindRockOnKnockback` | Number | Examples: `1` | 2 |
 | [`KnockbackIfCrit`](./Miscellaneous.md#context-knockbackifcrit) | Object | Examples: `{ ... }` | 1 |
@@ -31854,7 +31854,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `IgnoreDamage` | Number | Examples: `1` | 3 |
 | `BonusDamageBasedOnDistance` | Number | Examples: `1` | 2 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |
@@ -32113,7 +32113,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RandomMagicMissile` | Number | Examples: `3, 2, 1` | 11 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Examples: `DustDash` | 1 |
 | [`Quivered`](./Arrays.md#array-quivered) | Array | Examples: `[ 1 .10 ]` | 1 |
@@ -32135,7 +32135,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Confusion` | Number | Examples: `1` | 3 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Examples: `[ 1 .15 ], [ 1 .2 ]` | 2 |
 | `Bleed` | Number | Examples: `1` | 2 |
@@ -32180,7 +32180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Revive` | Number | Examples: `50, 1, 100` | 7 |
 | `AllStatsUp` | Number | Examples: `1` | 2 |
 | `Charmed` | Number | Examples: `1` | 2 |
@@ -32421,7 +32421,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`formula`](./Math_Equations.md) | Equation | Examples: `X-1, X, X+1` | 8 |
 | [`Burn`](./Math_Equations.md) | Equation | Examples: `X, X+1` | 2 |
 | `Immobile` | Number | Examples: `1` | 2 |
@@ -32515,7 +32515,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charge` | Number | Examples: `2` | 3 |
 | `SpeedUp` | Number | Examples: `1` | 3 |
 | `ForceAttack` | Number | Examples: `1` | 2 |
@@ -32809,7 +32809,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array | Examples: `5, [ 1 .5 ]` | 6 |
 | [`CreateGlobalModifiers`](./Miscellaneous.md#context-createglobalmodifiers) | Object | Examples: `{ ... }` | 1 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `chapter_common` | 1 |
@@ -32835,7 +32835,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Object | Examples: `{ ... }` | 2 |
 | `DiminishingHealthRegen` | Number | Examples: `2, 1` | 2 |
 | `ExtraBasicAttacks_Status` | Number | Examples: `1` | 2 |
@@ -32943,7 +32943,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Examples: `1` | 3 |
 | `PullSourceToKnockbackImmuneTarget` | Number | Examples: `1` | 2 |
 | `Cleave` | Number | Examples: `1` | 1 |
@@ -32987,7 +32987,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `odds` | Mixed | Examples: `0.5, .16666666, .3` | 8 |
 | [`Temporary`](./Miscellaneous.md#context-temporary) | Object | Examples: `{ ... }` | 6 |
 | `DieViolently` | Number | Examples: `1` | 1 |
@@ -33009,7 +33009,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`TempPassiveWhileHasStatus`](./Miscellaneous.md#context-temppassivewhilehasstatus) | Object | Examples: `{ ... }` | 3 |
 | [`key`](./Enums.md#enum-key) | Enum | Examples: `TaintedOffering, EtherSoakedRag, TaintedOffering2` | 3 |
 | `TakeExtraTurn` | Number | Examples: `1` | 2 |
@@ -33154,7 +33154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `NonStackingShield` | Number | Examples: `12, 4, 8` | 8 |
 
 </details>
@@ -33380,7 +33380,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `threshold_flat` | Number | Examples: `3, 5, 10` | 5 |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Examples: `Food` | 2 |
 | `threshold_percent` | Number | Examples: `50, 25` | 2 |
@@ -33411,7 +33411,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`form`](./Enums.md#enum-form) | Enum | Examples: `Small, Normal, Default` | 7 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Examples: `Lifted, Big, Drunker` | 5 |
 | [`ForceImmediateMoveAndAttack`](./Miscellaneous.md#context-forceimmediatemoveandattack) | Object | Examples: `{ ... }` | 1 |
@@ -33436,7 +33436,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ConjureRandomAbilityFromCat` | Number | Examples: `1` | 2 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Object | Examples: `{ ... }` | 1 |
 | [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Examples: `PlayerCat_MiniMiniMe` | 1 |
@@ -33914,7 +33914,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Gravity` | 6 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Examples: `FloatingGlassTile` | 2 |
 | `Bleed` | Number | Examples: `1` | 1 |
@@ -33934,7 +33934,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, Electric` | 6 |
 | `Burn` | Number | Examples: `3, 1` | 3 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Examples: `[ 1 .1 ]` | 1 |
@@ -33991,7 +33991,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `OverrideDamage` | Number | Examples: `0` | 1 |
 
 </details>
@@ -34009,7 +34009,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 3 |
 | [`CanApplyToInanimate`](./Miscellaneous.md#context-canapplytoinanimate) | Object | Examples: `{ ... }` | 1 |
 | `RepairWeapon` | Number | Examples: `1` | 1 |
@@ -34029,7 +34029,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 3 |
 | `Charmed` | Number | Examples: `5` | 2 |
 | [`ApplyPassives`](./Miscellaneous.md#context-applypassives) | Object | Examples: `{ ... }` | 1 |
@@ -34602,7 +34602,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `BonusCritChance` | Number | Examples: `100` | 2 |
 | `Cleave` | Number | Examples: `1` | 2 |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Examples: `str` | 1 |
@@ -34662,7 +34662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -34852,7 +34852,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AutoReanimate` | Number | Examples: `50, 100` | 2 |
 
 </details>
@@ -34893,7 +34893,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Examples: `Indigestion_Fart2, Indigestion_Fart` | 2 |
 | `StrengthUp` | Number | Examples: `1` | 2 |
 | `CurrentWeaponDamageUp` | Number | Examples: `1` | 1 |
@@ -35204,7 +35204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddElement`](./Enums.md#enum-addelement) | Enum | Examples: `Fire, Napalm` | 8 |
 | `Burn` | Number | Examples: `3, 6` | 4 |
 
@@ -35223,7 +35223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Leech` | Number | Examples: `2, 1` | 2 |
 | `LeechPercent` | Number | Examples: `50` | 1 |
 
@@ -35427,7 +35427,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Examples: `2, 1` | 2 |
 | `BonusCritChance` | Number | Examples: `50, 25` | 2 |
 | `BonusDamage` | Number | Examples: `3, 2` | 2 |
@@ -35447,7 +35447,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DamageUp` | Number | Examples: `3, 2` | 2 |
 | `AllStatsUp` | Number | Examples: `1` | 1 |
 | `BonusDamage` | Number | Examples: `-2` | 1 |
@@ -35468,7 +35468,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`key`](./Enums.md#enum-key) | Enum | Examples: `JewelOfDrog, gamewin` | 3 |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Examples: `Nuke` | 2 |
 | `TriggerGameEnding` | Number | Examples: `1, 0` | 2 |
@@ -35492,7 +35492,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `odds` | Number | Examples: `20, 10` | 4 |
 | [`ApplyPassives`](./Miscellaneous.md#context-applypassives) | Object | Examples: `{ ... }` | 2 |
 | `AutoReanimate` | Number | Examples: `50` | 2 |
@@ -35607,7 +35607,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CurrentWeaponDamageUp` | Number | Examples: `1, 5` | 3 |
 | `AddWeaponAux` | Number | Examples: `2` | 1 |
 
@@ -35699,7 +35699,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddStatusToTrampleDamage`](./Miscellaneous.md#context-addstatustotrampledamage) | Object | Examples: `{ ... }` | 1 |
 | [`AutocastEachRound`](./Miscellaneous.md#context-autocasteachround) | Object | Examples: `{ ... }` | 1 |
 | [`StatusEachRoundEnd`](./Miscellaneous.md#context-statuseachroundend) | Object | Examples: `{ ... }` | 1 |
@@ -36614,7 +36614,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ChanceToBreak` | Number | Examples: `50, 100` | 2 |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array | Examples: `[ 1 .25 ]` | 1 |
 
@@ -36633,7 +36633,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bruise` | Number | Examples: `1` | 2 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Examples: `[ 1 .1 ]` | 1 |
 
@@ -36652,7 +36652,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Cleave` | Number | Examples: `1` | 2 |
 | `Bruise` | Number | Examples: `1` | 1 |
 
@@ -36706,7 +36706,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Examples: `forbidden_spell_consequences_crippling, forbidden_spell_consequences` | 2 |
 | [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Enum | Examples: `all_disorders` | 2 |
 
@@ -36869,7 +36869,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, Water` | 3 |
 | `BonusCritChance` | Number | Examples: `100` | 2 |
 | `Burn` | Number | Examples: `2` | 1 |
@@ -36889,7 +36889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Miscellaneous.md#context-knockupandaway) | Object | Examples: `{ ... }` | 2 |
 | [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | Examples: `HitlerNuke` | 1 |
 | `BonusDamage` | Number | Examples: `3` | 1 |
@@ -37345,7 +37345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Confusion` | Number | Examples: `10` | 1 |
 
 </details>
@@ -37904,7 +37904,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Examples: `1` | 1 |
 | `Piercing` | Number | Examples: `1` | 1 |
 | `Weakness` | Number | Examples: `2` | 1 |
@@ -37924,7 +37924,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CharmedForceAttack` | Number | Examples: `1` | 2 |
 
 </details>
@@ -37942,7 +37942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charmed` | Number | Examples: `5` | 2 |
 
 </details>
@@ -37960,7 +37960,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DelayedWindCone`](./Miscellaneous.md#context-delayedwindcone) | Object | Examples: `{ ... }` | 1 |
 | [`DelayedWind`](./Miscellaneous.md#context-delayedwind) | Object | Examples: `{ ... }` | 1 |
 
@@ -38259,7 +38259,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Immobile`](./Arrays.md#array-immobile) | Array | Examples: `[ 1 .25 ]` | 2 |
 
 </details>
@@ -38277,7 +38277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Consumed`](./Miscellaneous.md#context-consumed) | Object | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |
 
@@ -38296,7 +38296,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToTile`](./Miscellaneous.md#context-applytotile) | Object | Examples: `{ ... }` | 2 |
 | `VaporizeCorpse` | Number | Examples: `1` | 2 |
 
@@ -38315,7 +38315,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Examples: `10+bonus_melee_ability_damage` | 1 |
 | `LaunchOffScreenInstakill` | Number | Examples: `1` | 1 |
 | `TempInitiativeChange` | Number | Examples: `-100` | 1 |
@@ -38335,7 +38335,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Object | Examples: `{ ... }` | 1 |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Examples: `Cleanse` | 1 |
 | `GenericBuff` | Number | Examples: `5` | 1 |
@@ -38356,7 +38356,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Temporary`](./Miscellaneous.md#context-temporary) | Object | Examples: `{ ... }` | 1 |
 | `Confusion` | Number | Examples: `1` | 1 |
 
@@ -38375,7 +38375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Immobile` | Number | Examples: `1` | 2 |
 
 </details>
@@ -38393,7 +38393,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Knockback` | Number | Examples: `3, 10` | 2 |
 
 </details>
@@ -39215,7 +39215,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AllStatsUp` | Number | Examples: `3` | 2 |
 | `FullHeal` | Number | Examples: `1` | 2 |
 
@@ -39908,7 +39908,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RandomStatUp` | Number | Examples: `3` | 1 |
 | `exclude_self` | Boolean | Examples: `false` | 1 |
 
@@ -39964,7 +39964,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AlphaCat` | Number | Examples: `1` | 2 |
 
 </details>
@@ -39982,7 +39982,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array | Examples: `[ 1 .25 ]` | 1 |
 
@@ -40072,7 +40072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | Examples: `X` | 1 |
 | [`Craft`](./Miscellaneous.md#context-craft) | Object | Examples: `{ ... }` | 1 |
 
@@ -40144,7 +40144,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `TempDexterityUp` | Number | Examples: `2` | 2 |
 | `TempStrengthUp` | Number | Examples: `2, 1` | 2 |
 | `TempLuckUp` | Number | Examples: `2` | 1 |
@@ -40186,7 +40186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomPermanentStatsDistinct`](./Miscellaneous.md#context-randompermanentstatsdistinct) | Object | Examples: `{ ... }` | 1 |
 | `AllStatsUp` | Number | Examples: `3` | 1 |
 
@@ -40284,7 +40284,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CaptureFamiliar` | Number | Examples: `1` | 1 |
 | `SetHealth` | Number | Examples: `50` | 1 |
 
@@ -40556,7 +40556,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Examples: `"max(0, floor(X/2)-1)", "max(0, floor(X/6)-1)"` | 2 |
 
 </details>
@@ -43246,7 +43246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Examples: `1` | 1 |
 
 </details>
@@ -43264,7 +43264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |
 
 </details>
@@ -43282,7 +43282,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |
 
 </details>
@@ -43300,7 +43300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -43317,7 +43317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Heat Fire ]` | 1 |
 | `Burn` | Number | Examples: `3` | 1 |
 
@@ -43336,7 +43336,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Heat Fire ]` | 1 |
 | `Burn` | Number | Examples: `3` | 1 |
 
@@ -43595,7 +43595,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Marked` | Number | Examples: `1` | 1 |
 
 </details>
@@ -44321,7 +44321,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#context-destroyequipmentandattachparasite) | Object | Examples: `{ ... }` | 1 |
 | [`weather`](./Arrays.md#array-weather) | Array | Examples: `[ FlySwarm FireflySwarm ButterflySwarm ]` | 1 |
 
@@ -44340,7 +44340,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `BonusCritChance` | Number | Examples: `100` | 1 |
 | `Fear` | Number | Examples: `1` | 1 |
 
@@ -44359,7 +44359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Object | Examples: `{ ... }` | 1 |
 
 </details>
@@ -44377,7 +44377,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#context-destroyequipmentandattachparasite) | Object | Examples: `{ ... }` | 1 |
 | `odds` | Number | Examples: `15` | 1 |
 
@@ -44396,7 +44396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Bleed`](./Arrays.md#array-bleed) | Array | Examples: `[ 1 .1 ]` | 1 |
 
 </details>
@@ -44414,7 +44414,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Examples: `Fly` | 1 |
 
 </details>
@@ -44432,7 +44432,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Miscellaneous.md#context-knockupandaway) | Object | Examples: `{ ... }` | 1 |
 | [`TempPassiveUntilSettled`](./Miscellaneous.md#context-temppassiveuntilsettled) | Object | Examples: `{ ... }` | 1 |
 | `RemoveKnockback` | Number | Examples: `1` | 1 |
@@ -44452,7 +44452,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Miscellaneous.md#context-knockupandaway) | Object | Examples: `{ ... }` | 1 |
 | [`TempPassiveUntilSettled`](./Miscellaneous.md#context-temppassiveuntilsettled) | Object | Examples: `{ ... }` | 1 |
 | `RemoveKnockback` | Number | Examples: `1` | 1 |
@@ -44472,7 +44472,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `SetKnockback` | Number | Examples: `0` | 1 |
 
 </details>
@@ -44490,7 +44490,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Object | Examples: `{ ... }` | 1 |
 | [`Consumed`](./Miscellaneous.md#context-consumed) | Object | Examples: `{ ... }` | 1 |
 | [`TempPassiveWhileHasStatus`](./Miscellaneous.md#context-temppassivewhilehasstatus) | Object | Examples: `{ ... }` | 1 |
@@ -44510,7 +44510,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RepairTrinket` | Number | Examples: `1` | 1 |
 | `threshold_flat` | Number | Examples: `0` | 1 |
 
@@ -44529,7 +44529,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DisplaceTowardsSource` | Number | Examples: `1` | 1 |
 
 </details>
@@ -44547,7 +44547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Object | Examples: `{ ... }` | 1 |
 | [`ScatterCoins`](./Miscellaneous.md#context-scattercoins) | Object | Examples: `{ ... }` | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `weapon_throw` | 1 |
@@ -44567,7 +44567,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `AlphaCat` | 1 |
 | `Bruise` | Number | Examples: `1` | 1 |
 
@@ -44586,7 +44586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `crow` | 1 |
 
 </details>
@@ -47358,7 +47358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Shield`](./Math_Equations.md) | Equation | Examples: `"2*(X-1)"` | 1 |
 | [`SizeScalePercent`](./Math_Equations.md) | Equation | Examples: `"sqrt(1.0+(.05*(X-1)))*100"` | 1 |
 | [`Trample`](./Arrays.md#array-trample) | Array | Examples: `[ 3 X-8 ]` | 1 |
@@ -47378,7 +47378,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`MovementReaction`](./Miscellaneous.md#context-movementreaction) | Object | Examples: `{ ... }` | 1 |
 
 </details>
@@ -47396,7 +47396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack) | Object | Examples: `{ ... }` | 1 |
 
 </details>
@@ -47734,7 +47734,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -48483,7 +48483,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ForceMoveAway`](./Miscellaneous.md#context-forcemoveaway) | Object | Examples: `{ ... }` | 1 |
 
 </details>
@@ -48518,7 +48518,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ManaGain` | Number | Examples: `1` | 1 |
 
 </details>
@@ -48661,7 +48661,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AllStatsUp` | Number | Examples: `1` | 1 |
 | `HealthGain` | Number | Examples: `1` | 1 |
 
@@ -48680,7 +48680,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Examples: `FuzzerReact` | 1 |
 
 </details>
@@ -48715,7 +48715,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AllStatsUp` | Number | Examples: `1` | 1 |
 | `FillMana` | Number | Examples: `1` | 1 |
 | `HealRandomInjury` | Number | Examples: `1` | 1 |
@@ -48802,7 +48802,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`UseAbility`](./Miscellaneous.md#context-useability) | Object | Examples: `{ ... }` | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `BackflipWhenTargeted` | 1 |
 
@@ -73773,7 +73773,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Poison`](./Arrays.md#array-poison) | Array | Applies the 'Poison' effect. | 12 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 8 |
 | `Knockback` | Number | Applies the 'Knockback' effect. | 7 |
@@ -73801,7 +73801,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SoulLink` | Number | Applies the 'SoulLink' effect. | 2 |
 | `SpawnBearTrapOnMiss` | Number | Applies the 'SpawnBearTrapOnMiss' effect. | 2 |
 | [`ApplyToSource`](./Passives_and_Statuses.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `BigSplashDamage` | Number | Applies the 'BigSplashDamage' effect. | 1 |
 | `Blind` | Number | Applies the 'Blind' effect. | 1 |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 1 |
@@ -73921,7 +73921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 3 |
+| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 3 |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 3 |
 | [`Craft`](./Passives_and_Statuses.md#context-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 2 |
 | `ConstitutionUp` | Number | Applies the 'ConstitutionUp' effect. | 2 |
@@ -73930,7 +73930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 2 |
 | `TempDamageUp` | Number | Applies the 'TempDamageUp' effect. | 2 |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |
 | `DiminishingHealthRegen` | Number | Applies the 'DiminishingHealthRegen' effect. | 1 |
 | `MovementUp` | Number | Applies the 'MovementUp' effect. | 1 |
@@ -74007,7 +74007,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies the 'EquipPermanentItem' effect. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `RefreshActPoints` | Number | Applies the 'RefreshActPoints' effect. | 2 |
@@ -74116,7 +74116,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array | Applies the 'AllStatsUp' effect. | 2 |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 2 |
 | `Cleanse` | Number | Applies the 'Cleanse' effect. | 2 |
@@ -74145,7 +74145,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 5 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 3 |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 3 |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
+| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 2 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 1 |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 1 |
@@ -74362,9 +74362,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 3 |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
+| [`Else`](./Passives_and_Statuses.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 2 |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 2 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 1 |
 
@@ -74530,7 +74530,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 6 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 2 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
@@ -74550,7 +74550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 2 |
 | `PullSourceToKnockbackImmuneTarget` | Number | Applies the 'PullSourceToKnockbackImmuneTarget' effect. | 2 |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. | 1 |
@@ -74687,7 +74687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `LeaveBehindRockOnKnockback` | Number | Applies the 'LeaveBehindRockOnKnockback' effect. | 2 |
 | `Blind` | Number | Applies the 'Blind' effect. | 1 |
 | `NonLethal` | Number | Applies the 'NonLethal' effect. | 1 |
@@ -74707,7 +74707,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 3 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 2 |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 2 |
@@ -74748,7 +74748,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies the 'ForceUseAbility_NonStack' effect. | 2 |
 | `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 2 |
 | `CurrentWeaponDamageUp` | Number | Applies the 'CurrentWeaponDamageUp' effect. | 1 |
@@ -74807,7 +74807,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
 | `Burn` | Number | Applies the 'Burn' effect. | 2 |
 
@@ -74826,7 +74826,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddElement`](./Enums.md#enum-addelement) | Enum | Applies the 'AddElement' effect. | 8 |
 | `Burn` | Number | Applies the 'Burn' effect. | 4 |
 
@@ -74918,7 +74918,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `TakeExtraTurn` | Number | Applies the 'TakeExtraTurn' effect. | 2 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 | `FillMana` | Number | Applies the 'FillMana' effect. | 1 |
@@ -75116,7 +75116,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `mana` | Number |  | 4 |
-| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 3 |
+| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 3 |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 2 |
@@ -75197,7 +75197,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 7 |
 
 </details>
@@ -75233,8 +75233,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 3 |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 3 |
 
 </details>
@@ -75252,7 +75252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 3 |
 
 </details>
@@ -75438,7 +75438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AutoReanimate` | Number | Applies the 'AutoReanimate' effect. | 2 |
 
 </details>
@@ -75572,7 +75572,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DiminishingHealthRegen` | Number | Applies the 'DiminishingHealthRegen' effect. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 1 |
 
@@ -75667,7 +75667,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ChanceToBreak` | Number | Applies the 'ChanceToBreak' effect. | 2 |
 
 </details>
@@ -75685,7 +75685,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
 | `Piercing` | Number | Applies the 'Piercing' effect. | 1 |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 1 |
@@ -75705,7 +75705,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CharmedForceAttack` | Number | Applies the 'CharmedForceAttack' effect. | 2 |
 
 </details>
@@ -75723,7 +75723,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
 
 </details>
@@ -75741,7 +75741,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DelayedWindCone`](./Passives_and_Statuses.md#context-delayedwindcone) | Object | Creates a delayed Area of Effect cone. | 1 |
 | [`DelayedWind`](./Passives_and_Statuses.md#context-delayedwind) | Object | Applies the 'DelayedWind' effect. | 1 |
 
@@ -75760,7 +75760,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. | 2 |
 
 </details>
@@ -76032,7 +76032,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 2 |
 | `BonusCritChance` | Number | Applies the 'BonusCritChance' effect. | 2 |
 | `BonusDamage` | Number | Applies the 'BonusDamage' effect. | 2 |
@@ -76052,7 +76052,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 1 |
 | `Stun` | Number | Applies the 'Stun' effect. | 1 |
 
@@ -76071,7 +76071,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
 | `OverrideDamage` | Number | Applies the 'OverrideDamage' effect. | 2 |
 | `Revive` | Number | Applies the 'Revive' effect. | 2 |
@@ -76095,7 +76095,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 2 |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 1 |
 | `FlatLeechIfDamaged` | Number | Applies the 'FlatLeechIfDamaged' effect. | 1 |
@@ -76115,7 +76115,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -76132,7 +76132,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
 
 </details>
@@ -76150,7 +76150,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `BonusCritChance` | Number | Applies the 'BonusCritChance' effect. | 2 |
 
 </details>
@@ -76343,7 +76343,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -76593,7 +76593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `FullHeal` | Number | Applies the 'FullHeal' effect. | 2 |
 
@@ -77029,7 +77029,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AlphaCat` | Number | Applies the 'AlphaCat' effect. | 2 |
 
 </details>
@@ -77135,7 +77135,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -77222,7 +77222,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `TempDexterityUp` | Number | Applies the 'TempDexterityUp' effect. | 2 |
 | `TempStrengthUp` | Number | Applies the 'TempStrengthUp' effect. | 2 |
 | `TempLuckUp` | Number | Applies the 'TempLuckUp' effect. | 1 |
@@ -77264,7 +77264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ForceAttack` | Number | Forces the character to execute an immediate attack. | 2 |
 
 </details>
@@ -77282,7 +77282,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 2 |
+| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 2 |
 
 </details>
 
@@ -77638,7 +77638,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 1 |
 
 </details>
@@ -77656,7 +77656,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -77673,7 +77673,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `LeechPercent` | Number | Applies the 'LeechPercent' effect. | 1 |
 
 </details>
@@ -77691,7 +77691,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | `Burn` | Number | Applies the 'Burn' effect. | 1 |
 
@@ -77710,7 +77710,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | `Burn` | Number | Applies the 'Burn' effect. | 1 |
 
@@ -77799,7 +77799,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Bleed`](./Arrays.md#array-bleed) | Array | Applies the 'Bleed' effect. | 1 |
 
 </details>
@@ -77817,7 +77817,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `UseRandomSpell_Madness` | Number | Applies the 'UseRandomSpell_Madness' effect. | 1 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
 
@@ -77836,7 +77836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 1 |
 
 </details>
@@ -78013,7 +78013,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Shield`](./Math_Equations.md) | Equation | Applies the 'Shield' effect. | 1 |
 | [`SizeScalePercent`](./Math_Equations.md) | Equation | Applies the 'SizeScalePercent' effect. | 1 |
 | [`Trample`](./Arrays.md#array-trample) | Array | Applies the 'Trample' effect. | 1 |
@@ -78173,7 +78173,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ForceMoveAway`](./Passives_and_Statuses.md#context-forcemoveaway) | Object | Applies the 'ForceMoveAway' effect. | 1 |
 
 </details>
@@ -78191,7 +78191,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 1 |
 | `exclude_self` | Boolean |  | 1 |
 
@@ -78210,7 +78210,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
 
 </details>
@@ -78262,7 +78262,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 
 </details>

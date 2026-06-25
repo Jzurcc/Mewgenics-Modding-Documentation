@@ -7,7 +7,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `ROOT`
-### Object: `ROOT`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -47,7 +47,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `passives`
-### Object: `passives`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -64,7 +64,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `stats`
-### Object: `stats`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -87,7 +87,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToBasicAttack`
-### Object: `AddStatusToBasicAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -104,7 +104,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `effects`
-### Object: `effects`
+
+> **Definition:** Non-damaging status applications and logic triggers executed on impact.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -121,7 +124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddPassivesToMinions`
-### Object: `AddPassivesToMinions`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -138,7 +141,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawnOnBattleStart`
-### Object: `SpawnOnBattleStart`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -156,7 +159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTookDamage`
-### Object: `StatusOnTookDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -173,7 +176,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnEnd`
-### Object: `StatusEachTurnEnd`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -190,7 +193,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnBattleEnd`
-### Object: `StatusOnBattleEnd`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -208,7 +211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnKill`
-### Object: `StatusOnKill`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -233,7 +236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `lock_item_slot`
-### Object: `lock_item_slot`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -270,7 +273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpreadDisease`
-### Object: `SpreadDisease`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -289,7 +292,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnBegin`
-### Object: `StatusEachTurnBegin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -318,17 +321,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 29 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
-| `ApplyToSource` | `Block` | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
+| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | `Cleanse` | `Number` | Applies the 'Cleanse' effect. | 0 |
 | `ClearNegativeEffects` | `Number` | Applies the 'ClearNegativeEffects' effect. | 0 |
-| `RandomStatusFromPool` | `Block` | Selects and applies a random status effect from the provided nested block. | 0 |
+| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 0 |
 
 </details>
 
 ---
 
 ### Object: `CritsApplyStatus`
-### Object: `CritsApplyStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -345,7 +348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Temporary`
-### Object: `Temporary`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -366,7 +369,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveAtStatThreshold`
-### Object: `PassiveAtStatThreshold`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -384,7 +387,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `threshold`
-### Object: `threshold`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -416,7 +419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
 | `knockback` | Number |  | 2 |
   | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
@@ -441,14 +444,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
   | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
   | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
   | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 0 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
 ---
 
 ### Object: `PassiveIfAllArmorEmpty`
-### Object: `PassiveIfAllArmorEmpty`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -465,7 +468,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RandomStatusFromPool`
-### Object: `RandomStatusFromPool`
+
+> **Definition:** Selects and applies a random status effect from the provided nested block.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -482,7 +488,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnCrit`
-### Object: `StatusOnCrit`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -499,7 +505,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_Enemy`
-### Object: `Conditional_Enemy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -534,14 +540,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `damage` | Number | The base damage properties of an attack. | 7 |
 | `knockback` | Number |  | 1 |
 | `cant_miss` | `Boolean` |  | 0 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
 ---
 
 ### Object: `ForceUseAbility`
-### Object: `ForceUseAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -552,14 +558,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 3 |
-| `chance` | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 3 |
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 3 |
 
 </details>
 
 ---
 
 ### Object: `PassiveIfEmptyFace`
-### Object: `PassiveIfEmptyFace`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -576,7 +582,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveIfEmptyHead`
-### Object: `PassiveIfEmptyHead`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -593,7 +599,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveIfEmptyNeck`
-### Object: `PassiveIfEmptyNeck`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -610,7 +616,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAlliesOnDeath`
-### Object: `StatusAlliesOnDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -628,7 +634,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnUseAbilityWithTag`
-### Object: `StatusOnUseAbilityWithTag`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -647,7 +653,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToElementAbilities`
-### Object: `AddStatusToElementAbilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -665,7 +671,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToWeapons`
-### Object: `AddStatusToWeapons`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -682,7 +688,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CureDisease`
-### Object: `CureDisease`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -721,7 +727,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ManaCostReductionTagged`
-### Object: `ManaCostReductionTagged`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -739,7 +745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawnEachTurn`
-### Object: `SpawnEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -750,7 +756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array |  | 6 |
-| `chance` | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 5 |
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 5 |
 | `number` | Number |  | 2 |
 | `good` | Boolean |  | 1 |
 
@@ -759,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawnThingOnDamage`
-### Object: `SpawnThingOnDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -779,7 +785,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `keyword_tooltips`
-### Object: `keyword_tooltips`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -796,7 +802,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToAllDamage`
-### Object: `AddStatusToAllDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -822,7 +828,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToBasicMeleeAttack`
-### Object: `AddStatusToBasicMeleeAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -839,7 +845,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnCastSpell`
-### Object: `StatusOnCastSpell`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -878,7 +884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddDamageToElementDamage`
-### Object: `AddDamageToElementDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -896,7 +902,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddPassivesToCharmed`
-### Object: `AddPassivesToCharmed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -913,7 +919,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToElementDamage`
-### Object: `AddStatusToElementDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -932,7 +938,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToExplosions`
-### Object: `AddStatusToExplosions`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -950,7 +956,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AllyBonusAbilityAura`
-### Object: `AllyBonusAbilityAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -968,7 +974,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AllyManaRegenAura`
-### Object: `AllyManaRegenAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -986,7 +992,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AmplifyStatus`
-### Object: `AmplifyStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1004,7 +1010,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AutocastEachRound`
-### Object: `AutocastEachRound`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1023,7 +1029,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_FirstApplicationThisTurn`
-### Object: `Conditional_FirstApplicationThisTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1040,7 +1046,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DistanceBonusDamage`
-### Object: `DistanceBonusDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1058,7 +1064,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `EMP`
-### Object: `EMP`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1076,7 +1082,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveAtHealthThreshold`
-### Object: `PassiveAtHealthThreshold`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1094,7 +1100,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhenAffectedByElement`
-### Object: `PassiveWhenAffectedByElement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1112,7 +1118,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhenAtFullMana`
-### Object: `PassiveWhenAtFullMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1129,7 +1135,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAlliesOnKill`
-### Object: `StatusAlliesOnKill`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1146,7 +1152,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusIfUnusedMovePoints`
-### Object: `StatusIfUnusedMovePoints`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1163,7 +1169,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTurnEndIfCastNSpells`
-### Object: `StatusOnTurnEndIfCastNSpells`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1182,7 +1188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTurnEndIfManaExact`
-### Object: `StatusOnTurnEndIfManaExact`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1201,7 +1207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTurnEndIfManaOrHealthExact`
-### Object: `StatusOnTurnEndIfManaOrHealthExact`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1219,7 +1225,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `empty_armor_scaled_stats`
-### Object: `empty_armor_scaled_stats`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1238,7 +1244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `spell_graphics_override`
-### Object: `spell_graphics_override`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1258,7 +1264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AbilityReaction`
-### Object: `AbilityReaction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1277,7 +1283,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddSelfStatusToBasicAttack`
-### Object: `AddSelfStatusToBasicAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1294,7 +1300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddTemporaryEffectsToBasicAttack`
-### Object: `AddTemporaryEffectsToBasicAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1312,7 +1318,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_BadRoll`
-### Object: `Conditional_BadRoll`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1330,7 +1336,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_HasStatus`
-### Object: `Conditional_HasStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1348,7 +1354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DeathRattle`
-### Object: `DeathRattle`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1366,7 +1372,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ElementalManaCostReduction`
-### Object: `ElementalManaCostReduction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1384,7 +1390,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FindItemFromPool`
-### Object: `FindItemFromPool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1402,7 +1408,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveTowardsDamageSource`
-### Object: `MoveTowardsDamageSource`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1420,7 +1426,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ObjectOnHitCharacter`
-### Object: `ObjectOnHitCharacter`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1438,7 +1444,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawnCatCopyOnBattleStart`
-### Object: `SpawnCatCopyOnBattleStart`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1456,7 +1462,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawnOnBattleStartRandomEmptyTile`
-### Object: `SpawnOnBattleStartRandomEmptyTile`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1474,7 +1480,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEveryXSpellCasts`
-### Object: `StatusEveryXSpellCasts`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1492,7 +1498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusGroup`
-### Object: `StatusGroup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1509,7 +1515,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusKilledCharacters`
-### Object: `StatusKilledCharacters`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1529,7 +1535,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnAllyCatDeath`
-### Object: `StatusOnAllyCatDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1546,7 +1552,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnBattleStart`
-### Object: `StatusOnBattleStart`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1563,7 +1569,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnEatFood`
-### Object: `StatusOnEatFood`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1580,7 +1586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnGainCoins`
-### Object: `StatusOnGainCoins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1597,7 +1603,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnHealed`
-### Object: `StatusOnHealed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1614,7 +1620,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnKillEnemy`
-### Object: `StatusOnKillEnemy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1631,7 +1637,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTookDamageFromAbility`
-### Object: `StatusOnTookDamageFromAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1648,7 +1654,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `statuses`
-### Object: `statuses`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1665,7 +1671,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
-### Object: `AbilityWhenTaggedCharacterMovesNear`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1677,14 +1683,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 2 |
-| `range` | Mixed | Distance or area of effect in tiles. | 2 |
+| [`range`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | Distance or area of effect in tiles. | 2 |
 
 </details>
 
 ---
 
 ### Object: `AddPassiveToSpawnedRocks`
-### Object: `AddPassiveToSpawnedRocks`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1702,7 +1708,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddPassivesToSummonAbilityMinions`
-### Object: `AddPassivesToSummonAbilityMinions`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1719,7 +1725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddSelfStatusToWeapons`
-### Object: `AddSelfStatusToWeapons`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1738,7 +1744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToAllDamageAbilities`
-### Object: `AddStatusToAllDamageAbilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1774,7 +1780,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToFirstBasicAttack`
-### Object: `AddStatusToFirstBasicAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1792,7 +1798,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToMeleeDamage`
-### Object: `AddStatusToMeleeDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1811,7 +1817,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToTrampleDamage`
-### Object: `AddStatusToTrampleDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1830,7 +1836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AllyHealthRegenAura`
-### Object: `AllyHealthRegenAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1848,7 +1854,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AlternateCraftingPools`
-### Object: `AlternateCraftingPools`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1866,7 +1872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ApplyStatusIfCrit`
-### Object: `ApplyStatusIfCrit`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1883,7 +1889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ApplyStatusesToRandomEnemiesEachTurn`
-### Object: `ApplyStatusesToRandomEnemiesEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1901,7 +1907,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ApplyToSource`
-### Object: `ApplyToSource`
+
+> **Definition:** Redirects the nested effects to apply to the caster/source of the ability instead of the target.
+
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1918,7 +1927,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AutocastEachTurnBegin`
-### Object: `AutocastEachTurnBegin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1937,7 +1946,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BoobyTrapItems`
-### Object: `BoobyTrapItems`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1967,14 +1976,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | `damage` | Number | The base damage properties of an attack. | 2 |
-| `crit_chance` | `Enum/String` |  | 0 |
+| [`crit_chance`](./Engine_DamagingKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
 
 </details>
 
 ---
 
 ### Object: `BouncyProjectiles`
-### Object: `BouncyProjectiles`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1992,7 +2001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CatAPultAnimation`
-### Object: `CatAPultAnimation`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2010,7 +2019,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CatchProjectiles`
-### Object: `CatchProjectiles`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2029,7 +2038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChanceToBackflip`
-### Object: `ChanceToBackflip`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2047,7 +2056,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChangeTile`
-### Object: `ChangeTile`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2065,7 +2074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ClassManaCostReduction`
-### Object: `ClassManaCostReduction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2106,7 +2115,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_Boss`
-### Object: `Conditional_Boss`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2169,7 +2178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_NotBoss`
-### Object: `Conditional_NotBoss`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2198,7 +2207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_PartyMember`
-### Object: `Conditional_PartyMember`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2238,7 +2247,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Craft`
-### Object: `Craft`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2256,7 +2265,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DamageNeighborTilesWhenCastSpell`
-### Object: `DamageNeighborTilesWhenCastSpell`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2290,14 +2299,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`damage`](./Math_Equations.md) | Equation | The base damage properties of an attack. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
 ---
 
 ### Object: `DamageReductionAura`
-### Object: `DamageReductionAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2316,7 +2325,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Earth`
-### Object: `Earth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2333,7 +2342,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Electric`
-### Object: `Electric`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2351,7 +2360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ElementalAttunement`
-### Object: `ElementalAttunement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2396,7 +2405,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Eternal`
-### Object: `Eternal`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2415,7 +2424,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ExtraStatusWhenDealingDamage`
-### Object: `ExtraStatusWhenDealingDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2434,7 +2443,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Fire`
-### Object: `Fire`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2451,7 +2460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Grass`
-### Object: `Grass`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2468,7 +2477,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Gravity`
-### Object: `Gravity`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2485,7 +2494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `GravityWell`
-### Object: `GravityWell`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2507,7 +2516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HealAlliesEachTurn`
-### Object: `HealAlliesEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2526,7 +2535,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Holy`
-### Object: `Holy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2543,7 +2552,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `HolyDamageBlessing`
-### Object: `HolyDamageBlessing`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2561,7 +2570,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Ice`
-### Object: `Ice`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2578,7 +2587,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `InfiniteRebirth`
-### Object: `InfiniteRebirth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2597,7 +2606,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `LateBloomer`
-### Object: `LateBloomer`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2615,7 +2624,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `LightningRod`
-### Object: `LightningRod`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2632,7 +2641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `LowHealthAllyDodgeChanceAura`
-### Object: `LowHealthAllyDodgeChanceAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2650,7 +2659,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MovementReaction`
-### Object: `MovementReaction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2668,7 +2677,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `NextBattleStatus`
-### Object: `NextBattleStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2687,7 +2696,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveAfterXKills`
-### Object: `PassiveAfterXKills`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2705,7 +2714,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveAtFullHealth`
-### Object: `PassiveAtFullHealth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2736,14 +2745,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 2 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-| `injury` | `Enum/String` |  | 0 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
 
 </details>
 
 ---
 
 ### Object: `PassiveGroup`
-### Object: `PassiveGroup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2760,7 +2769,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveUntilCastSpell`
-### Object: `PassiveUntilCastSpell`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2778,7 +2787,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveUntilGetKill`
-### Object: `PassiveUntilGetKill`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2795,7 +2804,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhenTheAlpha`
-### Object: `PassiveWhenTheAlpha`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2812,7 +2821,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhileInMonkMeleeStance`
-### Object: `PassiveWhileInMonkMeleeStance`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2829,7 +2838,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhileInMonkRangedStance`
-### Object: `PassiveWhileInMonkRangedStance`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2846,7 +2855,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhilePreviewingMonkRangedStance`
-### Object: `PassiveWhilePreviewingMonkRangedStance`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2863,7 +2872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveWhileWearingMetal`
-### Object: `PassiveWhileWearingMetal`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2880,7 +2889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RepressedMemoriesMetronome`
-### Object: `RepressedMemoriesMetronome`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2898,7 +2907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ScaledStatusOnOverMana`
-### Object: `ScaledStatusOnOverMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2915,7 +2924,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ScaledStatusOnSpendMana`
-### Object: `ScaledStatusOnSpendMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2932,7 +2941,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SecurityBotProtect`
-### Object: `SecurityBotProtect`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2961,7 +2970,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-| `crit_chance` | `Enum/String` |  | 0 |
+| [`crit_chance`](./Engine_DamagingKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
 
 </details>
 
@@ -2982,14 +2991,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `damage` | Number | The base damage properties of an attack. | 2 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
 ---
 
 ### Object: `SpecialFriends`
-### Object: `SpecialFriends`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3006,7 +3015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatsAtLowHealth`
-### Object: `StatsAtLowHealth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3025,7 +3034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAfterCastSpell`
-### Object: `StatusAfterCastSpell`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3042,7 +3051,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAlliesOnBattleStart`
-### Object: `StatusAlliesOnBattleStart`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3059,7 +3068,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAlliesOnGainCoins`
-### Object: `StatusAlliesOnGainCoins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3077,7 +3086,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAllyWhenAllySpendsMana`
-### Object: `StatusAllyWhenAllySpendsMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3094,7 +3103,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAnyCatAllyWhoKills`
-### Object: `StatusAnyCatAllyWhoKills`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3112,7 +3121,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusDamagers`
-### Object: `StatusDamagers`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3129,7 +3138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnEndForEachTurn`
-### Object: `StatusEachTurnEndForEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3146,7 +3155,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnEndPerEnemyKill`
-### Object: `StatusEachTurnEndPerEnemyKill`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3163,7 +3172,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEnemiesOnDeath`
-### Object: `StatusEnemiesOnDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3180,7 +3189,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEveryXTurnBegins`
-### Object: `StatusEveryXTurnBegins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3198,7 +3207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusKillers`
-### Object: `StatusKillers`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3218,7 +3227,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnAnyDeath`
-### Object: `StatusOnAnyDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3235,7 +3244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnBattleEndIfKillThresholdMet`
-### Object: `StatusOnBattleEndIfKillThresholdMet`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3253,7 +3262,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnBreakItem`
-### Object: `StatusOnBreakItem`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3270,7 +3279,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnCollectPickup`
-### Object: `StatusOnCollectPickup`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3308,7 +3317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnDealtDamageThreshold`
-### Object: `StatusOnDealtDamageThreshold`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3327,7 +3336,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnEndMove`
-### Object: `StatusOnEndMove`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3353,7 +3362,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnGainShield`
-### Object: `StatusOnGainShield`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3370,7 +3379,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnHeal`
-### Object: `StatusOnHeal`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3387,7 +3396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnOverMana`
-### Object: `StatusOnOverMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3404,7 +3413,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnPickupCoins`
-### Object: `StatusOnPickupCoins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3421,7 +3430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnPopCorpse`
-### Object: `StatusOnPopCorpse`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3438,7 +3447,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTookDamageFromEnemyAbility`
-### Object: `StatusOnTookDamageFromEnemyAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3455,7 +3464,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTriggerTrap`
-### Object: `StatusOnTriggerTrap`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3472,7 +3481,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnUseBasicAttack`
-### Object: `StatusOnUseBasicAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3489,7 +3498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnUseElementAbility`
-### Object: `StatusOnUseElementAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3520,14 +3529,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `cap` | Number |  | 2 |
-| `injury` | `Enum/String` |  | 0 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 0 |
 
 </details>
 
 ---
 
 ### Object: `StatusThingsKnockedBack`
-### Object: `StatusThingsKnockedBack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3544,7 +3553,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusWhenAllySpendsMana`
-### Object: `StatusWhenAllySpendsMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3561,7 +3570,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TaggedPickupEffectReplacement`
-### Object: `TaggedPickupEffectReplacement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3579,7 +3588,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TowerDefense`
-### Object: `TowerDefense`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3597,7 +3606,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Water`
-### Object: `Water`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3614,7 +3623,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Wind`
-### Object: `Wind`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3631,7 +3640,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `on_break`
-### Object: `on_break`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3666,7 +3675,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `schadenfreude_scaled_stats`
-### Object: `schadenfreude_scaled_stats`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3684,7 +3693,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AbilityChargeRefundChance`
-### Object: `AbilityChargeRefundChance`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3702,7 +3711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToKnockbackDamage`
-### Object: `AddStatusToKnockbackDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3721,7 +3730,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToReceivedDamage_ExcludeStatuses`
-### Object: `AddStatusToReceivedDamage_ExcludeStatuses`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3738,7 +3747,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusToSpells`
-### Object: `AddStatusToSpells`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3758,7 +3767,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusesIfPersistentWeatherElement`
-### Object: `AddStatusesIfPersistentWeatherElement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3776,7 +3785,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddStatusesToReceivedElementalDamage`
-### Object: `AddStatusesToReceivedElementalDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3795,7 +3804,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `AddTemporaryEffectsToEquipment`
-### Object: `AddTemporaryEffectsToEquipment`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3812,7 +3821,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Autism`
-### Object: `Autism`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3830,7 +3839,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChanceToRevive`
-### Object: `ChanceToRevive`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3848,7 +3857,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `CollectPickupsOnBattleEnd`
-### Object: `CollectPickupsOnBattleEnd`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3865,7 +3874,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_DoesDamage`
-### Object: `Conditional_DoesDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3903,7 +3912,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_SourceHasTag`
-### Object: `Conditional_SourceHasTag`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3922,7 +3931,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DamageIfDidntUseSpecificAbility`
-### Object: `DamageIfDidntUseSpecificAbility`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3940,7 +3949,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DelayedWind`
-### Object: `DelayedWind`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3957,7 +3966,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `DelayedWindCone`
-### Object: `DelayedWindCone`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3974,7 +3983,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Diabetes`
-### Object: `Diabetes`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3991,7 +4000,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `EnergyStorm`
-### Object: `EnergyStorm`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4009,7 +4018,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ForceMoveAway`
-### Object: `ForceMoveAway`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4026,7 +4035,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `FurnitureStats`
-### Object: `FurnitureStats`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4045,7 +4054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MegaMinions`
-### Object: `MegaMinions`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4063,7 +4072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `MoveWhenDamaged`
-### Object: `MoveWhenDamaged`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4080,7 +4089,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `PassiveLevelScaledStatus`
-### Object: `PassiveLevelScaledStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4100,7 +4109,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `RandomPassivePool`
-### Object: `RandomPassivePool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4117,7 +4126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ReplaceBrain`
-### Object: `ReplaceBrain`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4136,7 +4145,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Robot`
-### Object: `Robot`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4153,7 +4162,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ScaledStatusOnBleedDamage`
-### Object: `ScaledStatusOnBleedDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4170,7 +4179,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ScaledStatusOnLoseShield`
-### Object: `ScaledStatusOnLoseShield`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4187,7 +4196,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ScaledStatusOnOverHealed`
-### Object: `ScaledStatusOnOverHealed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4204,7 +4213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SelfDamageWhenDealDamage`
-### Object: `SelfDamageWhenDealDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4222,7 +4231,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StackingDodgeChanceOnTookDamage`
-### Object: `StackingDodgeChanceOnTookDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4240,7 +4249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAdjacentOnTheirTurnBegin`
-### Object: `StatusAdjacentOnTheirTurnBegin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4258,7 +4267,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAlliesEachTurn`
-### Object: `StatusAlliesEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4278,7 +4287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAlliesOnSpendMana`
-### Object: `StatusAlliesOnSpendMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4296,7 +4305,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusAlliesScaledByCursedOnDeath`
-### Object: `StatusAlliesScaledByCursedOnDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4313,7 +4322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusIfBattleAlreadyBegan`
-### Object: `StatusIfBattleAlreadyBegan`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4330,7 +4339,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnEatPill`
-### Object: `StatusOnEatPill`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4349,7 +4358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnLoseShield`
-### Object: `StatusOnLoseShield`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4366,7 +4375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTakeHealthDamage`
-### Object: `StatusOnTakeHealthDamage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4383,7 +4392,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTurnEndIfDidntCastAbilityTypes`
-### Object: `StatusOnTurnEndIfDidntCastAbilityTypes`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4401,7 +4410,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StrengthInNumbersAura`
-### Object: `StrengthInNumbersAura`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4419,7 +4428,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Study`
-### Object: `Study`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4437,7 +4446,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TakeBonusTurnWithStatus`
-### Object: `TakeBonusTurnWithStatus`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4454,7 +4463,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TheHunger`
-### Object: `TheHunger`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4471,7 +4480,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TileDamageMultiplier`
-### Object: `TileDamageMultiplier`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4489,7 +4498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TourettesMeows`
-### Object: `TourettesMeows`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4521,7 +4530,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
@@ -4542,7 +4551,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
@@ -4563,7 +4572,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
@@ -4584,7 +4593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 

@@ -19,7 +19,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `distance_to_character` | Number | Examples: `1, -1, 0` | 55 |
 | `distance_to_enemy` | Number | Examples: `1, -1, 0` | 55 |
 | `face_closest_enemy` | Number | Examples: `1, 0` | 55 |
-| `preferred_distance` | Mixed | Examples: `mov+5, 0, mov` | 55 |
+| [`preferred_distance`](./Enums.md#enum-preferred_distance) | Mixed | Examples: `mov+5, 0, mov` | 55 |
 | `total_distance_moved` | Number | Examples: `-1, 0.01, -0.01` | 55 |
 | [`negative_weight_scale`](./Enums.md#enum-negative_weight_scale) | Enum | Examples: `.99` | 32 |
 | [`spend_mana_scale`](./Enums.md#enum-spend_mana_scale) | Enum | Examples: `.99` | 32 |

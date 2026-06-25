@@ -5445,7 +5445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 10 |
 | [`set_mood`](./Enums.md#enum-set_mood) | Enum | Examples: `veryhappy, happy, default` | 9 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `reject_cat, choose_cat2, choose_cat1` | 3 |
-| `delay` | Mixed | Examples: `.05, 5.4` | 2 |
+| [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | Examples: `.05, 5.4` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_BEANIES_INTRO_15` | 1 |
 | `lock_controls` | Number | Examples: `1` | 1 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `Intro_LabDisposal` | 1 |

@@ -3984,7 +3984,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Ability_Pools)](./Ability_Pools.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -4033,7 +4032,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Ability_Pools)](./Ability_Pools.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -4049,7 +4047,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Ability_Pools)](./Ability_Pools.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -4082,7 +4079,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Ability_Pools)](./Ability_Pools.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -5103,7 +5099,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Event_Pools)](./Event_Pools.md#context-root)
 
 **Accepted Elements:**
 - List of [Enum: `event_file`](./Enums.md#enum-event-file)
@@ -5316,7 +5311,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Locked_Content)](./Locked_Content.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: class`](./Enums.md#enum-class)
@@ -5985,7 +5979,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Locked_Content)](./Locked_Content.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: unlock_ability`](./Enums.md#enum-unlock_ability)
@@ -6001,7 +5994,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Locked_Content)](./Locked_Content.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: unlock_boss`](./Enums.md#enum-unlock_boss)
@@ -6017,7 +6009,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Locked_Content)](./Locked_Content.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate)
@@ -6033,7 +6024,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Locked_Content)](./Locked_Content.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup)
@@ -6049,7 +6039,6 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Locked_Content)](./Locked_Content.md#context-root)
 
 **Accepted Elements:**
 - List of [`Enum: unlock_passive`](./Enums.md#enum-unlock_passive)

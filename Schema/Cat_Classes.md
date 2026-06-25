@@ -39,6 +39,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `graphics`
 
+**Definition:** Examples: `{ ... }`
+
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -61,10 +64,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `meta`
 
+**Definition:** Examples: `{ ... }`
+**Total Count:** 14
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 14
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -79,10 +86,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `stat_mods`
 
+**Definition:** Examples: `{ ... }`
+**Total Count:** 13
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 13
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -102,10 +113,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ability_groups`
 
+**Definition:** Examples: `{ ... }`
+**Total Count:** 12
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 12
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -122,10 +137,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `innate_passives`
 
+**Definition:** Examples: `{ ... }`
+**Total Count:** 4
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -140,10 +159,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `innate_items`
 
+**Definition:** Examples: `{ ... }`
+**Total Count:** 2
+
+
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
