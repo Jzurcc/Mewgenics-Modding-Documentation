@@ -46,87 +46,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ally_ambush_next_fights` | Number |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 |
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
 | [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 1067 |
 | [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 18 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 1 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 3 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`goto`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 16 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `max_options` | Number |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`options`](./Events_and_Encounters.md#object-options) | Object | Event Block: Lists the available clickable dialog choices for the current story node. | 0 |
-| [`outcome`](./Events_and_Encounters.md#object-outcome) | Object | Event Block: Logic and text executed after selecting a specific dialog option. | 0 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_damage`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | `party_heal` | Number |  | 1 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`requires_flag`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Prerequisite: Must meet this condition. | 5 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | `Number` |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`setup`](./Events_and_Encounters.md#object-setup) | Object | Event Block: Pre-initialization logic executed before the event UI is drawn. | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `shuffle_options` | Boolean |  | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `weight` | `Number` | Probability weight for this outcome. | 10 |
 
 </details>
@@ -147,91 +96,45 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1879 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
 | `ambush_next_basic_fights` | Number |  | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
 | [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 24 |
-| `clear_result_animation` | Number |  | 0 |
 | [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
 | [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 0 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
-| `gain_cat_familiar` | Number |  | 0 |
 | [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 13 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| `hide_appearance_changes` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 5 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `party_damage` | Number |  | 0 |
 | `party_heal` | Number |  | 1 |
-| `party_heal_disorder` | Number |  | 0 |
-| `party_heal_injury` | Number |  | 0 |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| `party_random_mutation` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 4 |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 73 |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
-| `self_heal` | Number |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
-| `set_age` | Number |  | 0 |
 | `set_frame` | `Number` |  | 54 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 10 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 |
 | [`spin`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `weight` | `Number` | Probability weight for this outcome. | 1 |
 
 </details>
@@ -262,7 +165,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `con` | Number |  | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 |
 | [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| `dex` | Number |  | 0 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 21 |
 | `full_heal` | `Number` |  | 10 |
@@ -301,7 +203,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random` | Number |  | 5 |
 | `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 25 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 8 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
 | `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 22 |
 | `self_heal` | `Number` |  | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
@@ -343,7 +244,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `con` | Number |  | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 22 |
 | [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
-| `dex` | Number |  | 0 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 30 |
 | `full_heal` | `Number` |  | 4 |
@@ -397,7 +297,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random` | Number |  | 7 |
 | `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 40 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 12 |
@@ -434,99 +333,65 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1435 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 6 |
 | `ally_ambush_next_fights` | Number |  | 1 |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `ambush_next_basic_fights` | Number |  | 0 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
 | [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clear_result_animation` | Number |  | 0 |
 | [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
 | `clone_self_to_party` | `Number` |  | 1 |
-| [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 0 |
 | [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 38 |
 | `copy_items_to_party` | `Number` |  | 1 |
 | `copy_party_items` | `Number` |  | 1 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 19 |
 | [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 0 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 9 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 9 |
 | `full_heal` | Number |  | 2 |
-| `gain_cat_familiar` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 8 |
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 5 |
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 |
 | `heal` | `Number` |  | 1 |
 | `heal_disorder` | Number |  | 5 |
 | `heal_injury` | `Number` |  | 3 |
-| `hide_appearance_changes` | Number |  | 0 |
 | [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 52 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 8 |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
-| [`party_damage`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
 | `party_heal` | Number |  | 1 |
-| `party_heal_disorder` | Number |  | 0 |
-| `party_heal_injury` | Number |  | 0 |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| `party_random_mutation` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 20 |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 185 |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 12 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
-| `set_age` | Number |  | 0 |
 | `set_frame` | `Number` |  | 285 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 26 |
-| [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
 | `trigger_butterfly_effect` | `Number` |  | 1 |
 | [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
@@ -554,19 +419,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1529 |
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |
 | [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 0 |
 | `con` | Number |  | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 3 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `dex` | Number |  | 1 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
 | [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
@@ -574,25 +434,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `next_event_bonus` | Number |  | 2 |
-| [`party_damage`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 1 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random` | Number |  | 1 |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 0 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
 | [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | `Number` |  | 219 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
 | `spd` | Number |  | 1 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `weight` | Number | Probability weight for this outcome. | 10 |
 
 </details>
@@ -643,97 +497,42 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1350 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| `ally_ambush_next_fights` | Number |  | 0 |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `ambush_next_basic_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `clear_result_animation` | Number |  | 0 |
-| `con` | Number |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 0 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 0 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`future`](./Events_and_Encounters.md#object-future) | Object | Event Node: Story branch or dialog option representing the 'Future' action. | 1 |
-| `gain_cat_familiar` | Number |  | 0 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 1 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`good`](./Events_and_Encounters.md#object-good) | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 0 |
 | [`goto`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
-| `heal_disorder` | Number |  | 0 |
-| `hide_appearance_changes` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `max_options` | `Number` |  | 3 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
 | [`options`](./Events_and_Encounters.md#object-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`outcome`](./Events_and_Encounters.md#object-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `party_damage` | Number |  | 0 |
 | `party_heal` | Number |  | 1 |
-| `party_heal_disorder` | Number |  | 0 |
-| `party_heal_injury` | Number |  | 0 |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| `party_random_mutation` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 1 |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 208 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
 | [`requires_flag`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Prerequisite: Must meet this condition. | 1 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | `Array` | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `set_age` | Number |  | 0 |
 | `set_frame` | Number |  | 3 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`setup`](./Events_and_Encounters.md#object-setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `shuffle_options` | `Boolean` |  | 3 |
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`weight`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Probability weight for this outcome. | 2 |
 
 </details>
@@ -965,85 +764,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle) | Object | Event Node: Story branch or dialog option representing the \'Yellow Needle\' action. | 1 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
 | `ally_ambush_next_fights` | Number |  | 1 |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `ambush_next_basic_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
-| `clear_result_animation` | Number |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 1 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | `gain_cat_familiar` | Number |  | 1 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 1 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 3 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal_disorder` | Number |  | 0 |
-| `hide_appearance_changes` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 29 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `party_damage` | Number |  | 0 |
 | `party_heal` | Number |  | 1 |
-| `party_heal_disorder` | Number |  | 0 |
-| `party_heal_injury` | Number |  | 0 |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| `party_random_mutation` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 3 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `set_age` | Number |  | 0 |
 | `set_frame` | Number |  | 1 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`weight`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Probability weight for this outcome. | 2 |
 
 </details>
@@ -1171,35 +924,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 498 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 125 |
 | [`else`](./Events_and_Encounters.md#context-else) | Object | Event Node: Story branch or dialog option representing the \'Else\' action. | 37 |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `next_event_bonus` | Number |  | 0 |
-| [`party_damage`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
 | [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 19 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 125 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `set_frame` | Number |  | 0 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `weight` | Number | Probability weight for this outcome. | 0 |
 
 </details>
 
@@ -1246,72 +978,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 55 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 2 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -1334,73 +1017,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -1451,8 +1084,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_damage` | `Number` |  | 5 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 20 |
 | [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
 | `set_frame` | `Number` |  | 5 |
@@ -1480,72 +1111,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 30 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 30 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 28 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -1568,104 +1150,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Mixed |  | 25 |
 | [`stat`](./Math_Equations.md) | Equation |  | 25 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `ambush_next_basic_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clear_result_animation` | Number |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 0 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
-| `gain_cat_familiar` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| `hide_appearance_changes` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `party_damage` | Number |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | `party_heal` | Number |  | 1 |
-| `party_heal_disorder` | Number |  | 0 |
-| `party_heal_injury` | Number |  | 0 |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| `party_random_mutation` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `set_age` | Number |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -1719,72 +1231,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |
 | [`stat`](./Math_Equations.md) | Equation |  | 23 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 23 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -1826,8 +1289,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 129 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 42 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 0 |
 | `set_frame` | `Number` |  | 3 |
 
 </details>
@@ -1905,72 +1366,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -1991,72 +1403,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
 | [`stat`](./Math_Equations.md) | Equation |  | 14 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 13 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2078,72 +1441,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 12 |
 | [`stat`](./Math_Equations.md) | Equation |  | 12 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2165,72 +1479,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2252,72 +1517,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation |  | 11 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 11 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2340,9 +1556,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
 | [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 |
-  | `Fights` | Number | Applies or references the 'Fights' effect/state. | 0 |
-  | [`StatusRandomEnemiesOnBattleStart`](#statusrandomenemiesonbattlestart) | Object | Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state. | 0 |
-  | [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 0 |
 
 </details>
 
@@ -2364,72 +1577,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2470,104 +1634,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `ambush_next_basic_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clear_result_animation` | Number |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 0 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
-| `gain_cat_familiar` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| `hide_appearance_changes` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| `party_damage` | Number |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | `party_heal` | Number |  | 1 |
-| `party_heal_disorder` | Number |  | 0 |
-| `party_heal_injury` | Number |  | 0 |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| `party_random_mutation` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `set_age` | Number |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2629,72 +1722,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2716,72 +1760,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2826,72 +1821,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1233 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -2976,72 +1922,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3062,72 +1959,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`stat`](./Math_Equations.md) | Equation |  | 6 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1232 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3150,72 +1998,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 6 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3277,72 +2076,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 5 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3363,72 +2113,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3451,72 +2152,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3538,72 +2190,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1228 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3645,72 +2248,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 3 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3753,8 +2307,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weather_roll`](./Arrays.md#array-weather_roll) | Array |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 0 |
 
 </details>
 
@@ -3825,28 +2377,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 409 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `next_event_bonus` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 0 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3885,72 +2419,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1226 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -3971,72 +2456,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4053,8 +2489,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-  | [`mutation`](#mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 0 |
-  | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 0 |
 
 </details>
 
@@ -4153,72 +2587,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1224 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4239,72 +2624,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4371,72 +2707,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4516,72 +2803,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 2 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4604,72 +2842,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4708,72 +2897,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1224 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4813,72 +2953,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -4942,72 +3033,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5028,72 +3070,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5136,72 +3129,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5222,28 +3166,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 406 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `next_event_bonus` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 0 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5302,7 +3228,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -5323,72 +3248,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5409,72 +3285,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5520,65 +3347,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `weight` | `Number` | Probability weight for this outcome. | 1 |
 
 </details>
@@ -5600,72 +3382,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5686,72 +3419,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5811,72 +3495,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5897,72 +3532,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -5983,72 +3569,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6069,72 +3606,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6155,72 +3643,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6261,72 +3700,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6346,72 +3736,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6432,72 +3772,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6518,72 +3809,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6604,72 +3846,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6690,72 +3883,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6795,72 +3939,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6882,72 +3977,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -6968,72 +4014,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7054,72 +4051,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7165,72 +4113,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7256,72 +4156,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7347,72 +4199,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7438,72 +4242,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7544,72 +4300,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7766,72 +4473,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -7852,72 +4510,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8003,72 +4612,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8088,7 +4648,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -8208,7 +4767,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -8250,28 +4808,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 406 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `next_event_bonus` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 0 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8292,72 +4832,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8378,72 +4869,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8464,72 +4906,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8549,72 +4942,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8635,72 +4978,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8742,72 +5036,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8828,72 +5073,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -8916,72 +5112,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9003,72 +5150,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9108,7 +5206,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -9187,7 +5284,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -9265,72 +5361,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9351,72 +5398,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9437,72 +5435,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9583,72 +5532,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9669,72 +5569,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9754,72 +5605,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9840,72 +5641,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -9925,72 +5677,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10011,72 +5713,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10101,72 +5754,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10187,72 +5792,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10315,72 +5871,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10424,72 +5931,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10511,72 +5969,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10617,72 +6026,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10703,72 +6063,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10808,7 +6119,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -10828,7 +6138,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -10870,72 +6179,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -10956,72 +6216,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11086,72 +6297,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11211,8 +6373,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
-  | `ignore` | Any | Explicit empirical property. | 0 |
 
 </details>
 
@@ -11233,72 +6393,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11319,72 +6430,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11406,72 +6468,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11490,7 +6503,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-  | [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
 
 </details>
 
@@ -11551,72 +6563,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11637,72 +6600,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11723,72 +6637,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11830,72 +6695,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -11916,72 +6732,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12022,72 +6789,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12127,7 +6845,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-  | `ignore` | Any | Explicit empirical property. | 0 |
 
 </details>
 
@@ -12166,64 +6883,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 938 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 0 |
-| `next_event_bonus` | Number |  | 0 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12244,72 +6915,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12330,72 +6952,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12416,72 +6989,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12502,72 +7026,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12587,13 +7062,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-  | [`sfx`](./Enums.md#enum-sfx) | Enum | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` | 0 |
-  | `unlock_controls` | Any | Explicit empirical property. | 0 |
-  | `get_token` | Any | Explicit empirical property. | 0 |
-  | `dialog_and_autopass` | Any | Explicit empirical property. | 0 |
-  | `dialog` | Any | Explicit empirical property. | 0 |
-  | `set_state` | Any | Explicit empirical property. | 0 |
-  | `wait_for` | Any | Explicit empirical property. | 0 |
 
 </details>
 
@@ -12754,28 +7222,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 406 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `next_event_bonus` | Number |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 0 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12876,72 +7326,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -12962,72 +7363,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 
@@ -13049,72 +7401,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `clone_self_to_party` | Number |  | 0 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| `copy_items_to_party` | Number |  | 0 |
-| `copy_party_items` | Number |  | 0 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 0 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `full_heal` | Number |  | 0 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| `heal` | Number |  | 0 |
-| `heal_disorder` | Number |  | 0 |
-| `heal_injury` | Number |  | 0 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 0 |
-| [`party_gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_pool`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`random_pool_consider_luck`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `set_frame` | Number |  | 36 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`transform_item`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 0 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `trigger_butterfly_effect` | Number |  | 0 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 
 </details>
 

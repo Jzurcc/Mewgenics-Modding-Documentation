@@ -38,45 +38,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`empty_self_damage`](./Abilities_and_Spells.md#object-empty_self_damage) | Object | Recoil damage specifically applied when the attack misses all targets. | 4 |
 | [`bonk_damage`](./Abilities_and_Spells.md#object-bonk_damage) | Object | Damage dealt when knocked into a wall or obstacle. | 2 |
 | [`damage`](./Abilities_and_Spells.md#object-damage) | Object | The base damage properties of an attack. | 2 |
-| [`accuracy`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | Hit chance modifier. | 0 |
-| `ai_base_score` | Number |  | 0 |
-| [`blocked_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | Base damage dealt if the attack is blocked. | 0 |
-| `blocked_multiplier` | Number | Multiplier applied when hitting a blocking target. | 0 |
-| `can_collect_pickups` | Boolean | The damage instance can grab items on the ground. | 0 |
-| `can_instapop` | Boolean | Allows the attack to instantly destroy specific weak entities. | 0 |
-| `can_revive` | Boolean | Healing instance that can bring dead allies back to life. | 0 |
-| `cant_miss` | Boolean |  | 0 |
 | [`chapter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 6 |
-| `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 0 |
-| `crit_chance` | Number |  | 0 |
-| [`custom_additional_ai_weight`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. | 0 |
-| `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. | 0 |
 | `durability` | Number | Consumes item durability. | 264 |
 | [`effects`](./Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
-| [`elements`](./Engine_DamagingKeys.md#valid-property-keys) | Array |  | 0 |
-| [`faction`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`final_hit_bonus_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | Extra damage applied on the last hit of a multihit. | 0 |
-| `force_adjacent_and_diagonal_contact` | Boolean | Treats diagonal hits as physical contact. | 0 |
-| `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). | 0 |
-| `force_no_knockback` | Boolean |  | 0 |
-| `force_play_hit_animation` | Boolean |  | 0 |
-| `heal` | Number |  | 0 |
-| `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. | 0 |
-| [`hit_animation_alt`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | Custom flinch animation for the target. | 0 |
-| `incidentally_collects_pickups` | Boolean | Automatically grabs items in the AoE. | 0 |
-| `knockback` | Number | Knockback force of the splash blast. | 0 |
 | [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String |  | 3 |
-| `makes_contact` | Boolean |  | 0 |
-| `non_lethal` | Boolean |  | 0 |
-| `override_trample_damage` | Boolean |  | 0 |
-| `piercing` | Boolean |  | 0 |
-| `ranged` | Boolean | Boolean flagging the damage as explicitly ranged. | 0 |
-| [`raw_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | Unmitigated, unscaled base numbers. | 0 |
-| [`raw_heal`](./Engine_DamagingKeys.md#valid-property-keys) | String | Unmitigated, unscaled base numbers. | 0 |
 | [`self_damage`](./Abilities_and_Spells.md#object-self-damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
-| `show_damage_on_0` | Boolean | Forces the "-0" floater text to appear. | 0 |
-| `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 0 |
 | `damage` | Number | The base damage properties of an attack. | 2 |
 
 </details>
@@ -334,9 +300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 589 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 86 |
 | `AIFavorLowHealth` | `Number` | Applies or references the 'AIFavorLowHealth' effect/state. | 2 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
 | `AddSpiritBombCharges` | `Number` | Applies or references the 'AddSpiritBombCharges' effect/state. | 4 |
-| `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | `AlliesTakeExtraTurn` | `Number` | Applies or references the 'AlliesTakeExtraTurn' effect/state. | 2 |
 | [`AlternateIdleAnimation`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'AlternateIdleAnimation' effect/state. | 2 |
 | [`ApplyMultipleTimes`](./Abilities_and_Spells.md#object-applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 6 |
@@ -347,15 +311,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToConsumed`](./Abilities_and_Spells.md#object-applytoconsumed) | Object | Redirects the nested effects to apply to the entity that just consumed this object. | 8 |
 | [`ApplyToOthersWithSharedTagAndFaction`](./Abilities_and_Spells.md#object-applytootherswithsharedtagandfaction) | Object | Redirects the nested effects to apply to all other entities on the map that share the target's faction and specified tags. | 2 |
 | [`ApplyToRandomClosestAlly`](./Abilities_and_Spells.md#object-applytorandomclosestally) | Object | Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them. | 2 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 54 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 22 |
-| [`ApplyToTile`](./Abilities_and_Spells.md#object-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 0 |
 | [`ArcLightning`](./Abilities_and_Spells.md#object-arclightning) | Object | Executes a chain-lightning logic block that bounces between targets. | 8 |
 | `BombRatTurtle` | `Number` | Applies or references the 'BombRatTurtle' effect/state. | 2 |
-| `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 0 |
-| [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'BonusDamage' effect/state. | 0 |
-| `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 0 |
 | `BonusDamageBasedOnMana` | `Number` | Applies or references the 'BonusDamageBasedOnMana' effect/state. | 2 |
 | `BonusKnockbackDamage` | `Number` | Applies or references the 'BonusKnockbackDamage' effect/state. | 4 |
 | [`BounceObject`](./Abilities_and_Spells.md#object-bounceobject) | `Enum/String` | Spawns a physics object that visually bounces off the target. | 70 |
@@ -367,7 +326,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 16 |
 | `CancelPrimedAbilities` | `Number` | Applies or references the 'CancelPrimedAbilities' effect/state. | 4 |
 | `CanceledQueuedInput` | `Number` | Applies or references the 'CanceledQueuedInput' effect/state. | 2 |
-| `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 2 |
 | [`CatPartsSizeScaleStatus`](./Abilities_and_Spells.md#object-catpartssizescalestatus) | Object | Visually scales specific body parts of a character. | 6 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 26 |
@@ -389,7 +347,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CollectsPickupsWithAltEffects`](./Abilities_and_Spells.md#object-collectspickupswithalteffects) | Object | Triggers alternative nested effects when collecting items or pickups. | 10 |
 | [`CollideWithConsumed`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'CollideWithConsumed' effect/state. | 6 |
 | `CollideWithThrowTarget` | `Number` | Applies or references the 'CollideWithThrowTarget' effect/state. | 4 |
-| [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
 | [`Conditional_AbilityTargetIsSelf`](./Engine_LogicKeys.md#valid-property-keys) | Object | Conditional constraint. Nested properties only trigger if this is true. | 2 |
 | [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#object-conditional-activeweather-any) | Object | Conditional trigger: Executes nested logic if the current map weather matches any in the list. | 2 |
 | [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#object-conditional-affectedbyelement) | Object | Conditional trigger: Executes nested logic if the target is currently afflicted by the specified element. | 6 |
@@ -433,14 +390,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_SourceHasStatus`](./Abilities_and_Spells.md#object-conditional-sourcehasstatus) | Object | Conditional trigger: Executes nested logic if the caster currently has the specified status. | 2 |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 20 |
 | [`ConjureBonusAbility`](./Abilities_and_Spells.md#object-conjurebonusability) | `Enum/String` | Adds a temporary bonus ability to the character's hand/deck. | 12 |
-| `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 0 |
 | [`ConjureSingleUseBonusAbility`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. | 2 |
 | [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 30 |
 | `ContextualHeal` | `Number` | Applies or references the 'ContextualHeal' effect/state. | 14 |
 | `CopySpells` | `Number` | Duplicates existing spells currently in the character's hand. | 4 |
 | `CorpseVaporizer` | `Number` | Applies or references the 'CorpseVaporizer' effect/state. | 6 |
 | `Counterspell` | `Number` | Applies or references the 'Counterspell' effect/state. | 4 |
-| `CrackMoonHead` | Number | Applies or references the 'CrackMoonHead' effect/state. | 0 |
 | [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 12 |
 | `CurrentWeaponAddElectricElement` | `Number` | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. | 2 |
 | `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 6 |
@@ -465,10 +420,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `DieViaAbilityInternally` | `Number` | Applies or references the 'DieViaAbilityInternally' effect/state. | 4 |
 | `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 2 |
 | [`DinoLegAnimation`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'DinoLegAnimation' effect/state. | 2 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
 | `Disguised` | `Number` | Applies or references the 'Disguised' effect/state. | 2 |
 | `Displace` | `Number` | Applies or references the 'Displace' effect/state. | 24 |
-| `DisplaceToAbilityTarget` | Number | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 0 |
 | `DisplaceToOriginalPosition` | `Number` | Applies or references the 'DisplaceToOriginalPosition' effect/state. | 4 |
 | `DisplaceTowardsSource` | `Number` | Applies or references the 'DisplaceTowardsSource' effect/state. | 6 |
 | `DissolveRandomArmorPiece` | `Number` | Applies or references the 'DissolveRandomArmorPiece' effect/state. | 2 |
@@ -491,10 +444,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ExplodeCharacter_DeathBloom` | `Number` | Applies or references the 'ExplodeCharacter_DeathBloom' effect/state. | 2 |
 | `ExplodeCharacter_DeathBloom2` | `Number` | Applies or references the 'ExplodeCharacter_DeathBloom2' effect/state. | 2 |
 | `ExplodeCharacter_NoDie` | `Number` | Applies or references the 'ExplodeCharacter_NoDie' effect/state. | 2 |
-| `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. | 0 |
-| `ExplodeCharacter_PartyBoss` | Number | Applies or references the 'ExplodeCharacter_PartyBoss' effect/state. | 0 |
-| `ExplodeCharacter_RockCrusher` | Number | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 0 |
-| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Number | Applies or references the 'ExplodeCharacter_RockCrusher_PetrifyBreak' effect/state. | 0 |
 | `ExplosionIfHitSomething` | `Number` | Applies or references the 'ExplosionIfHitSomething' effect/state. | 8 |
 | `FaceAway` | `Number` | Applies or references the 'FaceAway' effect/state. | 28 |
 | `FaceCamera` | `Number` | Applies or references the 'FaceCamera' effect/state. | 8 |
@@ -505,13 +454,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `FinalBossQueueBeam` | `Number` | Applies or references the 'FinalBossQueueBeam' effect/state. | 2 |
 | `FlatAIBonus` | `Number` | Applies or references the 'FlatAIBonus' effect/state. | 2 |
 | `FlatLeech` | `Number` | Applies or references the 'FlatLeech' effect/state. | 10 |
-| `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. | 0 |
 | `FlowersOnHit` | `Number` | Applies or references the 'FlowersOnHit' effect/state. | 4 |
 | `ForceAttack` | `Number` | Forces the character to execute an immediate attack. | 14 |
 | `ForceCollectsPickups` | `Number` | Applies or references the 'ForceCollectsPickups' effect/state. | 2 |
 | `ForceDisplace` | `Number` | Applies or references the 'ForceDisplace' effect/state. | 6 |
-| `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. | 0 |
-| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 0 |
 | `ForceMoveAndAttack` | `Number` | Applies or references the 'ForceMoveAndAttack' effect/state. | 2 |
 | `ForceMoveAway` | `Number` | Applies or references the 'ForceMoveAway' effect/state. | 10 |
 | `ForceMoveNonAlliesInRangeTowardsTile` | `Number` | Applies or references the 'ForceMoveNonAlliesInRangeTowardsTile' effect/state. | 4 |
@@ -521,8 +467,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ForceTransferWeapon` | `Number` | Applies or references the 'ForceTransferWeapon' effect/state. | 2 |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 204 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 22 |
-| [`GainDisorder`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorder' effect/state. | 0 |
-| [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
 | `GenericBuff` | `Number` | Applies or references the 'GenericBuff' effect/state. | 2 |
 | `GenericDebuff` | `Number` | Applies or references the 'GenericDebuff' effect/state. | 26 |
 | `GiveBoundItemToTarget` | `Number` | Applies or references the 'GiveBoundItemToTarget' effect/state. | 2 |
@@ -543,13 +487,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `InstantMaxHealthUp` | `Number` | Applies or references the 'InstantMaxHealthUp' effect/state. | 6 |
 | `InterchangeMoveActPoints` | `Number` | Applies or references the 'InterchangeMoveActPoints' effect/state. | 2 |
 | `JohnnyCriesForWashers` | `Number` | Applies or references the 'JohnnyCriesForWashers' effect/state. | 4 |
-| [`KnockOutClone`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'KnockOutClone' effect/state. | 0 |
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 34 |
 | `KnockbackDamageImmuneUntilSettled` | `Number` | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 14 |
 | [`KnockbackDirectionIsFacingDirection`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. | 10 |
 | [`LateStatusApplication`](./Abilities_and_Spells.md#object-latestatusapplication) | Object | Applies a status effect after all primary damage and effects have fully resolved. | 8 |
-| [`LaunchOffScreen`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'LaunchOffScreen' effect/state. | 0 |
-| `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 0 |
 | `LeaveBehindRockOnKnockback` | `Number` | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. | 4 |
 | [`LowerAmbientLight`](./Abilities_and_Spells.md#object-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 4 |
 | `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 2 |
@@ -562,7 +503,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `MassAttackThis` | `Number` | Applies or references the 'MassAttackThis' effect/state. | 2 |
 | [`Math`](./Abilities_and_Spells.md#object-math) | Object | Triggers the Tinkerer's Math ability sequence. | 4 |
 | `MaxHPUp` | `Number` | Applies or references the 'MaxHPUp' effect/state. | 4 |
-| [`MergeDamageInstance`](./Abilities_and_Spells.md#object-mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 0 |
 | `Metronome` | `Number` | Executes a random musical or metronome ability. | 12 |
 | `MimicMetronome` | `Number` | Applies or references the 'MimicMetronome' effect/state. | 2 |
 | `MonkStanceSwitch` | `Number` | Applies or references the 'MonkStanceSwitch' effect/state. | 10 |
@@ -595,7 +535,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`QuakeAreaChance`](./Abilities_and_Spells.md#object-quakeareachance) | Object | Provides a probability to trigger an earthquake Area of Effect. | 4 |
 | [`QueueUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'QueueUseAbility' effect/state. | 2 |
 | `RNGCannonRandomDamage` | `Number` | Applies or references the 'RNGCannonRandomDamage' effect/state. | 2 |
-| `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. | 0 |
 | `RandomDistanceDisplace` | `Number` | Displaces the target by a randomized distance. | 4 |
 | [`RandomKnockback`](./Abilities_and_Spells.md#object-randomknockback) | Object | Applies a randomized amount of knockback force. | 4 |
 | `RandomKnockbackDirection` | `Number` | Applies or references the 'RandomKnockbackDirection' effect/state. | 2 |
@@ -613,11 +552,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RefreshWeaponAbility` | `Number` | Applies or references the 'RefreshWeaponAbility' effect/state. | 6 |
 | `Regurge` | `Number` | Applies or references the 'Regurge' effect/state. | 2 |
 | `RemoveActPoints` | `Number` | Applies or references the 'RemoveActPoints' effect/state. | 8 |
-| [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveItem' effect/state. | 0 |
 | `RemoveMovePoints` | `Number` | Applies or references the 'RemoveMovePoints' effect/state. | 4 |
 | [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'RemoveStatus' effect/state. | 12 |
 | [`RemoveStatusStacks`](./Abilities_and_Spells.md#object-removestatusstacks) | Object | Removes a specific number of stacks of a status effect. | 2 |
-| `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. | 0 |
 | `RepairAll` | `Number` | Applies or references the 'RepairAll' effect/state. | 6 |
 | `RepairAllCondition` | `Number` | Applies or references the 'RepairAllCondition' effect/state. | 2 |
 | `RepairArmorCondition` | `Number` | Applies or references the 'RepairArmorCondition' effect/state. | 4 |
@@ -634,18 +571,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ScrambleLastUsedSpell`](./Abilities_and_Spells.md#object-scramblelastusedspell) | Object | Randomizes or scrambles the properties of the last spell cast. | 2 |
 | `SelfStun` | `Number` | Applies or references the 'SelfStun' effect/state. | 2 |
 | `SendRock` | `Number` | Applies or references the 'SendRock' effect/state. | 8 |
-| [`SetAnimationAlts`](./Abilities_and_Spells.md#object-setanimationalts) | Object | Overrides specific animation states with alternative animations. | 0 |
 | [`SetCrazyEyeBackgroundWeights`](./Abilities_and_Spells.md#object-setcrazyeyebackgroundweights) | Object | Adjusts visual rendering weights for the 'Crazy Eye' background effect. | 6 |
 | `SetDistanceDisplace` | `Number` | Applies or references the 'SetDistanceDisplace' effect/state. | 12 |
 | `SetHealth` | `Number` | Applies or references the 'SetHealth' effect/state. | 12 |
-| `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 0 |
 | `SetShield` | `Number` | Applies or references the 'SetShield' effect/state. | 4 |
 | `ShadowCrit` | `Number` | Applies or references the 'ShadowCrit' effect/state. | 2 |
 | `Shatter` | `Number` | Applies or references the 'Shatter' effect/state. | 4 |
 | `ShootHereCommand` | `Number` | Applies or references the 'ShootHereCommand' effect/state. | 2 |
 | `ShootHereReceiver` | `Number` | Applies or references the 'ShootHereReceiver' effect/state. | 2 |
-| [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 0 |
-| [`ShowText`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'ShowText' effect/state. | 0 |
 | `SignalFinalBossShieldBroke` | `Number` | Applies or references the 'SignalFinalBossShieldBroke' effect/state. | 4 |
 | `SmallHitExplosion` | `Number` | Applies or references the 'SmallHitExplosion' effect/state. | 2 |
 | `SmartMetronome` | `Number` | Executes a 'smart' random ability that aims to be beneficial based on context. | 4 |
@@ -653,10 +586,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SoundEventOnHit`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'SoundEventOnHit' effect/state. | 2 |
 | [`SourceSwapsBackEndOfTurn`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. | 2 |
 | `SpawnBearTrap` | `Number` | Applies or references the 'SpawnBearTrap' effect/state. | 10 |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
 | `SpawnCreep` | `Number` | Applies or references the 'SpawnCreep' effect/state. | 18 |
 | [`SpawnCustomTrap`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'SpawnCustomTrap' effect/state. | 6 |
-| [`SpawnFlames`](./Engine_LogicKeys.md#valid-property-keys) | `Array` | Applies or references the 'SpawnFlames' effect/state. | 0 |
 | `SpawnNeutralWebTrapOnMiss` | `Number` | Applies or references the 'SpawnNeutralWebTrapOnMiss' effect/state. | 6 |
 | `SpawnRock` | `Number` | Applies or references the 'SpawnRock' effect/state. | 6 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'SpawnThingIfHitKills' effect/state. | 12 |
@@ -669,7 +600,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpreadDisease`](./Abilities_and_Spells.md#object-spreaddisease) | Object | Provides a chance to transmit a disease status to adjacent targets. | 16 |
 | `StackingSandstorm` | `Number` | Applies or references the 'StackingSandstorm' effect/state. | 2 |
 | `StanceSwitchToMelee` | `Number` | Applies or references the 'StanceSwitchToMelee' effect/state. | 4 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
 | `StealDemonicGlyph` | `Number` | Applies or references the 'StealDemonicGlyph' effect/state. | 2 |
 | [`StealEquipment`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'StealEquipment' effect/state. | 2 |
 | `StealTurn` | `Number` | Applies or references the 'StealTurn' effect/state. | 2 |
@@ -678,7 +608,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SwapHighestAndLowestStat` | `Number` | Applies or references the 'SwapHighestAndLowestStat' effect/state. | 2 |
 | [`SwapWeapon`](./Abilities_and_Spells.md#object-swapweapon) | Object | Replaces the character's currently equipped weapon with one from a specified pool. | 2 |
 | [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic) | Object | Changes the background music track or layer during combat. | 8 |
-| `T2CopyCat` | Number | Applies or references the 'T2CopyCat' effect/state. | 0 |
 | `T3HitlerTriggerInitialSpawns` | `Number` | Applies or references the 'T3HitlerTriggerInitialSpawns' effect/state. | 2 |
 | [`TagMetronome`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'TagMetronome' effect/state. | 2 |
 | [`TakeBonusTurnWithAIControl`](./Abilities_and_Spells.md#object-takebonusturnwithaicontrol) | Object | Grants the character an immediate extra turn, but forces the AI to control them during it. | 4 |
@@ -694,7 +623,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `TempBackstabPoison` | `Number` | Applies or references the 'TempBackstabPoison' effect/state. | 2 |
 | `TempBasicAttackBonusAOE` | `Number` | Applies or references the 'TempBasicAttackBonusAOE' effect/state. | 2 |
 | `TempLuckUp` | `Number` | Applies or references the 'TempLuckUp' effect/state. | 2 |
-| [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 0 |
 | `TempPenetrate` | `Number` | Applies or references the 'TempPenetrate' effect/state. | 2 |
 | `TempTrampleUntilSettled` | `Number` | Applies or references the 'TempTrampleUntilSettled' effect/state. | 4 |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 68 |
@@ -708,7 +636,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TransformBasicMove`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'TransformBasicMove' effect/state. | 2 |
 | [`TransformEquipment`](./Abilities_and_Spells.md#object-transformequipment) | Object | Upgrades or transforms a specific equipped item into another. | 2 |
 | [`TransformNow`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'TransformNow' effect/state. | 2 |
-| [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
 | `Trapper_Status` | `Number` | Applies or references the 'Trapper_Status' effect/state. | 2 |
 | `TriggerDOTStatuses` | `Number` | Applies or references the 'TriggerDOTStatuses' effect/state. | 4 |
 | `TriggerGameEnding` | `Number` | Applies or references the 'TriggerGameEnding' effect/state. | 2 |
@@ -725,7 +652,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`UseMoveAbilityWithAI`](./Abilities_and_Spells.md#object-usemoveabilitywithai) | Object | Forces the character to execute a movement ability using specific AI weights. | 2 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 42 |
 | `VaporizeCorpse` | `Number` | Applies or references the 'VaporizeCorpse' effect/state. | 30 |
-| [`VaporizeCorpseFlipAdvantage`](./Engine_LogicKeys.md#valid-property-keys) | `Array` | Applies or references the 'VaporizeCorpseFlipAdvantage' effect/state. | 0 |
 | `VaporizeDice` | `Number` | Applies or references the 'VaporizeDice' effect/state. | 2 |
 | `VaporizeInanimate` | `Number` | Applies or references the 'VaporizeInanimate' effect/state. | 8 |
 | `VaporizeTarget` | `Number` | Applies or references the 'VaporizeTarget' effect/state. | 6 |
@@ -733,31 +659,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`VisualFX`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'VisualFX' effect/state. | 20 |
 | [`VisualFXTile`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'VisualFXTile' effect/state. | 72 |
 | [`WaggleClone`](./Abilities_and_Spells.md#object-waggleclone) | Object | Spawns visual clones or alternative hitbox variants of the projectile. | 2 |
-| [`WeaponAuxMultiplier`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'WeaponAuxMultiplier' effect/state. | 0 |
-| [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
-| `do_not_pop_corpse` | Boolean |  | 0 |
-| [`drop_body_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `drop_on_self_death` | Boolean |  | 0 |
 | [`element`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The specific element type to check for. | 1 |
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |
-| `force_contact` | Boolean | If true, enforces physical overlap. | 0 |
-| [`form`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The specific form ID to check for. | 0 |
-| [`formula`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The math expression to evaluate. | 0 |
-| `instant` | Boolean |  | 0 |
-| `key` | Enum/String |  | 0 |
-| `kill_on_consume` | Boolean |  | 0 |
-| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | If true, treats the consumption as riding/mounting instead of eating. | 0 |
-| `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 0 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The status effect to apply. | 0 |
-| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Ability triggered by the consumed entity while inside the consumer. | 0 |
 | [`tag`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The entity tag to seek out. | 981 |
-| [`threshold_expr`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `threshold_flat` | Number | A flat numerical health value threshold. | 0 |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 0 |
-| `use_placeholder` | Boolean |  | 0 |
-| [`weather`](./Engine_LogicKeys.md#valid-property-keys) | Array | An array of weather states to check against. | 0 |
-| `wet` | Boolean |  | 0 |
 
 </details>
 
@@ -967,10 +871,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `knockback` | Number |  | 20 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 4 |
 | `ai_base_score` | Number |  | 4 |
-  | `bonus_melee_damage` | Any | Native property. | 0 |
-  | `melee` | Variable |  | 0 |
-  | `spawn` | Any | Native property. | 0 |
-  | `true` | Any | Native property. | 0 |
 | `cant_miss` | `Boolean` |  | 20 |
 | [`effects`](./Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 400 |
 | `heal` | `Number` |  | 12 |
@@ -1091,15 +991,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1138 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1022 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 12 |
-| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
 | [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'BonusDamage' effect/state. | 12 |
-| `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 0 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 6 |
-| `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 4 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 2 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 4 |
@@ -1110,90 +1005,41 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional-inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 7 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 16 |
 | [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 2 |
-| `CrackMoonHead` | Number | Applies or references the 'CrackMoonHead' effect/state. | 0 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 2 |
-| `Die` | Number | Applies or references the 'Die' effect/state. | 0 |
 | `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 2 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. | 0 |
 | [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 2 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
 | `ExplodeCharacter` | `Number` | Applies or references the 'ExplodeCharacter' effect/state. | 2 |
 | `ExplodeCharacter_Party` | `Number` | Applies or references the 'ExplodeCharacter_Party' effect/state. | 2 |
-| `FaceAway` | Number | Applies or references the 'FaceAway' effect/state. | 0 |
 | `FaceCamera` | `Number` | Applies or references the 'FaceCamera' effect/state. | 2 |
 | `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 4 |
 | `FlatAIBonus` | `Number` | Applies or references the 'FlatAIBonus' effect/state. | 2 |
-| `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 0 |
-| `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. | 0 |
 | `ForceImmediateMove` | `Number` | Applies or references the 'ForceImmediateMove' effect/state. | 2 |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 4 |
 | `FullHeal` | `Number` | Applies or references the 'FullHeal' effect/state. | 4 |
-| [`GainDisorder`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorder' effect/state. | 0 |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 14 |
 | `GenericDebuff` | `Number` | Applies or references the 'GenericDebuff' effect/state. | 2 |
-| `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 0 |
 | [`ImmediateUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'ImmediateUseAbility' effect/state. | 2 |
 | `Instakill` | `Number` | Applies or references the 'Instakill' effect/state. | 2 |
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 2 |
-| [`LaunchOffScreen`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'LaunchOffScreen' effect/state. | 0 |
-| `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 0 |
-| [`ManaGain`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'ManaGain' effect/state. | 0 |
-| [`MergeDamageInstance`](./Abilities_and_Spells.md#object-mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 0 |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 2 |
-| [`PopAndSpawn`](./Abilities_and_Spells.md#object-popandspawn) | Object | Destroys the target and replaces it with a new spawned entity. | 0 |
 | `PurgeAll` | `Number` | Applies or references the 'PurgeAll' effect/state. | 2 |
-| `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. | 0 |
 | `RandomStatDown` | Number | Applies or references the 'RandomStatDown' effect/state. | 4 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 3 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| `RefreshWeaponAbility` | Number | Applies or references the 'RefreshWeaponAbility' effect/state. | 0 |
 | `RemoveMovePoints` | `Number` | Applies or references the 'RemoveMovePoints' effect/state. | 2 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
 | `RemoveTurnsThisRound` | `Number` | Applies or references the 'RemoveTurnsThisRound' effect/state. | 2 |
 | `Revive` | `Number` | Applies or references the 'Revive' effect/state. | 4 |
-| `ScatterRandomPickups` | Number | Applies or references the 'ScatterRandomPickups' effect/state. | 0 |
-| [`SetAnimationAlts`](./Abilities_and_Spells.md#object-setanimationalts) | Object | Overrides specific animation states with alternative animations. | 0 |
 | `SetHealth` | `Number` | Applies or references the 'SetHealth' effect/state. | 2 |
-| `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 0 |
 | `SetShield` | `Number` | Applies or references the 'SetShield' effect/state. | 2 |
 | [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 2 |
-| [`ShowText`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'ShowText' effect/state. | 0 |
 | `SpawnBearTrapIfHitKills` | `Number` | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 4 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'SpawnThingIfHitKills' effect/state. | 4 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
 | `SpeculativeMoveSelfCorpseOffMap` | `Number` | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 2 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 2 |
-| [`UseAbility`](./Abilities_and_Spells.md#object-useability) | Enum/String | Forces the character or target to instantly use a specified ability. | 0 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 6 |
-| `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 0 |
 | `VaporizeInanimate` | `Number` | Applies or references the 'VaporizeInanimate' effect/state. | 2 |
 | [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 2 |
-| `do_not_pop_corpse` | Boolean |  | 0 |
-| [`drop_body_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `drop_on_self_death` | Boolean |  | 0 |
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |
-| `force_contact` | Boolean | If true, enforces physical overlap. | 0 |
-| `instant` | Boolean |  | 0 |
-| `kill_on_consume` | Boolean |  | 0 |
-| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | If true, treats the consumption as riding/mounting instead of eating. | 0 |
-| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 0 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The status effect to apply. | 0 |
-| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Ability triggered by the consumed entity while inside the consumer. | 0 |
 | [`tag`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The specific string tag to check for. | 981 |
-| [`threshold_expr`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `threshold_flat` | Number | A flat numerical health value threshold. | 0 |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 0 |
-| `use_placeholder` | Boolean |  | 0 |
-| `wet` | Boolean |  | 0 |
 
 </details>
 
@@ -1256,20 +1102,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 288 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 128 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 91 |
-  | `EventBounty` | Integer | Applies or references the 'EventBounty' effect/state. | 0 |
-  | [`MergeDamageInstance`](#mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 0 |
-  | [`SetAnimationAlts`](#setanimationalts) | Object | Overrides specific animation states with alternative animations. | 0 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 6 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 4 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 2 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 4 |
-| `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
-| [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
-| [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
 | [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional-boss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 8 |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |
@@ -1279,74 +1115,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional-inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 2 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 12 |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | `CrackMoonHead` | `Number` | Applies or references the 'CrackMoonHead' effect/state. | 2 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
 | `DeleteObject` | `Number` | Applies or references the 'DeleteObject' effect/state. | 2 |
-| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
 | `Die` | `Number` | Applies or references the 'Die' effect/state. | 4 |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
 | `DisplaceTowardsSource` | `Number` | Applies or references the 'DisplaceTowardsSource' effect/state. | 2 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| `ExplodeCharacter` | Number | Applies or references the 'ExplodeCharacter' effect/state. | 0 |
-| `ExplodeCharacter_NoDie` | Number | Applies or references the 'ExplodeCharacter_NoDie' effect/state. | 0 |
-| `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. | 0 |
-| `ExplodeCharacter_PartyBoss` | Number | Applies or references the 'ExplodeCharacter_PartyBoss' effect/state. | 0 |
-| `ExplodeCharacter_RockCrusher` | Number | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 0 |
-| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Number | Applies or references the 'ExplodeCharacter_RockCrusher_PetrifyBreak' effect/state. | 0 |
 | `FaceAway` | `Number` | Applies or references the 'FaceAway' effect/state. | 2 |
-| `FaceCamera` | Number | Applies or references the 'FaceCamera' effect/state. | 0 |
-| `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 0 |
-| `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 0 |
 | `FloatingRockTrap` | `Number` | Applies or references the 'FloatingRockTrap' effect/state. | 12 |
-| `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. | 0 |
-| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 0 |
 | `IgnoreDamage` | `Number` | Applies or references the 'IgnoreDamage' effect/state. | 8 |
 | [`ImmediateUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'ImmediateUseAbility' effect/state. | 6 |
 | `Instakill` | `Number` | Applies or references the 'Instakill' effect/state. | 2 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 2 |
 | [`PopAndSpawn`](./Abilities_and_Spells.md#object-popandspawn) | Object | Destroys the target and replaces it with a new spawned entity. | 2 |
-| `PurgeAll` | Number | Applies or references the 'PurgeAll' effect/state. | 0 |
-| [`RandomStatDown`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'RandomStatDown' effect/state. | 0 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 0 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveItem' effect/state. | 0 |
-| `RemoveMovePoints` | Number | Applies or references the 'RemoveMovePoints' effect/state. | 0 |
 | [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'RemoveStatus' effect/state. | 2 |
-| `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. | 0 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
 | `ScatterRandomPickups` | `Number` | Applies or references the 'ScatterRandomPickups' effect/state. | 2 |
-| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 0 |
 | `SetKnockback` | `Number` | Applies or references the 'SetKnockback' effect/state. | 2 |
-| `SetShield` | Number | Applies or references the 'SetShield' effect/state. | 0 |
-| [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 0 |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
-| [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
-| [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | `Enum/String` | Forces the character or target to instantly use a specified ability. | 2 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 4 |
 | `VaporizeCorpse` | `Number` | Applies or references the 'VaporizeCorpse' effect/state. | 2 |
-| `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
-| [`VisualFX`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'VisualFX' effect/state. | 0 |
-| [`WeaponAuxMultiplier`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'WeaponAuxMultiplier' effect/state. | 0 |
-| [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
-| [`form`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The specific form ID to check for. | 0 |
 
 </details>
 
@@ -1419,48 +1205,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 31 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
-  | [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 0 |
-  | `DisplaceToAbilityTarget` | Integer | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 0 |
-  | `DontHealEnemies` | Integer | Applies or references the 'DontHealEnemies' effect/state. | 0 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 2 |
 | `BonusDamage` | `Number` | Applies or references the 'BonusDamage' effect/state. | 2 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
-| `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
-| [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 6 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| `ExplodeCharacter_RockCrusher` | Number | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 0 |
-| `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 0 |
 | `ForceMoveTowards` | `Number` | Applies or references the 'ForceMoveTowards' effect/state. | 2 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`Imprison`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'Imprison' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveItem' effect/state. | 0 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 0 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
 | `TakeExtraTurn` | `Number` | Applies or references the 'TakeExtraTurn' effect/state. | 4 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 2 |
-| [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
-| `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
-| [`WeaponAuxMultiplier`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'WeaponAuxMultiplier' effect/state. | 0 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The status effect to apply. | 0 |
 
 </details>
 
@@ -1516,49 +1268,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 98 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 4 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 2 |
 | `ChanceToBreak` | `Number` | Applies or references the 'ChanceToBreak' effect/state. | 2 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 6 |
-| [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
 | [`Conditional_Corpse`](./Abilities_and_Spells.md#object-conditional-corpse) | Object | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 2 |
 | [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional-enemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 44 |
 | [`Conditional_PlayerCat`](./Abilities_and_Spells.md#object-conditional-playercat) | Object | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 2 |
-| `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 0 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
 | `FullHeal` | `Number` | Applies or references the 'FullHeal' effect/state. | 2 |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 0 |
-| [`KnockOutClone`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'KnockOutClone' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
 | `KnockbackDamageImmuneUntilSettled` | `Number` | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 6 |
 | `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 2 |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 8 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveItem' effect/state. | 0 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
 | `RepairAll` | `Number` | Applies or references the 'RepairAll' effect/state. | 2 |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 0 |
 | [`ShowText`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'ShowText' effect/state. | 2 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `T2CopyCat` | Number | Applies or references the 'T2CopyCat' effect/state. | 0 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 6 |
 | `ThornsDamageImmuneUntilSettled` | `Number` | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. | 2 |
 | `TileDamageImmuneUntilSettled` | `Number` | Applies or references the 'TileDamageImmuneUntilSettled' effect/state. | 2 |
-| [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
-| [`WeaponAuxMultiplier`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'WeaponAuxMultiplier' effect/state. | 0 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The status effect to apply. | 0 |
 
 </details>
 
@@ -1716,58 +1441,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 108 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 37 |
-  | `ExplodeCharacter_PartyBoss` | Integer | Applies or references the 'ExplodeCharacter_PartyBoss' effect/state. | 0 |
-  | `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | Applies or references the 'ExplodeCharacter_RockCrusher_PetrifyBreak' effect/state. | 0 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'BonusDamage' effect/state. | 4 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
-| [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 12 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
-| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
 | [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 8 |
-| `ExplodeCharacter` | Number | Applies or references the 'ExplodeCharacter' effect/state. | 0 |
 | `ExplodeCharacter_NoDie` | `Number` | Applies or references the 'ExplodeCharacter_NoDie' effect/state. | 2 |
-| `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. | 0 |
-| `FaceCamera` | Number | Applies or references the 'FaceCamera' effect/state. | 0 |
-| `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 0 |
-| `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 0 |
-| [`ImmediateUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
-| `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 8 |
-| `PurgeAll` | Number | Applies or references the 'PurgeAll' effect/state. | 0 |
-| [`RandomStatDown`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'RandomStatDown' effect/state. | 0 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 0 |
-| `RemoveMovePoints` | Number | Applies or references the 'RemoveMovePoints' effect/state. | 0 |
 | [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'RemoveStatus' effect/state. | 8 |
-| `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. | 0 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
-| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 0 |
-| `SetShield` | Number | Applies or references the 'SetShield' effect/state. | 0 |
-| [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 0 |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
-| [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
-| `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
 | [`VisualFX`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'VisualFX' effect/state. | 6 |
 | [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 2 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The specific status ID to check for. | 0 |
 
 </details>
 
@@ -1840,29 +1527,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 8 |
 | `GetAggroTarget` | Number | Applies or references the 'GetAggroTarget' effect/state. | 4 |
 | `PreventDeathTransforms` | Number | Applies or references the 'PreventDeathTransforms' effect/state. | 2 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 6 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 2 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 6 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The status effect to apply. | 0 |
 
 </details>
 
@@ -1917,30 +1584,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
-  | `FactionConversion` | Integer | Applies or references the 'FactionConversion' effect/state. | 0 |
-  | `PermanentCharm` | Integer | Applies the 'PermanentCharm' effect. | 0 |
-  | `ExplodeCharacter_RockCrusher` | Integer | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 0 |
-  | [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
-  | `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 0 |
-  | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
-  | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
-  | [`Fear`](./Arrays.md#array-fear) | Array | Applies or references the 'Fear' effect/state. | 0 |
-  | `Doomed` | Number | Applies or references the 'Doomed' effect/state. | 0 |
-  | [`Conditional_HealthThreshold`](#conditionalhealththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
-| [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'BonusDamage' effect/state. | 0 |
-| `Die` | Number | Applies or references the 'Die' effect/state. | 0 |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
-| `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 0 |
-| [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
-| [`threshold_expr`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `threshold_flat` | Number | A flat numerical health value threshold. | 0 |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 0 |
 
 </details>
 
@@ -1963,7 +1607,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 40 |
-  | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 0 |
 
 </details>
 
@@ -2005,32 +1648,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 98 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 72 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
 | [`GainDisorder`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'GainDisorder' effect/state. | 2 |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 14 |
 | [`ImmediateUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'ImmediateUseAbility' effect/state. | 2 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
 | `RefreshWeaponAbility` | `Number` | Applies or references the 'RefreshWeaponAbility' effect/state. | 2 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
 | [`ShowText`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'ShowText' effect/state. | 2 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
 
 </details>
 
@@ -2053,15 +1677,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 147 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 37 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 2 |
 | `BonusDamageBasedOnDistance` | `Number` | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 4 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | `CapDamage` | `Number` | Applies or references the 'CapDamage' effect/state. | 2 |
-| `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
-| [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 20 |
@@ -2069,47 +1687,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 4 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
-| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
-| `Die` | Number | Applies or references the 'Die' effect/state. | 0 |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| `ExplodeCharacter` | Number | Applies or references the 'ExplodeCharacter' effect/state. | 0 |
-| `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. | 0 |
-| `FaceCamera` | Number | Applies or references the 'FaceCamera' effect/state. | 0 |
-| `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 0 |
-| `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 0 |
-| `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 0 |
-| `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 0 |
 | `IgnoreDamage` | `Number` | Applies or references the 'IgnoreDamage' effect/state. | 6 |
-| [`ImmediateUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
-| `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 0 |
-| `PurgeAll` | Number | Applies or references the 'PurgeAll' effect/state. | 0 |
 | `RandomBonusDamage` | `Number` | Applies or references the 'RandomBonusDamage' effect/state. | 2 |
-| [`RandomStatDown`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'RandomStatDown' effect/state. | 0 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 0 |
-| `RemoveMovePoints` | Number | Applies or references the 'RemoveMovePoints' effect/state. | 0 |
-| `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. | 0 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
-| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 0 |
-| `SetShield` | Number | Applies or references the 'SetShield' effect/state. | 0 |
-| [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 0 |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
-| [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
-| `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
-| [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
-| [`threshold_expr`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `threshold_flat` | Number | A flat numerical health value threshold. | 0 |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 0 |
 
 </details>
 
@@ -2230,8 +1810,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
 | [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 16 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | `X` | Variable |  | 0 |
 | [`OverrideKnockbackDamage`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'OverrideKnockbackDamage' effect/state. | 2 |
 
 </details>
@@ -2296,18 +1874,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 80 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
-| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
 | [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional-enemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |
 | [`Conditional_FinishedSpawning`](./Abilities_and_Spells.md#object-conditional-finishedspawning) | Object | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 1 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 16 |
-| `DisplaceToAbilityTarget` | Number | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 0 |
 | `FlatAIBonus` | `Number` | Applies or references the 'FlatAIBonus' effect/state. | 2 |
-| `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 0 |
 | `Revive` | `Number` | Applies or references the 'Revive' effect/state. | 13 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 4 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 
 </details>
 
@@ -2394,34 +1966,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 4 |
 | [`threshold_expr`](./Math_Equations.md) | Equation |  | 2 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |
 | [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'BonusDamage' effect/state. | 2 |
 | `CaptureFamiliar` | `Number` | Applies or references the 'CaptureFamiliar' effect/state. | 2 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
 | `Die` | `Number` | Applies or references the 'Die' effect/state. | 2 |
 | `DieViolently` | `Number` | Applies or references the 'DieViolently' effect/state. | 2 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
 | `FactionConversion` | `Number` | Applies or references the 'FactionConversion' effect/state. | 2 |
 | `FlatLeech` | `Number` | Applies or references the 'FlatLeech' effect/state. | 2 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
 | `FullHeal` | `Number` | Applies or references the 'FullHeal' effect/state. | 2 |
 | `Instakill` | `Number` | Applies or references the 'Instakill' effect/state. | 2 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'SpawnThingIfHitKills' effect/state. | 4 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 2 |
 
 </details>
@@ -2445,13 +1999,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1160 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1018 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
-| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 2 |
-| [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional-boss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 21 |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |
@@ -2462,54 +2010,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 16 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
-| `CrackMoonHead` | Number | Applies or references the 'CrackMoonHead' effect/state. | 0 |
-| `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 0 |
-| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
-| `Die` | Number | Applies or references the 'Die' effect/state. | 0 |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
-| `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| `ExplodeCharacter` | Number | Applies or references the 'ExplodeCharacter' effect/state. | 0 |
-| `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. | 0 |
-| `FaceAway` | Number | Applies or references the 'FaceAway' effect/state. | 0 |
-| `FaceCamera` | Number | Applies or references the 'FaceCamera' effect/state. | 0 |
-| `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 0 |
-| `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. | 0 |
-| `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 0 |
-| `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 0 |
-| [`ImmediateUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
-| `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| [`MergeDamageInstance`](./Abilities_and_Spells.md#object-mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 0 |
-| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 0 |
-| [`PopAndSpawn`](./Abilities_and_Spells.md#object-popandspawn) | Object | Destroys the target and replaces it with a new spawned entity. | 0 |
-| `PurgeAll` | Number | Applies or references the 'PurgeAll' effect/state. | 0 |
-| [`RandomStatDown`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'RandomStatDown' effect/state. | 0 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 0 |
-| `RemoveMovePoints` | Number | Applies or references the 'RemoveMovePoints' effect/state. | 0 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
-| `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. | 0 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
-| `ScatterRandomPickups` | Number | Applies or references the 'ScatterRandomPickups' effect/state. | 0 |
-| [`SetAnimationAlts`](./Abilities_and_Spells.md#object-setanimationalts) | Object | Overrides specific animation states with alternative animations. | 0 |
-| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 0 |
-| `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 0 |
-| `SetShield` | Number | Applies or references the 'SetShield' effect/state. | 0 |
-| [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 0 |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
-| [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
-| [`UseAbility`](./Abilities_and_Spells.md#object-useability) | Enum/String | Forces the character or target to instantly use a specified ability. | 0 |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
-| `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 0 |
-| `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
-| [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
 | [`tag`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The specific string tag to check for. | 981 |
 
 </details>
@@ -2533,30 +2034,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |
 | `Cleanse` | `Number` | Applies or references the 'Cleanse' effect/state. | 2 |
 | `ConjureRandomAbilityFromCat` | `Number` | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 4 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
 | `GenericDebuff` | `Number` | Applies or references the 'GenericDebuff' effect/state. | 2 |
 | [`KnockOutClone`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'KnockOutClone' effect/state. | 2 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
 | `T2CopyCat` | `Number` | Applies or references the 'T2CopyCat' effect/state. | 2 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
 
 </details>
 
@@ -2884,9 +2367,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 0 |
-  | `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 0 |
 
 </details>
 
@@ -2989,7 +2469,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | `Enum/String` | Transforms the character into a different state or form (e.g., Rage, HasCat). | 2 |
 | `FullHeal` | `Number` | Applies or references the 'FullHeal' effect/state. | 2 |
 | [`GlobalSpawnCharacter`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'GlobalSpawnCharacter' effect/state. | 2 |
-| [`LowerAmbientLight`](./Abilities_and_Spells.md#object-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 0 |
 | `PlayBackground` | `Number` | Applies or references the 'PlayBackground' effect/state. | 2 |
 | [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic) | Object | Changes the background music track or layer during combat. | 4 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 2 |
@@ -3018,7 +2497,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 4 |
 | [`EnterMount`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'EnterMount' effect/state. | 2 |
 | [`VisualFXTile`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'VisualFXTile' effect/state. | 2 |
-| [`effects`](./Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
@@ -3123,16 +2601,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 6 |
-  | [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
-  | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 0 |
-  | `Burn` | Number | Applies or references the 'Burn' effect/state. | 0 |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
-| `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 0 |
-| `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 0 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |
-| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-| `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 0 |
-| `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. | 0 |
 
 </details>
 
@@ -3157,7 +2626,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 6 |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 6 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The required status effect. | 0 |
 
 </details>
 
@@ -3349,7 +2817,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 4 |
 
@@ -3454,9 +2921,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | [`Conditional_NotBossOrBig`](#conditional_notbossorbig) | Object | Conditional trigger: Executes nested logic if the target is NEITHER a Boss nor large. | 0 |
-  | [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 0 |
 
 </details>
 
@@ -3479,15 +2943,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 137 |
-  | [`Conditional_InForm`](#conditional_inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 0 |
-  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-  | [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
-| [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 20 |
@@ -3495,53 +2950,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |
-| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| `ExplodeCharacter` | Number | Applies or references the 'ExplodeCharacter' effect/state. | 0 |
-| `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. | 0 |
-| `FaceCamera` | Number | Applies or references the 'FaceCamera' effect/state. | 0 |
-| `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 0 |
-| `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. | 0 |
-| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 0 |
-| [`ImmediateUseAbility`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
-| `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 0 |
-| `PurgeAll` | Number | Applies or references the 'PurgeAll' effect/state. | 0 |
-| [`RandomStatDown`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'RandomStatDown' effect/state. | 0 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 0 |
-| `RemoveMovePoints` | Number | Applies or references the 'RemoveMovePoints' effect/state. | 0 |
-| `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. | 0 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
-| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 0 |
-| `SetShield` | Number | Applies or references the 'SetShield' effect/state. | 0 |
-| [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 0 |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
-| [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
-| [`UseAbility`](./Abilities_and_Spells.md#object-useability) | Enum/String | Forces the character or target to instantly use a specified ability. | 0 |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
-| `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
-| [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
-| `do_not_pop_corpse` | Boolean |  | 0 |
-| [`drop_body_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `drop_on_self_death` | Boolean |  | 0 |
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |
-| `force_contact` | Boolean | If true, enforces physical overlap. | 0 |
-| [`form`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | The specific form ID to check for. | 0 |
-| `instant` | Boolean |  | 0 |
-| `kill_on_consume` | Boolean |  | 0 |
-| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | If true, treats the consumption as riding/mounting instead of eating. | 0 |
-| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Ability triggered by the consumed entity while inside the consumer. | 0 |
-| `use_placeholder` | Boolean |  | 0 |
-| `wet` | Boolean |  | 0 |
 
 </details>
 
@@ -3562,11 +2972,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`ApplyToTile`](./Abilities_and_Spells.md#object-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 4 |
-| [`ObjectOnHit`](./Abilities_and_Spells.md#object-objectonhit) | Enum/String | Spawns a specific physics/item object upon impact. | 0 |
-| `SpawnBearTrap` | Number | Applies or references the 'SpawnBearTrap' effect/state. | 0 |
 | `VaporizeCorpse` | `Number` | Applies or references the 'VaporizeCorpse' effect/state. | 4 |
 
 </details>
@@ -3588,11 +2995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-  | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 0 |
-  | `bonus_melee_ability_damage` | Any | Explicit empirical property. | 0 |
-  | `LaunchOffScreenInstakill` | Integer | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 0 |
 
 </details>
 
@@ -3613,7 +3016,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 2 |
 
@@ -3657,8 +3059,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 0 |
 
 </details>
 
@@ -3700,7 +3100,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`key`](./Enums.md#enum-key) | Enum |  | 6 |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'CompleteItemQuest' effect/state. | 4 |
@@ -3725,12 +3124,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | `SetItemAux` | Object | Applies or references the 'SetItemAux' effect/state. | 0 |
-  | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
-  | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 0 |
-  | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 0 |
-  | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 0 |
 
 </details>
 
@@ -3881,10 +3274,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 94 |
-  | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
-  | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
-  | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
-  | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 0 |
 | [`effects`](./Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 94 |
 
 </details>
@@ -3923,7 +3312,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance) | Object |  | 2 |
 | [`splash_damage`](./Abilities_and_Spells.md#object-splash_damage) | Object | Secondary Area of Effect blast parameters. | 2 |
-  | [`self_damage`](./Arrays.md#array-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 0 |
 
 </details>
 
@@ -4114,8 +3502,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
 
 </details>
 
@@ -4209,8 +3595,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | [`Marked`](./Arrays.md#array-marked) | Array | Applies or references the 'Marked' effect/state. | 0 |
 
 </details>
 
@@ -4296,8 +3680,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | `RandomStatusFromPool` | Object | Selects and applies a random status effect from the provided nested object. | 0 |
 
 </details>
 
@@ -4318,9 +3700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 2 |
-  | `DestroyEquipmentAndAttachParasite` | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
 
 </details>
 
@@ -4341,7 +3721,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`Imprison`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'Imprison' effect/state. | 2 |
 
@@ -4366,14 +3745,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-| [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'BonusDamage' effect/state. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
 | `GenericBuff` | `Number` | Applies or references the 'GenericBuff' effect/state. | 2 |
-| [`ManaGain`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'ManaGain' effect/state. | 0 |
-| `RandomStatDown` | Number | Applies or references the 'RandomStatDown' effect/state. | 0 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 2 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
 
 </details>
 
@@ -4394,7 +3767,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `SetKnockback` | `Number` | Applies or references the 'SetKnockback' effect/state. | 2 |
 
@@ -4419,43 +3791,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
-  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-  | [`ApplyToSource`](#applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
-  | [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
-  | `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. | 0 |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
-| [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
-| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. | 0 |
-| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 0 |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 0 |
-| [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
-| [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 2 |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| `do_not_pop_corpse` | Boolean |  | 0 |
-| [`drop_body_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
-| `drop_on_self_death` | Boolean |  | 0 |
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |
-| `force_contact` | Boolean | If true, enforces physical overlap. | 0 |
-| `instant` | Boolean |  | 0 |
-| `kill_on_consume` | Boolean |  | 0 |
-| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | If true, treats the consumption as riding/mounting instead of eating. | 0 |
-| [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The required status effect. | 0 |
-| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Ability triggered by the consumed entity while inside the consumer. | 0 |
-| `use_placeholder` | Boolean |  | 0 |
-| `wet` | Boolean |  | 0 |
 
 </details>
 
@@ -4476,7 +3813,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `DisplaceTowardsSource` | `Number` | Applies or references the 'DisplaceTowardsSource' effect/state. | 2 |
 
@@ -4547,7 +3883,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 |
-  | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
 
 </details>
 
@@ -4743,8 +4078,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | [`AddStatusToBasicAttack`](#addstatustobasicattack) | Object | Injects a status effect payload that applies whenever the character performs a basic attack. | 0 |
 
 </details>
 
@@ -4823,7 +4156,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 58 |
-  | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
 | [`effects`](./Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 58 |
 
 </details>
@@ -4937,10 +4269,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | [`Conditional_Boss`](#conditionalboss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 0 |
-  | [`Conditional_NotBoss`](#conditionalnotboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 0 |
-  | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 0 |
 
 </details>
 
