@@ -22,11 +22,11 @@
 
 </details>
 
+
 ---
 
 ### `Conditional_ActiveWeather_Any`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -37,9 +37,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -48,7 +48,6 @@
 
 ### `Conditional_AffectedByElement`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -59,10 +58,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 2 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -72,7 +71,6 @@
 ### `Conditional_Backstab`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -82,9 +80,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 1 |
 | [`Fear`](./Arrays.md#array-fear) | Number | Applies or references the 'Fear' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -94,7 +92,6 @@
 ### `Conditional_BossOrBig`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -104,8 +101,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Immobile`](./Arrays.md#array-immobile) | Array | Applies or references the 'Immobile' effect/state. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -115,7 +112,6 @@
 ### `Conditional_Buddy`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -125,9 +121,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -137,7 +133,6 @@
 ### `Conditional_CanBeHealed`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -147,8 +142,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -158,7 +153,6 @@
 ### `Conditional_DebuffRoll`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -168,9 +162,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | [`odds`](./Enums.md#enum-odds) | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -179,7 +173,6 @@
 
 ### `Conditional_DestructibleCorpse`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -190,9 +183,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToTile`](./Abilities_and_Spells.md#context-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -201,7 +194,6 @@
 
 ### `Conditional_Displaceable`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -212,10 +204,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 1 |
 | `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 |
 | `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -224,7 +216,6 @@
 
 ### `Conditional_Familiar`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -235,11 +226,11 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 6 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Number | Applies or references the 'DivineShield' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -248,7 +239,6 @@
 
 ### `Conditional_FinishedSpawning`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -259,8 +249,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -283,11 +273,11 @@
 
 </details>
 
+
 ---
 
 ### `Conditional_FormulaIsPositive`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -298,16 +288,16 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
-| [`Burn`](./Math_Equations.md) | Equation | Applies or references the 'Burn' effect/state. | 1 |
-| [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 4 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |
-| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | Applies or references the 'OverrideKnockbackDamage' effect/state. | 1 |
+| [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
+| [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 4 |
 | [`Slow`](./Arrays.md#array-slow) | Equation | Applies or references the 'Slow' effect/state. | 4 |
+| [`Burn`](./Math_Equations.md) | Equation | Applies or references the 'Burn' effect/state. | 1 |
 | [`Freeze`](./Arrays.md#array-freeze) | Number | Applies or references the 'Freeze' effect/state. | 1 |
+| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | Applies or references the 'OverrideKnockbackDamage' effect/state. | 1 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 1 |
 | [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -316,7 +306,6 @@
 
 ### `Conditional_HasCleansableDebuffs`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -327,10 +316,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |
 | `GenericBuff` | Number | Applies or references the 'GenericBuff' effect/state. | 1 |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 1 |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -339,7 +328,6 @@
 
 ### `Conditional_HasKnockback`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -350,10 +338,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 |
-| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
+| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -362,7 +350,6 @@
 
 ### `Conditional_HealthThreshold`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -373,21 +360,21 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 2 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 1 |
-| [`threshold_expr`](./Math_Equations.md) | Equation | `item_aux` | 1 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 1 |
 | `Die` | Number | Applies or references the 'Die' effect/state. | 1 |
+| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 1 |
 | `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 1 |
 | `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 1 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |
 | [`Instakill`](./Arrays.md#array-instakill) | Number | Applies or references the 'Instakill' effect/state. | 1 |
+| [`threshold_expr`](./Math_Equations.md) | Equation | `item_aux` | 1 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -396,7 +383,6 @@
 
 ### `Conditional_InForm`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -407,15 +393,15 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
-| [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 |
-| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#context-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 1 |
-| [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 1 |
 | `CritChanceUp` | Number | Applies or references the 'CritChanceUp' effect/state. | 36 |
+| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 6 |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 2 |
+| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#context-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 1 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 1 |
+| [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -424,7 +410,6 @@
 
 ### `Conditional_IsPhysicalAttack`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -435,10 +420,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 |
-| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
+| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -447,7 +432,6 @@
 
 ### `Conditional_IsSelf`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -458,8 +442,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -468,7 +452,6 @@
 
 ### `Conditional_IsTrample`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -479,8 +462,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -489,7 +472,6 @@
 
 ### `Conditional_LastHit`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -500,11 +482,11 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 2 |
-| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | Queues an ability to be cast automatically after a certain delay or trigger. | 1 |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |
+| [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 2 |
+| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
+| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | Queues an ability to be cast automatically after a certain delay or trigger. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -513,7 +495,6 @@
 
 ### `Conditional_LivingPlayerCat`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -524,10 +505,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -536,7 +517,6 @@
 
 ### `Conditional_ManaThreshold`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -547,9 +527,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -558,7 +538,6 @@
 
 ### `Conditional_NotAlly`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -569,9 +548,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 6 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -580,7 +559,6 @@
 
 ### `Conditional_NotBig`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -591,8 +569,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -602,7 +580,6 @@
 ### `Conditional_NotBossOrBig`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -612,8 +589,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -623,7 +600,6 @@
 ### `Conditional_NotShielded`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -633,8 +609,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -643,7 +619,6 @@
 
 ### `Conditional_Object`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -654,10 +629,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Number | Applies or references the 'RepairWeapon' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -666,7 +641,6 @@
 
 ### `Conditional_OncePerBattle`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -677,10 +651,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 2 |
 | `TriggerGameEnding` | Number | Applies or references the 'TriggerGameEnding' effect/state. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -689,7 +663,6 @@
 
 ### `Conditional_PlayerCat`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -700,15 +673,15 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. | 1 |
-| `Adrenaline` | Number | Applies or references the 'Adrenaline' effect/state. | 1 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |
+| `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |
+| `Adrenaline` | Number | Applies or references the 'Adrenaline' effect/state. | 1 |
+| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 1 |
+| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. | 1 |
 | `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. | 1 |
 | `T2CopyCat` | Number | Applies or references the 'T2CopyCat' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -718,7 +691,6 @@
 ### `Conditional_RandomChance`
 > Found in: *Abilities & Spells, Cat Mutations, Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -728,9 +700,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Object | Grants the nested passive abilities dynamically. | 1 |
 | [`odds`](./Enums.md#enum-odds) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -740,7 +712,6 @@
 ### `Conditional_SourceAbilityHasTag`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -750,10 +721,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Object | Throws coins out into the level randomly. | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -763,7 +734,6 @@
 ### `Conditional_SourceHasStatus`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -773,9 +743,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -784,7 +754,6 @@
 
 ### `Conditional_Speculative`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -795,14 +764,14 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 3 |
 | `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 1 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 1 |
 | `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -825,6 +794,7 @@
 
 </details>
 
+
 ---
 
 ## Reactions & Event Triggers (77)
@@ -845,6 +815,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityOnBattleStart_Immediate`
@@ -862,6 +833,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -881,11 +853,11 @@
 
 </details>
 
+
 ---
 
 ### `AbilityOnRoundEnd`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -906,7 +878,6 @@
 
 ### `AbilityOnRoundEndOnce`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -941,6 +912,7 @@
 
 </details>
 
+
 ---
 
 ### `AlliesScrambleSpellAfterCast`
@@ -959,11 +931,11 @@
 
 </details>
 
+
 ---
 
 ### `ApplyToSourceOnKill`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -975,18 +947,18 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 |
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
 | `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 2 |
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 2 |
 | `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 2 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
-| [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 1 |
-| [`TransformWeapon`](./Abilities_and_Spells.md#context-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 1 |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Enum | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
+| [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 1 |
 | `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 1 |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 1 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
+| [`TransformWeapon`](./Abilities_and_Spells.md#context-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 1 |
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Enum | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |
 
 </details>
 
@@ -995,7 +967,6 @@
 
 ### `ArmorBreakOnHit`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1016,7 +987,6 @@
 
 ### `BackflipWhenTargeted`
 > Found in: *Abilities & Spells, Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1051,6 +1021,7 @@
 
 </details>
 
+
 ---
 
 ### `BramblesOnHit`
@@ -1068,6 +1039,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1087,11 +1059,11 @@
 
 </details>
 
+
 ---
 
 ### `ChanceToSpitOnDamage`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1129,11 +1101,11 @@
 
 </details>
 
+
 ---
 
 ### `CherubimReaction`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1144,8 +1116,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Leave`](./Enums.md#enum-leave) | Enum | Applies or references the 'Leave' effect/state. | 16 |
 | [`Return`](./Enums.md#enum-return) | Enum | Applies or references the 'Return' effect/state. | 26 |
+| [`Leave`](./Enums.md#enum-leave) | Enum | Applies or references the 'Leave' effect/state. | 16 |
 
 </details>
 
@@ -1168,6 +1140,7 @@
 
 </details>
 
+
 ---
 
 ### `CounterNextAttacks`
@@ -1185,6 +1158,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1204,6 +1178,7 @@
 
 </details>
 
+
 ---
 
 ### `CrackMoonHead`
@@ -1222,11 +1197,11 @@
 
 </details>
 
+
 ---
 
 ### `DeathRattleRevive`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1247,7 +1222,6 @@
 
 ### `DelayedAutoRevive`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1282,6 +1256,7 @@
 
 </details>
 
+
 ---
 
 ### `DelayedPain`
@@ -1299,6 +1274,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1318,6 +1294,7 @@
 
 </details>
 
+
 ---
 
 ### `DieWhenOnlyGolemsLeft`
@@ -1335,6 +1312,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1354,6 +1332,7 @@
 
 </details>
 
+
 ---
 
 ### `DoubleCastSpellIfManaCostUnderThreshold`
@@ -1371,6 +1350,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1390,6 +1370,7 @@
 
 </details>
 
+
 ---
 
 ### `DoubleCastSpellsEachTurn_Status`
@@ -1408,11 +1389,11 @@
 
 </details>
 
+
 ---
 
 ### `DustOnHit`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1446,6 +1427,7 @@
 
 </details>
 
+
 ---
 
 ### `FindExtraItemFromPoolOnBattleEnd`
@@ -1463,6 +1445,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1482,6 +1465,7 @@
 
 </details>
 
+
 ---
 
 ### `FlowersOnHit`
@@ -1499,6 +1483,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1518,6 +1503,7 @@
 
 </details>
 
+
 ---
 
 ### `GainManaWhenAnythingDies`
@@ -1536,11 +1522,11 @@
 
 </details>
 
+
 ---
 
 ### `ImmediateAbilityReaction`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1567,7 +1553,6 @@
 ### `IncAuxCounterClamped`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1587,7 +1572,6 @@
 
 ### `IncAuxCounterCycle`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1622,6 +1606,7 @@
 
 </details>
 
+
 ---
 
 ### `MadnessChanceOnTurnBegin`
@@ -1639,6 +1624,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1658,11 +1644,11 @@
 
 </details>
 
+
 ---
 
 ### `MonkCatReactionAbilities`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1673,11 +1659,11 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`attack`](./Enums.md#enum-attack) | Enum | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 |
-| [`move`](./Enums.md#enum-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 122 |
 | [`spell`](./Enums.md#enum-spell) | Enum | `MCHadouken` | 924 |
 | [`trinket`](./Enums.md#enum-trinket) | Enum | `MCHadouken`, `MonkStyleChanger` | 544 |
 | [`weapon`](./Enums.md#enum-weapon) | Enum | Weapon item constraint. | 474 |
+| [`move`](./Enums.md#enum-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 122 |
+| [`attack`](./Enums.md#enum-attack) | Enum | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 |
 
 </details>
 
@@ -1700,6 +1686,7 @@
 
 </details>
 
+
 ---
 
 ### `MoonHeadFinisherEnabler`
@@ -1717,6 +1704,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1736,11 +1724,11 @@
 
 </details>
 
+
 ---
 
 ### `ObjectOnHit`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1774,6 +1762,7 @@
 
 </details>
 
+
 ---
 
 ### `ObjectOnHitFullyEmpty`
@@ -1792,11 +1781,11 @@
 
 </details>
 
+
 ---
 
 ### `PassiveWhenDead`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1807,8 +1796,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddStatusToTrampleDamage`](./Characters_and_Bosses.md#context-addstatustotrampledamage) | Object | Modifier: Injects a status effect into the character's trample damage. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -1817,7 +1806,6 @@
 
 ### `PassiveWhenOnTile`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1852,6 +1840,7 @@
 
 </details>
 
+
 ---
 
 ### `ReformMoonHead`
@@ -1869,6 +1858,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1888,6 +1878,7 @@
 
 </details>
 
+
 ---
 
 ### `ReloadOnKillEnemy`
@@ -1905,6 +1896,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1924,6 +1916,7 @@
 
 </details>
 
+
 ---
 
 ### `RepairOnKill`
@@ -1941,6 +1934,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1960,6 +1954,7 @@
 
 </details>
 
+
 ---
 
 ### `RerollItemsOnBattleEnd`
@@ -1977,6 +1972,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -1996,6 +1992,7 @@
 
 </details>
 
+
 ---
 
 ### `SoundEventOnHit`
@@ -2014,11 +2011,11 @@
 
 </details>
 
+
 ---
 
 ### `StatusAfterXStacks`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2031,9 +2028,9 @@
 | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` | 2 |
 | `threshold` | Number | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 2 |
+| `expires_on_end_turn` | Boolean | `true` | 1 |
 | `ExtraBasicMoves_Status` | Number | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 1 |
 | `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 1 |
-| `expires_on_end_turn` | Boolean | `true` | 1 |
 
 </details>
 
@@ -2042,7 +2039,6 @@
 
 ### `StatusAfterXTurns`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2064,7 +2060,6 @@
 ### `StatusCharactersOnRoundEnd`
 > Found in: *Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2074,9 +2069,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 |
-| `FloatingRockTrap` | Number | Examples: `1` | 1 |
 | `Thorns` | Number | Examples: `1` | 36 |
+| `FloatingRockTrap` | Number | Examples: `1` | 1 |
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 |
 
 </details>
 
@@ -2085,7 +2080,6 @@
 
 ### `StatusCharactersOnRoundStart`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2096,9 +2090,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array | Examples: `[ 1 .25 ]` | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2107,7 +2101,6 @@
 
 ### `StatusOnEnemyCastSpell`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2118,9 +2111,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Examples: `1` | 1 |
 | `HealthGain` | Number | Examples: `1` | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2129,7 +2122,6 @@
 
 ### `StatusRandomEnemiesOnBattleStart`
 > Found in: *Events & Encounters, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2140,9 +2132,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 9 |
 | [`count`](./Arrays.md#array-count) | Number | Quantity. | 3 |
 | [`Fear`](./Arrays.md#array-fear) | Number | Applies or references the 'Fear' effect/state. | 2 |
-| [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 9 |
 
 </details>
 
@@ -2165,6 +2157,7 @@
 
 </details>
 
+
 ---
 
 ### `TempPreEmptiveCounterAttack`
@@ -2182,6 +2175,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2201,6 +2195,7 @@
 
 </details>
 
+
 ---
 
 ### `TriggerDOTStatuses`
@@ -2218,6 +2213,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2237,6 +2233,7 @@
 
 </details>
 
+
 ---
 
 ### `TriggerMotherConsume`
@@ -2254,6 +2251,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2273,11 +2271,11 @@
 
 </details>
 
+
 ---
 
 ### `UnlimitedDeathRattleRevive`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2298,7 +2296,6 @@
 
 ### `UseAbilityWhenOutOfStatus`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2335,6 +2332,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityDamageMultiplier`
@@ -2352,6 +2350,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2371,6 +2370,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityEnabledIfHasStatus`
@@ -2388,6 +2388,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2407,6 +2408,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityEnabledOncePerFightAtHealthThreshold`
@@ -2425,11 +2427,11 @@
 
 </details>
 
+
 ---
 
 ### `AbilityHealthThreshold`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2445,8 +2447,8 @@
 | `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 6 |
 | `immediate` | Boolean | `false`, `true` | 5 |
 | `use_ai` | Boolean | `true` | 2 |
-| [`threshold_min`](./Math_Equations.md) | Equation | `X` | 1 |
 | `also_use_if_buddy_is_dead` | Boolean | `true` | 1 |
+| [`threshold_min`](./Math_Equations.md) | Equation | `X` | 1 |
 
 </details>
 
@@ -2469,11 +2471,11 @@
 
 </details>
 
+
 ---
 
 ### `AddAdvantageToEvent`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2484,9 +2486,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 54 |
 | [`add`](./Arrays.md#array-add) | Number | Examples: `5` | 1 |
+| [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 1 |
 
 </details>
 
@@ -2509,6 +2511,7 @@
 
 </details>
 
+
 ---
 
 ### `AddDamage`
@@ -2526,6 +2529,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2545,6 +2549,7 @@
 
 </details>
 
+
 ---
 
 ### `AddEndOfCombatRegen`
@@ -2562,6 +2567,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2581,11 +2587,11 @@
 
 </details>
 
+
 ---
 
 ### `AddPostProcessEffect`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2596,8 +2602,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`shader`](./Enums.md#enum-shader) | Enum | Examples: `shimmervignette` | 1 |
 | `requires_framebuffer` | Boolean | Examples: `false` | 1 |
+| [`shader`](./Enums.md#enum-shader) | Enum | Examples: `shimmervignette` | 1 |
 
 </details>
 
@@ -2620,11 +2626,11 @@
 
 </details>
 
+
 ---
 
 ### `AddStatusToBackstabs`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2635,8 +2641,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2645,7 +2651,6 @@
 
 ### `AddStatusToFirstSpellEachTurn`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2656,8 +2661,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2666,7 +2671,6 @@
 
 ### `AddStatusToReceivedDamage`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2677,8 +2681,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Else`](./Characters_and_Bosses.md#context-else) | Object | Fallback logic block for conditionals. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -2687,7 +2691,6 @@
 
 ### `AddTilesetObjects`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2721,6 +2724,7 @@
 
 </details>
 
+
 ---
 
 ### `AggroTargetIsLastEnemyThatDealtDamage`
@@ -2738,6 +2742,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2757,6 +2762,7 @@
 
 </details>
 
+
 ---
 
 ### `AggroTargetIsLowestMaxHealthCat`
@@ -2774,6 +2780,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2793,6 +2800,7 @@
 
 </details>
 
+
 ---
 
 ### `AllSpellsCostCharge`
@@ -2810,6 +2818,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2829,6 +2838,7 @@
 
 </details>
 
+
 ---
 
 ### `AlwaysChosenForLevelUp`
@@ -2847,11 +2857,11 @@
 
 </details>
 
+
 ---
 
 ### `ApplyMultipleTimes`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2872,7 +2882,6 @@
 
 ### `ApplyStatusesNextTurnBegin`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2906,6 +2915,7 @@
 
 </details>
 
+
 ---
 
 ### `BaseStatMultiply`
@@ -2923,6 +2933,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2942,6 +2953,7 @@
 
 </details>
 
+
 ---
 
 ### `BonusDamageBasedOnMana`
@@ -2959,6 +2971,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -2978,6 +2991,7 @@
 
 </details>
 
+
 ---
 
 ### `BonusTurnPattern`
@@ -2995,6 +3009,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3014,6 +3029,7 @@
 
 </details>
 
+
 ---
 
 ### `BrittleCharismaUp`
@@ -3031,6 +3047,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3050,6 +3067,7 @@
 
 </details>
 
+
 ---
 
 ### `BrittleDexterityUp`
@@ -3067,6 +3085,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3086,6 +3105,7 @@
 
 </details>
 
+
 ---
 
 ### `BrittleLuckUp`
@@ -3103,6 +3123,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3122,6 +3143,7 @@
 
 </details>
 
+
 ---
 
 ### `BrittleStrengthUp`
@@ -3139,6 +3161,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3158,6 +3181,7 @@
 
 </details>
 
+
 ---
 
 ### `CapBasicAttackDamage`
@@ -3175,6 +3199,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3194,6 +3219,7 @@
 
 </details>
 
+
 ---
 
 ### `CapReceivedDamage`
@@ -3212,11 +3238,11 @@
 
 </details>
 
+
 ---
 
 ### `CastAgainWithStatus`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3238,7 +3264,6 @@
 ### `CatPartsSizeScale`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3258,7 +3283,6 @@
 ### `CatPartsSizeScaleStatus`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3268,10 +3292,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `arm1` | Number | Scale multiplier for the front arm. | 354 |
-| `arm2` | Number | Scale multiplier for the back arm. | 358 |
-| [`body`](./Arrays.md#array-body) | Number | Sprite variant ID for the body. | 346 |
 | [`mouth`](./Enums.md#enum-mouth) | Number | `closed`, `open`, `smile` | 386 |
+| `arm2` | Number | Scale multiplier for the back arm. | 358 |
+| `arm1` | Number | Scale multiplier for the front arm. | 354 |
+| [`body`](./Arrays.md#array-body) | Number | Sprite variant ID for the body. | 346 |
 
 </details>
 
@@ -3280,7 +3304,6 @@
 
 ### `CharacterTypeGainsStatusAtBattleStart`
 > Found in: *Events & Encounters, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3317,6 +3340,7 @@
 
 </details>
 
+
 ---
 
 ### `CharismaIsMaxStat`
@@ -3335,11 +3359,11 @@
 
 </details>
 
+
 ---
 
 ### `ConjureBonusAbility`
 > Found in: *Abilities & Spells, Cat Mutations, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3374,6 +3398,7 @@
 
 </details>
 
+
 ---
 
 ### `ContextualHeal`
@@ -3392,11 +3417,11 @@
 
 </details>
 
+
 ---
 
 ### `ConvertDamageToScaledStatus`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3431,6 +3456,7 @@
 
 </details>
 
+
 ---
 
 ### `CurrentWeaponAddPoison`
@@ -3448,6 +3474,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3467,6 +3494,7 @@
 
 </details>
 
+
 ---
 
 ### `DamageFromBehindOnly`
@@ -3484,6 +3512,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3503,6 +3532,7 @@
 
 </details>
 
+
 ---
 
 ### `DamageWeapon`
@@ -3521,11 +3551,11 @@
 
 </details>
 
+
 ---
 
 ### `DoDamage`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3536,10 +3566,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`effects`](./Abilities_and_Spells.md#context-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 54 |
 | [`damage`](./Arrays.md#array-damage) | Number | The flat damage amount. | 2 |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | `all` | 2 |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 2 |
 
 </details>
@@ -3563,6 +3593,7 @@
 
 </details>
 
+
 ---
 
 ### `DoubleReceivedNegativeStatus`
@@ -3580,6 +3611,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3599,6 +3631,7 @@
 
 </details>
 
+
 ---
 
 ### `DoubleStatus`
@@ -3616,6 +3649,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3635,6 +3669,7 @@
 
 </details>
 
+
 ---
 
 ### `ExistUntilIdleUpkeep`
@@ -3652,6 +3687,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3671,11 +3707,11 @@
 
 </details>
 
+
 ---
 
 ### `FaceAwayLastDamage`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3698,7 +3734,6 @@
 ### `FaceLastDamage`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3718,7 +3753,6 @@
 ### `FactionUprising`
 > Found in: *Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3726,8 +3760,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`extra_statuses`](./Miscellaneous.md#context-extra_statuses) | Object | Examples: `{ ... }` | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `bird` | 981 |
+| [`extra_statuses`](./Miscellaneous.md#context-extra_statuses) | Object | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -3750,11 +3784,11 @@
 
 </details>
 
+
 ---
 
 ### `GlobalMeleeRevengeDamage`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3775,7 +3809,6 @@
 ### `HPAltStates`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3795,7 +3828,6 @@
 
 ### `HealNeighborsEachTurn`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3830,6 +3862,7 @@
 
 </details>
 
+
 ---
 
 ### `HealRandomInjury`
@@ -3847,6 +3880,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3866,6 +3900,7 @@
 
 </details>
 
+
 ---
 
 ### `HealthMultiplier`
@@ -3883,6 +3918,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3902,6 +3938,7 @@
 
 </details>
 
+
 ---
 
 ### `IncreaseCumulativeBlastDamage`
@@ -3919,6 +3956,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -3938,6 +3976,7 @@
 
 </details>
 
+
 ---
 
 ### `JesterLevelUpRerolls`
@@ -3956,11 +3995,11 @@
 
 </details>
 
+
 ---
 
 ### `KnockUpAndAway`
 > Found in: *Abilities & Spells, Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3984,7 +4023,6 @@
 ### `LateStatusApplication`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3994,9 +4032,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -4019,11 +4057,11 @@
 
 </details>
 
+
 ---
 
 ### `ManaGainRange`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4058,11 +4096,11 @@
 
 </details>
 
+
 ---
 
 ### `MergeDamageInstance`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4097,6 +4135,7 @@
 
 </details>
 
+
 ---
 
 ### `MultiplyReceivedHealing`
@@ -4114,6 +4153,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4133,6 +4173,7 @@
 
 </details>
 
+
 ---
 
 ### `NextActionLuckUp`
@@ -4150,6 +4191,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4169,11 +4211,11 @@
 
 </details>
 
+
 ---
 
 ### `NextAttackSpecialCrit`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4196,7 +4238,6 @@
 ### `NextBattleStatusStacks`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4206,8 +4247,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |
 | `fights` | Number | The number of encounters this buff/debuff persists for. | 4 |
+| `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |
 
 </details>
 
@@ -4230,6 +4271,7 @@
 
 </details>
 
+
 ---
 
 ### `NextTurnDoubleRangedDamage`
@@ -4247,6 +4289,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4266,11 +4309,11 @@
 
 </details>
 
+
 ---
 
 ### `OverHealToStatuses`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4282,8 +4325,8 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 2 |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
 | `stack_scale` | Number | Examples: `0` | 1 |
+| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
 
 </details>
 
@@ -4306,11 +4349,11 @@
 
 </details>
 
+
 ---
 
 ### `PassiveWhileHasStatus`
 > Found in: *Cat Mutations, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4331,7 +4374,6 @@
 
 ### `PassiveWhileNotHasStatus`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4366,6 +4408,7 @@
 
 </details>
 
+
 ---
 
 ### `PermanentUpgradeRandomActiveOrPassive`
@@ -4383,6 +4426,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4402,6 +4446,7 @@
 
 </details>
 
+
 ---
 
 ### `RandomBonusDamage`
@@ -4420,11 +4465,11 @@
 
 </details>
 
+
 ---
 
 ### `RandomPermanentStatsDistinct`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4458,6 +4503,7 @@
 
 </details>
 
+
 ---
 
 ### `RandomStatDown`
@@ -4475,6 +4521,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4494,6 +4541,7 @@
 
 </details>
 
+
 ---
 
 ### `ReduceManaCostExcludeBrainstorm`
@@ -4511,6 +4559,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4530,6 +4579,7 @@
 
 </details>
 
+
 ---
 
 ### `ReduceSpellCostsPerParasite`
@@ -4547,6 +4597,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4566,6 +4617,7 @@
 
 </details>
 
+
 ---
 
 ### `ReloadOnAnyDamage`
@@ -4583,6 +4635,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4602,6 +4655,7 @@
 
 </details>
 
+
 ---
 
 ### `ReloadOnSpendMana`
@@ -4619,6 +4673,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4638,6 +4693,7 @@
 
 </details>
 
+
 ---
 
 ### `ReloadOnUseAbilityWithManaCost`
@@ -4655,6 +4711,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4674,6 +4731,7 @@
 
 </details>
 
+
 ---
 
 ### `RemoteLeech`
@@ -4692,11 +4750,11 @@
 
 </details>
 
+
 ---
 
 ### `ScaledStatusAlliesOnSpendMana`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4730,6 +4788,7 @@
 
 </details>
 
+
 ---
 
 ### `SetHealth`
@@ -4747,6 +4806,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4766,11 +4826,11 @@
 
 </details>
 
+
 ---
 
 ### `ShowFakeDamage`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4781,8 +4841,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`style`](./Arrays.md#array-style) | Array | The visual font style for the text (e.g., [crit]). | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
+| [`style`](./Arrays.md#array-style) | Array | The visual font style for the text (e.g., [crit]). | 1 |
 
 </details>
 
@@ -4805,6 +4865,7 @@
 
 </details>
 
+
 ---
 
 ### `StanceSwitchToRanged`
@@ -4822,6 +4883,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -4841,11 +4903,11 @@
 
 </details>
 
+
 ---
 
 ### `StatDependentPassive`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4866,7 +4928,6 @@
 ### `StatusAdjacentOnTheirTurnEnd`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4886,7 +4947,6 @@
 ### `StatusCollector`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4896,8 +4956,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 7 |
 | [`Poison`](./Arrays.md#array-poison) | Number | Applies or references the 'Poison' effect/state. | 8 |
+| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 7 |
 | [`Slow`](./Arrays.md#array-slow) | Number | Applies or references the 'Slow' effect/state. | 4 |
 
 </details>
@@ -4908,7 +4968,6 @@
 ### `StatusEachRoundBegin`
 > Found in: *Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4918,8 +4977,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `NonStackingShield` | Number | Examples: `12, 4, 8` | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -4928,7 +4987,6 @@
 
 ### `StatusEachRoundEnd`
 > Found in: *Cat Mutations, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4949,7 +5007,6 @@
 ### `StatusEachTurnBeginIfHasStatus`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4960,11 +5017,11 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 11 |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 6 |
-| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
 | `consume` | Boolean | `true` | 2 |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
+| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
 </details>
 
@@ -4973,7 +5030,6 @@
 
 ### `StatusEachTurnEndIfEnabledAtStartOfTurn`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4993,7 +5049,6 @@
 
 ### `StatusEveryXSpellCastsEachTurn`
 > Found in: *Cat Mutations, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5015,7 +5070,6 @@
 ### `StatusIfUnusedActPoints`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5025,9 +5079,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 2 |
 | [`Craft`](./Items_and_Equipment.md#context-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -5036,7 +5090,6 @@
 
 ### `StatusOnBackstab`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5058,7 +5111,6 @@
 ### `StatusOnBreak`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5068,20 +5120,20 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 26 |
+| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |
 | [`GainCoinsRange`](./Items_and_Equipment.md#context-gaincoinsrange) | Object | Grants the player a randomized amount of coins within a min/max range. | 5 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 3 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 3 |
-| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 3 |
-| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 26 |
 | `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. | 3 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Items_and_Equipment.md#context-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
-| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. | 1 |
-| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. | 1 |
-| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 1 |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Number | Applies or references the 'ConstitutionUp' effect/state. | 1 |
 | `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. | 1 |
+| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. | 1 |
+| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. | 1 |
 | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 1 |
+| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 1 |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 1 |
 
 </details>
@@ -5092,7 +5144,6 @@
 ### `StatusOnDie`
 > Found in: *Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5102,8 +5153,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array | Examples: `5, [ 1 .5 ]` | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -5112,7 +5163,6 @@
 
 ### `StatusOnEnemyConfused`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5123,8 +5173,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -5133,7 +5183,6 @@
 
 ### `StatusOnEnemyDeath`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5154,7 +5203,6 @@
 ### `StatusOnFallAsleep`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5164,10 +5212,10 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | [`FillMana`](./Arrays.md#array-fillmana) | Number | Applies or references the 'FillMana' effect/state. | 1 |
 | `HealRandomInjury` | Number | Applies or references the 'HealRandomInjury' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -5176,7 +5224,6 @@
 
 ### `StatusOnFullMana`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5196,7 +5243,6 @@
 ### `StatusOnSetPieceBreak`
 > Found in: *Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5206,8 +5252,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `rare` | 1 |
 | [`set`](./Enums.md#enum-set) | Enum | Examples: `Recycled` | 1504 |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `rare` | 1 |
 | `PermanentCharisma` | Number | Examples: `1` | 1 |
 | `PermanentConstitution` | Number | Examples: `1` | 1 |
 | `PermanentDexterity` | Number | Examples: `1` | 1 |
@@ -5223,7 +5269,6 @@
 
 ### `StatusOverlappingCharactersAndDie`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5257,6 +5302,7 @@
 
 </details>
 
+
 ---
 
 ### `SwapHighestAndLowestStat`
@@ -5275,11 +5321,11 @@
 
 </details>
 
+
 ---
 
 ### `TakeBonusTurnWithAIControl`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5313,6 +5359,7 @@
 
 </details>
 
+
 ---
 
 ### `TeamBonusAbility`
@@ -5330,6 +5377,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5349,6 +5397,7 @@
 
 </details>
 
+
 ---
 
 ### `TempManaCostReduction`
@@ -5366,6 +5415,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5385,6 +5435,7 @@
 
 </details>
 
+
 ---
 
 ### `TempNoManaRegen`
@@ -5403,11 +5454,11 @@
 
 </details>
 
+
 ---
 
 ### `TempPassiveWhileHasStatus`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5418,11 +5469,11 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell) | Object | Replaces a spell in the character's hand/deck with a different one. | 4 |
-| [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
+| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 26 |
 | [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage) | Object | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 20 |
 | `AddManaRegen` | Number | Applies or references the 'AddManaRegen' effect/state. | 4 |
-| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 26 |
+| [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell) | Object | Replaces a spell in the character's hand/deck with a different one. | 4 |
+| [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
 
 </details>
 
@@ -5445,6 +5496,7 @@
 
 </details>
 
+
 ---
 
 ### `TickDownStatus`
@@ -5463,11 +5515,11 @@
 
 </details>
 
+
 ---
 
 ### `TimeDelayStatusApplication`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5479,15 +5531,15 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`delay`](./Enums.md#enum-delay) | Number | The float time delay in seconds. | 4 |
+| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |
 | [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic) | Object | Changes the background music track or layer during combat. | 2 |
 | [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 1 |
 | [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake) | Object | Triggers a camera screen shake effect. | 1 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 |
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Enum | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
 | `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Enum | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 1 |
 
 </details>
@@ -5511,6 +5563,7 @@
 
 </details>
 
+
 ---
 
 ### `TowerDefenseStatus`
@@ -5528,6 +5581,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5547,6 +5601,7 @@
 
 </details>
 
+
 ---
 
 ### `Trapper_Status`
@@ -5564,6 +5619,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5583,6 +5639,7 @@
 
 </details>
 
+
 ---
 
 ### `UpTireBehavior`
@@ -5600,6 +5657,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5619,11 +5677,11 @@
 
 </details>
 
+
 ---
 
 ### `VisualCountDownThenApplyStatus`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5657,6 +5715,7 @@
 
 </details>
 
+
 ---
 
 ### `XIsCountStatusStacks`
@@ -5674,6 +5733,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5693,6 +5753,7 @@
 
 </details>
 
+
 ---
 
 ### `XIsOtherHealsThisTurn`
@@ -5710,6 +5771,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5729,11 +5791,11 @@
 
 </details>
 
+
 ---
 
 ### `XIsTargetHealth`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5744,8 +5806,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -5768,6 +5830,7 @@
 
 </details>
 
+
 ---
 
 ## Immunities & Defenses (42)
@@ -5788,6 +5851,7 @@
 
 </details>
 
+
 ---
 
 ### `ApplyShieldToApplierBasedOnMaxHealth`
@@ -5805,6 +5869,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5824,6 +5889,7 @@
 
 </details>
 
+
 ---
 
 ### `BlockDamageUnderThreshold`
@@ -5841,6 +5907,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5860,6 +5927,7 @@
 
 </details>
 
+
 ---
 
 ### `BreakWhenNoShield`
@@ -5877,6 +5945,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5896,6 +5965,7 @@
 
 </details>
 
+
 ---
 
 ### `ChanceToBlock`
@@ -5913,6 +5983,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5932,6 +6003,7 @@
 
 </details>
 
+
 ---
 
 ### `DivineShieldPickup`
@@ -5949,6 +6021,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -5968,6 +6041,7 @@
 
 </details>
 
+
 ---
 
 ### `DodgeChance_Status`
@@ -5986,11 +6060,11 @@
 
 </details>
 
+
 ---
 
 ### `DodgeWhenTargeted`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6024,6 +6098,7 @@
 
 </details>
 
+
 ---
 
 ### `FullBlockEverything`
@@ -6041,6 +6116,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6060,6 +6136,7 @@
 
 </details>
 
+
 ---
 
 ### `GoopImmunity`
@@ -6077,6 +6154,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6096,6 +6174,7 @@
 
 </details>
 
+
 ---
 
 ### `Invulnerable`
@@ -6113,6 +6192,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6132,6 +6212,7 @@
 
 </details>
 
+
 ---
 
 ### `KnockbackDamageImmuneUntilSettled`
@@ -6149,6 +6230,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6168,6 +6250,7 @@
 
 </details>
 
+
 ---
 
 ### `NoHealthOnlyShield`
@@ -6185,6 +6268,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6204,6 +6288,7 @@
 
 </details>
 
+
 ---
 
 ### `OverHealToShield`
@@ -6222,11 +6307,11 @@
 
 </details>
 
+
 ---
 
 ### `PassiveWhileShielded`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6260,6 +6345,7 @@
 
 </details>
 
+
 ---
 
 ### `ResetArmorShield`
@@ -6278,11 +6364,11 @@
 
 </details>
 
+
 ---
 
 ### `ScaledStatusOnHolyShieldBlock`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6316,6 +6402,7 @@
 
 </details>
 
+
 ---
 
 ### `SetFragileImmune`
@@ -6333,6 +6420,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6352,6 +6440,7 @@
 
 </details>
 
+
 ---
 
 ### `SpellShield`
@@ -6370,11 +6459,11 @@
 
 </details>
 
+
 ---
 
 ### `StatusOnDodge`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6395,7 +6484,6 @@
 ### `StatusOnTakeHealthOrShieldDamage`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6405,8 +6493,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 2 |
 | `Metronome` | Number | Executes a random musical or metronome ability. | 4 |
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 2 |
 
 </details>
 
@@ -6415,7 +6503,6 @@
 
 ### `StunImmunity`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6449,6 +6536,7 @@
 
 </details>
 
+
 ---
 
 ### `ThornsDamageImmuneUntilSettled`
@@ -6466,6 +6554,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6485,6 +6574,7 @@
 
 </details>
 
+
 ---
 
 ### `TileElementDamageImmunity`
@@ -6502,6 +6592,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6521,6 +6612,7 @@
 
 </details>
 
+
 ---
 
 ### `WispDodge`
@@ -6538,6 +6630,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6559,6 +6652,7 @@
 
 </details>
 
+
 ---
 
 ### `AlienBeastDangerZones`
@@ -6577,11 +6671,11 @@
 
 </details>
 
+
 ---
 
 ### `AllStatsAura`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6604,7 +6698,6 @@
 ### `AlluringDoodieEater`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6625,7 +6718,6 @@
 ### `AllyDodgeChanceAura`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6645,7 +6737,6 @@
 
 ### `BaitAura`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6679,11 +6770,11 @@
 
 </details>
 
+
 ---
 
 ### `BattlefieldUniqueRandomPassive`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6721,6 +6812,7 @@
 
 </details>
 
+
 ---
 
 ### `ChargeSpiritBombAura`
@@ -6738,6 +6830,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6757,6 +6850,7 @@
 
 </details>
 
+
 ---
 
 ### `DisplayDangerAOE`
@@ -6775,11 +6869,11 @@
 
 </details>
 
+
 ---
 
 ### `DoDistortionRing`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6815,11 +6909,11 @@
 
 </details>
 
+
 ---
 
 ### `GlobalFlowerTrapperAura`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6853,6 +6947,7 @@
 
 </details>
 
+
 ---
 
 ### `GlobalManaBurnAura`
@@ -6870,6 +6965,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6889,6 +6985,7 @@
 
 </details>
 
+
 ---
 
 ### `OrthogonalAIDangerZone`
@@ -6907,6 +7004,7 @@
 
 </details>
 
+
 ---
 
 ### `TempBasicAttackBonusAOE`
@@ -6924,6 +7022,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6945,6 +7044,7 @@
 
 </details>
 
+
 ---
 
 ### `AddExtraTurnsBeforeRun`
@@ -6962,6 +7062,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -6981,6 +7082,7 @@
 
 </details>
 
+
 ---
 
 ### `BonusKnockbackDamage`
@@ -6998,6 +7100,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7017,11 +7120,11 @@
 
 </details>
 
+
 ---
 
 ### `ChanceToForceEvent`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7056,6 +7159,7 @@
 
 </details>
 
+
 ---
 
 ### `DashFury`
@@ -7073,6 +7177,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7092,6 +7197,7 @@
 
 </details>
 
+
 ---
 
 ### `DisableTrample`
@@ -7109,6 +7215,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7128,6 +7235,7 @@
 
 </details>
 
+
 ---
 
 ### `DisplaceToAbilityTarget`
@@ -7145,6 +7253,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7164,6 +7273,7 @@
 
 </details>
 
+
 ---
 
 ### `DisplaceTowardsSource`
@@ -7181,6 +7291,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7200,6 +7311,7 @@
 
 </details>
 
+
 ---
 
 ### `FlingObjectsOnTop`
@@ -7217,6 +7329,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7236,6 +7349,7 @@
 
 </details>
 
+
 ---
 
 ### `ForceImmediateMove`
@@ -7254,11 +7368,11 @@
 
 </details>
 
+
 ---
 
 ### `ForceImmediateMoveAndAttack`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7293,6 +7407,7 @@
 
 </details>
 
+
 ---
 
 ### `ForceMoveNonAlliesInRangeTowardsTile`
@@ -7310,6 +7425,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7329,6 +7445,7 @@
 
 </details>
 
+
 ---
 
 ### `ForceMoveTowardsEnemies`
@@ -7347,11 +7464,11 @@
 
 </details>
 
+
 ---
 
 ### `ForceMoveTowardsTaggedObject`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7362,8 +7479,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The movement ability to use. | 730 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The entity tag to seek out. | 981 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The movement ability to use. | 730 |
 
 </details>
 
@@ -7386,11 +7503,11 @@
 
 </details>
 
+
 ---
 
 ### `ForceUseAbilityOnTarget`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7425,6 +7542,7 @@
 
 </details>
 
+
 ---
 
 ### `JustInCaseTrample`
@@ -7442,6 +7560,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7461,11 +7580,11 @@
 
 </details>
 
+
 ---
 
 ### `KnockbackIfCrit`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7500,6 +7619,7 @@
 
 </details>
 
+
 ---
 
 ### `LowGravityKnockbackBoost`
@@ -7517,6 +7637,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7536,6 +7657,7 @@
 
 </details>
 
+
 ---
 
 ### `MinimumKnockbackFromPhysicalAttacks`
@@ -7553,6 +7675,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7572,11 +7695,11 @@
 
 </details>
 
+
 ---
 
 ### `MoveAfterAnyAttemptedAttack`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7597,7 +7720,6 @@
 ### `MoveAwayWhenEnemyAdjacent`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7608,8 +7730,8 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` | 1 |
-| [`weights`](./Enums.md#enum-weights) | Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 |
 | `once_per_turn` | Boolean | `true` | 1 |
+| [`weights`](./Enums.md#enum-weights) | Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 |
 
 </details>
 
@@ -7618,7 +7740,6 @@
 
 ### `MoveTowardsKillers`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7653,11 +7774,11 @@
 
 </details>
 
+
 ---
 
 ### `RandomKnockback`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7692,6 +7813,7 @@
 
 </details>
 
+
 ---
 
 ### `RefreshMovePointsIfHit`
@@ -7709,6 +7831,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7728,6 +7851,7 @@
 
 </details>
 
+
 ---
 
 ### `RemoveAmbientLightEffects`
@@ -7745,6 +7869,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7764,6 +7889,7 @@
 
 </details>
 
+
 ---
 
 ### `RemoveGlobalModifiers`
@@ -7781,6 +7907,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7800,6 +7927,7 @@
 
 </details>
 
+
 ---
 
 ### `RemoveKnockback`
@@ -7817,6 +7945,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7836,6 +7965,7 @@
 
 </details>
 
+
 ---
 
 ### `RemoveStatus`
@@ -7854,11 +7984,11 @@
 
 </details>
 
+
 ---
 
 ### `RemoveStatusStacks`
 > Found in: *Abilities & Spells, Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7869,8 +7999,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 1 |
 | `stacks` | Number | The number of stacks to remove. | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 1 |
 
 </details>
 
@@ -7893,6 +8023,7 @@
 
 </details>
 
+
 ---
 
 ### `ReplaceBasicMove_Mutation`
@@ -7910,6 +8041,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -7929,6 +8061,7 @@
 
 </details>
 
+
 ---
 
 ### `RunWhenKittensDead`
@@ -7947,11 +8080,11 @@
 
 </details>
 
+
 ---
 
 ### `RunWhenLastPlayerCatIsCharmed`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7962,8 +8095,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | `Legacy_Marshmallow_StolenCatID` | 1 |
 | `allow_decision_mid_turn` | Boolean | `true` | 1 |
+| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | `Legacy_Marshmallow_StolenCatID` | 1 |
 
 </details>
 
@@ -7986,6 +8119,7 @@
 
 </details>
 
+
 ---
 
 ### `SetKnockback`
@@ -8003,6 +8137,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8022,6 +8157,7 @@
 
 </details>
 
+
 ---
 
 ### `SproutsGrantMovement`
@@ -8040,11 +8176,11 @@
 
 </details>
 
+
 ---
 
 ### `StatusIfDidntMove`
 > Found in: *Cat Mutations, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8065,7 +8201,6 @@
 ### `StatusWhenStatusCompletelyRemoved`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8075,9 +8210,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`UseAbility`](./Enums.md#enum-useability) | Object | Logic: Forces execution of an ability. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| [`UseAbility`](./Enums.md#enum-useability) | Object | Logic: Forces execution of an ability. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -8100,11 +8235,11 @@
 
 </details>
 
+
 ---
 
 ### `SupportDieInsteadOfRun`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8139,6 +8274,7 @@
 
 </details>
 
+
 ---
 
 ### `TempBonusKnockback`
@@ -8156,6 +8292,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8175,6 +8312,7 @@
 
 </details>
 
+
 ---
 
 ### `TempTrampleUntilSettled`
@@ -8192,6 +8330,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8211,11 +8350,11 @@
 
 </details>
 
+
 ---
 
 ### `Terminator2Run`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8226,8 +8365,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` | 1 |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | The AI positioning logic profile to use. | 10 |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` | 1 |
 
 </details>
 
@@ -8236,7 +8375,6 @@
 
 ### `TerminatorChase`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8271,6 +8409,7 @@
 
 </details>
 
+
 ---
 
 ### `TilesMovedToMana`
@@ -8288,6 +8427,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8307,6 +8447,7 @@
 
 </details>
 
+
 ---
 
 ### `TilesMovedToStrength`
@@ -8325,11 +8466,11 @@
 
 </details>
 
+
 ---
 
 ### `TwisterDisplaceWithDamage`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8340,8 +8481,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage`](./Arrays.md#array-damage) | Object | The damage formula or inherit flag. | 2 |
 | `max_dist` | Number | Maximum displacement distance. | 6 |
+| [`damage`](./Arrays.md#array-damage) | Object | The damage formula or inherit flag. | 2 |
 | `min_dist` | Number | Minimum displacement distance. | 2 |
 | [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | `Twister` | 1 |
 
@@ -8352,7 +8493,6 @@
 
 ### `TwisterFling`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8374,7 +8514,6 @@
 
 ### `UseMoveAbilityWithAI`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8409,6 +8548,7 @@
 
 </details>
 
+
 ---
 
 ## Spawns, Summons & Familiars (50)
@@ -8429,6 +8569,7 @@
 
 </details>
 
+
 ---
 
 ### `AggroTargetIsBuddy`
@@ -8447,11 +8588,11 @@
 
 </details>
 
+
 ---
 
 ### `ApplyPassivesToSpawnerWhileAlive`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8472,7 +8613,6 @@
 ### `Buddy`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8480,8 +8620,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`obj`](./Enums.md#enum-obj) | Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 |
 | `allies_only` | Boolean | `false`, `true` | 3 |
+| [`obj`](./Enums.md#enum-obj) | Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 |
 | `reclaim_if_lost` | Boolean | `true` | 1 |
 
 </details>
@@ -8505,6 +8645,7 @@
 
 </details>
 
+
 ---
 
 ### `DieWhenSpawnerDies`
@@ -8522,6 +8663,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8541,6 +8683,7 @@
 
 </details>
 
+
 ---
 
 ### `DropAsFamiliarOnArmorBreak`
@@ -8558,6 +8701,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8577,6 +8721,7 @@
 
 </details>
 
+
 ---
 
 ### `EraseSpawnCoins`
@@ -8594,6 +8739,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8613,6 +8759,7 @@
 
 </details>
 
+
 ---
 
 ### `GlobalFamiliarDamageBoost`
@@ -8630,6 +8777,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8649,6 +8797,7 @@
 
 </details>
 
+
 ---
 
 ### `GlobalSpawnCharacter`
@@ -8667,11 +8816,11 @@
 
 </details>
 
+
 ---
 
 ### `GlobalSpawnOnRoundEnd`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8706,6 +8855,7 @@
 
 </details>
 
+
 ---
 
 ### `LegacySpawnSavedCatIfExists`
@@ -8723,6 +8873,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8742,11 +8893,11 @@
 
 </details>
 
+
 ---
 
 ### `MotherTumorSpawnInCapture`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8769,7 +8920,6 @@
 ### `MultiSpawnOnDeath`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8789,7 +8939,6 @@
 
 ### `PopAndSpawn`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8826,6 +8975,7 @@
 
 </details>
 
+
 ---
 
 ### `SpawnBearTrap`
@@ -8843,6 +8993,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8862,6 +9013,7 @@
 
 </details>
 
+
 ---
 
 ### `SpawnCatCloneOnCorpsePopped`
@@ -8880,11 +9032,11 @@
 
 </details>
 
+
 ---
 
 ### `SpawnCatCopyWhenDowned`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8919,6 +9071,7 @@
 
 </details>
 
+
 ---
 
 ### `SpawnCreepOnHitKnockback`
@@ -8936,6 +9089,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -8955,11 +9109,11 @@
 
 </details>
 
+
 ---
 
 ### `SpawnExtraThingsOnBattleStart`
 > Found in: *Cat Mutations, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8970,8 +9124,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 1 |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup` | 545 |
+| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 1 |
 
 </details>
 
@@ -8994,11 +9148,11 @@
 
 </details>
 
+
 ---
 
 ### `SpawnItemLinkedFamiliar`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9033,6 +9187,7 @@
 
 </details>
 
+
 ---
 
 ### `SpawnNeutralWebTrapOnMiss`
@@ -9051,11 +9206,11 @@
 
 </details>
 
+
 ---
 
 ### `SpawnOnDeath`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9091,11 +9246,11 @@
 
 </details>
 
+
 ---
 
 ### `SpawnRandomPickupsOnTaggedUnitKilled`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9106,8 +9261,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`count`](./Arrays.md#array-count) | Array | Quantity. | 3 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
+| [`count`](./Arrays.md#array-count) | Array | Quantity. | 3 |
 
 </details>
 
@@ -9130,6 +9285,7 @@
 
 </details>
 
+
 ---
 
 ### `SpawnThingIfHitKills`
@@ -9148,11 +9304,11 @@
 
 </details>
 
+
 ---
 
 ### `SpawnTilePuddleOnBattleStart`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9175,7 +9331,6 @@
 ### `SpawnVolcanoOnBattleStart`
 > Found in: *Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -9186,9 +9341,9 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `MiniVolcano, Sprout, PunchingBag` | 545 |
-| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | Examples: `[ BrambleTile TallBrambleTile ], LavaTile` | 2 |
 | `max_radius` | Number | Examples: `2.2` | 2 |
 | [`min_radius`](./Enums.md#enum-min_radius) | Number | Examples: `1, .2` | 2 |
+| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | Examples: `[ BrambleTile TallBrambleTile ], LavaTile` | 2 |
 | [`number`](./Arrays.md#array-number) | Array | Examples: `[ 3 5 ]` | 1 |
 
 </details>
@@ -9212,6 +9367,7 @@
 
 </details>
 
+
 ---
 
 ### `SpawnerCatDataReference`
@@ -9230,11 +9386,11 @@
 
 </details>
 
+
 ---
 
 ### `StatusAllCharactersOnSpawn`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9255,7 +9411,6 @@
 ### `StatusOnSpawnIn`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -9265,9 +9420,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -9276,7 +9431,6 @@
 
 ### `SyncFormsWithBuddy`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9296,7 +9450,6 @@
 
 ### `T3HitlerSpawningPhase`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9330,6 +9483,7 @@
 
 </details>
 
+
 ---
 
 ### `TakeWeaponFromSpawner`
@@ -9348,6 +9502,7 @@
 
 </details>
 
+
 ---
 
 ### `TossTargetIsBuddy`
@@ -9365,6 +9520,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -9386,11 +9542,11 @@
 
 </details>
 
+
 ---
 
 ### `ArmorPickup`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9425,11 +9581,11 @@
 
 </details>
 
+
 ---
 
 ### `BirdRewards`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9451,7 +9607,6 @@
 ### `ChaosHeadDropIn`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -9461,9 +9616,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |
 | [`new_music`](./Enums.md#enum-new_music) | Enum | `chaos_boss_part2` | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
 
 </details>
 
@@ -9486,6 +9641,7 @@
 
 </details>
 
+
 ---
 
 ### `CoinTossBounce`
@@ -9503,6 +9659,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -9522,11 +9679,11 @@
 
 </details>
 
+
 ---
 
 ### `CollectsPickupsWithAltEffects`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9537,12 +9694,12 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |
+| [`Quivered`](./Arrays.md#array-quivered) | Number | Applies or references the 'Quivered' effect/state. | 10 |
+| `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 2 |
 | `Tech` | Number | Applies or references the 'Tech' effect/state. | 2 |
 | `CurrentWeaponAddPoison` | Number | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 |
 | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |
-| [`Quivered`](./Arrays.md#array-quivered) | Number | Applies or references the 'Quivered' effect/state. | 10 |
-| `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 2 |
-| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |
 
 </details>
 
@@ -9565,6 +9722,7 @@
 
 </details>
 
+
 ---
 
 ### `DoubleLoot`
@@ -9582,6 +9740,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -9601,6 +9760,7 @@
 
 </details>
 
+
 ---
 
 ### `FindItem`
@@ -9618,6 +9778,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -9637,6 +9798,7 @@
 
 </details>
 
+
 ---
 
 ### `GainCoins`
@@ -9655,11 +9817,11 @@
 
 </details>
 
+
 ---
 
 ### `GainCoinsRange`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9680,7 +9842,6 @@
 
 ### `HealthPickup`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9718,11 +9879,11 @@
 
 </details>
 
+
 ---
 
 ### `ManaPickup`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9757,6 +9918,7 @@
 
 </details>
 
+
 ---
 
 ### `ManaStealToHealth`
@@ -9775,11 +9937,11 @@
 
 </details>
 
+
 ---
 
 ### `MegaDinoDropController`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9803,7 +9965,6 @@
 ### `ModularPickup`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -9813,8 +9974,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`sound_event`](./Enums.md#enum-sound_event) | Enum | `EatAntidote` | 1 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |
+| [`sound_event`](./Enums.md#enum-sound_event) | Enum | `EatAntidote` | 1 |
 
 </details>
 
@@ -9837,6 +9998,7 @@
 
 </details>
 
+
 ---
 
 ### `ReloadOnGainCoins`
@@ -9855,11 +10017,11 @@
 
 </details>
 
+
 ---
 
 ### `ScatterCoins`
 > Found in: *Abilities & Spells, Cat Mutations, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -9870,8 +10032,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 2 |
 | `stackable` | Boolean | If true, multiple instances of this trigger can stack. | 2 |
+| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -9894,6 +10056,7 @@
 
 </details>
 
+
 ---
 
 ### `ScatterRandomPickups`
@@ -9911,6 +10074,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -9930,6 +10094,7 @@
 
 </details>
 
+
 ---
 
 ### `StealEquipment`
@@ -9947,6 +10112,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -9966,6 +10132,7 @@
 
 </details>
 
+
 ---
 
 ### `StealthCritChance`
@@ -9983,6 +10150,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -10002,6 +10170,7 @@
 
 </details>
 
+
 ---
 
 ### `WhitelistPickupType`
@@ -10020,13 +10189,13 @@
 
 </details>
 
+
 ---
 
 ## Form Changes & Transformations (34)
 
 ### `CatPartsTransform`
 > Found in: *Abilities & Spells, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10037,22 +10206,22 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ear1` | Number | Sprite variant ID for the front ear. | 10 |
-| `tail` | Number | Sprite variant ID for the tail. | 362 |
-| `ear2` | Number | Examples: `23, 1036, 1501` | 9 |
-| `arm2` | Number | Scale multiplier for the back arm. | 358 |
-| [`mouth`](./Enums.md#enum-mouth) | Number | `closed`, `open`, `smile` | 386 |
-| `arm1` | Number | Sprite variant ID for the front arm. | 354 |
-| `leg1` | Number | Sprite variant ID for the front leg. | 348 |
-| `leg2` | Number | Examples: `3, 1019, 1001` | 344 |
 | [`head`](./Enums.md#enum-head) | Number | Sprite variant ID for the head. | 784 |
 | `texture` | Number | Examples: `1050, 1002, 1000` | 422 |
+| [`palette`](./Enums.md#enum-palette) | Number | Swaps the color palette ID. | 420 |
+| [`mouth`](./Enums.md#enum-mouth) | Number | `closed`, `open`, `smile` | 386 |
+| `tail` | Number | Sprite variant ID for the tail. | 362 |
+| `arm2` | Number | Scale multiplier for the back arm. | 358 |
+| `arm1` | Number | Sprite variant ID for the front arm. | 354 |
+| `leg1` | Number | Sprite variant ID for the front leg. | 348 |
 | [`body`](./Arrays.md#array-body) | Number | Sprite variant ID for the body. | 346 |
+| `leg2` | Number | Examples: `3, 1019, 1001` | 344 |
+| `ear1` | Number | Sprite variant ID for the front ear. | 10 |
+| `ear2` | Number | Examples: `23, 1036, 1501` | 9 |
 | `eye1` | Number | Examples: `1069, 1013, 1057` | 1 |
 | `eye2` | Number | Examples: `1069, 1013, 1057` | 1 |
 | `eyebrow1` | Number | Examples: `1069` | 1 |
 | `eyebrow2` | Number | Examples: `1070` | 1 |
-| [`palette`](./Enums.md#enum-palette) | Number | Swaps the color palette ID. | 420 |
 
 </details>
 
@@ -10061,7 +10230,6 @@
 
 ### `ChanceToFormChangeOnAbilityDamage`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10072,8 +10240,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 1 |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0) of executing this action. | 1 |
+| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 1 |
 
 </details>
 
@@ -10096,11 +10264,11 @@
 
 </details>
 
+
 ---
 
 ### `ChaosBossFormChangeGuide`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10123,7 +10291,6 @@
 ### `DurabilityTransform`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10143,7 +10310,6 @@
 
 ### `FormChange`
 > Found in: *Abilities & Spells, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10165,7 +10331,6 @@
 ### `FormChangeDuringWeatherElement`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10175,8 +10340,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 2 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
 
@@ -10185,7 +10350,6 @@
 
 ### `FormChangeHealthThreshold`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10209,7 +10373,6 @@
 ### `FormChangeOffMap`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10230,7 +10393,6 @@
 ### `FormChangeOnElementInfluence`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10240,11 +10402,11 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 9 |
 | [`exclude`](./Enums.md#enum-exclude) | Enum | `SpellDamageUp`, `fire`, `water` | 5 |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. | 5 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` | 5 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
 
@@ -10267,11 +10429,11 @@
 
 </details>
 
+
 ---
 
 ### `FormChangeWhileHasStatus`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10294,7 +10456,6 @@
 ### `FormChangeWhilePrimingAbility`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10315,7 +10476,6 @@
 ### `FormChanger`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10325,75 +10485,95 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`initial_form`](./Enums.md#enum-initial_form) | Enum | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` | 6 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 5118 |
+| [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 928 |
 | [`Default`](./Enums.md#enum-default) | Object | Character Form: The baseline default behavior state. | 199 |
-| [`Normal`](./Characters_and_Bosses.md#context-normal) | Object | Character Form: Behavior and stats for the \'Normal\' state. | 24 |
-| [`Rage`](./Characters_and_Bosses.md#context-rage) | Object | Character Form: Behavior and stats for the \'Rage\' state. | 10 |
-| [`HasCat`](./Characters_and_Bosses.md#context-hascat) | Object | Character Form: Behavior and stats for the \'HasCat\' state. | 5 |
-| [`OffMap`](./Characters_and_Bosses.md#context-offmap) | Object | Character Form: Behavior and stats for the 'OffMap' state. | 4 |
 | [`default`](./Enums.md#enum-default) | Object | Baseline configuration. | 199 |
+| [`Colorless`](./Arrays.md#array-colorless) | Object | Applies or references the 'Colorless' effect/state. | 140 |
+| [`Druid`](./Arrays.md#array-druid) | Object | Applies or references the 'Druid' effect/state. | 80 |
+| [`Fighter`](./Arrays.md#array-fighter) | Object | Applies or references the 'Fighter' effect/state. | 80 |
+| [`Thief`](./Arrays.md#array-thief) | Object | Applies or references the 'Thief' effect/state. | 76 |
+| [`Tank`](./Arrays.md#array-tank) | Object | Applies or references the 'Tank' effect/state. | 74 |
+| [`Butcher`](./Arrays.md#array-butcher) | Object | Applies or references the 'Butcher' effect/state. | 72 |
+| [`Necromancer`](./Arrays.md#array-necromancer) | Object | Applies or references the 'Necromancer' effect/state. | 72 |
+| [`Mage`](./Arrays.md#array-mage) | Object | Applies or references the 'Mage' effect/state. | 70 |
+| [`Tinkerer`](./Arrays.md#array-tinkerer) | Object | Applies or references the 'Tinkerer' effect/state. | 70 |
+| [`Hunter`](./Arrays.md#array-hunter) | Object | Applies or references the 'Hunter' effect/state. | 68 |
+| [`Monk`](./Arrays.md#array-monk) | Object | Applies or references the 'Monk' effect/state. | 66 |
+| [`Psychic`](./Arrays.md#array-psychic) | Object | Applies or references the 'Psychic' effect/state. | 66 |
+| [`Medic`](./Arrays.md#array-medic) | Object | Applies or references the 'Medic' effect/state. | 58 |
+| [`attack`](./Enums.md#enum-attack) | Enum | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 |
+| [`Normal`](./Characters_and_Bosses.md#context-normal) | Object | Character Form: Behavior and stats for the \'Normal\' state. | 24 |
+| [`Cultist`](./Characters_and_Bosses.md#context-cultist) | Object | Character Form: Behavior and stats for the \'Cultist\' state. | 11 |
+| [`Nuke`](./Characters_and_Bosses.md#context-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 10 |
+| [`Rage`](./Characters_and_Bosses.md#context-rage) | Object | Character Form: Behavior and stats for the \'Rage\' state. | 10 |
+| [`Unlit`](./Characters_and_Bosses.md#context-unlit) | Object | Character Form: Behavior and stats for the 'Unlit' state. | 9 |
+| [`CaveMan`](./Characters_and_Bosses.md#context-caveman) | Object | Character Form: Behavior and stats for the \'CaveMan\' state. | 7 |
+| [`Fire`](./Characters_and_Bosses.md#context-fire) | Object | Character Form: Behavior and stats for the 'Fire' state. | 6 |
+| [`initial_form`](./Enums.md#enum-initial_form) | Enum | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` | 6 |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Number | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |
+| [`Angry`](./Characters_and_Bosses.md#context-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 5 |
+| [`HasCat`](./Characters_and_Bosses.md#context-hascat) | Object | Character Form: Behavior and stats for the \'HasCat\' state. | 5 |
+| [`Water`](./Characters_and_Bosses.md#context-water) | Object | Character Form: Behavior and stats for the \'Water\' state. | 5 |
+| [`Flush`](./Characters_and_Bosses.md#context-flush) | Object | Character Form: Behavior and stats for the 'Flush' state. | 4 |
 | [`hot`](./Characters_and_Bosses.md#context-hot) | Object | Visual effect indicator. | 4 |
+| [`OffMap`](./Characters_and_Bosses.md#context-offmap) | Object | Character Form: Behavior and stats for the 'OffMap' state. | 4 |
+| [`passive`](./Characters_and_Bosses.md#context-passive) | Object | Intrinsic passive modifier. | 4 |
 | [`AllAlive`](./Characters_and_Bosses.md#context-allalive) | Object | Encounter State: Logic executed when all specific entities are currently alive. | 3 |
+| [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby) | Object | Character Form: Behavior and stats for the \'CaveBaby\' state. | 3 |
 | [`Down`](./Characters_and_Bosses.md#context-down) | Object | Character Form: Behavior and stats for the \'Down\' state. | 3 |
 | [`Full`](./Characters_and_Bosses.md#context-full) | Object | Character Form: Behavior and stats for the \'Full\' state. | 3 |
 | [`OneAlive`](./Characters_and_Bosses.md#context-onealive) | Object | Encounter State: Logic executed when exactly one target is alive. | 3 |
+| [`Open`](./Characters_and_Bosses.md#context-open) | Object | Character Form: Behavior and stats for the 'Open' state. | 3 |
 | [`TwoAlive`](./Characters_and_Bosses.md#context-twoalive) | Object | Encounter State: Logic executed when exactly two targets are alive. | 3 |
 | [`Up`](./Characters_and_Bosses.md#context-up) | Object | Character Form: Behavior and stats for the \'Up\' state. | 3 |
+| [`active`](./Characters_and_Bosses.md#context-active) | Object | Defines actively executed abilities. | 2 |
 | [`Big`](./Characters_and_Bosses.md#context-big) | Object | Character Form / AI State: Behavior and stats for the \'Big\' state. | 2 |
-| [`Boris`](./Enums.md#enum-boris) | Object | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 1 |
 | [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear) | Object | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 |
-| [`CaveMan`](./Characters_and_Bosses.md#context-caveman) | Object | Character Form: Behavior and stats for the \'CaveMan\' state. | 7 |
-| [`Empty`](./Characters_and_Bosses.md#context-empty) | Object | Character Form: Behavior and stats for the \'Empty\' state. | 1 |
 | [`Explosive`](./Enums.md#enum-explosive) | Object | Character Form: Behavior and stats for the \'Explosive\' state. | 2 |
 | [`Holding`](./Characters_and_Bosses.md#context-holding) | Object | Character Form: Behavior and stats for the \'Holding\' state. | 2 |
 | [`Holy`](./Enums.md#enum-holy) | Object | Character Form: Behavior and stats for the \'Holy\' state. | 2 |
+| [`LastHit`](./Characters_and_Bosses.md#context-lasthit) | Object | Logic: Executes logic on the final hit of a multi-hit attack. | 2 |
+| [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar) | Object | Character Form: Behavior and stats for the 'NeutronStar' state. | 2 |
 | [`NotPriming`](./Characters_and_Bosses.md#context-notpriming) | Object | Character Form: Behavior and stats when not charging an ability. | 2 |
 | [`Priming`](./Characters_and_Bosses.md#context-priming) | Object | Character Form: Behavior and stats when charging an ability. | 2 |
-| [`Rain`](./Characters_and_Bosses.md#context-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 1 |
 | [`Small`](./Characters_and_Bosses.md#context-small) | Object | Character Form: Behavior and stats for the \'Small\' state. | 2 |
 | [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform) | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 |
 | [`Turtled`](./Characters_and_Bosses.md#context-turtled) | Object | Character Form: Behavior and stats for the 'Turtled' state. | 2 |
-| [`active`](./Characters_and_Bosses.md#context-active) | Object | Defines actively executed abilities. | 2 |
-| [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 928 |
-| [`attack`](./Enums.md#enum-attack) | Enum | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 |
-| [`passive`](./Characters_and_Bosses.md#context-passive) | Object | Intrinsic passive modifier. | 4 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 5118 |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Number | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |
+| `uifloaters_offset` | Number | Examples: `2.2` | 2 |
+| [`Zealot`](./Characters_and_Bosses.md#context-zealot) | Object | Character Form: Behavior and stats for the \'Zealot\' state. | 2 |
 | [`Alert`](./Characters_and_Bosses.md#context-alert) | Object | AI State: The behavior profile used when the character is alerted to enemies. | 1 |
-| [`Angry`](./Characters_and_Bosses.md#context-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 5 |
 | [`Attacker`](./Characters_and_Bosses.md#context-attacker) | Object | AI Role: Designates the character as an attacker rather than support. | 1 |
 | [`BellyFull`](./Characters_and_Bosses.md#context-bellyfull) | Object | Character Form / AI State: Behavior and stats for the \'BellyFull\' state. | 1 |
-| [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat) | Object | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 |
 | [`BigHolding`](./Characters_and_Bosses.md#context-bigholding) | Object | Character Form / AI State: Behavior and stats for the \'BigHolding\' state. | 1 |
+| [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat) | Object | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 |
 | [`Bishop`](./Characters_and_Bosses.md#context-bishop) | Object | Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 1 |
 | [`BlackHole`](./Characters_and_Bosses.md#context-blackhole) | Object | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 |
 | [`Bomb`](./Characters_and_Bosses.md#context-bomb) | Object | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 |
+| [`Boris`](./Enums.md#enum-boris) | Object | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 1 |
 | [`Bully`](./Characters_and_Bosses.md#context-bully) | Object | Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 |
-| [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby) | Object | Character Form: Behavior and stats for the \'CaveBaby\' state. | 3 |
-| [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat) | Object | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |
 | [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman) | Object | Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 |
+| [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat) | Object | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |
 | [`Charging`](./Characters_and_Bosses.md#context-charging) | Object | Character Form / AI State: Behavior when charging an attack. | 1 |
 | [`Close`](./Characters_and_Bosses.md#context-close) | Object | AI Movement logic: Maneuvers into close/melee range. | 1 |
-| [`Cultist`](./Characters_and_Bosses.md#context-cultist) | Object | Character Form: Behavior and stats for the \'Cultist\' state. | 11 |
 | [`Damaged`](./Characters_and_Bosses.md#context-damaged) | Object | Character Form / AI State: Behavior when health is critically low. | 1 |
 | [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling) | Object | Character Form: The baseline behavior state while attached to the ceiling. | 1 |
 | [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground) | Object | Character Form: The baseline behavior state while on the ground. | 1 |
 | [`DesireMech`](./Characters_and_Bosses.md#context-desiremech) | Object | Character Form: Behavior and stats for the 'DesireMech' state. | 1 |
 | [`Die`](./Characters_and_Bosses.md#context-die) | Object | Character Form / Logic: Forces the character to die. | 1 |
 | [`Drunker`](./Characters_and_Bosses.md#context-drunker) | Object | Character Form: Behavior and stats for the 'Drunker' state. | 1 |
-| [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed) | Object | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |
 | [`DualSword`](./Characters_and_Bosses.md#context-dualsword) | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
+| [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed) | Object | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |
 | [`Dumb`](./Characters_and_Bosses.md#context-dumb) | Object | AI Profile: A simplified, less optimal decision-making profile. | 1 |
+| [`Empty`](./Characters_and_Bosses.md#context-empty) | Object | Character Form: Behavior and stats for the \'Empty\' state. | 1 |
 | [`Explody`](./Characters_and_Bosses.md#context-explody) | Object | Character Form: Behavior and stats for the 'Explody' state. | 1 |
 | [`FightPhase`](./Characters_and_Bosses.md#context-fightphase) | Object | Boss Logic: Main combat phase. | 1 |
 | [`FireFull`](./Characters_and_Bosses.md#context-firefull) | Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
-| [`Fire`](./Characters_and_Bosses.md#context-fire) | Object | Character Form: Behavior and stats for the 'Fire' state. | 6 |
-| [`Flop2`](./Characters_and_Bosses.md#context-flop2) | Object | Character Form: Behavior and stats for the \'Flop2\' state. | 1 |
 | [`Flop`](./Characters_and_Bosses.md#context-flop) | Object | Character Form: Behavior and stats for the \'Flop\' state. | 1 |
+| [`Flop2`](./Characters_and_Bosses.md#context-flop2) | Object | Character Form: Behavior and stats for the \'Flop2\' state. | 1 |
 | [`FlushBubs`](./Characters_and_Bosses.md#context-flushbubs) | Object | Character Form: Behavior and stats for the 'FlushBubs' state. | 1 |
 | [`FlushHost`](./Characters_and_Bosses.md#context-flushhost) | Object | Character Form: Behavior and stats for the 'FlushHost' state. | 1 |
 | [`FlushNettle`](./Characters_and_Bosses.md#context-flushnettle) | Object | Character Form: Behavior and stats for the 'FlushNettle' state. | 1 |
-| [`Flush`](./Characters_and_Bosses.md#context-flush) | Object | Character Form: Behavior and stats for the 'Flush' state. | 4 |
 | [`Grappling`](./Characters_and_Bosses.md#context-grappling) | Object | Character Form / AI State: Behavior while grappling an opponent. | 1 |
 | [`Grown`](./Characters_and_Bosses.md#context-grown) | Object | Character Form: Behavior and stats for the \'Grown\' state. | 1 |
 | [`GuaranteedJackpot`](./Characters_and_Bosses.md#context-guaranteedjackpot) | Object | Loot Logic: Guarantees a high-tier drop. | 1 |
@@ -10402,35 +10582,32 @@
 | [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat) | Object | Character Form: Behavior and stats for the \'HasDeadCat\' state. | 1 |
 | [`HasRock`](./Characters_and_Bosses.md#context-hasrock) | Object | Character Form: Behavior and stats for the \'HasRock\' state. | 1 |
 | [`Headless`](./Characters_and_Bosses.md#context-headless) | Object | Character Form: Behavior and stats for the \'Headless\' state. | 1 |
+| [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#context-hint_crackedvisuals) | Object | Visual: Overlay effects for cracked/damaged terrain or objects. | 1 |
 | [`Hint_CrackedVisuals2`](./Characters_and_Bosses.md#context-hint_crackedvisuals2) | Object | Visual: Secondary cracked visual overlay. | 1 |
 | [`Hint_CrackedVisuals3`](./Characters_and_Bosses.md#context-hint_crackedvisuals3) | Object | Visual: Tertiary cracked visual overlay. | 1 |
-| [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#context-hint_crackedvisuals) | Object | Visual: Overlay effects for cracked/damaged terrain or objects. | 1 |
 | [`HumanDead`](./Characters_and_Bosses.md#context-humandead) | Object | Character Form: Behavior and stats for the \'HumanDead\' state. | 1 |
 | [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase) | Object | Boss Logic: The starting phase of an encounter. | 1 |
 | [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling) | Object | Character Form: Insane behavior state while attached to the ceiling. | 1 |
 | [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground) | Object | Character Form: Insane behavior state while on the ground. | 1 |
+| [`Johnny`](./Characters_and_Bosses.md#context-johnny) | Object | Character Form: Behavior and stats for the 'Johnny' state. | 1 |
 | [`JohnnyBubs`](./Characters_and_Bosses.md#context-johnnybubs) | Object | Character Form: Behavior and stats for the 'JohnnyBubs' state. | 1 |
 | [`JohnnyHost`](./Characters_and_Bosses.md#context-johnnyhost) | Object | Character Form: Behavior and stats for the 'JohnnyHost' state. | 1 |
 | [`JohnnyNettle`](./Characters_and_Bosses.md#context-johnnynettle) | Object | Character Form: Behavior and stats for the 'JohnnyNettle' state. | 1 |
-| [`Johnny`](./Characters_and_Bosses.md#context-johnny) | Object | Character Form: Behavior and stats for the 'Johnny' state. | 1 |
 | [`Joystick`](./Characters_and_Bosses.md#context-joystick) | Object | Character Form: Behavior and stats for the \'Joystick\' state. | 1 |
-| [`LastHit`](./Characters_and_Bosses.md#context-lasthit) | Object | Logic: Executes logic on the final hit of a multi-hit attack. | 2 |
 | [`Lifted`](./Characters_and_Bosses.md#context-lifted) | Object | Character Form: Behavior and stats for the \'Lifted\' state. | 1 |
 | [`Lit`](./Characters_and_Bosses.md#context-lit) | Object | Character Form: Behavior and stats for the 'Lit' state. | 1 |
 | [`Mounted`](./Characters_and_Bosses.md#context-mounted) | Object | Character Form: Behavior and stats for the \'Mounted\' state. | 1 |
 | [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull) | Object | Character Form: Behavior and stats for the \'MouthFull\' state. | 1 |
 | [`Mutant`](./Characters_and_Bosses.md#context-mutant) | Object | Character Form: Behavior and stats for the \'Mutant\' state. | 1 |
-| [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar) | Object | Character Form: Behavior and stats for the 'NeutronStar' state. | 2 |
+| `NoDeathRattle` | Object | Applies or references the 'NoDeathRattle' effect/state. | 1 |
 | [`NoEyes`](./Characters_and_Bosses.md#context-noeyes) | Object | Character Form: Behavior and stats for the \'NoEyes\' state. | 1 |
-| [`NoStick`](./Characters_and_Bosses.md#context-nostick) | Object | Character Form: Behavior and stats for the 'NoStick' state. | 1 |
 | [`NormalFull`](./Characters_and_Bosses.md#context-normalfull) | Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
-| [`Nuke`](./Characters_and_Bosses.md#context-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 10 |
+| [`NoStick`](./Characters_and_Bosses.md#context-nostick) | Object | Character Form: Behavior and stats for the 'NoStick' state. | 1 |
 | [`Obey`](./Characters_and_Bosses.md#context-obey) | Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |
-| [`OffScreen`](./Characters_and_Bosses.md#context-offscreen) | Object | Character Form: Behavior and stats for the 'OffScreen' state. | 1 |
 | [`Off`](./Characters_and_Bosses.md#context-off) | Object | Character Form: Behavior and stats for the 'Off' state. | 1 |
+| [`OffScreen`](./Characters_and_Bosses.md#context-offscreen) | Object | Character Form: Behavior and stats for the 'OffScreen' state. | 1 |
 | [`OneEye`](./Characters_and_Bosses.md#context-oneeye) | Object | Character Form: Behavior and stats for the \'OneEye\' state. | 1 |
 | [`OpenCat`](./Characters_and_Bosses.md#context-opencat) | Object | Character Form: Behavior and stats for the 'OpenCat' state. | 1 |
-| [`Open`](./Characters_and_Bosses.md#context-open) | Object | Character Form: Behavior and stats for the 'Open' state. | 3 |
 | [`Out`](./Characters_and_Bosses.md#context-out) | Object | Character Form: Behavior and stats for the 'Out' state. | 1 |
 | [`Possessing`](./Characters_and_Bosses.md#context-possessing) | Object | Character Form: Behavior and stats for the \'Possessing\' state. | 1 |
 | [`Primed`](./Characters_and_Bosses.md#context-primed) | Object | Character Form: Behavior and stats for the 'Primed' state. | 1 |
@@ -10440,49 +10617,32 @@
 | [`Pulp5`](./Characters_and_Bosses.md#context-pulp5) | Object | Character Form: Behavior and stats for the 'Pulp5' state. | 1 |
 | [`Pulp6`](./Characters_and_Bosses.md#context-pulp6) | Object | Character Form: Behavior and stats for the 'Pulp6' state. | 1 |
 | [`Pulp7`](./Characters_and_Bosses.md#context-pulp7) | Object | Character Form: Behavior and stats for the 'Pulp7' state. | 1 |
+| [`Rain`](./Characters_and_Bosses.md#context-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 1 |
 | [`Sitting`](./Characters_and_Bosses.md#context-sitting) | Object | Character Form: Behavior and stats for the 'Sitting' state. | 1 |
-| [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat) | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
 | [`SmallHolding`](./Characters_and_Bosses.md#context-smallholding) | Object | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
+| [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat) | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
 | [`SpawningPhase`](./Characters_and_Bosses.md#context-spawningphase) | Object | Boss Logic: Phase focused on summoning minions. | 1 |
-| [`Standing2`](./Characters_and_Bosses.md#context-standing2) | Object | Character Form: Behavior and stats for the 'Standing2' state. | 1 |
 | [`Standing`](./Characters_and_Bosses.md#context-standing) | Object | Character Form: Behavior and stats for the 'Standing' state. | 1 |
+| [`Standing2`](./Characters_and_Bosses.md#context-standing2) | Object | Character Form: Behavior and stats for the 'Standing2' state. | 1 |
 | [`Start_Ceiling`](./Characters_and_Bosses.md#context-start_ceiling) | Object | Character Form: Behavior and stats for the 'Start_Ceiling' state. | 1 |
 | [`Stop`](./Characters_and_Bosses.md#context-stop) | Object | AI Movement: Forces the character to cease movement. | 1 |
-| [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed) | Object | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |
 | [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield) | Object | Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 |
-| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
+| [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed) | Object | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |
+| `sync_brain_patterns` | Boolean | `true` | 1 |
 | [`Tar`](./Characters_and_Bosses.md#context-tar) | Object | Character Form: Behavior and stats for the 'Tar' state. | 1 |
+| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
+| [`Throb`](./Characters_and_Bosses.md#context-throb) | Object | Character Form: Behavior and stats for the 'Throb' state. | 1 |
 | [`ThrobBubs`](./Characters_and_Bosses.md#context-throbbubs) | Object | Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 |
 | [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost) | Object | Character Form: Behavior and stats for the 'ThrobHost' state. | 1 |
 | [`ThrobNettle`](./Characters_and_Bosses.md#context-throbnettle) | Object | Character Form: Behavior and stats for the 'ThrobNettle' state. | 1 |
-| [`Throb`](./Characters_and_Bosses.md#context-throb) | Object | Character Form: Behavior and stats for the 'Throb' state. | 1 |
 | [`Transformed`](./Characters_and_Bosses.md#context-transformed) | Object | Character Form: Behavior and stats for the 'Transformed' state. | 1 |
 | [`TwoEyes`](./Characters_and_Bosses.md#context-twoeyes) | Object | Character Form: Behavior and stats for the 'TwoEyes' state. | 1 |
-| [`Unlit`](./Characters_and_Bosses.md#context-unlit) | Object | Character Form: Behavior and stats for the 'Unlit' state. | 9 |
+| `Unmounted` | Object | Applies or references the 'Unmounted' effect/state. | 1 |
 | [`Unwashed`](./Characters_and_Bosses.md#context-unwashed) | Object | Character Form: Behavior and stats for the 'Unwashed' state. | 1 |
 | [`Washed`](./Characters_and_Bosses.md#context-washed) | Object | Character Form: Behavior and stats for the 'Washed' state. | 1 |
 | [`Washer`](./Characters_and_Bosses.md#context-washer) | Object | Character Form: Behavior and stats for the \'Washer\' state. | 1 |
-| [`Water`](./Characters_and_Bosses.md#context-water) | Object | Character Form: Behavior and stats for the \'Water\' state. | 5 |
 | [`WereMan`](./Characters_and_Bosses.md#context-wereman) | Object | Character Form: Behavior and stats for the \'WereMan\' state. | 1 |
 | [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb) | Object | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 |
-| [`Zealot`](./Characters_and_Bosses.md#context-zealot) | Object | Character Form: Behavior and stats for the \'Zealot\' state. | 2 |
-| [`Butcher`](./Arrays.md#array-butcher) | Object | Applies or references the 'Butcher' effect/state. | 72 |
-| [`Colorless`](./Arrays.md#array-colorless) | Object | Applies or references the 'Colorless' effect/state. | 140 |
-| [`Druid`](./Arrays.md#array-druid) | Object | Applies or references the 'Druid' effect/state. | 80 |
-| [`Fighter`](./Arrays.md#array-fighter) | Object | Applies or references the 'Fighter' effect/state. | 80 |
-| [`Hunter`](./Arrays.md#array-hunter) | Object | Applies or references the 'Hunter' effect/state. | 68 |
-| [`Mage`](./Arrays.md#array-mage) | Object | Applies or references the 'Mage' effect/state. | 70 |
-| [`Medic`](./Arrays.md#array-medic) | Object | Applies or references the 'Medic' effect/state. | 58 |
-| [`Monk`](./Arrays.md#array-monk) | Object | Applies or references the 'Monk' effect/state. | 66 |
-| [`Necromancer`](./Arrays.md#array-necromancer) | Object | Applies or references the 'Necromancer' effect/state. | 72 |
-| `NoDeathRattle` | Object | Applies or references the 'NoDeathRattle' effect/state. | 1 |
-| [`Psychic`](./Arrays.md#array-psychic) | Object | Applies or references the 'Psychic' effect/state. | 66 |
-| [`Tank`](./Arrays.md#array-tank) | Object | Applies or references the 'Tank' effect/state. | 74 |
-| [`Thief`](./Arrays.md#array-thief) | Object | Applies or references the 'Thief' effect/state. | 76 |
-| [`Tinkerer`](./Arrays.md#array-tinkerer) | Object | Applies or references the 'Tinkerer' effect/state. | 70 |
-| `Unmounted` | Object | Applies or references the 'Unmounted' effect/state. | 1 |
-| `sync_brain_patterns` | Boolean | `true` | 1 |
-| `uifloaters_offset` | Number | Examples: `2.2` | 2 |
 
 </details>
 
@@ -10491,7 +10651,6 @@
 
 ### `ItemAuxTransform`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10527,11 +10686,11 @@
 
 </details>
 
+
 ---
 
 ### `SupportFormChangeInsteadOfRun`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10552,7 +10711,6 @@
 
 ### `SwimmingFormChange`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10587,6 +10745,7 @@
 
 </details>
 
+
 ---
 
 ### `TransformBasicAttack`
@@ -10604,6 +10763,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -10623,11 +10783,11 @@
 
 </details>
 
+
 ---
 
 ### `TransformEquipment`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10649,7 +10809,6 @@
 ### `TransformInXTurns`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10660,9 +10819,9 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |
+| [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 11 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 8 |
 | [`initiative`](./Enums.md#enum-initiative) | Enum | `keep_turns_end_turn` | 4 |
-| [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 11 |
 | [`turns`](./Arrays.md#array-turns) | Array | Turn counter tracking. | 1 |
 
 </details>
@@ -10673,7 +10832,6 @@
 ### `TransformItemOnElementInfluence`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10683,9 +10841,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
-| [`item`](./Enums.md#enum-item) | Enum | Item ID to reference. | 5 |
 | `full_repair` | Boolean | `true` | 5 |
+| [`item`](./Enums.md#enum-item) | Enum | Item ID to reference. | 5 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
 
@@ -10708,6 +10866,7 @@
 
 </details>
 
+
 ---
 
 ### `TransformOnDeath`
@@ -10726,11 +10885,11 @@
 
 </details>
 
+
 ---
 
 ### `TransformOnDeathImmediately`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10752,7 +10911,6 @@
 ### `TransformOnElementInfluence`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10762,8 +10920,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 | [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
 
@@ -10772,7 +10930,6 @@
 
 ### `TransformOnElementInfluencex`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10783,8 +10940,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 | [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
 
@@ -10793,7 +10950,6 @@
 
 ### `TransformOnStatusThreshold`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10815,7 +10971,6 @@
 
 ### `TransformWeapon`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10850,6 +11005,7 @@
 
 </details>
 
+
 ---
 
 ### `TriggerWerewolfTransform`
@@ -10868,6 +11024,7 @@
 
 </details>
 
+
 ---
 
 ### `WeremanTransformationReceiver`
@@ -10885,6 +11042,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -10906,6 +11064,7 @@
 
 </details>
 
+
 ---
 
 ### `AlphaAllStatsUp`
@@ -10923,6 +11082,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -10942,11 +11102,11 @@
 
 </details>
 
+
 ---
 
 ### `AlphaStatusOnTurnBegin`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -10966,7 +11126,6 @@
 
 ### `BossRewards`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11001,6 +11160,7 @@
 
 </details>
 
+
 ---
 
 ### `ChaosBossFlipMidTeleport`
@@ -11019,11 +11179,11 @@
 
 </details>
 
+
 ---
 
 ### `ChaosBossPieces`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11058,6 +11218,7 @@
 
 </details>
 
+
 ---
 
 ### `EliteFlatTint`
@@ -11075,6 +11236,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11094,6 +11256,7 @@
 
 </details>
 
+
 ---
 
 ### `EliteTint`
@@ -11111,6 +11274,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11130,6 +11294,7 @@
 
 </details>
 
+
 ---
 
 ### `ExplodeCharacter_PartyBoss`
@@ -11148,11 +11313,11 @@
 
 </details>
 
+
 ---
 
 ### `FinalBossBeamQueue`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11175,7 +11340,6 @@
 ### `FinalBossBecomeTheChild`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11186,8 +11350,8 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
-| [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic) | Object | Event Trigger: Changes background music track. | 1 |
 | `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |
+| [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic) | Object | Event Trigger: Changes background music track. | 1 |
 
 </details>
 
@@ -11196,7 +11360,6 @@
 
 ### `FinalBossHitCountdownBoris`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11207,9 +11370,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Object | Logic: Forces the execution of a specific ability. | 2 |
 | `icon_ready` | Number | Examples: `803` | 1 |
-| [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
@@ -11220,7 +11383,6 @@
 ### `FinalBossHitCountdownExplosive`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11230,9 +11392,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Object | Logic: Forces the execution of a specific ability. | 2 |
 | `icon_ready` | Number | Examples: `803` | 1 |
-| [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
@@ -11243,7 +11405,6 @@
 ### `FinalBossHitCountdownHoly`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11253,8 +11414,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `icon_ready` | Number | Examples: `803` | 1 |
 | [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |
+| `icon_ready` | Number | Examples: `803` | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
@@ -11264,7 +11425,6 @@
 
 ### `FinalBossPupils`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11276,12 +11436,12 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | Examples: `[ 0 2.5 0 ]` | 1 |
+| [`radius`](./Arrays.md#array-radius) | Number | Distance or area of effect in tiles. | 1 |
 | [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Enum | Examples: `.1` | 1 |
 | [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Enum | Examples: `.05` | 1 |
 | [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Enum | Examples: `.01` | 1 |
 | [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Enum | Examples: `.1` | 1 |
 | [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | Examples: `[ 11 2 11 ]` | 1 |
-| [`radius`](./Arrays.md#array-radius) | Number | Distance or area of effect in tiles. | 1 |
 
 </details>
 
@@ -11304,6 +11464,7 @@
 
 </details>
 
+
 ---
 
 ### `FinalBossShield`
@@ -11322,11 +11483,11 @@
 
 </details>
 
+
 ---
 
 ### `FinalBossShieldHealth`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11348,7 +11509,6 @@
 ### `FinalBossSyncAnimations`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11369,7 +11529,6 @@
 ### `NukeQuestFinalBossModifications`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11379,8 +11538,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`self_damage`](./Arrays.md#array-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 4688 |
+| [`self_damage`](./Arrays.md#array-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Object | Secondary Area of Effect blast parameters. | 68 |
 
 </details>
@@ -11390,7 +11549,6 @@
 
 ### `ScaldingOrbMoonBossOneShot`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11425,6 +11583,7 @@
 
 </details>
 
+
 ---
 
 ### `SpecialBossMultipartInstakill`
@@ -11442,6 +11601,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11461,6 +11621,7 @@
 
 </details>
 
+
 ---
 
 ### `UpgradeTaggedSpawnsToChampions`
@@ -11479,13 +11640,13 @@
 
 </details>
 
+
 ---
 
 ## Uncategorized (406)
 
 ### `AIControlNextTurn`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11520,6 +11681,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityEnableIfConsumedCharacterHasTag`
@@ -11537,6 +11699,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11556,6 +11719,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityEnabledIfNoAggroTarget`
@@ -11573,6 +11737,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11592,6 +11757,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityEnabledOncePerRound`
@@ -11609,6 +11775,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11628,6 +11795,7 @@
 
 </details>
 
+
 ---
 
 ### `AbilityInheritsWeaponEffects`
@@ -11645,6 +11813,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11664,6 +11833,7 @@
 
 </details>
 
+
 ---
 
 ### `Adrenaline`
@@ -11681,6 +11851,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11700,11 +11871,11 @@
 
 </details>
 
+
 ---
 
 ### `AdventureTokenPassivePool`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11749,11 +11920,11 @@
 
 </details>
 
+
 ---
 
 ### `AggroTargetIsGovernedByHitEffect`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11787,6 +11958,7 @@
 
 </details>
 
+
 ---
 
 ### `AlliesTakeExtraTurn`
@@ -11805,11 +11977,11 @@
 
 </details>
 
+
 ---
 
 ### `AllyInfested`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11820,8 +11992,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`faction`](./Enums.md#enum-faction) | Enum | Examples: `allies` | 1 |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedMaggot` | 545 |
+| [`faction`](./Enums.md#enum-faction) | Enum | Examples: `allies` | 1 |
 
 </details>
 
@@ -11844,6 +12016,7 @@
 
 </details>
 
+
 ---
 
 ### `AlwaysHitDifferentTargets`
@@ -11861,6 +12034,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -11880,6 +12054,7 @@
 
 </details>
 
+
 ---
 
 ### `Angel`
@@ -11898,11 +12073,11 @@
 
 </details>
 
+
 ---
 
 ### `ApplyPassives`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11913,14 +12088,14 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Object | Applies the nested status effects when the encounter finishes. | 6 |
-| [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 |
-| [`YOffset`](./Enums.md#enum-yoffset) | Enum | Applies or references the 'YOffset' effect/state. | 6 |
-| `Flying` | Number | Applies or references the 'Flying' effect/state. | 2 |
-| `IgnoreTiles` | Number | Applies or references the 'IgnoreTiles' effect/state. | 12 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 16 |
+| `IgnoreTiles` | Number | Applies or references the 'IgnoreTiles' effect/state. | 12 |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 8 |
 | `KnockbackImmunity` | Number | Applies or references the 'KnockbackImmunity' effect/state. | 6 |
+| [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Object | Applies the nested status effects when the encounter finishes. | 6 |
+| [`YOffset`](./Enums.md#enum-yoffset) | Enum | Applies or references the 'YOffset' effect/state. | 6 |
+| [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 |
+| `Flying` | Number | Applies or references the 'Flying' effect/state. | 2 |
 | `Plant` | Number | Applies or references the 'Plant' effect/state. | 1 |
 
 </details>
@@ -11930,7 +12105,6 @@
 
 ### `ApplyToConsumed`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11952,7 +12126,6 @@
 ### `ApplyToOthersWithSharedTagAndFaction`
 > Found in: *Abilities & Spells, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11962,8 +12135,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Marked`](./Arrays.md#array-marked) | Number | Applies or references the 'Marked' effect/state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -11972,7 +12145,6 @@
 
 ### `ApplyToRandomClosestAlly`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -11993,7 +12165,6 @@
 ### `ApplyToRandomPartyMemberIfPossible`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -12003,8 +12174,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -12013,7 +12184,6 @@
 
 ### `ApplyToTile`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12034,7 +12204,6 @@
 
 ### `ArcLightning`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12072,6 +12241,7 @@
 
 </details>
 
+
 ---
 
 ### `AvoidDamagingCharmedEnemies`
@@ -12089,6 +12259,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12108,6 +12279,7 @@
 
 </details>
 
+
 ---
 
 ### `BackstabFront`
@@ -12125,6 +12297,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12144,6 +12317,7 @@
 
 </details>
 
+
 ---
 
 ### `BearTrapTrail`
@@ -12161,6 +12335,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12180,6 +12355,7 @@
 
 </details>
 
+
 ---
 
 ### `BlackHoleSuck`
@@ -12197,6 +12373,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12216,6 +12393,7 @@
 
 </details>
 
+
 ---
 
 ### `BloatEyePassive2`
@@ -12233,6 +12411,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12252,6 +12431,7 @@
 
 </details>
 
+
 ---
 
 ### `Bloodzerked`
@@ -12270,11 +12450,11 @@
 
 </details>
 
+
 ---
 
 ### `BodyGuard`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12309,6 +12489,7 @@
 
 </details>
 
+
 ---
 
 ### `BombRatTurtle`
@@ -12326,6 +12507,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12345,6 +12527,7 @@
 
 </details>
 
+
 ---
 
 ### `BounceRock`
@@ -12362,6 +12545,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12381,6 +12565,7 @@
 
 </details>
 
+
 ---
 
 ### `BreakAtAux`
@@ -12398,6 +12583,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12417,6 +12603,7 @@
 
 </details>
 
+
 ---
 
 ### `BreakOnElement`
@@ -12434,6 +12621,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12453,11 +12641,11 @@
 
 </details>
 
+
 ---
 
 ### `BungaCheers`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12482,7 +12670,6 @@
 ### `BungaEntrance`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -12493,9 +12680,9 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | `bungawarrior`, `finalboss_clonecat` | 2 |
 | `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 2 |
 | `health_threshold` | Number | Examples: `50, 70` | 2 |
+| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | `bungawarrior`, `finalboss_clonecat` | 2 |
 
 </details>
 
@@ -12518,11 +12705,11 @@
 
 </details>
 
+
 ---
 
 ### `CanApplyToInanimate`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12538,8 +12725,8 @@
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 3 |
 | `GetAggroTarget` | Number | Applies or references the 'GetAggroTarget' effect/state. | 2 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 | `PreventDeathTransforms` | Number | Applies or references the 'PreventDeathTransforms' effect/state. | 1 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |
 
 </details>
 
@@ -12562,6 +12749,7 @@
 
 </details>
 
+
 ---
 
 ### `CancelPrimedAbilities`
@@ -12579,6 +12767,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12598,6 +12787,7 @@
 
 </details>
 
+
 ---
 
 ### `CantCatchDiseases`
@@ -12615,6 +12805,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12634,11 +12825,11 @@
 
 </details>
 
+
 ---
 
 ### `CaveFamilyEnrage`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12649,8 +12840,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |
 | [`count`](./Arrays.md#array-count) | Number | The numerical quantity. | 3 |
 
 </details>
@@ -12674,11 +12865,11 @@
 
 </details>
 
+
 ---
 
 ### `CerberubsAggroTargetBehavior`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12713,11 +12904,11 @@
 
 </details>
 
+
 ---
 
 ### `ChanceToBreakFree`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12753,6 +12944,7 @@
 
 </details>
 
+
 ---
 
 ### `ChangeCatClass`
@@ -12770,6 +12962,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12789,6 +12982,7 @@
 
 </details>
 
+
 ---
 
 ### `ChangeTileOnPop`
@@ -12806,6 +13000,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12825,6 +13020,7 @@
 
 </details>
 
+
 ---
 
 ### `ChangeTilesUnder`
@@ -12843,11 +13039,11 @@
 
 </details>
 
+
 ---
 
 ### `CharacterLightSource`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -12859,8 +13055,8 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`color`](./Arrays.md#array-color) | Array | `black`, `gray`, `white` | 10 |
-| [`size`](./Enums.md#enum-size) | Number | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` | 3 |
 | [`glow`](./Arrays.md#array-glow) | Array | Examples: `[ .7 .8 .9 .5 ], [ .3 .7 1 .5 ], [ 1 1 1 .5 ]` | 8 |
+| [`size`](./Enums.md#enum-size) | Number | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` | 3 |
 
 </details>
 
@@ -12883,6 +13079,7 @@
 
 </details>
 
+
 ---
 
 ### `ClearStarving`
@@ -12900,6 +13097,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12919,6 +13117,7 @@
 
 </details>
 
+
 ---
 
 ### `CockroachSwarm`
@@ -12936,6 +13135,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12955,6 +13155,7 @@
 
 </details>
 
+
 ---
 
 ### `CollideWithThrowTarget`
@@ -12972,6 +13173,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -12991,6 +13193,7 @@
 
 </details>
 
+
 ---
 
 ### `ConjureRandomAbilityFromCat`
@@ -13009,11 +13212,11 @@
 
 </details>
 
+
 ---
 
 ### `Consumed`
 > Found in: *Abilities & Spells, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13031,8 +13234,8 @@
 | `wet` | Boolean | Examples: `false, true` | 8 |
 | `do_not_pop_corpse` | Boolean | Examples: `true` | 7 |
 | [`drop_on_death`](./Enums.md#enum-drop_on_death) | Enum | Examples: `false, true, deferred` | 7 |
-| [`extra_statuses`](./Abilities_and_Spells.md#context-extra_statuses) | Object | Additional generic status applications. | 3 |
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 |
+| [`extra_statuses`](./Abilities_and_Spells.md#context-extra_statuses) | Object | Additional generic status applications. | 3 |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
 | `kill_on_consume` | Boolean | Examples: `true` | 1 |
 | `use_placeholder` | Boolean | Examples: `true` | 1 |
@@ -13058,6 +13261,7 @@
 
 </details>
 
+
 ---
 
 ### `CopyCatPassive_Initializer`
@@ -13075,6 +13279,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13094,11 +13299,11 @@
 
 </details>
 
+
 ---
 
 ### `CopySpells`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13133,6 +13338,7 @@
 
 </details>
 
+
 ---
 
 ### `CountAsCorpse`
@@ -13151,11 +13357,11 @@
 
 </details>
 
+
 ---
 
 ### `CreateGlobalModifiers`
 > Found in: *Abilities & Spells, Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13166,8 +13372,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 2 |
 | `BloodRain` | Number | Applies or references the 'BloodRain' effect/state. | 2 |
+| [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 2 |
 
 </details>
 
@@ -13190,11 +13396,11 @@
 
 </details>
 
+
 ---
 
 ### `CyborgTurns`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13205,8 +13411,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`TakeBonusTurnWithAIControl`](./Miscellaneous.md#context-takebonusturnwithaicontrol) | Object | Examples: `{ ... }` | 1 |
 | `stacks` | Number | Examples: `1` | 1 |
+| [`TakeBonusTurnWithAIControl`](./Miscellaneous.md#context-takebonusturnwithaicontrol) | Object | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -13229,6 +13435,7 @@
 
 </details>
 
+
 ---
 
 ### `DeathwormUnderground`
@@ -13246,6 +13453,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13265,6 +13473,7 @@
 
 </details>
 
+
 ---
 
 ### `DeferVaporize`
@@ -13283,11 +13492,11 @@
 
 </details>
 
+
 ---
 
 ### `DelayCastAbility`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13323,6 +13532,7 @@
 
 </details>
 
+
 ---
 
 ### `DeleteObject`
@@ -13340,6 +13550,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13359,6 +13570,7 @@
 
 </details>
 
+
 ---
 
 ### `DemonicGlyphFrames`
@@ -13376,6 +13588,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13395,6 +13608,7 @@
 
 </details>
 
+
 ---
 
 ### `DemonicGlyph_Bounce`
@@ -13412,6 +13626,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13431,11 +13646,11 @@
 
 </details>
 
+
 ---
 
 ### `DestroyEquipmentAndAttachParasite`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13446,8 +13661,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 1 |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 1 |
 
 </details>
 
@@ -13470,6 +13685,7 @@
 
 </details>
 
+
 ---
 
 ### `DestroyTrinket`
@@ -13487,6 +13703,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13506,6 +13723,7 @@
 
 </details>
 
+
 ---
 
 ### `DestroyWeaponThrow`
@@ -13524,11 +13742,11 @@
 
 </details>
 
+
 ---
 
 ### `DiceBehavior`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13563,11 +13781,11 @@
 
 </details>
 
+
 ---
 
 ### `Die`
 > Found in: *Abilities & Spells, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13578,8 +13796,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 62 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 5118 |
+| [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 62 |
 
 </details>
 
@@ -13602,6 +13820,7 @@
 
 </details>
 
+
 ---
 
 ### `DieViolently`
@@ -13620,11 +13839,11 @@
 
 </details>
 
+
 ---
 
 ### `DiesToElement`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13645,7 +13864,6 @@
 
 ### `DiesToPiercingAndSpikes`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13679,6 +13897,7 @@
 
 </details>
 
+
 ---
 
 ### `DinoLegAnimation`
@@ -13696,6 +13915,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13715,6 +13935,7 @@
 
 </details>
 
+
 ---
 
 ### `DisableSpells`
@@ -13732,6 +13953,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13751,6 +13973,7 @@
 
 </details>
 
+
 ---
 
 ### `Disguised`
@@ -13768,6 +13991,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13787,6 +14011,7 @@
 
 </details>
 
+
 ---
 
 ### `DissolveRandomArmorPiece`
@@ -13804,6 +14029,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13823,11 +14049,11 @@
 
 </details>
 
+
 ---
 
 ### `DoScreenShake`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -13862,6 +14088,7 @@
 
 </details>
 
+
 ---
 
 ### `DoubleCastTaggedSpells`
@@ -13879,6 +14106,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13898,6 +14126,7 @@
 
 </details>
 
+
 ---
 
 ### `DrinkWater`
@@ -13915,6 +14144,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13934,6 +14164,7 @@
 
 </details>
 
+
 ---
 
 ### `DustCloudBehavior`
@@ -13951,6 +14182,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -13970,11 +14202,11 @@
 
 </details>
 
+
 ---
 
 ### `DybbukPossessed`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -14009,6 +14241,7 @@
 
 </details>
 
+
 ---
 
 ### `ElementWeakness`
@@ -14026,6 +14259,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14045,6 +14279,7 @@
 
 </details>
 
+
 ---
 
 ### `EnableWeather`
@@ -14062,6 +14297,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14081,6 +14317,7 @@
 
 </details>
 
+
 ---
 
 ### `Enlarge`
@@ -14098,6 +14335,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14117,6 +14355,7 @@
 
 </details>
 
+
 ---
 
 ### `EventBounterHunterPassive`
@@ -14134,6 +14373,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14153,11 +14393,11 @@
 
 </details>
 
+
 ---
 
 ### `EvolveAbilityFromPool`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -14168,8 +14408,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw the parasite from. | 1 |
 | `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 13 |
+| [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw the parasite from. | 1 |
 
 </details>
 
@@ -14192,6 +14432,7 @@
 
 </details>
 
+
 ---
 
 ### `ExplodeCharacter`
@@ -14209,6 +14450,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14228,6 +14470,7 @@
 
 </details>
 
+
 ---
 
 ### `ExplodeCharacter_DeathBloom2`
@@ -14245,6 +14488,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14264,6 +14508,7 @@
 
 </details>
 
+
 ---
 
 ### `ExplodeCharacter_Party`
@@ -14281,6 +14526,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14300,6 +14546,7 @@
 
 </details>
 
+
 ---
 
 ### `ExplodeCharacter_RockCrusher_PetrifyBreak`
@@ -14317,6 +14564,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14336,6 +14584,7 @@
 
 </details>
 
+
 ---
 
 ### `ExtraDispersedTurns`
@@ -14353,6 +14602,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14372,6 +14622,7 @@
 
 </details>
 
+
 ---
 
 ### `FaceCamera`
@@ -14389,6 +14640,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14408,6 +14660,7 @@
 
 </details>
 
+
 ---
 
 ### `FadeInsteadOfDie`
@@ -14425,6 +14678,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14444,6 +14698,7 @@
 
 </details>
 
+
 ---
 
 ### `FireStorm`
@@ -14461,6 +14716,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14480,6 +14736,7 @@
 
 </details>
 
+
 ---
 
 ### `Flammable`
@@ -14497,6 +14754,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14516,6 +14774,7 @@
 
 </details>
 
+
 ---
 
 ### `FlushmasterCelebration`
@@ -14533,6 +14792,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14552,6 +14812,7 @@
 
 </details>
 
+
 ---
 
 ### `Fog`
@@ -14569,6 +14830,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14588,6 +14850,7 @@
 
 </details>
 
+
 ---
 
 ### `FrankBolts`
@@ -14605,6 +14868,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14624,6 +14888,7 @@
 
 </details>
 
+
 ---
 
 ### `FreeFirstCastEachMatch`
@@ -14641,6 +14906,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14660,11 +14926,11 @@
 
 </details>
 
+
 ---
 
 ### `GainDisorderFromPool`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -14699,6 +14965,7 @@
 
 </details>
 
+
 ---
 
 ### `GasCanBehavior`
@@ -14716,6 +14983,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14735,6 +15003,7 @@
 
 </details>
 
+
 ---
 
 ### `GeminiTwin`
@@ -14752,6 +15021,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14771,6 +15041,7 @@
 
 </details>
 
+
 ---
 
 ### `GenericDebuff`
@@ -14788,6 +15059,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14807,6 +15079,7 @@
 
 </details>
 
+
 ---
 
 ### `GiveBoundItemToTarget`
@@ -14824,6 +15097,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14843,6 +15117,7 @@
 
 </details>
 
+
 ---
 
 ### `GoopWalk`
@@ -14860,6 +15135,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14879,11 +15155,11 @@
 
 </details>
 
+
 ---
 
 ### `Grappling`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -14894,8 +15170,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit_animations`](./Characters_and_Bosses.md#context-exit_animations) | Object | Animations played when leaving a form/state. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |
+| [`exit_animations`](./Characters_and_Bosses.md#context-exit_animations) | Object | Animations played when leaving a form/state. | 1 |
 
 </details>
 
@@ -14918,6 +15194,7 @@
 
 </details>
 
+
 ---
 
 ### `GuillotinaDeathHead`
@@ -14935,6 +15212,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14954,6 +15232,7 @@
 
 </details>
 
+
 ---
 
 ### `HeatWave`
@@ -14971,6 +15250,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -14990,6 +15270,7 @@
 
 </details>
 
+
 ---
 
 ### `Hex`
@@ -15007,6 +15288,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15026,6 +15308,7 @@
 
 </details>
 
+
 ---
 
 ### `HideEquipment`
@@ -15043,6 +15326,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15062,11 +15346,11 @@
 
 </details>
 
+
 ---
 
 ### `HitlerExecute`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15077,8 +15361,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |
 | `threshold` | Number | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 1 |
 
 </details>
@@ -15102,6 +15386,7 @@
 
 </details>
 
+
 ---
 
 ### `IgnoreSelf`
@@ -15119,6 +15404,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15138,11 +15424,11 @@
 
 </details>
 
+
 ---
 
 ### `ImmediateUseAbility`
 > Found in: *Abilities & Spells, Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15177,6 +15463,7 @@
 
 </details>
 
+
 ---
 
 ### `ImmediateUseDirectionalAbility`
@@ -15194,6 +15481,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15213,6 +15501,7 @@
 
 </details>
 
+
 ---
 
 ### `Imprison`
@@ -15230,6 +15519,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15249,6 +15539,7 @@
 
 </details>
 
+
 ---
 
 ### `Instakill`
@@ -15266,6 +15557,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15285,6 +15577,7 @@
 
 </details>
 
+
 ---
 
 ### `JohnnyCriesForWashers`
@@ -15303,11 +15596,11 @@
 
 </details>
 
+
 ---
 
 ### `JohnnyNeedsWashing`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15342,6 +15635,7 @@
 
 </details>
 
+
 ---
 
 ### `JudgementDay`
@@ -15359,6 +15653,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15378,6 +15673,7 @@
 
 </details>
 
+
 ---
 
 ### `KaijuWinCon`
@@ -15396,11 +15692,11 @@
 
 </details>
 
+
 ---
 
 ### `KillEnemyOfTypeAtBattleStart`
 > Found in: *Events & Encounters, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15435,6 +15731,7 @@
 
 </details>
 
+
 ---
 
 ### `LaunchOffScreen`
@@ -15452,6 +15749,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15471,11 +15769,11 @@
 
 </details>
 
+
 ---
 
 ### `LeaveBehind`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15509,6 +15807,7 @@
 
 </details>
 
+
 ---
 
 ### `LoopingSoundWhileAlive`
@@ -15527,11 +15826,11 @@
 
 </details>
 
+
 ---
 
 ### `LowerAmbientLight`
 > Found in: *Abilities & Spells, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15566,6 +15865,7 @@
 
 </details>
 
+
 ---
 
 ### `MakeWeaponUnbreakable`
@@ -15583,6 +15883,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15602,6 +15903,7 @@
 
 </details>
 
+
 ---
 
 ### `ManglerAttack`
@@ -15619,6 +15921,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15638,6 +15941,7 @@
 
 </details>
 
+
 ---
 
 ### `ManglerShuffle`
@@ -15655,6 +15959,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15674,11 +15979,11 @@
 
 </details>
 
+
 ---
 
 ### `Math`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15689,8 +15994,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 2 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 2 |
+| [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 2 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
@@ -15714,6 +16019,7 @@
 
 </details>
 
+
 ---
 
 ### `MeteorShower`
@@ -15731,6 +16037,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15750,11 +16057,11 @@
 
 </details>
 
+
 ---
 
 ### `Metronome`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15789,6 +16096,7 @@
 
 </details>
 
+
 ---
 
 ### `ModelingClayPassive`
@@ -15807,11 +16115,11 @@
 
 </details>
 
+
 ---
 
 ### `ModifyAbility`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15822,8 +16130,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`cost`](./Items_and_Equipment.md#context-cost) | Object | Currency value in shops/merchants. | 3702 |
 | [`meta`](./Items_and_Equipment.md#context-meta) | Object | Object defining UI display data (Name, Description, Icon). | 4719 |
+| [`cost`](./Items_and_Equipment.md#context-cost) | Object | Currency value in shops/merchants. | 3702 |
 
 </details>
 
@@ -15846,6 +16154,7 @@
 
 </details>
 
+
 ---
 
 ### `MonkStances`
@@ -15864,11 +16173,11 @@
 
 </details>
 
+
 ---
 
 ### `MotherGrowController`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15890,7 +16199,6 @@
 ### `MotherTumorPassive`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -15901,9 +16209,9 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Cat`](./Characters_and_Bosses.md#context-cat) | Object | Character Form: Base form for standard cats. | 10 |
-| [`NonCat`](./Characters_and_Bosses.md#context-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 1 |
 | [`considered_forms`](./Arrays.md#array-considered_forms) | Array | Examples: `[ Big BigHolding BigHoldingCat ]` | 1 |
 | [`grow_ability`](./Enums.md#enum-grow_ability) | Enum | `MotherTumorGrow` | 1 |
+| [`NonCat`](./Characters_and_Bosses.md#context-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 1 |
 | [`pass_ani`](./Enums.md#enum-pass_ani) | Enum | `pass` | 1 |
 | [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | `receive` | 1 |
 
@@ -15914,7 +16222,6 @@
 
 ### `Mount`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -15949,6 +16256,7 @@
 
 </details>
 
+
 ---
 
 ### `MuteDemonicGlyphDisplay`
@@ -15966,6 +16274,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -15985,6 +16294,7 @@
 
 </details>
 
+
 ---
 
 ### `NextPlayerCatTakesExtraTurn`
@@ -16002,6 +16312,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16021,11 +16332,11 @@
 
 </details>
 
+
 ---
 
 ### `ObjectDetector`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16060,6 +16371,7 @@
 
 </details>
 
+
 ---
 
 ### `PackHunting`
@@ -16077,6 +16389,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16096,11 +16409,11 @@
 
 </details>
 
+
 ---
 
 ### `PassiveIfStrAuxEquals`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16122,7 +16435,6 @@
 ### `PassiveIfWeaponIsUsable`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -16142,7 +16454,6 @@
 ### `PassiveWhileHasDurability`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -16152,8 +16463,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`MovementReaction`](./Items_and_Equipment.md#context-movementreaction) | Object | Applies or references the 'MovementReaction' effect/state. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -16162,7 +16473,6 @@
 
 ### `PassiveWhileNotTakingTurn`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16173,8 +16483,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Object | Injects a status effect payload that applies whenever the character performs a basic attack. | 178 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -16197,6 +16507,7 @@
 
 </details>
 
+
 ---
 
 ### `PermanentConfusion`
@@ -16214,6 +16525,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16233,6 +16545,7 @@
 
 </details>
 
+
 ---
 
 ### `PersistentElement`
@@ -16250,6 +16563,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16269,6 +16583,7 @@
 
 </details>
 
+
 ---
 
 ### `Plant`
@@ -16286,6 +16601,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16305,6 +16621,7 @@
 
 </details>
 
+
 ---
 
 ### `PoisonLace`
@@ -16323,11 +16640,11 @@
 
 </details>
 
+
 ---
 
 ### `PoolMetronome`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16361,6 +16678,7 @@
 
 </details>
 
+
 ---
 
 ### `PreventSpecificInjury`
@@ -16378,6 +16696,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16397,6 +16716,7 @@
 
 </details>
 
+
 ---
 
 ### `PrioritizeFarAwayTargets`
@@ -16414,6 +16734,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16433,6 +16754,7 @@
 
 </details>
 
+
 ---
 
 ### `PrioritizePlayerCats`
@@ -16450,6 +16772,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16469,6 +16792,7 @@
 
 </details>
 
+
 ---
 
 ### `ProbeCharmed`
@@ -16486,6 +16810,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16505,6 +16830,7 @@
 
 </details>
 
+
 ---
 
 ### `PurgeAll`
@@ -16523,11 +16849,11 @@
 
 </details>
 
+
 ---
 
 ### `QuakeAreaChance`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16538,8 +16864,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | Probability of triggering the quake. | 1 |
 | [`radius`](./Arrays.md#array-radius) | Number | The tile radius of the quake. | 2 |
+| [`chance`](./Enums.md#enum-chance) | Number | Probability of triggering the quake. | 1 |
 
 </details>
 
@@ -16562,6 +16888,7 @@
 
 </details>
 
+
 ---
 
 ### `RandomLightning`
@@ -16579,6 +16906,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16598,6 +16926,7 @@
 
 </details>
 
+
 ---
 
 ### `RandomWeatherEachFight`
@@ -16615,6 +16944,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16634,6 +16964,7 @@
 
 </details>
 
+
 ---
 
 ### `RealTimePressure`
@@ -16651,6 +16982,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16670,11 +17002,11 @@
 
 </details>
 
+
 ---
 
 ### `ReflectProjectiles`
 > Found in: *Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16695,7 +17027,6 @@
 ### `RefreshEquipmentAbilityOnElement`
 > Found in: *Items & Equipment, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -16705,8 +17036,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 | [`text`](./Strings.md#string-text) | String | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` | 13 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
 
@@ -16729,6 +17060,7 @@
 
 </details>
 
+
 ---
 
 ### `RefreshOncePerFightAbilities`
@@ -16746,6 +17078,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16765,6 +17098,7 @@
 
 </details>
 
+
 ---
 
 ### `Regurge`
@@ -16782,6 +17116,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16801,6 +17136,7 @@
 
 </details>
 
+
 ---
 
 ### `ReloadOnAllyDies`
@@ -16818,6 +17154,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16837,6 +17174,7 @@
 
 </details>
 
+
 ---
 
 ### `RepairAll`
@@ -16854,6 +17192,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16873,6 +17212,7 @@
 
 </details>
 
+
 ---
 
 ### `RepairArmorCondition`
@@ -16890,6 +17230,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -16909,6 +17250,7 @@
 
 </details>
 
+
 ---
 
 ### `ReplaceBasicAttack_Mutation`
@@ -16927,11 +17269,11 @@
 
 </details>
 
+
 ---
 
 ### `ReplaceSpell`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16966,6 +17308,7 @@
 
 </details>
 
+
 ---
 
 ### `ReturnDinoLegs`
@@ -16984,11 +17327,11 @@
 
 </details>
 
+
 ---
 
 ### `ReviveNextRound`
 > Found in: *Abilities & Spells, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -16999,9 +17342,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |
 | `revive_health` | Number | The flat amount of health to revive with. | 3 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
-| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 
@@ -17026,6 +17369,7 @@
 
 </details>
 
+
 ---
 
 ### `RockyArmorSalvage`
@@ -17043,6 +17387,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17062,6 +17407,7 @@
 
 </details>
 
+
 ---
 
 ### `Sandstorm`
@@ -17080,11 +17426,11 @@
 
 </details>
 
+
 ---
 
 ### `ScalingAttackAnimation`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17119,6 +17465,7 @@
 
 </details>
 
+
 ---
 
 ### `ScrambleEverything`
@@ -17137,11 +17484,11 @@
 
 </details>
 
+
 ---
 
 ### `ScrambleLastUsedSpell`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17175,6 +17522,7 @@
 
 </details>
 
+
 ---
 
 ### `SelfStun`
@@ -17192,6 +17540,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17211,6 +17560,7 @@
 
 </details>
 
+
 ---
 
 ### `SerratedClaws`
@@ -17229,11 +17579,11 @@
 
 </details>
 
+
 ---
 
 ### `SetAnimationAlts`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17254,7 +17604,6 @@
 
 ### `SetCrazyEyeBackgroundWeights`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17288,11 +17637,11 @@
 
 </details>
 
+
 ---
 
 ### `SetItemAux`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17303,8 +17652,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`slot`](./Enums.md#enum-slot) | Enum | Equipment slot (weapon, hat, face, chest, etc.). | 3 |
 | [`value`](./Math_Equations.md) | Equation | `cha`, `con`, `dex`, `int`, `item_aux+1` | 485 |
+| [`slot`](./Enums.md#enum-slot) | Enum | Equipment slot (weapon, hat, face, chest, etc.). | 3 |
 
 </details>
 
@@ -17327,6 +17676,7 @@
 
 </details>
 
+
 ---
 
 ### `Shatter`
@@ -17344,6 +17694,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17363,6 +17714,7 @@
 
 </details>
 
+
 ---
 
 ### `ShootHereReceiver`
@@ -17380,6 +17732,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17399,6 +17752,7 @@
 
 </details>
 
+
 ---
 
 ### `ShowText`
@@ -17417,11 +17771,11 @@
 
 </details>
 
+
 ---
 
 ### `SkipFirstRounds`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17443,7 +17797,6 @@
 ### `SlotMachineRollPool`
 > Found in: *Characters & Bosses, Miscellaneous*
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -17453,8 +17806,8 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `SlotResult_Jackpot_Coins` | Number | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 2 |
 | `SlotResult_Explode` | Number | Applies or references the 'SlotResult_Explode' effect/state. | 2 |
+| `SlotResult_Jackpot_Coins` | Number | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 2 |
 | `SlotResult_Nothing` | Number | Applies or references the 'SlotResult_Nothing' effect/state. | 1 |
 | `SlotResult_RandomPickup` | Number | Applies or references the 'SlotResult_RandomPickup' effect/state. | 1 |
 
@@ -17479,11 +17832,11 @@
 
 </details>
 
+
 ---
 
 ### `SmartMetronome`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17518,11 +17871,11 @@
 
 </details>
 
+
 ---
 
 ### `Snow`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17533,11 +17886,11 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Snow` | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | Examples: `amb_snow.ogg` | 13 |
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Snow` | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array | Examples: `[ Snow ]` | 1 |
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_snow` | 1 |
 | `prewarm` | Number | Examples: `20` | 1 |
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_snow` | 1 |
 
 </details>
 
@@ -17546,7 +17899,6 @@
 
 ### `SolarFlare`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17558,8 +17910,8 @@
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`effects`](./Miscellaneous.md#context-effects) | Object | Examples: `{ ... }` | 62 |
-| [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ]` | 1 |
 | [`damage`](./Arrays.md#array-damage) | Number | Examples: `5` | 2 |
+| [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ]` | 1 |
 
 </details>
 
@@ -17582,11 +17934,11 @@
 
 </details>
 
+
 ---
 
 ### `SpecialGodRays`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17620,11 +17972,11 @@
 
 </details>
 
+
 ---
 
 ### `SpewerAltGraphics`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17635,12 +17987,12 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `FireFull` | Number | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
-| `Fire` | Number | Character Form: Behavior and stats for the 'Fire' state. | 6 |
-| `NormalFull` | Number | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
 | `Normal` | Number | Character Form: Behavior and stats for the 'Normal' state. | 24 |
-| `TarFull` | Number | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
+| `Fire` | Number | Character Form: Behavior and stats for the 'Fire' state. | 6 |
+| `FireFull` | Number | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
+| `NormalFull` | Number | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
 | `Tar` | Number | Character Form: Behavior and stats for the 'Tar' state. | 1 |
+| `TarFull` | Number | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
 
 </details>
 
@@ -17663,6 +18015,7 @@
 
 </details>
 
+
 ---
 
 ### `SpitConsumed`
@@ -17680,6 +18033,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17699,11 +18053,11 @@
 
 </details>
 
+
 ---
 
 ### `StackingFlowerTrail`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17738,6 +18092,7 @@
 
 </details>
 
+
 ---
 
 ### `StanceSwitchToMelee`
@@ -17755,6 +18110,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17774,6 +18130,7 @@
 
 </details>
 
+
 ---
 
 ### `StartOffMap`
@@ -17791,6 +18148,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17810,6 +18168,7 @@
 
 </details>
 
+
 ---
 
 ### `SurviveAt1HP`
@@ -17827,6 +18186,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17846,11 +18206,11 @@
 
 </details>
 
+
 ---
 
 ### `SwapWeapon`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17870,7 +18230,6 @@
 
 ### `SwitchMusic`
 > Found in: *Abilities & Spells, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -17906,6 +18265,7 @@
 
 </details>
 
+
 ---
 
 ### `T2CopyCat`
@@ -17923,6 +18283,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -17942,6 +18303,7 @@
 
 </details>
 
+
 ---
 
 ### `TVBotDisableSpells`
@@ -17960,11 +18322,11 @@
 
 </details>
 
+
 ---
 
 ### `TVBotScreen`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18003,6 +18365,7 @@
 
 </details>
 
+
 ---
 
 ### `TagMetronome`
@@ -18020,6 +18383,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18039,6 +18403,7 @@
 
 </details>
 
+
 ---
 
 ### `Tall`
@@ -18057,11 +18422,11 @@
 
 </details>
 
+
 ---
 
 ### `Tangled`
 > Found in: *Abilities & Spells, Events & Encounters, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18096,6 +18461,7 @@
 
 </details>
 
+
 ---
 
 ### `Taunting`
@@ -18114,11 +18480,11 @@
 
 </details>
 
+
 ---
 
 ### `TeamCastAbility`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18152,6 +18518,7 @@
 
 </details>
 
+
 ---
 
 ### `TempBackstab`
@@ -18169,6 +18536,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18188,6 +18556,7 @@
 
 </details>
 
+
 ---
 
 ### `TempBackstabPiercing`
@@ -18205,6 +18574,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18224,11 +18594,11 @@
 
 </details>
 
+
 ---
 
 ### `TempPassiveUntilSettled`
 > Found in: *Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18262,11 +18632,11 @@
 
 </details>
 
+
 ---
 
 ### `TerminatorSkin`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18301,11 +18671,11 @@
 
 </details>
 
+
 ---
 
 ### `TinkererBasicAttackSwitching`
 > Found in: *Cat Classes, Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18326,7 +18696,6 @@
 
 ### `TintItem`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18362,6 +18731,7 @@
 
 </details>
 
+
 ---
 
 ### `TossTargetIsAggroTarget`
@@ -18379,6 +18749,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18398,6 +18769,7 @@
 
 </details>
 
+
 ---
 
 ### `TrackAmountKilledByPlayer`
@@ -18415,6 +18787,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18434,6 +18807,7 @@
 
 </details>
 
+
 ---
 
 ### `TrailBlazer`
@@ -18452,11 +18826,11 @@
 
 </details>
 
+
 ---
 
 ### `Trapper`
 > Found in: *Characters & Bosses, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18493,11 +18867,11 @@
 
 </details>
 
+
 ---
 
 ### `TunnelVision`
 > Found in: *Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18531,6 +18905,7 @@
 
 </details>
 
+
 ---
 
 ### `TurnControlDelay`
@@ -18548,6 +18923,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18567,6 +18943,7 @@
 
 </details>
 
+
 ---
 
 ### `Uncontrollable`
@@ -18584,6 +18961,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18603,6 +18981,7 @@
 
 </details>
 
+
 ---
 
 ### `UnlockOrientation`
@@ -18621,11 +19000,11 @@
 
 </details>
 
+
 ---
 
 ### `UseAbility`
 > Found in: *Abilities & Spells, Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18658,6 +19037,7 @@
 
 </details>
 
+
 ---
 
 ### `Vaporize`
@@ -18675,6 +19055,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18694,6 +19075,7 @@
 
 </details>
 
+
 ---
 
 ### `VaporizeCorpseFlipAdvantage`
@@ -18711,6 +19093,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18730,6 +19113,7 @@
 
 </details>
 
+
 ---
 
 ### `VaporizeInanimate`
@@ -18747,6 +19131,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18766,6 +19151,7 @@
 
 </details>
 
+
 ---
 
 ### `VisualFX`
@@ -18783,6 +19169,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18802,11 +19189,11 @@
 
 </details>
 
+
 ---
 
 ### `WaggleClone`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18817,9 +19204,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `cWaggle` | Flag |  | 2 |
 | `cWaggle2x2` | Flag |  | 2 |
 | `cWaggle3x3` | Flag |  | 1 |
-| `cWaggle` | Flag |  | 2 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
@@ -18843,6 +19230,7 @@
 
 </details>
 
+
 ---
 
 ### `Webbed`
@@ -18860,6 +19248,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18879,6 +19268,7 @@
 
 </details>
 
+
 ---
 
 ### `WideBackstab`
@@ -18897,11 +19287,11 @@
 
 </details>
 
+
 ---
 
 ### `Windy`
 > Found in: *Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -18912,11 +19302,11 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Windy` | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | Examples: `amb_windy.ogg` | 13 |
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Windy` | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array | Examples: `[ WindFull ]` | 1 |
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_windy` | 1 |
 | `prewarm` | Number | Examples: `5` | 1 |
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_windy` | 1 |
 
 </details>
 
@@ -18939,6 +19329,7 @@
 
 </details>
 
+
 ---
 
 ### `XIsCountDeaths`
@@ -18956,6 +19347,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -18975,6 +19367,7 @@
 
 </details>
 
+
 ---
 
 ### `XIsIncreaseEachTurn`
@@ -18992,6 +19385,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -19011,6 +19405,7 @@
 
 </details>
 
+
 ---
 
 ### `XIsLivingCharactersWithTag`
@@ -19028,6 +19423,7 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---
 
@@ -19047,11 +19443,11 @@
 
 </details>
 
+
 ---
 
 ### `XIsSpellStormRampAndReset`
 > Found in: *Abilities & Spells, Miscellaneous*
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -19086,6 +19482,7 @@
 
 </details>
 
+
 ---
 
 ### `Zombie`
@@ -19103,5 +19500,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
+
 
 ---

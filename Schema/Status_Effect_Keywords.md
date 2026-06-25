@@ -2,10 +2,10 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-
 ## Status Effect Keywords
 
 > **Associated Files:** `data/keyword_tooltips.gon`
+
 
 ### Object: `ROOT`
 
@@ -16,11 +16,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| `icon_frame` | Integer |  | 128 |
 | [`tooltip_stackless`](./Strings.md#string-tooltip_stackless) | String |  | 76 |
 | [`tooltip_stacks`](./Strings.md#string-tooltip_stacks) | String |  | 69 |
 | [`alias`](./Enums.md#enum-alias) | Enum |  | 57 |
-| `icon_frame` | Integer |  | 128 |
 | [`tooltip_stacks_singular`](./Strings.md#string-tooltip_stacks_singular) | String |  | 15 |
 | [`tooltip_stacks_neg`](./Strings.md#string-tooltip_stacks_neg) | String |  | 13 |
 | [`name_stacks_neg`](./Strings.md#string-name_stacks_neg) | String |  | 11 |
@@ -29,8 +28,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip_reference_applier`](./Strings.md#string-tooltip_reference_applier) | String |  | 3 |
 | [`tooltip_stackless_neg`](./Strings.md#string-tooltip_stackless_neg) | String |  | 3 |
 | [`tooltip_stackless_pos`](./Strings.md#string-tooltip_stackless_pos) | String |  | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
+
 
 ---
 

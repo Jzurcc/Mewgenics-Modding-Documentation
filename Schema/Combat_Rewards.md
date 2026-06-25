@@ -2,19 +2,118 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-
 ## Combat Rewards
 
 > **Associated Files:** `data/combat_reward_table.gon`
 
-### Object: `boss`
+---
 
+---
+
+---
+
+---
+
+---
+
+---
+
+### Object: `1`
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `coins_bonus` | Float |  | 4 |
+| `food_bonus` | Float |  | 4 |
+| [`boss`](#object-boss) | Object |  | 3 |
+| [`hard`](#object-hard) | Object |  | 3 |
+| [`miniboss`](#object-miniboss) | Object |  | 3 |
+| [`normal`](#object-normal) | Object |  | 3 |
+| `chapters` | Object |  | 1 |
+
+</details>
+
+
+### Object: `2`
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `coins_bonus` | Float |  | 4 |
+| `food_bonus` | Float |  | 4 |
+| [`boss`](#object-boss) | Object |  | 3 |
+| [`hard`](#object-hard) | Object |  | 3 |
+| [`miniboss`](#object-miniboss) | Object |  | 3 |
+| [`normal`](#object-normal) | Object |  | 3 |
+| `chapters` | Object |  | 1 |
+
+</details>
+
+
+### Object: `3`
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `coins_bonus` | Float |  | 4 |
+| `food_bonus` | Float |  | 4 |
+| [`boss`](#object-boss) | Object |  | 3 |
+| [`hard`](#object-hard) | Object |  | 3 |
+| [`miniboss`](#object-miniboss) | Object |  | 3 |
+| [`normal`](#object-normal) | Object |  | 3 |
+| `chapters` | Object |  | 1 |
+
+</details>
+
+
+### Object: `4`
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`boss`](#object-boss) | Object |  | 3 |
+| `coins_bonus` | Float |  | 3 |
+| `food_bonus` | Float |  | 3 |
+| [`hard`](#object-hard) | Object |  | 3 |
+| [`miniboss`](#object-miniboss) | Object |  | 3 |
+| [`normal`](#object-normal) | Object |  | 3 |
+
+</details>
+
+
+---
+
+
+### Object: `boss`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 33
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -23,22 +122,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | `item_chance` | Float |  | 6 |
 
 </details>
 
----
 
 ### Object: `hard`
-
 
 
 **Definition:** No definition provided.  
 **Total Count:** 21
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -47,22 +143,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
 
----
 
 ### Object: `miniboss`
-
 
 
 **Definition:** No definition provided.  
 **Total Count:** 13
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -71,22 +164,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
 
----
 
 ### Object: `normal`
-
 
 
 **Definition:** Character Form: Behavior and stats for the \'Normal\' state.  
 **Total Count:** 12
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -95,114 +185,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
+
 
 ---
 
 ### Numerical Objects
 
 > The following objects are numeric keys or array indices.
-
-### Object: `1`
-
-
-
-**Definition:** No definition provided.  
-**Total Count:** 4
-
-
-<details>
-<summary><b>Expand</b></summary
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float |  | 4 |
-| `food_bonus` | Float |  | 4 |
-| [`boss`](#object-boss) | Object |  | 3 |
-| [`hard`](#object-hard) | Object |  | 3 |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |
-| [`normal`](#object-normal) | Object |  | 3 |
-| `chapters` | Object |  | 1 |
-
-</details>
-
----
-
-### Object: `2`
-
-
-
-**Definition:** No definition provided.  
-**Total Count:** 4
-
-
-<details>
-<summary><b>Expand</b></summary
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float |  | 4 |
-| `food_bonus` | Float |  | 4 |
-| [`boss`](#object-boss) | Object |  | 3 |
-| [`hard`](#object-hard) | Object |  | 3 |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |
-| [`normal`](#object-normal) | Object |  | 3 |
-| `chapters` | Object |  | 1 |
-
-</details>
-
----
-
-### Object: `3`
-
-
-
-**Definition:** No definition provided.  
-**Total Count:** 4
-
-
-<details>
-<summary><b>Expand</b></summary
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float |  | 4 |
-| `food_bonus` | Float |  | 4 |
-| [`boss`](#object-boss) | Object |  | 3 |
-| [`hard`](#object-hard) | Object |  | 3 |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |
-| [`normal`](#object-normal) | Object |  | 3 |
-| `chapters` | Object |  | 1 |
-
-</details>
-
----
-
-### Object: `4`
-
-
-
-**Definition:** No definition provided.  
-**Total Count:** 3
-
-
-<details>
-<summary><b>Expand</b></summary
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`boss`](#object-boss) | Object |  | 3 |
-| [`hard`](#object-hard) | Object |  | 3 |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |
-| [`normal`](#object-normal) | Object |  | 3 |
-| `coins_bonus` | Float |  | 3 |
-| `food_bonus` | Float |  | 3 |
-
-</details>
-
----
-
