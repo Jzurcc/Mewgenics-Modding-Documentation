@@ -27,54 +27,68 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 </details>
 
+---
+
+### Object: `Item`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 37
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`common_item`](./Shops.md#context-common_item), [`consumable`](./Shops.md#context-consumable), [`empty`](./Shops.md#context-empty), [`item`](./Shops.md#context-item), [`mandatory`](./Shops.md#context-mandatory), [`mostly_food`](./Shops.md#context-mostly_food), [`pool`](./Shops.md#context-pool), [`treasure`](./Shops.md#context-treasure)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`pool`](./Enums.md#enum-pool) | Enum | Examples: `rare, shop_common, treasure_easy` | 18 |
+| `cost` | Number | Examples: `0, 15, 10` | 21 |
+| `mandatory` | Boolean | Examples: `true` | 14 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+
+</details>
 
 ---
 
----
+### Object: `meta`
 
----
 
----
 
----
+**Definition:** Object defining UI display data (Name, Description, Icon).  
+**Total Count:** 25
 
----
 
----
+<details>
+<summary><b>Expand</b></summary>
 
----
+> **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
----
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`movieclip`](./Enums.md#enum-movieclip) | Enum | Examples: `Shop, JackOffice, TreasureRoom` | 25 |
+| `treasure_room` | Boolean | Examples: `true` | 14 |
+| `delay_enable_tooltips` | Boolean | Examples: `true` | 7 |
+| `keeper` | Number | Examples: `0` | 7 |
+| [`npc_script`](./Enums.md#enum-npc_script) | Enum | Examples: `tracy_adventure_shop_script.gon` | 7 |
+| [`shopkeeper_fights`](./Arrays.md#array-shopkeeper_fights) | Array | Examples: `[ test.lvl ]` | 7 |
+| `house_shop` | Boolean | Examples: `true` | 4 |
+| [`welcome_message`](./Enums.md#enum-welcome_message) | Enum | Examples: `welcome_water, welcome_water_cheap` | 2 |
+| `pick_n` | Number | Examples: `1` | 1 |
 
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
+</details>
 
 ---
 
 ### Object: `breakdown`
 
 
+
 **Definition:** No definition provided.  
 **Total Count:** 24
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -95,228 +109,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 </details>
 
-
-### Object: `breakdown2`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `common_item` | Number | Examples: `1` | 2 |
-| `consumable` | Number | Examples: `1` | 2 |
-| `guaranteed_food` | Number | Examples: `1` | 2 |
-| `mostly_food` | Number | Examples: `1` | 2 |
-| `item` | Number | Examples: `1` | 1 |
-
-</details>
-
-
-### Object: `breakdown3`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `common_item` | Number | Examples: `2` | 2 |
-| `consumable` | Number | Examples: `1` | 2 |
-| `guaranteed_food` | Number | Examples: `1` | 2 |
-| `item` | Number | Examples: `1` | 1 |
-
-</details>
-
-
-### Object: `breakdown4`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `common_item` | Number | Examples: `2` | 2 |
-| `consumable` | Number | Examples: `1` | 2 |
-| `guaranteed_food` | Number | Examples: `1` | 2 |
-| `item` | Number | Examples: `2, 1` | 2 |
-
-</details>
-
-
-### Object: `button_nav`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 7
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 7 |
-
-</details>
-
-
-### Object: `common_item`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
-
-</details>
-
-
-### Object: `consumable`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
-
-</details>
-
-
-### Object: `empty`
-
-
-**Definition:** Character Form: Behavior and stats for the \'Empty\' state.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 1 |
-
-</details>
-
-
 ---
-
-### Object: `Food`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 4
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`guaranteed_food`](./Shops.md#context-guaranteed_food), [`mostly_food`](./Shops.md#context-mostly_food)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `allow_duplicates` | Boolean | Examples: `true` | 4 |
-| `amount` | Number | Examples: `10` | 4 |
-| `cost` | Number | Examples: `5` | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-
-</details>
-
-
-### Object: `guaranteed_food`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Food`](./Shops.md#context-food) | Object | Examples: `{ ... }` | 2 |
-
-</details>
-
-
-### Object: `Item`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 37
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`common_item`](./Shops.md#context-common_item), [`consumable`](./Shops.md#context-consumable), [`empty`](./Shops.md#context-empty), [`item`](./Shops.md#context-item), [`mandatory`](./Shops.md#context-mandatory), [`mostly_food`](./Shops.md#context-mostly_food), [`pool`](./Shops.md#context-pool), [`treasure`](./Shops.md#context-treasure)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cost` | Number | Examples: `0, 15, 10` | 21 |
-| [`pool`](./Enums.md#enum-pool) | Enum | Examples: `rare, shop_common, treasure_easy` | 18 |
-| `mandatory` | Boolean | Examples: `true` | 14 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-
-</details>
-
-
-### Object: `item`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
-
-</details>
-
 
 ### Object: `item_groups`
 
 
+
 **Definition:** No definition provided.  
 **Total Count:** 24
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -338,54 +139,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 </details>
 
+---
 
-### Object: `item_rarity_costs`
+### Object: `treasure`
 
-
-**Definition:** No definition provided.  
-**Total Count:** 9
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `consumable_common` | Number | Examples: `3, 5, 10` | 9 |
-| `consumable_rare` | Number | Examples: `20, 8, 10` | 9 |
-| `consumable_uncommon` | Number | Examples: `14, 5, 7` | 9 |
-| `consumable_very_rare` | Number | Examples: `12, 40, 20` | 9 |
-| `uncommon` | Number | Examples: `20, 8, 10` | 9 |
-| `very_rare` | Number | Examples: `80, 40, 15` | 9 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-
-</details>
-
-
-### Object: `LevelUp`
 
 
 **Definition:** No definition provided.  
-**Total Count:** 3
+**Total Count:** 14
 
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`levelup`](./Shops.md#context-levelup)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cost` | Number | Examples: `10` | 3 |
-
-</details>
-
-
-### Object: `levelup`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 3
 
 <details>
 <summary><b>Expand</b></summary>
@@ -394,16 +156,88 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`LevelUp`](./Shops.md#context-levelup) | Object | Examples: `{ ... }` | 3 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 14 |
 
 </details>
 
+---
+
+### Object: `item_rarity_costs`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 9
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| `consumable_common` | Number | Examples: `3, 5, 10` | 9 |
+| `consumable_rare` | Number | Examples: `20, 8, 10` | 9 |
+| `consumable_uncommon` | Number | Examples: `14, 5, 7` | 9 |
+| `consumable_very_rare` | Number | Examples: `12, 40, 20` | 9 |
+| `uncommon` | Number | Examples: `20, 8, 10` | 9 |
+| `very_rare` | Number | Examples: `80, 40, 15` | 9 |
+
+</details>
+
+---
+
+### Object: `button_nav`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 7 |
+
+</details>
+
+---
+
+### Object: `pool`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 10 |
+
+</details>
+
+---
 
 ### Object: `mandatory`
 
 
+
 **Definition:** No definition provided.  
 **Total Count:** 5
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -417,12 +251,81 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 </details>
 
+---
 
-### Object: `meta`
+### Object: `Food`
 
 
-**Definition:** Object defining UI display data (Name, Description, Icon).  
-**Total Count:** 25
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`guaranteed_food`](./Shops.md#context-guaranteed_food), [`mostly_food`](./Shops.md#context-mostly_food)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `allow_duplicates` | Boolean | Examples: `true` | 4 |
+| `amount` | Number | Examples: `10` | 4 |
+| `cost` | Number | Examples: `5` | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+
+</details>
+
+---
+
+### Object: `LevelUp`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`levelup`](./Shops.md#context-levelup)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `cost` | Number | Examples: `10` | 3 |
+
+</details>
+
+---
+
+### Object: `levelup`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`LevelUp`](./Shops.md#context-levelup) | Object | Examples: `{ ... }` | 3 |
+
+</details>
+
+---
+
+### Object: `breakdown2`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -431,24 +334,155 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`movieclip`](./Enums.md#enum-movieclip) | Enum | Examples: `Shop, JackOffice, TreasureRoom` | 25 |
-| `treasure_room` | Boolean | Examples: `true` | 14 |
-| `delay_enable_tooltips` | Boolean | Examples: `true` | 7 |
-| `keeper` | Number | Examples: `0` | 7 |
-| [`npc_script`](./Enums.md#enum-npc_script) | Enum | Examples: `tracy_adventure_shop_script.gon` | 7 |
-| [`shopkeeper_fights`](./Arrays.md#array-shopkeeper_fights) | Array | Examples: `[ test.lvl ]` | 7 |
-| `house_shop` | Boolean | Examples: `true` | 4 |
-| [`welcome_message`](./Enums.md#enum-welcome_message) | Enum | Examples: `welcome_water, welcome_water_cheap` | 2 |
-| `pick_n` | Number | Examples: `1` | 1 |
+| `common_item` | Number | Examples: `1` | 2 |
+| `consumable` | Number | Examples: `1` | 2 |
+| `guaranteed_food` | Number | Examples: `1` | 2 |
+| `mostly_food` | Number | Examples: `1` | 2 |
+| `item` | Number | Examples: `1` | 1 |
 
 </details>
 
+---
 
-### Object: `mostly_food`
+### Object: `breakdown3`
+
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `common_item` | Number | Examples: `2` | 2 |
+| `consumable` | Number | Examples: `1` | 2 |
+| `guaranteed_food` | Number | Examples: `1` | 2 |
+| `item` | Number | Examples: `1` | 1 |
+
+</details>
+
+---
+
+### Object: `breakdown4`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `common_item` | Number | Examples: `2` | 2 |
+| `consumable` | Number | Examples: `1` | 2 |
+| `guaranteed_food` | Number | Examples: `1` | 2 |
+| `item` | Number | Examples: `2, 1` | 2 |
+
+</details>
+
+---
+
+### Object: `common_item`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
+
+</details>
+
+---
+
+### Object: `consumable`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
+
+</details>
+
+---
+
+### Object: `guaranteed_food`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Food`](./Shops.md#context-food) | Object | Examples: `{ ... }` | 2 |
+
+</details>
+
+---
+
+### Object: `item`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
+
+</details>
+
+---
+
+### Object: `mostly_food`
+
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -462,12 +496,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 </details>
 
+---
 
-### Object: `pool`
+### Object: `empty`
 
 
-**Definition:** No definition provided.  
-**Total Count:** 6
+
+**Definition:** Character Form: Behavior and stats for the \'Empty\' state.  
+**Total Count:** 1
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -476,26 +513,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 10 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 1 |
 
 </details>
 
-
-### Object: `treasure`
-
-
-**Definition:** No definition provided.  
-**Total Count:** 14
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 14 |
-
-</details>
-
-
+---

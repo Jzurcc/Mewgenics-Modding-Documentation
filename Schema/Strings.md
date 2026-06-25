@@ -7,7 +7,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ## Strings Dictionary
 
 ### String: `name`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4091,7 +4090,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `desc`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8037,7 +8035,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `prompt`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -9628,7 +9625,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10177,7 +10173,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `label`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10410,7 +10405,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `type_icon`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10440,7 +10434,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `title`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10629,7 +10622,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_stacks`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10715,7 +10707,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `reward_text`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10754,7 +10745,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `animation_suffix`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10812,7 +10802,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `form`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10870,7 +10859,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_stackless`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10940,7 +10928,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `cutscene`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10976,7 +10963,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `override_end_option_prompt`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11006,7 +10992,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `#include`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11024,7 +11009,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `text`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11055,7 +11039,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `description`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11086,7 +11069,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `partial_animation_suffix`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11114,7 +11096,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_stacks_neg`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11144,7 +11125,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_stacks_singular`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11174,7 +11154,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `name_stacks_neg`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11202,7 +11181,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `desc_multiclass`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11229,7 +11207,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `name_mod`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11256,7 +11233,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_stacks_pos`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11283,7 +11259,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `savefile_string`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11309,7 +11284,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `ability_icon`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11333,7 +11307,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `icon_damage_display`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11355,7 +11328,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `spawnin_animation`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11374,7 +11346,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `ShowText`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11394,7 +11365,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `name_reference_applier`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11414,7 +11384,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_reference_applier`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11434,7 +11403,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_stackless_neg`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11454,7 +11422,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `animation`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11473,7 +11440,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `battle`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11492,7 +11458,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `icon_damage_display_suffix`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11511,7 +11476,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `image`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11529,7 +11493,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `primed_alt_animation`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11547,7 +11510,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `tooltip_stackless_pos`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11566,7 +11528,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `SetBrittleImmune`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11584,7 +11545,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `SetFragileImmune`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11602,7 +11562,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `damage`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11620,7 +11579,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `debug`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11638,7 +11596,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `format`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11656,7 +11613,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `format2`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11674,7 +11630,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `icon_shell_frame`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11692,7 +11647,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `next_fight_from_set`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11708,7 +11662,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `spawn_side`
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -11726,7 +11679,6 @@ This document provides exhaustive lists of all pure string values found in the b
 ---
 
 ### String: `suffix`
-
 <details>
 <summary><b>Expand</b></summary>
 

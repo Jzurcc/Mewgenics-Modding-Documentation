@@ -27,15 +27,17 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 87 |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 82 |
 | [`SpawnOnDeath`](./Enums.md#enum-spawnondeath) | Object | Event Trigger: Spawns a specific entity when killed. | 81 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`MeleeRevengeDamage`](#meleerevengedamage) | Object | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 71 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies or references the 'Fear' effect/state. | 59 |
 | [`StatusEachTurnEnd`](#statuseachturnend) | Object | Applies or references the 'StatusEachTurnEnd' effect/state. | 57 |
-| [`passives`](#passives) | Object | Examples: `{ ... }` | 53 |
 | [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum | Applies or references the 'SpawnOnBattleStart' effect/state. | 53 |
 | [`StatusOnBattleEnd`](#statusonbattleend) | Object | Applies the nested status effects when the encounter finishes. | 53 |
+| [`passives`](#passives) | Object | Examples: `{ ... }` | 53 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 52 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 48 |
 | `Robot` | Integer | Character Form: Behavior and stats for the 'Robot' state. | 48 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`StatusOnTookDamage`](#statusontookdamage) | Object | Event Trigger: Applies nested statuses when took damage. | 46 |
 | `RandomArmorPickup` | Number | Applies or references the 'RandomArmorPickup' effect/state. | 43 |
 | [`StatusOnKill`](#statusonkill) | Object | Event Trigger: Applies statuses when this action occurs. | 40 |
@@ -49,21 +51,21 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`FormChangeWhileHasStatus`](#formchangewhilehasstatus) | Object | Logic: Changes form automatically while possessing a specific status. | 35 |
 | [`RevengeDamage`](#revengedamage) | Object | Reaction trigger: Deals damage to the attacker when hit. | 31 |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 30 |
-| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 30 |
 | [`EliteTint`](./Arrays.md#array-elitetint) | Array | Examples: `[ .4 .4 .4 ], [ .6 .6 .6 .50 ], red` | 30 |
+| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 30 |
 | `DodgeChance` | Integer | Examples: `2, 5, 10` | 29 |
 | `AddBonusRange` | Integer | Applies or references the 'AddBonusRange' effect/state. | 28 |
 | `KineticSpikes` | Number | Applies or references the 'KineticSpikes' effect/state. | 28 |
 | [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum | Applies the 'MulticlassLevelUp' effect. | 28 |
-| `knockback` | Integer | The base physics pushing power (in tiles). | 27 |
 | [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 27 |
+| `knockback` | Integer | The base physics pushing power (in tiles). | 27 |
 | `Fire` | Object | Character Form: Behavior and stats for the 'Fire' state. | 26 |
 | [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Enum | Reaction: Executes an ability instantly, interrupting the current sequence. | 26 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 26 |
 | [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum | AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage). | 25 |
-| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 25 |
 | [`Quivered`](./Arrays.md#array-quivered) | Number | Applies or references the 'Quivered' effect/state. | 25 |
 | `Undead` | Integer | Applies or references the 'Undead' effect/state. | 25 |
+| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 25 |
 | `AddMovement` | Integer | Applies or references the 'AddMovement' effect/state. | 24 |
 | `Brittle` | Integer | Applies or references the 'Brittle' effect/state. | 24 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 24 |
@@ -75,17 +77,17 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 23 |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Number | Applies or references the 'DivineShield' effect/state. | 22 |
 | `Fragile` | Integer | Applies or references the 'Fragile' effect/state. | 22 |
-| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 22 |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 22 |
 | [`SpawnEachTurn`](#spawneachturn) | Object | Applies or references the 'SpawnEachTurn' effect/state. | 22 |
 | [`StatusOnBreak`](#statusonbreak) | Object | Event Trigger: Applies statuses when this action occurs. | 22 |
+| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 22 |
 | [`threshold`](#threshold) | Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 22 |
 | `WaterWalk` | Integer | Applies or references the 'WaterWalk' effect/state. | 21 |
 | `AddCorpseHealth` | Integer | Applies the 'AddCorpseHealth' effect. | 20 |
-| [`additional_passives`](#additional_passives) | Object | Passives granted intrinsically to a spawned entity. | 20 |
 | `ArmorDodgeChance` | Integer | Applies or references the 'ArmorDodgeChance' effect/state. | 20 |
 | [`BossRewards`](#bossrewards) | Object | Loot logic: Rewards dropped upon defeating a boss. | 20 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 20 |
+| [`additional_passives`](#additional_passives) | Object | Passives granted intrinsically to a spawned entity. | 20 |
 | `BleedThorns` | Number | Applies or references the 'BleedThorns' effect/state. | 19 |
 | [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum | Examples: `SpikeBuff, Lava_Distortion, SparkleBuff` | 19 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Object | Generates an item drop from the specified loot pool. | 19 |
@@ -102,10 +104,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddManaRegen` | Integer | Applies or references the 'AddManaRegen' effect/state. | 16 |
 | [`CharacterLightSource`](#characterlightsource) | Object | Visual: Attaches a dynamic lighting source to the character. | 16 |
 | [`HealthPickup`](#healthpickup) | Object | Pickup Logic: Defines what happens when a health item is collected. | 16 |
-| `less_or_equal` | Variable |  | 16 |
 | [`SizeScale`](./Enums.md#enum-sizescale) | Enum | Applies or references the 'SizeScale' effect/state. | 16 |
 | [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. | 16 |
 | [`StatusOnBattleStart`](#statusonbattlestart) | Object | Event Trigger: Applies statuses when this action occurs. | 16 |
+| `less_or_equal` | Variable |  | 16 |
 | [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum | Applies or references the 'AbilityOnBattleStart' effect/state. | 15 |
 | `ExtraBasicAttacks` | Integer | Applies the 'ExtraBasicAttacks' effect. | 15 |
 | `HealthMultiplier` | Float | Examples: `1.5, .5, .8` | 15 |
@@ -137,11 +139,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Applies the 'AmplifyStatus' effect. | 12 |
 | `BackstabImmunity` | Integer | Applies or references the 'BackstabImmunity' effect/state. | 12 |
 | [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Applies or references the 'DeadAltAbility' effect/state. | 12 |
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 12 |
 | [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum | Applies the 'EquipTemporaryItem' effect. | 12 |
 | [`MoveWhenDamaged`](./Enums.md#enum-movewhendamaged) | Enum | AI Movement: Forces a reposition when taking damage. | 12 |
 | `NoHealthOnlyShield` | Integer | Applies or references the 'NoHealthOnlyShield' effect/state. | 12 |
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Object | Spawns a specific character or entity upon impact. | 12 |
+| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 12 |
 | `AddBonusMeleeRange` | Integer | Applies the 'AddBonusMeleeRange' effect. | 11 |
 | [`AddSelfStatusToBasicAttack`](#addselfstatustobasicattack) | Object | Applies or references the 'AddSelfStatusToBasicAttack' effect/state. | 11 |
 | [`AddStatusToBasicMeleeAttack`](#addstatustobasicmeleeattack) | Object | Examples: `{ ... }` | 11 |
@@ -177,7 +179,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BoostHeals` | Integer | Applies or references the 'BoostHeals' effect/state. | 9 |
 | `BoostWeaponDamage` | Integer | Applies the 'BoostWeaponDamage' effect. | 9 |
 | `ChanceToRevive` | Integer | Applies or references the 'ChanceToRevive' effect/state. | 9 |
-| [`count`](./Arrays.md#array-count) | Integer | Quantity. | 9 |
 | `Creep` | Variable |  | 9 |
 | `DiminishingHealthRegen` | Number | Applies or references the 'DiminishingHealthRegen' effect/state. | 9 |
 | [`FormChangeOnElementInfluence`](#formchangeonelementinfluence) | Object | Logic: Changes form when affected by an element. | 9 |
@@ -194,6 +195,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusOnTookDamageFromAbility`](#statusontookdamagefromability) | Object | Event Trigger: Applies statuses when taking damage from an ability. | 9 |
 | [`TransformInXTurns`](#transforminxturns) | Object | Logic: Forces a form change after X turns. | 9 |
 | [`TransformOnElementInfluence`](#transformonelementinfluence) | Object | Logic: Changes form when affected by elements. | 9 |
+| [`count`](./Arrays.md#array-count) | Integer | Quantity. | 9 |
 | `AddKnockbackDamage` | Integer | Applies or references the 'AddKnockbackDamage' effect/state. | 8 |
 | [`AddStatusToWeapons`](#addstatustoweapons) | Object | Applies the 'AddStatusToWeapons' effect. | 8 |
 | [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 8 |
@@ -205,8 +207,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `NonStackingDivineShield` | Number | Applies or references the 'NonStackingDivineShield' effect/state. | 8 |
 | `NonStackingShield` | Integer | Examples: `12, 4, 8` | 8 |
 | [`PassiveIfAllArmorEmpty`](#passiveifallarmorempty) | Object | Applies the 'PassiveIfAllArmorEmpty' effect. | 8 |
-| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | Applies or references the 'RandomizeAIWeightsEachTurn' effect/state. | 8 |
 | [`RandomStatusFromPool`](#randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 8 |
+| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | Applies or references the 'RandomizeAIWeightsEachTurn' effect/state. | 8 |
 | [`SecurityBotProtect`](#securitybotprotect) | Object | AI Logic: Guarding behavior for Security Bot units. | 8 |
 | `SetSpellCosts` | Integer | Applies the 'SetSpellCosts' effect. | 8 |
 | [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum | Examples: `CharmedKitten, CharmedFly` | 8 |
@@ -216,8 +218,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusIfUnusedMovePoints`](#statusifunusedmovepoints) | Object | Event Trigger: Applies nested statuses to if unused move points. | 8 |
 | [`StatusOnCastSpell`](#statusoncastspell) | Object | Event Trigger: Applies nested statuses when cast spell. | 8 |
 | [`StatusOnCrit`](#statusoncrit) | Object | Event Trigger: Applies nested statuses when crit. | 8 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 8 |
 | [`TileTrail`](./Enums.md#enum-tiletrail) | Enum | Applies or references the 'TileTrail' effect/state. | 8 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 8 |
 | `AbilityEnabledOncePerFightAtHealthThreshold` | Integer | Applies or references the 'AbilityEnabledOncePerFightAtHealthThreshold' effect/state. | 7 |
 | [`AbilityWhenBuddyDies`](./Enums.md#enum-abilitywhenbuddydies) | Enum | Applies or references the 'AbilityWhenBuddyDies' effect/state. | 7 |
 | [`AddTemporaryEffectsToBasicAttack`](#addtemporaryeffectstobasicattack) | Object | Applies the 'AddTemporaryEffectsToBasicAttack' effect. | 7 |
@@ -278,13 +280,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `TrinketActiveEffectsMultiplierBonus` | Integer | Applies or references the 'TrinketActiveEffectsMultiplierBonus' effect/state. | 6 |
 | [`AbilityWhenTaggedCharacterMovesNear`](#abilitywhentaggedcharactermovesnear) | Object | AI Trigger: Executes an ability when a character with a specific tag moves adjacent. | 5 |
 | [`AddPassivesToCharmed`](#addpassivestocharmed) | Object | Applies the 'AddPassivesToCharmed' effect. | 5 |
-| `ally_chance` | Integer | Examples: `15, 100` | 5 |
 | `AmplifyKnockback` | Integer | Applies the 'AmplifyKnockback' effect. | 5 |
 | `Angel` | Integer | Applies or references the 'Angel' effect/state. | 5 |
 | `BasicAttackAOEBonus` | Integer | Applies the 'BasicAttackAOEBonus' effect. | 5 |
 | [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum | Examples: `food, catnip` | 5 |
 | [`CatchProjectiles`](#catchprojectiles) | Object | Applies or references the 'CatchProjectiles' effect/state. | 5 |
-| [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 5 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 5 |
 | [`Colorless`](./Arrays.md#array-colorless) | Object | Applies or references the 'Colorless' effect/state. | 5 |
 | `DamageOrHealConditionally` | Number | Applies or references the 'DamageOrHealConditionally' effect/state. | 5 |
@@ -312,6 +312,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TransformItemOnElementInfluence`](#transformitemonelementinfluence) | Object | Applies or references the 'TransformItemOnElementInfluence' effect/state. | 5 |
 | [`TransformOnDeathImmediately`](./Enums.md#enum-transformondeathimmediately) | Enum | Logic: Bypasses death sequence to instantly assume a new form. | 5 |
 | [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum | Applies or references the 'XIsLivingAlliesWithTag' effect/state. | 5 |
+| `ally_chance` | Integer | Examples: `15, 100` | 5 |
+| [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 5 |
 | [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | Applies or references the 'AbilityAfterEnemyCastSpell_Stackable' effect/state. | 4 |
 | `AddDamageToBasicAttack` | Integer | Applies the 'AddDamageToBasicAttack' effect. | 4 |
 | `AddMeleeKnockback` | Integer | Applies or references the 'AddMeleeKnockback' effect/state. | 4 |
@@ -330,7 +332,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Bird`](./Enums.md#enum-bird) | Enum | Applies or references the 'Bird' effect/state. | 4 |
 | `BreakAtAux` | Integer | Applies or references the 'BreakAtAux' effect/state. | 4 |
 | `BuffImmunity` | Integer | Applies or references the 'BuffImmunity' effect/state. | 4 |
-| `bug` | Variable |  | 4 |
 | `CatchBoomerang` | Integer | Applies or references the 'CatchBoomerang' effect/state. | 4 |
 | `ChanceToBlockAndCounter` | Integer | Applies or references the 'ChanceToBlockAndCounter' effect/state. | 4 |
 | [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | Applies or references the 'ChangeTileOnPop' effect/state. | 4 |
@@ -344,8 +345,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`DistanceBonusDamage`](#distancebonusdamage) | Object | Applies the 'DistanceBonusDamage' effect. | 4 |
 | [`DownRankAIIfWeaponUsable`](./Enums.md#enum-downrankaiifweaponusable) | Float | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. | 4 |
 | [`EMP`](#emp) | Object | Applies the 'EMP' effect. | 4 |
-| `equal` | Variable |  | 4 |
-| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 4 |
 | `ExtraDispersedTurns` | Integer | Applies or references the 'ExtraDispersedTurns' effect/state. | 4 |
 | `FaceArmorPassiveMultiplierBonus` | Integer | Applies or references the 'FaceArmorPassiveMultiplierBonus' effect/state. | 4 |
 | `FlowersOnEndTurn` | Integer | Applies or references the 'FlowersOnEndTurn' effect/state. | 4 |
@@ -385,8 +384,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `UncappedHP` | Integer | Applies the 'UncappedHP' effect. | 4 |
 | `WeaponsDontLoseDurability` | Integer | Applies or references the 'WeaponsDontLoseDurability' effect/state. | 4 |
 | [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | Applies or references the 'WeremanTransformationReceiver' effect/state. | 4 |
-| `AbilityEnabledOncePerRound` | Integer | Applies or references the 'AbilityEnabledOncePerRound' effect/state. | 3 |
+| `bug` | Variable |  | 4 |
+| `equal` | Variable |  | 4 |
+| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Applies or references the 'AbilityEnableIfConsumedCharacterHasTag' effect/state. | 3 |
+| `AbilityEnabledOncePerRound` | Integer | Applies or references the 'AbilityEnabledOncePerRound' effect/state. | 3 |
 | `AbilityInheritsWeaponEffects` | Integer | Applies or references the 'AbilityInheritsWeaponEffects' effect/state. | 3 |
 | `AddEndOfCombatRegen` | Integer | Applies or references the 'AddEndOfCombatRegen' effect/state. | 3 |
 | [`AddSelfStatusToWeapons`](#addselfstatustoweapons) | Object | Applies the 'AddSelfStatusToWeapons' effect. | 3 |
@@ -394,21 +397,19 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 3 |
 | `AggroTargetIsCurrentTurn` | Integer | Applies or references the 'AggroTargetIsCurrentTurn' effect/state. | 3 |
 | `AllStatsUpPerDisorder` | Integer | Applies or references the 'AllStatsUpPerDisorder' effect/state. | 3 |
-| `any` | Variable |  | 3 |
 | [`AutocastEachTurnBegin`](./Enums.md#enum-autocasteachturnbegin) | Enum | Applies the 'AutocastEachTurnBegin' effect. | 3 |
 | [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Float | Applies or references the 'BaseStatMultiply' effect/state. | 3 |
 | [`BasicAttackCritChance`](./Enums.md#enum-basicattackcritchance) | Float | Applies the 'BasicAttackCritChance' effect. | 3 |
-| `bishop_hat` | Variable |  | 3 |
 | `BoneArmorPassive` | Integer | Applies or references the 'BoneArmorPassive' effect/state. | 3 |
 | [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Applies or references the 'BonusTurnPattern' effect/state. | 3 |
 | [`BouncyProjectiles`](#bouncyprojectiles) | Object | Applies the 'BouncyProjectiles' effect. | 3 |
 | `Bounty` | Integer | Applies the 'Bounty' effect. | 3 |
 | [`BreakOnElement`](./Enums.md#enum-breakonelement) | Enum | Applies or references the 'BreakOnElement' effect/state. | 3 |
+| `CCImmunity` | Integer | Applies the 'CCImmunity' effect. | 3 |
 | [`CanMutateTo`](./Enums.md#enum-canmutateto) | Enum | Applies or references the 'CanMutateTo' effect/state. | 3 |
 | `CanRemoveCursedItems` | Integer | Examples: `1` | 3 |
 | `CantCatchDiseases` | Integer | Applies or references the 'CantCatchDiseases' effect/state. | 3 |
 | `CantSpreadDiseases` | Integer | Applies or references the 'CantSpreadDiseases' effect/state. | 3 |
-| `CCImmunity` | Integer | Applies the 'CCImmunity' effect. | 3 |
 | `ChanceToBlock` | Integer | Applies or references the 'ChanceToBlock' effect/state. | 3 |
 | `CharmedFly` | Variable |  | 3 |
 | `CharmedTinySpider` | Variable |  | 3 |
@@ -423,7 +424,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CookedChickenLeg` | Variable |  | 3 |
 | `CopyPassiveSlot` | Integer | Applies or references the 'CopyPassiveSlot' effect/state. | 3 |
 | `CreateGlobalModifiers` | Object | Generates global map or encounter rules/modifiers. | 3 |
-| `crow` | Variable |  | 3 |
 | [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | Applies or references the 'DigestDeadBodies' effect/state. | 3 |
 | `DoubleCastWeapons` | Integer | Applies the 'DoubleCastWeapons' effect. | 3 |
 | [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Applies or references the 'DropAsFamiliarOnArmorBreak' effect/state. | 3 |
@@ -439,7 +439,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `HouseFoodRequirementMultiplier` | Integer | Examples: `0` | 3 |
 | `IllusionTint` | Integer | Applies or references the 'IllusionTint' effect/state. | 3 |
 | [`IncAuxCounterClamped`](#incauxcounterclamped) | Object | Increments a generic auxiliary counter on the character, capped by a maximum value. | 3 |
-| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 |
 | [`InfiniteRebirth`](#infiniterebirth) | Object | Applies the 'InfiniteRebirth' effect. | 3 |
 | [`Jester`](./Arrays.md#array-jester) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_JESTER_1 CAT_VS_BOSS_QUOTES_JESTER_2..., [ CAT_RETURN_EA...` | 3 |
 | [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Object | Forces the target to drop coins. | 3 |
@@ -451,7 +450,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MoonHeadFinisherEnabler` | Integer | Applies or references the 'MoonHeadFinisherEnabler' effect/state. | 3 |
 | [`MoveAndUseAbilityEachTurnBeginIfPossible`](./Enums.md#enum-moveanduseabilityeachturnbeginifpossible) | Enum | Applies the 'MoveAndUseAbilityEachTurnBeginIfPossible' effect. | 3 |
 | [`MoveAwayFromDamageSource`](./Enums.md#enum-moveawayfromdamagesource) | Enum | Examples: `BasicJump` | 3 |
-| `must_do_damage` | Boolean | `true` | 3 |
 | [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum | Applies or references the 'MutateViaAbility' effect/state. | 3 |
 | `NeckArmorPassiveMultiplierBonus` | Integer | Applies or references the 'NeckArmorPassiveMultiplierBonus' effect/state. | 3 |
 | [`PassiveWhileInMonkMeleeStance`](#passivewhileinmonkmeleestance) | Object | Applies the 'PassiveWhileInMonkMeleeStance' effect. | 3 |
@@ -460,10 +458,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Piercing` | Integer | Applies the 'Piercing' effect. | 3 |
 | `PrioritizeHitDifferentTargets` | Integer | Applies or references the 'PrioritizeHitDifferentTargets' effect/state. | 3 |
 | `RangeUp` | Number | Applies or references the 'RangeUp' effect/state. | 3 |
-| `rat` | Variable |  | 3 |
 | `RemoveLineOfSightRestrictions` | Integer | Applies the 'RemoveLineOfSightRestrictions' effect. | 3 |
 | [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum | Examples: `BasicJump, BasicDig` | 3 |
-| `robot` | Variable |  | 3 |
 | `RockyArmorPassive` | Integer | Applies or references the 'RockyArmorPassive' effect/state. | 3 |
 | `RunInXTurns` | Integer | Applies or references the 'RunInXTurns' effect/state. | 3 |
 | [`ScaledStatusOnSpendMana`](#scaledstatusonspendmana) | Object | Applies the 'ScaledStatusOnSpendMana' effect. | 3 |
@@ -482,13 +478,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusOnUseBasicAttack`](#statusonusebasicattack) | Object | Event Trigger: Applies nested statuses when use basic attack. | 3 |
 | [`StatusWhenAllySpendsMana`](#statuswhenallyspendsmana) | Object | Event Trigger: Applies nested statuses to when ally spends mana. | 3 |
 | [`SupportFormChangeInsteadOfRun`](./Enums.md#enum-supportformchangeinsteadofrun) | Enum | AI Logic: Forces a support unit to transform rather than flee. | 3 |
-| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 |
+| `TVOff` | Variable |  | 3 |
 | [`TakeBonusTurnWithAIControl`](#takebonusturnwithaicontrol) | Object | Grants the character an immediate extra turn, but forces the AI to control them during it. | 3 |
 | `ThornUpX` | Variable |  | 3 |
 | [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | Applies or references the 'TileTrail_Ahead' effect/state. | 3 |
 | [`TowerDefenseReflex`](./Enums.md#enum-towerdefensereflex) | Enum | Applies the 'TowerDefenseReflex' effect. | 3 |
 | `TrueShot` | Integer | Applies or references the 'TrueShot' effect/state. | 3 |
-| `TVOff` | Variable |  | 3 |
 | `UncappedMana` | Integer | Applies the 'UncappedMana' effect. | 3 |
 | `UpgradeSpawnedPickups` | Integer | Applies the 'UpgradeSpawnedPickups' effect. | 3 |
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 3 |
@@ -496,12 +491,20 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Water` | Object | Character Form: Behavior and stats for the \'Water\' state. | 3 |
 | `WeaponDamageMultiplierBonus` | Integer | Applies the 'WeaponDamageMultiplierBonus' effect. | 3 |
 | [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | Applies or references the 'XIsMultipliedPercentHealth' effect/state. | 3 |
+| `any` | Variable |  | 3 |
+| `bishop_hat` | Variable |  | 3 |
+| `crow` | Variable |  | 3 |
+| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 |
+| `must_do_damage` | Boolean | `true` | 3 |
+| `rat` | Variable |  | 3 |
+| `robot` | Variable |  | 3 |
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 |
 | [`AbilityEnabledIfHasStatus`](./Enums.md#enum-abilityenabledifhasstatus) | Enum | Applies or references the 'AbilityEnabledIfHasStatus' effect/state. | 2 |
 | [`AbilityOnRoundEnd`](#abilityonroundend) | Object | AI Trigger: Executes an ability at the end of the combat round. | 2 |
 | `AbsorbBuff` | Variable |  | 2 |
 | `AbsorbManaAura` | Integer | Applies the 'AbsorbManaAura' effect. | 2 |
-| [`AddPassivesToSummonAbilityMinions`](#addpassivestosummonabilityminions) | Object | Applies the 'AddPassivesToSummonAbilityMinions' effect. | 2 |
 | [`AddPassiveToSpawnedRocks`](#addpassivetospawnedrocks) | Object | Applies the 'AddPassiveToSpawnedRocks' effect. | 2 |
+| [`AddPassivesToSummonAbilityMinions`](#addpassivestosummonabilityminions) | Object | Applies the 'AddPassivesToSummonAbilityMinions' effect. | 2 |
 | `AddSpellDamage` | Integer | Applies the 'AddSpellDamage' effect. | 2 |
 | [`AddStatusToAllDamageAbilities`](#addstatustoalldamageabilities) | Object | Applies the 'AddStatusToAllDamageAbilities' effect. | 2 |
 | [`AddStatusToBasicAttackWithCooldown`](#addstatustobasicattackwithcooldown) | Object | Applies the 'AddStatusToBasicAttackWithCooldown' effect. | 2 |
@@ -510,8 +513,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddWeaponScaling` | Integer | Applies the 'AddWeaponScaling' effect. | 2 |
 | [`AfterImage`](./Enums.md#enum-afterimage) | Enum | Spawns a visual decoy or shade at the caster's previous location. | 2 |
 | `AggroTargetIsBuddy` | Integer | Applies or references the 'AggroTargetIsBuddy' effect/state. | 2 |
-| `ai` | Object | Core block defining the AI behavior logic and weights. | 2 |
-| `all_items` | Variable |  | 2 |
 | `AllDamageImmune_IncludingSpeculative` | Integer | Applies or references the 'AllDamageImmune_IncludingSpeculative' effect/state. | 2 |
 | `AllowPassTurn` | Integer | Applies the 'AllowPassTurn' effect. | 2 |
 | [`AllyDamageReaction`](./Enums.md#enum-allydamagereaction) | Enum | Applies the 'AllyDamageReaction' effect. | 2 |
@@ -523,8 +524,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AmplifyPositiveStatus` | Integer | Applies the 'AmplifyPositiveStatus' effect. | 2 |
 | [`ApplyStatusIfCrit`](#applystatusifcrit) | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 2 |
 | [`ArmorBreakOnHit`](#armorbreakonhit) | Object | Applies or references the 'ArmorBreakOnHit' effect/state. | 2 |
-| [`AutocastEachTurn`](./Enums.md#enum-autocasteachturn) | Enum | Applies the 'AutocastEachTurn' effect. | 2 |
 | `AutoCritLowDamage` | Integer | Applies the 'AutoCritLowDamage' effect. | 2 |
+| [`AutocastEachTurn`](./Enums.md#enum-autocasteachturn) | Enum | Applies the 'AutocastEachTurn' effect. | 2 |
 | `BasicAttackCantMiss` | Integer | Examples: `1` | 2 |
 | `BasicAttackStatusCarefulness` | Integer | Applies the 'BasicAttackStatusCarefulness' effect. | 2 |
 | `BasicMonkMelee` | Variable |  | 2 |
@@ -554,7 +555,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CollectPickupsOnBattleEnd` | Integer | Applies the 'CollectPickupsOnBattleEnd' effect. | 2 |
 | `Conductor` | Integer | Applies the 'Conductor' effect. | 2 |
 | `ConjureCastSpellsForAllies` | Integer | Applies the 'ConjureCastSpellsForAllies' effect. | 2 |
-| `consumable` | Number | `true` | 2 |
 | `CopyCatPassive_Initializer` | Integer | Applies or references the 'CopyCatPassive_Initializer' effect/state. | 2 |
 | `DamageEnemiesOnHeal` | Integer | Combat Trigger: Deals damage to enemies on heal. | 2 |
 | `DamageEnemiesOnKill` | Integer | Combat Trigger: Deals damage to enemies on kill. | 2 |
@@ -562,9 +562,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`DamageReductionAura`](#damagereductionaura) | Object | Combat Trigger: Deals damage to reduction aura. | 2 |
 | `DeathChill` | Integer | Applies the 'DeathChill' effect. | 2 |
 | `DejaVu` | Integer | Applies the 'DejaVu' effect. | 2 |
+| `DemonicGlyphFrames` | Integer | Applies or references the 'DemonicGlyphFrames' effect/state. | 2 |
 | `DemonicGlyph_Bite` | Number | Applies or references the 'DemonicGlyph_Bite' effect/state. | 2 |
 | `DemonicGlyph_Summon` | Number | Applies or references the 'DemonicGlyph_Summon' effect/state. | 2 |
-| `DemonicGlyphFrames` | Integer | Applies or references the 'DemonicGlyphFrames' effect/state. | 2 |
 | [`DiesToElement`](./Enums.md#enum-diestoelement) | Enum | Vulnerability: Character dies instantly if hit by this element. | 2 |
 | `DirtyClaws` | Integer | Applies the 'DirtyClaws' effect. | 2 |
 | `DisablePassiveSlot` | Integer | Applies or references the 'DisablePassiveSlot' effect/state. | 2 |
@@ -578,11 +578,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `EmptyMana` | Integer | Applies the 'EmptyMana' effect. | 2 |
 | `EnemiesGetPickupsKnockedOut` | Integer | Applies the 'EnemiesGetPickupsKnockedOut' effect. | 2 |
 | `EnergyStorm` | Integer | Applies the 'EnergyStorm' effect. | 2 |
+| [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum | Examples: `pills` | 2 |
 | `EquipmentPassiveMultiplierBonus` | Integer | Applies the 'EquipmentPassiveMultiplierBonus' effect. | 2 |
 | `EquipmentSetBonusBonus` | Integer | Applies the 'EquipmentSetBonusBonus' effect. | 2 |
-| [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum | Examples: `pills` | 2 |
 | [`EscapeSequence`](#escapesequence) | Object | Applies the 'EscapeSequence' effect. | 2 |
-| `euphoric` | Object | Examples: `{ ... }` | 2 |
 | `ExpireOnSpawnerTurnEnd` | Integer | Applies or references the 'ExpireOnSpawnerTurnEnd' effect/state. | 2 |
 | `ExplodeOverkilledEnemies` | Integer | Applies the 'ExplodeOverkilledEnemies' effect. | 2 |
 | `ExplosionImmunity` | Integer | Applies or references the 'ExplosionImmunity' effect/state. | 2 |
@@ -605,8 +604,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `GrassTile` | Number | Examples: `80, 15` | 2 |
 | `GrassTileHealing` | Integer | Applies the 'GrassTileHealing' effect. | 2 |
 | [`GravityWell`](#gravitywell) | Object | Applies the 'GravityWell' effect. | 2 |
-| `greater` | Variable |  | 2 |
 | `GrenadeExplode` | Variable |  | 2 |
+| `HPGainBlock` | Integer | Applies or references the 'HPGainBlock' effect/state. | 2 |
 | `Haunt` | Variable |  | 2 |
 | `HealAndOverhealToShield` | Integer | Applies the 'HealAndOverhealToShield' effect. | 2 |
 | `HealDamagesEnemies` | Integer | Applies the 'HealDamagesEnemies' effect. | 2 |
@@ -614,15 +613,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `HealsCanRevive` | Integer | Applies the 'HealsCanRevive' effect. | 2 |
 | `HolyShieldTransferToSpawner` | Integer | Applies the 'HolyShieldTransferToSpawner' effect. | 2 |
 | [`HolyShieldTransferToTaggedMinions`](./Enums.md#enum-holyshieldtransfertotaggedminions) | Enum | Applies the 'HolyShieldTransferToTaggedMinions' effect. | 2 |
-| `HPGainBlock` | Integer | Applies or references the 'HPGainBlock' effect/state. | 2 |
 | `ImmobilePassive` | Integer | Applies or references the 'ImmobilePassive' effect/state. | 2 |
 | `ImmortalLeeches` | Integer | Applies the 'ImmortalLeeches' effect. | 2 |
 | `IncreaseHealingSpellRange` | Integer | Applies the 'IncreaseHealingSpellRange' effect. | 2 |
-| `int` | Number | `aux` | 2 |
 | [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum | Applies or references the 'KaijuWinCon' effect/state. | 2 |
 | `KillsHeal` | Integer | Applies the 'KillsHeal' effect. | 2 |
 | [`LateBloomer`](#latebloomer) | Object | Applies the 'LateBloomer' effect. | 2 |
-| `lck` | Number | `aux` | 2 |
 | [`LeaveBehindOnceEachMove`](./Enums.md#enum-leavebehindonceeachmove) | Enum | Applies or references the 'LeaveBehindOnceEachMove' effect/state. | 2 |
 | `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 2 |
 | `LightningAspectCharge` | Integer | Applies the 'LightningAspectCharge' effect. | 2 |
@@ -637,12 +633,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ManaRegenMultiplierIfManaEmpty` | Integer | Applies the 'ManaRegenMultiplierIfManaEmpty' effect. | 2 |
 | `MegaMinions` | Integer | Applies the 'MegaMinions' effect. | 2 |
 | `MetalDetector` | Integer | Applies the 'MetalDetector' effect. | 2 |
-| `MinimumTech` | Integer | Applies the 'MinimumTech' effect. | 2 |
 | [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | Applies or references the 'MiniVolcanoReaction' effect/state. | 2 |
+| `MinimumTech` | Integer | Applies the 'MinimumTech' effect. | 2 |
 | [`ModifyAbility`](#modifyability) | Object | Applies or references the 'ModifyAbility' effect/state. | 2 |
 | [`MotherTumorSpawnInCapture`](#mothertumorspawnincapture) | Object | Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning. | 2 |
 | [`MoveSpeedMultiplier`](./Enums.md#enum-movespeedmultiplier) | Float | Applies or references the 'MoveSpeedMultiplier' effect/state. | 2 |
-| `musical` | Variable |  | 2 |
 | [`NextBattleStatus`](#nextbattlestatus) | Object | Applies the 'NextBattleStatus' effect. | 2 |
 | `NoManaRegen` | Integer | Applies the 'NoManaRegen' effect. | 2 |
 | `NoReflection` | Integer | Applies the 'NoReflection' effect. | 2 |
@@ -653,8 +648,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `OneUseSpellDamageUp` | Integer | Applies the 'OneUseSpellDamageUp' effect. | 2 |
 | `OverhealGainsBothShield` | Integer | Applies the 'OverhealGainsBothShield' effect. | 2 |
 | `ParasitesArentCursed` | Integer | Applies the 'ParasitesArentCursed' effect. | 2 |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | String | ``, `Alert`, `Angry`, `Belly`, `Button` | 2 |
-| [`passive0`](./Enums.md#enum-passive0) | Enum | `HotBlooded`, `SelfAssured` | 2 |
 | [`PassiveAtFullHealth`](#passiveatfullhealth) | Object | Applies the 'PassiveAtFullHealth' effect. | 2 |
 | [`PassiveAtInjuryThreshold`](#passiveatinjurythreshold) | Object | Applies the 'PassiveAtInjuryThreshold' effect. | 2 |
 | `PassiveEnergized` | Variable |  | 2 |
@@ -675,7 +668,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Quiver` | Integer | Applies the 'Quiver' effect. | 2 |
 | [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Applies or references the 'RandomTaggedMutation' effect/state. | 2 |
 | `ReaperRevenge` | Variable |  | 2 |
-| `red` | Object | Event Object: Story branch or dialog option representing the \'Red\' action. | 2 |
 | [`RefreshEquipmentAbilityOnElement`](#refreshequipmentabilityonelement) | Object | Applies or references the 'RefreshEquipmentAbilityOnElement' effect/state. | 2 |
 | `ReloadOnKill` | Integer | Applies or references the 'ReloadOnKill' effect/state. | 2 |
 | `ReloadOnKillEnemy` | Integer | Applies or references the 'ReloadOnKillEnemy' effect/state. | 2 |
@@ -750,7 +742,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TransformOnElementInfluencex`](#transformonelementinfluencex) | Object | Logic: Variant element influence transformation. | 2 |
 | [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | Applies or references the 'TransformWhenBuddyDies' effect/state. | 2 |
 | `TrapEffectsMultiplier` | Integer | Applies the 'TrapEffectsMultiplier' effect. | 2 |
-| `triggers_limit` | Integer | Examples: `1` | 2 |
 | `Uncontrollable` | Integer | Applies or references the 'Uncontrollable' effect/state. | 2 |
 | `UnlockOrientation` | Integer | Applies or references the 'UnlockOrientation' effect/state. | 2 |
 | [`UpgradeLevelUpClassActives`](./Enums.md#enum-upgradelevelupclassactives) | Enum | Applies the 'UpgradeLevelUpClassActives' effect. | 2 |
@@ -765,6 +756,20 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `XIsSpellStormRampAndReset` | Integer | Math variable assignment: Evaluates X based on Spell Storm stacks, then resets them. | 2 |
 | `XIsTimesDamageTaken` | Integer | Applies or references the 'XIsTimesDamageTaken' effect/state. | 2 |
 | `Zombie` | Number | Examples: `1` | 2 |
+| `ai` | Object | Core block defining the AI behavior logic and weights. | 2 |
+| `all_items` | Variable |  | 2 |
+| `consumable` | Number | `true` | 2 |
+| `euphoric` | Object | Examples: `{ ... }` | 2 |
+| `greater` | Variable |  | 2 |
+| `int` | Number | `aux` | 2 |
+| `lck` | Number | `aux` | 2 |
+| `musical` | Variable |  | 2 |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | String | ``, `Alert`, `Angry`, `Belly`, `Button` | 2 |
+| [`passive0`](./Enums.md#enum-passive0) | Enum | `HotBlooded`, `SelfAssured` | 2 |
+| `red` | Object | Event Object: Story branch or dialog option representing the \'Red\' action. | 2 |
+| `triggers_limit` | Integer | Examples: `1` | 2 |
+| [`AIControlNextTurn`](#aicontrolnextturn) | Object | Applies or references the 'AIControlNextTurn' effect/state. | 1 |
+| `AOEBonus` | Integer | Applies or references the 'AOEBonus' effect/state. | 1 |
 | [`AbilityChargeRefundChance`](#abilitychargerefundchance) | Object | Applies the 'AbilityChargeRefundChance' effect. | 1 |
 | `AbilityDamageMultiplier` | Float | Examples: `1.5` | 1 |
 | `AbilityDisableIfLivingCrow` | Integer | Applies or references the 'AbilityDisableIfLivingCrow' effect/state. | 1 |
@@ -788,12 +793,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddLootMultiplier` | Integer | Examples: `1` | 1 |
 | `AddRandomEliteBuff` | Integer | Examples: `1` | 1 |
 | `AddRangedCritChance` | Integer | Applies the 'AddRangedCritChance' effect. | 1 |
-| [`AddStatusesIfPersistentWeatherElement`](#addstatusesifpersistentweatherelement) | Object | Applies the 'AddStatusesIfPersistentWeatherElement' effect. | 1 |
-| [`AddStatusesToReceivedElementalDamage`](#addstatusestoreceivedelementaldamage) | Object | Applies the 'AddStatusesToReceivedElementalDamage' effect. | 1 |
 | [`AddStatusToBackstabs`](#addstatustobackstabs) | Object | Modifier: Injects a status effect into a specific action. | 1 |
 | [`AddStatusToFirstSpellEachTurn`](#addstatustofirstspelleachturn) | Object | Examples: `{ ... }` | 1 |
 | [`AddStatusToReceivedDamage`](#addstatustoreceiveddamage) | Object | Modifier: Applies a status effect whenever the character takes damage. | 1 |
 | [`AddStatusToReceivedDamage_ExcludeStatuses`](#addstatustoreceiveddamage_excludestatuses) | Object | Applies the 'AddStatusToReceivedDamage_ExcludeStatuses' effect. | 1 |
+| [`AddStatusesIfPersistentWeatherElement`](#addstatusesifpersistentweatherelement) | Object | Applies the 'AddStatusesIfPersistentWeatherElement' effect. | 1 |
+| [`AddStatusesToReceivedElementalDamage`](#addstatusestoreceivedelementaldamage) | Object | Applies the 'AddStatusesToReceivedElementalDamage' effect. | 1 |
 | [`AddTemporaryEffectsToEquipment`](#addtemporaryeffectstoequipment) | Object | Applies the 'AddTemporaryEffectsToEquipment' effect. | 1 |
 | [`AdvancedTint`](./Arrays.md#array-advancedtint) | Array | Applies or references the 'AdvancedTint' effect/state. | 1 |
 | [`AdventureTokenPassivePool`](#adventuretokenpassivepool) | Object | Map/Metaprogression: Pool of passive modifiers applied by adventure tokens. | 1 |
@@ -801,17 +806,15 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AggroTargetIsLastEnemyThatDealtDamage` | Integer | Applies or references the 'AggroTargetIsLastEnemyThatDealtDamage' effect/state. | 1 |
 | `AggroTargetIsLowestHealthEnemyTillItDies` | Integer | Applies or references the 'AggroTargetIsLowestHealthEnemyTillItDies' effect/state. | 1 |
 | `AggroTargetIsLowestMaxHealthCat` | Integer | Applies or references the 'AggroTargetIsLowestMaxHealthCat' effect/state. | 1 |
-| [`AIControlNextTurn`](#aicontrolnextturn) | Object | Applies or references the 'AIControlNextTurn' effect/state. | 1 |
 | [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array | Applies or references the 'AlienBeastDangerZones' effect/state. | 1 |
 | `AlienBeastEyeStalks` | Integer | Applies or references the 'AlienBeastEyeStalks' effect/state. | 1 |
-| `all_spells` | Variable |  | 1 |
 | `AllDamageCrits` | Integer | Applies the 'AllDamageCrits' effect. | 1 |
-| `AlliesAvoidTraps` | Integer | Applies the 'AlliesAvoidTraps' effect. | 1 |
-| `AlliesScrambleSpellAfterCast` | Integer | Applies or references the 'AlliesScrambleSpellAfterCast' effect/state. | 1 |
 | `AllSpellsCostActPoints` | Integer | Applies or references the 'AllSpellsCostActPoints' effect/state. | 1 |
 | `AllSpellsCostCharge` | Integer | Applies or references the 'AllSpellsCostCharge' effect/state. | 1 |
 | [`AllStatsAura`](#allstatsaura) | Object | Passive: Projects an aura that modifies all primary stats of nearby characters. | 1 |
 | `AllUnitsExplodeOnDeath` | Integer | Applies or references the 'AllUnitsExplodeOnDeath' effect/state. | 1 |
+| `AlliesAvoidTraps` | Integer | Applies the 'AlliesAvoidTraps' effect. | 1 |
+| `AlliesScrambleSpellAfterCast` | Integer | Applies or references the 'AlliesScrambleSpellAfterCast' effect/state. | 1 |
 | [`AlluringDoodieEater`](#alluringdoodieeater) | Object | Applies or references the 'AlluringDoodieEater' effect/state. | 1 |
 | `AllyChainKnockback` | Integer | Applies the 'AllyChainKnockback' effect. | 1 |
 | [`AllyDodgeChanceAura`](#allydodgechanceaura) | Object | Applies or references the 'AllyDodgeChanceAura' effect/state. | 1 |
@@ -822,12 +825,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AlphaStatusOnTurnBegin`](#alphastatusonturnbegin) | Object | Grants a specific status effect to the 'Alpha' (the party leader) at the start of their turn. | 1 |
 | `AlwaysChosenForLevelUp` | Integer | Applies or references the 'AlwaysChosenForLevelUp' effect/state. | 1 |
 | `AmplifyNegativeStatus` | Integer | Applies the 'AmplifyNegativeStatus' effect. | 1 |
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | String | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` | 1 |
-| `AOEBonus` | Integer | Applies or references the 'AOEBonus' effect/state. | 1 |
 | [`ApplyPassivesToSpawnerWhileAlive`](#applypassivestospawnerwhilealive) | Object | Grants nested passives to the entity that spawned this object, lasting only as long as this object remains alive. | 1 |
 | [`Autism`](#autism) | Object | Applies the 'Autism' effect. | 1 |
 | `AvoidDamagingCharmedEnemies` | Integer | Applies or references the 'AvoidDamagingCharmedEnemies' effect/state. | 1 |
 | `AwardCoinsOnDeath` | Integer | Applies or references the 'AwardCoinsOnDeath' effect/state. | 1 |
+| `BBTransformMutant` | Variable |  | 1 |
+| `BBTransformZealot` | Variable |  | 1 |
 | `BackstabFront` | Integer | Examples: `1` | 1 |
 | `BackstabWeakness` | Float | Applies the 'BackstabWeakness' effect. | 1 |
 | `BalanceStats` | Integer | Applies or references the 'BalanceStats' effect/state. | 1 |
@@ -847,10 +850,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BasicSuplex` | Variable |  | 1 |
 | `BasicTankMelee` | Variable |  | 1 |
 | [`BattlefieldUniqueRandomPassive`](#battlefielduniquerandompassive) | Object | Map Rule: Grants a unique random passive modifier to the battlefield. | 1 |
-| `BBTransformMutant` | Variable |  | 1 |
-| `BBTransformZealot` | Variable |  | 1 |
-| `BiggestFood` | Number | Applies or references the 'BiggestFood' effect/state. | 1 |
 | `BigSplashDamage` | Integer | Applies the 'BigSplashDamage' effect. | 1 |
+| `BiggestFood` | Number | Applies or references the 'BiggestFood' effect/state. | 1 |
 | `Bionic` | Variable |  | 1 |
 | `BlackHolePassive` | Integer | Applies or references the 'BlackHolePassive' effect/state. | 1 |
 | `BlessingOfPeace` | Integer | Applies or references the 'BlessingOfPeace' effect/state. | 1 |
@@ -886,10 +887,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CantDodge` | Integer | Applies the 'CantDodge' effect. | 1 |
 | `CapBasicAttackDamage` | Integer | Applies or references the 'CapBasicAttackDamage' effect/state. | 1 |
 | `CapReceivedDamage` | Integer | Applies or references the 'CapReceivedDamage' effect/state. | 1 |
-| `CatapultJump` | Variable |  | 1 |
-| `CatapultJump2` | Variable |  | 1 |
 | `CatGoop` | Variable |  | 1 |
 | [`CatPartsSizeScale`](#catpartssizescale) | Object | Applies or references the 'CatPartsSizeScale' effect/state. | 1 |
+| `CatapultJump` | Variable |  | 1 |
+| `CatapultJump2` | Variable |  | 1 |
 | `CaveCatDad` | Variable |  | 1 |
 | `CaveWomanBirthControl` | Integer | Applies or references the 'CaveWomanBirthControl' effect/state. | 1 |
 | [`CerberubsAggroTargetBehavior`](#cerberubsaggrotargetbehavior) | Object | AI Logic: Custom aggro targeting rules for Cerberubs. | 1 |
@@ -902,16 +903,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ChaosBossPieces`](#chaosbosspieces) | Object | Boss Logic: Defines the separate destructible pieces of the Chaos Boss. | 1 |
 | [`ChaosHeadDropIn`](#chaosheaddropin) | Object | Boss Logic: Drop-in attack/animation for the Chaos Head. | 1 |
 | `CharismaIsMaxStat` | Integer | Applies or references the 'CharismaIsMaxStat' effect/state. | 1 |
+| `CharmImmunity` | Integer | Applies or references the 'CharmImmunity' effect/state. | 1 |
 | `CharmedDemonKitten` | Variable |  | 1 |
 | `CharmedLeech` | Variable |  | 1 |
 | `CharmedPooter` | Variable |  | 1 |
 | `CharmedReaper` | Variable |  | 1 |
-| `CharmImmunity` | Integer | Applies or references the 'CharmImmunity' effect/state. | 1 |
-| `choose_favorite_cat` | Variable |  | 1 |
 | `Chubs` | Variable |  | 1 |
 | `ChubsGoop` | Variable |  | 1 |
 | `ChubsRage` | Variable |  | 1 |
-| [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 1 |
 | [`Conditional_Flying`](#conditional_flying) | Object | Examples: `{ ... }` | 1 |
 | [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 | [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Conditional object: Executes nested logic only if the target is/has SourceHasTag. | 1 |
@@ -931,17 +930,17 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DecoyExplode` | Variable |  | 1 |
 | `DefaultMove` | Variable |  | 1 |
 | `DelayedPain` | Integer | Applies or references the 'DelayedPain' effect/state. | 1 |
+| `DemonicGlyphStealer` | Integer | Applies or references the 'DemonicGlyphStealer' effect/state. | 1 |
 | `DemonicGlyph_Bounce` | Number | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 |
 | `DemonicGlyph_Fire` | Number | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 |
 | `DemonicGlyph_Movement` | Number | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 |
-| `DemonicGlyphStealer` | Integer | Applies or references the 'DemonicGlyphStealer' effect/state. | 1 |
 | `DestroyerShieldBash` | Variable |  | 1 |
 | [`Diabetes`](#diabetes) | Object | Applies the 'Diabetes' effect. | 1 |
 | [`DiceBehavior`](#dicebehavior) | Object | AI Logic: Custom behavior for Dice enemies. | 1 |
 | [`DicerArt`](./Arrays.md#array-dicerart) | Array | Applies or references the 'DicerArt' effect/state. | 1 |
-| [`DiesToPiercingAndSpikes`](#diestopiercingandspikes) | Object | Vulnerability: Character dies instantly if hit by piercing attacks or spikes. | 1 |
 | `DieWhenOnlyGolemsLeft` | Integer | Applies or references the 'DieWhenOnlyGolemsLeft' effect/state. | 1 |
 | `DieWhenSpawnerDies` | Integer | Applies or references the 'DieWhenSpawnerDies' effect/state. | 1 |
+| [`DiesToPiercingAndSpikes`](#diestopiercingandspikes) | Object | Vulnerability: Character dies instantly if hit by piercing attacks or spikes. | 1 |
 | `Digest` | Variable |  | 1 |
 | `DisableSpells` | Integer | Applies or references the 'DisableSpells' effect/state. | 1 |
 | [`DisguisedTrapper`](./Enums.md#enum-disguisedtrapper) | Enum | Applies or references the 'DisguisedTrapper' effect/state. | 1 |
@@ -964,20 +963,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `EatShit` | Variable |  | 1 |
 | `ElectricArcs` | Integer | Applies or references the 'ElectricArcs' effect/state. | 1 |
 | [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum | Applies or references the 'ElementWeakness' effect/state. | 1 |
-| `end_of_round` | Boolean | `true` | 1 |
-| `enemies` | Variable |  | 1 |
 | `EnrageOnDamage` | Integer | Applies or references the 'EnrageOnDamage' effect/state. | 1 |
 | `EraseSpawnCoins` | Integer | Applies or references the 'EraseSpawnCoins' effect/state. | 1 |
 | `EventBounterHunterPassive` | Integer | Applies or references the 'EventBounterHunterPassive' effect/state. | 1 |
-| `exclude_self` | Boolean | `false` | 1 |
 | [`ExcludeFromEvents`](./Enums.md#enum-excludefromevents) | Enum | Applies or references the 'ExcludeFromEvents' effect/state. | 1 |
 | `ExhaustionRoundChange` | Integer | Applies the 'ExhaustionRoundChange' effect. | 1 |
 | `ExtraInjuryOnDeath` | Integer | Applies the 'ExtraInjuryOnDeath' effect. | 1 |
 | [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum | Applies or references the 'ExtraTurnsPerTaggedUnit' effect/state. | 1 |
-| `face_EatNeverstone` | Variable |  | 1 |
-| `face_LeechBrood` | Variable |  | 1 |
 | [`FaceAwayLastDamage`](#faceawaylastdamage) | Object | Reaction: Forces the character to face away from the last damage source. | 1 |
-| `fetus` | Variable |  | 1 |
 | [`FinalBossBeamQueue`](#finalbossbeamqueue) | Object | Boss Logic: Attack queue for the final boss beam. | 1 |
 | [`FinalBossBecomeTheChild`](#finalbossbecomethechild) | Object | Boss Logic: Phase transition for the final boss. | 1 |
 | [`FinalBossHitCountdownBoris`](#finalbosshitcountdownboris) | Object | Boss Logic: Countdown trigger for Boris. | 1 |
@@ -1018,32 +1011,30 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `GlobalManaDrainAura` | Integer | Applies or references the 'GlobalManaDrainAura' effect/state. | 1 |
 | [`GlobalMeleeRevengeDamage`](#globalmeleerevengedamage) | Object | Applies or references the 'GlobalMeleeRevengeDamage' effect/state. | 1 |
 | `GoopImmunity` | Integer | Applies or references the 'GoopImmunity' effect/state. | 1 |
-| `grub_familiar` | Variable |  | 1 |
 | `Guillotina2Body` | Variable |  | 1 |
 | `Guillotina2Head` | Variable |  | 1 |
 | `Guillotina3Body` | Variable |  | 1 |
 | `Guillotina3Head` | Variable |  | 1 |
 | `GuillotinaDeathHead` | Integer | Applies or references the 'GuillotinaDeathHead' effect/state. | 1 |
-| [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | Applies or references the 'HarpoonTrapPassive' effect/state. | 1 |
 | `HCHumanDie` | Variable |  | 1 |
+| [`HPAltStates`](#hpaltstates) | Object | Visual: Alternative sprite states based on current health. | 1 |
+| [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | Applies or references the 'HarpoonTrapPassive' effect/state. | 1 |
 | `HealAtStart` | Integer | Applies the 'HealAtStart' effect. | 1 |
-| `HealingAura` | Integer | Applies the 'HealingAura' effect. | 1 |
 | [`HealNeighborsEachTurn`](#healneighborseachturn) | Object | Passive: Restores health to adjacent allies at the start of the turn. | 1 |
+| `HealingAura` | Integer | Applies the 'HealingAura' effect. | 1 |
 | `HemBounce` | Variable |  | 1 |
 | `HiddenDoomed` | Integer | Applies or references the 'HiddenDoomed' effect/state. | 1 |
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. | 1 |
 | `HideSomeHudStuff` | Integer | Applies or references the 'HideSomeHudStuff' effect/state. | 1 |
 | [`HitlerExecute`](#hitlerexecute) | Object | Boss Logic: Specific execution or ultimate attack state. | 1 |
 | `HolyDamageMultiplierBonus` | Integer | Applies the 'HolyDamageMultiplierBonus' effect. | 1 |
-| [`HPAltStates`](#hpaltstates) | Object | Visual: Alternative sprite states based on current health. | 1 |
 | [`Hunter`](./Arrays.md#array-hunter) | Object | Applies or references the 'Hunter' effect/state. | 1 |
 | `Hyde` | Variable |  | 1 |
 | `Hypomania` | Integer | Applies the 'Hypomania' effect. | 1 |
-| `IceBlockBehavior` | Integer | Applies or references the 'IceBlockBehavior' effect/state. | 1 |
 | `IDSprout` | Variable |  | 1 |
+| `IceBlockBehavior` | Integer | Applies or references the 'IceBlockBehavior' effect/state. | 1 |
 | `IncreaseItemUsesOnEquip` | Integer | Applies the 'IncreaseItemUsesOnEquip' effect. | 1 |
 | `InheritSpawnerStats` | Integer | Applies or references the 'InheritSpawnerStats' effect/state. | 1 |
-| `insane` | Object | Examples: `{ ... }` | 1 |
 | `InsertIntoBackgroundPlaceholder` | Integer | Applies or references the 'InsertIntoBackgroundPlaceholder' effect/state. | 1 |
 | `InterchangeDisabler` | Integer | Applies or references the 'InterchangeDisabler' effect/state. | 1 |
 | `InvertBrainFaction` | Integer | Applies the 'InvertBrainFaction' effect. | 1 |
@@ -1053,8 +1044,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`KnockbackIfCrit`](#knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 1 |
 | [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum | Applies or references the 'LegacySpawnSavedCatIfExists' effect/state. | 1 |
 | `LennyCatDies` | Variable |  | 1 |
-| [`LimitedTileTrail`](./Enums.md#enum-limitedtiletrail) | Enum | Applies the 'LimitedTileTrail' effect. | 1 |
 | `LimitSelfKnockbackDamage` | Integer | Applies the 'LimitSelfKnockbackDamage' effect. | 1 |
+| [`LimitedTileTrail`](./Enums.md#enum-limitedtiletrail) | Enum | Applies the 'LimitedTileTrail' effect. | 1 |
 | [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | Applies or references the 'LockOrientationFaceTile' effect/state. | 1 |
 | `Lucky` | Enum | data/boss_elite_buffs.gon, data/elite_buffs.gon | 1 |
 | [`ManaGainRange`](#managainrange) | Object | Applies or references the 'ManaGainRange' effect/state. | 1 |
@@ -1064,7 +1055,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ManglersMonster` | Variable |  | 1 |
 | `MaxAccuracy` | Integer | Applies the 'MaxAccuracy' effect. | 1 |
 | `MaxStartingMana` | Integer | Applies the 'MaxStartingMana' effect. | 1 |
-| `meat` | Variable |  | 1 |
 | `MechExplode` | Variable |  | 1 |
 | [`Medic`](./Arrays.md#array-medic) | Object | Applies or references the 'Medic' effect/state. | 1 |
 | [`MegaDinoDropController`](#megadinodropcontroller) | Object | Boss Logic: Manages loot drops for the Mega Dino. | 1 |
@@ -1074,24 +1064,20 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ModelingClayPassive` | Integer | Applies or references the 'ModelingClayPassive' effect/state. | 1 |
 | [`ModularPickup`](#modularpickup) | Object | Pickup Logic: Defines what happens when a modular item is collected. | 1 |
 | [`MonkCatReactionAbilities`](#monkcatreactionabilities) | Object | Reaction: Specific counter-attack or dodge abilities used by the Monk class. | 1 |
-| `MoonHead_KillHands` | Variable |  | 1 |
 | [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum | Applies or references the 'MoonHeadCrackedVisual' effect/state. | 1 |
+| `MoonHead_KillHands` | Variable |  | 1 |
 | [`MotherGrowController`](#mothergrowcontroller) | Object | Boss Logic: Manages the growth phases of the Mother boss. | 1 |
 | [`MotherTumorPassive`](#mothertumorpassive) | Object | Boss Logic: Passive effects applied to the Mother's tumors. | 1 |
 | [`Mount`](#mount) | Object | Character Form: Behavior and stats for the 'Mount' state. | 1 |
-| [`move`](./Arrays.md#array-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 1 |
 | [`MoveAfterAnyAttemptedAttack`](#moveafteranyattemptedattack) | Object | AI Movement: Forces a move action immediately after attacking, even if it missed. | 1 |
 | [`MoveAwayWhenEnemyAdjacent`](#moveawaywhenenemyadjacent) | Object | AI Movement: Moves away if an enemy enters an adjacent tile. | 1 |
 | `MoveRandomly` | Integer | Applies the 'MoveRandomly' effect. | 1 |
+| [`MultiSpawnOnDeath`](#multispawnondeath) | Object | Event Trigger: Spawns multiple entities upon death. | 1 |
 | `MulticatHeads` | Integer | Applies or references the 'MulticatHeads' effect/state. | 1 |
 | `MultiplyCoinsOnBattleStart` | Integer | Applies or references the 'MultiplyCoinsOnBattleStart' effect/state. | 1 |
 | `MultiplyReceivedHealing` | Integer | Applies or references the 'MultiplyReceivedHealing' effect/state. | 1 |
-| [`MultiSpawnOnDeath`](#multispawnondeath) | Object | Event Trigger: Spawns multiple entities upon death. | 1 |
 | `MutateAfterXTurns` | Integer | Applies or references the 'MutateAfterXTurns' effect/state. | 1 |
 | `MuteDemonicGlyphDisplay` | Integer | Applies or references the 'MuteDemonicGlyphDisplay' effect/state. | 1 |
-| [`neck`](./Enums.md#enum-neck) | Enum | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` | 1 |
-| `neck_NukeBonus` | Variable |  | 1 |
-| `neck_NukeExplode` | Variable |  | 1 |
 | `Necro_SoulDagger_Uncharged` | Variable |  | 1 |
 | `NoHead` | Variable |  | 1 |
 | `NonChampionFlySwarm` | Variable |  | 1 |
@@ -1115,14 +1101,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PermanentConfusion` | Number | Applies or references the 'PermanentConfusion' effect/state. | 1 |
 | `PermanentKitten` | Integer | Applies the 'PermanentKitten' effect. | 1 |
 | `PhysicalAttacksMiss` | Integer | Applies or references the 'PhysicalAttacksMiss' effect/state. | 1 |
-| `pickup` | Variable |  | 1 |
-| `plant` | Variable |  | 1 |
 | `PlayerCat_ThiefShade2` | Variable |  | 1 |
 | `PoisonMultiplier` | Integer | Applies the 'PoisonMultiplier' effect. | 1 |
 | `Poop` | Variable |  | 1 |
 | `PreEmptiveCounterNextAttacks` | Integer | Applies or references the 'PreEmptiveCounterNextAttacks' effect/state. | 1 |
 | [`PreventSpecificInjury`](./Enums.md#enum-preventspecificinjury) | Enum | Applies or references the 'PreventSpecificInjury' effect/state. | 1 |
-| `pyrophina` | Variable |  | 1 |
 | [`RandomPermanentStatsDistinct`](#randompermanentstatsdistinct) | Object | Examples: `{ ... }` | 1 |
 | `RatKing` | Variable |  | 1 |
 | `RealTimePressure_OneUnit` | Integer | Applies the 'RealTimePressure_OneUnit' effect. | 1 |
@@ -1165,7 +1148,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SchrodingerDisorder` | Integer | Applies the 'SchrodingerDisorder' effect. | 1 |
 | `Scleroderma` | Integer | Applies the 'Scleroderma' effect. | 1 |
 | [`SelfDamageWhenDealDamage`](#selfdamagewhendealdamage) | Object | Applies the 'SelfDamageWhenDealDamage' effect. | 1 |
-| `set_WitchJump` | Variable |  | 1 |
 | [`SetFaction`](./Enums.md#enum-setfaction) | Enum | Applies or references the 'SetFaction' effect/state. | 1 |
 | `Shadowstep` | Variable |  | 1 |
 | `ShineBuff` | Variable |  | 1 |
@@ -1177,17 +1159,15 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Smough` | Variable |  | 1 |
 | `SpawnCatCloneOnCorpsePopped` | Integer | Applies or references the 'SpawnCatCloneOnCorpsePopped' effect/state. | 1 |
 | `SpawnCreepOnHitKnockback` | Integer | Applies or references the 'SpawnCreepOnHitKnockback' effect/state. | 1 |
-| `spawner` | Variable |  | 1 |
-| `SpawnerCatDataReference` | Integer | Applies or references the 'SpawnerCatDataReference' effect/state. | 1 |
 | [`SpawnMeatOnMove`](./Enums.md#enum-spawnmeatonmove) | Enum | Applies the 'SpawnMeatOnMove' effect. | 1 |
 | [`SpawnRandomPickupsOnTaggedUnitKilled`](#spawnrandompickupsontaggedunitkilled) | Object | Applies or references the 'SpawnRandomPickupsOnTaggedUnitKilled' effect/state. | 1 |
+| `SpawnerCatDataReference` | Integer | Applies or references the 'SpawnerCatDataReference' effect/state. | 1 |
 | `SpeedUp_WithoutInitiative` | Integer | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. | 1 |
 | [`SpewerAltGraphics`](#speweraltgraphics) | Object | Visual: Alternative graphics for Spewer enemies. | 1 |
 | `SpiderReturn` | Variable |  | 1 |
 | `Spook` | Variable |  | 1 |
 | `SpreadPainBonusCrit` | Integer | Applies the 'SpreadPainBonusCrit' effect. | 1 |
 | `SpreadWater` | Integer | Applies or references the 'SpreadWater' effect/state. | 1 |
-| `sprout` | Variable |  | 1 |
 | `SproutsGrantMovement` | Integer | Applies or references the 'SproutsGrantMovement' effect/state. | 1 |
 | [`StackingDodgeChanceOnTookDamage`](#stackingdodgechanceontookdamage) | Object | Applies the 'StackingDodgeChanceOnTookDamage' effect. | 1 |
 | [`StacyMutant_Brace`](#stacymutant_brace) | Object | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 |
@@ -1233,13 +1213,18 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`SwimmingFormChange`](#swimmingformchange) | Object | Logic: Automates form change when entering/exiting water. | 1 |
 | [`SyncFormsWithBuddy`](#syncformswithbuddy) | Object | Logic: Forces this character's form to match their familiar/buddy. | 1 |
 | [`T3HitlerSpawningPhase`](#t3hitlerspawningphase) | Object | Boss Logic: Minion spawn phase for the T3 Hitler boss. | 1 |
+| `TC_DashReaction` | Variable |  | 1 |
+| `TT_Thrash` | Variable |  | 1 |
+| `TVBotDisableAttack` | Integer | Applies or references the 'TVBotDisableAttack' effect/state. | 1 |
+| `TVBotDisableMove` | Integer | Applies or references the 'TVBotDisableMove' effect/state. | 1 |
+| `TVBotDisableSpells` | Integer | Applies or references the 'TVBotDisableSpells' effect/state. | 1 |
+| [`TVBotScreen`](#tvbotscreen) | Object | Visual: TV Bot screen state. | 1 |
 | [`TakeBonusTurnWithStatus`](#takebonusturnwithstatus) | Object | Grants the character an immediate extra turn while afflicted with specific statuses. | 1 |
 | `TakeWeaponFromSpawner` | Integer | Applies or references the 'TakeWeaponFromSpawner' effect/state. | 1 |
 | `Tall` | Integer | Applies or references the 'Tall' effect/state. | 1 |
 | [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum | Applies or references the 'TallTumorManaBurn' effect/state. | 1 |
 | `TattersFear` | Variable |  | 1 |
 | `TauntAtFullHealth` | Integer | Applies the 'TauntAtFullHealth' effect. | 1 |
-| `TC_DashReaction` | Variable |  | 1 |
 | `TempMeleeRangeUp` | Integer | Applies or references the 'TempMeleeRangeUp' effect/state. | 1 |
 | [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum | Applies or references the 'Terminator2Chase' effect/state. | 1 |
 | [`Terminator2Run`](#terminator2run) | Object | AI Movement: Specific run logic for Terminator2. | 1 |
@@ -1259,31 +1244,25 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `TossTargetIsBuddy` | Integer | Applies or references the 'TossTargetIsBuddy' effect/state. | 1 |
 | `TossTargetIsNotInWater` | Integer | Applies or references the 'TossTargetIsNotInWater' effect/state. | 1 |
 | [`TourettesMeows`](#tourettesmeows) | Object | Applies the 'TourettesMeows' effect. | 1 |
-| `ToxicBubbles` | Variable |  | 1 |
 | `ToxPuff` | Variable |  | 1 |
+| `ToxicBubbles` | Variable |  | 1 |
 | [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum | Applies or references the 'TrackAmountKilledByPlayer' effect/state. | 1 |
 | [`TransformOnStatusThreshold`](#transformonstatusthreshold) | Object | Logic: Changes form when a status effect reaches a certain stack count. | 1 |
 | `TrexSwitchTarget` | Variable |  | 1 |
 | `TriggerBleedOnBleed` | Integer | Examples: `1` | 1 |
 | `Triskaidekaphobia` | Integer | Applies the 'Triskaidekaphobia' effect. | 1 |
-| `TT_Thrash` | Variable |  | 1 |
-| `tumor` | Variable |  | 1 |
 | [`TunnelVision`](#tunnelvision) | Object | Applies or references the 'TunnelVision' effect/state. | 1 |
 | `TutorialBossRiggedFight` | Integer | Applies or references the 'TutorialBossRiggedFight' effect/state. | 1 |
-| `TVBotDisableAttack` | Integer | Applies or references the 'TVBotDisableAttack' effect/state. | 1 |
-| `TVBotDisableMove` | Integer | Applies or references the 'TVBotDisableMove' effect/state. | 1 |
-| `TVBotDisableSpells` | Integer | Applies or references the 'TVBotDisableSpells' effect/state. | 1 |
-| [`TVBotScreen`](#tvbotscreen) | Object | Visual: TV Bot screen state. | 1 |
-| `Twister_loop` | Enum |  | 1 |
 | [`TwisterFling`](#twisterfling) | Object | Logic: Fling behavior for tornado attacks. | 1 |
+| `Twister_loop` | Enum |  | 1 |
 | `UFO_BigExplode` | Variable |  | 1 |
 | `UltraSmough` | Variable |  | 1 |
 | `UncappedHPBonusStr` | Integer | Applies the 'UncappedHPBonusStr' effect. | 1 |
 | [`UnlimitedDeathRattleRevive`](#unlimiteddeathrattlerevive) | Object | Logic: Endless resurrection on death. | 1 |
 | `UpTireBehavior` | Integer | Applies or references the 'UpTireBehavior' effect/state. | 1 |
-| [`UseAbility_Madness`](./Enums.md#enum-useability_madness) | Enum | Applies the 'UseAbility_Madness' effect. | 1 |
 | [`UseAbilityWhenOutOfStatus`](#useabilitywhenoutofstatus) | Object | Logic: Casts a specific ability the moment a status effect expires. | 1 |
 | [`UseAbilityWhenShieldDepleted`](./Enums.md#enum-useabilitywhenshielddepleted) | Enum | Applies or references the 'UseAbilityWhenShieldDepleted' effect/state. | 1 |
+| [`UseAbility_Madness`](./Enums.md#enum-useability_madness) | Enum | Applies the 'UseAbility_Madness' effect. | 1 |
 | `Wall` | Integer | Applies or references the 'Wall' effect/state. | 1 |
 | `Wet` | Integer | Applies or references the 'Wet' effect/state. | 1 |
 | [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | Applies or references the 'WhitelistPickupType' effect/state. | 1 |
@@ -1299,11 +1278,32 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `XIsIncreaseEachTurn` | Integer | Applies or references the 'XIsIncreaseEachTurn' effect/state. | 1 |
 | `XIsRampAndReset` | Integer | Applies or references the 'XIsRampAndReset' effect/state. | 1 |
 | `XIsRecycleCostReduction` | Integer | Applies or references the 'XIsRecycleCostReduction' effect/state. | 1 |
-| `zaratana` | Variable |  | 1 |
 | `ZeroKnockbackDamage` | Integer | Applies or references the 'ZeroKnockbackDamage' effect/state. | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| `all_spells` | Variable |  | 1 |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | String | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` | 1 |
+| `choose_favorite_cat` | Variable |  | 1 |
+| [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 1 |
+| `end_of_round` | Boolean | `true` | 1 |
+| `enemies` | Variable |  | 1 |
+| `exclude_self` | Boolean | `false` | 1 |
+| `face_EatNeverstone` | Variable |  | 1 |
+| `face_LeechBrood` | Variable |  | 1 |
+| `fetus` | Variable |  | 1 |
+| `grub_familiar` | Variable |  | 1 |
+| `insane` | Object | Examples: `{ ... }` | 1 |
+| `meat` | Variable |  | 1 |
+| [`move`](./Arrays.md#array-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 1 |
+| [`neck`](./Enums.md#enum-neck) | Enum | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` | 1 |
+| `neck_NukeBonus` | Variable |  | 1 |
+| `neck_NukeExplode` | Variable |  | 1 |
+| `pickup` | Variable |  | 1 |
+| `plant` | Variable |  | 1 |
+| `pyrophina` | Variable |  | 1 |
+| `set_WitchJump` | Variable |  | 1 |
+| `spawner` | Variable |  | 1 |
+| `sprout` | Variable |  | 1 |
+| `tumor` | Variable |  | 1 |
+| `zaratana` | Variable |  | 1 |
 
 | `Marked` | Array | Applies or references the 'Marked' effect/state. | 0 |
 | `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
@@ -1478,169 +1478,26 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 0 |
 </details>
 
-
 ### Valid Nested Objects
 
 The following objects all behave as `{Status and Passive Keys}` containers. Each has its own unique parameters listed below its entry.
 
+---
 
-#### `passives`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2805
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2827 |
-
-</details>
-
-#### `AddStatusToBasicAttack`
+#### `AddPassivesToCharmed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 248
+> **Total Count:** 5
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 187 |
-| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 5 |
-| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 3 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 3 |
-| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Nested conditional. | 2 |
-| [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 2 |
-| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
-| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
 
 </details>
 
-#### `self_status_next_fight`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 143
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 133 |
-
-</details>
-
-#### `bonus_passives`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 138
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 126 |
-
-</details>
-
-#### `MeleeRevengeDamage`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 73
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 75 |
-| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |
-| `knockback` | Integer | The base physics pushing power (in tiles). | 24 |
-| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
-| `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 1 |
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
-  | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
-  | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
-  | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
-  | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 0 |
-
-</details>
-
-#### `StatusEachTurnEnd`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 57
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 55 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 2 |
-| [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 1 |
-| [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 |
-| [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `StatusOnBattleEnd`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 53
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 58 |
-| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 25 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 6 |
-| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
-| [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `StatusOnTookDamage`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 46
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
-| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `StatusOnKill`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 40
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 4 |
-| [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Object | Nested conditional. | 2 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-  | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 0 |
-  | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 0 |
-  | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 0 |
-  | `BrittleIntelligenceUp` | Integer | Applies or references the 'BrittleIntelligenceUp' effect/state. | 0 |
-  | `BrittleLuckUp` | Integer | Applies or references the 'BrittleLuckUp' effect/state. | 0 |
-  | `BrittleSpeedUp` | Integer | Applies or references the 'BrittleSpeedUp' effect/state. | 0 |
-  | `BrittleStrengthUp` | Integer | Applies or references the 'BrittleStrengthUp' effect/state. | 0 |
-  | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 0 |
-
-</details>
+---
 
 #### `AddPassivesToMinions`
 
@@ -1651,150 +1508,44 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 44 |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 44 |
 
 </details>
 
-#### `RandomStatusFromPool`
+---
+
+#### `AddSelfStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 35
+> **Total Count:** 11
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 35 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
 
 </details>
 
-#### `RevengeDamage`
+---
+
+#### `AddSelfStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 31
+> **Total Count:** 3
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
-| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 54 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 17 |
-| `knockback` | Integer | The base physics pushing power (in tiles). | 3 |
-| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+  | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 0 |
+  | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Number | Applies or references the 'RepairWeapon' effect/state. | 0 |
 
 </details>
 
-#### `StatusEachTurnBegin`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 27
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
-| [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 5 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `party_status_next_fight`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 24
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 23 |
-
-</details>
-
-#### `StatusOnBreak`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 22
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 15 |
-
-</details>
-
-#### `additional_passives`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 20
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 20 |
-
-</details>
-
-#### `PassiveWhenAffectedByElement`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 18
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`passives`](#passives) | Object | Examples: `{ ... }` | 5118 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 33 |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
-
-</details>
-
-#### `StatusOnBattleStart`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 16
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
-
-</details>
-
-#### `PassiveGroup`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 14
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 14 |
-
-</details>
-
-#### `statuses`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 14
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-
-</details>
+---
 
 #### `AddStatusToAllDamage`
 
@@ -1818,62 +1569,30 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
-#### `ApplyPassives`
+---
+
+#### `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 13
+> **Total Count:** 248
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 13 |
 | `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 187 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 5 |
+| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 3 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 3 |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Nested conditional. | 2 |
+| [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 2 |
+| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
+| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Nested conditional. | 1 |
 
 </details>
 
-#### `PassiveAtStatThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 13
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`passives`](#passives) | Object | Examples: `{ ... }` | 5118 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 33 |
-| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 13 |
-| [`threshold`](#threshold) | Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 13 |
-
-</details>
-
-#### `CritsApplyStatus`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 12
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 12 |
-| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
-
-</details>
-
-#### `AddSelfStatusToBasicAttack`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 11
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
-
-</details>
+---
 
 #### `AddStatusToBasicMeleeAttack`
 
@@ -1888,18 +1607,517 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
-#### `StatusOnKillEnemy`
+---
+
+#### `AddStatusToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 11
+> **Total Count:** 6
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 1 |
+| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+  | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
+
+</details>
+
+---
+
+#### `AddStatusToKnockbackDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+  | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 0 |
+  | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
+
+</details>
+
+---
+
+#### `AddStatusToSpells`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
+  | `Leech` | Number | Applies or references the 'Leech' effect/state. | 0 |
+  | `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 0 |
+
+</details>
+
+---
+
+#### `AddStatusToTrampleDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+  | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 0 |
+  | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
+
+</details>
+
+---
+
+#### `AddStatusToWeapons`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
+
+</details>
+
+---
+
+#### `AdventureTokenPassivePool`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 12 |
+
+</details>
+
+---
+
+#### `ApplyPassives`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 13
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 13 |
+
+</details>
+
+---
+
+#### `ApplyStatusIfCrit`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 9
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+
+</details>
+
+---
+
+#### `ApplyStatusesToRandomEnemiesEachTurn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`count`](./Arrays.md#array-count) | Integer | Quantity. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `CatchProjectiles`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `ally_chance` | Integer | Examples: `15, 100` | 5 |
+| [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+
+</details>
+
+---
+
+#### `CharacterTypeGainsStatusAtBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
+| [`Conditional_Flying`](#conditional_flying) | Object | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+
+</details>
+
+---
+
+#### `CritsApplyStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 12
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 12 |
+
+</details>
+
+---
+
+#### `ExtraStatusWhenDealingDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 5
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 3 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 2 |
+
+</details>
+
+---
+
+#### `MeleeRevengeDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 73
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
+| `knockback` | Integer | The base physics pushing power (in tiles). | 24 |
+| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |
+| `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 1 |
+| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 75 |
+  | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
+  | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
+  | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
+  | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 0 |
+
+</details>
+
+---
+
+#### `PassiveAfterXKills`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`passives`](#passives) | Object | Passives granted by equipping this. | 5118 |
+| `stacks` | Integer | Number of stacks or intensity to apply. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+
+</details>
+
+---
+
+#### `PassiveAtHealthThreshold`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 9
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 9 |
+| [`passives`](#passives) | Object | Passives granted by equipping this. | 5118 |
+| `threshold` | Integer | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 16 |
+
+</details>
+
+---
+
+#### `PassiveAtStatThreshold`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 13
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 13 |
+| [`passives`](#passives) | Object | Examples: `{ ... }` | 5118 |
+| [`threshold`](#threshold) | Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 13 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 33 |
+
+</details>
+
+---
+
+#### `PassiveGroup`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 14
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 14 |
+
+</details>
+
+---
+
+#### `PassiveWhenAffectedByElement`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 18
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
+| [`passives`](#passives) | Object | Examples: `{ ... }` | 5118 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 33 |
+
+</details>
+
+---
+
+#### `PassiveWhenAtFullMana`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 5
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
+
+</details>
+
+---
+
+#### `PassiveWhenDead`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+  | [`StatusEachRoundEnd`](#statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 0 |
+  | [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 0 |
+  | [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 0 |
+  | [`AutocastEachRound`](#autocasteachround) | Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 0 |
+
+</details>
+
+---
+
+#### `PassiveWhileHasStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`passives`](#passives) | Object | Object listing intrinsic passive modifiers. | 5118 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 6 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
 
 </details>
+
+---
+
+#### `PassiveWhileInMonkMeleeStance`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `RandomPassivePool`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 26 |
+
+</details>
+
+---
+
+#### `RandomStatusFromPool`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 35
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 35 |
+
+</details>
+
+---
+
+#### `RevengeDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 31
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
+| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 54 |
+| `knockback` | Integer | The base physics pushing power (in tiles). | 3 |
+| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 17 |
+
+</details>
+
+---
+
+#### `StatusAfterCastSpell`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `StatusAfterXTurns`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `stacks` | Integer | Number of stacks or intensity to apply. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `StatusAllCharactersOnSpawn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 5
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 2 |
+| [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 1 |
+| [`Conditional_Tiny`](#conditional_tiny) | Object | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `StatusAlliesEachTurn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Nested conditional. | 1 |
+| `exclude_self` | Boolean | `false` | 1 |
+  | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 0 |
+
+</details>
+
+---
 
 #### `StatusAlliesOnBattleStart`
 
@@ -1913,6 +2131,331 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
 
 </details>
+
+---
+
+#### `StatusAlliesOnDeath`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `triggers_limit` | Integer | Examples: `1` | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+
+</details>
+
+---
+
+#### `StatusEachRoundEnd`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `StatusEachTurnBegin`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 27
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 5 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
+
+</details>
+
+---
+
+#### `StatusEachTurnEnd`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 57
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 2 |
+| [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 1 |
+| [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 |
+| [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 55 |
+
+</details>
+
+---
+
+#### `StatusEachTurnEndForEachTurn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `StatusEveryXSpellCasts`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `stacks` | Integer | Number of stacks or intensity to apply. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
+
+</details>
+
+---
+
+#### `StatusGroup`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+
+</details>
+
+---
+
+#### `StatusIfUnusedMovePoints`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+
+</details>
+
+---
+
+#### `StatusKilledCharacters`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 5
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 2 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
+  | `AutoReanimate` | Number | Examples: `50` | 0 |
+
+</details>
+
+---
+
+#### `StatusKillers`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 2 |
+| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 2 |
+  | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 0 |
+
+</details>
+
+---
+
+#### `StatusOnAllyCatDeath`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+
+</details>
+
+---
+
+#### `StatusOnBattleEnd`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 53
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 25 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 6 |
+| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
+| [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 58 |
+
+</details>
+
+---
+
+#### `StatusOnBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 16
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
+
+</details>
+
+---
+
+#### `StatusOnBreak`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 22
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 15 |
+
+</details>
+
+---
+
+#### `StatusOnBreakItem`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `StatusOnCastSpell`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+
+</details>
+
+---
+
+#### `StatusOnCollectPickup`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `StatusOnDie`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 9
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |
+| [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
+
+</details>
+
+---
+
+#### `StatusOnEatFood`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 5
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+
+</details>
+
+---
+
+#### `StatusOnEatPill`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+  | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 0 |
+  | [`RandomPermanentStatsDistinct`](#randompermanentstatsdistinct) | Object | Examples: `{ ... }` | 0 |
+
+</details>
+
+---
 
 #### `StatusOnEndMove`
 
@@ -1936,230 +2479,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
-#### `ApplyStatusIfCrit`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 9
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-
-</details>
-
-#### `PassiveAtHealthThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 9
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`passives`](#passives) | Object | Passives granted by equipping this. | 5118 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 16 |
-| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 9 |
-| `threshold` | Integer | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 9 |
-
-</details>
-
-#### `StatusOnDie`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 9
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |
-| [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `StatusOnTookDamageFromAbility`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 9
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-
-</details>
-
-#### `AddStatusToWeapons`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
-
-</details>
-
-#### `CharacterTypeGainsStatusAtBattleStart`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-| [`Conditional_Flying`](#conditional_flying) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `StatusAlliesOnDeath`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-| `triggers_limit` | Integer | Examples: `1` | 2 |
-
-</details>
-
-#### `StatusEveryXSpellCasts`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
-| `stacks` | Integer | Number of stacks or intensity to apply. | 8 |
-
-</details>
-
-#### `StatusIfUnusedMovePoints`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-
-</details>
-
-#### `StatusOnCastSpell`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-
-</details>
-
-#### `StatusRandomEnemiesOnBattleStart`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 7
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
-| [`count`](./Arrays.md#array-count) | Integer | Quantity. | 3 |
-
-</details>
-
-#### `AddStatusToElementDamage`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 2 |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 1 |
-  | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
-
-</details>
-
-#### `CatchProjectiles`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
-| `ally_chance` | Integer | Examples: `15, 100` | 5 |
-| [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
-
-</details>
-
-#### `PassiveWhileHasStatus`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`passives`](#passives) | Object | Object listing intrinsic passive modifiers. | 5118 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 6 |
-
-</details>
-
-#### `StatusGroup`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
-
-</details>
-
-#### `StatusOnAllyCatDeath`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
-
-</details>
+---
 
 #### `StatusOnGainCoins`
 
@@ -2174,92 +2494,78 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
-#### `AddPassivesToCharmed`
+---
+
+#### `StatusOnHealed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 5
+> **Total Count:** 4
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
 
 </details>
 
-#### `ExtraStatusWhenDealingDamage`
+---
+
+#### `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 5
+> **Total Count:** 40
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 3 |
-| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 2 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 4 |
+| [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Object | Nested conditional. | 2 |
+  | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 0 |
+  | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 0 |
+  | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 0 |
+  | `BrittleIntelligenceUp` | Integer | Applies or references the 'BrittleIntelligenceUp' effect/state. | 0 |
+  | `BrittleLuckUp` | Integer | Applies or references the 'BrittleLuckUp' effect/state. | 0 |
+  | `BrittleSpeedUp` | Integer | Applies or references the 'BrittleSpeedUp' effect/state. | 0 |
+  | `BrittleStrengthUp` | Integer | Applies or references the 'BrittleStrengthUp' effect/state. | 0 |
+  | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 0 |
 
 </details>
 
-#### `PassiveWhenAtFullMana`
+---
+
+#### `StatusOnKillEnemy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 5
+> **Total Count:** 11
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
 
 </details>
 
-#### `StatusAllCharactersOnSpawn`
+---
+
+#### `StatusOnPickupCoins`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 5
+> **Total Count:** 3
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 2 |
-| [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 1 |
-| [`Conditional_Tiny`](#conditional_tiny) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
-#### `StatusKilledCharacters`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 5
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 2 |
-| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-  | `AutoReanimate` | Number | Examples: `50` | 0 |
-
-</details>
-
-#### `StatusOnEatFood`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 5
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
-
-</details>
+---
 
 #### `StatusOnPopCorpse`
 
@@ -2274,6 +2580,103 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
+---
+
+#### `StatusOnTookDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 46
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
+
+</details>
+
+---
+
+#### `StatusOnTookDamageFromAbility`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 9
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+
+</details>
+
+---
+
+#### `StatusOnUseBasicAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `StatusRandomEnemiesOnBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 7
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`count`](./Arrays.md#array-count) | Integer | Quantity. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
+
+</details>
+
+---
+
+#### `StatusWhenAllySpendsMana`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `TakeBonusTurnWithAIControl`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 |
+| `end_of_round` | Boolean | `true` | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
 #### `TakeBonusTurnWithStatus`
 
 <details>
@@ -2287,147 +2690,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
-#### `AddStatusToSpells`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
-| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
-  | `Leech` | Number | Applies or references the 'Leech' effect/state. | 0 |
-  | `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 0 |
-
-</details>
-
-#### `ApplyStatusesToRandomEnemiesEachTurn`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| [`count`](./Arrays.md#array-count) | Integer | Quantity. | 3 |
-
-</details>
-
-#### `extra_statuses`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `PassiveAfterXKills`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`passives`](#passives) | Object | Passives granted by equipping this. | 5118 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
-| `stacks` | Integer | Number of stacks or intensity to apply. | 4 |
-
-</details>
-
-#### `PassiveWhenDead`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-  | [`StatusEachRoundEnd`](#statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 0 |
-  | [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 0 |
-  | [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 0 |
-  | [`AutocastEachRound`](#autocasteachround) | Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 0 |
-
-</details>
-
-#### `RandomPassivePool`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 26 |
-
-</details>
-
-#### `StatusAfterCastSpell`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `StatusEachTurnEndForEachTurn`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-
-</details>
-
-#### `StatusOnBreakItem`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-
-</details>
-
-#### `StatusOnHealed`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-
-</details>
+---
 
 #### `TempPassiveWhileHasStatus`
 
@@ -2443,375 +2706,110 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
-#### `AddSelfStatusToWeapons`
+---
+
+#### `additional_passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Total Count:** 20
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-  | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 0 |
-  | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Number | Applies or references the 'RepairWeapon' effect/state. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 20 |
 
 </details>
 
-#### `AddStatusToKnockbackDamage`
+---
+
+#### `bonus_passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Total Count:** 138
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-  | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 0 |
-  | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 126 |
 
 </details>
 
-#### `AddStatusToTrampleDamage`
+---
+
+#### `extra_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Total Count:** 4
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-  | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 0 |
-  | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
 
 </details>
 
-#### `PassiveWhileInMonkMeleeStance`
+---
+
+#### `party_status_next_fight`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Total Count:** 24
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 23 |
 
 </details>
 
-#### `StatusEachRoundEnd`
+---
+
+#### `passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Total Count:** 2805
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2827 |
 
 </details>
 
-#### `StatusKillers`
+---
+
+#### `self_status_next_fight`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Total Count:** 143
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
-| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 2 |
-| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 2 |
-  | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 133 |
 
 </details>
 
-#### `StatusOnCollectPickup`
+---
+
+#### `statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Total Count:** 14
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
 
 </details>
 
-#### `StatusOnPickupCoins`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-
-</details>
-
-#### `StatusOnUseBasicAttack`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-
-</details>
-
-#### `StatusWhenAllySpendsMana`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-
-</details>
-
-#### `TakeBonusTurnWithAIControl`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| `end_of_round` | Boolean | `true` | 1 |
-
-</details>
-
-#### `StatusAfterXTurns`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `stacks` | Integer | Number of stacks or intensity to apply. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-
-</details>
-
-#### `StatusAlliesEachTurn`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Nested conditional. | 1 |
-| `exclude_self` | Boolean | `false` | 1 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-  | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 0 |
-
-</details>
-
-#### `StatusOnEatPill`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-  | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 0 |
-  | [`RandomPermanentStatsDistinct`](#randompermanentstatsdistinct) | Object | Examples: `{ ... }` | 0 |
-
-</details>
-
-#### `AdventureTokenPassivePool`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 12 |
-
-</details>
-
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----

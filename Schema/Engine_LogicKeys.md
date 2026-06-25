@@ -22,6 +22,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 84 |
 | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 76 |
 | `IgnoreSelf` | Integer | Applies or references the 'IgnoreSelf' effect/state. | 75 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 62 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 59 |
 | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 53 |
@@ -76,10 +77,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 15 |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 15 |
 | `FaceAway` | Number | Applies or references the 'FaceAway' effect/state. | 15 |
-| `force_contact` | Boolean | If true, enforces physical overlap. | 15 |
 | `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. | 15 |
 | `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 15 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 15 |
+| `force_contact` | Boolean | If true, enforces physical overlap. | 15 |
 | `CatPartsTransform` | Object | Transforms specific body parts into different visual variants. | 14 |
 | [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Applies or references the 'ChangeCatClass' effect/state. | 14 |
 | [`Conditional_NotBoss`](#conditionalnotboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 14 |
@@ -97,11 +98,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 12 |
 | `rock` | Variable |  | 12 |
 | [`ChanceToBreakFree`](#chancetobreakfree) | Object | Provides a probability to escape a grapple or restraining effect. | 11 |
-| `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |
 | [`DoScreenShake`](#doscreenshake) | Object | Triggers a camera screen shake effect. | 11 |
-| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean | Examples: `false, true, deferred` | 11 |
 | [`Instakill`](./Arrays.md#array-instakill) | Number | Applies or references the 'Instakill' effect/state. | 11 |
 | `PurgeAll` | Integer | Applies or references the 'PurgeAll' effect/state. | 11 |
+| `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |
+| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean | Examples: `false, true, deferred` | 11 |
 | [`Conditional_FormulaIsPositive`](#conditional_formulaispositive) | Object | Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0. | 10 |
 | `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. | 10 |
 | `KnockbackDamageImmuneUntilSettled` | Integer | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 10 |
@@ -118,11 +119,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `SpawnCreep` | Integer | Applies or references the 'SpawnCreep' effect/state. | 9 |
 | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 8 |
 | [`Conditional_Corpse`](#conditionalcorpse) | Object | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 8 |
-| [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
 | [`Grappled`](./Arrays.md#array-grappled) | Integer | Applies or references the 'Grappled' effect/state. | 8 |
 | `SpreadDisease` | Object | Provides a chance to transmit a disease status to adjacent targets. | 8 |
 | [`Tarred`](./Arrays.md#array-tarred) | Array | Applies or references the 'Tarred' effect/state. | 8 |
 | `Tech` | Number | Applies or references the 'Tech' effect/state. | 8 |
+| [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
 | `wet` | Boolean | Examples: `false, true` | 8 |
 | `ApplyStatusIfCrit` | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 7 |
 | `BramblesOnHit` | Integer | Applies or references the 'BramblesOnHit' effect/state. | 7 |
@@ -131,7 +132,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ContextualHeal` | Integer | Applies or references the 'ContextualHeal' effect/state. | 7 |
 | `Drowsy` | Number | Applies or references the 'Drowsy' effect/state. | 7 |
 | `ForceAttack` | Object | Forces the character to execute an immediate attack. | 7 |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 7 |
 | `ManaSteal` | Integer | Applies or references the 'ManaSteal' effect/state. | 7 |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 7 |
@@ -139,6 +139,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TempRangeUp` | Number | Applies or references the 'TempRangeUp' effect/state. | 7 |
 | [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array | Applies or references the 'TriggerWerewolfTransform' effect/state. | 7 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 7 |
+| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 | `BackflipWhenTargeted` | Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 6 |
 | [`BounceRock`](./Enums.md#enum-bouncerock) | Enum | Applies or references the 'BounceRock' effect/state. | 6 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 6 |
@@ -154,7 +155,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 6 |
 | `FloatingRockTrap` | Integer | Applies or references the 'FloatingRockTrap' effect/state. | 6 |
 | `ForceMoveTowards` | Integer | Applies or references the 'ForceMoveTowards' effect/state. | 6 |
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 6 |
 | `Metronome` | Integer | Executes a random musical or metronome ability. | 6 |
 | [`PopAndSpawn`](./Enums.md#enum-popandspawn) | Enum | Destroys the target and replaces it with a new spawned entity. | 6 |
 | `RandomInjury` | Number | Applies or references the 'RandomInjury' effect/state. | 6 |
@@ -164,9 +164,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `SpiderInfested` | Number | Applies or references the 'SpiderInfested' effect/state. | 6 |
 | [`TeamCastAbility`](./Enums.md#enum-teamcastability) | Enum | Requires or involves multiple characters to execute the ability. | 6 |
 | [`TempSpeedUp`](./Enums.md#enum-tempspeedup) | Enum | Applies or references the 'TempSpeedUp' effect/state. | 6 |
-| `threshold_flat` | Integer | A flat numerical health value threshold. | 6 |
 | [`TwisterDisplaceWithDamage`](#twisterdisplacewithdamage) | Object | A whirlwind effect that randomly displaces targets and deals damage. | 6 |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 6 |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 6 |
+| `threshold_flat` | Integer | A flat numerical health value threshold. | 6 |
 | [`CollectsPickupsWithAltEffects`](#collectspickupswithalteffects) | Object | Triggers alternative nested effects when collecting items or pickups. | 5 |
 | [`Conditional_IsSelf`](#conditional_isself) | Object | Conditional trigger: Executes nested logic if the target is the caster themselves. | 5 |
 | `DestroyEquipmentAndAttachParasite` | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 5 |
@@ -191,6 +192,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`SpecificInjury`](./Enums.md#enum-specificinjury) | Enum | Applies or references the 'SpecificInjury' effect/state. | 5 |
 | [`Stealth`](./Arrays.md#array-stealth) | Number | Applies or references the 'Stealth' effect/state. | 5 |
 | `UpgradeRandomAbility` | Integer | Applies or references the 'UpgradeRandomAbility' effect/state. | 5 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ApplyToConsumed`](#applytoconsumed) | Object | Redirects the nested effects to apply to the entity that just consumed this object. | 4 |
 | [`ArcLightning`](#arclightning) | Object | Executes a chain-lightning logic block that bounces between targets. | 4 |
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array | Applies or references the 'BurgleCoin' effect/state. | 4 |
@@ -208,7 +211,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `FreeSpell` | Integer | Applies or references the 'FreeSpell' effect/state. | 4 |
 | [`LateStatusApplication`](#latestatusapplication) | Object | Applies a status effect after all primary damage and effects have fully resolved. | 4 |
 | `LowerAmbientLight` | Object | A visual effect that dims the map's lighting. | 4 |
-| `moonhand` | Variable |  | 4 |
 | `Rain` | Integer | Character Form: Behavior and stats for the 'Rain' state. | 4 |
 | `Reanimate` | Number | Applies or references the 'Reanimate' effect/state. | 4 |
 | `RefreshWeaponAbility` | Integer | Applies or references the 'RefreshWeaponAbility' effect/state. | 4 |
@@ -221,6 +223,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Thrash` | Variable |  | 4 |
 | [`TimeDelayStatusApplication`](#timedelaystatusapplication) | Object | Delays the nested effects by a specified amount of real-time seconds. | 4 |
 | `Windy` | Integer | Examples: `{ ... }` | 4 |
+| `moonhand` | Variable |  | 4 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 3 |
 | [`ApplyMultipleTimes`](#applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 3 |
 | `Attraction` | Integer | Applies or references the 'Attraction' effect/state. | 3 |
@@ -239,10 +242,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `DisplaceToAbilityTarget` | Integer | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 3 |
 | `DoDamage` | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 3 |
 | [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Applies or references the 'DoubleStatus' effect/state. | 3 |
-| `drop_on_self_death` | Boolean | Examples: `true` | 3 |
 | [`DustOnHit`](#dustonhit) | Object | Spawns a specific particle or cloud object upon impact. | 3 |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
-| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
 | `ExtraBasicAttacks_Status` | Number | Applies or references the 'ExtraBasicAttacks_Status' effect/state. | 3 |
 | `FlatAIBonus` | Integer | Applies or references the 'FlatAIBonus' effect/state. | 3 |
 | `ForceDisplace` | Integer | Applies or references the 'ForceDisplace' effect/state. | 3 |
@@ -253,7 +253,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `NextAttackBonusRange` | Integer | Applies or references the 'NextAttackBonusRange' effect/state. | 3 |
 | `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. | 3 |
 | `PoisonLace` | Number | Applies or references the 'PoisonLace' effect/state. | 3 |
-| `poop` | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 3 |
 | `PullSourceToTarget` | Number | Applies or references the 'PullSourceToTarget' effect/state. | 3 |
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 |
 | `RemoveMovePoints` | Integer | Applies or references the 'RemoveMovePoints' effect/state. | 3 |
@@ -275,6 +274,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `VaporizeTarget` | Integer | Applies or references the 'VaporizeTarget' effect/state. | 3 |
 | `WaterTile` | Variable |  | 3 |
 | `ZombieCatFamiliar` | Variable |  | 3 |
+| `drop_on_self_death` | Boolean | Examples: `true` | 3 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
+| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
+| `poop` | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 3 |
 | `AddLeechesStatus` | Integer | Applies or references the 'AddLeechesStatus' effect/state. | 2 |
 | `AddSpiritBombCharges` | Integer | Applies or references the 'AddSpiritBombCharges' effect/state. | 2 |
 | [`ApplyToRandomPartyMemberIfPossible`](#applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 |
@@ -323,19 +326,15 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ForceMoveNonAlliesInRangeTowardsTile` | Integer | Applies or references the 'ForceMoveNonAlliesInRangeTowardsTile' effect/state. | 2 |
 | [`ForceMoveTowardsTaggedObject`](#forcemovetowardstaggedobject) | Object | Forces the character to move towards the nearest object with a specific tag. | 2 |
 | [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Object | Logic: Applies a negative mutation/disorder from a specific pool. | 2 |
-| `gamewin` | Variable |  | 2 |
 | [`GlobalSpawnOnRoundEnd`](#globalspawnonroundend) | Object | Examples: `{ ... }` | 2 |
 | `HealRandomInjury` | Integer | Applies or references the 'HealRandomInjury' effect/state. | 2 |
 | `HornCharge` | Variable |  | 2 |
-| `humanoid` | Variable |  | 2 |
 | [`ImmediateUseDirectionalAbility`](./Enums.md#enum-immediateusedirectionalability) | Enum | Applies or references the 'ImmediateUseDirectionalAbility' effect/state. | 2 |
 | `JohnnyCriesForWashers` | Integer | Applies or references the 'JohnnyCriesForWashers' effect/state. | 2 |
 | `LeaveBehindRockOnKnockback` | Number | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. | 2 |
 | `ManaLeeches` | Number | Applies or references the 'ManaLeeches' effect/state. | 2 |
 | [`Math`](#math) | Object | Triggers the Tinkerer's Math ability sequence. | 2 |
 | `MaxHPUp` | Integer | Applies or references the 'MaxHPUp' effect/state. | 2 |
-| `megadino` | Variable |  | 2 |
-| `moonhead` | Variable |  | 2 |
 | `NextAttackSpecialCrit` | Integer | Modifies the character's next attack to have special critical properties. | 2 |
 | `OffMap` | Object | Character Form: Behavior and stats for the 'OffMap' state. | 2 |
 | `OilTile` | Variable |  | 2 |
@@ -380,9 +379,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TempMovement` | Number | Applies or references the 'TempMovement' effect/state. | 2 |
 | `TempPassiveUntilSettled` | Object | Passive: Active only until the physics engine stops moving the character. | 2 |
 | `TempSpellDamageUp` | Number | Applies or references the 'TempSpellDamageUp' effect/state. | 2 |
-| `the_coven` | Variable |  | 2 |
 | `ThornsDamageImmuneUntilSettled` | Integer | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. | 2 |
-| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
 | `ThrowPoop` | Variable |  | 2 |
 | `TileDamageImmuneUntilSettled` | Integer | Applies or references the 'TileDamageImmuneUntilSettled' effect/state. | 2 |
 | `TradeLife` | Integer | Applies or references the 'TradeLife' effect/state. | 2 |
@@ -390,17 +387,21 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TriggerDOTStatuses` | Integer | Applies or references the 'TriggerDOTStatuses' effect/state. | 2 |
 | `VisualFlySwarm` | Integer | Examples: `1` | 2 |
 | [`XIsTargetHealth`](#xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 2 |
+| `gamewin` | Variable |  | 2 |
+| `humanoid` | Variable |  | 2 |
+| `megadino` | Variable |  | 2 |
+| `moonhead` | Variable |  | 2 |
+| `the_coven` | Variable |  | 2 |
+| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
+| `AIFavorLowHealth` | Integer | Applies or references the 'AIFavorLowHealth' effect/state. | 1 |
 | `AcidRain` | Integer | Examples: `2` | 1 |
 | `AddExtraTurnsBeforeRun` | Integer | Examples: `2` | 1 |
 | [`AddPostProcessEffect`](#addpostprocesseffect) | Object | Examples: `{ ... }` | 1 |
 | [`AddTilesetObjects`](#addtilesetobjects) | Object | Examples: `{ ... }` | 1 |
 | `Adrenaline` | Integer | Applies or references the 'Adrenaline' effect/state. | 1 |
-| `AIFavorLowHealth` | Integer | Applies or references the 'AIFavorLowHealth' effect/state. | 1 |
-| `alien` | Variable |  | 1 |
 | `AlliesTakeExtraTurn` | Integer | Applies or references the 'AlliesTakeExtraTurn' effect/state. | 1 |
 | [`AllyInfested`](#allyinfested) | Object | Examples: `{ ... }` | 1 |
 | [`AlternateIdleAnimation`](./Enums.md#enum-alternateidleanimation) | Enum | Applies or references the 'AlternateIdleAnimation' effect/state. | 1 |
-| `angeljunk` | Variable |  | 1 |
 | `AntlerSwipe` | Variable |  | 1 |
 | `AntlerSwipe2` | Variable |  | 1 |
 | `ApplyShieldToApplierBasedOnMaxHealth` | Integer | Applies or references the 'ApplyShieldToApplierBasedOnMaxHealth' effect/state. | 1 |
@@ -409,13 +410,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`ApplyToRandomClosestAlly`](#applytorandomclosestally) | Object | Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them. | 1 |
 | `BasicDashAttackMove_NoKnockback` | Variable |  | 1 |
 | `BerserkDash` | Variable |  | 1 |
-| `berserkIdle` | Variable |  | 1 |
 | `BirthSquirrel` | Variable |  | 1 |
 | `BlackHoleSuck` | Integer | Applies or references the 'BlackHoleSuck' effect/state. | 1 |
 | `BlankTile` | Number | Examples: `5` | 1 |
 | `Bloodzerked` | Integer | Applies or references the 'Bloodzerked' effect/state. | 1 |
 | `BombRatTurtle` | Integer | Applies or references the 'BombRatTurtle' effect/state. | 1 |
-| `bonusbird` | Variable |  | 1 |
 | `BonusDamageBasedOnMana` | Integer | Applies or references the 'BonusDamageBasedOnMana' effect/state. | 1 |
 | [`Boris`](./Enums.md#enum-boris) | Enum | `MegaGuppy_TransformBoris` | 1 |
 | `Boulder` | Variable |  | 1 |
@@ -427,15 +426,13 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ChampionUpgradeNextMinion` | Integer | Applies or references the 'ChampionUpgradeNextMinion' effect/state. | 1 |
 | `ChaosBossFlipMidTeleport` | Integer | Applies or references the 'ChaosBossFlipMidTeleport' effect/state. | 1 |
 | `ChaosBossFormChange` | Integer | Applies or references the 'ChaosBossFormChange' effect/state. | 1 |
-| `chapter_corpse_medium` | Variable |  | 1 |
 | `ChargeFists` | Integer | Applies or references the 'ChargeFists' effect/state. | 1 |
-| `CharmedFacingForceAttack` | Integer | Applies or references the 'CharmedFacingForceAttack' effect/state. | 1 |
 | `CharmTrap` | Variable |  | 1 |
+| `CharmedFacingForceAttack` | Integer | Applies or references the 'CharmedFacingForceAttack' effect/state. | 1 |
 | `Chitter` | Variable |  | 1 |
 | `ClearDefaultDebris` | Integer | Examples: `1` | 1 |
 | `ClearFinalBossBattlefield` | Integer | Applies or references the 'ClearFinalBossBattlefield' effect/state. | 1 |
 | `CloneWeaponTemp` | Integer | Applies or references the 'CloneWeaponTemp' effect/state. | 1 |
-| `cm_RaptorEggSpawn` | Variable |  | 1 |
 | `CockroachSwarm` | Integer | Examples: `1` | 1 |
 | [`CoinTossBounce`](./Enums.md#enum-cointossbounce) | Enum | Applies or references the 'CoinTossBounce' effect/state. | 1 |
 | [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Object | Conditional constraint. Nested properties only trigger if this is true. | 1 |
@@ -456,14 +453,12 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Object | Conditional trigger: Executes nested logic if the caster currently has the specified status. | 1 |
 | [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Examples: `{ ... }` | 1 |
 | [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. | 1 |
-| `container` | Variable |  | 1 |
 | `CrackMoonHead` | Integer | Applies or references the 'CrackMoonHead' effect/state. | 1 |
 | `CurrentWeaponAddElectricElement` | Integer | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. | 1 |
 | `DamageWeapon` | Integer | Applies or references the 'DamageWeapon' effect/state. | 1 |
 | `DeathWormEat` | Variable |  | 1 |
 | [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the 'DeathwormUnderground' effect/state. | 1 |
 | `DecoySwapper` | Integer | Applies or references the 'DecoySwapper' effect/state. | 1 |
-| `deferred` | Boolean | `true` | 1 |
 | [`DelayedWindCone`](#delayedwindcone) | Object | Creates a delayed Area of Effect cone. | 1 |
 | `DeleteInanimateObjectsChance` | Integer | Examples: `25` | 1 |
 | `DeleteTraps` | Integer | Applies or references the 'DeleteTraps' effect/state. | 1 |
@@ -477,7 +472,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `DoubleCast` | Integer | Applies or references the 'DoubleCast' effect/state. | 1 |
 | `DoubleCastSpellsEachTurn_Status` | Number | Applies or references the 'DoubleCastSpellsEachTurn_Status' effect/state. | 1 |
 | `DrainAllyCatsForFleshGolem` | Integer | Applies or references the 'DrainAllyCatsForFleshGolem' effect/state. | 1 |
-| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
 | [`Druid`](./Arrays.md#array-druid) | Object | Applies or references the 'Druid' effect/state. | 1 |
 | `DualSword` | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
 | `DuplicateRandomEquippedItem` | Integer | Applies or references the 'DuplicateRandomEquippedItem' effect/state. | 1 |
@@ -502,7 +496,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `FireArmor` | Integer | Applies or references the 'FireArmor' effect/state. | 1 |
 | `FireArmor2` | Integer | Applies or references the 'FireArmor2' effect/state. | 1 |
 | `FireflySwarm` | Integer | Examples: `2` | 1 |
-| `flip` | Variable |  | 1 |
 | `FlySwarm` | Integer | Examples: `50` | 1 |
 | `Fog` | Integer | Examples: `1` | 1 |
 | `ForceCollectsPickups` | Integer | Applies or references the 'ForceCollectsPickups' effect/state. | 1 |
@@ -512,25 +505,19 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ForceTransferWeapon` | Integer | Applies or references the 'ForceTransferWeapon' effect/state. | 1 |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. | 1 |
 | `GenericBuff` | Integer | Applies or references the 'GenericBuff' effect/state. | 1 |
-| `ghost` | Variable |  | 1 |
 | `GiveBoundItemToTarget` | Integer | Applies or references the 'GiveBoundItemToTarget' effect/state. | 1 |
 | `GlassTile` | Variable |  | 1 |
 | `GlobalHealthRegenAura` | Integer | Examples: `3` | 1 |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
-| `god` | Variable |  | 1 |
 | `Grown` | Object | Character Form: Behavior and stats for the \'Grown\' state. | 1 |
-| `grown_hitler_clone` | Variable |  | 1 |
 | `HalfDead` | Object | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 |
 | `HardenSkin` | Variable |  | 1 |
 | `HardenSkin2` | Variable |  | 1 |
-| `head_CrownOfHorns` | Variable |  | 1 |
 | `HeadTumor` | Variable |  | 1 |
 | `HealPercentMaxHP` | Integer | Applies or references the 'HealPercentMaxHP' effect/state. | 1 |
 | `HealTo` | Integer | Applies or references the 'HealTo' effect/state. | 1 |
 | `HeatWave` | Integer | Examples: `1` | 1 |
 | `HeavyHits` | Integer | Applies or references the 'HeavyHits' effect/state. | 1 |
-| `hitler_clone` | Variable |  | 1 |
-| `hitler_clone_fetus` | Variable |  | 1 |
 | `IceArmor` | Integer | Applies or references the 'IceArmor' effect/state. | 1 |
 | `IgnoreDebuffs` | Integer | Applies or references the 'IgnoreDebuffs' effect/state. | 1 |
 | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 1 |
@@ -543,7 +530,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `JesterMinusColorless` | Variable |  | 1 |
 | `JewelOfDrog` | Variable |  | 1 |
 | `JudgementDay` | Integer | Examples: `25` | 1 |
-| `kill_on_consume` | Boolean | Examples: `true` | 1 |
 | [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. | 1 |
 | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 1 |
 | `LaunchOffScreenInstakill` | Integer | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 |
@@ -592,6 +578,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Prance2` | Variable |  | 1 |
 | `ProbeCharmed` | Number | Applies or references the 'ProbeCharmed' effect/state. | 1 |
 | [`QueueUseAbility`](./Enums.md#enum-queueuseability) | Enum | Applies or references the 'QueueUseAbility' effect/state. | 1 |
+| `RNGCannonRandomDamage` | Integer | Applies or references the 'RNGCannonRandomDamage' effect/state. | 1 |
 | `RandomBonusDamage` | Integer | Applies or references the 'RandomBonusDamage' effect/state. | 1 |
 | `RandomKnockbackDirection` | Integer | Applies or references the 'RandomKnockbackDirection' effect/state. | 1 |
 | [`RandomWeatherEachFight`](./Arrays.md#array-randomweathereachfight) | Array | Examples: `[ Fog Rain Windy Sandstorm HeatWave Snow Thunderstorm Bli...` | 1 |
@@ -605,13 +592,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `RepairAllCondition` | Integer | Applies or references the 'RepairAllCondition' effect/state. | 1 |
 | `RerollEnemy` | Integer | Applies or references the 'RerollEnemy' effect/state. | 1 |
 | `ReturnDinoLegs` | Integer | Applies or references the 'ReturnDinoLegs' effect/state. | 1 |
-| `RNGCannonRandomDamage` | Integer | Applies or references the 'RNGCannonRandomDamage' effect/state. | 1 |
-| `rotate_right` | Variable |  | 1 |
 | `Sandstorm` | Integer | Examples: `1` | 1 |
 | `Scavenge` | Variable |  | 1 |
 | `Scavenge2` | Variable |  | 1 |
-| `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. | 1 |
 | [`ScrambleLastUsedSpell`](#scramblelastusedspell) | Object | Randomizes or scrambles the properties of the last spell cast. | 1 |
+| `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. | 1 |
 | [`SetAnimationAlts`](#setanimationalts) | Object | Overrides specific animation states with alternative animations. | 1 |
 | `ShadowCrit` | Integer | Applies or references the 'ShadowCrit' effect/state. | 1 |
 | `ShootHereCommand` | Integer | Applies or references the 'ShootHereCommand' effect/state. | 1 |
@@ -629,7 +614,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. | 1 |
 | [`SpawnTilePuddleOnBattleStart`](#spawntilepuddleonbattlestart) | Object | Examples: `{ ... }` | 1 |
 | `SpawnWebTrap` | Integer | Applies or references the 'SpawnWebTrap' effect/state. | 1 |
-| `spear` | Variable |  | 1 |
 | [`SpecialBossMultipartInstakill`](./Enums.md#enum-specialbossmultipartinstakill) | Enum | Applies or references the 'SpecialBossMultipartInstakill' effect/state. | 1 |
 | `SpellShield` | Integer | Applies or references the 'SpellShield' effect/state. | 1 |
 | `SpitConsumed` | Integer | Applies or references the 'SpitConsumed' effect/state. | 1 |
@@ -641,8 +625,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `StatBounty` | Integer | Applies or references the 'StatBounty' effect/state. | 1 |
 | `StealDemonicGlyph` | Integer | Applies or references the 'StealDemonicGlyph' effect/state. | 1 |
 | [`StealEquipment`](./Enums.md#enum-stealequipment) | Enum | Applies or references the 'StealEquipment' effect/state. | 1 |
-| `StealthCritChance` | Integer | Applies or references the 'StealthCritChance' effect/state. | 1 |
 | `StealTurn` | Integer | Applies or references the 'StealTurn' effect/state. | 1 |
+| `StealthCritChance` | Integer | Applies or references the 'StealthCritChance' effect/state. | 1 |
 | `SwapHighestAndLowestStat` | Number | Applies or references the 'SwapHighestAndLowestStat' effect/state. | 1 |
 | [`SwapWeapon`](#swapweapon) | Object | Replaces the character's currently equipped weapon with one from a specified pool. | 1 |
 | `Switcheroo` | Integer | Applies or references the 'Switcheroo' effect/state. | 1 |
@@ -674,10 +658,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TempManaCostReduction` | Integer | Applies or references the 'TempManaCostReduction' effect/state. | 1 |
 | `TempPenetrate` | Integer | Applies or references the 'TempPenetrate' effect/state. | 1 |
 | `TempPreEmptiveCounterAttack` | Integer | Applies or references the 'TempPreEmptiveCounterAttack' effect/state. | 1 |
-| `the_nuke_bearer` | Variable |  | 1 |
 | `TheDestroyer` | Variable |  | 1 |
-| `themotherspike` | Variable |  | 1 |
-| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 |
 | [`TickDownStatus`](./Enums.md#enum-tickdownstatus) | Enum | Applies or references the 'TickDownStatus' effect/state. | 1 |
 | `TigerSwipes` | Variable |  | 1 |
 | `TigerSwipes2` | Variable |  | 1 |
@@ -708,12 +689,31 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`VisualCountDownThenApplyStatus`](#visualcountdownthenapplystatus) | Object | Displays a visual countdown above the target before applying the nested effects. | 1 |
 | [`WaggleClone`](#waggleclone) | Object | Spawns visual clones or alternative hitbox variants of the projectile. | 1 |
 | `WaterTile_Current` | Variable |  | 1 |
-| `weapon_throw` | Variable |  | 1 |
 | [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |
+| `alien` | Variable |  | 1 |
+| `angeljunk` | Variable |  | 1 |
+| `berserkIdle` | Variable |  | 1 |
+| `bonusbird` | Variable |  | 1 |
+| `chapter_corpse_medium` | Variable |  | 1 |
+| `cm_RaptorEggSpawn` | Variable |  | 1 |
+| `container` | Variable |  | 1 |
+| `deferred` | Boolean | `true` | 1 |
+| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
+| `flip` | Variable |  | 1 |
+| `ghost` | Variable |  | 1 |
+| `god` | Variable |  | 1 |
+| `grown_hitler_clone` | Variable |  | 1 |
+| `head_CrownOfHorns` | Variable |  | 1 |
+| `hitler_clone` | Variable |  | 1 |
+| `hitler_clone_fetus` | Variable |  | 1 |
+| `kill_on_consume` | Boolean | Examples: `true` | 1 |
+| `rotate_right` | Variable |  | 1 |
+| `spear` | Variable |  | 1 |
+| `the_nuke_bearer` | Variable |  | 1 |
+| `themotherspike` | Variable |  | 1 |
+| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 |
+| `weapon_throw` | Variable |  | 1 |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 | `Craft` | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
 | `DoDamage` | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
@@ -760,11 +760,873 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `BackflipWhenTargeted` | Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 0 |
 </details>
 
-
 ### Valid Nested Objects
 
 The following objects all behave as `{Logic Keys}` containers. Each has its own unique parameters listed below its entry.
 
+---
+
+#### `ApplyToRandomPartyMemberIfPossible`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `ApplyToSource`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 59
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 43 |
+
+</details>
+
+---
+
+#### `ApplyToSourceOnKill`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 15
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 12 |
+
+</details>
+
+---
+
+#### `Conditional_ActiveWeather_Any`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+
+</details>
+
+---
+
+#### `Conditional_Adjacent`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
+| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `Conditional_AffectedByElement`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
+| [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `Conditional_Ally`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 37
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 30 |
+| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
+| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 29 |
+
+</details>
+
+---
+
+#### `Conditional_Backstab`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_BadRoll`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
+| [`odds`](./Enums.md#enum-odds) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 14 |
+
+</details>
+
+---
+
+#### `Conditional_Boss`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 21
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 27 |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 6 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 29 |
+
+</details>
+
+---
+
+#### `Conditional_BossOrBig`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+
+</details>
+
+---
+
+#### `Conditional_Buddy`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `Conditional_CanBeHealed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_Corpse`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 11
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 |
+| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+
+</details>
+
+---
+
+#### `Conditional_DebuffRoll`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of applying the debuff. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_DestructibleCorpse`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `Conditional_Displaceable`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `Conditional_Enemy`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 44
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 37 |
+| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 3 |
+| [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 2 |
+| [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
+
+</details>
+
+---
+
+#### `Conditional_Familiar`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_FirstApplicationThisTurn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 8
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
+
+</details>
+
+---
+
+#### `Conditional_FormulaIsPositive`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 10
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+
+</details>
+
+---
+
+#### `Conditional_GoodRoll`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 37
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
+| [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 |
+| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
+
+</details>
+
+---
+
+#### `Conditional_HasKnockback`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_HasStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 20
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 24 |
+| [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 20 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 23 |
+
+</details>
+
+---
+
+#### `Conditional_HasTag`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 47
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 63 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 981 |
+| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 6 |
+| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 4 |
+| [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 63 |
+
+</details>
+
+---
+
+#### `Conditional_HealthThreshold`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 7
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| `threshold_flat` | Integer | A flat numerical health value threshold. | 5 |
+| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
+| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Object | Nested conditional. | 1 |
+| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
+
+</details>
+
+---
+
+#### `Conditional_InForm`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 7
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
+
+</details>
+
+---
+
+#### `Conditional_IsPhysicalAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_IsSelf`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_IsTrample`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_LastHit`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `Conditional_LivingPlayerCat`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `Conditional_ManaThreshold`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| `threshold_flat` | Integer | A flat numerical health value threshold. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_NotAlly`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `Conditional_NotBig`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_NotBoss`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 16
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 2 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 13 |
+
+</details>
+
+---
+
+#### `Conditional_NotBossOrBig`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `Conditional_NotShielded`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+
+</details>
+
+---
+
+#### `Conditional_Object`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+
+</details>
+
+---
+
+#### `Conditional_OncePerBattle`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `Conditional_PartyMember`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 |
+| [`Conditional_IsSelf`](#conditional_isself) | Object | Nested conditional. | 3 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
+  | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
+
+</details>
+
+---
+
+#### `Conditional_PlayerCat`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 7
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
+
+</details>
+
+---
+
+#### `Conditional_RandomChance`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `Conditional_Shielded`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 5
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+
+</details>
+
+---
+
+#### `Conditional_SourceAbilityHasTag`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `Conditional_SourceHasStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+
+</details>
+
+---
+
+#### `Conditional_SourceHasTag`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 981 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+
+</details>
+
+---
+
+#### `Conditional_Speculative`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 12
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
+
+</details>
+
+---
+
+#### `Consumed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 23
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 |
+| `force_contact` | Boolean | If true, enforces physical overlap. | 15 |
+| `instant` | Boolean | Examples: `true` | 12 |
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 12 |
+| `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |
+| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean | Examples: `false, true, deferred` | 11 |
+| `wet` | Boolean | Examples: `false, true` | 8 |
+| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
+| `drop_on_self_death` | Boolean | Examples: `true` | 3 |
+| `use_placeholder` | Boolean | Examples: `true` | 3 |
+| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
+| `kill_on_consume` | Boolean | Examples: `true` | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 24 |
+
+</details>
+
+---
+
+#### `Else`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 85
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
+| [`Conditional_Displaceable`](#conditional_displaceable) | Object | Nested conditional. | 1 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
+| [`Conditional_HasKnockback`](#conditional_hasknockback) | Object | Nested conditional. | 1 |
+| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 1 |
+| [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 72 |
+
+</details>
+
+---
 
 #### `effects`
 
@@ -775,7 +1637,6 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1888 |
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 38 |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 35 |
 | [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 25 |
@@ -818,870 +1679,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1888 |
 
 </details>
 
-#### `Else`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 85
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 72 |
-| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
-| [`Conditional_Displaceable`](#conditional_displaceable) | Object | Nested conditional. | 1 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
-| [`Conditional_HasKnockback`](#conditional_hasknockback) | Object | Nested conditional. | 1 |
-| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
-| [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 1 |
-| [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `ApplyToSource`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 59
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 43 |
-
-</details>
-
-#### `Conditional_HasTag`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 47
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 981 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 63 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 63 |
-| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 6 |
-| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 4 |
-| [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `Conditional_Enemy`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 44
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 37 |
-| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 3 |
-| [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 2 |
-| [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `Conditional_Ally`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 37
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 30 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 29 |
-| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
-| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `Conditional_GoodRoll`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 37
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
-| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `Consumed`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 23
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 24 |
-| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 |
-| `force_contact` | Boolean | If true, enforces physical overlap. | 15 |
-| `instant` | Boolean | Examples: `true` | 12 |
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 12 |
-| `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |
-| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean | Examples: `false, true, deferred` | 11 |
-| `wet` | Boolean | Examples: `false, true` | 8 |
-| `drop_on_self_death` | Boolean | Examples: `true` | 3 |
-| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
-| `use_placeholder` | Boolean | Examples: `true` | 3 |
-| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
-| `kill_on_consume` | Boolean | Examples: `true` | 1 |
-
-</details>
-
-#### `Conditional_Boss`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 21
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 29 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 27 |
-| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 6 |
-
-</details>
-
-#### `Conditional_HasStatus`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 20
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 24 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 23 |
-| [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 20 |
-
-</details>
-
-#### `Conditional_NotBoss`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 16
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 13 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
-| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 2 |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `ApplyToSourceOnKill`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 15
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 12 |
-
-</details>
-
-#### `Conditional_Speculative`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 12
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 2 |
-
-</details>
-
-#### `Conditional_Corpse`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 11
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
-| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `Conditional_FormulaIsPositive`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 10
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
-| [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
-
-</details>
-
-#### `Conditional_BadRoll`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 14 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
-| [`odds`](./Enums.md#enum-odds) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 |
-
-</details>
-
-#### `Conditional_FirstApplicationThisTurn`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 8
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
-
-</details>
-
-#### `Conditional_HealthThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 7
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
-| `threshold_flat` | Integer | A flat numerical health value threshold. | 5 |
-| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
-| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Object | Nested conditional. | 1 |
-| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 |
-
-</details>
-
-#### `Conditional_InForm`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 7
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `Conditional_PlayerCat`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 7
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
-
-</details>
-
-#### `Conditional_IsSelf`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-
-</details>
-
-#### `Conditional_Object`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-
-</details>
-
-#### `Conditional_PartyMember`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](#conditional_isself) | Object | Nested conditional. | 3 |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-  | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
-  | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
-
-</details>
-
-#### `Conditional_Shielded`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 5
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
-
-</details>
-
-#### `Conditional_Adjacent`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
-| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
-
-</details>
-
-#### `Conditional_Familiar`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `Conditional_OncePerBattle`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
-
-</details>
-
-#### `Conditional_RandomChance`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 4 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `ApplyToRandomPartyMemberIfPossible`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-
-</details>
-
-#### `Conditional_AffectedByElement`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
-
-</details>
-
-#### `Conditional_LastHit`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-
-</details>
-
-#### `Conditional_BossOrBig`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `Conditional_Buddy`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-
-</details>
-
-#### `Conditional_DestructibleCorpse`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
-
-</details>
-
-#### `Conditional_Displaceable`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-
-</details>
-
-#### `Conditional_NotAlly`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-
-</details>
-
-#### `Conditional_NotBossOrBig`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
-
-</details>
-
-#### `Conditional_NotShielded`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-
-</details>
-
-#### `Conditional_ActiveWeather_Any`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-
-</details>
-
-#### `Conditional_Backstab`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `Conditional_CanBeHealed`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-
-</details>
-
-#### `Conditional_DebuffRoll`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of applying the debuff. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-
-</details>
-
-#### `Conditional_HasKnockback`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `Conditional_IsPhysicalAttack`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `Conditional_IsTrample`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-
-</details>
-
-#### `Conditional_LivingPlayerCat`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-
-</details>
-
-#### `Conditional_ManaThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `threshold_flat` | Integer | A flat numerical health value threshold. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `Conditional_NotBig`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-
-</details>
-
-#### `Conditional_SourceAbilityHasTag`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-
-</details>
-
-#### `Conditional_SourceHasStatus`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-#### `Conditional_SourceHasTag`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 981 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-
-</details>
-
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
