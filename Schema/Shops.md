@@ -17,15 +17,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](./Shops.md#context-meta) | Object | Examples: `{ ... }` | 4719 |  |
-| [`breakdown`](./Shops.md#context-breakdown) | Object | Examples: `{ ... }` | 24 |  |
-| [`item_groups`](./Shops.md#context-item_groups) | Object | Examples: `{ ... }` | 24 |  |
-| [`item_rarity_costs`](./Shops.md#context-item_rarity_costs) | Object | Examples: `{ ... }` | 9 |  |
-| `stock_fill_order` | Object | Examples: `{ ... }` | 9 |  |
-| [`button_nav`](./Shops.md#context-button_nav) | Object | Examples: `{ ... }` | 7 |  |
-| [`breakdown2`](./Shops.md#context-breakdown2) | Object | Examples: `{ ... }` | 2 |  |
-| [`breakdown3`](./Shops.md#context-breakdown3) | Object | Examples: `{ ... }` | 2 |  |
-| [`breakdown4`](./Shops.md#context-breakdown4) | Object | Examples: `{ ... }` | 2 |  |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Examples: `{ ... }` | 4719 ||
+| [`breakdown`](Miscellaneous.md#object-breakdown) | Object | Examples: `{ ... }` | 24 ||
+| [`item_groups`](Miscellaneous.md#object-item_groups) | Object | Examples: `{ ... }` | 24 ||
+| [`item_rarity_costs`](Miscellaneous.md#object-item_rarity_costs) | Object | Examples: `{ ... }` | 9 ||
+| `stock_fill_order` | Object | Examples: `{ ... }` | 9 ||
+| [`button_nav`](Miscellaneous.md#object-button_nav) | Object | Examples: `{ ... }` | 7 ||
+| [`breakdown2`](Miscellaneous.md#object-breakdown2) | Object | Examples: `{ ... }` | 2 ||
+| [`breakdown3`](Miscellaneous.md#object-breakdown3) | Object | Examples: `{ ... }` | 2 ||
+| [`breakdown4`](Miscellaneous.md#object-breakdown4) | Object | Examples: `{ ... }` | 2 ||
 
 </details>
 
@@ -45,11 +45,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cost` | Object | Examples: `0, 15, 10` | 21 |  |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Examples: `rare, shop_common, treasure_easy` | 18 |  |
-| `mandatory` | Boolean | Examples: `true` | 14 |  |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 |  |
-| [`weight`](./Enums.md) | Integer | | 4 | 5 |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Examples: `0, 15, 10` | 21 ||
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | Examples: `rare, shop_common, treasure_easy` | 18 ||
+| `mandatory` | Boolean | Examples: `true` | 14 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 ||
+| [`weight`](./Enums.md) | Integer || 4 | 5 |
 
 </details>
 
@@ -69,15 +69,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Examples: `Shop, JackOffice, TreasureRoom` | 25 |  |
-| `treasure_room` | Boolean | Examples: `true` | 14 |  |
-| `delay_enable_tooltips` | Boolean | Examples: `true` | 7 |  |
-| `keeper` | Number | Examples: `0` | 7 |  |
-| [`npc_script`](./Enums.md#enum-npc_script) | Enum | Examples: `tracy_adventure_shop_script.gon` | 7 |  |
-| [`shopkeeper_fights`](./Arrays.md#array-shopkeeper_fights) | Array | Examples: `[ test.lvl ]` | 7 |  |
-| `house_shop` | Boolean | Examples: `true` | 4 |  |
-| [`welcome_message`](./Enums.md#enum-welcome_message) | Enum | Examples: `welcome_water, welcome_water_cheap` | 2 |  |
-| `pick_n` | Number | Examples: `1` | 1 |  |
+| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Examples: `Shop, JackOffice, TreasureRoom` | 25 ||
+| `treasure_room` | Boolean | Examples: `true` | 14 ||
+| `delay_enable_tooltips` | Boolean | Examples: `true` | 7 ||
+| `keeper` | Number | Examples: `0` | 7 ||
+| [`npc_script`](./Enums.md#enum-npc_script) | Enum | Examples: `tracy_adventure_shop_script.gon` | 7 ||
+| [`shopkeeper_fights`](./Arrays.md#array-shopkeeper_fights) | Array | Examples: `[ test.lvl ]` | 7 ||
+| `house_shop` | Boolean | Examples: `true` | 4 ||
+| [`welcome_message`](./Enums.md#enum-welcome_message) | Enum | Examples: `welcome_water, welcome_water_cheap` | 2 ||
+| `pick_n` | Number | Examples: `1` | 1 ||
 
 </details>
 
@@ -97,15 +97,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `treasure` | Number | Examples: `1` | 14 |  |
-| `pool` | Array / Enum | Examples: `3, 2, 5` | 6 |  |
-| `levelup` | Number | Examples: `1` | 3 |  |
-| `mandatory` | Number | Examples: `3, 6, 1` | 3 |  |
-| `consumable` | Boolean | Examples: `2, 1` | 2 |  |
-| `guaranteed_food` | Number | Examples: `1` | 2 |  |
-| `mostly_food` | Number | Examples: `2, 1` | 2 |  |
-| `empty` | Number | Examples: `1` | 1 |  |
-| `item` | Enum | Examples: `1` | 1 |  |
+| `treasure` | Number | Examples: `1` | 14 ||
+| `pool` | Array / Enum | Examples: `3, 2, 5` | 6 ||
+| `levelup` | Number | Examples: `1` | 3 ||
+| `mandatory` | Number | Examples: `3, 6, 1` | 3 ||
+| `consumable` | Boolean | Examples: `2, 1` | 2 ||
+| `guaranteed_food` | Number | Examples: `1` | 2 ||
+| `mostly_food` | Number | Examples: `2, 1` | 2 ||
+| `empty` | Number | Examples: `1` | 1 ||
+| `item` | Enum | Examples: `1` | 1 ||
 
 </details>
 
@@ -125,16 +125,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`treasure`](./Shops.md#context-treasure) | Object | Examples: `{ ... }` | 14 |  |
-| [`pool`](./Shops.md#context-pool) | Array / Enum | Examples: `{ ... }` | 6 |  |
-| [`mandatory`](./Shops.md#context-mandatory) | Object | Examples: `{ ... }` | 5 |  |
-| [`levelup`](./Shops.md#context-levelup) | Object | Examples: `{ ... }` | 3 |  |
-| [`common_item`](./Shops.md#context-common_item) | Object | Examples: `{ ... }` | 2 |  |
-| [`consumable`](./Shops.md#context-consumable) | Boolean | Examples: `{ ... }` | 2 |  |
-| [`guaranteed_food`](./Shops.md#context-guaranteed_food) | Object | Examples: `{ ... }` | 2 |  |
-| [`item`](./Shops.md#context-item) | Enum | Examples: `{ ... }` | 2 |  |
-| [`mostly_food`](./Shops.md#context-mostly_food) | Object | Examples: `{ ... }` | 2 |  |
-| [`empty`](./Shops.md#context-empty) | Object | Examples: `{ ... }` | 1 |  |
+| [`treasure`](Map_Generation_and_Routing.md#object-treasure) | Object | Examples: `{ ... }` | 14 ||
+| [`pool`](./Shops.md#context-pool) | Array / Enum | Examples: `{ ... }` | 6 ||
+| [`mandatory`](Miscellaneous.md#object-mandatory) | Object | Examples: `{ ... }` | 5 ||
+| [`levelup`](Engine_LogicKeys.md#object-levelup) | Object | Examples: `{ ... }` | 3 ||
+| [`common_item`](Miscellaneous.md#object-common_item) | Object | Examples: `{ ... }` | 2 ||
+| [`consumable`](./Shops.md#context-consumable) | Boolean | Examples: `{ ... }` | 2 ||
+| [`guaranteed_food`](Miscellaneous.md#object-guaranteed_food) | Object | Examples: `{ ... }` | 2 ||
+| [`item`](./Shops.md#context-item) | Enum | Examples: `{ ... }` | 2 ||
+| [`mostly_food`](Miscellaneous.md#object-mostly_food) | Object | Examples: `{ ... }` | 2 ||
+| [`empty`](Characters_and_Bosses.md#object-empty) | Object | Examples: `{ ... }` | 1 ||
 
 </details>
 
@@ -154,7 +154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 14 |  |
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 14 ||
 
 </details>
 
@@ -174,15 +174,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `consumable_common` | Number | Examples: `3, 5, 10` | 9 |  |
-| `consumable_rare` | Number | Examples: `20, 8, 10` | 9 |  |
-| `consumable_uncommon` | Number | Examples: `14, 5, 7` | 9 |  |
-| `consumable_very_rare` | Number | Examples: `12, 40, 20` | 9 |  |
-| `uncommon` | Number | Examples: `20, 8, 10` | 9 |  |
-| `very_rare` | Number | Examples: `80, 40, 15` | 9 |  |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 |  |
-| [`common`](./Enums.md) | Integer | | 9 | 7 |
-| [`rare`](./Enums.md) | Integer | | 13 | 20 |
+| `consumable_common` | Number | Examples: `3, 5, 10` | 9 ||
+| `consumable_rare` | Number | Examples: `20, 8, 10` | 9 ||
+| `consumable_uncommon` | Number | Examples: `14, 5, 7` | 9 ||
+| `consumable_very_rare` | Number | Examples: `12, 40, 20` | 9 ||
+| `uncommon` | Number | Examples: `20, 8, 10` | 9 ||
+| `very_rare` | Number | Examples: `80, 40, 15` | 9 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 ||
+| [`common`](./Enums.md) | Integer || 9 | 7 |
+| [`rare`](./Enums.md) | Integer || 13 | 20 |
 
 </details>
 
@@ -202,7 +202,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](./Miscellaneous.md#context-default) | Enum / Object | Examples: `{ ... }` | 7 |  |
+| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | Examples: `{ ... }` | 7 ||
 
 </details>
 
@@ -222,7 +222,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 10 |  |
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 10 ||
 
 </details>
 
@@ -242,8 +242,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 4 |  |
-| `Furniture` | Object | Examples: `{ ... }` | 1 |  |
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 4 ||
+| `Furniture` | Object | Examples: `{ ... }` | 1 ||
 
 </details>
 
@@ -263,11 +263,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allow_duplicates` | Boolean | Examples: `true` | 4 |  |
-| `amount` | Array | Examples: `10` | 4 |  |
-| `cost` | Object | Examples: `5` | 4 |  |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 |  |
-| [`weight`](./Enums.md) | Integer | | 4 | 5 |
+| `allow_duplicates` | Boolean | Examples: `true` | 4 ||
+| `amount` | Array | Examples: `10` | 4 ||
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Examples: `5` | 4 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 ||
+| [`weight`](./Enums.md) | Integer || 4 | 5 |
 
 </details>
 
@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cost` | Object | Examples: `10` | 3 |  |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Examples: `10` | 3 ||
 
 </details>
 
@@ -307,7 +307,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LevelUp`](./Shops.md#context-levelup) | Object | Examples: `{ ... }` | 3 |  |
+| [`LevelUp`](Engine_LogicKeys.md#object-levelup) | Object | Examples: `{ ... }` | 3 ||
 
 </details>
 
@@ -327,11 +327,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `common_item` | Number | Examples: `1` | 2 |  |
-| `consumable` | Boolean | Examples: `1` | 2 |  |
-| `guaranteed_food` | Number | Examples: `1` | 2 |  |
-| `mostly_food` | Number | Examples: `1` | 2 |  |
-| `item` | Enum | Examples: `1` | 1 |  |
+| `common_item` | Number | Examples: `1` | 2 ||
+| `consumable` | Boolean | Examples: `1` | 2 ||
+| `guaranteed_food` | Number | Examples: `1` | 2 ||
+| `mostly_food` | Number | Examples: `1` | 2 ||
+| `item` | Enum | Examples: `1` | 1 ||
 
 </details>
 
@@ -351,10 +351,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `common_item` | Number | Examples: `2` | 2 |  |
-| `consumable` | Boolean | Examples: `1` | 2 |  |
-| `guaranteed_food` | Number | Examples: `1` | 2 |  |
-| `item` | Enum | Examples: `1` | 1 |  |
+| `common_item` | Number | Examples: `2` | 2 ||
+| `consumable` | Boolean | Examples: `1` | 2 ||
+| `guaranteed_food` | Number | Examples: `1` | 2 ||
+| `item` | Enum | Examples: `1` | 1 ||
 
 </details>
 
@@ -374,10 +374,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `common_item` | Number | Examples: `2` | 2 |  |
-| `consumable` | Boolean | Examples: `1` | 2 |  |
-| `guaranteed_food` | Number | Examples: `1` | 2 |  |
-| `item` | Enum | Examples: `2, 1` | 2 |  |
+| `common_item` | Number | Examples: `2` | 2 ||
+| `consumable` | Boolean | Examples: `1` | 2 ||
+| `guaranteed_food` | Number | Examples: `1` | 2 ||
+| `item` | Enum | Examples: `2, 1` | 2 ||
 
 </details>
 
@@ -397,7 +397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |  |
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 2 ||
 
 </details>
 
@@ -417,7 +417,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |  |
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 2 ||
 
 </details>
 
@@ -437,7 +437,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Food`](./Shops.md#context-food) | Integer / Object | Examples: `{ ... }` | 2 |  |
+| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | Examples: `{ ... }` | 2 ||
 
 </details>
 
@@ -457,7 +457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |  |
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 2 ||
 
 </details>
 
@@ -477,8 +477,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Food`](./Shops.md#context-food) | Integer / Object | Examples: `{ ... }` | 2 |  |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |  |
+| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | Examples: `{ ... }` | 2 ||
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 2 ||
 
 </details>
 
@@ -498,7 +498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 1 |  |
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 1 ||
 
 </details>
 

@@ -330,7 +330,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer |  | 10 |  |
 | `health` | Integer |  | 8 |  |
-| [`statuses`](#object-statuses) | Object |  | 6 |  |
+| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object || 6 ||
 
 </details>
 
@@ -350,9 +350,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `aura_effects_allies` | Boolean |  | 8 |  |
-| `range` | Enum / Integer |  | 8 |  |
-| `stacks` | Enum / Integer |  | 8 |  |
+| `aura_effects_allies` | Boolean || 8 ||
+| `range` | Enum / Integer || 8 ||
+| `stacks` | Enum / Integer || 8 ||
 
 </details>
 
@@ -372,10 +372,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Enum / Integer / Object |  | 8 |  |
-| [`type`](./Enums.md#enum-type) | Enum |  | 8 |  |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 4 |  |
-| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |  |
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object || 8 ||
+| [`type`](./Enums.md#enum-type) | Enum || 8 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 4 ||
+| [`elements`](./Arrays.md#array-elements) | Array || 2 ||
 
 </details>
 
@@ -395,7 +395,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 ||
 </details>
 
 ---
@@ -414,7 +414,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 ||
 
 </details>
 

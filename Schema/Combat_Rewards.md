@@ -121,8 +121,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`boss`](#object-boss) | Object |  | 3 |  |
 | [`hard`](#object-hard) | Object |  | 3 |  |
 | [`miniboss`](#object-miniboss) | Object |  | 3 |  |
-| [`normal`](#object-normal) | Object |  | 3 |  |
-| `chapters` | Object |  | 1 |  |
+| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
+| `chapters` | Object || 1 ||
 
 </details>
 
@@ -140,13 +140,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float |  | 4 |  |
-| `food_bonus` | Float |  | 4 |  |
-| [`boss`](#object-boss) | Object |  | 3 |  |
-| [`hard`](#object-hard) | Object |  | 3 |  |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |  |
-| [`normal`](#object-normal) | Object |  | 3 |  |
-| `chapters` | Object |  | 1 |  |
+| `coins_bonus` | Float || 4 ||
+| `food_bonus` | Float || 4 ||
+| [`boss`](#object-boss) | Object || 3 ||
+| [`hard`](#object-hard) | Object || 3 ||
+| [`miniboss`](#object-miniboss) | Object || 3 ||
+| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
+| `chapters` | Object || 1 ||
 
 </details>
 
@@ -164,13 +164,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float |  | 4 |  |
-| `food_bonus` | Float |  | 4 |  |
-| [`boss`](#object-boss) | Object |  | 3 |  |
-| [`hard`](#object-hard) | Object |  | 3 |  |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |  |
-| [`normal`](#object-normal) | Object |  | 3 |  |
-| `chapters` | Object |  | 1 |  |
+| `coins_bonus` | Float || 4 ||
+| `food_bonus` | Float || 4 ||
+| [`boss`](#object-boss) | Object || 3 ||
+| [`hard`](#object-hard) | Object || 3 ||
+| [`miniboss`](#object-miniboss) | Object || 3 ||
+| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
+| `chapters` | Object || 1 ||
 
 </details>
 
@@ -188,12 +188,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](#object-boss) | Object |  | 3 |  |
-| `coins_bonus` | Float |  | 3 |  |
-| `food_bonus` | Float |  | 3 |  |
-| [`hard`](#object-hard) | Object |  | 3 |  |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |  |
-| [`normal`](#object-normal) | Object |  | 3 |  |
+| [`boss`](#object-boss) | Object || 3 ||
+| `coins_bonus` | Float || 3 ||
+| `food_bonus` | Float || 3 ||
+| [`hard`](#object-hard) | Object || 3 ||
+| [`miniboss`](#object-miniboss) | Object || 3 ||
+| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
 
 </details>
 

@@ -31,41 +31,41 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Chicken` | Mixed | Examples: `.1, 2, .01` | 6 |  |
 | `consumables` | Number | Examples: `60, 10` | 6 |  |
 | `basic_consumables` | Number | Examples: `90, 100` | 4 |  |
-| `FoodBig` | Object | Examples: `2, 1` | 4 |  |
-| `FoodMedium` | Object | Examples: `1, 5` | 4 |  |
-| `shop_common` | Number | Examples: `1` | 4 |  |
-| `Antidote` | Number / Object | Examples: `1` | 2 |  |
-| [`BagOfSeeds`](./Enums.md#enum-bagofseeds) | Object | Examples: `.3` | 2 |  |
-| [`BirdFeed`](./Enums.md#enum-birdfeed) | Object | Examples: `.3` | 2 |  |
-| [`BirdPoopHat`](./Enums.md#enum-birdpoophat) | Object | Examples: `.3` | 2 |  |
-| `Catnip` | Integer / Object | Examples: `3` | 2 |  |
-| `CatnipBig` | Object | Examples: `2` | 2 |  |
-| `consumables_consumable_common` | Number | Examples: `50` | 2 |  |
-| `consumables_consumable_rare` | Number | Examples: `15` | 2 |  |
-| `consumables_consumable_uncommon` | Number | Examples: `35` | 2 |  |
-| `consumables_consumable_very_rare` | Number | Examples: `1` | 2 |  |
-| [`DeadHummingbird`](./Enums.md#enum-deadhummingbird) | Object | Examples: `.3` | 2 |  |
-| [`general_common`](./Enums.md#enum-general_common) | Enum | Examples: `auto` | 2 |  |
-| [`general_rare`](./Enums.md#enum-general_rare) | Enum | Examples: `auto` | 2 |  |
-| [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum | Examples: `auto` | 2 |  |
-| [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum | Examples: `auto` | 2 |  |
-| [`GlowingSeed`](./Enums.md#enum-glowingseed) | Object | Examples: `.3` | 2 |  |
-| [`GoldenEgg`](./Enums.md#enum-goldenegg) | Object | Examples: `.3` | 2 |  |
-| [`HarpysClaw`](./Enums.md#enum-harpysclaw) | Object | Examples: `.5` | 2 |  |
-| [`LostSoul`](./Enums.md#enum-lostsoul) | Object | Examples: `.5` | 2 |  |
-| [`MagicSeed`](./Enums.md#enum-magicseed) | Object | Examples: `.3` | 2 |  |
-| [`Parousworm`](./Enums.md#enum-parousworm) | Object | Examples: `.5` | 2 |  |
-| [`PeaceSymbol`](./Enums.md#enum-peacesymbol) | Object | Examples: `.3` | 2 |  |
-| [`PeaceSymbolFacePaint`](./Enums.md#enum-peacesymbolfacepaint) | Object | Examples: `.3` | 2 |  |
-| `pills` | Number | Examples: `7` | 2 |  |
-| [`RaptorEgg`](./Enums.md#enum-raptoregg) | Object | Examples: `.1` | 2 |  |
-| [`RavenFeather`](./Enums.md#enum-ravenfeather) | Object | Examples: `.3` | 2 |  |
-| [`TieDyeBandana`](./Enums.md#enum-tiedyebandana) | Object | Examples: `.3` | 2 |  |
-| `Turkey` | Integer / Object | Examples: `2` | 2 |  |
-| [`WeirdEgg`](./Enums.md#enum-weirdegg) | Object | Examples: `.3` | 2 |  |
-| [`WishBone`](./Enums.md#enum-wishbone) | Object | Examples: `.3` | 2 |  |
-| [`common`](./Enums.md) | Integer | | 12 | 50 |
-| [`rare`](./Enums.md) | Integer | | 17 | 40 |
+| [`FoodBig`](Engine_LogicKeys.md#object-foodbig) | Object | Examples: `2, 1` | 4 ||
+| [`FoodMedium`](Engine_LogicKeys.md#object-foodmedium) | Object | Examples: `1, 5` | 4 ||
+| `shop_common` | Number | Examples: `1` | 4 ||
+| [`Antidote`](Engine_LogicKeys.md#object-antidote) | Number / Object | Examples: `1` | 2 ||
+| [`BagOfSeeds`](Engine_LogicKeys.md#object-bagofseeds) | Object | Examples: `.3` | 2 ||
+| [`BirdFeed`](Engine_LogicKeys.md#object-birdfeed) | Object | Examples: `.3` | 2 ||
+| [`BirdPoopHat`](Engine_LogicKeys.md#object-birdpoophat) | Object | Examples: `.3` | 2 ||
+| [`Catnip`](Engine_LogicKeys.md#object-catnip) | Integer / Object | Examples: `3` | 2 ||
+| [`CatnipBig`](Engine_LogicKeys.md#object-catnipbig) | Object | Examples: `2` | 2 ||
+| `consumables_consumable_common` | Number | Examples: `50` | 2 ||
+| `consumables_consumable_rare` | Number | Examples: `15` | 2 ||
+| `consumables_consumable_uncommon` | Number | Examples: `35` | 2 ||
+| `consumables_consumable_very_rare` | Number | Examples: `1` | 2 ||
+| [`DeadHummingbird`](Engine_LogicKeys.md#object-deadhummingbird) | Object | Examples: `.3` | 2 ||
+| [`general_common`](./Enums.md#enum-general_common) | Enum | Examples: `auto` | 2 ||
+| [`general_rare`](./Enums.md#enum-general_rare) | Enum | Examples: `auto` | 2 ||
+| [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum | Examples: `auto` | 2 ||
+| [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum | Examples: `auto` | 2 ||
+| [`GlowingSeed`](Engine_LogicKeys.md#object-glowingseed) | Object | Examples: `.3` | 2 ||
+| [`GoldenEgg`](Engine_LogicKeys.md#object-goldenegg) | Object | Examples: `.3` | 2 ||
+| [`HarpysClaw`](Engine_LogicKeys.md#object-harpysclaw) | Object | Examples: `.5` | 2 ||
+| [`LostSoul`](Engine_LogicKeys.md#object-lostsoul) | Object | Examples: `.5` | 2 ||
+| [`MagicSeed`](Engine_LogicKeys.md#object-magicseed) | Object | Examples: `.3` | 2 ||
+| [`Parousworm`](Engine_LogicKeys.md#object-parousworm) | Object | Examples: `.5` | 2 ||
+| [`PeaceSymbol`](Engine_LogicKeys.md#object-peacesymbol) | Object | Examples: `.3` | 2 ||
+| [`PeaceSymbolFacePaint`](Engine_LogicKeys.md#object-peacesymbolfacepaint) | Object | Examples: `.3` | 2 ||
+| `pills` | Number | Examples: `7` | 2 ||
+| [`RaptorEgg`](Engine_LogicKeys.md#object-raptoregg) | Object | Examples: `.1` | 2 ||
+| [`RavenFeather`](Engine_LogicKeys.md#object-ravenfeather) | Object | Examples: `.3` | 2 ||
+| [`TieDyeBandana`](Engine_LogicKeys.md#object-tiedyebandana) | Object | Examples: `.3` | 2 ||
+| [`Turkey`](Engine_LogicKeys.md#object-turkey) | Integer / Object | Examples: `2` | 2 ||
+| [`WeirdEgg`](Engine_LogicKeys.md#object-weirdegg) | Object | Examples: `.3` | 2 ||
+| [`WishBone`](Engine_LogicKeys.md#object-wishbone) | Object | Examples: `.3` | 2 ||
+| [`common`](./Enums.md) | Integer || 12 | 50 |
+| [`rare`](./Enums.md) | Integer || 17 | 40 |
 
 </details>
 
