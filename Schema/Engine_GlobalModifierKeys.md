@@ -38,6 +38,7 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`LowerAmbientLight`](#lowerambientlight) | Number / Object | A visual effect that dims the map's lighting. | 3 |
+| `BloodRain` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
 
 </details>
 

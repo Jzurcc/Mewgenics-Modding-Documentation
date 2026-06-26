@@ -22,24 +22,141 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1570 |
 | [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 1200 |
 | [`stats`](./Passives_and_Statuses.md#context-stats) | Object |  | 982 |
+| `AbilityReaction` | Enum / Object |  | `SCSneakUp` (Enum), `attack` (Enum), `{ ... }` (Object) |
+| `AfterImage` | Enum / Object |  | `PlayerCat_ThiefShade2` (Enum), `PlayerCat_ThiefShade` (Enum), `{ ... }` (Object) |
+| `AllyBonusAbilityAura` | Enum / Object |  | `NubbyToss` (Enum), `{ ... }` (Object) |
+| `AllyDodgeChanceAura` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `AlphaAllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `AlphaCat` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Ammo` | Array / Number / Object |  | `[1 .5]` (Array), `-99999` (Number), `6` (Number), `{ ... }` (Object) |
+| `AmplifyStatus` | Enum / Object |  | `Burn` (Enum), `Poison` (Enum), `{ ... }` (Object) |
 | `ArmorPickup` | Object |  | `{ ... }` (Object) |
+| `AutocastEachTurnBegin` | Enum / Object |  | `MindCrack_EldritchVisage2` (Enum), `MindCrack_EldritchVisage` (Enum), `{ ... }` (Object) |
 | `BackflipWhenTargeted` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `BackstabCritChance` | Number / String |  | `1` (Number), `.25` (String) |
+| `BaseStatMultiply` | String |  | `.666` (String), `.25` (String) |
+| `BasicAttackCritChance` | Number / String |  | `100` (Number), `.1` (String) |
+| `Bird` | Enum / Object |  | `CookedChickenLeg` (Enum), `{ ... }` (Object) |
+| `BlastResistance` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `BleedThorns` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `BoostDamageAura` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BoostDamageGlobalAura` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BoostWeaponDamage` | Number / Object |  | `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `BraceForEachNeighboringEnemy` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Brittle` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BrittleDuringElement` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Buddy` | Enum / Object |  | `CaveCatDad` (Enum), `Smough` (Enum), `{ ... }` (Object) |
+| `BuffImmunity` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `CanMutateTo` | Array / Enum |  | `[Lumpy Leaper]` (Array), `[TumorousMaggot ChargeyMaggot SwappyMaggot]` (Array), `Hyde` (Enum) |
 | `CatPartsTransform` | Object |  | `{ ... }` (Object) |
 | `cha` | Number |  | 468 |
+| `ChainKnockback` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `ChanceToBlockAndCounter` | Number / Object |  | `15` (Number), `33` (Number), `{ ... }` (Object) |
+| `ChanceToRevive` | Number / Object |  | `100` (Number), `25` (Number), `{ ... }` (Object) |
+| `CharmAllFlies` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `CollectPickupsOnBattleEnd` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Conductor` | Boolean (Flag) / Number / Object |  | `(Flag)` (Boolean (Flag)), `2` (Number), `{ ... }` (Object) |
 | `ConjureBonusAbility` | Enum / Object |  | `Class` (Enum), `Mage` (Enum), `{ ... }` (Object) |
 | `Consumed` | Object |  | `{ ... }` (Object) |
+| `CounterAttack` | Array / Enum / Object |  | `[attack GSScream]` (Array), `Shove` (Enum), `YeticatSnowball_Counter` (Enum), `{ ... }` (Object) |
+| `CounterNextAttacks` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `50` (Number), `{ ... }` (Object) |
+| `DamageReductionAura` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `DeathChill` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `DeathRattle` | Enum / Object |  | `BoomerCatExplode` (Enum), `BombFlyExplode` (Enum), `{ ... }` (Object) |
+| `DeathRattleRevive` | Enum / Object |  | `DoNothing` (Enum), `tk_PetrifiedPinky` (Enum), `{ ... }` (Object) |
+| `DejaVu` | Number / Object |  | `10` (Number), `{ ... }` (Object) |
+| `DepressionAura` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DiesToElement` | Enum / Object |  | `Wind` (Enum), `{ ... }` (Object) |
+| `DirtyClaws` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
 | `Disguised` | Number |  | `1` (Number) |
+| `Doomed` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `DoubleCastSpellsEachTurn_Status` | Number |  | `1` (Number) |
+| `DukeOfFlies` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Dyslexia` | Array / Object |  | `[3 5]` (Array), `[6 9]` (Array), `{ ... }` (Object) |
+| `EliteTint` | Array / Enum |  | `[.6 .6 .6 .50]` (Array), `[1 .75 .5 .50]` (Array), `red` (Enum) |
+| `Empath` | Number / Object |  | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| `EnergyStorm` | Number / Object |  | `3` (Number), `{ ... }` (Object) |
 | `ExtraBasicAttacks_Status` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ExtraBasicMoves_Status` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FaceLastDamage` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `FinalBossHitCountdownBoris` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FinalBossHitCountdownExplosive` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FinalBossHitCountdownHoly` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Flammable` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `FlyDamageIncrease` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `4` (Number), `{ ... }` (Object) |
+| `Flying` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FollowUp` | Enum / Object |  | `FollowUpDash` (Enum), `FollowUpDash2` (Enum), `{ ... }` (Object) |
+| `Fragile` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FragileDuringElement` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FrankBolts` | Boolean (Flag) / Number / Object |  | `(Flag)` (Boolean (Flag)), `1` (Number), `{ ... }` (Object) |
+| `FullPower` | Number / Object |  | `3` (Number), `{ ... }` (Object) |
+| `GlobalFamiliarDamageBoost` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `GlobalFamiliarMoveBoost` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `HealingAura` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `HealthMultiplier` | Number / String |  | `1.5` (Number), `.8` (String), `.5` (String) |
+| `Hypomania` | Number / Object |  | `3` (Number), `{ ... }` (Object) |
+| `ImmediateAbilityReaction` | Array / Enum / Object |  | `[ManglerFumbleEven ManglerFumbleOdd]` (Array), `NubsGoop` (Enum), `CatGoop` (Enum), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `ImmortalLeeches` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `KillsHeal` | Number / Object |  | `5` (Number), `50` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `LateBloomer` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Lifesteal` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `LineOfSightTrueSightAura` | Number / String |  | `0` (Number), `.5` (String) |
+| `LowHealthAllyDodgeChanceAura` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `MegaMinions` | Number / Object |  | `3` (Number), `{ ... }` (Object) |
+| `Metal` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `MetalDetector` | Number / Object |  | `5` (Number), `10` (Number), `{ ... }` (Object) |
+| `MissChance` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `20` (Number), `{ ... }` (Object) |
+| `MoveAwayFromDamageSource` | Enum / Object |  | `MoveOne` (Enum), `BasicJump` (Enum), `{ ... }` (Object) |
+| `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `MoveSpeedMultiplier` | String |  | `.5` (String) |
+| `MoveTowardsDamageSource` | Enum / Object |  | `MoveOne` (Enum), `{ ... }` (Object) |
+| `MoveTowardsKillers` | Enum / Object |  | `ReaperRevenge` (Enum), `{ ... }` (Object) |
+| `MoveWhenDamaged` | Enum / Object |  | `TKNG_Hop` (Enum), `move` (Enum), `{ ... }` (Object) |
+| `MutateAfterXTurns` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `NoManaRegen` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NonStackingDivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NumbingLeeches` | Number / Object |  | `3` (Number), `{ ... }` (Object) |
+| `Paranoia` | Enum / Object |  | `ParanoiaBasicMelee` (Enum), `{ ... }` (Object) |
 | `PermanentImmobile` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PermanentMadness` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PoisonThorns` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `PoopWhenHit` | Enum / Object |  | `Poop` (Enum), `{ ... }` (Object) |
+| `ProtectTargetedAllies` | Enum / Object |  | `SwapPositions_WideLoad2` (Enum), `SwapPositions_WideLoad` (Enum), `{ ... }` (Object) |
+| `Quiver` | Number / Object |  | `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
 | `ReduceManaCost` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `ReflectProjectiles` | Number / Object |  | `1` (Number), `100` (Number), `{ ... }` (Object) |
+| `Robot` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RockyArmorSalvage` | String |  | `.75` (String) |
+| `SafeDoomed` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `SchrodingerDisorder` | Number / Object |  | `50` (Number), `{ ... }` (Object) |
+| `Scleroderma` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `SharePickups` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `ShoulderCheck` | Number / Object |  | `100` (Number), `33` (Number), `{ ... }` (Object) |
+| `ShovingMatch` | Enum / Object |  | `attack` (Enum), `{ ... }` (Object) |
+| `SizeScale` | Number / String |  | `1.1` (Number), `1.3` (Number), `.6` (String), `.75` (String) |
+| `SmallRockBehavior` | Number / Object |  | `5` (Number), `0` (Number), `{ ... }` (Object) |
 | `SpawnExtraThingsOnBattleStart` | Object |  | `{ ... }` (Object) |
+| `SpawnObjectOnPopCorpse` | Enum / Object |  | `Coin` (Enum), `Catnip` (Enum), `{ ... }` (Object) |
+| `SpawnOnBattleStart` | Enum / Object |  | `ZombieCatFamiliar` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
+| `SpawnOnDeath` | Enum / Object |  | `NonChampionFlySwarm` (Enum), `Maggot` (Enum), `{ ... }` (Object) |
 | `spd` | Number |  | 424 |
 | `shield` | Number |  | 422 |
 | `con` | Number |  | 416 |
 | `int` | Number |  | 401 |
 | `lck` | Number |  | 351 |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `SproutsGrantMovement` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `StatusImmunity` | Array / Enum |  | `[Burn]` (Array), `[Freeze Slow]` (Array), `Burn` (Enum), `Webbed` (Enum) |
 | `Stealth` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `str` | Number |  | 337 |
 | `dex` | Number |  | 301 |
@@ -56,10 +173,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`icon`](./Enums.md#enum-icon) | Enum | Examples: `DejaVu3, DejaVu2` | 4 |
 | [`schadenfreude_scaled_stats`](./Passives_and_Statuses.md#context-schadenfreude_scaled_stats) | Object | Examples: `{ ... }` | 4 |
 | [`grant_ability`](./Enums.md#enum-grant_ability) | Enum |  | 2 |
+| `StrengthForEachNeighboringEnemy` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `StrengthInNumbersAura` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Study` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `StunImmunity` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `SupportFormChangeInsteadOfRun` | Enum / Object |  | `Attacker` (Enum), `{ ... }` (Object) |
 | `SwapHighestAndLowestStat` | Number |  | `1` (Number) |
 | `Tech` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `TempInitiativeChange` | Array / Number / Object |  | `[1 .5]` (Array), `-999` (Number), `9999` (Number), `{ ... }` (Object) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `TileDamageMultiplier` | Number / Object |  | `2` (Number), `{ ... }` (Object) |
+| `Trample` | Array / Number / Object |  | `[1 .5]` (Array), `[3 X-8]` (Array), `1` (Number), `6` (Number), `{ ... }` (Object) |
+| `TransformInXTurns` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TransformOnDeath` | Array / Enum |  | `[Hive FloatingHive]` (Array), `RatKing` (Enum), `Tatters` (Enum) |
+| `TransformOnDeathImmediately` | Enum / Object |  | `NoHead` (Enum), `{ ... }` (Object) |
+| `Triskaidekaphobia` | Number / Object |  | `13` (Number), `{ ... }` (Object) |
 | `UseAbility` | Enum / Object |  | `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
+| `Vegan` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Vengeful` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Weakness` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `WobblyCat` | Number / Object |  | `25` (Number), `{ ... }` (Object) |
+| `YOffset` | String |  | `-.18` (String), `.25` (String) |
+| `Zombie` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 

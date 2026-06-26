@@ -736,6 +736,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `GainDisorderFromPool` | Enum / Object |  | `all_disorders` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -750,18 +751,31 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AddWeaponAux` | Enum / Number / String |  | `-item_aux` (Enum), `2` (Number), `1` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Cleanse` | Number / Object |  | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 | `EquipPermanentItem` | Enum |  | `BoneClub` (Enum), `Kidney` (Enum) |
+| `EvolveAbilityFromPool` | Enum / Object |  | `Necromancer` (Enum), `Thief` (Enum), `{ ... }` (Object) |
 | `FindItem` | Enum |  | `BoneClub` (Enum), `Pearl` (Enum) |
 | `FindItemFromPool` | Enum / Object |  | `chapter_specific_item` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
 | `ForceUseAbility` | Enum / Object |  | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+| `FormChange` | Enum / Object |  | `passive` (Enum), `Default` (Enum), `{ ... }` (Object) |
+| `FreeSpell` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `GainCoinsRange` | Object |  | `{ ... }` (Object) |
 | `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `3` (Number), `8` (Number) |
 | `KineticSpikes` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Number / String |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
 | `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Tech` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -776,7 +790,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AlphaCat` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `EvolveAbilityFromPool` | Enum / Object |  | `Hunter` (Enum), `Fighter` (Enum), `{ ... }` (Object) |
 | `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
+| `ManaGain` | Enum / Number / String |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `Revive` | Number / Object |  | `1` (Number), `50` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `WeaponAuxMultiplier` | String |  | `.5` (String) |
 
 </details>
 
@@ -809,6 +830,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
 | `Bleed` | Array / Number / Object |  | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `2` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 
 </details>
 
@@ -825,6 +847,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -841,10 +864,18 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `BleedThorns` | Array / Number / Object |  | `[1 .5]` (Array), `6` (Number), `3` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Cleanse` | Number / Object |  | `0` (Number), `1` (Number), `{ ... }` (Object) |
 | `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
+| `ManaGain` | Enum / Number / String |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
 | `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempSpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
 | `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
@@ -876,6 +907,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`odds`](./Enums.md#enum-odds) | Number / String | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 |
+| `Instakill` | Array / Number |  | `[25 .01]` (Array), `50` (Number), `999` (Number) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -891,7 +924,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 6 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Drowsy` | Array / Number / Object |  | `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -906,6 +944,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Immobile` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -950,9 +989,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `HealRandomInjury` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `PermanentCharm` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `RandomMutation` | Number |  | `3` (Number), `1` (Number) |
+| `Revive` | Number / Object |  | `1` (Number), `50` (Number), `{ ... }` (Object) |
 | `SafeDoomed` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -996,6 +1042,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `LaunchOffScreen` | Enum |  | `10+bonus_melee_ability_damage` (Enum) |
+| `TempInitiativeChange` | Array / Number / Object |  | `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1013,8 +1061,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 3 |
 | [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 2 |
 | [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Nested conditional. | 1 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Attraction` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Doomed` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Hex` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Leeches` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Marked` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
+| `PermanentCharm` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Poison` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `TempDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Weakness` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1029,6 +1092,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `-2` (Number), `5` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `6` (Number), `-2` (Number), `{ ... }` (Object) |
 | `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 
@@ -1046,7 +1111,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `FillMana` | Array / Number |  | `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
+| `ManaGain` | Enum / Number / String |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
 
 </details>
 
@@ -1062,6 +1130,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Freeze` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `OverrideKnockbackDamage` | Enum / Number / String |  | `str` (Enum), `X*10` (Enum), `5` (Number), `2` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Slow` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1081,6 +1157,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `ChangeTilesUnder` | Enum |  | `LavaTile` (Enum), `DirtTile` (Enum) |
 | `FindItemFromPool` | Enum / Object |  | `parasites` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
 | `ForceUseAbility` | Enum / Object |  | `cm_RaptorEggSpawn` (Enum), `tk_WeirdEgg_Spawn` (Enum), `{ ... }` (Object) |
+| `Freeze` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ImmediateUseAbility` | Enum / Object |  | `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
 | `RandomMutation` | Number |  | `3` (Number), `1` (Number) |
 
 </details>
@@ -1111,8 +1189,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 20 |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `FormChange` | Enum / Object |  | `passive` (Enum), `Bully` (Enum), `{ ... }` (Object) |
 | `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `Slow` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1131,8 +1214,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 6 |
 | [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 4 |
 | [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `ChangeTilesUnder` | Enum |  | `LavaTile` (Enum), `DirtTile` (Enum) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Die` | Number / Object |  | `1` (Number), `6` (Number), `{ ... }` (Object) |
+| `EventBounty` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `ImmediateUseAbility` | Enum / Object |  | `HitlerCloneHeil` (Enum), `cm_Lard_Impl` (Enum), `{ ... }` (Object) |
+| `Instakill` | Array / Number |  | `[25 .01]` (Array), `50` (Number), `999` (Number) |
+| `PopAndSpawn` | Enum / Object |  | `Sprout` (Enum), `TheDestroyer` (Enum), `{ ... }` (Object) |
+| `UseAbility` | Enum / Object |  | `MegaGuppy_SummonTheChild` (Enum), `ManglerThrowRemote` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -1147,6 +1238,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Die` | Number / Object |  | `1` (Number), `6` (Number), `{ ... }` (Object) |
+| `FlatLeech` | Enum / Number |  | `X` (Enum), `5` (Number), `2` (Number) |
+| `Instakill` | Array / Number |  | `[25 .01]` (Array), `50` (Number), `999` (Number) |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 5 |
 | `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
 | [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Object | Nested conditional. | 1 |
@@ -1169,6 +1264,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
 | `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `15` (Number), `20` (Number), `{ ... }` (Object) |
+| `FormChange` | Enum / Object |  | `Drunker` (Enum), `BigHolding` (Enum), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `UseAbility` | Enum / Object |  | `MegaGuppy_SummonTheChild` (Enum), `ManglerThrowRemote` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -1225,6 +1323,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DelayCastAbility` | Enum / Object |  | `HitlerNuke` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -1269,6 +1370,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1299,7 +1401,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 2 |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| `Doomed` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `PermanentCharm` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1314,6 +1418,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1360,6 +1465,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
+| `ReduceManaCost` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
@@ -1376,6 +1483,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_IsSelf`](#conditional_isself) | Object | Nested conditional. | 3 |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
   | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
   | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
   | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
@@ -1393,7 +1501,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Adrenaline` | Array / Number / Object |  | `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
 | `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `Cleanse` | Number / Object |  | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `Scrambled` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1423,7 +1534,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Cleave` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `SetItemAux` | Object |  | `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1455,6 +1569,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1486,6 +1601,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 2 |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `Knockback` | Number / Object |  | `3` (Number), `10` (Number), `{ ... }` (Object) |
 
 </details>
@@ -1535,16 +1651,38 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
 | [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 1 |
 | [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllyInfested` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Cleanse` | Number / Object |  | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `Cleave` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
 | `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `15` (Number), `66` (Number), `{ ... }` (Object) |
+| `DybbukPossessed` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `FormChange` | Enum / Object |  | `passive` (Enum), `Holy` (Enum), `{ ... }` (Object) |
 | `GainCoinsRange` | Object |  | `{ ... }` (Object) |
+| `ImmediateUseAbility` | Enum / Object |  | `MoonHandMegaSqueeze` (Enum), `tk_ButterBean_Normal` (Enum), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `Instakill` | Array / Number |  | `[25 .01]` (Array), `50` (Number), `999` (Number) |
+| `Leeches` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Marked` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
 | `ObjectOnHitCharacter` | Enum / Object |  | `Maggot` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
 | `PartialCleanse` | Number |  | `1` (Number), `9999` (Number) |
+| `PermanentCharm` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Poison` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `RandomStatDown` | Array / Enum / Number |  | `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
 | `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `Revive` | Number / Object |  | `1` (Number), `50` (Number), `{ ... }` (Object) |
 | `ScatterCoins` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
+| `Slow` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempSpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
 | `Webbed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
@@ -1574,29 +1712,97 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 5 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 5 |
 | [`Conditional_Familiar`](#conditional_familiar) | Object | Nested conditional. | 4 |
+| `AcidRain` | Number / Object |  | `2` (Number), `{ ... }` (Object) |
+| `AlphaCat` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Ammo` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `6` (Number), `{ ... }` (Object) |
+| `Attraction` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BackflipWhenTargeted` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Bleed` | Array / Number / Object |  | `[1 .1]` (Array), `[3 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Number / Object |  | `[1 .25]` (Array), `[1 .10]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Bloodzerked` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BodyGuard` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BombRatTurtle` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `BounceObject` | Enum / Object |  | `CharmedFlea_Champion` (Enum), `CharmedDip` (Enum), `{ ... }` (Object) |
+| `BounceRock` | Array / Enum |  | `[1 .2]` (Array), `LavaBoulder` (Enum), `SmallRock` (Enum) |
 | `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `BurgleCoin` | Array / Number |  | `[1 .5]` (Array), `3` (Number), `1` (Number) |
+| `ButterflySwarm` | Number / Object |  | `2` (Number), `{ ... }` (Object) |
+| `ChampionUpgradeNextMinion` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ChangeTile` | Enum / Object |  | `FireTile` (Enum), `GrassTile` (Enum), `{ ... }` (Object) |
 | `ChangeTilesUnder` | Enum / Object |  | `LavaTile` (Enum), `DirtTile` (Enum) |
 | `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `ChargeFists` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `CharismaUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .25]` (Array), `[1 .15]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Cleave` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `CockroachSwarm` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `CollideWithConsumed` | Enum |  | `5+bonus_melee_damage` (Enum), `4+bonus_melee_damage` (Enum) |
+| `Confusion` | Array / Number / Object |  | `[1 .2]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ConjureBonusAbility` | Enum / Object |  | `random` (Enum), `Mage` (Enum), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `CopySpells` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Counterspell` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
 | `CreateGlobalModifiers` | Object |  | `{ ... }` (Object) |
 | `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
 | `DamageOrHealConditionally` | Number |  | `1` (Number) |
 | `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `2` (Number), `{ ... }` (Object) |
+| `DelayCastAbility` | Enum / Object |  | `HitlerNuke` (Enum), `{ ... }` (Object) |
+| `DexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `DiminishingHealthRegen` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 | `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `15` (Number), `50` (Number), `{ ... }` (Object) |
+| `Doomed` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DoubleCast` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `DoubleCastSpell` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DoubleLoot` | Number / Object |  | `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `DrinkWater` | Number |  | `1` (Number) |
+| `Drowsy` | Array / Number / Object |  | `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
+| `EliteUpgradeNextMinion` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `EmptyMind` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Enlarge` | Number / Object |  | `3` (Number), `{ ... }` (Object) |
+| `EvolveAbilityFromPool` | Enum / Object |  | `Tinkerer` (Enum), `Fighter` (Enum), `{ ... }` (Object) |
+| `ExtraBasicAttacks_Status` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `ExtraBasicMoves_Status` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FactionUprising` | Enum / Object |  | `robot` (Enum), `ghost` (Enum), `{ ... }` (Object) |
 | `Fear` | Array / Number / Object |  | `[1 .25]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `FillMana` | Array / Number |  | `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
 | `FindExtraItemFromPoolOnBattleEnd` | Enum |  | `combat_reward_easy` (Enum), `pills` (Enum) |
+| `FireArmor` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FireArmor2` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FireflySwarm` | Number / Object |  | `2` (Number), `{ ... }` (Object) |
+| `FireStorm` | Number / Object |  | `33` (Number), `0` (Number), `{ ... }` (Object) |
+| `FlySwarm` | Number / Object |  | `50` (Number), `{ ... }` (Object) |
+| `Fog` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `ForceAttack` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `ForceMoveAway` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `ForceMoveTowardsEnemies` | Enum / Number |  | `MoveOne` (Enum), `DumbMove_Impl` (Enum), `1` (Number) |
 | `ForceUseAbility` | Enum / Object |  | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+| `FreeSpell` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Freeze` | Array / Number / Object |  | `[1 .25]` (Array), `[1 .15]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `GainCoinsRange` | Object |  | `{ ... }` (Object) |
+| `Grappled` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .75]` (Array), `1` (Number), `{ ... }` (Object) |
+| `HealRandomInjury` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
 | `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HeatWave` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `HeavyHits` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Hex` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `IceArmor` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `IgnoreSelf` | Boolean / Number |  | `true` (Boolean), `1` (Number) |
+| `ImmediateUseAbility` | Enum / Object |  | `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Infested` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Instakill` | Array / Number |  | `[25 .01]` (Array), `50` (Number), `999` (Number) |
+| `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Invulnerable` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `JudgementDay` | Number / Object |  | `25` (Number), `{ ... }` (Object) |
 | `KineticSpikes` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `Knockback` | Number / Object |  | `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `KnockbackDirectionIsFacingDirection` | Enum / Number |  | `flip` (Enum), `rotate_right` (Enum), `1` (Number) |
 | `KnockOutCoin` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Leech` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Leeches` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Lifesteal` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `LowerAmbientLight` | Number / Object | A visual effect that dims the map's lighting. | 4 |
 | [`Conditional_AffectedByElement`](#conditional_affectedbyelement) | Object | Nested conditional. | 3 |
@@ -1627,33 +1833,117 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Object | Nested conditional. | 1 |
 | `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `-4` (Number), `{ ... }` (Object) |
+| `MagicWeakness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Number / String |  | `item_aux` (Enum), `X-1` (Enum), `2` (Number), `6` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `ManaLeeches` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Meaty` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Meteornado` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `MeteorShower` | Number / Object |  | `25` (Number), `{ ... }` (Object) |
+| `Metronome` | Boolean (Flag) / Number / Object |  | `(Flag)` (Boolean (Flag)), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `MovementUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Muted` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextAbilityHeals` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextActionLuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `99` (Number), `{ ... }` (Object) |
+| `NextAttackBonusRange` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `NextAttackSpecialCrit` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `NextBasicAttackCritsThisTurn` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `NextDamageReduceAndHealAllies` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextTurnDoubleRangedDamage` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `NonStackingDivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `ObjectOnHitCharacter` | Enum / Object |  | `SkeletonCatFamiliar` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
+| `Ostracized` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `OverrideChainKnockbackDamage` | Enum / Number |  | `3+bonus_melee_ability_damage` (Enum), `0` (Number) |
+| `OverrideKnockbackDamage` | Enum / Number / String |  | `str` (Enum), `3+bonus_melee_ability_damage` (Enum), `2` (Number), `3` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
 | `PartialCleanse` | Number |  | `1` (Number), `9999` (Number) |
 | `PermanentConstitution` | Number |  | `-1` (Number), `-2` (Number) |
 | `PermanentDexterity` | Number |  | `1` (Number), `2` (Number) |
+| `PermanentImmobile` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `PermanentIntelligence` | Number |  | `1` (Number), `2` (Number) |
 | `PermanentSpeed` | Number |  | `1` (Number), `2` (Number) |
+| `Petrify` | Array / Number / Object |  | `[1 .15]` (Array), `[1 .2]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Poison` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
+| `PoisonLace` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PopAndSpawn` | Enum / Object |  | `TheDestroyer` (Enum), `StemCat_HalfHealth` (Enum), `{ ... }` (Object) |
+| `Possessed` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ProbeCharmed` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Purge` | Number / Object |  | `3` (Number), `0` (Number), `{ ... }` (Object) |
+| `Rain` | Number / Object |  | `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `RandomDistanceDisplace` | Number / Object |  | `20` (Number), `{ ... }` (Object) |
+| `RandomInjury` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `RandomMagicMissile` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `6` (Number), `{ ... }` (Object) |
 | `RandomPermanentStat` | Number |  | `-1` (Number), `-2` (Number) |
+| `RandomStatDown` | Array / Enum / Number |  | `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
 | `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `3` (Number), `-3` (Number) |
 | `RangeUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Reanimate` | Number / Object |  | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| `ReduceManaCost` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ReduceManaCostExcludeBrainstorm` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Reflect` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `Regurge` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
 | `RepairWeapon` | Array / Number |  | `[1 .25]` (Array), `6` (Number), `1` (Number) |
+| `Revive` | Number / Object |  | `1` (Number), `50` (Number), `{ ... }` (Object) |
+| `ReviveNextRound` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Rot` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Sandstorm` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `ScatterHeldCoin` | Array / Number |  | `[1 .3]` (Array), `[1 .5]` (Array), `1` (Number) |
+| `SelfStun` | Array / Number |  | `[1 .5]` (Array), `1` (Number) |
 | `SetDefaultFace` | Enum |  | `insane` (Enum), `happy` (Enum) |
+| `Shatter` | Number / Object |  | `15` (Number), `{ ... }` (Object) |
+| `ShortCircuit` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `SizeScale` | Number / String |  | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
+| `Sleep` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `SmartMetronome` | Number / Object |  | `20` (Number), `{ ... }` (Object) |
+| `SmellBlood` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `Snow` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `SoulLink` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `SpawnCoinAnywhere` | Array / Number |  | `[1 .5]` (Array), `1` (Number) |
+| `SpawnRock` | Array / Number |  | `[1 .20]` (Array), `1` (Number) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `SpellShield` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `SpiderInfested` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `StatBounty` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `StatusAllCharactersOnSpawn` | Object |  | `{ ... }` (Object) |
 | `StatusGroup` | Object |  | `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Switcheroo` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Tangled` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .33]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Tarred` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Taunting` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TeamCastAbility` | Enum / Object |  | `TeamFlex_Impl2` (Enum), `TeamFlex_Impl` (Enum), `{ ... }` (Object) |
+| `TempBackstab` | Array / Number / Object |  | `[1 .5]` (Array), `75` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempBonusKnockback` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempBonusKnockbackDamage` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `TempCounterAttack` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempCritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `30` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempDexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInitiativeChange` | Array / Number / Object |  | `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInjuryImmunity` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempManaCostReduction` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempMovement` | Array / Number / Object |  | `[1 .5]` (Array), `20` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempPreEmptiveCounterAttack` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempRangeUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempSpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempSpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempStrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
+| `TilesMovedToCritChance` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToMana` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToNeighborHeal` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToStrength` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TowerDefenseStatus` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TowerDefenseStatus2` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TradeLife` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `TrailBlazer` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Trample` | Array / Number / Object |  | `[3 X-8]` (Array), `[1 .5]` (Array), `9` (Number), `6` (Number), `{ ... }` (Object) |
+| `TriggerWerewolfTransform` | Array / String |  | `[1 .5]` (Array), `[1 .20]` (Array), `.5` (String) |
+| `TurnControlDelay` | String |  | `.25` (String) |
+| `UseAbility` | Enum / Object |  | `MegaGuppy_SummonTheChild` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
+| `VisualFlySwarm` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
 | `Webbed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Windy` | Number / Object |  | `10` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 

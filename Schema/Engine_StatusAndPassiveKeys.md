@@ -1492,6 +1492,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1507,7 +1509,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Buddy` | Enum / Object |  | `spawner` (Enum), `Ornstein` (Enum), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ForceAttack` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `2` (Number), `1` (Number) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `PoisonThorns` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1522,6 +1533,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ForceUseAbility` | Enum / Object |  | `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `RandomMagicMissile` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1536,6 +1552,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `RepairWeapon` | Array / Number |  | `[1 .25]` (Array), `6` (Number), `1` (Number) |
   | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 0 |
   | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Number | Applies or references the 'RepairWeapon' effect/state. | 0 |
 
@@ -1554,7 +1571,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 3 |
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 3 |
+| `Blind` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `must_do_damage` | Boolean | `true` | 3 |
+| `Rot` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
   | [`KnockbackIfCrit`](#knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 0 |
   | `LeaveBehindRockOnKnockback` | Number | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. | 0 |
   | [`Blind`](./Arrays.md#array-blind) | Array | Applies or references the 'Blind' effect/state. | 0 |
@@ -1583,26 +1602,51 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Nested conditional. | 1 |
 | `ApplyToSource` | Object |  | `{ ... }` (Object) |
+| `Bleed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `BounceObject` | Enum / Object |  | `AllyRotFly` (Enum), `CharmedFlea_Champion` (Enum), `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `BurgleCoin` | Array / Number |  | `[1 .5]` (Array), `3` (Number), `1` (Number) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ChangeTile` | Enum / Object |  | `LavaTile` (Enum), `TallGrassTile` (Enum), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .15]` (Array), `[1 .2]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Else` | Object |  | `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .25]` (Array), `[1 .15]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `FlatLeech` | Enum / Number |  | `X` (Enum), `5` (Number), `2` (Number) |
 | `Freeze` | Array / Number / Object |  | `[1 .01]` (Array), `[1 .20]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `GainDisorderFromPool` | Enum / Object |  | `all_disorders` (Enum), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `Instakill` | Array / Number |  | `[25 .01]` (Array), `50` (Number), `999` (Number) |
+| `Knockback` | Number / Object |  | `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `KnockOutCoin` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `KnockUpAndAway` | Object |  | `{ ... }` (Object) |
+| `Leech` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Leeches` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `MagicWeakness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
 | `ManaLeeches` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Marked` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
 | `OverrideChainKnockback` | Number |  | `10` (Number), `3` (Number) |
 | `OverrideChainKnockbackDamage` | Enum / Number |  | `3+bonus_melee_ability_damage` (Enum), `0` (Number) |
 | `Petrify` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .20]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Possessed` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `PullSourceToTarget` | Number |  | `1` (Number) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `Rot` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `-999999` (Number), `2` (Number), `{ ... }` (Object) |
+| `Slow` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `SoulLink` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `SpiderInfested` | Array / Number / Object |  | `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 | `SplashDamage` | Number |  | `1` (Number), `2` (Number) |
 | `SpreadDisease` | Object |  | `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .25]` (Array), `[1 .15]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Tangled` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `VisualFXTile` | Enum |  | `PoisonPoof` (Enum), `FireBlastSmall` (Enum) |
+| `Weakness` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Webbed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1617,8 +1661,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `Knockback` | Number / Object |  | `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `KnockUpAndAway` | Object |  | `{ ... }` (Object) |
 | `SpreadDisease` | Object |  | `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1635,6 +1685,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 2 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 1 |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
   | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
 
 </details>
@@ -1650,6 +1702,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
   | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 0 |
   | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
 
@@ -1667,6 +1721,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
+| `Leech` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
   | `Leech` | Number | Applies or references the 'Leech' effect/state. | 0 |
   | `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 0 |
 
@@ -1683,6 +1738,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Cleave` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
   | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 0 |
   | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
@@ -1700,7 +1756,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Cleave` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Leech` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `PullSourceToKnockbackImmuneTarget` | Number |  | `1` (Number) |
 
 </details>
@@ -1730,6 +1788,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Flying` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `YOffset` | String |  | `-.18` (String), `.25` (String) |
 
 </details>
 
@@ -1745,6 +1805,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `ApplyToSource` | Object |  | `{ ... }` (Object) |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
 | `Purge` | Number / Object |  | `3` (Number), `0` (Number), `{ ... }` (Object) |
 
 </details>
@@ -1761,6 +1823,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Integer | Quantity. | 3 |
+| `Bounty` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Marked` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1775,10 +1839,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `ally_chance` | Integer | Examples: `15, 100` | 5 |
 | [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | `desc` | String |  | `"PASSIVE_CATCHPROJECTILES_DESC"` (String) |
 | `name` | String |  | `"PASSIVE_CATCHPROJECTILES_NAME"` (String) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1795,8 +1861,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
 | [`Conditional_Flying`](#conditional_flying) | Object | Nested conditional. | 1 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Else` | Object |  | `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Stealth` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1812,7 +1881,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Else` | Object |  | `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `Coin` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Weakness` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1846,11 +1923,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |
 | `Freeze` | Array / Number / Object |  | `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 24 |
 | [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 2 |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
+| `Poison` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpreadDisease` | Object |  | `{ ... }` (Object) |
+| `Weakness` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
   | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
   | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
   | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
@@ -1919,9 +1999,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `CatPartsTransform` | Object |  | `{ ... }` (Object) |
+| `CharismaUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `-2` (Number), `{ ... }` (Object) |
 | `FormChange` | Enum / Object |  | `Fighter` (Enum), `Medic` (Enum), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `-2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1952,6 +2035,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Flying` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1966,6 +2052,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AutocastEachRound` | Enum / Object |  | `SpiderReturn` (Enum), `{ ... }` (Object) |
   | [`StatusEachRoundEnd`](#statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 0 |
   | [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 0 |
   | [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 0 |
@@ -2000,6 +2087,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2014,6 +2103,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `TransformInXTurns` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2028,25 +2118,71 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `BackflipWhenTargeted` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `BleedThorns` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Number / String |  | `str` (Enum), `20+bonus_melee_damage` (Enum), `-5` (Number), `-4` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `CharismaUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DelayedPain` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `DexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `DiminishingHealthRegen` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `40` (Number), `10` (Number), `{ ... }` (Object) |
 | `Drowsy` | Array / Number / Object |  | `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `FormChange` | Enum / Object |  | `passive` (Enum), `Boris` (Enum), `{ ... }` (Object) |
 | `Freeze` | Array / Number / Object |  | `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `GainCoins` | Array / Number |  | `[3 5]` (Array), `2` (Number), `-5` (Number) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Hex` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 | `Infested` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Lifesteal` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `MagicWeakness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Number / String |  | `item_aux` (Enum), `X` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `Marked` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `SmallRock` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
 | `Ostracized` | Array / Number / Object |  | `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 | `PermanentCharisma` | Number |  | `1` (Number), `2` (Number) |
 | `PermanentLuck` | Number |  | `1` (Number), `2` (Number) |
 | `PermanentStrength` | Number |  | `1` (Number), `2` (Number) |
 | `Petrify` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .20]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `PoisonLace` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `RandomStatDown` | Array / Enum / Number |  | `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `Reflect` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `Rot` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
 | `Scrambled` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Sleep` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
+| `Slow` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpawnCoinAnywhere` | Array / Number |  | `[1 .5]` (Array), `1` (Number) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `Tarred` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempCounterAttack` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Weakness` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2098,6 +2234,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `ForceUseAbility` | Enum / Object |  | `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
 | `stacks` | Integer | Number of stacks or intensity to apply. | 2 |
 
 </details>
@@ -2117,6 +2254,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 1 |
 | [`Conditional_Tiny`](#conditional_tiny) | Object | Nested conditional. | 1 |
 | `Else` | Object |  | `{ ... }` (Object) |
+| `Poison` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2133,6 +2271,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Adjacent`](#conditional_adjacent) | Object | Nested conditional. | 1 |
 | `exclude_self` | Boolean | `false` | 1 |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
   | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 0 |
 
 </details>
@@ -2148,8 +2287,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2164,6 +2309,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Freeze` | Array / Number / Object |  | `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `Reanimate` | Number / Object |  | `50` (Number), `100` (Number), `{ ... }` (Object) |
 | `triggers_limit` | Integer | Examples: `1` | 2 |
@@ -2199,8 +2346,21 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 5 |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
+| `BlessingOfPeace` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DoubleCastSpellThisTurn` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `FillMana` | Array / Number |  | `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
+| `ForceUseAbility` | Enum / Object |  | `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `MissChance` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `10` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `Revive` | Number / Object |  | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `UseAbility` | Enum / Object |  | `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
+| `Wet` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2219,9 +2379,30 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 1 |
 | [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 |
 | [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Nested conditional. | 1 |
+| `AddWeaponAux` | Enum / Number / String |  | `-item_aux` (Enum), `2` (Number), `1` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Cleanse` | Number / Object |  | `0` (Number), `1` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ForceUseAbility` | Enum / Object |  | `head_HitlersToupe` (Enum), `tk_RoboSucc` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `ImmediateUseAbility` | Enum / Object |  | `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `NonStackingDivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| `PermanentMadness` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PreEmptiveCounterNextAttacks` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RandomStatDown` | Array / Enum / Number |  | `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `RangeUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `SpawnCoinAnywhere` | Array / Number |  | `[1 .5]` (Array), `1` (Number) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Stealth` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2236,6 +2417,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `ForceUseAbility` | Enum / Object |  | `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| `RandomMagicMissile` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2250,9 +2433,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| `RandomMagicMissile` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `ReduceManaCost` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `RepairWeapon` | Array / Number |  | `[1 .25]` (Array), `99` (Number), `1` (Number) |
 | `RepairWeaponCondition` | Array / Number |  | `1` (Number) |
+| `SpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `stacks` | Integer | Number of stacks or intensity to apply. | 8 |
 
 </details>
@@ -2269,7 +2458,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `DexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `FindItemFromPool` | Enum / Object |  | `mutant_pool` (Enum), `parasites` (Enum), `{ ... }` (Object) |
 | `Freeze` | Array / Number / Object |  | `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpawnCoinAnywhere` | Array / Number |  | `[1 .5]` (Array), `1` (Number) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2284,7 +2477,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `ManaGain` | Enum / Number / String |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2319,6 +2519,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 2 |
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 2 |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
   | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 0 |
 
 </details>
@@ -2334,6 +2535,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `FillMana` | Array / Number |  | `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
 
 </details>
 
@@ -2352,8 +2558,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 6 |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
 | [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 1 |
+| `FindItemFromPool` | Enum / Object |  | `pills` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
+| `GainCoins` | Array / Number |  | `[3 5]` (Array), `5` (Number), `2` (Number) |
 | `PermanentStrength` | Number |  | `1` (Number), `2` (Number) |
 | `RepairAll` | Number |  | `10` (Number), `1` (Number) |
+| `RepairWeapon` | Array / Number |  | `[1 .25]` (Array), `99` (Number), `1` (Number) |
 | `TransformWeapon` | Object |  | `{ ... }` (Object) |
 
 </details>
@@ -2369,11 +2578,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Craft` | Object |  | `{ ... }` (Object) |
 | `DestroyEquipmentAndAttachParasite` | Object |  | `{ ... }` (Object) |
+| `FindItemFromPool` | Enum / Object |  | `chapter` (Enum), `pills` (Enum), `{ ... }` (Object) |
+| `ForceUseAbility` | Enum / Object |  | `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| `RandomMagicMissile` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `ReviveNextRound` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `SafeDie` | Number |  | `1` (Number) |
 | `Sleep` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
+| `StealthUntilBasicAttack` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2389,9 +2604,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `ApplyToRandomPartyMemberIfPossible` | Object |  | `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
 | `DexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `FindItemFromPool` | Enum / Object |  | `chapter` (Enum), `pills` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `BestBud` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2407,6 +2628,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `DoDamage` | Object |  | `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2421,6 +2644,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2451,6 +2677,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
+| `FindItemFromPool` | Enum / Object |  | `pills` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
+| `RandomMagicMissile` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `RemoveAmbientLightEffects` | Number / String |  | `4` (Number), `.5` (String) |
+| `ScatterCoins` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2465,7 +2695,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Cleanse` | Number / Object |  | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2480,6 +2714,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
   | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 0 |
   | [`RandomPermanentStatsDistinct`](#randompermanentstatsdistinct) | Object | Examples: `{ ... }` | 0 |
 
@@ -2498,7 +2733,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Object | Nested conditional. | 1 |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ForceAttack` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `ImmediateUseAbility` | Enum / Object |  | `MoonHandMegaSqueeze` (Enum), `head_MagnetoAttract` (Enum), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp_WithoutInitiative` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
   | `RemoveStatusStacks` | Object | Removes a specific number of stacks of a status effect. | 0 |
   | [`DivineShield`](./Arrays.md#array-divineshield) | Number | Applies or references the 'DivineShield' effect/state. | 0 |
   | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
@@ -2521,6 +2761,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `BackflipWhenTargeted` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2535,6 +2778,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `ObjectOnHitCharacter` | Enum / Object |  | `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2551,10 +2797,21 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 4 |
 | [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Object | Nested conditional. | 2 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `CharismaUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `DexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `RangeUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Stealth` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
   | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 0 |
   | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 0 |
   | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 0 |
@@ -2577,6 +2834,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ForceUseAbility` | Enum / Object |  | `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `2` (Number) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Number / String |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
 
 </details>
 
@@ -2592,6 +2856,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `DexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `GainCoins` | Array / Number |  | `[3 5]` (Array), `5` (Number), `2` (Number) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2606,6 +2872,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `2` (Number), `1` (Number) |
+| `RepairWeapon` | Array / Number |  | `[1 .25]` (Array), `99` (Number), `1` (Number) |
 
 </details>
 
@@ -2622,14 +2890,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
 | `Craft` | Object |  | `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DiminishingHealthRegen` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `40` (Number), `{ ... }` (Object) |
 | `Else` | Object |  | `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
 | `MovementUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `1` (Number), `{ ... }` (Object) |
 | `RandomInjury` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `TempDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `1` (Number), `{ ... }` (Object) |
 | `TempMovement` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `20` (Number), `{ ... }` (Object) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2644,7 +2924,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DiminishingHealthRegen` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ExtraBasicAttacks_Status` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2659,6 +2943,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
 
 </details>
 
@@ -2674,6 +2960,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Integer | Quantity. | 3 |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Freeze` | Array / Number / Object |  | `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
@@ -2689,6 +2979,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Number / String |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `OneUseSpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2719,6 +3012,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2734,6 +3030,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2748,7 +3045,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `FillMana` | Array / Number |  | `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `PermanentMadness` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `ReviveNextRound` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `SafeDoomed` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2763,7 +3067,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AlphaDodgeChance` | Array / Number / Object |  | `[1 .5]` (Array), `50` (Number), `1` (Number), `{ ... }` (Object) |
+| `AutocastEachRound` | Enum / Object |  | `SpiderReturn` (Enum), `{ ... }` (Object) |
+| `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `DownRankAIIfWeaponUsable` | String |  | `.001` (String) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `Trample` | Array / Number / Object |  | `[1 .5]` (Array), `[3 X-8]` (Array), `5` (Number), `9` (Number), `{ ... }` (Object) |
+| `XIsSpellStormRampAndReset` | Number / Object |  | `0` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2779,6 +3090,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `Poison` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Tarred` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
@@ -2794,7 +3109,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `NoHealthRegen` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Tangled` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Tarred` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Webbed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2823,13 +3147,37 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bruise` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `CharismaUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Confusion` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
 | `DexterityUp` | Array / Number / Object |  | `[1 .5]` (Array), `-1` (Number), `1` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `MissChance` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `10` (Number), `{ ... }` (Object) |
+| `NoHealthRegen` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NoManaRegen` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PermanentConfusion` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ProbeCharmed` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Rot` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
 | `Sleep` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
+| `Slow` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpiderInfested` | Array / Number / Object |  | `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `Tarred` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempStrengthUp` | Array / Number / Object |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Webbed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
