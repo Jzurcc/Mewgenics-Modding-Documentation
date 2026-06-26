@@ -3753,7 +3753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 44 |  |
 | `displace` | Boolean |  | 4 |  |
 | [`self_damage`](./Enums.md) | Boolean / Integer | | 9 | 2 |
-| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Object | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -9235,3 +9235,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 </details>
 
 ---
+
+
+---
+
+## Auto-Discovered Objects
+
+
+### Object: `BoneWormShotSmall`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `lobbed_attack` |
+
+</details>

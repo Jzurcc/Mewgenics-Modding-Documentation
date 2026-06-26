@@ -8141,3 +8141,65 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
+
+
+---
+
+## Auto-Discovered Objects
+
+
+### Object: `buy2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `animation` | String | Undocumented. | 1 | `choice_coins_ten` |
+| `animation_fail` | String | Undocumented. | 1 | `choice_no_coins` |
+| `bad` | Object | Undocumented. | 1 |  |
+| `good` | Object | Undocumented. | 1 |  |
+| `label` | String | Undocumented. | 1 | `"EVENT_BUY_ANSW"` |
+| `stat` | String | Undocumented. | 1 | `coins` |
+| `stat_max` | Number | Undocumented. | 1 | `10` |
+| `stat_min` | Number | Undocumented. | 1 | `10` |
+
+</details>
+
+### Object: `buy3`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `animation` | String | Undocumented. | 1 | `choice_coins_twentyfive` |
+| `animation_fail` | String | Undocumented. | 1 | `choice_no_coins` |
+| `bad` | Object | Undocumented. | 1 |  |
+| `good` | Object | Undocumented. | 1 |  |
+| `label` | String | Undocumented. | 1 | `"EVENT_BUY_ANSW"` |
+| `stat` | String | Undocumented. | 1 | `coins` |
+| `stat_max` | Number | Undocumented. | 1 | `25` |
+| `stat_min` | Number | Undocumented. | 1 | `25` |
+
+</details>
+
+### Object: `pick`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 3
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `animation` | String | Undocumented. | 3 | `choice_dex_alt` |
+| `copy_results` | String | Undocumented. | 3 | `examine` |
+| `label` | String | Undocumented. | 3 | `"EVENT_PICK_ANSW"` |
+| `stat` | String | Undocumented. | 3 | `dex` |
+
+</details>

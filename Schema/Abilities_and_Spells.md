@@ -460,7 +460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `requires_hp_threshold` | Integer | Must be below/above a certain health percentage. | 2 |  |
 | `requires_weapon` | Boolean | Prerequisite: Must meet this condition. | 2 |  |
 | [`durability`](./Enums.md) | Integer | | 13 | 0 |
-| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Object | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5329,3 +5329,57 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 </details>
 
 ---
+
+
+---
+
+## Auto-Discovered Objects
+
+
+### Object: `cWaggle`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Waggle` |
+
+</details>
+
+### Object: `cWaggle2x2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `cWaggle` |
+
+</details>
+
+### Object: `cWaggle3x3`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `cWaggle2x2` |
+
+</details>

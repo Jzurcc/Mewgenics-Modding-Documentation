@@ -3872,7 +3872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`cant_miss`](./Enums.md) | Boolean | | 8 | true |
 | [`effects`](./Enums.md) | Object | | 30 |   |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
-| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Object | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 

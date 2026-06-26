@@ -1372,3 +1372,322 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
+
+
+---
+
+## Auto-Discovered Objects
+
+
+### Object: `alley`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `AlleyBGTest` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Background` |
+| `debris` | String | Undocumented. | 1 | `Debris` |
+| `event_piece_frame` | String | Undocumented. | 1 | `alley` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `Rubble` |
+| `static_1x1_b` | String | Undocumented. | 1 | `Bricks` |
+| `static_1x1_c` | String | Undocumented. | 1 | `Bricks` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Dumpster` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Dumpster` |
+| `static_tall_a` | String | Undocumented. | 1 | `PowerPole` |
+| `static_tall_b` | String | Undocumented. | 1 | `PhoneBooth` |
+
+</details>
+
+### Object: `boneyard`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `BoneYardBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Background_Graves` |
+| `debris` | String | Undocumented. | 1 | `GravesDebris` |
+| `event_piece_frame` | String | Undocumented. | 1 | `graves` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `global_particles` | Array | Undocumented. | 1 | `Mist` |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `GraveRocks1` |
+| `static_1x1_b` | String | Undocumented. | 1 | `GraveRocks2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `GraveRocks2` |
+| `static_2x2_a` | String | Undocumented. | 1 | `BigGraveRocks1` |
+| `static_2x2_b` | String | Undocumented. | 1 | `BigGraveRocks1` |
+| `static_tall_a` | String | Undocumented. | 1 | `TallGraveRocks1` |
+| `static_tall_b` | String | Undocumented. | 1 | `TallGraveRocks1` |
+
+</details>
+
+### Object: `bunker`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `BunkerBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Background_Bunker` |
+| `debris` | String | Undocumented. | 1 | `Debris7` |
+| `event_piece_frame` | String | Undocumented. | 1 | `bunker` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `BunkerObjects1` |
+| `static_1x1_b` | String | Undocumented. | 1 | `BunkerObjects2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `SmallGravelPile` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Bunker2x2` |
+| `static_2x2_b` | String | Undocumented. | 1 | `BigGravelPile` |
+| `static_tall_a` | String | Undocumented. | 1 | `BunkerTall1` |
+| `static_tall_b` | String | Undocumented. | 1 | `BunkerTall2` |
+
+</details>
+
+### Object: `caves`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `CavesBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Background_Caves` |
+| `debris` | String | Undocumented. | 1 | `CaveDebris` |
+| `event_piece_frame` | String | Undocumented. | 1 | `caves` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `global_particles` | Array | Undocumented. | 1 | `CaveDrip` |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `CaveRock1` |
+| `static_1x1_b` | String | Undocumented. | 1 | `CaveRock2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `CaveRock3` |
+| `static_2x2_a` | String | Undocumented. | 1 | `BigCaveRock1` |
+| `static_2x2_b` | String | Undocumented. | 1 | `BigCaveRock1` |
+| `static_tall_a` | String | Undocumented. | 1 | `TallCaveRock1` |
+| `static_tall_b` | String | Undocumented. | 1 | `TallCaveRock2` |
+
+</details>
+
+### Object: `core`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `boss_background_alt` | String | Undocumented. | 1 | `CoreBossBG` |
+| `combat_background` | String | Undocumented. | 1 | `CoreBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `CoreUI` |
+| `debris` | String | Undocumented. | 1 | `Debris9` |
+| `event_piece_frame` | String | Undocumented. | 1 | `core` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `global_particles` | Array | Undocumented. | 1 | `Embers CoreHeatWave_Distortion` |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `CoreObjects1` |
+| `static_1x1_b` | String | Undocumented. | 1 | `CoreObjects2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `CoreObjects3` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Core2x2` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Desert2x2` |
+| `static_tall_a` | String | Undocumented. | 1 | `CoreTall1` |
+| `static_tall_b` | String | Undocumented. | 1 | `CoreTall2` |
+
+</details>
+
+### Object: `crater`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `CraterBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Background_Crater` |
+| `debris` | String | Undocumented. | 1 | `Debris8` |
+| `event_piece_frame` | String | Undocumented. | 1 | `crater` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `global_particles` | Array | Undocumented. | 1 | `CraterLeaves` |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `CraterObjects1` |
+| `static_1x1_b` | String | Undocumented. | 1 | `CraterObjects2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `CraterObjects1` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Crater2x2` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Desert2x2` |
+| `static_tall_a` | String | Undocumented. | 1 | `CraterTall1` |
+| `static_tall_b` | String | Undocumented. | 1 | `CraterTall2` |
+
+</details>
+
+### Object: `desert`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `DesertBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `DesertUI` |
+| `debris` | String | Undocumented. | 1 | `DesertDebris` |
+| `event_piece_frame` | String | Undocumented. | 1 | `desert` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `DesertRocks` |
+| `static_1x1_b` | String | Undocumented. | 1 | `DesertCactus` |
+| `static_1x1_c` | String | Undocumented. | 1 | `DesertRocks` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Desert2x2` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Desert2x2` |
+| `static_tall_a` | String | Undocumented. | 1 | `DesertTall` |
+| `static_tall_b` | String | Undocumented. | 1 | `DesertTall2` |
+
+</details>
+
+### Object: `junkyard`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `JunkyardBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Background_Junkyard` |
+| `debris` | String | Undocumented. | 1 | `Debris2` |
+| `event_piece_frame` | String | Undocumented. | 1 | `junkyard` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `StaticJunkSmall` |
+| `static_1x1_b` | String | Undocumented. | 1 | `Stump` |
+| `static_1x1_c` | String | Undocumented. | 1 | `SmallGravelPile` |
+| `static_2x2_a` | String | Undocumented. | 1 | `StaticJunkCube` |
+| `static_2x2_b` | String | Undocumented. | 1 | `BigGravelPile` |
+| `static_tall_a` | String | Undocumented. | 1 | `Tree` |
+| `static_tall_b` | String | Undocumented. | 1 | `StaticTires` |
+
+</details>
+
+### Object: `lab`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `LabBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `LabUI` |
+| `debris` | String | Undocumented. | 1 | `Debris11` |
+| `event_piece_frame` | String | Undocumented. | 1 | `lab` |
+| `global_objects` | Object | Undocumented. | 2 |  |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `LabObjects1` |
+| `static_1x1_b` | String | Undocumented. | 1 | `Labobjects2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `LabObjects1` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Lab2x2` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Moon2x22` |
+| `static_tall_a` | String | Undocumented. | 1 | `Labtall1` |
+| `static_tall_b` | String | Undocumented. | 1 | `Labtall2` |
+
+</details>
+
+### Object: `meatworld`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `background_extra_shader` | String | Undocumented. | 1 | `meatpulse` |
+| `background_shader` | String | Undocumented. | 1 | `meatpulse_ground` |
+| `combat_background` | String | Undocumented. | 1 | `meatBGpulsing` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Meat` |
+| `debris` | String | Undocumented. | 1 | `meatdebris` |
+| `event_piece_frame` | String | Undocumented. | 1 | `meatworld` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `global_particles` | Array | Undocumented. | 1 | `MeatCaveDrip CoreHeatWave_Dist` |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `Meatobjects` |
+| `static_1x1_b` | String | Undocumented. | 1 | `Meatobjects2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `Meatobjects` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Meat2x2` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Dumpster` |
+| `static_tall_a` | String | Undocumented. | 1 | `Meatt` |
+| `static_tall_b` | String | Undocumented. | 1 | `meattall1` |
+| `water_alt_shader` | String | Undocumented. | 1 | `blood` |
+| `water_alt_shroud` | String | Undocumented. | 1 | `BloodShroud` |
+| `water_alt_tile` | String | Undocumented. | 1 | `BloodTile` |
+
+</details>
+
+### Object: `moon`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combat_background` | String | Undocumented. | 1 | `MoonBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `MoonUI` |
+| `debris` | String | Undocumented. | 1 | `Debris10` |
+| `event_piece_frame` | String | Undocumented. | 1 | `moon` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `MoonObjects1` |
+| `static_1x1_b` | String | Undocumented. | 1 | `MoonObjects2` |
+| `static_1x1_c` | String | Undocumented. | 1 | `MoonObjects2` |
+| `static_2x2_a` | String | Undocumented. | 1 | `Moon2x2` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Moon2x22` |
+| `static_tall_a` | String | Undocumented. | 1 | `MoonTall1` |
+| `static_tall_b` | String | Undocumented. | 1 | `MoonTall2` |
+
+</details>
+
+### Object: `sewers`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `background_extra_shader` | String | Undocumented. | 1 | `water` |
+| `combat_background` | String | Undocumented. | 1 | `SewerBG` |
+| `combat_ui_background` | String | Undocumented. | 1 | `UI_Background_Sewers` |
+| `debris` | String | Undocumented. | 1 | `Debris3` |
+| `event_piece_frame` | String | Undocumented. | 1 | `sewers` |
+| `global_objects` | Object | Undocumented. | 1 |  |
+| `global_particles` | Array | Undocumented. | 1 | `CaveDrip` |
+| `reverb` | Object | Undocumented. | 1 |  |
+| `static_1x1_a` | String | Undocumented. | 1 | `SmallPipes` |
+| `static_1x1_b` | String | Undocumented. | 1 | `Bricks3` |
+| `static_1x1_c` | String | Undocumented. | 1 | `Sludge` |
+| `static_2x2_a` | String | Undocumented. | 1 | `BigPipes` |
+| `static_2x2_b` | String | Undocumented. | 1 | `Dumpster` |
+| `static_tall_a` | String | Undocumented. | 1 | `TallPipe` |
+| `static_tall_b` | String | Undocumented. | 1 | `PhoneBooth` |
+
+</details>

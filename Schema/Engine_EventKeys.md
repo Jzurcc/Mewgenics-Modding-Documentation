@@ -752,3 +752,1199 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 </details>
 
+
+
+---
+
+## Auto-Discovered Objects
+
+
+### Object: `Albinism`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_ALBINISM_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_ALBINISM_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `AlienOvergrowth`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"WEATHER_ALIENOVERGROWTH_DESC"` |
+| `effects` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"WEATHER_ALIENOVERGROWTH_NAME"` |
+
+</details>
+
+### Object: `Anxiety`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_ANXIETY_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_ANXIETY_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Beepis`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_BEEPIS_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `224` |
+| `kind` | String | Undocumented. | 1 | `head` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_BEEPIS_NAME"` |
+| `parasite` | Boolean | Undocumented. | 1 | `true` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Bottles`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_Bottles` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_BOTTLES_DESC"` |
+| `durability` | Number | Undocumented. | 1 | `6` |
+| `frame` | Number | Undocumented. | 1 | `17` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_BOTTLES_NAME"` |
+| `rarity` | String | Undocumented. | 1 | `common` |
+
+</details>
+
+### Object: `BrainDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_BRAINDAMAGE_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_BRAINDAMAGE_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `BrainDead`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_BRAINDEAD_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_BRAINDEAD_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Brave`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_BRAVE_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_BRAVE_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Cancer`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 2 | `"DISORDER_CANCER_DESC"`<br>`"ITEM_CANCER_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `152` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `name` | String | Undocumented. | 2 | `"DISORDER_CANCER_NAME"`<br>`"ITEM_CANCER_NAME"` |
+| `passives` | Object | Undocumented. | 2 |  |
+| `rarity` | String | Undocumented. | 1 | `rare` |
+| `set` | String | Undocumented. | 1 | `Mother` |
+
+</details>
+
+### Object: `CharmedMaggot`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Maggot` |
+
+</details>
+
+### Object: `CharmedPinky`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Pinky` |
+
+</details>
+
+### Object: `CharmedRaptorBaby`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `RaptorBaby` |
+
+</details>
+
+### Object: `CharmedTarBaby`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `TarBaby` |
+
+</details>
+
+### Object: `CryogenicTimeChamber_Empty`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_EMP` |
+| `frame` | Number | Undocumented. | 1 | `224` |
+| `global_passives` | Object | Undocumented. | 1 |  |
+| `hint_destination` | String | Undocumented. | 1 | `meatworld` |
+| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_MeatWorldUnlockedFull` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_EMP` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+
+</details>
+
+### Object: `CryogenicTimeChamber_Full`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_FUL` |
+| `frame` | Number | Undocumented. | 1 | `225` |
+| `global_passives` | Object | Undocumented. | 1 |  |
+| `hint_destination` | String | Undocumented. | 1 | `lab` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_FUL` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+
+</details>
+
+### Object: `Cunch`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_CUNCH_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `199` |
+| `kind` | String | Undocumented. | 1 | `neck` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_CUNCH_NAME"` |
+| `parasite` | Boolean | Undocumented. | 1 | `true` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `CursedStickman`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_CURSEDSTICKMAN_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `68` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `name` | String | Undocumented. | 1 | `"ITEM_CURSEDSTICKMAN_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `rarity` | String | Undocumented. | 1 | `rare` |
+| `set` | Array | Undocumented. | 1 | `Wood Demonic` |
+
+</details>
+
+### Object: `DeathsScythe`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_DeathsScythe` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_DEATHSSCYTHE_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `122` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_DEATHSSCYTHE_NAME"` |
+| `rarity` | String | Undocumented. | 1 | `rare` |
+
+</details>
+
+### Object: `Depression`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_DEPRESSION_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_DEPRESSION_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `EnchantingPoop`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ITEM_ENCHANTINGPOOP_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `159` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `name` | String | Undocumented. | 1 | `"ITEM_ENCHANTINGPOOP_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `set` | String | Undocumented. | 1 | `Fecal` |
+
+</details>
+
+### Object: `FecalHood_Cursed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `variant_of` | String | Undocumented. | 1 | `FecalHood` |
+
+</details>
+
+### Object: `FecalMask_Cursed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `variant_of` | String | Undocumented. | 1 | `FecalMask` |
+
+</details>
+
+### Object: `Feebis`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `attack` | String | Undocumented. | 1 | `BasicPoke` |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_FEEBIS_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `204` |
+| `kind` | String | Undocumented. | 1 | `face` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_FEEBIS_NAME"` |
+| `parasite` | Boolean | Undocumented. | 1 | `true` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `GeomagneticStorm`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"WEATHER_GEOMAGSTORM_DESC"` |
+| `effects` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"WEATHER_GEOMAGSTORM_NAME"` |
+
+</details>
+
+### Object: `Gigachad`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_GIGACHAD_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_GIGACHAD_NAME"` |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `GuillotinasHead`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_GUILLOTINASHEAD_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `95` |
+| `global_tags` | Array | Undocumented. | 1 | `upgrade_basic_combats_to_hard` |
+| `hint_destination` | String | Undocumented. | 1 | `meatworld` |
+| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_MeatWorldUnlocked` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `face` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_GUILLOTINASHEAD_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | Array | Undocumented. | 1 | `Meat Guts` |
+
+</details>
+
+### Object: `HauntedNight`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"WEATHER_HAUNTED_DESC"` |
+| `effects` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"WEATHER_HAUNTED_NAME"` |
+
+</details>
+
+### Object: `Host`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `class` | String | Undocumented. | 1 | `Hunter` |
+| `desc` | String | Undocumented. | 1 | `"PASSIVE_HOST_DESC"` |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"PASSIVE_HOST_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `JarOfChaos`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `cm_JarOfChaos` |
+| `consumable` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_JAROFCHAOS_DESC"` |
+| `dont_destroy_on_0` | Boolean | Undocumented. | 1 | `true` |
+| `durability` | Number | Undocumented. | 1 | `1` |
+| `failable` | Boolean | Undocumented. | 1 | `true` |
+| `frame` | Number | Undocumented. | 1 | `239` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_JAROFCHAOS_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | String | Undocumented. | 1 | `Radioactive` |
+
+</details>
+
+### Object: `JarOfRadiatedBlood`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATEDBLOOD_DESC"` |
+| `failable` | Boolean | Undocumented. | 1 | `true` |
+| `frame` | Number | Undocumented. | 1 | `223` |
+| `hint_destination` | String | Undocumented. | 1 | `dimensionx` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATEDBLOOD_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | String | Undocumented. | 1 | `Radioactive` |
+
+</details>
+
+### Object: `JarOfRadiation`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATION_DESC"` |
+| `failable` | Boolean | Undocumented. | 1 | `true` |
+| `frame` | Number | Undocumented. | 1 | `222` |
+| `hint_destination` | String | Undocumented. | 1 | `meatworld` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATION_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | String | Undocumented. | 1 | `Radioactive` |
+
+</details>
+
+### Object: `MomsKnife`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_MomsKnife` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_MOMSKNIFE_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `126` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_MOMSKNIFE_NAME"` |
+| `rarity` | String | Undocumented. | 1 | `very_rare` |
+| `set` | String | Undocumented. | 1 | `Mother` |
+
+</details>
+
+### Object: `MysteriousTomb1`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `intro` | Object | Undocumented. | 1 |  |
+| `main` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `MysteriousTomb2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `intro` | Object | Undocumented. | 1 |  |
+| `main` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `PawShards`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_PAWSHARDS_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `23` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_PAWSHARDS_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `PuncturedEye`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `bonus_items` | Array | Undocumented. | 1 | `Eyeball` |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_PUNCTUREDEYE_DESC"` |
+| `lock_item_slot` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"DISORDER_PUNCTUREDEYE_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `PutridLeech`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_PUTRIDLEECH_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `97` |
+| `hint_destination` | String | Undocumented. | 1 | `boneyard` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `head` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_PUTRIDLEECH_NAME"` |
+| `parasite` | Boolean | Undocumented. | 1 | `true` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `prevent_level_up` | Boolean | Undocumented. | 1 | `true` |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | String | Undocumented. | 1 | `Leech` |
+
+</details>
+
+### Object: `PyrophinasCollar`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ITEM_PYROPHINASCOLLAR_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `219` |
+| `global_tags` | Array | Undocumented. | 1 | `pyrophina_following` |
+| `hint_destination` | String | Undocumented. | 1 | `moon` |
+| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_BothObelisksUnlocked` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_PYROPHINASCOLLAR_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | String | Undocumented. | 1 | `Used` |
+
+</details>
+
+### Object: `ReceiverAntenna`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_RECEIVERANTENNA_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `98` |
+| `global_tags` | Array | Undocumented. | 1 | `all_normal_events_are_weather` |
+| `hint_destination` | String | Undocumented. | 1 | `jurassic` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `head` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_RECEIVERANTENNA_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | Array | Undocumented. | 1 | `Bionic Cyborg` |
+| `shield` | Number | Undocumented. | 1 | `8` |
+
+</details>
+
+### Object: `RestlessDead`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"WEATHER_RESTLESS_DESC"` |
+| `effects` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"WEATHER_RESTLESS_NAME"` |
+
+</details>
+
+### Object: `Rocks`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_Rocks` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_ROCKS_DESC"` |
+| `durability` | Number | Undocumented. | 1 | `8` |
+| `frame` | Number | Undocumented. | 1 | `55` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_ROCKS_NAME"` |
+| `rarity` | String | Undocumented. | 1 | `common` |
+| `set` | String | Undocumented. | 1 | `Rock` |
+
+</details>
+
+### Object: `Scatological`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_SCATOLOGICAL_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_SCATOLOGICAL_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `SignalAmplifier`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_SignalAmplifier` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_SIGNALAMPLIFIER_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `165` |
+| `hint_destination` | String | Undocumented. | 1 | `dimensionx` |
+| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_DimensionXUnlocked` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_SIGNALAMPLIFIER_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | Array | Undocumented. | 1 | `Bionic Cyborg` |
+
+</details>
+
+### Object: `SlagMight`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_SlagMight` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_SLAGMIGHT_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `173` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_SLAGMIGHT_NAME"` |
+| `rarity` | String | Undocumented. | 1 | `very_rare` |
+| `set` | String | Undocumented. | 1 | `Rock` |
+
+</details>
+
+### Object: `SlagTight`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_SLAGTIGHT_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `170` |
+| `int` | Number | Undocumented. | 1 | `-4` |
+| `kind` | String | Undocumented. | 1 | `head` |
+| `name` | String | Undocumented. | 1 | `"ITEM_SLAGTIGHT_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `shield` | Number | Undocumented. | 1 | `5` |
+
+</details>
+
+### Object: `SludgeHat`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cha` | Number | Undocumented. | 1 | `-1` |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_SLUDGEHAT_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `14` |
+| `kind` | String | Undocumented. | 1 | `head` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_SLUDGEHAT_NAME"` |
+| `set` | String | Undocumented. | 1 | `Sludge` |
+| `shield` | Number | Undocumented. | 1 | `1` |
+
+</details>
+
+### Object: `SludgeMask`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cha` | Number | Undocumented. | 1 | `-1` |
+| `cursed` | Boolean | Undocumented. | 1 | `true` |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_SLUDGEMASK_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `23` |
+| `kind` | String | Undocumented. | 1 | `face` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_SLUDGEMASK_NAME"` |
+| `set` | String | Undocumented. | 1 | `Sludge` |
+| `shield` | Number | Undocumented. | 1 | `1` |
+
+</details>
+
+### Object: `Soulless`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_SOULLESS_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_SOULLESS_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Stinky`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_STINKY_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_STINKY_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `StrangeEggs`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"WEATHER_STRANGEEGGS_DESC"` |
+| `effects` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"WEATHER_STRANGEEGGS_NAME"` |
+
+</details>
+
+### Object: `TheShimmer`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"WEATHER_SHIMMER_DESC"` |
+| `effects` | Object | Undocumented. | 1 |  |
+| `name` | String | Undocumented. | 1 | `"WEATHER_SHIMMER_NAME"` |
+
+</details>
+
+### Object: `ThrobbingGristle`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_ThrobbingGristle` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_THROBBINGGRISTLE_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `162` |
+| `global_passives` | Object | Undocumented. | 1 |  |
+| `hint_destination` | String | Undocumented. | 1 | `caves` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_THROBBINGGRISTLE_NAME"` |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | String | Undocumented. | 1 | `Meat` |
+
+</details>
+
+### Object: `Touched`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `Disorder` |
+| `desc` | String | Undocumented. | 1 | `"DISORDER_TOUCHED_DESC"` |
+| `name` | String | Undocumented. | 1 | `"DISORDER_TOUCHED_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `TransmitterAntenna`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ARMOR_TRANSMITTERANTENNA_DESC` |
+| `frame` | Number | Undocumented. | 1 | `99` |
+| `hint_destination` | String | Undocumented. | 1 | `theend` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `head` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ARMOR_TRANSMITTERANTENNA_NAME` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | Array | Undocumented. | 1 | `Bionic Cyborg` |
+
+</details>
+
+### Object: `ZaratanasCollar`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"ITEM_ZARATANASCOLLAR_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `220` |
+| `global_tags` | Array | Undocumented. | 1 | `zaratana_following` |
+| `hint_destination` | String | Undocumented. | 1 | `core` |
+| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_BothObelisksUnlocked` |
+| `indestructible` | Boolean | Undocumented. | 1 | `true` |
+| `kind` | String | Undocumented. | 1 | `trinket` |
+| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
+| `name` | String | Undocumented. | 1 | `"ITEM_ZARATANASCOLLAR_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `quest_item` | Boolean | Undocumented. | 1 | `true` |
+| `rarity` | String | Undocumented. | 1 | `quest` |
+| `set` | String | Undocumented. | 1 | `Used` |
+
+</details>
+
+### Object: `bleeding`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `deathsound` | String | Undocumented. | 1 | `Injury_Bleed` |
+| `id` | Number | Undocumented. | 1 | `8` |
+| `stats` | Object | Undocumented. | 1 |  |
+| `text` | String | Undocumented. | 1 | `"INJURY_NAME_EXSANGUINATED"` |
+
+</details>
+
+### Object: `burned`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `deathsound` | String | Undocumented. | 1 | `Injury_Burn` |
+| `id` | Number | Undocumented. | 1 | `7` |
+| `scars` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `text` | String | Undocumented. | 1 | `"INJURY_NAME_IMMOLATED"` |
+
+</details>
+
+### Object: `chapter_specific_item`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `current_chapter_common` | Number | Undocumented. | 1 | `55` |
+| `current_chapter_rare` | Number | Undocumented. | 1 | `10` |
+| `current_chapter_uncommon` | Number | Undocumented. | 1 | `35` |
+| `current_chapter_very_rare` | Number | Undocumented. | 1 | `1` |
+
+</details>
+
+### Object: `end_of_time_unlock`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `set_mapgen_flag` | String | Undocumented. | 1 | `EndOfTimeUnlocked` |
+
+</details>
+
+### Object: `legacy_event_unlock_momsknife`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `popup` | Object | Undocumented. | 1 |  |
+| `unlock_item` | String | Undocumented. | 1 | `MomsKnife` |
+
+</details>
+
+### Object: `map_unlock_dimensionx`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `set_mapgen_flag` | String | Undocumented. | 1 | `DimensionXUnlocked` |
+
+</details>
+
+### Object: `map_unlock_iceage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `popup` | Object | Undocumented. | 1 |  |
+| `set_mapgen_flag` | String | Undocumented. | 1 | `IceAgeUnlocked` |
+
+</details>
+
+### Object: `meat_world_open`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `set_mapgen_flag` | String | Undocumented. | 1 | `MeatWorldUnlockedFull` |
+
+</details>
+
+### Object: `radiated`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `deathsound` | String | Undocumented. | 1 | `Injury_Burn` |
+| `id` | Number | Undocumented. | 1 | `11` |
+| `scars` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `text` | String | Undocumented. | 1 | `"INJURY_NAME_RADIATED"` |
+
+</details>
+
+### Object: `time_machine_quest_finalstep`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `trigger_npc_sequence` | String | Undocumented. | 1 | `beanies_timemachine_2` |
+
+</details>
+
+### Object: `time_machine_quest_trigger`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `trigger_npc_sequence` | String | Undocumented. | 1 | `beanies_timemachine_intro` |
+
+</details>

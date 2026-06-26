@@ -19051,3 +19051,57 @@
 </details>
 
 ---
+
+
+---
+
+## Auto-Discovered Objects
+
+
+### Object: `cWaggle`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Waggle` |
+
+</details>
+
+### Object: `cWaggle2x2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `cWaggle` |
+
+</details>
+
+### Object: `cWaggle3x3`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `cWaggle2x2` |
+
+</details>

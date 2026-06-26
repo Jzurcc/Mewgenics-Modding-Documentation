@@ -6046,3 +6046,2431 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `BonusDamage` | Enum / Integer |  | 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 
+
+
+---
+
+## Auto-Discovered Objects
+
+
+### Object: `AbsorbBuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number | Undocumented. | 1 | `2` |
+| `alpha_start` | Number | Undocumented. | 1 | `-1` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 0 1 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `4` |
+| `emit_spread` | Number | Undocumented. | 1 | `180` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `true` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `ManaParticle` |
+| `ownership` | String | Undocumented. | 1 | `local` |
+| `particle_lifetime` | Array | Undocumented. | 1 | `.5 1.5` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `.5` |
+| `size_start` | Array | Undocumented. | 1 | `2 3` |
+| `speed_scale` | Number | Undocumented. | 1 | `0` |
+| `speed_start` | Number | Undocumented. | 1 | `1` |
+
+</details>
+
+### Object: `BBTransformMutant`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `BBTransformZealot`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `BasicButcherMelee`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `BasicDruidAbility`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `tags` | Array | Undocumented. | 1 | `musical` |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `BasicMagicMissile`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `BasicMagicShortRanged`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `ranged_attack` |
+
+</details>
+
+### Object: `BasicMedicMelee`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `BasicMelee`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `BasicMelee_4Hits`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `target` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `BasicMelee` |
+
+</details>
+
+### Object: `BasicMonkMelee`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `BasicNecroRanged`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `lobbed_attack` |
+
+</details>
+
+### Object: `BasicPsychicPull`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `BasicRanged`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `lobbed_attack` |
+
+</details>
+
+### Object: `BasicStraightShot`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `straightshot_attack` |
+
+</details>
+
+### Object: `BasicSuplex`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `SuplexAbility` |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `tags` | Array | Undocumented. | 1 | `cant_be_simulcast` |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `BasicTankMelee`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `dash_attack` |
+
+</details>
+
+### Object: `BeefyCharmedLeech`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Maggot` |
+
+</details>
+
+### Object: `Bionic`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"SETBONUS_BIONIC_DESC"` |
+| `name` | String | Undocumented. | 1 | `"SETBONUS_BIONIC_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `pieces_required` | Number | Undocumented. | 1 | `3` |
+
+</details>
+
+### Object: `BloatEyeMovement2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `move` |
+
+</details>
+
+### Object: `BloatyExplodey`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `BoneWormShotMed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `lobbed_attack` |
+
+</details>
+
+### Object: `BonusToss`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `throw_attack` |
+
+</details>
+
+### Object: `BonusToss2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `BonusToss` |
+
+</details>
+
+### Object: `BoomerCatExplode`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `BoyDino`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `BoyDinoCry`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `BrambleRandomTileEvent`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `BungaSwipe`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ai_ability` | String | Undocumented. | 1 | `BungaSwipe_ai` |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `CatGoop`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `straightshot_attack` |
+
+</details>
+
+### Object: `CatapultJump`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `BasicJump` |
+
+</details>
+
+### Object: `CatapultJump2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `CatapultJump` |
+
+</details>
+
+### Object: `CaveCatDad`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `equipment` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `CerberubsStraightReaction`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `straightshot_attack` |
+
+</details>
+
+### Object: `CharmedDemonKitten`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Hyde` |
+
+</details>
+
+### Object: `CharmedFly`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Fly` |
+
+</details>
+
+### Object: `CharmedFlySwarm`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `FlySwarm` |
+
+</details>
+
+### Object: `CharmedLeech`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Maggot` |
+
+</details>
+
+### Object: `CharmedPooter`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Pooter` |
+
+</details>
+
+### Object: `CharmedReaper`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Reaper` |
+
+</details>
+
+### Object: `CharmedTinySpider`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 2 |  |
+| `variant_of` | String | Undocumented. | 2 | `TinySpider` |
+
+</details>
+
+### Object: `CharmedTinyTumor`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `TinyTumor` |
+
+</details>
+
+### Object: `Chubs`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `ChubsGoop`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `straightshot_attack` |
+
+</details>
+
+### Object: `ChubsRage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `CookedChickenLeg`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `passives` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `CookedBigFood` |
+
+</details>
+
+### Object: `CraterCreeperOut`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `DarkOneStrike`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `DecoyExplode`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `DefaultMove`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `meta` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `move` |
+
+</details>
+
+### Object: `DestroyerShieldBash`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `BasicBigMelee` |
+
+</details>
+
+### Object: `Digest`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `DamageConsumedCharactersAbilit` |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `self_damage` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `DrMangler`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `EatShit`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `tile_targeted_melee_attack` |
+
+</details>
+
+### Object: `FireExtinguish_Steam`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha` | Number | Undocumented. | 1 | `.1` |
+| `emit_amount` | Number | Undocumented. | 1 | `200` |
+| `emit_box` | Array | Undocumented. | 1 | `-.1 .1 .2 .2 -.1 .1` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_radius` | Number | Undocumented. | 1 | `.4` |
+| `emit_rate` | Number | Undocumented. | 1 | `1` |
+| `emit_timespread` | Number | Undocumented. | 1 | `.75` |
+| `emit_timespread_curve` | String | Undocumented. | 1 | `ease_out` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `ParticleDustCloud` |
+| `particle_lifetime` | Number | Undocumented. | 1 | `1` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size` | Array | Undocumented. | 1 | `.5 2` |
+| `speed` | Array | Undocumented. | 1 | `1 3` |
+
+</details>
+
+### Object: `FlyBuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number | Undocumented. | 1 | `2` |
+| `alpha_start` | Number | Undocumented. | 1 | `-1` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 0 1 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `50` |
+| `emit_spread` | Number | Undocumented. | 1 | `180` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `true` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `Critter_Fly` |
+| `ownership` | String | Undocumented. | 1 | `local` |
+| `particle_lifetime` | Array | Undocumented. | 1 | `.5 1.5` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `0` |
+| `size_start` | Array | Undocumented. | 1 | `3 4` |
+| `speed_scale` | Number | Undocumented. | 1 | `.25` |
+| `speed_start` | Number | Undocumented. | 1 | `1` |
+
+</details>
+
+### Object: `GirlDino`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `GirlDinoCry`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `GrenadeExplode`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `self_damage` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `Guillotina2Body`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Guillotina2Head`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Guillotina3Body`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Guillotina3Head`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `HCHumanDie`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `Haunt`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `HemBounce`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `Hyde`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `arm1` | Number | Undocumented. | 1 | `1013` |
+| `arm2` | Number | Undocumented. | 1 | `1013` |
+| `body` | Number | Undocumented. | 1 | `31` |
+| `claws` | Number | Undocumented. | 1 | `1` |
+| `default_face` | String | Undocumented. | 1 | `angry` |
+| `default_frame` | Number | Undocumented. | 1 | `1` |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `head` | Number | Undocumented. | 1 | `62` |
+| `leftear` | Number | Undocumented. | 1 | `1013` |
+| `lefteye` | Number | Undocumented. | 1 | `1013` |
+| `lefteyebrow` | Number | Undocumented. | 1 | `63` |
+| `leg1` | Number | Undocumented. | 1 | `37` |
+| `leg2` | Number | Undocumented. | 1 | `37` |
+| `mouth` | Number | Undocumented. | 1 | `1013` |
+| `palette` | Number | Undocumented. | 1 | `59` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `pitch` | Number | Undocumented. | 1 | `.9` |
+| `properties` | Object | Undocumented. | 1 |  |
+| `rightear` | Number | Undocumented. | 1 | `1013` |
+| `righteye` | Number | Undocumented. | 1 | `1013` |
+| `righteyebrow` | Number | Undocumented. | 1 | `63` |
+| `stats` | Object | Undocumented. | 1 |  |
+| `tail` | Number | Undocumented. | 1 | `1004` |
+| `texture` | Number | Undocumented. | 1 | `1000` |
+| `voice` | String | Undocumented. | 1 | `male9` |
+
+</details>
+
+### Object: `IDSprout`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `spawn` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spawn` |
+
+</details>
+
+### Object: `Lava_Distortion`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha` | Number | Undocumented. | 1 | `.01` |
+| `alpha_end` | Number | Undocumented. | 1 | `0` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `-.4 .4 0 0 -.4 .4` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `10` |
+| `emit_spread` | Number | Undocumented. | 1 | `4` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 0 999 -999 999` |
+| `material` | String | Undocumented. | 1 | `distorter` |
+| `movieclip` | String | Undocumented. | 1 | `Particle_HeatWaveDistortion` |
+| `particle_lifetime` | Array | Undocumented. | 1 | `.5 1` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_layer` | String | Undocumented. | 1 | `sorted_distortions` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `rotation` | Array | Undocumented. | 1 | `0 0` |
+| `rotation_speed_end` | Number | Undocumented. | 1 | `0` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `3` |
+| `size_start` | Number | Undocumented. | 1 | `1` |
+| `speed_start` | Array | Undocumented. | 1 | `1 2` |
+
+</details>
+
+### Object: `LennyCatDies`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | String | Undocumented. | 1 | `DamageConsumedCharactersAbilit` |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `self_damage` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `Maggot`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `ManglerEnrage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `ManglerMonsterDashAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `dash_attack` |
+
+</details>
+
+### Object: `ManglersMonster`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `MechExplode`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `self_damage` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `throw_attack` |
+
+</details>
+
+### Object: `MegaFart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `MegaGuppy_SummonTheChild`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `spawn` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spawn` |
+
+</details>
+
+### Object: `MockingbirdForm`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `tags` | Array | Undocumented. | 1 | `shapeshift` |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `MoonHead_KillHands`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `targeted_status` |
+
+</details>
+
+### Object: `MoveOne`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `move` |
+
+</details>
+
+### Object: `Necro_SoulDagger_Uncharged`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_NecroSoulDagger` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_SOULDAGGER_DESC"` |
+| `frame` | Number | Undocumented. | 1 | `118` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_SOULDAGGER_NAME"` |
+
+</details>
+
+### Object: `NoHead`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `claws` | Number | Undocumented. | 1 | `1` |
+| `default_frame` | Number | Undocumented. | 1 | `1000` |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `head` | Number | Undocumented. | 1 | `1036` |
+| `leftear` | Number | Undocumented. | 1 | `1005` |
+| `lefteye` | Number | Undocumented. | 1 | `1028` |
+| `lefteyebrow` | Number | Undocumented. | 1 | `1022` |
+| `mouth` | Number | Undocumented. | 1 | `1042` |
+| `palette` | Number | Undocumented. | 1 | `9` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `pitch` | Number | Undocumented. | 1 | `.5` |
+| `properties` | Object | Undocumented. | 1 |  |
+| `rightear` | Number | Undocumented. | 1 | `1005` |
+| `righteye` | Number | Undocumented. | 1 | `1028` |
+| `righteyebrow` | Number | Undocumented. | 1 | `1022` |
+| `stats` | Object | Undocumented. | 1 |  |
+| `texture` | Number | Undocumented. | 1 | `1000` |
+| `voice` | String | Undocumented. | 1 | `male1` |
+
+</details>
+
+### Object: `NonChampionFlySwarm`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `FlySwarm` |
+
+</details>
+
+### Object: `NubbyToss`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `throw_attack` |
+
+</details>
+
+### Object: `Nubs`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `NubsGoop`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `lobbed_attack` |
+
+</details>
+
+### Object: `Ornstein`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Paper`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"SETBONUS_PAPER_DESC"` |
+| `name` | String | Undocumented. | 1 | `"SETBONUS_PAPER_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `pieces_required` | Number | Undocumented. | 1 | `3` |
+
+</details>
+
+### Object: `PassiveEnergized`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 .3 .3 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_radius` | Number | Undocumented. | 1 | `.4` |
+| `emit_rate` | Number | Undocumented. | 1 | `15` |
+| `emit_spread` | Number | Undocumented. | 1 | `45` |
+| `friction` | Array | Undocumented. | 1 | `-.05 -.1 -.05` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `Particle_Electric` |
+| `particle_lifetime` | Number | Undocumented. | 1 | `.5` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `rotation` | Array | Undocumented. | 1 | `-90 90` |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size` | Array | Undocumented. | 1 | `.5 1` |
+| `size_in` | Number | Undocumented. | 1 | `.1` |
+| `speed_start` | Array | Undocumented. | 1 | `0 2` |
+| `unlit` | Boolean | Undocumented. | 1 | `true` |
+
+</details>
+
+### Object: `PassiveTar`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_in` | Number | Undocumented. | 1 | `.2` |
+| `alpha_out` | Number | Undocumented. | 1 | `.5` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 .7 .7 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_radius` | Number | Undocumented. | 1 | `.4` |
+| `emit_rate` | Number | Undocumented. | 1 | `4` |
+| `force_end` | Array | Undocumented. | 1 | `0 -1 0` |
+| `force_start` | Array | Undocumented. | 1 | `0 0 0` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `Particle_TarDrip` |
+| `particle_lifetime` | Array | Undocumented. | 1 | `1 1.5` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `rotation` | Number | Undocumented. | 1 | `-90` |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size` | Number | Undocumented. | 1 | `.5` |
+| `size_in` | Number | Undocumented. | 1 | `.1` |
+| `speed_start` | Number | Undocumented. | 1 | `0` |
+| `spurt` | String | Undocumented. | 1 | `PassiveTarSplat` |
+
+</details>
+
+### Object: `PlayerCat_ThiefShade2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `PlayerCat` |
+
+</details>
+
+### Object: `RatKing`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `ReaperRevenge`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `self_damage` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `teleport` |
+
+</details>
+
+### Object: `SandStormBuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number | Undocumented. | 1 | `2` |
+| `alpha_start` | Number | Undocumented. | 1 | `-1` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 0 1 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `100` |
+| `emit_spread` | Number | Undocumented. | 1 | `180` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `true` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `SandStormParticle` |
+| `ownership` | String | Undocumented. | 1 | `local` |
+| `particle_lifetime` | Array | Undocumented. | 1 | `.1 1` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `0` |
+| `size_start` | Array | Undocumented. | 1 | `.4 .6` |
+| `speed_scale` | Number | Undocumented. | 1 | `.25` |
+| `speed_start` | Number | Undocumented. | 1 | `1` |
+
+</details>
+
+### Object: `Shadowstep`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `teleport` |
+
+</details>
+
+### Object: `ShineBuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number | Undocumented. | 1 | `2` |
+| `alpha_start` | Number | Undocumented. | 1 | `.5` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 0 1 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `15` |
+| `emit_spread` | Number | Undocumented. | 1 | `180` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `true` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `SparkleParticle` |
+| `ownership` | String | Undocumented. | 1 | `local` |
+| `particle_lifetime` | Number | Undocumented. | 1 | `.5` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `.7` |
+| `size_start` | Number | Undocumented. | 1 | `.5` |
+| `speed_scale` | Number | Undocumented. | 1 | `.50` |
+| `speed_start` | Number | Undocumented. | 1 | `1` |
+
+</details>
+
+### Object: `Shove`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `SleepDart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_SleepDart` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_SLEEPDART_DESC"` |
+| `durability` | Number | Undocumented. | 1 | `1` |
+| `frame` | Number | Undocumented. | 1 | `151` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_SLEEPDART_NAME"` |
+
+</details>
+
+### Object: `SleepDart2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | String | Undocumented. | 1 | `wp_SleepDart` |
+| `desc` | String | Undocumented. | 1 | `"ITEM_SLEEPDART_DESC"` |
+| `durability` | Number | Undocumented. | 1 | `2` |
+| `frame` | Number | Undocumented. | 1 | `151` |
+| `kind` | String | Undocumented. | 1 | `weapon` |
+| `name` | String | Undocumented. | 1 | `"ITEM_SLEEPDART_NAME"` |
+
+</details>
+
+### Object: `SmokeBuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number | Undocumented. | 1 | `2` |
+| `alpha_start` | Number | Undocumented. | 1 | `-1` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 0 1 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `25` |
+| `emit_spread` | Number | Undocumented. | 1 | `100` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `true` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `ParticleSmoke1` |
+| `ownership` | String | Undocumented. | 1 | `local` |
+| `particle_lifetime` | Array | Undocumented. | 1 | `.5 1` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `0` |
+| `size_start` | Array | Undocumented. | 1 | `1 1.4` |
+| `speed_scale` | Number | Undocumented. | 1 | `.25` |
+| `speed_start` | Number | Undocumented. | 1 | `.001` |
+
+</details>
+
+### Object: `Smough`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `SparkleBuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number | Undocumented. | 1 | `2` |
+| `alpha_start` | Number | Undocumented. | 1 | `-1` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 0 1 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `50` |
+| `emit_spread` | Number | Undocumented. | 1 | `180` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `true` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `SparkleParticle` |
+| `ownership` | String | Undocumented. | 1 | `local` |
+| `particle_lifetime` | Array | Undocumented. | 1 | `.1 1` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `0` |
+| `size_start` | Array | Undocumented. | 1 | `.4 .6` |
+| `speed_scale` | Number | Undocumented. | 1 | `1` |
+| `speed_start` | Number | Undocumented. | 1 | `.8` |
+
+</details>
+
+### Object: `SpiderReturn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `return` |
+
+</details>
+
+### Object: `SpikeBuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number | Undocumented. | 1 | `2` |
+| `alpha_start` | Number | Undocumented. | 1 | `1` |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `0 0 0 1 0 0` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 1 0` |
+| `emit_rate` | Number | Undocumented. | 1 | `4` |
+| `emit_spread` | Number | Undocumented. | 1 | `180` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `true` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 -999 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `Particle_Thorns` |
+| `ownership` | String | Undocumented. | 1 | `local` |
+| `particle_lifetime` | Number | Undocumented. | 1 | `.5` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `scripts` | Object | Undocumented. | 1 |  |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_end` | Number | Undocumented. | 1 | `.5` |
+| `size_start` | Number | Undocumented. | 1 | `.3` |
+| `speed_scale` | Number | Undocumented. | 1 | `.25` |
+| `speed_start` | Number | Undocumented. | 1 | `.5` |
+
+</details>
+
+### Object: `Spook`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `TC_DashReaction`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ai_ability` | String | Undocumented. | 1 | `TC_DashReaction_AI` |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `trample_dash` |
+| `temporary_effects` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `TT_Thrash`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `melee_attack` |
+
+</details>
+
+### Object: `TVOff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `TattersFear`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `targeted_status` |
+
+</details>
+
+### Object: `TheCreator_SpawnCloneTeam`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `spawn` | Object | Undocumented. | 1 |  |
+| `tags` | Array | Undocumented. | 1 | `summon` |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spawn` |
+
+</details>
+
+### Object: `ThornUp`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `ThornUpX`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `ThrobbingKing2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `ToadJump_BasicMove`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `jump_attack` |
+
+</details>
+
+### Object: `TormentorRuneAbsorb`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `ToxPuff`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `ToxicBubbles`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `emit_amount` | Number | Undocumented. | 1 | `1` |
+| `emit_box` | Array | Undocumented. | 1 | `-.4 .4 0 0 -.4 .4` |
+| `emit_direction` | Array | Undocumented. | 1 | `0 0 0` |
+| `emit_rate` | Array | Undocumented. | 1 | `.7 2` |
+| `emit_spread` | Number | Undocumented. | 1 | `0` |
+| `face_moving_direction` | Boolean | Undocumented. | 1 | `false` |
+| `live_bounds` | Array | Undocumented. | 1 | `-999 999 0 999 -999 999` |
+| `movieclip` | String | Undocumented. | 1 | `ToxicBubbleParticle` |
+| `particle_lifetime` | Number | Undocumented. | 1 | `1.5` |
+| `projection_matrix` | String | Undocumented. | 1 | `default` |
+| `render_mode` | String | Undocumented. | 1 | `separate` |
+| `simulation_space` | String | Undocumented. | 1 | `global` |
+| `size_start` | Array | Undocumented. | 1 | `.5 1` |
+| `speed_start` | Number | Undocumented. | 1 | `0` |
+
+</details>
+
+### Object: `TrexSwitchTarget`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `targeted_status` |
+
+</details>
+
+### Object: `UFO_BigExplode`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `UltraSmough`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `ai` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+
+</details>
+
+### Object: `Wood`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | String | Undocumented. | 1 | `"SETBONUS_WOOD_DESC"` |
+| `name` | String | Undocumented. | 1 | `"SETBONUS_WOOD_NAME"` |
+| `passives` | Object | Undocumented. | 1 |  |
+| `pieces_required` | Number | Undocumented. | 1 | `3` |
+
+</details>
+
+### Object: `cWaggle`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `Waggle` |
+
+</details>
+
+### Object: `cWaggle2x2`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `passives` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `cWaggle` |
+
+</details>
+
+### Object: `cWaggle3x3`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `properties` | Object | Undocumented. | 1 |  |
+| `stats` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `cWaggle2x2` |
+
+</details>
+
+### Object: `face_EatNeverstone`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `bonus_passives` | Object | Undocumented. | 1 |  |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `face_LeechBrood`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `lobbed_attack` |
+
+</details>
+
+### Object: `neck_NukeBonus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `bonus_passives` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `meta` | Object | Undocumented. | 1 |  |
+| `sub_ability` | String | Undocumented. | 1 | `neck_NukeExplode` |
+| `template` | String | Undocumented. | 1 | `self_buff` |
+
+</details>
+
+### Object: `neck_NukeExplode`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `bonus_passives` | Object | Undocumented. | 1 |  |
+| `cost` | Object | Undocumented. | 1 |  |
+| `damage_instance` | Object | Undocumented. | 1 |  |
+| `graphics` | Object | Undocumented. | 1 |  |
+| `self_damage` | Object | Undocumented. | 1 |  |
+| `splash_damage` | Object | Undocumented. | 1 |  |
+| `target` | Object | Undocumented. | 1 |  |
+| `template` | String | Undocumented. | 1 | `spell` |
+
+</details>
+
+### Object: `pyrophina`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `BOSS_PYROPHINA_QUOTE_1` | String | Undocumented. | 1 |  |
+| `BOSS_PYROPHINA_QUOTE_2` | String | Undocumented. | 1 |  |
+| `act` | Number | Undocumented. | 1 | `2` |
+| `arrival_unlock` | String | Undocumented. | 1 | `npc_houseboss_intro_pyrophina` |
+| `frame_label` | String | Undocumented. | 1 | `pyrophina` |
+| `index` | Number | Undocumented. | 1 | `1` |
+| `initial_cooldown` | Array | Undocumented. | 1 | `0` |
+| `initial_cutscene_day` | String | Undocumented. | 1 | `pyro_intro` |
+| `lead_time` | Number | Undocumented. | 1 | `7` |
+| `level` | String | Undocumented. | 1 | `"house_bosses/pyrophina.lvl"` |
+| `music` | String | Undocumented. | 1 | `kaiju` |
+| `name` | String | Undocumented. | 1 | `BOSS_PYROPHINA_NAME` |
+| `quotes` | Array | Undocumented. | 1 |  |
+| `rematch_cooldown` | Array | Undocumented. | 1 | `3 7` |
+| `rematch_cutscene_day` | String | Undocumented. | 1 | `house_boss_returns_pyro` |
+| `savefile_string` | String | Undocumented. | 1 | `"SAVE_FILE_FIGHT_HOUSEBOSS_PYR` |
+
+</details>
+
+### Object: `set_WitchJump`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `target` | Object | Undocumented. | 1 |  |
+| `variant_of` | String | Undocumented. | 1 | `BasicJump` |
+
+</details>
+
+### Object: `zaratana`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `BOSS_ZARATANA_QUOTE_1` | String | Undocumented. | 1 |  |
+| `BOSS_ZARATANA_QUOTE_2` | String | Undocumented. | 1 |  |
+| `act` | Number | Undocumented. | 1 | `2` |
+| `arrival_unlock` | String | Undocumented. | 1 | `npc_houseboss_intro_zaratana` |
+| `frame_label` | String | Undocumented. | 1 | `zaratana` |
+| `index` | Number | Undocumented. | 1 | `2` |
+| `initial_cooldown` | Array | Undocumented. | 1 | `0` |
+| `initial_cutscene_day` | String | Undocumented. | 1 | `moonboss_intro` |
+| `lead_time` | Number | Undocumented. | 1 | `7` |
+| `level` | String | Undocumented. | 1 | `"house_bosses/zaratana.lvl"` |
+| `music` | String | Undocumented. | 1 | `kaiju` |
+| `name` | String | Undocumented. | 1 | `BOSS_ZARATANA_NAME` |
+| `quotes` | Array | Undocumented. | 1 |  |
+| `rematch_cooldown` | Array | Undocumented. | 1 | `3 7` |
+| `rematch_cutscene_day` | String | Undocumented. | 1 | `house_boss_returns_zara` |
+| `savefile_string` | String | Undocumented. | 1 | `"SAVE_FILE_FIGHT_HOUSEBOSS_ZAR` |
+
+</details>
