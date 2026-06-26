@@ -53,11 +53,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array || 47 ||
-| `palette` | Enum / Integer || 34 ||
-| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum || 13 ||
-| [`default_face`](./Enums.md#enum-default_face) | Enum || 1 ||
-| `hud_palette` | Number || 1 ||
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array | Alternative animation sets for a cat class, defined as pairs of animation states and their replacements. | 47 ||
+| `palette` | Enum / Integer | Index or list of palette indices used for coloring the entity or its variations. | 34 ||
+| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum | Specifies the portrait face asset used for the class's HUD portrait. | 13 ||
+| [`default_face`](./Enums.md#enum-default_face) | Enum | Specifies the default facial expression displayed on the unit's sprite. | 1 ||
+| `hud_palette` | Number | Index of the palette used for the unit's HUD elements. | 1 ||
 
 </details>
 
@@ -149,9 +149,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 ||
-| [`AddStartingMana`](./Enums.md) | Integer || 1 | 5 |
-| [`SpawnOnBattleStart`](./Enums.md) | Enum || 1 | Crow |
-| [`TinkererBasicAttackSwitching`](#object-tinkererbasicattackswitching) | Object || 1 ||
+| [`AddStartingMana`](./Enums.md) | Integer | The amount of bonus mana the unit starts each battle with. | 1 | 5 |
+| [`SpawnOnBattleStart`](./Enums.md) | Enum | Specifies the object (e.g., Food, CharmedGamete) to spawn at the start of battle. | 1 | Crow |
+| [`TinkererBasicAttackSwitching`](#object-tinkererbasicattackswitching) | Object | Object containing craft_ability and throw_ability names, enabling the Tinkerer to switch between crafting and throwing basic attacks. | 1 ||
 
 </details>
 

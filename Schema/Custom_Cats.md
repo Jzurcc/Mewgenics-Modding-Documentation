@@ -35,7 +35,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `frame` | Integer |  | 2 |  |
+| `frame` | Integer | The sprite frame index used for this arm. | 2 |  |
 
 </details>
 
@@ -53,7 +53,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `frame` | Integer |  | 2 |  |
+| `frame` | Integer | The sprite frame index used for this arm. | 2 |  |
 
 </details>
 

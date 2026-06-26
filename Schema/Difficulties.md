@@ -18,8 +18,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| [`hard`](Combat_Rewards.md#object-hard) | Object || 23 ||
-| [`easy`](#object-easy) | Object || 20 ||
+| [`hard`](Combat_Rewards.md#object-hard) | Object | Defines the reward and encounter parameters for the hard difficulty level. | 23 ||
+| [`easy`](#object-easy) | Object | Defines the reward and encounter parameters for the easy difficulty level. | 20 ||
 
 </details>
 

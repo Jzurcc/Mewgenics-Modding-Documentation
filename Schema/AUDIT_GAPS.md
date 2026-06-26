@@ -63,11 +63,11 @@ Use this to spot any completely undocumented keys.
 | Key | # Files | Example Inputs | Total Occurrences |
 | :--- | :--- | :--- | :--- |
 | `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` | 5218 |
-| `meta` | 40 |   | 4719 |
-| `damage_instance` | 34 |   | 4688 |
+| `meta` | 40 | Contains metadata for an ability such as name, description, class, and icon type. | 4719 |
+| `damage_instance` | 34 | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. | 4688 |
 | `template` | 33 | `dash_attack`, `jump_attack`, `jump_move`, `laser`, `leave` | 4348 |
-| `target` | 32 |   | 3724 |
-| `cost` | 35 |   | 3702 |
+| `target` | 32 | Defines targeting parameters for an ability, such as range, aoe, or target mode. | 3724 |
+| `cost` | 35 | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. | 3702 |
 | `variant_of` | 47 | `Absorb`, `AbsorbSoul`, `Adoubement`, `Aftershock`, `AirBurst` | 2364 |
 | `frame` | 18 | `QuestUnlock_Amplifier`, `QuestUnlock_Cooler`, `QuestUnlock_Gristle`, `QuestUnlock_Head`, `QuestUnlock_Jar` | 2212 |
 | `kind` | 15 | `face`, `head`, `modifier`, `neck`, `trinket` | 2212 |
@@ -75,15 +75,15 @@ Use this to spot any completely undocumented keys.
 | `set` | 13 | `80s`, `90s`, `AdvancedAlloy`, `Alloy`, `Amoeba` | 1504 |
 | `Set` | 1 | `Monk` | 1504 |
 | `class` | 43 | `AOESpellAbility`, `BounceDashAbility`, `Butcher`, `CloneAbility`, `Colorless` | 1200 |
-| `properties` | 23 |   | 1200 |
-| `stats` | 33 |   | 982 |
+| `properties` | 23 | Defines the unit's core properties such as tag, health, movement, faction, type, and crit chance. | 1200 |
+| `stats` | 33 | Defines the unit's base stats (strength, dexterity, constitution, intelligence, speed). | 982 |
 | `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` | 981 |
-| `ai` | 23 |   | 928 |
+| `ai` | 23 | Defines the AI brain, decision/move weights, and pattern for controlling a unit's behavior. | 928 |
 | `spell` | 1 | `MCHadouken` | 924 |
-| `abilities` | 24 |   | 918 |
+| `abilities` | 24 | Defines the unit's move, attack, and spell abilities (as an array). | 918 |
 | `head` | 11 | `BabyHair`, `Banana`, `BulbHead`, `CoinBag`, `CoinBag_Terminator` | 784 |
 | `ability` | 47 | `AZ_LoseHead`, `AlienBeam`, `AlienBeastGoop`, `AlienBeastMoveOne`, `BBPullBomb` | 730 |
-| `spawn` | 20 |   | 692 |
+| `spawn` | 20 | Specifies the unit or object to spawn, along with its properties (e.g. object, ai_base_score, faction, layer). | 692 |
 | `editor` | 2 |   | 578 |
 | `category` | 2 |   | 577 |
 | `paint` | 2 | `false`, `true` | 576 |
@@ -96,37 +96,37 @@ Use this to spot any completely undocumented keys.
 | `cha` | 39 | `+1`, `aux` | 468 |
 | `spd` | 43 | `aux` | 424 |
 | `shield` | 31 | `aux`, `max((aux-1)*2, 0)` | 422 |
-| `texture` | 4 |   | 422 |
-| `default_frame` | 1 |   | 420 |
+| `texture` | 4 | The visual ID (integer) of the texture applied to the cat. | 422 |
+| `default_frame` | 1 | The default sprite frame ID for the visual representation. | 420 |
 | `con` | 45 | `aux` | 416 |
 | `Comfort` | 2 |   | 406 |
 | `comfort` | 1 |   | 406 |
 | `int` | 41 | `aux` | 401 |
 | `voice` | 10 | `ankylosaurus`, `female1`, `female10`, `female12`, `female17` | 400 |
-| `righteye` | 1 |   | 400 |
+| `righteye` | 1 | The sprite frame ID for the right eye. | 400 |
 | `face` | 6 | `AtomicMark`, `ButcherMask`, `ButcherMask_Terminator`, `HuntersPatch`, `HuntersPatch_Terminator` | 398 |
-| `lefteye` | 1 |   | 396 |
+| `lefteye` | 1 | The sprite frame ID for the left eye. | 396 |
 | `claws` | 1 |   | 392 |
 | `mouth` | 14 | `closed`, `open`, `smile` | 386 |
 | `neck` | 4 | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` | 378 |
 | `rightear` | 1 |   | 376 |
 | `leftear` | 1 |   | 374 |
-| `tail` | 11 |   | 362 |
-| `arm2` | 6 |   | 358 |
-| `arm1` | 7 |   | 354 |
-| `righteyebrow` | 1 |   | 352 |
+| `tail` | 11 | The visual ID (integer) of the tail part applied to the cat. | 362 |
+| `arm2` | 6 | The visual ID (integer/number) of the second arm part applied to the cat. | 358 |
+| `arm1` | 7 | The visual ID (integer/number) of the first arm part applied to the cat. | 354 |
+| `righteyebrow` | 1 | The sprite frame ID for the right eyebrow. | 352 |
 | `lck` | 40 | `aux` | 351 |
-| `lefteyebrow` | 1 |   | 350 |
-| `leg1` | 5 |   | 348 |
-| `body` | 9 |   | 346 |
-| `leg2` | 4 |   | 344 |
+| `lefteyebrow` | 1 | The sprite frame ID for the left eyebrow. | 350 |
+| `leg1` | 5 | The visual ID (integer) of the first leg part applied to the cat. | 348 |
+| `body` | 9 | The visual ID (number) of the body part applied to the cat. | 346 |
+| `leg2` | 4 | The visual ID (integer) of the second leg part applied to the cat. | 344 |
 | `Appeal` | 2 |   | 338 |
 | `str` | 39 | `aux` | 337 |
 | `very_rare` | 3 |   | 316 |
 | `dex` | 34 | `aux` | 301 |
 | `bonus_passives` | 20 |   | 272 |
 | `Stimulation` | 2 |   | 268 |
-| `durability` | 11 |   | 264 |
+| `durability` | 11 | The amount of durability the item has, either as a single integer or a range [min, max] that is randomized upon acquisition. | 264 |
 | `unlock_item_immediate` | 1 | `AnointingOil`, `BagOfBags`, `BagOfSeeds`, `BallOfYarn`, `BallPeenHammer` | 254 |
 | `files` | 232 | `AlienBeast_attack.wav`, `AlienBeast_dying.wav`, `AlienBeast_dying_land.wav`, `AlienBeast_eat.wav`, `AlienBeast_howl.wav` |   |
 | `pitch` | 4 | `and`, `between`, `for`, `pitch_range`, `randomized` | 232 |
@@ -143,8 +143,8 @@ Use this to spot any completely undocumented keys.
 | `SING_PARAMS` | 220 |   |   |
 | `Death` | 219 |   |   |
 | `intro` | 31 | `alley/eatinrats_intro.ogg`, `boneyard/boneyard_intro.ogg`, `bunker/bunker_intro.ogg`, `caves/caves_intro.ogg`, `chaos/chaos_boss_intro.ogg` | 216 |
-| `main` | 40 |   | 214 |
-| `pieces_required` | 1 |   | 202 |
+| `main` | 40 | Defines the main interaction prompt and options for an event. | 214 |
+| `pieces_required` | 1 | The number of material pieces needed to craft or combine into a full item. | 202 |
 | `Default` | 9 | `release` | 199 |
 | `default` | 7 | `bite1` | 199 |
 | `temporary_effects` | 17 |   | 176 |
@@ -152,35 +152,35 @@ Use this to spot any completely undocumented keys.
 | `simulation_space` | 2 | `global` | 157 |
 | `projection_matrix` | 2 | `default` | 156 |
 | `cursed` | 8 | `true` | 154 |
-| `emit_rate` | 2 |   | 150 |
-| `emit_spread` | 2 |   | 144 |
+| `emit_rate` | 2 | The number of particles emitted per second. | 150 |
+| `emit_spread` | 2 | The angular spread in degrees over which particles are emitted. | 144 |
 | `consumable` | 4 | `true` | 140 |
 | `Colorless` | 2 |   | 140 |
-| `emit_amount` | 2 |   | 135 |
-| `icon_frame` | 3 |   | 128 |
-| `sound` | 9 |   | 124 |
+| `emit_amount` | 2 | The number of particles emitted per burst, or a range [min, max] of possible amounts. | 135 |
+| `icon_frame` | 3 | The sprite frame index for the elite buff's icon. | 128 |
+| `sound` | 9 | Configures the object's sound effects, including alternative sounds for actions. | 124 |
 | `move` | 25 | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 122 |
 | `teleport` | 1 |   | 112 |
-| `distance_to_ally` | 1 |   | 110 |
-| `distance_to_character` | 1 |   | 110 |
-| `distance_to_enemy` | 1 |   | 110 |
-| `face_closest_enemy` | 1 |   | 110 |
+| `distance_to_ally` | 1 | Weight for the AI to consider distance to allies when making decisions. | 110 |
+| `distance_to_character` | 1 | Weight for the AI to consider distance to any character (ally or enemy). | 110 |
+| `distance_to_enemy` | 1 | Weight for the AI to consider distance to enemies. | 110 |
+| `face_closest_enemy` | 1 | If non-zero, the AI will prioritize facing the closest enemy. | 110 |
 | `preferred_distance` | 1 | `mov`, `mov+1`, `mov+5`, `mov+reach`, `mov-2` | 110 |
-| `total_distance_moved` | 1 |   | 110 |
+| `total_distance_moved` | 1 | Weight for the AI to consider the total distance moved by the unit. | 110 |
 | `trigger_npc_sequence` | 1 | `beanies_begin_accepting_cats`, `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin` | 110 |
-| `scripts` | 2 |   | 108 |
+| `scripts` | 2 | Defines scripted behaviors on particles, such as bounce planes or wind effects. | 108 |
 | `distinctly_male` | 103 | `true` |   |
 | `parasite` | 4 | `true` | 102 |
 | `beat_house_boss` | 1 | `any`, `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina` | 96 |
 | `complete_chapter` | 2 | `alley`, `boneyard`, `bunker`, `caves`, `core` | 90 |
 | `equipment` | 5 |   | 88 |
-| `aux` | 7 |   | 82 |
+| `aux` | 7 | An integer modifier for the auxiliary stat, often used for scaling or effect values. | 82 |
 | `Druid` | 2 |   | 80 |
 | `Fighter` | 2 |   | 80 |
 | `quest_item` | 2 | `false`, `true` | 80 |
 | `class_anis` | 1 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` | 80 |
 | `sounds` | 8 |   | 78 |
-| `speed_start` | 2 |   | 77 |
+| `speed_start` | 2 | The initial speed of particles, or a range [min, max] of possible speeds. | 77 |
 | `face_moving_direction` | 2 | `false`, `true` | 76 |
 | `Thief` | 2 |   | 76 |
 | `tooltip_stackless` | 1 | `KEYWORD_ALPHA_DESC_STACKLESS`, `KEYWORD_ATTRACTION_DESC_STACKLESS`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC_STACKLESS`, `KEYWORD_BLEEDTHORNS_DESC_STACKLESS` | 76 |
@@ -190,15 +190,15 @@ Use this to spot any completely undocumented keys.
 | `required_difficulty` | 2 |   | 72 |
 | `unique` | 2 | `true` | 72 |
 | `consumable_chance` | 1 |   | 72 |
-| `item_chance` | 1 |   | 72 |
+| `item_chance` | 1 | The probability (0 to 1) that an item drops from this encounter. | 72 |
 | `Mage` | 2 |   | 70 |
-| `particle_lifetime` | 2 |   | 70 |
+| `particle_lifetime` | 2 | The duration in seconds a particle lives, or a range [min, max] of possible lifetimes. | 70 |
 | `Tinkerer` | 2 |   | 70 |
 | `tooltip_stacks` | 1 | `KEYWORD_AMMO_DESC`, `KEYWORD_ATTRACTION_DESC`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC`, `KEYWORD_BLEEDTHORNS_DESC` | 69 |
-| `splash_damage` | 11 |   | 68 |
+| `splash_damage` | 11 | An object defining the splash damage properties, including damage, type, and area effects. | 68 |
 | `Hunter` | 2 |   | 68 |
-| `health` | 26 |   | 67 |
-| `speed_scale` | 2 |   | 67 |
+| `health` | 26 | The unit's base health, specified as an absolute integer or a percentage modifier. | 67 |
+| `speed_scale` | 2 | A multiplier applied to the overall speed of the particle system animation. | 67 |
 | `frame_label` | 1 | `AlienBeast`, `ColorlessCat_Tutorial`, `DrMangler`, `GirlDino`, `LightningElemental` | 67 |
 | `Health` | 1 |   | 67 |
 | `repeat` | 3 | `infinite`, `never` | 66 |
@@ -206,63 +206,63 @@ Use this to spot any completely undocumented keys.
 | `Psychic` | 2 |   | 66 |
 | `size_end` | 2 |   | 65 |
 | `accurate_knockback` | 1 | `false` | 64 |
-| `buff_ally` | 1 |   | 64 |
-| `buff_enemy` | 1 |   | 64 |
-| `buff_self` | 1 |   | 64 |
+| `buff_ally` | 1 | Weight for the AI to prioritize buffing allies. | 64 |
+| `buff_enemy` | 1 | Weight for the AI to consider buffing enemies (negative values discourage). | 64 |
+| `buff_self` | 1 | Weight for the AI to prioritize buffing self. | 64 |
 | `consider_overkill` | 1 | `false`, `true` | 64 |
 | `consider_secondary_damage` | 1 | `false`, `true` | 64 |
 | `consider_total_damage` | 1 | `false`, `true` | 64 |
-| `damage_ally` | 1 |   | 64 |
-| `damage_ally_corpse` | 1 |   | 64 |
-| `damage_enemy` | 1 |   | 64 |
-| `damage_enemy_corpse` | 1 |   | 64 |
-| `damage_self` | 1 |   | 64 |
-| `debuff_ally` | 1 |   | 64 |
-| `debuff_enemy` | 1 |   | 64 |
-| `debuff_self` | 1 |   | 64 |
-| `heal_ally` | 1 |   | 64 |
-| `heal_enemy` | 1 |   | 64 |
-| `heal_self` | 1 |   | 64 |
-| `kill_ally` | 1 |   | 64 |
-| `kill_enemy` | 1 |   | 64 |
-| `negative_weight_scale` | 1 |   | 64 |
-| `revive_ally_corpse` | 1 |   | 64 |
-| `revive_enemy_corpse` | 1 |   | 64 |
-| `spawn_object` | 1 |   | 64 |
-| `spawn_object_distance_to_ally` | 1 |   | 64 |
-| `spawn_object_distance_to_enemy` | 1 |   | 64 |
-| `spend_mana_scale` | 1 |   | 64 |
+| `damage_ally` | 1 | Weight for the AI to consider damaging allies (negative values discourage). | 64 |
+| `damage_ally_corpse` | 1 | Weight for the AI to consider damaging ally corpses. | 64 |
+| `damage_enemy` | 1 | Weight for the AI to prioritize damaging enemies. | 64 |
+| `damage_enemy_corpse` | 1 | Weight for the AI to consider damaging enemy corpses. | 64 |
+| `damage_self` | 1 | Weight for the AI to consider self-damage (negative values discourage). | 64 |
+| `debuff_ally` | 1 | Weight for the AI to consider debuffing allies. | 64 |
+| `debuff_enemy` | 1 | Weight for the AI to prioritize debuffing enemies. | 64 |
+| `debuff_self` | 1 | Weight for the AI to consider self-debuff. | 64 |
+| `heal_ally` | 1 | Weight for the AI to prioritize healing allies. | 64 |
+| `heal_enemy` | 1 | Weight for the AI to consider healing enemies. | 64 |
+| `heal_self` | 1 | Weight for the AI to prioritize self-healing. | 64 |
+| `kill_ally` | 1 | Weight for the AI to consider killing allies (negative avoids). | 64 |
+| `kill_enemy` | 1 | Weight for the AI to prioritize killing enemies. | 64 |
+| `negative_weight_scale` | 1 | Multiplier applied to negative decision weights to adjust their influence. | 64 |
+| `revive_ally_corpse` | 1 | Weight for the AI to prioritize reviving ally corpses. | 64 |
+| `revive_enemy_corpse` | 1 | Weight for the AI to consider reviving enemy corpses. | 64 |
+| `spawn_object` | 1 | Weight for the AI to consider spawning objects. | 64 |
+| `spawn_object_distance_to_ally` | 1 | Weight for the AI to consider distance to allies when spawning objects. | 64 |
+| `spawn_object_distance_to_enemy` | 1 | Weight for the AI to consider distance to enemies when spawning objects. | 64 |
+| `spend_mana_scale` | 1 | Multiplier applied to mana spending decisions to adjust AI's resource management. | 64 |
 | `boss` | 22 | `alley/eatinrats_boss.ogg`, `boneyard/boneyard_boss.ogg`, `caves/caves_boss.ogg`, `chaos/chaos_boss.ogg`, `core/core_boss.ogg` | 63 |
-| `keyword_tooltips` | 15 |   | 62 |
+| `keyword_tooltips` | 15 | Maps keyword identifiers to their tooltip override values for display. | 62 |
 | `beat_chapter_boss` | 1 | `alley`, `boneyard`, `bunker`, `core`, `crater` | 62 |
 | `unlock_ability` | 1 | `BallOfSpiders`, `Bump`, `Ethereal`, `HundredHandSlap`, `HyperBeam` | 62 |
 | `alpha_end` | 1 |   | 61 |
-| `size_start` | 2 |   | 59 |
+| `size_start` | 2 | The initial size of particles, or a range [min, max] of possible sizes. | 59 |
 | `ai_ability` | 4 | `AZ_Jump_AI`, `BasicBigMelee`, `BasicMelee`, `BungaSwipe_ai`, `CerberubsJump_AI` | 58 |
 | `Medic` | 2 |   | 58 |
 | `unlock_passive` | 1 | `AlphaStrike`, `ArmorSpecialist`, `Bouncer`, `ButchersSoul`, `ClericsSoul` | 58 |
 | `unlock_song` | 1 | `alone_in_the_dark`, `angel_wings`, `bolt_of_lightning`, `brush_your_teeth`, `chaos` | 58 |
 | `alias` | 1 | `AllStatsUp`, `Brace`, `Brittle`, `Charmed`, `CritChanceUp` | 57 |
 | `type` | 87 | `attack`, `battle`, `blankcollar`, `bonus_rare_item`, `boss` | 54 |
-| `divine_shield` | 17 |   | 54 |
+| `divine_shield` | 17 | The number of charges of divine shield that block incoming damage fully. | 54 |
 | `Evolution` | 1 |   | 53 |
 | `stacks` | 52 | `5+bonus_melee_ability_damage`, `X`, `floor(lck/4)`, `item_aux`, `max(min(X+1, item_aux), 0)` |   |
 | `alpha_start` | 1 |   | 51 |
 | `set_mapgen_flag` | 1 | `BoneyardUnlocked`, `BothObelisksUnlocked`, `BunkerUnlocked`, `CavesUnlocked`, `CoreObeliskUnlocked` | 46 |
 | `knockback` | 45 | `2*X`, `X`, `X*2`, `X+1`, `ceil(X*.25/5)` |   |
-| `elements` | 44 |   |   |
+| `elements` | 44 | A list of elemental types applied to the damage instance, such as Heat or Fire, used for weaknesses, resistances, and visual effects. |   |
 | `adventure_unlock` | 1 | `class_unlock_monocolorless_face`, `class_unlock_monocolorless_head`, `class_unlock_monocolorless_neck`, `map_unlock_iceage`, `nuke_quest_complete` | 44 |
 | `quest_reward_item` | 1 | `AirHorn_Fixed`, `AngryFace_Fixed`, `BubbleBoy_Fixed`, `ChaosDevice_Fixed`, `ExperimentalTreatment_Fixed` | 44 |
-| `hard` | 22 |   | 42 |
+| `hard` | 22 | Defines the reward and encounter parameters for the hard difficulty level. | 42 |
 | `distinctly_female` | 41 | `true` |   |
-| `alpha` | 2 |   | 41 |
+| `alpha` | 2 | The transparency or opacity level of the particle or visual effect. | 41 |
 | `folder` | 20 | `alley`, `boneyard`, `bunker`, `caves`, `core` | 40 |
 | `indestructible` | 2 | `true` | 40 |
 | `mana` | 39 | `10-X`, `10-X*6`, `15-X`, `15-X*2`, `16-X*16` |   |
 | `chapter_item_pool` | 19 | `alleyitems`, `boneyarditems`, `bunkeritems`, `cavesitems`, `coreitems` | 38 |
 | `include` | 19 | `standard_nodes.gon`, `voice_template.gon` | 38 |
 | `faction` | 37 | `allies`, `auto`, `birds`, `cavemen`, `default` |   |
-| `alt_spawn_pool` | 4 |   | 36 |
+| `alt_spawn_pool` | 4 | Defines an alternative spawning pool with item names and weights, replacing the default pool under certain conditions. | 36 |
 | `thorns` | 1 |   | 36 |
 | `status` | 35 | `AddKnockbackToEverything`, `AllDamageCrits`, `AllDamageImmune`, `AllStatsUp`, `AlphaCat` |   |
 | `subcategory` | 2 |   | 35 |
@@ -277,7 +277,7 @@ Use this to spot any completely undocumented keys.
 | `lock_item_slot` | 1 |   | 32 |
 | `rare_elite_buffs` | 1 |   | 32 |
 | `max_aoe` | 30 | `(X+1)/2`, `1+bonus_melee_range`, `10+bonus_range`, `2+X`, `3+bonus_range` |   |
-| `exit0` | 15 |   | 30 |
+| `exit0` | 15 | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 30 |
 | `chain_ability` | 6 | `BoyDinoDash`, `ChaosStacyAttackChain`, `ControlPlantsPartTwo`, `ControlPlantsPartTwo2`, `ControlWaterPartTwo` | 30 |
 | `str_aux_initialize` | 5 | `random_class_ability`, `random_class_passive`, `random_copyable_class_ability`, `random_copyable_colorless_ability`, `random_copyable_colorless_passive` | 30 |
 | `champ_chance_mini` | 1 |   | 30 |
@@ -298,14 +298,14 @@ Use this to spot any completely undocumented keys.
 | `subject_clip` | 27 | `EventSubject` |   |
 | `subject_frame` | 27 | `a_beggar`, `a_few_coins`, `a_large_poop`, `a_mega_large_poop`, `a_poop` |   |
 | `title` | 27 | `Ability Pool Test`, `Blessing!`, `EVENT_ABEGGAR_NAME`, `EVENT_ACAT_NAME`, `EVENT_AFEWCOINS_NAME` |   |
-| `turns` | 27 |   |   |
+| `turns` | 27 | Configures turn-taking behavior for the status effect, including whether the unit takes turns and bonus turns. |   |
 | `dimensionx` | 3 | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` | 27 |
 | `attack` | 36 | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 |
 | `tile` | 10 | `BrambleTile`, `CreepTile`, `DirtTile`, `FireTile`, `FlowerTile` | 26 |
 | `dont_destroy_on_0` | 3 | `true` | 26 |
 | `consumable_common` | 2 |   | 26 |
 | `Return` | 2 | `CherubimReturn`, `LEReturn` | 26 |
-| `stat_mods` | 2 |   | 26 |
+| `stat_mods` | 2 | A dictionary of stat name keys to integer modifiers applied to the unit's base stats. | 26 |
 | `treasure` | 2 |   | 26 |
 | `elite_chance_mini` | 1 |   | 26 |
 | `tile_layer` | 1 |   | 26 |
@@ -319,7 +319,7 @@ Use this to spot any completely undocumented keys.
 | `breakdown` | 3 |   | 24 |
 | `item_groups` | 3 |   | 24 |
 | `meatworld` | 3 | `AREA_NAME_MEATWORLD`, `mapflag_MeatWorldUnlockedFull` | 24 |
-| `ability_groups` | 2 |   | 24 |
+| `ability_groups` | 2 | Groups abilities into named categories for organized selection or assignment. | 24 |
 | `alpha_in` | 2 |   | 24 |
 | `consumable_rare` | 2 |   | 24 |
 | `aoe_excludes_self` | 23 | `false`, `true` |   |
@@ -329,8 +329,8 @@ Use this to spot any completely undocumented keys.
 | `ownership` | 1 | `local` | 23 |
 | `cat_speaks` | 22 | `true` |   |
 | `infcantrip` | 22 | `false`, `true` |   |
-| `spells` | 22 |   |   |
-| `strength` | 22 |   |   |
+| `spells` | 22 | The number of spells the unit has access to. |   |
+| `strength` | 22 | The base strength stat governing physical damage dealt. |   |
 | `chain` | 3 | `AcidSplash`, `CaveSplash`, `FireFullSmall`, `Kingblood2`, `MeatCaveSplash` | 22 |
 | `max_durability` | 2 |   | 22 |
 | `name_mod` | 2 | `CAT_NAME_MOD_AMOEBA`, `CAT_NAME_MOD_COOL`, `CAT_NAME_MOD_DEMONIC`, `CAT_NAME_MOD_DWARF`, `CAT_NAME_MOD_GIGANTISM` | 22 |
@@ -349,10 +349,10 @@ Use this to spot any completely undocumented keys.
 | `static_2x2_b` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigGravelPile`, `Desert2x2`, `Dumpster` | 21 |
 | `static_tall_a` | 1 | `BunkerTall1`, `CoreTall1`, `CraterTall1`, `DesertTall`, `Iceagetall1` | 21 |
 | `static_tall_b` | 1 | `BunkerTall2`, `CoreTall2`, `CraterTall2`, `DesertTall2`, `Endt` | 21 |
-| `charisma` | 20 |   |   |
-| `constitution` | 20 |   |   |
-| `dexterity` | 20 |   |   |
-| `intelligence` | 20 |   |   |
+| `charisma` | 20 | The base charisma stat governing social or status effect interactions. |   |
+| `constitution` | 20 | The base constitution stat governing physical damage defense. |   |
+| `dexterity` | 20 | The base dexterity stat governing accuracy and evasion. |   |
+| `intelligence` | 20 | The base intelligence stat governing magical or mental abilities. |   |
 | `override_basic_attack` | 5 | `BasicButcherMeleeWideDoubleSpin`, `BasicButcherMeleeWideSpin`, `BasicDruidAbilityVersatile`, `BasicMagicMissile`, `BasicMedicRanged` | 20 |
 | `core` | 3 | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` | 20 |
 | `moon` | 3 | `AREA_NAME_MOON`, `mapflag_IceAgeUnlocked`, `mapflag_MoonUnlocked` | 20 |
@@ -364,32 +364,32 @@ Use this to spot any completely undocumented keys.
 | `corpse_health` | 19 | `indestructible` |   |
 | `large` | 19 |   |   |
 | `medium` | 19 |   |   |
-| `odds` | 19 |   |   |
+| `odds` | 19 | The probability (as a percentage) for the conditional to trigger. |   |
 | `small` | 19 |   |   |
 | `male2` | 1 |   | 19 |
 | `custom_aoe` | 18 |   |   |
-| `movement` | 18 |   |   |
+| `movement` | 18 | The number of tiles the unit can move per turn. |   |
 | `X_is` | 18 | `alpha_exists`, `basic_attack_damage`, `cast_count`, `current_health`, `current_mana` |   |
-| `quest_event` | 9 |   | 18 |
+| `quest_event` | 9 | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 18 |
 | `unprompted` | 8 |   | 18 |
 | `endoftime` | 3 | `AREA_NAME_ENDOFTIME`, `endoftime`, `mapflag_EndOfTimeUnlocked` | 18 |
 | `alley` | 2 | `AREA_NAME_ALLEY`, `departed_first_real_adventure` | 18 |
 | `Coin` | 1 |   | 18 |
-| `act_points` | 17 |   |   |
+| `act_points` | 17 | The number of action points required or provided to use an ability or skill. |   |
 | `boss_cutscene` | 17 | `alienqueen`, `boris`, `chaos`, `chubsandnubs`, `coven` |   |
 | `number` | 17 |   |   |
 | `catdata` | 9 | `Beaver`, `Bigfoot`, `Bunny`, `Dog`, `Edmund` | 17 |
 | `gender` | 1 | `any`, `male` | 17 |
 | `label` | 26 | `1 injury`, `A`, `B`, `C`, `D` | 16 |
 | `stat` | 26 | `cha`, `coins`, `con`, `dex`, `int` | 16 |
-| `easy` | 21 |   | 16 |
-| `ai_base_score` | 16 |   |   |
+| `easy` | 21 | Defines the reward and encounter parameters for the easy difficulty level. | 16 |
+| `ai_base_score` | 16 | A base priority score used by the AI to evaluate the desirability of using this ability; higher values increase the likelihood of selection. |   |
 | `type_icon` | 16 | `attack`, `buff`, `debuff`, `defense`, `heal` |   |
 | `also` | 8 |   | 16 |
 | `unknown` | 8 |   | 16 |
 | `sub_ability` | 4 | `CollectiveCounterImpl`, `CollectiveSpinImpl`, `HomingBlasts2_sub`, `HomingBlasts_sub`, `Huddle_Impl` | 16 |
 | `future` | 3 | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` | 16 |
-| `height` | 3 |   | 16 |
+| `height` | 3 | The maximum height in tiles that a unit is knocked up into the air (vertical displacement for knockback arcs). | 16 |
 | `id` | 3 | `Attic`, `Wind` | 16 |
 | `on_store` | 3 | `become_aux_coins`, `become_furniture`, `become_rare_furniture` | 16 |
 | `consumable_uncommon` | 2 |   | 16 |
@@ -397,7 +397,7 @@ Use this to spot any completely undocumented keys.
 | `desert` | 2 | `AREA_NAME_DESERT`, `mapflag_DesertUnlocked` | 16 |
 | `Leave` | 2 | `CherubimLeave`, `LELeave` | 16 |
 | `sewers` | 2 | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` | 16 |
-| `specific_chapter` | 2 |   | 16 |
+| `specific_chapter` | 2 | Restricts this elite buff to only appear in the specified chapter. | 16 |
 | `bonus_itemroll_luck` | 1 |   | 16 |
 | `boss_health_multiplier` | 1 |   | 16 |
 | `coins_multiplier` | 1 |   | 16 |
@@ -408,13 +408,13 @@ Use this to spot any completely undocumented keys.
 | `ID` | 1 | `empty`, `for`, `is`, `reserved` | 16 |
 | `queue_cutscene_immediate` | 1 | `caves_intro`, `core_intro`, `desert_intro`, `dybbuk`, `jurassic_intro` | 16 |
 | `reset_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin`, `beanies_bombquest_fail_jarofblood` | 16 |
-| `reverb_empty` | 1 |   | 16 |
-| `reverb_full` | 1 |   | 16 |
+| `reverb_empty` | 1 | Reverb settings for an empty room, including preset, amount, and volume adjustment. | 16 |
+| `reverb_full` | 1 | Reverb settings for a full room, including preset, amount, and volume adjustment. | 16 |
 | `Scrap` | 1 |   | 16 |
 | `wallet_size` | 1 |   | 16 |
-| `width` | 1 |   | 16 |
+| `width` | 1 | The width of the room in grid tiles. | 16 |
 | `do` | 15 | `**BombRatTurtle`, `**G3Shake`, `**RockySlam`, `**SimonFlopper_WiggleChance`, `**SimonFlopper_WiggleFake` |   |
-| `move_points` | 15 |   |   |
+| `move_points` | 15 | The number of movement tiles this unit can traverse per action. |   |
 | `multihit` | 15 | `X`, `X*2+1`, `X+1` |   |
 | `next_map` | 15 | `boneyard.gon`, `bunker.gon`, `caves.gon`, `core.gon`, `crater.gon` |   |
 | `range_excludes_blocking` | 15 | `false`, `true` |   |
@@ -422,7 +422,7 @@ Use this to spot any completely undocumented keys.
 | `mad` | 1 |   | 15 |
 | `tooltip_stacks_singular` | 1 | `KEYWORD_AUTOREVIVE_DESC_SINGULAR`, `KEYWORD_BLIND_DESC_STACKLESS`, `KEYWORD_BONUSMOVE_DESC`, `KEYWORD_CHARGEFISTS_DESC_SINGULAR`, `KEYWORD_COUNTER_DESC` | 15 |
 | `initiative` | 14 | `keep_turns_end_turn` |   |
-| `luck` | 14 |   |   |
+| `luck` | 14 | The base luck stat governing random event outcomes and critical chances. |   |
 | `mode` | 14 | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` |   |
 | `jurassic` | 3 | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` | 14 |
 | `theend` | 3 | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` | 14 |
@@ -449,7 +449,7 @@ Use this to spot any completely undocumented keys.
 | `tooltip_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_DESC`, `KEYWORD_CHADOWN_DESC`, `KEYWORD_CONDOWN_DESC`, `KEYWORD_DAMAGEDOWN_DESC`, `KEYWORD_DEXDOWN_DESC` | 13 |
 | `channel` | 12 | `actchooser`, `cat_foley`, `johnny_idle`, `no_falloff`, `non_spatial` |   |
 | `dialog` | 12 | `NPC_BEANIES_ALSO_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_10`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_3` |   |
-| `dispersed_bonus_turns` | 12 |   |   |
+| `dispersed_bonus_turns` | 12 | The number of extra turns granted to the unit when it spawns from a dispersed group. |   |
 | `distance_scale` | 12 |   |   |
 | `do_doppler` | 12 | `false`, `true` |   |
 | `even_if_stunned` | 12 | `true` |   |
@@ -478,18 +478,18 @@ Use this to spot any completely undocumented keys.
 | `straight_shot` | 11 | `false`, `true` |   |
 | `Food` | 2 |   | 11 |
 | `Cultist` | 1 |   | 11 |
-| `food` | 1 |   | 11 |
+| `food` | 1 | The range [min, max] of food units awarded as a reward. | 11 |
 | `name_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_NAME`, `KEYWORD_CHADOWN_NAME`, `KEYWORD_CONDOWN_NAME`, `KEYWORD_DAMAGEDOWN_NAME`, `KEYWORD_DEXDOWN_NAME` | 11 |
 | `brain` | 24 | `DicerBrain`, `GenericBrain`, `MountBrain`, `NoBrain`, `PatternBrain` | 10 |
 | `move_weights` | 22 | `bird`, `blind_move_far`, `chaos_always_move`, `chaotic`, `chaotic_runaway` | 10 |
 | `decision_weights` | 21 | `always_cast`, `always_cast_careless`, `angry`, `blind`, `careless` | 10 |
 | `special` | 20 | `true` | 10 |
-| `banned_elite_buffs` | 10 |   |   |
-| `base_mana_regen` | 10 |   |   |
+| `banned_elite_buffs` | 10 | Array of elite buff names that cannot be applied to this unit. |   |
+| `base_mana_regen` | 10 | The amount of mana the unit regenerates at the start of each turn. |   |
 | `can_be_backstabbed` | 10 | `false` |   |
-| `distance` | 10 |   |   |
-| `do_all` | 10 |   |   |
-| `do_priority` | 10 |   |   |
+| `distance` | 10 | The number of tiles to knock the target up and away (negative values pull toward). |   |
+| `do_all` | 10 | A list of actions the unit performs in sequence. |   |
+| `do_priority` | 10 | A list of actions executed in order of priority, stopping when one succeeds. |   |
 | `do_random_sequence` | 10 |   |   |
 | `expires_on_end_turn` | 10 | `true` |   |
 | `eyes` | 10 | `close`, `closed`, `open` |   |
@@ -498,7 +498,7 @@ Use this to spot any completely undocumented keys.
 | `mute_during_explicit_scenarios` | 10 | `true` |   |
 | `obj` | 10 | `BeefyCharmedLeech`, `Dice`, `Maggot`, `PyrophinaVS`, `RiftKitten` |   |
 | `set_state` | 10 | `beanies_intensestatic`, `beanies_right`, `blocking`, `butch_left`, `butch_levelup` |   |
-| `weak_threshold` | 10 |   |   |
+| `weak_threshold` | 10 | The health threshold below which the unit is considered 'weak' for mechanics. |   |
 | `color` | 9 | `black`, `gray`, `white` | 10 |
 | `consumable_very_rare` | 2 |   | 10 |
 | `minion_alt` | 2 | `SlightlyDepressing`, `SubTwin`, `SubUndying` | 10 |
@@ -508,18 +508,18 @@ Use this to spot any completely undocumented keys.
 | `Cat` | 1 |   | 10 |
 | `chapter_rare` | 1 |   | 10 |
 | `early_spawn` | 1 | `true` | 10 |
-| `flat_cast_bonus` | 1 |   | 10 |
+| `flat_cast_bonus` | 1 | A flat bonus added to the unit's casting ability, overriding normal cast probability. | 10 |
 | `hint_prerequisite_flag` | 1 | `mapflag_BothObelisksUnlocked`, `mapflag_DimensionXUnlocked`, `mapflag_MeatWorldUnlocked`, `mapflag_MeatWorldUnlockedFull` | 10 |
 | `inherit_speed` | 1 |   | 10 |
 | `nuke` | 1 | `PlotFlag_FrankBeanies` | 10 |
 | `Nuke` | 1 |   | 10 |
-| `randomness` | 1 |   | 10 |
+| `randomness` | 1 | The amount of randomness added to the AI's movement decisions, with higher values causing more erratic behavior. | 10 |
 | `right_icon` | 1 | `coin`, `divineshield`, `heal`, `mana`, `shield` | 10 |
 | `scars` | 1 |   | 10 |
 | `tooltip_stacks_pos` | 1 | `KEYWORD_ALLSTATSUP_DESC`, `KEYWORD_CHAUP_DESC`, `KEYWORD_CONUP_DESC`, `KEYWORD_DAMAGEUP_DESC`, `KEYWORD_DEXUP_DESC` | 10 |
 | `enemies_only` | 9 | `false`, `true` |   |
 | `fallback_advances_pattern` | 9 | `false`, `true` |   |
-| `max` | 9 |   |   |
+| `max` | 9 | The maximum value that the auxiliary counter can reach. |   |
 | `move_ability` | 9 | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` |   |
 | `reduction` | 9 |   |   |
 | `stun_advances_pattern` | 9 | `false`, `true` |   |
@@ -580,7 +580,7 @@ Use this to spot any completely undocumented keys.
 | `tags` | 25 | `consumable` | 8 |
 | `additional_passives` | 8 |   |   |
 | `allow_diagonals` | 8 | `true` |   |
-| `alt_sounds` | 8 |   |   |
+| `alt_sounds` | 8 | A list of alternative sound sets, each set is a list of sound clips that override the default sounds. |   |
 | `bonusturn_pattern` | 8 |   |   |
 | `can_multihit` | 8 | `false`, `true` |   |
 | `CastAgain` | 8 | `9+X` |   |
@@ -594,12 +594,12 @@ Use this to spot any completely undocumented keys.
 | `get` | 8 | `npc_reward`, `sidequest_fail`, `sidequest_reward` |   |
 | `hidden` | 8 | `false`, `true` |   |
 | `loot` | 8 |   |   |
-| `mana_regen` | 8 |   |   |
-| `min` | 8 |   |   |
+| `mana_regen` | 8 | The amount of mana the unit regenerates per turn. |   |
+| `min` | 8 | The minimum amount of coins gained from the range. |   |
 | `radius` | 8 |   |   |
-| `round_end_bonus_turns` | 8 |   |   |
+| `round_end_bonus_turns` | 8 | The number of extra turns this unit gets at the end of the round. |   |
 | `virtual_abilities` | 8 |   |   |
-| `amount` | 7 |   | 8 |
+| `amount` | 7 | A scalar value for the strength or intensity of an ambient effect, or a percentage range. | 8 |
 | `hide_text` | 4 |   | 8 |
 | `purchase_item` | 4 |   | 8 |
 | `time_machine` | 4 |   | 8 |
@@ -622,12 +622,12 @@ Use this to spot any completely undocumented keys.
 | `auto_plus_signs_on_name` | 1 | `false` | 8 |
 | `back_icon` | 1 | `bleed`, `burn`, `confusion`, `knockback`, `leech` | 8 |
 | `beanies_bombquest_2` | 1 |   | 8 |
-| `cap_distance_to_ally` | 1 |   | 8 |
+| `cap_distance_to_ally` | 1 | The maximum distance in tiles the AI will maintain from an ally unit. | 8 |
 | `empty_armor_scaled_stats` | 1 |   | 8 |
 | `fail_item_quest` | 1 | `JarOfChaos`, `JarOfRadiatedBlood`, `JarOfRadiation`, `Nuke` | 8 |
 | `failable` | 1 | `true` | 8 |
 | `fully_complete_difficulty` | 1 |   | 8 |
-| `innate_passives` | 1 |   | 8 |
+| `innate_passives` | 1 | Specifies passive abilities that are permanently granted to the unit. | 8 |
 | `post_combat_cutscene` | 1 | `obelisk1_core`, `obelisk1_moon`, `obelisk2_core`, `obelisk2_moon` | 8 |
 | `raptorbaby` | 1 |   | 8 |
 | `scorpioncat` | 1 |   | 8 |
@@ -641,7 +641,7 @@ Use this to spot any completely undocumented keys.
 | `cant_cast` | 7 | `1-X`, `2-X`, `3-X`, `5-X`, `X` |   |
 | `counter_minimum` | 7 |   |   |
 | `disallow_cost_modification` | 7 | `true` |   |
-| `do_random` | 7 |   |   |
+| `do_random` | 7 | A list of actions from which one is chosen at random. |   |
 | `eat` | 7 |   |   |
 | `mainturn_pattern` | 7 |   |   |
 | `move_for_ability` | 7 | `AlienBeastPuke`, `CaveManPickupSpear`, `G3GrabHead`, `PyrophinaSoloCatThrow`, `PyrophinaVSCatThrow` |   |
@@ -665,7 +665,7 @@ Use this to spot any completely undocumented keys.
 | `male79` | 1 |   | 7 |
 | `male80` | 1 |   | 7 |
 | `max_npc` | 1 | `Beanies`, `Butch`, `Frank`, `Jack`, `OrganGrinder` | 7 |
-| `speed` | 47 |   | 6 |
+| `speed` | 47 | The movement speed of the projectile or graphic, as a single number or a range [min max]. | 6 |
 | `pattern` | 15 |   | 6 |
 | `animation_suffix` | 8 | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` | 6 |
 | `initial_form` | 7 | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` | 6 |
@@ -678,15 +678,15 @@ Use this to spot any completely undocumented keys.
 | `charge` | 6 | `1-clamp(spd,0,1)` |   |
 | `charm` | 6 |   |   |
 | `dialog_and_autopass` | 6 | ``, `NPC_BEANIES_INTRO_15`, `NPC_JACK_CANT_AFFORD_1`, `NPC_JACK_PURCHASE_ITEM_1`, `NPC_JACK_UNPROMPTED_1` |   |
-| `evenly_dispersed_bonus_turns` | 6 |   |   |
+| `evenly_dispersed_bonus_turns` | 6 | The number of extra turns this unit gets, evenly inserted into the turn queue. |   |
 | `eyebrows` | 6 |   |   |
 | `form_has` | 6 | `BellyFull`, `CaveWomanHasCat`, `FireFull`, `Full`, `Grappling` |   |
 | `form_hasnot` | 6 | `Big`, `CaveWoman`, `Close`, `Default`, `Empty` |   |
-| `held_coins` | 6 |   |   |
+| `held_coins` | 6 | If an array [min max], specifies a range of coins held; if an integer, a fixed amount. |   |
 | `inherit_faction` | 6 | `false`, `true` |   |
-| `intensity` | 6 |   |   |
+| `intensity` | 6 | The intensity value of the screen shake effect. |   |
 | `knockback_immune` | 6 | `true` |   |
-| `lock_controls` | 6 |   |   |
+| `lock_controls` | 6 | Specifies the duration in seconds to lock player controls during a sequence. |   |
 | `partial_animation_suffix` | 6 | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |
 | `prime` | 6 |   |   |
 | `prioritize_dont_change_direction` | 6 | `true` |   |
@@ -695,13 +695,13 @@ Use this to spot any completely undocumented keys.
 | `requires_destructible_weapon` | 6 | `true` |   |
 | `reset_pattern_on_formswitch` | 6 | `false`, `true` |   |
 | `round_end_bonusturn_pattern` | 6 |   |   |
-| `statuses` | 6 |   |   |
-| `unlock_controls` | 6 |   |   |
+| `statuses` | 6 | Defines the status effects applied when the revival or aura triggers. |   |
+| `unlock_controls` | 6 | A flag (1 to enable) that unlocks player controls at this point in a sequence. |   |
 | `upgrade_straight_shot_to_piercing` | 6 | `true` |   |
 | `weights` | 6 | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` |   |
 | `cant_afford` | 3 |   | 6 |
 | `Chicken` | 3 |   | 6 |
-| `exit1` | 3 |   | 6 |
+| `exit1` | 3 | Defines the properties of the second exit node on a map, such as its type, destination, and locked state. | 6 |
 | `forward_to_tips` | 3 |   | 6 |
 | `out_of_stock` | 3 |   | 6 |
 | `chapter` | 2 | `alley` | 6 |
@@ -717,9 +717,9 @@ Use this to spot any completely undocumented keys.
 | `consider_aoe` | 1 | `false`, `true` | 6 |
 | `consumables` | 1 |   | 6 |
 | `CoreObeliskUnlocked` | 1 |   | 6 |
-| `danger_avoidance` | 1 |   | 6 |
-| `distance_to_aggro_target` | 1 |   | 6 |
-| `distance_to_corpse` | 1 |   | 6 |
+| `danger_avoidance` | 1 | A multiplier influencing how strongly the AI avoids dangerous tiles or situations. | 6 |
+| `distance_to_aggro_target` | 1 | The preferred distance in tiles the AI tries to maintain from its aggro target. Negative values indicate closeness. | 6 |
+| `distance_to_corpse` | 1 | The preferred distance in tiles the AI tries to maintain from corpses. Negative values indicate attraction. | 6 |
 | `Electric` | 1 |   | 6 |
 | `fragile` | 1 | `true` | 6 |
 | `icon_hint` | 1 | `ability_syringe`, `passive_syringe` | 6 |
@@ -753,9 +753,9 @@ Use this to spot any completely undocumented keys.
 | `ear1` | 5 |   |   |
 | `enter` | 5 |   |   |
 | `exclude_from_hallucinate` | 5 | `true` |   |
-| `eye1` | 5 |   |   |
+| `eye1` | 5 | The visual ID (integer) of the first eye part applied to the cat. |   |
 | `fight` | 5 |   |   |
-| `glow` | 5 |   |   |
+| `glow` | 5 | Specifies the RGBA color values for the character's glow effect. |   |
 | `icon_damage_display_eq` | 5 | `1+bonus_spell_damage_display`, `10+bonus_melee_ability_damage`, `3+bonus_melee_ability_damage`, `X*10`, `item_aux` |   |
 | `immediate` | 5 | `false`, `true` |   |
 | `inspect` | 5 |   |   |
@@ -797,11 +797,11 @@ Use this to spot any completely undocumented keys.
 | `terminator_boss` | 1 |   | 5 |
 | `tutorial` | 1 | `AREA_NAME_TUTORIAL` | 5 |
 | `end_turn_on_formswitch` | 7 | `false`, `true` | 4 |
-| `coins` | 5 |   | 4 |
+| `coins` | 5 | The amount of coins (or a random range [min max]) awarded when the spawn trigger occurs. | 4 |
 | `access_to_player_inventory` | 4 | `false`, `true` |   |
-| `ai_scale` | 4 |   |   |
+| `ai_scale` | 4 | A multiplier for the unit's AI decision-making weight or priority. |   |
 | `allow_passive_spelltransforming` | 4 | `true` |   |
-| `base_crit_chance` | 4 |   |   |
+| `base_crit_chance` | 4 | The base critical hit chance percentage for the unit. |   |
 | `cancelable` | 4 | `true` |   |
 | `cat_gimmick` | 4 | `true` |   |
 | `consider_trample` | 4 | `false`, `true` |   |
@@ -810,8 +810,8 @@ Use this to spot any completely undocumented keys.
 | `dispersed_bonus_turns_before_cats` | 4 | `false`, `true` |   |
 | `dispersed_bonus_turns_consider_initiative` | 4 | `false` |   |
 | `distance_sort_targets` | 4 | `true` |   |
-| `do_strict` | 4 |   |   |
-| `eye2` | 4 |   |   |
+| `do_strict` | 4 | A list of actions executed in strict sequence. |   |
+| `eye2` | 4 | The visual ID (integer) of the second eye part applied to the cat. |   |
 | `form_offmap` | 4 | `Default_Ceiling`, `Insane_Ceiling`, `OffMap`, `SpawningPhase`, `Start_Ceiling` |   |
 | `form_onmap` | 4 | `Default`, `Default_Ground`, `FightPhase`, `Insane_Ground` |   |
 | `go_around` | 4 |   |   |
@@ -821,9 +821,9 @@ Use this to spot any completely undocumented keys.
 | `is_basic_attack` | 4 | `false`, `true` |   |
 | `is_not_chapter` | 4 |   |   |
 | `legs` | 4 |   |   |
-| `lock_orientation` | 4 |   |   |
-| `max_dist` | 4 |   |   |
-| `min_dist` | 4 |   |   |
+| `lock_orientation` | 4 | Specifies a fixed facing direction for the unit as an [x, y] offset. |   |
+| `max_dist` | 4 | The maximum distance (in tiles) the target can be flung. |   |
+| `min_dist` | 4 | The minimum distance (in tiles) the target must be flung. |   |
 | `mouse_offset` | 4 |   |   |
 | `must_be_offmap` | 4 | `true` |   |
 | `must_not_be_a_summon` | 4 | `true` |   |
@@ -831,8 +831,8 @@ Use this to spot any completely undocumented keys.
 | `prevent_chain_tag` | 4 | `ancestorset_shade`, `eb_twin`, `minime_clone`, `necroset_shade` |   |
 | `Rage` | 4 |   |   |
 | `range_display_include_aoe` | 4 | `true` |   |
-| `round_start_bonus_turns` | 4 |   |   |
-| `rounds` | 4 |   |   |
+| `round_start_bonus_turns` | 4 | The number of extra turns this unit gets at the start of the round. |   |
+| `rounds` | 4 | The number of rounds the unit must wait before reviving. |   |
 | `stack_key` | 4 | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` |   |
 | `take` | 4 |   |   |
 | `tooltip_dialog` | 4 | `NPC_JACK_SHOP_TOOLTIP`, `NPC_ORGANGRINDER_SHOP_TOOLTIP`, `NPC_TRACY_SHOP_TOOLTIP` |   |
@@ -848,10 +848,10 @@ Use this to spot any completely undocumented keys.
 | `DimensionXUnlocked` | 2 |   | 4 |
 | `empty_self_damage` | 2 |   | 4 |
 | `EndOfTimeUnlocked` | 2 |   | 4 |
-| `fights` | 2 |   | 4 |
+| `fights` | 2 | The number of future battles that the status stacks persist for. | 4 |
 | `frank_max_intro` | 2 |   | 4 |
 | `frank_max_repeating` | 2 |   | 4 |
-| `hard_initial` | 2 |   | 4 |
+| `hard_initial` | 2 | Defines initial properties for the hard path node, such as type and locked state. | 4 |
 | `HardPathUnlocked` | 2 |   | 4 |
 | `house_upgrade_4throom` | 2 |   | 4 |
 | `house_upgrade_attic` | 2 |   | 4 |
@@ -876,7 +876,7 @@ Use this to spot any completely undocumented keys.
 | `organ_upgrade6` | 2 |   | 4 |
 | `prevent_level_up` | 2 | `true` | 4 |
 | `quest_item_alias` | 2 | `BlackShard`, `NuclearKnife` | 4 |
-| `roll_limit` | 2 |   | 4 |
+| `roll_limit` | 2 | The maximum number of times this buff can be rolled for a single unit. | 4 |
 | `steven_milliontrashed` | 2 |   | 4 |
 | `tink_aggression` | 2 |   | 4 |
 | `tink_basestats` | 2 |   | 4 |
@@ -933,12 +933,12 @@ Use this to spot any completely undocumented keys.
 | `beanies_theend_intro` | 1 |   | 4 |
 | `butch_boneyard_intro` | 1 |   | 4 |
 | `butchercat` | 1 | `auto` | 4 |
-| `cap_distance_to_enemy` | 1 |   | 4 |
+| `cap_distance_to_enemy` | 1 | The maximum distance in tiles the AI will attempt to maintain from enemies. | 4 |
 | `class_unlock_jester` | 1 |   | 4 |
 | `cloned_ability` | 1 | `attack` | 4 |
 | `complete_adventure` | 1 | `anywhere` | 4 |
-| `distance_to_water` | 1 |   | 4 |
-| `face_aggro_target` | 1 |   | 4 |
+| `distance_to_water` | 1 | The preferred distance in tiles the AI tries to maintain from water tiles. Negative values indicate attraction. | 4 |
+| `face_aggro_target` | 1 | The priority weight for the AI to face its aggro target. Higher values increase likelihood. | 4 |
 | `fightercat` | 1 | `auto` | 4 |
 | `Flush` | 1 |   | 4 |
 | `FoodBig` | 1 |   | 4 |
@@ -947,7 +947,7 @@ Use this to spot any completely undocumented keys.
 | `frank_ending` | 1 |   | 4 |
 | `futurebot` | 1 |   | 4 |
 | `GrassTile` | 1 |   | 4 |
-| `innate_items` | 1 |   | 4 |
+| `innate_items` | 1 | Specifies items equipped by default on a unit, such as weapon or trinket. | 4 |
 | `jack_desert_intro` | 1 |   | 4 |
 | `magecat` | 1 | `auto` | 4 |
 | `mammothbaby` | 1 |   | 4 |
@@ -964,7 +964,7 @@ Use this to spot any completely undocumented keys.
 | `rest` | 1 |   | 4 |
 | `schadenfreude_scaled_stats` | 1 |   | 4 |
 | `shop_common` | 1 |   | 4 |
-| `spawn_object_preferred_distance` | 1 |   | 4 |
+| `spawn_object_preferred_distance` | 1 | The preferred distance in tiles at which the AI will spawn objects. | 4 |
 | `spidercat` | 1 |   | 4 |
 | `steven_postendgame` | 1 |   | 4 |
 | `str_aux_is_copy_ability` | 1 |   | 4 |
@@ -973,7 +973,7 @@ Use this to spot any completely undocumented keys.
 | `thiefcat` | 1 | `auto` | 4 |
 | `tinkerercat` | 1 | `auto` | 4 |
 | `unlock_levelgroup` | 1 | `bigsharklevels` | 4 |
-| `count` | 27 |   | 3 |
+| `count` | 27 | The number of times or items to generate, spawn, or apply. | 3 |
 | `size` | 20 | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` | 3 |
 | `event` | 6 | `Blessing`, `Death`, `Tragedy`, `alley/eatinrats_event.ogg`, `boneyard/boneyard_event.ogg` | 3 |
 | `smash` | 5 |   | 3 |
@@ -983,27 +983,27 @@ Use this to spot any completely undocumented keys.
 | `as_the_crow_flies` | 3 | `true` |   |
 | `auto_run_priority` | 3 | `default`, `stationary`, `support` |   |
 | `backstabs_only` | 3 | `true` |   |
-| `base_initiative` | 3 |   |   |
-| `base_movement` | 3 |   |   |
+| `base_initiative` | 3 | The unmodified initiative value for the unit, used before any modifiers. |   |
+| `base_movement` | 3 | The unmodified movement range in tiles for the unit. |   |
 | `Big` | 3 |   |   |
 | `bonus_items` | 3 |   |   |
 | `closeup` | 3 |   |   |
 | `craft_ability` | 3 | `TinkererCraft` |   |
 | `DisableTrample` | 3 |   |   |
-| `do_nothing` | 3 |   |   |
+| `do_nothing` | 3 | A list of actions that cause the unit to skip its turn. |   |
 | `do_sequence` | 3 | `butch_tips_intelligence`, `forward_to_tips`, `tink_tips_comfort` |   |
 | `Down` | 3 |   |   |
 | `drink` | 3 |   |   |
-| `ear2` | 3 |   |   |
+| `ear2` | 3 | The visual ID (integer) of the second ear part applied to the cat. |   |
 | `extra_events` | 3 | `-`, `CardboardBox_ItemReveal`, `Cat_Shadowstep_anime`, `ChakramProjectileSpin`, `Combat_ButtonsHide` |   |
-| `flat_chance` | 3 |   |   |
+| `flat_chance` | 3 | The flat percentage chance to spit when damaged. |   |
 | `form_above` | 3 | `Default`, `Full`, `Standing` |   |
 | `form_below` | 3 | `Damaged`, `DesireMech`, `Standing2` |   |
 | `formula` | 3 | `X`, `X*10`, `X+1`, `X-1`, `X-2` |   |
 | `from` | 3 | `JarOfChaos`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |   |
 | `ge` | 3 |   |   |
 | `HasCat` | 3 |   |   |
-| `health_threshold` | 3 |   |   |
+| `health_threshold` | 3 | The health threshold (absolute HP value) that triggers the reaction. Use -1 for no threshold. |   |
 | `house_shop` | 3 | `true` |   |
 | `is_dying_animation` | 3 | `true` |   |
 | `is_player_cat` | 3 | `false`, `true` |   |
@@ -1014,7 +1014,7 @@ Use this to spot any completely undocumented keys.
 | `limit` | 3 | `actchooser`, `channel` |   |
 | `limit_amount` | 3 | `amount`, `at`, `can`, `limit`, `of` |   |
 | `move_far` | 3 | `false` |   |
-| `move_then_do_random` | 3 |   |   |
+| `move_then_do_random` | 3 | The unit moves, then randomly performs one action from the list. |   |
 | `MoveAway` | 3 |   |   |
 | `must_be_consuming` | 3 | `true` |   |
 | `must_be_first_nonmove_action` | 3 | `true` |   |
@@ -1039,7 +1039,7 @@ Use this to spot any completely undocumented keys.
 | `temporary` | 3 | `false` |   |
 | `throw_ability` | 3 | `TinkererThrow` |   |
 | `throw_consumed_character` | 3 | `true` |   |
-| `time` | 3 |   |   |
+| `time` | 3 | The duration (in seconds or a float multiplier) of the screen shake effect. |   |
 | `to` | 3 | `JarOfNothing`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |   |
 | `track_target` | 3 | `true` |   |
 | `Up` | 3 |   |   |
@@ -1090,7 +1090,7 @@ Use this to spot any completely undocumented keys.
 | `consider_spells` | 4 | `false` | 2 |
 | `face_camera` | 3 | `true` | 2 |
 | `fights_skipped` | 3 |   | 2 |
-| `ability_pool` | 2 |   |   |
+| `ability_pool` | 2 | The list of ability names available for random selection during level-up or generation. |   |
 | `active` | 2 |   |   |
 | `allow_energize_self` | 2 | `true` |   |
 | `ally_chance` | 2 |   |   |
@@ -1098,18 +1098,18 @@ Use this to spot any completely undocumented keys.
 | `alternate_energized_effect` | 2 |   |   |
 | `always_triggers_traps` | 2 | `true` |   |
 | `Antidote` | 2 |   | 2 |
-| `aoe` | 2 |   |   |
+| `aoe` | 2 | The radius of the area-of-effect for the tile change. |   |
 | `aoe_hint_teamcast` | 2 | `true` |   |
 | `aoe_leading_edge_only` | 2 | `true` |   |
 | `aoe_pierce_mode` | 2 | `block` |   |
 | `arms` | 2 |   |   |
-| `attack_pool` | 2 |   |   |
+| `attack_pool` | 2 | The list of attack ability names available for random selection during level-up or generation. |   |
 | `aura_effects_allies` | 2 | `false` |   |
-| `base_health` | 2 |   |   |
-| `base_health_regen` | 2 |   |   |
-| `base_initial_mana` | 2 |   |   |
-| `base_mana` | 2 |   |   |
-| `begin` | 2 |   |   |
+| `base_health` | 2 | The unmodified health total of the unit, used before any modifiers. |   |
+| `base_health_regen` | 2 | The amount of health regenerated per turn. |   |
+| `base_initial_mana` | 2 | The amount of mana a unit starts with at the beginning of a battle. |   |
+| `base_mana` | 2 | The maximum mana capacity of a unit. |   |
+| `begin` | 2 | The starting force vector (or range) applied by the random force, often with random values per axis. |   |
 | `blocking` | 2 | `false`, `idlenoani` |   |
 | `boss_minions_runaway` | 2 | `false` |   |
 | `BreakIntoRocks` | 2 | `Coin`, `SmallRock` |   |
@@ -1120,43 +1120,43 @@ Use this to spot any completely undocumented keys.
 | `cantrip_group` | 2 | `THC_CoinRoll`, `cavemomtoss`, `kaiju_roar`, `spewer_suck` |   |
 | `cat_has_item_equipped` | 2 | `CryogenicTimeChamber_Empty`, `CryogenicTimeChamber_Full`, `FaceCovering`, `GuillotinasHead`, `JarOfRadiatedBlood` |   |
 | `Catnip` | 2 |   | 2 |
-| `chance_per_damage` | 2 |   |   |
+| `chance_per_damage` | 2 | The percentage chance to spit per point of damage taken. |   |
 | `chance_to_break` | 2 |   |   |
 | `check_in_form` | 2 | `Boris`, `Default` |   |
 | `clamp_pattern` | 2 | `true` |   |
-| `combo` | 2 |   |   |
+| `combo` | 2 | Defines a sequence of visual effect names to play in order for a particle or animation combo. |   |
 | `consider_all_layers` | 2 | `true` |   |
 | `constant` | 2 | `pitch`, `volume` |   |
 | `contact_requires_adjacency` | 2 | `false` |   |
 | `cycle_start` | 2 |   |   |
-| `dampening` | 2 |   |   |
+| `dampening` | 2 | The velocity dampening factor (0 to 1) applied when particles bounce off the plane. |   |
 | `DashFury` | 2 |   |   |
-| `deathpoof_size` | 2 |   |   |
+| `deathpoof_size` | 2 | The size of the visual poof effect played when this unit dies. |   |
 | `defense` | 2 |   |   |
 | `delay_frames` | 2 |   |   |
 | `description` | 2 | `CAT_CLASS_BUTCHER_DESC`, `CAT_CLASS_COLORLESS_DESC`, `CAT_CLASS_DRUID_DESC`, `CAT_CLASS_FIGHTER_DESC`, `CAT_CLASS_HUNTER_DESC` |   |
 | `disease` | 2 | `BirdFlu`, `Cancer`, `CommonCold`, `Covid`, `Ebola` |   |
 | `dispersed_bonusturn_pattern` | 2 |   |   |
-| `do_all_shuffle` | 2 |   |   |
-| `do_best` | 2 |   |   |
+| `do_all_shuffle` | 2 | A list of actions shuffled randomly, then executed in that order. |   |
+| `do_best` | 2 | A list of actions evaluated for optimal outcome; the best one is chosen. |   |
 | `durability_loss` | 2 |   |   |
-| `emit_box` | 2 |   |   |
-| `emit_direction` | 2 |   |   |
+| `emit_box` | 2 | A bounding box [xMin xMax yMin yMax zMin zMax] defining the area in which particles are spawned. |   |
+| `emit_direction` | 2 | A vector [x, y, z] defining the initial direction of emitted particles. |   |
 | `enemy_type` | 2 | `any`, `cat` |   |
 | `eq` | 2 |   |   |
 | `Example` | 2 |   |   |
 | `exclude` | 2 | `SpellDamageUp`, `fire`, `water` |   |
 | `exit_ability` | 2 | `DybbukReturn` |   |
-| `eyebrow1` | 2 |   |   |
+| `eyebrow1` | 2 | The visual ID (integer) of the first eyebrow part applied to the cat. |   |
 | `falloff` | 2 | `by`, `global`, `multiplied`, `setting`, `volume_falloff_range` |   |
 | `falloff_range` | 2 |   |   |
 | `find_another_way` | 2 |   |   |
-| `force` | 2 |   |   |
+| `force` | 2 | A force vector [x, y, z] applied to particles, or a scalar magnitude applied downward. |   |
 | `force_ai_target_as_spell` | 2 | `true` |   |
 | `force_display_name` | 2 | `true` |   |
 | `force_not_familiar` | 2 | `true` |   |
 | `free` | 2 | `false` |   |
-| `friction` | 2 |   |   |
+| `friction` | 2 | An array of friction coefficients [x y z] applied to particle velocity on the bounce plane. |   |
 | `friction_end` | 2 |   |   |
 | `friction_start` | 2 |   |   |
 | `global_tags` | 2 |   |   |
@@ -1177,9 +1177,9 @@ Use this to spot any completely undocumented keys.
 | `item` | 2 | `EstusFlask_Full`, `GallonOfWater`, `WaterBottle_Full` |   |
 | `Item` | 2 |   |   |
 | `KillEnemyOfTypeAtBattleStart` | 2 |   |   |
-| `levelup_stats` | 2 |   |   |
+| `levelup_stats` | 2 | The three stat names that randomly improve when the unit levels up. |   |
 | `lightning` | 2 |   |   |
-| `live_bounds` | 2 |   |   |
+| `live_bounds` | 2 | A bounding box [xMin xMax yMin yMax zMin zMax] outside which particles are deactivated or destroyed. |   |
 | `low_gravity_boostable` | 2 | `false`, `true` |   |
 | `low_health_character_threshold` | 2 | `item_aux` |   |
 | `mandatory` | 2 | `true` |   |
@@ -1203,11 +1203,11 @@ Use this to spot any completely undocumented keys.
 | `pan_falloff` | 2 | `by`, `global`, `multiplied`, `need`, `not` |   |
 | `ParticleBouncePlane` | 2 |   |   |
 | `ParticleRandomForce` | 2 |   |   |
-| `passive_pool` | 2 |   |   |
-| `pathfinding_avoidance` | 2 |   |   |
+| `passive_pool` | 2 | The list of passive ability names available for random selection during level-up or generation. |   |
+| `pathfinding_avoidance` | 2 | The amount of pathfinding avoidance cost assigned to the trap tile. |   |
 | `play` | 2 |   |   |
-| `playercat_health` | 2 |   |   |
-| `position` | 2 |   | 2 |
+| `playercat_health` | 2 | The percentage of maximum health the player cat must have to trigger rebirth. |   |
+| `position` | 2 | The 2D position (x, y) or single-coordinate value for placement. | 2 |
 | `Priming` | 2 |   |   |
 | `Purrx` | 2 |   |   |
 | `random_orient` | 2 | `true` |   |
@@ -1232,14 +1232,14 @@ Use this to spot any completely undocumented keys.
 | `special_tile_tag` | 2 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation` |   |
 | `SquirrelForm` | 2 |   | 2 |
 | `start_dead` | 2 | `true` |   |
-| `starter_abilities` | 2 |   |   |
+| `starter_abilities` | 2 | The list of ability names granted to the unit at the start of the game. |   |
 | `tall` | 2 | `true` |   |
 | `target_filter` | 2 | `Kitten`, `any` |   |
 | `target_requires_element` | 2 |   |   |
 | `the` | 2 | `Example`, `PlaySound`, `access`, `effect`, `engine` |   |
 | `threshold_percent` | 2 |   |   |
-| `thresholds` | 2 |   |   |
-| `tooltip_values` | 2 |   |   |
+| `thresholds` | 2 | An array of health percentage thresholds that trigger state changes. |   |
+| `tooltip_values` | 2 | An array of mathematical expressions used to calculate values displayed in the ability’s tooltip. |   |
 | `toss_direction_restriction` | 2 | `backwards`, `forwards` |   |
 | `touch` | 2 |   |   |
 | `trample_allies_too` | 2 | `true` |   |
@@ -1449,8 +1449,8 @@ Use this to spot any completely undocumented keys.
 | `cant_afford_moon` | 1 |   | 2 |
 | `cant_afford_theend` | 1 |   | 2 |
 | `cant_equip_to_colorless` | 1 | `true` | 2 |
-| `cap_distance_to_character` | 1 |   | 2 |
-| `cap_total_distance_moved` | 1 |   | 2 |
+| `cap_distance_to_character` | 1 | The maximum distance in tiles the AI will maintain from a specific character. | 2 |
+| `cap_total_distance_moved` | 1 | The maximum total distance in tiles the AI is allowed to move per turn. | 2 |
 | `CatnipBig` | 1 |   | 2 |
 | `cavecatfamily` | 1 | `auto` | 2 |
 | `CavesUnlocked` | 1 |   | 2 |
@@ -1477,14 +1477,14 @@ Use this to spot any completely undocumented keys.
 | `CoreUnlocked` | 1 |   | 2 |
 | `count_nomove_in_eval` | 1 | `false` | 2 |
 | `CraterUnlocked` | 1 |   | 2 |
-| `cWaggle` | 1 |   | 2 |
-| `cWaggle2x2` | 1 |   | 2 |
+| `cWaggle` | 1 | A clone of the Waggle enemy type with custom graphics settings. | 2 |
+| `cWaggle2x2` | 1 | A larger clone of cWaggle that occupies 2x2 tiles. | 2 |
 | `DeadHummingbird` | 1 |   | 2 |
 | `debug` | 1 | `Unknown` | 2 |
 | `degrade_after_adventure` | 1 | `false` | 2 |
 | `destinations` | 1 |   | 2 |
 | `dinocouple` | 1 | `auto` | 2 |
-| `distance_to_center` | 1 |   | 2 |
+| `distance_to_center` | 1 | The preferred distance in tiles the AI tries to maintain from the center of the map. Negative values indicate attraction. | 2 |
 | `do_not_end_turn` | 1 |   | 2 |
 | `donate` | 1 |   | 2 |
 | `done_spitting_fail_ally` | 1 |   | 2 |
@@ -1576,7 +1576,7 @@ Use this to spot any completely undocumented keys.
 | `LargeHouse_Floor2Large` | 1 |   | 2 |
 | `LargeHouse_Floor2Small` | 1 |   | 2 |
 | `LastHit` | 1 |   | 2 |
-| `lava` | 1 |   | 2 |
+| `lava` | 1 | A weight value influencing the AI's preference for moving onto lava tiles. Higher values increase preference. | 2 |
 | `lenny` | 1 | `auto` | 2 |
 | `level_up_didnt_select_sunburn` | 1 |   | 2 |
 | `level_up_intro` | 1 |   | 2 |
@@ -1604,18 +1604,18 @@ Use this to spot any completely undocumented keys.
 | `melee_killed_rat` | 1 |   | 2 |
 | `melee_move2` | 1 |   | 2 |
 | `melee_out_of_actions` | 1 |   | 2 |
-| `miniboss_event` | 1 |   | 2 |
+| `miniboss_event` | 1 | Defines a miniboss event node, specifying its type and level. | 2 |
 | `MoonUnlocked` | 1 |   | 2 |
 | `movieclip_timescale` | 1 |   | 2 |
 | `mw_altar` | 1 |   | 2 |
-| `mw_battle1` | 1 |   | 2 |
-| `mw_boss` | 1 |   | 2 |
-| `mw_earlyhome` | 1 |   | 2 |
-| `mw_event1` | 1 |   | 2 |
-| `mw_hard1` | 1 |   | 2 |
-| `mw_home` | 1 |   | 2 |
-| `mw_quest_event` | 1 |   | 2 |
-| `mw_treasure` | 1 |   | 2 |
+| `mw_battle1` | 1 | Defines a battle node on the Meat World map, with properties like type, hidden status, and music override. | 2 |
+| `mw_boss` | 1 | Defines a boss encounter node on the Meat World map, with properties for cutscene and music. | 2 |
+| `mw_earlyhome` | 1 | Defines an early home node on the Meat World map, typically hidden or used for early access. | 2 |
+| `mw_event1` | 1 | Defines an event node on the Meat World map, with properties like type and hidden status. | 2 |
+| `mw_hard1` | 1 | Defines a hard difficulty battle node on the Meat World map, with optional music layer override. | 2 |
+| `mw_home` | 1 | Defines a home node on the Meat World map, with properties for type and visibility. | 2 |
+| `mw_quest_event` | 1 | Defines a quest event node on the Meat World map, with overrides for level and art. | 2 |
+| `mw_treasure` | 1 | Defines a treasure node on the Meat World map, with type and hidden status. | 2 |
 | `NeutronStar` | 1 |   | 2 |
 | `new_adventure` | 1 |   | 2 |
 | `organ_intro` | 1 |   | 2 |
@@ -1719,7 +1719,7 @@ Use this to spot any completely undocumented keys.
 | `str_aux_is_copy_item_active` | 1 | `true` | 2 |
 | `str_aux_is_copy_item_icon` | 1 | `true` | 2 |
 | `take_cats_inside` | 1 |   | 2 |
-| `tall_grass` | 1 |   | 2 |
+| `tall_grass` | 1 | A weight value influencing the AI's preference for moving onto tall grass tiles. Higher values increase preference. | 2 |
 | `TallGrassTile` | 1 |   | 2 |
 | `tankcat` | 1 | `auto` | 2 |
 | `test_gamepad_prompts` | 1 |   | 2 |
@@ -1805,7 +1805,7 @@ Use this to spot any completely undocumented keys.
 | `yeticat` | 1 |   | 2 |
 | `Zealot` | 1 |   | 2 |
 | `Sad` | 220 |   | 1 |
-| `chance` | 32 |   | 1 |
+| `chance` | 32 | A multiplier or percentage representing the probability of the effect occurring. | 1 |
 | `pool` | 28 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` | 1 |
 | `element` | 21 | `Electric`, `Fire`, `Gravity`, `Greater_Water`, `Holy` | 1 |
 | `spawn_side` | 11 | `anywhere`, `cats`, `enemies` | 1 |
@@ -1813,7 +1813,7 @@ Use this to spot any completely undocumented keys.
 | `random` | 8 |   | 1 |
 | `examine` | 7 |   | 1 |
 | `asymmetric` | 6 | `false`, `true` | 1 |
-| `initial_health` | 5 |   | 1 |
+| `initial_health` | 5 | The starting health of the unit before any modifiers. | 1 |
 | `restrict` | 5 | `armor`, `consumables`, `trinket`, `weapon` | 1 |
 | `same_cat` | 3 | `true` | 1 |
 | `skip_result_screen` | 3 | `true` | 1 |
@@ -1831,7 +1831,7 @@ Use this to spot any completely undocumented keys.
 | `actchooser` | 1 |   |   |
 | `activate_p` | 1 |   |   |
 | `activate_z` | 1 |   |   |
-| `active_pieces` | 1 |   |   |
+| `active_pieces` | 1 | The list of active boss piece names that are used in the Chaos boss fight. |   |
 | `ActSelect_Choose_1` | 1 |   |   |
 | `ActSelect_Choose_2` | 1 |   |   |
 | `ActSelect_Choose_3` | 1 |   |   |
@@ -1844,7 +1844,7 @@ Use this to spot any completely undocumented keys.
 | `AddFilledMaxHealth` | 1 |   |   |
 | `additional_statuses` | 1 |   |   |
 | `addstacks` | 1 |   |   |
-| `adjectives` | 1 |   |   |
+| `adjectives` | 1 | The list of adjective strings used for procedural naming of units. |   |
 | `adjust_target` | 1 | `stalk` |   |
 | `advantage_polarity` | 1 |   |   |
 | `advantage_softcap` | 1 |   |   |
@@ -1870,7 +1870,7 @@ Use this to spot any completely undocumented keys.
 | `alt_dying_ani` | 1 | `shutdown` |   |
 | `altar_sacrifice` | 1 |   |   |
 | `always_face_forward` | 1 | `true` |   |
-| `ambient` | 1 |   |   |
+| `ambient` | 1 | The ambient light intensity multiplier for the lighting setup, typically between 0 and 1. |   |
 | `Ani_AcidOoze_dying_Frame2` | 1 |   |   |
 | `Ani_AcidOoze_hit_Frame2` | 1 |   |   |
 | `Ani_AcidOoze_shoot_Frame2` | 1 |   |   |
@@ -6008,12 +6008,12 @@ Use this to spot any completely undocumented keys.
 | `auto_cast` | 1 | `Dash_Enemy` |   |
 | `auto_cast_on_spawn` | 1 | `Dash_Enemy` |   |
 | `autosave` | 1 | `adventure`, `housebossprep` |   |
-| `aux_positions` | 1 |   |   |
-| `axis` | 1 |   |   |
+| `aux_positions` | 1 | Maps auxiliary object names to their [x, y] coordinates in the house scene. |   |
+| `axis` | 1 | The axis vector around which the tornado force rotates. |   |
 | `back` | 1 | `false`, `true` | 1 |
 | `background_shader` | 1 | `meatpulse_ground` | 1 |
 | `backstab_only` | 1 | `true` |   |
-| `banned_abilities` | 1 |   |   |
+| `banned_abilities` | 1 | An array of ability names that are banned from being randomly selected by Metronome. |   |
 | `barf` | 1 |   | 1 |
 | `barf_attack` | 1 |   | 1 |
 | `barf_prep` | 1 |   | 1 |
@@ -6040,7 +6040,7 @@ Use this to spot any completely undocumented keys.
 | `BiggestFood` | 1 |   |   |
 | `BigHolding` | 1 |   |   |
 | `BigHoldingCat` | 1 |   |   |
-| `bigrays` | 1 |   |   |
+| `bigrays` | 1 | An array controlling big ray lighting, typically [intensity, count] or similar. |   |
 | `BigScrap` | 1 |   |   |
 | `BigUFO_ambient_looping` | 1 |   |   |
 | `Bishop` | 1 |   |   |
@@ -6070,7 +6070,7 @@ Use this to spot any completely undocumented keys.
 | `BreedSuppression` | 1 |   | 1 |
 | `bribe` | 1 |   |   |
 | `buddy_damage_only` | 1 | `true` |   |
-| `built_in_collision` | 1 |   |   |
+| `built_in_collision` | 1 | An array defining the collision geometry for the room, typically as a list of vertices or shapes. |   |
 | `Bully` | 1 |   |   |
 | `butch_left` | 1 |   |   |
 | `butch_left_to_offscreen` | 1 |   |   |
@@ -6196,12 +6196,12 @@ Use this to spot any completely undocumented keys.
 | `ChakramProjectileSpin` | 1 |   |   |
 | `challenge_to_game` | 1 |   |   |
 | `champion` | 1 | `true` |   |
-| `change` | 1 |   |   |
+| `change` | 1 | The amount to change an auxiliary counter by, clamped within min/max bounds. |   |
 | `chaos_ending` | 1 |   |   |
 | `Chaos_Growl` | 1 |   |   |
 | `chapter_cutscene` | 1 |   |   |
-| `character_filter` | 1 |   |   |
-| `character_sphere_offset` | 1 |   |   |
+| `character_filter` | 1 | Specifies the list of character types that the unit will move towards. |   |
+| `character_sphere_offset` | 1 | The offset distance from the character's collision sphere used for particle character collision. |   |
 | `Charging` | 1 |   |   |
 | `charm_past_alt` | 1 |   |   |
 | `CharmedDip` | 1 |   |   |
@@ -6235,7 +6235,7 @@ Use this to spot any completely undocumented keys.
 | `choose_cat_with_parasite` | 1 | `true` |   |
 | `choose_one` | 1 |   |   |
 | `choosecats` | 1 |   |   |
-| `circular_variance` | 1 |   |   |
+| `circular_variance` | 1 | The radius of circular variance in tiles applied to the final landing position of a knockback effect, adding horizontal scatter. |   |
 | `classes` | 1 |   |   |
 | `cleanse_on_apply` | 1 | `false` |   |
 | `clear_token` | 1 | `do_not_end_turn`, `map_equip_items2`, `melee_cat_spit_ignore`, `melee_move2`, `take_cats_inside` |   |
@@ -6286,11 +6286,11 @@ Use this to spot any completely undocumented keys.
 | `complete_chapters` | 1 |   |   |
 | `CompleteItemSet` | 1 |   |   |
 | `CompletionCheckmarkTooltip` | 1 |   |   |
-| `complicated_abilities` | 1 |   |   |
-| `complicated_passives` | 1 |   |   |
+| `complicated_abilities` | 1 | The list of ability names that have complex logic and may be hidden from simplified views. |   |
+| `complicated_passives` | 1 | The list of passive names that have complex logic and may be hidden from simplified views. |   |
 | `concentrate` | 1 |   | 1 |
 | `concheck` | 1 |   |   |
-| `considered_forms` | 1 |   |   |
+| `considered_forms` | 1 | An array of form names considered for growth decisions. |   |
 | `continual_emission` | 1 | `true` | 1 |
 | `ControlRebind_Failed` | 1 |   |   |
 | `ControlRebind_RemovedBinding` | 1 |   |   |
@@ -6306,22 +6306,22 @@ Use this to spot any completely undocumented keys.
 | `create_temp_ability` | 1 | `true` |   |
 | `crit_multiplier_bonus` | 1 |   |   |
 | `cross` | 1 |   |   |
-| `crossfade_speed` | 1 |   |   |
+| `crossfade_speed` | 1 | The speed of the crossfade transition when switching music. |   |
 | `CurrentTurnIndicator_GoToAlly` | 1 |   |   |
 | `CurrentTurnIndicator_GoToEnemy` | 1 |   |   |
 | `CurrentWeaponAddPoison` | 1 |   |   |
 | `custom_aoe_mirror` | 1 |   |   |
-| `custom_aoe_util_mirror` | 1 |   |   |
+| `custom_aoe_util_mirror` | 1 | An array of coordinate pairs defining a mirrored Area of Effect pattern, where each inner array represents a [row, column] offset from the target tile. |   |
 | `cut_wires` | 1 |   |   |
 | `Cutscene_AdventureEmbark` | 1 |   |   |
-| `cWaggle3x3` | 1 |   |   |
+| `cWaggle3x3` | 1 | An even larger clone of cWaggle2x2 that occupies 3x3 tiles. |   |
 | `damage_1` | 1 |   |   |
 | `damage_cant_be_zero` | 1 | `true` |   |
 | `damage_collided_only` | 1 | `true` |   |
 | `damage_full` | 1 |   |   |
 | `damage_half` | 1 |   |   |
 | `damage_multiplier` | 1 |   |   |
-| `damage_threshold` | 1 |   |   |
+| `damage_threshold` | 1 | The amount of damage taken that triggers this immediate ability reaction. |   |
 | `DamageBlocked` | 1 |   |   |
 | `DamageBlocked_CanCreeper` | 1 |   |   |
 | `DamageCatCorpse` | 1 |   |   |
@@ -6337,7 +6337,7 @@ Use this to spot any completely undocumented keys.
 | `DamageMiss` | 1 |   |   |
 | `DamageShield` | 1 |   |   |
 | `DashRandomly` | 1 |   |   |
-| `data` | 1 |   |   |
+| `data` | 1 | An integer value used to store auxiliary data for the temporary effect, such as the number of times a triggered effect can still fire. |   |
 | `dead_facecenter` | 1 |   | 1 |
 | `dead_faceleft` | 1 |   | 1 |
 | `DeathExplode` | 1 |   |   |
@@ -6370,8 +6370,8 @@ Use this to spot any completely undocumented keys.
 | `devious` | 1 |   | 1 |
 | `devious2` | 1 |   | 1 |
 | `dexcheck` | 1 |   |   |
-| `dice_abilities` | 1 |   |   |
-| `dice_size` | 1 |   |   |
+| `dice_abilities` | 1 | A list of ability names associated with the faces of a dice roll. |   |
+| `dice_size` | 1 | The number of sides on the die used by the dice behavior. |   |
 | `different_from_last_x_cats` | 1 |   |   |
 | `dig` | 1 |   |   |
 | `disallow_items` | 1 | `Nuke`, `all` |   |
@@ -6380,10 +6380,10 @@ Use this to spot any completely undocumented keys.
 | `distraught` | 1 |   | 1 |
 | `dive` | 1 |   |   |
 | `dj_segment` | 1 |   |   |
-| `do_best_multiple` | 1 |   |   |
+| `do_best_multiple` | 1 | A list of actions evaluated for optimal outcome; the best possible combination is chosen. |   |
 | `do_not_move_on_top` | 1 | `true` |   |
-| `do_one` | 1 |   |   |
-| `do_priority_alternating` | 1 |   |   |
+| `do_one` | 1 | Specifies an array of ability references that will be used for one round-end bonus turn pattern. |   |
+| `do_priority_alternating` | 1 | A list of actions executed in priority order, alternating between entries on successive uses. |   |
 | `do_sidequest_sequence` | 1 | `beaniesquest_complete`, `beaniesquest_fail`, `beaniesquest_intro` |   |
 | `donate_10` | 1 |   |   |
 | `donate_15` | 1 |   |   |
@@ -6478,12 +6478,12 @@ Use this to spot any completely undocumented keys.
 | `expires_on_move` | 1 | `true` |   |
 | `Explody` | 1 |   |   |
 | `Explosive` | 1 | `MegaGuppy_TransformExplosive` |   |
-| `extra_bound_planes` | 1 |   |   |
+| `extra_bound_planes` | 1 | An array defining additional collision planes that bound the room's playable area. |   |
 | `extra_coins_per_stack` | 1 |   |   |
 | `Extra_CrowdGasp` | 1 |   |   |
 | `Extra_CrowdMinorGasp` | 1 |   |   |
 | `Extra_EventBadCrit` | 1 |   |   |
-| `eyebrow2` | 1 |   |   |
+| `eyebrow2` | 1 | The visual ID (integer) of the second eyebrow part applied to the cat. |   |
 | `eyebrow_rotation` | 1 |   |   |
 | `eyebrow_up` | 1 |   |   |
 | `eyes_closed` | 1 |   | 1 |
@@ -6616,10 +6616,10 @@ Use this to spot any completely undocumented keys.
 | `FoodMove` | 1 |   |   |
 | `FoodStorage` | 1 |   | 1 |
 | `force_current_cat_use_ability` | 1 | `neck_NukeBonus_remote` |   |
-| `force_end` | 1 |   |   |
-| `force_frame` | 1 |   |   |
+| `force_end` | 1 | The force vector (or scalar magnitude) applied to particles at the end of their lifespan. |   |
+| `force_frame` | 1 | Forces the pickup to display a specific animation frame. |   |
 | `force_no_hit_animation` | 1 | `true` |   |
-| `force_start` | 1 |   |   |
+| `force_start` | 1 | The force vector (or scalar magnitude) applied to particles at the start of their lifespan. |   |
 | `ForceTrample` | 1 |   |   |
 | `form_in` | 1 | `Water` |   |
 | `form_out` | 1 | `Out` |   |
@@ -6629,7 +6629,7 @@ Use this to spot any completely undocumented keys.
 | `format2` | 1 | `TEAMNAME_FORMAT2` | 1 |
 | `formchange` | 1 | `BigHolding`, `BigHoldingCat`, `SmallHolding`, `SmallHoldingCat` |   |
 | `forward_only` | 1 | `true` |   |
-| `frame_range` | 1 |   |   |
+| `frame_range` | 1 | Specifies the animation frame range (start and end) for the pickup's sprite. |   |
 | `frank_offscreen_to_right` | 1 |   |   |
 | `frank_right` | 1 |   |   |
 | `frank_right_to_offscreen` | 1 |   |   |
@@ -6659,7 +6659,7 @@ Use this to spot any completely undocumented keys.
 | `GlobalEnemyAutoRevive` | 1 |   |   |
 | `Grappling` | 1 |   |   |
 | `Gravity` | 1 |   |   |
-| `groups` | 1 |   |   |
+| `groups` | 1 | Determines which skin groups are applied to the unit. |   |
 | `grow_ability` | 1 | `MotherTumorGrow` |   |
 | `Grown` | 1 |   |   |
 | `guaranteed_food` | 1 |   |   |
@@ -6687,7 +6687,7 @@ Use this to spot any completely undocumented keys.
 | `Hint_CrackedVisuals2` | 1 |   |   |
 | `Hint_CrackedVisuals3` | 1 |   |   |
 | `hint_no_corpse` | 1 | `true` |   |
-| `hint_persistent_elements` | 1 |   |   |
+| `hint_persistent_elements` | 1 | An array of element types that persist as hints during this weather (e.g., [Ice Wind]). |   |
 | `Hissx` | 1 |   |   |
 | `Holding` | 1 |   |   |
 | `holy` | 1 |   |   |
@@ -6707,18 +6707,18 @@ Use this to spot any completely undocumented keys.
 | `HumanDead` | 1 |   |   |
 | `HummingBird` | 1 |   |   |
 | `hunter_portrait` | 1 |   | 1 |
-| `icon_ready` | 1 |   |   |
+| `icon_ready` | 1 | The ID of the icon displayed when the countdown is ready. |   |
 | `ignore_during_movement` | 1 | `true` |   |
 | `ignore_if_str_aux_equals` | 1 | `ModelingClay_Default` |   |
 | `ignore_mouseover` | 1 | `true` |   |
 | `ignore_self` | 1 | `true` |   |
 | `ignore_tagged_sources` | 1 | `megadino` |   |
 | `ignore_tiles` | 1 | `true` |   |
-| `inanimate_can_receive_specific_statuses` | 1 |   |   |
+| `inanimate_can_receive_specific_statuses` | 1 | A list of status effect names that even inanimate objects can receive. |   |
 | `include_coins` | 1 | `true` |   |
 | `include_passives` | 1 | `true` |   |
 | `infinite` | 1 |   |   |
-| `inherit_velocity` | 1 |   |   |
+| `inherit_velocity` | 1 | The fraction (0 to 1) of the character's velocity inherited by particles upon collision. |   |
 | `initial_charge` | 1 |   |   |
 | `initial_cooldown` | 1 |   |   |
 | `InitialPhase` | 1 |   |   |
@@ -6777,7 +6777,7 @@ Use this to spot any completely undocumented keys.
 | `kills` | 1 |   |   |
 | `kiss_meat` | 1 |   |   |
 | `knife` | 1 |   |   |
-| `knockback_damage` | 1 |   |   |
+| `knockback_damage` | 1 | The amount of damage dealt to the target upon knockback. |   |
 | `knockback_modifier` | 1 | `rotate_cw` |   |
 | `LargeAttic` | 1 |   |   |
 | `LargeBirdPool` | 1 |   |   |
@@ -6821,7 +6821,7 @@ Use this to spot any completely undocumented keys.
 | `listen` | 1 |   |   |
 | `Lit` | 1 |   |   |
 | `lock_mouse` | 1 |   |   |
-| `look_at_offset` | 1 |   |   |
+| `look_at_offset` | 1 | A 3D vector offset for the look-at target position. |   |
 | `looks` | 1 |   |   |
 | `loot_heart` | 1 |   |   |
 | `LoseMana` | 1 |   |   |
@@ -6997,13 +6997,13 @@ Use this to spot any completely undocumented keys.
 | `MoonHead_Uncrack` | 1 |   |   |
 | `mostly_food` | 1 |   |   |
 | `Mounted` | 1 |   |   |
-| `mouseover_priority` | 1 |   |   |
+| `mouseover_priority` | 1 | The priority value for mouseover selection, higher values take precedence. |   |
 | `mouth_open` | 1 |   | 1 |
 | `MouthFull` | 1 |   |   |
-| `move_pool` | 1 |   |   |
+| `move_pool` | 1 | The list of move ability names available for random selection during level-up or generation. |   |
 | `move_short` | 1 | `true` |   |
-| `move_then_do_all` | 1 |   |   |
-| `move_then_do_priority` | 1 |   |   |
+| `move_then_do_all` | 1 | The unit moves, then executes all actions in the list in sequence. |   |
+| `move_then_do_priority` | 1 | The unit moves, then executes the first successful action from the prioritized list. |   |
 | `MoveForBarrage` | 1 |   |   |
 | `MoveForDash` | 1 |   |   |
 | `MoveForGrass` | 1 |   |   |
@@ -7044,7 +7044,7 @@ Use this to spot any completely undocumented keys.
 | `not_on_kill` | 1 | `true` |   |
 | `nothanks` | 1 |   |   |
 | `Nothing` | 1 |   |   |
-| `nouns` | 1 |   |   |
+| `nouns` | 1 | The list of noun strings used for procedural naming of units. |   |
 | `NPC_Location_Exit` | 1 |   |   |
 | `NPC_Location_Open` | 1 |   |   |
 | `NPC_Location_Tracy_Open` | 1 |   |   |
@@ -7083,7 +7083,7 @@ Use this to spot any completely undocumented keys.
 | `outro` | 1 |   |   |
 | `outros` | 1 |   |   |
 | `outsmart` | 1 |   |   |
-| `override_chain_knockback` | 1 |   |   |
+| `override_chain_knockback` | 1 | Overrides the chain knockback distance for the knockback effect. |   |
 | `override_hit_animation` | 1 | `true` |   |
 | `Paper_Appear` | 1 |   |   |
 | `Paper_Away` | 1 |   |   |
@@ -7091,13 +7091,13 @@ Use this to spot any completely undocumented keys.
 | `ParticleCharacterCollision` | 1 |   |   |
 | `ParticleGlobalForce` | 1 |   |   |
 | `ParticleLineCollisions` | 1 |   |   |
-| `particles` | 1 |   |   |
+| `particles` | 1 | An array of particle system names to be used for this weather effect. |   |
 | `ParticleTornadoForce` | 1 |   |   |
 | `PartyBlower` | 1 |   |   |
 | `pass_ani` | 1 | `pass` |   |
 | `passive0` | 1 | `HotBlooded`, `SelfAssured` |   |
-| `passive_pieces` | 1 |   |   |
-| `passives_health_threshold` | 1 |   |   |
+| `passive_pieces` | 1 | The list of passive boss piece names that are used in the Chaos boss fight. |   |
+| `passives_health_threshold` | 1 | The health percentage threshold at which the Chaos boss's passive pieces activate. |   |
 | `past` | 1 |   |   |
 | `patch_up` | 1 |   |   |
 | `PauseMenu_Close` | 1 |   |   |
@@ -7108,7 +7108,7 @@ Use this to spot any completely undocumented keys.
 | `petted2` | 1 |   | 1 |
 | `pick_lock` | 1 |   |   |
 | `pick_n` | 1 |   |   |
-| `pickup_type` | 1 |   |   |
+| `pickup_type` | 1 | Specifies the pickup behavior category (e.g., 1 for coins). |   |
 | `PickupCoin` | 1 |   |   |
 | `Pigeon` | 1 |   |   |
 | `pilfer` | 1 |   |   |
@@ -7120,9 +7120,9 @@ Use this to spot any completely undocumented keys.
 | `playlist` | 1 | `call_letters`, `commercialbreak`, `commercials`, `segments`, `songs` |   |
 | `Plural_Team` | 1 |   |   |
 | `Plural_Team_EmptyHouse` | 1 |   |   |
-| `point` | 1 |   |   |
+| `point` | 1 | The center point of the tornado force effect. |   |
 | `poopcat` | 1 |   | 1 |
-| `pop_chance` | 1 |   |   |
+| `pop_chance` | 1 | The percentage chance that the first round skip will trigger. |   |
 | `pop_corpses` | 1 | `true` |   |
 | `Pop_Poop` | 1 |   |   |
 | `Possessing` | 1 |   |   |
@@ -7131,7 +7131,7 @@ Use this to spot any completely undocumented keys.
 | `preempt` | 1 |   |   |
 | `prereq` | 1 | `BasementUpgrade`, `BasementUpgrade2`, `BasementUpgrade3`, `BasementUpgrade4`, `Default` |   |
 | `PreventDeathTransforms` | 1 |   |   |
-| `prewarm` | 1 |   |   |
+| `prewarm` | 1 | The number of seconds to prewarm the particle system before displaying. |   |
 | `Primed` | 1 |   |   |
 | `print` | 1 |   |   |
 | `prioritize_change_direction` | 1 | `true` |   |
@@ -7263,12 +7263,12 @@ Use this to spot any completely undocumented keys.
 | `purify` | 1 |   |   |
 | `push_buttons` | 1 |   |   |
 | `push_through` | 1 |   |   |
-| `pushforce` | 1 |   |   |
+| `pushforce` | 1 | The force magnitude applied to push characters away upon particle collision. |   |
 | `put_in_coins` | 1 |   |   |
 | `put_out_of_misery` | 1 |   |   |
 | `pyrophina_backgroundfootstep` | 1 |   |   |
 | `queue` | 1 | `TheChild_TargetBeam` |   |
-| `quotes` | 1 |   |   |
+| `quotes` | 1 | List of dialogue quotes or lines for a boss cutscene. |   |
 | `RandomArmorPickup` | 1 |   |   |
 | `RandomBiggerArmorPickup` | 1 |   |   |
 | `RandomBiggerCatnipPickup` | 1 |   |   |
@@ -7314,8 +7314,8 @@ Use this to spot any completely undocumented keys.
 | `requires_framebuffer` | 1 | `false` |   |
 | `requires_hp_threshold` | 1 |   |   |
 | `requires_weapon` | 1 | `true` |   |
-| `reset_center_because_no_target_halflife` | 1 |   |   |
-| `reset_center_because_of_animation_halflife` | 1 |   |   |
+| `reset_center_because_no_target_halflife` | 1 | The halflife in seconds for resetting pupil center when no target exists. |   |
+| `reset_center_because_of_animation_halflife` | 1 | The halflife in seconds for resetting pupil center due to animation interruption. |   |
 | `reset_pattern_on_round_begin` | 1 | `true` |   |
 | `reset_percent` | 1 |   |   |
 | `reset_turn` | 1 | `act`, `both` |   |
@@ -7329,8 +7329,8 @@ Use this to spot any completely undocumented keys.
 | `Roof_LeftEdge` | 1 |   |   |
 | `Roof_RightEdge` | 1 |   |   |
 | `Roof_Top` | 1 |   |   |
-| `room_positions` | 1 |   |   |
-| `rotation_dampening` | 1 |   |   |
+| `room_positions` | 1 | Maps room names to their [x, y] grid positions within the house layout. |   |
+| `rotation_dampening` | 1 | The dampening factor applied to particle rotation upon bouncing. |   |
 | `rotation_speed_start` | 1 |   |   |
 | `rotation_start` | 1 |   |   |
 | `round_start_bonusturn_pattern` | 1 |   |   |
@@ -7544,7 +7544,7 @@ Use this to spot any completely undocumented keys.
 | `SizeScalePercent` | 1 | `sqrt(1.0+(.05*(X-1)))*100` |   |
 | `skip` | 1 |   |   |
 | `skybox_frame` | 1 | `day_rain`, `day_snow`, `day_thunderstorm`, `day_windy` |   |
-| `slide` | 1 |   |   |
+| `slide` | 1 | The distance in tiles the bounced object slides after contact. |   |
 | `slip_through` | 1 |   |   |
 | `SlotResult_Jackpot_Coins` | 1 |   |   |
 | `SlotResult_Nothing` | 1 |   |   |
@@ -7554,7 +7554,7 @@ Use this to spot any completely undocumented keys.
 | `SmallHolding` | 1 |   |   |
 | `SmallHoldingCat` | 1 |   |   |
 | `smallray_clip` | 1 | `Bunkerlight`, `labligtht` |   |
-| `smallrays` | 1 |   |   |
+| `smallrays` | 1 | An array controlling small ray lighting, typically [intensity, count] or similar. |   |
 | `smile` | 1 |   | 1 |
 | `smug` | 1 |   | 1 |
 | `smug_left` | 1 |   | 1 |
@@ -7572,7 +7572,7 @@ Use this to spot any completely undocumented keys.
 | `speculative_inanimate` | 1 | `false` |   |
 | `spell0` | 1 | `Roll`, `Spit` |   |
 | `spell_graphics_override` | 1 |   |   |
-| `spell_use_groups` | 1 |   |   |
+| `spell_use_groups` | 1 | An array defining the groups of spells available during the spawning phase. |   |
 | `SpellSpawn_ArrowFromAbove` | 1 |   |   |
 | `SpellSpawn_BigMagicMissileBlast` | 1 |   |   |
 | `SpellSpawn_Bolt` | 1 |   |   |
@@ -7629,13 +7629,13 @@ Use this to spot any completely undocumented keys.
 | `spin_steps` | 1 |   |   |
 | `square` | 1 | `true` |   |
 | `Squirrel` | 1 |   |   |
-| `stable_legs` | 1 |   |   |
-| `stack_scale` | 1 |   |   |
+| `stable_legs` | 1 | The number of legs required to remain stable before the head drops. |   |
+| `stack_scale` | 1 | If non-zero, scales the conversion of overheal to status stacks by this factor. |   |
 | `stackable` | 1 | `true` |   |
 | `Standing` | 1 |   |   |
 | `Standing2` | 1 |   |   |
 | `Start_Ceiling` | 1 |   |   |
-| `state_health` | 1 |   |   |
+| `state_health` | 1 | An array of health thresholds corresponding to different shield states. |   |
 | `static` | 1 | `true` |   |
 | `status_explosion_override` | 1 | `WaterConduct` |   |
 | `Status_Unfreeze` | 1 |   |   |
@@ -7647,7 +7647,7 @@ Use this to spot any completely undocumented keys.
 | `StatusApply_Quivered` | 1 |   |   |
 | `StatusApply_Reduce` | 1 |   |   |
 | `StatusApply_Webbed` | 1 |   |   |
-| `statuses_on_enter_form` | 1 |   |   |
+| `statuses_on_enter_form` | 1 | Defines status effects or abilities to apply upon entering this form. |   |
 | `Steven_Appear` | 1 |   |   |
 | `steven_center` | 1 |   |   |
 | `steven_center_to_offscreen` | 1 |   |   |
@@ -7656,9 +7656,9 @@ Use this to spot any completely undocumented keys.
 | `StevenRadioIntro` | 1 |   |   |
 | `Stop` | 1 |   |   |
 | `storage_expansion` | 1 |   |   |
-| `stored_food_value` | 1 |   |   |
+| `stored_food_value` | 1 | The amount of food value this pickup provides when consumed. |   |
 | `StraySpawn` | 1 |   |   |
-| `style` | 1 |   |   |
+| `style` | 1 | An array of style tags applied to the fake damage display (e.g., ['crit']). |   |
 | `subject_frame_inner` | 1 |   |   |
 | `SuccessfulEquipItem_Collar` | 1 |   |   |
 | `SuccessfulEquipItem_face` | 1 |   |   |
@@ -7684,7 +7684,7 @@ Use this to spot any completely undocumented keys.
 | `TarFull` | 1 |   |   |
 | `target_furthest_valid` | 1 | `true` |   |
 | `target_killer` | 1 | `true` |   |
-| `teleport_tracking_halflife` | 1 |   |   |
+| `teleport_tracking_halflife` | 1 | The halflife in seconds for updating pupil tracking after a teleport. |   |
 | `TemporaryItem` | 1 | `BonusAbility`, `TinkererThrow` |   |
 | `terror` | 1 |   | 1 |
 | `TextPopup_COMBAT_POPUP_RUN` | 1 |   |   |
@@ -7724,7 +7724,7 @@ Use this to spot any completely undocumented keys.
 | `Tick_Stun` | 1 |   |   |
 | `Tick_Webbed` | 1 |   |   |
 | `tickdown_this_turn` | 1 | `true` |   |
-| `tile_desire_cost` | 1 |   |   |
+| `tile_desire_cost` | 1 | The amount of desire cost consumed when moving onto a tile. |   |
 | `tileset` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` |   |
 | `timemachine` | 1 |   |   |
 | `TimerChallengeCountdown_0` | 1 |   |   |
@@ -7751,8 +7751,8 @@ Use this to spot any completely undocumented keys.
 | `ToggleButton_On_Click` | 1 |   |   |
 | `ToggleButton_On_Hover` | 1 |   |   |
 | `ToggleButton_On_Press` | 1 |   |   |
-| `towards` | 1 |   |   |
-| `tracking_acquisition_halflife` | 1 |   |   |
+| `towards` | 1 | An array defining the direction vector particles are attracted towards. |   |
+| `tracking_acquisition_halflife` | 1 | The halflife in seconds for acquiring a new tracking target. |   |
 | `tracy_special_item` | 1 |   |   |
 | `transform` | 1 | `TheChild_TransformBoris` |   |
 | `Transformed` | 1 |   |   |
@@ -7800,15 +7800,15 @@ Use this to spot any completely undocumented keys.
 | `tumor_object` | 1 | `MotherTumor` |   |
 | `Turtle` | 1 |   |   |
 | `Turtled` | 1 |   |   |
-| `tutorial_levelup_active_pool` | 1 |   |   |
-| `tutorial_levelup_active_pool_2` | 1 |   |   |
-| `tutorial_levelup_passive_pool` | 1 |   |   |
+| `tutorial_levelup_active_pool` | 1 | The list of active ability names shown during tutorial level-ups. |   |
+| `tutorial_levelup_active_pool_2` | 1 | The secondary list of active ability names shown during tutorial level-ups. |   |
+| `tutorial_levelup_passive_pool` | 1 | The list of passive ability names shown during tutorial level-ups. |   |
 | `TVBotDie` | 1 |   |   |
 | `TVBotDumb` | 1 |   |   |
 | `TVBotObey` | 1 |   |   |
 | `TVBotStop` | 1 |   |   |
 | `Twister_fling` | 1 |   |   |
-| `Twister_loop` | 1 |   |   |
+| `Twister_loop` | 1 | Specifies the looping animation style or behavior for a twister visual effect. |   |
 | `Twister_move` | 1 |   |   |
 | `two_fronts` | 1 | `true` |   |
 | `two_fronts_switch` | 1 | `true` |   |
@@ -7849,7 +7849,7 @@ Use this to spot any completely undocumented keys.
 | `Victory_Cheer5` | 1 |   |   |
 | `Victory_Cheer6` | 1 |   |   |
 | `view_bugs_as_enemies` | 1 | `true` |   |
-| `virtual_head_position` | 1 |   |   |
+| `virtual_head_position` | 1 | A 3D vector defining the virtual head position used for pupil calculations. |   |
 | `w1` | 1 |   |   |
 | `w2` | 1 |   |   |
 | `w3` | 1 |   |   |
@@ -7880,7 +7880,7 @@ Use this to spot any completely undocumented keys.
 | `yellow_needle` | 1 |   |   |
 | `zaratana_backgroundfootstep` | 1 |   |   |
 | `ZealotBomb` | 1 |   |   |
-| `zoomout_catvolume` | 1 |   |   |
+| `zoomout_catvolume` | 1 | The volume level for cat sounds when the camera is zoomed out, as a float. |   |
 ---
 **Summary: 58 undocumented property keys, 33 missing Enum values**
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. |   |

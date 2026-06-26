@@ -20,7 +20,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 664 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 ||
 | [`popup`](Miscellaneous.md#object-popup) | Object || 266 ||
-| [`intro`](./Arrays.md#array-intro) | Array || 239 ||
+| [`intro`](./Arrays.md#array-intro) | Array | Defines the introductory sequence or dialog for an event or quest. | 239 ||
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array || 129 ||
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum || 127 ||
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum || 53 ||
@@ -154,8 +154,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 266 ||
-| `immediate` | Boolean || 221 ||
-| [`frame`](./Enums.md#enum-frame) | Integer || 159 ||
+| `immediate` | Boolean | If true, the forced attack executes immediately without waiting. | 221 ||
+| [`frame`](./Enums.md#enum-frame) | Integer | The sprite frame index used for this arm. | 159 ||
 
 </details>
 
@@ -175,8 +175,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object || 22 ||
-| [`type`](./Enums.md#enum-type) | Enum || 22 ||
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. | 22 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type or trigger context (e.g., 'event', 'melee', 'battle'). | 22 ||
 
 </details>
 
@@ -801,7 +801,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer || 1 ||
+| `coins` | Integer | The amount of coins (or a random range [min max]) awarded when the spawn trigger occurs. | 1 ||
 | `favor` | Integer || 1 ||
 | [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
@@ -824,7 +824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer || 1 ||
+| `coins` | Integer | The amount of coins (or a random range [min max]) awarded when the spawn trigger occurs. | 1 ||
 | `favor` | Integer || 1 ||
 | [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
 | [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||

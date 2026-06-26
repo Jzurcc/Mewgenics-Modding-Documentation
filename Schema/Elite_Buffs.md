@@ -19,15 +19,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2985 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| `icon_frame` | Integer |  | 74 |  |
-| `value` | Float |  | 54 |  |
-| `unique` | Boolean |  | 36 |  |
-| `specific_chapter` | Integer |  | 8 |  |
-| [`minion_alt`](./Enums.md#enum-minion_alt) | Enum |  | 5 |  |
-| `rollable` | Boolean |  | 5 |  |
-| `only_at_battle_start` | Boolean |  | 2 |  |
-| `requires_corpse` | Boolean |  | 2 |  |
-| `roll_limit` | Integer |  | 2 |  |
+| `icon_frame` | Integer | The sprite frame index for the elite buff's icon. | 74 |  |
+| `value` | Float | The magnitude or stat reference for this elite buff (e.g., numeric, 'spd', 'con'). | 54 |  |
+| `unique` | Boolean | If true, this elite buff can only be applied once per unit. | 36 |  |
+| `specific_chapter` | Integer | Restricts this elite buff to only appear in the specified chapter. | 8 |  |
+| [`minion_alt`](./Enums.md#enum-minion_alt) | Enum | Specifies an alternative minion buff variant to use. | 5 |  |
+| `rollable` | Boolean | If false, this buff is excluded from random roll pools. | 5 |  |
+| `only_at_battle_start` | Boolean | If true, this buff only applies when the unit appears at battle start. | 2 |  |
+| `requires_corpse` | Boolean | If true, the buff requires a corpse on the battlefield to function. | 2 |  |
+| `roll_limit` | Integer | The maximum number of times this buff can be rolled for a single unit. | 2 |  |
 
 </details>
 
@@ -107,8 +107,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 70 |  |
-| `knockback` | Enum / Integer |  | 24 |  |
-| [`elements`](./Arrays.md#array-elements) | Array |  | 10 |  |
+| `knockback` | Enum / Integer | The number of tiles to push the target away from the attacker; can be negative to pull the target closer, or 'str' to scale with the attacker's strength stat. | 24 |  |
+| [`elements`](./Arrays.md#array-elements) | Array | A list of elemental types applied to the damage instance, such as Heat or Fire, used for weaknesses, resistances, and visual effects. | 10 |  |
 
 </details>
 
@@ -211,8 +211,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum |  | 38 |  |
-| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum |  | 2 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 38 |  |
+| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | Prevents spawning if a unit with the specified tag (e.g., 'ancestorset_shade') already exists. | 2 |  |
 
 </details>
 
@@ -252,7 +252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Zombie` | Number |  | 2 |  |
+| `Zombie` | Number | The number of stacks of the Zombie status to apply (resurrection effect). | 2 |  |
 </details> 
 
 ---
@@ -328,9 +328,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer |  | 5 |  |
-| `health` | Integer |  | 4 |  |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object || 3 ||
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 5 |  |
+| `health` | Integer | The unit's base health, specified as an absolute integer or a percentage modifier. | 4 |  |
+| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the revival or aura triggers. | 3 ||
 
 </details>
 
@@ -350,9 +350,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `aura_effects_allies` | Boolean || 4 ||
-| `range` | Enum / Integer || 4 ||
-| `stacks` | Enum / Integer || 4 ||
+| `aura_effects_allies` | Boolean | If false, the aura does not affect allied units. | 4 ||
+| `range` | Enum / Integer | The range (in tiles) of the aura, or 'global' for infinite range. | 4 ||
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 ||
 
 </details>
 
@@ -372,10 +372,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object || 4 ||
-| [`type`](./Enums.md#enum-type) | Enum || 4 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 4 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type or trigger context (e.g., 'event', 'melee', 'battle'). | 4 ||
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 4 ||
-| [`elements`](./Arrays.md#array-elements) | Array || 4 ||
+| [`elements`](./Arrays.md#array-elements) | Array | A list of elemental types applied to the damage instance, such as Heat or Fire, used for weaknesses, resistances, and visual effects. | 4 ||
 
 </details>
 

@@ -21,9 +21,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`intro`](#object-intro) | Object | Event Node: The initial text block when a story event first loads. | 239 ||
 | [`main`](#object-main) | Object | Event Node: The central hub or recurring menu of a story event. | 227 ||
 | [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 218 ||
-| `cha` | Enum / Integer |  | 89 |  |
-| `con` | Enum / Integer || 79 ||
-| `spd` | Enum / Integer || 78 ||
+| `cha` | Enum / Integer | Specifies the charisma stat value as an integer or 'aux' for auxiliary stat assignment. | 89 |  |
+| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 79 ||
+| `spd` | Enum / Integer | The speed stat value or modifier for the unit. | 78 ||
 | `int` | Enum / Integer || 66 ||
 | `lck` | Enum / Integer || 53 ||
 | `str` | Enum / Integer || 45 ||
@@ -38,7 +38,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | `Number` || 4 ||
 | [`label`](./Strings.md#string-label) | String || 3 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 3 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 3 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 3 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the 'Good' action. | 3 ||
 | [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 3 ||
 | [`pick`](#object-pick) | Object | Examples: `{ ... }` | 2 ||
@@ -135,7 +135,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_heal` | `Number` || 15 ||
 | `party_damage` | `Number` || 15 ||
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 ||
-| `heal` | `Number` || 13 ||
+| `heal` | `Number` | The amount of health restored, specified as a flat number or a formula string that evaluates to a healing value. | 13 ||
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 ||
 | [`party_status_next_fight`](#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 ||
@@ -333,7 +333,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gain_clone_familiar`](#object-gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 ||
 | [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 ||
-| `heal` | `Number` || 1 ||
+| `heal` | `Number` | The amount of health restored, specified as a flat number or a formula string that evaluates to a healing value. | 1 ||
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
 | `next_event_bonus` | Number || 1 ||
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 ||
@@ -524,7 +524,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`scale`](./Events_and_Encounters.md#context-scale) | Number | Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 ||
 | [`turnon`](#object-turnon) | Object | Event Node: Story branch or dialog option representing the \'Turnon\' action. | 2 ||
 | [`altar_sacrifice`](#object-altar_sacrifice) | Object | Event Action: Triggers the altar sacrifice progression logic. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | [`arm`](#object-arm) | Object | Event Node: Story branch or dialog option representing the \'Arm\' action. | 1 ||
 | [`attach_amplifier`](#object-attach_amplifier) | Object | Event Node: Story branch or dialog option representing the 'Attach Amplifier' action. | 1 ||
@@ -738,46 +738,46 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 131 ||
-| [`Fear`](./Enums.md) | Integer || 29 | 2 |
-| [`Poison`](./Enums.md) | Integer || 28 | 4 |
-| [`Bleed`](./Enums.md) | Integer || 20 | 2 |
+| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 29 | 2 |
+| [`Poison`](./Enums.md) | Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 28 | 4 |
+| [`Bleed`](./Enums.md) | Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 20 | 2 |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
-| [`AllStatsUp`](./Enums.md) | Integer || 7 | 1 |
-| [`SpeedUp`](./Enums.md) | Integer || 5 | -2 |
-| [`StrengthUp`](./Enums.md) | Integer || 5 | 2 |
+| [`AllStatsUp`](./Enums.md) | Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 7 | 1 |
+| [`SpeedUp`](./Enums.md) | Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. | 5 | -2 |
+| [`StrengthUp`](./Enums.md) | Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. | 5 | 2 |
 | [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum || 4 | Flush |
-| [`ConstitutionUp`](./Enums.md) | Integer || 4 | -1 |
-| [`AddStartingMana`](./Enums.md) | Integer || 3 | 5 |
-| [`Burn`](./Enums.md) | Integer || 3 | 5 |
-| [`CharismaUp`](./Enums.md) | Integer || 3 | -2 |
-| [`Confusion`](./Enums.md) | Integer || 3 | 2 |
-| [`HealthRegenUp`](./Enums.md) | Integer || 3 | 2 |
-| [`Webbed`](./Enums.md) | Integer || 3 | 2 |
-| [`Blind`](./Enums.md) | Integer || 2 | 6 |
-| [`Bruise`](./Enums.md) | Integer || 2 | 1 |
-| [`DexterityUp`](./Enums.md) | Integer || 2 | 2 |
-| [`IntelligenceUp`](./Enums.md) | Integer || 2 | 3 |
-| [`NoHealthRegen`](./Enums.md) | Integer || 2 | 1 |
-| [`Sleep`](./Enums.md) | Integer || 2 | 2 |
-| [`Stun`](./Enums.md) | Integer || 2 | 1 |
+| [`ConstitutionUp`](./Enums.md) | Integer | The amount of Constitution (HP) increase, or an array with duration and chance. | 4 | -1 |
+| [`AddStartingMana`](./Enums.md) | Integer | The amount of bonus mana the unit starts each battle with. | 3 | 5 |
+| [`Burn`](./Enums.md) | Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 3 | 5 |
+| [`CharismaUp`](./Enums.md) | Integer | The amount of Charisma stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. | 3 | -2 |
+| [`Confusion`](./Enums.md) | Integer | The number of turns of Confusion applied, or an array with duration and chance. | 3 | 2 |
+| [`HealthRegenUp`](./Enums.md) | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 3 | 2 |
+| [`Webbed`](./Enums.md) | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 3 | 2 |
+| [`Blind`](./Enums.md) | Integer | The number of stacks of Blind to apply, reducing accuracy; can be an array `[stacks, probability]` for a chance-based application. | 2 | 6 |
+| [`Bruise`](./Enums.md) | Integer | The number of Bruise stacks applied, or an array with duration and chance. | 2 | 1 |
+| [`DexterityUp`](./Enums.md) | Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. | 2 | 2 |
+| [`IntelligenceUp`](./Enums.md) | Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. | 2 | 3 |
+| [`NoHealthRegen`](./Enums.md) | Integer | If 1 or defined as an object, prevents health regeneration. | 2 | 1 |
+| [`Sleep`](./Enums.md) | Integer | The number of stacks of Sleep, putting the unit to sleep for that many turns; can be an array `[stacks, probability]`. | 2 | 2 |
+| [`Stun`](./Enums.md) | Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | 1 |
 | [`AbilityOnBattleStart`](./Enums.md) | Enum || 1 | Flush |
-| [`AddInitiative`](./Enums.md) | Integer || 1 | -99 |
-| [`AlphaTurns`](./Enums.md) | Integer || 1 | 1 |
+| [`AddInitiative`](./Enums.md) | Integer | The amount to add to the unit's initiative score, affecting turn order. | 1 | -99 |
+| [`AlphaTurns`](./Enums.md) | Integer | The number of additional alpha turns the unit receives at the start of combat. | 1 | 1 |
 | [`ChangeTileUnderCharacterAtStart`](./Enums.md) | Enum || 1 | GlassTile |
-| [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
+| [`DivineShield`](./Enums.md) | Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
 | [`Fights`](./Enums.md) | Integer || 1 | 3 |
-| [`LuckUp`](./Enums.md) | Integer || 1 | 1 |
-| [`Madness`](./Enums.md) | Integer || 1 | 1 |
-| [`MissChance`](./Enums.md) | Integer || 1 | 10 |
-| [`NoManaRegen`](./Enums.md) | Integer || 1 | 1 |
-| [`PermanentConfusion`](./Enums.md) | Integer || 1 | 1 |
-| [`ProbeCharmed`](./Enums.md) | Integer || 1 | 1 |
-| [`RandomStatUp`](./Enums.md) | Integer || 1 | 1 |
-| [`Rot`](./Enums.md) | Integer || 1 | 2 |
-| [`Slow`](./Enums.md) | Integer || 1 | 3 |
-| [`SpiderInfested`](./Enums.md) | Integer || 1 | 1 |
-| [`Tarred`](./Enums.md) | Integer || 1 | 1 |
-| [`TempStrengthUp`](./Enums.md) | Integer || 1 | 1 |
+| [`LuckUp`](./Enums.md) | Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. | 1 | 1 |
+| [`Madness`](./Enums.md) | Integer | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. | 1 | 1 |
+| [`MissChance`](./Enums.md) | Integer | The percentage chance that the unit's attacks will miss. | 1 | 10 |
+| [`NoManaRegen`](./Enums.md) | Integer | If 1 or defined as an object, prevents mana regeneration. | 1 | 1 |
+| [`PermanentConfusion`](./Enums.md) | Integer | The number of PermanentConfusion stacks applied, causing persistent confusion. | 1 | 1 |
+| [`ProbeCharmed`](./Enums.md) | Integer | The number of stacks of ProbeCharmed status, which charms the target when probed. | 1 | 1 |
+| [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase (or decrease if negative) applied to a random stat. | 1 | 1 |
+| [`Rot`](./Enums.md) | Integer | The number of stacks of Rot, causing damage over time and potentially spawning a fly on death; can be an array `[stacks, probability]`. | 1 | 2 |
+| [`Slow`](./Enums.md) | Integer | The number of turns of Slow applied, or an array with duration and chance. | 1 | 3 |
+| [`SpiderInfested`](./Enums.md) | Integer | The number of turns the target is infested with spiders, taking damage over time. | 1 | 1 |
+| [`Tarred`](./Enums.md) | Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. | 1 | 1 |
+| [`TempStrengthUp`](./Enums.md) | Integer | Alias for TempStrengthUp; temporarily increases the unit's strength stat. | 1 | 1 |
 
 </details>
 
@@ -797,13 +797,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer || 37 ||
+| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 37 ||
 | `random` | Number || 25 ||
 | `int` | Enum / Integer || 23 ||
 | `lck` | Enum / Integer || 20 ||
-| `spd` | Enum / Integer || 20 ||
+| `spd` | Enum / Integer | The speed stat value or modifier for the unit. | 20 ||
 | `str` | Enum / Integer || 18 ||
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Variable || 16 ||
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Variable | Specifies the charisma stat value as an integer or 'aux' for auxiliary stat assignment. | 16 ||
 | `dex` | Enum / Integer || 10 ||
 
 </details>
@@ -852,7 +852,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 ||
 | [`label`](./Strings.md#string-label) | Variable || 57 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 56 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 55 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 55 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 2 ||
@@ -881,7 +881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 3 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 
 </details>
 
@@ -901,7 +901,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array / Enum || 40 ||
+| [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 40 ||
 | [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 34 ||
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum || 31 ||
 | [`side`](./Enums.md#enum-side) | Enum || 3 ||
@@ -924,7 +924,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum || 39 ||
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. | 39 ||
 | [`restrict`](./Arrays.md#array-restrict) | Array || 30 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -986,7 +986,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 32 ||
 | [`label`](./Strings.md#string-label) | String || 32 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 32 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 30 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 30 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 ||
 
 </details>
@@ -1008,7 +1008,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 25 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 25 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 25 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 ||
 | [`label`](./Strings.md#string-label) | Variable || 25 ||
 | [`stat`](./Math_Equations.md) | Equation || 25 ||
@@ -1034,7 +1034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `eyes` | Number || 13 ||
-| `mouth` | Number || 11 ||
+| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. | 11 ||
 | `ears` | Number || 10 ||
 | `eyebrows` | Number || 8 ||
 | `head` | Enum / Number | Event Node: Story branch or dialog option representing the 'Head' action. | 7 ||
@@ -1042,12 +1042,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `arms` | Number || 6 ||
 | `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 6 ||
 | `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 ||
-| `eye1` | Integer || 3 ||
-| `arm1` | Number || 2 ||
+| `eye1` | Integer | The visual ID (integer) of the first eye part applied to the cat. | 3 ||
+| `arm1` | Number | The visual ID (integer/number) of the first arm part applied to the cat. | 2 ||
 | `ear1` | Integer || 2 ||
-| `eyebrow1` | Integer || 2 ||
-| `leg1` | Integer || 2 ||
-| `eye2` | Integer || 1 ||
+| `eyebrow1` | Integer | The visual ID (integer) of the first eyebrow part applied to the cat. | 2 ||
+| `leg1` | Integer | The visual ID (integer) of the first leg part applied to the cat. | 2 ||
+| `eye2` | Integer | The visual ID (integer) of the second eye part applied to the cat. | 1 ||
 
 </details>
 
@@ -1068,17 +1068,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 ||
-| [`Fear`](./Enums.md) | Integer || 6 | 2 |
-| [`Poison`](./Enums.md) | Integer || 5 | 4 |
+| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 6 | 2 |
+| [`Poison`](./Enums.md) | Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 5 | 4 |
 | [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum || 3 | Flush |
-| [`NoHealthRegen`](./Enums.md) | Integer || 3 | 1 |
-| [`Bleed`](./Enums.md) | Integer || 1 | 2 |
-| [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
-| [`HealthRegenUp`](./Enums.md) | Integer || 1 | 2 |
-| [`Immobile`](./Enums.md) | Integer || 1 | 1 |
-| [`Tangled`](./Enums.md) | Integer || 1 | 2 |
-| [`Tarred`](./Enums.md) | Integer || 1 | 1 |
-| [`Webbed`](./Enums.md) | Integer || 1 | 2 |
+| [`NoHealthRegen`](./Enums.md) | Integer | If 1 or defined as an object, prevents health regeneration. | 3 | 1 |
+| [`Bleed`](./Enums.md) | Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
+| [`DivineShield`](./Enums.md) | Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
+| [`HealthRegenUp`](./Enums.md) | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 1 | 2 |
+| [`Immobile`](./Enums.md) | Integer | The number of turns of Immobile applied, or an array with duration and chance. | 1 | 1 |
+| [`Tangled`](./Enums.md) | Integer | The number of turns the target is unable to move, with optional [stacks, probability] format. | 1 | 2 |
+| [`Tarred`](./Enums.md) | Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. | 1 | 1 |
+| [`Webbed`](./Enums.md) | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
@@ -1167,7 +1167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `mouth` | Number || 9 ||
+| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. | 9 ||
 | `count` | Array / Integer | Quantity. | 8 ||
 | `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 ||
 | `ears` | Number || 5 ||
@@ -1176,11 +1176,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 3 ||
 | `eyebrows` | Number || 3 ||
 | `head` | Enum / Number | Event Node: Story branch or dialog option representing the 'Head' action. | 3 ||
-| `arm1` | Number || 2 ||
-| `arm2` | Number || 2 ||
-| `leg1` | Integer || 1 ||
-| `leg2` | Integer || 1 ||
-| `texture` | Integer || 1 ||
+| `arm1` | Number | The visual ID (integer/number) of the first arm part applied to the cat. | 2 ||
+| `arm2` | Number | The visual ID (integer/number) of the second arm part applied to the cat. | 2 ||
+| `leg1` | Integer | The visual ID (integer) of the first leg part applied to the cat. | 1 ||
+| `leg2` | Integer | The visual ID (integer) of the second leg part applied to the cat. | 1 ||
+| `texture` | Integer | The visual ID (integer) of the texture applied to the cat. | 1 ||
 
 </details>
 
@@ -1398,7 +1398,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 ||
 | [`label`](./Strings.md#string-label) | String || 8 ||
 | [`stat`](./Math_Equations.md) | Equation || 8 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 
 </details>
 
@@ -1421,7 +1421,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
 
 </details>
 
@@ -1468,7 +1468,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
 
 </details>
 
@@ -1491,7 +1491,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
 
 </details>
 
@@ -1565,7 +1565,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Variable || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 7 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 6 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 6 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
 
 </details>
@@ -1586,7 +1586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 6 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 6 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
 | [`label`](./Enums.md#enum-label) | Enum || 6 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 ||
@@ -1610,7 +1610,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 6 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 6 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
 | [`label`](./Enums.md#enum-label) | Enum || 6 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 ||
@@ -1637,7 +1637,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
 | [`label`](./Strings.md#string-label) | String || 6 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 6 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
 
 </details>
 
@@ -1662,7 +1662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Variable || 6 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 5 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 ||
 
 </details>
@@ -1712,7 +1712,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Variable || 6 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 6 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
 
 </details>
@@ -1757,10 +1757,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 8 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`Fear`](./Enums.md) | Integer || 3 | 2 |
-| [`Stun`](./Enums.md) | Integer || 2 | 1 |
+| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 3 | 2 |
+| [`Stun`](./Enums.md) | Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | 1 |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`AllStatsUp`](./Enums.md) | Integer || 1 | 1 |
+| [`AllStatsUp`](./Enums.md) | Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 1 | 1 |
 
 </details>
 
@@ -1834,7 +1834,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 5 ||
 | [`stat`](./Math_Equations.md) | Equation || 5 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 
 </details>
 
@@ -1854,7 +1854,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
 | [`label`](./Enums.md#enum-label) | Enum || 4 ||
@@ -1881,7 +1881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
 | [`label`](./Strings.md#string-label) | String || 4 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 3 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 3 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 3 ||
 
 </details>
@@ -1907,7 +1907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
 | [`label`](./Strings.md#string-label) | String || 4 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 3 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
 
 </details>
 
@@ -1927,7 +1927,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 4 ||
 | [`label`](./Enums.md#enum-label) | Enum || 4 ||
@@ -1975,12 +1975,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Enum / Integer || 4 ||
-| `con` | Enum / Integer || 4 ||
+| `cha` | Enum / Integer | Specifies the charisma stat value as an integer or 'aux' for auxiliary stat assignment. | 4 ||
+| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 4 ||
 | `dex` | Enum / Integer || 4 ||
 | `int` | Enum / Integer || 4 ||
 | `lck` | Enum / Integer || 4 ||
-| `spd` | Enum / Integer || 4 ||
+| `spd` | Enum / Integer | The speed stat value or modifier for the unit. | 4 ||
 | `str` | Enum / Integer || 4 ||
 
 </details>
@@ -2001,7 +2001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 4 ||
 | [`label`](./Enums.md#enum-label) | Enum || 4 ||
@@ -2026,7 +2026,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
 | [`label`](./Strings.md#string-label) | String || 4 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 4 ||
@@ -2074,7 +2074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer || 2 ||
+| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 2 ||
 
 </details>
 
@@ -2139,8 +2139,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `count` | Array / Integer | Quantity. | 7 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`Fear`](./Enums.md) | Integer || 3 | 2 |
-| [`Bleed`](./Enums.md) | Integer || 1 | 2 |
+| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 3 | 2 |
+| [`Bleed`](./Enums.md) | Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
 
 </details>
 
@@ -2160,7 +2160,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Enums.md#enum-label) | Enum || 2 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 ||
@@ -2184,7 +2184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 ||
@@ -2232,7 +2232,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -2251,8 +2251,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `initial_health` | Integer || 1 ||
-| [`object`](./Enums.md#enum-object) | Array / Enum || 1 ||
+| `initial_health` | Integer | The starting health of the unit before any modifiers. | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 1 ||
 
 </details>
 
@@ -2321,7 +2321,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ears` | Number || 2 ||
 | `eyebrows` | Number || 2 ||
 | `eyes` | Number || 2 ||
-| `mouth` | Number || 2 ||
+| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. | 2 ||
 
 </details>
 
@@ -2365,7 +2365,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 ||
@@ -2409,7 +2409,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 ||
@@ -2482,7 +2482,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -2596,7 +2596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -2620,7 +2620,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -2693,7 +2693,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 1 ||
 | `fixed_chance` | Number || 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -2765,7 +2765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -2788,7 +2788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -2881,7 +2881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 1 ||
 | `fixed_chance` | Number || 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -2906,7 +2906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -3145,7 +3145,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -3430,7 +3430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -3454,7 +3454,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
@@ -3483,7 +3483,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
@@ -3512,7 +3512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
@@ -3541,7 +3541,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
@@ -3569,7 +3569,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -3683,7 +3683,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -3729,7 +3729,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -3822,7 +3822,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
@@ -3847,7 +3847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum || 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 1 ||
 
 </details>
 
@@ -3935,7 +3935,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -3958,7 +3958,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -3981,7 +3981,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4004,7 +4004,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
@@ -4052,7 +4052,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4075,7 +4075,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4218,7 +4218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4242,7 +4242,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -4291,7 +4291,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | `fixed_chance` | Number || 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
@@ -4341,7 +4341,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4409,7 +4409,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -4433,7 +4433,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4499,7 +4499,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4616,7 +4616,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -4639,7 +4639,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -4827,7 +4827,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
@@ -4925,7 +4925,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -4950,7 +4950,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | `fixed_chance` | Number || 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
@@ -5000,7 +5000,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5164,7 +5164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -5213,7 +5213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -5237,7 +5237,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -5261,7 +5261,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -5287,7 +5287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -5451,7 +5451,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5474,7 +5474,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5569,7 +5569,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -5641,7 +5641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5688,7 +5688,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5897,7 +5897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5920,7 +5920,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5943,7 +5943,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5966,7 +5966,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -5989,7 +5989,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -6012,7 +6012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
@@ -6057,7 +6057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||

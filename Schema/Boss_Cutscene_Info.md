@@ -18,8 +18,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| [`frame_label`](./Enums.md#enum-frame_label) | Enum |  | 67 |  |
-| [`quotes`](./Arrays.md#array-quotes) | Array |  | 36 |  |
+| [`frame_label`](./Enums.md#enum-frame_label) | Enum | Specifies the label for a boss cutscene frame, identifying which character or scene is shown. | 67 |  |
+| [`quotes`](./Arrays.md#array-quotes) | Array | List of dialogue quotes or lines for a boss cutscene. | 36 |  |
 
 </details>
 

@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set`](./Enums.md#enum-set) | Array / Enum |  | 985 |  |
+| [`set`](./Enums.md#enum-set) | Array / Enum | The visual set or furniture style tag (e.g., elegant, guts, Tentacle, wooden, Druid). | 985 |  |
 | `Comfort` | Integer | Applies or references the 'Comfort' effect/state. | 406 |  |
 | `Appeal` | Integer | Applies or references the 'Appeal' effect/state. | 338 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |

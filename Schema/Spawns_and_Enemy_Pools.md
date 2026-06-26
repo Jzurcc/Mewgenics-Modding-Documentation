@@ -19,8 +19,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`image`](./Strings.md#string-image) | String |  | 578 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| `value` | Float |  | 54 |  |
-| [`object`](./Enums.md#enum-object) | Array / Enum |  | 3 |  |
+| `value` | Float | The magnitude or stat reference for this elite buff (e.g., numeric, 'spd', 'con'). | 54 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 3 |  |
 | [`element`](./Engine_LogicKeys.md#valid-property-keys) | Array / Enum | Specific element type required or applied. | 1 |  |
 
 </details>

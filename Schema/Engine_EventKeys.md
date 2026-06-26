@@ -28,13 +28,13 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `parasite` | Boolean | `true` | 102 ||
 | [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum | `alley`, `boneyard`, `bunker`, `caves`, `core` | 90 ||
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 85 ||
-| `auto` | Variable || 82 ||
+| `auto` | Variable | When true, the event triggers automatically. | 82 ||
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 79 ||
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 67 ||
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 63 ||
 | [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 61 ||
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 52 ||
-| `WorldEventLegacyCounter_Jack` | Variable || 50 ||
+| `WorldEventLegacyCounter_Jack` | Variable | Tracks the number of times the Jack world event has occurred. | 50 ||
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 48 ||
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array | Examples: `[ 4 15 ], 5` | 47 ||
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 41 ||
@@ -42,7 +42,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 36 ||
-| `resultHole` | Variable || 32 ||
+| `resultHole` | Variable | Specifies the resulting hole from an event (e.g., digging). | 32 ||
 | [`gain_food`](./Arrays.md#array-gain_food) | Array | Examples: `[ 5 10 ]` | 28 ||
 | [`dimensionx`](./Enums.md#enum-dimensionx) | Enum | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` | 27 ||
 | [`party_damage`](./Arrays.md#array-party_damage) | Array | Examples: `[ 5 10 ]` | 26 ||
@@ -55,7 +55,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`bunker`](./Enums.md#enum-bunker) | Enum | `AREA_NAME_BUNKER`, `mapflag_BunkerUnlocked` | 20 ||
 | [`core`](./Enums.md#enum-core) | Enum | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` | 20 ||
 | [`moon`](./Enums.md#enum-moon) | Enum | `AREA_NAME_MOON`, `mapflag_IceAgeUnlocked`, `mapflag_MoonUnlocked` | 20 ||
-| `AdventureToken_HasTakenNeedle` | Variable || 18 ||
+| `AdventureToken_HasTakenNeedle` | Variable | Indicates whether the unit has taken a needle from the adventure token. | 18 ||
 | [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum | Examples: `BlackShard, JarOfRadiation, ScaldingOrb` | 18 ||
 | [`alley`](./Enums.md#enum-alley) | Enum | `AREA_NAME_ALLEY`, `departed_first_real_adventure` | 18 ||
 | `ambush_next_basic_fights` | Integer | Examples: `1` | 17 ||
@@ -67,8 +67,8 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`sewers`](./Enums.md#enum-sewers) | Enum | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` | 16 ||
 | [`StatusEachTurnBegin`](Cat_Mutations.md#object-statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 16 ||
 | [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 15 ||
-| `AdventureToken_BlueNeedle` | Variable || 14 ||
-| `AdventureToken_RedNeedle` | Variable || 14 ||
+| `AdventureToken_BlueNeedle` | Variable | Specifies the blue needle variant from the adventure token. | 14 ||
+| `AdventureToken_RedNeedle` | Variable | Specifies the red needle variant from the adventure token. | 14 ||
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 14 ||
 | [`iceage`](./Enums.md#enum-iceage) | Enum | `AREA_NAME_ICEAGE`, `mapflag_IceAgeUnlocked` | 14 ||
 | [`jurassic`](./Enums.md#enum-jurassic) | Enum | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` | 14 ||
@@ -76,7 +76,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`theend`](./Enums.md#enum-theend) | Enum | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` | 14 ||
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 13 ||
 | [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Examples: `end_of_time_unlock, meat_world_unlock` | 13 ||
-| `all_disorders` | Variable || 12 ||
+| `all_disorders` | Variable | A list of all disorder IDs available. | 12 ||
 | [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | Examples: `iceage.gon, dimensionx.gon, future.gon` | 12 ||
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 12 ||
 | `current_chapter_common` | Variable | `auto` | 12 ||
@@ -84,18 +84,18 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`caves`](./Enums.md#enum-caves) | Enum | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` | 12 ||
 | [`junkyard`](./Enums.md#enum-junkyard) | Enum | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` | 12 ||
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 ||
-| [`CharmedMaggot`](#object-charmedmaggot) | Object || 11 ||
+| [`CharmedMaggot`](#object-charmedmaggot) | Object | A variant of the Maggot familiar that is charmed (green tint). | 11 ||
 | [`food`](./Arrays.md#array-food) | Array | Examples: `[ 4 8 ], [ 1 3 ], [ 4 7 ]` | 11 ||
-| [`cat`](Characters_and_Bosses.md#object-cat) | Variable || 10 ||
+| [`cat`](Characters_and_Bosses.md#object-cat) | Variable | References the cat unit type. | 10 ||
 | [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 10 ||
-| `HasPlayedMysteriousStranger` | Variable || 10 ||
+| `HasPlayedMysteriousStranger` | Variable | Indicates whether the unit has interacted with the Mysterious Stranger. | 10 ||
 | [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Examples: `CobraStyle, PoisonTips, DeathProof` | 10 ||
 | [`set_subject`](./Enums.md#enum-set_subject) | Enum | Examples: `subject_frame, wall_of_flesh_noartery, throbbing_artery_noflesh` | 10 ||
 | [`bad`](Events_and_Encounters.md#object-bad) | Object | Event Object: Story branch or dialog option representing the 'Bad' action. | 10 ||
 | [`weight`](./Enums.md#enum-weight) | Float | Probability weight for this outcome. | 10 ||
 | `chapter_rare` | Number | Examples: `1` | 10 ||
 | [`good`](#good) | Boolean | `false`, `true` | 8 ||
-| `parasites` | Variable || 8 ||
+| `parasites` | Variable | A list of parasites present. | 8 ||
 | `party_random_mutation` | Integer | Examples: `1` | 8 ||
 | [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 ||
 | `heal_disorder` | Integer | Examples: `2` | 7 ||
@@ -105,61 +105,61 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `consumables` | Number | Examples: `60, 10` | 6 ||
 | [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall` | 6 ||
 | `hide_appearance_changes` | Integer | Examples: `1` | 6 ||
-| `QEVENT_OBELISK_IGNORE` | Variable || 6 ||
-| `QEVENT_OBELISK_REW1` | Variable || 6 ||
-| `QEVENT_OBELISK_REW2` | Variable || 6 ||
-| `QEVENT_OBELISK_REW3` | Variable || 6 ||
-| `QEVENT_OBELISK_REW4` | Variable || 6 ||
-| [`Stinky`](#object-stinky) | Variable || 6 ||
-| `WorldEventLegacyCounter_CrackInTheWall` | Variable || 6 ||
-| `WorldEventLegacyToken_StartDigging` | Variable || 6 ||
+| `QEVENT_OBELISK_IGNORE` | Variable | Flag to ignore the Obelisk quest event. | 6 ||
+| `QEVENT_OBELISK_REW1` | Variable | Reward tier 1 for the Obelisk quest event. | 6 ||
+| `QEVENT_OBELISK_REW2` | Variable | Reward tier 2 for the Obelisk quest event. | 6 ||
+| `QEVENT_OBELISK_REW3` | Variable | Reward tier 3 for the Obelisk quest event. | 6 ||
+| `QEVENT_OBELISK_REW4` | Variable | Reward tier 4 for the Obelisk quest event. | 6 ||
+| [`Stinky`](#object-stinky) | Variable | The Stinky disorder that causes the unit to emit a stench. | 6 ||
+| `WorldEventLegacyCounter_CrackInTheWall` | Variable | Tracks the number of times the Crack in the Wall event has occurred. | 6 ||
+| `WorldEventLegacyToken_StartDigging` | Variable | Token flag to start the digging event. | 6 ||
 | [`chapter`](./Enums.md#enum-chapter) | Enum | `alley` | 6 ||
-| [`JarOfRadiation`](#object-jarofradiation) | Object || 6 ||
+| [`JarOfRadiation`](#object-jarofradiation) | Object | A jar containing radiation, used in events. | 6 ||
 | [`reward`](Events_and_Encounters.md#object-reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 5 ||
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 5 ||
-| `blood_altar_items` | Variable || 5 ||
+| `blood_altar_items` | Variable | A list of items that can be sacrificed at the blood altar. | 5 ||
 | [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | Examples: `infinite_intro` | 5 ||
-| `physical_disorders` | Variable || 5 ||
-| [`SlagTight`](#object-slagtight) | Object || 5 ||
+| `physical_disorders` | Variable | A list of physical disorder IDs. | 5 ||
+| [`SlagTight`](#object-slagtight) | Object | A tight slag object, likely a resource. | 5 ||
 | [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 5 ||
-| `diseases` | Variable || 4 ||
-| `fleshhead_items` | Variable || 4 ||
+| `diseases` | Variable | A list of disease IDs. | 4 ||
+| `fleshhead_items` | Variable | A list of items related to the Fleshhead enemy. | 4 ||
 | [`goto`](./Enums.md#enum-goto) | Enum | Examples: `end` | 4 ||
 | `heal_injury` | Integer | Examples: `1` | 4 ||
-| `inventory` | Variable || 4 ||
+| `inventory` | Variable | The unit's inventory of items. | 4 ||
 | [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | Examples: `BarfBall, FutureSight` | 4 ||
 | [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array | Examples: `Necromancer` | 4 ||
-| `MysteriousStranger_HasLostFinger` | Variable || 4 ||
+| `MysteriousStranger_HasLostFinger` | Variable | Indicates whether the unit has lost a finger to the Mysterious Stranger. | 4 ||
 | [`outcome`](Events_and_Encounters.md#object-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 ||
 | `party_heal_disorder` | Integer | Examples: `2` | 4 ||
 | [`party_permanent_stats_exclude_self`](Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 ||
-| `QEVENT_THROBBINGARTERY_REW3` | Variable || 4 ||
+| `QEVENT_THROBBINGARTERY_REW3` | Variable | Reward tier 3 for the Throbbing Artery quest event. | 4 ||
 | [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | Examples: `[ { prompt "EVENT_TRACY_REW11" weight 1 get_item_from_poo..., [ { prompt "EVE...` | 4 ||
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 4 ||
-| `WorldEventLegacyCounter_ToiletFlushes` | Variable || 4 ||
-| [`JarOfRadiatedBlood`](#object-jarofradiatedblood) | Object || 4 ||
+| `WorldEventLegacyCounter_ToiletFlushes` | Variable | Tracks the number of toilet flushes in the world. | 4 ||
+| [`JarOfRadiatedBlood`](#object-jarofradiatedblood) | Object | A jar containing radiated blood. | 4 ||
 | [`spin`](./Enums.md#enum-spin) | Enum | Examples: `again` | 4 ||
-| [`JarOfChaos`](#object-jarofchaos) | Object || 4 ||
+| [`JarOfChaos`](#object-jarofchaos) | Object | A jar containing chaos essence. | 4 ||
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 3 ||
-| `bone_armor` | Variable || 3 ||
-| `bone_equipment` | Variable || 3 ||
-| [`chapter_specific_item`](#object-chapter_specific_item) | Variable || 3 ||
-| [`CryogenicTimeChamber_Full`](#object-cryogenictimechamber_full) | Object || 3 ||
-| [`end_of_time_unlock`](#object-end_of_time_unlock) | Variable || 3 ||
+| `bone_armor` | Variable | Bone armor item or value. | 3 ||
+| `bone_equipment` | Variable | Bone equipment item or value. | 3 ||
+| [`chapter_specific_item`](#object-chapter_specific_item) | Variable | An item specific to the current chapter. | 3 ||
+| [`CryogenicTimeChamber_Full`](#object-cryogenictimechamber_full) | Object | A full cryogenic time chamber, used for storage. | 3 ||
+| [`end_of_time_unlock`](#object-end_of_time_unlock) | Variable | Unlocks the End of Time area. | 3 ||
 | [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array | Examples: `AnyUnlocked` | 3 ||
 | [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | Examples: `cat` | 3 ||
 | [`make_old`](./Enums.md#enum-make_old) | Enum | Examples: `self` | 3 ||
 | `max_options` | Integer | Examples: `3, 2` | 3 ||
-| `mental_disorders` | Variable || 3 ||
-| `QEVENT_OBELISK_QUES2` | Variable || 3 ||
-| `QEVENT_VOLCANO_REW2` | Variable || 3 ||
-| `QEVENT_VOLCANO_REW3` | Variable || 3 ||
-| [`radiated`](#object-radiated) | Variable || 3 ||
-| [`RestlessDead`](#object-restlessdead) | Variable || 3 ||
-| `resultVeryGood` | Variable || 3 ||
-| [`Scatological`](#object-scatological) | Variable || 3 ||
+| `mental_disorders` | Variable | Specifies the list of mental disorder statuses applied to a unit. | 3 ||
+| `QEVENT_OBELISK_QUES2` | Variable | Determines if the second Obelisk quest event has been completed. | 3 ||
+| `QEVENT_VOLCANO_REW2` | Variable | Determines if the second Volcano reward event has been triggered. | 3 ||
+| `QEVENT_VOLCANO_REW3` | Variable | Determines if the third Volcano reward event has been triggered. | 3 ||
+| [`radiated`](#object-radiated) | Variable | Determines if the unit has been affected by radiation and is now Radiated. | 3 ||
+| [`RestlessDead`](#object-restlessdead) | Variable | Determines if the Restless Dead event is active or if the unit has the Restless Dead status. | 3 ||
+| `resultVeryGood` | Variable | Determines if the event outcome was very good, affecting subsequent choices or rewards. | 3 ||
+| [`Scatological`](#object-scatological) | Variable | Specifies the Scatological disorder, which causes a unit to produce fecal-related effects. | 3 ||
 | `shuffle_options` | Boolean | Examples: `true` | 3 ||
-| [`SlagMight`](#object-slagmight) | Object || 3 ||
+| [`SlagMight`](#object-slagmight) | Object | Specifies the Slag Might item, a powerful trinket or consumable. | 3 ||
 | `spawn_reflection_next_fight` | Integer | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 ||
 | [`transform_item`](./Arrays.md#array-transform_item) | Array | Examples: `[ CryogenicTimeChamber_Empty CryogenicTimeChamber_Full ], [ JarOfRadiation Ja...` | 3 ||
 | [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | Examples: `CryogenicTimeChamber_Full, JarOfChaos, JarOfRadiatedBlood` | 3 ||
@@ -167,52 +167,52 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 2 ||
 | [`battle`](./Math_Equations.md) | Equation | Examples: `{ ... }` | 2 ||
 | [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 2 ||
-| [`Bottles`](#object-bottles) | Object || 2 ||
+| [`Bottles`](#object-bottles) | Object | Specifies the Bottles item, a trinket or stackable resource. | 2 ||
 | `pills` | Number | Examples: `7` | 2 ||
-| `AdventureToken_YellowNeedle` | Variable || 2 ||
-| `all` | Variable || 2 ||
-| [`Anxiety`](#object-anxiety) | Variable || 2 ||
-| [`Cancer`](#object-cancer) | Object || 2 ||
-| [`CharmedPinky`](#object-charmedpinky) | Object || 2 ||
-| [`CharmedRaptorBaby`](#object-charmedraptorbaby) | Object || 2 ||
+| `AdventureToken_YellowNeedle` | Variable | Determines if the Yellow Needle adventure token has been collected, tracking a quest step. | 2 ||
+| `all` | Variable | Applies the referenced property or action to all valid targets or categories. | 2 ||
+| [`Anxiety`](#object-anxiety) | Variable | Specifies the Anxiety disorder, which afflicts a unit with nervousness and potential stat penalties. | 2 ||
+| [`Cancer`](#object-cancer) | Object | Specifies the Cancer disorder or trinket, which applies a degenerating or cursed effect to the unit. | 2 ||
+| [`CharmedPinky`](#object-charmedpinky) | Object | Specifies the Charmed Pinky familiar, a friendly variant that fights for the player's faction. | 2 ||
+| [`CharmedRaptorBaby`](#object-charmedraptorbaby) | Object | Specifies the Charmed Raptor Baby familiar, a friendly variant that fights for the player's faction. | 2 ||
 | `clear_result_animation` | Integer | Examples: `1` | 2 ||
 | [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum | Examples: `pyrophina, zaratana` | 2 ||
-| [`Depression`](#object-depression) | Variable || 2 ||
-| `flesh_items` | Variable || 2 ||
+| [`Depression`](#object-depression) | Variable | Specifies the Depression disorder, which inflicts a unit with decreased morale or stats. | 2 ||
+| `flesh_items` | Variable | The amount of flesh-based items in the inventory or loot pool. | 2 ||
 | [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Examples: `CharmedFleaSpecial` | 2 ||
 | [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Examples: `FlyLarva` | 2 ||
-| `glitched_items` | Variable || 2 ||
-| `HasHitPinata` | Variable || 2 ||
-| [`HauntedNight`](#object-hauntednight) | Variable || 2 ||
-| [`map_unlock_dimensionx`](#object-map_unlock_dimensionx) | Variable || 2 ||
+| `glitched_items` | Variable | The amount of glitched items in the inventory or loot pool. | 2 ||
+| `HasHitPinata` | Variable | Determines if the unit or run has already hit the Pinata, preventing repeat rewards. | 2 ||
+| [`HauntedNight`](#object-hauntednight) | Variable | Determines if the Haunted Night encounter or modifier is active. | 2 ||
+| [`map_unlock_dimensionx`](#object-map_unlock_dimensionx) | Variable | Unlocks the Dimension X map region when set. | 2 ||
 | [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | Examples: `[ Dwarfism ], [ Gigantism ]` | 2 ||
 | `party_heal_injury` | Integer | Examples: `99` | 2 ||
 | [`party_permanent_stats`](Events_and_Encounters.md#object-party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 2 ||
 | [`party_random_mutation_from_set`](Events_and_Encounters.md#object-party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 ||
-| [`PawShards`](#object-pawshards) | Object || 2 ||
-| `poop_items` | Variable || 2 ||
-| [`PutridLeech`](#object-putridleech) | Object || 2 ||
-| [`PyrophinasCollar`](#object-pyrophinascollar) | Object || 2 ||
-| `QEVENT_OBELISK_QUES1` | Variable || 2 ||
-| `QEVENT_THROBBINGARTERY_REW1` | Variable || 2 ||
-| `QEVENT_THROBBINGARTERY_REW2` | Variable || 2 ||
-| `QEVENT_VOLCANO_REW1` | Variable || 2 ||
-| [`ReceiverAntenna`](#object-receiverantenna) | Object || 2 ||
-| `resultBad` | Variable || 2 ||
-| [`Rocks`](#object-rocks) | Object || 2 ||
+| [`PawShards`](#object-pawshards) | Object | Specifies the Paw Shards item, a crafting or quest material. | 2 ||
+| `poop_items` | Variable | The amount of poop items in the inventory or loot pool. | 2 ||
+| [`PutridLeech`](#object-putridleech) | Object | Specifies the Putrid Leech item, a trinket or consumable with healing or damaging effects. | 2 ||
+| [`PyrophinasCollar`](#object-pyrophinascollar) | Object | Specifies Pyrophina's Collar, a trinket that enhances fire-related abilities. | 2 ||
+| `QEVENT_OBELISK_QUES1` | Variable | Determines if the first Obelisk quest event has been completed. | 2 ||
+| `QEVENT_THROBBINGARTERY_REW1` | Variable | Determines if the first Throbbing Artery reward event has been triggered. | 2 ||
+| `QEVENT_THROBBINGARTERY_REW2` | Variable | Determines if the second Throbbing Artery reward event has been triggered. | 2 ||
+| `QEVENT_VOLCANO_REW1` | Variable | Determines if the first Volcano reward event has been triggered. | 2 ||
+| [`ReceiverAntenna`](#object-receiverantenna) | Object | Specifies the Receiver Antenna item, used for communication or quests. | 2 ||
+| `resultBad` | Variable | Determines if the event outcome was bad, affecting subsequent choices or penalties. | 2 ||
+| [`Rocks`](#object-rocks) | Object | Specifies the Rocks item, a common resource or trinket. | 2 ||
 | [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 2 ||
 | `set_age` | Integer | Examples: `1` | 2 ||
-| [`SignalAmplifier`](#object-signalamplifier) | Object || 2 ||
+| [`SignalAmplifier`](#object-signalamplifier) | Object | Specifies the Signal Amplifier item, a trinket that boosts area or communication effects. | 2 ||
 | [`Snake`](Engine_LogicKeys.md#object-snake) | Integer / Object | Applies or references the 'Snake' effect/state. | 2 ||
-| [`ThrobbingGristle`](#object-throbbinggristle) | Object || 2 ||
-| [`TransmitterAntenna`](#object-transmitterantenna) | Object || 2 ||
-| [`ZaratanasCollar`](#object-zaratanascollar) | Object || 2 ||
-| [`CryogenicTimeChamber_Empty`](#object-cryogenictimechamber_empty) | Object || 2 ||
-| [`EnchantingPoop`](#object-enchantingpoop) | Object || 2 ||
+| [`ThrobbingGristle`](#object-throbbinggristle) | Object | Specifies the Throbbing Gristle item, a flesh-based trinket or resource. | 2 ||
+| [`TransmitterAntenna`](#object-transmitterantenna) | Object | Specifies the Transmitter Antenna item, used for communication or quests. | 2 ||
+| [`ZaratanasCollar`](#object-zaratanascollar) | Object | Specifies Zaratana's Collar, a trinket that enhances earth or defensive abilities. | 2 ||
+| [`CryogenicTimeChamber_Empty`](#object-cryogenictimechamber_empty) | Object | Specifies the empty Cryogenic Time Chamber, a location or item used for revival or freezing. | 2 ||
+| [`EnchantingPoop`](#object-enchantingpoop) | Object | Specifies the Enchanting Poop item, a fecal trinket with beneficial or enchanting properties. | 2 ||
 | [`general_common`](./Enums.md#enum-general_common) | Enum | `auto` | 2 ||
 | [`general_rare`](./Enums.md#enum-general_rare) | Enum | `auto` | 2 ||
-| [`GuillotinasHead`](#object-guillotinashead) | Object || 2 ||
-| [`MomsKnife`](#object-momsknife) | Object || 2 ||
+| [`GuillotinasHead`](#object-guillotinashead) | Object | Specifies Guillotina's Head, a trinket that triggers execution or decapitation effects. | 2 ||
+| [`MomsKnife`](#object-momsknife) | Object | Specifies Mom's Knife, a trinket that increases damage or enables ricochet attacks. | 2 ||
 | [`RaptorEgg`](Engine_LogicKeys.md#object-raptoregg) | Object | Examples: `.1` | 2 ||
 | [`StatusDamagers`](Miscellaneous.md#object-statusdamagers) | Object | Event Trigger: Applies nested statuses to damagers. | 2 ||
 | [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
@@ -227,184 +227,184 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `random` | Number | Examples: `4` | 1 ||
 | `ally_ambush_next_fights` | Integer | Examples: `1` | 1 ||
 | `gain_cat_familiar` | Integer | Examples: `1` | 1 ||
-| `AdventureToken_HasRunFromDeath` | Variable || 1 ||
-| `AdventureToken_MysteriousCave_FamiliarVoice` | Variable || 1 ||
-| `AdventureToken_MysteriousJarRepeat` | Variable || 1 ||
-| `AdventureToken_StevenTryAgain` | Variable || 1 ||
-| `AdventureToken_StevenTryAgain2` | Variable || 1 ||
-| `AdventureToken_StevenTryAgain3` | Variable || 1 ||
-| `AdventureToken_TrippedOnBigToe` | Variable || 1 ||
-| `AdventureToken_UnmarkedGraveForced` | Variable || 1 ||
-| [`Albinism`](#object-albinism) | Variable || 1 ||
-| [`AlienOvergrowth`](#object-alienovergrowth) | Variable || 1 ||
+| `AdventureToken_HasRunFromDeath` | Variable | Determines if the unit has already run from death in the adventure. | 1 ||
+| `AdventureToken_MysteriousCave_FamiliarVoice` | Variable | Determines if the unit has heard the familiar voice in the Mysterious Cave. | 1 ||
+| `AdventureToken_MysteriousJarRepeat` | Variable | Determines if the Mysterious Jar encounter has been repeated. | 1 ||
+| `AdventureToken_StevenTryAgain` | Variable | Determines if the Steven retry attempt has been made. | 1 ||
+| `AdventureToken_StevenTryAgain2` | Variable | Determines if the second Steven retry attempt has been made. | 1 ||
+| `AdventureToken_StevenTryAgain3` | Variable | Determines if the third Steven retry attempt has been made. | 1 ||
+| `AdventureToken_TrippedOnBigToe` | Variable | Determines if the unit has tripped on their big toe in the adventure. | 1 ||
+| `AdventureToken_UnmarkedGraveForced` | Variable | Determines if the unit was forced to discover the unmarked grave. | 1 ||
+| [`Albinism`](#object-albinism) | Variable | Specifies the Albinism disorder, which causes a unit to have pale skin and sun-sensitivity effects. | 1 ||
+| [`AlienOvergrowth`](#object-alienovergrowth) | Variable | A weather event that causes volcanic spawns on battle start. | 1 ||
 | [`ambush`](./Math_Equations.md) | Equation | Examples: `"events/chupacabra.lvl"` | 1 ||
-| `AntennaQuest_Orb` | Variable || 1 ||
-| `AntennaQuest_Rift` | Variable || 1 ||
-| `AntennaQuest_Volcano` | Variable || 1 ||
-| [`Beepis`](#object-beepis) | Object || 1 ||
-| [`bleeding`](#object-bleeding) | Variable || 1 ||
-| `bloody_items` | Variable || 1 ||
-| [`BrainDamage`](#object-braindamage) | Variable || 1 ||
-| [`BrainDead`](#object-braindead) | Variable || 1 ||
-| [`Brave`](#object-brave) | Variable || 1 ||
-| [`burned`](#object-burned) | Variable || 1 ||
-| [`CharmedTarBaby`](#object-charmedtarbaby) | Object || 1 ||
+| `AntennaQuest_Orb` | Variable | A status flag indicating the Orb antenna quest is active. | 1 ||
+| `AntennaQuest_Rift` | Variable | A status flag indicating the Rift antenna quest is active. | 1 ||
+| `AntennaQuest_Volcano` | Variable | A status flag indicating the Volcano antenna quest is active. | 1 ||
+| [`Beepis`](#object-beepis) | Object | An object definition for the Beepis item, entity, or character. | 1 ||
+| [`bleeding`](#object-bleeding) | Variable | A status effect that deals damage over time to the affected unit. | 1 ||
+| `bloody_items` | Variable | Determines which items are categorized as 'bloody' for interactions or drops. | 1 ||
+| [`BrainDamage`](#object-braindamage) | Variable | A disorder or status that reduces the unit's intelligence or mental stats. | 1 ||
+| [`BrainDead`](#object-braindead) | Variable | A disorder granted by a Monkey Paw wish that severely impairs the unit's mental faculties. | 1 ||
+| [`Brave`](#object-brave) | Variable | A disorder that grants the unit passive benefits related to courage or resistance. | 1 ||
+| [`burned`](#object-burned) | Variable | A status effect that deals fire damage over time to the affected unit. | 1 ||
+| [`CharmedTarBaby`](#object-charmedtarbaby) | Object | An allied variant of TarBaby that fights for the player's faction. | 1 ||
 | `clone_self_to_party` | Integer | Examples: `1` | 1 ||
 | `copy_items_to_party` | Integer | Examples: `1` | 1 ||
 | `copy_party_items` | Integer | Examples: `1` | 1 ||
-| [`Cunch`](#object-cunch) | Object || 1 ||
-| [`CursedStickman`](#object-cursedstickman) | Object || 1 ||
-| [`DeathsScythe`](#object-deathsscythe) | Object || 1 ||
-| `dimensionx.gon` | Variable || 1 ||
-| `EVENT_USETHETOILET_AGAIN` | Variable || 1 ||
-| [`FecalHood_Cursed`](#object-fecalhood_cursed) | Object || 1 ||
-| [`FecalMask_Cursed`](#object-fecalmask_cursed) | Object || 1 ||
-| [`Feebis`](#object-feebis) | Object || 1 ||
+| [`Cunch`](#object-cunch) | Object | An object definition for the Cunch item, entity, or character. | 1 ||
+| [`CursedStickman`](#object-cursedstickman) | Object | A cursed trinket item variant of Stickman. | 1 ||
+| [`DeathsScythe`](#object-deathsscythe) | Object | An object definition for the DeathsScythe item, entity, or character. | 1 ||
+| `dimensionx.gon` | Variable | A variable referencing the Dimension X map or event file. | 1 ||
+| `EVENT_USETHETOILET_AGAIN` | Variable | A variable flag that tracks whether the 'Use the Toilet' event has been triggered again. | 1 ||
+| [`FecalHood_Cursed`](#object-fecalhood_cursed) | Object | A cursed variant of the FecalHood item. | 1 ||
+| [`FecalMask_Cursed`](#object-fecalmask_cursed) | Object | A cursed variant of the FecalMask item. | 1 ||
+| [`Feebis`](#object-feebis) | Object | An object definition for the Feebis item, entity, or character. | 1 ||
 | [`gain_clone_familiar`](Events_and_Encounters.md#object-gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 ||
-| [`GeomagneticStorm`](#object-geomagneticstorm) | Variable || 1 ||
+| [`GeomagneticStorm`](#object-geomagneticstorm) | Variable | A weather event that applies a status effect to all characters at round end. | 1 ||
 | [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | Examples: `common` | 1 ||
-| [`Gigachad`](#object-gigachad) | Variable || 1 ||
-| `godly_items` | Variable || 1 ||
-| `grass_items` | Variable || 1 ||
-| `hide_items` | Variable || 1 ||
-| [`Host`](#object-host) | Object || 1 ||
-| `iceage.gon` | Variable || 1 ||
-| `junkyard_items` | Variable || 1 ||
-| [`legacy_event_unlock_momsknife`](#object-legacy_event_unlock_momsknife) | Variable || 1 ||
+| [`Gigachad`](#object-gigachad) | Variable | A disorder that grants the unit significant stat boosts. | 1 ||
+| `godly_items` | Variable | Determines which items are categorized as 'godly' for interactions or drops. | 1 ||
+| `grass_items` | Variable | Determines which items are categorized as 'grass' for interactions or drops. | 1 ||
+| `hide_items` | Variable | Determines which items are categorized as 'hide' for interactions or drops. | 1 ||
+| [`Host`](#object-host) | Object | An object definition for the Host entity, likely a carrier for a parasite or symbiont. | 1 ||
+| `iceage.gon` | Variable | A variable referencing the Ice Age map or event file. | 1 ||
+| `junkyard_items` | Variable | Determines which items are categorized as 'junkyard' for interactions or drops. | 1 ||
+| [`legacy_event_unlock_momsknife`](#object-legacy_event_unlock_momsknife) | Variable | A sequence that unlocks the MomsKnife item and displays an unlock popup. | 1 ||
 | [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | Examples: `cat` | 1 ||
-| [`map_unlock_iceage`](#object-map_unlock_iceage) | Variable || 1 ||
-| `mapflag_ChaosAntennaAttached` | Variable || 1 ||
-| `mapflag_OrbAntennaAttached` | Variable || 1 ||
-| `mapflag_ThrobbingArteryDone` | Variable || 1 ||
-| `mapflag_VolcanoAntennaAttached` | Variable || 1 ||
-| `mapflag_WallOfFleshDone` | Variable || 1 ||
-| [`meat_world_open`](#object-meat_world_open) | Variable || 1 ||
-| `MeatWorldQuest_Gristle` | Variable || 1 ||
-| `MeatWorldQuest_Leech` | Variable || 1 ||
-| `MeteorShowerUnlocked` | Variable || 1 ||
-| `monkey_paw_1finger` | Variable || 1 ||
-| `monkey_paw_2fingers` | Variable || 1 ||
-| `monkey_paw_3fingers` | Variable || 1 ||
-| `monkey_paw_4fingers` | Variable || 1 ||
-| [`MysteriousTomb1`](#object-mysterioustomb1) | Variable || 1 ||
-| [`MysteriousTomb2`](#object-mysterioustomb2) | Variable || 1 ||
+| [`map_unlock_iceage`](#object-map_unlock_iceage) | Variable | A sequence that unlocks the Ice Age area and displays an unlock popup. | 1 ||
+| `mapflag_ChaosAntennaAttached` | Variable | A flag indicating the Chaos antenna has been attached to the map. | 1 ||
+| `mapflag_OrbAntennaAttached` | Variable | A flag indicating the Orb antenna has been attached to the map. | 1 ||
+| `mapflag_ThrobbingArteryDone` | Variable | A flag indicating the Throbbing Artery event or encounter has been completed. | 1 ||
+| `mapflag_VolcanoAntennaAttached` | Variable | A flag indicating the Volcano antenna has been attached to the map. | 1 ||
+| `mapflag_WallOfFleshDone` | Variable | A flag indicating the Wall of Flesh event or encounter has been completed. | 1 ||
+| [`meat_world_open`](#object-meat_world_open) | Variable | A sequence that sets the map generation flag for full Meat World unlock. | 1 ||
+| `MeatWorldQuest_Gristle` | Variable | A variable representing the Gristle quest within the Meat World area. | 1 ||
+| `MeatWorldQuest_Leech` | Variable | A variable representing the Leech quest within the Meat World area. | 1 ||
+| `MeteorShowerUnlocked` | Variable | A flag indicating the Meteor Shower event or ability has been unlocked. | 1 ||
+| `monkey_paw_1finger` | Variable | A variable tracking the state of the Monkey Paw with one finger remaining. | 1 ||
+| `monkey_paw_2fingers` | Variable | A variable tracking the state of the Monkey Paw with two fingers remaining. | 1 ||
+| `monkey_paw_3fingers` | Variable | A variable tracking the state of the Monkey Paw with three fingers remaining. | 1 ||
+| `monkey_paw_4fingers` | Variable | A variable tracking the state of the Monkey Paw with four fingers remaining. | 1 ||
+| [`MysteriousTomb1`](#object-mysterioustomb1) | Variable | A variable representing the first Mysterious Tomb event or location. | 1 ||
+| [`MysteriousTomb2`](#object-mysterioustomb2) | Variable | A variable representing the second Mysterious Tomb event or location. | 1 ||
 | [`party_injury`](./Enums.md#enum-party_injury) | Enum | Examples: `random` | 1 ||
 | [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | Examples: `resultVeryGood` | 1 ||
-| [`PuncturedEye`](#object-puncturedeye) | Variable || 1 ||
-| `QEVENT_BROKENTIMEMACHINE_QUES` | Variable || 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW2` | Variable || 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW3` | Variable || 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW4` | Variable || 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW5` | Variable || 1 ||
-| `QEVENT_DEADGOD_QUES` | Variable || 1 ||
-| `QEVENT_DEADGOD_REW1` | Variable || 1 ||
-| `QEVENT_DEADGOD_REW2` | Variable || 1 ||
-| `QEVENT_DEADGOD_REW3` | Variable || 1 ||
-| `QEVENT_DEADKING_QUES` | Variable || 1 ||
-| `QEVENT_DEADKING_REW1` | Variable || 1 ||
-| `QEVENT_DEADKING_REW2` | Variable || 1 ||
-| `QEVENT_DEADKING_REW3` | Variable || 1 ||
-| `QEVENT_DEADKING_REW4` | Variable || 1 ||
-| `QEVENT_DEADKING_REW5` | Variable || 1 ||
-| `QEVENT_DIMENSIONXPORTAL_ENTER_REW` | Variable || 1 ||
-| `QEVENT_DIMENSIONXPORTAL_IGNORE_ANSW` | Variable || 1 ||
-| `QEVENT_DIMENSIONXPORTAL_QUES` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_QUES` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_QUES2` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_REW1` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_REW2` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_REW3` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_REW4` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_REW5` | Variable || 1 ||
-| `QEVENT_GLOWINGORB_REW7` | Variable || 1 ||
-| `QEVENT_MEATALTAR_QUES1` | Variable || 1 ||
-| `QEVENT_MEATALTAR_REW1` | Variable || 1 ||
-| `QEVENT_MEATALTAR_REW_IGNORE` | Variable || 1 ||
-| `QEVENT_OBELISK_CORE_REW_ZARA3` | Variable || 1 ||
-| `QEVENT_OBELISK_MOON_REW_PYRO3` | Variable || 1 ||
-| `QEVENT_OBELISK_QUES3` | Variable || 1 ||
-| `QEVENT_THEHEAD_QUES` | Variable || 1 ||
-| `QEVENT_THEHEAD_REW1` | Variable || 1 ||
-| `QEVENT_THEHEAD_REW2` | Variable || 1 ||
-| `QEVENT_THEHEAD_REW3` | Variable || 1 ||
-| `QEVENT_THEHEAD_REW5` | Variable || 1 ||
-| `QEVENT_THEHEAD_REW6` | Variable || 1 ||
-| `QEVENT_THROBBINGARTERY2_QUES` | Variable || 1 ||
-| `QEVENT_THROBBINGARTERY2_REW_IGNORE` | Variable || 1 ||
-| `QEVENT_THROBBINGARTERY_QUES1` | Variable || 1 ||
-| `QEVENT_THROBBINGARTERY_QUES2` | Variable || 1 ||
-| `QEVENT_THROBBINGARTERY_REW5` | Variable || 1 ||
-| `QEVENT_THROBBINGARTERY_REW_IGNORE` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_FUTURE_QUES` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_FUTURE_REW1` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_FUTURE_REW2` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_ICEAGE_QUES` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_ICEAGE_REW1` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_ICEAGE_REW2` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_JURASSIC_QUES` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_JURASSIC_REW1` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_JURASSIC_REW2` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_QUES` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_REW1` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_REW2` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_REW3` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_THEEND_QUES` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_THEEND_REW1` | Variable || 1 ||
-| `QEVENT_TIMEMACHINE_THEEND_REW2` | Variable || 1 ||
-| `QEVENT_VOLCANO_QUES` | Variable || 1 ||
-| `QEVENT_VOLCANO_QUES2` | Variable || 1 ||
-| `QEVENT_VOLCANO_REW4` | Variable || 1 ||
-| `QEVENT_VOLCANO_REW5` | Variable || 1 ||
-| `QEVENT_VOLCANO_REW7` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH2_QUES` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH2_REW_IGNORE` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_QUES1` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_QUES2` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW1` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW10` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW2` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW3` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW4` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW5` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW7` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW8` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW9` | Variable || 1 ||
-| `QEVENT_WALLOFFLESH_REW_IGNORE` | Variable || 1 ||
+| [`PuncturedEye`](#object-puncturedeye) | Variable | A status effect or injury that impairs the unit's vision or accuracy. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_QUES` | Variable | A quest flag for the Broken Time Machine quest chain. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW2` | Variable | A reward flag for the second stage of the Broken Time Machine quest chain. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW3` | Variable | A reward flag for the third stage of the Broken Time Machine quest chain. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW4` | Variable | A reward flag for the fourth stage of the Broken Time Machine quest chain. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW5` | Variable | A variable used to track the state or availability of the fifth reward for the broken time machine event. | 1 ||
+| `QEVENT_DEADGOD_QUES` | Variable | A variable that controls the quest state for the dead god event. | 1 ||
+| `QEVENT_DEADGOD_REW1` | Variable | A variable that controls the state or availability of the first reward for the dead god event. | 1 ||
+| `QEVENT_DEADGOD_REW2` | Variable | A variable that controls the state or availability of the second reward for the dead god event. | 1 ||
+| `QEVENT_DEADGOD_REW3` | Variable | A variable that controls the state or availability of the third reward for the dead god event. | 1 ||
+| `QEVENT_DEADKING_QUES` | Variable | A variable that controls the quest state for the dead king event. | 1 ||
+| `QEVENT_DEADKING_REW1` | Variable | A variable that controls the state or availability of the first reward for the dead king event. | 1 ||
+| `QEVENT_DEADKING_REW2` | Variable | A variable that controls the state or availability of the second reward for the dead king event. | 1 ||
+| `QEVENT_DEADKING_REW3` | Variable | A variable that controls the state or availability of the third reward for the dead king event. | 1 ||
+| `QEVENT_DEADKING_REW4` | Variable | A variable that controls the state or availability of the fourth reward for the dead king event. | 1 ||
+| `QEVENT_DEADKING_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the dead king event. | 1 ||
+| `QEVENT_DIMENSIONXPORTAL_ENTER_REW` | Variable | A variable that controls the reward state for entering the dimension X portal. | 1 ||
+| `QEVENT_DIMENSIONXPORTAL_IGNORE_ANSW` | Variable | A variable that controls the state for ignoring the answer from the dimension X portal event. | 1 ||
+| `QEVENT_DIMENSIONXPORTAL_QUES` | Variable | A variable that controls the quest state for the dimension X portal event. | 1 ||
+| `QEVENT_GLOWINGORB_QUES` | Variable | A variable that controls the quest state for the glowing orb event. | 1 ||
+| `QEVENT_GLOWINGORB_QUES2` | Variable | A variable that controls the secondary quest state for the glowing orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW1` | Variable | A variable that controls the state or availability of the first reward for the glowing orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW2` | Variable | A variable that controls the state or availability of the second reward for the glowing orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW3` | Variable | A variable that controls the state or availability of the third reward for the glowing orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW4` | Variable | A variable that controls the state or availability of the fourth reward for the glowing orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the glowing orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW7` | Variable | A variable that controls the state or availability of the seventh reward for the glowing orb event. | 1 ||
+| `QEVENT_MEATALTAR_QUES1` | Variable | A variable that controls the primary quest state for the meat altar event. | 1 ||
+| `QEVENT_MEATALTAR_REW1` | Variable | A variable that controls the primary reward state for the meat altar event. | 1 ||
+| `QEVENT_MEATALTAR_REW_IGNORE` | Variable | A variable that controls the reward state when the player ignores the meat altar event. | 1 ||
+| `QEVENT_OBELISK_CORE_REW_ZARA3` | Variable | A variable controlling the third Zara reward state for the core obelisk event. | 1 ||
+| `QEVENT_OBELISK_MOON_REW_PYRO3` | Variable | A variable controlling the third Pyro reward state for the moon obelisk event. | 1 ||
+| `QEVENT_OBELISK_QUES3` | Variable | A variable that controls the tertiary quest state for the obelisk event. | 1 ||
+| `QEVENT_THEHEAD_QUES` | Variable | A variable that controls the quest state for the head event. | 1 ||
+| `QEVENT_THEHEAD_REW1` | Variable | A variable that controls the state or availability of the first reward for the head event. | 1 ||
+| `QEVENT_THEHEAD_REW2` | Variable | A variable that controls the state or availability of the second reward for the head event. | 1 ||
+| `QEVENT_THEHEAD_REW3` | Variable | A variable that controls the state or availability of the third reward for the head event. | 1 ||
+| `QEVENT_THEHEAD_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the head event. | 1 ||
+| `QEVENT_THEHEAD_REW6` | Variable | A variable that controls the state or availability of the sixth reward for the head event. | 1 ||
+| `QEVENT_THROBBINGARTERY2_QUES` | Variable | A variable that controls the quest state for the second throbbing artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY2_REW_IGNORE` | Variable | A variable that controls the reward state when the player ignores the second throbbing artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY_QUES1` | Variable | A variable that controls the primary quest state for the throbbing artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY_QUES2` | Variable | A variable that controls the secondary quest state for the throbbing artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the throbbing artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY_REW_IGNORE` | Variable | A variable that controls the reward state when the player ignores the throbbing artery event. | 1 ||
+| `QEVENT_TIMEMACHINE_FUTURE_QUES` | Variable | A variable that controls the quest state for the time machine future event. | 1 ||
+| `QEVENT_TIMEMACHINE_FUTURE_REW1` | Variable | A variable that controls the first reward state for the time machine future event. | 1 ||
+| `QEVENT_TIMEMACHINE_FUTURE_REW2` | Variable | A variable that controls the second reward state for the time machine future event. | 1 ||
+| `QEVENT_TIMEMACHINE_ICEAGE_QUES` | Variable | A variable that controls the quest state for the time machine ice age event. | 1 ||
+| `QEVENT_TIMEMACHINE_ICEAGE_REW1` | Variable | A variable that controls the first reward state for the time machine ice age event. | 1 ||
+| `QEVENT_TIMEMACHINE_ICEAGE_REW2` | Variable | A variable that controls the second reward state for the time machine ice age event. | 1 ||
+| `QEVENT_TIMEMACHINE_JURASSIC_QUES` | Variable | A variable that controls the quest state for the time machine Jurassic event. | 1 ||
+| `QEVENT_TIMEMACHINE_JURASSIC_REW1` | Variable | A variable that controls the first reward state for the time machine Jurassic event. | 1 ||
+| `QEVENT_TIMEMACHINE_JURASSIC_REW2` | Variable | A variable that controls the second reward state for the time machine Jurassic event. | 1 ||
+| `QEVENT_TIMEMACHINE_QUES` | Variable | A variable that controls the quest state for the time machine event. | 1 ||
+| `QEVENT_TIMEMACHINE_REW1` | Variable | The first reward granted upon completing the time machine quest. | 1 ||
+| `QEVENT_TIMEMACHINE_REW2` | Variable | The second reward granted upon completing the time machine quest. | 1 ||
+| `QEVENT_TIMEMACHINE_REW3` | Variable | The third reward granted upon completing the time machine quest. | 1 ||
+| `QEVENT_TIMEMACHINE_THEEND_QUES` | Variable | Quest objective related to the time machine "The End" variant. | 1 ||
+| `QEVENT_TIMEMACHINE_THEEND_REW1` | Variable | The first reward for completing the time machine "The End" quest. | 1 ||
+| `QEVENT_TIMEMACHINE_THEEND_REW2` | Variable | The second reward for completing the time machine "The End" quest. | 1 ||
+| `QEVENT_VOLCANO_QUES` | Variable | Quest objective for the volcano event. | 1 ||
+| `QEVENT_VOLCANO_QUES2` | Variable | Secondary quest objective for the volcano event. | 1 ||
+| `QEVENT_VOLCANO_REW4` | Variable | The fourth reward for completing the volcano event quest. | 1 ||
+| `QEVENT_VOLCANO_REW5` | Variable | The fifth reward for completing the volcano event quest. | 1 ||
+| `QEVENT_VOLCANO_REW7` | Variable | The seventh reward for completing the volcano event quest. | 1 ||
+| `QEVENT_WALLOFFLESH2_QUES` | Variable | Quest objective for the second wall of flesh event. | 1 ||
+| `QEVENT_WALLOFFLESH2_REW_IGNORE` | Variable | A reward placeholder for the second wall of flesh event that is not awarded. | 1 ||
+| `QEVENT_WALLOFFLESH_QUES1` | Variable | First quest objective for the wall of flesh event. | 1 ||
+| `QEVENT_WALLOFFLESH_QUES2` | Variable | Second quest objective for the wall of flesh event. | 1 ||
+| `QEVENT_WALLOFFLESH_REW1` | Variable | The first reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW10` | Variable | The tenth reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW2` | Variable | The second reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW3` | Variable | The third reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW4` | Variable | The fourth reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW5` | Variable | The fifth reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW7` | Variable | The seventh reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW8` | Variable | The eighth reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW9` | Variable | The ninth reward for completing the wall of flesh event quest. | 1 ||
+| `QEVENT_WALLOFFLESH_REW_IGNORE` | Variable | A reward placeholder for the wall of flesh event that is not awarded. | 1 ||
 | [`random_chance`](Events_and_Encounters.md#object-random_chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 ||
-| `raptor_nest_eggs` | Variable || 1 ||
-| `resultConfused` | Variable || 1 ||
-| `resultVeryBad` | Variable || 1 ||
-| `rock_items` | Variable || 1 ||
+| `raptor_nest_eggs` | Variable | The number of eggs present in a raptor nest. | 1 ||
+| `resultConfused` | Variable | Variable tracking a conflicting or inconclusive event outcome. | 1 ||
+| `resultVeryBad` | Variable | Variable tracking a particularly negative event outcome. | 1 ||
+| `rock_items` | Variable | A list of rock-type items (e.g., ores, gems) obtained from an event. | 1 ||
 | [`scramble_basic_attack`](./Enums.md#enum-scramble_basic_attack) | Enum | Examples: `all` | 1 ||
 | [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | Examples: `all` | 1 ||
 | [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | Examples: `glitched_items` | 1 ||
 | `self_heal` | Integer | Examples: `10` | 1 ||
-| [`SludgeHat`](#object-sludgehat) | Object || 1 ||
-| [`SludgeMask`](#object-sludgemask) | Object || 1 ||
-| [`Soulless`](#object-soulless) | Variable || 1 ||
-| `Steven_disorders` | Variable || 1 ||
-| [`StrangeEggs`](#object-strangeeggs) | Variable || 1 ||
-| `tech_items` | Variable || 1 ||
-| `TheRift_UsedPyrophina` | Variable || 1 ||
-| `TheRift_UsedZaratana` | Variable || 1 ||
-| [`TheShimmer`](#object-theshimmer) | Variable || 1 ||
-| [`time_machine_quest_finalstep`](#object-time_machine_quest_finalstep) | Variable || 1 ||
-| [`time_machine_quest_trigger`](#object-time_machine_quest_trigger) | Variable || 1 ||
-| [`Touched`](#object-touched) | Variable || 1 ||
+| [`SludgeHat`](#object-sludgehat) | Object | A cosmetic hat item for a sludge-themed character. | 1 ||
+| [`SludgeMask`](#object-sludgemask) | Object | A cosmetic mask item for a sludge-themed character. | 1 ||
+| [`Soulless`](#object-soulless) | Variable | A disorder that removes or nullifies the unit's passive abilities. | 1 ||
+| `Steven_disorders` | Variable | List of disorders associated with a character named Steven. | 1 ||
+| [`StrangeEggs`](#object-strangeeggs) | Variable | A weather effect that spawns strange eggs on the battlefield at the start of combat. | 1 ||
+| `tech_items` | Variable | A list of technology-themed items obtained from an event. | 1 ||
+| `TheRift_UsedPyrophina` | Variable | Tracks whether the character Pyrophina was used in The Rift event. | 1 ||
+| `TheRift_UsedZaratana` | Variable | Tracks whether the character Zaratana was used in The Rift event. | 1 ||
+| [`TheShimmer`](#object-theshimmer) | Variable | A weather effect that applies a post-processing visual filter to the battlefield. | 1 ||
+| [`time_machine_quest_finalstep`](#object-time_machine_quest_finalstep) | Variable | Triggers the NPC sequence for the final step of the time machine quest. | 1 ||
+| [`time_machine_quest_trigger`](#object-time_machine_quest_trigger) | Variable | Triggers the initial NPC sequence to start the time machine quest. | 1 ||
+| [`Touched`](#object-touched) | Variable | A disorder that modifies the unit's stats. | 1 ||
 | `trigger_butterfly_effect` | Integer | Examples: `1` | 1 ||
-| `WorldEventLegacyCounter_SealedCrypt` | Variable || 1 ||
-| `WorldEventLegacyToken_CryptOpened` | Variable || 1 ||
-| `WorldEventLegacyToken_HasRunFromDeath` | Variable || 1 ||
-| `WorldEventLegacyToken_MomsKnife` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPaw1` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPaw2` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPaw3` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPaw4` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPawGenes` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPawItems` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPawKnowledge` | Variable || 1 ||
-| `WorldEventLegacyToken_MonkeyPawStrength` | Variable || 1 ||
-| `WorldEventLegacyToken_StacyMutant` | Variable || 1 ||
+| `WorldEventLegacyCounter_SealedCrypt` | Variable | Counter tracking the number of times the Sealed Crypt event has been triggered across legacies. | 1 ||
+| `WorldEventLegacyToken_CryptOpened` | Variable | Legacy token indicating that the crypt has been opened in this run. | 1 ||
+| `WorldEventLegacyToken_HasRunFromDeath` | Variable | Legacy token indicating that the unit has fled from death in this run. | 1 ||
+| `WorldEventLegacyToken_MomsKnife` | Variable | Legacy token for obtaining Mom's Knife item in this run. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw1` | Variable | First stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw2` | Variable | Second stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw3` | Variable | Third stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw4` | Variable | Fourth stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawGenes` | Variable | Legacy token tracking the number of gene mutations gained from the Monkey Paw event. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawItems` | Variable | A reference to the legacy currency or token related to Monkey Paw items. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawKnowledge` | Variable | A reference to the legacy currency or token related to Monkey Paw knowledge. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawStrength` | Variable | A reference to the legacy currency or token related to Monkey Paw strength. | 1 ||
+| `WorldEventLegacyToken_StacyMutant` | Variable | A reference to the legacy currency or token related to Stacy Mutant. | 1 ||
 | `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 ||
 </details>
 
@@ -459,7 +459,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object || 436 | `[4 8]` (Array), `[5 10]` (Array), `50` (Number), `8` (Number) |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. | 436 | `[4 8]` (Array), `[5 10]` (Array), `50` (Number), `8` (Number) |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 ||
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 ||
@@ -488,7 +488,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`spin`](./Enums.md#enum-spin) | Enum | Examples: `again` | 4 ||
 | [`gain_familiar`](Events_and_Encounters.md#object-gain_familiar) | Enum / Object | Event Action: Adds a specific familiar to the party. | 3 ||
 | [`gain_food`](./Arrays.md#array-gain_food) | Array / Number | Examples: `[ 5 10 ]` | 3 ||
-| `damage` | Array / Equation || 2 | `[3 6]` (Array), `[5 10]` (Array), `8` (Equation), `5` (Equation) |
+| `damage` | Array / Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 2 | `[3 6]` (Array), `[5 10]` (Array), `8` (Equation), `5` (Equation) |
 | [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 2 ||
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Array / Enum | Examples: `cursed_items, parasites` | 2 ||
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 2 ||
@@ -633,7 +633,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object || 436 | `[6 10]` (Array), `50` (Number), `10` (Number) |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. | 436 | `[6 10]` (Array), `50` (Number), `10` (Number) |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 65 ||
 | [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 41 ||
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
@@ -670,7 +670,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`make_old`](./Enums.md#enum-make_old) | Enum | Examples: `self` | 3 ||
 | [`next_event_from_set`](Events_and_Encounters.md#object-next_event_from_set) | Enum / Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 3 ||
 | [`spawn_reflection_next_fight`](Events_and_Encounters.md#object-spawn_reflection_next_fight) | Number / Object | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 ||
-| `damage` | Array / Equation || 2 | `[3 4]` (Array), `[2 5]` (Array), `5` (Equation), `7` (Equation) |
+| `damage` | Array / Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 2 | `[3 4]` (Array), `[2 5]` (Array), `5` (Equation), `7` (Equation) |
 | [`battle`](./Math_Equations.md) | Enum / String | Examples: `{ ... }` | 2 ||
 | [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 2 ||
 | [`gain_food`](./Arrays.md#array-gain_food) | Array / Number | Examples: `[ 5 10 ]` | 2 ||

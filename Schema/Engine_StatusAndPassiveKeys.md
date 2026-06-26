@@ -38,9 +38,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Medic`](Engine_LogicKeys.md#object-medic) | Object | Applies or references the 'Medic' effect/state. | 58 ||
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 ||
 | [`RandomArmorPickup`](Engine_LogicKeys.md#object-randomarmorpickup) | Number / Object | Applies or references the 'RandomArmorPickup' effect/state. | 43 ||
-| [`BasicMelee`](#object-basicmelee) | Object || 42 ||
+| [`BasicMelee`](#object-basicmelee) | Object | Specifies the basic melee attack ability object for a unit. | 42 ||
 | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Array / Enum | Applies or references the 'StatusImmunity' effect/state. | 38 ||
-| [`Wood`](#object-wood) | Variable || 38 ||
+| [`Wood`](#object-wood) | Variable | A variable representing the 'Wood' damage type or material. | 38 ||
 | `CritChanceUp` | Integer | Applies or references the 'CritChanceUp' effect/state. | 36 ||
 | `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 36 ||
 | `Thorns` | Integer | Applies or references the 'Thorns' effect/state. | 36 ||
@@ -61,7 +61,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 ||
 | [`ImmediateAbilityReaction`](Characters_and_Bosses.md#object-immediateabilityreaction) | Array / Enum / Object | Reaction: Executes an ability instantly, interrupting the current sequence. | 26 ||
 | `Knockback` | Integer | Applies or references the 'Knockback' effect/state. | 26 ||
-| [`Paper`](#object-paper) | Variable || 26 ||
+| [`Paper`](#object-paper) | Variable | A variable representing the 'Paper' damage type or material. | 26 ||
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 25 ||
 | `Undead` | Integer | Applies or references the 'Undead' effect/state. | 25 ||
 | `Brittle` | Integer | Applies or references the 'Brittle' effect/state. | 24 ||
@@ -93,25 +93,25 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `LuckUp` | Enum / Integer | Applies or references the 'LuckUp' effect/state. | 17 ||
 | [`OverrideKnockbackDamage`](./Enums.md#enum-overrideknockbackdamage) | Enum / Integer | Applies or references the 'OverrideKnockbackDamage' effect/state. | 17 ||
 | [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | Fires a randomized number of magic missiles. | 17 ||
-| `rat` | Variable || 17 ||
+| `rat` | Variable | A variable representing the 'rat' entity type or tag. | 17 ||
 | [`AddStatusToBasicMeleeAttack`](Cat_Mutations.md#object-addstatustobasicmeleeattack) | Object | Examples: `{ ... }` | 16 ||
 | [`CharacterLightSource`](Characters_and_Bosses.md#object-characterlightsource) | Object | Visual: Attaches a dynamic lighting source to the character. | 16 ||
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 16 ||
 | [`HealthPickup`](Characters_and_Bosses.md#object-healthpickup) | Object | Pickup Logic: Defines what happens when a health item is collected. | 16 ||
-| `less_or_equal` | Variable || 16 ||
+| `less_or_equal` | Variable | A comparison operator specifying 'less than or equal to'. | 16 ||
 | `PassiveLevelUpAtCombatEnd` | Integer | Applies the 'PassiveLevelUpAtCombatEnd' effect. | 16 ||
-| [`pyrophina`](#object-pyrophina) | Variable || 16 ||
+| [`pyrophina`](#object-pyrophina) | Variable | A variable representing the 'Pyrophina' character or entity. | 16 ||
 | [`StatusEachTurnBegin`](Cat_Mutations.md#object-statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 16 ||
 | [`StatusEachTurnEnd`](Cat_Mutations.md#object-statuseachturnend) | Object | Applies or references the 'StatusEachTurnEnd' effect/state. | 16 ||
-| [`zaratana`](#object-zaratana) | Variable || 16 ||
+| [`zaratana`](#object-zaratana) | Variable | A variable representing the 'Zaratana' character or entity. | 16 ||
 | [`ApplyToSourceOnKill`](Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 15 ||
 | [`CanApplyToInanimate`](Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 15 ||
 | `HealthMultiplier` | Float | Examples: `1.5, .5, .8` | 15 ||
-| [`Maggot`](#object-maggot) | Object || 15 ||
+| [`Maggot`](#object-maggot) | Object | Specifies the 'Maggot' creature object. | 15 ||
 | [`ReplaceSpawnedObjects`](./Arrays.md#array-replacespawnedobjects) | Array | Applies or references the 'ReplaceSpawnedObjects' effect/state. | 15 ||
 | [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Applies or references the 'ChangeCatClass' effect/state. | 14 ||
 | `EndTurn` | Integer | Applies or references the 'EndTurn' effect/state. | 14 ||
-| `meat` | Variable || 14 ||
+| `meat` | Variable | A variable representing the 'Meat' resource or tag. | 14 ||
 | [`PassiveGroup`](Characters_and_Bosses.md#object-passivegroup) | Object | Passive: A collection of passives grouped together for easier management. | 14 ||
 | [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum | Examples: `CharmedKitten, CharmedFly` | 14 ||
 | `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 14 ||
@@ -126,7 +126,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddBonusMeleeRange` | Integer | Applies the 'AddBonusMeleeRange' effect. | 12 ||
 | `AddCorpseHealth` | Integer | Applies the 'AddCorpseHealth' effect. | 12 ||
 | `AddMaxHealth` | Integer | Applies or references the 'AddMaxHealth' effect/state. | 12 ||
-| [`Bionic`](#object-bionic) | Variable || 12 ||
+| [`Bionic`](#object-bionic) | Variable | A variable representing the 'Bionic' attribute or tag. | 12 ||
 | [`BonusAbility`](./Enums.md#enum-bonusability) | Enum | Applies the 'BonusAbility' effect. | 12 ||
 | [`CritsApplyStatus`](Items_and_Equipment.md#object-critsapplystatus) | Object | Applies the 'CritsApplyStatus' effect. | 12 ||
 | [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Applies or references the 'DeadAltAbility' effect/state. | 12 ||
@@ -143,7 +143,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | Applies or references the 'Food' effect/state. | 11 ||
 | `PermanentMadness` | Integer | Applies or references the 'PermanentMadness' effect/state. | 11 ||
 | [`BoostWeaponDamage`](Items_and_Equipment.md#object-boostweapondamage) | Object | Applies the 'BoostWeaponDamage' effect. | 10 ||
-| [`BrambleRandomTileEvent`](#object-bramblerandomtileevent) | Object || 10 ||
+| [`BrambleRandomTileEvent`](#object-bramblerandomtileevent) | Object | Specifies the 'BrambleRandomTileEvent' object, which triggers a random tile event on bramble tiles. | 10 ||
 | `CoinPickup` | Integer | Applies or references the 'CoinPickup' effect/state. | 10 ||
 | `ExtraMovePoints` | Integer | Applies the 'ExtraMovePoints' effect. | 10 ||
 | `FadeInsteadOfDie` | Integer | Applies or references the 'FadeInsteadOfDie' effect/state. | 10 ||
@@ -160,7 +160,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `WaterWalk` | Integer | Applies or references the 'WaterWalk' effect/state. | 10 ||
 | `Ammo` | Integer | Applies or references the 'Ammo' effect/state. | 9 ||
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | Applies or references the 'Bleed' effect/state. | 9 ||
-| `Creep` | Variable || 9 ||
+| `Creep` | Variable | A variable representing the 'Creep' unit type or tag. | 9 ||
 | `DeferVaporize` | Integer | Applies or references the 'DeferVaporize' effect/state. | 9 ||
 | `DiminishingHealthRegen` | Integer | Applies or references the 'DiminishingHealthRegen' effect/state. | 9 ||
 | [`FormChangeOnElementInfluence`](Characters_and_Bosses.md#object-formchangeonelementinfluence) | Object | Logic: Changes form when affected by an element. | 9 ||
@@ -178,10 +178,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AddStatusToWeapons`](Characters_and_Bosses.md#object-addstatustoweapons) | Object | Applies the 'AddStatusToWeapons' effect. | 8 ||
 | `AlphaTurns` | Integer | Applies the 'AlphaTurns' effect. | 8 ||
 | [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Applies the 'AmplifyStatus' effect. | 8 ||
-| [`BasicMagicMissile`](#object-basicmagicmissile) | Object || 8 ||
+| [`BasicMagicMissile`](#object-basicmagicmissile) | Object | Specifies the basic magic missile attack ability object. | 8 ||
 | [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum | Examples: `food, catnip` | 8 ||
 | `BleedThorns` | Integer | Applies or references the 'BleedThorns' effect/state. | 8 ||
-| [`CharmedFly`](#object-charmedfly) | Object || 8 ||
+| [`CharmedFly`](#object-charmedfly) | Object | Specifies a variant of the Fly familiar that is charmed to fight for the caster's faction. | 8 ||
 | [`DisableAbilitiesWithTag`](./Enums.md#enum-disableabilitieswithtag) | Enum | Examples: `musical, consumable` | 8 ||
 | `ExtraWeaponAttacks` | Integer | Applies the 'ExtraWeaponAttacks' effect. | 8 ||
 | [`ForceSpecificInjury`](./Enums.md#enum-forcespecificinjury) | Enum | Applies the 'ForceSpecificInjury' effect. | 8 ||
@@ -245,7 +245,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 6 ||
 | [`CureDisease`](#object-curedisease) | Object | Applies the 'CureDisease' effect. | 6 ||
 | `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 ||
-| [`DefaultMove`](#object-defaultmove) | Object || 6 ||
+| [`DefaultMove`](#object-defaultmove) | Object | Specifies the default movement ability object for a unit. | 6 ||
 | [`DelayedAutoRevive`](Characters_and_Bosses.md#object-delayedautorevive) | Object | Applies or references the 'DelayedAutoRevive' effect/state. | 6 ||
 | [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum | Applies or references the 'Divide4OnDeath' effect/state. | 6 ||
 | [`DoDistortionRing`](Abilities_and_Spells.md#object-dodistortionring) | Object | Creates a visual distortion ring effect on the screen. | 6 ||
@@ -256,7 +256,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Fragile` | Integer | Applies or references the 'Fragile' effect/state. | 6 ||
 | `FreeFirstCast` | Integer | Applies or references the 'FreeFirstCast' effect/state. | 6 ||
 | [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum | Applies the 'FreePathfindElement' effect. | 6 ||
-| [`Hyde`](#object-hyde) | Object || 6 ||
+| [`Hyde`](#object-hyde) | Object | Specifies the 'Hyde' entity object. | 6 ||
 | [`ItemAuxTransform`](Items_and_Equipment.md#object-itemauxtransform) | Object | Applies or references the 'ItemAuxTransform' effect/state. | 6 ||
 | `KaijuKnockbackImmune` | Integer | Applies or references the 'KaijuKnockbackImmune' effect/state. | 6 ||
 | `KineticSpikes` | Integer | Applies or references the 'KineticSpikes' effect/state. | 6 ||
@@ -289,9 +289,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 5 ||
 | [`CollectsPickupsWithAltEffects`](Abilities_and_Spells.md#object-collectspickupswithalteffects) | Object | Triggers alternative nested effects when collecting items or pickups. | 5 ||
 | `DamageOrHealConditionally` | Integer | Applies or references the 'DamageOrHealConditionally' effect/state. | 5 ||
-| `fetus` | Variable || 5 ||
+| `fetus` | Variable | A variable representing the 'fetus' entity type or resource. | 5 ||
 | [`FlySwarm`](#object-flyswarm) | Object | Examples: `50` | 5 ||
-| [`FlySwarm`](#object-flyswarm) | Object || 5 | `50` (Number), `{ ... }` (Object) |
+| [`FlySwarm`](#object-flyswarm) | Object | Specifies a percentage chance to summon a swarm of flies. | 5 | `50` (Number), `{ ... }` (Object) |
 | `HeadArmorPassiveMultiplierBonus` | Integer | Applies or references the 'HeadArmorPassiveMultiplierBonus' effect/state. | 5 ||
 | `HitExplosion` | Integer | Applies or references the 'HitExplosion' effect/state. | 5 ||
 | `KnockbackDirectionIsFacingDirection` | Enum / Integer | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. | 5 ||
@@ -312,7 +312,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TransformItemOnElementInfluence`](Items_and_Equipment.md#object-transformitemonelementinfluence) | Object | Applies or references the 'TransformItemOnElementInfluence' effect/state. | 5 ||
 | [`TransformOnDeathImmediately`](Characters_and_Bosses.md#object-transformondeathimmediately) | Enum / Object | Logic: Bypasses death sequence to instantly assume a new form. | 5 ||
 | `UpgradeRandomAbility` | Integer | Applies or references the 'UpgradeRandomAbility' effect/state. | 5 ||
-| [`water`](Characters_and_Bosses.md#object-water) | Variable || 5 ||
+| [`water`](Characters_and_Bosses.md#object-water) | Variable | A variable representing the 'Water' damage type or element. | 5 ||
 | [`Water`](Characters_and_Bosses.md#object-water) | Object | Character Form: Behavior and stats for the \'Water\' state. | 5 ||
 | [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum | Applies or references the 'XIsLivingAlliesWithTag' effect/state. | 5 ||
 | [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | Applies or references the 'AbilityAfterEnemyCastSpell_Stackable' effect/state. | 4 |  |
@@ -330,23 +330,23 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AllyDamageReduction` | Integer | Applies the 'AllyDamageReduction' effect. | 4 ||
 | [`AllyManaRegenAura`](Miscellaneous.md#object-allymanaregenaura) | Object | Applies the 'AllyManaRegenAura' effect. | 4 ||
 | `AmplifyKnockback` | Integer | Applies the 'AmplifyKnockback' effect. | 4 ||
-| `any` | Variable || 4 ||
-| `AOEPuddle` | Enum || 4 | `X-1` (Enum) |
+| `any` | Variable | A variable representing the 'any' wildcard or untyped category. | 4 ||
+| `AOEPuddle` | Enum | Specifies an area-of-effect puddle shape, with a string parameter defining the pattern (e.g. 'X-1'). | 4 | `X-1` (Enum) |
 | [`ApplyToConsumed`](Abilities_and_Spells.md#object-applytoconsumed) | Object | Redirects the nested effects to apply to the entity that just consumed this object. | 4 ||
 | [`ArcLightning`](Abilities_and_Spells.md#object-arclightning) | Object | Executes a chain-lightning logic block that bounces between targets. | 4 ||
 | [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 4 ||
 | `BackstabAllDirections` | Integer | Applies or references the 'BackstabAllDirections' effect/state. | 4 ||
 | [`BaitAura`](Characters_and_Bosses.md#object-baitaura) | Object | Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots). | 4 ||
-| [`BasicStraightShot`](#object-basicstraightshot) | Object || 4 ||
-| [`BasicTankMelee`](#object-basictankmelee) | Object || 4 ||
-| [`BeefyCharmedLeech`](#object-beefycharmedleech) | Object || 4 ||
+| [`BasicStraightShot`](#object-basicstraightshot) | Object | Specifies the basic straight shot projectile ability object. | 4 ||
+| [`BasicTankMelee`](#object-basictankmelee) | Object | Specifies the basic tank-class melee attack ability object. | 4 ||
+| [`BeefyCharmedLeech`](#object-beefycharmedleech) | Object | Specifies a variant of the Maggot familiar that is a charmed leech with increased bulk. | 4 ||
 | `BreakAtAux` | Integer | Applies or references the 'BreakAtAux' effect/state. | 4 ||
 | [`BuffImmunity`](Items_and_Equipment.md#object-buffimmunity) | Integer / Object | Applies or references the 'BuffImmunity' effect/state. | 4 ||
-| `bug` | Variable || 4 ||
+| `bug` | Variable | A variable representing the 'bug' entity type or tag. | 4 ||
 | `CatchBoomerang` | Integer | Applies or references the 'CatchBoomerang' effect/state. | 4 ||
 | [`ChanceToBackflip`](Cat_Mutations.md#object-chancetobackflip) | Object | Applies or references the 'ChanceToBackflip' effect/state. | 4 ||
 | [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | Applies or references the 'ChangeTileOnPop' effect/state. | 4 ||
-| [`CharmedTinySpider`](#object-charmedtinyspider) | Object || 4 ||
+| [`CharmedTinySpider`](#object-charmedtinyspider) | Object | Specifies a variant of the TinySpider familiar that is charmed to fight for the caster's faction. | 4 ||
 | [`ClassManaCostReduction`](Cat_Mutations.md#object-classmanacostreduction) | Object | Applies or references the 'ClassManaCostReduction' effect/state. | 4 ||
 | [`CobraReflex`](./Enums.md#enum-cobrareflex) | Enum | Applies the 'CobraReflex' effect. | 4 ||
 | [`Conditional_PartyMember`](Engine_LogicKeys.md#conditional_partymember) | Object | Conditional constraint. Nested properties only trigger if this is true. | 4 ||
@@ -354,15 +354,15 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CopyBasicAttackEffects` | Integer | Applies or references the 'CopyBasicAttackEffects' effect/state. | 4 ||
 | `CountAsCorpse` | Integer | Applies or references the 'CountAsCorpse' effect/state. | 4 ||
 | [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object | Reaction: Executes a counter-attack ability when hit. | 4 ||
-| `CreepTile` | Variable || 4 ||
-| `crow` | Variable || 4 ||
+| `CreepTile` | Variable | A variable representing the 'CreepTile' tile type or tag. | 4 ||
+| `crow` | Variable | A variable representing the 'crow' entity type or tag. | 4 ||
 | [`DisableAbilities`](./Enums.md#enum-disableabilities) | Enum | Applies or references the 'DisableAbilities' effect/state. | 4 ||
 | [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum | Applies or references the 'DisplayDangerAOE' effect/state. | 4 ||
 | [`DistanceBonusDamage`](#object-distancebonusdamage) | Object | Applies the 'DistanceBonusDamage' effect. | 4 ||
 | [`DownRankAIIfWeaponUsable`](./Enums.md#enum-downrankaiifweaponusable) | Float | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. | 4 ||
 | [`ElementalManaCostReduction`](Items_and_Equipment.md#object-elementalmanacostreduction) | Object | Applies the 'ElementalManaCostReduction' effect. | 4 ||
 | [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Applies or references the 'EnableWeather' effect/state. | 4 ||
-| `equal` | Variable || 4 ||
+| `equal` | Variable | A comparison operator specifying 'equal to'. | 4 ||
 | [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum | Examples: `pills` | 4 ||
 | `ExplosionIfHitSomething` | Integer | Applies or references the 'ExplosionIfHitSomething' effect/state. | 4 ||
 | [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object | Additional generic status applications. | 4 ||
@@ -383,8 +383,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 4 ||
 | `ManaCostReduction` | Integer | Applies or references the 'ManaCostReduction' effect/state. | 4 ||
 | [`Metronome`](Abilities_and_Spells.md#object-metronome) | Integer / Object | Executes a random musical or metronome ability. | 4 ||
-| [`Metronome`](Abilities_and_Spells.md#object-metronome) | Boolean (Flag) / Number / Object || 4 | `(Flag)` (Boolean (Flag)), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `musical` | Variable || 4 ||
+| [`Metronome`](Abilities_and_Spells.md#object-metronome) | Boolean (Flag) / Number / Object | Specifies the Metronome ability, which applies a buff that repeats actions; may include stack count and a list of banned abilities. | 4 | `(Flag)` (Boolean (Flag)), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `musical` | Variable | A variable representing the 'musical' damage type or tag. | 4 ||
 | `PartialCleanse` | Integer | Applies or references the 'PartialCleanse' effect/state. | 4 ||
 | [`PassiveAtHealthThreshold`](Items_and_Equipment.md#object-passiveathealththreshold) | Object | Applies or references the 'PassiveAtHealthThreshold' effect/state. | 4 ||
 | [`PassiveWhenDead`](Characters_and_Bosses.md#object-passivewhendead) | Object | State Trigger: Grants passives when this condition is met. | 4 ||
@@ -400,7 +400,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SendRock` | Integer | Applies or references the 'SendRock' effect/state. | 4 ||
 | [`SizeScale`](./Enums.md#enum-sizescale) | Number | Applies or references the 'SizeScale' effect/state. | 4 ||
 | [`SmartMetronome`](Abilities_and_Spells.md#object-smartmetronome) | Integer / Object | Executes a 'smart' random ability that aims to be beneficial based on context. | 4 ||
-| [`SmartMetronome`](Abilities_and_Spells.md#object-smartmetronome) | Integer / Object || 4 | `20` (Number), `{ ... }` (Object) |
+| [`SmartMetronome`](Abilities_and_Spells.md#object-smartmetronome) | Integer / Object | Specifies the SmartMetronome ability, a variant of Metronome that can be upgraded; accepts a stack count or an object with stacks and upgraded. | 4 | `20` (Number), `{ ... }` (Object) |
 | [`SpawnCatCopyOnBattleStart`](Miscellaneous.md#object-spawncatcopyonbattlestart) | Object | Applies the 'SpawnCatCopyOnBattleStart' effect. | 4 ||
 | [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. | 4 ||
 | [`StatusOnAllyCatDeath`](Cat_Mutations.md#object-statusonallycatdeath) | Object | Event Trigger: Applies nested statuses when ally cat death. | 4 ||
@@ -418,7 +418,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 4 ||
 | [`TileTrail`](./Enums.md#enum-tiletrail) | Enum | Applies or references the 'TileTrail' effect/state. | 4 ||
 | [`TimeDelayStatusApplication`](Abilities_and_Spells.md#object-timedelaystatusapplication) | Object | Delays the nested effects by a specified amount of real-time seconds. | 4 ||
-| [`ToadJump_BasicMove`](#object-toadjump_basicmove) | Object || 4 ||
+| [`ToadJump_BasicMove`](#object-toadjump_basicmove) | Object | Specifies the Toad Jump basic movement ability object. | 4 ||
 | [`Trapper`](Characters_and_Bosses.md#object-trapper) | Object | Character Form: Behavior and stats for the 'Trapper' state. | 4 ||
 | `UncappedMana` | Integer | Applies the 'UncappedMana' effect. | 4 ||
 | `Vegan` | Integer | Examples: `1` | 4 ||
@@ -432,7 +432,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ApplyMultipleTimes`](Abilities_and_Spells.md#object-applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 3 ||
 | [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Float | Applies or references the 'BaseStatMultiply' effect/state. | 3 ||
 | [`BasicAttackCritChance`](./Enums.md#enum-basicattackcritchance) | Float | Applies the 'BasicAttackCritChance' effect. | 3 ||
-| `bishop_hat` | Variable || 3 ||
+| `bishop_hat` | Variable | A variable representing the 'bishop_hat' accessory or tag. | 3 ||
 | `BoneArmorPassive` | Integer | Applies or references the 'BoneArmorPassive' effect/state. | 3 ||
 | [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Applies or references the 'BonusTurnPattern' effect/state. | 3 ||
 | `Bounty` | Integer | Applies the 'Bounty' effect. | 3 ||
@@ -442,12 +442,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CantSpreadDiseases` | Integer | Applies or references the 'CantSpreadDiseases' effect/state. | 3 ||
 | [`CatPartsSizeScaleStatus`](Abilities_and_Spells.md#object-catpartssizescalestatus) | Object | Visually scales specific body parts of a character. | 3 ||
 | `ChanceToBlock` | Integer | Applies or references the 'ChanceToBlock' effect/state. | 3 ||
-| [`CharmedTinyTumor`](#object-charmedtinytumor) | Object || 3 ||
+| [`CharmedTinyTumor`](#object-charmedtinytumor) | Object | Specifies a variant of the TinyTumor familiar that is charmed, with optional scale override. | 3 ||
 | [`CollideWithConsumed`](./Math_Equations.md) | Equation | Applies or references the 'CollideWithConsumed' effect/state. | 3 ||
 | [`Conditional_Adjacent`](Engine_LogicKeys.md#conditional_adjacent) | Object | Conditional object: Executes nested logic only if the target is/has Adjacent. | 3 ||
 | [`Conditional_RandomChance`](Abilities_and_Spells.md#object-conditional_randomchance) | Object | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 3 ||
 | [`Conditional_Shielded`](Abilities_and_Spells.md#object-conditional_shielded) | Object | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 3 ||
-| [`CookedChickenLeg`](#object-cookedchickenleg) | Object || 3 ||
+| [`CookedChickenLeg`](#object-cookedchickenleg) | Object | Specifies the CookedChickenLeg item object. | 3 ||
 | `CopyPassiveSlot` | Integer | Applies or references the 'CopyPassiveSlot' effect/state. | 3 ||
 | `CorpseVaporizer` | Integer | Applies or references the 'CorpseVaporizer' effect/state. | 3 ||
 | [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 ||
@@ -469,7 +469,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 ||
 | `InstantMaxHealthUp` | Integer | Applies or references the 'InstantMaxHealthUp' effect/state. | 3 ||
 | [`KnockOutCoin`](Abilities_and_Spells.md#object-knockoutcoin) | Integer / Object | Forces the target to drop coins. | 3 ||
-| [`Lava_Distortion`](#object-lava_distortion) | Variable || 3 ||
+| [`Lava_Distortion`](#object-lava_distortion) | Variable | A variable representing a lava distortion visual effect, defined with movieclip and render settings. | 3 ||
 | `Lifesteal` | Integer | Applies or references the 'Lifesteal' effect/state. | 3 ||
 | [`ManaPickup`](Characters_and_Bosses.md#object-manapickup) | Object | Pickup Logic: Defines what happens when a mana item is collected. | 3 ||
 | `Meteornado` | Integer | Examples: `1` | 3 ||
@@ -504,11 +504,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 ||
 | [`TakeBonusTurnWithAIControl`](Abilities_and_Spells.md#object-takebonusturnwithaicontrol) | Object | Grants the character an immediate extra turn, but forces the AI to control them during it. | 3 ||
 | `TempInitiativeChange` | Integer | Applies or references the 'TempInitiativeChange' effect/state. | 3 ||
-| [`ThornUpX`](#object-thornupx) | Object || 3 ||
+| [`ThornUpX`](#object-thornupx) | Object | Specifies the ThornUpX self-buff ability, which grants a thorn-based retaliation effect. | 3 ||
 | [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | Applies or references the 'TileTrail_Ahead' effect/state. | 3 ||
 | `TriggerGameEnding` | Integer | Applies or references the 'TriggerGameEnding' effect/state. | 3 ||
 | `TrueShot` | Integer | Applies or references the 'TrueShot' effect/state. | 3 ||
-| [`TVOff`](#object-tvoff) | Object || 3 ||
+| [`TVOff`](#object-tvoff) | Object | Specifies the TVOff self-buff ability, which turns off a unit's TV (likely a visual effect). | 3 ||
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 3 ||
 | `VaporizeTarget` | Integer | Applies or references the 'VaporizeTarget' effect/state. | 3 ||
 | [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | Applies or references the 'XIsMultipliedPercentHealth' effect/state. | 3 ||
@@ -516,7 +516,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AbilityEnabledIfHasStatus`](./Enums.md#enum-abilityenabledifhasstatus) | Enum | Applies or references the 'AbilityEnabledIfHasStatus' effect/state. | 2 ||
 | [`AbilityHealthThreshold`](Characters_and_Bosses.md#object-abilityhealththreshold) | Object | AI Trigger: Executes an ability when health drops below a specific threshold. | 2 ||
 | [`AbilityOnRoundEnd`](Characters_and_Bosses.md#object-abilityonroundend) | Object | AI Trigger: Executes an ability at the end of the combat round. | 2 ||
-| [`AbsorbBuff`](#object-absorbbuff) | Variable || 2 ||
+| [`AbsorbBuff`](#object-absorbbuff) | Variable | A variable representing an absorb buff visual effect, typically a mana particle. | 2 ||
 | `AbsorbManaAura` | Integer | Applies the 'AbsorbManaAura' effect. | 2 ||
 | `AddAllyNeighborsToAbilityRange` | Integer | Applies the 'AddAllyNeighborsToAbilityRange' effect. | 2 ||
 | `AddChaScalingSpellDamage` | Integer | Applies the 'AddChaScalingSpellDamage' effect. | 2 ||
@@ -544,7 +544,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddWeaponScaling` | Integer | Applies the 'AddWeaponScaling' effect. | 2 ||
 | [`AfterImage`](Abilities_and_Spells.md#object-afterimage) | Object | Spawns a visual decoy or shade at the caster's previous location. | 2 ||
 | `AggroTargetIsBuddy` | Integer | Applies or references the 'AggroTargetIsBuddy' effect/state. | 2 ||
-| `all_items` | Variable || 2 ||
+| `all_items` | Variable | A variable representing the 'all_items' category, likely a wildcard for any item. | 2 ||
 | `AllDamageCrits` | Integer | Applies the 'AllDamageCrits' effect. | 2 ||
 | `AllDamageImmune_IncludingSpeculative` | Integer | Applies or references the 'AllDamageImmune_IncludingSpeculative' effect/state. | 2 ||
 | `AlliesAvoidTraps` | Integer | Applies the 'AlliesAvoidTraps' effect. | 2 ||
@@ -575,18 +575,18 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BackstabFront` | Integer | Examples: `1` | 2 ||
 | `BasicAttackCantMiss` | Integer | Examples: `1` | 2 ||
 | `BasicAttackStatusCarefulness` | Integer | Applies the 'BasicAttackStatusCarefulness' effect. | 2 ||
-| [`BasicMonkMelee`](#object-basicmonkmelee) | Object || 2 ||
-| [`BasicRanged`](#object-basicranged) | Object || 2 ||
-| [`BasicSuplex`](#object-basicsuplex) | Object || 2 ||
+| [`BasicMonkMelee`](#object-basicmonkmelee) | Object | Specifies the basic monk melee attack ability object. | 2 ||
+| [`BasicRanged`](#object-basicranged) | Object | Specifies the basic ranged attack ability object. | 2 ||
+| [`BasicSuplex`](#object-basicsuplex) | Object | Specifies the basic suplex (grapple) attack ability object. | 2 ||
 | [`BodyGuard`](Abilities_and_Spells.md#object-bodyguard) | Object | Protects an ally by intercepting attacks directed at them. | 2 ||
-| [`BodyGuard`](Abilities_and_Spells.md#object-bodyguard) | Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`BodyGuard`](Abilities_and_Spells.md#object-bodyguard) | Object | An object containing `stacks` and `ability` to define a bodyguard protector effect. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `BonusFoodEachBattle` | Integer | Applies the 'BonusFoodEachBattle' effect. | 2 ||
 | `BonusHealthRegenBasedOnDex` | Integer | Applies the 'BonusHealthRegenBasedOnDex' effect. | 2 ||
 | `BonusRangeBasedOnDex` | Integer | Applies the 'BonusRangeBasedOnDex' effect. | 2 ||
-| [`BonusToss`](#object-bonustoss) | Object || 2 ||
-| [`BonusToss2`](#object-bonustoss2) | Object || 2 ||
+| [`BonusToss`](#object-bonustoss) | Object | Specifies the BonusToss ability, likely a special toss or throw attack. | 2 ||
+| [`BonusToss2`](#object-bonustoss2) | Object | Specifies the BonusToss2 ability, a variant of BonusToss. | 2 ||
 | [`BoobyTrapItems`](Miscellaneous.md#object-boobytrapitems) | Object | Applies the 'BoobyTrapItems' effect. | 2 ||
-| [`BoomerCatExplode`](#object-boomercatexplode) | Object || 2 ||
+| [`BoomerCatExplode`](#object-boomercatexplode) | Object | Specifies the BoomerCatExplode ability, which causes a Boomer Cat to explode. | 2 ||
 | `BoostAllyStatsOnDeath` | Integer | Applies the 'BoostAllyStatsOnDeath' effect. | 2 ||
 | `BoostDamageGlobalAura` | Integer | Applies the 'BoostDamageGlobalAura' effect. | 2 ||
 | `BoostHeals` | Integer | Applies or references the 'BoostHeals' effect/state. | 2 ||
@@ -596,7 +596,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BraceForEachNeighboringEnemy` | Integer | Applies the 'BraceForEachNeighboringEnemy' effect. | 2 ||
 | `BreakWhenNoShield` | Integer | Applies or references the 'BreakWhenNoShield' effect/state. | 2 ||
 | [`BungaEntrance`](Characters_and_Bosses.md#object-bungaentrance) | Object | Animation/AI State: Bunga entering the arena. | 2 ||
-| [`BungaSwipe`](#object-bungaswipe) | Object || 2 ||
+| [`BungaSwipe`](#object-bungaswipe) | Object | Specifies the BungaSwipe melee attack ability, with its AI behavior and animation. | 2 ||
 | `CancelPrimedAbilities` | Integer | Applies or references the 'CancelPrimedAbilities' effect/state. | 2 ||
 | `CanLevelUpWhenDead` | Integer | Applies or references the 'CanLevelUpWhenDead' effect/state. | 2 ||
 | `CanRemoveCursedItems` | Integer | Examples: `1` | 2 ||
@@ -605,8 +605,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CapMovementAbilityRange` | Integer | Applies or references the 'CapMovementAbilityRange' effect/state. | 2 ||
 | `CapTechSpent` | Integer | Applies the 'CapTechSpent' effect. | 2 ||
 | [`CatAPultAnimation`](Miscellaneous.md#object-catapultanimation) | Object | Applies the 'CatAPultAnimation' effect. | 2 ||
-| [`CatapultJump`](#object-catapultjump) | Object || 2 ||
-| [`CatapultJump2`](#object-catapultjump2) | Object || 2 ||
+| [`CatapultJump`](#object-catapultjump) | Object | A variant of BasicJump that launches the unit to a target location, dealing damage to enemies upon landing. | 2 ||
+| [`CatapultJump2`](#object-catapultjump2) | Object | An upgraded variant of CatapultJump with extended range or increased damage. | 2 ||
 | [`CatchProjectiles`](Items_and_Equipment.md#object-catchprojectiles) | Object | Applies or references the 'CatchProjectiles' effect/state. | 2 ||
 | `CCImmunity` | Integer | Applies the 'CCImmunity' effect. | 2 ||
 | `ChainKnockback` | Integer | Applies the 'ChainKnockback' effect. | 2 ||
@@ -617,11 +617,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ChangeTauntPriority` | Integer | Applies the 'ChangeTauntPriority' effect. | 2 ||
 | [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | Applies or references the 'ChangeTileOnDeath' effect/state. | 2 ||
 | [`ChargeFists`](#object-chargefists) | Integer / Object | Applies or references the 'ChargeFists' effect/state. | 2 ||
-| [`ChargeFists`](#object-chargefists) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`ChargeFists`](#object-chargefists) | Integer / Object | The number of charges for the Charge Fists ability. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`ChargeSpiritBombAura`](./Enums.md#enum-chargespiritbombaura) | Enum | Applies or references the 'ChargeSpiritBombAura' effect/state. | 2 ||
 | `CharmAllFlies` | Integer | Applies the 'CharmAllFlies' effect. | 2 ||
-| [`CharmedDemonKitten`](#object-charmeddemonkitten) | Object || 2 ||
-| [`CharmedFlySwarm`](#object-charmedflyswarm) | Object || 2 ||
+| [`CharmedDemonKitten`](#object-charmeddemonkitten) | Object | A variant of Hyde that creates a charmed Demon Kitten ally under the unit's control. | 2 ||
+| [`CharmedFlySwarm`](#object-charmedflyswarm) | Object | A variant of FlySwarm that spawns a charmed Fly Swarm allied with the unit's faction. | 2 ||
 | `CharmedForceAttack` | Integer | Applies or references the 'CharmedForceAttack' effect/state. | 2 ||
 | [`CherubimReaction`](Characters_and_Bosses.md#object-cherubimreaction) | Object | Reaction: Custom reaction triggers for Cherubim enemies. | 2 ||
 | `ClearNegativeEffects` | Integer | Applies the 'ClearNegativeEffects' effect. | 2 ||
@@ -631,7 +631,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Conductor`](Passives_and_Statuses.md#object-conductor) | Object | Applies the 'Conductor' effect. | 2 ||
 | `ConductorManaRegen` | Integer | Applies the 'ConductorManaRegen' effect. | 2 ||
 | [`ConjureBonusAbility`](Abilities_and_Spells.md#object-conjurebonusability) | Enum / Object | Adds a temporary bonus ability to the character's hand/deck. | 2 ||
-| [`ConjureBonusAbility`](Abilities_and_Spells.md#object-conjurebonusability) | Enum / Object || 2 | `random` (Enum), `Mage` (Enum), `{ ... }` (Object) |
+| [`ConjureBonusAbility`](Abilities_and_Spells.md#object-conjurebonusability) | Enum / Object | Specifies the bonus ability that the unit gains, either by class or by specific ability name. | 2 | `random` (Enum), `Mage` (Enum), `{ ... }` (Object) |
 | `ConjureCastSpellsForAllies` | Integer | Applies the 'ConjureCastSpellsForAllies' effect. | 2 ||
 | `ConsumableEffectsMultiplierBonus` | Integer | Applies the 'ConsumableEffectsMultiplierBonus' effect. | 2 ||
 | `CopyCatPassive_Initializer` | Integer | Applies or references the 'CopyCatPassive_Initializer' effect/state. | 2 ||
@@ -666,9 +666,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DoubleCastSpell` | Integer | Applies or references the 'DoubleCastSpell' effect/state. | 2 ||
 | `DoubleCastWeapons` | Integer | Applies the 'DoubleCastWeapons' effect. | 2 ||
 | [`DoubleLoot`](#object-doubleloot) | Integer / Object | Applies or references the 'DoubleLoot' effect/state. | 2 ||
-| [`DoubleLoot`](#object-doubleloot) | Integer / Object || 2 | `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`DoubleLoot`](#object-doubleloot) | Integer / Object | The number of extra loot rolls or items granted when looting. | 2 | `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `DrinkWater` | Integer | Applies or references the 'DrinkWater' effect/state. | 2 ||
-| [`DrMangler`](#object-drmangler) | Object || 2 ||
+| [`DrMangler`](#object-drmangler) | Object | An ability or status associated with the Dr. Mangler enemy, typically involving high-damage attacks. | 2 ||
 | `DukeOfFlies` | Integer | Applies the 'DukeOfFlies' effect. | 2 ||
 | [`Dyslexia`](./Arrays.md#array-dyslexia) | Array | Examples: `[ 6 9 ], [ 3 5 ]` | 2 ||
 | `EachSpellFreeAtFullMana` | Integer | Applies the 'EachSpellFreeAtFullMana' effect. | 2 ||
@@ -678,11 +678,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Empath` | Integer | Applies the 'Empath' effect. | 2 ||
 | `EmptyMana` | Integer | Applies the 'EmptyMana' effect. | 2 ||
 | [`EmptyMind`](#object-emptymind) | Integer / Object | Applies or references the 'EmptyMind' effect/state. | 2 ||
-| [`EmptyMind`](#object-emptymind) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`EmptyMind`](#object-emptymind) | Integer / Object | The number of stacks of the Empty Mind status effect applied, which prevents the unit from gaining or using mental effects. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `EnemiesGetPickupsKnockedOut` | Integer | Applies the 'EnemiesGetPickupsKnockedOut' effect. | 2 ||
 | `EnergyStorm` | Integer | Applies the 'EnergyStorm' effect. | 2 ||
 | [`Enlarge`](#object-enlarge) | Integer / Object | Applies or references the 'Enlarge' effect/state. | 2 ||
-| [`Enlarge`](#object-enlarge) | Integer / Object || 2 | `3` (Number), `{ ... }` (Object) |
+| [`Enlarge`](#object-enlarge) | Integer / Object | Increases the unit's size by a specified number of levels, granting bonus health and damage. | 2 | `3` (Number), `{ ... }` (Object) |
 | `EquipmentPassiveMultiplierBonus` | Integer | Applies the 'EquipmentPassiveMultiplierBonus' effect. | 2 ||
 | `EquipmentSetBonusBonus` | Integer | Applies the 'EquipmentSetBonusBonus' effect. | 2 ||
 | [`EscapeSequence`](Miscellaneous.md#object-escapesequence) | Object | Applies the 'EscapeSequence' effect. | 2 ||
@@ -726,9 +726,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Grass`](Engine_LogicKeys.md#object-grass) | Object | Examples: `{ ... }` | 2 ||
 | `GrassTileHealing` | Integer | Applies the 'GrassTileHealing' effect. | 2 ||
 | [`GravityWell`](Miscellaneous.md#object-gravitywell) | Object | Applies the 'GravityWell' effect. | 2 ||
-| `greater` | Variable || 2 ||
-| [`GrenadeExplode`](#object-grenadeexplode) | Object || 2 ||
-| [`Haunt`](#object-haunt) | Object || 2 ||
+| `greater` | Variable | A variable used to denote an upgraded or more powerful version of an ability or status. | 2 ||
+| [`GrenadeExplode`](#object-grenadeexplode) | Object | A spell template that triggers an explosive effect around the unit or target point. | 2 ||
+| [`Haunt`](#object-haunt) | Object | An ability that causes a ghostly entity to afflict a target, dealing damage over time or applying a debuff. | 2 ||
 | `HealAndOverhealToShield` | Integer | Applies the 'HealAndOverhealToShield' effect. | 2 ||
 | `HealAtStart` | Integer | Applies the 'HealAtStart' effect. | 2 ||
 | `HealDamagesEnemies` | Integer | Applies the 'HealDamagesEnemies' effect. | 2 ||
@@ -740,7 +740,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`HolyShieldTransferToTaggedMinions`](./Enums.md#enum-holyshieldtransfertotaggedminions) | Enum | Applies the 'HolyShieldTransferToTaggedMinions' effect. | 2 ||
 | `HPGainBlock` | Integer | Applies or references the 'HPGainBlock' effect/state. | 2 ||
 | [`IceArmor`](#object-icearmor) | Integer / Object | Applies or references the 'IceArmor' effect/state. | 2 ||
-| [`IceArmor`](#object-icearmor) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`IceArmor`](#object-icearmor) | Integer / Object | The number of stacks of ice armor, reducing incoming damage or freezing attackers. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`ImmediateUseDirectionalAbility`](./Enums.md#enum-immediateusedirectionalability) | Enum | Applies or references the 'ImmediateUseDirectionalAbility' effect/state. | 2 ||
 | `ImmobilePassive` | Integer | Applies or references the 'ImmobilePassive' effect/state. | 2 ||
 | `ImmortalLeeches` | Integer | Applies the 'ImmortalLeeches' effect. | 2 ||
@@ -777,24 +777,24 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MetalDetector` | Integer | Applies the 'MetalDetector' effect. | 2 ||
 | `MinimumTech` | Integer | Applies the 'MinimumTech' effect. | 2 ||
 | [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | Applies or references the 'MiniVolcanoReaction' effect/state. | 2 ||
-| [`MockingbirdForm`](#object-mockingbirdform) | Object || 2 ||
+| [`MockingbirdForm`](#object-mockingbirdform) | Object | A self-buff template that transforms the unit into a mockingbird form, gaining enhanced evasion and movement. | 2 ||
 | [`ModifyAbility`](#object-modifyability) | Object | Applies or references the 'ModifyAbility' effect/state. | 2 ||
 | [`MotherTumorSpawnInCapture`](Characters_and_Bosses.md#object-mothertumorspawnincapture) | Object | Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning. | 2 ||
 | [`MoveAwayFromDamageSource`](Characters_and_Bosses.md#object-moveawayfromdamagesource) | Object | Examples: `BasicJump` | 2 ||
 | [`MovementReaction`](Characters_and_Bosses.md#object-movementreaction) | Object | Reaction: Triggers an effect or ability when forced to move. | 2 ||
-| [`MoveOne`](#object-moveone) | Object || 2 ||
+| [`MoveOne`](#object-moveone) | Object | An ability that allows the unit to move exactly one tile, ignoring movement cost penalties. | 2 ||
 | `MoveRandomly` | Integer | Applies the 'MoveRandomly' effect. | 2 ||
 | [`MoveSpeedMultiplier`](./Enums.md#enum-movespeedmultiplier) | Float | Applies or references the 'MoveSpeedMultiplier' effect/state. | 2 ||
 | [`MoveTowardsDamageSource`](Characters_and_Bosses.md#object-movetowardsdamagesource) | Enum / Object | AI Movement: Closes distance on the last source of damage. | 2 ||
 | [`MoveWhenDamaged`](Cat_Mutations.md#object-movewhendamaged) | Enum / Object | AI Movement: Forces a reposition when taking damage. | 2 ||
-| [`neck_NukeBonus`](#object-neck_nukebonus) | Object || 2 ||
-| [`neck_NukeExplode`](#object-neck_nukeexplode) | Object || 2 ||
-| [`Necro_SoulDagger_Uncharged`](#object-necro_souldagger_uncharged) | Object || 2 ||
+| [`neck_NukeBonus`](#object-neck_nukebonus) | Object | A self-buff template that primes the unit to trigger a massive explosion upon death. | 2 ||
+| [`neck_NukeExplode`](#object-neck_nukeexplode) | Object | A spell template that creates a powerful area-of-effect explosion centered on the unit. | 2 ||
+| [`Necro_SoulDagger_Uncharged`](#object-necro_souldagger_uncharged) | Object | An uncharged state of the Necromancer's soul dagger ability, requiring souls to activate. | 2 ||
 | [`NextAttackSpecialCrit`](Abilities_and_Spells.md#object-nextattackspecialcrit) | Integer / Object | Modifies the character's next attack to have special critical properties. | 2 ||
 | [`NextBattleStatus`](#object-nextbattlestatus) | Object | Applies the 'NextBattleStatus' effect. | 2 ||
 | `NoManaRegen` | Integer | Applies the 'NoManaRegen' effect. | 2 ||
 | `NoReflection` | Integer | Applies the 'NoReflection' effect. | 2 ||
-| [`NubbyToss`](#object-nubbytoss) | Object || 2 ||
+| [`NubbyToss`](#object-nubbytoss) | Object | An ability that allows the unit to throw a nubby projectile, dealing damage to a single target. | 2 ||
 | `NubbyTossPriority` | Integer | Applies the 'NubbyTossPriority' effect. | 2 ||
 | [`NukeQuestFinalBossModifications`](Abilities_and_Spells.md#object-nukequestfinalbossmodifications) | Object | Special encounter trigger for the Nuke Quest ending. | 2 ||
 | `NumbingLeeches` | Integer | Applies the 'NumbingLeeches' effect. | 2 ||
@@ -806,9 +806,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`PassiveAfterXKills`](Items_and_Equipment.md#object-passiveafterxkills) | Object | Applies or references the 'PassiveAfterXKills' effect/state. | 2 ||
 | [`PassiveAtFullHealth`](Miscellaneous.md#object-passiveatfullhealth) | Object | Applies the 'PassiveAtFullHealth' effect. | 2 ||
 | [`PassiveAtInjuryThreshold`](Miscellaneous.md#object-passiveatinjurythreshold) | Object | Applies the 'PassiveAtInjuryThreshold' effect. | 2 ||
-| [`PassiveEnergized`](#object-passiveenergized) | Variable || 2 ||
+| [`PassiveEnergized`](#object-passiveenergized) | Variable | A visual particle effect that plays a glowing electricity animation on the unit, indicating an energized state. | 2 ||
 | [`PassiveIfWeaponIsUsable`](Items_and_Equipment.md#object-passiveifweaponisusable) | Object | Applies or references the 'PassiveIfWeaponIsUsable' effect/state. | 2 ||
-| [`PassiveTar`](#object-passivetar) | Variable || 2 ||
+| [`PassiveTar`](#object-passivetar) | Variable | A visual particle effect that drips tar from the unit, indicating a tarred or slowed status. | 2 ||
 | [`PassiveUntilCastSpell`](Miscellaneous.md#object-passiveuntilcastspell) | Object | Applies the 'PassiveUntilCastSpell' effect. | 2 ||
 | [`PassiveUntilGetKill`](Miscellaneous.md#object-passiveuntilgetkill) | Object | Applies the 'PassiveUntilGetKill' effect. | 2 ||
 | [`PassiveWhenTheAlpha`](Miscellaneous.md#object-passivewhenthealpha) | Object | State Trigger: Grants nested passives when the alpha. | 2 ||
@@ -821,9 +821,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PermanentItems` | Integer | Applies the 'PermanentItems' effect. | 2 ||
 | `PermanentUpgradeRandomActive` | Integer | Applies or references the 'PermanentUpgradeRandomActive' effect/state. | 2 ||
 | `Phasing` | Integer | Applies or references the 'Phasing' effect/state. | 2 ||
-| [`PlayerCat_ThiefShade2`](#object-playercat_thiefshade2) | Object || 2 ||
+| [`PlayerCat_ThiefShade2`](#object-playercat_thiefshade2) | Object | An ability that summons a Shade version of the Thief Cat player class, aiding in combat or theft. | 2 ||
 | `PoisonMultiplier` | Integer | Applies the 'PoisonMultiplier' effect. | 2 ||
-| [`Poop`](Events_and_Encounters.md#object-poop) | Object || 2 ||
+| [`Poop`](Events_and_Encounters.md#object-poop) | Object | An object that creates a pile of poop on the ground, which can be used for environmental effects or interactions. | 2 ||
 | `PrioritizeAggroTarget` | Integer | Applies or references the 'PrioritizeAggroTarget' effect/state. | 2 ||
 | `PrioritizePlayerCats` | Integer | Applies or references the 'PrioritizePlayerCats' effect/state. | 2 ||
 | `PrioritizeWeakestEnemy` | Integer | Applies or references the 'PrioritizeWeakestEnemy' effect/state. | 2 ||
@@ -836,15 +836,15 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 ||
 | [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Applies or references the 'RandomTaggedMutation' effect/state. | 2 ||
 | `RangedTrueShot` | Integer | Applies or references the 'RangedTrueShot' effect/state. | 2 ||
-| [`RatKing`](#object-ratking) | Object || 2 ||
-| [`ReaperRevenge`](#object-reaperrevenge) | Object || 2 ||
+| [`RatKing`](#object-ratking) | Object | An ability or status that summons or transforms the unit into the Rat King, gaining control over nearby rats. | 2 ||
+| [`ReaperRevenge`](#object-reaperrevenge) | Object | A teleport template that moves the unit to a target location and applies a self-buff upon arrival. | 2 ||
 | `RebukeDamage` | Integer | Applies or references the 'RebukeDamage' effect/state. | 2 ||
 | [`red`](Events_and_Encounters.md#object-red) | Object | Event Object: Story branch or dialog option representing the \'Red\' action. | 2 ||
 | [`Reflect`](#object-reflect) | Integer / Object | Applies or references the 'Reflect' effect/state. | 2 ||
 | [`RefreshEquipmentAbilityOnElement`](Items_and_Equipment.md#object-refreshequipmentabilityonelement) | Object | Applies or references the 'RefreshEquipmentAbilityOnElement' effect/state. | 2 ||
 | `RefreshMoveOnWeaponConnect` | Integer | Applies the 'RefreshMoveOnWeaponConnect' effect. | 2 ||
 | [`Regurge`](#object-regurge) | Integer / Object | Applies or references the 'Regurge' effect/state. | 2 ||
-| [`Regurge`](#object-regurge) | Integer / Object || 2 | `1` (Number), `{ ... }` (Object) |
+| [`Regurge`](#object-regurge) | Integer / Object | Number of stacks of Regurge status, causing the unit to regurgitate items or statuses. | 2 | `1` (Number), `{ ... }` (Object) |
 | `ReloadOnKill` | Integer | Applies or references the 'ReloadOnKill' effect/state. | 2 ||
 | `ReloadOnKillEnemy` | Integer | Applies or references the 'ReloadOnKillEnemy' effect/state. | 2 ||
 | `ReloadOnTotalDamageReceived` | Integer | Applies or references the 'ReloadOnTotalDamageReceived' effect/state. | 2 ||
@@ -860,12 +860,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ReturnBoundItemOnBattleEnd` | Integer | Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state. | 2 ||
 | `ReviveOnWin` | Integer | Applies the 'ReviveOnWin' effect. | 2 ||
 | [`Robot`](Characters_and_Bosses.md#object-robot) | Integer / Object | Character Form: Behavior and stats for the 'Robot' state. | 2 ||
-| [`robot`](Characters_and_Bosses.md#object-robot) | Variable || 2 ||
+| [`robot`](Characters_and_Bosses.md#object-robot) | Variable | A variable that marks the unit as a robotic entity, making it immune to certain organic-only effects. | 2 ||
 | `RobotsInheritArmor` | Integer | Applies the 'RobotsInheritArmor' effect. | 2 ||
 | `RockDetector` | Integer | Applies the 'RockDetector' effect. | 2 ||
 | `SafeExplosions` | Integer | Applies the 'SafeExplosions' effect. | 2 ||
 | [`Sandstorm`](#object-sandstorm) | Object | Examples: `1` | 2 ||
-| [`Sandstorm`](#object-sandstorm) | Object || 2 | `1` (Number), `{ ... }` (Object) |
+| [`Sandstorm`](#object-sandstorm) | Object | A self-buff template or integer value that creates a sandstorm aura around the unit, reducing enemy accuracy. | 2 | `1` (Number), `{ ... }` (Object) |
 | [`ScaledStatusOnLoseShield`](Miscellaneous.md#object-scaledstatusonloseshield) | Object | Applies the 'ScaledStatusOnLoseShield' effect. | 2 ||
 | [`ScaledStatusOnOverHealed`](Miscellaneous.md#object-scaledstatusonoverhealed) | Object | Applies the 'ScaledStatusOnOverHealed' effect. | 2 ||
 | [`ScaledStatusOnOverMana`](Miscellaneous.md#object-scaledstatusonovermana) | Object | Applies the 'ScaledStatusOnOverMana' effect. | 2 ||
@@ -877,22 +877,22 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`SetDefaultFace`](./Enums.md#enum-setdefaultface) | Enum | Applies or references the 'SetDefaultFace' effect/state. | 2 ||
 | [`SetItemAux`](#object-setitemaux) | Object | Applies or references the 'SetItemAux' effect/state. | 2 ||
 | `SetSpellCosts` | Integer | Applies the 'SetSpellCosts' effect. | 2 ||
-| [`Shadowstep`](#object-shadowstep) | Object || 2 ||
+| [`Shadowstep`](#object-shadowstep) | Object | An ability that allows the unit to teleport behind a target, dealing bonus damage from the flank. | 2 ||
 | `ShareHealthRegen` | Integer | Applies the 'ShareHealthRegen' effect. | 2 ||
 | [`SharePickups`](Characters_and_Bosses.md#object-sharepickups) | Object | Applies the 'SharePickups' effect. | 2 ||
 | [`Shatter`](#object-shatter) | Integer / Object | Applies or references the 'Shatter' effect/state. | 2 ||
 | [`ShortCircuit`](#object-shortcircuit) | Integer / Object | Applies or references the 'ShortCircuit' effect/state. | 2 ||
-| [`ShortCircuit`](#object-shortcircuit) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`ShortCircuit`](#object-shortcircuit) | Integer / Object | Number of stacks causing the unit to lose its turn or be interrupted. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `ShoulderCheck` | Integer | Applies the 'ShoulderCheck' effect. | 2 ||
 | [`ShovingMatch`](./Enums.md#enum-shovingmatch) | Enum | Applies the 'ShovingMatch' effect. | 2 ||
 | `SignalFinalBossShieldBroke` | Integer | Applies or references the 'SignalFinalBossShieldBroke' effect/state. | 2 ||
-| [`SleepDart2`](#object-sleepdart2) | Object || 2 ||
+| [`SleepDart2`](#object-sleepdart2) | Object | An upgraded sleep dart ability that puts a target to sleep for a longer duration or with higher accuracy. | 2 ||
 | [`SlotMachineRollPool`](Characters_and_Bosses.md#object-slotmachinerollpool) | Object | Logic: Defines the possible outcomes for slot machine enemies. | 2 ||
 | `SmallEnemiesIgnoreYou` | Integer | Applies the 'SmallEnemiesIgnoreYou' effect. | 2 ||
 | [`SmellBlood`](#object-smellblood) | Integer / Object | Applies or references the 'SmellBlood' effect/state. | 2 ||
-| [`SmellBlood`](#object-smellblood) | Integer / Object || 2 | `1` (Number), `{ ... }` (Object) |
+| [`SmellBlood`](#object-smellblood) | Integer / Object | An integer or object ability that enhances the unit's senses, increasing damage against wounded enemies. | 2 | `1` (Number), `{ ... }` (Object) |
 | [`SmiteEnemiesWhoKill`](Miscellaneous.md#object-smiteenemieswhokill) | Object | Applies the 'SmiteEnemiesWhoKill' effect. | 2 ||
-| [`SparkleBuff`](#object-sparklebuff) | Variable || 2 ||
+| [`SparkleBuff`](#object-sparklebuff) | Variable | A visual particle effect that adds sparkles to the unit, indicating a positive status or buff. | 2 ||
 | `SpawnBearTrapOnMiss` | Integer | Applies the 'SpawnBearTrapOnMiss' effect. | 2 ||
 | [`SpawnCatCopyWhenDowned`](Miscellaneous.md#object-spawncatcopywhendowned) | Object | Examples: `{ ... }` | 2 ||
 | [`SpawnExtraThingsOnBattleStart`](Cat_Mutations.md#object-spawnextrathingsonbattlestart) | Object | Examples: `{ ... }` | 2 ||
@@ -902,9 +902,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`SpawnObjectOnPopCorpse`](Items_and_Equipment.md#object-spawnobjectonpopcorpse) | Enum / Object | Applies or references the 'SpawnObjectOnPopCorpse' effect/state. | 2 ||
 | [`SpecialFriends`](Miscellaneous.md#object-specialfriends) | Object | Applies the 'SpecialFriends' effect. | 2 ||
 | [`SpecialGodRays`](#object-specialgodrays) | Object | Examples: `{ ... }` | 2 ||
-| [`SpikeBuff`](#object-spikebuff) | Variable || 2 ||
+| [`SpikeBuff`](#object-spikebuff) | Variable | A visual particle effect that adds thorns to the unit, indicating a damage reflection or thorns aura. | 2 ||
 | `SplittableMove` | Integer | Applies the 'SplittableMove' effect. | 2 ||
-| [`Spook`](#object-spook) | Object || 2 ||
+| [`Spook`](#object-spook) | Object | An ability that frightens a target, causing it to flee or be unable to act for a turn. | 2 ||
 | `SpreadExtraDebuffs` | Integer | Applies the 'SpreadExtraDebuffs' effect. | 2 ||
 | `SpreadPainBonus` | Integer | Applies the 'SpreadPainBonus' effect. | 2 ||
 | `SpreadPainBonusCrit` | Integer | Applies the 'SpreadPainBonusCrit' effect. | 2 ||
@@ -965,7 +965,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SwallowSmallCharacter` | Integer | Applies or references the 'SwallowSmallCharacter' effect/state. | 2 ||
 | `SwapHighestAndLowestStat` | Integer | Applies or references the 'SwapHighestAndLowestStat' effect/state. | 2 ||
 | [`Switcheroo`](#object-switcheroo) | Integer / Object | Applies or references the 'Switcheroo' effect/state. | 2 ||
-| [`Switcheroo`](#object-switcheroo) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Switcheroo`](#object-switcheroo) | Integer / Object | Number of stacks that allow swapping positions with another unit. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`TaggedPickupEffectReplacement`](Miscellaneous.md#object-taggedpickupeffectreplacement) | Object | Applies the 'TaggedPickupEffectReplacement' effect. | 2 ||
 | `TempCounterAttack` | Integer | Applies or references the 'TempCounterAttack' effect/state. | 2 ||
 | `TempCritChanceUp` | Integer | Applies or references the 'TempCritChanceUp' effect/state. | 2 ||
@@ -977,9 +977,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TowerDefense`](Miscellaneous.md#object-towerdefense) | Object | Applies the 'TowerDefense' effect. | 2 ||
 | [`TowerDefenseReflex`](./Enums.md#enum-towerdefensereflex) | Enum | Applies the 'TowerDefenseReflex' effect. | 2 ||
 | [`TradeLife`](#object-tradelife) | Integer / Object | Applies or references the 'TradeLife' effect/state. | 2 ||
-| [`TradeLife`](#object-tradelife) | Integer / Object || 2 | `1` (Number), `{ ... }` (Object) |
+| [`TradeLife`](#object-tradelife) | Integer / Object | An integer or spell template that sacrifices a portion of the unit's health to deal equal damage to a target. | 2 | `1` (Number), `{ ... }` (Object) |
 | [`TrailBlazer`](#object-trailblazer) | Enum / Integer / Object | Applies or references the 'TrailBlazer' effect/state. | 2 ||
-| [`TrailBlazer`](#object-trailblazer) | Enum / Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`TrailBlazer`](#object-trailblazer) | Enum / Integer / Object | Either a movement speed boost or the number of affected units. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`TransformOnElementInfluencex`](Characters_and_Bosses.md#object-transformonelementinfluencex) | Object | Logic: Variant element influence transformation. | 2 ||
 | [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | Applies or references the 'TransformWhenBuddyDies' effect/state. | 2 ||
 | `TrapEffectsMultiplier` | Integer | Applies the 'TrapEffectsMultiplier' effect. | 2 ||
@@ -1046,7 +1046,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AIFavorLowHealth` | Integer | Applies or references the 'AIFavorLowHealth' effect/state. | 1 ||
 | [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array | Applies or references the 'AlienBeastDangerZones' effect/state. | 1 ||
 | `AlienBeastEyeStalks` | Integer | Applies or references the 'AlienBeastEyeStalks' effect/state. | 1 ||
-| `all_spells` | Variable || 1 ||
+| `all_spells` | Variable | A variable that collects or applies an effect to all spells the unit knows. | 1 ||
 | `AlliesScrambleSpellAfterCast` | Integer | Applies or references the 'AlliesScrambleSpellAfterCast' effect/state. | 1 ||
 | `AlliesTakeExtraTurn` | Integer | Applies or references the 'AlliesTakeExtraTurn' effect/state. | 1 ||
 | `AllSpellsCostActPoints` | Integer | Applies or references the 'AllSpellsCostActPoints' effect/state. | 1 ||
@@ -1073,39 +1073,39 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BalanceStats` | Integer | Applies or references the 'BalanceStats' effect/state. | 1 ||
 | `BasicAIDangerZone` | Integer | Applies or references the 'BasicAIDangerZone' effect/state. | 1 ||
 | [`BasicAttackStatusSwap`](./Arrays.md#array-basicattackstatusswap) | Array | Examples: `[ TempDamageUp DamageUp ]` | 1 ||
-| [`BasicButcherMelee`](#object-basicbutchermelee) | Object || 1 ||
-| [`BasicDruidAbility`](#object-basicdruidability) | Object || 1 ||
-| [`BasicMagicShortRanged`](#object-basicmagicshortranged) | Object || 1 ||
-| [`BasicMedicMelee`](#object-basicmedicmelee) | Object || 1 ||
-| [`BasicMelee_4Hits`](#object-basicmelee_4hits) | Object || 1 ||
-| [`BasicNecroRanged`](#object-basicnecroranged) | Object || 1 ||
-| [`BasicPsychicPull`](#object-basicpsychicpull) | Object || 1 ||
+| [`BasicButcherMelee`](#object-basicbutchermelee) | Object | A basic melee attack ability for the Butcher enemy class, dealing high damage in close combat. | 1 ||
+| [`BasicDruidAbility`](#object-basicdruidability) | Object | A basic ability for the Druid class, typically involving nature-based effects or transformations. | 1 ||
+| [`BasicMagicShortRanged`](#object-basicmagicshortranged) | Object | A basic short-range magic attack ability that deals magical damage to nearby targets. | 1 ||
+| [`BasicMedicMelee`](#object-basicmedicmelee) | Object | A basic melee attack ability for the Medic class, sometimes with a healing or support component. | 1 ||
+| [`BasicMelee_4Hits`](#object-basicmelee_4hits) | Object | A variant of BasicMelee that strikes the target four times consecutively. | 1 ||
+| [`BasicNecroRanged`](#object-basicnecroranged) | Object | A basic ranged attack ability for the Necromancer class, firing a soul bolt or projectile. | 1 ||
+| [`BasicPsychicPull`](#object-basicpsychicpull) | Object | A basic psychic ability that pulls a target toward the unit, displacing it. | 1 ||
 | [`BattlefieldUniqueRandomPassive`](Characters_and_Bosses.md#object-battlefielduniquerandompassive) | Object | Map Rule: Grants a unique random passive modifier to the battlefield. | 1 ||
-| [`BBTransformMutant`](#object-bbtransformmutant) | Object || 1 ||
-| [`BBTransformZealot`](#object-bbtransformzealot) | Object || 1 ||
+| [`BBTransformMutant`](#object-bbtransformmutant) | Object | A self-buff template that transforms the unit into a Mutant form, altering its abilities and appearance. | 1 ||
+| [`BBTransformZealot`](#object-bbtransformzealot) | Object | A self-buff template that transforms the unit into a Zealot form, gaining fanatical damage bonuses. | 1 ||
 | [`BiggestFood`](Engine_LogicKeys.md#object-biggestfood) | Integer / Object | Applies or references the 'BiggestFood' effect/state. | 1 ||
 | `BigSplashDamage` | Integer | Applies the 'BigSplashDamage' effect. | 1 ||
 | `BlackHolePassive` | Integer | Applies or references the 'BlackHolePassive' effect/state. | 1 ||
 | `BlackHoleSuck` | Integer | Applies or references the 'BlackHoleSuck' effect/state. | 1 ||
 | `BlessingOfPeace` | Integer | Applies or references the 'BlessingOfPeace' effect/state. | 1 ||
-| [`BloatEyeMovement2`](#object-bloateyemovement2) | Object || 1 ||
+| [`BloatEyeMovement2`](#object-bloateyemovement2) | Object | A move template ability for the Bloat Eye enemy, allowing it to move with zero mana cost. | 1 ||
 | [`BloatEyePassive2`](./Enums.md#enum-bloateyepassive2) | Enum | Applies or references the 'BloatEyePassive2' effect/state. | 1 ||
-| [`BloatyExplodey`](#object-bloatyexplodey) | Object || 1 ||
+| [`BloatyExplodey`](#object-bloatyexplodey) | Object | A spell template that causes the unit to explode upon death, dealing area damage. | 1 ||
 | `BlockAllDamage` | Integer | Applies or references the 'BlockAllDamage' effect/state. | 1 ||
 | `BlockDamageUnderThreshold` | Integer | Applies or references the 'BlockDamageUnderThreshold' effect/state. | 1 ||
 | `BlockNegativeStatus` | Integer | Applies or references the 'BlockNegativeStatus' effect/state. | 1 ||
 | `Bloodzerked` | Integer | Applies or references the 'Bloodzerked' effect/state. | 1 ||
 | `BombBehavior` | Integer | Applies or references the 'BombBehavior' effect/state. | 1 ||
 | [`BombRatTurtle`](#object-bombratturtle) | Integer / Object | Applies or references the 'BombRatTurtle' effect/state. | 1 ||
-| [`BoneWormShotMed`](#object-bonewormshotmed) | Object || 1 ||
+| [`BoneWormShotMed`](#object-bonewormshotmed) | Object | A lobbed attack template that fires a medium-range bone projectile from a Bone Worm enemy. | 1 ||
 | [`BonusAbility_DelayedApplication`](./Enums.md#enum-bonusability_delayedapplication) | Enum | Applies or references the 'BonusAbility_DelayedApplication' effect/state. | 1 ||
 | `BonusDamageBasedOnMana` | Integer | Applies or references the 'BonusDamageBasedOnMana' effect/state. | 1 ||
 | `BonusHealthRegenPerDisorder` | Integer | Examples: `1` | 1 ||
 | `BoostDamageAura` | Integer | Applies the 'BoostDamageAura' effect. | 1 ||
 | `BoostRangeAura` | Integer | Applies the 'BoostRangeAura' effect. | 1 ||
 | `BoostReceivedHealing` | Integer | Applies or references the 'BoostReceivedHealing' effect/state. | 1 ||
-| [`BoyDino`](#object-boydino) | Object || 1 ||
-| [`BoyDinoCry`](#object-boydinocry) | Object || 1 ||
+| [`BoyDino`](#object-boydino) | Object | An ability or entity representing a young dinosaur, possibly as a summon or transformation. | 1 ||
+| [`BoyDinoCry`](#object-boydinocry) | Object | A self-buff template that triggers the Boy Dino's cry, applying a debuff to nearby enemies. | 1 ||
 | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 1 ||
 | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 1 ||
 | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 1 ||
@@ -1120,12 +1120,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CantDodge` | Integer | Applies the 'CantDodge' effect. | 1 ||
 | `CapBasicAttackDamage` | Integer | Applies or references the 'CapBasicAttackDamage' effect/state. | 1 ||
 | `CapReceivedDamage` | Integer | Applies or references the 'CapReceivedDamage' effect/state. | 1 ||
-| [`CatGoop`](#object-catgoop) | Object || 1 ||
+| [`CatGoop`](#object-catgoop) | Object | A straight-shot attack template that fires a glob of goop from a cat-like unit. | 1 ||
 | [`CatPartsSizeScale`](Items_and_Equipment.md#object-catpartssizescale) | Object | Applies or references the 'CatPartsSizeScale' effect/state. | 1 ||
-| [`CaveCatDad`](#object-cavecatdad) | Object || 1 ||
+| [`CaveCatDad`](#object-cavecatdad) | Object | An enemy entity that is a massive, cave-dwelling cat with scaled-up graphics and custom data. | 1 ||
 | `CaveWomanBirthControl` | Integer | Applies or references the 'CaveWomanBirthControl' effect/state. | 1 ||
 | [`CerberubsAggroTargetBehavior`](Characters_and_Bosses.md#object-cerberubsaggrotargetbehavior) | Object | AI Logic: Custom aggro targeting rules for Cerberubs. | 1 ||
-| [`CerberubsStraightReaction`](#object-cerberubsstraightreaction) | Object || 1 ||
+| [`CerberubsStraightReaction`](#object-cerberubsstraightreaction) | Object | A straight-shot attack template with a reaction mechanic, increasing its area of effect. | 1 ||
 | `ChampionUpgradeNextMinion` | Integer | Applies or references the 'ChampionUpgradeNextMinion' effect/state. | 1 ||
 | [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
 | `ChanceToAmbush` | Integer | Applies or references the 'ChanceToAmbush' effect/state. | 1 ||
@@ -1140,14 +1140,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 1 ||
 | `CharismaIsMaxStat` | Integer | Applies or references the 'CharismaIsMaxStat' effect/state. | 1 ||
 | `CharmedFacingForceAttack` | Integer | Applies or references the 'CharmedFacingForceAttack' effect/state. | 1 ||
-| [`CharmedLeech`](#object-charmedleech) | Object || 1 ||
-| [`CharmedPooter`](#object-charmedpooter) | Object || 1 ||
-| [`CharmedReaper`](#object-charmedreaper) | Object || 1 ||
+| [`CharmedLeech`](#object-charmedleech) | Object | A variant of Maggot that creates a charmed Leech ally under the unit's control. | 1 ||
+| [`CharmedPooter`](#object-charmedpooter) | Object | A variant of Pooter that spawns a charmed Pooter allied with the unit's faction. | 1 ||
+| [`CharmedReaper`](#object-charmedreaper) | Object | A variant of the Reaper passive that considers allied factions as valid targets for reap effects. | 1 ||
 | `CharmImmunity` | Integer | Applies or references the 'CharmImmunity' effect/state. | 1 ||
-| `choose_favorite_cat` | Variable || 1 ||
-| [`Chubs`](#object-chubs) | Object || 1 ||
-| [`ChubsGoop`](#object-chubsgoop) | Object || 1 ||
-| [`ChubsRage`](#object-chubsrage) | Object || 1 ||
+| `choose_favorite_cat` | Variable | Stores the identifier of the player's chosen favorite cat, used for persistent tracking. | 1 ||
+| [`Chubs`](#object-chubs) | Object | Defines the characterization and properties for the 'Chubs' entity type. | 1 ||
+| [`ChubsGoop`](#object-chubsgoop) | Object | Defines a straight-shot attack ability that costs 0 mana, associated with Chubs. | 1 ||
+| [`ChubsRage`](#object-chubsrage) | Object | Defines a self-buff ability that plays a 'rage' animation without orienting to the target. | 1 ||
 | `ClearDefaultDebris` | Integer | Examples: `1` | 1 ||
 | `ClearFinalBossBattlefield` | Integer | Applies or references the 'ClearFinalBossBattlefield' effect/state. | 1 ||
 | `CloneWeaponTemp` | Integer | Applies or references the 'CloneWeaponTemp' effect/state. | 1 ||
@@ -1163,16 +1163,16 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ConvertDamageToScaledStatus`](Items_and_Equipment.md#object-convertdamagetoscaledstatus) | Object | Applies or references the 'ConvertDamageToScaledStatus' effect/state. | 1 ||
 | [`CounterAttackAfterEnemyCastSpell`](./Enums.md#enum-counterattackafterenemycastspell) | Enum | Applies or references the 'CounterAttackAfterEnemyCastSpell' effect/state. | 1 ||
 | `CounterNextAttacks` | Integer | Applies or references the 'CounterNextAttacks' effect/state. | 1 ||
-| [`CraterCreeperOut`](#object-cratercreeperout) | Object || 1 ||
+| [`CraterCreeperOut`](#object-cratercreeperout) | Object | Defines the graphics and spawn configuration for the CraterCreeperOut entity. | 1 ||
 | `CrowAttackLink` | Integer | Applies or references the 'CrowAttackLink' effect/state. | 1 ||
 | `CurrentWeaponAddElectricElement` | Integer | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. | 1 ||
 | [`CyborgTurns`](Miscellaneous.md#object-cyborgturns) | Object | Examples: `{ ... }` | 1 ||
 | `DamageFromBehindOnly` | Integer | Applies or references the 'DamageFromBehindOnly' effect/state. | 1 ||
 | [`DamageIfDidntUseSpecificAbility`](Miscellaneous.md#object-damageifdidntusespecificability) | Object | Combat Trigger: Deals damage to if didnt use specific ability. | 1 ||
 | `DamageWeapon` | Integer | Applies or references the 'DamageWeapon' effect/state. | 1 ||
-| [`DarkOneStrike`](#object-darkonestrike) | Object || 1 ||
+| [`DarkOneStrike`](#object-darkonestrike) | Object | Defines the properties for the DarkOneStrike ability or status effect. | 1 ||
 | [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the 'DeathwormUnderground' effect/state. | 1 ||
-| [`DecoyExplode`](#object-decoyexplode) | Object || 1 ||
+| [`DecoyExplode`](#object-decoyexplode) | Object | Defines the explosion behavior for a decoy unit upon destruction. | 1 ||
 | `DecoySwapper` | Integer | Applies or references the 'DecoySwapper' effect/state. | 1 ||
 | `DelayedPain` | Integer | Applies or references the 'DelayedPain' effect/state. | 1 ||
 | [`DelayedWindCone`](Abilities_and_Spells.md#object-delayedwindcone) | Object | Creates a delayed Area of Effect cone. | 1 ||
@@ -1182,7 +1182,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DemonicGlyph_Fire` | Integer | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 ||
 | `DemonicGlyph_Movement` | Integer | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 ||
 | `DemonicGlyphStealer` | Integer | Applies or references the 'DemonicGlyphStealer' effect/state. | 1 ||
-| [`DestroyerShieldBash`](#object-destroyershieldbash) | Object || 1 ||
+| [`DestroyerShieldBash`](#object-destroyershieldbash) | Object | Defines the shield bash attack ability for the Destroyer unit. | 1 ||
 | `DestroyNeckArmor` | Integer | Applies or references the 'DestroyNeckArmor' effect/state. | 1 ||
 | [`Diabetes`](Miscellaneous.md#object-diabetes) | Object | Applies the 'Diabetes' effect. | 1 ||
 | [`DiceBehavior`](Characters_and_Bosses.md#object-dicebehavior) | Object | AI Logic: Custom behavior for Dice enemies. | 1 ||
@@ -1190,7 +1190,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`DiesToPiercingAndSpikes`](Characters_and_Bosses.md#object-diestopiercingandspikes) | Object | Vulnerability: Character dies instantly if hit by piercing attacks or spikes. | 1 ||
 | `DieWhenOnlyGolemsLeft` | Integer | Applies or references the 'DieWhenOnlyGolemsLeft' effect/state. | 1 ||
 | `DieWhenSpawnerDies` | Integer | Applies or references the 'DieWhenSpawnerDies' effect/state. | 1 ||
-| [`Digest`](#object-digest) | Object || 1 ||
+| [`Digest`](#object-digest) | Object | Defines the digest status effect or ability that gradually consumes a target. | 1 ||
 | [`DinoLegAnimation`](./Enums.md#enum-dinoleganimation) | Enum | Applies or references the 'DinoLegAnimation' effect/state. | 1 ||
 | `DisableSpells` | Integer | Applies or references the 'DisableSpells' effect/state. | 1 ||
 | `Disguised` | Integer | Applies or references the 'Disguised' effect/state. | 1 ||
@@ -1213,15 +1213,15 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DuplicateRandomEquippedItem` | Integer | Applies or references the 'DuplicateRandomEquippedItem' effect/state. | 1 ||
 | `DustCloudBehavior` | Integer | Applies or references the 'DustCloudBehavior' effect/state. | 1 ||
 | `Dybbuk1HPTracker` | Integer | Applies or references the 'Dybbuk1HPTracker' effect/state. | 1 ||
-| `DybbukManualExitTag` | Variable || 1 ||
+| `DybbukManualExitTag` | Variable | A tag flag marking that the Dybbuk possession was manually ended by the player. | 1 ||
 | [`DybbukPossessionFallback`](Characters_and_Bosses.md#object-dybbukpossessionfallback) | Object | Logic: Fallback state when a Dybbuk possession fails. | 1 ||
-| [`EatShit`](#object-eatshit) | Object || 1 ||
+| [`EatShit`](#object-eatshit) | Object | Defines a specific offensive ability or status effect with that name. | 1 ||
 | `ElectricArcs` | Integer | Applies or references the 'ElectricArcs' effect/state. | 1 ||
 | [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type to check for. | 1 ||
 | [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum | Applies or references the 'ElementWeakness' effect/state. | 1 ||
 | `EliteUpgradeNextMinion` | Integer | Applies or references the 'EliteUpgradeNextMinion' effect/state. | 1 ||
 | `end_of_round` | Boolean | `true` | 1 ||
-| `enemies` | Variable || 1 ||
+| `enemies` | Variable | Specifies the faction or list of factions considered hostile by this entity. | 1 ||
 | `EnrageOnDamage` | Integer | Applies or references the 'EnrageOnDamage' effect/state. | 1 ||
 | [`EnterMount`](./Enums.md#enum-entermount) | Enum | Applies or references the 'EnterMount' effect/state. | 1 ||
 | `EraseSpawnCoins` | Integer | Applies or references the 'EraseSpawnCoins' effect/state. | 1 ||
@@ -1235,8 +1235,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ExplodeCharacter_DeathBloom2` | Integer | Applies or references the 'ExplodeCharacter_DeathBloom2' effect/state. | 1 ||
 | `ExtraInjuryOnDeath` | Integer | Applies the 'ExtraInjuryOnDeath' effect. | 1 ||
 | [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum | Applies or references the 'ExtraTurnsPerTaggedUnit' effect/state. | 1 ||
-| [`face_EatNeverstone`](#object-face_eatneverstone) | Object || 1 ||
-| [`face_LeechBrood`](#object-face_leechbrood) | Object || 1 ||
+| [`face_EatNeverstone`](#object-face_eatneverstone) | Object | A self-buff ability named 'Eat Neverstone' with its own metadata. | 1 ||
+| [`face_LeechBrood`](#object-face_leechbrood) | Object | Defines an ability or status associated with the Leech Brood face. | 1 ||
 | [`FaceAwayLastDamage`](Characters_and_Bosses.md#object-faceawaylastdamage) | Object | Reaction: Forces the character to face away from the last damage source. | 1 ||
 | `FactionDisguiseSource` | Integer | Applies or references the 'FactionDisguiseSource' effect/state. | 1 ||
 | `FastKnockback` | Integer | Applies or references the 'FastKnockback' effect/state. | 1 ||
@@ -1251,12 +1251,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`FinalBossSyncAnimations`](Characters_and_Bosses.md#object-finalbosssyncanimations) | Object | Boss Logic: Synchronizes multi-part boss animations. | 1 ||
 | [`FireArmor`](#object-firearmor) | Integer / Object | Applies or references the 'FireArmor' effect/state. | 1 ||
 | [`FireArmor2`](#object-firearmor2) | Integer / Object | Applies or references the 'FireArmor2' effect/state. | 1 ||
-| [`FireExtinguish_Steam`](#object-fireextinguish_steam) | Variable || 1 ||
+| [`FireExtinguish_Steam`](#object-fireextinguish_steam) | Variable | References a particle effect ('ParticleDustCloud') for steam created when fire is extinguished. | 1 ||
 | `FireflySwarm` | Integer | Examples: `2` | 1 ||
 | `FistOfFateUniqueEnemyTracker` | Integer | Applies or references the 'FistOfFateUniqueEnemyTracker' effect/state. | 1 ||
 | `FlingObjectsOnTop` | Integer | Applies or references the 'FlingObjectsOnTop' effect/state. | 1 ||
 | [`FlushmasterCelebration`](./Enums.md#enum-flushmastercelebration) | Enum | Applies or references the 'FlushmasterCelebration' effect/state. | 1 ||
-| [`FlyBuff`](#object-flybuff) | Variable || 1 ||
+| [`FlyBuff`](#object-flybuff) | Variable | A particle effect object using 'Critter_Fly' movieclip, rendered in a separate layer. | 1 ||
 | `Fog` | Integer | Examples: `1` | 1 ||
 | `ForceCollectsPickups` | Integer | Applies or references the 'ForceCollectsPickups' effect/state. | 1 ||
 | `ForceDodgeEverything` | Integer | Applies or references the 'ForceDodgeEverything' effect/state. | 1 ||
@@ -1276,8 +1276,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `GasCanBehavior` | Integer | Applies or references the 'GasCanBehavior' effect/state. | 1 ||
 | `GasCloudBehavior2` | Integer | Applies or references the 'GasCloudBehavior2' effect/state. | 1 ||
 | `GeminiTwin` | Integer | Applies or references the 'GeminiTwin' effect/state. | 1 ||
-| [`GirlDino`](#object-girldino) | Object || 1 ||
-| [`GirlDinoCry`](#object-girldinocry) | Object || 1 ||
+| [`GirlDino`](#object-girldino) | Object | Defines the characterization and properties for the 'GirlDino' entity type. | 1 ||
+| [`GirlDinoCry`](#object-girldinocry) | Object | A self-buff ability that plays the 'cry' animation without orienting to the target. | 1 ||
 | `GiveBoundItemToTarget` | Integer | Applies or references the 'GiveBoundItemToTarget' effect/state. | 1 ||
 | `GlobalFamiliarDamageBoost` | Integer | Examples: `1` | 1 ||
 | `GlobalFamiliarMoveBoost` | Integer | Examples: `1` | 1 ||
@@ -1287,20 +1287,20 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`GlobalMeleeRevengeDamage`](Items_and_Equipment.md#object-globalmeleerevengedamage) | Object | Applies or references the 'GlobalMeleeRevengeDamage' effect/state. | 1 ||
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 ||
 | `GoopImmunity` | Integer | Applies or references the 'GoopImmunity' effect/state. | 1 ||
-| `grub_familiar` | Variable || 1 ||
-| [`Guillotina2Body`](#object-guillotina2body) | Object || 1 ||
-| [`Guillotina2Head`](#object-guillotina2head) | Object || 1 ||
-| [`Guillotina3Body`](#object-guillotina3body) | Object || 1 ||
-| [`Guillotina3Head`](#object-guillotina3head) | Object || 1 ||
+| `grub_familiar` | Variable | Tracks whether this unit is currently a grub familiar, enabling familiar behaviors. | 1 ||
+| [`Guillotina2Body`](#object-guillotina2body) | Object | Defines the body segment properties for the Guillotina phase 2 entity. | 1 ||
+| [`Guillotina2Head`](#object-guillotina2head) | Object | Defines the head segment properties for the Guillotina phase 2 entity. | 1 ||
+| [`Guillotina3Body`](#object-guillotina3body) | Object | Defines the body segment properties for the Guillotina phase 3 entity. | 1 ||
+| [`Guillotina3Head`](#object-guillotina3head) | Object | Defines the head segment properties for the Guillotina phase 3 entity. | 1 ||
 | `GuillotinaDeathHead` | Integer | Applies or references the 'GuillotinaDeathHead' effect/state. | 1 ||
 | [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | Applies or references the 'HarpoonTrapPassive' effect/state. | 1 ||
-| [`HCHumanDie`](#object-hchumandie) | Object || 1 ||
+| [`HCHumanDie`](#object-hchumandie) | Object | A self-buff ability that plays the 'humandie' animation. | 1 ||
 | [`HealNeighborsEachTurn`](Characters_and_Bosses.md#object-healneighborseachturn) | Object | Passive: Restores health to adjacent allies at the start of the turn. | 1 ||
 | `HealPercentMaxHP` | Integer | Applies or references the 'HealPercentMaxHP' effect/state. | 1 ||
 | `HealTo` | Integer | Applies or references the 'HealTo' effect/state. | 1 ||
 | `HeatWave` | Integer | Examples: `1` | 1 ||
 | `HeavyHits` | Integer | Applies or references the 'HeavyHits' effect/state. | 1 ||
-| [`HemBounce`](#object-hembounce) | Object || 1 ||
+| [`HemBounce`](#object-hembounce) | Object | A melee attack ability that plays the 'bounce' animation without orienting. | 1 ||
 | `HiddenDoomed` | Integer | Applies or references the 'HiddenDoomed' effect/state. | 1 ||
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. | 1 ||
 | `HideSomeHudStuff` | Integer | Applies or references the 'HideSomeHudStuff' effect/state. | 1 ||
@@ -1308,7 +1308,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`HPAltStates`](Characters_and_Bosses.md#object-hpaltstates) | Object | Visual: Alternative sprite states based on current health. | 1 ||
 | `Hypomania` | Integer | Applies the 'Hypomania' effect. | 1 ||
 | `IceBlockBehavior` | Integer | Applies or references the 'IceBlockBehavior' effect/state. | 1 ||
-| [`IDSprout`](#object-idsprout) | Object || 1 ||
+| [`IDSprout`](#object-idsprout) | Object | A spawn ability named 'Sprout' that creates a new unit. | 1 ||
 | `IgnoreDebuffs` | Integer | Applies or references the 'IgnoreDebuffs' effect/state. | 1 ||
 | [`IncAuxCounterCycle`](Abilities_and_Spells.md#object-incauxcountercycle) | Object | Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum. | 1 ||
 | `IncreaseCumulativeBlastDamage` | Integer | Applies or references the 'IncreaseCumulativeBlastDamage' effect/state. | 1 ||
@@ -1326,7 +1326,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `JudgementDay` | Integer | Examples: `25` | 1 ||
 | [`KnockbackIfCrit`](#object-knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 1 ||
 | [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum | Applies or references the 'LegacySpawnSavedCatIfExists' effect/state. | 1 ||
-| [`LennyCatDies`](#object-lennycatdies) | Object || 1 ||
+| [`LennyCatDies`](#object-lennycatdies) | Object | A self-buff ability of class DamageConsumedCharactersAbility that triggers on Lenny's death. | 1 ||
 | [`LimitedTileTrail`](./Enums.md#enum-limitedtiletrail) | Enum | Applies the 'LimitedTileTrail' effect. | 1 ||
 | `LimitSelfKnockbackDamage` | Integer | Applies the 'LimitSelfKnockbackDamage' effect. | 1 ||
 | [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | Applies or references the 'LockOrientationFaceTile' effect/state. | 1 ||
@@ -1337,26 +1337,26 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ManaGainRange`](#object-managainrange) | Object | Applies or references the 'ManaGainRange' effect/state. | 1 ||
 | `ManaStealToHealth` | Integer | Applies or references the 'ManaStealToHealth' effect/state. | 1 ||
 | `ManglerAttack` | Integer | Applies or references the 'ManglerAttack' effect/state. | 1 ||
-| [`ManglerEnrage`](#object-manglerenrage) | Object || 1 ||
-| [`ManglerMonsterDashAttack`](#object-manglermonsterdashattack) | Object || 1 ||
+| [`ManglerEnrage`](#object-manglerenrage) | Object | A self-buff ability that plays no visible animation ('none'). | 1 ||
+| [`ManglerMonsterDashAttack`](#object-manglermonsterdashattack) | Object | A dash attack ability with separate start and dash animations. | 1 ||
 | [`ManglerMonsterPassive`](./Enums.md#enum-manglermonsterpassive) | Enum | Applies or references the 'ManglerMonsterPassive' effect/state. | 1 ||
 | `ManglerShuffle` | Boolean | Applies or references the 'ManglerShuffle' effect/state. | 1 ||
-| [`ManglersMonster`](#object-manglersmonster) | Object || 1 ||
+| [`ManglersMonster`](#object-manglersmonster) | Object | Defines the characterization and properties for the Mangler's monster form. | 1 ||
 | `MassAttackThis` | Integer | Applies or references the 'MassAttackThis' effect/state. | 1 ||
 | `MaxAccuracy` | Integer | Applies the 'MaxAccuracy' effect. | 1 ||
 | `MaxStartingMana` | Integer | Applies the 'MaxStartingMana' effect. | 1 ||
 | `Meaty` | Integer | Applies or references the 'Meaty' effect/state. | 1 ||
-| [`MechExplode`](#object-mechexplode) | Object || 1 ||
+| [`MechExplode`](#object-mechexplode) | Object | Defines the explosion sequence for a mech unit upon destruction. | 1 ||
 | [`MegaDinoDropController`](Characters_and_Bosses.md#object-megadinodropcontroller) | Object | Boss Logic: Manages loot drops for the Mega Dino. | 1 ||
-| [`MegaFart`](#object-megafart) | Object || 1 ||
-| [`MegaGuppy_SummonTheChild`](#object-megaguppy_summonthechild) | Object || 1 ||
+| [`MegaFart`](#object-megafart) | Object | Defines the properties for the MegaFart area-of-effect ability. | 1 ||
+| [`MegaGuppy_SummonTheChild`](#object-megaguppy_summonthechild) | Object | Defines the summoning ability that spawns 'The Child' from Mega Guppy. | 1 ||
 | [`MergeDamageInstance`](Abilities_and_Spells.md#object-mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 1 ||
 | `MeteorShower` | Integer | Examples: `25` | 1 ||
 | `MimicMetronome` | Integer | Applies or references the 'MimicMetronome' effect/state. | 1 ||
 | `ModelingClayPassive` | Integer | Applies or references the 'ModelingClayPassive' effect/state. | 1 ||
 | [`ModularPickup`](Characters_and_Bosses.md#object-modularpickup) | Object | Pickup Logic: Defines what happens when a modular item is collected. | 1 ||
 | [`MonkCatReactionAbilities`](Characters_and_Bosses.md#object-monkcatreactionabilities) | Object | Reaction: Specific counter-attack or dodge abilities used by the Monk class. | 1 ||
-| [`MoonHead_KillHands`](#object-moonhead_killhands) | Object || 1 ||
+| [`MoonHead_KillHands`](#object-moonhead_killhands) | Object | A targeted status ability that plays the 'dying' animation on the target's hands. | 1 ||
 | [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum | Applies or references the 'MoonHeadCrackedVisual' effect/state. | 1 ||
 | [`MotherGrowController`](Characters_and_Bosses.md#object-mothergrowcontroller) | Object | Boss Logic: Manages the growth phases of the Mother boss. | 1 ||
 | `MotherTumorDebugForcePass` | Integer | Applies or references the 'MotherTumorDebugForcePass' effect/state. | 1 ||
@@ -1377,14 +1377,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`NextBattleStatusStacks`](Abilities_and_Spells.md#object-nextbattlestatusstacks) | Object | Carries over the specified status effects into the next encounter/battle. | 1 ||
 | `NextDamageReduceAndHealAllies` | Integer | Applies or references the 'NextDamageReduceAndHealAllies' effect/state. | 1 ||
 | `NextTurnDoubleRangedDamage` | Integer | Applies or references the 'NextTurnDoubleRangedDamage' effect/state. | 1 ||
-| [`NoHead`](#object-nohead) | Object || 1 ||
-| [`NonChampionFlySwarm`](#object-nonchampionflyswarm) | Object || 1 ||
+| [`NoHead`](#object-nohead) | Object | Defines graphics for a headless cat entity using a custom cat data override and increased scale. | 1 ||
+| [`NonChampionFlySwarm`](#object-nonchampionflyswarm) | Object | Defines the properties for a fly swarm that does not have champion stats. | 1 ||
 | `NonLethal` | Integer | Applies the 'NonLethal' effect. | 1 ||
-| [`Nubs`](#object-nubs) | Object || 1 ||
-| [`NubsGoop`](#object-nubsgoop) | Object || 1 ||
+| [`Nubs`](#object-nubs) | Object | Defines the characterization and properties for the 'Nubs' entity type. | 1 ||
+| [`NubsGoop`](#object-nubsgoop) | Object | A lobbed attack ability that costs 0 mana, associated with Nubs. | 1 ||
 | [`ObjectDetector`](Items_and_Equipment.md#object-objectdetector) | Object | Applies or references the 'ObjectDetector' effect/state. | 1 ||
 | [`ObjectOnHitFullyEmpty`](./Enums.md#enum-objectonhitfullyempty) | Enum | Applies or references the 'ObjectOnHitFullyEmpty' effect/state. | 1 ||
-| [`Ornstein`](#object-ornstein) | Object || 1 ||
+| [`Ornstein`](#object-ornstein) | Object | Defines the characterization and properties for the 'Ornstein' entity type. | 1 ||
 | `OrthogonalAIDangerZone` | Integer | Applies or references the 'OrthogonalAIDangerZone' effect/state. | 1 ||
 | `OverHealToShield` | Integer | Applies or references the 'OverHealToShield' effect/state. | 1 ||
 | `OverManaReducesManaCosts` | Integer | Examples: `1` | 1 ||
@@ -1403,8 +1403,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PermanentUpgradeRandomActiveOrPassive` | Integer | Applies or references the 'PermanentUpgradeRandomActiveOrPassive' effect/state. | 1 ||
 | [`PersistentElement`](./Enums.md#enum-persistentelement) | Enum | Examples: `Holy` | 1 ||
 | `PhysicalAttacksMiss` | Integer | Applies or references the 'PhysicalAttacksMiss' effect/state. | 1 ||
-| `pickup` | Variable || 1 ||
-| `plant` | Variable || 1 ||
+| `pickup` | Variable | Specifies the item or resource type that can be picked up by this entity. | 1 ||
+| `plant` | Variable | Specifies that this entity is classified as a plant type for gameplay interactions. | 1 ||
 | [`PoolMetronome`](Abilities_and_Spells.md#object-poolmetronome) | Object | Executes a random ability drawn from a specific pool. | 1 ||
 | `PreEmptiveCounterNextAttacks` | Integer | Applies or references the 'PreEmptiveCounterNextAttacks' effect/state. | 1 ||
 | [`PreventSpecificInjury`](./Enums.md#enum-preventspecificinjury) | Enum | Applies or references the 'PreventSpecificInjury' effect/state. | 1 ||
@@ -1445,7 +1445,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`RockyArmorSalvage`](./Enums.md#enum-rockyarmorsalvage) | Float | Examples: `.75` | 1 ||
 | `RunWhenKittensDead` | Integer | Applies or references the 'RunWhenKittensDead' effect/state. | 1 ||
 | [`RunWhenLastPlayerCatIsCharmed`](Characters_and_Bosses.md#object-runwhenlastplayercatischarmed) | Object | AI Logic: Flee logic when the player team is entirely crowd-controlled. | 1 ||
-| [`SandStormBuff`](#object-sandstormbuff) | Variable || 1 ||
+| [`SandStormBuff`](#object-sandstormbuff) | Variable | A particle effect object using 'SandStormParticle' movieclip, rendered in a separate layer. | 1 ||
 | [`ScaldingOrbMoonBossOneShot`](Items_and_Equipment.md#object-scaldingorbmoonbossoneshot) | Object | Applies or references the 'ScaldingOrbMoonBossOneShot' effect/state. | 1 ||
 | [`ScaledStatusAlliesOnSpendMana`](Items_and_Equipment.md#object-scaledstatusalliesonspendmana) | Object | Applies or references the 'ScaledStatusAlliesOnSpendMana' effect/state. | 1 ||
 | [`ScaledStatusOnBleedDamage`](Miscellaneous.md#object-scaledstatusonbleeddamage) | Object | Applies the 'ScaledStatusOnBleedDamage' effect. | 1 ||
@@ -1457,28 +1457,28 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ScrambleLastUsedSpell`](Abilities_and_Spells.md#object-scramblelastusedspell) | Object | Randomizes or scrambles the properties of the last spell cast. | 1 ||
 | [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
 | [`SelfDamageWhenDealDamage`](Miscellaneous.md#object-selfdamagewhendealdamage) | Object | Applies the 'SelfDamageWhenDealDamage' effect. | 1 ||
-| [`set_WitchJump`](#object-set_witchjump) | Object || 1 ||
+| [`set_WitchJump`](#object-set_witchjump) | Object | Defines the jump ability properties for the Witch set. | 1 ||
 | [`SetAnimationAlts`](Abilities_and_Spells.md#object-setanimationalts) | Object | Overrides specific animation states with alternative animations. | 1 ||
 | [`SetFaction`](./Enums.md#enum-setfaction) | Enum | Applies or references the 'SetFaction' effect/state. | 1 ||
 | `ShadowCrit` | Integer | Applies or references the 'ShadowCrit' effect/state. | 1 ||
-| [`ShineBuff`](#object-shinebuff) | Variable || 1 ||
+| [`ShineBuff`](#object-shinebuff) | Variable | A particle effect object using 'SparkleParticle' movieclip, rendered in a separate layer. | 1 ||
 | `ShootHereCommand` | Integer | Applies or references the 'ShootHereCommand' effect/state. | 1 ||
 | `ShootHereReceiver` | Integer | Applies or references the 'ShootHereReceiver' effect/state. | 1 ||
-| [`Shove`](#object-shove) | Object || 1 ||
+| [`Shove`](#object-shove) | Object | Defines the shove ability that pushes a target unit one tile. | 1 ||
 | [`SkipFirstRounds`](Characters_and_Bosses.md#object-skipfirstrounds) | Object | AI Logic: Passes turn for the first X rounds of combat. | 1 ||
-| [`SleepDart`](#object-sleepdart) | Object || 1 ||
-| `SleepParalysis` | Variable || 1 ||
+| [`SleepDart`](#object-sleepdart) | Object | Defines the projectile or status that induces sleep on the target. | 1 ||
+| `SleepParalysis` | Variable | A status keyword or disorder that paralyzes the target while asleep, with tooltip text and a granted 'Rest' ability. | 1 ||
 | `SmallHitExplosion` | Integer | Applies or references the 'SmallHitExplosion' effect/state. | 1 ||
-| [`SmokeBuff`](#object-smokebuff) | Variable || 1 ||
-| [`Smough`](#object-smough) | Object || 1 ||
+| [`SmokeBuff`](#object-smokebuff) | Variable | A particle effect object using 'ParticleSmoke1' movieclip, rendered in a separate layer. | 1 ||
+| [`Smough`](#object-smough) | Object | Defines the characterization and properties for the 'Smough' entity type. | 1 ||
 | `Snow` | Integer | Examples: `{ ... }` | 1 ||
-| [`Snow`](#object-snow) | Number / Object || 1 | `1` (Number), `{ ... }` (Object) |
+| [`Snow`](#object-snow) | Number / Object | The intensity of a snow weather effect (0 = off, higher values = more intense), or an object defining its particle system, ambient sounds, and skybox frame. | 1 | `1` (Number), `{ ... }` (Object) |
 | [`SolarFlare`](#object-solarflare) | Object | Examples: `{ ... }` | 1 ||
 | [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Applies or references the 'SoundEventOnHit' effect/state. | 1 ||
 | [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. | 1 ||
 | `SpawnCatCloneOnCorpsePopped` | Integer | Applies or references the 'SpawnCatCloneOnCorpsePopped' effect/state. | 1 ||
 | `SpawnCreepOnHitKnockback` | Integer | Applies or references the 'SpawnCreepOnHitKnockback' effect/state. | 1 ||
-| `spawner` | Variable || 1 ||
+| `spawner` | Variable | A variable referencing a map entity or spawnpoint definition used to generate units or objects. | 1 ||
 | `SpawnerCatDataReference` | Integer | Applies or references the 'SpawnerCatDataReference' effect/state. | 1 ||
 | [`SpawnRandomPickupsOnTaggedUnitKilled`](Items_and_Equipment.md#object-spawnrandompickupsontaggedunitkilled) | Object | Applies or references the 'SpawnRandomPickupsOnTaggedUnitKilled' effect/state. | 1 ||
 | [`SpawnTilePuddleOnBattleStart`](#object-spawntilepuddleonbattlestart) | Object | Examples: `{ ... }` | 1 ||
@@ -1487,10 +1487,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SpeedUp_WithoutInitiative` | Integer | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. | 1 ||
 | `SpellShield` | Integer | Applies or references the 'SpellShield' effect/state. | 1 ||
 | [`SpewerAltGraphics`](Characters_and_Bosses.md#object-speweraltgraphics) | Object | Visual: Alternative graphics for Spewer enemies. | 1 ||
-| [`SpiderReturn`](#object-spiderreturn) | Object || 1 ||
+| [`SpiderReturn`](#object-spiderreturn) | Object | An ability that allows the unit to return to a previous position or state, often after a dash or movement. | 1 ||
 | `SpitConsumed` | Integer | Applies or references the 'SpitConsumed' effect/state. | 1 ||
 | `SpreadWater` | Integer | Applies or references the 'SpreadWater' effect/state. | 1 ||
-| `sprout` | Variable || 1 ||
+| `sprout` | Variable | A placeholder variable for a sprouting or growth mechanic. | 1 ||
 | `SproutsGrantMovement` | Integer | Applies or references the 'SproutsGrantMovement' effect/state. | 1 ||
 | [`StacyMutant_Brace`](Characters_and_Bosses.md#object-stacymutant_brace) | Object | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 ||
 | [`StacyMutant_Counter`](Characters_and_Bosses.md#object-stacymutant_counter) | Object | Character Form: Behavior and stats for the 'StacyMutant_Counter' state. | 1 ||
@@ -1536,7 +1536,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`SwapWeapon`](Abilities_and_Spells.md#object-swapweapon) | Object | Replaces the character's currently equipped weapon with one from a specified pool. | 1 ||
 | [`SwimmingFormChange`](Characters_and_Bosses.md#object-swimmingformchange) | Object | Logic: Automates form change when entering/exiting water. | 1 ||
 | [`SyncFormsWithBuddy`](Characters_and_Bosses.md#object-syncformswithbuddy) | Object | Logic: Forces this character's form to match their familiar/buddy. | 1 ||
-| `T2CopyCatInternal` | Variable || 1 ||
+| `T2CopyCatInternal` | Variable | An internal flag or variable for the T2 CopyCat passive, tracking whether it has already copied an ability this turn. | 1 ||
 | [`T3HitlerSpawningPhase`](Characters_and_Bosses.md#object-t3hitlerspawningphase) | Object | Boss Logic: Minion spawn phase for the T3 Hitler boss. | 1 ||
 | `T3HitlerTriggerInitialSpawns` | Integer | Applies or references the 'T3HitlerTriggerInitialSpawns' effect/state. | 1 ||
 | [`TagMetronome`](./Enums.md#enum-tagmetronome) | Enum | Applies or references the 'TagMetronome' effect/state. | 1 ||
@@ -1546,10 +1546,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Tall` | Integer | Applies or references the 'Tall' effect/state. | 1 ||
 | [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum | Applies or references the 'TallTumorManaBurn' effect/state. | 1 ||
 | `TargetedMetronome` | Integer | Applies or references the 'TargetedMetronome' effect/state. | 1 ||
-| [`TattersFear`](#object-tattersfear) | Object || 1 ||
+| [`TattersFear`](#object-tattersfear) | Object | A targeted status effect that applies fear to the enemy, causing it to flee or become uncontrollable. | 1 ||
 | `TauntAtFullHealth` | Integer | Applies the 'TauntAtFullHealth' effect. | 1 ||
 | `Taunting` | Integer | Applies or references the 'Taunting' effect/state. | 1 ||
-| [`TC_DashReaction`](#object-tc_dashreaction) | Object || 1 ||
+| [`TC_DashReaction`](#object-tc_dashreaction) | Object | A trample dash ability that triggers when the unit moves through an enemy, using defined graphics for the dash animation. | 1 ||
 | [`TeamBonusAbility`](./Enums.md#enum-teambonusability) | Enum | Applies or references the 'TeamBonusAbility' effect/state. | 1 ||
 | [`TeleportBackAtTurnEnd`](./Enums.md#enum-teleportbackatturnend) | Enum | Applies or references the 'TeleportBackAtTurnEnd' effect/state. | 1 ||
 | `TempBackstab` | Integer | Applies or references the 'TempBackstab' effect/state. | 1 ||
@@ -1568,10 +1568,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Terminator2Run`](Characters_and_Bosses.md#object-terminator2run) | Object | AI Movement: Specific run logic for Terminator2. | 1 ||
 | [`TerminatorChase`](Characters_and_Bosses.md#object-terminatorchase) | Object | AI Movement: Specific chase logic for Terminator. | 1 ||
 | [`TerminatorSkin`](Characters_and_Bosses.md#object-terminatorskin) | Object | Visual: Skin definition for Terminator. | 1 ||
-| [`TheCreator_SpawnCloneTeam`](#object-thecreator_spawncloneteam) | Object || 1 ||
+| [`TheCreator_SpawnCloneTeam`](#object-thecreator_spawncloneteam) | Object | An ability that spawns a clone of the unit on the same team, likely for The Creator boss encounter. | 1 ||
 | [`TheHunger`](Miscellaneous.md#object-thehunger) | Object | Applies the 'TheHunger' effect. | 1 ||
-| [`ThornUp`](#object-thornup) | Object || 1 ||
-| [`ThrobbingKing2`](#object-throbbingking2) | Object || 1 ||
+| [`ThornUp`](#object-thornup) | Object | A self-buff ability that grants the unit a thorns-like effect, dealing damage back to attackers. | 1 ||
+| [`ThrobbingKing2`](#object-throbbingking2) | Object | A boss-specific ability variant for the Throbbing King encounter, likely an enhanced version of a base attack. | 1 ||
 | [`TickDownStatus`](./Enums.md#enum-tickdownstatus) | Enum | Applies or references the 'TickDownStatus' effect/state. | 1 ||
 | [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum | Applies or references the 'TileElementDamageImmunity' effect/state. | 1 ||
 | `TilesMovedToCritChance` | Integer | Applies or references the 'TilesMovedToCritChance' effect/state. | 1 ||
@@ -1581,28 +1581,28 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TintItem`](Items_and_Equipment.md#object-tintitem) | Object | Applies or references the 'TintItem' effect/state. | 1 ||
 | `TireBehavior` | Integer | Applies or references the 'TireBehavior' effect/state. | 1 ||
 | `TormentorHeal` | Integer | Applies or references the 'TormentorHeal' effect/state. | 1 ||
-| [`TormentorRuneAbsorb`](#object-tormentorruneabsorb) | Object || 1 ||
+| [`TormentorRuneAbsorb`](#object-tormentorruneabsorb) | Object | A spell ability that allows the Tormentor to absorb runes from targets, gaining buffs or charges. | 1 ||
 | `TossTargetIsAggroTarget` | Integer | Applies or references the 'TossTargetIsAggroTarget' effect/state. | 1 ||
 | `TossTargetIsBuddy` | Integer | Applies or references the 'TossTargetIsBuddy' effect/state. | 1 ||
 | `TossTargetIsNotInWater` | Integer | Applies or references the 'TossTargetIsNotInWater' effect/state. | 1 ||
 | [`TourettesMeows`](Miscellaneous.md#object-tourettesmeows) | Object | Applies the 'TourettesMeows' effect. | 1 ||
 | `TowerDefenseStatus` | Integer | Applies or references the 'TowerDefenseStatus' effect/state. | 1 ||
 | `TowerDefenseStatus2` | Integer | Applies or references the 'TowerDefenseStatus2' effect/state. | 1 ||
-| [`ToxicBubbles`](#object-toxicbubbles) | Variable || 1 ||
-| [`ToxPuff`](#object-toxpuff) | Object || 1 ||
+| [`ToxicBubbles`](#object-toxicbubbles) | Variable | A particle effect system for toxic bubble visuals, used in weather or hazard contexts. | 1 ||
+| [`ToxPuff`](#object-toxpuff) | Object | A self-buff ability that spawns a puff of toxic gas around the unit, damaging nearby enemies. | 1 ||
 | [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum | Applies or references the 'TrackAmountKilledByPlayer' effect/state. | 1 ||
 | [`TransformBasicMove`](./Enums.md#enum-transformbasicmove) | Enum | Applies or references the 'TransformBasicMove' effect/state. | 1 ||
 | [`TransformEquipment`](Abilities_and_Spells.md#object-transformequipment) | Object | Upgrades or transforms a specific equipped item into another. | 1 ||
 | [`TransformNow`](./Enums.md#enum-transformnow) | Enum | Applies or references the 'TransformNow' effect/state. | 1 ||
 | [`TransformOnStatusThreshold`](Characters_and_Bosses.md#object-transformonstatusthreshold) | Object | Logic: Changes form when a status effect reaches a certain stack count. | 1 ||
 | `Trapper_Status` | Integer | Applies or references the 'Trapper_Status' effect/state. | 1 ||
-| [`TrexSwitchTarget`](#object-trexswitchtarget) | Object || 1 ||
+| [`TrexSwitchTarget`](#object-trexswitchtarget) | Object | A targeted status that forces the unit to switch its attack target to the caster or a designated enemy. | 1 ||
 | `TriggerBleedOnBleed` | Integer | Examples: `1` | 1 ||
 | `TriggerMotherConsume` | Integer | Applies or references the 'TriggerMotherConsume' effect/state. | 1 ||
 | `TriggerMotherGrow` | Integer | Applies or references the 'TriggerMotherGrow' effect/state. | 1 ||
 | `Triskaidekaphobia` | Integer | Applies the 'Triskaidekaphobia' effect. | 1 ||
-| [`TT_Thrash`](#object-tt_thrash) | Object || 1 ||
-| `tumor` | Variable || 1 ||
+| [`TT_Thrash`](#object-tt_thrash) | Object | A melee attack ability that performs a thrashing animation, dealing damage in a cone or area. | 1 ||
+| `tumor` | Variable | A placeholder variable for the tumor mutation or status effect, typically related to growth or health changes. | 1 ||
 | [`TunnelVision`](Items_and_Equipment.md#object-tunnelvision) | Object | Applies or references the 'TunnelVision' effect/state. | 1 ||
 | `TurnAround` | Integer | Applies or references the 'TurnAround' effect/state. | 1 ||
 | [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Float | Applies or references the 'TurnControlDelay' effect/state. | 1 ||
@@ -1612,10 +1612,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `TVBotDisableMove` | Integer | Applies or references the 'TVBotDisableMove' effect/state. | 1 ||
 | `TVBotDisableSpells` | Integer | Applies or references the 'TVBotDisableSpells' effect/state. | 1 ||
 | [`TVBotScreen`](Characters_and_Bosses.md#object-tvbotscreen) | Object | Visual: TV Bot screen state. | 1 ||
-| `Twister_loop` | Enum || 1 ||
+| `Twister_loop` | Enum | Specifies the looping animation style or behavior for a twister visual effect. | 1 ||
 | [`TwisterFling`](Characters_and_Bosses.md#object-twisterfling) | Object | Logic: Fling behavior for tornado attacks. | 1 ||
-| [`UFO_BigExplode`](#object-ufo_bigexplode) | Object || 1 ||
-| [`UltraSmough`](#object-ultrasmough) | Object || 1 ||
+| [`UFO_BigExplode`](#object-ufo_bigexplode) | Object | A spell ability that causes a large explosion centered on the unit, with a specific particle effect. | 1 ||
+| [`UltraSmough`](#object-ultrasmough) | Object | An ability or status for the Ultra Smough boss, likely a powerful area-of-effect attack or transformation. | 1 ||
 | `UndoDamage` | Integer | Applies or references the 'UndoDamage' effect/state. | 1 ||
 | [`UnlimitedDeathRattleRevive`](Characters_and_Bosses.md#object-unlimiteddeathrattlerevive) | Object | Logic: Endless resurrection on death. | 1 ||
 | `UpTireBehavior` | Integer | Applies or references the 'UpTireBehavior' effect/state. | 1 ||
@@ -1633,7 +1633,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `WideBackstab` | Integer | Applies or references the 'WideBackstab' effect/state. | 1 ||
 | [`Wind`](Engine_LogicKeys.md#object-wind) | Object | Examples: `{ ... }` | 1 ||
 | `Windy` | Integer | Examples: `{ ... }` | 1 ||
-| [`Windy`](#object-windy) | Number / Object || 1 | `10` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Windy`](#object-windy) | Number / Object | The intensity of a windy weather effect, or an object defining its particles, sounds, and skybox. | 1 | `10` (Number), `1` (Number), `{ ... }` (Object) |
 | `WispDodge` | Integer | Applies or references the 'WispDodge' effect/state. | 1 ||
 | `WobblyCat` | Integer | Applies the 'WobblyCat' effect. | 1 ||
 | `XIsConsumedCharacterMaxHP` | Integer | Applies or references the 'XIsConsumedCharacterMaxHP' effect/state. | 1 ||
@@ -1644,79 +1644,79 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `XIsRampAndReset` | Integer | Applies or references the 'XIsRampAndReset' effect/state. | 1 ||
 | `XIsRecycleCostReduction` | Integer | Applies or references the 'XIsRecycleCostReduction' effect/state. | 1 ||
 | `ZeroKnockbackDamage` | Integer | Applies or references the 'ZeroKnockbackDamage' effect/state. | 1 ||
-| [`AcidRain`](#object-acidrain) | Number / Object ||| `2` (Number), `{ ... }` (Object) |
-| `Adrenaline` | Integer ||| `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
-| `Ammo` | Integer ||| `[1 .5]` (Array), `1` (Number), `6` (Number), `{ ... }` (Object) |
-| `Bloodzerked` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`BombRatTurtle`](#object-bombratturtle) | Integer / Object ||| `1` (Number), `{ ... }` (Object) |
-| `BounceRock` | Array / Enum ||| `[1 .2]` (Array), `LavaBoulder` (Enum), `SmallRock` (Enum) |
-| [`ButterflySwarm`](#object-butterflyswarm) | Number / Object ||| `2` (Number), `{ ... }` (Object) |
-| `ChampionUpgradeNextMinion` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`CockroachSwarm`](#object-cockroachswarm) | Number / Object ||| `1` (Number), `{ ... }` (Object) |
-| `CollideWithConsumed` | String ||| `5+bonus_melee_damage` (Enum), `4+bonus_melee_damage` (Enum) |
-| [`CopySpells`](Abilities_and_Spells.md#object-copyspells) | Integer / Object ||| `1` (Number), `{ ... }` (Object) |
-| [`Counterspell`](#object-counterspell) | Integer / Object ||| `1` (Number), `{ ... }` (Object) |
-| [`DelayCastAbility`](Abilities_and_Spells.md#object-delaycastability) | Enum / Object ||| `HitlerNuke` (Enum), `{ ... }` (Object) |
-| [`DelayCastAbility`](Abilities_and_Spells.md#object-delaycastability) | Enum / Object ||| `HitlerNuke` (Enum), `{ ... }` (Object) |
-| `DoubleCast` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `DoubleCastSpell` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `EliteUpgradeNextMinion` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`FactionUprising`](#object-factionuprising) | Enum / Object ||| `robot` (Enum), `ghost` (Enum), `{ ... }` (Object) |
-| [`FireArmor`](#object-firearmor) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`FireArmor2`](#object-firearmor2) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`FireflySwarm`](#object-fireflyswarm) | Number / Object ||| `2` (Number), `{ ... }` (Object) |
-| [`FireStorm`](#object-firestorm) | Number / Object ||| `33` (Number), `0` (Number), `{ ... }` (Object) |
-| [`Fog`](#object-fog) | Number / Object ||| `1` (Number), `{ ... }` (Object) |
-| `ForceMoveTowardsEnemies` | Enum / Integer ||| `MoveOne` (Enum), `DumbMove_Impl` (Enum), `1` (Number) |
-| `Grappled` | Array / Integer ||| `[1 .5]` (Array), `[1 .75]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`HeatWave`](#object-heatwave) | Array / Number / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `HeavyHits` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `IgnoreSelf` | Boolean / Integer ||| `true` (Boolean), `1` (Number) |
-| `Invulnerable` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`JudgementDay`](#object-judgementday) | Number / Object ||| `25` (Number), `{ ... }` (Object) |
-| `KnockbackDirectionIsFacingDirection` | Enum / Integer ||| `flip` (Enum), `rotate_right` (Enum), `1` (Number) |
-| `Meaty` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Meteornado`](#object-meteornado) | Number / Object ||| `1` (Number), `{ ... }` (Object) |
-| [`MeteorShower`](#object-meteorshower) | Number / Object ||| `25` (Number), `{ ... }` (Object) |
-| `Muted` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `NextAbilityHeals` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `NextActionLuckUp` | Integer ||| `[1 .5]` (Array), `1` (Number), `99` (Number), `{ ... }` (Object) |
-| `NextAttackBonusRange` | Integer ||| `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
-| [`NextAttackSpecialCrit`](Abilities_and_Spells.md#object-nextattackspecialcrit) | Integer / Object ||| `1` (Number), `{ ... }` (Object) |
-| [`NextBasicAttackCritsThisTurn`](Abilities_and_Spells.md#object-nextbasicattackcritsthisturn) | Object ||| `1` (Number), `{ ... }` (Object) |
-| `NextDamageReduceAndHealAllies` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `NextTurnDoubleRangedDamage` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `OverrideKnockbackDamage` | Enum / Integer ||| `str` (Enum), `X*10` (Enum), `5` (Number), `2` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
-| `OverrideKnockbackDamage` | Enum / Integer ||| `str` (Enum), `3+bonus_melee_ability_damage` (Enum), `2` (Number), `3` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
-| `PermanentImmobile` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`RandomDistanceDisplace`](Abilities_and_Spells.md#object-randomdistancedisplace) | Integer / Object ||| `20` (Number), `{ ... }` (Object) |
-| `ReduceManaCostExcludeBrainstorm` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ScatterHeldCoin` | Array / Integer ||| `[1 .3]` (Array), `[1 .5]` (Array), `1` (Number) |
-| `SelfStun` | Array / Integer ||| `[1 .5]` (Array), `1` (Number) |
-| [`Shatter`](#object-shatter) | Integer / Object ||| `15` (Number), `{ ... }` (Object) |
-| `SpawnRock` | Array / Integer ||| `[1 .20]` (Array), `1` (Number) |
-| `SpellShield` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `StatBounty` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Taunting` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`TeamCastAbility`](Abilities_and_Spells.md#object-teamcastability) | Enum / Object ||| `TeamFlex_Impl2` (Enum), `TeamFlex_Impl` (Enum), `{ ... }` (Object) |
-| `TempBackstab` | Integer ||| `[1 .5]` (Array), `75` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempBonusKnockback` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TempBonusKnockbackDamage` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TempCritChanceUp` | Integer ||| `[1 .5]` (Array), `30` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempInitiativeChange` | Integer ||| `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempInitiativeChange` | Integer ||| `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempInjuryImmunity` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TempManaCostReduction` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TempPreEmptiveCounterAttack` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TilesMovedToCritChance` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TilesMovedToMana` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TilesMovedToNeighborHeal` | Enum ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TilesMovedToStrength` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TowerDefenseStatus` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TowerDefenseStatus2` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TriggerWerewolfTransform` | Array / Number ||| `[1 .5]` (Array), `[1 .20]` (Array), `.5` (String) |
-| `TurnControlDelay` | Number ||| `.25` (String) |
-| [`VisualFlySwarm`](#object-visualflyswarm) | Number / Object ||| `1` (Number), `{ ... }` (Object) |
+| [`AcidRain`](#object-acidrain) | Number / Object | The intensity of acid rain weather (0 = off, higher values = more damage), or an object for its particle system. || `2` (Number), `{ ... }` (Object) |
+| `Adrenaline` | Integer | The amount of adrenaline the player cat has, used as a condition threshold. || `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
+| `Ammo` | Integer | The change in ammunition count; positive values add ammo, negative values consume ammo. || `[1 .5]` (Array), `1` (Number), `6` (Number), `{ ... }` (Object) |
+| `Bloodzerked` | Integer | The number of stacks of the Bloodzerk status, which grants attack power at the cost of health. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`BombRatTurtle`](#object-bombratturtle) | Integer / Object | The number of Bomb Rat Turtle units spawned or the status referencing this enemy type. || `1` (Number), `{ ... }` (Object) |
+| `BounceRock` | Array / Enum | Specifies the type of rock projectile to spawn (e.g., SmallRock, LavaBoulder), or an array [stacks, probability] for chance to bounce a rock on hit. || `[1 .2]` (Array), `LavaBoulder` (Enum), `SmallRock` (Enum) |
+| [`ButterflySwarm`](#object-butterflyswarm) | Number / Object | The number of butterfly swarm stacks applied or the intensity of the swarm effect. || `2` (Number), `{ ... }` (Object) |
+| `ChampionUpgradeNextMinion` | Integer | The number of times the next summoned minion is upgraded to champion rank. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`CockroachSwarm`](#object-cockroachswarm) | Number / Object | The number of cockroach swarm stacks applied or the intensity of the swarm effect. || `1` (Number), `{ ... }` (Object) |
+| `CollideWithConsumed` | String | Specifies a damage modifier string (e.g., 1+bonus_melee_damage) applied when the unit collides with a consumed or held item. || `5+bonus_melee_damage` (Enum), `4+bonus_melee_damage` (Enum) |
+| [`CopySpells`](Abilities_and_Spells.md#object-copyspells) | Integer / Object | The number of spells copied from the target, or an object with stacks and upgrade state. || `1` (Number), `{ ... }` (Object) |
+| [`Counterspell`](#object-counterspell) | Integer / Object | The number of counterspell stacks applied, or an object defining the self-buff ability that reflects or negates incoming spells. || `1` (Number), `{ ... }` (Object) |
+| [`DelayCastAbility`](Abilities_and_Spells.md#object-delaycastability) | Enum / Object | Specifies the ability to cast after a delay, either by name or via an object with ability, relative timing, and lingering flags. || `HitlerNuke` (Enum), `{ ... }` (Object) |
+| [`DelayCastAbility`](Abilities_and_Spells.md#object-delaycastability) | Enum / Object | Specifies the ability to cast after a delay, either by name or via an object with ability, relative timing, and lingering flags. || `HitlerNuke` (Enum), `{ ... }` (Object) |
+| `DoubleCast` | Integer | The number of times the next ability is automatically cast again. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `DoubleCastSpell` | Integer | The number of times spells are cast twice in a single action. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `EliteUpgradeNextMinion` | Integer | The number of times the next summoned minion is upgraded to elite rank. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`FactionUprising`](#object-factionuprising) | Enum / Object | Specifies the faction tag (e.g., robot, bird, ghost) that rises up in an uprising event, or an object with tag and extra statuses. || `robot` (Enum), `ghost` (Enum), `{ ... }` (Object) |
+| [`FireArmor`](#object-firearmor) | Integer / Object | The number of stacks of fire armor, dealing fire damage to attackers. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`FireArmor2`](#object-firearmor2) | Integer / Object | An alternate version of FireArmor with modified damage or duration values. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`FireflySwarm`](#object-fireflyswarm) | Number / Object | The number of firefly swarm stacks applied or the intensity of the swarm effect. || `2` (Number), `{ ... }` (Object) |
+| [`FireStorm`](#object-firestorm) | Number / Object | The chance (percentage) for a fire storm to trigger, or an object defining its combo particle effects. || `33` (Number), `0` (Number), `{ ... }` (Object) |
+| [`Fog`](#object-fog) | Number / Object | The intensity of fog weather (0 = off), or an object for its particle system and render settings. || `1` (Number), `{ ... }` (Object) |
+| `ForceMoveTowardsEnemies` | Enum / Integer | Specifies the movement ability or number of tiles the unit is forced to move toward enemies. || `MoveOne` (Enum), `DumbMove_Impl` (Enum), `1` (Number) |
+| `Grappled` | Array / Integer | The number of turns the target is grappled, preventing movement and actions. || `[1 .5]` (Array), `[1 .75]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`HeatWave`](#object-heatwave) | Array / Number / Object | The intensity of heat wave weather, or an object defining its name, tooltip, and combo particle effects. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `HeavyHits` | Integer | The number of stacks that cause attacks to deal extra knockback or damage. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `IgnoreSelf` | Boolean / Integer | If true, the effect does not apply to the source unit itself. || `true` (Boolean), `1` (Number) |
+| `Invulnerable` | Integer | The number of turns or stacks of temporary invulnerability. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`JudgementDay`](#object-judgementday) | Number / Object | The chance (percentage) for a judgment day weather event to trigger, or an object defining its name and effects. || `25` (Number), `{ ... }` (Object) |
+| `KnockbackDirectionIsFacingDirection` | Enum / Integer | If true, knockback direction is based on the unit's facing direction; otherwise, it can be a custom direction like rotate_right or flip. || `flip` (Enum), `rotate_right` (Enum), `1` (Number) |
+| `Meaty` | Integer | The number of stacks that increase max HP or provide damage reduction. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Meteornado`](#object-meteornado) | Number / Object | The intensity of a meteornado weather effect, or an object for its particle system. || `1` (Number), `{ ... }` (Object) |
+| [`MeteorShower`](#object-meteorshower) | Number / Object | The chance (percentage) for a meteor shower to trigger each turn. || `25` (Number), `{ ... }` (Object) |
+| `Muted` | Integer | The number of turns the unit is silenced, unable to cast spells. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextAbilityHeals` | Integer | The number of times the next ability will heal instead of damage. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextActionLuckUp` | Integer | The amount of bonus luck applied to the unit's next action. Stacks increase the luck bonus. || `[1 .5]` (Array), `1` (Number), `99` (Number), `{ ... }` (Object) |
+| `NextAttackBonusRange` | Integer | The bonus range added to the next attack. || `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| [`NextAttackSpecialCrit`](Abilities_and_Spells.md#object-nextattackspecialcrit) | Integer / Object | The number of stacks ensuring the next attack is a special crit, with optional extras like extra coins, crit multiplier, or luck increase. || `1` (Number), `{ ... }` (Object) |
+| [`NextBasicAttackCritsThisTurn`](Abilities_and_Spells.md#object-nextbasicattackcritsthisturn) | Object | An object ensuring the next basic attack this turn is a crit, with optional stacks, cant_miss, and piercing properties. || `1` (Number), `{ ... }` (Object) |
+| `NextDamageReduceAndHealAllies` | Integer | The number of stacks that reduce next damage taken and heal adjacent allies. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextTurnDoubleRangedDamage` | Integer | The number of turns the next ranged attack deals double damage. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `OverrideKnockbackDamage` | Enum / Integer | Specifies the damage formula or fixed value used for knockback damage, overriding the default calculation. || `str` (Enum), `X*10` (Enum), `5` (Number), `2` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
+| `OverrideKnockbackDamage` | Enum / Integer | Specifies the damage formula or fixed value used for knockback damage, overriding the default calculation. || `str` (Enum), `3+bonus_melee_ability_damage` (Enum), `2` (Number), `3` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
+| `PermanentImmobile` | Integer | The number of stacks of permanent immobility applied, preventing the unit from moving indefinitely. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`RandomDistanceDisplace`](Abilities_and_Spells.md#object-randomdistancedisplace) | Integer / Object | The maximum distance (stacks) for a random displacement effect, or an object with min_dist and stacks. || `20` (Number), `{ ... }` (Object) |
+| `ReduceManaCostExcludeBrainstorm` | Integer | The number by which mana cost is reduced, excluding the Brainstorm ability from the reduction. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ScatterHeldCoin` | Array / Integer | An array [stacks, probability] for the chance to scatter a held coin on hit, or a fixed number of coins scattered. || `[1 .3]` (Array), `[1 .5]` (Array), `1` (Number) |
+| `SelfStun` | Array / Integer | An array [stacks, probability] for the chance to stun the unit itself after using the ability. || `[1 .5]` (Array), `1` (Number) |
+| [`Shatter`](#object-shatter) | Integer / Object | The amount of shatter damage dealt, or an object defining the melee attack ability for shattering frozen targets. || `15` (Number), `{ ... }` (Object) |
+| `SpawnRock` | Array / Integer | An array [stacks, probability] for the chance to spawn a rock obstacle on hit, or a fixed number of rocks spawned. || `[1 .20]` (Array), `1` (Number) |
+| `SpellShield` | Integer | Number of shields that block incoming spells or magical damage. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `StatBounty` | Integer | Number of stacks that grant a bounty of permanent stat increases upon performing certain actions. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Taunting` | Integer | Number of stacks that force enemies to target this unit preferentially. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`TeamCastAbility`](Abilities_and_Spells.md#object-teamcastability) | Enum / Object | Specifies the ability name or an object with ability, tag_restriction, and same_orientation flags for team-casting an ability. || `TeamFlex_Impl2` (Enum), `TeamFlex_Impl` (Enum), `{ ... }` (Object) |
+| `TempBackstab` | Integer | Temporary increase in backstab damage, with stacks representing the bonus percentage. || `[1 .5]` (Array), `75` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempBonusKnockback` | Integer | Temporary increase in knockback distance, with stacks representing the bonus. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempBonusKnockbackDamage` | Integer | Temporary increase in damage dealt when knocking back an enemy. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempCritChanceUp` | Integer | A temporary increase to critical hit chance for a number of turns or attacks. || `[1 .5]` (Array), `30` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInitiativeChange` | Integer | The amount of temporary initiative change applied to the displaced unit. || `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInitiativeChange` | Integer | The amount of temporary initiative change applied to the displaced unit. || `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInjuryImmunity` | Integer | Number of turns the unit is immune to receiving injuries. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempManaCostReduction` | Integer | Temporary reduction in mana cost of abilities, with stacks representing the amount reduced. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempPreEmptiveCounterAttack` | Integer | Number of turns during which the unit will preemptively counterattack when targeted. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToCritChance` | Integer | Number of stacks that convert tiles moved into bonus critical hit chance. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToMana` | Integer | Number of stacks that convert tiles moved into mana regeneration. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToNeighborHeal` | Enum | Specifies the type of neighbor heal triggered by moving tiles, e.g., 'level'. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToStrength` | Integer | Number of stacks that convert tiles moved into temporary strength increase. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TowerDefenseStatus` | Integer | Stacks of sentry mode status, allowing the unit to attack enemies that enter range. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TowerDefenseStatus2` | Integer | Enhanced sentry mode stacks, providing additional benefits over TowerDefenseStatus. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TriggerWerewolfTransform` | Array / Number | An array [stacks, probability] for the chance to trigger a werewolf transformation, or a single probability value. || `[1 .5]` (Array), `[1 .20]` (Array), `.5` (String) |
+| `TurnControlDelay` | Number | The delay in seconds before turn control is returned to the player after a status application. || `.25` (String) |
+| [`VisualFlySwarm`](#object-visualflyswarm) | Number / Object | The number of visual fly swarm particles to spawn, or an object defining their properties. || `1` (Number), `{ ... }` (Object) |
 
 | [`AddDamageToElementDamage`](Cat_Mutations.md#object-adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 6 |
 | `AddLeechesStatus` | Integer | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
@@ -1906,8 +1906,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1922,17 +1922,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Quivered` | Array / Integer || 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `PoisonThorns` | Integer || 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `PoisonThorns` | Integer | Applies Poison stacks to any unit that attacks this unit in melee. | 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 ||
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Buddy`](Characters_and_Bosses.md#object-buddy) | Enum / Object ||| `spawner` (Enum), `Ornstein` (Enum), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object ||| `1` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `2` (Number), `1` (Number) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Buddy`](Characters_and_Bosses.md#object-buddy) | Enum / Object | Specifies the character template of the unit's buddy (paired ally). || `spawner` (Enum), `Ornstein` (Enum), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object | Forces the unit to perform a basic attack immediately. || `1` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `2` (Number), `1` (Number) |
 
 </details>
 
@@ -1947,11 +1947,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Quivered` | Array / Integer || 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. || `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, each dealing independent damage; can also be an object with custom tooltip data. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1966,7 +1966,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairWeapon` | Array / Integer ||| `[1 .25]` (Array), `6` (Number), `1` (Number) |
+| `RepairWeapon` | Array / Integer | The number of stacks of RepairWeapon applied (or an array [stacks, probability] for random application). || `[1 .25]` (Array), `6` (Number), `1` (Number) |
 | `ChanceToBreak` | Integer | Applies or references the 'ChanceToBreak' effect/state. | 0 ||
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | Applies or references the 'RepairWeapon' effect/state. | 0 ||
 
@@ -1983,12 +1983,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Blind` | Array / Integer || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Integer | The number of stacks of Blind to apply, reducing accuracy; can be an array `[stacks, probability]` for a chance-based application. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Blind`](./Arrays.md#array-blind) | Array / Integer | Applies or references the 'Blind' effect/state. | 6 ||
 | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Nested conditional. | 3 ||
 | [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Nested conditional. | 3 ||
 | `must_do_damage` | Boolean | `true` | 3 ||
-| `Rot` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
+| `Rot` | Array / Integer | The number of stacks of Rot, causing damage over time and potentially spawning a fly on death; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
 | [`KnockbackIfCrit`](#object-knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 0 ||
 | `LeaveBehindRockOnKnockback` | Integer | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. | 0 ||
 | `NonLethal` | Integer | Applies the 'NonLethal' effect. | 0 ||
@@ -2008,59 +2008,59 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer || 9 | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Blind` | Array / Integer || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .15]` (Array), `[1 .2]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Leech` | Integer || 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Integer | The number of stacks of Blind to apply, reducing accuracy; can be an array `[stacks, probability]` for a chance-based application. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .15]` (Array), `[1 .2]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Leech` | Integer | The amount of health stolen per hit as a percentage of damage dealt. | 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Nested conditional. | 5 ||
-| `Immobile` | Array / Integer || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Integer | The number of turns of Immobile applied, or an array with duration and chance. | 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of turns of Slow applied, or an array with duration and chance. | 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The number of Weakness stacks applied, which increases damage taken by the target; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | Nested conditional. | 3 ||
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 3 ||
 | [`Conditional_Adjacent`](Engine_LogicKeys.md#conditional_adjacent) | Object | Nested conditional. | 2 ||
 | [`Conditional_Shielded`](Abilities_and_Spells.md#object-conditional_shielded) | Object | Nested conditional. | 2 ||
-| [`Leeches`](#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `MagicWeakness` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
-| [`SoulLink`](#object-soullink) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Leeches`](#object-leeches) | Integer / Object | The number of Leech stacks applied, healing the attacker. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `MagicWeakness` | Array / Integer | The number of stacks of MagicWeakness, increasing incoming magic damage; can be an array `[stacks, probability]`. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| [`SoulLink`](#object-soullink) | Integer / Object | The number of turns the linked status lasts, sharing damage between linked units. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Nested conditional. | 1 ||
 | [`Conditional_SourceHasTag`](Engine_LogicKeys.md#conditional_sourcehastag) | Object | Nested conditional. | 1 ||
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object || 1 | `{ ... }` (Object) |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object ||| `{ ... }` (Object) |
-| [`BounceObject`](Abilities_and_Spells.md#object-bounceobject) | Enum / Object ||| `AllyRotFly` (Enum), `CharmedFlea_Champion` (Enum), `{ ... }` (Object) |
-| `BurgleCoin` | Array / Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number) |
-| [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object ||| `LavaTile` (Enum), `TallGrassTile` (Enum), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .25]` (Array), `[1 .15]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `FlatLeech` | Integer ||| `X` (Enum), `5` (Number), `2` (Number) |
-| `Freeze` | Array / Integer ||| `[1 .01]` (Array), `[1 .20]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object ||| `all_disorders` (Enum), `{ ... }` (Object) |
-| `Instakill` | Integer ||| `[25 .01]` (Array), `50` (Number), `999` (Number) |
-| `Knockback` | Integer ||| `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`KnockOutCoin`](Abilities_and_Spells.md#object-knockoutcoin) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object ||| `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ManaLeeches` | Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Marked`](#object-marked) | Array / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
-| `OverrideChainKnockback` | Integer ||| `10` (Number), `3` (Number) |
-| `OverrideChainKnockbackDamage` | String ||| `3+bonus_melee_ability_damage` (Enum), `0` (Number) |
-| `Petrify` | Array / Integer ||| `[1 .1]` (Array), `[1 .20]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Possessed` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `PullSourceToTarget` | Integer ||| `1` (Number) |
-| `Rot` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `-999999` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpiderInfested` | Integer ||| `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `SplashDamage` | Integer ||| `1` (Number), `2` (Number) |
-| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object ||| `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .25]` (Array), `[1 .15]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `VisualFXTile` | Enum ||| `PoisonPoof` (Enum), `FireBlastSmall` (Enum) |
-| `Webbed` | Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | An object containing effects that apply when the parent conditional condition is not met. | 1 | `{ ... }` (Object) |
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object containing status effects or modifiers applied to the source (attacker) of the triggering condition rather than the target. || `{ ... }` (Object) |
+| [`BounceObject`](Abilities_and_Spells.md#object-bounceobject) | Enum / Object | Spawns and bounces the specified object onto a random tile, with an optional chance. || `AllyRotFly` (Enum), `CharmedFlea_Champion` (Enum), `{ ... }` (Object) |
+| `BurgleCoin` | Array / Integer | The number of coins stolen, or an array of [stacks, probability]. || `[1 .5]` (Array), `3` (Number), `1` (Number) |
+| [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object | Specifies the tile type to change the target's tile into (e.g., BrambleTile, LavaTile). || `LavaTile` (Enum), `TallGrassTile` (Enum), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .25]` (Array), `[1 .15]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `FlatLeech` | Integer | The amount of flat health restored per hit (leech). || `X` (Enum), `5` (Number), `2` (Number) |
+| `Freeze` | Array / Integer | The number of stacks of Freeze, immobilizing the unit for that many turns; can be an array `[stacks, probability]`. || `[1 .01]` (Array), `[1 .20]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object | Specifies a pool of disorders or a custom chance to gain a disorder when the condition is met. || `all_disorders` (Enum), `{ ... }` (Object) |
+| `Instakill` | Integer | If an integer, the percentage chance to instantly kill the target. If an array [stacks, probability], applies that many stacks with the given probability per stack. || `[25 .01]` (Array), `50` (Number), `999` (Number) |
+| `Knockback` | Integer | The number of tiles the target is knocked back. || `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`KnockOutCoin`](Abilities_and_Spells.md#object-knockoutcoin) | Integer / Object | Either an integer for guaranteed stacks or an object with `stacks` and `chance` for a probability-based knock-out effect. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Defines a knockback that launches the target up and away, with optional distance and stacks. || `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ManaLeeches` | Integer | The number of mana leech stacks that drain mana on hit. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Marked`](#object-marked) | Array / Integer / Object | The number of Marked stacks applied, which increases damage taken from all sources; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
+| `OverrideChainKnockback` | Integer | The number of tiles to override the default chain knockback distance. || `10` (Number), `3` (Number) |
+| `OverrideChainKnockbackDamage` | String | A formula or value that overrides the damage dealt by chain knockback effects. || `3+bonus_melee_ability_damage` (Enum), `0` (Number) |
+| `Petrify` | Array / Integer | The number of stacks of Petrify, turning the unit to stone and immobilizing it; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .20]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Possessed` | Integer | The number of stacks of the Possessed status effect applied, which causes the unit to be controlled by an external force. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PullSourceToTarget` | Integer | If 1, pulls the source (attacker) to the target's adjacent tile after the attack. || `1` (Number) |
+| `Rot` | Array / Integer | The number of stacks of Rot, causing damage over time and potentially spawning a fly on death; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `-999999` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpiderInfested` | Integer | The number of turns the target is infested with spiders, taking damage over time. || `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `SplashDamage` | Integer | The radius in tiles for splash damage applied to the area of effect. || `1` (Number), `2` (Number) |
+| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object | An object defining a disease to spread, including chance and disease type. || `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .25]` (Array), `[1 .15]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object | The number of turns the target is unable to move, with optional [stacks, probability] format. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `VisualFXTile` | Enum | Specifies the visual effect to play on the target tile. || `PoisonPoof` (Enum), `FireBlastSmall` (Enum) |
+| `Webbed` | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2075,14 +2075,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| `Knockback` | Integer ||| `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object ||| `{ ... }` (Object) |
-| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object ||| `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Integer | The number of turns of Immobile applied, or an array with duration and chance. | 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `Knockback` | Integer | The number of tiles the target is knocked back. || `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Defines a knockback that launches the target up and away, with optional distance and stacks. || `{ ... }` (Object) |
+| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object | An object defining a disease to spread, including chance and disease type. || `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2100,8 +2100,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AddDamageToElementDamage`](Cat_Mutations.md#object-adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 6 ||
 | [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Nested conditional. | 2 ||
 | [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type required or applied. | 1 ||
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2116,9 +2116,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 ||
-| `Stun` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | Applies or references the 'Stun' effect/state. | 0 ||
 
 </details>
@@ -2134,7 +2134,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Leech` | Integer || 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Leech` | Integer | The amount of health stolen per hit as a percentage of damage dealt. | 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Leech` | Integer | Applies or references the 'Leech' effect/state. | 6 ||
 | [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | Nested conditional. | 1 ||
 | `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 0 ||
@@ -2152,9 +2152,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 ||
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | If an integer, the number of cleave hits; if an object, may contain a chance for cleave. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | Causes the attack to hit adjacent enemies alongside the primary target. | 0 ||
 
 </details>
@@ -2170,10 +2170,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Leech` | Integer || 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `PullSourceToKnockbackImmuneTarget` | Integer ||| `1` (Number) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Leech` | Integer | The amount of health stolen per hit as a percentage of damage dealt. | 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | If an integer, the number of cleave hits; if an object, may contain a chance for cleave. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PullSourceToKnockbackImmuneTarget` | Integer | If 1, pulls the source to the target even if the target is immune to knockback. || `1` (Number) |
 
 </details>
 
@@ -2202,8 +2202,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `YOffset` | Number || 6 | `-.18` (String), `.25` (String) |
-| `Flying` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `YOffset` | Number | A vertical offset multiplier used to adjust the unit's visual position on the tile. | 6 | `-.18` (String), `.25` (String) |
+| `Flying` | Integer | The number of stacks of the Flying status effect applied to the unit. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2218,10 +2218,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Purge`](#object-purge) | Integer / Object || 2 | `3` (Number), `0` (Number), `{ ... }` (Object) |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object ||| `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Purge`](#object-purge) | Integer / Object | The number of stacks of Purge to apply, removing beneficial statuses. | 2 | `3` (Number), `0` (Number), `{ ... }` (Object) |
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object containing status effects or modifiers applied to the source (attacker) of the triggering condition rather than the target. || `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2237,8 +2237,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 ||
-| `Bounty` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Marked`](#object-marked) | Array / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
+| `Bounty` | Integer | The number of Bounty status stacks applied to random enemies each turn. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Marked`](#object-marked) | Array / Integer / Object | The number of Marked stacks applied, which increases damage taken from all sources; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2253,12 +2253,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum || 5441 | `"PASSIVE_CATCHPROJECTILES_DESC"` (String) |
-| `name` | Enum || 5027 | `"PASSIVE_CATCHPROJECTILES_NAME"` (String) |
-| `Quivered` | Array / Integer || 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. | 5441 | `"PASSIVE_CATCHPROJECTILES_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. | 5027 | `"PASSIVE_CATCHPROJECTILES_NAME"` (String) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `ally_chance` | Integer | Examples: `15, 100` | 5 ||
 | [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2274,12 +2274,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
-| `Stealth` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stealth` | Array / Integer | The number of turns the unit is invisible, or [stacks, probability] of gaining stealth. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_Flying`](Engine_Uncategorized_Resources.md#conditional_flying) | Object | Nested conditional. | 1 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object || 1 | `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | An object containing effects that apply when the parent conditional condition is not met. | 1 | `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2294,16 +2294,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Integer | The number of turns of Immobile applied, or an array with duration and chance. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The number of Weakness stacks applied, which increases damage taken by the target; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Nested conditional. | 2 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object || 1 | `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `Coin` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | An object containing effects that apply when the parent conditional condition is not met. | 1 | `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. || `Coin` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2337,17 +2337,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 ||
 | `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 24 ||
-| `Poison` | Array / Integer || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 8 ||
 | [`AddDamageToElementDamage`](Cat_Mutations.md#object-adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 6 ||
-| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Integer | The number of turns of Immobile applied, or an array with duration and chance. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The number of Weakness stacks applied, which increases damage taken by the target; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`AddStatusToElementDamage`](Items_and_Equipment.md#object-addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 4 ||
 | [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 2 ||
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 1 ||
-| `Freeze` | Array / Integer ||| `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Freeze` | Array / Integer | The number of stacks of Freeze, immobilizing the unit for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 ||
-| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object ||| `{ ... }` (Object) |
+| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object | An object defining a disease to spread, including chance and disease type. || `{ ... }` (Object) |
 | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Array / Enum | Applies or references the 'StatusImmunity' effect/state. | 0 ||
 
 </details>
@@ -2413,12 +2413,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object ||| `{ ... }` (Object) |
-| `CharismaUp` | Enum / Integer ||| `[1 .5]` (Array), `5` (Number), `-2` (Number), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object ||| `Fighter` (Enum), `Medic` (Enum), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `5` (Number), `-2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. || `{ ... }` (Object) |
+| `CharismaUp` | Enum / Integer | The amount of Charisma stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `5` (Number), `-2` (Number), `{ ... }` (Object) |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the target form name or an object with form parameters and optional side effects (e.g., faction change, healing). || `Fighter` (Enum), `Medic` (Enum), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `5` (Number), `-2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2449,9 +2449,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Flying` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Flying` | Integer | The number of stacks of the Flying status effect applied to the unit. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2467,7 +2467,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`StatusEachTurnBegin`](Cat_Mutations.md#object-statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 16 ||
-| [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object || 4 | `SpiderReturn` (Enum), `{ ... }` (Object) |
+| [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object | An object defining an ability that is automatically cast each round, with optional force display or ignore stun. | 4 | `SpiderReturn` (Enum), `{ ... }` (Object) |
 | [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 4 ||
 | [`StatusEachRoundEnd`](Cat_Mutations.md#object-statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 2 ||
 | [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 2 ||
@@ -2501,8 +2501,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2517,7 +2517,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformInXTurns`](Characters_and_Bosses.md#object-transforminxturns) | Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`TransformInXTurns`](Characters_and_Bosses.md#object-transforminxturns) | Object | Transforms the unit into another object after a set number of turns (stacks). || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2532,71 +2532,71 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `CritChanceUp` | Integer || 36 | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer || 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Quivered` | Array / Integer || 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `BleedThorns` | Integer || 8 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Blind` | Array / Integer || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `KineticSpikes` | Integer || 6 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `MoveQuivered` | Integer || 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `40` (Number), `10` (Number), `{ ... }` (Object) |
-| `MagicWeakness` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| [`PoisonLace`](#object-poisonlace) | Integer / Object / String || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
-| [`Reflect`](#object-reflect) | Integer / Object || 2 | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Infested`](#object-infested) | Integer / Object || 1 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `-5` (Number), `-4` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Charge` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `CharismaUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `DelayedPain` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `DexterityUp` | Enum / Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `DiminishingHealthRegen` | Integer ||| `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Drowsy` | Integer ||| `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object ||| `passive` (Enum), `Boris` (Enum), `{ ... }` (Object) |
-| `Freeze` | Array / Integer ||| `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `GainCoins` | Array / Integer ||| `[3 5]` (Array), `2` (Number), `-5` (Number) |
-| `Hex` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `Lifesteal` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ManaGain` | Enum / Integer ||| `item_aux` (Enum), `X` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| [`Marked`](#object-marked) | Array / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `SmallRock` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
-| `Ostracized` | Integer ||| `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `PermanentCharisma` | Integer ||| `1` (Number), `2` (Number) |
-| `PermanentLuck` | Integer ||| `1` (Number), `2` (Number) |
-| `PermanentStrength` | Integer ||| `1` (Number), `2` (Number) |
-| `Petrify` | Array / Integer ||| `[1 .1]` (Array), `[1 .20]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomStatDown` | Array / Integer / String ||| `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
-| `Rot` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
-| `Scrambled` | Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `Sleep` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
-| `SpawnCoinAnywhere` | Array / Integer ||| `[1 .5]` (Array), `1` (Number) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpellDamageUp` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `Tarred` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `TempCounterAttack` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `CritChanceUp` | Integer | The amount of critical hit chance increase, in percentage points. | 36 | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer | The number of Thorns stacks applied, which deals damage back to melee attackers. | 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `BleedThorns` | Integer | The number of Bleed Thorns stacks applied, which deals bleeding damage back to melee attackers. | 8 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Integer | The number of stacks of Blind to apply, reducing accuracy; can be an array `[stacks, probability]` for a chance-based application. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Integer | The number of Kinetic Spikes stacks applied, which deal damage back to attackers when the unit is hit. | 6 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Integer | Specifies the number of bonus movement points granted; an array `[stacks, probability]` specifies the amount and its chance of application. | 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Integer | The number of turns of Immobile applied, or an array with duration and chance. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of turns of Slow applied, or an array with duration and chance. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The number of Weakness stacks applied, which increases damage taken by the target; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | The number of stacks of BackflipWhenTargeted or an object defining the dodge ability; causes the unit to perform a backflip dodge when targeted. | 2 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Integer | The percentage of dodge chance granted by this status effect. | 2 | `[1 .5]` (Array), `40` (Number), `10` (Number), `{ ... }` (Object) |
+| `MagicWeakness` | Array / Integer | The number of stacks of MagicWeakness, increasing incoming magic damage; can be an array `[stacks, probability]`. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| [`PoisonLace`](#object-poisonlace) | Integer / Object / String | The amount or formula for PoisonLace damage applied per turn; can be a fixed integer or a formula like `X/3`. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| [`Reflect`](#object-reflect) | Integer / Object | The number of stacks of Reflect, causing a percentage of incoming damage to be reflected back to the attacker. | 2 | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Infested`](#object-infested) | Integer / Object | The number of stacks of Infested, causing the unit to spawn a friendly fly or swarm upon death. | 1 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. || `str` (Enum), `20+bonus_melee_damage` (Enum), `-5` (Number), `-4` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `CharismaUp` | Enum / Integer | The amount of Charisma stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DelayedPain` | Integer | The number of stacks of DelayedPain, which deals damage to the unit after a delay (e.g., at the end of its next turn). || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `DexterityUp` | Enum / Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `DiminishingHealthRegen` | Integer | The number of stacks of DiminishingHealthRegen, providing health regeneration each turn that decreases with each stack. || `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Drowsy` | Integer | The number of stacks of the Drowsy status effect to apply, which reduces a unit's action points or turn efficiency. || `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the target form name or an object with form parameters and optional side effects (e.g., faction change, healing). || `passive` (Enum), `Boris` (Enum), `{ ... }` (Object) |
+| `Freeze` | Array / Integer | The number of stacks of Freeze, immobilizing the unit for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `GainCoins` | Array / Integer | The number of coins gained or lost; can be a fixed integer, a range `[min, max]`, or a negative value to deduct coins. || `[3 5]` (Array), `2` (Number), `-5` (Number) |
+| `Hex` | Integer | The number of Hex stacks applied, which increases the chance of negative status effects landing on the target. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `Lifesteal` | Integer | The number of stacks of Lifesteal, converting a percentage of damage dealt into healing for the attacker. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). || `item_aux` (Enum), `X` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| [`Marked`](#object-marked) | Array / Integer / Object | The number of Marked stacks applied, which increases damage taken from all sources; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. || `SmallRock` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
+| `Ostracized` | Integer | The number of stacks of Ostracized, making the unit unable to be targeted by ally abilities or receive allied benefits. || `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `PermanentCharisma` | Integer | The amount of permanent Charisma stat increase applied. || `1` (Number), `2` (Number) |
+| `PermanentLuck` | Integer | The amount of permanent Luck stat increase applied. || `1` (Number), `2` (Number) |
+| `PermanentStrength` | Integer | The amount of permanent Strength stat increase applied. || `1` (Number), `2` (Number) |
+| `Petrify` | Array / Integer | The number of stacks of Petrify, turning the unit to stone and immobilizing it; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .20]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RandomStatDown` | Array / Integer / String | The number of stacks or chance to decrease a random stat; can be an array `[stacks, probability]` or a formula. || `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
+| `Rot` | Array / Integer | The number of stacks of Rot, causing damage over time and potentially spawning a fly on death; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
+| `Scrambled` | Integer | The number of stacks of the Scrambled status effect applied to the target. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Sleep` | Array / Integer | The number of stacks of Sleep, putting the unit to sleep for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
+| `SpawnCoinAnywhere` | Array / Integer | If integer, the number of coins spawned; if array, [stacks, probability] of spawning a coin anywhere on the map. || `[1 .5]` (Array), `1` (Number) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp, increasing spell damage dealt by the unit. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Tarred` | Array / Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempCounterAttack` | Integer | The number of stacks (turns) for TempCounterAttack, causing the unit to counterattack after being hit. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2630,10 +2630,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempDamageUp` | Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `TempRangeUp` | Integer ||| `[1 .5]` (Array), `20` (Number), `3` (Number), `{ ... }` (Object) |
-| `TempSpellDamageUp` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object ||| `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
+| `TempDamageUp` | Integer | The number of temporary damage increase stacks applied to the target for the current turn. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempRangeUp` | Integer | The number of turns this unit gains increased attack range. || `[1 .5]` (Array), `20` (Number), `3` (Number), `{ ... }` (Object) |
+| `TempSpellDamageUp` | Integer | A temporary increase to spell damage output. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | Specifies the ability name the unit will use at the end of each round. || `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -2649,7 +2649,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. || `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -2664,11 +2664,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Poison` | Array / Integer || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Nested conditional. | 2 ||
 | [`Conditional_PartyMember`](Engine_LogicKeys.md#conditional_partymember) | Object | Nested conditional. | 1 ||
 | [`Conditional_Tiny`](Engine_Uncategorized_Resources.md#conditional_tiny) | Object | Nested conditional. | 1 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object || 1 | `{ ... }` (Object) |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | An object containing effects that apply when the parent conditional condition is not met. | 1 | `{ ... }` (Object) |
 
 </details>
 
@@ -2683,7 +2683,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
 | `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 ||
 | [`Conditional_Adjacent`](Engine_LogicKeys.md#conditional_adjacent) | Object | Nested conditional. | 1 ||
 | `exclude_self` | Boolean | `false` | 1 ||
@@ -2701,14 +2701,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2723,11 +2723,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Reanimate`](#object-reanimate) | Integer / Object || 4 | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| [`Reanimate`](#object-reanimate) | Integer / Object | The percentage chance (e.g., 50%) to revive upon death. | 4 | `50` (Number), `100` (Number), `{ ... }` (Object) |
 | `triggers_limit` | Integer | Examples: `1` | 2 ||
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Freeze` | Array / Integer ||| `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Freeze` | Array / Integer | The number of stacks of Freeze, immobilizing the unit for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2742,8 +2742,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DoDamage`](Abilities_and_Spells.md#object-dodamage) | Object ||| `{ ... }` (Object) |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object ||| `GirlDinoPoop` (Enum), `Spit` (Enum), `{ ... }` (Object) |
+| [`DoDamage`](Abilities_and_Spells.md#object-dodamage) | Object | An object defining damage to deal, including damage amount and type. || `{ ... }` (Object) |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | Specifies the ability name the unit will use at the end of each round. || `GirlDinoPoop` (Enum), `Spit` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -2758,23 +2758,23 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MissChance` | Integer || 24 | `[1 .5]` (Array), `5` (Number), `10` (Number), `{ ... }` (Object) |
-| `Quivered` | Array / Integer || 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `MoveQuivered` | Integer || 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `MissChance` | Integer | The percentage chance that the unit's attacks will miss. | 24 | `[1 .5]` (Array), `5` (Number), `10` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Integer | Specifies the number of bonus movement points granted; an array `[stacks, probability]` specifies the amount and its chance of application. | 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | Nested conditional. | 5 ||
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
-| [`Revive`](#object-revive) | Integer / Object || 2 | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| [`Revive`](#object-revive) | Integer / Object | The percentage or flat amount of HP restored when reviving a dead ally. | 2 | `50` (Number), `100` (Number), `{ ... }` (Object) |
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 1 ||
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `BlessingOfPeace` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `DoubleCastSpellThisTurn` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `FillMana` | Integer ||| `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object ||| `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
-| `Wet` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `BlessingOfPeace` | Integer | The number of BlessingOfPeace stacks applied, which reduces damage taken from enemies. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `DoubleCastSpellThisTurn` | Integer | If set to 1, allows the unit to cast spells twice this turn. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `FillMana` | Integer | The amount of mana restored to the unit; can be a fixed integer or an array `[stacks, probability]` for a chance-based application. || `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. || `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | Specifies the ability name the unit will use at the end of each round. || `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
+| `Wet` | Integer | The number of Wet status stacks applied, affecting elemental reactions. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2789,34 +2789,34 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `KineticSpikes` | Integer || 6 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Integer | The number of Kinetic Spikes stacks applied, which deal damage back to attackers when the unit is hit. | 6 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 2 ||
-| [`Cleanse`](#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
-| `Stealth` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Cleanse`](#object-cleanse) | Integer / Object | If set to 1, removes all status effects from the target; if 0, no cleanse. | 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `Stealth` | Array / Integer | The number of turns the unit is invisible, or [stacks, probability] of gaining stealth. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | Nested conditional. | 1 ||
 | [`Conditional_HasCleansableDebuffs`](Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 ||
 | [`Conditional_ManaThreshold`](Engine_LogicKeys.md#conditional_manathreshold) | Object | Nested conditional. | 1 ||
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `AddWeaponAux` | Integer / String ||| `-item_aux` (Enum), `2` (Number), `1` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charge` | Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `head_HitlersToupe` (Enum), `tk_RoboSucc` (Enum), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
-| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object ||| `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `NonStackingDivineShield` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
-| `PermanentMadness` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `PreEmptiveCounterNextAttacks` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomStatDown` | Array / Integer / String ||| `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
-| `RangeUp` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `SpawnCoinAnywhere` | Array / Integer ||| `[1 .5]` (Array), `1` (Number) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `AddWeaponAux` | Integer / String | Adds to the weapon's auxiliary value, supporting integer or formula input. || `-item_aux` (Enum), `2` (Number), `1` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. || `head_HitlersToupe` (Enum), `tk_RoboSucc` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Forces the unit to immediately use the specified ability, even if stunned. || `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `NonStackingDivineShield` | Integer | A non-stacking shield that blocks the next instance of damage; applied as an integer for the number of shields. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. || `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| `PermanentMadness` | Integer | If set to 1, the Madness status is permanent and will never expire; can use an alias for the status. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PreEmptiveCounterNextAttacks` | Integer | The number of stacks of PreEmptiveCounterNextAttacks applied, allowing a counterattack before the next incoming attacks. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RandomStatDown` | Array / Integer / String | The number of stacks or chance to decrease a random stat; can be an array `[stacks, probability]` or a formula. || `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
+| `RangeUp` | Integer | The amount of bonus range added to the unit's attacks. Each stack adds one tile of range. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `SpawnCoinAnywhere` | Array / Integer | If integer, the number of coins spawned; if array, [stacks, probability] of spawning a coin anywhere on the map. || `[1 .5]` (Array), `1` (Number) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2831,8 +2831,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. || `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, each dealing independent damage; can also be an object with custom tooltip data. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2848,15 +2848,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 8 ||
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charge` | Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ReduceManaCost` | Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `RepairWeapon` | Array / Integer ||| `[1 .25]` (Array), `99` (Number), `1` (Number) |
-| `RepairWeaponCondition` | Integer ||| `1` (Number) |
-| `SpellDamageUp` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. || `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, each dealing independent damage; can also be an object with custom tooltip data. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ReduceManaCost` | Integer | The number by which mana cost of abilities is reduced, up to a minimum of zero. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `RepairWeapon` | Array / Integer | The number of stacks of RepairWeapon applied (or an array [stacks, probability] for random application). || `[1 .25]` (Array), `99` (Number), `1` (Number) |
+| `RepairWeaponCondition` | Integer | The amount of weapon condition repaired per spell cast. || `1` (Number) |
+| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp, increasing spell damage dealt by the unit. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2871,12 +2871,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DexterityUp` | Enum / Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object ||| `mutant_pool` (Enum), `parasites` (Enum), `{ ... }` (Object) |
-| `Freeze` | Array / Integer ||| `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpawnCoinAnywhere` | Array / Integer ||| `[1 .5]` (Array), `1` (Number) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DexterityUp` | Enum / Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Determines the item pool name from which a random item is granted to the source. || `mutant_pool` (Enum), `parasites` (Enum), `{ ... }` (Object) |
+| `Freeze` | Array / Integer | The number of stacks of Freeze, immobilizing the unit for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpawnCoinAnywhere` | Array / Integer | If integer, the number of coins spawned; if array, [stacks, probability] of spawning a coin anywhere on the map. || `[1 .5]` (Array), `1` (Number) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2891,14 +2891,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `MoveQuivered` | Integer || 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Charge` | Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
-| `ManaGain` | Enum / Integer ||| `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Integer | Specifies the number of bonus movement points granted; an array `[stacks, probability]` specifies the amount and its chance of application. | 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). || `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
 
 </details>
 
@@ -2915,7 +2915,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_RandomChance`](Abilities_and_Spells.md#object-conditional_randomchance) | Object | Nested conditional. | 2 ||
 | [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Nested conditional. | 1 ||
-| `AutoReanimate` | Number ||| `100` (Number), `50` (Number) |
+| `AutoReanimate` | Number | The percentage chance to automatically revive a killed character. || `100` (Number), `50` (Number) |
 | `AutoReanimate` | Number | Examples: `50` | 0 ||
 
 </details>
@@ -2931,7 +2931,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 | [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | Applies or references the 'Confusion' effect/state. | 6 ||
 | [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Nested conditional. | 2 ||
 | [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Nested conditional. | 2 ||
@@ -2949,11 +2949,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `FillMana` | Integer ||| `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `FillMana` | Integer | The amount of mana restored to the unit; can be a fixed integer or an array `[stacks, probability]` for a chance-based application. || `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
 
 </details>
 
@@ -2972,12 +2972,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 6 ||
 | [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Nested conditional. | 1 ||
 | [`Conditional_Shielded`](Abilities_and_Spells.md#object-conditional_shielded) | Object | Nested conditional. | 1 ||
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object ||| `pills` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
-| `GainCoins` | Array / Integer ||| `[3 5]` (Array), `5` (Number), `2` (Number) |
-| `PermanentStrength` | Integer ||| `1` (Number), `2` (Number) |
-| `RepairAll` | Integer ||| `10` (Number), `1` (Number) |
-| `RepairWeapon` | Array / Integer ||| `[1 .25]` (Array), `99` (Number), `1` (Number) |
-| [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object ||| `{ ... }` (Object) |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Determines the item pool name from which a random item is granted to the source. || `pills` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
+| `GainCoins` | Array / Integer | The number of coins gained or lost; can be a fixed integer, a range `[min, max]`, or a negative value to deduct coins. || `[3 5]` (Array), `5` (Number), `2` (Number) |
+| `PermanentStrength` | Integer | The amount of permanent Strength stat increase applied. || `1` (Number), `2` (Number) |
+| `RepairAll` | Integer | The amount of condition restored to all equipment. || `10` (Number), `1` (Number) |
+| `RepairWeapon` | Array / Integer | The number of stacks of RepairWeapon applied (or an array [stacks, probability] for random application). || `[1 .25]` (Array), `99` (Number), `1` (Number) |
+| [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object | An object specifying a weapon transformation from one ID to another. || `{ ... }` (Object) |
 
 </details>
 
@@ -2992,17 +2992,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Craft`](Abilities_and_Spells.md#object-craft) | Object || 2 | `{ ... }` (Object) |
-| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object ||| `{ ... }` (Object) |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object ||| `chapter` (Enum), `pills` (Enum), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `SafeDie` | Integer ||| `1` (Number) |
-| `Sleep` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
-| `StealthUntilBasicAttack` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | An object defining a crafting action, including the item pool and target slot. | 2 | `{ ... }` (Object) |
+| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | An object that destroys a piece of equipment and attaches a parasite from a specified pool, with optional chance. || `{ ... }` (Object) |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Determines the item pool name from which a random item is granted to the source. || `chapter` (Enum), `pills` (Enum), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. || `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. || `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, each dealing independent damage; can also be an object with custom tooltip data. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object | The number of stacks of ReviveNextRound or an object defining revival properties; causes the unit to revive with specified health, shields, or buffs at the start of the next round. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `SafeDie` | Integer | If 1, prevents death once per battle, leaving the unit at 1 HP instead. || `1` (Number) |
+| `Sleep` | Array / Integer | The number of stacks of Sleep, putting the unit to sleep for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
+| `StealthUntilBasicAttack` | Integer | The number of stacks of stealth that persist until the unit makes a basic attack. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3017,16 +3017,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object ||| `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `DexterityUp` | Enum / Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object ||| `chapter` (Enum), `pills` (Enum), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `BestBud` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | An object containing effects to apply to a random party member if one is available. || `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DexterityUp` | Enum / Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Determines the item pool name from which a random item is granted to the source. || `chapter` (Enum), `pills` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. || `BestBud` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3041,9 +3041,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer || 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`DoDamage`](Abilities_and_Spells.md#object-dodamage) | Object ||| `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer | The number of Thorns stacks applied, which deals damage back to melee attackers. | 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`DoDamage`](Abilities_and_Spells.md#object-dodamage) | Object | An object defining damage to deal, including damage amount and type. || `{ ... }` (Object) |
 
 </details>
 
@@ -3058,9 +3058,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charge` | Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
 
 </details>
 
@@ -3075,7 +3075,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Tech` | Integer || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Tech` | Integer | The number of Tech stacks applied, which increase the damage of the next ability used. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3091,10 +3091,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_RandomChance`](Abilities_and_Spells.md#object-conditional_randomchance) | Object | Nested conditional. | 1 ||
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object ||| `pills` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `RemoveAmbientLightEffects` | Number ||| `4` (Number), `.5` (String) |
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object ||| `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Determines the item pool name from which a random item is granted to the source. || `pills` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
+| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, each dealing independent damage; can also be an object with custom tooltip data. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `RemoveAmbientLightEffects` | Number | The duration or amount of ambient light effect removal applied over time. || `4` (Number), `.5` (String) |
+| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins scattered, or an object with stacks and stacking behavior. || `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3109,11 +3109,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Cleanse`](#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Cleanse`](#object-cleanse) | Integer / Object | If set to 1, removes all status effects from the target; if 0, no cleanse. | 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3128,7 +3128,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 0 ||
 | [`RandomPermanentStatsDistinct`](#object-randompermanentstatsdistinct) | Object | Examples: `{ ... }` | 0 ||
 
@@ -3147,12 +3147,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Nested conditional. | 1 ||
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 1 ||
-| `Charge` | Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object ||| `1` (Number), `{ ... }` (Object) |
-| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object ||| `MoonHandMegaSqueeze` (Enum), `head_MagnetoAttract` (Enum), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpeedUp_WithoutInitiative` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object | Forces the unit to perform a basic attack immediately. || `1` (Number), `{ ... }` (Object) |
+| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Forces the unit to immediately use the specified ability, even if stunned. || `MoonHandMegaSqueeze` (Enum), `head_MagnetoAttract` (Enum), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp_WithoutInitiative` | Integer | The number of SpeedUp stacks applied that do not affect initiative. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`RemoveStatusStacks`](Abilities_and_Spells.md#object-removestatusstacks) | Object | Removes a specific number of stacks of a status effect. | 0 ||
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 0 ||
 | [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Applies or references the 'ImmediateUseAbility' effect/state. | 0 ||
@@ -3174,10 +3174,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | The number of stacks of BackflipWhenTargeted or an object defining the dodge ability; causes the unit to perform a backflip dodge when targeted. | 2 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3192,9 +3192,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer || 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer | The number of Thorns stacks applied, which deals damage back to melee attackers. | 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. || `SmallRock` (Enum), `SkeletonCatFamiliar` (Enum), `{ ... }` (Object) |
 
 </details>
 
@@ -3209,23 +3209,23 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 4 ||
 | [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Nested conditional. | 2 ||
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
-| `Stealth` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `CharismaUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `DexterityUp` | Enum / Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| `RangeUp` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| `Stealth` | Array / Integer | The number of turns the unit is invisible, or [stacks, probability] of gaining stealth. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `CharismaUp` | Enum / Integer | The amount of Charisma stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DexterityUp` | Enum / Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `RangeUp` | Integer | The amount of bonus range added to the unit's attacks. Each stack adds one tile of range. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 0 ||
 | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 0 ||
 | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 0 ||
@@ -3248,13 +3248,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `2` (Number) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| `ManaGain` | Enum / Integer ||| `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. || `head_HitlersToupe` (Enum), `tk_JarOfRadiation` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `2` (Number) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). || `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
 
 </details>
 
@@ -3269,9 +3269,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DexterityUp` | Enum / Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `GainCoins` | Array / Integer ||| `[3 5]` (Array), `5` (Number), `2` (Number) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DexterityUp` | Enum / Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `GainCoins` | Array / Integer | The number of coins gained or lost; can be a fixed integer, a range `[min, max]`, or a negative value to deduct coins. || `[3 5]` (Array), `5` (Number), `2` (Number) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3286,8 +3286,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `2` (Number), `1` (Number) |
-| `RepairWeapon` | Array / Integer ||| `[1 .25]` (Array), `99` (Number), `1` (Number) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `2` (Number), `1` (Number) |
+| `RepairWeapon` | Array / Integer | The number of stacks of RepairWeapon applied (or an array [stacks, probability] for random application). || `[1 .25]` (Array), `99` (Number), `1` (Number) |
 
 </details>
 
@@ -3302,28 +3302,28 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer || 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer | The number of Thorns stacks applied, which deals damage back to melee attackers. | 36 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Nested conditional. | 2 ||
-| [`Craft`](Abilities_and_Spells.md#object-craft) | Object || 2 | `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `5` (Number), `40` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
+| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | An object defining a crafting action, including the item pool and target slot. | 2 | `{ ... }` (Object) |
+| `DodgeChance_Status` | Integer | The percentage of dodge chance granted by this status effect. | 2 | `[1 .5]` (Array), `5` (Number), `40` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `2` (Number), `-5` (Number) |
 | [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Nested conditional. | 1 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object || 1 | `{ ... }` (Object) |
-| `Charge` | Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `DiminishingHealthRegen` | Integer ||| `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| `MovementUp` | Integer ||| `[1 .5]` (Array), `-2` (Number), `1` (Number), `{ ... }` (Object) |
-| `RandomInjury` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `TempDamageUp` | Integer ||| `[1 .5]` (Array), `-1` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempMovement` | Enum / Integer ||| `[1 .5]` (Array), `1` (Number), `20` (Number), `{ ... }` (Object) |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | An object containing effects that apply when the parent conditional condition is not met. | 1 | `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DiminishingHealthRegen` | Integer | The number of stacks of DiminishingHealthRegen, providing health regeneration each turn that decreases with each stack. || `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| `MovementUp` | Integer | The number of points of additional movement gained for a number of turns. || `[1 .5]` (Array), `-2` (Number), `1` (Number), `{ ... }` (Object) |
+| `RandomInjury` | Integer | The number of random injuries applied to the target. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempDamageUp` | Integer | The number of temporary damage increase stacks applied to the target for the current turn. || `[1 .5]` (Array), `-1` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempMovement` | Enum / Integer | Specifies the temporary movement range granted to the unit, either as an integer or via an alias. Stacks determine duration in turns. || `[1 .5]` (Array), `1` (Number), `20` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3338,11 +3338,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DiminishingHealthRegen` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `ExtraBasicAttacks_Status` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `DiminishingHealthRegen` | Integer | The number of stacks of DiminishingHealthRegen, providing health regeneration each turn that decreases with each stack. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `ExtraBasicAttacks_Status` | Integer | The number of extra basic attacks the unit can perform each turn. Stacks for additional attacks. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3357,8 +3357,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
 
 </details>
 
@@ -3373,12 +3373,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 ||
-| `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Freeze` | Array / Integer ||| `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Freeze` | Array / Integer | The number of stacks of Freeze, immobilizing the unit for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3393,9 +3393,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charge` | Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ManaGain` | Enum / Integer ||| `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| [`OneUseSpellDamageUp`](#object-oneusespelldamageup) | Array / Number / Object ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). || `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| [`OneUseSpellDamageUp`](#object-oneusespelldamageup) | Array / Number / Object | The magnitude of spell damage increase, consumed after a single spell cast. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3426,9 +3426,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3443,7 +3443,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 ||
 
 </details>
@@ -3459,14 +3459,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `FillMana` | Integer ||| `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
-| `PermanentMadness` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `SafeDoomed` | Enum / Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 6 | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `FillMana` | Integer | The amount of mana restored to the unit; can be a fixed integer or an array `[stacks, probability]` for a chance-based application. || `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `PermanentMadness` | Integer | If set to 1, the Madness status is permanent and will never expire; can use an alias for the status. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object | The number of stacks of ReviveNextRound or an object defining revival properties; causes the unit to revive with specified health, shields, or buffs at the start of the next round. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `SafeDoomed` | Enum / Integer | The number of turns until the target is instantly killed when this counter reaches zero, but unlike standard Doomed, it does not inflict injuries upon death. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3481,14 +3481,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CritChanceUp` | Integer || 36 | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Trample` | Integer || 14 | `[1 .5]` (Array), `[3 X-8]` (Array), `5` (Number), `9` (Number), `{ ... }` (Object) |
-| [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object || 4 | `SpiderReturn` (Enum), `{ ... }` (Object) |
-| `AlphaDodgeChance` | Integer ||| `[1 .5]` (Array), `50` (Number), `1` (Number), `{ ... }` (Object) |
-| `DownRankAIIfWeaponUsable` | Number ||| `.001` (String) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| [`XIsSpellStormRampAndReset`](Abilities_and_Spells.md#object-xisspellstormrampandreset) | Integer / Object ||| `0` (Number), `{ ... }` (Object) |
+| `CritChanceUp` | Integer | The amount of critical hit chance increase, in percentage points. | 36 | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Trample` | Integer | The number of tiles this character can move through enemies, dealing damage or applying effects equal to the value. | 14 | `[1 .5]` (Array), `[3 X-8]` (Array), `5` (Number), `9` (Number), `{ ... }` (Object) |
+| [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object | An object defining an ability that is automatically cast each round, with optional force display or ignore stun. | 4 | `SpiderReturn` (Enum), `{ ... }` (Object) |
+| `AlphaDodgeChance` | Integer | The percentage chance for the alpha cat to dodge attacks. || `[1 .5]` (Array), `50` (Number), `1` (Number), `{ ... }` (Object) |
+| `DownRankAIIfWeaponUsable` | Number | A multiplier for AI decision-making, reducing ability priority if a ability is usable. || `.001` (String) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| [`XIsSpellStormRampAndReset`](Abilities_and_Spells.md#object-xisspellstormrampandreset) | Integer / Object | An integer or object defining the ramp stacks and reset percentage for Spell Storm mechanics. || `0` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3503,12 +3503,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Poison` | Array / Integer || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Nested conditional. | 1 ||
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
-| `Tarred` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `3*X` (Enum), `2*X` (Enum), `5` (Number), `10` (Number) |
+| `Tarred` | Array / Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3523,16 +3523,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`NoHealthRegen`](#object-nohealthregen) | Array / Number / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Tarred` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `Webbed` | Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Integer | The number of turns of Immobile applied, or an array with duration and chance. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`NoHealthRegen`](#object-nohealthregen) | Array / Number / Object | If 1 or defined as an object, prevents health regeneration. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object | The number of turns the target is unable to move, with optional [stacks, probability] format. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Tarred` | Array / Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Webbed` | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3561,37 +3561,37 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `MissChance` | Integer || 24 | `[1 .5]` (Array), `5` (Number), `10` (Number), `{ ... }` (Object) |
-| `Bleed` | Array / Integer || 9 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Blind` | Array / Integer || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `CharismaUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `DexterityUp` | Enum / Integer ||| `[1 .5]` (Array), `-1` (Number), `1` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`NoHealthRegen`](#object-nohealthregen) | Array / Number / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`NoManaRegen`](Passives_and_Statuses.md#object-nomanaregen) | Array / Number / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`PermanentConfusion`](#object-permanentconfusion) | Array / Number / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ProbeCharmed` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Rot` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
-| `Sleep` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpiderInfested` | Integer ||| `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `Tarred` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `TempStrengthUp` | Enum ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Webbed` | Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `MissChance` | Integer | The percentage chance that the unit's attacks will miss. | 24 | `[1 .5]` (Array), `5` (Number), `10` (Number), `{ ... }` (Object) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 9 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Blind` | Array / Integer | The number of stacks of Blind to apply, reducing accuracy; can be an array `[stacks, probability]` for a chance-based application. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of turns of Slow applied, or an array with duration and chance. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `CharismaUp` | Enum / Integer | The amount of Charisma stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. || `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DexterityUp` | Enum / Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. || `[1 .5]` (Array), `-1` (Number), `1` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .33]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `IntelligenceUp` | Enum / Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. || `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. || `[1 .5]` (Array), `222` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`NoHealthRegen`](#object-nohealthregen) | Array / Number / Object | If 1 or defined as an object, prevents health regeneration. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`NoManaRegen`](Passives_and_Statuses.md#object-nomanaregen) | Array / Number / Object | If 1 or defined as an object, prevents mana regeneration. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`PermanentConfusion`](#object-permanentconfusion) | Array / Number / Object | The number of PermanentConfusion stacks applied, causing persistent confusion. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ProbeCharmed` | Integer | The number of stacks of ProbeCharmed status, which charms the target when probed. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Rot` | Array / Integer | The number of stacks of Rot, causing damage over time and potentially spawning a fly on death; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `-999999` (Number), `{ ... }` (Object) |
+| `Sleep` | Array / Integer | The number of stacks of Sleep, putting the unit to sleep for that many turns; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `8` (Number), `3` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpiderInfested` | Integer | The number of turns the target is infested with spiders, taking damage over time. || `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Tarred` | Array / Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. || `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempStrengthUp` | Enum | Alias for TempStrengthUp; temporarily increases the unit's strength stat. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Webbed` | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -3617,132 +3617,132 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `DodgeChance_Status` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `DodgeChance_Status` (Enum) |
 
 ### Object: `AlphaStatusOnTurnBegin`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellThisTurn` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `DoubleCastSpellThisTurn` | Integer | If set to 1, allows the unit to cast spells twice this turn. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
 ### Object: `ApplyPassivesToSpawnerWhileAlive`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HideEquipment` | Enum || 2 | `neck` (Enum) |
+| `HideEquipment` | Enum | Specifies which equipment slot (e.g., neck) to hide visually on the unit. | 2 | `neck` (Enum) |
 
 ### Object: `ApplyToRandomPartyMemberIfPossible`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object || 4 | `all_disorders` (Enum), `{ ... }` (Object) |
+| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object | Specifies a pool of disorders or a custom chance to gain a disorder when the condition is met. | 4 | `all_disorders` (Enum), `{ ... }` (Object) |
 
 ### Object: `ApplyToSource`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Enum / Integer || 12 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer || 12 | `2*X` (Enum), `3*X` (Enum), `3` (Number), `8` (Number) |
-| `StrengthUp` | Enum / Integer || 12 | `[1 .5]` (Array), `4` (Number), `-2` (Number), `{ ... }` (Object) |
-| `Shield` | Enum / Integer || 10 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object || 8 | `Medic` (Enum), `Psychic` (Enum), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object || 8 | `Default` (Enum), `passive` (Enum), `{ ... }` (Object) |
-| `AddWeaponAux` | Integer / String || 6 | `-item_aux` (Enum), `1` (Number), `2` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
-| `ConstitutionUp` | Array / Enum / Integer || 6 | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `Charge` | Integer || 4 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Cleanse`](#object-cleanse) | Integer / Object || 4 | `1` (Number), `0` (Number), `{ ... }` (Object) |
-| `EquipPermanentItem` | Enum || 4 | `BoneClub` (Enum), `Kidney` (Enum) |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object || 4 | `chapter_specific_item` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
-| `FreeSpell` | Integer || 4 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer || 4 | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 2 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer || 2 | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `FindItem` | Enum || 2 | `BoneClub` (Enum), `Pearl` (Enum) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object || 2 | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
-| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object || 2 | `{ ... }` (Object) |
-| `KineticSpikes` | Integer || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `ManaGain` | Enum / Integer || 2 | `X-1` (Enum), `X+2` (Enum), `15` (Number), `10` (Number), `"max((X-1)*2, 0)"` (String), `"max(X*3, 0)"` (String) |
-| `MoveQuivered` | Integer || 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer || 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
-| `Tech` | Integer || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 12 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. | 12 | `2*X` (Enum), `3*X` (Enum), `3` (Number), `8` (Number) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. | 12 | `[1 .5]` (Array), `4` (Number), `-2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 10 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Evolves a random ability from the specified pool, optionally flagged as upgraded. | 8 | `Medic` (Enum), `Psychic` (Enum), `{ ... }` (Object) |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the target form name or an object with form parameters and optional side effects (e.g., faction change, healing). | 8 | `Default` (Enum), `passive` (Enum), `{ ... }` (Object) |
+| `AddWeaponAux` | Integer / String | Adds to the weapon's auxiliary value, supporting integer or formula input. | 6 | `-item_aux` (Enum), `1` (Number), `2` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. | 6 | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. | 4 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Cleanse`](#object-cleanse) | Integer / Object | If set to 1, removes all status effects from the target; if 0, no cleanse. | 4 | `1` (Number), `0` (Number), `{ ... }` (Object) |
+| `EquipPermanentItem` | Enum | Determines which permanent item (e.g., a body part or bone club) is equipped to the source. | 4 | `BoneClub` (Enum), `Kidney` (Enum) |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Determines the item pool name from which a random item is granted to the source. | 4 | `chapter_specific_item` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
+| `FreeSpell` | Integer | The number of free spells granted, allowing the source to cast spells without consuming mana or charges. | 4 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. | 4 | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 2 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `FindItem` | Enum | Determines which specific item (e.g., Molars, Pearl) is granted to the source. | 2 | `BoneClub` (Enum), `Pearl` (Enum) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. | 2 | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with min and max values defining the range of coins gained. | 2 | `{ ... }` (Object) |
+| `KineticSpikes` | Integer | The number of Kinetic Spikes stacks applied, which deal damage back to attackers when the unit is hit. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). | 2 | `X-1` (Enum), `X+2` (Enum), `15` (Number), `10` (Number), `"max((X-1)*2, 0)"` (String), `"max(X*3, 0)"` (String) |
+| `MoveQuivered` | Integer | Specifies the number of bonus movement points granted; an array `[stacks, probability]` specifies the amount and its chance of application. | 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. | 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
+| `Tech` | Integer | The number of Tech stacks applied, which increase the damage of the next ability used. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 ### Object: `BlessingOfPeace`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_BLESSINGOFPEACE_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_BLESSINGOFPEACE_DESC"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_BLESSINGOFPEACE_DESC_STACKLESS"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_BLESSINGOFPEACE_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_BLESSINGOFPEACE_DESC"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_BLESSINGOFPEACE_DESC_STACKLESS"` (String) |
 
 ### Object: `BounceObject`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `obj` | Array / Enum || 6 | `SmallLavaRock` (Enum), `chapter_corpse_medium` (Enum) |
-| `chance` | Number || 4 | `.5` (String), `.25` (String) |
-| `slide` | Integer || 2 | `10` (Number) |
+| `obj` | Array / Enum | The object(s) spawned when this passive triggers. | 6 | `SmallLavaRock` (Enum), `chapter_corpse_medium` (Enum) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 4 | `.5` (String), `.25` (String) |
+| `slide` | Integer | The distance in tiles the bounced object slides after contact. | 2 | `10` (Number) |
 
 ### Object: `Bounty`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_BOUNTY_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_BOUNTY_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_BOUNTY_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_BOUNTY_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_BOUNTY_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_BOUNTY_DESC"` (String) |
 
 ### Object: `ChangeTile`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `tile` | Array / Enum || 22 | `[TallGrassTile TallFlowerTile BrambleTile]` (Array), `LavaTile` (Enum), `ToxicTile` (Enum) |
-| `aoe` | Integer || 4 | `1` (Number) |
-| `chance` | Number || 4 | `25` (Number), `.25` (String) |
+| `tile` | Array / Enum | Specifies the tile type(s) to change to (e.g., RoadTile, WaterTile). Can be a single tile or an array of tiles. | 22 | `[TallGrassTile TallFlowerTile BrambleTile]` (Array), `LavaTile` (Enum), `ToxicTile` (Enum) |
+| `aoe` | Integer | The radius of the area-of-effect for the tile change. | 4 | `1` (Number) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 4 | `25` (Number), `.25` (String) |
 
 ### Object: `CharismaUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_CHAUP_NAME"` (String) |
-| `name_stacks_neg` | String ||| `"KEYWORD_CHADOWN_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `none` (Enum) |
-| `tooltip_stacks_neg` | String ||| `"KEYWORD_CHADOWN_DESC"` (String) |
-| `tooltip_stacks_pos` | String ||| `"KEYWORD_CHAUP_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_CHAUP_NAME"` (String) |
+| `name_stacks_neg` | String | The localization key for the tooltip name when the status has negative stacks. || `"KEYWORD_CHADOWN_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `none` (Enum) |
+| `tooltip_stacks_neg` | String | The localization key for the tooltip description when the status has negative stacks. || `"KEYWORD_CHADOWN_DESC"` (String) |
+| `tooltip_stacks_pos` | String | The localization key for the tooltip description when the status has positive stacks. || `"KEYWORD_CHAUP_DESC"` (String) |
 
 ### Object: `Charmed`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_CHARMED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_CHARMED_DESC"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_CHARMED_DESC_STACKLESS"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_CHARMED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_CHARMED_DESC"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_CHARMED_DESC_STACKLESS"` (String) |
 
 ### Object: `Cleanse`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `spell` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `spell` (Enum) |
 
 ### Object: `Cleave`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number || 2 | `.25` (String) |
-| `icon_frame` | Number ||| `152` (Number) |
-| `name` | Enum ||| `"KEYWORD_CLEAVE_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_CLEAVE_DESC"` (String) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 2 | `.25` (String) |
+| `icon_frame` | Number | The sprite frame index for the elite buff's icon. || `152` (Number) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_CLEAVE_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_CLEAVE_DESC"` (String) |
 
 ### Object: `Conditional_Adjacent`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer || 4 | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer || 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Bleed` | Array / Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3750,19 +3750,19 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String || 10 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer || 6 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| [`Cleanse`](#object-cleanse) | Integer / Object || 6 | `1` (Number), `0` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer || 4 | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
-| `RandomStatUp` | Integer / String || 4 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| `Shield` | Enum / Integer || 4 | `[1 .5]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| `TempSpeedUp` | Enum / Integer || 4 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
-| `BleedThorns` | Integer || 2 | `[1 .5]` (Array), `6` (Number), `3` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer || 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `ManaGain` | Enum / Integer || 2 | `X-1` (Enum), `X+2` (Enum), `15` (Number), `10` (Number), `"max((X-1)*2, 0)"` (String), `"max(X*3, 0)"` (String) |
-| `SpeedUp` | Enum / Integer || 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
-| `TempDamageUp` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer || 2 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 10 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 6 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| [`Cleanse`](#object-cleanse) | Integer / Object | If set to 1, removes all status effects from the target; if 0, no cleanse. | 6 | `1` (Number), `0` (Number), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. | 4 | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 4 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 4 | `[1 .5]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `TempSpeedUp` | Enum / Integer | Alias for TempSpeedUp; temporarily increases the unit's speed stat. | 4 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
+| `BleedThorns` | Integer | The number of Bleed Thorns stacks applied, which deals bleeding damage back to melee attackers. | 2 | `[1 .5]` (Array), `6` (Number), `3` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. | 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). | 2 | `X-1` (Enum), `X+2` (Enum), `15` (Number), `10` (Number), `"max((X-1)*2, 0)"` (String), `"max(X*3, 0)"` (String) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. | 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
+| `TempDamageUp` | Integer | The number of temporary damage increase stacks applied to the target for the current turn. | 2 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer | The number of Thorns stacks applied, which deals damage back to melee attackers. | 2 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3770,9 +3770,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number || 16 | `0.5` (Number), `.16666666` (String), `.1` (String) |
-| `Instakill` | Integer || 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
+| `odds` | Number | The probability (as a percentage) for the conditional to trigger. | 16 | `0.5` (Number), `.16666666` (String), `.1` (String) |
+| `Instakill` | Integer | If an integer, the percentage chance to instantly kill the target. If an array [stacks, probability], applies that many stacks with the given probability per stack. | 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3780,12 +3780,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Stun` | Array / Integer || 6 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer || 4 | `[1 .5]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer || 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `25` (Number), `-4` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Charmed` | Array / Enum / Integer || 4 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `Drowsy` | Integer || 4 | `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 6 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 4 | `[1 .5]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `25` (Number), `-4` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. | 4 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Drowsy` | Integer | The number of stacks of the Drowsy status effect to apply, which reduces a unit's action points or turn efficiency. | 4 | `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3793,16 +3793,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Revive`](#object-revive) | Integer / Object || 13 | `50` (Number), `100` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer || 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer || 4 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `SafeDoomed` | Enum / Integer || 4 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 2 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| `HealRandomInjury` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `PermanentCharm` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomMutation` | Integer || 2 | `3` (Number), `1` (Number) |
-| `SpeedUp` | Enum / Integer || 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object || 1 | `[1 .1]` (Array), `[1 .5]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Revive`](#object-revive) | Integer / Object | The percentage or flat amount of HP restored when reviving a dead ally. | 13 | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. | 4 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `SafeDoomed` | Enum / Integer | The number of turns until the target is instantly killed when this counter reaches zero, but unlike standard Doomed, it does not inflict injuries upon death. | 4 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 2 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PermanentCharm` | Integer | If set to 1, the target is permanently charmed and becomes an ally; can use an alias for the status. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RandomMutation` | Integer | The number of random mutations to apply. | 2 | `3` (Number), `1` (Number) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. | 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. | 1 | `[1 .1]` (Array), `[1 .5]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3810,23 +3810,23 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 16 | `[2 .15]` (Array), `[1 .1]` (Array), `4` (Number), `2` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer || 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `Attraction` | Integer || 4 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer || 4 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object || 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer || 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Burn` | Array / Enum / Integer || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer || 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `Doomed` | Integer || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `Hex` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Leeches`](#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Marked`](#object-marked) | Array / Integer / Object || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `PermanentCharm` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
-| `TempDamageUp` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `-1` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 16 | `[2 .15]` (Array), `[1 .1]` (Array), `4` (Number), `2` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `Attraction` | Integer | If set to 1, the target is pulled one tile toward the source of the effect. | 4 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. | 4 | `[1 .1]` (Array), `[1 .5]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The number of Weakness stacks applied, which increases damage taken by the target; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. | 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Doomed` | Integer | The number of turns until the target is instantly killed when this counter reaches zero. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Hex` | Integer | The number of Hex stacks applied, which increases the chance of negative status effects landing on the target. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Leeches`](#object-leeches) | Integer / Object | The number of Leech stacks applied, healing the attacker. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Marked`](#object-marked) | Array / Integer / Object | The number of Marked stacks applied, which increases damage taken from all sources; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `PermanentCharm` | Integer | If set to 1, the target is permanently charmed and becomes an ally; can use an alias for the status. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `TempDamageUp` | Integer | The number of temporary damage increase stacks applied to the target for the current turn. | 2 | `[1 .5]` (Array), `1` (Number), `-1` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3834,10 +3834,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Enum / Integer || 2 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `Charge` | Integer || 2 | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| `FillMana` | Integer || 2 | `[1 .25]` (Array), `[1 .10]` (Array), `1` (Number) |
-| `ManaGain` | Enum / Integer || 2 | `X-1` (Enum), `X+2` (Enum), `15` (Number), `10` (Number), `"max((X-1)*2, 0)"` (String), `"max(X*3, 0)"` (String) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 2 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `Charge` | Integer | The number of stacks of Charge, which makes the caster gain 1 Mana per stack at the start of its next turn. | 2 | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `FillMana` | Integer | The amount of mana restored to the unit; can be a fixed integer or an array `[stacks, probability]` for a chance-based application. | 2 | `[1 .25]` (Array), `[1 .10]` (Array), `1` (Number) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). | 2 | `X-1` (Enum), `X+2` (Enum), `15` (Number), `10` (Number), `"max((X-1)*2, 0)"` (String), `"max(X*3, 0)"` (String) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3845,13 +3845,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number || 72 | `15` (Number), `50` (Number), `.5` (String) |
-| `Freeze` | Array / Integer || 12 | `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object || 10 | `parasites` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object || 6 | `cm_RaptorEggSpawn` (Enum), `tk_WeirdEgg_Spawn` (Enum), `{ ... }` (Object) |
-| `RandomMutation` | Integer || 6 | `3` (Number), `1` (Number) |
-| `ChangeTilesUnder` | Enum || 2 | `LavaTile` (Enum), `DirtTile` (Enum) |
-| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object || 2 | `cm_Lard_Impl` (Enum), `tk_ButterBean_Mega` (Enum), `{ ... }` (Object) |
+| `odds` | Number | The probability (as a percentage) for the conditional to trigger. | 72 | `15` (Number), `50` (Number), `.5` (String) |
+| `Freeze` | Array / Integer | The number of stacks of Freeze, immobilizing the unit for that many turns; can be an array `[stacks, probability]`. | 12 | `[1 .1]` (Array), `[1 0.15]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Determines the item pool name from which a random item is granted to the source. | 10 | `parasites` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. | 6 | `cm_RaptorEggSpawn` (Enum), `tk_WeirdEgg_Spawn` (Enum), `{ ... }` (Object) |
+| `RandomMutation` | Integer | The number of random mutations to apply. | 6 | `3` (Number), `1` (Number) |
+| `ChangeTilesUnder` | Enum | Determines which tile type (e.g., GlassTile, DirtTile) replaces the tiles beneath the target. | 2 | `LavaTile` (Enum), `DirtTile` (Enum) |
+| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Forces the unit to immediately use the specified ability, even if stunned. | 2 | `cm_Lard_Impl` (Enum), `tk_ButterBean_Mega` (Enum), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3859,10 +3859,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GenericBuff` | Integer || 2 | `100` (Number), `5` (Number) |
-| `PartialCleanse` | Integer || 2 | `1` (Number), `9999` (Number) |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object || 2 | `{ ... }` (Object) |
-| `VisualFX` | Enum || 2 | `MagicMissleBlast` (Enum), `BigMagicMissileBlast` (Enum) |
+| `GenericBuff` | Integer | The number of GenericBuff stacks applied, a general-purpose buff. | 2 | `100` (Number), `5` (Number) |
+| `PartialCleanse` | Integer | The number of status effects removed from the target (partial cleanse). | 2 | `1` (Number), `9999` (Number) |
+| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | An object listing possible status effects to randomly pick from and apply. | 2 | `{ ... }` (Object) |
+| `VisualFX` | Enum | Specifies the visual effect to play, such as Cleanse or Bolt. | 2 | `MagicMissleBlast` (Enum), `BigMagicMissileBlast` (Enum) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3870,13 +3870,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamage` | Enum / Integer || 12 | `"ceil(X/2)"` (Enum), `str` (Enum), `20` (Number), `10` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Burn` | Array / Enum / Integer || 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 4 | `[2 .15]` (Array), `[1 .1]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .1]` (Array), `[1 .25]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object || 2 | `passive` (Enum), `Bully` (Enum), `{ ... }` (Object) |
-| `Quivered` | Array / Integer || 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 12 | `"ceil(X/2)"` (Enum), `str` (Enum), `20` (Number), `10` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 4 | `[2 .15]` (Array), `[1 .1]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of turns of Slow applied, or an array with duration and chance. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the target form name or an object with form parameters and optional side effects (e.g., faction change, healing). | 2 | `passive` (Enum), `Bully` (Enum), `{ ... }` (Object) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3884,16 +3884,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object || 6 | `HitlerCloneTransform` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
-| `ChangeTilesUnder` | Enum || 4 | `LavaTile` (Enum), `DirtTile` (Enum) |
-| `DamageUp` | Integer / String || 4 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object || 4 | `6` (Number), `1` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer || 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `10` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Charmed` | Array / Enum / Integer || 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `EventBounty` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
-| `Instakill` | Integer || 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
-| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object || 2 | `TheDestroyer` (Enum), `StemCat_HalfHealth` (Enum), `{ ... }` (Object) |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object || 2 | `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
+| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Forces the unit to immediately use the specified ability, even if stunned. | 6 | `HitlerCloneTransform` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
+| `ChangeTilesUnder` | Enum | Determines which tile type (e.g., GlassTile, DirtTile) replaces the tiles beneath the target. | 4 | `LavaTile` (Enum), `DirtTile` (Enum) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 4 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | Specifies the number of sides on a die roll for a random outcome. | 4 | `6` (Number), `1` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `10` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. | 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `EventBounty` | Integer | The number of Event Bounty stacks applied, which increases the chance of encountering special events or loot drops. | 2 | `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `Instakill` | Integer | If an integer, the percentage chance to instantly kill the target. If an array [stacks, probability], applies that many stacks with the given probability per stack. | 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
+| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object | Pops the current object and spawns a new one, optionally cloning cat data and items. | 2 | `TheDestroyer` (Enum), `StemCat_HalfHealth` (Enum), `{ ... }` (Object) |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | Specifies the ability name the unit will use at the end of each round. | 2 | `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3901,10 +3901,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamage` | Enum / Integer || 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object || 2 | `6` (Number), `1` (Number), `{ ... }` (Object) |
-| `FlatLeech` | Integer || 2 | `X` (Enum), `10` (Number), `1` (Number) |
-| `Instakill` | Integer || 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | Specifies the number of sides on a die roll for a random outcome. | 2 | `6` (Number), `1` (Number), `{ ... }` (Object) |
+| `FlatLeech` | Integer | The amount of flat health restored per hit (leech). | 2 | `X` (Enum), `10` (Number), `1` (Number) |
+| `Instakill` | Integer | If an integer, the percentage chance to instantly kill the target. If an array [stacks, probability], applies that many stacks with the given probability per stack. | 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3912,7 +3912,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairTrinket` | Integer || 2 | `1` (Number), `99` (Number) |
+| `RepairTrinket` | Integer | The amount of durability restored to the trinket item slot. | 2 | `1` (Number), `99` (Number) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3920,9 +3920,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Doomed` | Integer || 4 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `PermanentCharm` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer ||| `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Doomed` | Integer | The number of turns until the target is instantly killed when this counter reaches zero. | 4 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `PermanentCharm` | Integer | If set to 1, the target is permanently charmed and becomes an ally; can use an alias for the status. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3930,7 +3930,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charmed` | Array / Enum / Integer || 4 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. | 4 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3938,10 +3938,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object || 4 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer || 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| [`SetItemAux`](#object-setitemaux) | Object || 2 | `{ ... }` (Object) |
-| `Stun` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | If an integer, the number of cleave hits; if an object, may contain a chance for cleave. | 4 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 2 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| [`SetItemAux`](#object-setitemaux) | Object | Sets the auxiliary value of a specific item slot (e.g., face, trinket, head) to a calculated value. | 2 | `{ ... }` (Object) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `effects` | Object | Effects to execute. | | |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
 
@@ -3949,846 +3949,846 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_CONUP_NAME"` (String) |
-| `name_stacks_neg` | String ||| `"KEYWORD_CONDOWN_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `none` (Enum) |
-| `tooltip_stacks_neg` | String ||| `"KEYWORD_CONDOWN_DESC"` (String) |
-| `tooltip_stacks_pos` | String ||| `"KEYWORD_CONUP_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_CONUP_NAME"` (String) |
+| `name_stacks_neg` | String | The localization key for the tooltip name when the status has negative stacks. || `"KEYWORD_CONDOWN_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `none` (Enum) |
+| `tooltip_stacks_neg` | String | The localization key for the tooltip description when the status has negative stacks. || `"KEYWORD_CONDOWN_DESC"` (String) |
+| `tooltip_stacks_pos` | String | The localization key for the tooltip description when the status has positive stacks. || `"KEYWORD_CONUP_DESC"` (String) |
 
 ### Object: `Craft`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pool` | Array / Enum || 30 | `pelts` (Enum), `eyes_nonrare` (Enum) |
-| `slot` | Enum / Integer || 28 | `weapon` (Enum), `trinket` (Enum) |
-| `temporary` | Boolean || 8 | `false` (Boolean) |
-| `works_with_tech` | Boolean || 8 | `true` (Boolean) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| `pool` | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. | 30 | `pelts` (Enum), `eyes_nonrare` (Enum) |
+| `slot` | Enum / Integer | Specifies the equipment slot(s) to craft into (e.g., weapon, neck, face). Can be an integer index or an array of slot names. | 28 | `weapon` (Enum), `trinket` (Enum) |
+| `temporary` | Boolean | If true, the crafted item is temporary and will be removed after use or at end of battle. | 8 | `false` (Boolean) |
+| `works_with_tech` | Boolean | If true, the craft ability can be used in technological (non-organic) crafting contexts. | 8 | `true` (Boolean) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `CureDisease`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number || 12 | `30` (Number), `15` (Number) |
-| `disease` | Enum || 12 | `Pox` (Enum), `Covid` (Enum) |
-| `can_apply_to_anything` | Boolean || 2 | `true` (Boolean) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 12 | `30` (Number), `15` (Number) |
+| `disease` | Enum | Specifies the disease type (e.g., Pox, Ebola) for disease-related effects. | 12 | `Pox` (Enum), `Covid` (Enum) |
+| `can_apply_to_anything` | Boolean | If true, the disease can be applied to any target, ignoring immunities. | 2 | `true` (Boolean) |
 
 ### Object: `DelayedPain`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DELAYEDPAIN_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_DELAYEDPAIN_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_DELAYEDPAIN_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DELAYEDPAIN_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_DELAYEDPAIN_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_DELAYEDPAIN_DESC"` (String) |
 
 ### Object: `DestroyEquipmentAndAttachParasite`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number || 8 | `1` (Number), `.75` (String), `.15` (String) |
-| `pool` | Array / Enum || 4 | `[AmoebaHat AmoebaNeck AmoebaFace]` (Array), `[FlyHat FlyMask FlyNeck]` (Array), `parasites` (Enum) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 8 | `1` (Number), `.75` (String), `.15` (String) |
+| `pool` | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. | 4 | `[AmoebaHat AmoebaNeck AmoebaFace]` (Array), `[FlyHat FlyMask FlyNeck]` (Array), `parasites` (Enum) |
 
 ### Object: `DexterityUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DEXUP_NAME"` (String) |
-| `name_stacks_neg` | String ||| `"KEYWORD_DEXDOWN_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `none` (Enum) |
-| `tooltip_stacks_neg` | String ||| `"KEYWORD_DEXDOWN_DESC"` (String) |
-| `tooltip_stacks_pos` | String ||| `"KEYWORD_DEXUP_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DEXUP_NAME"` (String) |
+| `name_stacks_neg` | String | The localization key for the tooltip name when the status has negative stacks. || `"KEYWORD_DEXDOWN_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `none` (Enum) |
+| `tooltip_stacks_neg` | String | The localization key for the tooltip description when the status has negative stacks. || `"KEYWORD_DEXDOWN_DESC"` (String) |
+| `tooltip_stacks_pos` | String | The localization key for the tooltip description when the status has positive stacks. || `"KEYWORD_DEXUP_DESC"` (String) |
 
 ### Object: `DiminishingHealthRegen`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DIMINISHREGEN_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_DIMINISHREGEN_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_DIMINISHREGEN_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DIMINISHREGEN_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_DIMINISHREGEN_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_DIMINISHREGEN_DESC"` (String) |
 
 ### Object: `DistanceBonusDamage`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `min_range` | Integer || 8 | `3` (Number), `1` (Number) |
-| `stacks` | Enum / Integer || 8 | `1` (Number) |
+| `min_range` | Integer | The minimum distance in tiles required for the effect to trigger. | 8 | `3` (Number), `1` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 8 | `1` (Number) |
 
 ### Object: `DoDamage`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Equation || 14 | `8` (Equation), `5` (Equation) |
-| `type` | Enum || 14 | `melee` (Enum), `generic_physical` (Enum) |
-| `damage_tiles` | Enum || 8 | `all` (Enum) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object || 8 | `{ ... }` (Object) |
-| `elements` | Array ||| `[Fire]` (Array), `[Water]` (Array) |
+| `damage` | Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 14 | `8` (Equation), `5` (Equation) |
+| `type` | Enum | Specifies the damage type or trigger context (e.g., 'event', 'melee', 'battle'). | 14 | `melee` (Enum), `generic_physical` (Enum) |
+| `damage_tiles` | Enum | Determines which tiles are damaged by the effect (e.g., 'all'). | 8 | `all` (Enum) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. | 8 | `{ ... }` (Object) |
+| `elements` | Array | A list of elemental types applied to the damage instance, such as Heat or Fire, used for weaknesses, resistances, and visual effects. || `[Fire]` (Array), `[Water]` (Array) |
 
 ### Object: `DoubleCastSpellThisTurn`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DOUBLECASTTHISTURN_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_DOUBLECASTTHISTURN_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DOUBLECASTTHISTURN_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_DOUBLECASTTHISTURN_DESC"` (String) |
 
 ### Object: `Drowsy`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DROWSY_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_DROWSY_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DROWSY_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_DROWSY_DESC"` (String) |
 
 ### Object: `Else`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamage` | Enum / Integer || 12 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| [`Cleanse`](#object-cleanse) | Integer / Object || 4 | `1` (Number), `0` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 4 | `[2 .15]` (Array), `[1 .1]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object || 4 | `passive` (Enum), `Nuke` (Enum), `{ ... }` (Object) |
-| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object || 4 | `{ ... }` (Object) |
-| [`Marked`](#object-marked) | Array / Integer / Object || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `PermanentCharm` | Integer || 4 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomStatDown` | Array / Integer / String || 4 | `[1 .25]` (Array), `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `1` (Number) |
-| `RandomStatUp` | Integer / String || 4 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| [`Revive`](#object-revive) | Integer / Object || 4 | `50` (Number), `100` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer || 2 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer || 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer || 2 | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
-| `CritChanceUp` | Integer || 2 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 2 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `15` (Number), `66` (Number), `{ ... }` (Object) |
-| [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object || 2 | `cm_Lard_Impl` (Enum), `tk_ButterBean_Mega` (Enum), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| `Instakill` | Integer || 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
-| [`Leeches`](#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object || 2 | `Maggot` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
-| `PartialCleanse` | Integer || 2 | `1` (Number), `9999` (Number) |
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object || 2 | `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer || 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
-| `TempSpeedUp` | Enum / Integer || 2 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
-| `Webbed` | Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`AllyInfested`](Engine_LogicKeys.md#object-allyinfested) | Array / Number / Object || 1 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 12 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| [`Cleanse`](#object-cleanse) | Integer / Object | If set to 1, removes all status effects from the target; if 0, no cleanse. | 4 | `1` (Number), `0` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The number of turns of Confusion applied, or an array with duration and chance. | 4 | `[2 .15]` (Array), `[1 .1]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the target form name or an object with form parameters and optional side effects (e.g., faction change, healing). | 4 | `passive` (Enum), `Nuke` (Enum), `{ ... }` (Object) |
+| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with min and max values defining the range of coins gained. | 4 | `{ ... }` (Object) |
+| [`Marked`](#object-marked) | Array / Integer / Object | The number of Marked stacks applied, which increases damage taken from all sources; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `PermanentCharm` | Integer | If set to 1, the target is permanently charmed and becomes an ally; can use an alias for the status. | 4 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RandomStatDown` | Array / Integer / String | The number of stacks or chance to decrease a random stat; can be an array `[stacks, probability]` or a formula. | 4 | `[1 .25]` (Array), `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `1` (Number) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 4 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| [`Revive`](#object-revive) | Integer / Object | The percentage or flat amount of HP restored when reviving a dead ally. | 4 | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 2 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of Bruise stacks applied, or an array with duration and chance. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `Charmed` | Array / Enum / Integer | The number of turns of Charmed applied, or an array with duration and chance. | 2 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | If an integer, the number of cleave hits; if an object, may contain a chance for cleave. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ConstitutionUp` | Array / Enum / Integer | The amount of Constitution (HP) increase, or an array with duration and chance. | 2 | `[1 .5]` (Array), `-1` (Number), `-2` (Number), `{ ... }` (Object) |
+| `CritChanceUp` | Integer | The amount of critical hit chance increase, in percentage points. | 2 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The amount of damage increase, or a string formula for dynamic calculation. | 2 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Integer | The percentage of dodge chance granted by this status effect. | 2 | `[1 .5]` (Array), `15` (Number), `66` (Number), `{ ... }` (Object) |
+| [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object | An object configuring the Dybbuk possession effect, including exit and punch-self abilities. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Forces the unit to immediately use the specified ability, even if stunned. | 2 | `cm_Lard_Impl` (Enum), `tk_ButterBean_Mega` (Enum), `{ ... }` (Object) |
+| `Immobile` | Array / Integer | The number of turns of Immobile applied, or an array with duration and chance. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Instakill` | Integer | If an integer, the percentage chance to instantly kill the target. If an array [stacks, probability], applies that many stacks with the given probability per stack. | 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
+| [`Leeches`](#object-leeches) | Integer / Object | The number of Leech stacks applied, healing the attacker. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. | 2 | `Maggot` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
+| `PartialCleanse` | Integer | The number of status effects removed from the target (partial cleanse). | 2 | `1` (Number), `9999` (Number) |
+| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins scattered, or an object with stacks and stacking behavior. | 2 | `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of turns of Slow applied, or an array with duration and chance. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
+| `SpeedUp` | Enum / Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. | 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
+| `TempSpeedUp` | Enum / Integer | Alias for TempSpeedUp; temporarily increases the unit's speed stat. | 2 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
+| `Webbed` | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`AllyInfested`](Engine_LogicKeys.md#object-allyinfested) | Array / Number / Object | Spawns an allied infested unit (e.g., CharmedMaggot) on the target's side. | 1 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. || `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
 
 ### Object: `Fear`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_FEAR_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_FEAR_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_FEAR_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_FEAR_DESC"` (String) |
 
 ### Object: `ForceAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `immediate` | Boolean || 4 | `true` (Boolean) |
+| `immediate` | Boolean | If true, the forced attack executes immediately without waiting. | 4 | `true` (Boolean) |
 
 ### Object: `ForceUseAbilityOnTarget`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 2 | `head_MiniMoonArmorAsteroid` (Enum) |
-| `chance` | Number || 2 | `25` (Number) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 2 | `head_MiniMoonArmorAsteroid` (Enum) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 2 | `25` (Number) |
 
 ### Object: `FormChange`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `form` | Enum / Integer || 150 | `Rage` (Enum), `"Default"` (Enum), `4` (Number), `1` (Number) |
-| `chance` | Number || 2 | `30` (Number) |
+| `form` | Enum / Integer | Specifies the form name (e.g., "Big", "Small", "Angry") the unit transforms into. | 150 | `Rage` (Enum), `"Default"` (Enum), `4` (Number), `1` (Number) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 2 | `30` (Number) |
 
 ### Object: `Freeze`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_FREEZE_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_FREEZE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_FREEZE_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_FREEZE_DESC"` (String) |
 
 ### Object: `GainCoinsRange`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Integer || 22 | `30` (Number), `3` (Number) |
-| `min` | Integer || 22 | `30` (Number), `15` (Number) |
+| `max` | Integer | The maximum value that the auxiliary counter can reach. | 22 | `30` (Number), `3` (Number) |
+| `min` | Integer | The minimum amount of coins gained from the range. | 22 | `30` (Number), `15` (Number) |
 
 ### Object: `GainDisorderFromPool`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number || 2 | `.1` (String) |
-| `pool` | Array / Enum || 2 | `diseases` (Enum) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 2 | `.1` (String) |
+| `pool` | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. | 2 | `diseases` (Enum) |
 
 ### Object: `Hex`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_HEX_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_HEX_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_HEX_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_HEX_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_HEX_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_HEX_DESC"` (String) |
 
 ### Object: `ImmediateUseAbility`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 2 | `wp_NuclearKnifeExplode` (Enum) |
-| `even_if_stunned` | Boolean || 2 | `true` (Boolean) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 2 | `wp_NuclearKnifeExplode` (Enum) |
+| `even_if_stunned` | Boolean | If true, the reaction triggers even if the unit is stunned. | 2 | `true` (Boolean) |
 
 ### Object: `IncAuxCounterClamped`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `change` | Integer || 6 | `-2` (Number), `-3` (Number) |
-| `max` | Integer || 6 | `3` (Number) |
+| `change` | Integer | The amount to change an auxiliary counter by, clamped within min/max bounds. | 6 | `-2` (Number), `-3` (Number) |
+| `max` | Integer | The maximum value that the auxiliary counter can reach. | 6 | `3` (Number) |
 
 ### Object: `Infested`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object ||| `{ ... }` (Object) |
-| `class` | Enum ||| `Colorless` (Enum) |
-| `default_frame` | Number ||| `1002` (Number) |
-| `desc` | Enum ||| `"PASSIVE_INFESTED_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| `icon_frame` | Number ||| `517` (Number) |
-| `lefteye` | Number ||| `1040` (Number) |
-| `lefteyebrow` | Number ||| `1022` (Number) |
-| `mouth` | Number ||| `1041` (Number) |
-| `name` | Enum ||| `"PASSIVE_INFESTED_NAME"` (String), `"KEYWORD_INFESTED_NAME"` (String) |
-| `palette` | Enum / Integer ||| `50` (Number) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object ||| `{ ... }` (Object) |
-| `pitch` | String ||| `.7` (String) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
-| `righteye` | Number ||| `1041` (Number) |
-| `righteyebrow` | Number ||| `1022` (Number) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object ||| `{ ... }` (Object) |
-| `texture` | Integer ||| `1000` (Number) |
-| `tooltip` | Enum ||| `"KEYWORD_INFESTED_DESC"` (String) |
-| `value` | Enum ||| `1` (Number) |
-| `voice` | Enum ||| `female2` (Enum) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | Defines the unit's move, attack, and spell abilities (as an array). || `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | Defines the AI brain, decision/move weights, and pattern for controlling a unit's behavior. || `{ ... }` (Object) |
+| `class` | Enum | Specifies the class name or ability class associated with this object. || `Colorless` (Enum) |
+| `default_frame` | Number | The default sprite frame ID for the visual representation. || `1002` (Number) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"PASSIVE_INFESTED_DESC"` (String) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| `icon_frame` | Number | The sprite frame index for the elite buff's icon. || `517` (Number) |
+| `lefteye` | Number | The sprite frame ID for the left eye. || `1040` (Number) |
+| `lefteyebrow` | Number | The sprite frame ID for the left eyebrow. || `1022` (Number) |
+| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. || `1041` (Number) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"PASSIVE_INFESTED_NAME"` (String), `"KEYWORD_INFESTED_NAME"` (String) |
+| `palette` | Enum / Integer | Index or list of palette indices used for coloring the entity or its variations. || `50` (Number) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | Defines passive abilities granted when the parent condition is active. || `{ ... }` (Object) |
+| `pitch` | String | The pitch multiplier for the voice sound (e.g., '1.25'). || `.7` (String) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Defines the unit's core properties such as tag, health, movement, faction, type, and crit chance. || `{ ... }` (Object) |
+| `righteye` | Number | The sprite frame ID for the right eye. || `1041` (Number) |
+| `righteyebrow` | Number | The sprite frame ID for the right eyebrow. || `1022` (Number) |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Defines the unit's base stats (strength, dexterity, constitution, intelligence, speed). || `{ ... }` (Object) |
+| `texture` | Integer | The visual ID (integer) of the texture applied to the cat. || `1000` (Number) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_INFESTED_DESC"` (String) |
+| `value` | Enum | The magnitude or stat reference for this elite buff (e.g., numeric, 'spd', 'con'). || `1` (Number) |
+| `voice` | Enum | Specifies the voice profile (e.g., 'poopcat', 'male5') for audio. || `female2` (Enum) |
 
 ### Object: `IntelligenceUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_INTUP_NAME"` (String) |
-| `name_stacks_neg` | String ||| `"KEYWORD_INTDOWN_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `none` (Enum) |
-| `tooltip_stacks_neg` | String ||| `"KEYWORD_INTDOWN_DESC"` (String) |
-| `tooltip_stacks_pos` | String ||| `"KEYWORD_INTUP_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_INTUP_NAME"` (String) |
+| `name_stacks_neg` | String | The localization key for the tooltip name when the status has negative stacks. || `"KEYWORD_INTDOWN_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `none` (Enum) |
+| `tooltip_stacks_neg` | String | The localization key for the tooltip description when the status has negative stacks. || `"KEYWORD_INTDOWN_DESC"` (String) |
+| `tooltip_stacks_pos` | String | The localization key for the tooltip description when the status has positive stacks. || `"KEYWORD_INTUP_DESC"` (String) |
 
 ### Object: `KnockOutCoin`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number || 2 | `.5` (String) |
-| `stacks` | Enum / Integer || 2 | `1` (Number) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 2 | `.5` (String) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `1` (Number) |
 
 ### Object: `KnockUpAndAway`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance` | Integer || 48 | `3` (Number), `-3` (Number) |
-| `stacks` | Enum / Integer || 44 | `5+bonus_melee_ability_damage` (Enum), `3` (Number), `1` (Number) |
-| `displace` | Boolean || 4 | `true` (Boolean) |
-| `height` | Integer || 4 | `0` (Number), `2` (Number) |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object || 4 | `false` (Boolean) |
-| `circular_variance` | Integer || 2 | `2` (Number) |
+| `distance` | Integer | The number of tiles to knock the target up and away (negative values pull toward). | 48 | `3` (Number), `-3` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 44 | `5+bonus_melee_ability_damage` (Enum), `3` (Number), `1` (Number) |
+| `displace` | Boolean | If true, the unit is displaced (teleported) by the knock up and away. | 4 | `true` (Boolean) |
+| `height` | Integer | The maximum height in tiles that a unit is knocked up into the air (vertical displacement for knockback arcs). | 4 | `0` (Number), `2` (Number) |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. | 4 | `false` (Boolean) |
+| `circular_variance` | Integer | The radius of circular variance in tiles applied to the final landing position of a knockback effect, adding horizontal scatter. | 2 | `2` (Number) |
 
 ### Object: `Knockback`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"Knockback"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"Knockback"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `KnockbackIfCrit`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer || 2 | `10` (Number) |
-| `override_chain_knockback` | Integer || 2 | `10` (Number) |
+| `knockback` | Enum / Integer | The number of tiles to push the target away from the attacker; can be negative to pull the target closer, or 'str' to scale with the attacker's strength stat. | 2 | `10` (Number) |
+| `override_chain_knockback` | Integer | Overrides the chain knockback distance for the knockback effect. | 2 | `10` (Number) |
 
 ### Object: `Leech`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum ||| `"SETBONUS_LEECH_DESC"` (String) |
-| `icon_frame` | Number ||| `17` (Number) |
-| `name` | Enum ||| `"SETBONUS_LEECH_NAME"` (String), `"KEYWORD_LIFESTEAL_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object ||| `{ ... }` (Object) |
-| `pieces_required` | Number ||| `3` (Number) |
-| `tooltip` | Enum ||| `"KEYWORD_LIFESTEAL2_DESC"` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"SETBONUS_LEECH_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the elite buff's icon. || `17` (Number) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"SETBONUS_LEECH_NAME"` (String), `"KEYWORD_LIFESTEAL_NAME"` (String) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | Defines passive abilities granted when the parent condition is active. || `{ ... }` (Object) |
+| `pieces_required` | Number | The number of material pieces needed to craft or combine into a full item. || `3` (Number) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_LIFESTEAL2_DESC"` (String) |
 
 ### Object: `Leeches`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_LEECHES_NAME"` (String) |
-| `name_reference_applier` | String ||| `"KEYWORD_LEECHES_NAME_APPLIER"` (String) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `lobbed_attack` (Enum) |
-| `tooltip_reference_applier` | String ||| `"KEYWORD_LEECHES_DESC_APPLIER"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_LEECHES_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_LEECHES_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_LEECHES_NAME"` (String) |
+| `name_reference_applier` | String | The localized string key for the name of the unit that applied this status effect. || `"KEYWORD_LEECHES_NAME_APPLIER"` (String) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `lobbed_attack` (Enum) |
+| `tooltip_reference_applier` | String | The localized string key for the tooltip description of the unit that applied this status effect. || `"KEYWORD_LEECHES_DESC_APPLIER"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_LEECHES_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_LEECHES_DESC"` (String) |
 
 ### Object: `MagicWeakness`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_MAGICWEAKNESS_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_MAGICWEAKNESS_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_MAGICWEAKNESS_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_MAGICWEAKNESS_DESC"` (String) |
 
 ### Object: `ManaGainRange`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Integer || 2 | `4` (Number) |
-| `min` | Integer || 2 | `0` (Number) |
+| `max` | Integer | The maximum value that the auxiliary counter can reach. | 2 | `4` (Number) |
+| `min` | Integer | The minimum amount of coins gained from the range. | 2 | `0` (Number) |
 
 ### Object: `ManaLeeches`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_MANALEECHES_NAME"` (String) |
-| `name_reference_applier` | String ||| `"KEYWORD_MANALEECHES_NAME_APPLIER"` (String) |
-| `tooltip_reference_applier` | String ||| `"KEYWORD_MANALEECHES_DESC_APPLIER"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_MANALEECHES_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_MANALEECHES_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_MANALEECHES_NAME"` (String) |
+| `name_reference_applier` | String | The localized string key for the name of the unit that applied this status effect. || `"KEYWORD_MANALEECHES_NAME_APPLIER"` (String) |
+| `tooltip_reference_applier` | String | The localized string key for the tooltip description of the unit that applied this status effect. || `"KEYWORD_MANALEECHES_DESC_APPLIER"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_MANALEECHES_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_MANALEECHES_DESC"` (String) |
 
 ### Object: `Marked`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_MARKED_NAME"` (String) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `targeted_status` (Enum) |
-| `tooltip` | Enum ||| `"KEYWORD_MARKED_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_MARKED_NAME"` (String) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `targeted_status` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_MARKED_DESC"` (String) |
 
 ### Object: `ModifyAbility`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object || 4 | `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object || 4 | `{ ... }` (Object) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. | 4 | `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. | 4 | `{ ... }` (Object) |
 
 ### Object: `MovementUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_MOVEMENTUP_NAME"` (String) |
-| `name_stacks_neg` | String ||| `"KEYWORD_MOVEMENTDOWN_NAME"` (String) |
-| `tooltip_stackless_neg` | String ||| `"KEYWORD_MOVEMENTDOWN_DESC_STACKLESS"` (String) |
-| `tooltip_stackless_pos` | String ||| `"KEYWORD_MOVEMENTUP_DESC_STACKLESS"` (String) |
-| `tooltip_stacks_neg` | String ||| `"KEYWORD_MOVEMENTDOWN_DESC"` (String) |
-| `tooltip_stacks_pos` | String ||| `"KEYWORD_MOVEMENTUP_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_MOVEMENTUP_NAME"` (String) |
+| `name_stacks_neg` | String | The localization key for the tooltip name when the status has negative stacks. || `"KEYWORD_MOVEMENTDOWN_NAME"` (String) |
+| `tooltip_stackless_neg` | String | The localization key for the tooltip description when the status has no stacks and is negative. || `"KEYWORD_MOVEMENTDOWN_DESC_STACKLESS"` (String) |
+| `tooltip_stackless_pos` | String | The localization key for the tooltip description when the status has no stacks and is positive. || `"KEYWORD_MOVEMENTUP_DESC_STACKLESS"` (String) |
+| `tooltip_stacks_neg` | String | The localization key for the tooltip description when the status has negative stacks. || `"KEYWORD_MOVEMENTDOWN_DESC"` (String) |
+| `tooltip_stacks_pos` | String | The localization key for the tooltip description when the status has positive stacks. || `"KEYWORD_MOVEMENTUP_DESC"` (String) |
 
 ### Object: `NextBattleStatus`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Enum / Integer || 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `FullHeal` | Integer || 4 | `1` (Number), `0` (Number) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `FullHeal` | Integer | If 1, fully heals the target's health and status effects. | 4 | `1` (Number), `0` (Number) |
 
 ### Object: `NoHealthRegen`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_NOHEALTHREGEN_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_NOHEALTHREGEN_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_NOHEALTHREGEN_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_NOHEALTHREGEN_DESC"` (String) |
 
 ### Object: `NukeQuestFinalBossModifications`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object || 4 | `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object || 2 | `{ ... }` (Object) |
-| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object || 2 | `{ ... }` (Object) |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. | 4 | `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. | 2 | `{ ... }` (Object) |
+| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | An object defining the splash damage properties, including damage, type, and area effects. | 2 | `{ ... }` (Object) |
 
 ### Object: `ObjectOnHitCharacter`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `object` | Array / Enum || 14 | `CharmedLeech` (Enum), `CharmedTinySpider` (Enum) |
-| `stacks` | Enum / Integer || 10 | `"floor(lck/4)"` (Enum), `1` (Number), `2` (Number) |
-| `chance` | Number || 4 | `1` (Number), `.5` (String) |
+| `object` | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 14 | `CharmedLeech` (Enum), `CharmedTinySpider` (Enum) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 10 | `"floor(lck/4)"` (Enum), `1` (Number), `2` (Number) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 4 | `1` (Number), `.5` (String) |
 
 ### Object: `OneUseSpellDamageUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `SpellDamageUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `SpellDamageUp` (Enum) |
 
 ### Object: `Ostracized`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_OSTRACIZED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_OSTRACIZED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_OSTRACIZED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_OSTRACIZED_DESC"` (String) |
 
 ### Object: `PassiveWhileNotTakingTurn`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 2 | `{ ... }` (Object) |
+| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | An object defining status effects to apply on basic attacks, with optional conditions. | 2 | `{ ... }` (Object) |
 
 ### Object: `PermanentConfusion`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_CONFUSION_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_CONFUSION_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_CONFUSION_DESC_STACKLESS"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_CONFUSION_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_CONFUSION_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_CONFUSION_DESC_STACKLESS"` (String) |
 
 ### Object: `Petrify`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_PETRIFY_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_PETRIFY_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_PETRIFY_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_PETRIFY_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_PETRIFY_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_PETRIFY_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `KEYWORD_PETRIFY_DESC_SINGULAR` (String) |
 
 ### Object: `PoisonLace`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_POISONLACE_NAME"` (String) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `targeted_status` (Enum) |
-| `tooltip_stackless` | String ||| `"KEYWORD_POISONLACE_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_POISONLACE_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_POISONLACE_NAME"` (String) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `targeted_status` (Enum) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_POISONLACE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_POISONLACE_DESC"` (String) |
 
 ### Object: `Possessed`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_POSSESED_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_POSSESSED_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_POSSESSED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_POSSESED_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_POSSESSED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_POSSESSED_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `KEYWORD_POSSESSED_DESC_SIGNULAR` (String) |
 
 ### Object: `PreEmptiveCounterNextAttacks`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_PREEMTIVECOUNTER_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_PREEMTIVECOUNTER_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_PREEMTIVECOUNTER_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_PREEMTIVECOUNTER_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_PREEMTIVECOUNTER_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_PREEMTIVECOUNTER_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_PREEMTIVECOUNTER_DESC_STACKLESS"` (String) |
 
 ### Object: `ProbeCharmed`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_PROBED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_PROBED_DESC"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_PROBED_DESC_STACKLESS"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_PROBED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_PROBED_DESC"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_PROBED_DESC_STACKLESS"` (String) |
 
 ### Object: `Purge`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `spell` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `spell` (Enum) |
 
 ### Object: `RandomInjury`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number ||| `58` (Number) |
-| `name` | Enum ||| `"KEYWORD_RANDOMINJURY_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_RANDOMINJURY_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the elite buff's icon. || `58` (Number) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_RANDOMINJURY_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_RANDOMINJURY_DESC"` (String) |
 
 ### Object: `RandomMagicMissile`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `full_size` | Boolean || 4 | `true` (Boolean) |
-| `stacks` | Enum / Integer || 4 | `3` (Number), `4` (Number) |
-| `icon_frame` | Number ||| `154` (Number) |
-| `name` | Enum ||| `"KEYWORD_SPARKLE_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_SPARKLE_DESC"` (String) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 | `3` (Number), `4` (Number) |
+| `icon_frame` | Number | The sprite frame index for the elite buff's icon. || `154` (Number) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SPARKLE_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_SPARKLE_DESC"` (String) |
 
 ### Object: `RandomPermanentStatsDistinct`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object ||| `[1 -1]` (Array) |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Defines the unit's base stats (strength, dexterity, constitution, intelligence, speed). || `[1 -1]` (Array) |
 
 ### Object: `RangeUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_RANGEUP_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_RANGEUP_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_RANGEUP_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_RANGEUP_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_RANGEUP_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_RANGEUP_DESC"` (String) |
 
 ### Object: `Reanimate`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `targeted_status` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `targeted_status` (Enum) |
 
 ### Object: `Reflect`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_REFLECT_NAME"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip_stacks` | String ||| `"KEYWORD_REFLECT_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_REFLECT_NAME"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_REFLECT_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_REFLECT_DESC_STACKLESS"` (String) |
 
 ### Object: `RemoveStatusStacks`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer || 8 | `10` (Number), `1` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 8 | `10` (Number), `1` (Number) |
 | `status` | Enum || 8 | `Thorns` (Enum), `DodgeChance_Status` (Enum) |
 
 ### Object: `ReplaceSpell`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 8 | `MoonHeadCommandStopHittingYourself` (Enum), `None` (Enum) |
-| `slot` | Enum / Integer || 8 | `3` (Number), `1` (Number) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 8 | `MoonHeadCommandStopHittingYourself` (Enum), `None` (Enum) |
+| `slot` | Enum / Integer | Specifies the equipment slot(s) to craft into (e.g., weapon, neck, face). Can be an integer index or an array of slot names. | 8 | `3` (Number), `1` (Number) |
 
 ### Object: `Revive`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `melee_spell` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `melee_spell` (Enum) |
 
 ### Object: `ReviveNextRound`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `revive_health` | Integer || 8 | `100` (Number), `1` (Number) |
-| `Shield` | Enum / Integer || 6 | `[1 .5]` (Array), `15` (Number), `5` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer || 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| `stacks` | Enum / Integer || 4 | `2` (Number) |
-| `DivineShield` | Array / Integer || 2 | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_AUTOREVIVE_NAME"` (String) |
-| `tooltip_stackless` | String ||| `KEYWORD_AUTOREVIVE_DESC` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_AUTOREVIVE_DESC"` (String) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 6 | `[1 .5]` (Array), `15` (Number), `5` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 | `2` (Number) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_AUTOREVIVE_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `KEYWORD_AUTOREVIVE_DESC` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_AUTOREVIVE_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"` (String) |
 
 ### Object: `Rot`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_ROT_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_ROT_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_ROT_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_ROT_DESC"` (String) |
 
 ### Object: `ScatterCoins`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stackable` | Boolean || 4 | `true` (Boolean) |
-| `stacks` | Enum / Integer || 4 | `item_aux` (Enum), `"max(min(X+1, item_aux), 0)"` (String) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 | `item_aux` (Enum), `"max(min(X+1, item_aux), 0)"` (String) |
 
 ### Object: `Scrambled`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_SCRAMBLED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_SCRAMBLED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SCRAMBLED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_SCRAMBLED_DESC"` (String) |
 
 ### Object: `SetItemAux`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `slot` | Enum / Integer || 6 | `face` (Enum), `head` (Enum) |
-| `value` | Enum || 6 | `item_aux+1` (Enum), `item_aux+2` (Enum) |
+| `slot` | Enum / Integer | Specifies the equipment slot(s) to craft into (e.g., weapon, neck, face). Can be an integer index or an array of slot names. | 6 | `face` (Enum), `head` (Enum) |
+| `value` | Enum | The magnitude or stat reference for this elite buff (e.g., numeric, 'spd', 'con'). | 6 | `item_aux+1` (Enum), `item_aux+2` (Enum) |
 
 ### Object: `Shield`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_SHIELD_NAME"` (String) |
-| `tooltip` | Enum ||| `None` (Enum) |
-| `tooltip_stackless` | String ||| `"KEYWORD_SHIELD_DESC_STACKLESS"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SHIELD_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_SHIELD_DESC_STACKLESS"` (String) |
 
 ### Object: `Sleep`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_SLEEP_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_SLEEP_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_SLEEP_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SLEEP_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_SLEEP_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_SLEEP_DESC"` (String) |
 
 ### Object: `SoulLink`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_SOULLINK_NAME"` (String) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `targeted_status` (Enum) |
-| `tooltip` | Enum ||| `"KEYWORD_SOULLINK_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SOULLINK_NAME"` (String) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `targeted_status` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_SOULLINK_DESC"` (String) |
 
 ### Object: `SpeedUp_WithoutInitiative`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `SpeedUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `SpeedUp` (Enum) |
 
 ### Object: `SpiderInfested`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_SPIDERINFESTED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_SPIDERINFESTED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SPIDERINFESTED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_SPIDERINFESTED_DESC"` (String) |
 
 ### Object: `SpreadDisease`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `disease` | Enum || 26 | `Pox` (Enum), `Toxoplasmosis` (Enum) |
-| `chance` | Number || 24 | `30` (Number), `50` (Number) |
-| `can_apply_to_anything` | Boolean || 12 | `true` (Boolean) |
+| `disease` | Enum | Specifies the disease type (e.g., Pox, Ebola) for disease-related effects. | 26 | `Pox` (Enum), `Toxoplasmosis` (Enum) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 24 | `30` (Number), `50` (Number) |
+| `can_apply_to_anything` | Boolean | If true, the disease can be applied to any target, ignoring immunities. | 12 | `true` (Boolean) |
 
 ### Object: `StacyMutant_Brace`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 2 | `[1 .5]` (Array), `4` (Number), `10` (Number), `{ ... }` (Object) |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The amount of flat damage reduction applied to the source. | 2 | `[1 .5]` (Array), `4` (Number), `10` (Number), `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
 
 ### Object: `StacyMutant_Counter`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 2 | `{ ... }` (Object) |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object || 2 | `[attack GSScream]` (Array), `CollectiveCounter` (Enum), `YeticatSnowball_Counter` (Enum), `{ ... }` (Object) |
+| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | An object defining status effects to apply on basic attacks, with optional conditions. | 2 | `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object | Specifies the ability name used for counterattacking when hit. | 2 | `[attack GSScream]` (Array), `CollectiveCounter` (Enum), `YeticatSnowball_Counter` (Enum), `{ ... }` (Object) |
 
 ### Object: `StacyMutant_Damage`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddDamage` | Integer || 2 | `-1` (Number), `4` (Number) |
-| `AddMaxHealth` | Integer || 2 | `25` (Number), `-25` (Number) |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
+| `AddDamage` | Integer | Adds a flat amount to the unit's damage output (can be negative). | 2 | `-1` (Number), `4` (Number) |
+| `AddMaxHealth` | Integer | The amount to add to the unit's maximum health. Negative values reduce max health. | 2 | `25` (Number), `-25` (Number) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
 
 ### Object: `StacyMutant_DoubleHead`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `ExtraDispersedTurns` | Integer || 2 | `1` (Number), `-1` (Number) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `ExtraDispersedTurns` | Integer | Additional turns granted, distributed across the turn order. | 2 | `1` (Number), `-1` (Number) |
 
 ### Object: `StacyMutant_Fire`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `ElementImmune` | Enum || 2 | `Fire` (Enum), `Creep` (Enum) |
-| `ReplaceBasicAttack` | Enum || 2 | `BasicButcherMeleeWideSpin` (Enum), `BasicDruidAbilityVersatile` (Enum) |
-| [`ReplaceBrain`](Characters_and_Bosses.md#object-replacebrain) | Object || 2 | `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `ElementImmune` | Enum | Specifies an element (e.g., Fire, Ice) the unit is immune to. | 2 | `Fire` (Enum), `Creep` (Enum) |
+| `ReplaceBasicAttack` | Enum | Specifies the name of the ability that replaces the unit's basic attack. | 2 | `BasicButcherMeleeWideSpin` (Enum), `BasicDruidAbilityVersatile` (Enum) |
+| [`ReplaceBrain`](Characters_and_Bosses.md#object-replacebrain) | Object | Specifies a brain override object to replace the default AI. | 2 | `{ ... }` (Object) |
 
 ### Object: `StacyMutant_Health`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddMaxHealth` | Integer || 2 | `25` (Number), `10` (Number) |
-| `AddSpeed` | Integer || 2 | `4` (Number), `-3` (Number) |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `SizeScale` | Number || 2 | `1.2` (Number), `1.65` (Number), `.6` (String), `.8` (String) |
+| `AddMaxHealth` | Integer | The amount to add to the unit's maximum health. Negative values reduce max health. | 2 | `25` (Number), `10` (Number) |
+| `AddSpeed` | Integer | The amount of speed added (or subtracted) to the unit. | 2 | `4` (Number), `-3` (Number) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `SizeScale` | Number | A multiplier for the unit's visual size. Values above 1 increase size, values below 1 decrease size. | 2 | `1.2` (Number), `1.65` (Number), `.6` (String), `.8` (String) |
 
 ### Object: `StacyMutant_Holy`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `DivineShield` | Array / Integer || 2 | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `DivineShield` | Array / Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 
 ### Object: `StacyMutant_Ice`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddMovement` | Integer || 2 | `-1` (Number), `3` (Number) |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `ElementImmune` | Enum || 2 | `Fire` (Enum), `Creep` (Enum) |
-| `ReplaceBasicAttack` | Enum || 2 | `BasicButcherMeleeWideSpin` (Enum), `BasicDruidAbilityVersatile` (Enum) |
-| [`ReplaceBrain`](Characters_and_Bosses.md#object-replacebrain) | Object || 2 | `{ ... }` (Object) |
+| `AddMovement` | Integer | The number of extra movement tiles the unit gains per turn. | 2 | `-1` (Number), `3` (Number) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `ElementImmune` | Enum | Specifies an element (e.g., Fire, Ice) the unit is immune to. | 2 | `Fire` (Enum), `Creep` (Enum) |
+| `ReplaceBasicAttack` | Enum | Specifies the name of the ability that replaces the unit's basic attack. | 2 | `BasicButcherMeleeWideSpin` (Enum), `BasicDruidAbilityVersatile` (Enum) |
+| [`ReplaceBrain`](Characters_and_Bosses.md#object-replacebrain) | Object | Specifies a brain override object to replace the default AI. | 2 | `{ ... }` (Object) |
 
 ### Object: `StacyMutant_Lightning`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `ElementImmune` | Enum || 2 | `Fire` (Enum), `Creep` (Enum) |
-| `ReplaceBasicAttack` | Enum || 2 | `SM_LightningDash` (Enum), `BasicButcherMeleeWideSpin` (Enum) |
-| [`ReplaceBrain`](Characters_and_Bosses.md#object-replacebrain) | Object || 2 | `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `ElementImmune` | Enum | Specifies an element (e.g., Fire, Ice) the unit is immune to. | 2 | `Fire` (Enum), `Creep` (Enum) |
+| `ReplaceBasicAttack` | Enum | Specifies the name of the ability that replaces the unit's basic attack. | 2 | `SM_LightningDash` (Enum), `BasicButcherMeleeWideSpin` (Enum) |
+| [`ReplaceBrain`](Characters_and_Bosses.md#object-replacebrain) | Object | Specifies a brain override object to replace the default AI. | 2 | `{ ... }` (Object) |
 
 ### Object: `StacyMutant_Mirror`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| [`ReflectProjectiles`](Characters_and_Bosses.md#object-reflectprojectiles) | Integer / Object || 2 | `25` (Number), `20` (Number), `{ ... }` (Object) |
-| [`StatusEachTurnEndForEachTurn`](Characters_and_Bosses.md#object-statuseachturnendforeachturn) | Object || 2 | `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| [`ReflectProjectiles`](Characters_and_Bosses.md#object-reflectprojectiles) | Integer / Object | The percentage chance to reflect projectiles back at the attacker. | 2 | `25` (Number), `20` (Number), `{ ... }` (Object) |
+| [`StatusEachTurnEndForEachTurn`](Characters_and_Bosses.md#object-statuseachturnendforeachturn) | Object | Specifies an object defining status effects applied at end of each turn for each turn. | 2 | `{ ... }` (Object) |
 
 ### Object: `StacyMutant_Speed`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddDamage` | Integer || 2 | `-1` (Number), `4` (Number) |
-| `AddSpeed` | Integer || 2 | `6` (Number), `-3` (Number) |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `SizeScale` | Number || 2 | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
+| `AddDamage` | Integer | Adds a flat amount to the unit's damage output (can be negative). | 2 | `-1` (Number), `4` (Number) |
+| `AddSpeed` | Integer | The amount of speed added (or subtracted) to the unit. | 2 | `6` (Number), `-3` (Number) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `SizeScale` | Number | A multiplier for the unit's visual size. Values above 1 increase size, values below 1 decrease size. | 2 | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
 
 ### Object: `StacyMutant_Thorns`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 2 | `{ ... }` (Object) |
-| `Thorns` | Integer || 2 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Specifies which cat body part IDs to transform into upon applying the effect. | 2 | `{ ... }` (Object) |
+| `Thorns` | Integer | The number of Thorns stacks applied, which deals damage back to melee attackers. | 2 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 
 ### Object: `StatusAfterXStacks`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stack_key` | Enum || 4 | `EMPTY_GENERATOR` (String), `FANNY_PACK` (String) |
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object || 4 | `3` (Number), `12` (Number) |
-| `ExtraBasicMoves_Status` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RefreshActPoints` | Integer || 2 | `1` (Number) |
-| `expires_on_end_turn` | Boolean || 2 | `true` (Boolean) |
+| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value (absolute or equation) at which this ability becomes available. | 4 | `3` (Number), `12` (Number) |
+| `ExtraBasicMoves_Status` | Integer | The number of extra basic moves the unit can perform each turn. Stacks for additional moves. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `RefreshActPoints` | Integer | The amount of action points restored to the unit. | 2 | `1` (Number) |
+| `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the owning unit's turn. | 2 | `true` (Boolean) |
 
 ### Object: `StealthUntilBasicAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_STEALTHUNTIL_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_STEALTHUNTIL_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_STEALTHUNTIL_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_STEALTHUNTIL_DESC"` (String) |
 
 ### Object: `Stun`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_STUN_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_STUN_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_STUN_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_STUN_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_STUN_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_STUN_DESC"` (String) |
 
 ### Object: `Tangled`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `alt_art` | Enum || 2 | `TangledMeat` (Enum) |
-| `stacks` | Enum / Integer || 2 | `1` (Number) |
-| `name` | Enum ||| `"KEYWORD_TANGLED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_TANGLED_DESC"` (String) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `1` (Number) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TANGLED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_TANGLED_DESC"` (String) |
 
 ### Object: `Tarred`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_TARRED_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_TARRED_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_TARRED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TARRED_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_TARRED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_TARRED_DESC"` (String) |
 
 ### Object: `TempCounterAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_TEMPCOUNTER_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_TEMPCOUNTER_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TEMPCOUNTER_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_TEMPCOUNTER_DESC"` (String) |
 
 ### Object: `TempDamageUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `DamageUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `DamageUp` (Enum) |
 
 ### Object: `TempMovement`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `MovementUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `MovementUp` (Enum) |
 
 ### Object: `TempPassiveUntilSettled`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object || 4 | `{ ... }` (Object) |
-| `LimitHeal` | Integer || 2 | `1` (Number), `0` (Number) |
+| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | A damage instance object that triggers when the unit is hit by melee attacks while this passive is active. | 4 | `{ ... }` (Object) |
+| `LimitHeal` | Integer | The maximum amount of health the unit can heal per instance. | 2 | `1` (Number), `0` (Number) |
 
 ### Object: `TempRangeUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_TEMPRANGE_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_TEMPRANGE_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_TEMPRANGE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TEMPRANGE_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_TEMPRANGE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_TEMPRANGE_DESC"` (String) |
 
 ### Object: `TempSpellDamageUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `SpellDamageUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `SpellDamageUp` (Enum) |
 
 ### Object: `TempStrengthUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `StrengthUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `StrengthUp` (Enum) |
 
 ### Object: `Temporary`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer || 114 | `5` (Number), `-2` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 114 | `5` (Number), `-2` (Number) |
 | `status` | Enum || 112 | `Trample` (Enum), `Brace` (Enum) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 104 | `3` (Number), `1` (Number) |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Configures turn-taking behavior for the status effect, including whether the unit takes turns and bonus turns. | 104 | `3` (Number), `1` (Number) |
 | `expires_on_begin_turn` | Boolean || 50 | `true` (Boolean) |
-| `expires_on_end_turn` | Boolean || 42 | `true` (Boolean) |
-| `data` | Integer || 4 | `2` (Number) |
-| `expires_on_appliers_turn` | Boolean || 4 | `true` (Boolean) |
-| `expires_on_move` | Boolean || 2 | `true` (Boolean) |
+| `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the owning unit's turn. | 42 | `true` (Boolean) |
+| `data` | Integer | An integer value used to store auxiliary data for the temporary effect, such as the number of times a triggered effect can still fire. | 4 | `2` (Number) |
+| `expires_on_appliers_turn` | Boolean | If true, the temporary effect expires at the end of the applier's next turn. | 4 | `true` (Boolean) |
+| `expires_on_move` | Boolean | If true, the temporary effect expires as soon as the affected unit moves from its current tile. | 2 | `true` (Boolean) |
 
 ### Object: `TransformWeapon`
 
@@ -4801,22 +4801,22 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_WEBBED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_WEBBED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_WEBBED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_WEBBED_DESC"` (String) |
 
 ### Object: `Wet`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_WET_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_WET_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_WET_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_WET_DESC"` (String) |
 
 ### Object: `XIsSpellStormRampAndReset`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `reset_percent` | Integer || 2 | `50` (Number) |
-| `stacks` | Enum / Integer || 2 | `0` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `0` (Number) |
 
 #### `ApplyToSourceOnKill`
 
@@ -4827,13 +4827,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlphaCat` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Revive`](#object-revive) | Integer / Object || 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object ||| `Hunter` (Enum), `Fighter` (Enum), `{ ... }` (Object) |
-| `HealthGain` | Integer ||| `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
-| `ManaGain` | Enum / Integer ||| `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AlphaCat` | Integer | The number of stacks of the AlphaCat status effect. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Revive`](#object-revive) | Integer / Object | The percentage or flat amount of HP restored when reviving a dead ally. | 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
+| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Evolves a random ability from the specified pool, optionally flagged as upgraded. || `Hunter` (Enum), `Fighter` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Integer | The amount of health restored to the source. || `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
+| `ManaGain` | Enum / Integer | The amount of mana gained; can be a fixed integer or a formula using variables like `X` (e.g., damage dealt or ability cost). || `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `StrengthUp` | Enum / Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `WeaponAuxMultiplier` | Number ||| `.5` (String) |
 
 </details>
@@ -4870,29 +4870,29 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alpha` | String ||| `.5` (String) |
-| `ambient_sound` | String ||| `amb_acidrain.ogg` (String) |
-| `chain` | Boolean ||| `AcidSplash` (Enum) |
-| `desc` | Enum ||| `"WEATHER_ACIDRAIN_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `emit_amount` | Number ||| `1` (Number) |
-| `emit_box` | Array ||| `[0 10 10 10 0 10]` (Array) |
-| `emit_direction` | Array ||| `[0 -1 0]` (Array) |
-| `emit_rate` | Number ||| `100` (Number) |
-| `emit_spread` | Number ||| `0` (Number) |
-| `face_moving_direction` | Boolean ||| `true` (Boolean) |
-| `force` | Array ||| `[0 -10 0]` (Array) |
-| `live_bounds` | Array ||| `[-999 999 0 999 -999 999]` (Array) |
-| `movieclip` | Array / Enum ||| `AcidRainParticle` (Enum) |
-| `name` | Enum ||| `"WEATHER_ACIDRAIN_NAME"` (String) |
-| `particle_lifetime` | Number ||| `5` (Number) |
-| `projection_matrix` | Enum ||| `default` (Enum) |
-| `render_mode` | Enum ||| `separate` (Enum) |
-| [`scripts`](Miscellaneous.md#object-scripts) | Object ||| `{ ... }` (Object) |
-| `simulation_space` | Enum ||| `global` (Enum) |
-| `size_start` | String ||| `.5` (String) |
-| `speed_scale` | String ||| `.1` (String) |
-| `speed_start` | Number ||| `10` (Number) |
+| `alpha` | String | The transparency or opacity level of the particle or visual effect. || `.5` (String) |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather event. || `amb_acidrain.ogg` (String) |
+| `chain` | Boolean | Specifies the chain effect type (e.g., 'splashM') or 'true' to enable chaining. || `AcidSplash` (Enum) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_ACIDRAIN_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `emit_amount` | Number | The number of particles emitted per burst, or a range [min, max] of possible amounts. || `1` (Number) |
+| `emit_box` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] defining the area in which particles are spawned. || `[0 10 10 10 0 10]` (Array) |
+| `emit_direction` | Array | A vector [x, y, z] defining the initial direction of emitted particles. || `[0 -1 0]` (Array) |
+| `emit_rate` | Number | The number of particles emitted per second. || `100` (Number) |
+| `emit_spread` | Number | The angular spread in degrees over which particles are emitted. || `0` (Number) |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their direction of movement. || `true` (Boolean) |
+| `force` | Array | A force vector [x, y, z] applied to particles, or a scalar magnitude applied downward. || `[0 -10 0]` (Array) |
+| `live_bounds` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] outside which particles are deactivated or destroyed. || `[-999 999 0 999 -999 999]` (Array) |
+| `movieclip` | Array / Enum | Specifies the movieclip asset used for the room's visual representation, such as 'SmallUFO' or 'Worm'. || `AcidRainParticle` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_ACIDRAIN_NAME"` (String) |
+| `particle_lifetime` | Number | The duration in seconds a particle lives, or a range [min, max] of possible lifetimes. || `5` (Number) |
+| `projection_matrix` | Enum | Specifies the projection mode for the particle system, e.g., default or perspective-based. || `default` (Enum) |
+| `render_mode` | Enum | Determines how the particle system renders, e.g., default or separate render passes. || `separate` (Enum) |
+| [`scripts`](Miscellaneous.md#object-scripts) | Object | Defines scripted behaviors on particles, such as bounce planes or wind effects. || `{ ... }` (Object) |
+| `simulation_space` | Enum | Determines if particle simulation is in local or global space. || `global` (Enum) |
+| `size_start` | String | The initial size of particles, or a range [min, max] of possible sizes. || `.5` (String) |
+| `speed_scale` | String | A multiplier applied to the overall speed of the particle system animation. || `.1` (String) |
+| `speed_start` | Number | The initial speed of particles, or a range [min, max] of possible speeds. || `10` (Number) |
 
 ### Object: `AddPostProcessEffect`
 
@@ -4911,34 +4911,34 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_ADRENALINE_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_ADRENALINE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_ADRENALINE_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_ADRENALINE_DESC"` (String) |
 
 ### Object: `ApplyMultipleTimes`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object || 6 | `{ ... }` (Object) |
-| `stacks` | Enum / Integer || 6 | `X` (Enum), `4` (Number), `8` (Number) |
+| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | An object listing possible status effects to randomly pick from and apply. | 6 | `{ ... }` (Object) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 6 | `X` (Enum), `4` (Number), `8` (Number) |
 
 ### Object: `ApplyStatusesNextTurnBegin`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Quivered` | Array / Integer || 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
 
 ### Object: `ApplyToConsumed`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DeleteObject` | Integer || 6 | `1` (Number) |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object || 2 | `6` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | Specifies the number of sides on a die roll for a random outcome. | 2 | `6` (Number), `1` (Number), `{ ... }` (Object) |
 
 ### Object: `ApplyToOthersWithSharedTagAndFaction`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Marked`](#object-marked) | Array / Integer / Object || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Marked`](#object-marked) | Array / Integer / Object | The number of Marked stacks applied, which increases damage taken from all sources; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 ### Object: `ApplyToRandomClosestAlly`
 
@@ -4957,316 +4957,316 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `enemies_only` | Boolean || 8 | `false` (Boolean), `true` (Boolean) |
+| `enemies_only` | Boolean | If true, this effect only targets enemies. | 8 | `false` (Boolean), `true` (Boolean) |
 | `max_distance` | Integer || 8 | `3` (Number), `1` (Number) |
-| `stacks` | Enum / Integer || 8 | `100` (Number) |
-| `chance` | Number || 2 | `.5` (String) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 8 | `100` (Number) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 2 | `.5` (String) |
 | `ignore_self` | Boolean || 2 | `true` (Boolean) |
 
 ### Object: `Bloodzerked`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_BLOODZERK_NAME"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_BLOODZERK_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_BLOODZERK_NAME"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_BLOODZERK_DESC"` (String) |
 
 ### Object: `BodyGuard`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 4 | `BodyGuardSwap2` (Enum), `BodyGuardSwap` (Enum) |
-| `stacks` | Enum / Integer || 4 | `1` (Number) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_BODYGUARD_NAME"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum ||| `"KEYWORD_BODYGUARD_DESC"` (String) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 4 | `BodyGuardSwap2` (Enum), `BodyGuardSwap` (Enum) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 | `1` (Number) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_BODYGUARD_NAME"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_BODYGUARD_DESC"` (String) |
 
 ### Object: `BombRatTurtle`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `ButterflySwarm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ambient_sound` | String ||| `amb_butterflyswarm.ogg` (String) |
-| `desc` | Enum ||| `"WEATHER_BUTTERFLY_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_BUTTERFLY_NAME"` (String) |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather event. || `amb_butterflyswarm.ogg` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_BUTTERFLY_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_BUTTERFLY_NAME"` (String) |
 
 ### Object: `CanApplyToInanimate`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object || 20 | `AllyRotFly` (Enum), `CharmedLeech` (Enum), `{ ... }` (Object) |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | An object or entity name that spawns upon hitting a character, with optional stacks and chance. | 20 | `AllyRotFly` (Enum), `CharmedLeech` (Enum), `{ ... }` (Object) |
 | `BreakIntoRocks` | Enum || 8 | `Coin` (Enum), `SmallRock` (Enum) |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object || 6 | `{ ... }` (Object) |
-| `Vaporize` | Integer || 6 | `1` (Number), `20` (Number) |
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object containing status effects or modifiers applied to the source (attacker) of the triggering condition rather than the target. | 6 | `{ ... }` (Object) |
+| `Vaporize` | Integer | The number of stacks of the Vaporize status effect applied to the target, which destroys it if enough stacks are applied. | 6 | `1` (Number), `20` (Number) |
 | `GetAggroTarget` | Integer || 4 | `1` (Number) |
 | `PreventDeathTransforms` | Integer || 2 | `1` (Number) |
-| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object || 2 | `{ ... }` (Object) |
+| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | An object that defines a temporary status effect with duration and expiration conditions. | 2 | `{ ... }` (Object) |
 
 ### Object: `CastAgainWithStatus`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `OverrideDamage` | Integer || 2 | `25` (Number), `10` (Number) |
-| `stacks` | Enum / Integer || 2 | `1` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `1` (Number) |
 
 ### Object: `CatPartsSizeScaleStatus`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `arm1` | Number || 2 | `1.1` (Number) |
-| `arm2` | Number || 2 | `1.1` (Number) |
-| `body` | Number || 2 | `1.1` (Number) |
-| `mouth` | Number || 2 | `1.1` (Number) |
+| `arm1` | Number | The visual ID (integer/number) of the first arm part applied to the cat. | 2 | `1.1` (Number) |
+| `arm2` | Number | The visual ID (integer/number) of the second arm part applied to the cat. | 2 | `1.1` (Number) |
+| `body` | Number | The visual ID (number) of the body part applied to the cat. | 2 | `1.1` (Number) |
+| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. | 2 | `1.1` (Number) |
 
 ### Object: `ChampionUpgradeNextMinion`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_PROMOTE_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_PROMOTE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_PROMOTE_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_PROMOTE_DESC"` (String) |
 
 ### Object: `ChanceToBreakFree`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 22 | `CHuskDrop` (Enum), `LennyDrop` (Enum) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 22 | `CHuskDrop` (Enum), `LennyDrop` (Enum) |
 | `fail_ability` | Enum || 6 | `CHuskDropFail` (Enum), `XXX` (Enum) |
-| `stacks` | Enum / Integer || 6 | `25` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 6 | `25` (Number) |
 
 ### Object: `ChargeFists`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_CHARGEFISTS_NAME"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip_stackless` | String ||| `"KEYWORD_CHARGEFISTS_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_CHARGEFISTS_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Maps keyword identifiers to their tooltip override values for display. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_CHARGEFISTS_NAME"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_CHARGEFISTS_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_CHARGEFISTS_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_CHARGEFISTS_DESC_SINGULAR"` (String) |
 
 ### Object: `CockroachSwarm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum ||| `"WEATHER_COCKROACHES_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_COCKROACHES_NAME"` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_COCKROACHES_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_COCKROACHES_NAME"` (String) |
 
 ### Object: `CollectsPickupsWithAltEffects`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Tech` | Integer || 4 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Tech` | Integer | The number of Tech stacks applied, which increase the damage of the next ability used. | 4 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `CurrentWeaponAddPoison` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer || 2 | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
-| `Quivered` | Array / Integer || 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| `Shield` | Enum / Integer || 2 | `[1 .5]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. | 2 | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer | The number of stacks of Quivered, which grants bonus attacks; can be an array [stacks, probability]. | 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `Shield` | Enum / Integer | Specifies the number of Shield stacks applied, where each stack reduces incoming damage by a flat amount. | 2 | `[1 .5]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 
 ### Object: `CopySpells`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer || 2 | `1` (Number) |
-| `upgraded` | Boolean || 2 | `true` (Boolean) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `1` (Number) |
+| `upgraded` | Boolean | If true, the ability evolution uses an upgraded version or state instead of the base one. | 2 | `true` (Boolean) |
 
 ### Object: `Counterspell`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `CurrentWeaponAddPoison`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_WPOISONLACE_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_WPOISONLACE_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_WPOISONLACE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_WPOISONLACE_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_WPOISONLACE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_WPOISONLACE_DESC"` (String) |
 
 ### Object: `DelayCastAbility`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 2 | `FetusAirstrike` (Enum) |
-| `lingering` | Boolean || 2 | `true` (Boolean) |
-| `relative` | Boolean || 2 | `false` (Boolean) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 2 | `FetusAirstrike` (Enum) |
+| `lingering` | Boolean | If true, the delayed ability persists on the target and can trigger multiple times. | 2 | `true` (Boolean) |
+| `relative` | Boolean | If true, the delay time is relative to current turn order; if false, absolute turns. | 2 | `false` (Boolean) |
 
 ### Object: `DelayedWind`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance` | Integer || 2 | `2` (Number) |
+| `distance` | Integer | The number of tiles to knock the target up and away (negative values pull toward). | 2 | `2` (Number) |
 
 ### Object: `DelayedWindCone`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance` | Integer || 4 | `10` (Number) |
-| `damage` | Equation || 2 | `5` (Equation) |
+| `distance` | Integer | The number of tiles to knock the target up and away (negative values pull toward). | 4 | `10` (Number) |
+| `damage` | Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 2 | `5` (Equation) |
 
 ### Object: `DoDistortionRing`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `intensity` | Integer || 12 | `-2` (Number), `1` (Number) |
+| `intensity` | Integer | The intensity value of the screen shake effect. | 12 | `-2` (Number), `1` (Number) |
 | `radius` | Array / Integer || 12 | `4` (Number), `5` (Number) |
-| `speed` | Array / Number || 12 | `30` (Number), `-30` (Number) |
+| `speed` | Array / Number | The movement speed of the projectile or graphic, as a single number or a range [min max]. | 12 | `30` (Number), `-30` (Number) |
 
 ### Object: `DoScreenShake`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `intensity` | Integer || 20 | `10` (Number), `3` (Number) |
-| `time` | Number || 20 | `1` (Number), `2` (Number), `.75` (String), `.5` (String) |
+| `intensity` | Integer | The intensity value of the screen shake effect. | 20 | `10` (Number), `3` (Number) |
+| `time` | Number | The duration (in seconds or a float multiplier) of the screen shake effect. | 20 | `1` (Number), `2` (Number), `.75` (String), `.5` (String) |
 
 ### Object: `DoubleCast`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DOUBLECAST_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_DOUBLECAST_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DOUBLECAST_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_DOUBLECAST_DESC"` (String) |
 
 ### Object: `DoubleCastSpell`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DOUBLECASTSPELL_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_DOUBLECASTSPELL_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DOUBLECASTSPELL_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_DOUBLECASTSPELL_DESC"` (String) |
 
 ### Object: `DoubleLoot`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `Drag`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | Enum ||| `Psychic` (Enum) |
-| `desc` | Enum ||| `"PASSIVE_DRAG_DESC"` (String) |
-| `name` | Enum ||| `"PASSIVE_DRAG_NAME"` (String) |
+| `class` | Enum | Specifies the class name or ability class associated with this object. || `Psychic` (Enum) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"PASSIVE_DRAG_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"PASSIVE_DRAG_NAME"` (String) |
 
 ### Object: `DustOnHit`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `object` | Array / Enum || 6 | `GasCloud` (Enum) |
+| `object` | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 6 | `GasCloud` (Enum) |
 
 ### Object: `EliteUpgradeNextMinion`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_PROMOTE2_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_PROMOTE2_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_PROMOTE2_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_PROMOTE2_DESC"` (String) |
 
 ### Object: `EmptyMind`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_EMPTYMIND_NAME"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum ||| `"KEYWORD_EMPTYMIND_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_EMPTYMIND_NAME"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_EMPTYMIND_DESC"` (String) |
 
 ### Object: `Enlarge`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `spell` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `spell` (Enum) |
 
 ### Object: `FactionUprising`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object || 1 | `{ ... }` (Object) |
-| `tag` | Array / Enum || 1 | `bird` (Enum) |
+| `tag` | Array / Enum | Specifies the name of the tag to check for on the target. | 1 | `bird` (Enum) |
 
 ### Object: `FireArmor`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | Enum ||| `Mage` (Enum) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| `desc` | Enum ||| `"PASSIVE_FIREASPECT_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"FireArmor"` (Enum), `"PASSIVE_FIREASPECT_NAME"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `class` | Enum | Specifies the class name or ability class associated with this object. || `Mage` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"PASSIVE_FIREASPECT_DESC"` (String) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"FireArmor"` (Enum), `"PASSIVE_FIREASPECT_NAME"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `FireArmor2`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"FireArmor2"` (Enum) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"FireArmor2"` (Enum) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `FireStorm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `combo` | Array ||| `[Firestorm_Fire Firestorm_Embers Firestorm_Distortion]` (Array) |
+| `combo` | Array | Defines a sequence of visual effect names to play in order for a particle or animation combo. || `[Firestorm_Fire Firestorm_Embers Firestorm_Distortion]` (Array) |
 
 ### Object: `FireflySwarm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum ||| `"WEATHER_FIREFLY_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_FIREFLY_NAME"` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_FIREFLY_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_FIREFLY_NAME"` (String) |
 
 ### Object: `FlySwarm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object ||| `{ ... }` (Object) |
-| `ambient_sound` | String ||| `amb_flyswarm.ogg` (String) |
-| `desc` | Enum ||| `"WEATHER_FLYSWARM_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_FLYSWARM_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object ||| `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object ||| `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | Defines the unit's move, attack, and spell abilities (as an array). || `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | Defines the AI brain, decision/move weights, and pattern for controlling a unit's behavior. || `{ ... }` (Object) |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather event. || `amb_flyswarm.ogg` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_FLYSWARM_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_FLYSWARM_NAME"` (String) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | Defines passive abilities granted when the parent condition is active. || `{ ... }` (Object) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Defines the unit's core properties such as tag, health, movement, faction, type, and crit chance. || `{ ... }` (Object) |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Defines the unit's base stats (strength, dexterity, constitution, intelligence, speed). || `{ ... }` (Object) |
 
 ### Object: `Fog`
 
@@ -5274,59 +5274,59 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `alpha_end` | Number ||| `0` (Number) |
 | `alpha_start` | Number ||| `2` (Number) |
-| `desc` | Enum ||| `"WEATHER_FOG_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `emit_amount` | Number ||| `1` (Number) |
-| `emit_box` | Array ||| `[-5 10 0 2 -5 10]` (Array) |
-| `emit_direction` | Array ||| `[0 1 0]` (Array) |
-| `emit_rate` | Number ||| `100` (Number) |
-| `emit_spread` | Number ||| `360` (Number) |
-| `friction` | Array ||| `[0 1 0]` (Array) |
-| `live_bounds` | Array ||| `[-999 999 -999 999 -999 999]` (Array) |
-| `movieclip` | Array / Enum ||| `FogParticle` (Enum) |
-| `name` | Enum ||| `"WEATHER_FOG_NAME"` (String) |
-| `particle_lifetime` | Array ||| `[3 5]` (Array) |
-| `projection_matrix` | Enum ||| `default` (Enum) |
-| `render_mode` | Enum ||| `separate` (Enum) |
-| [`scripts`](Miscellaneous.md#object-scripts) | Object ||| `{ ... }` (Object) |
-| `simulation_space` | Enum ||| `global` (Enum) |
-| `size_start` | Array ||| `[.2 1]` (Array) |
-| `speed_start` | String ||| `.1` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_FOG_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `emit_amount` | Number | The number of particles emitted per burst, or a range [min, max] of possible amounts. || `1` (Number) |
+| `emit_box` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] defining the area in which particles are spawned. || `[-5 10 0 2 -5 10]` (Array) |
+| `emit_direction` | Array | A vector [x, y, z] defining the initial direction of emitted particles. || `[0 1 0]` (Array) |
+| `emit_rate` | Number | The number of particles emitted per second. || `100` (Number) |
+| `emit_spread` | Number | The angular spread in degrees over which particles are emitted. || `360` (Number) |
+| `friction` | Array | An array of friction coefficients [x y z] applied to particle velocity on the bounce plane. || `[0 1 0]` (Array) |
+| `live_bounds` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] outside which particles are deactivated or destroyed. || `[-999 999 -999 999 -999 999]` (Array) |
+| `movieclip` | Array / Enum | Specifies the movieclip asset used for the room's visual representation, such as 'SmallUFO' or 'Worm'. || `FogParticle` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_FOG_NAME"` (String) |
+| `particle_lifetime` | Array | The duration in seconds a particle lives, or a range [min, max] of possible lifetimes. || `[3 5]` (Array) |
+| `projection_matrix` | Enum | Specifies the projection mode for the particle system, e.g., default or perspective-based. || `default` (Enum) |
+| `render_mode` | Enum | Determines how the particle system renders, e.g., default or separate render passes. || `separate` (Enum) |
+| [`scripts`](Miscellaneous.md#object-scripts) | Object | Defines scripted behaviors on particles, such as bounce planes or wind effects. || `{ ... }` (Object) |
+| `simulation_space` | Enum | Determines if particle simulation is in local or global space. || `global` (Enum) |
+| `size_start` | Array | The initial size of particles, or a range [min, max] of possible sizes. || `[.2 1]` (Array) |
+| `speed_start` | String | The initial speed of particles, or a range [min, max] of possible speeds. || `.1` (String) |
 
 ### Object: `ForceImmediateMoveAndAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 2 | `G3GrabHead` (Enum) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 2 | `G3GrabHead` (Enum) |
 | `even_if_cant_reach` | Boolean || 2 | `true` (Boolean) |
 
 ### Object: `ForceMoveTowardsTaggedObject`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 4 | `MoveOneTrample` (Enum), `MoveTwoTrample` (Enum) |
-| `tag` | Array / Enum || 2 | `food` (Enum) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 4 | `MoveOneTrample` (Enum), `MoveTwoTrample` (Enum) |
+| `tag` | Array / Enum | Specifies the name of the tag to check for on the target. | 2 | `food` (Enum) |
 
 ### Object: `GlobalSpawnOnRoundEnd`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `object` | Array / Enum || 2 | `NeutralZombieKitten` (Enum), `NeutralTwister` (Enum) |
+| `object` | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 2 | `NeutralZombieKitten` (Enum), `NeutralTwister` (Enum) |
 | `number` | Array / Integer ||| `[1 2]` (Array) |
 
 ### Object: `Grappled`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_GRAPPLED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_GRAPPLED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_GRAPPLED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_GRAPPLED_DESC"` (String) |
 
 ### Object: `Grappling`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit_animations`](Characters_and_Bosses.md#object-exit_animations) | Object || 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer || 2 | `Grapple` (Enum) |
+| `partial_animation_suffix` | Enum / Integer | A string or number appended to a partial animation name to identify the variant. | 2 | `Grapple` (Enum) |
 
 ### Object: `HealAlliesEachTurn`
 
@@ -5334,69 +5334,69 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `exclude_self` | Boolean || 4 | `false` (Boolean) |
 | `mana` | Enum / Integer || 4 | `3` (Number), `2` (Number) |
-| `stacks` | Enum / Integer || 4 | `3` (Number), `2` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 | `3` (Number), `2` (Number) |
 
 ### Object: `HeatWave`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `combo` | Array ||| `[HeatWave_Particles HeatWave_Distortion]` (Array) |
-| `desc` | Enum ||| `"WEATHER_HEATWAVE_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `hint_persistent_elements` | Array ||| `[Heat]` (Array) |
-| `name` | Enum ||| `"WEATHER_HEATWAVE_NAME"` (String), `"KEYWORD_DEHYDRATED_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_DEHYDRATED_DESC"` (String) |
+| `combo` | Array | Defines a sequence of visual effect names to play in order for a particle or animation combo. || `[HeatWave_Particles HeatWave_Distortion]` (Array) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_HEATWAVE_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `hint_persistent_elements` | Array | An array of element types that persist as hints during this weather (e.g., [Ice Wind]). || `[Heat]` (Array) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_HEATWAVE_NAME"` (String), `"KEYWORD_DEHYDRATED_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_DEHYDRATED_DESC"` (String) |
 
 ### Object: `HeavyHits`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_HEAVYHITS_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `none` (Enum) |
-| `tooltip_stacks` | String ||| `"KEYWORD_HEAVYHITS_DESC_STACKS"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_HEAVYHITS_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `none` (Enum) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_HEAVYHITS_DESC_STACKS"` (String) |
 
 ### Object: `HolyDamageBlessing`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Burn` | Array / Enum / Integer || 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 | `damage_multiplier` | Number || 4 | `3` (Number), `2` (Number) |
 
 ### Object: `IceArmor`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | Enum ||| `Mage` (Enum) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| `desc` | Enum ||| `"PASSIVE_ICEASPECT_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"IceArmor"` (Enum), `"PASSIVE_ICEASPECT_NAME"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `class` | Enum | Specifies the class name or ability class associated with this object. || `Mage` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"PASSIVE_ICEASPECT_DESC"` (String) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"IceArmor"` (Enum), `"PASSIVE_ICEASPECT_NAME"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `IncAuxCounterCycle`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `change` | Integer || 2 | `1` (Number) |
-| `max` | Integer || 2 | `3` (Number) |
+| `change` | Integer | The amount to change an auxiliary counter by, clamped within min/max bounds. | 2 | `1` (Number) |
+| `max` | Integer | The maximum value that the auxiliary counter can reach. | 2 | `3` (Number) |
 
 ### Object: `Invulnerable`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_INVULNERABLE_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_INVULNERABLE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_INVULNERABLE_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_INVULNERABLE_DESC"` (String) |
 
 ### Object: `JudgementDay`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum ||| `"WEATHER_JUDGEMENT_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_JUDGEMENT_NAME"` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_JUDGEMENT_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_JUDGEMENT_NAME"` (String) |
 
 ### Object: `KillEnemyOfTypeAtBattleStart`
 
@@ -5410,34 +5410,34 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `CurrentWeaponDamageUp` | Integer || 6 | `3` (Number), `1` (Number) |
-| `AddWeaponAux` | Integer / String || 2 | `-item_aux` (Enum), `1` (Number), `2` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `AddWeaponAux` | Integer / String | Adds to the weapon's auxiliary value, supporting integer or formula input. | 2 | `-item_aux` (Enum), `1` (Number), `2` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
 
 ### Object: `LeaveBehind`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `object` | Array / Enum || 8 | `CharmedMaggot` (Enum), `Twister` (Enum) |
+| `object` | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 8 | `CharmedMaggot` (Enum), `Twister` (Enum) |
 
 ### Object: `Math`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Stun` | Array / Integer || 4 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `stacks` | Enum / Integer || 4 | `1` (Number) |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object || 2 | `{ ... }` (Object) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `spell` (Enum) |
+| `Stun` | Array / Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 | `1` (Number) |
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object containing status effects or modifiers applied to the source (attacker) of the triggering condition rather than the target. | 2 | `{ ... }` (Object) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `spell` (Enum) |
 
 ### Object: `Meaty`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_MEATY_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_MEATY_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_MEATY_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_MEATY_DESC"` (String) |
 
 ### Object: `MergeDamageInstance`
 
@@ -5450,9 +5450,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum ||| `"WEATHER_METEORS_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_METEORS_NAME"` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_METEORS_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_METEORS_NAME"` (String) |
 
 ### Object: `Meteornado`
 
@@ -5460,75 +5460,75 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `alpha_in` | String ||| `.2` (String) |
 | `alpha_out` | String ||| `.2` (String) |
-| `desc` | Enum ||| `"WEATHER_METEORNADO_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `emit_amount` | Number ||| `1` (Number) |
-| `emit_box` | Array ||| `[0 10 0 5 0 10]` (Array) |
-| `emit_direction` | Array ||| `[0 1 0]` (Array) |
-| `emit_rate` | Number ||| `200` (Number) |
-| `emit_spread` | Number ||| `360` (Number) |
-| `live_bounds` | Array ||| `[-999 999 -999 999 -999 999]` (Array) |
-| `movieclip` | Array / Enum ||| `FX_MoonRock` (Enum) |
-| `name` | Enum ||| `"WEATHER_METEORNADO_NAME"` (String) |
-| `particle_lifetime` | Array ||| `[.1 3]` (Array) |
-| `projection_matrix` | Enum ||| `default` (Enum) |
-| `render_mode` | Enum ||| `separate` (Enum) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_METEORNADO_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `emit_amount` | Number | The number of particles emitted per burst, or a range [min, max] of possible amounts. || `1` (Number) |
+| `emit_box` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] defining the area in which particles are spawned. || `[0 10 0 5 0 10]` (Array) |
+| `emit_direction` | Array | A vector [x, y, z] defining the initial direction of emitted particles. || `[0 1 0]` (Array) |
+| `emit_rate` | Number | The number of particles emitted per second. || `200` (Number) |
+| `emit_spread` | Number | The angular spread in degrees over which particles are emitted. || `360` (Number) |
+| `live_bounds` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] outside which particles are deactivated or destroyed. || `[-999 999 -999 999 -999 999]` (Array) |
+| `movieclip` | Array / Enum | Specifies the movieclip asset used for the room's visual representation, such as 'SmallUFO' or 'Worm'. || `FX_MoonRock` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_METEORNADO_NAME"` (String) |
+| `particle_lifetime` | Array | The duration in seconds a particle lives, or a range [min, max] of possible lifetimes. || `[.1 3]` (Array) |
+| `projection_matrix` | Enum | Specifies the projection mode for the particle system, e.g., default or perspective-based. || `default` (Enum) |
+| `render_mode` | Enum | Determines how the particle system renders, e.g., default or separate render passes. || `separate` (Enum) |
 | `rotation` | Array ||| `[0 360]` (Array) |
 | `rotation_speed` | Array ||| `[-1000 1000]` (Array) |
-| [`scripts`](Miscellaneous.md#object-scripts) | Object ||| `{ ... }` (Object) |
-| `simulation_space` | Enum ||| `global` (Enum) |
-| `size_start` | Array ||| `[.5 1.5]` (Array) |
-| `speed_start` | Number ||| `5` (Number) |
+| [`scripts`](Miscellaneous.md#object-scripts) | Object | Defines scripted behaviors on particles, such as bounce planes or wind effects. || `{ ... }` (Object) |
+| `simulation_space` | Enum | Determines if particle simulation is in local or global space. || `global` (Enum) |
+| `size_start` | Array | The initial size of particles, or a range [min, max] of possible sizes. || `[.5 1.5]` (Array) |
+| `speed_start` | Number | The initial speed of particles, or a range [min, max] of possible speeds. || `5` (Number) |
 
 ### Object: `Metronome`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer || 2 | `1` (Number) |
-| `ability` | Enum ||| `tk_Metronome` (Enum) |
-| `banned_abilities` | Array ||| `[BatteryNuke WeAreOne Metronome SmartMetronome BecomeEntropy ForbiddenFamine]` (Array) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| `desc` | Enum ||| `"ITEM_METRONOME_DESC"` (String) |
-| `frame` | Integer ||| `17` (Number) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| `kind` | Enum ||| `trinket` (Enum) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"ITEM_METRONOME_NAME"` (String) |
-| `rarity` | Enum ||| `rare` (Enum) |
-| `set` | Array / Enum ||| `Jester` (Enum) |
-| `tags` | Array / Enum ||| `[musical]` (Array) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `1` (Number) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). || `tk_Metronome` (Enum) |
+| `banned_abilities` | Array | An array of ability names that are banned from being randomly selected by Metronome. || `[BatteryNuke WeAreOne Metronome SmartMetronome BecomeEntropy ForbiddenFamine]` (Array) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"ITEM_METRONOME_DESC"` (String) |
+| `frame` | Integer | The sprite frame index used for this arm. || `17` (Number) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| `kind` | Enum | Specifies the equipment slot type (e.g., head, face, neck, trinket, modifier). || `trinket` (Enum) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"ITEM_METRONOME_NAME"` (String) |
+| `rarity` | Enum | Determines the loot rarity tier of the item (e.g., very_rare, consumable_common). || `rare` (Enum) |
+| `set` | Array / Enum | The visual set or furniture style tag (e.g., elegant, guts, Tentacle, wooden, Druid). || `Jester` (Enum) |
+| `tags` | Array / Enum | Array of gameplay-relevant tags for item or unit categorization (e.g., 'consumable', 'cat'). || `[musical]` (Array) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `Muted`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_MUTED_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_MUTED_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_MUTED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_MUTED_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_MUTED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_MUTED_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_MUTED_DESC_SINGULAR"` (String) |
 
 ### Object: `NextAbilityHeals`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"NextAbilityHeals"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"NextAbilityHeals"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `NextActionLuckUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `LuckUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `LuckUp` (Enum) |
 
 ### Object: `NextAttackBonusRange`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_BONUSRANGE_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_BONUSRANGE_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_BONUSRANGE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_BONUSRANGE_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_BONUSRANGE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_BONUSRANGE_DESC"` (String) |
 
 ### Object: `NextAttackSpecialCrit`
 
@@ -5542,111 +5542,111 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cant_miss` | Boolean || 2 | `true` (Boolean) |
-| `piercing` | Boolean || 2 | `true` (Boolean) |
-| `stacks` | Enum / Integer || 2 | `1` (Number) |
+| `cant_miss` | Boolean | If true, the damage instance always hits its target, bypassing accuracy and evasion checks. | 2 | `true` (Boolean) |
+| `piercing` | Boolean | If true, the damage instance ignores armor and damage reduction effects. | 2 | `true` (Boolean) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `1` (Number) |
 
 ### Object: `NextBattleStatusStacks`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `MadnessChanceOnTurnBegin` | Integer || 2 | `2` (Number) |
-| `fights` | Integer || 2 | `9999` (Number) |
+| `fights` | Integer | The number of future battles that the status stacks persist for. | 2 | `9999` (Number) |
 
 ### Object: `NextDamageReduceAndHealAllies`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"NextDamageReduceAndHealAllies"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"NextDamageReduceAndHealAllies"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `NextTurnDoubleRangedDamage`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_DOUBLERANGEDDMG_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_DOUBLERANGEDDMG_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_DOUBLERANGEDDMG_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_DOUBLERANGEDDMG_DESC"` (String) |
 
 ### Object: `ObjectOnHit`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `object` | Array / Enum || 4 | `Poop` (Enum) |
+| `object` | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 4 | `Poop` (Enum) |
 
 ### Object: `OverHealToStatuses`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| `TakeExtraTurn` | Integer || 2 | `1` (Number) |
-| `stack_scale` | Integer || 2 | `0` (Number) |
+| `RandomStatUp` | Integer / String | The amount of random stat increase (or decrease if negative) applied to a random stat. | 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `TakeExtraTurn` | Integer | The number of extra turns granted to the unit. | 2 | `1` (Number) |
+| `stack_scale` | Integer | If non-zero, scales the conversion of overheal to status stacks by this factor. | 2 | `0` (Number) |
 
 ### Object: `PoolMetronome`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pool` | Array / Enum ||| `[Shockwave Ping Telefrag Stasis Reduce Zealot]` (Array) |
+| `pool` | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. || `[Shockwave Ping Telefrag Stasis Reduce Zealot]` (Array) |
 
 ### Object: `QuakeAreaChance`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number || 4 | `50` (Number) |
+| `chance` | Number | A multiplier or percentage representing the probability of the effect occurring. | 4 | `50` (Number) |
 | `radius` | Array / Integer || 4 | `1` (Number), `0` (Number) |
 
 ### Object: `RandomDistanceDisplace`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `min_dist` | Integer || 2 | `4` (Number) |
-| `stacks` | Enum / Integer || 2 | `20` (Number) |
+| `min_dist` | Integer | The minimum distance (in tiles) the target must be flung. | 2 | `4` (Number) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `20` (Number) |
 
 ### Object: `RandomKnockback`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Integer || 4 | `10` (Number), `3` (Number) |
-| `min` | Integer || 4 | `1` (Number) |
+| `max` | Integer | The maximum value that the auxiliary counter can reach. | 4 | `10` (Number), `3` (Number) |
+| `min` | Integer | The minimum amount of coins gained from the range. | 4 | `1` (Number) |
 
 ### Object: `ReduceManaCostExcludeBrainstorm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_INSIGHT_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_INSIGHT_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_INSIGHT_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_INSIGHT_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_INSIGHT_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_INSIGHT_DESC"` (String) |
 
 ### Object: `Regurge`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object ||| `{ ... }` (Object) |
-| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `spawn` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. || `{ ... }` (Object) |
+| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Specifies the unit or object to spawn, along with its properties (e.g. object, ai_base_score, faction, layer). || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `spawn` (Enum) |
 
 ### Object: `RepressedMemoriesMetronome`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pool` | Array / Enum || 4 | `Psychic` (Enum), `Jester` (Enum) |
-| `stacks` | Enum / Integer || 4 | `1` (Number) |
+| `pool` | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. | 4 | `Psychic` (Enum), `Jester` (Enum) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 4 | `1` (Number) |
 
 ### Object: `Sandstorm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ambient_sound` | String ||| `amb_sandstorm.ogg` (String) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| `desc` | Enum ||| `"WEATHER_SANDSTORM_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_SANDSTORM_NAME"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather event. || `amb_sandstorm.ogg` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_SANDSTORM_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_SANDSTORM_NAME"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `ScrambleLastUsedSpell`
 
@@ -5658,112 +5658,112 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_SERRATED_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_SERRATED_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_SERRATED_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SERRATED_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_SERRATED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_SERRATED_DESC"` (String) |
 
 ### Object: `SetAnimationAlts`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dead` | Enum || 2 | `deadShot` (Enum) |
-| `dying` | Enum || 2 | `shot` (Enum) |
+| `dead` | Enum | Specifies the dead animation alternative or a facial expression override. | 2 | `deadShot` (Enum) |
+| `dying` | Enum | Specifies the dying animation alternative to use. | 2 | `shot` (Enum) |
 
 ### Object: `SetCrazyEyeBackgroundWeights`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `weights` | Array / Enum ||| `[0 0 1]` (Array), `[0 1 0]` (Array) |
+| `weights` | Array / Enum | An array of three weighting values or a named preset for Crazy Eye background behavior weights. || `[0 0 1]` (Array), `[0 1 0]` (Array) |
 
 ### Object: `Shatter`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `melee_attack` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `melee_attack` (Enum) |
 
 ### Object: `ShortCircuit`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"KEYWORD_SHORTCIRCUIT_NAME"` (String) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `spell` (Enum) |
-| `tooltip` | Enum ||| `"KEYWORD_SHORTCIRCUIT_DESC"` (String) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SHORTCIRCUIT_NAME"` (String) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `spell` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_SHORTCIRCUIT_DESC"` (String) |
 
 ### Object: `SmartMetronome`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer || 2 | `20` (Number) |
-| `upgraded` | Boolean || 2 | `true` (Boolean) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `tags` | Array / Enum ||| `[musical]` (Array) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `20` (Number) |
+| `upgraded` | Boolean | If true, the ability evolution uses an upgraded version or state instead of the base one. | 2 | `true` (Boolean) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `tags` | Array / Enum | Array of gameplay-relevant tags for item or unit categorization (e.g., 'consumable', 'cat'). || `[musical]` (Array) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `SmellBlood`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `self_buff` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
 
 ### Object: `Snow`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `adventure_weather` | Enum || 1 | `Snow` (Enum) |
-| `ambient_sound` | String || 1 | `amb_snow.ogg` (String) |
-| `prewarm` | Number || 1 | `20` (Number) |
-| `skybox_frame` | Enum || 1 | `day_snow` (Enum) |
-| `alpha` | String ||| `.5` (String) |
-| `combo` | Array ||| `[SnowB SnowM SnowF]` (Array) |
-| `desc` | Enum ||| `"WEATHER_SNOW_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `emit_amount` | Number ||| `1` (Number) |
-| `emit_box` | Array ||| `[0 10 10 10 0 10]` (Array) |
-| `emit_direction` | Array ||| `[0 -1 0]` (Array) |
-| `emit_rate` | Number ||| `200` (Number) |
-| `emit_spread` | Number ||| `10` (Number) |
-| `hint_persistent_elements` | Array ||| `[Ice]` (Array) |
-| `live_bounds` | Array ||| `[-0.5 999 -999 999 -0.5 999]` (Array) |
-| `movieclip` | Array / Enum ||| `ParticleTestNoRandom` (Enum) |
-| `name` | Enum ||| `"WEATHER_SNOW_NAME"` (String) |
-| `particle_lifetime` | Number ||| `7` (Number) |
-| `particles` | Array ||| `[Snow]` (Array) |
-| `projection_matrix` | Enum ||| `default` (Enum) |
-| `render_mode` | Enum ||| `separate` (Enum) |
+| `adventure_weather` | Enum | Specifies the weather type for the adventure map (e.g., Snow, Rain, Windy, Thunderstorm). | 1 | `Snow` (Enum) |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather event. | 1 | `amb_snow.ogg` (String) |
+| `prewarm` | Number | The number of seconds to prewarm the particle system before displaying. | 1 | `20` (Number) |
+| `skybox_frame` | Enum | Specifies the skybox visual frame to use for this weather. | 1 | `day_snow` (Enum) |
+| `alpha` | String | The transparency or opacity level of the particle or visual effect. || `.5` (String) |
+| `combo` | Array | Defines a sequence of visual effect names to play in order for a particle or animation combo. || `[SnowB SnowM SnowF]` (Array) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_SNOW_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `emit_amount` | Number | The number of particles emitted per burst, or a range [min, max] of possible amounts. || `1` (Number) |
+| `emit_box` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] defining the area in which particles are spawned. || `[0 10 10 10 0 10]` (Array) |
+| `emit_direction` | Array | A vector [x, y, z] defining the initial direction of emitted particles. || `[0 -1 0]` (Array) |
+| `emit_rate` | Number | The number of particles emitted per second. || `200` (Number) |
+| `emit_spread` | Number | The angular spread in degrees over which particles are emitted. || `10` (Number) |
+| `hint_persistent_elements` | Array | An array of element types that persist as hints during this weather (e.g., [Ice Wind]). || `[Ice]` (Array) |
+| `live_bounds` | Array | A bounding box [xMin xMax yMin yMax zMin zMax] outside which particles are deactivated or destroyed. || `[-0.5 999 -999 999 -0.5 999]` (Array) |
+| `movieclip` | Array / Enum | Specifies the movieclip asset used for the room's visual representation, such as 'SmallUFO' or 'Worm'. || `ParticleTestNoRandom` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_SNOW_NAME"` (String) |
+| `particle_lifetime` | Number | The duration in seconds a particle lives, or a range [min, max] of possible lifetimes. || `7` (Number) |
+| `particles` | Array | An array of particle system names to be used for this weather effect. || `[Snow]` (Array) |
+| `projection_matrix` | Enum | Specifies the projection mode for the particle system, e.g., default or perspective-based. || `default` (Enum) |
+| `render_mode` | Enum | Determines how the particle system renders, e.g., default or separate render passes. || `separate` (Enum) |
 | `rotation` | Array ||| `[0 360]` (Array) |
 | `rotation_speed` | Array ||| `[-100 100]` (Array) |
 | `rotation_speed_end` | Number ||| `0` (Number) |
-| [`scripts`](Miscellaneous.md#object-scripts) | Object ||| `{ ... }` (Object) |
-| `simulation_space` | Enum ||| `global` (Enum) |
+| [`scripts`](Miscellaneous.md#object-scripts) | Object | Defines scripted behaviors on particles, such as bounce planes or wind effects. || `{ ... }` (Object) |
+| `simulation_space` | Enum | Determines if particle simulation is in local or global space. || `global` (Enum) |
 | `size_end` | Number ||| `0` (Number) |
-| `size_start` | Array ||| `[.3 .8]` (Array) |
-| `speed_start` | Array ||| `[2 4]` (Array) |
+| `size_start` | Array | The initial size of particles, or a range [min, max] of possible sizes. || `[.3 .8]` (Array) |
+| `speed_start` | Array | The initial speed of particles, or a range [min, max] of possible speeds. || `[2 4]` (Array) |
 
 ### Object: `SolarFlare`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Equation || 1 | `5` (Equation) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object || 1 | `{ ... }` (Object) |
-| `desc` | Enum ||| `"WEATHER_SOLARFLARE_DESC"` (String) |
-| `elements` | Array ||| `[Fire]` (Array) |
-| `name` | Enum ||| `"WEATHER_SOLARFLARE_NAME"` (String) |
+| `damage` | Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 1 | `5` (Equation) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. | 1 | `{ ... }` (Object) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_SOLARFLARE_DESC"` (String) |
+| `elements` | Array | A list of elemental types applied to the damage instance, such as Heat or Fire, used for weaknesses, resistances, and visual effects. || `[Fire]` (Array) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_SOLARFLARE_NAME"` (String) |
 
 ### Object: `SpawnTilePuddleOnBattleStart`
 
@@ -5771,13 +5771,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `max_radius` | Number || 1 | `3.5` (Number) |
 | `min_radius` | Number || 1 | `1.5` (Number) |
-| `tile` | Array / Enum || 1 | `OilTile` (Enum) |
+| `tile` | Array / Enum | Specifies the tile type(s) to change to (e.g., RoadTile, WaterTile). Can be a single tile or an array of tiles. | 1 | `OilTile` (Enum) |
 
 ### Object: `SpawnVolcanoOnBattleStart`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `object` | Array / Enum || 3 | `Sprout` (Enum), `MiniVolcano` (Enum) |
+| `object` | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 3 | `Sprout` (Enum), `MiniVolcano` (Enum) |
 | `max_radius` | Number || 2 | `2.2` (Number) |
 | `min_radius` | Number / String || 2 | `1` (Number), `.2` (String) |
 | `puddle_tile` | Array / Enum || 1 | `[BrambleTile TallBrambleTile]` (Array), `LavaTile` (Enum) |
@@ -5793,39 +5793,39 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"SpellShield"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"SpellShield"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `StatBounty`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_STATBOUNTY_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_STATBOUNTY_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_STATBOUNTY_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_STATBOUNTY_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_STATBOUNTY_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_STATBOUNTY_DESC"` (String) |
 
 ### Object: `StatusCharactersOnRoundEnd`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object || 1 | `{ ... }` (Object) |
+| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Defines a random roll with odds; if successful, the specified effects are applied. | 1 | `{ ... }` (Object) |
 | `FloatingRockTrap` | Integer || 1 | `1` (Number) |
-| `Thorns` | Integer || 1 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer | The number of Thorns stacks applied, which deals damage back to melee attackers. | 1 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 | `tag_filter` | Enum || 1 | `rock` (Enum) |
 
 ### Object: `StatusCharactersOnRoundStart`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object || 1 | `{ ... }` (Object) |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object || 1 | `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .25]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Defines a random roll with odds; if successful, the specified effects are applied. | 1 | `{ ... }` (Object) |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | An object containing effects that apply when the parent conditional condition is not met. | 1 | `{ ... }` (Object) |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. || `[1 .1]` (Array), `[1 .25]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
 
 ### Object: `SwapWeapon`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pool` | Array / Enum ||| `[TerminatorShotgun TerminatorSniper TerminatorUzi]` (Array) |
+| `pool` | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. || `[TerminatorShotgun TerminatorSniper TerminatorUzi]` (Array) |
 
 ### Object: `SwitchMusic`
 
@@ -5833,124 +5833,124 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `new_layer` | Enum || 14 | `battle` (Enum), `map` (Enum) |
 | `new_song` | Enum || 12 | `same` (Enum) |
-| `crossfade_speed` | Integer || 2 | `1` (Number) |
+| `crossfade_speed` | Integer | The speed of the crossfade transition when switching music. | 2 | `1` (Number) |
 
 ### Object: `Switcheroo`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"Switcheroo"` (Enum) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"Switcheroo"` (Enum) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `Taunting`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"Taunting"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"Taunting"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `TeamCastAbility`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 4 | `CollectiveSpinImpl` (Enum), `CollectiveCounterImpl` (Enum) |
-| `tag_restriction` | Enum || 4 | `collective` (Enum) |
-| `same_orientation` | Boolean || 2 | `true` (Boolean) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 4 | `CollectiveSpinImpl` (Enum), `CollectiveCounterImpl` (Enum) |
+| `tag_restriction` | Enum | Specifies a tag that restricts which units receive protection from this passive. | 4 | `collective` (Enum) |
+| `same_orientation` | Boolean | If true, the team-cast ability is executed with the same facing orientation as the caster. | 2 | `true` (Boolean) |
 
 ### Object: `TempBackstab`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_TEMPBACKSTAB_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_TEMPBACKSTAB_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_TEMPBACKSTAB_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TEMPBACKSTAB_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_TEMPBACKSTAB_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_TEMPBACKSTAB_DESC"` (String) |
 
 ### Object: `TempBonusKnockback`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_BONUSKNOCKBACK_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `None` (Enum) |
-| `tooltip_stacks` | String ||| `"KEYWORD_BONUSKNOCKBACK_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_BONUSKNOCKBACK_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `None` (Enum) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_BONUSKNOCKBACK_DESC"` (String) |
 
 ### Object: `TempBonusKnockbackDamage`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_BONUSKNOCKBACKDAMAGE_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `None` (Enum) |
-| `tooltip_stacks` | String ||| `"KEYWORD_BONUSKNOCKBACKDAMAGE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_BONUSKNOCKBACKDAMAGE_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `None` (Enum) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_BONUSKNOCKBACKDAMAGE_DESC"` (String) |
 
 ### Object: `TempCritChanceUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `CritChanceUp` (Enum) |
+| `alias` | Enum | Specifies an alias keyword for referencing this status effect in tooltips or logic. || `CritChanceUp` (Enum) |
 
 ### Object: `TempInjuryImmunity`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_TEMPIMMUNE_NAME"` (String) |
-| `tooltip_stackless` | Enum ||| `none` (Enum) |
-| `tooltip_stacks` | String ||| `"KEYWORD_TEMPIMMUNE_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TEMPIMMUNE_NAME"` (String) |
+| `tooltip_stackless` | Enum | The localized string key for the stackless version of the status effect's tooltip. || `none` (Enum) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_TEMPIMMUNE_DESC"` (String) |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_TEMPIMMUNE_DESC_SINGULAR"` (String) |
 
 ### Object: `TempManaCostReduction`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_TEMPMANAREDUCTION_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_TEMPMANAREDUCTION_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_TEMPMANAREDUCTION_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TEMPMANAREDUCTION_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_TEMPMANAREDUCTION_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_TEMPMANAREDUCTION_DESC"` (String) |
 
 ### Object: `TempPreEmptiveCounterAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_PRECOUNTER_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_PRECOUNTER_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_PRECOUNTER_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_PRECOUNTER_DESC"` (String) |
 
 ### Object: `TemporaryItem`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number ||| `164` (Number) |
-| `name` | Enum ||| `"KEYWORD_TEMPITEM_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_TEMPITEM_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the elite buff's icon. || `164` (Number) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_TEMPITEM_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_TEMPITEM_DESC"` (String) |
 
 ### Object: `TilesMovedToCritChance`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"TilesMovedToCritChance"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"TilesMovedToCritChance"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `TilesMovedToMana`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"TilesMovedToMana"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"TilesMovedToMana"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `TilesMovedToNeighborHeal`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"TilesMovedToNeighborHeal"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"TilesMovedToNeighborHeal"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `TilesMovedToStrength`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"TilesMovedToStrength"` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"TilesMovedToStrength"` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `TimeDelayStatusApplication`
 
@@ -5958,54 +5958,54 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `delay` | Number || 8 | `1.13333` (Number), `3` (Number), `.1` (String), `.25` (String) |
 | [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object || 4 | `{ ... }` (Object) |
-| [`Cleanse`](#object-cleanse) | Integer / Object || 2 | `1` (Number), `0` (Number), `{ ... }` (Object) |
-| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object || 2 | `{ ... }` (Object) |
+| [`Cleanse`](#object-cleanse) | Integer / Object | If set to 1, removes all status effects from the target; if 0, no cleanse. | 2 | `1` (Number), `0` (Number), `{ ... }` (Object) |
+| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | An object containing global modifier effects to apply after the time delay. | 2 | `{ ... }` (Object) |
 | [`DoScreenShake`](Abilities_and_Spells.md#object-doscreenshake) | Integer / Object || 2 | `1` (Number), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object || 2 | `passive` (Enum), `Boris` (Enum), `{ ... }` (Object) |
-| `FullHeal` | Integer || 2 | `1` (Number), `0` (Number) |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the target form name or an object with form parameters and optional side effects (e.g., faction change, healing). | 2 | `passive` (Enum), `Boris` (Enum), `{ ... }` (Object) |
+| `FullHeal` | Integer | If 1, fully heals the target's health and status effects. | 2 | `1` (Number), `0` (Number) |
 | `GlobalSpawnCharacter` | Enum || 2 | `MegaGuppy` (Enum) |
 | `PlayBackground` | Integer || 2 | `1` (Number), `0` (Number) |
-| `RemoveAmbientLightEffects` | Number || 2 | `4` (Number), `.5` (String) |
-| `Vaporize` | Integer || 2 | `1` (Number), `20` (Number) |
+| `RemoveAmbientLightEffects` | Number | The duration or amount of ambient light effect removal applied over time. | 2 | `4` (Number), `.5` (String) |
+| `Vaporize` | Integer | The number of stacks of the Vaporize status effect applied to the target, which destroys it if enough stacks are applied. | 2 | `1` (Number), `20` (Number) |
 
 ### Object: `TowerDefenseStatus`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_SENTRY_NAME"` (String) |
-| `tooltip` | Enum ||| `"KEYWORD_SENTRY_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SENTRY_NAME"` (String) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `"KEYWORD_SENTRY_DESC"` (String) |
 
 ### Object: `TowerDefenseStatus2`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum ||| `"KEYWORD_SENTRYPLUS_NAME"` (String) |
-| `tooltip_stackless` | String ||| `"KEYWORD_SENTRYPLUS_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String ||| `"KEYWORD_SENTRYPLUS_DESC"` (String) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"KEYWORD_SENTRYPLUS_NAME"` (String) |
+| `tooltip_stackless` | String | The localized string key for the stackless version of the status effect's tooltip. || `"KEYWORD_SENTRYPLUS_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String | The localized string key for the stackable version of the status effect's tooltip. || `"KEYWORD_SENTRYPLUS_DESC"` (String) |
 
 ### Object: `TradeLife`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`bonus_passives`](Abilities_and_Spells.md#object-bonus_passives) | Object ||| `{ ... }` (Object) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `spell` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `spell` (Enum) |
 
 ### Object: `TrailBlazer`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"Trail Blazer"` (String) |
-| `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum ||| `None` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Contains visual properties for an entity or effect, such as animation, particle, or name. || `{ ... }` (Object) |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for an ability such as name, description, class, and icon type. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"Trail Blazer"` (String) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `self_buff` (Enum) |
+| `tooltip` | Enum | Specifies the localization key for the tooltip displayed when hovering over the character or object. || `None` (Enum) |
 
 ### Object: `TransformEquipment`
 
@@ -6018,65 +6018,65 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Equation || 12 | `inherit` (Equation), `1` (Equation) |
-| `max_dist` | Integer || 12 | `3` (Number), `20` (Number) |
-| `min_dist` | Integer || 4 | `3` (Number), `2` (Number) |
-| `exclude_prefix` | Enum || 2 | `Twister` (Enum) |
+| `damage` | Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 12 | `inherit` (Equation), `1` (Equation) |
+| `max_dist` | Integer | The maximum distance (in tiles) the target can be flung. | 12 | `3` (Number), `20` (Number) |
+| `min_dist` | Integer | The minimum distance (in tiles) the target must be flung. | 4 | `3` (Number), `2` (Number) |
+| `exclude_prefix` | Enum | Specifies the prefix of abilities to exclude from displacement targeting. | 2 | `Twister` (Enum) |
 
 ### Object: `UseMoveAbilityWithAI`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum || 2 | `LEPortFar` (Enum) |
-| `move_weights` | Enum || 2 | `stay_far_move_far` (Enum) |
+| `ability` | Enum | Specifies which ability is granted or triggered (e.g., from a death rattle or autocast). | 2 | `LEPortFar` (Enum) |
+| `move_weights` | Enum | Specifies the movement behavior pattern used by the AI, such as 'semi_blind' or 'prefer_tall_grass_always_move'. | 2 | `stay_far_move_far` (Enum) |
 
 ### Object: `VisualCountDownThenApplyStatus`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object || 2 | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Determines which ability the target is forced to cast immediately, ignoring normal costs and cooldowns. | 2 | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
 
 ### Object: `VisualFlySwarm`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ambient_sound` | String ||| `amb_flyswarm.ogg` (String) |
-| `desc` | Enum ||| `"WEATHER_TORFLIES_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `name` | Enum ||| `"WEATHER_TORFLIES_NAME"` (String) |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather event. || `amb_flyswarm.ogg` (String) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_TORFLIES_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_TORFLIES_NAME"` (String) |
 
 ### Object: `WaggleClone`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Boolean (Flag) / Object || 2 | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
-| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Boolean (Flag) / Object || 2 | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
-| `stacks` | Enum / Integer || 2 | `5` (Number) |
-| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Boolean (Flag) / Object ||| `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
-| `template` | Enum ||| `lobbed_attack` (Enum) |
+| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Boolean (Flag) / Object | A clone of the Waggle enemy type with custom graphics settings. | 2 | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Boolean (Flag) / Object | A larger clone of cWaggle that occupies 2x2 tiles. | 2 | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| `stacks` | Enum / Integer | The number of stacks or formula for the status effect applied. | 2 | `5` (Number) |
+| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Boolean (Flag) / Object | An even larger clone of cWaggle2x2 that occupies 3x3 tiles. || `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource or action cost to use an ability, such as mana or a cantrip slot. || `{ ... }` (Object) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | A damage instance object that defines the damage, type, effects, and AI scoring for an ability. || `{ ... }` (Object) |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters for an ability, such as range, aoe, or target mode. || `{ ... }` (Object) |
+| `template` | Enum | Specifies the ability template or behavior type, such as throw_attack or self_buff. || `lobbed_attack` (Enum) |
 
 ### Object: `Windy`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `adventure_weather` | Enum || 1 | `Windy` (Enum) |
-| `ambient_sound` | String || 1 | `amb_windy.ogg` (String) |
-| `prewarm` | Number || 1 | `5` (Number) |
-| `skybox_frame` | Enum || 1 | `day_windy` (Enum) |
-| `desc` | Enum ||| `"WEATHER_WINDY_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
-| `hint_persistent_elements` | Array ||| `[Wind]` (Array) |
-| `name` | Enum ||| `"WEATHER_WINDY_NAME"` (String) |
-| `particles` | Array ||| `[WindFull]` (Array) |
+| `adventure_weather` | Enum | Specifies the weather type for the adventure map (e.g., Snow, Rain, Windy, Thunderstorm). | 1 | `Windy` (Enum) |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather event. | 1 | `amb_windy.ogg` (String) |
+| `prewarm` | Number | The number of seconds to prewarm the particle system before displaying. | 1 | `5` (Number) |
+| `skybox_frame` | Enum | Specifies the skybox visual frame to use for this weather. | 1 | `day_windy` (Enum) |
+| `desc` | Enum | Specifies the localization key or literal description text for the ability. || `"WEATHER_WINDY_DESC"` (String) |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Defines the effects (e.g., statuses, damage) applied by the revenge damage. || `{ ... }` (Object) |
+| `hint_persistent_elements` | Array | An array of element types that persist as hints during this weather (e.g., [Ice Wind]). || `[Wind]` (Array) |
+| `name` | Enum | Specifies the localization key or literal name for the ability. || `"WEATHER_WINDY_NAME"` (String) |
+| `particles` | Array | An array of particle system names to be used for this weather effect. || `[WindFull]` (Array) |
 
 ### Object: `XIsTargetHealth`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamage` | Enum / Integer || 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `BonusDamage` | Enum / Integer | The amount of bonus damage added to an attack; can be a static integer or a formula using variables like `X` or `bonus_melee_damage`. | 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 
 
 

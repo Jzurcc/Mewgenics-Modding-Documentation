@@ -49,7 +49,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object | Examples: `0, 15, 10` | 21 ||
 | `mandatory` | Boolean | Examples: `true` | 14 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 ||
-| [`weight`](./Enums.md) | Integer || 2 | 5 |
+| [`weight`](./Enums.md) | Integer | A multiplier or probability weight for selection, relative to other options. | 2 | 5 |
 
 </details>
 
@@ -181,8 +181,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `uncommon` | Number | Examples: `20, 8, 10` | 9 ||
 | `very_rare` | Number | Examples: `80, 40, 15` | 9 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 ||
-| [`common`](./Enums.md) | Integer || 9 | 7 |
-| [`rare`](./Enums.md) | Integer || 9 | 20 |
+| [`common`](./Enums.md) | Integer | Specifies the common reward table or specific reward given. | 9 | 7 |
+| [`rare`](./Enums.md) | Integer | Specifies the rare reward table or specific reward given. | 9 | 20 |
 
 </details>
 
@@ -267,7 +267,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `amount` | Array | Examples: `10` | 4 ||
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object | Examples: `5` | 4 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 ||
-| [`weight`](./Enums.md) | Integer || 2 | 5 |
+| [`weight`](./Enums.md) | Integer | A multiplier or probability weight for selection, relative to other options. | 2 | 5 |
 
 </details>
 

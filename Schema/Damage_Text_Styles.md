@@ -18,11 +18,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| [`color`](./Arrays.md#array-color) | Array |  | 26 |  |
-| [`right_icon`](./Enums.md#enum-right_icon) | String |  | 10 |  |
-| [`back_icon`](./Enums.md#enum-back_icon) | String |  | 8 |  |
-| [`outline_color`](./Enums.md#enum-outline_color) | Enum |  | 2 |  |
-| [`suffix`](./Strings.md#string-suffix) | String |  | 1 |  |
+| [`color`](./Arrays.md#array-color) | Array | An RGB color array or named color used for this visual effect. | 26 |  |
+| [`right_icon`](./Enums.md#enum-right_icon) | String | Specifies the icon displayed to the right of the damage text. | 10 |  |
+| [`back_icon`](./Enums.md#enum-back_icon) | String | Specifies the icon displayed behind the damage text. | 8 |  |
+| [`outline_color`](./Enums.md#enum-outline_color) | Enum | Specifies the outline color of the damage text. | 2 |  |
+| [`suffix`](./Strings.md#string-suffix) | String | A string appended to the end of the damage text. | 1 |  |
 
 </details>
 

@@ -18763,9 +18763,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Object || 2 ||
-| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Object || 2 ||
-| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Object || 1 ||
+| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Object | A clone of the Waggle enemy type with custom graphics settings. | 2 ||
+| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Object | A larger clone of cWaggle that occupies 2x2 tiles. | 2 ||
+| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Object | An even larger clone of cWaggle2x2 that occupies 3x3 tiles. | 1 ||
 | `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
 
 </details>

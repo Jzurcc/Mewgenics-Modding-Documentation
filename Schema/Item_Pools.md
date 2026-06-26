@@ -18,11 +18,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 664 |  |
-| [`rare`](./Enums.md) | Integer || 34 | 40 |
+| [`rare`](./Enums.md) | Integer | Specifies the rare reward table or specific reward given. | 34 | 40 |
 | `chapter_item_pool` | Enum |  | 19 | `cavesitems` (Enum), `alleyitems` (Enum) |
 | `uncommon` | Number | Examples: `35, 75, 60` | 12 |  |
 | `very_rare` | Variable | Examples: `.01, 2, 1` | 11 |  |
-| [`common`](./Enums.md) | Integer || 11 | 50 |
+| [`common`](./Enums.md) | Integer | Specifies the common reward table or specific reward given. | 11 | 50 |
 | `chapter_rare` | Number | Examples: `1` | 5 |  |
 | `chapter_common` | Number | Examples: `1` | 3 |  |
 | `chapter` | Enum | Examples: `1` | 3 |  |
