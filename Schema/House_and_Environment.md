@@ -19,17 +19,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2731 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object || 1 ||
-| `height` | Integer || 8 ||
 | [`id`](./Enums.md#enum-id) | Enum || 14 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum || 13 ||
+| [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array || 12 ||
+| `height` | Integer || 8 ||
 | [`reverb_empty`](#object-reverb_empty) | Object || 8 ||
 | [`reverb_full`](#object-reverb_full) | Object || 8 ||
 | `width` | Integer || 8 ||
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum || 13 ||
-| [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array || 12 ||
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum || 3 ||
 | `amount` | Float || 2 ||
 | [`preset`](./Enums.md#enum-preset) | Enum || 2 ||
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum || 3 ||
+| [`n`](./Arrays.md#array-n) | Array || 2 ||
+| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object || 1 ||
 | `volume_adjustment` | Float || 1 ||
 | [`BasementUpgrade`](Engine_LogicKeys.md#object-basementupgrade) | Object || 1 ||
 | [`BasementUpgrade2`](Engine_LogicKeys.md#object-basementupgrade2) | Object || 1 ||
@@ -46,7 +47,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LargeHouse_Floor2Small`](Engine_LogicKeys.md#object-largehouse_floor2small) | Object || 1 ||
 | [`MediumHouse`](Engine_LogicKeys.md#object-mediumhouse) | Object || 1 ||
 | [`MediumHouse_SmallRoom`](Engine_LogicKeys.md#object-mediumhouse_smallroom) | Object || 1 ||
-| [`n`](./Arrays.md#array-n) | Array || 2 ||
 | [`SmallAttic`](Engine_LogicKeys.md#object-smallattic) | Object || 1 ||
 | [`SmallHouse_Attic`](Engine_LogicKeys.md#object-smallhouse_attic) | Object || 1 ||
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array || 1 ||
@@ -71,10 +71,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 750 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1695 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 750 ||
 | [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | Game-state flag identifiers for tracking world progression and event states. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -135,8 +135,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Array / Enum || 46 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 46 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 ||
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
@@ -218,9 +218,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`number`](./Arrays.md#array-number) | Array / Integer || 31 ||
 | [`object`](./Arrays.md#array-object) | Array / Enum || 23 ||
 | [`tile`](./Enums.md#enum-tile) | Array / Enum || 7 ||
-| [`number`](./Arrays.md#array-number) | Array / Integer || 31 ||
 | [`trap`](./Enums.md#enum-trap) | Enum || 2 ||
 
 </details>
@@ -534,8 +534,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
 | `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 3 ||
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -657,8 +657,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Enums.md#enum-object) | Array / Enum || 3 ||
 | `max_radius` | Float || 2 ||
 | [`min_radius`](./Enums.md#enum-min_radius) | Float || 2 ||
-| [`number`](./Arrays.md#array-number) | Array / Integer || 1 ||
 | [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array || 2 ||
+| [`number`](./Arrays.md#array-number) | Array / Integer || 1 ||
 
 </details>
 
@@ -678,8 +678,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 3 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 

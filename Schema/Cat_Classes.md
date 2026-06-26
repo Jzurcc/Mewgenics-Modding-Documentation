@@ -19,16 +19,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Examples: `{ ... }` | 2609 ||
 | [`meta`](Abilities_and_Spells.md#object-meta) | Object | Examples: `{ ... }` | 2372 ||
-| [`stat_mods`](#object-stat_mods) | Object | Examples: `{ ... }` | 13 ||
-| [`ability_groups`](#object-ability_groups) | Object | Examples: `{ ... }` | 12 ||
 | [`ability_pool`](./Arrays.md#array-ability_pool) | Array | Examples: `[ HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate Sk..., [ Propell Hadou...` | 14 ||
 | [`attack_pool`](./Arrays.md#array-attack_pool) | Array | Examples: `[ BasicButcherMelee ], [ BasicDruidAbility ], [ BasicMonkMelee ]` | 14 ||
 | [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array | Examples: `[ int str lck ], [ con str lck ], [ cha int str ]` | 14 ||
 | [`passive_pool`](./Arrays.md#array-passive_pool) | Array | Examples: `[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutto..., [ SafeSwitching...` | 14 ||
+| [`stat_mods`](#object-stat_mods) | Object | Examples: `{ ... }` | 13 ||
+| [`ability_groups`](#object-ability_groups) | Object | Examples: `{ ... }` | 12 ||
 | [`starter_abilities`](./Arrays.md#array-starter_abilities) | Array | Examples: `[ SummonSquirrel SummonToad Encourage Protection SongOfSp..., [ Succ HogRush ...` | 12 ||
-| [`innate_passives`](#object-innate_passives) | Object | Examples: `{ ... }` | 4 ||
 | [`complicated_abilities`](./Arrays.md#array-complicated_abilities) | Array | Examples: `[ FalconPunch Exert Challenge Stoopzerk Grapple ThinkTooH..., [ DealWithTheDe...` | 6 ||
 | [`complicated_passives`](./Arrays.md#array-complicated_passives) | Array | Examples: `[ ElementalAttunement LatentEnergy MagicGuru One Two Four..., [ ShoulderCheck...` | 6 ||
+| [`innate_passives`](#object-innate_passives) | Object | Examples: `{ ... }` | 4 ||
 | [`innate_items`](#object-innate_items) | Object | Examples: `{ ... }` | 2 ||
 | [`move_pool`](./Arrays.md#array-move_pool) | Array | Examples: `[ DefaultMove ]` | 1 ||
 | [`tutorial_levelup_active_pool`](./Arrays.md#array-tutorial_levelup_active_pool) | Array | Examples: `[ Block LickHeal Dump ]` | 1 ||
@@ -53,9 +53,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array || 47 ||
 | `palette` | Enum / Integer || 34 ||
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum || 13 ||
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array || 47 ||
 | [`default_face`](./Enums.md#enum-default_face) | Enum || 1 ||
 | `hud_palette` | Number || 1 ||
 

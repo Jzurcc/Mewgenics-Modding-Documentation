@@ -18,35 +18,38 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 664 |  |
+| [`boss`](Combat_Rewards.md#object-boss) | Object || 131 ||
 | [`rare`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 34 |  |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 33 |  |
-| [`boss`](Combat_Rewards.md#object-boss) | Object || 131 ||
+| [`special`](./Arrays.md#array-special) | Array || 29 ||
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 27 ||
+| [`battle`](#object-battle) | Object || 25 ||
 | [`hard`](./Arrays.md#array-hard) | Array || 23 ||
-| [`folder`](./Enums.md#enum-folder) | Enum || 20 ||
-| [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum || 19 ||
-| [`include`](./Strings.md#string-include) | String | Examples: `"standard_nodes.gon"` | 19 ||
-| [`level`](./Enums.md#enum-level) | Enum || 21 ||
-| [`exit0`](#object-exit0) | Object || 15 ||
-| [`dimensionx`](#object-dimensionx) | Object || 3 ||
-| [`treasure`](#object-treasure) | Object || 1 ||
-| [`meatworld`](#object-meatworld) | Object || 3 ||
 | [`miniboss`](./Arrays.md#array-miniboss) | Array || 23 ||
 | [`normal`](./Arrays.md#array-normal) | Array || 23 ||
+| [`event`](./Map_Generation_and_Routing.md#context-event) | Enum || 22 ||
+| [`level`](./Enums.md#enum-level) | Enum || 21 ||
+| [`folder`](./Enums.md#enum-folder) | Enum || 20 ||
+| [`easy`](./Arrays.md#array-easy) | Array || 20 ||
+| [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum || 19 ||
+| [`include`](./Strings.md#string-include) | String | Examples: `"standard_nodes.gon"` | 19 ||
+| [`large`](./Arrays.md#array-large) | Array || 19 ||
+| [`medium`](./Arrays.md#array-medium) | Array || 19 ||
+| [`small`](./Arrays.md#array-small) | Array || 19 ||
+| [`exit0`](#object-exit0) | Object || 15 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 12 ||
+| [`quest_event`](#object-quest_event) | Object || 9 ||
+| [`time_machine`](#object-time_machine) | Object || 4 ||
+| [`dimensionx`](#object-dimensionx) | Object || 3 ||
+| [`meatworld`](#object-meatworld) | Object || 3 ||
 | [`boneyard`](#object-boneyard) | Object || 3 ||
 | [`bunker`](#object-bunker) | Object || 3 ||
 | [`core`](#object-core) | Object || 3 ||
 | [`moon`](#object-moon) | Object || 3 ||
-| [`large`](./Arrays.md#array-large) | Array || 19 ||
-| [`medium`](./Arrays.md#array-medium) | Array || 19 ||
-| [`small`](./Arrays.md#array-small) | Array || 19 ||
 | [`alley`](#object-alley) | Object || 3 ||
 | [`endoftime`](#object-endoftime) | Object || 3 ||
-| [`quest_event`](#object-quest_event) | Object || 9 ||
 | [`crater`](#object-crater) | Object || 3 ||
 | [`desert`](#object-desert) | Object || 3 ||
-| [`easy`](./Arrays.md#array-easy) | Array || 20 ||
 | [`future`](Events_and_Encounters.md#object-future) | Object || 3 ||
 | [`sewers`](#object-sewers) | Object || 3 ||
 | [`iceage`](#object-iceage) | Object || 3 ||
@@ -55,21 +58,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`theend`](#object-theend) | Object || 3 ||
 | [`caves`](#object-caves) | Object || 3 ||
 | [`junkyard`](#object-junkyard) | Object || 3 ||
-| [`special`](./Arrays.md#array-special) | Array || 29 ||
-| [`BothObelisksUnlocked`](Engine_LogicKeys.md#object-bothobelisksunlocked) | Object | Applies or references the 'BothObelisksUnlocked' effect/state. | 2 ||
 | [`jestercat`](./Enums.md#enum-jestercat) | Enum || 3 ||
-| [`time_machine`](#object-time_machine) | Object || 4 ||
-| [`CoreObeliskUnlocked`](Engine_LogicKeys.md#object-coreobeliskunlocked) | Object | Applies or references the 'CoreObeliskUnlocked' effect/state. | 1 ||
 | [`exit1`](#object-exit1) | Object || 3 ||
+| [`BothObelisksUnlocked`](Engine_LogicKeys.md#object-bothobelisksunlocked) | Object | Applies or references the 'BothObelisksUnlocked' effect/state. | 2 ||
 | [`MeatWorldUnlocked`](Engine_LogicKeys.md#object-meatworldunlocked) | Object | Applies or references the 'MeatWorldUnlocked' effect/state. | 2 ||
+| [`DimensionXUnlocked`](Engine_LogicKeys.md#object-dimensionxunlocked) | Object | Applies or references the 'DimensionXUnlocked' effect/state. | 2 ||
+| [`EndOfTimeUnlocked`](Engine_LogicKeys.md#object-endoftimeunlocked) | Object | Applies or references the 'EndOfTimeUnlocked' effect/state. | 2 ||
+| [`hard_initial`](#object-hard_initial) | Object || 2 ||
+| [`HardPathUnlocked`](Engine_LogicKeys.md#object-hardpathunlocked) | Object | Applies or references the 'HardPathUnlocked' effect/state. | 2 ||
+| [`VolcanoAntennaAttached`](Engine_LogicKeys.md#object-volcanoantennaattached) | Object | Applies or references the 'VolcanoAntennaAttached' effect/state. | 2 ||
+| [`treasure`](#object-treasure) | Object || 1 ||
+| [`CoreObeliskUnlocked`](Engine_LogicKeys.md#object-coreobeliskunlocked) | Object | Applies or references the 'CoreObeliskUnlocked' effect/state. | 1 ||
 | [`MoonObeliskUnlocked`](Engine_LogicKeys.md#object-moonobeliskunlocked) | Object | Applies or references the 'MoonObeliskUnlocked' effect/state. | 1 ||
 | [`queenhippo`](./Enums.md#enum-queenhippo) | Enum || 1 ||
 | [`butchercat`](./Enums.md#enum-butchercat) | Enum || 1 ||
-| [`DimensionXUnlocked`](Engine_LogicKeys.md#object-dimensionxunlocked) | Object | Applies or references the 'DimensionXUnlocked' effect/state. | 2 ||
-| [`EndOfTimeUnlocked`](Engine_LogicKeys.md#object-endoftimeunlocked) | Object | Applies or references the 'EndOfTimeUnlocked' effect/state. | 2 ||
 | [`fightercat`](./Enums.md#enum-fightercat) | Enum || 1 ||
-| [`hard_initial`](#object-hard_initial) | Object || 2 ||
-| [`HardPathUnlocked`](Engine_LogicKeys.md#object-hardpathunlocked) | Object | Applies or references the 'HardPathUnlocked' effect/state. | 2 ||
 | [`magecat`](./Enums.md#enum-magecat) | Enum || 1 ||
 | [`monkcat`](./Enums.md#enum-monkcat) | Enum || 1 ||
 | [`necrocat`](./Enums.md#enum-necrocat) | Enum || 1 ||
@@ -77,9 +80,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`start`](./Map_Generation_and_Routing.md#context-start) | Enum || 1 ||
 | [`thiefcat`](./Enums.md#enum-thiefcat) | Enum || 1 ||
 | [`tinkerercat`](./Enums.md#enum-tinkerercat) | Enum || 1 ||
-| [`VolcanoAntennaAttached`](Engine_LogicKeys.md#object-volcanoantennaattached) | Object | Applies or references the 'VolcanoAntennaAttached' effect/state. | 2 ||
 | [`bumblefoot`](./Enums.md#enum-bumblefoot) | Enum || 1 ||
-| [`event`](./Map_Generation_and_Routing.md#context-event) | Enum || 22 ||
 | [`flushmaster`](./Enums.md#enum-flushmaster) | Enum || 1 ||
 | [`gambit`](./Enums.md#enum-gambit) | Enum || 1 ||
 | [`radicalrat`](./Enums.md#enum-radicalrat) | Enum || 1 ||
@@ -148,7 +149,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`choose_one`](./Arrays.md#array-choose_one) | Array || 1 ||
 | [`nemesis`](./Arrays.md#array-nemesis) | Array || 1 ||
 | :--- | :--- | :--- | :--- | :--- |
-| [`battle`](#object-battle) | Object || 25 ||
 
 </details>
 

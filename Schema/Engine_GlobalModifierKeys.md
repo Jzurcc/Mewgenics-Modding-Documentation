@@ -83,6 +83,6 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Array ||| `[50 60 60]` (Array) |
 | `speed` | Array / Number || 6 | `4` (Number) |
+| `amount` | Array ||| `[50 60 60]` (Array) |
 

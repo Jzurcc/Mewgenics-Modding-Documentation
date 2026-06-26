@@ -17,20 +17,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | Enum | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 2423 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2985 |  |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Examples: `common, melted, animal` | 7 |  |
-| `cha` | Enum / Integer | Examples: `2, -1, 1` | 89 |  |
-| `spd` | Enum / Integer | Examples: `1, -1, -2` | 78 |  |
+| [`desc`](./Strings.md#string-desc) | Enum | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 2423 |  |
 | `shield` | Enum / Integer | Examples: `12, 5, 10` | 191 |  |
+| `cha` | Enum / Integer | Examples: `2, -1, 1` | 89 |  |
 | `con` | Enum / Integer | Examples: `-2, -3, 1` | 79 |  |
+| `spd` | Enum / Integer | Examples: `1, -1, -2` | 78 |  |
 | `int` | Enum / Integer | Examples: `2, -1, 1` | 66 |  |
 | `lck` | Enum / Integer | Examples: `2, -1, 1` | 53 |  |
 | `str` | Enum / Integer | Examples: `2, -1, 1` | 45 |  |
 | `dex` | Enum / Integer | Examples: `2, -1, -2` | 30 |  |
 | `divine_shield` | Integer | Examples: `1` | 20 |  |
-| [`attack`](./Enums.md#enum-attack) | Enum | Examples: `FetusSpit` | 7 |  |
 | `speed` | Array / Number | Examples: `-4` | 19 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Examples: `common, melted, animal` | 7 |  |
+| [`attack`](./Enums.md#enum-attack) | Enum | Examples: `FetusSpit` | 7 |  |
 
 </details>
 
@@ -51,100 +51,100 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2039 |  |
-| [`AbilityReaction`](./Enums.md) | Enum | | 23 | SkunkTail |
-| [`AbilityWhenTaggedCharacterMovesNear`](#object-abilitywhentaggedcharactermovesnear) | Object || 3 ||
-| [`AddBonusMeleeRange`](./Enums.md) | Integer || 5 | 1 |
-| [`AddBonusRange`](./Enums.md) | Integer || 15 | 1 |
-| [`AddCorpseHealth`](./Enums.md) | Integer || 14 | 2 |
-| [`AddDamageToElementDamage`](#object-adddamagetoelementdamage) | Object || 6 ||
-| [`AddElementsToBasicAttack`](./Enums.md) | Enum || 7 | Ice |
-| [`AddInitiative`](./Enums.md) | Integer || 7 | -20 |
-| [`AddKnockbackDamage`](./Enums.md) | Integer || 4 | 1 |
-| [`AddLevelUpRerolls`](./Enums.md) | Integer || 10 | 1 |
-| [`AddManaRegen`](./Enums.md) | Integer || 13 | 1 |
-| [`AddMovement`](./Enums.md) | Integer || 20 | 1 |
 | [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 133 ||
-| [`AddStatusToBasicMeleeAttack`](#object-addstatustobasicmeleeattack) | Object || 3 ||
-| [`AddTemporaryEffectsToBasicAttack`](#object-addtemporaryeffectstobasicattack) | Object || 4 ||
-| [`AllStatsUp`](./Enums.md) | Integer || 14 | 1 |
-| [`AlphaTurns`](./Enums.md) | Integer || 7 | 1 |
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Object || 1 ||
-| [`BackstabImmunity`](./Enums.md) | Integer || 9 | 1 |
-| [`BasicAttackCantMiss`](./Enums.md) | Integer || 1 | 1 |
-| [`BlacklistPickupType`](./Enums.md) | Enum || 1 | catnip |
-| [`Bleed`](./Enums.md) | Array / Integer || 7 | [3] |
-| [`BleedThorns`](./Enums.md) | Integer || 11 | 2 |
-| [`Blind`](./Enums.md) | Array / Integer || 1 | [.10] |
-| [`BoostWeaponDamage`](./Enums.md) | Integer || 4 | 1 |
 | [`Brace`](./Enums.md) | Integer || 94 | 1 |
-| [`Bruise`](./Enums.md) | Integer || 9 | 2 |
-| [`CanRemoveCursedItems`](./Enums.md) | Integer || 2 | 1 |
-| [`ChanceToBackflip`](#object-chancetobackflip) | Object || 4 ||
-| [`ClassManaCostReduction`](#object-classmanacostreduction) | Object || 5 ||
-| [`Confusion`](./Enums.md) | Array / Integer || 3 | [2] |
-| [`ConjureBonusAbility`](./Enums.md) | Enum || 1 | random |
-| [`CounterAttack`](#object-counterattack) | Object || 34 ||
-| [`CritChanceUp`](./Enums.md) | Integer || 16 | 5 |
-| [`DamageUp`](./Enums.md) | Integer || 21 | 2 |
-| [`DepressionAura`](./Enums.md) | Integer || 9 | 1 |
-| [`DisableAbilitiesWithTag`](./Enums.md) | Enum || 1 | consumable |
-| [`DodgeChance`](./Enums.md) | Integer || 14 | 2 |
-| [`DodgeChance_Status`](./Enums.md) | Integer || 6 | 10 |
-| [`ElementImmune`](./Enums.md) | Enum || 39 | Ice |
-| [`EquipTemporaryItem`](./Enums.md) | Enum || 4 | WaterBottle_Full |
-| [`ExtraBasicAttacks`](./Enums.md) | Integer || 11 | 2 |
-| [`FreePathfindElement`](./Enums.md) | Enum || 2 | Water |
-| [`HealthRegenUp`](./Enums.md) | Integer || 52 | 2 |
-| [`HouseFoodRequirementMultiplier`](./Enums.md) | Integer || 1 | 0 |
-| [`IgnoreTiles`](./Enums.md) | Integer || 6 | 1 |
-| [`KineticSpikes`](./Enums.md) | Integer || 15 | 1 |
-| [`KnockbackImmunity`](./Enums.md) | Integer || 5 | 1 |
-| [`MakeBasicAttackPull`](./Enums.md) | Integer || 1 | 1 |
-| [`ManaCostReduction`](./Enums.md) | Integer || 7 | 1 |
+| [`Trample`](./Enums.md) | Integer || 88 | 3 |
+| [`Thorns`](./Enums.md) | Integer || 65 | 2 |
 | [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object || 59 ||
-| [`MissChance`](./Enums.md) | Integer || 9 | 20 |
-| [`MoveAwayFromDamageSource`](./Enums.md) | Enum || 2 | BasicJump |
-| [`MoveWhenDamaged`](#object-movewhendamaged) | Object || 11 ||
-| [`MulticlassLevelUp`](./Enums.md) | Enum || 12 | Hunter |
-| [`PassiveWhenAffectedByElement`](#object-passivewhenaffectedbyelement) | Object || 4 ||
-| [`PassiveWhenAtFullMana`](#object-passivewhenatfullmana) | Object || 2 ||
-| [`PassiveWhileHasStatus`](#object-passivewhilehasstatus) | Object || 2 ||
-| [`Poison`](./Enums.md) | Integer || 6 | 1 |
-| [`PoisonThorns`](./Enums.md) | Integer || 9 | 2 |
-| [`PoopWhenHit`](./Enums.md) | Enum || 2 | Poop |
-| [`Quivered`](./Enums.md) | Array / Integer || 6 | [0.1] |
-| [`ReflectProjectiles`](./Enums.md) | Integer || 12 | 10 |
-| [`ReplaceBasicMove`](./Enums.md) | Enum || 11 | ToadJump_BasicMove |
-| [`RevengeDamage`](Abilities_and_Spells.md#object-revengedamage) | Object || 15 ||
-| [`ShowHiddenThings`](./Enums.md) | Integer || 1 | 1 |
-| [`Slow`](./Enums.md) | Array / Integer || 1 | [.1] |
-| [`SpawnEachTurn`](#object-spawneachturn) | Object || 15 ||
-| [`SpawnExtraThingsOnBattleStart`](#object-spawnextrathingsonbattlestart) | Object || 3 ||
-| [`SpawnOnBattleStartRandomEmptyTile`](#object-spawnonbattlestartrandomemptytile) | Object || 6 ||
-| [`SpawnOnDowned`](./Enums.md) | Enum || 1 | CharmedFly |
-| [`SpawnThingOnDamage`](#object-spawnthingondamage) | Object || 28 ||
-| [`StatusEachRoundEnd`](#object-statuseachroundend) | Object || 1 ||
-| [`StatusEachTurnBegin`](#object-statuseachturnbegin) | Object || 18 ||
+| [`HealthRegenUp`](./Enums.md) | Integer || 52 | 2 |
 | [`StatusEachTurnEnd`](#object-statuseachturnend) | Object || 49 ||
-| [`StatusEveryXSpellCasts`](#object-statuseveryxspellcasts) | Object || 4 ||
-| [`StatusIfUnusedMovePoints`](#object-statusifunusedmovepoints) | Object || 5 ||
-| [`StatusImmunity`](./Enums.md) | Array || 34 | [Freeze] |
-| [`StatusKilledCharacters`](#object-statuskilledcharacters) | Object || 2 ||
-| [`StatusOnAllyCatDeath`](#object-statusonallycatdeath) | Object || 4 ||
 | [`StatusOnBattleEnd`](Abilities_and_Spells.md#object-statusonbattleend) | Object || 45 ||
-| [`StatusOnCastSpell`](#object-statusoncastspell) | Object || 4 ||
-| [`StatusOnDie`](#object-statusondie) | Object || 8 ||
-| [`StatusOnEatFood`](#object-statusoneatfood) | Object || 3 ||
-| [`StatusOnEndMove`](#object-statusonendmove) | Object || 7 ||
+| [`ElementImmune`](./Enums.md) | Enum || 39 | Ice |
+| [`CounterAttack`](#object-counterattack) | Object || 34 ||
+| [`StatusImmunity`](./Enums.md) | Array || 34 | [Freeze] |
 | [`StatusOnKill`](#object-statusonkill) | Object || 29 ||
 | [`StatusOnTookDamage`](#object-statusontookdamage) | Object || 29 ||
-| [`StatusOnTookDamageFromAbility`](#object-statusontookdamagefromability) | Object || 6 ||
-| [`Thorns`](./Enums.md) | Integer || 65 | 2 |
-| [`Trample`](./Enums.md) | Integer || 88 | 3 |
-| [`Vegan`](./Enums.md) | Integer || 1 | 1 |
+| [`SpawnThingOnDamage`](#object-spawnthingondamage) | Object || 28 ||
+| [`AbilityReaction`](./Enums.md) | Enum | | 23 | SkunkTail |
+| [`DamageUp`](./Enums.md) | Integer || 21 | 2 |
+| [`AddMovement`](./Enums.md) | Integer || 20 | 1 |
+| [`StatusEachTurnBegin`](#object-statuseachturnbegin) | Object || 18 ||
+| [`CritChanceUp`](./Enums.md) | Integer || 16 | 5 |
+| [`AddBonusRange`](./Enums.md) | Integer || 15 | 1 |
+| [`KineticSpikes`](./Enums.md) | Integer || 15 | 1 |
+| [`RevengeDamage`](Abilities_and_Spells.md#object-revengedamage) | Object || 15 ||
+| [`SpawnEachTurn`](#object-spawneachturn) | Object || 15 ||
+| [`AddCorpseHealth`](./Enums.md) | Integer || 14 | 2 |
+| [`AllStatsUp`](./Enums.md) | Integer || 14 | 1 |
+| [`DodgeChance`](./Enums.md) | Integer || 14 | 2 |
 | [`WaterWalk`](./Enums.md) | Integer || 14 | 1 |
-| [`YOffset`](./Enums.md) | Number || 6 | .25 |
+| [`AddManaRegen`](./Enums.md) | Integer || 13 | 1 |
+| [`MulticlassLevelUp`](./Enums.md) | Enum || 12 | Hunter |
+| [`ReflectProjectiles`](./Enums.md) | Integer || 12 | 10 |
+| [`BleedThorns`](./Enums.md) | Integer || 11 | 2 |
+| [`ExtraBasicAttacks`](./Enums.md) | Integer || 11 | 2 |
+| [`MoveWhenDamaged`](#object-movewhendamaged) | Object || 11 ||
+| [`ReplaceBasicMove`](./Enums.md) | Enum || 11 | ToadJump_BasicMove |
+| [`AddLevelUpRerolls`](./Enums.md) | Integer || 10 | 1 |
+| [`BackstabImmunity`](./Enums.md) | Integer || 9 | 1 |
+| [`Bruise`](./Enums.md) | Integer || 9 | 2 |
+| [`DepressionAura`](./Enums.md) | Integer || 9 | 1 |
+| [`MissChance`](./Enums.md) | Integer || 9 | 20 |
+| [`PoisonThorns`](./Enums.md) | Integer || 9 | 2 |
+| [`StatusOnDie`](#object-statusondie) | Object || 8 ||
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
+| [`AddElementsToBasicAttack`](./Enums.md) | Enum || 7 | Ice |
+| [`AddInitiative`](./Enums.md) | Integer || 7 | -20 |
+| [`AlphaTurns`](./Enums.md) | Integer || 7 | 1 |
+| [`Bleed`](./Enums.md) | Array / Integer || 7 | [3] |
+| [`ManaCostReduction`](./Enums.md) | Integer || 7 | 1 |
+| [`StatusOnEndMove`](#object-statusonendmove) | Object || 7 ||
+| [`AddDamageToElementDamage`](#object-adddamagetoelementdamage) | Object || 6 ||
+| [`DodgeChance_Status`](./Enums.md) | Integer || 6 | 10 |
+| [`IgnoreTiles`](./Enums.md) | Integer || 6 | 1 |
+| [`Poison`](./Enums.md) | Integer || 6 | 1 |
+| [`Quivered`](./Enums.md) | Array / Integer || 6 | [0.1] |
+| [`SpawnOnBattleStartRandomEmptyTile`](#object-spawnonbattlestartrandomemptytile) | Object || 6 ||
+| [`StatusOnTookDamageFromAbility`](#object-statusontookdamagefromability) | Object || 6 ||
+| [`YOffset`](./Enums.md) | Number || 6 | .25 |
+| [`AddBonusMeleeRange`](./Enums.md) | Integer || 5 | 1 |
+| [`ClassManaCostReduction`](#object-classmanacostreduction) | Object || 5 ||
+| [`KnockbackImmunity`](./Enums.md) | Integer || 5 | 1 |
+| [`StatusIfUnusedMovePoints`](#object-statusifunusedmovepoints) | Object || 5 ||
+| [`AddKnockbackDamage`](./Enums.md) | Integer || 4 | 1 |
+| [`AddTemporaryEffectsToBasicAttack`](#object-addtemporaryeffectstobasicattack) | Object || 4 ||
+| [`BoostWeaponDamage`](./Enums.md) | Integer || 4 | 1 |
+| [`ChanceToBackflip`](#object-chancetobackflip) | Object || 4 ||
+| [`EquipTemporaryItem`](./Enums.md) | Enum || 4 | WaterBottle_Full |
+| [`PassiveWhenAffectedByElement`](#object-passivewhenaffectedbyelement) | Object || 4 ||
+| [`StatusEveryXSpellCasts`](#object-statuseveryxspellcasts) | Object || 4 ||
+| [`StatusOnAllyCatDeath`](#object-statusonallycatdeath) | Object || 4 ||
+| [`StatusOnCastSpell`](#object-statusoncastspell) | Object || 4 ||
+| [`AbilityWhenTaggedCharacterMovesNear`](#object-abilitywhentaggedcharactermovesnear) | Object || 3 ||
+| [`AddStatusToBasicMeleeAttack`](#object-addstatustobasicmeleeattack) | Object || 3 ||
+| [`Confusion`](./Enums.md) | Array / Integer || 3 | [2] |
+| [`SpawnExtraThingsOnBattleStart`](#object-spawnextrathingsonbattlestart) | Object || 3 ||
+| [`StatusOnEatFood`](#object-statusoneatfood) | Object || 3 ||
+| [`CanRemoveCursedItems`](./Enums.md) | Integer || 2 | 1 |
+| [`FreePathfindElement`](./Enums.md) | Enum || 2 | Water |
+| [`MoveAwayFromDamageSource`](./Enums.md) | Enum || 2 | BasicJump |
+| [`PassiveWhenAtFullMana`](#object-passivewhenatfullmana) | Object || 2 ||
+| [`PassiveWhileHasStatus`](#object-passivewhilehasstatus) | Object || 2 ||
+| [`PoopWhenHit`](./Enums.md) | Enum || 2 | Poop |
+| [`StatusKilledCharacters`](#object-statuskilledcharacters) | Object || 2 ||
+| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Object || 1 ||
+| [`BasicAttackCantMiss`](./Enums.md) | Integer || 1 | 1 |
+| [`BlacklistPickupType`](./Enums.md) | Enum || 1 | catnip |
+| [`Blind`](./Enums.md) | Array / Integer || 1 | [.10] |
+| [`ConjureBonusAbility`](./Enums.md) | Enum || 1 | random |
+| [`DisableAbilitiesWithTag`](./Enums.md) | Enum || 1 | consumable |
+| [`HouseFoodRequirementMultiplier`](./Enums.md) | Integer || 1 | 0 |
+| [`MakeBasicAttackPull`](./Enums.md) | Integer || 1 | 1 |
+| [`ShowHiddenThings`](./Enums.md) | Integer || 1 | 1 |
+| [`Slow`](./Enums.md) | Array / Integer || 1 | [.1] |
+| [`SpawnOnDowned`](./Enums.md) | Enum || 1 | CharmedFly |
+| [`StatusEachRoundEnd`](#object-statuseachroundend) | Object || 1 ||
+| [`Vegan`](./Enums.md) | Integer || 1 | 1 |
 
 </details>
 
@@ -165,30 +165,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 205 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 56 |
 | [`Bleed`](./Enums.md) | Array / Integer || 30 | [3] |
-| [`Bruise`](./Enums.md) | Integer || 12 | 2 |
+| [`Poison`](./Enums.md) | Integer || 29 | 1 |
+| [`Knockback`](./Enums.md) | Integer || 24 | 2 |
 | [`Burn`](./Enums.md) | Integer || 16 | 1 |
-| [`ChangeTile`](./Enums.md) | Enum || 10 | WaterTile |
-| [`Charmed`](./Enums.md) | Array || 3 | [.15] |
-| [`Confusion`](./Enums.md) | Array / Integer || 7 | [2] |
-| [`FaceAway`](./Enums.md) | Integer || 1 | 1 |
 | [`Fear`](./Enums.md) | Array || 13 | [.15] |
-| [`FlatLeech`](./Enums.md) | Integer || 1 | 1 |
+| [`Bruise`](./Enums.md) | Integer || 12 | 2 |
+| [`ChangeTile`](./Enums.md) | Enum || 10 | WaterTile |
+| [`Slow`](./Enums.md) | Array / Integer || 10 | [.1] |
+| [`Stun`](./Enums.md) | Array || 8 | [.05] |
+| [`Confusion`](./Enums.md) | Array / Integer || 7 | [2] |
 | [`Freeze`](./Enums.md) | Array || 4 | [0.15] |
+| [`Leeches`](./Enums.md) | Integer || 4 | 1 |
+| [`SoulLink`](./Enums.md) | Integer || 4 | 1 |
+| [`Charmed`](./Enums.md) | Array || 3 | [.15] |
+| [`VisualFXTile`](./Enums.md) | Enum || 2 | fx_windSpell |
+| [`FaceAway`](./Enums.md) | Integer || 1 | 1 |
+| [`FlatLeech`](./Enums.md) | Integer || 1 | 1 |
 | [`Immobile`](./Enums.md) | Array / Integer || 1 | [.05] |
 | [`Instakill`](./Enums.md) | Array || 1 | [25] |
-| [`Knockback`](./Enums.md) | Integer || 24 | 2 |
-| [`Leeches`](./Enums.md) | Integer || 4 | 1 |
 | [`Petrify`](./Enums.md) | Array || 1 | [.05] |
-| [`Poison`](./Enums.md) | Integer || 29 | 1 |
 | [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object || 1 ||
-| [`Slow`](./Enums.md) | Array / Integer || 10 | [.1] |
-| [`SoulLink`](./Enums.md) | Integer || 4 | 1 |
-| [`Stun`](./Enums.md) | Array || 8 | [.05] |
 | [`VaporizeInanimate`](./Enums.md) | Integer || 1 | 1 |
-| [`VisualFXTile`](./Enums.md) | Enum || 2 | fx_windSpell |
 | [`Webbed`](./Enums.md) | Array || 1 | [.1] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 56 |
 
 </details>
 
@@ -231,13 +231,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1695 ||
-| [`Blind`](./Enums.md) | Array / Integer || 24 | [.10] |
-| [`Charmed`](./Enums.md) | Array || 22 | [.15] |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 750 |
 | [`Confusion`](./Enums.md) | Array / Integer || 37 | [2] |
 | [`Fear`](./Enums.md) | Array || 31 | [.15] |
+| [`Blind`](./Enums.md) | Array / Integer || 24 | [.10] |
+| [`Charmed`](./Enums.md) | Array || 22 | [.15] |
 | [`Petrify`](./Enums.md) | Array || 15 | [.05] |
 | [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object || 14 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 750 |
 
 </details>
 
@@ -257,11 +257,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Examples: `0` | 8 ||
-| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 5 ||
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 31 ||
 | [`effects`](Abilities_and_Spells.md#object-effects) | Object || 29 ||
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 29 |
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Examples: `0` | 8 ||
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 5 ||
 
 </details>
 
@@ -281,15 +281,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 70 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 49 |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object || 47 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 43 ||
 | `knockback` | Enum / Integer | Examples: `2, 1` | 24 ||
 | [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Examples: `0` | 22 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 70 ||
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 10 ||
 | [`Freeze`](./Enums.md) | Array || 1 | [0.15] |
 | [`Immobile`](./Enums.md) | Array / Integer || 1 | [.05] |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object || 47 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 49 |
 
 </details>
 
@@ -333,10 +333,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 ||
 | [`Bleed`](./Enums.md) | Array / Integer || 2 | [3] |
-| [`Immobile`](./Enums.md) | Array / Integer || 1 | [.05] |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object || 1 ||
 | [`Knockback`](./Enums.md) | Integer || 2 | 2 |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`Immobile`](./Enums.md) | Array / Integer || 1 | [.05] |
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object || 1 ||
 
 </details>
 
@@ -357,8 +357,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 38 ||
-| [`ChangeTilesUnder`](./Enums.md) | Enum || 2 | GlassTile |
 | [`Charge`](./Enums.md) | Integer || 8 | 2 |
+| [`ChangeTilesUnder`](./Enums.md) | Enum || 2 | GlassTile |
 | [`LuckUp`](./Enums.md) | Integer || 1 | 1 |
 
 </details>
@@ -380,11 +380,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 24 ||
-| [`MissChance`](./Enums.md) | Integer || 1 | 20 |
-| [`MoveQuivered`](./Enums.md) | Array || 1 | [0.1] |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`Quivered`](./Enums.md) | Array / Integer || 2 | [0.1] |
 | [`SpeedUp`](./Enums.md) | Integer || 2 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`MissChance`](./Enums.md) | Integer || 1 | 20 |
+| [`MoveQuivered`](./Enums.md) | Array || 1 | [0.1] |
 
 </details>
 
@@ -405,18 +405,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 33 ||
-| [`Bleed`](./Enums.md) | Array / Integer || 8 | [3] |
-| [`Blind`](./Enums.md) | Array / Integer || 6 | [.10] |
-| [`Burn`](./Enums.md) | Integer || 5 | 1 |
-| [`Charge`](./Enums.md) | Integer || 8 | 2 |
-| [`DiminishingHealthRegen`](./Enums.md) | Integer || 6 | 1 |
+| [`Shield`](./Enums.md) | Integer || 12 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 12 |
+| [`Thorns`](./Enums.md) | Integer || 10 | 2 |
 | [`KineticSpikes`](./Enums.md) | Integer || 9 | 1 |
 | [`Poison`](./Enums.md) | Integer || 9 | 1 |
-| [`RandomStatUp`](./Enums.md) | Integer || 5 | 2 |
-| [`Shield`](./Enums.md) | Integer || 12 | 1 |
-| [`Thorns`](./Enums.md) | Integer || 10 | 2 |
+| [`Bleed`](./Enums.md) | Array / Integer || 8 | [3] |
+| [`Charge`](./Enums.md) | Integer || 8 | 2 |
 | [`Weakness`](./Enums.md) | Integer || 8 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 12 |
+| [`Blind`](./Enums.md) | Array / Integer || 6 | [.10] |
+| [`DiminishingHealthRegen`](./Enums.md) | Integer || 6 | 1 |
+| [`Burn`](./Enums.md) | Integer || 5 | 1 |
+| [`RandomStatUp`](./Enums.md) | Integer || 5 | 2 |
 
 </details>
 
@@ -436,8 +436,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | Examples: `50, 5, 25` | 20 ||
 | [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 22 ||
+| `chance` | Number | Examples: `50, 5, 25` | 20 ||
 | `good` | Boolean | Examples: `false` | 2 ||
 
 </details>
@@ -459,12 +459,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 55 ||
-| [`Charge`](./Enums.md) | Integer || 1 | 2 |
-| [`IntelligenceUp`](./Enums.md) | Integer || 2 | 1 |
-| [`RandomStatDown`](./Enums.md) | Integer || 1 | 1 |
-| [`RandomStatUp`](./Enums.md) | Integer || 3 | 2 |
 | [`Shield`](./Enums.md) | Integer || 5 | 1 |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`RandomStatUp`](./Enums.md) | Integer || 3 | 2 |
+| [`IntelligenceUp`](./Enums.md) | Integer || 2 | 1 |
+| [`Charge`](./Enums.md) | Integer || 1 | 2 |
+| [`RandomStatDown`](./Enums.md) | Integer || 1 | 1 |
 
 </details>
 
@@ -506,8 +506,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Number | Examples: `10` | 4 ||
-| [`AutoReanimate`](./Enums.md) | Integer || 2 | 50 |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`AutoReanimate`](./Enums.md) | Integer || 2 | 50 |
 
 </details>
 
@@ -759,8 +759,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 ||
-| [`Charge`](./Enums.md) | Integer || 1 | 2 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | 3 | |
+| [`Charge`](./Enums.md) | Integer || 1 | 2 |
 
 </details>
 
@@ -781,9 +781,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Number | Examples: `25` | 37 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | 37 | |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 28 ||
 | [`ChangeTilesUnder`](./Enums.md) | Enum || 1 | GlassTile |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | 37 | |
 
 </details>
 
@@ -909,8 +909,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `RandomPickup` | 23 ||
 | [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 1 2 ]` | 31 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `RandomPickup` | 23 ||
 
 </details>
 
@@ -930,9 +930,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 ||
 | [`UseAbility`](./Enums.md) | Enum || 1 | Spit |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 

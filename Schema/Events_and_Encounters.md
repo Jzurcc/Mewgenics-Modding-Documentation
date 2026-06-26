@@ -17,38 +17,38 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`common`](./Events_and_Encounters.md#object-common) | Enum | Event Node: Story branch or dialog option representing the 'Common' action. | 11 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 664 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 34 |  |
-| `cha` | Enum / Integer |  | 89 |  |
+| [`intro`](#object-intro) | Object | Event Node: The initial text block when a story event first loads. | 239 ||
+| [`main`](#object-main) | Object | Event Node: The central hub or recurring menu of a story event. | 227 ||
 | [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 218 ||
-| `normal` | Array || 23 | `[common boneyard_events.gon]` (Array), `[common core_events.gon]` (Array) |
-| `spd` | Enum / Integer || 78 ||
+| `cha` | Enum / Integer |  | 89 |  |
 | `con` | Enum / Integer || 79 ||
+| `spd` | Enum / Integer || 78 ||
 | `int` | Enum / Integer || 66 ||
 | `lck` | Enum / Integer || 53 ||
 | `str` | Enum / Integer || 45 ||
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 34 |  |
 | `dex` | Enum / Integer || 30 ||
-| [`intro`](#object-intro) | Object | Event Node: The initial text block when a story event first loads. | 239 ||
-| [`main`](#object-main) | Object | Event Node: The central hub or recurring menu of a story event. | 227 ||
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String || 25 ||
+| `normal` | Array || 23 | `[common boneyard_events.gon]` (Array), `[common core_events.gon]` (Array) |
+| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 13 ||
+| [`common`](./Events_and_Encounters.md#object-common) | Enum | Event Node: Story branch or dialog option representing the 'Common' action. | 11 |  |
+| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | String || 9 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 4 ||
 | `set_frame` | `Number` || 4 ||
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | String || 9 ||
 | [`label`](./Strings.md#string-label) | String || 3 ||
 | [`stat`](./Enums.md#enum-stat) | Mixed || 3 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 13 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 3 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 ||
-| `weight` | `Number` | Probability weight for this outcome. | 1 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the 'Good' action. | 3 ||
 | [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 3 ||
+| [`pick`](#object-pick) | Object | Examples: `{ ... }` | 2 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 ||
+| `weight` | `Number` | Probability weight for this outcome. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
 | [`open`](Characters_and_Bosses.md#object-open) | Object | Examples: `{ ... }` | 1 ||
-| [`pick`](#object-pick) | Object | Examples: `{ ... }` | 2 ||
 | [`smash`](#object-smash) | Object | Examples: `{ ... }` | 1 ||
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String || 25 ||
 | [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 ||
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 1 ||
 | [`destroy`](#object-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 ||
@@ -77,24 +77,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 70 ||
 | `set_frame` | `Number` || 53 ||
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | String || 6 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 9 ||
 | [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | `String` || 10 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 9 ||
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 9 ||
+| [`random_pool`](./Enums.md) | Array || 8 | [event_now] |
+| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | String || 6 ||
 | `next_event_bonus` | Number || 5 ||
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array || 4 ||
 | [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
+| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array || 2 ||
 | `ambush_next_basic_fights` | Number || 1 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array || 2 ||
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`party_damage`](./Enums.md) | Array / Integer || 1 | [15] |
-| [`random_pool`](./Enums.md) | Array || 8 | [event_now] |
 
 </details>
 
@@ -120,40 +120,41 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`self_status_next_fight`](#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 92 ||
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 66 ||
 | [`permanent_stats`](#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 39 ||
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 26 ||
-| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 25 ||
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
 | [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 ||
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 24 ||
+| [`random_pool`](./Enums.md) | Array || 35 | [event_now] |
+| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 28 ||
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 26 ||
 | `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 26 ||
+| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 25 ||
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 24 ||
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` || 23 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 ||
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Event Action: Adds a specific familiar to the party. | 15 ||
+| `gain_food` | `Number` || 21 ||
 | [`spawn_unit_next_fight`](#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 ||
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Event Action: Adds a specific familiar to the party. | 15 ||
 | `party_heal` | `Number` || 15 ||
+| `party_damage` | `Number` || 15 ||
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 ||
 | `heal` | `Number` || 13 ||
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` || 23 ||
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 ||
 | [`party_status_next_fight`](#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 ||
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 ||
 | `ally_ambush_next_fights` | `Number` || 10 ||
 | `full_heal` | `Number` || 10 ||
 | `ambush_next_basic_fights` | `Number` || 9 ||
 | [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 ||
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 ||
-| `party_damage` | `Number` || 15 ||
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
 | [`random_mutation_from_set`](#object-random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 8 ||
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
 | `next_event_bonus` | `Number` || 7 ||
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 28 ||
+| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
 | [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 ||
 | [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
-| `gain_food` | `Number` || 21 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`next_event_from_set`](#object-next_event_from_set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 ||
@@ -170,7 +171,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `self_heal` | `Number` || 1 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`random_pool`](./Enums.md) | Array || 35 | [event_now] |
 
 </details>
 
@@ -198,52 +198,52 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 65 ||
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 46 ||
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 45 ||
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 35 ||
-| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 38 ||
 | [`self_status_next_fight`](#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 ||
+| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 38 ||
+| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 35 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 30 ||
+| [`random_pool`](./Enums.md) | Array || 28 | [event_now] |
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 26 ||
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Event Action: Adds a specific familiar to the party. | 15 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 18 ||
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 ||
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 ||
 | [`spawn_unit_next_fight`](#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 18 ||
 | [`mutation`](#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 ||
 | [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 18 ||
+| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 17 ||
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Event Action: Adds a specific familiar to the party. | 15 ||
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 ||
 | `next_event_bonus` | `Number` || 14 ||
-| [`random_mutation_from_set`](#object-random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 11 ||
-| [`party_status_next_fight`](#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 ||
 | `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 13 ||
+| [`party_status_next_fight`](#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 ||
+| [`random_mutation_from_set`](#object-random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 11 ||
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 11 ||
 | [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 10 ||
 | `party_heal` | `Number` || 10 ||
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 11 ||
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` || 9 ||
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 8 ||
 | `party_damage` | `Number` || 10 ||
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` || 9 ||
+| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 8 ||
 | `party_random_mutation` | `Number` || 8 ||
 | `ambush_next_basic_fights` | `Number` || 7 ||
 | [`leave_party_temporarily`](#object-leave_party_temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 ||
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 17 ||
 | `hide_appearance_changes` | `Number` || 6 ||
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
+| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 6 ||
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
 | `ally_ambush_next_fights` | `Number` || 5 ||
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | `full_heal` | `Number` || 4 ||
 | [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
+| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
 | `gain_cat_familiar` | `Number` || 3 ||
 | [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 ||
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`make_old`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | `String` | Event Action: Chains immediately into a randomly selected subsequent story event. | 3 ||
 | `spawn_reflection_next_fight` | `Number` | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 ||
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 6 ||
 | [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | `party_heal_disorder` | `Number` || 2 ||
 | `party_heal_injury` | `Number` || 2 ||
@@ -251,6 +251,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_age` | `Number` || 2 ||
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
+| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`ambush`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | `clear_result_animation` | `Number` || 1 ||
 | [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -266,7 +267,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`random_pool`](./Enums.md) | Array || 28 | [event_now] |
 
 </details>
 
@@ -290,36 +290,42 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 ||
 | `set_frame` | `Number` || 285 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 184 ||
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | String || 6 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 14 ||
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 ||
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String || 111 ||
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 ||
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 19 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 14 ||
 | [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
 | [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 12 ||
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 10 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 9 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | String || 9 ||
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | String || 7 ||
 | [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | String || 8 ||
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | String || 7 ||
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | String || 6 ||
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | String || 6 ||
+| [`random_pool`](./Enums.md) | Array || 5 | [event_now] |
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | String || 4 ||
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 4 ||
-| `heal_disorder` | Number || 3 ||
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
 | [`mutation`](#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 ||
-| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 10 ||
+| [`random_pool_consider_luck`](./Enums.md) | Array || 4 | [Clover] |
+| `heal_disorder` | Number || 3 ||
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
 | `heal_injury` | `Number` || 3 ||
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
 | [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
+| [`transform_item`](./Enums.md) | Array || 3 | [JarOfRadiatedBlood] |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
 | [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
+| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
+| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
+| [`party_gain_disorder_from_pool`](./Enums.md) | Array || 2 | [Gigantism] |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
 | `ally_ambush_next_fights` | Number || 1 ||
 | `clone_self_to_party` | `Number` || 1 ||
 | `copy_items_to_party` | `Number` || 1 ||
@@ -328,8 +334,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 ||
 | `heal` | `Number` || 1 ||
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
 | `next_event_bonus` | Number || 1 ||
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 ||
@@ -339,10 +343,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `trigger_butterfly_effect` | `Number` || 1 ||
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`party_gain_disorder_from_pool`](./Enums.md) | Array || 2 | [Gigantism] |
-| [`random_pool`](./Enums.md) | Array || 5 | [event_now] |
-| [`random_pool_consider_luck`](./Enums.md) | Array || 4 | [Clover] |
-| [`transform_item`](./Enums.md) | Array || 3 | [JarOfRadiatedBlood] |
 
 </details>
 
@@ -362,12 +362,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 305 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 339 ||
+| [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 305 ||
 | `set_frame` | `Number` || 222 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 38 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 2 ||
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String || 10 ||
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 4 ||
@@ -377,6 +375,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 2 ||
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
 | `next_event_bonus` | Number || 2 ||
 | [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -409,10 +409,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`subject_clip`](./Enums.md#enum-subject_clip) | Enum || 214 ||
 | [`subject_frame`](./Enums.md#enum-subject_frame) | Enum || 214 ||
 | [`title`](./Strings.md#string-title) | String || 214 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum || 17 ||
 | `different_from_last_x_cats` | Number || 3 ||
 | `subject_frame_inner` | Number || 3 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`choose_cat_with_highest_stat`](./Math_Equations.md) | Equation || 1 ||
 | [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum || 1 ||
 | `choose_cat_with_min_health` | Number || 1 ||
@@ -448,11 +448,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `max_options` | `Number` || 3 ||
 | `shuffle_options` | `Boolean` || 3 ||
 | [`leave`](Engine_LogicKeys.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 3 ||
+| [`ignore`](#object-ignore) | Object || 2 ||
+| [`open`](Characters_and_Bosses.md#object-open) | Object || 2 ||
 | [`buy2`](#object-buy2) | Object || 1 ||
 | [`buy3`](#object-buy3) | Object || 1 ||
 | [`examine`](#object-examine) | Object || 1 ||
-| [`ignore`](#object-ignore) | Object || 2 ||
-| [`open`](Characters_and_Bosses.md#object-open) | Object || 2 ||
 | [`pick`](#object-pick) | Object || 1 ||
 
 </details>
@@ -473,7 +473,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 ||
 | [`ignore`](#object-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 ||
 | [`examine`](#object-examine) | Object | Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 ||
 | [`leave`](Engine_LogicKeys.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 29 ||
@@ -481,8 +480,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`eat`](#object-eat) | Object | Event Node: Story branch or dialog option representing the \'Eat\' action. | 23 ||
 | [`smash`](#object-smash) | Object | Event Node: Story branch or dialog option representing the \'Smash\' action. | 15 ||
 | [`destroy`](#object-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 13 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 ||
 | [`bash`](#object-bash) | Object | Event Node: Story branch or dialog option representing the \'Bash\' action. | 12 ||
 | [`sneak`](#object-sneak) | Object | Event Node: Story branch or dialog option representing the \'Sneak\' action. | 11 ||
+| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 ||
 | [`open`](Characters_and_Bosses.md#object-open) | Object | Event Node: Story branch or dialog option representing the \'Open\' action. | 8 ||
 | [`take`](#object-take) | Object | Event Node: Story branch or dialog option representing the \'Take\' action. | 8 ||
 | [`a`](#object-a) | Object | Event Node: Story branch or dialog option representing the \'A\' action. | 7 ||
@@ -501,7 +502,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`drink`](#object-drink) | Object | Event Node: Story branch or dialog option representing the \'Drink\' action. | 5 ||
 | [`kiss`](#object-kiss) | Object | Event Node: Story branch or dialog option representing the \'Kiss\' action. | 5 ||
 | [`run`](#object-run) | Object | Event Node: Story branch or dialog option representing the \'Run\' action. | 5 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 ||
 | [`bite`](#object-bite) | Object | Event Node: Story branch or dialog option representing the 'Bite' action. | 4 ||
 | [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 4 ||
 | [`go_around`](#object-go_around) | Object | Event Node: Story branch or dialog option representing the \'Go Around\' action. | 4 ||
@@ -738,46 +738,46 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 131 ||
-| [`AbilityOnBattleStart`](./Enums.md) | Enum || 1 | Flush |
-| [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum || 4 | Flush |
-| [`AddInitiative`](./Enums.md) | Integer || 1 | -99 |
-| [`AddStartingMana`](./Enums.md) | Integer || 3 | 5 |
-| [`AllStatsUp`](./Enums.md) | Integer || 7 | 1 |
-| [`AlphaTurns`](./Enums.md) | Integer || 1 | 1 |
+| [`Fear`](./Enums.md) | Integer || 29 | 2 |
+| [`Poison`](./Enums.md) | Integer || 28 | 4 |
 | [`Bleed`](./Enums.md) | Integer || 20 | 2 |
-| [`Blind`](./Enums.md) | Integer || 2 | 6 |
-| [`Bruise`](./Enums.md) | Integer || 2 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
+| [`AllStatsUp`](./Enums.md) | Integer || 7 | 1 |
+| [`SpeedUp`](./Enums.md) | Integer || 5 | -2 |
+| [`StrengthUp`](./Enums.md) | Integer || 5 | 2 |
+| [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum || 4 | Flush |
+| [`ConstitutionUp`](./Enums.md) | Integer || 4 | -1 |
+| [`AddStartingMana`](./Enums.md) | Integer || 3 | 5 |
 | [`Burn`](./Enums.md) | Integer || 3 | 5 |
-| [`ChangeTileUnderCharacterAtStart`](./Enums.md) | Enum || 1 | GlassTile |
 | [`CharismaUp`](./Enums.md) | Integer || 3 | -2 |
 | [`Confusion`](./Enums.md) | Integer || 3 | 2 |
-| [`ConstitutionUp`](./Enums.md) | Integer || 4 | -1 |
-| [`DexterityUp`](./Enums.md) | Integer || 2 | 2 |
-| [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
-| [`Fear`](./Enums.md) | Integer || 29 | 2 |
-| [`Fights`](./Enums.md) | Integer || 1 | 3 |
 | [`HealthRegenUp`](./Enums.md) | Integer || 3 | 2 |
+| [`Webbed`](./Enums.md) | Integer || 3 | 2 |
+| [`Blind`](./Enums.md) | Integer || 2 | 6 |
+| [`Bruise`](./Enums.md) | Integer || 2 | 1 |
+| [`DexterityUp`](./Enums.md) | Integer || 2 | 2 |
 | [`IntelligenceUp`](./Enums.md) | Integer || 2 | 3 |
+| [`NoHealthRegen`](./Enums.md) | Integer || 2 | 1 |
+| [`Sleep`](./Enums.md) | Integer || 2 | 2 |
+| [`Stun`](./Enums.md) | Integer || 2 | 1 |
+| [`AbilityOnBattleStart`](./Enums.md) | Enum || 1 | Flush |
+| [`AddInitiative`](./Enums.md) | Integer || 1 | -99 |
+| [`AlphaTurns`](./Enums.md) | Integer || 1 | 1 |
+| [`ChangeTileUnderCharacterAtStart`](./Enums.md) | Enum || 1 | GlassTile |
+| [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
+| [`Fights`](./Enums.md) | Integer || 1 | 3 |
 | [`LuckUp`](./Enums.md) | Integer || 1 | 1 |
 | [`Madness`](./Enums.md) | Integer || 1 | 1 |
 | [`MissChance`](./Enums.md) | Integer || 1 | 10 |
-| [`NoHealthRegen`](./Enums.md) | Integer || 2 | 1 |
 | [`NoManaRegen`](./Enums.md) | Integer || 1 | 1 |
 | [`PermanentConfusion`](./Enums.md) | Integer || 1 | 1 |
-| [`Poison`](./Enums.md) | Integer || 28 | 4 |
 | [`ProbeCharmed`](./Enums.md) | Integer || 1 | 1 |
 | [`RandomStatUp`](./Enums.md) | Integer || 1 | 1 |
 | [`Rot`](./Enums.md) | Integer || 1 | 2 |
-| [`Sleep`](./Enums.md) | Integer || 2 | 2 |
 | [`Slow`](./Enums.md) | Integer || 1 | 3 |
-| [`SpeedUp`](./Enums.md) | Integer || 5 | -2 |
 | [`SpiderInfested`](./Enums.md) | Integer || 1 | 1 |
-| [`StrengthUp`](./Enums.md) | Integer || 5 | 2 |
-| [`Stun`](./Enums.md) | Integer || 2 | 1 |
 | [`Tarred`](./Enums.md) | Integer || 1 | 1 |
 | [`TempStrengthUp`](./Enums.md) | Integer || 1 | 1 |
-| [`Webbed`](./Enums.md) | Integer || 3 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
 
 </details>
 
@@ -875,9 +875,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 ||
 | [`label`](./Strings.md#string-label) | Mixed || 44 ||
 | [`stat`](./Math_Equations.md) | Equation || 44 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 3 ||
@@ -901,8 +901,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 34 ||
 | [`object`](./Arrays.md#array-object) | Array / Enum || 40 ||
+| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 34 ||
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum || 31 ||
 | [`side`](./Enums.md#enum-side) | Enum || 3 ||
 
@@ -925,8 +925,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Array / Enum || 39 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`restrict`](./Arrays.md#array-restrict) | Array || 30 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 
 </details>
@@ -947,7 +947,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Array` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 2 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 38 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 20 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
@@ -955,14 +954,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_damage` | `Number` || 6 ||
 | `set_frame` | `Number` || 5 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
+| [`conditional_reward`](#object-conditional_reward) | Object || 4 ||
+| [`random_pool`](./Enums.md) | Array || 3 | [event_now] |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Array` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 2 ||
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 ||
 | `next_event_bonus` | `Number` || 1 ||
 | [`random_mutation`](#object-random_mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 1 ||
 | [`self_status_next_fight`](#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`conditional_reward`](#object-conditional_reward) | Object || 4 ||
-| [`random_pool`](./Enums.md) | Array || 3 | [event_now] |
 
 </details>
 
@@ -1068,14 +1068,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 ||
+| [`Fear`](./Enums.md) | Integer || 6 | 2 |
+| [`Poison`](./Enums.md) | Integer || 5 | 4 |
 | [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum || 3 | Flush |
+| [`NoHealthRegen`](./Enums.md) | Integer || 3 | 1 |
 | [`Bleed`](./Enums.md) | Integer || 1 | 2 |
 | [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
-| [`Fear`](./Enums.md) | Integer || 6 | 2 |
 | [`HealthRegenUp`](./Enums.md) | Integer || 1 | 2 |
 | [`Immobile`](./Enums.md) | Integer || 1 | 1 |
-| [`NoHealthRegen`](./Enums.md) | Integer || 3 | 1 |
-| [`Poison`](./Enums.md) | Integer || 5 | 4 |
 | [`Tangled`](./Enums.md) | Integer || 1 | 2 |
 | [`Tarred`](./Enums.md) | Integer || 1 | 1 |
 | [`Webbed`](./Enums.md) | Integer || 1 | 2 |
@@ -1123,9 +1123,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 ||
 | [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 20 ||
 | `set_frame` | `Number` || 3 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 ||
 
 </details>
 
@@ -1222,9 +1222,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 ||
 | [`label`](./Strings.md#string-label) | String || 16 ||
 | [`stat`](./Enums.md#enum-stat) | Mixed || 16 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 2 ||
@@ -1297,10 +1297,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`KillEnemyOfTypeAtBattleStart`](Engine_StatusAndPassiveKeys.md#object-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 ||
-| [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object || 5 ||
 | [`Fights`](./Enums.md) | Integer || 6 | 3 |
+| [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object || 5 ||
 | [`StatusRandomEnemiesOnBattleStart`](#object-statusrandomenemiesonbattlestart) | Object || 3 ||
+| [`KillEnemyOfTypeAtBattleStart`](Engine_StatusAndPassiveKeys.md#object-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 ||
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
@@ -1321,9 +1321,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 11 ||
 | [`stat`](./Math_Equations.md) | Equation || 11 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 4 ||
@@ -1564,9 +1564,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
 | [`label`](./Strings.md#string-label) | Mixed || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Mixed || 7 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 6 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
 
 </details>
 
@@ -1757,10 +1757,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 8 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`AllStatsUp`](./Enums.md) | Integer || 1 | 1 |
 | [`Fear`](./Enums.md) | Integer || 3 | 2 |
 | [`Stun`](./Enums.md) | Integer || 2 | 1 |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`AllStatsUp`](./Enums.md) | Integer || 1 | 1 |
 
 </details>
 
@@ -1951,11 +1951,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`weather_roll`](./Arrays.md#array-weather_roll) | Array || 1 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
 | [`play_animation`](./Enums.md) | Array / Enum || 4 | [0] |
 | [`random_pool`](./Enums.md) | Array || 3 | [event_now] |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
+| [`weather_roll`](./Arrays.md#array-weather_roll) | Array || 1 ||
 
 </details>
 
@@ -2139,8 +2139,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `count` | Array / Integer | Quantity. | 7 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`Bleed`](./Enums.md) | Integer || 1 | 2 |
 | [`Fear`](./Enums.md) | Integer || 3 | 2 |
+| [`Bleed`](./Enums.md) | Integer || 1 | 2 |
 
 </details>
 
@@ -2457,9 +2457,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Strings.md#string-label) | Mixed || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Mixed || 2 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
 
 </details>
 
@@ -2481,11 +2481,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
 
 </details>
 

@@ -22,7 +22,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unprompted`](Miscellaneous.md#object-unprompted) | Object | Examples: `{ ... }` | 8 ||
 | [`also`](Miscellaneous.md#object-also) | Object | Examples: `{ ... }` | 8 ||
 | [`unknown`](Miscellaneous.md#object-unknown) | Object | Examples: `{ ... }` | 8 ||
-| [`beanies_bombquest_2`](Miscellaneous.md#object-beanies_bombquest_2) | Object | Examples: `{ ... }` | 1 ||
 | [`hide_text`](Miscellaneous.md#object-hide_text) | Object | Examples: `{ ... }` | 4 ||
 | [`purchase_item`](Miscellaneous.md#object-purchase_item) | Object | Examples: `{ ... }` | 4 ||
 | [`unprompted_a`](Miscellaneous.md#object-unprompted_a) | Object | Examples: `{ ... }` | 4 ||
@@ -34,43 +33,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unprompted_g`](Miscellaneous.md#object-unprompted_g) | Object | Examples: `{ ... }` | 4 ||
 | [`unprompted_h`](Miscellaneous.md#object-unprompted_h) | Object | Examples: `{ ... }` | 4 ||
 | [`unprompted_i`](Miscellaneous.md#object-unprompted_i) | Object | Examples: `{ ... }` | 4 ||
-| [`beanies_bombquest_3`](Miscellaneous.md#object-beanies_bombquest_3) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_jarofblood`](Miscellaneous.md#object-beanies_bombquest_fail_jarofblood) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_jarofchaos`](Miscellaneous.md#object-beanies_bombquest_fail_jarofchaos) | Object | Examples: `{ ... }` | 1 ||
 | [`cant_afford`](Miscellaneous.md#object-cant_afford) | Object | Examples: `{ ... }` | 3 ||
 | [`forward_to_tips`](Miscellaneous.md#object-forward_to_tips) | Object | Examples: `{ ... }` | 3 ||
 | [`out_of_stock`](Miscellaneous.md#object-out_of_stock) | Object | Examples: `{ ... }` | 3 ||
-| [`beanies_bombquest_amnesia`](Miscellaneous.md#object-beanies_bombquest_amnesia) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_begin`](Miscellaneous.md#object-beanies_bombquest_begin) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_jarofradiation`](Miscellaneous.md#object-beanies_bombquest_fail_jarofradiation) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_nuke`](Miscellaneous.md#object-beanies_bombquest_fail_nuke) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_future_intro`](Miscellaneous.md#object-beanies_future_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_jurassic_intro`](Miscellaneous.md#object-beanies_jurassic_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_lab_intro`](Miscellaneous.md#object-beanies_lab_intro) | Object | Examples: `{ ... }` | 1 ||
 | [`beanies_quests_intro`](Miscellaneous.md#object-beanies_quests_intro) | Object | Examples: `{ ... }` | 2 ||
 | [`beanies_quests_repeat`](Miscellaneous.md#object-beanies_quests_repeat) | Object | Examples: `{ ... }` | 2 ||
-| [`beanies_theend_intro`](Miscellaneous.md#object-beanies_theend_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_boneyard_intro`](Miscellaneous.md#object-butch_boneyard_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_jester`](Miscellaneous.md#object-class_unlock_jester) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_caves_intro`](Miscellaneous.md#object-frank_caves_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_ending`](Miscellaneous.md#object-frank_ending) | Object | Examples: `{ ... }` | 1 ||
 | [`frank_max_intro`](Miscellaneous.md#object-frank_max_intro) | Object | Examples: `{ ... }` | 2 ||
 | [`frank_max_repeating`](Miscellaneous.md#object-frank_max_repeating) | Object | Examples: `{ ... }` | 2 ||
 | [`house_upgrade_4throom`](Miscellaneous.md#object-house_upgrade_4throom) | Object | Examples: `{ ... }` | 2 ||
 | [`house_upgrade_attic`](Miscellaneous.md#object-house_upgrade_attic) | Object | Examples: `{ ... }` | 2 ||
 | [`house_upgrade_largehouse`](Miscellaneous.md#object-house_upgrade_largehouse) | Object | Examples: `{ ... }` | 2 ||
 | [`house_upgrade_mediumhouse`](Miscellaneous.md#object-house_upgrade_mediumhouse) | Object | Examples: `{ ... }` | 2 ||
-| [`jack_desert_intro`](Miscellaneous.md#object-jack_desert_intro) | Object | Examples: `{ ... }` | 1 ||
 | [`jack_max_intro`](Miscellaneous.md#object-jack_max_intro) | Object | Examples: `{ ... }` | 2 ||
 | [`jack_max_repeating`](Miscellaneous.md#object-jack_max_repeating) | Object | Examples: `{ ... }` | 2 ||
 | [`jack_shopupgrade1`](Miscellaneous.md#object-jack_shopupgrade1) | Object | Examples: `{ ... }` | 2 ||
 | [`jack_shopupgrade2`](Miscellaneous.md#object-jack_shopupgrade2) | Object | Examples: `{ ... }` | 2 ||
 | [`jack_shopupgrade3`](Miscellaneous.md#object-jack_shopupgrade3) | Object | Examples: `{ ... }` | 2 ||
 | [`jack_shopupgrade4`](Miscellaneous.md#object-jack_shopupgrade4) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_boneyard_intro`](Miscellaneous.md#object-organ_boneyard_intro) | Object | Examples: `{ ... }` | 1 ||
 | [`organ_max_intro`](Miscellaneous.md#object-organ_max_intro) | Object | Examples: `{ ... }` | 2 ||
 | [`organ_max_repeating`](Miscellaneous.md#object-organ_max_repeating) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_throbbingdomain_intro`](Miscellaneous.md#object-organ_throbbingdomain_intro) | Object | Examples: `{ ... }` | 1 ||
 | [`organ_unlock`](Miscellaneous.md#object-organ_unlock) | Object | Examples: `{ ... }` | 2 ||
 | [`organ_upgrade1`](Miscellaneous.md#object-organ_upgrade1) | Object | Examples: `{ ... }` | 2 ||
 | [`organ_upgrade2`](Miscellaneous.md#object-organ_upgrade2) | Object | Examples: `{ ... }` | 2 ||
@@ -79,7 +60,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`organ_upgrade5`](Miscellaneous.md#object-organ_upgrade5) | Object | Examples: `{ ... }` | 2 ||
 | [`organ_upgrade6`](Miscellaneous.md#object-organ_upgrade6) | Object | Examples: `{ ... }` | 2 ||
 | [`steven_milliontrashed`](Miscellaneous.md#object-steven_milliontrashed) | Object | Examples: `{ ... }` | 2 ||
-| [`steven_postendgame`](Miscellaneous.md#object-steven_postendgame) | Object | Examples: `{ ... }` | 1 ||
 | [`tink_aggression`](Miscellaneous.md#object-tink_aggression) | Object | Examples: `{ ... }` | 2 ||
 | [`tink_basestats`](Miscellaneous.md#object-tink_basestats) | Object | Examples: `{ ... }` | 2 ||
 | [`tink_inbreeding`](Miscellaneous.md#object-tink_inbreeding) | Object | Examples: `{ ... }` | 2 ||
@@ -123,6 +103,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`upgrade_storage_repeating_impossible`](Miscellaneous.md#object-upgrade_storage_repeating_impossible) | Object | Examples: `{ ... }` | 2 ||
 | [`upgrade_storage_repeating_intro`](Miscellaneous.md#object-upgrade_storage_repeating_intro) | Object | Examples: `{ ... }` | 2 ||
 | [`upgrade_storage_repeating_normal`](Miscellaneous.md#object-upgrade_storage_repeating_normal) | Object | Examples: `{ ... }` | 2 ||
+| [`beanies_bombquest_2`](Miscellaneous.md#object-beanies_bombquest_2) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_bombquest_3`](Miscellaneous.md#object-beanies_bombquest_3) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_bombquest_fail_jarofblood`](Miscellaneous.md#object-beanies_bombquest_fail_jarofblood) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_bombquest_fail_jarofchaos`](Miscellaneous.md#object-beanies_bombquest_fail_jarofchaos) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_bombquest_amnesia`](Miscellaneous.md#object-beanies_bombquest_amnesia) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_bombquest_begin`](Miscellaneous.md#object-beanies_bombquest_begin) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_bombquest_fail_jarofradiation`](Miscellaneous.md#object-beanies_bombquest_fail_jarofradiation) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_bombquest_fail_nuke`](Miscellaneous.md#object-beanies_bombquest_fail_nuke) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_future_intro`](Miscellaneous.md#object-beanies_future_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_jurassic_intro`](Miscellaneous.md#object-beanies_jurassic_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_lab_intro`](Miscellaneous.md#object-beanies_lab_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`beanies_theend_intro`](Miscellaneous.md#object-beanies_theend_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`butch_boneyard_intro`](Miscellaneous.md#object-butch_boneyard_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`class_unlock_jester`](Miscellaneous.md#object-class_unlock_jester) | Object | Examples: `{ ... }` | 1 ||
+| [`frank_caves_intro`](Miscellaneous.md#object-frank_caves_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`frank_ending`](Miscellaneous.md#object-frank_ending) | Object | Examples: `{ ... }` | 1 ||
+| [`jack_desert_intro`](Miscellaneous.md#object-jack_desert_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`organ_boneyard_intro`](Miscellaneous.md#object-organ_boneyard_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`organ_throbbingdomain_intro`](Miscellaneous.md#object-organ_throbbingdomain_intro) | Object | Examples: `{ ... }` | 1 ||
+| [`steven_postendgame`](Miscellaneous.md#object-steven_postendgame) | Object | Examples: `{ ... }` | 1 ||
 | [`beanies_begin_accepting_cats`](Miscellaneous.md#object-beanies_begin_accepting_cats) | Object | Examples: `{ ... }` | 1 ||
 | [`beanies_hitler3`](Miscellaneous.md#object-beanies_hitler3) | Object | Examples: `{ ... }` | 1 ||
 | [`beanies_hitler3_defeat`](Miscellaneous.md#object-beanies_hitler3_defeat) | Object | Examples: `{ ... }` | 1 ||
@@ -595,10 +595,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ unprompted_a unprompted_b unprompted_c unprompted_d unp..., [ unprompted1 u...` | 5 ||
 | `cancelable` | Boolean | Examples: `true` | 3 ||
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_JACK_UNPROMPTED_1, NPC_ORGANGRINDER_UNPROMPTED_1, NPC_TRACY_UNPROMPTED_2` | 3 ||
 | `wait_for_cancel` | Number | Examples: `1` | 3 ||
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ unprompted_a unprompted_b unprompted_c unprompted_d unp..., [ unprompted1 u...` | 5 ||
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_UNPROMPTED_1, NPC_TRACY_UNPROMPTED_1` | 2 ||
 
 </details>

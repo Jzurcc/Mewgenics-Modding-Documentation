@@ -17,13 +17,16 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
+| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | `release` | 199 ||
 | [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 114 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 ||
+| [`Druid`](#object-druid) | Object | Applies or references the 'Druid' effect/state. | 80 ||
+| [`Fighter`](#object-fighter) | Object | Applies or references the 'Fighter' effect/state. | 80 ||
+| [`Monk`](#object-monk) | Object | Applies or references the 'Monk' effect/state. | 66 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
 | [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object | Transforms the terrain tile under the target. | 62 ||
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 50 ||
 | [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 47 ||
+| `rock` | Variable || 46 ||
 | [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 42 ||
 | [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 38 ||
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies or references the 'VisualFXTile' effect/state. | 36 ||
@@ -33,12 +36,12 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 27 ||
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | Applies or references the 'ConstitutionUp' effect/state. | 26 ||
 | [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Upgrades or transforms an existing ability into a new one from the specified pool. | 26 ||
+| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | Character Form: Behavior and stats for the \'Normal\' state. | 24 ||
 | [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 23 ||
 | `IntelligenceUp` | Enum / Integer | Applies or references the 'IntelligenceUp' effect/state. | 21 ||
 | [`Sleep`](./Arrays.md#array-sleep) | Array / Integer | Applies or references the 'Sleep' effect/state. | 21 ||
 | [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 17 ||
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 ||
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | Applies or references the 'Leeches' effect/state. | 2 ||
 | [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | Causes the attack to hit adjacent enemies alongside the primary target. | 15 ||
 | `force_contact` | Boolean | If true, enforces physical overlap. | 15 ||
 | [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 14 ||
@@ -46,21 +49,19 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 ||
 | `instant` | Boolean | Examples: `true` | 12 ||
 | [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | If true, treats the consumption as riding/mounting instead of eating. | 12 ||
-| `rock` | Variable || 46 ||
 | `do_not_pop_corpse` | Boolean | Examples: `true` | 11 ||
 | [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Examples: `false, true, deferred` | 11 ||
 | [`Conditional_FormulaIsPositive`](Abilities_and_Spells.md#object-conditional_formulaispositive) | Object | Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0. | 10 ||
 | `DexterityUp` | Enum / Integer | Applies or references the 'DexterityUp' effect/state. | 10 ||
-| [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array / Integer | Applies or references the 'MagicWeakness' effect/state. | 2 ||
 | `X` | Variable || 10 ||
-| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 2 ||
+| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 10 ||
 | `OverrideChainKnockback` | Integer | Applies or references the 'OverrideChainKnockback' effect/state. | 9 ||
 | [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 8 ||
 | [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 ||
 | [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object | Provides a chance to transmit a disease status to adjacent targets. | 8 ||
 | [`Tarred`](./Arrays.md#array-tarred) | Array / Integer | Applies or references the 'Tarred' effect/state. | 8 ||
-| `Tech` | Integer | Applies or references the 'Tech' effect/state. | 2 ||
 | `wet` | Boolean | Examples: `false, true` | 8 ||
+| [`BlackShard`](#object-blackshard) | Object || 8 ||
 | [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 7 ||
 | [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 7 ||
 | `Drowsy` | Integer | Applies or references the 'Drowsy' effect/state. | 7 ||
@@ -68,7 +69,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 7 ||
 | `TempDamageUp` | Integer | Applies or references the 'TempDamageUp' effect/state. | 7 ||
 | `TempRangeUp` | Integer | Applies or references the 'TempRangeUp' effect/state. | 7 ||
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 2 ||
 | [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 6 ||
 | [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 ||
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 6 ||
@@ -82,21 +82,18 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 5 ||
 | `LavaTile` | Variable || 5 ||
 | `MovementUp` | Integer | Applies or references the 'MovementUp' effect/state. | 5 ||
-| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object | Applies or references the 'Purge' effect/state. | 2 ||
 | `SafeDie` | Integer | Applies or references the 'SafeDie' effect/state. | 5 ||
-| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object | Applies or references the 'SoulLink' effect/state. | 2 ||
-| [`Stealth`](./Arrays.md#array-stealth) | Array / Integer | Applies or references the 'Stealth' effect/state. | 2 ||
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array / Integer | Applies or references the 'BurgleCoin' effect/state. | 4 ||
 | [`Conditional_Familiar`](Abilities_and_Spells.md#object-conditional_familiar) | Object | Conditional trigger: Executes nested logic if the target is a familiar. | 4 ||
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | `release` | 199 ||
 | `FreeSpell` | Integer | Applies or references the 'FreeSpell' effect/state. | 4 ||
 | `moonhand` | Variable || 4 ||
-| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 1 ||
 | [`Reanimate`](Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object | Applies or references the 'Reanimate' effect/state. | 4 ||
 | `RepairAll` | Integer | Applies or references the 'RepairAll' effect/state. | 4 ||
 | [`Thrash`](#object-thrash) | Object || 4 ||
+| [`ZombieCatFamiliar`](#object-zombiecatfamiliar) | Object || 4 ||
+| [`BirthSquirrel`](#object-birthsquirrel) | Object || 4 ||
+| `WaterTile_Current` | Variable || 4 ||
 | `Attraction` | Integer | Applies or references the 'Attraction' effect/state. | 3 ||
-| [`BlackShard`](#object-blackshard) | Object || 8 ||
 | [`Conditional_AffectedByElement`](Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object | Conditional trigger: Executes nested logic if the target is currently afflicted by the specified element. | 3 ||
 | [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 3 ||
 | [`Conditional_LastHit`](Abilities_and_Spells.md#object-conditional_lasthit) | Object | Conditional trigger: Executes nested logic if this attack is the final hit of a multi-hit sequence. | 3 ||
@@ -105,12 +102,20 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 ||
 | `ExtraBasicAttacks_Status` | Integer | Applies or references the 'ExtraBasicAttacks_Status' effect/state. | 3 ||
 | `Hex` | Integer | Applies or references the 'Hex' effect/state. | 3 ||
-| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Applies or references the 'PoisonLace' effect/state. | 2 ||
-| [`poop`](Events_and_Encounters.md#object-poop) | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 2 ||
 | `PullSourceToTarget` | Integer | Applies or references the 'PullSourceToTarget' effect/state. | 3 ||
 | [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object | Queues the character to be resurrected at the start of the next combat round. | 3 ||
 | `WaterTile` | Variable || 3 ||
-| [`ZombieCatFamiliar`](#object-zombiecatfamiliar) | Object || 4 ||
+| [`HeadTumor`](#object-headtumor) | Object || 3 ||
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | Applies or references the 'Leeches' effect/state. | 2 ||
+| [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array / Integer | Applies or references the 'MagicWeakness' effect/state. | 2 ||
+| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 2 ||
+| `Tech` | Integer | Applies or references the 'Tech' effect/state. | 2 ||
+| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 2 ||
+| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object | Applies or references the 'Purge' effect/state. | 2 ||
+| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object | Applies or references the 'SoulLink' effect/state. | 2 ||
+| [`Stealth`](./Arrays.md#array-stealth) | Array / Integer | Applies or references the 'Stealth' effect/state. | 2 ||
+| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Applies or references the 'PoisonLace' effect/state. | 2 ||
+| [`poop`](Events_and_Encounters.md#object-poop) | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 2 ||
 | [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 ||
 | `AutoReanimate` | Number | Examples: `50` | 2 ||
 | [`Conditional_BossOrBig`](Abilities_and_Spells.md#object-conditional_bossorbig) | Object | Conditional trigger: Executes nested logic if the target is a Boss or has a large size classification. | 2 ||
@@ -126,8 +131,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`HornCharge`](#object-horncharge) | Object || 2 ||
 | `humanoid` | Variable || 2 ||
 | `ManaLeeches` | Integer | Applies or references the 'ManaLeeches' effect/state. | 2 ||
-| [`megadino`](#object-megadino) | Variable || 1 ||
-| [`moonhead`](#object-moonhead) | Variable || 1 ||
 | [`OffMap`](Characters_and_Bosses.md#object-offmap) | Object | Character Form: Behavior and stats for the 'OffMap' state. | 2 ||
 | `OilTile` | Variable || 2 ||
 | `Ostracized` | Integer | Applies or references the 'Ostracized' effect/state. | 2 ||
@@ -146,22 +149,38 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `the_coven` | Variable || 2 ||
 | `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 ||
 | [`ThrowPoop`](#object-throwpoop) | Object || 2 ||
+| [`AntlerSwipe`](#object-antlerswipe) | Object || 2 ||
+| [`BerserkDash`](#object-berserkdash) | Object || 2 ||
+| `BlankTile` | Number | Examples: `5` | 2 ||
+| [`Boulder`](#object-boulder) | Object || 2 ||
+| [`CharmTrap`](#object-charmtrap) | Object || 2 ||
+| `flip` | Variable || 2 ||
+| [`HardenSkin`](#object-hardenskin) | Object || 2 ||
+| [`MonkeyThrow`](#object-monkeythrow) | Object || 2 ||
+| [`MoonHandDrop`](#object-moonhanddrop) | Object || 2 ||
+| [`Pounce`](#object-pounce) | Object || 2 ||
+| [`Prance`](#object-prance) | Object || 2 ||
+| [`Scavenge`](#object-scavenge) | Object || 2 ||
+| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 ||
+| [`Synthesize`](#object-synthesize) | Object || 2 ||
+| [`TaintedOffering`](#object-taintedoffering) | Object || 2 ||
+| [`Tease`](#object-tease) | Object || 2 ||
+| [`TheDestroyer`](#object-thedestroyer) | Object || 2 ||
+| [`TigerSwipes`](#object-tigerswipes) | Object || 2 ||
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 ||
+| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 1 ||
+| [`megadino`](#object-megadino) | Variable || 1 ||
+| [`moonhead`](#object-moonhead) | Variable || 1 ||
 | `alien` | Variable || 1 ||
 | [`AllyInfested`](#object-allyinfested) | Object | Examples: `{ ... }` | 1 ||
 | `angeljunk` | Variable || 1 ||
-| [`AntlerSwipe`](#object-antlerswipe) | Object || 2 ||
 | [`AntlerSwipe2`](#object-antlerswipe2) | Object || 1 ||
 | [`BasicDashAttackMove_NoKnockback`](#object-basicdashattackmove_noknockback) | Object || 1 ||
-| [`BerserkDash`](#object-berserkdash) | Object || 2 ||
 | `berserkIdle` | Variable || 1 ||
-| [`BirthSquirrel`](#object-birthsquirrel) | Object || 4 ||
-| `BlankTile` | Number | Examples: `5` | 2 ||
 | `bonusbird` | Variable || 1 ||
 | [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | `MegaGuppy_TransformBoris` | 1 ||
-| [`Boulder`](#object-boulder) | Object || 2 ||
 | `BrambleTile` | Variable || 1 ||
 | `chapter_corpse_medium` | Variable || 1 ||
-| [`CharmTrap`](#object-charmtrap) | Object || 2 ||
 | [`Chitter`](#object-chitter) | Object || 1 ||
 | [`cm_RaptorEggSpawn`](#object-cm_raptoreggspawn) | Object || 1 ||
 | [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | Conditional constraint. Nested properties only trigger if this is true. | 1 ||
@@ -183,14 +202,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `deferred` | Boolean | `true` | 1 ||
 | `DirtTile` | Variable || 1 ||
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 ||
-| [`Druid`](#object-druid) | Object | Applies or references the 'Druid' effect/state. | 80 ||
 | [`DualSword`](Characters_and_Bosses.md#object-dualsword) | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 ||
 | [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object | Defines the abilities and behaviors available when possessing another entity. | 1 ||
 | `EggSackTrap` | Variable || 1 ||
 | [`EtherSoakedRag`](#object-ethersoakedrag) | Object || 1 ||
 | [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | `MegaGuppy_TransformExplosive` | 1 ||
-| [`Fighter`](#object-fighter) | Object | Applies or references the 'Fighter' effect/state. | 80 ||
-| `flip` | Variable || 2 ||
 | `GenericBuff` | Integer | Applies or references the 'GenericBuff' effect/state. | 1 ||
 | `ghost` | Variable || 1 ||
 | `GlassTile` | Variable || 1 ||
@@ -198,10 +214,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Grown`](Characters_and_Bosses.md#object-grown) | Object | Character Form: Behavior and stats for the \'Grown\' state. | 1 ||
 | `grown_hitler_clone` | Variable || 1 ||
 | [`HalfDead`](Characters_and_Bosses.md#object-halfdead) | Object | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 ||
-| [`HardenSkin`](#object-hardenskin) | Object || 2 ||
 | [`HardenSkin2`](#object-hardenskin2) | Object || 1 ||
 | [`head_CrownOfHorns`](#object-head_crownofhorns) | Object || 1 ||
-| [`HeadTumor`](#object-headtumor) | Object || 3 ||
 | `hitler_clone` | Variable || 1 ||
 | `hitler_clone_fetus` | Variable || 1 ||
 | [`Infested`](Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object | data/elite_buffs.gon | 1 ||
@@ -211,23 +225,15 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`MegaGuppy`](#object-megaguppy) | Object || 1 ||
 | [`MockSong`](#object-mocksong) | Object || 1 ||
 | [`MockSong2`](#object-mocksong2) | Object || 1 ||
-| [`Monk`](#object-monk) | Object | Applies or references the 'Monk' effect/state. | 66 ||
-| [`MonkeyThrow`](#object-monkeythrow) | Object || 2 ||
 | [`MonkeyThrow2`](#object-monkeythrow2) | Object || 1 ||
-| [`MoonHandDrop`](#object-moonhanddrop) | Object || 2 ||
 | [`MoonHeadFlail`](#object-moonheadflail) | Object || 1 ||
 | `NoDeathrattle` | Variable || 1 ||
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | Character Form: Behavior and stats for the \'Normal\' state. | 24 ||
-| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 10 ||
 | `OverrideChainKnockbackDamage` | Equation | Applies or references the 'OverrideChainKnockbackDamage' effect/state. | 1 ||
 | `PermanentCharisma` | Integer | Applies or references the 'PermanentCharisma' effect/state. | 1 ||
 | `PermanentLuck` | Integer | Applies or references the 'PermanentLuck' effect/state. | 1 ||
-| [`Pounce`](#object-pounce) | Object || 2 ||
-| [`Prance`](#object-prance) | Object || 2 ||
 | [`Prance2`](#object-prance2) | Object || 1 ||
 | `ProbeCharmed` | Integer | Applies or references the 'ProbeCharmed' effect/state. | 1 ||
 | `rotate_right` | Variable || 1 ||
-| [`Scavenge`](#object-scavenge) | Object || 2 ||
 | [`Scavenge2`](#object-scavenge2) | Object || 1 ||
 | `Scrambled` | Integer | Applies or references the 'Scrambled' effect/state. | 1 ||
 | [`Small`](Characters_and_Bosses.md#object-small) | Object | Character Form: Behavior and stats for the \'Small\' state. | 1 ||
@@ -235,28 +241,22 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`SmallHoldingCat`](Characters_and_Bosses.md#object-smallholdingcat) | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 ||
 | `spear` | Variable || 1 ||
 | `SplashDamage` | Integer | Applies or references the 'SplashDamage' effect/state. | 1 ||
-| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 ||
 | [`Standing`](Characters_and_Bosses.md#object-standing) | Object | Character Form: Behavior and stats for the 'Standing' state. | 1 ||
-| [`Synthesize`](#object-synthesize) | Object || 2 ||
 | [`Synthesize2`](#object-synthesize2) | Object || 1 ||
-| [`TaintedOffering`](#object-taintedoffering) | Object || 2 ||
 | [`TaintedOffering2`](#object-taintedoffering2) | Object || 1 ||
 | `TallFlowerTile` | Variable || 1 ||
-| [`Tease`](#object-tease) | Object || 2 ||
 | [`Tease2`](#object-tease2) | Object || 1 ||
 | `the_nuke_bearer` | Variable || 1 ||
-| [`TheDestroyer`](#object-thedestroyer) | Object || 2 ||
 | `themotherspike` | Variable || 1 ||
 | [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 ||
-| [`TigerSwipes`](#object-tigerswipes) | Object || 2 ||
 | [`TigerSwipes2`](#object-tigerswipes2) | Object || 1 ||
 | [`Timber`](#object-timber) | Object || 1 ||
 | [`TinaFlail`](#object-tinaflail) | Object || 1 ||
 | [`TinaFlailRage`](#object-tinaflailrage) | Object || 1 ||
 | [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 1 ||
-| `WaterTile_Current` | Variable || 4 ||
 | `weapon_throw` | Variable || 1 ||
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 ||
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 0 ||
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 0 ||
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 0 ||
@@ -293,12 +293,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddWeaponAux` | Integer / String ||| `-item_aux` (Enum), `2` (Number), `1` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
-| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
 | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charge` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Integer || 6 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Integer || 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `Tech` | Integer || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `AddWeaponAux` | Integer / String ||| `-item_aux` (Enum), `2` (Number), `1` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Charge` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 | `EquipPermanentItem` | Enum ||| `BoneClub` (Enum), `Kidney` (Enum) |
@@ -310,14 +314,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `FreeSpell` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object ||| `{ ... }` (Object) |
 | `HealthGain` | Integer ||| `2*X` (Enum), `3*X` (Enum), `3` (Number), `8` (Number) |
-| `KineticSpikes` | Integer || 6 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
 | `ManaGain` | Enum / Integer ||| `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| `MoveQuivered` | Integer || 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `StrengthUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Tech` | Integer || 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -348,10 +348,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `Bleed` | Array / Integer || 9 | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
 | [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Nested conditional. | 1 ||
 | [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Nested conditional. | 1 ||
-| `Bleed` | Array / Integer || 9 | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `2` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 
 </details>
@@ -367,10 +367,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Nested conditional. | 1 ||
 | [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type to check for. | 1 ||
 | `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -385,22 +385,22 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer || 36 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `BleedThorns` | Integer || 8 | `[1 .5]` (Array), `6` (Number), `3` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
 | [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Nested conditional. | 1 ||
 | [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `BleedThorns` | Integer || 8 | `[1 .5]` (Array), `6` (Number), `3` (Number), `{ ... }` (Object) |
 | `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | `HealthGain` | Integer ||| `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
 | `ManaGain` | Enum / Integer ||| `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `TempDamageUp` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `TempSpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer || 36 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -431,8 +431,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`odds`](./Enums.md#enum-odds) | Number | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `Instakill` | Integer ||| `[25 .01]` (Array), `50` (Number), `999` (Number) |
 | [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
@@ -449,8 +449,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Nested conditional. | 6 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
@@ -471,8 +471,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `Immobile` | Array / Integer || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -487,8 +487,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -518,16 +518,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object || 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
 | [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | `HealRandomInjury` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `PermanentCharm` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `RandomMutation` | Integer ||| `3` (Number), `1` (Number) |
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object || 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
 | `SafeDoomed` | Enum / Integer ||| `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 
@@ -544,8 +544,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of applying the debuff. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -591,27 +591,27 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `Poison` | Array / Integer || 8 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Nested conditional. | 3 ||
 | [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 2 ||
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | [`Conditional_FinishedSpawning`](Abilities_and_Spells.md#object-conditional_finishedspawning) | Object | Nested conditional. | 1 ||
+| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Attraction` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Doomed` | Integer ||| `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Integer ||| `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | `Hex` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
 | `PermanentCharm` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 8 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
 | `Stun` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `TempDamageUp` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -626,10 +626,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `6` (Number), `-2` (Number), `{ ... }` (Object) |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `-2` (Number), `5` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `6` (Number), `-2` (Number), `{ ... }` (Object) |
 | `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
@@ -645,8 +645,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Charge` | Integer ||| `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
 | `FillMana` | Integer ||| `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
@@ -665,13 +665,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
-| [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 ||
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Freeze` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 | `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 ||
+| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 | [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `Freeze` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `Stun` | Array / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 
@@ -688,9 +688,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`odds`](./Enums.md#enum-odds) | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 ||
 | [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `ChangeTilesUnder` | Enum ||| `LavaTile` (Enum), `DirtTile` (Enum) |
 | [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object ||| `parasites` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
 | [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object ||| `cm_RaptorEggSpawn` (Enum), `tk_WeirdEgg_Spawn` (Enum), `{ ... }` (Object) |
@@ -726,15 +726,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 20 ||
-| `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer || 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
 | [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer || 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `Fear` | Array / Integer ||| `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object ||| `passive` (Enum), `Bully` (Enum), `{ ... }` (Object) |
-| `Quivered` | Array / Integer || 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -749,15 +749,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | The specific string tag to check for. | 981 ||
 | [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Nested conditional. | 6 ||
+| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Nested conditional. | 4 ||
 | [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `ChangeTilesUnder` | Enum ||| `LavaTile` (Enum), `DirtTile` (Enum) |
 | `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object ||| `1` (Number), `6` (Number), `{ ... }` (Object) |
 | `EventBounty` | Integer ||| `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
 | [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object ||| `HitlerCloneHeil` (Enum), `cm_Lard_Impl` (Enum), `{ ... }` (Object) |
@@ -778,15 +778,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| `threshold_flat` | Integer | A flat numerical health value threshold. | 5 ||
+| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 ||
+| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | Nested conditional. | 1 ||
+| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 ||
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object ||| `1` (Number), `6` (Number), `{ ... }` (Object) |
 | `FlatLeech` | Integer ||| `X` (Enum), `5` (Number), `2` (Number) |
 | `Instakill` | Integer ||| `[25 .01]` (Array), `50` (Number), `999` (Number) |
-| `threshold_flat` | Integer | A flat numerical health value threshold. | 5 ||
-| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 ||
-| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | Nested conditional. | 1 ||
-| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 ||
 
 </details>
 
@@ -801,11 +801,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
-| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 7 ||
 | `CritChanceUp` | Integer || 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 7 ||
 | `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 | `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `15` (Number), `20` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object ||| `Drunker` (Enum), `BigHolding` (Enum), `{ ... }` (Object) |
 | `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object ||| `MegaGuppy_SummonTheChild` (Enum), `ManglerThrowRemote` (Enum), `{ ... }` (Object) |
@@ -868,9 +868,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -900,9 +900,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| `threshold_flat` | Integer | A flat numerical health value threshold. | 1 ||
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `RepairTrinket` | Integer ||| `1` (Number), `99` (Number) |
-| `threshold_flat` | Integer | A flat numerical health value threshold. | 1 ||
 
 </details>
 
@@ -917,8 +917,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -948,9 +948,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | Nested conditional. | 2 ||
 | [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `Doomed` | Integer ||| `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Integer ||| `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | `PermanentCharm` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
@@ -968,8 +968,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -1000,8 +1000,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Nested conditional. | 3 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `RepairWeapon` | Array / Integer ||| `[1 .25]` (Array), `6` (Number), `1` (Number) |
 
 </details>
@@ -1017,10 +1017,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 ||
-| `ReduceManaCost` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Shield` | Enum / Integer || 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `ReduceManaCost` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `SpellDamageUp` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
@@ -1036,10 +1036,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | Nested conditional. | 3 ||
-| `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Else`](Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer | Applies or references the 'Charmed' effect/state. | 0 ||
 | [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Grants the nested passive abilities dynamically. | 0 ||
 
@@ -1056,9 +1056,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `Charge` | Integer ||| `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
 | `Scrambled` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
@@ -1074,8 +1074,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 4 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -1109,8 +1109,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object ||| `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
 
 </details>
@@ -1126,9 +1126,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
 | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -1143,9 +1143,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | The specific entity tag required or applied. | 981 ||
 | [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 
 </details>
 
@@ -1160,8 +1160,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Nested conditional. | 2 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 | `Knockback` | Integer ||| `3` (Number), `10` (Number), `{ ... }` (Object) |
 
@@ -1178,8 +1178,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `CritChanceUp` | Integer || 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer || 8 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Nested conditional. | 2 ||
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `15` (Number), `66` (Number), `{ ... }` (Object) |
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object || 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
 | [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Nested conditional. | 1 ||
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 1 ||
 | [`Conditional_HasKnockback`](Characters_and_Bosses.md#object-conditional_hasknockback) | Object | Nested conditional. | 1 ||
@@ -1187,36 +1198,25 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Nested conditional. | 1 ||
 | [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Nested conditional. | 1 ||
 | [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Nested conditional. | 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | `AllStatsUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | [`AllyInfested`](#object-allyinfested) | Array / Number / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `BonusDamage` | Enum / Integer ||| `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Charmed` | Array / Enum / Integer ||| `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object || 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
 | [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `CritChanceUp` | Integer || 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `15` (Number), `66` (Number), `{ ... }` (Object) |
 | [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Integer ||| `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object ||| `passive` (Enum), `Holy` (Enum), `{ ... }` (Object) |
 | [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object ||| `{ ... }` (Object) |
 | [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object ||| `MoonHandMegaSqueeze` (Enum), `tk_ButterBean_Normal` (Enum), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
 | `Instakill` | Integer ||| `[25 .01]` (Array), `50` (Number), `999` (Number) |
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
 | [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object ||| `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
 | [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `Maggot` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
 | `PartialCleanse` | Integer ||| `1` (Number), `9999` (Number) |
 | `PermanentCharm` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 8 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
 | `RandomStatDown` | Array / Integer / String ||| `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object || 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
 | [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object ||| `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object || 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `TempSpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
 | `Webbed` | Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
@@ -1234,29 +1234,81 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
 | [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Nested conditional. | 38 ||
+| `CritChanceUp` | Integer || 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
+| `Thorns` | Integer || 36 | `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
 | [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | Nested conditional. | 35 ||
+| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Nested conditional. | 25 ||
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Nested conditional. | 14 ||
+| `Trample` | Integer || 14 | `[3 X-8]` (Array), `[1 .5]` (Array), `9` (Number), `6` (Number), `{ ... }` (Object) |
 | [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Nested conditional. | 13 ||
 | [`Conditional_FormulaIsPositive`](Abilities_and_Spells.md#object-conditional_formulaispositive) | Object | Nested conditional. | 10 ||
 | [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Nested conditional. | 10 ||
+| `Bleed` | Array / Integer || 9 | `[1 .1]` (Array), `[3 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer || 8 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
 | [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Nested conditional. | 6 ||
+| `Blind` | Array / Integer || 6 | `[1 .25]` (Array), `[1 .10]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .2]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `3` (Number), `2` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Integer || 6 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Leech` | Integer || 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Integer || 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Nested conditional. | 5 ||
 | [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Nested conditional. | 5 ||
 | [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Nested conditional. | 5 ||
 | [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Nested conditional. | 5 ||
 | [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Nested conditional. | 5 ||
 | [`Conditional_Familiar`](Abilities_and_Spells.md#object-conditional_familiar) | Object | Nested conditional. | 4 ||
+| `Immobile` | Array / Integer || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Reanimate`](Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object || 4 | `50` (Number), `100` (Number), `{ ... }` (Object) |
+| `SizeScale` | Number || 4 | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
+| [`Conditional_AffectedByElement`](Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object | Nested conditional. | 3 ||
+| [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Nested conditional. | 3 ||
+| [`Conditional_LastHit`](Abilities_and_Spells.md#object-conditional_lasthit) | Object | Nested conditional. | 3 ||
 | `AlphaCat` | Integer || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Attraction` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object || 2 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Bleed` | Array / Integer || 9 | `[1 .1]` (Array), `[3 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Blind` | Array / Integer || 6 | `[1 .25]` (Array), `[1 .10]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `15` (Number), `50` (Number), `{ ... }` (Object) |
+| `DrinkWater` | Integer || 2 | `1` (Number) |
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | Nested conditional. | 2 ||
+| [`Conditional_BossOrBig`](Abilities_and_Spells.md#object-conditional_bossorbig) | Object | Nested conditional. | 2 ||
+| [`Conditional_Buddy`](Abilities_and_Spells.md#object-conditional_buddy) | Object | Nested conditional. | 2 ||
+| [`Conditional_DestructibleCorpse`](Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object | Nested conditional. | 2 ||
+| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Nested conditional. | 2 ||
+| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | Nested conditional. | 2 ||
+| [`Conditional_NotAlly`](Abilities_and_Spells.md#object-conditional_notally) | Object | Nested conditional. | 2 ||
+| [`Conditional_NotBossOrBig`](Abilities_and_Spells.md#object-conditional_notbossorbig) | Object | Nested conditional. | 2 ||
+| [`Conditional_NotShielded`](Abilities_and_Spells.md#object-conditional_notshielded) | Object | Nested conditional. | 2 ||
+| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | Nested conditional. | 2 ||
+| [`Conditional_Shielded`](Abilities_and_Spells.md#object-conditional_shielded) | Object | Nested conditional. | 2 ||
+| `MagicWeakness` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object || 2 | `3` (Number), `0` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `3` (Number), `-3` (Number) |
+| [`Reflect`](Engine_StatusAndPassiveKeys.md#object-reflect) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object || 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
+| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Infested`](Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object || 1 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | Nested conditional. | 1 ||
+| [`Conditional_ActiveWeather_Any`](Abilities_and_Spells.md#object-conditional_activeweather_any) | Object | Nested conditional. | 1 ||
+| [`Conditional_Backstab`](Abilities_and_Spells.md#object-conditional_backstab) | Object | Nested conditional. | 1 ||
+| [`Conditional_CanBeHealed`](Abilities_and_Spells.md#object-conditional_canbehealed) | Object | Nested conditional. | 1 ||
+| [`Conditional_DebuffRoll`](Abilities_and_Spells.md#object-conditional_debuffroll) | Object | Nested conditional. | 1 ||
+| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Nested conditional. | 1 ||
+| [`Conditional_HasCleansableDebuffs`](Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 ||
+| [`Conditional_IsTrample`](Abilities_and_Spells.md#object-conditional_istrample) | Object | Nested conditional. | 1 ||
+| [`Conditional_LivingPlayerCat`](Abilities_and_Spells.md#object-conditional_livingplayercat) | Object | Nested conditional. | 1 ||
+| [`Conditional_NotBig`](Abilities_and_Spells.md#object-conditional_notbig) | Object | Nested conditional. | 1 ||
+| [`Conditional_RandomChance`](Abilities_and_Spells.md#object-conditional_randomchance) | Object | Nested conditional. | 1 ||
+| [`Conditional_SourceAbilityHasTag`](Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object | Nested conditional. | 1 ||
+| [`Conditional_SourceHasStatus`](Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object | Nested conditional. | 1 ||
+| [`Rain`](Characters_and_Bosses.md#object-rain) | Object || 1 | `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |||
+| `Attraction` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`BounceObject`](Abilities_and_Spells.md#object-bounceobject) | Enum / Object ||| `CharmedFlea_Champion` (Enum), `CharmedDip` (Enum), `{ ... }` (Object) |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object || 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object || 8 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `BurgleCoin` | Array / Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number) |
 | [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object ||| `FireTile` (Enum), `GrassTile` (Enum), `{ ... }` (Object) |
 | `ChangeTilesUnder` | Enum ||| `LavaTile` (Enum), `DirtTile` (Enum) |
@@ -1264,18 +1316,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `CharismaUp` | Enum / Integer ||| `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Charmed` | Array / Enum / Integer ||| `[1 .25]` (Array), `[1 .15]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object || 6 | `[1 .2]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ConstitutionUp` | Array / Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object ||| `{ ... }` (Object) |
-| `CritChanceUp` | Integer || 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
 | `DamageOrHealConditionally` | Integer ||| `1` (Number) |
-| `DamageUp` | Integer / String || 6 | `[1 .5]` (Array), `3` (Number), `2` (Number), `{ ... }` (Object) |
 | `DexterityUp` | Enum / Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `DiminishingHealthRegen` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `DivineShield` | Array / Integer ||| `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer || 2 | `[1 .5]` (Array), `15` (Number), `50` (Number), `{ ... }` (Object) |
 | `Doomed` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `DrinkWater` | Integer || 2 | `1` (Number) |
 | `Drowsy` | Integer ||| `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
 | [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object ||| `Tinkerer` (Enum), `Fighter` (Enum), `{ ... }` (Object) |
 | `ExtraBasicAttacks_Status` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
@@ -1291,52 +1338,17 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object ||| `{ ... }` (Object) |
 | `HealRandomInjury` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `HealthGain` | Integer ||| `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
-| `HealthRegenUp` | Integer || 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Hex` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object ||| `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
-| `Immobile` | Array / Integer || 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Infested`](Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object || 1 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `Instakill` | Integer ||| `[25 .01]` (Array), `50` (Number), `999` (Number) |
 | `IntelligenceUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `KineticSpikes` | Integer || 6 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `Knockback` | Integer ||| `3` (Number), `4` (Number), `{ ... }` (Object) |
 | [`KnockOutCoin`](Abilities_and_Spells.md#object-knockoutcoin) | Integer / Object ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Leech` | Integer || 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object || 2 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Lifesteal` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Conditional_AffectedByElement`](Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object | Nested conditional. | 3 ||
-| [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Nested conditional. | 3 ||
-| [`Conditional_LastHit`](Abilities_and_Spells.md#object-conditional_lasthit) | Object | Nested conditional. | 3 ||
-| [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | Nested conditional. | 2 ||
-| [`Conditional_BossOrBig`](Abilities_and_Spells.md#object-conditional_bossorbig) | Object | Nested conditional. | 2 ||
-| [`Conditional_Buddy`](Abilities_and_Spells.md#object-conditional_buddy) | Object | Nested conditional. | 2 ||
-| [`Conditional_DestructibleCorpse`](Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object | Nested conditional. | 2 ||
-| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Nested conditional. | 2 ||
-| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | Nested conditional. | 2 ||
-| [`Conditional_NotAlly`](Abilities_and_Spells.md#object-conditional_notally) | Object | Nested conditional. | 2 ||
-| [`Conditional_NotBossOrBig`](Abilities_and_Spells.md#object-conditional_notbossorbig) | Object | Nested conditional. | 2 ||
-| [`Conditional_NotShielded`](Abilities_and_Spells.md#object-conditional_notshielded) | Object | Nested conditional. | 2 ||
-| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | Nested conditional. | 2 ||
-| [`Conditional_Shielded`](Abilities_and_Spells.md#object-conditional_shielded) | Object | Nested conditional. | 2 ||
-| [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | Nested conditional. | 1 ||
-| [`Conditional_ActiveWeather_Any`](Abilities_and_Spells.md#object-conditional_activeweather_any) | Object | Nested conditional. | 1 ||
-| [`Conditional_Backstab`](Abilities_and_Spells.md#object-conditional_backstab) | Object | Nested conditional. | 1 ||
-| [`Conditional_CanBeHealed`](Abilities_and_Spells.md#object-conditional_canbehealed) | Object | Nested conditional. | 1 ||
-| [`Conditional_DebuffRoll`](Abilities_and_Spells.md#object-conditional_debuffroll) | Object | Nested conditional. | 1 ||
-| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Nested conditional. | 1 ||
-| [`Conditional_HasCleansableDebuffs`](Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 ||
-| [`Conditional_IsTrample`](Abilities_and_Spells.md#object-conditional_istrample) | Object | Nested conditional. | 1 ||
-| [`Conditional_LivingPlayerCat`](Abilities_and_Spells.md#object-conditional_livingplayercat) | Object | Nested conditional. | 1 ||
-| [`Conditional_NotBig`](Abilities_and_Spells.md#object-conditional_notbig) | Object | Nested conditional. | 1 ||
-| [`Conditional_RandomChance`](Abilities_and_Spells.md#object-conditional_randomchance) | Object | Nested conditional. | 1 ||
-| [`Conditional_SourceAbilityHasTag`](Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object | Nested conditional. | 1 ||
-| [`Conditional_SourceHasStatus`](Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object | Nested conditional. | 1 ||
 | `LuckUp` | Enum / Integer ||| `[1 .5]` (Array), `3` (Number), `-4` (Number), `{ ... }` (Object) |
-| `MagicWeakness` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `ManaGain` | Enum / Integer ||| `item_aux` (Enum), `X-1` (Enum), `2` (Number), `6` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
 | `ManaLeeches` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `MovementUp` | Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `MoveQuivered` | Integer || 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `NonStackingDivineShield` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object ||| `SkeletonCatFamiliar` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
 | `Ostracized` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
@@ -1347,30 +1359,20 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `PermanentIntelligence` | Integer ||| `1` (Number), `2` (Number) |
 | `PermanentSpeed` | Integer ||| `1` (Number), `2` (Number) |
 | `Petrify` | Array / Integer ||| `[1 .15]` (Array), `[1 .2]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer || 8 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
-| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object ||| `TheDestroyer` (Enum), `StemCat_HalfHealth` (Enum), `{ ... }` (Object) |
 | `Possessed` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `ProbeCharmed` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object || 2 | `3` (Number), `0` (Number), `{ ... }` (Object) |
-| [`Rain`](Characters_and_Bosses.md#object-rain) | Object || 1 | `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `RandomInjury` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object ||| `[1 .5]` (Array), `5` (Number), `6` (Number), `{ ... }` (Object) |
 | `RandomPermanentStat` | Integer ||| `-1` (Number), `-2` (Number) |
 | `RandomStatDown` | Array / Integer / String ||| `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
-| `RandomStatUp` | Integer / String || 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `3` (Number), `-3` (Number) |
 | `RangeUp` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Reanimate`](Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object || 4 | `50` (Number), `100` (Number), `{ ... }` (Object) |
 | `ReduceManaCost` | Integer ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Reflect`](Engine_StatusAndPassiveKeys.md#object-reflect) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
 | `RepairWeapon` | Array / Integer ||| `[1 .25]` (Array), `6` (Number), `1` (Number) |
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object || 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
 | [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `Rot` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `SetDefaultFace` | Enum ||| `insane` (Enum), `happy` (Enum) |
-| `SizeScale` | Number || 4 | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
 | `Sleep` | Array / Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object || 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `SpawnCoinAnywhere` | Array / Integer ||| `[1 .5]` (Array), `1` (Number) |
 | `SpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpellDamageUp` | Integer ||| `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
@@ -1388,8 +1390,6 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `TempSpeedUp` | Enum / Integer ||| `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
 | `TempSpellDamageUp` | Integer ||| `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `TempStrengthUp` | Enum ||| `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer || 36 | `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
-| `Trample` | Integer || 14 | `[3 X-8]` (Array), `[1 .5]` (Array), `9` (Number), `6` (Number), `{ ... }` (Object) |
 | [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object ||| `MegaGuppy_SummonTheChild` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
 | `Webbed` | Integer ||| `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
@@ -1434,9 +1434,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum ||| `Infested` (Enum) |
 | `faction` | Enum || 1 | `allies` (Enum) |
 | `object` | Array / Enum || 1 | `CharmedMaggot` (Enum) |
+| `alias` | Enum ||| `Infested` (Enum) |
 
 </details>
 
@@ -1870,20 +1870,20 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum ||| `tk_Bishop` (Enum) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 2 | `"Bishop"` (Enum) |
 | `attack` | Enum || 2 | `BBXLightning` (Enum) |
+| `name` | Enum || 2 | `"ENEMY_CULTISTBISHOP_NAME"` (String), `"ITEM_BISHOP_NAME"` (String) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
+| `tooltip` | Enum || 2 | `"ENEMY_CULTISTBISHOP_DESC"` (String) |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
+| `uifloaters_offset` | Number || 2 | `2.5` (Number) |
+| `ability` | Enum ||| `tk_Bishop` (Enum) |
 | `desc` | Enum ||| `"ITEM_BISHOP_DESC"` (String) |
 | `durability` | Array / Integer ||| `6` (Number) |
 | `frame` | Integer ||| `201` (Number) |
 | `kind` | Enum ||| `trinket` (Enum) |
-| `name` | Enum || 2 | `"ENEMY_CULTISTBISHOP_NAME"` (String), `"ITEM_BISHOP_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 | `rarity` | Enum ||| `uncommon` (Enum) |
-| `tooltip` | Enum || 2 | `"ENEMY_CULTISTBISHOP_DESC"` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number || 2 | `2.5` (Number) |
 
 </details>
 
@@ -1944,6 +1944,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| `partial_animation_suffix` | Enum / Integer || 2 | `Button` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 | [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
 | `ability` | Enum ||| `wp_Bomb` (Enum) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object ||| `{ ... }` (Object) |
@@ -1953,8 +1955,6 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | `kind` | Enum ||| `weapon` (Enum) |
 | `name` | Enum ||| `"ITEM_BOMB_NAME"` (String) |
-| `partial_animation_suffix` | Enum / Integer || 2 | `Button` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 | [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | `rarity` | Enum ||| `uncommon` (Enum) |
 | [`sound`](Characters_and_Bosses.md#object-sound) | Object ||| `{ ... }` (Object) |
@@ -2063,9 +2063,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation` | Enum || 2 | `spawnHoldingCat` (Enum) |
 | `formchange` | Enum || 6 | `SmallHoldingCat` (Enum), `BigHoldingCat` (Enum) |
 | [`statuses`](Characters_and_Bosses.md#object-statuses) | Object || 4 | `{ ... }` (Object) |
+| `animation` | Enum || 2 | `spawnHoldingCat` (Enum) |
 
 </details>
 
@@ -2143,8 +2143,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `attack` | Enum || 2 | `CaveBabyMelee` (Enum) |
 | `name` | Enum || 2 | `"ENEMY_CAVEBABY_NAME"` (String) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | `tooltip` | Enum || 2 | `"ENEMY_CAVEBABY_DESC"` (String) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | `variant_of` | Enum ||| `CavePerson` (Enum) |
 
 </details>
@@ -2160,8 +2160,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 4 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 4 | `"CaveMan"` (Enum) |
 | `attack` | Enum || 4 | `CaveMan3HitCombo` (Enum) |
-| `name` | Enum || 2 | `"ENEMY_CAVEMANMAN_NAME"` (String) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 4 | `{ ... }` (Object) |
+| `name` | Enum || 2 | `"ENEMY_CAVEMANMAN_NAME"` (String) |
 | `tooltip` | Enum || 2 | `"ENEMY_CAVEMANMAN_DESC"` (String) |
 | `variant_of` | Enum ||| `CavePerson` (Enum) |
 
@@ -2178,8 +2178,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 4 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 4 | `"SpearCaveMan"` (Enum) |
 | `attack` | Enum || 4 | `CaveManThrowSpear` (Enum) |
-| `name` | Enum || 2 | `"ENEMY_SPEARCAVEMAN_NAME"` (String) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 4 | `{ ... }` (Object) |
+| `name` | Enum || 2 | `"ENEMY_SPEARCAVEMAN_NAME"` (String) |
 | `tooltip` | Enum || 2 | `"ENEMY_SPEARCAVEMAN_DESC"` (String) |
 
 </details>
@@ -2197,8 +2197,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `attack` | Enum || 2 | `CaveWomanKick` (Enum) |
 | `name` | Enum || 2 | `"ENEMY_CAVEMANWOMAN_NAME"` (String) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | `tooltip` | Enum || 2 | `"ENEMY_CAVEMANWOMAN_DESC"` (String) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | `variant_of` | Enum ||| `CavePerson` (Enum) |
 
 </details>
@@ -2278,11 +2278,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| `Fear` | Array / Integer || 3 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 | `AllStatsUp` | Enum / Integer || 1 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
 | [`Else`](Abilities_and_Spells.md#object-else) | Object || 1 | `{ ... }` (Object) |
-| `Fear` | Array / Integer || 3 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | `Stealth` | Array / Integer || 1 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer || 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -2591,16 +2591,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 2 | `"Cultist"` (Enum) |
 | `attack` | Enum || 2 | `BasicMelee` (Enum) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | `name` | Enum || 2 | `"ENEMY_CULTISTLACKEY_NAME"` (String) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
+| `tooltip` | Enum || 2 | `"ENEMY_CULTISTLACKEY_DESC"` (String) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | [`stats`](Characters_and_Bosses.md#object-stats) | Object ||| `{ ... }` (Object) |
-| `tooltip` | Enum || 2 | `"ENEMY_CULTISTLACKEY_DESC"` (String) |
 
 </details>
 
@@ -2658,13 +2658,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 54 | `{ ... }` (Object) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 20 | `{ ... }` (Object) |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 4 | `{ ... }` (Object) |
 | `attack` | Enum || 2 | `LennyShove` (Enum) |
 | `move` | Enum || 2 | `LennyTrampleMove` (Enum) |
 | `partial_animation_suffix` | Enum / Integer || 2 | `""` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 54 | `{ ... }` (Object) |
 | `set_house` | Enum || 2 | `House1` (Enum) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 4 | `{ ... }` (Object) |
 | `unlock_room` | Enum || 2 | `Floor1_Large` (Enum) |
 
 </details>
@@ -2822,11 +2822,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 6 | `{ ... }` (Object) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 4 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 4 | `"Down"` (Enum) |
 | `attack` | Enum || 2 | `ButtFart` (Enum) |
 | `move` | Enum || 2 | `TeleportFlipUp` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 6 | `{ ... }` (Object) |
 
 </details>
 
@@ -2925,8 +2925,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `exit_ability` | Enum || 2 | `DybbukReturn` (Enum) |
-| `name` | Enum ||| `"KEYWORD_DYBBUKED_NAME"` (String) |
 | `punch_self_ability` | Enum || 2 | `Dybbuk_StopHittingYourself` (Enum) |
+| `name` | Enum ||| `"KEYWORD_DYBBUKED_NAME"` (String) |
 | `tooltip` | Enum ||| `"KEYWORD_DYBBUKED_DESC"` (String) |
 
 </details>
@@ -3147,8 +3147,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 2 | `Full` (Enum) |
 | `attack` | Enum || 2 | `SpewerSpit` (Enum) |
-| `combo` | Array ||| `[FireSmoke FirePlumes FireWaves FireBase FireWhites]` (Array) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
+| `combo` | Array ||| `[FireSmoke FirePlumes FireWaves FireBase FireWhites]` (Array) |
 
 </details>
 
@@ -3362,11 +3362,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `allow_duplicates` | Boolean || 4 | `true` (Boolean) |
 | `amount` | Array || 4 | `10` (Number) |
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object || 4 | `5` (Number) |
+| `weight` | Number || 2 | `5` (Number) |
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object ||| `{ ... }` (Object) |
 | [`sound`](Characters_and_Bosses.md#object-sound) | Object ||| `{ ... }` (Object) |
 | `variant_of` | Enum ||| `FoodBase` (Enum) |
-| `weight` | Number || 2 | `5` (Number) |
 
 </details>
 
@@ -3683,11 +3683,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 10 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer || 8 | `"Grabbing"` (Enum), `"Cat"` (Enum) |
 | `attack` | Enum || 10 | `LennyCatSlap` (Enum), `MoonHandSqueeze` (Enum) |
+| `animation_suffix` | Enum / Integer || 8 | `"Grabbing"` (Enum), `"Cat"` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 8 | `{ ... }` (Object) |
 | `move` | Enum || 2 | `None` (Enum) |
 | `partial_animation_suffix` | Enum / Integer || 2 | `"Swallowed"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 8 | `{ ... }` (Object) |
 
 </details>
 
@@ -4013,8 +4013,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object || 21 | `15` (Number), `5` (Number) |
-| `mandatory` | Boolean || 14 | `true` (Boolean) |
 | `pool` | Array / Enum || 18 | `[TutorialStick]` (Array), `[WaterBottle_Half]` (Array), `treasure_easy` (Enum), `rare` (Enum) |
+| `mandatory` | Boolean || 14 | `true` (Boolean) |
 | `weight` | Number || 2 | `1` (Number) |
 
 </details>
@@ -4028,8 +4028,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `dialog` | String || 16 | `NPC_JACK_JACK_GAINALTFURNITURE_4` (String), `NPC_JACK_JACK_GAINALTFURNITURE_2` (String) |
-| `lock_controls` | Number || 2 | `1` (Number) |
 | `set_state` | Enum || 8 | `closeup` (Enum), `blocking` (Enum) |
+| `lock_controls` | Number || 2 | `1` (Number) |
 | `unlock_controls` | Number || 2 | `1` (Number) |
 
 </details>
@@ -4066,8 +4066,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object ||| `{ ... }` (Object) |
 | [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
@@ -4232,13 +4232,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
 | [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
 | [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
 | `template` | Enum ||| `lobbed_attack` (Enum) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
 
 </details>
 
@@ -4308,8 +4308,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ambient` | String || 10 | `.6` (String), `.8` (String) |
-| `bigrays` | Array ||| `[0 0]` (Array), `[1 1]` (Array) |
 | `smallray_clip` | Enum || 2 | `labligtht` (Enum), `Bunkerlight` (Enum) |
+| `bigrays` | Array ||| `[0 0]` (Array), `[1 1]` (Array) |
 | `smallrays` | Array ||| `[0 0]` (Array), `[4 8]` (Array) |
 
 </details>
@@ -4627,8 +4627,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ability` | Enum || 8 | `move` (Enum) |
-| `move_for_ability` | Enum || 6 | `Spin_Enemy` (Enum), `attack` (Enum) |
 | `move_weights` | Enum || 8 | `stay_close_avoid_allies` (Enum), `stay_close_always_move` (Enum) |
+| `move_for_ability` | Enum || 6 | `Spin_Enemy` (Enum), `attack` (Enum) |
 
 </details>
 
@@ -4782,12 +4782,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 2 | `"Mutant"` (Enum) |
 | `attack` | Enum || 2 | `BBMutantSwipe` (Enum) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | `move_speed_multiplier` | Number || 2 | `.5` (String) |
 | `name` | Enum || 2 | `"ENEMY_CULTISTMUTANT_NAME"` (String) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 | `tooltip` | Enum || 2 | `"ENEMY_CULTISTMUTANT_DESC"` (String) |
 | [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | `variant_of` | Enum ||| `BirdMed` (Enum) |
 
 </details>
@@ -4839,10 +4839,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object ||| `{ ... }` (Object) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 
 </details>
@@ -4880,9 +4880,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation` | Enum || 2 | `spawnHolding` (Enum) |
 | `formchange` | Enum || 6 | `SmallHolding` (Enum), `BigHolding` (Enum) |
 | [`statuses`](Characters_and_Bosses.md#object-statuses) | Object || 4 | `{ ... }` (Object) |
+| `animation` | Enum || 2 | `spawnHolding` (Enum) |
 
 </details>
 
@@ -4894,10 +4894,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object || 10 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer || 2 | `"Up"` (Enum) |
-| `attack` | Enum || 4 | `TinaBasicBigMeleeA` (Enum), `SpewerLobbed_Normal` (Enum) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 20 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object || 10 | `{ ... }` (Object) |
+| `attack` | Enum || 4 | `TinaBasicBigMeleeA` (Enum), `SpewerLobbed_Normal` (Enum) |
+| `animation_suffix` | Enum / Integer || 2 | `"Up"` (Enum) |
 | [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
 
 </details>
@@ -4925,8 +4925,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 | [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 4 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 
 </details>
 
@@ -4953,6 +4953,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 2 | `Nuke` (Enum) |
 | `attack` | Enum || 2 | `None` (Enum) |
+| `move` | Enum || 2 | `None` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
 | `desc` | Enum ||| `"ARMOR_NUKE_DESC"` (String) |
 | `failable` | Boolean ||| `true` (Boolean) |
 | `frame` | Integer ||| `77` (Number) |
@@ -4960,15 +4963,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `indestructible` | Boolean ||| `true` (Boolean) |
 | `kind` | Enum ||| `neck` (Enum) |
 | `legacy_quest` | Boolean ||| `true` (Boolean) |
-| `move` | Enum || 2 | `None` (Enum) |
 | `name` | Enum ||| `"ARMOR_NUKE_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 | `quest_item` | Boolean ||| `true` (Boolean) |
 | `rarity` | Enum ||| `quest` (Enum) |
 | `set` | Array / Enum ||| `Radioactive` (Enum) |
 | `shield` | Enum / Integer ||| `[1 .5]` (Array), `10` (Number) |
 | `spd` | Enum / Integer ||| `-2` (Number) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 2 | `{ ... }` (Object) |
 
 </details>
 
@@ -5116,9 +5116,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `force` | Number || 1 | `100` (Number) |
 | `force_end` | Number || 6 | `200` (Number), `500` (Number) |
 | `force_start` | Number || 6 | `0` (Number) |
+| `force` | Number || 1 | `100` (Number) |
 | `towards` | Array ||| `[5 0 5]` (Array), `[0 .5 0]` (Array) |
 
 </details>
@@ -5175,8 +5175,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `dampening` | Number / String || 6 | `1` (Number), `.5` (String) |
-| `end_on_collision` | Boolean || 2 | `true` (Boolean) |
 | `friction` | Number || 6 | `1` (Number), `0` (Number) |
+| `end_on_collision` | Boolean || 2 | `true` (Boolean) |
 
 </details>
 
@@ -5201,8 +5201,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `axis` | Array ||| `[0 -0.5 0]` (Array), `[0 1 0]` (Array) |
 | `force` | Number || 19 | `8` (Number), `5` (Number) |
+| `axis` | Array ||| `[0 -0.5 0]` (Array), `[0 1 0]` (Array) |
 | `point` | Array ||| `[1 1 1]` (Array), `[0 0 0]` (Array) |
 
 </details>
@@ -5279,10 +5279,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| `object` | Array / Enum || 4 | `BoyShade` (Enum), `PlayerCat_ClotClone` (Enum) |
 | `clone_items` | Boolean || 2 | `false` (Boolean) |
 | `clone_referenced_catdata` | Boolean || 2 | `true` (Boolean) |
 | `no_splatter` | Boolean || 2 | `false` (Boolean) |
-| `object` | Array / Enum || 4 | `BoyShade` (Enum), `PlayerCat_ClotClone` (Enum) |
 
 </details>
 
@@ -5472,12 +5472,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 16 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 12 | `{ ... }` (Object) |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 12 | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum / Integer || 8 | `"Rage"` (Enum) |
 | `animation_suffix` | Enum / Integer || 4 | `"Rage"` (Enum) |
 | `attack` | Enum || 2 | `ChubsSpinRage` (Enum) |
 | `move_speed_multiplier` | Number || 2 | `2` (Number) |
-| `partial_animation_suffix` | Enum / Integer || 8 | `"Rage"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 12 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object || 12 | `{ ... }` (Object) |
 
 </details>
 
@@ -5489,10 +5489,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `adventure_weather` | Enum || 1 | `Rain` (Enum) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 4 | `{ ... }` (Object) |
-| `alpha` | String ||| `.5` (String) |
+| `adventure_weather` | Enum || 1 | `Rain` (Enum) |
 | `ambient_sound` | String || 1 | `amb_rain.ogg` (String) |
+| `prewarm` | Number || 1 | `5` (Number) |
+| `skybox_frame` | Enum || 1 | `day_rain` (Enum) |
+| `alpha` | String ||| `.5` (String) |
 | `chain` | Boolean ||| `splash` (Enum) |
 | `combo` | Array ||| `[RainB RainM RainF]` (Array) |
 | `desc` | Enum ||| `"WEATHER_RAIN_DESC"` (String) |
@@ -5510,13 +5512,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `name` | Enum ||| `"WEATHER_RAIN_NAME"` (String) |
 | `particle_lifetime` | Number ||| `5` (Number) |
 | `particles` | Array ||| `[Rain]` (Array) |
-| `prewarm` | Number || 1 | `5` (Number) |
 | `projection_matrix` | Enum ||| `default` (Enum) |
 | `render_mode` | Enum ||| `separate` (Enum) |
 | [`scripts`](Miscellaneous.md#object-scripts) | Object ||| `{ ... }` (Object) |
 | `simulation_space` | Enum ||| `global` (Enum) |
 | `size_start` | String ||| `.5` (String) |
-| `skybox_frame` | Enum || 1 | `day_rain` (Enum) |
 | `speed_scale` | String ||| `.1` (String) |
 | `speed_start` | Number ||| `10` (Number) |
 
@@ -5747,9 +5747,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| `crit_chance` | Number || 4 | `.05*X` (String) |
 | `class` | Enum ||| `Thief` (Enum) |
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
-| `crit_chance` | Number || 4 | `.05*X` (String) |
 | `desc` | Enum ||| `"PASSIVE_STEALTHED_DESC"` (String) |
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
@@ -5870,15 +5870,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `built_in_collision` | Array ||| `[[ 6 6 6 6 6 6 6 6 6...]` (Array) |
-| `extra_bound_planes` | Array ||| `[{ p [ 0 0 ] n [ 1 -2...]` (Array) |
 | `height` | Integer || 2 | `5` (Number) |
 | `id` | Enum || 2 | `Attic` (Enum) |
 | `interstitial_bg_frame` | Enum || 2 | `attic` (Enum) |
 | `movieclip` | Array / Enum || 2 | `RoomBackgroundSmallAttic` (Enum) |
+| `width` | Number || 2 | `18` (Number) |
+| `built_in_collision` | Array ||| `[[ 6 6 6 6 6 6 6 6 6...]` (Array) |
+| `extra_bound_planes` | Array ||| `[{ p [ 0 0 ] n [ 1 -2...]` (Array) |
 | [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object ||| `{ ... }` (Object) |
 | [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object ||| `{ ... }` (Object) |
-| `width` | Number || 2 | `18` (Number) |
 
 </details>
 
@@ -6005,16 +6005,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 4 | `{ ... }` (Object) |
 | `attack` | Enum || 4 | `BasicMelee` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 4 | `{ ... }` (Object) |
+| `tooltip` | Enum || 2 | `ENEMY_DRAVENSQUIRRELFORM_DESC` (String) |
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 4 | `{ ... }` (Object) |
 | [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object ||| `{ ... }` (Object) |
 | [`spawn`](Abilities_and_Spells.md#object-spawn) | Object ||| `{ ... }` (Object) |
 | `tags` | Array / Enum ||| `[shapeshift summon]` (Array) |
 | [`target`](Abilities_and_Spells.md#object-target) | Object ||| `{ ... }` (Object) |
 | `template` | Enum ||| `spawn` (Enum) |
-| `tooltip` | Enum || 2 | `ENEMY_DRAVENSQUIRRELFORM_DESC` (String) |
 
 </details>
 
@@ -6420,15 +6420,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | `adventure_weather` | Enum || 1 | `Thunderstorm` (Enum) |
 | `ambient_sound` | String || 1 | `amb_thunderstorm.ogg` (String), `amb_heavyrain.ogg` (String) |
+| `lightning_fx` | Boolean || 1 | `true` (Boolean) |
+| `prewarm` | Number || 1 | `5` (Number) |
+| `skybox_frame` | Enum || 1 | `day_thunderstorm` (Enum) |
 | `combo` | Array ||| `[TRainB TRainM TRainF WindDust]` (Array) |
 | `desc` | Enum ||| `"WEATHER_THUNDERSTORM_DESC"` (String) |
 | [`effects`](Abilities_and_Spells.md#object-effects) | Object ||| `{ ... }` (Object) |
 | `hint_persistent_elements` | Array ||| `[Water Wind]` (Array) |
-| `lightning_fx` | Boolean || 1 | `true` (Boolean) |
 | `name` | Enum ||| `"WEATHER_THUNDERSTORM_NAME"` (String) |
 | `particles` | Array ||| `[Thunderstorm]` (Array) |
-| `prewarm` | Number || 1 | `5` (Number) |
-| `skybox_frame` | Enum || 1 | `day_thunderstorm` (Enum) |
 
 </details>
 
@@ -6637,9 +6637,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 6 | `{ ... }` (Object) |
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 4 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 4 | `"Up"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 6 | `{ ... }` (Object) |
 | `tooltip` | Enum || 2 | `"OBJECT_TIREUP_DESC"` (String) |
 
 </details>
@@ -6744,8 +6744,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `attack` | Enum || 2 | `WereManFurySwipes` (Enum) |
 | `name` | Enum || 2 | `"ENEMY_WEREMAN_NAME"` (String) |
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | `tooltip` | Enum || 2 | `"ENEMY_WEREMAN_DESC"` (String) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object ||| `{ ... }` (Object) |
 | `variant_of` | Enum ||| `CavePerson` (Enum) |
 
 </details>
@@ -6793,14 +6793,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ai`](Characters_and_Bosses.md#object-ai) | Object || 2 | `{ ... }` (Object) |
 | `animation_suffix` | Enum / Integer || 2 | `"Zealot"` (Enum) |
 | `attack` | Enum || 2 | `BBStabby` (Enum) |
+| `name` | Enum || 2 | `"ENEMY_CULTISTZEALOT_NAME"` (String) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
+| `tooltip` | Enum || 2 | `"ENEMY_CULTISTZEALOT_DESC"` (String) |
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object ||| `{ ... }` (Object) |
 | [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object ||| `{ ... }` (Object) |
 | [`graphics`](Abilities_and_Spells.md#object-graphics) | Object ||| `{ ... }` (Object) |
 | [`meta`](Abilities_and_Spells.md#object-meta) | Object ||| `{ ... }` (Object) |
-| `name` | Enum || 2 | `"ENEMY_CULTISTZEALOT_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 | `{ ... }` (Object) |
 | `template` | Enum ||| `self_buff` (Enum) |
-| `tooltip` | Enum || 2 | `"ENEMY_CULTISTZEALOT_DESC"` (String) |
 
 </details>
 

@@ -18,40 +18,41 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 664 |  |
-| [`popup`](Miscellaneous.md#object-popup) | Object || 266 ||
-| [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum || 127 ||
-| [`intro`](./Arrays.md#array-intro) | Array || 239 ||
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 ||
+| [`popup`](Miscellaneous.md#object-popup) | Object || 266 ||
+| [`intro`](./Arrays.md#array-intro) | Array || 239 ||
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array || 129 ||
+| [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum || 127 ||
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum || 53 ||
 | [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum || 48 ||
 | [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum || 37 ||
 | `required_difficulty` | Integer || 36 ||
 | `repeat` | Integer || 33 ||
 | [`beat_chapter_boss`](./Enums.md#enum-beat_chapter_boss) | Enum || 31 ||
+| [`unlock_song`](./Enums.md#enum-unlock_song) | Enum || 29 ||
 | [`unlock_ability`](./Enums.md#enum-unlock_ability) | Enum || 28 ||
 | [`unlock_passive`](./Enums.md#enum-unlock_passive) | Enum || 28 ||
-| [`unlock_song`](./Enums.md#enum-unlock_song) | Enum || 29 ||
 | [`set_mapgen_flag`](./Enums.md#enum-set_mapgen_flag) | Enum || 23 ||
 | [`complete_checklist_with_class`](./Enums.md#enum-complete_checklist_with_class) | Enum || 14 ||
 | [`unlock_quest_item`](./Enums.md#enum-unlock_quest_item) | Enum || 13 ||
 | `repeatable` | Boolean || 10 ||
 | [`trigger_house_boss`](./Enums.md#enum-trigger_house_boss) | Enum || 10 ||
-| [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum || 8 ||
-| [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum || 2 ||
-| [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum || 4 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 6 ||
-| [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum || 6 ||
 | [`complete_act_difficulty`](./Arrays.md#array-complete_act_difficulty) | Array || 9 ||
 | [`unlock_act_difficulty`](./Arrays.md#array-unlock_act_difficulty) | Array || 9 ||
+| [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum || 8 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 6 ||
+| [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum || 6 ||
+| [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum || 4 ||
 | [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum || 4 ||
 | `fully_complete_difficulty` | Integer || 4 ||
 | [`post_combat_cutscene`](./Enums.md#enum-post_combat_cutscene) | Enum || 4 ||
-| [`trigger_npc_sequence_tomorrow`](./Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum || 3 ||
 | [`unlock_npc_tomorrow`](./Enums.md#enum-unlock_npc_tomorrow) | Enum || 4 ||
 | [`visit_chapter`](./Enums.md#enum-visit_chapter) | Enum || 4 ||
+| [`trigger_npc_sequence_tomorrow`](./Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum || 3 ||
 | `requires_monoclass_run` | Boolean || 3 ||
 | [`requires_unlocked_npc`](./Enums.md#enum-requires_unlocked_npc) | Enum || 3 ||
+| [`complete_chapters`](./Arrays.md#array-complete_chapters) | Array || 3 ||
+| [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum || 2 ||
 | [`beanies_quests_intro`](Miscellaneous.md#object-beanies_quests_intro) | Object || 2 ||
 | [`beanies_quests_repeat`](Miscellaneous.md#object-beanies_quests_repeat) | Object || 2 ||
 | [`complete_adventure`](./Enums.md#enum-complete_adventure) | Enum || 2 ||
@@ -124,7 +125,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`upgrade_storage_repeating_impossible`](Miscellaneous.md#object-upgrade_storage_repeating_impossible) | Object || 2 ||
 | [`upgrade_storage_repeating_intro`](Miscellaneous.md#object-upgrade_storage_repeating_intro) | Object || 2 ||
 | [`upgrade_storage_repeating_normal`](Miscellaneous.md#object-upgrade_storage_repeating_normal) | Object || 2 ||
-| [`complete_chapters`](./Arrays.md#array-complete_chapters) | Array || 3 ||
 | [`destinations`](Miscellaneous.md#object-destinations) | Object || 1 ||
 | [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum || 1 ||
 | [`finish_quest`](./Enums.md#enum-finish_quest) | Enum || 1 ||
@@ -153,9 +153,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 266 ||
 | `immediate` | Boolean || 221 ||
 | [`frame`](./Enums.md#enum-frame) | Integer || 159 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 266 ||
 
 </details>
 

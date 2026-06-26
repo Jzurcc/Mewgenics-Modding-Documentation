@@ -18,9 +18,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2985 |  |
-| `value` | Float |  | 54 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
 | `icon_frame` | Integer |  | 74 |  |
+| `value` | Float |  | 54 |  |
 | `unique` | Boolean |  | 36 |  |
 | `specific_chapter` | Integer |  | 8 |  |
 | [`minion_alt`](./Enums.md#enum-minion_alt) | Enum |  | 5 |  |
@@ -106,8 +106,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer |  | 24 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 70 |  |
+| `knockback` | Enum / Integer |  | 24 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 10 |  |
 
 </details>
