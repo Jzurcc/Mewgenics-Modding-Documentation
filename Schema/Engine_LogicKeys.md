@@ -713,50 +713,12 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `weapon_throw` | Variable |  | 1 |
 | [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
-
-| `ApplyToSourceOnKill` | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
 | `AutocastEachRound` | Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 0 |
-| `BackflipWhenTargeted` | Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 0 |
-| `CatPartsTransform` | Object | Transforms specific body parts into different visual variants. | 0 |
-| `Conditional_Adjacent` | Object | Conditional constraint. Nested properties only trigger if this is true. | 0 |
-| `Conditional_Ally` | Object | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 0 |
-| `Conditional_Boss` | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 0 |
-| `Conditional_Enemy` | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 0 |
-| `Conditional_FinishedSpawning` | Object | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 0 |
-| `Conditional_FirstApplicationThisTurn` | Object | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 0 |
-| `Conditional_GoodRoll` | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 0 |
-| `Conditional_HasTag` | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 0 |
-| `Conditional_HealthThreshold` | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
-| `Conditional_InForm` | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 0 |
-| `Conditional_IsPhysicalAttack` | Object | Conditional: Executes logic if the triggering attack is physical. | 0 |
-| `Conditional_IsSelf` | Object | Conditional trigger: Executes nested logic if the target is the caster themselves. | 0 |
-| `Conditional_ManaThreshold` | Object | Conditional constraint. Nested properties only trigger if this is true. | 0 |
-| `Conditional_NotBoss` | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 0 |
-| `Conditional_NotBossOrBig` | Object | Conditional trigger: Executes nested logic if the target is NEITHER a Boss nor large. | 0 |
-| `Conditional_PartyMember` | Object | Conditional constraint. Nested properties only trigger if this is true. | 0 |
-| `Conditional_PlayerCat` | Object | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 0 |
-| `Conditional_RandomChance` | Object | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 0 |
-| `Consumed` | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 0 |
-| `Craft` | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
-| `DestroyEquipmentAndAttachParasite` | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
-| `DoDamage` | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| `effects` | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
-| `Else` | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-| `EvolveAbilityFromPool` | String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
-| `ForceAttack` | Object | Forces the character to execute an immediate attack. | 0 |
-| `ForceImmediateMoveAndAttack` | Object | Forces the character to immediately move to a target and use a specified ability. | 0 |
-| `form` | String | The specific form ID to check for. | 0 |
-| `FormChange` | String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
-| `KnockUpAndAway` | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `mount_mode` | String | If true, treats the consumption as riding/mounting instead of eating. | 0 |
 | `MovementReaction` | Object | Reaction: Triggers an effect or ability when forced to move. | 0 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 0 |
-| `struggle_ability` | String | Ability triggered by the consumed entity while inside the consumer. | 0 |
-| `TransformWeapon` | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 0 |
 | `UseAbility` | String | Forces the character or target to instantly use a specified ability. | 0 |
-| `XIsTargetHealth` | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
 </details>
 
 ### Valid Nested Objects
