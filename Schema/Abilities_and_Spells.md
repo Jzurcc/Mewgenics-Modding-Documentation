@@ -460,7 +460,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `requires_hp_threshold` | Integer | Must be below/above a certain health percentage. | 2 ||
 | `requires_weapon` | Boolean | Prerequisite: Must meet this condition. | 2 ||
 | [`durability`](./Enums.md) | Integer || 13 | 0 |
-| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Object | All valid keys from the specified engine key are applicable to this context/block. ||
 
 </details>
 
