@@ -47,9 +47,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | String |  | 3 |  |
 | [`bonk_damage`](./Abilities_and_Spells.md#object-bonk_damage) | Object | Damage dealt when knocked into a wall or obstacle. | 2 |  |
 | [`damage`](./Abilities_and_Spells.md#object-damage) | Object | The base damage properties of an attack. | 2 |  |
-| `move` | Enum |  | 122 | `Teleport` (Enum), `DefaultMove` (Enum) |
-| `spell0` | Enum |  |  | `Roll` (Enum), `Spit` (Enum) |
-| `spells` | Array |  |  | `[BirdFly]` (Array), `[RangedHeal_Enemy]` (Array) |
 
 </details>
 
