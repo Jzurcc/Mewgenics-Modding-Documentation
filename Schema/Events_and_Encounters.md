@@ -37,7 +37,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 4 ||
 | `set_frame` | `Number` || 4 ||
 | [`label`](./Strings.md#string-label) | String || 3 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 3 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 3 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 3 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the 'Good' action. | 3 ||
 | [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 3 ||
@@ -803,7 +803,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `lck` | Enum / Integer || 20 ||
 | `spd` | Enum / Integer || 20 ||
 | `str` | Enum / Integer || 18 ||
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Mixed || 16 ||
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Variable || 16 ||
 | `dex` | Enum / Integer || 10 ||
 
 </details>
@@ -850,8 +850,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 ||
-| [`label`](./Strings.md#string-label) | Mixed || 57 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 56 ||
+| [`label`](./Strings.md#string-label) | Variable || 57 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 56 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 55 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 ||
@@ -875,7 +875,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Strings.md#string-label) | Mixed || 44 ||
+| [`label`](./Strings.md#string-label) | Variable || 44 ||
 | [`stat`](./Math_Equations.md) | Equation || 44 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 ||
@@ -985,7 +985,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 32 ||
 | [`label`](./Strings.md#string-label) | String || 32 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 32 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 32 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 30 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 ||
 
@@ -1010,7 +1010,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 25 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 25 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 ||
-| [`label`](./Strings.md#string-label) | Mixed || 25 ||
+| [`label`](./Strings.md#string-label) | Variable || 25 ||
 | [`stat`](./Math_Equations.md) | Equation || 25 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 ||
@@ -1102,7 +1102,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 ||
-| [`label`](./Strings.md#string-label) | Mixed || 23 ||
+| [`label`](./Strings.md#string-label) | Variable || 23 ||
 | [`stat`](./Math_Equations.md) | Equation || 23 ||
 
 </details>
@@ -1223,7 +1223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String || 16 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 16 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 16 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 ||
@@ -1349,7 +1349,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 ||
-| [`label`](./Strings.md#string-label) | Mixed || 11 ||
+| [`label`](./Strings.md#string-label) | Variable || 11 ||
 | [`stat`](./Math_Equations.md) | Equation || 11 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
 
@@ -1514,7 +1514,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
-| [`label`](./Strings.md#string-label) | Mixed || 7 ||
+| [`label`](./Strings.md#string-label) | Variable || 7 ||
 | [`stat`](./Math_Equations.md) | Equation || 7 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
 
@@ -1538,7 +1538,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
-| [`label`](./Strings.md#string-label) | Mixed || 7 ||
+| [`label`](./Strings.md#string-label) | Variable || 7 ||
 | [`stat`](./Math_Equations.md) | Equation || 7 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -1562,8 +1562,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
-| [`label`](./Strings.md#string-label) | Mixed || 7 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 7 ||
+| [`label`](./Strings.md#string-label) | Variable || 7 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 7 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 6 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
@@ -1659,9 +1659,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
-| [`label`](./Strings.md#string-label) | Mixed || 6 ||
+| [`label`](./Strings.md#string-label) | Variable || 6 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 5 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 5 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 ||
 
@@ -1709,8 +1709,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
-| [`label`](./Strings.md#string-label) | Mixed || 6 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 6 ||
+| [`label`](./Strings.md#string-label) | Variable || 6 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 6 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
@@ -1783,7 +1783,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 ||
-| [`label`](./Strings.md#string-label) | Mixed || 5 ||
+| [`label`](./Strings.md#string-label) | Variable || 5 ||
 | [`stat`](./Math_Equations.md) | Equation || 5 ||
 
 </details>
@@ -1906,7 +1906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
 | [`label`](./Strings.md#string-label) | String || 4 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 3 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 3 ||
 | [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
 
 </details>
@@ -2455,8 +2455,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
-| [`label`](./Strings.md#string-label) | Mixed || 2 ||
-| [`stat`](./Enums.md#enum-stat) | Mixed || 2 ||
+| [`label`](./Strings.md#string-label) | Variable || 2 ||
+| [`stat`](./Enums.md#enum-stat) | Variable || 2 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
 | [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
 | [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||

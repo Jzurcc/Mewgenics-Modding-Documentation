@@ -21,17 +21,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`rare`](./Enums.md) | Integer || 34 | 40 |
 | `chapter_item_pool` | Enum |  | 19 | `cavesitems` (Enum), `alleyitems` (Enum) |
 | `uncommon` | Number | Examples: `35, 75, 60` | 12 |  |
-| `very_rare` | Mixed | Examples: `.01, 2, 1` | 11 |  |
+| `very_rare` | Variable | Examples: `.01, 2, 1` | 11 |  |
 | [`common`](./Enums.md) | Integer || 11 | 50 |
 | `chapter_rare` | Number | Examples: `1` | 5 |  |
 | `chapter_common` | Number | Examples: `1` | 3 |  |
 | `chapter` | Enum | Examples: `1` | 3 |  |
-| `Chicken` | Mixed | Examples: `.1, 2, .01` | 3 |  |
+| `Chicken` | Equation | Examples: `.1, 2, .01` | 3 |  |
 | `consumables` | Number | Examples: `60, 10` | 3 |  |
-| `current_chapter_common` | Mixed | Examples: `auto, 55` | 2 |  |
-| `current_chapter_rare` | Mixed | Examples: `auto, 10` | 2 |  |
-| `current_chapter_uncommon` | Mixed | Examples: `35, auto` | 2 |  |
-| `current_chapter_very_rare` | Mixed | Examples: `auto, 1` | 2 |  |
+| `current_chapter_common` | Variable | Examples: `auto, 55` | 2 |  |
+| `current_chapter_rare` | Variable | Examples: `auto, 10` | 2 |  |
+| `current_chapter_uncommon` | Variable | Examples: `35, auto` | 2 |  |
+| `current_chapter_very_rare` | Variable | Examples: `auto, 1` | 2 |  |
 | `basic_consumables` | Number | Examples: `90, 100` | 2 |  |
 | [`FoodBig`](Engine_LogicKeys.md#object-foodbig) | Object | Examples: `2, 1` | 2 ||
 | [`FoodMedium`](Engine_LogicKeys.md#object-foodmedium) | Object | Examples: `1, 5` | 2 ||

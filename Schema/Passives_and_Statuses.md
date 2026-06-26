@@ -1374,7 +1374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 5 ||
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 3 ||
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 3 ||
 
 </details>
 
@@ -1668,7 +1668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum || 22 ||
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 20 ||
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 20 ||
 | `good` | Boolean || 2 ||
 | `number` | Array / Integer || 2 ||
 
@@ -2814,7 +2814,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 5 ||
-| [`range`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | Distance or area of effect in tiles. | 5 ||
+| [`range`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | Distance or area of effect in tiles. | 5 ||
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | The specific entity tag required or applied. | 5 ||
 
 </details>

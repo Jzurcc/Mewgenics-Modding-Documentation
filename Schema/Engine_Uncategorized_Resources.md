@@ -3838,7 +3838,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthMultiplier` | Mixed | Examples: `1.5, .5, .8` | 15 ||
+| `HealthMultiplier` | Float | Examples: `1.5, .5, .8` | 15 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7293,7 +7293,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowardsEnemies` | Mixed | Examples: `DumbMove_Impl, 1, MoveOne` | 6 ||
+| `ForceMoveTowardsEnemies` | Variable | Examples: `DumbMove_Impl, 1, MoveOne` | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7407,7 +7407,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `KnockbackDirectionIsFacingDirection` | Mixed | Examples: `rotate_right, flip, 1` | 10 ||
+| `KnockbackDirectionIsFacingDirection` | Variable | Examples: `rotate_right, flip, 1` | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13787,7 +13787,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | Examples: `3, 20, 10` | 10 ||
-| `time` | Mixed | Examples: `.75, .5, 2` | 10 ||
+| `time` | Variable | Examples: `.75, .5, 2` | 10 ||
 
 </details>
 
@@ -15062,7 +15062,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreSelf` | Mixed | Applies or references the | 150 ||
+| `IgnoreSelf` | Variable | Applies or references the | 150 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18392,7 +18392,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TrailBlazer` | Mixed | Applies or references the | 2 ||
+| `TrailBlazer` | Variable | Applies or references the | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 

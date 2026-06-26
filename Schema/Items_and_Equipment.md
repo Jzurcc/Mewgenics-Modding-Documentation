@@ -36,7 +36,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `int` | Enum / Integer |  | 66 |  |
 | `consumable` | Boolean |  | 64 |  |
 | `lck` | Enum / Integer |  | 53 |  |
-| [`str`](./Engine_DamagingKeys.md#valid-property-keys) | Mixed |  | 45 |  |
+| [`str`](./Engine_DamagingKeys.md#valid-property-keys) | Variable |  | 45 |  |
 | `quest_item` | Boolean |  | 40 |  |
 | `parasite` | Boolean |  | 36 |  |
 | `aux` | Integer |  | 33 |  |
@@ -811,7 +811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum || 22 ||
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0 or percentage) of this occurring. | 20 ||
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Probability (0.0 to 1.0 or percentage) of this occurring. | 20 ||
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum || 5 ||
 
 </details>
@@ -2285,7 +2285,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 7 ||
-| [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Number of stacks or intensity to apply. | 5 ||
+| [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Number of stacks or intensity to apply. | 5 ||
 
 </details>
 

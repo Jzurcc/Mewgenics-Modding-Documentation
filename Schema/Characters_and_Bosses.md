@@ -562,7 +562,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum | Specific entity tag required. | 399 ||
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 280 ||
 | `movement` | Integer || 277 ||
-| [`corpse_health`](./Enums.md#enum-corpse_health) | Mixed || 195 ||
+| [`corpse_health`](./Enums.md#enum-corpse_health) | Variable || 195 ||
 | `inherit_faction` | Boolean || 115 ||
 | `dispersed_bonus_turns` | Integer || 104 ||
 | `base_mana_regen` | Integer || 90 ||
@@ -1531,14 +1531,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Antidote`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Applies or references the 'Antidote' effect/state. | 5 ||
-| `Blessing` | Mixed | Applies or references the 'Blessing' effect/state. | 5 ||
+| [`Antidote`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Float | Applies or references the 'Antidote' effect/state. | 5 ||
+| `Blessing` | Float | Applies or references the 'Blessing' effect/state. | 5 ||
 | [`BigCatnip`](Engine_LogicKeys.md#object-bigcatnip) | Integer / Object | Applies or references the 'BigCatnip' effect/state. | 4 ||
 | [`BiggestFood`](Engine_LogicKeys.md#object-biggestfood) | Integer / Object | Applies or references the 'BiggestFood' effect/state. | 4 ||
 | [`BigScrap`](Engine_LogicKeys.md#object-bigscrap) | Number / Object | Applies or references the 'BigScrap' effect/state. | 4 ||
 | [`Coin`](Engine_LogicKeys.md#object-coin) | Integer / Object | Applies or references the 'Coin' effect/state. | 4 ||
 | [`BigFood`](Engine_LogicKeys.md#object-bigfood) | Integer / Object | Applies or references the 'BigFood' effect/state. | 2 ||
-| `Coin10` | Mixed | Applies or references the 'Coin10' effect/state. | 2 ||
+| `Coin10` | Float | Applies or references the 'Coin10' effect/state. | 2 ||
 | [`Coin3`](Engine_LogicKeys.md#object-coin3) | Integer / Object | Applies or references the 'Coin3' effect/state. | 2 ||
 | [`Coin4`](Engine_LogicKeys.md#object-coin4) | Integer / Object | Applies or references the 'Coin4' effect/state. | 2 ||
 | [`MedCatnip`](Engine_LogicKeys.md#object-medcatnip) | Integer / Object | Applies or references the 'MedCatnip' effect/state. | 2 ||
@@ -1841,7 +1841,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Array / Enum || 38 ||
 | `good` | Boolean || 20 ||
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0) of executing this action. | 12 ||
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Probability (0.0 to 1.0) of executing this action. | 12 ||
 | `spawn_on_death_hit` | Boolean || 10 ||
 | `coins` | Integer || 2 ||
 | `consider_all_layers` | Boolean || 2 ||
@@ -2346,7 +2346,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed || 2 ||
+| [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable || 2 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
 | [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
 | [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||

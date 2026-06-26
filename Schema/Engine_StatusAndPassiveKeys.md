@@ -561,7 +561,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AlwaysHitDifferentTargets` | Integer | Applies or references the 'AlwaysHitDifferentTargets' effect/state. | 2 ||
 | `AmplifyNegativeStatus` | Integer | Applies the 'AmplifyNegativeStatus' effect. | 2 ||
 | `AmplifyPositiveStatus` | Integer | Applies the 'AmplifyPositiveStatus' effect. | 2 ||
-| `Antidote` | Mixed | Applies or references the 'Antidote' effect/state. | 2 ||
+| `Antidote` | Float | Applies or references the 'Antidote' effect/state. | 2 ||
 | [`ApplyStatusesToRandomEnemiesEachTurn`](Items_and_Equipment.md#object-applystatusestorandomenemieseachturn) | Object | Applies or references the 'ApplyStatusesToRandomEnemiesEachTurn' effect/state. | 2 ||
 | [`ApplyStatusIfCrit`](Abilities_and_Spells.md#object-applystatusifcrit) | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 2 ||
 | [`ApplyToTile`](Abilities_and_Spells.md#object-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 ||

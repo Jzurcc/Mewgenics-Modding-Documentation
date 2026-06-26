@@ -79,8 +79,8 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `all_disorders` | Variable || 12 ||
 | [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | Examples: `iceage.gon, dimensionx.gon, future.gon` | 12 ||
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 12 ||
-| `current_chapter_common` | Mixed | `auto` | 12 ||
-| `current_chapter_rare` | Mixed | `auto` | 12 ||
+| `current_chapter_common` | Variable | `auto` | 12 ||
+| `current_chapter_rare` | Variable | `auto` | 12 ||
 | [`caves`](./Enums.md#enum-caves) | Enum | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` | 12 ||
 | [`junkyard`](./Enums.md#enum-junkyard) | Enum | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` | 12 ||
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 ||

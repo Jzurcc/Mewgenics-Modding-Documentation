@@ -205,8 +205,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 876 ||
 | [`type_icon`](./Strings.md#string-type_icon) | Enum || 283 ||
 | `animate_name` | Boolean / Enum | If true, adds a visual pop/animation to the name text when cast. | 177 ||
-| [`icon_shell_frame`](./Strings.md#string-icon_shell_frame) | Mixed || 28 ||
-| [`is_move`](./Enums.md#enum-is_move) | Mixed || 20 ||
+| [`icon_shell_frame`](./Strings.md#string-icon_shell_frame) | Variable || 28 ||
+| [`is_move`](./Enums.md#enum-is_move) | Variable || 20 ||
 | [`ability_icon`](./Enums.md#enum-ability_icon) | Enum | The UI icon to display in the action bar. | 14 ||
 | [`tooltip_values`](./Arrays.md#array-tooltip_values) | Array || 9 ||
 | [`icon_damage_display`](./Strings.md#string-icon_damage_display) | String || 8 ||
@@ -243,7 +243,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`damage`](#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 1447 ||
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 359 ||
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 352 ||
-| [`knockback`](./Engine_DamagingKeys.md#valid-property-keys) | Mixed | The base physics pushing power (in tiles). | 254 ||
+| [`knockback`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | The base physics pushing power (in tiles). | 254 ||
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 222 ||
 | `heal` | `Number` | Restores health instead of dealing damage. | 122 ||
 | `cant_miss` | `Boolean` | Guarantees the hit, bypassing dodge mechanics. | 110 ||
@@ -304,7 +304,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`restrictions`](./Arrays.md#array-restrictions) | Array / Enum | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 462 ||
 | [`aoe_mode`](./Enums.md#enum-aoe_mode) | Enum | The shape of the area (`standard`, `line`, `cross`, `square`, `custom`). | 429 ||
 | [`knockback_mode`](./Enums.md#enum-knockback_mode) | Enum / Integer | How physics vectors apply (`character_to_tile`, `pull_to_character`, `zero`, `orientation`). | 264 ||
-| [`min_aoe`](./Enums.md#enum-min_aoe) | Mixed | The maximum and minimum radius/length of the AoE. | 253 ||
+| [`min_aoe`](./Enums.md#enum-min_aoe) | Variable | The maximum and minimum radius/length of the AoE. | 253 ||
 | `aoe_excludes_self` | Boolean | Prevents the AoE from hitting the caster. | 241 ||
 | [`aoe_restrictions`](./Arrays.md#array-aoe_restrictions) | Array / Enum | Array of conditions the AoE tiles must meet (e.g., `must_have_line_of_sight_unpurgable`). | 197 ||
 | `aoe_considers_character_size` | Boolean | Scales the AoE based on the caster's tile size (e.g., 2x2). | 170 ||
@@ -314,10 +314,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `multihit` | Enum / Integer | Hardcoded number of times the ability hits the target. | 62 ||
 | `max_targets` | Integer / String | Limits on how many distinct entities can be targeted. | 56 ||
 | `range_excludes_blocking` | Boolean | Cannot target through walls/obstacles. | 53 ||
-| `prioritize_dont_change_direction` | Mixed | AI preference to maintain current facing angle. | 52 ||
+| `prioritize_dont_change_direction` | Variable | AI preference to maintain current facing angle. | 52 ||
 | [`target_requires_tag`](./Enums.md#enum-target_requires_tag) | Enum | Target must possess this exact character tag. | 40 ||
 | [`aoe_symmetry`](./Enums.md#enum-aoe_symmetry) | Enum | Determines if the AoE mirrors on axes. | 28 ||
-| `prioritize_face_camera` | Mixed | AI preference to face South. | 26 ||
+| `prioritize_face_camera` | Variable | AI preference to face South. | 26 ||
 | `straight_shot` | Boolean | Ensures projectiles do not arc. | 24 ||
 | `can_multihit` | Boolean | If true, overlapping AoEs can hit the same target multiple times. | 17 ||
 | `allow_any_orientation` | Boolean | Allows casting regardless of the character's facing direction. | 16 ||
@@ -341,7 +341,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`custom_aoe_util`](./Arrays.md#array-custom_aoe_util) | Array | Utility variants of custom AoE definitions. | 6 ||
 | `aoe_hint_teamcast` | Boolean | Visual hint for cooperative casting abilities. | 5 ||
 | [`aoe_tile_requires_element`](./Enums.md#enum-aoe_tile_requires_element) | Enum | Only affects tiles painted with a specific element. | 5 ||
-| `distance_sort_targets` | Mixed | Prioritizes targets based on proximity. | 5 ||
+| `distance_sort_targets` | Variable | Prioritizes targets based on proximity. | 5 ||
 | `dont_orient_aoe` | Boolean | Prevents the AoE shape from rotating with the character. | 5 ||
 | `hint_can_target_pickups` | Boolean | UI hint that the player can target items on the ground. | 5 ||
 | `max_bounces` | Integer | Hard cap on how many times a bouncing effect can trigger. | 5 ||
@@ -355,7 +355,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `upgrade_straight_shot_to_boomerang` | Boolean | Makes the projectile return to caster. | 4 ||
 | [`mouse_offset`](./Arrays.md#array-mouse_offset) | Array | Visual offset for the targeting cursor. | 4 ||
 | `dont_orient` | Boolean | Prevents the character from turning to face the target. | 3 ||
-| `low_health_character_threshold` | Mixed | AI targeting threshold for seeking weak targets. | 3 ||
+| `low_health_character_threshold` | Variable | AI targeting threshold for seeking weak targets. | 3 ||
 | `randomize_target_within_range` | Integer | Picks a random valid tile instead of the user's click. | 3 ||
 | [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | Targets only tiles with this specific tag. | 3 ||
 | `track_target` | Boolean | Projectile/Effect follows moving targets. | 3 ||
@@ -419,13 +419,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mana` | Enum / Integer | MP pool and how much it restores per turn. | 1605 ||
 | `infcantrip` | Boolean | Can be cast infinitely as long as costs are met. | 810 ||
 | `cantrip` | Boolean | Does not end the turn when cast. | 560 ||
-| `once_per_fight` | Mixed | Exhausts for the remainder of combat after one use. | 98 ||
+| `once_per_fight` | Variable | Exhausts for the remainder of combat after one use. | 98 ||
 | `act_points` | Integer | Consumes primary action points (default 1). | 86 ||
 | `move_points` | Integer | Consumes movement points. | 59 ||
 | `prime` | Integer | Requires a "priming" turn before it fires. | 30 ||
 | `allow_offmap_casts` | Boolean | Can be used while the character is hidden/removed from grid. | 22 ||
-| `cant_cast` | Mixed | Explicitly disables casting (used for passive-triggered only abilities). | 18 ||
-| [`charge`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Cooldown timers measured in turns. | 18 ||
+| `cant_cast` | Variable | Explicitly disables casting (used for passive-triggered only abilities). | 18 ||
+| [`charge`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Cooldown timers measured in turns. | 18 ||
 | `must_be_consuming` | Boolean | Requires the character to be eating/holding something. | 17 ||
 | `must_not_be_consuming` | Boolean | Cannot be holding/eating an entity. | 14 ||
 | `requires_reload` | Boolean | Must spend an action to reload before casting again. | 14 ||
@@ -442,7 +442,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `must_not_be_a_summon` | Boolean | Summons/Familiars cannot cast this. | 7 ||
 | `start_reloaded` | Boolean | Spawns with the ability pre-loaded. | 7 ||
 | `must_be_first_action` | Boolean | Can only be used at the very start of the turn. | 4 ||
-| `enabled_formula` | Mixed | Mathematical string required to be >0 to cast. | 3 ||
+| `enabled_formula` | Variable | Mathematical string required to be >0 to cast. | 3 ||
 | `must_be_first_nonmove_action` | Boolean | Can move first, but cannot use other abilities first. | 3 ||
 | `must_have_weapon` | Boolean | Requires a weapon equipped in the item slot. | 2 ||
 | `can_be_refreshed` | Boolean | Passives/Effects can reset this ability's cooldown. | 1 ||
@@ -480,7 +480,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 220 ||
 | [`effects`](#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 200 ||
-| [`damage`](./Abilities_and_Spells.md#object-damage) | Mixed | The base damage properties of an attack. | 47 ||
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Variable | The base damage properties of an attack. | 47 ||
 | `piercing` | `Boolean` || 12 ||
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 ||
 | `cant_miss` | `Boolean` || 10 ||
@@ -1169,7 +1169,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `distance` | Integer | The distance in tiles to knock the target away. | 24 ||
-| [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Number of stacks or intensity to apply. | 22 ||
+| [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Number of stacks or intensity to apply. | 22 ||
 | `height` | Integer || 2 ||
 | `circular_variance` | Integer || 1 ||
 
@@ -1404,7 +1404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Engine_LogicKeys.md#valid-property-keys) | Mixed || 75 ||
+| [`form`](./Engine_LogicKeys.md#valid-property-keys) | Variable || 75 ||
 | [`chance`](./Enums.md) | Number || 1 | .02 |
 
 </details>
@@ -1593,7 +1593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer || 10 ||
-| [`time`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed || 10 ||
+| [`time`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable || 10 ||
 
 </details>
 
@@ -2099,7 +2099,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](./Abilities_and_Spells.md#object-damage) | Mixed | The damage formula or inherit flag. | 6 ||
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Variable | The damage formula or inherit flag. | 6 ||
 | `max_dist` | Integer | Maximum displacement distance. | 6 ||
 | `min_dist` | Integer | Minimum displacement distance. | 2 ||
 | [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum || 1 ||
@@ -2595,7 +2595,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | The float time delay in seconds. | 4 ||
+| [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The float time delay in seconds. | 4 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
 | [`SwitchMusic`](#object-switchmusic) | Object | Changes the background music track or layer during combat. | 2 ||
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
@@ -2627,7 +2627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | The number of times the nested effects block should be repeatedly executed. | 3 ||
+| [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | The number of times the nested effects block should be repeatedly executed. | 3 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
 | [`RandomStatusFromPool`](#object-randomstatusfrompool) | Object || 3 ||
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
