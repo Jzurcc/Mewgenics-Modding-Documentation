@@ -750,6 +750,18 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `EquipPermanentItem` | Enum |  | `BoneClub` (Enum), `Kidney` (Enum) |
+| `FindItem` | Enum |  | `BoneClub` (Enum), `Pearl` (Enum) |
+| `FindItemFromPool` | Enum / Object |  | `chapter_specific_item` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
+| `ForceUseAbility` | Enum / Object |  | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+| `GainCoinsRange` | Object |  | `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `3` (Number), `8` (Number) |
+| `KineticSpikes` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -764,6 +776,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
 
 </details>
 
@@ -795,6 +808,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
+| `Bleed` | Array / Number / Object |  | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -827,6 +841,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
+| `BleedThorns` | Array / Number / Object |  | `[1 .5]` (Array), `6` (Number), `3` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -841,6 +860,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -855,7 +875,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 |
+| [`odds`](./Enums.md#enum-odds) | Number / String | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 |
 
 </details>
 
@@ -871,6 +891,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 6 |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -929,6 +950,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `RandomMutation` | Number |  | `3` (Number), `1` (Number) |
+| `SafeDoomed` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -989,6 +1013,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 3 |
 | [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 2 |
 | [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Nested conditional. | 1 |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1003,6 +1029,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `6` (Number), `-2` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1018,6 +1046,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1047,8 +1076,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 |
+| [`odds`](./Enums.md#enum-odds) | Number / String | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 |
 | [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
+| `ChangeTilesUnder` | Enum |  | `LavaTile` (Enum), `DirtTile` (Enum) |
+| `FindItemFromPool` | Enum / Object |  | `parasites` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
+| `ForceUseAbility` | Enum / Object |  | `cm_RaptorEggSpawn` (Enum), `tk_WeirdEgg_Spawn` (Enum), `{ ... }` (Object) |
+| `RandomMutation` | Number |  | `3` (Number), `1` (Number) |
 
 </details>
 
@@ -1078,6 +1111,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 20 |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1096,6 +1131,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 6 |
 | [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 4 |
 | [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
+| `ChangeTilesUnder` | Enum |  | `LavaTile` (Enum), `DirtTile` (Enum) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1129,6 +1166,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
+| `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `15` (Number), `20` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1213,6 +1253,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `RepairTrinket` | Number |  | `1` (Number), `99` (Number) |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 1 |
 
 </details>
@@ -1258,6 +1299,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- |
 | [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 2 |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1286,6 +1328,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Knockback` | Number / Object |  | `10` (Number), `3` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1301,6 +1344,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 3 |
+| `RepairWeapon` | Array / Number |  | `[1 .25]` (Array), `6` (Number), `1` (Number) |
 
 </details>
 
@@ -1316,6 +1360,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
+| `SpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1348,6 +1393,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1377,6 +1423,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `SetItemAux` | Object |  | `{ ... }` (Object) |
 
 </details>
 
@@ -1392,6 +1439,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
+| `ScatterCoins` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1438,6 +1486,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 2 |
+| `Knockback` | Number / Object |  | `3` (Number), `10` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1455,9 +1504,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 |
 | `force_contact` | Boolean | If true, enforces physical overlap. | 15 |
 | `instant` | Boolean | Examples: `true` | 12 |
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 12 |
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | If true, treats the consumption as riding/mounting instead of eating. | 12 |
 | `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |
-| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean | Examples: `false, true, deferred` | 11 |
+| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Examples: `false, true, deferred` | 11 |
 | `wet` | Boolean | Examples: `false, true` | 8 |
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 |
 | [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
@@ -1486,6 +1535,17 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
 | [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 1 |
 | [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
+| `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `15` (Number), `66` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `GainCoinsRange` | Object |  | `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `Maggot` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
+| `PartialCleanse` | Number |  | `1` (Number), `9999` (Number) |
+| `Poison` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `ScatterCoins` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
+| `Webbed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -1514,7 +1574,31 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 5 |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 5 |
 | [`Conditional_Familiar`](#conditional_familiar) | Object | Nested conditional. | 4 |
-| `LowerAmbientLight` | Number | A visual effect that dims the map's lighting. | 4 |
+| `Bleed` | Array / Number / Object |  | `[1 .1]` (Array), `[3 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `ChangeTilesUnder` | Enum |  | `LavaTile` (Enum), `DirtTile` (Enum) |
+| `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `CharismaUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `CreateGlobalModifiers` | Object |  | `{ ... }` (Object) |
+| `CritChanceUp` | Array / Number / Object |  | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
+| `DamageOrHealConditionally` | Number |  | `1` (Number) |
+| `DamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `2` (Number), `{ ... }` (Object) |
+| `DiminishingHealthRegen` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `DivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `DodgeChance_Status` | Array / Number / Object |  | `[1 .5]` (Array), `15` (Number), `50` (Number), `{ ... }` (Object) |
+| `DrinkWater` | Number |  | `1` (Number) |
+| `ExtraBasicMoves_Status` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .25]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `FindExtraItemFromPoolOnBattleEnd` | Enum |  | `combat_reward_easy` (Enum), `pills` (Enum) |
+| `ForceUseAbility` | Enum / Object |  | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+| `GainCoinsRange` | Object |  | `{ ... }` (Object) |
+| `HealthGain` | Enum / Number |  | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| `KineticSpikes` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Knockback` | Number / Object |  | `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `KnockOutCoin` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Lifesteal` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `LowerAmbientLight` | Number / Object | A visual effect that dims the map's lighting. | 4 |
 | [`Conditional_AffectedByElement`](#conditional_affectedbyelement) | Object | Nested conditional. | 3 |
 | [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Object | Nested conditional. | 3 |
 | [`Conditional_LastHit`](#conditional_lasthit) | Object | Nested conditional. | 3 |
@@ -1542,6 +1626,5033 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Object | Nested conditional. | 1 |
 | [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Object | Nested conditional. | 1 |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `-4` (Number), `{ ... }` (Object) |
+| `MoveQuivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `NonStackingDivineShield` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `SkeletonCatFamiliar` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
+| `PartialCleanse` | Number |  | `1` (Number), `9999` (Number) |
+| `PermanentConstitution` | Number |  | `-1` (Number), `-2` (Number) |
+| `PermanentDexterity` | Number |  | `1` (Number), `2` (Number) |
+| `PermanentIntelligence` | Number |  | `1` (Number), `2` (Number) |
+| `PermanentSpeed` | Number |  | `1` (Number), `2` (Number) |
+| `Poison` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
+| `RandomMagicMissile` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `6` (Number), `{ ... }` (Object) |
+| `RandomPermanentStat` | Number |  | `-1` (Number), `-2` (Number) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `3` (Number), `-3` (Number) |
+| `RangeUp` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Reflect` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `RepairWeapon` | Array / Number |  | `[1 .25]` (Array), `6` (Number), `1` (Number) |
+| `Rot` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `SetDefaultFace` | Enum |  | `insane` (Enum), `happy` (Enum) |
+| `SizeScale` | Number / String |  | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
+| `SpawnCoinAnywhere` | Array / Number |  | `[1 .5]` (Array), `1` (Number) |
+| `SpellDamageUp` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `StatusAllCharactersOnSpawn` | Object |  | `{ ... }` (Object) |
+| `StatusGroup` | Object |  | `{ ... }` (Object) |
+| `Tangled` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .33]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `TempCounterAttack` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
+| `Trample` | Array / Number / Object |  | `[3 X-8]` (Array), `[1 .5]` (Array), `9` (Number), `6` (Number), `{ ... }` (Object) |
+| `Webbed` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
 </details>
+
+
+
+## Discovered Objects
+
+> These tables were auto-generated by the schema audit tool. They document objects found in the `.gon` files that were not previously documented.
+
+### Object: `AcidRain`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alpha` | String |  | `.5` (String) |
+| `ambient_sound` | String |  | `amb_acidrain.ogg` (String) |
+| `chain` | Enum |  | `AcidSplash` (Enum) |
+| `desc` | String |  | `"WEATHER_ACIDRAIN_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  | `1` (Number) |
+| `emit_box` | Array |  | `[0 10 10 10 0 10]` (Array) |
+| `emit_direction` | Array |  | `[0 -1 0]` (Array) |
+| `emit_rate` | Number |  | `100` (Number) |
+| `emit_spread` | Number |  | `0` (Number) |
+| `face_moving_direction` | Boolean |  | `true` (Boolean) |
+| `force` | Array |  | `[0 -10 0]` (Array) |
+| `live_bounds` | Array |  | `[-999 999 0 999 -999 999]` (Array) |
+| `movieclip` | Enum |  | `AcidRainParticle` (Enum) |
+| `name` | String |  | `"WEATHER_ACIDRAIN_NAME"` (String) |
+| `particle_lifetime` | Number |  | `5` (Number) |
+| `projection_matrix` | Enum |  | `default` (Enum) |
+| `render_mode` | Enum |  | `separate` (Enum) |
+| `scripts` | Object |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  | `global` (Enum) |
+| `size_start` | String |  | `.5` (String) |
+| `speed_scale` | String |  | `.1` (String) |
+| `speed_start` | Number |  | `10` (Number) |
+
+
+### Object: `AddPostProcessEffect`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `requires_framebuffer` | Boolean |  | `false` (Boolean) |
+| `shader` | Enum |  | `shimmervignette` (Enum) |
+
+
+### Object: `AddTilesetObjects`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `FloatingDebris` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Adrenaline`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_ADRENALINE_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_ADRENALINE_DESC"` (String) |
+
+
+### Object: `Alert`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `Alert` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `AllAlive`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `AllyInfested`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alias` | Enum |  | `Infested` (Enum) |
+| `faction` | Enum |  | `allies` (Enum) |
+| `object` | Enum |  | `CharmedMaggot` (Enum) |
+
+
+### Object: `Angry`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `"Angry"` (Enum) |
+
+
+### Object: `Antidote`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_Antidote` (Enum) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_ANTIDOTE_DESC"` (String) |
+| `durability` | Number |  | `2` (Number) |
+| `frame` | Number |  | `103` (Number) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_ANTIDOTE_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `consumable_common` (Enum) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `Appeal`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_APPEAL_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_APPEAL_DESC"` (String) |
+
+
+### Object: `ApplyMultipleTimes`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `RandomStatusFromPool` | Object |  | `{ ... }` (Object) |
+| `stacks` | Enum / Number |  | `X` (Enum), `4` (Number), `8` (Number) |
+
+
+### Object: `ApplyPassives`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Flying` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `YOffset` | String |  | `-.18` (String), `.35` (String) |
+
+
+### Object: `ApplyStatusesNextTurnBegin`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+
+
+### Object: `ApplyToConsumed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `DeleteObject` | Number |  | `1` (Number) |
+| `Die` | Number / Object |  | `6` (Number), `1` (Number), `{ ... }` (Object) |
+
+
+### Object: `ApplyToOthersWithSharedTagAndFaction`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Marked` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+
+
+### Object: `ApplyToRandomClosestAlly`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ForceMoveTowards` | Number |  | `1` (Number) |
+
+
+### Object: `ApplyToTile`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ObjectOnHit` | Enum / Object |  | `BiggestFood` (Enum), `Bait` (Enum), `{ ... }` (Object) |
+| `SpawnBearTrap` | Number |  | `1` (Number) |
+
+
+### Object: `ArcLightning`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `chance` | String |  | `.5` (String) |
+| `enemies_only` | Boolean |  | `false` (Boolean), `true` (Boolean) |
+| `ignore_self` | Boolean |  | `true` (Boolean) |
+| `max_distance` | Number |  | `3` (Number), `1` (Number) |
+| `stacks` | Number |  | `100` (Number) |
+
+
+### Object: `Attacker`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Attraction`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_ATTRACTION_NAME"` (String) |
+| `name_reference_applier` | String |  | `"KEYWORD_ATTRACTION_REF"` (String) |
+| `tooltip_reference_applier` | String |  | `"KEYWORD_ATTRACTION_DESC_REF"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_ATTRACTION_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_ATTRACTION_DESC"` (String) |
+
+
+### Object: `BagOfSeeds`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `tk_BagOfSeeds` (Enum) |
+| `desc` | String |  | `"ITEM_BAGOFSEEDS_DESC"` (String) |
+| `frame` | Number |  | `182` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_BAGOFSEEDS_NAME"` (String) |
+| `rarity` | Enum |  | `rare` (Enum) |
+| `set` | Enum |  | `Druid` (Enum) |
+
+
+### Object: `Basement0`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `5` (Number) |
+| `movieclip` | Enum |  | `RoomBackgroundBasement0` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `33` (Number) |
+
+
+### Object: `Basement1`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `5` (Number) |
+| `movieclip` | Enum |  | `RoomBackgroundBasement1` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `33` (Number) |
+
+
+### Object: `Basement2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `5` (Number) |
+| `movieclip` | Enum |  | `RoomBackgroundBasement2` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `33` (Number) |
+
+
+### Object: `Basement3`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `5` (Number) |
+| `movieclip` | Enum |  | `RoomBackgroundBasement3` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `33` (Number) |
+
+
+### Object: `Basement4`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `5` (Number) |
+| `movieclip` | Enum |  | `RoomBackgroundBasement4` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `33` (Number) |
+
+
+### Object: `BasementUpgrade`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `MediumHouse` (Enum) |
+| `unlock_room` | Enum |  | `Basement0` (Enum) |
+
+
+### Object: `BasementUpgrade2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `BasementUpgrade` (Enum) |
+| `unlock_room` | Enum |  | `Basement1` (Enum) |
+
+
+### Object: `BasementUpgrade3`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `BasementUpgrade2` (Enum) |
+| `unlock_room` | Enum |  | `Basement2` (Enum) |
+
+
+### Object: `BasementUpgrade4`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `BasementUpgrade3` (Enum) |
+| `unlock_room` | Enum |  | `Basement3` (Enum) |
+
+
+### Object: `BasementUpgrade5`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `BasementUpgrade4` (Enum) |
+| `unlock_room` | Enum |  | `Basement4` (Enum) |
+
+
+### Object: `Bear`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `BellyFull`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `"Belly"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Big`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `Big` (Enum), `"Big"` (Enum) |
+| `attack` | Enum |  | `GameteSpawn` (Enum) |
+| `follow_character_tag` | Enum |  | `zaratana` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `position` | Array |  | `[4.5 4.5]` (Array) |
+
+
+### Object: `BigCatnip`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `BigFood`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `FoodBase` (Enum) |
+
+
+### Object: `BigHolding`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"BigHolding"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `BigHoldingCat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"BigHoldingCat"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `BigScrap`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `BiggestFood`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `FoodBase` (Enum) |
+
+
+### Object: `BirdFeed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ITEM_BIRDFEED_DESC"` (String) |
+| `frame` | Number |  | `191` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_BIRDFEED_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+
+
+### Object: `BirdPoopHat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cha` | Number |  | `-1` (Number) |
+| `cursed` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ARMOR_BIRDPOOPHAT_DESC"` (String) |
+| `frame` | Number |  | `30` (Number) |
+| `kind` | Enum |  | `head` (Enum) |
+| `name` | String |  | `"ARMOR_BIRDPOOPHAT_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `set` | Enum |  | `Fecal` (Enum) |
+
+
+### Object: `Bishop`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `tk_Bishop` (Enum) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Bishop"` (Enum) |
+| `attack` | Enum |  | `BBXLightning` (Enum) |
+| `desc` | String |  | `"ITEM_BISHOP_DESC"` (String) |
+| `durability` | Number |  | `6` (Number) |
+| `frame` | Number |  | `201` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ENEMY_CULTISTBISHOP_NAME"` (String), `"ITEM_BISHOP_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+| `tooltip` | String |  | `"ENEMY_CULTISTBISHOP_DESC"` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `2.5` (Number) |
+
+
+### Object: `BlackBird`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdSmall` (Enum) |
+
+
+### Object: `BlackHole`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"BlackHole"` (Enum) |
+| `name` | String |  | `"OBJECT_BLACKHOLE_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"OBJECT_BLACKHOLE_DESC"` (String) |
+| `variant_of` | Enum |  | `NeutronStar` (Enum) |
+
+
+### Object: `Blessing`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `intro` | Object |  | `{ ... }` (Object) |
+| `main` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `Bloodzerked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_BLOODZERK_NAME"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_BLOODZERK_DESC"` (String) |
+
+
+### Object: `BodyGuard`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `BodyGuardSwap2` (Enum), `BodyGuardSwap` (Enum) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"KEYWORD_BODYGUARD_NAME"` (String) |
+| `stacks` | Number |  | `1` (Number) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | String |  | `"KEYWORD_BODYGUARD_DESC"` (String) |
+
+
+### Object: `Bomb`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ability` | Enum |  | `wp_Bomb` (Enum) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `desc` | String |  | `"ITEM_BOMB_DESC"` (String) |
+| `durability` | Number |  | `1` (Number) |
+| `frame` | Number |  | `11` (Number) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `weapon` (Enum) |
+| `name` | String |  | `"ITEM_BOMB_NAME"` (String) |
+| `partial_animation_suffix` | Enum |  | `Button` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+| `sound` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `BombRatTurtle`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `self_buff` (Enum) |
+
+
+### Object: `BoneyardUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Boris`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"2"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `BothObelisksUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Bully`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `BunkerUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Butcher`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate SkullBash Shred Chomp Succ...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_BUTCHER0" "TEAMNAME_ADJECTIVE_BUTCHER1" "TEAMNAME_ADJECTIVE_BUTCHER2" "TEAMNAME_ADJECTIVE_BUTCHER3" "TEAMNAME_ADJECTIVE_BUTCHER4" "TEAMNAME_ADJECTIVE_BUTCHER5" "TEAMNAME_ADJECTIVE_BUTCHER6" "TEAMNAME_ADJECTIVE_BUTCHER7" "TEAMNAME_ADJECTIVE_BUTCHER8" "TEAMNAME_ADJECTIVE_BUTCHER9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicButcherMelee]` (Array) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `desc` | String |  | `"SETBONUS_BUTCHER_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `innate_items` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[con str lck]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_BUTCHER_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_BUTCHER0" "TEAMNAME_NOUN_BUTCHER1" "TEAMNAME_NOUN_BUTCHER2" "TEAMNAME_NOUN_BUTCHER3" "TEAMNAME_NOUN_BUTCHER4" "TEAMNAME_NOUN_BUTCHER5" "TEAMNAME_NOUN_BUTCHER6" "TEAMNAME_NOUN_BUTCHER7" "TEAMNAME_NOUN_BUTCHER8" "TEAMNAME_NOUN_BUTCHER9"...]` (Array) |
+| `passive_pool` | Array |  | `[Putrefy NeverFull MainCourse FreshMeat Masochist Glutton Hooked Stompy Barbed GrapplingHook...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[Succ HogRush Chomp BodySlam Vurp Tromp Spoil Grill Sharpen SliceAndDice]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spell` (Enum) |
+
+
+### Object: `ButterflySwarm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ambient_sound` | String |  | `amb_butterflyswarm.ogg` (String) |
+| `desc` | String |  | `"WEATHER_BUTTERFLY_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_BUTTERFLY_NAME"` (String) |
+
+
+### Object: `CanApplyToInanimate`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ApplyToSource` | Object |  | `{ ... }` (Object) |
+| `BreakIntoRocks` | Enum |  | `Coin` (Enum), `SmallRock` (Enum) |
+| `GetAggroTarget` | Number |  | `1` (Number) |
+| `ObjectOnHitCharacter` | Enum / Object |  | `AllyRotFly` (Enum), `CharmedLeech` (Enum), `{ ... }` (Object) |
+| `PreventDeathTransforms` | Number |  | `1` (Number) |
+| `Temporary` | Object |  | `{ ... }` (Object) |
+| `Vaporize` | Number |  | `1` (Number), `20` (Number) |
+
+
+### Object: `CastAgainWithStatus`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `OverrideDamage` | Number |  | `25` (Number), `10` (Number) |
+| `stacks` | Number |  | `1` (Number) |
+
+
+### Object: `Cat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation` | Enum |  | `spawnHoldingCat` (Enum) |
+| `formchange` | Enum |  | `SmallHoldingCat` (Enum), `BigHoldingCat` (Enum) |
+| `statuses` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `CatPartsSizeScaleStatus`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `arm1` | Number |  | `1.1` (Number) |
+| `arm2` | Number |  | `1.1` (Number) |
+| `body` | Number |  | `1.1` (Number) |
+| `mouth` | Number |  | `1.1` (Number) |
+
+
+### Object: `Catepillar`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Catnip`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_Catnip` (Enum) |
+| `aux` | Number |  | `7` (Number) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_SMALLCATNIPBAGGY_DESC"` (String) |
+| `durability` | Number |  | `1` (Number) |
+| `frame` | Number |  | `22` (Number) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_SMALLCATNIPBAGGY_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `consumable_common` (Enum) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `CatnipBig`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_Catnip` (Enum) |
+| `aux` | Number |  | `12` (Number) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_LARGECATNIPBAGGY_DESC"` (String) |
+| `durability` | Number |  | `1` (Number) |
+| `frame` | Number |  | `3` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_LARGECATNIPBAGGY_NAME"` (String) |
+| `rarity` | Enum |  | `consumable_common` (Enum) |
+
+
+### Object: `CaveBaby`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"CaveBaby"` (Enum) |
+| `attack` | Enum |  | `CaveBabyMelee` (Enum) |
+| `name` | String |  | `"ENEMY_CAVEBABY_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_CAVEBABY_DESC"` (String) |
+| `variant_of` | Enum |  | `CavePerson` (Enum) |
+
+
+### Object: `CaveMan`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"CaveMan"` (Enum) |
+| `attack` | Enum |  | `CaveMan3HitCombo` (Enum) |
+| `name` | String |  | `"ENEMY_CAVEMANMAN_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_CAVEMANMAN_DESC"` (String) |
+| `variant_of` | Enum |  | `CavePerson` (Enum) |
+
+
+### Object: `CaveManSpear`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"SpearCaveMan"` (Enum) |
+| `attack` | Enum |  | `CaveManThrowSpear` (Enum) |
+| `name` | String |  | `"ENEMY_SPEARCAVEMAN_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_SPEARCAVEMAN_DESC"` (String) |
+
+
+### Object: `CaveWoman`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"CaveWoman"` (Enum) |
+| `attack` | Enum |  | `CaveWomanKick` (Enum) |
+| `name` | String |  | `"ENEMY_CAVEMANWOMAN_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_CAVEMANWOMAN_DESC"` (String) |
+| `variant_of` | Enum |  | `CavePerson` (Enum) |
+
+
+### Object: `CaveWomanHasCat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"CatCaveWoman"` (Enum) |
+| `attack` | Enum |  | `CaveWomanCatSlap` (Enum) |
+| `name` | String |  | `"ENEMY_CAVEMANWOMAN2_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_CAVEMANWOMAN2_DESC"` (String) |
+
+
+### Object: `CavesUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `CerberubsJumpBlind`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `CerberubsJump` (Enum) |
+| `decision_weights` | Enum |  | `nubs_fakeblind` (Enum) |
+
+
+### Object: `CerberubsJumpNormal`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `CerberubsJump` (Enum) |
+| `decision_weights` | Enum |  | `default` (Enum) |
+
+
+### Object: `ChampionUpgradeNextMinion`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_PROMOTE_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_PROMOTE_DESC"` (String) |
+
+
+### Object: `ChanceToBreakFree`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `CHuskDrop` (Enum), `LennyDrop` (Enum) |
+| `fail_ability` | Enum |  | `CHuskDropFail` (Enum), `XXX` (Enum) |
+| `stacks` | Number |  | `25` (Number) |
+
+
+### Object: `ChaosAntennaAttached`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `CharacterTypeGainsStatusAtBattleStart`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
+| `Else` | Object |  | `{ ... }` (Object) |
+| `Fear` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Stealth` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+
+
+### Object: `ChargeFists`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `keyword_tooltips` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"KEYWORD_CHARGEFISTS_NAME"` (String) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip_stackless` | String |  | `"KEYWORD_CHARGEFISTS_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_CHARGEFISTS_DESC"` (String) |
+| `tooltip_stacks_singular` | String |  | `"KEYWORD_CHARGEFISTS_DESC_SINGULAR"` (String) |
+
+
+### Object: `Charging`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `MoonHead_Blow` (Enum) |
+| `partial_animation_suffix` | Enum |  | `"Charging"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `CharmedDip`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `Dip` (Enum) |
+
+
+### Object: `CharmedFloater`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `Floater` (Enum) |
+
+
+### Object: `CharmedPile`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `Pile` (Enum) |
+
+
+### Object: `Cherub`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdSmall` (Enum) |
+
+
+### Object: `Chicken`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_Heal` (Enum) |
+| `aux` | Number |  | `15` (Number) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_ROTISSERIECHICKEN_DESC"` (String) |
+| `durability` | Number |  | `3` (Number) |
+| `frame` | Number |  | `59` (Number) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_ROTISSERIECHICKEN_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `consumable_rare` (Enum) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdLarge` (Enum) |
+
+
+### Object: `Close`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `CloseConvert`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `MarshmallowConvert` (Enum) |
+| `move_weights` | Enum |  | `stay_close` (Enum) |
+
+
+### Object: `Cockroach`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `count` | Array |  | `[0 20]` (Array), `[10 20]` (Array) |
+
+
+### Object: `CockroachSwarm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"WEATHER_COCKROACHES_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_COCKROACHES_NAME"` (String) |
+
+
+### Object: `Coin`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `Coin10`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `Coin` (Enum) |
+
+
+### Object: `Coin2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `Coin` (Enum) |
+
+
+### Object: `Coin3`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `Coin` (Enum) |
+
+
+### Object: `Coin4`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `Coin` (Enum) |
+
+
+### Object: `CollectsPickupsWithAltEffects`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `CurrentWeaponAddPoison` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Array / Number / Object |  | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Number / Object |  | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `Shield` | Array / Number / Object |  | `[1 .5]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Tech` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+
+
+### Object: `Colorless`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_pool` | Array |  | `[Block Rest Brace Roll SharpenClaws Reach ManaDrain SoothingGlow Ponder Brainstorm...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_COLORLESS0" "TEAMNAME_ADJECTIVE_COLORLESS1" "TEAMNAME_ADJECTIVE_COLORLESS2"]` (Array) |
+| `attack_pool` | Array |  | `[BasicMelee BasicMelee BasicShortRanged BasicShortLobbed]` (Array) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[str dex con int spd cha lck]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `move_pool` | Array |  | `[DefaultMove]` (Array) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_COLORLESS0" "TEAMNAME_NOUN_COLORLESS1" "TEAMNAME_NOUN_COLORLESS2"]` (Array) |
+| `passive_pool` | Array |  | `[SelfAssured LuckDrain Infested Worms Amped Furious MetalDetector DeathProof Leader Mange...]` (Array) |
+| `tutorial_levelup_active_pool` | Array |  | `[Block LickHeal Dump]` (Array) |
+| `tutorial_levelup_active_pool_2` | Array |  | `[GainThorns ButtScoot Burst HireHitman]` (Array) |
+| `tutorial_levelup_passive_pool` | Array |  | `[Furious PressurePoints LateBloomer ZenkaiBoost]` (Array) |
+
+
+### Object: `Comfort`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_COMFORT_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_COMFORT_DESC"` (String) |
+
+
+### Object: `Conditional_DoesDamage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Bleed` | Array / Number / Object |  | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+
+
+### Object: `Conditional_FinishedSpawning`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Imprison` | Enum |  | `Fly` (Enum), `BeefyCharmedLeech` (Enum) |
+
+
+### Object: `CopySpells`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `stacks` | Number |  | `1` (Number) |
+| `upgraded` | Boolean |  | `true` (Boolean) |
+
+
+### Object: `CoreObeliskUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `CoreUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Counterspell`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `self_buff` (Enum) |
+
+
+### Object: `CraterUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit1` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Cultist`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Cultist"` (Enum) |
+| `attack` | Enum |  | `BasicMelee` (Enum) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"ENEMY_CULTISTLACKEY_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_CULTISTLACKEY_DESC"` (String) |
+
+
+### Object: `CurrentWeaponAddPoison`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_WPOISONLACE_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_WPOISONLACE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_WPOISONLACE_DESC"` (String) |
+
+
+### Object: `Damaged`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `DashRandomly`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `ShamblerDash` (Enum) |
+| `decision_weights` | Enum |  | `blind` (Enum) |
+
+
+### Object: `DeadHummingbird`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_EatHummingbird` (Enum) |
+| `aux` | Number |  | `20` (Number) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_DEADHUMMINGBIRD_DESC"` (String) |
+| `durability` | Number |  | `2` (Number) |
+| `frame` | Number |  | `245` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_DEADHUMMINGBIRD_NAME"` (String) |
+| `rarity` | Enum |  | `consumable_very_rare` (Enum) |
+| `set` | Enum |  | `Feathered` (Enum) |
+
+
+### Object: `Default`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `LennyShove` (Enum) |
+| `move` | Enum |  | `LennyTrampleMove` (Enum) |
+| `partial_animation_suffix` | String |  | `""` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `set_house` | Enum |  | `House1` (Enum) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `unlock_room` | Enum |  | `Floor1_Large` (Enum) |
+
+
+### Object: `Default_Ceiling`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Default_Ground`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `DelayCastAbility`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `FetusAirstrike` (Enum) |
+| `lingering` | Boolean |  | `true` (Boolean) |
+| `relative` | Boolean |  | `false` (Boolean) |
+
+
+### Object: `DelayedWind`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `distance` | Number |  | `2` (Number) |
+
+
+### Object: `DelayedWindCone`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `damage` | Equation |  | `5` (Equation) |
+| `distance` | Number |  | `10` (Number) |
+
+
+### Object: `DemonicGlyph_Bite`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TOR_BITE_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_TOR_BITE_DESC"` (String) |
+
+
+### Object: `DemonicGlyph_Bounce`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TOR_BOUNCE_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_TOR_BOUNCE_DESC"` (String) |
+
+
+### Object: `DemonicGlyph_Fire`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TOR_FIRE_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_TOR_FIRE_DESC"` (String) |
+
+
+### Object: `DemonicGlyph_Movement`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TOR_MOVE_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_TOR_MOVE_DESC"` (String) |
+
+
+### Object: `DemonicGlyph_Summon`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TOR_SUMMON_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_TOR_SUMMON_DESC"` (String) |
+
+
+### Object: `DesireMech`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Die`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `keyword_tooltips` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `DimensionXUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `DoDistortionRing`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `intensity` | Number |  | `-2` (Number), `1` (Number) |
+| `radius` | Number |  | `4` (Number), `5` (Number) |
+| `speed` | Number |  | `30` (Number), `-30` (Number) |
+
+
+### Object: `DoScreenShake`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `intensity` | Number |  | `10` (Number), `3` (Number) |
+| `time` | Number / String |  | `1` (Number), `2` (Number), `.75` (String), `.5` (String) |
+
+
+### Object: `DoubleCast`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_DOUBLECAST_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_DOUBLECAST_DESC"` (String) |
+
+
+### Object: `DoubleCastSpell`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_DOUBLECASTSPELL_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_DOUBLECASTSPELL_DESC"` (String) |
+
+
+### Object: `DoubleLoot`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `self_buff` (Enum) |
+
+
+### Object: `Dove`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdSmall` (Enum) |
+
+
+### Object: `Down`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Down"` (Enum) |
+| `attack` | Enum |  | `ButtFart` (Enum) |
+| `move` | Enum |  | `TeleportFlipUp` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Drag`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `class` | Enum |  | `Psychic` (Enum) |
+| `desc` | String |  | `"PASSIVE_DRAG_DESC"` (String) |
+| `name` | String |  | `"PASSIVE_DRAG_NAME"` (String) |
+
+
+### Object: `Druid`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[ManaBomb SongOfSpring GrantLife SquirrelSquad SummonSquirrel DruidSwap BattleCry SummonSnake SummonTurtle SummonToad...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_DRUID0" "TEAMNAME_ADJECTIVE_DRUID1" "TEAMNAME_ADJECTIVE_DRUID2" "TEAMNAME_ADJECTIVE_DRUID3" "TEAMNAME_ADJECTIVE_DRUID4" "TEAMNAME_ADJECTIVE_DRUID5" "TEAMNAME_ADJECTIVE_DRUID6" "TEAMNAME_ADJECTIVE_DRUID7" "TEAMNAME_ADJECTIVE_DRUID8" "TEAMNAME_ADJECTIVE_DRUID9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicDruidAbility]` (Array) |
+| `desc` | String |  | `"SETBONUS_DRUID_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `innate_passives` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[cha int str]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_DRUID_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_DRUID0" "TEAMNAME_NOUN_DRUID1" "TEAMNAME_NOUN_DRUID2" "TEAMNAME_NOUN_DRUID3" "TEAMNAME_NOUN_DRUID4" "TEAMNAME_NOUN_DRUID5" "TEAMNAME_NOUN_DRUID6" "TEAMNAME_NOUN_DRUID7" "TEAMNAME_NOUN_DRUID8" "TEAMNAME_NOUN_DRUID9"...]` (Array) |
+| `passive_pool` | Array |  | `[SuperCrow NaturesGuidance PoisonIvy Pathfinder EmptyVessels WildAnimals BarkSkin SoothingSong Teamwork Bouquet...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[SummonSquirrel SummonToad Encourage Protection SongOfSpring BattleCry SafetyDance TigerForm RhinoForm InspirationalSong]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Drunker`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `partial_animation_suffix` | Enum |  | `Drunk` (Enum) |
+
+
+### Object: `DualSword`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"2"` (Enum) |
+| `attack` | Enum |  | `DestroyerAttack2` (Enum) |
+| `move_speed_multiplier` | Number |  | `1.5` (Number) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_DESTROYER2_DESC"` (String) |
+
+
+### Object: `DualSword_Primed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Holy2"` (Enum) |
+| `attack` | Enum |  | `DestroyerAttack2` (Enum) |
+| `move_speed_multiplier` | Number |  | `1.5` (Number) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_DESTROYER2_DESC"` (String) |
+
+
+### Object: `Dumb`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `keyword_tooltips` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `DustOnHit`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `object` | Enum |  | `GasCloud` (Enum) |
+
+
+### Object: `DybbukPossessed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit_ability` | Enum |  | `DybbukReturn` (Enum) |
+| `name` | String |  | `"KEYWORD_DYBBUKED_NAME"` (String) |
+| `punch_self_ability` | Enum |  | `Dybbuk_StopHittingYourself` (Enum) |
+| `tooltip` | String |  | `"KEYWORD_DYBBUKED_DESC"` (String) |
+
+
+### Object: `Eagle`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdLarge` (Enum) |
+
+
+### Object: `Earth`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `damage` | Equation |  | `X` (Equation) |
+
+
+### Object: `Electric`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .1*X]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+
+
+### Object: `EliteUpgradeNextMinion`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_PROMOTE2_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_PROMOTE2_DESC"` (String) |
+
+
+### Object: `Empty`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | String |  | `""` (String) |
+
+
+### Object: `EmptyMind`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"KEYWORD_EMPTYMIND_NAME"` (String) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | String |  | `"KEYWORD_EMPTYMIND_DESC"` (String) |
+
+
+### Object: `EndOfTimeUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Enlarge`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `self_damage` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spell` (Enum) |
+
+
+### Object: `Escape`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `DybbukEscape` (Enum) |
+| `move_weights` | Enum |  | `keep_distance_always_move` (Enum) |
+
+
+### Object: `EventBounty`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_EVENTBOUNTY_NAME"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_EVENTBOUNTY_DESC"` (String) |
+
+
+### Object: `Evolution`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_EVOLUTION_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_EVOLUTION_DESC"` (String) |
+
+
+### Object: `EvolveAbilityFromPool`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `pool` | Enum |  | `Fighter` (Enum), `Thief` (Enum) |
+| `upgraded` | Boolean |  | `true` (Boolean) |
+
+
+### Object: `Explody`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Expl` (Enum) |
+| `attack` | Enum |  | `ToxExplode` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Explosive`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"3"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `FactionUprising`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `extra_statuses` | Object |  | `{ ... }` (Object) |
+| `tag` | Enum |  | `bird` (Enum) |
+
+
+### Object: `FightPhase`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `T3Shoot` (Enum) |
+| `move` | Enum |  | `FloatMove` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Fighter`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[Spin Dash FirePunch IcePunch ThunderPunch FurySwipes SideSlash FighterLeap Uppercut Counter...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_FIGHTER0" "TEAMNAME_ADJECTIVE_FIGHTER1" "TEAMNAME_ADJECTIVE_FIGHTER2" "TEAMNAME_ADJECTIVE_FIGHTER3" "TEAMNAME_ADJECTIVE_FIGHTER4" "TEAMNAME_ADJECTIVE_FIGHTER5" "TEAMNAME_ADJECTIVE_FIGHTER6" "TEAMNAME_ADJECTIVE_FIGHTER7" "TEAMNAME_ADJECTIVE_FIGHTER8" "TEAMNAME_ADJECTIVE_FIGHTER9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicMelee_Fighter]` (Array) |
+| `complicated_abilities` | Array |  | `[FalconPunch Exert Challenge Stoopzerk Grapple ThinkTooHard Zoomzerk Bloodzerk ExhaustingBlow ChaosRampage...]` (Array) |
+| `complicated_passives` | Array |  | `[ShoulderCheck DumbMuscle ThickSkull MostValuableCat HitMe]` (Array) |
+| `desc` | String |  | `"SETBONUS_FIGHTER_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[str con spd]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_FIGHTER_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_FIGHTER0" "TEAMNAME_NOUN_FIGHTER1" "TEAMNAME_NOUN_FIGHTER2" "TEAMNAME_NOUN_FIGHTER3" "TEAMNAME_NOUN_FIGHTER4" "TEAMNAME_NOUN_FIGHTER5" "TEAMNAME_NOUN_FIGHTER6" "TEAMNAME_NOUN_FIGHTER7" "TEAMNAME_NOUN_FIGHTER8" "TEAMNAME_NOUN_FIGHTER9"...]` (Array) |
+| `passive_pool` | Array |  | `[BloodLust Avenger Scars FasterWhenHit KillsHeal Vengeful HamsterStyle WeaponMaster ShoulderCheck SkullSmash...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `shield` | Array / Number |  | `[1 .5]` (Array), `4` (Number) |
+| `starter_abilities` | Array |  | `[FurySwipes Dash Spin Confront FirePunch SideSlash Exert Berserk Stick Counter]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Fire`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Burn` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `SpewerLobbed_Lava` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `FireArmor`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `class` | Enum |  | `Mage` (Enum) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `desc` | String |  | `"PASSIVE_FIREASPECT_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | Enum / String |  | `"FireArmor"` (Enum), `"PASSIVE_FIREASPECT_NAME"` (String) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `FireArmor2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | Enum |  | `"FireArmor2"` (Enum) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `FireFull`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Full` (Enum) |
+| `attack` | Enum |  | `SpewerSpit` (Enum) |
+| `combo` | Array |  | `[FireSmoke FirePlumes FireWaves FireBase FireWhites]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `FireStorm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `combo` | Array |  | `[Firestorm_Fire Firestorm_Embers Firestorm_Distortion]` (Array) |
+
+
+### Object: `Firefly`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `count` | Array |  | `[0 2]` (Array) |
+
+
+### Object: `FireflySwarm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"WEATHER_FIREFLY_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_FIREFLY_NAME"` (String) |
+
+
+### Object: `FloatingDebris`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `count` | Number |  | `20` (Number) |
+
+
+### Object: `Floor1_Large`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `7` (Number) |
+| `interstitial_bg_frame` | Enum |  | `room1` (Enum) |
+| `movieclip` | Enum |  | `RoomBackgroundLargeF1` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `16` (Number) |
+
+
+### Object: `Floor1_Small`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `7` (Number) |
+| `interstitial_bg_frame` | Enum |  | `room2` (Enum) |
+| `movieclip` | Enum |  | `RoomBackgroundSmallF1` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `16` (Number) |
+
+
+### Object: `Floor2_Large`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `7` (Number) |
+| `interstitial_bg_frame` | Enum |  | `room3` (Enum) |
+| `movieclip` | Enum |  | `RoomBackgroundLargeF2` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `16` (Number) |
+
+
+### Object: `Floor2_Small`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `height` | Number |  | `7` (Number) |
+| `interstitial_bg_frame` | Enum |  | `room4` (Enum) |
+| `movieclip` | Enum |  | `RoomBackgroundSmallF2` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `16` (Number) |
+
+
+### Object: `Flop`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Down"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Flop2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Down"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Flush`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spell` (Enum) |
+
+
+### Object: `FlushBubs`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `FlushHost`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `Host` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `FlushNettle`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Fly`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `count` | Array |  | `[0 20]` (Array), `[10 20]` (Array) |
+| `desc` | String |  | `"SETBONUS_FLY_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_FLY_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `FlySwarm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `ambient_sound` | String |  | `amb_flyswarm.ogg` (String) |
+| `desc` | String |  | `"WEATHER_FLYSWARM_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_FLYSWARM_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Fog`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alpha_end` | Number |  | `0` (Number) |
+| `alpha_start` | Number |  | `2` (Number) |
+| `desc` | String |  | `"WEATHER_FOG_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  | `1` (Number) |
+| `emit_box` | Array |  | `[-5 10 0 2 -5 10]` (Array) |
+| `emit_direction` | Array |  | `[0 1 0]` (Array) |
+| `emit_rate` | Number |  | `100` (Number) |
+| `emit_spread` | Number |  | `360` (Number) |
+| `friction` | Array |  | `[0 1 0]` (Array) |
+| `live_bounds` | Array |  | `[-999 999 -999 999 -999 999]` (Array) |
+| `movieclip` | Enum |  | `FogParticle` (Enum) |
+| `name` | String |  | `"WEATHER_FOG_NAME"` (String) |
+| `particle_lifetime` | Array |  | `[3 5]` (Array) |
+| `projection_matrix` | Enum |  | `default` (Enum) |
+| `render_mode` | Enum |  | `separate` (Enum) |
+| `scripts` | Object |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  | `global` (Enum) |
+| `size_start` | Array |  | `[.2 1]` (Array) |
+| `speed_start` | String |  | `.1` (String) |
+
+
+### Object: `Food`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `allow_duplicates` | Boolean |  | `true` (Boolean) |
+| `amount` | Number |  | `10` (Number) |
+| `cost` | Number |  | `5` (Number) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `FoodBase` (Enum) |
+| `weight` | Number |  | `5` (Number) |
+
+
+### Object: `FoodBig`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_Heal` (Enum) |
+| `aux` | Number |  | `24` (Number) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_CATFOOD_DESC"` (String) |
+| `durability` | Number |  | `1` (Number) |
+| `frame` | Number |  | `2` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_CATFOOD_NAME"` (String) |
+| `rarity` | Enum |  | `consumable_common` (Enum) |
+
+
+### Object: `FoodMedium`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_Heal` (Enum) |
+| `aux` | Number |  | `12` (Number) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_ASNACK_DESC"` (String) |
+| `durability` | Number |  | `1` (Number) |
+| `frame` | Number |  | `21` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_ASNACK_NAME"` (String) |
+| `rarity` | Enum |  | `consumable_common` (Enum) |
+
+
+### Object: `FoodMove`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `CaveBabyFoodMove` (Enum) |
+| `move_weights` | Enum |  | `stay_close_move_if_possible` (Enum) |
+
+
+### Object: `ForceImmediateMoveAndAttack`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `G3GrabHead` (Enum) |
+| `even_if_cant_reach` | Boolean |  | `true` (Boolean) |
+
+
+### Object: `ForceMoveAway`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `free` | Boolean |  | `false` (Boolean) |
+
+
+### Object: `ForceMoveTowardsTaggedObject`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `MoveOneTrample` (Enum), `MoveTwoTrample` (Enum) |
+| `tag` | Enum |  | `food` (Enum) |
+
+
+### Object: `ForceTrample`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `BirthwortTrample` (Enum) |
+| `decision_weights` | Enum |  | `always_cast_careless` (Enum) |
+
+
+### Object: `FreeSpell`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_FREESPELL_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_FREESPELL_DESC"` (String) |
+
+
+### Object: `Full`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Full"` (Enum) |
+| `attack` | Enum |  | `KirbySpit` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `statuses_on_enter_form` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `FutureUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `GenFlag_Boss_Spewer`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `boss` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `GenFlag_Boss_Stacy`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `boss` | Object |  | `{ ... }` (Object) |
+| `miniboss_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `GlobalSpawnOnRoundEnd`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `number` | Array |  | `[1 2]` (Array) |
+| `object` | Enum |  | `NeutralZombieKitten` (Enum), `NeutralTwister` (Enum) |
+
+
+### Object: `GlowingSeed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ITEM_GLOWINGSEED_DESC"` (String) |
+| `frame` | Number |  | `71` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_GLOWINGSEED_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+
+
+### Object: `GoldenEgg`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ITEM_GOLDENEGG_DESC"` (String) |
+| `frame` | Number |  | `190` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_GOLDENEGG_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+
+
+### Object: `Grappled`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_GRAPPLED_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_GRAPPLED_DESC"` (String) |
+
+
+### Object: `Grappling`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit_animations` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `Grapple` (Enum) |
+
+
+### Object: `Grass`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Poison` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+
+
+### Object: `Gravity`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Weakness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+
+
+### Object: `Grown`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Grown` (Enum) |
+| `attack` | Enum |  | `HitlerCloneSwipes` (Enum) |
+| `name` | String |  | `"ENEMY_HITLERCLONE_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `1.5` (Number) |
+| `weak_threshold` | Number |  | `15` (Number) |
+
+
+### Object: `GuaranteedJackpot`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Guarding`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `"Guarding"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `HalfDead`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"2"` (Enum) |
+| `attack` | Enum |  | `RatKingDash` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `HardPathUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `hard_initial` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Harpy`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdLarge` (Enum) |
+
+
+### Object: `HarpysClaw`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `wp_HarpyClaw` (Enum) |
+| `desc` | String |  | `"ITEM_HARPYSCLAW_DESC"` (String) |
+| `frame` | Number |  | `199` (Number) |
+| `kind` | Enum |  | `weapon` (Enum) |
+| `name` | String |  | `"ITEM_HARPYSCLAW_NAME"` (String) |
+| `rarity` | Enum |  | `very_rare` (Enum) |
+
+
+### Object: `HasCat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Grabbing"` (Enum), `"Cat"` (Enum) |
+| `attack` | Enum |  | `LennyCatSlap` (Enum), `MoonHandSqueeze` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `partial_animation_suffix` | Enum |  | `"Swallowed"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `HasDeadCat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"CatDead"` (Enum) |
+| `attack` | Enum |  | `LennyCatSlap` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `HasRock`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"rock"` (Enum) |
+| `attack` | Enum |  | `AmoebaRockBash` (Enum) |
+
+
+### Object: `Headless`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Headless"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `HealAlliesEachTurn`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exclude_self` | Boolean |  | `false` (Boolean) |
+| `mana` | Number |  | `3` (Number), `2` (Number) |
+| `stacks` | Number |  | `3` (Number), `2` (Number) |
+
+
+### Object: `HealRandomInjury`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `icon_frame` | Number |  | `158` (Number) |
+| `name` | String |  | `"KEYWORD_HEALRANDOMINJURY_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_HEALRANDOMINJURY_DESC"` (String) |
+
+
+### Object: `Health`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_HEALTH_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_HEALTH_DESC"` (String) |
+
+
+### Object: `HeatWave`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `combo` | Array |  | `[HeatWave_Particles HeatWave_Distortion]` (Array) |
+| `desc` | String |  | `"WEATHER_HEATWAVE_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `hint_persistent_elements` | Array |  | `[Heat]` (Array) |
+| `name` | String |  | `"WEATHER_HEATWAVE_NAME"` (String), `"KEYWORD_DEHYDRATED_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_DEHYDRATED_DESC"` (String) |
+
+
+### Object: `HeavyHits`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_HEAVYHITS_NAME"` (String) |
+| `tooltip_stackless` | Enum |  | `none` (Enum) |
+| `tooltip_stacks` | String |  | `"KEYWORD_HEAVYHITS_DESC_STACKS"` (String) |
+
+
+### Object: `Hint_CrackedVisuals`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"Cracked"` (Enum) |
+
+
+### Object: `Hint_CrackedVisuals2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"ChargingCracked"` (Enum) |
+
+
+### Object: `Hint_CrackedVisuals3`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"SwallowedCracked"` (Enum) |
+
+
+### Object: `Holding`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `"Holding"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Holy`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `FlatLeech` | Enum / Number |  | `X` (Enum), `10` (Number), `1` (Number) |
+| `animation_suffix` | Enum |  | `"1"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `HolyDamageBlessing`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Burn` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `damage_multiplier` | Number |  | `3` (Number), `2` (Number) |
+
+
+### Object: `House1`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `aux_positions` | Object |  | `{ ... }` (Object) |
+| `bg_placements_frame` | Enum |  | `small` (Enum) |
+| `movieclip_bg` | Enum |  | `HouseBackground1` (Enum) |
+| `movieclip_fg` | Enum |  | `HouseForeground1` (Enum) |
+| `room_positions` | Object |  | `{ ... }` (Object) |
+| `zoomout_catvolume` | String |  | `.8` (String) |
+
+
+### Object: `House2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `aux_positions` | Object |  | `{ ... }` (Object) |
+| `bg_placements_frame` | Enum |  | `large` (Enum) |
+| `movieclip_bg` | Enum |  | `HouseBackground2` (Enum) |
+| `movieclip_fg` | Enum |  | `HouseForeground2` (Enum) |
+| `room_positions` | Object |  | `{ ... }` (Object) |
+| `zoomout_catvolume` | String |  | `.7` (String) |
+
+
+### Object: `House3`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `aux_positions` | Object |  | `{ ... }` (Object) |
+| `bg_placements_frame` | Enum |  | `large` (Enum) |
+| `movieclip_bg` | Enum |  | `HouseBackground3` (Enum) |
+| `movieclip_fg` | Enum |  | `HouseForeground3` (Enum) |
+| `room_positions` | Object |  | `{ ... }` (Object) |
+| `zoomout_catvolume` | String |  | `.6` (String) |
+
+
+### Object: `HumanDead`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `DH` (Enum) |
+| `attack` | Enum |  | `HCSpin` (Enum) |
+| `tooltip` | String |  | `"ENEMY_HUMANCAT2_DESC"` (String) |
+
+
+### Object: `HummingBird`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdSmall` (Enum) |
+
+
+### Object: `Hunter`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[LineShot SpawnMaggotFriend SpawnPooterFriend Marked HailOfNails ScatterShot BrambleShot BearTrap TwinShot CrossShot...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_HUNTER0" "TEAMNAME_ADJECTIVE_HUNTER1" "TEAMNAME_ADJECTIVE_HUNTER2" "TEAMNAME_ADJECTIVE_HUNTER3" "TEAMNAME_ADJECTIVE_HUNTER4" "TEAMNAME_ADJECTIVE_HUNTER5" "TEAMNAME_ADJECTIVE_HUNTER6" "TEAMNAME_ADJECTIVE_HUNTER7" "TEAMNAME_ADJECTIVE_HUNTER8" "TEAMNAME_ADJECTIVE_HUNTER9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicRanged_Hunter]` (Array) |
+| `complicated_abilities` | Array |  | `[Extend LastHit StakeOut Diversion ScoutMe CraftArrow BounceShot Vivisect SlopThePigs SpiderInjector...]` (Array) |
+| `complicated_passives` | Array |  | `[Hazardous Traps CatchProjectiles Host SleepDarts Survivalist]` (Array) |
+| `desc` | String |  | `"SETBONUS_HUNTER_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[dex spd int]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_HUNTER_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_HUNTER0" "TEAMNAME_NOUN_HUNTER1" "TEAMNAME_NOUN_HUNTER2" "TEAMNAME_NOUN_HUNTER3" "TEAMNAME_NOUN_HUNTER4" "TEAMNAME_NOUN_HUNTER5" "TEAMNAME_NOUN_HUNTER6" "TEAMNAME_NOUN_HUNTER7" "TEAMNAME_NOUN_HUNTER8" "TEAMNAME_NOUN_HUNTER9"...]` (Array) |
+| `passive_pool` | Array |  | `[TakeAim HuntersBoon BroodMother TaintedMother Quiver SplitShot Hazardous ThornArrows Traps CatchProjectiles...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[SpawnPooterFriend BrambleShot SpawnBaitTrap BearTrap TerrainWalk NeedleShot ScatterShot Marked FleaShot HeavyShot]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Ice`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Slow` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
+
+
+### Object: `IceAgeUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `IceArmor`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `class` | Enum |  | `Mage` (Enum) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `desc` | String |  | `"PASSIVE_ICEASPECT_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | Enum / String |  | `"IceArmor"` (Enum), `"PASSIVE_ICEASPECT_NAME"` (String) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `IncAuxCounterCycle`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `change` | Number |  | `1` (Number) |
+| `max` | Number |  | `3` (Number) |
+
+
+### Object: `InitialPhase`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `T3Shoot` (Enum) |
+| `move` | Enum |  | `FloatMove` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Insane_Ceiling`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Insane"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Insane_Ground`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Insane"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Invulnerable`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_INVULNERABLE_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_INVULNERABLE_DESC"` (String) |
+
+
+### Object: `Item`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Number |  | `15` (Number), `5` (Number) |
+| `mandatory` | Boolean |  | `true` (Boolean) |
+| `pool` | Array / Enum |  | `[TutorialStick]` (Array), `[WaterBottle_Half]` (Array), `treasure_easy` (Enum), `rare` (Enum) |
+| `weight` | Number |  | `1` (Number) |
+
+
+### Object: `Jack_Gainaltfurniture`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `dialog` | String |  | `NPC_JACK_JACK_GAINALTFURNITURE_4` (String), `NPC_JACK_JACK_GAINALTFURNITURE_2` (String) |
+| `lock_controls` | Number |  | `1` (Number) |
+| `set_state` | Enum |  | `closeup` (Enum), `blocking` (Enum) |
+| `unlock_controls` | Number |  | `1` (Number) |
+
+
+### Object: `Jester`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_pool` | Array |  | `[SmartMetronome RNGCannon Bump PowerUp]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_JESTER0" "TEAMNAME_ADJECTIVE_JESTER1" "TEAMNAME_ADJECTIVE_JESTER2" "TEAMNAME_ADJECTIVE_JESTER3" "TEAMNAME_ADJECTIVE_JESTER4" "TEAMNAME_ADJECTIVE_JESTER5" "TEAMNAME_ADJECTIVE_JESTER6" "TEAMNAME_ADJECTIVE_JESTER7" "TEAMNAME_ADJECTIVE_JESTER8" "TEAMNAME_ADJECTIVE_JESTER9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicMelee_Fighter BasicRanged_Hunter BasicMagicShortRanged BasicTankMelee BasicStraightShot_Thief BasicMedicMelee BasicButcherMelee BasicPsychicPull BasicNecroRanged]` (Array) |
+| `desc` | String |  | `"SETBONUS_JESTER_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[str dex con int spd cha lck]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_JESTER_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_JESTER0" "TEAMNAME_NOUN_JESTER1" "TEAMNAME_NOUN_JESTER2" "TEAMNAME_NOUN_JESTER3" "TEAMNAME_NOUN_JESTER4" "TEAMNAME_NOUN_JESTER5" "TEAMNAME_NOUN_JESTER6" "TEAMNAME_NOUN_JESTER7" "TEAMNAME_NOUN_JESTER8" "TEAMNAME_NOUN_JESTER9"...]` (Array) |
+| `passive_pool` | Array |  | `[SuperLuck Goofball]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Johnny`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `JohnnyBubs`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `JohnnyHost`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `Host` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `JohnnyNettle`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Joystick`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"Joystick"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `JudgementDay`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"WEATHER_JUDGEMENT_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_JUDGEMENT_NAME"` (String) |
+
+
+### Object: `JunkyardUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit1` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `JurassicUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `KillEnemyOfTypeAtBattleStart`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `enemy_type` | Enum |  | `cat` (Enum), `any` (Enum) |
+| `fallback_spawn` | Array |  | `[TomTom Kitten CatCaller Mangy]` (Array) |
+
+
+### Object: `LargeAttic`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `built_in_collision` | Array |  | `[[ 6 6 6 6 6 6 6 6 6...]` (Array) |
+| `extra_bound_planes` | Array |  | `[{ p [ 0 0 ] n [ 1 -2...]` (Array) |
+| `height` | Number |  | `9` (Number) |
+| `id` | Enum |  | `Attic` (Enum) |
+| `interstitial_bg_frame` | Enum |  | `attic` (Enum) |
+| `movieclip` | Enum |  | `RoomBackgroundAttic` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `35` (Number) |
+
+
+### Object: `LargeBirdPool`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `LargeHouse`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `MediumHouse` (Enum) |
+| `set_house` | Enum |  | `House3` (Enum) |
+
+
+### Object: `LargeHouse_Floor2Large`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `LargeHouse` (Enum) |
+| `unlock_room` | Enum |  | `Floor2_Large` (Enum) |
+
+
+### Object: `LargeHouse_Floor2Small`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `LargeHouse` (Enum) |
+| `unlock_room` | Enum |  | `Floor2_Small` (Enum) |
+
+
+### Object: `LastHit`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `lobbed_attack` (Enum) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `LateStatusApplication`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `AddWeaponAux` | Enum / Number / String |  | `-item_aux` (Enum), `1` (Number), `2` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `CurrentWeaponDamageUp` | Number |  | `3` (Number), `1` (Number) |
+
+
+### Object: `LeapClose`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `GKLeap` (Enum) |
+| `move_weights` | Enum |  | `towards_aggro` (Enum) |
+
+
+### Object: `Leave`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `leave` (Enum) |
+
+
+### Object: `LeaveBehind`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `object` | Enum |  | `CharmedMaggot` (Enum), `Twister` (Enum) |
+
+
+### Object: `LevelUp`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Number |  | `10` (Number) |
+
+
+### Object: `Lifted`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"Lift"` (Enum) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Lighting`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ambient` | String |  | `.6` (String), `.8` (String) |
+| `bigrays` | Array |  | `[0 0]` (Array), `[1 1]` (Array) |
+| `smallray_clip` | Enum |  | `labligtht` (Enum), `Bunkerlight` (Enum) |
+| `smallrays` | Array |  | `[0 0]` (Array), `[4 8]` (Array) |
+
+
+### Object: `Lit`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `partial_animation_suffix` | Enum |  | `Lit` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `LostSoul`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ARMOR_LOSTSOUL_DESC"` (String) |
+| `frame` | Number |  | `180` (Number) |
+| `kind` | Enum |  | `neck` (Enum) |
+| `name` | String |  | `"ARMOR_LOSTSOUL_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `very_rare` (Enum) |
+
+
+### Object: `Mage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[Surf Bolt Fireball FreezeRay MagicMissile Blast WallOfFire HyperBeam MeteorStorm MegaBlast...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_MAGE0" "TEAMNAME_ADJECTIVE_MAGE1" "TEAMNAME_ADJECTIVE_MAGE2" "TEAMNAME_ADJECTIVE_MAGE3" "TEAMNAME_ADJECTIVE_MAGE4" "TEAMNAME_ADJECTIVE_MAGE5" "TEAMNAME_ADJECTIVE_MAGE6" "TEAMNAME_ADJECTIVE_MAGE7" "TEAMNAME_ADJECTIVE_MAGE8" "TEAMNAME_ADJECTIVE_MAGE9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicMagicShortRanged]` (Array) |
+| `complicated_abilities` | Array |  | `[DealWithTheDevil ForbiddenFlame ForbiddenFlood ForbiddenFulmination Corrupt FireSurge IceSurge LightningSurge Creshendo Divide...]` (Array) |
+| `complicated_passives` | Array |  | `[ElementalAttunement LatentEnergy MagicGuru One Two Four Five]` (Array) |
+| `desc` | String |  | `"SETBONUS_MAGE_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[int cha dex]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_MAGE_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_MAGE0" "TEAMNAME_NOUN_MAGE1" "TEAMNAME_NOUN_MAGE2" "TEAMNAME_NOUN_MAGE3" "TEAMNAME_NOUN_MAGE4" "TEAMNAME_NOUN_MAGE5" "TEAMNAME_NOUN_MAGE6" "TEAMNAME_NOUN_MAGE7" "TEAMNAME_NOUN_MAGE8"]` (Array) |
+| `passive_pool` | Array |  | `[Micronaps HolyMantel Shrapnel BurningPaws LightningPaws IcePaws PawMissile Overload ChargeUp Recharged...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[MagicMissile Fireball FreezeRay Warp Surf WindSlash Absorb Bolt Inspire MegaBlast]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `MagicSeed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ITEM_MAGICSEED_DESC"` (String) |
+| `frame` | Number |  | `113` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_MAGICSEED_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+
+
+### Object: `Math`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ApplyToSource` | Object |  | `{ ... }` (Object) |
+| `Stun` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `stacks` | Number |  | `1` (Number) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spell` (Enum) |
+
+
+### Object: `MeatWorldUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `MeatWorldUnlockedFull`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `mw_battle1` | Object |  | `{ ... }` (Object) |
+| `mw_boss` | Object |  | `{ ... }` (Object) |
+| `mw_earlyhome` | Object |  | `{ ... }` (Object) |
+| `mw_event1` | Object |  | `{ ... }` (Object) |
+| `mw_hard1` | Object |  | `{ ... }` (Object) |
+| `mw_home` | Object |  | `{ ... }` (Object) |
+| `mw_quest_event` | Object |  | `{ ... }` (Object) |
+| `mw_treasure` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Meaty`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_MEATY_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_MEATY_DESC"` (String) |
+
+
+### Object: `MedBirdPool`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `MedCatnip`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `MedScrap`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `Medic`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[RangedHeal MeleeHeal Malaise OpenWounds Prayer Convert Cleanse HereticMark Zealot Haste...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_MEDIC0" "TEAMNAME_ADJECTIVE_MEDIC1" "TEAMNAME_ADJECTIVE_MEDIC2" "TEAMNAME_ADJECTIVE_MEDIC3" "TEAMNAME_ADJECTIVE_MEDIC4" "TEAMNAME_ADJECTIVE_MEDIC5" "TEAMNAME_ADJECTIVE_MEDIC6" "TEAMNAME_ADJECTIVE_MEDIC7" "TEAMNAME_ADJECTIVE_MEDIC8" "TEAMNAME_ADJECTIVE_MEDIC9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicMedicMelee]` (Array) |
+| `complicated_abilities` | Array |  | `[OpenWounds WitchHunt Adoubement DivineProtection ChosenWarrior SwiftSanctify DivineGift HolyWeapon GetDown Rebuke...]` (Array) |
+| `complicated_passives` | Array |  | `[RangedMedic ThouShaltNotKill BlessingOfHolyFire BlessingOfSpirit]` (Array) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[cha int con]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_MEDIC0" "TEAMNAME_NOUN_MEDIC1" "TEAMNAME_NOUN_MEDIC2" "TEAMNAME_NOUN_MEDIC3" "TEAMNAME_NOUN_MEDIC4" "TEAMNAME_NOUN_MEDIC5" "TEAMNAME_NOUN_MEDIC6" "TEAMNAME_NOUN_MEDIC7" "TEAMNAME_NOUN_MEDIC8" "TEAMNAME_NOUN_MEDIC9"]` (Array) |
+| `passive_pool` | Array |  | `[HealingAura NaturalHealer Eternal Blessed EvilPatron AngelicInspiration TopOff SharingIsCaring Caretaker MoraleBoost...]` (Array) |
+| `starter_abilities` | Array |  | `[RangedHeal Rally Prayer FriendOrFoe HolyWeapon Zealot OpenWounds RallyCharge HallowedGround Cleanse]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `MediumHouse`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `Default` (Enum) |
+| `set_house` | Enum |  | `House2` (Enum) |
+
+
+### Object: `MediumHouse_SmallRoom`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `MediumHouse` (Enum) |
+| `unlock_room` | Enum |  | `Floor1_Small` (Enum) |
+
+
+### Object: `MergeDamageInstance`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `can_instapop` | Boolean |  | `false` (Boolean) |
+| `force_no_hit_animation` | Boolean |  | `true` (Boolean) |
+
+
+### Object: `MeteorShower`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"WEATHER_METEORS_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_METEORS_NAME"` (String) |
+
+
+### Object: `Meteornado`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alpha_in` | String |  | `.2` (String) |
+| `alpha_out` | String |  | `.2` (String) |
+| `desc` | String |  | `"WEATHER_METEORNADO_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  | `1` (Number) |
+| `emit_box` | Array |  | `[0 10 0 5 0 10]` (Array) |
+| `emit_direction` | Array |  | `[0 1 0]` (Array) |
+| `emit_rate` | Number |  | `200` (Number) |
+| `emit_spread` | Number |  | `360` (Number) |
+| `live_bounds` | Array |  | `[-999 999 -999 999 -999 999]` (Array) |
+| `movieclip` | Enum |  | `FX_MoonRock` (Enum) |
+| `name` | String |  | `"WEATHER_METEORNADO_NAME"` (String) |
+| `particle_lifetime` | Array |  | `[.1 3]` (Array) |
+| `projection_matrix` | Enum |  | `default` (Enum) |
+| `render_mode` | Enum |  | `separate` (Enum) |
+| `rotation` | Array |  | `[0 360]` (Array) |
+| `rotation_speed` | Array |  | `[-1000 1000]` (Array) |
+| `scripts` | Object |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  | `global` (Enum) |
+| `size_start` | Array |  | `[.5 1.5]` (Array) |
+| `speed_start` | Number |  | `5` (Number) |
+
+
+### Object: `Metronome`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `tk_Metronome` (Enum) |
+| `banned_abilities` | Array |  | `[BatteryNuke WeAreOne Metronome SmartMetronome BecomeEntropy ForbiddenFamine]` (Array) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `desc` | String |  | `"ITEM_METRONOME_DESC"` (String) |
+| `frame` | Number |  | `17` (Number) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"ITEM_METRONOME_NAME"` (String) |
+| `rarity` | Enum |  | `rare` (Enum) |
+| `set` | Enum |  | `Jester` (Enum) |
+| `stacks` | Number |  | `1` (Number) |
+| `tags` | Array |  | `[musical]` (Array) |
+| `template` | Enum |  | `self_buff` (Enum) |
+
+
+### Object: `Monk`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[Propell Hadouken Cartwheel StoneFists Transcend HipToss Bruise Slapback Finisher Reverberate...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_MONK0" "TEAMNAME_ADJECTIVE_MONK1" "TEAMNAME_ADJECTIVE_MONK2" "TEAMNAME_ADJECTIVE_MONK3" "TEAMNAME_ADJECTIVE_MONK4" "TEAMNAME_ADJECTIVE_MONK5" "TEAMNAME_ADJECTIVE_MONK6" "TEAMNAME_ADJECTIVE_MONK7" "TEAMNAME_ADJECTIVE_MONK8" "TEAMNAME_ADJECTIVE_MONK9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicMonkMelee]` (Array) |
+| `desc` | String |  | `"SETBONUS_MONK_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `innate_items` | Object |  | `{ ... }` (Object) |
+| `innate_passives` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[int str lck]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_MONK_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_MONK0" "TEAMNAME_NOUN_MONK1" "TEAMNAME_NOUN_MONK2" "TEAMNAME_NOUN_MONK3" "TEAMNAME_NOUN_MONK4" "TEAMNAME_NOUN_MONK5" "TEAMNAME_NOUN_MONK6" "TEAMNAME_NOUN_MONK7" "TEAMNAME_NOUN_MONK8" "TEAMNAME_NOUN_MONK9"...]` (Array) |
+| `passive_pool` | Array |  | `[SafeSwitching Mixup Turnabout MonkeyStyle BrickSkin JaggedEdges MindBreaker CobraStyle Tenderize LongArms...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[Propell Pogo ComboThrow ComboPull Bruise Anneal Hadouken ReallyFastRun Finisher UnbridledHits]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `MoonObeliskUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `MoonUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Mounted`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"Cat"` (Enum) |
+
+
+### Object: `MouthFull`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `"MouthFull"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `MoveAway`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `ExtraMove` (Enum), `MoveTwoCantrip` (Enum) |
+| `move_weights` | Enum |  | `stay_far` (Enum), `keep_distance_always_move` (Enum) |
+
+
+### Object: `MoveCenter`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_weights` | Enum |  | `stay_near_map_center` (Enum) |
+
+
+### Object: `MoveClose`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_for_ability` | Enum |  | `Spin_Enemy` (Enum), `attack` (Enum) |
+| `move_weights` | Enum |  | `stay_close_avoid_allies` (Enum), `stay_close_always_move` (Enum) |
+
+
+### Object: `MoveForBarrage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_for_ability` | Enum |  | `ZaratanaVSBombardment` (Enum) |
+| `move_weights` | Enum |  | `stay_far` (Enum) |
+
+
+### Object: `MoveForDash`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_for_ability` | Enum |  | `attack` (Enum) |
+| `move_weights` | Enum |  | `keep_distance` (Enum) |
+
+
+### Object: `MoveForGrass`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `StegoGrassStomp` (Enum) |
+| `move_for_ability` | Enum |  | `StegoEatGrass` (Enum) |
+| `move_weights` | Enum |  | `minimum_move` (Enum) |
+
+
+### Object: `MoveForPounce`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_for_ability` | Enum |  | `attack` (Enum) |
+| `move_weights` | Enum |  | `keep_distance` (Enum) |
+
+
+### Object: `MoveForSpin`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `PyrophinaVSRun` (Enum) |
+| `move_for_ability` | Enum |  | `PyrophinaVSSpinThrow` (Enum) |
+| `move_weights` | Enum |  | `stay_close` (Enum) |
+
+
+### Object: `MoveForThrow`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_for_ability` | Enum |  | `PyrophinaVSCatThrow` (Enum), `PyrophinaSoloCatThrow` (Enum) |
+| `move_weights` | Enum |  | `util_minmove` (Enum) |
+
+
+### Object: `MoveOneForPuke`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `AlienBeastMoveOne` (Enum) |
+| `move_for_ability` | Enum |  | `AlienBeastPuke` (Enum) |
+| `move_weights` | Enum |  | `keep_distance` (Enum) |
+
+
+### Object: `MoveSpaced`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_weights` | Enum |  | `terminator_keep_distance_always_move` (Enum) |
+
+
+### Object: `MoveToHead`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `G3RunToHead` (Enum) |
+| `move_for_ability` | Enum |  | `G3GrabHead` (Enum) |
+| `move_weights` | Enum |  | `minimum_move` (Enum) |
+
+
+### Object: `MoveTowards`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `move` (Enum) |
+| `move_for_ability` | Enum |  | `attack` (Enum) |
+| `move_weights` | Enum |  | `stay_close` (Enum) |
+
+
+### Object: `Mutant`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Mutant"` (Enum) |
+| `attack` | Enum |  | `BBMutantSwipe` (Enum) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `move_speed_multiplier` | String |  | `.5` (String) |
+| `name` | String |  | `"ENEMY_CULTISTMUTANT_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_CULTISTMUTANT_DESC"` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdMed` (Enum) |
+
+
+### Object: `Muted`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_MUTED_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_MUTED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_MUTED_DESC"` (String) |
+| `tooltip_stacks_singular` | String |  | `"KEYWORD_MUTED_DESC_SINGULAR"` (String) |
+
+
+### Object: `NCGravecrawlFAR`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `NCGravecrawl` (Enum) |
+| `move_weights` | Enum |  | `stay_far` (Enum) |
+
+
+### Object: `Necromancer`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[MaggotArmy Reanimate Rebirth Pestilence Weakness SoulSuck EvilIncarnate SoulLink WeAreOne BloodRain...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_NECROMANCER0" "TEAMNAME_ADJECTIVE_NECROMANCER1" "TEAMNAME_ADJECTIVE_NECROMANCER2" "TEAMNAME_ADJECTIVE_NECROMANCER3" "TEAMNAME_ADJECTIVE_NECROMANCER4" "TEAMNAME_ADJECTIVE_NECROMANCER5" "TEAMNAME_ADJECTIVE_NECROMANCER6" "TEAMNAME_ADJECTIVE_NECROMANCER7" "TEAMNAME_ADJECTIVE_NECROMANCER8" "TEAMNAME_ADJECTIVE_NECROMANCER9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicNecroRanged]` (Array) |
+| `desc` | String |  | `"SETBONUS_NECROMANCER_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[dex cha con]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_NECROMANCER_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_NECROMANCER0" "TEAMNAME_NOUN_NECROMANCER1" "TEAMNAME_NOUN_NECROMANCER2" "TEAMNAME_NOUN_NECROMANCER3" "TEAMNAME_NOUN_NECROMANCER4" "TEAMNAME_NOUN_NECROMANCER5" "TEAMNAME_NOUN_NECROMANCER6" "TEAMNAME_NOUN_NECROMANCER7" "TEAMNAME_NOUN_NECROMANCER8" "TEAMNAME_NOUN_NECROMANCER9"...]` (Array) |
+| `passive_pool` | Array |  | `[Vampirism OneWithNothing BedBugs WormLord InfiniteRebirth SacrificialLamb DeathIncarnate OffloadPain CambionConception Leechmother...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[SoulLink Reanimate Rebirth CarrionShot Pestilence BloodGeyser MaggotArmy Gravecrawl FullMoon CoffinFlop]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `NeutronStar`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `NextAbilityHeals`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"NextAbilityHeals"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `NextActionLuckUp`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alias` | Enum |  | `LuckUp` (Enum) |
+
+
+### Object: `NextAttackBonusRange`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_BONUSRANGE_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_BONUSRANGE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_BONUSRANGE_DESC"` (String) |
+
+
+### Object: `NextAttackSpecialCrit`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `crit_multiplier_bonus` | Number |  | `2` (Number) |
+| `extra_coins_per_stack` | Number |  | `2` (Number) |
+| `luck_increase` | Number |  | `1` (Number) |
+
+
+### Object: `NextBasicAttackCritsThisTurn`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cant_miss` | Boolean |  | `true` (Boolean) |
+| `piercing` | Boolean |  | `true` (Boolean) |
+| `stacks` | Number |  | `1` (Number) |
+
+
+### Object: `NextBattleStatusStacks`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `MadnessChanceOnTurnBegin` | Number |  | `2` (Number) |
+| `fights` | Number |  | `9999` (Number) |
+
+
+### Object: `NextDamageReduceAndHealAllies`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"NextDamageReduceAndHealAllies"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `NextTurnDoubleRangedDamage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_DOUBLERANGEDDMG_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_DOUBLERANGEDDMG_DESC"` (String) |
+
+
+### Object: `NoEyes`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"0"` (Enum) |
+
+
+### Object: `NoStick`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `ManglerJab` (Enum) |
+
+
+### Object: `NonCat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation` | Enum |  | `spawnHolding` (Enum) |
+| `formchange` | Enum |  | `SmallHolding` (Enum), `BigHolding` (Enum) |
+| `statuses` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Normal`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Up"` (Enum) |
+| `attack` | Enum |  | `TinaBasicBigMeleeA` (Enum), `SpewerLobbed_Normal` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `NormalFull`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Full` (Enum) |
+| `attack` | Enum |  | `SpewerSpit` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `NotPriming`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Nothing`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation` | Enum |  | `spawn` (Enum) |
+
+
+### Object: `Nuke`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Nuke` (Enum) |
+| `attack` | Enum |  | `None` (Enum) |
+| `desc` | String |  | `"ARMOR_NUKE_DESC"` (String) |
+| `failable` | Boolean |  | `true` (Boolean) |
+| `frame` | Number |  | `77` (Number) |
+| `hint_destination` | Enum |  | `endoftime` (Enum) |
+| `indestructible` | Boolean |  | `true` (Boolean) |
+| `kind` | Enum |  | `neck` (Enum) |
+| `legacy_quest` | Boolean |  | `true` (Boolean) |
+| `move` | Enum |  | `None` (Enum) |
+| `name` | String |  | `"ARMOR_NUKE_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `quest_item` | Boolean |  | `true` (Boolean) |
+| `rarity` | Enum |  | `quest` (Enum) |
+| `set` | Enum |  | `Radioactive` (Enum) |
+| `shield` | Array / Number |  | `[1 .5]` (Array), `10` (Number) |
+| `spd` | Number |  | `-2` (Number) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Obey`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `keyword_tooltips` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `ObjectOnHit`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `object` | Enum |  | `Poop` (Enum) |
+
+
+### Object: `Off`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `Off` (Enum) |
+
+
+### Object: `OffMap`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `OffScreen`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `OneAlive`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `OneEye`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"1"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Open`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Open` (Enum) |
+| `attack` | Enum |  | `GSOpenAttack` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `OpenCat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `OpenCat` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Out`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `OverHealToStatuses`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `RandomStatUp` | Enum / Number |  | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `TakeExtraTurn` | Number |  | `1` (Number) |
+| `stack_scale` | Number |  | `0` (Number) |
+
+
+### Object: `Parousworm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `con` | Number |  | `-1` (Number) |
+| `cursed` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_PAROUSWORM_DESC"` (String) |
+| `frame` | Number |  | `271` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_PAROUSWORM_NAME"` (String) |
+| `parasite` | Boolean |  | `true` (Boolean) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `ParticleAttractor`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `force` | Number |  | `100` (Number) |
+| `force_end` | Number |  | `200` (Number), `500` (Number) |
+| `force_start` | Number |  | `0` (Number) |
+| `towards` | Array |  | `[5 0 5]` (Array), `[0 .5 0]` (Array) |
+
+
+### Object: `ParticleBouncePlane`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `dampening` | Number / String |  | `1` (Number), `0` (Number), `.1` (String), `.75` (String) |
+| `friction` | Number / String |  | `5` (Number), `2` (Number), `.1` (String), `.2` (String) |
+| `plane` | Enum |  | `right` (Enum), `back` (Enum) |
+| `position` | Number |  | `10.5` (Number) |
+| `rotation_dampening` | Number |  | `1` (Number) |
+
+
+### Object: `ParticleCharacterCollision`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `character_sphere_offset` | Number |  | `0` (Number) |
+| `inherit_velocity` | String |  | `.5` (String) |
+| `pushforce` | Number |  | `2` (Number) |
+
+
+### Object: `ParticleGlobalForce`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `amount` | Number / String |  | `3` (Number), `1` (Number), `.1` (String), `.5` (String) |
+| `id` | Enum |  | `Wind` (Enum) |
+
+
+### Object: `ParticleLineCollisions`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `dampening` | Number / String |  | `1` (Number), `.5` (String) |
+| `end_on_collision` | Boolean |  | `true` (Boolean) |
+| `friction` | Number |  | `1` (Number), `0` (Number) |
+
+
+### Object: `ParticleRandomForce`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `begin` | Array |  | `[0 -20 0]` (Array), `[0 -10 0]` (Array) |
+| `end` | Array |  | `[0 -450 0]` (Array), `[0 [ 40 120 ] 0]` (Array) |
+
+
+### Object: `ParticleTornadoForce`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `axis` | Array |  | `[0 -0.5 0]` (Array), `[0 1 0]` (Array) |
+| `force` | Number |  | `8` (Number), `5` (Number) |
+| `point` | Array |  | `[1 1 1]` (Array), `[0 0 0]` (Array) |
+
+
+### Object: `PeaceSymbol`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ARMOR_PEACESYMBOL_DESC"` (String) |
+| `frame` | Number |  | `91` (Number) |
+| `keyword_tooltips` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `neck` (Enum) |
+| `name` | String |  | `"ARMOR_PEACESYMBOL_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+| `set` | Array |  | `[Hippie Twine]` (Array) |
+
+
+### Object: `PeaceSymbolFacePaint`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ARMOR_PEACESYMBOLFACEPAINT_DESC"` (String) |
+| `frame` | Number |  | `194` (Number) |
+| `kind` | Enum |  | `face` (Enum) |
+| `name` | String |  | `"ARMOR_PEACESYMBOLFACEPAINT_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `rare` (Enum) |
+| `set` | Enum |  | `Hippie` (Enum) |
+
+
+### Object: `PermanentCharm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alias` | Enum |  | `Charmed` (Enum) |
+
+
+### Object: `Pigeon`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdMed` (Enum) |
+
+
+### Object: `PoolMetronome`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `pool` | Array |  | `[Shockwave Ping Telefrag Stasis Reduce Zealot]` (Array) |
+
+
+### Object: `PopAndSpawn`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `clone_items` | Boolean |  | `false` (Boolean) |
+| `clone_referenced_catdata` | Boolean |  | `true` (Boolean) |
+| `no_splatter` | Boolean |  | `false` (Boolean) |
+| `object` | Enum |  | `BoyShade` (Enum), `PlayerCat_ClotClone` (Enum) |
+
+
+### Object: `Possessing`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"Possessing"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Primed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `GA_Telekinesis_Big` (Enum) |
+| `partial_animation_suffix` | Enum |  | `primed` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Priming`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Psychic`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[Telekinesis Suggestion MindControl MegaGrav PsyFlutter MagnetPull MindBlast PsychicChoke SkyShatter Supernova...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_PSYCHIC0" "TEAMNAME_ADJECTIVE_PSYCHIC1" "TEAMNAME_ADJECTIVE_PSYCHIC2" "TEAMNAME_ADJECTIVE_PSYCHIC3" "TEAMNAME_ADJECTIVE_PSYCHIC4" "TEAMNAME_ADJECTIVE_PSYCHIC5" "TEAMNAME_ADJECTIVE_PSYCHIC6" "TEAMNAME_ADJECTIVE_PSYCHIC7" "TEAMNAME_ADJECTIVE_PSYCHIC8" "TEAMNAME_ADJECTIVE_PSYCHIC9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicPsychicPull]` (Array) |
+| `desc` | String |  | `"SETBONUS_PSYCHIC_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `innate_passives` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[int cha spd]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_PSYCHIC_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_PSYCHIC0" "TEAMNAME_NOUN_PSYCHIC1" "TEAMNAME_NOUN_PSYCHIC2" "TEAMNAME_NOUN_PSYCHIC3" "TEAMNAME_NOUN_PSYCHIC4" "TEAMNAME_NOUN_PSYCHIC5" "TEAMNAME_NOUN_PSYCHIC6" "TEAMNAME_NOUN_PSYCHIC7" "TEAMNAME_NOUN_PSYCHIC8" "TEAMNAME_NOUN_PSYCHIC9"]` (Array) |
+| `passive_pool` | Array |  | `[Flying SoulShatter Glow Blink FullPower RealityShatter MentalStorm Wither Flourish PsySmack...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[Ping Telekinesis Suggestion SkyShatter MindMeld Glare MindCrack FlashForward CumulativeBlast IncreaseGravity]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Pulp2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Number |  | `2` (Number) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `1` (Number) |
+
+
+### Object: `Pulp3`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Number |  | `3` (Number) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `1` (Number) |
+
+
+### Object: `Pulp4`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Number |  | `4` (Number) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `1` (Number) |
+
+
+### Object: `Pulp5`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Number |  | `5` (Number) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `1` (Number) |
+
+
+### Object: `Pulp6`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Number |  | `6` (Number) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `1` (Number) |
+
+
+### Object: `Pulp7`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Number |  | `7` (Number) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
+| `turns` | Object |  | `{ ... }` (Object) |
+| `uifloaters_offset` | Number |  | `1` (Number) |
+
+
+### Object: `QuakeAreaChance`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `chance` | Number |  | `50` (Number) |
+| `radius` | Number |  | `1` (Number), `0` (Number) |
+
+
+### Object: `Rage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Rage"` (Enum) |
+| `attack` | Enum |  | `ChubsSpinRage` (Enum) |
+| `move_speed_multiplier` | Number |  | `2` (Number) |
+| `partial_animation_suffix` | Enum |  | `"Rage"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Rain`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `adventure_weather` | Enum |  | `Rain` (Enum) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `alpha` | String |  | `.5` (String) |
+| `ambient_sound` | String |  | `amb_rain.ogg` (String) |
+| `chain` | Enum |  | `splash` (Enum) |
+| `combo` | Array |  | `[RainB RainM RainF]` (Array) |
+| `desc` | String |  | `"WEATHER_RAIN_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  | `1` (Number) |
+| `emit_box` | Array |  | `[0 10 10 10 0 10]` (Array) |
+| `emit_direction` | Array |  | `[0 -1 0]` (Array) |
+| `emit_rate` | Number |  | `200` (Number) |
+| `emit_spread` | Number |  | `0` (Number) |
+| `face_moving_direction` | Boolean |  | `true` (Boolean) |
+| `force` | Array |  | `[0 -10 0]` (Array) |
+| `hint_persistent_elements` | Array |  | `[Water]` (Array) |
+| `live_bounds` | Array |  | `[-999 999 0 999 -999 999]` (Array) |
+| `movieclip` | Enum |  | `RainParticle` (Enum) |
+| `name` | String |  | `"WEATHER_RAIN_NAME"` (String) |
+| `particle_lifetime` | Number |  | `5` (Number) |
+| `particles` | Array |  | `[Rain]` (Array) |
+| `prewarm` | Number |  | `5` (Number) |
+| `projection_matrix` | Enum |  | `default` (Enum) |
+| `render_mode` | Enum |  | `separate` (Enum) |
+| `scripts` | Object |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  | `global` (Enum) |
+| `size_start` | String |  | `.5` (String) |
+| `skybox_frame` | Enum |  | `day_rain` (Enum) |
+| `speed_scale` | String |  | `.1` (String) |
+| `speed_start` | Number |  | `10` (Number) |
+
+
+### Object: `RandomArmorPickup`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `RandomBiggerArmorPickup`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `RandomBiggerCatnipPickup`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `RandomBiggerFoodPickup`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `RandomCatnipPickup`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `RandomDistanceDisplace`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `min_dist` | Number |  | `4` (Number) |
+| `stacks` | Number |  | `20` (Number) |
+
+
+### Object: `RandomFoodPickup`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `RandomKnockback`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `max` | Number |  | `10` (Number), `3` (Number) |
+| `min` | Number |  | `1` (Number) |
+
+
+### Object: `RaptorEgg`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_RaptorEgg` (Enum) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_RAPTOREGG_DESC"` (String) |
+| `durability` | Number |  | `1` (Number) |
+| `frame` | Number |  | `263` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_RAPTOREGG_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Raven`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdMed` (Enum) |
+
+
+### Object: `RavenFeather`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ARMOR_RAVENFEATHER_DESC"` (String) |
+| `frame` | Number |  | `179` (Number) |
+| `kind` | Enum |  | `neck` (Enum) |
+| `name` | String |  | `"ARMOR_RAVENFEATHER_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `rare` (Enum) |
+| `set` | Enum |  | `Feathered` (Enum) |
+
+
+### Object: `ReduceManaCostExcludeBrainstorm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_INSIGHT_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_INSIGHT_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_INSIGHT_DESC"` (String) |
+
+
+### Object: `Regurge`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `self_damage` | Object |  | `{ ... }` (Object) |
+| `spawn` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spawn` (Enum) |
+
+
+### Object: `RepressedMemoriesMetronome`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `pool` | Enum |  | `Psychic` (Enum), `Jester` (Enum) |
+| `stacks` | Number |  | `1` (Number) |
+
+
+### Object: `Return`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `return` (Enum) |
+
+
+### Object: `ReturnA`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `HangerBotReturn` (Enum) |
+| `move_weights` | Enum |  | `stay_close` (Enum) |
+
+
+### Object: `RunFar`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `PyrophinaVSRun` (Enum) |
+| `move_weights` | Enum |  | `run_far` (Enum) |
+
+
+### Object: `Sandstorm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ambient_sound` | String |  | `amb_sandstorm.ogg` (String) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `desc` | String |  | `"WEATHER_SANDSTORM_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_SANDSTORM_NAME"` (String) |
+| `template` | Enum |  | `self_buff` (Enum) |
+
+
+### Object: `ScrambleLastUsedSpell`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `permanent` | Boolean |  | `true` (Boolean) |
+
+
+### Object: `Scrap`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"SETBONUS_SCRAP_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_SCRAP_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `shield` | Array / Number |  | `[1 .5]` (Array), `3` (Number) |
+| `variant_of` | Enum |  | `PickupBase` (Enum) |
+
+
+### Object: `Seagull`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdMed` (Enum) |
+
+
+### Object: `SerratedClaws`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_SERRATED_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_SERRATED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_SERRATED_DESC"` (String) |
+
+
+### Object: `SetAnimationAlts`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `dead` | Enum |  | `deadShot` (Enum) |
+| `dying` | Enum |  | `shot` (Enum) |
+
+
+### Object: `SetCrazyEyeBackgroundWeights`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `weights` | Array |  | `[0 0 1]` (Array), `[0 1 0]` (Array) |
+
+
+### Object: `SewersUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Shadow`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `class` | Enum |  | `Thief` (Enum) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `crit_chance` | String |  | `.05*X` (String) |
+| `desc` | String |  | `"PASSIVE_STEALTHED_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"PASSIVE_STEALTHED_NAME"` (String) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `teleport` (Enum) |
+
+
+### Object: `Shatter`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `melee_attack` (Enum) |
+
+
+### Object: `ShortCircuit`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"KEYWORD_SHORTCIRCUIT_NAME"` (String) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spell` (Enum) |
+| `tooltip` | String |  | `"KEYWORD_SHORTCIRCUIT_DESC"` (String) |
+
+
+### Object: `ShowFakeDamage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `stacks` | Number |  | `999` (Number) |
+| `style` | Array |  | `[crit]` (Array) |
+
+
+### Object: `Sitting`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Chair` (Enum) |
+| `attack` | Enum |  | `DoNothing` (Enum) |
+| `move` | Enum |  | `DoNothing` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SlotResult_Explode`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `self_damage` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spell` (Enum) |
+
+
+### Object: `SlotResult_Jackpot_Coins`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `self_damage` | Object |  | `{ ... }` (Object) |
+| `spawn` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spawn` (Enum) |
+
+
+### Object: `SlotResult_Nothing`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `self_buff` (Enum) |
+
+
+### Object: `SlotResult_RandomPickup`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `spawn` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spawn` (Enum) |
+
+
+### Object: `Small`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | String |  | `""` (String) |
+| `attack` | Enum |  | `GameteInflate` (Enum) |
+
+
+### Object: `SmallAttic`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `built_in_collision` | Array |  | `[[ 6 6 6 6 6 6 6 6 6...]` (Array) |
+| `extra_bound_planes` | Array |  | `[{ p [ 0 0 ] n [ 1 -2...]` (Array) |
+| `height` | Number |  | `5` (Number) |
+| `id` | Enum |  | `Attic` (Enum) |
+| `interstitial_bg_frame` | Enum |  | `attic` (Enum) |
+| `movieclip` | Enum |  | `RoomBackgroundSmallAttic` (Enum) |
+| `reverb_empty` | Object |  | `{ ... }` (Object) |
+| `reverb_full` | Object |  | `{ ... }` (Object) |
+| `width` | Number |  | `18` (Number) |
+
+
+### Object: `SmallBirdPool`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alt_spawn_pool` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SmallHolding`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"Holding"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SmallHoldingCat`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `animation_suffix` | Enum |  | `"HoldingCat"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SmallHouse_Attic`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `prereq` | Enum |  | `Default` (Enum) |
+| `unlock_room` | Enum |  | `Attic` (Enum) |
+
+
+### Object: `SmartMetronome`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `stacks` | Number |  | `20` (Number) |
+| `tags` | Array |  | `[musical]` (Array) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `upgraded` | Boolean |  | `true` (Boolean) |
+
+
+### Object: `SmellBlood`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `self_buff` (Enum) |
+
+
+### Object: `Snake`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Snow`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `adventure_weather` | Enum |  | `Snow` (Enum) |
+| `alpha` | String |  | `.5` (String) |
+| `ambient_sound` | String |  | `amb_snow.ogg` (String) |
+| `combo` | Array |  | `[SnowB SnowM SnowF]` (Array) |
+| `desc` | String |  | `"WEATHER_SNOW_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  | `1` (Number) |
+| `emit_box` | Array |  | `[0 10 10 10 0 10]` (Array) |
+| `emit_direction` | Array |  | `[0 -1 0]` (Array) |
+| `emit_rate` | Number |  | `200` (Number) |
+| `emit_spread` | Number |  | `10` (Number) |
+| `hint_persistent_elements` | Array |  | `[Ice]` (Array) |
+| `live_bounds` | Array |  | `[-0.5 999 -999 999 -0.5 999]` (Array) |
+| `movieclip` | Enum |  | `ParticleTestNoRandom` (Enum) |
+| `name` | String |  | `"WEATHER_SNOW_NAME"` (String) |
+| `particle_lifetime` | Number |  | `7` (Number) |
+| `particles` | Array |  | `[Snow]` (Array) |
+| `prewarm` | Number |  | `20` (Number) |
+| `projection_matrix` | Enum |  | `default` (Enum) |
+| `render_mode` | Enum |  | `separate` (Enum) |
+| `rotation` | Array |  | `[0 360]` (Array) |
+| `rotation_speed` | Array |  | `[-100 100]` (Array) |
+| `rotation_speed_end` | Number |  | `0` (Number) |
+| `scripts` | Object |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  | `global` (Enum) |
+| `size_end` | Number |  | `0` (Number) |
+| `size_start` | Array |  | `[.3 .8]` (Array) |
+| `skybox_frame` | Enum |  | `day_snow` (Enum) |
+| `speed_start` | Array |  | `[2 4]` (Array) |
+
+
+### Object: `SolarFlare`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `damage` | Equation |  | `5` (Equation) |
+| `desc` | String |  | `"WEATHER_SOLARFLARE_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `elements` | Array |  | `[Fire]` (Array) |
+| `name` | String |  | `"WEATHER_SOLARFLARE_NAME"` (String) |
+
+
+### Object: `SpawnTilePuddleOnBattleStart`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `max_radius` | Number |  | `3.5` (Number) |
+| `min_radius` | Number |  | `1.5` (Number) |
+| `tile` | Enum |  | `OilTile` (Enum) |
+
+
+### Object: `SpawnVolcanoOnBattleStart`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `max_radius` | Number |  | `2.2` (Number) |
+| `min_radius` | Number / String |  | `1` (Number), `.2` (String) |
+| `number` | Array |  | `[3 5]` (Array) |
+| `object` | Enum |  | `Sprout` (Enum), `MiniVolcano` (Enum) |
+| `puddle_tile` | Array / Enum |  | `[BrambleTile TallBrambleTile]` (Array), `LavaTile` (Enum) |
+
+
+### Object: `SpawningPhase`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SpearRun`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `CaveManSpearRun` (Enum) |
+| `move_for_ability` | Enum |  | `CaveManPickupSpear` (Enum) |
+| `move_weights` | Enum |  | `util_minmove` (Enum) |
+
+
+### Object: `SpecialGodRays`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Big` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SpellShield`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"SpellShield"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `Squirrel`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SquirrelForm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `BasicMelee` (Enum) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `self_damage` | Object |  | `{ ... }` (Object) |
+| `spawn` | Object |  | `{ ... }` (Object) |
+| `tags` | Array |  | `[shapeshift summon]` (Array) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spawn` (Enum) |
+| `tooltip` | String |  | `ENEMY_DRAVENSQUIRRELFORM_DESC` (String) |
+
+
+### Object: `Standing`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `BungaSmash` (Enum) |
+| `move` | Enum |  | `DefaultMove` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Standing2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `BungaSmash` (Enum) |
+| `move` | Enum |  | `BungaJumpMove` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Start_Ceiling`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `StatBounty`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_STATBOUNTY_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_STATBOUNTY_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_STATBOUNTY_DESC"` (String) |
+
+
+### Object: `StatusCharactersOnRoundEnd`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Conditional_GoodRoll` | Object |  | `{ ... }` (Object) |
+| `FloatingRockTrap` | Number |  | `1` (Number) |
+| `Thorns` | Array / Number / Object |  | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `tag_filter` | Enum |  | `rock` (Enum) |
+
+
+### Object: `StatusCharactersOnRoundStart`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Conditional_GoodRoll` | Object |  | `{ ... }` (Object) |
+| `Else` | Object |  | `{ ... }` (Object) |
+| `Madness` | Array / Number / Object |  | `[1 .1]` (Array), `[1 .25]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
+
+
+### Object: `Stimulation`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_STIMULATION_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_STIMULATION_DESC"` (String) |
+
+
+### Object: `Stop`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `keyword_tooltips` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SuckMF`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `TormentorSuck` (Enum) |
+| `decision_weights` | Enum |  | `careless` (Enum) |
+| `move_weights` | Enum |  | `keep_distance` (Enum) |
+
+
+### Object: `SwapWeapon`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `pool` | Array |  | `[TerminatorShotgun TerminatorSniper TerminatorUzi]` (Array) |
+
+
+### Object: `SwitchMusic`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `crossfade_speed` | Number |  | `1` (Number) |
+| `new_layer` | Enum |  | `battle` (Enum), `map` (Enum) |
+| `new_song` | Enum |  | `same` (Enum) |
+
+
+### Object: `Switcheroo`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | Enum |  | `"Switcheroo"` (Enum) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `SwordAndShield`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `DestroyerAttack` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `SwordAndShield_Primed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Holy"` (Enum) |
+| `attack` | Enum |  | `DestroyerAttack` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `TF_TargetAllies`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `TwistingFlames` (Enum) |
+| `decision_weights` | Enum |  | `util_target_allies` (Enum) |
+
+
+### Object: `TF_TargetEnemies`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `TwistingFlames` (Enum) |
+| `decision_weights` | Enum |  | `util_target_enemies` (Enum) |
+
+
+### Object: `TVBotDie`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `icon_frame` | Number |  | `155` (Number) |
+| `name` | String |  | `"ENEMY_TVBOT_DIE_NAME"` (String) |
+| `tooltip` | String |  | `"ENEMY_TVBOT_DIE_DESC"` (String) |
+
+
+### Object: `TVBotDumb`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `icon_frame` | Number |  | `155` (Number) |
+| `name` | String |  | `"ENEMY_TVBOT_DUMB_NAME"` (String) |
+| `tooltip` | String |  | `"ENEMY_TVBOT_DUMB_DESC"` (String) |
+
+
+### Object: `TVBotObey`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `icon_frame` | Number |  | `155` (Number) |
+| `name` | String |  | `"ENEMY_TVBOT_OBEY_NAME"` (String) |
+| `tooltip` | String |  | `"ENEMY_TVBOT_OBEY_DESC"` (String) |
+
+
+### Object: `TVBotStop`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `icon_frame` | Number |  | `155` (Number) |
+| `name` | String |  | `"ENEMY_TVBOT_STOP_NAME"` (String) |
+| `tooltip` | String |  | `"ENEMY_TVBOT_STOP_DESC"` (String) |
+
+
+### Object: `Tank`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[HeadButt ThrowShield ChewCud AssBlast Chew BatterUp BackBreaker Suplex Intimidate Toss...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_TANK0" "TEAMNAME_ADJECTIVE_TANK1" "TEAMNAME_ADJECTIVE_TANK2" "TEAMNAME_ADJECTIVE_TANK3" "TEAMNAME_ADJECTIVE_TANK4" "TEAMNAME_ADJECTIVE_TANK5" "TEAMNAME_ADJECTIVE_TANK6" "TEAMNAME_ADJECTIVE_TANK7" "TEAMNAME_ADJECTIVE_TANK8" "TEAMNAME_ADJECTIVE_TANK9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicTankMelee]` (Array) |
+| `complicated_abilities` | Array |  | `[TankRockSong FlipFlop Lunge PlantFeet IronHead Aftershock Demolish FullForce Thicken Spur]` (Array) |
+| `complicated_passives` | Array |  | `[Plow ChainKnockback Wrestlemaniac MyLeg SlowAndSteady ShovingMatch]` (Array) |
+| `desc` | String |  | `"SETBONUS_TANK_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[con str spd]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_TANK_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_TANK0" "TEAMNAME_NOUN_TANK1" "TEAMNAME_NOUN_TANK2" "TEAMNAME_NOUN_TANK3" "TEAMNAME_NOUN_TANK4" "TEAMNAME_NOUN_TANK5" "TEAMNAME_NOUN_TANK6" "TEAMNAME_NOUN_TANK7" "TEAMNAME_NOUN_TANK8" "TEAMNAME_NOUN_TANK9"...]` (Array) |
+| `passive_pool` | Array |  | `[Thorns HeavyHanded SlackOff Scabs ThunderThighs Plow PetRocks ToadStyle ChainKnockback ProtectiveAura...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[TankSwap Toss BellyFlop BatterUp Chew ThrowShield DrawAttention BodyGuard Earthquake Spur]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Tar`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `SpewerLobbed_Tar` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `TarFull`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Full` (Enum) |
+| `attack` | Enum |  | `SpewerSpit` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Taunting`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"Taunting"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `TeamCastAbility`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `CollectiveSpinImpl` (Enum), `CollectiveCounterImpl` (Enum) |
+| `same_orientation` | Boolean |  | `true` (Boolean) |
+| `tag_restriction` | Enum |  | `collective` (Enum) |
+
+
+### Object: `TempBackstab`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TEMPBACKSTAB_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_TEMPBACKSTAB_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_TEMPBACKSTAB_DESC"` (String) |
+
+
+### Object: `TempBonusKnockback`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_BONUSKNOCKBACK_NAME"` (String) |
+| `tooltip_stackless` | Enum |  | `None` (Enum) |
+| `tooltip_stacks` | String |  | `"KEYWORD_BONUSKNOCKBACK_DESC"` (String) |
+
+
+### Object: `TempBonusKnockbackDamage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_BONUSKNOCKBACKDAMAGE_NAME"` (String) |
+| `tooltip_stackless` | Enum |  | `None` (Enum) |
+| `tooltip_stacks` | String |  | `"KEYWORD_BONUSKNOCKBACKDAMAGE_DESC"` (String) |
+
+
+### Object: `TempCritChanceUp`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alias` | Enum |  | `CritChanceUp` (Enum) |
+
+
+### Object: `TempDexterityUp`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alias` | Enum |  | `DexterityUp` (Enum) |
+
+
+### Object: `TempInjuryImmunity`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TEMPIMMUNE_NAME"` (String) |
+| `tooltip_stackless` | Enum |  | `none` (Enum) |
+| `tooltip_stacks` | String |  | `"KEYWORD_TEMPIMMUNE_DESC"` (String) |
+| `tooltip_stacks_singular` | String |  | `"KEYWORD_TEMPIMMUNE_DESC_SINGULAR"` (String) |
+
+
+### Object: `TempManaCostReduction`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_TEMPMANAREDUCTION_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_TEMPMANAREDUCTION_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_TEMPMANAREDUCTION_DESC"` (String) |
+
+
+### Object: `TempPassiveWhileHasStatus`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `HealthRegenUp` | Array / Number / Object |  | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+
+
+### Object: `TempPreEmptiveCounterAttack`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_PRECOUNTER_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_PRECOUNTER_DESC"` (String) |
+
+
+### Object: `TempSpeedUp`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `alias` | Enum |  | `SpeedUp` (Enum) |
+
+
+### Object: `TemporaryItem`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `icon_frame` | Number |  | `164` (Number) |
+| `name` | String |  | `"KEYWORD_TEMPITEM_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_TEMPITEM_DESC"` (String) |
+
+
+### Object: `TheEndUnlocked`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `exit0` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Thief`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[MoveAgain Assassinate BoostBackstab PoisonGas PoisonNail WeakeningNail SharpNail CoinToss Shadow TimeWalk...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_THIEF0" "TEAMNAME_ADJECTIVE_THIEF1" "TEAMNAME_ADJECTIVE_THIEF2" "TEAMNAME_ADJECTIVE_THIEF3" "TEAMNAME_ADJECTIVE_THIEF4" "TEAMNAME_ADJECTIVE_THIEF5" "TEAMNAME_ADJECTIVE_THIEF6" "TEAMNAME_ADJECTIVE_THIEF7" "TEAMNAME_ADJECTIVE_THIEF8" "TEAMNAME_ADJECTIVE_THIEF9"...]` (Array) |
+| `attack_pool` | Array |  | `[BasicStraightShot_Thief]` (Array) |
+| `complicated_abilities` | Array |  | `[QuickRoll Shadowshift SlingShade ThiefSwap Pierce TripleNails SkinDisguise PoisonDip]` (Array) |
+| `complicated_passives` | Array |  | `[BountyHunter AfterImage Agile FlipACoin]` (Array) |
+| `desc` | String |  | `"SETBONUS_THIEF_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[spd dex lck]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_THIEF_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_THIEF0" "TEAMNAME_NOUN_THIEF1" "TEAMNAME_NOUN_THIEF2" "TEAMNAME_NOUN_THIEF3" "TEAMNAME_NOUN_THIEF4" "TEAMNAME_NOUN_THIEF5" "TEAMNAME_NOUN_THIEF6" "TEAMNAME_NOUN_THIEF7" "TEAMNAME_NOUN_THIEF8" "TEAMNAME_NOUN_THIEF9"...]` (Array) |
+| `passive_pool` | Array |  | `[Backstabber GoldenClaws Shadow PoisonTips Burgle SwiftKiller DoubleThrow BountyHunter RazorClaws Looter...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[Shadow PoisonNail MoveAgain Backflip Distract Rebound Stalk Assassinate CutPurse SeverArtery]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Throb`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `ThrobBubs`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `ThrobHost`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `Host` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `ThrobNettle`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `ThrobbingArteryDone`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Thunderstorm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `adventure_weather` | Enum |  | `Thunderstorm` (Enum) |
+| `ambient_sound` | String |  | `amb_thunderstorm.ogg` (String), `amb_heavyrain.ogg` (String) |
+| `combo` | Array |  | `[TRainB TRainM TRainF WindDust]` (Array) |
+| `desc` | String |  | `"WEATHER_THUNDERSTORM_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `hint_persistent_elements` | Array |  | `[Water Wind]` (Array) |
+| `lightning_fx` | Boolean |  | `true` (Boolean) |
+| `name` | String |  | `"WEATHER_THUNDERSTORM_NAME"` (String) |
+| `particles` | Array |  | `[Thunderstorm]` (Array) |
+| `prewarm` | Number |  | `5` (Number) |
+| `skybox_frame` | Enum |  | `day_thunderstorm` (Enum) |
+
+
+### Object: `TieDyeBandana`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ARMOR_TIEDYEBANDANA_DESC"` (String) |
+| `frame` | Number |  | `209` (Number) |
+| `kind` | Enum |  | `head` (Enum) |
+| `name` | String |  | `"ARMOR_TIEDYEBANDANA_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `rare` (Enum) |
+| `set` | Enum |  | `Hippie` (Enum) |
+
+
+### Object: `TilesMovedToCritChance`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"TilesMovedToCritChance"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `TilesMovedToMana`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"TilesMovedToMana"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `TilesMovedToNeighborHeal`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"TilesMovedToNeighborHeal"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `TilesMovedToStrength`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | Enum |  | `"TilesMovedToStrength"` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `TimeDelayStatusApplication`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `Cleanse` | Number / Object |  | `1` (Number), `0` (Number), `{ ... }` (Object) |
+| `CreateGlobalModifiers` | Object |  | `{ ... }` (Object) |
+| `DoScreenShake` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| `FormChange` | Enum / Object |  | `passive` (Enum), `Boris` (Enum), `{ ... }` (Object) |
+| `FullHeal` | Number |  | `1` (Number), `0` (Number) |
+| `GlobalSpawnCharacter` | Enum |  | `MegaGuppy` (Enum) |
+| `PlayBackground` | Number |  | `1` (Number), `0` (Number) |
+| `RemoveAmbientLightEffects` | Number / String |  | `4` (Number), `.5` (String) |
+| `SwitchMusic` | Object |  | `{ ... }` (Object) |
+| `Vaporize` | Number |  | `1` (Number), `20` (Number) |
+| `delay` | Number / String |  | `1.13333` (Number), `3` (Number), `.1` (String), `.25` (String) |
+
+
+### Object: `Tinkerer`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability_groups` | Object |  | `{ ... }` (Object) |
+| `ability_pool` | Array |  | `[Research Discharge Repair ShoddyJetpack SpawnDecoy SpringShoes AutoPilot Recycle BuildTurret RocketSkates...]` (Array) |
+| `adjectives` | Array |  | `["TEAMNAME_ADJECTIVE_TINKERER0" "TEAMNAME_ADJECTIVE_TINKERER1" "TEAMNAME_ADJECTIVE_TINKERER2" "TEAMNAME_ADJECTIVE_TINKERER3" "TEAMNAME_ADJECTIVE_TINKERER4" "TEAMNAME_ADJECTIVE_TINKERER5" "TEAMNAME_ADJECTIVE_TINKERER6" "TEAMNAME_ADJECTIVE_TINKERER7" "TEAMNAME_ADJECTIVE_TINKERER8" "TEAMNAME_ADJECTIVE_TINKERER9"...]` (Array) |
+| `attack_pool` | Array |  | `[TinkererCraft]` (Array) |
+| `desc` | String |  | `"SETBONUS_TINKERER_DESC"` (String) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `innate_passives` | Object |  | `{ ... }` (Object) |
+| `levelup_stats` | Array |  | `[dex cha int]` (Array) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"SETBONUS_TINKERER_NAME"` (String) |
+| `nouns` | Array |  | `["TEAMNAME_NOUN_TINKERER0" "TEAMNAME_NOUN_TINKERER1" "TEAMNAME_NOUN_TINKERER2" "TEAMNAME_NOUN_TINKERER3" "TEAMNAME_NOUN_TINKERER4" "TEAMNAME_NOUN_TINKERER5" "TEAMNAME_NOUN_TINKERER6" "TEAMNAME_NOUN_TINKERER7" "TEAMNAME_NOUN_TINKERER8" "TEAMNAME_NOUN_TINKERER9"...]` (Array) |
+| `passive_pool` | Array |  | `[VersionTwo WeaponProficiency LivingBattery FuzzyFeet ArmorSpecialist EMP MrMega EscapeSequence ItemProxy LightningRod...]` (Array) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `pieces_required` | Number |  | `3` (Number) |
+| `starter_abilities` | Array |  | `[Research ArmorUp ShoddyJetpack BuildTurret RocketSkates Discharge Craft Catbot Electrolyze InstantBarrier]` (Array) |
+| `stat_mods` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Toad`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `TowerDefenseStatus`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_SENTRY_NAME"` (String) |
+| `tooltip` | String |  | `"KEYWORD_SENTRY_DESC"` (String) |
+
+
+### Object: `TowerDefenseStatus2`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `name` | String |  | `"KEYWORD_SENTRYPLUS_NAME"` (String) |
+| `tooltip_stackless` | String |  | `"KEYWORD_SENTRYPLUS_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  | `"KEYWORD_SENTRYPLUS_DESC"` (String) |
+
+
+### Object: `TradeLife`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `bonus_passives` | Object |  | `{ ... }` (Object) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `spell` (Enum) |
+
+
+### Object: `TrailBlazer`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"Trail Blazer"` (String) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  | `None` (Enum) |
+
+
+### Object: `TransformEquipment`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `from` | Enum |  | `JarOfChaos` (Enum) |
+| `to` | Enum |  | `JarOfNothing` (Enum) |
+
+
+### Object: `Transformed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Turkey`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_Heal` (Enum) |
+| `aux` | Number |  | `15` (Number) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_TURKEY_DESC"` (String) |
+| `durability` | Number |  | `7` (Number) |
+| `frame` | Number |  | `244` (Number) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_TURKEY_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `consumable_rare` (Enum) |
+| `sound` | Object |  | `{ ... }` (Object) |
+| `variant_of` | Enum |  | `BirdLarge` (Enum) |
+
+
+### Object: `Turtle`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `abilities` | Object |  | `{ ... }` (Object) |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `stats` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Turtled`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `Turtle` (Enum) |
+| `attack` | Enum |  | `None` (Enum) |
+| `move` | Enum |  | `None` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `TwisterDisplaceWithDamage`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `damage` | Equation |  | `inherit` (Equation), `1` (Equation) |
+| `exclude_prefix` | Enum |  | `Twister` (Enum) |
+| `max_dist` | Number |  | `3` (Number), `20` (Number) |
+| `min_dist` | Number |  | `3` (Number), `2` (Number) |
+
+
+### Object: `TwoAlive`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `turns` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `TwoEyes`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Unflip`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `TeleportFlipUp` (Enum) |
+| `move_for_ability` | Enum |  | `Spin_Enemy` (Enum) |
+| `move_weights` | Enum |  | `stay_close_always_move` (Enum) |
+
+
+### Object: `Unlit`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `partial_animation_suffix` | Enum |  | `Unlit` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Unwashed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum |  | `Unwashed` (Enum) |
+
+
+### Object: `Up`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Up"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"OBJECT_TIREUP_DESC"` (String) |
+
+
+### Object: `UseMoveAbilityWithAI`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `LEPortFar` (Enum) |
+| `move_weights` | Enum |  | `stay_far_move_far` (Enum) |
+
+
+### Object: `VisualCountDownThenApplyStatus`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ForceUseAbility` | Enum / Object |  | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+
+
+### Object: `VisualFlySwarm`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ambient_sound` | String |  | `amb_flyswarm.ogg` (String) |
+| `desc` | String |  | `"WEATHER_TORFLIES_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"WEATHER_TORFLIES_NAME"` (String) |
+
+
+### Object: `VolcanoAntennaAttached`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `WaggleClone`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `cWaggle` | Boolean (Flag) / Object |  | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| `cWaggle2x2` | Boolean (Flag) / Object |  | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| `cWaggle3x3` | Boolean (Flag) / Object |  | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `stacks` | Number |  | `5` (Number) |
+| `target` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `lobbed_attack` (Enum) |
+
+
+### Object: `WallOfFleshDone`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `quest_event` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Washed`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `Washer`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `attack` | Enum |  | `BasicMelee` (Enum) |
+| `name` | String |  | `"ENEMY_CULTISTWASHER_NAME"` (String) |
+| `partial_animation_suffix` | Enum |  | `"Cultist"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_CULTISTWASHER_DESC"` (String) |
+
+
+### Object: `Water`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `AOEPuddle` | Enum |  | `X-1` (Enum) |
+| `partial_animation_suffix` | Enum |  | `"Water"` (Enum) |
+| `passives` | Object |  | `{ ... }` (Object) |
+
+
+### Object: `WeirdEgg`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `desc` | String |  | `"ITEM_WEIRDEGG_DESC"` (String) |
+| `frame` | Number |  | `73` (Number) |
+| `intro` | Object |  | `{ ... }` (Object) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `main` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"ITEM_WEIRDEGG_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `rarity` | Enum |  | `uncommon` (Enum) |
+| `set` | Enum |  | `Baby` (Enum) |
+
+
+### Object: `WereMan`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"WereMan"` (Enum) |
+| `attack` | Enum |  | `WereManFurySwipes` (Enum) |
+| `name` | String |  | `"ENEMY_WEREMAN_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `properties` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_WEREMAN_DESC"` (String) |
+| `variant_of` | Enum |  | `CavePerson` (Enum) |
+
+
+### Object: `Wind`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `knockback` | Enum |  | `X` (Enum) |
+
+
+### Object: `Windy`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `adventure_weather` | Enum |  | `Windy` (Enum) |
+| `ambient_sound` | String |  | `amb_windy.ogg` (String) |
+| `desc` | String |  | `"WEATHER_WINDY_DESC"` (String) |
+| `effects` | Object |  | `{ ... }` (Object) |
+| `hint_persistent_elements` | Array |  | `[Wind]` (Array) |
+| `name` | String |  | `"WEATHER_WINDY_NAME"` (String) |
+| `particles` | Array |  | `[WindFull]` (Array) |
+| `prewarm` | Number |  | `5` (Number) |
+| `skybox_frame` | Enum |  | `day_windy` (Enum) |
+
+
+### Object: `WishBone`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | `cm_WishBone` (Enum) |
+| `consumable` | Boolean |  | `true` (Boolean) |
+| `desc` | String |  | `"ITEM_WISHBONE_DESC"` (String) |
+| `durability` | Number |  | `1` (Number) |
+| `frame` | Number |  | `193` (Number) |
+| `kind` | Enum |  | `trinket` (Enum) |
+| `name` | String |  | `"ITEM_WISHBONE_NAME"` (String) |
+| `rarity` | Enum |  | `consumable_very_rare` (Enum) |
+| `set` | Enum |  | `Bone` (Enum) |
+
+
+### Object: `XIsTargetHealth`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `BonusDamage` | Enum / Number / String |  | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+
+
+### Object: `Zealot`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"Zealot"` (Enum) |
+| `attack` | Enum |  | `BBStabby` (Enum) |
+| `cost` | Object |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  | `{ ... }` (Object) |
+| `graphics` | Object |  | `{ ... }` (Object) |
+| `meta` | Object |  | `{ ... }` (Object) |
+| `name` | String |  | `"ENEMY_CULTISTZEALOT_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `template` | Enum |  | `self_buff` (Enum) |
+| `tooltip` | String |  | `"ENEMY_CULTISTZEALOT_DESC"` (String) |
+
+
+### Object: `ZealotBomb`
+
+| Key | Type | Definition | Example Inputs |
+| :--- | :--- | :--- | :--- |
+| `ai` | Object |  | `{ ... }` (Object) |
+| `animation_suffix` | Enum |  | `"BombZealot"` (Enum) |
+| `attack` | Enum |  | `BBExplode` (Enum) |
+| `name` | String |  | `"ENEMY_BOMBZEALOT_NAME"` (String) |
+| `passives` | Object |  | `{ ... }` (Object) |
+| `tooltip` | String |  | `"ENEMY_BOMBZEALOT_DESC"` (String) |
 

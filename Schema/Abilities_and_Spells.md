@@ -29,6 +29,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spawn`](./Abilities_and_Spells.md#object-spawn) | Object | Parameters for summoning new characters, objects, or entities. | 692 |
 | [`self_damage`](./Abilities_and_Spells.md#object-self-damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives) | Object | Passives granted to the character while this ability is equipped. | 272 |
+| `attack` | Enum |  | `DustMelee` (Enum), `BasicShortRanged` (Enum) |
+| `can_get_bonus` | Boolean |  | `true` (Boolean) |
 | `durability` | Number | Consumes item durability. | 264 |
 | [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects) | Object | Status applications that wear off automatically or at the end of the turn. | 176 |
 | [`sounds`](./Abilities_and_Spells.md#object-sounds) | Object | Audio cues triggered by the ability. | 78 |
@@ -45,6 +47,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | String |  | 3 |
 | [`bonk_damage`](./Abilities_and_Spells.md#object-bonk_damage) | Object | Damage dealt when knocked into a wall or obstacle. | 2 |
 | [`damage`](./Abilities_and_Spells.md#object-damage) | Object | The base damage properties of an attack. | 2 |
+| `move` | Enum |  | `Teleport` (Enum), `DefaultMove` (Enum) |
+| `spell0` | Enum |  | `Roll` (Enum), `Spit` (Enum) |
+| `spells` | Array |  | `[BirdFly]` (Array), `[RangedHeal_Enemy]` (Array) |
 
 </details>
 

@@ -22,6 +22,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | `cha` | Number |  | 468 |
 | [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| `normal` | Array |  | `[common boneyard_events.gon]` (Array), `[common core_events.gon]` (Array) |
 | `spd` | Number |  | 424 |
 | `con` | Number |  | 416 |
 | `int` | Number |  | 401 |
