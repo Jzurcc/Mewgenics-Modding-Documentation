@@ -16,31 +16,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`desc`](./Enums.md#enum-desc) | Enum | Examples: `FURNITURE_DESC_AUTOFEEDER, FURNITURE_DESC_SPECIAL_FOODBOX, FURNITURE_DESC_POOP` | 5441 |  |
-| [`graphics`](./Miscellaneous.md#context-graphics) | Object | Examples: `{ ... }` | 5218 |  |
 | [`name`](./Enums.md#enum-name) | Enum | Examples: `BOSS_ERROR_NAME, BOSS_ERROR_MINIBOSS_NAME, BOSS_PEBBLES_NAME` | 5027 |  |
-| [`meta`](./Miscellaneous.md#context-meta) | Object | Examples: `{ ... }` | 4719 |  |
-| [`damage_instance`](./Miscellaneous.md#context-damage_instance) | Object | Examples: `{ ... }` | 4688 |  |
-| [`template`](./Enums.md#enum-template) | Enum | Examples: `targeted_status, spell, melee_attack` | 4348 |  |
-| [`target`](./Miscellaneous.md#context-target) | Object | Examples: `{ ... }` | 3724 |  |
-| [`cost`](./Miscellaneous.md#context-cost) | Object | Examples: `{ ... }` | 3702 |  |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum | Examples: `BloodBounce, BloodPoofCrit, BloodPoof` | 2364 |  |
-| `frame` | Number | Examples: `23, 12, 2` | 2212 |  |
-| [`kind`](./Enums.md#enum-kind) | Enum | Examples: `face, neck, head` | 2212 |  |
-| [`rarity`](./Enums.md#enum-rarity) | Enum | Examples: `uncommon, rare, common` | 1934 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1570 |  |
 | [`set`](./Enums.md#enum-set) | Enum | Examples: `sewn, spider, junk` | 1504 |  |
 | [`Set`](./Enums.md#enum-set) | Enum | Examples: `Monk` | 1504 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1274 |  |
-| [`class`](./Enums.md#enum-class) | Enum | Examples: `PlaceholderMeleeAttackAbility, SuplexAbility, MultiHitMeleeAttackAbility` | 1200 |  |
-| [`properties`](./Miscellaneous.md#context-properties) | Object | Examples: `{ ... }` | 1200 |  |
 | [`stats`](./Miscellaneous.md#context-stats) | Object | Examples: `{ ... }` | 982 |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, birth_defect, animal` | 981 |  |
-| [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 928 |  |
 | [`abilities`](./Miscellaneous.md#context-abilities) | Object | Examples: `{ ... }` | 918 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 883 |  |
 | `head` | Number | Examples: `1080, 1028, 1001` | 784 |  |
-| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `wp_PartyDetonatorFixed, wp_PersuasionDevice, wp_PartyDetonator` | 730 |  |
-| [`spawn`](./Miscellaneous.md#context-spawn) | Object | Examples: `{ ... }` | 692 |  |
 | `editor` | Object | Examples: `{ ... }` | 578 |  |
 | `category` | Number | Examples: `3, 4, 1` | 577 |  |
 | `paint` | Boolean | Examples: `false, true` | 576 |  |
@@ -77,20 +63,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Appeal` | Number | Examples: `2, 5, 1` | 338 |  |
 | [`str`](./Engine_DamagingKeys.md#valid-property-keys) | Mixed | Examples: `aux, 2, 1` | 337 |  |
 | `very_rare` | Mixed | Examples: `.01, 2, 1` | 316 |  |
-| `dex` | Number | Examples: `3, 1, -1` | 301 |  |
-| [`bonus_passives`](./Miscellaneous.md#context-bonus_passives) | Object | Examples: `{ ... }` | 272 |  |
 | `Stimulation` | Number | Examples: `2, 5, 1` | 268 |  |
-| `durability` | Number | Examples: `3, 2, 1` | 264 |  |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum | Examples: `BattleAxe, StaffOfFlame, InfinityArrow` | 254 |  |
 | `pitch` | Mixed | Examples: `.5, 2, .7` | 232 |  |
 | [`intro`](./Miscellaneous.md#context-intro) | Object | Examples: `{ ... }, [ PersuasionDevice ]` | 216 |  |
-| [`main`](./Miscellaneous.md#context-main) | Object | Examples: `{ ... }` | 214 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |  |
 | `pieces_required` | Number | Examples: `3` | 202 |  |
 | [`Default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 199 |  |
 | [`default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 199 |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum | Examples: `RoomBackgroundAttic, RoomBackgroundLargeF2, RoomBackgroundSmallF2` | 189 |  |
-| [`temporary_effects`](./Miscellaneous.md#context-temporary_effects) | Object | Examples: `{ ... }` | 176 |  |
 | [`tooltip`](./Strings.md#string-tooltip) | String | Examples: `"KEYWORD_BACKFLIP_DESC", "KEYWORD_ALPHA_DESC", "KEYWORD_ADRENALINE_DESC"` | 165 |  |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum | Examples: `separate, default` | 159 |  |
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum | Examples: `global` | 157 |  |
@@ -100,11 +81,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `emit_rate` | Number | Examples: `400, 24000, 240` | 150 |  |
 | `emit_spread` | Number | Examples: `10, 180, 30` | 144 |  |
 | [`Colorless`](./Arrays.md#array-colorless) | Array | Examples: `[ CAT_EMBARK_QUOTES_COLORLESS_1 CAT_EMBARK_QUOTES_COLORLE..., [ CAT_VS_BOSS_Q...` | 140 |  |
-| `consumable` | Boolean | Examples: `true` | 140 |  |
 | [`emit_amount`](./Arrays.md#array-emit_amount) | Array | Examples: `1, [ 0 3 ], 1000` | 135 |  |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array | Examples: `[ caves Mage ], [ caves Hunter ], [ caves Fighter ]` | 129 |  |
 | `icon_frame` | Number | Examples: `600, 602, 601` | 128 |  |
-| [`sound`](./Miscellaneous.md#context-sound) | Object | Examples: `{ ... }` | 124 |  |
 | [`live_bounds`](./Arrays.md#array-live_bounds) | Array | Examples: `[ -999 999 -999 999 -999 999 ], [ -.2 10 0 10 -.2 10 ], [ -999 999 0 999 -999...` | 122 |  |
 | `distance_to_ally` | Number | Examples: `1, -1, 0` | 110 |  |
 | `distance_to_character` | Number | Examples: `1, -1, 0` | 110 |  |
@@ -114,17 +93,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `total_distance_moved` | Number | Examples: `-1, 0.01, -0.01` | 110 |  |
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum | Examples: `class_unlock_necromancer, class_unlock_medic, class_unlock_thief` | 110 |  |
 | [`scripts`](./Miscellaneous.md#context-scripts) | Object | Examples: `{ ... }` | 108 |  |
-| `parasite` | Boolean | Examples: `true` | 102 |  |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array | Examples: `[ 0 .4 0 0 0 .4 ], [ 0 0 .3 .3 0 0 ], [ 0 10 10 10 0 10 ]` | 100 |  |
 | [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum | Examples: `guillotina_1, guillotina_2, pyrophina` | 96 |  |
 | [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum | Examples: `sewers, alley, boneyard` | 90 |  |
-| [`equipment`](./Miscellaneous.md#context-equipment) | Object | Examples: `{ ... }` | 88 |  |
-| `aux` | Number | Examples: `24, 12, 10` | 82 |  |
 | [`class_anis`](./Enums.md#enum-class_anis) | Enum | Examples: `Tank, Mage, Hunter` | 80 |  |
 | [`Druid`](./Arrays.md#array-druid) | Array | Examples: `[ CAT_RETURN_EARLY_QUOTES_DRUID_1 CAT_RETURN_EARLY_QUOTES..., [ CAT_VS_BOSS_Q...` | 80 |  |
 | [`Fighter`](./Arrays.md#array-fighter) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_FIGHTER_1 CAT_VS_BOSS_QUOTES_FIGHTER..., [ CAT_RETURN_EA...` | 80 |  |
-| `quest_item` | Boolean | Examples: `false, true` | 80 |  |
-| [`sounds`](./Miscellaneous.md#context-sounds) | Object | Examples: `{ ... }` | 78 |  |
 | `speed_start` | Number | Examples: `14, 4, 11` | 77 |  |
 | `face_moving_direction` | Boolean | Examples: `false, true` | 76 |  |
 | [`Thief`](./Arrays.md#array-thief) | Array | Examples: `[ CAT_RETURN_EARLY_QUOTES_THIEF_1 CAT_RETURN_EARLY_QUOTES..., [ CAT_VS_BOSS_Q...` | 76 |  |
@@ -142,7 +116,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Tinkerer`](./Arrays.md#array-tinkerer) | Array | Examples: `[ CAT_EMBARK_QUOTES_TINKERER_1 CAT_EMBARK_QUOTES_TINKERER..., [ CAT_VS_BOSS_Q...` | 70 |  |
 | [`tooltip_stacks`](./Strings.md#string-tooltip_stacks) | String | Examples: `"KEYWORD_AMMO_DESC", "KEYWORD_BLASTRESISTANCE_DESC", "KEYWORD_ATTRACTION_DESC"` | 69 |  |
 | [`Hunter`](./Arrays.md#array-hunter) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_HUNTER_1 CAT_VS_BOSS_QUOTES_HUNTER_2..., [ CAT_EMBARK_QU...` | 68 |  |
-| [`splash_damage`](./Miscellaneous.md#context-splash_damage) | Object | Examples: `{ ... }` | 68 |  |
 | [`frame_label`](./Enums.md#enum-frame_label) | Enum | Examples: `ColorlessCat_Tutorial, error, radicalrat` | 67 |  |
 | `Health` | Number | Examples: `-2, -1, 5` | 67 |  |
 | [`speed_scale`](./Arrays.md#array-speed_scale) | Array | Examples: `.1, [ 0 1.6 ], .2` | 67 |  |
@@ -179,11 +152,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spend_mana_scale`](./Enums.md#enum-spend_mana_scale) | Enum | Examples: `.99` | 64 |  |
 | [`boss`](./Miscellaneous.md#context-boss) | Object | Examples: `{ ... }, [ boss ]` | 63 |  |
 | [`beat_chapter_boss`](./Enums.md#enum-beat_chapter_boss) | Enum | Examples: `junkyard, sewers, alley` | 62 |  |
-| [`keyword_tooltips`](./Miscellaneous.md#context-keyword_tooltips) | Object | Examples: `{ ... }` | 62 |  |
 | [`unlock_ability`](./Enums.md#enum-unlock_ability) | Enum | Examples: `BallOfSpiders, Pawbreaker, HyperBeam` | 62 |  |
 | `alpha_end` | Number | Examples: `2, 0, 1` | 61 |  |
 | [`size_start`](./Arrays.md#array-size_start) | Array | Examples: `.1, [ .1 1 ], [ .2 1.2 ]` | 59 |  |
-| [`ai_ability`](./Enums.md#enum-ai_ability) | Enum | Examples: `NubsJump_AI, SpawnBomb_AI, Magnetize_AI` | 58 |  |
 | [`Medic`](./Arrays.md#array-medic) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_MEDIC_1 CAT_VS_BOSS_QUOTES_MEDIC_2 C..., [ CAT_EMBARK_QU...` | 58 |  |
 | [`unlock_passive`](./Enums.md#enum-unlock_passive) | Enum | Examples: `DualWield, EnergyStorm, ThrillOfTheHunt` | 58 |  |
 | [`unlock_song`](./Enums.md#enum-unlock_song) | Enum | Examples: `eatin_rats, flush, chumbucket_kitty` | 58 |  |
@@ -194,25 +165,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `alpha_start` | Number | Examples: `2, 0, 1` | 51 |  |
 | [`set_mapgen_flag`](./Enums.md#enum-set_mapgen_flag) | Enum | Examples: `SewersUnlocked, JunkyardUnlocked, HardPathUnlocked` | 46 |  |
 | [`adventure_unlock`](./Enums.md#enum-adventure_unlock) | Enum | Examples: `nuke_quest_jar1, time_machine_quest_finalstep, map_unlock_iceage` | 44 |  |
-| [`quest_reward_item`](./Enums.md#enum-quest_reward_item) | Enum | Examples: `ChaosDevice_Fixed, PersuasionDevice_Fixed, MagicMirror_Fixed` | 44 |  |
 | [`hard`](./Miscellaneous.md#context-hard) | Object | Examples: `{ ... }, [ easy ], [ hard ]` | 42 |  |
 | `alpha` | Mixed | Examples: `.5, .01, 0` | 41 |  |
 | [`folder`](./Enums.md#enum-folder) | Enum | Examples: `alley, bunker, boneyard` | 40 |  |
-| `indestructible` | Boolean | Examples: `true` | 40 |  |
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum | Examples: `boneyarditems, bunkeritems, alleyitems` | 38 |  |
 | [`include`](./Strings.md#string-include) | String | Examples: `"standard_nodes.gon"` | 38 |  |
-| [`alt_spawn_pool`](./Miscellaneous.md#context-alt_spawn_pool) | Object | Examples: `{ ... }` | 36 |  |
 | [`quotes`](./Arrays.md#array-quotes) | Array | Examples: `[ BOSS_PEBBLES_QUOTE_1 ], [ BOSS_ERROR_MINIBOSS_QUOTE_1 ], [ BOSS_ERROR_QUOTE...` | 36 |  |
 | `subcategory` | Number | Examples: `3, 2, 1` | 35 |  |
-| `legacy_quest` | Boolean | Examples: `true` | 34 |  |
 | [`level`](./Math_Equations.md) | Equation | Examples: `"house_bosses/guillotina2.lvl", "house_bosses/guillotina1.lvl", "house_bosses...` | 33 |  |
 | `champ_budget` | Number | Examples: `2, 0, 1` | 32 |  |
 | `elite_buffs` | Number | Examples: `3, 2, 1` | 32 |  |
-| [`hint_destination`](./Enums.md#enum-hint_destination) | Enum | Examples: `caves, meatworld, boneyard` | 32 |  |
 | [`Jester`](./Arrays.md#array-jester) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_JESTER_1 CAT_VS_BOSS_QUOTES_JESTER_2..., [ CAT_RETURN_EA...` | 32 |  |
 | [`lock_item_slot`](./Miscellaneous.md#context-lock_item_slot) | Object | Examples: `{ ... }` | 32 |  |
 | `rare_elite_buffs` | Number | Examples: `3, 2, 1` | 32 |  |
-| [`chain_ability`](./Enums.md#enum-chain_ability) | Enum | Examples: `ControlPlantsPartTwo2, ControlPlantsPartTwo, Dump` | 30 |  |
 | `champ_chance_mini` | Mixed | Examples: `.25, .5, 1` | 30 |  |
 | `coins_bonus` | Mixed | Examples: `.75, .5, 1` | 30 |  |
 | [`debris`](./Enums.md#enum-debris) | Enum | Examples: `Debris2, Debris, Debris3` | 30 |  |
@@ -221,22 +186,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `emit_radius` | Mixed | Examples: `.5, 5, .2` | 30 |  |
 | [`exit0`](./Miscellaneous.md#context-exit0) | Object | Examples: `{ ... }` | 30 |  |
 | `food_bonus` | Number | Examples: `1, 1.75, 2.5` | 30 |  |
-| [`str_aux_initialize`](./Enums.md#enum-str_aux_initialize) | Enum | Examples: `random_stat, random_seed, random_class_passive` | 30 |  |
 | [`alpha_out`](./Enums.md#enum-alpha_out) | Enum | Examples: `.5, .3, .2` | 28 |  |
 | [`complete_checklist_with_class`](./Enums.md#enum-complete_checklist_with_class) | Enum | Examples: `Fighter, Mage, Hunter` | 28 |  |
 | [`force`](./Arrays.md#array-force) | Array | Examples: `[ 0 -20 0 ], [ 0 -1 0 ], [ 0 -10 0 ]` | 28 |  |
 | [`rotation_speed_start`](./Arrays.md#array-rotation_speed_start) | Array | Examples: `[ -20 20 ], [ -900 900 ], [ -1000 1000 ]` | 28 |  |
 | [`dimensionx`](./Miscellaneous.md#context-dimensionx) | Object | Examples: `{ ... }, [ moon core bunker crater desert ], AREA_NAME_DIMENSIONX` | 27 |  |
-| [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BasicMelee_3Hits, IsaacBasicAttack, BasicMelee_2Hits` | 26 |  |
-| `dont_destroy_on_0` | Boolean | Examples: `true` | 26 |  |
 | `elite_chance_mini` | Mixed | Examples: `.25, .5, 1` | 26 |  |
 | [`force_start`](./Arrays.md#array-force_start) | Array | Examples: `[ 150 70 150 ], [ 0 100 0 ], [ 0 -70 0 ]` | 26 |  |
-| [`stat_mods`](./Miscellaneous.md#context-stat_mods) | Object | Examples: `{ ... }` | 26 |  |
 | [`tile`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }, WaterTile, FireTile` | 26 |  |
 | `tile_layer` | Number | Examples: `0` | 26 |  |
 | [`treasure`](./Miscellaneous.md#context-treasure) | Object | Examples: `{ ... }` | 26 |  |
 | [`unlock_quest_item`](./Enums.md#enum-unlock_quest_item) | Enum | Examples: `ThrobbingGristle, GuillotinasHead, PutridLeech` | 26 |  |
-| [`ability_groups`](./Miscellaneous.md#context-ability_groups) | Object | Examples: `{ ... }` | 24 |  |
 | [`alpha_in`](./Enums.md#enum-alpha_in) | Enum | Examples: `.1, .5, .2` | 24 |  |
 | [`breakdown`](./Miscellaneous.md#context-breakdown) | Object | Examples: `{ ... }` | 24 |  |
 | [`item_groups`](./Miscellaneous.md#context-item_groups) | Object | Examples: `{ ... }` | 24 |  |
@@ -251,7 +211,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ownership`](./Enums.md#enum-ownership) | Enum | Examples: `local` | 23 |  |
 | [`chain`](./Enums.md#enum-chain) | Enum | Examples: `firework_burst, test8, firework_burst_recursive` | 22 |  |
 | [`global_objects`](./Miscellaneous.md#context-global_objects) | Object | Examples: `{ ... }` | 22 |  |
-| `max_durability` | Number | Examples: `3, 9, 2` | 22 |  |
 | [`name_mod`](./Strings.md#string-name_mod) | String | Examples: `"CAT_NAME_MOD_AMOEBA", "CAT_NAME_MOD_COOL", "CAT_NAME_MOD_MAN"` | 22 |  |
 | `rotation_speed_end` | Number | Examples: `0` | 22 |  |
 | [`boneyard`](./Engine_EventKeys.md#valid-property-keys) | Object | Examples: `{ ... }, AREA_NAME_BONEYARD, [ junkyard alley ]` | 21 |  |
@@ -299,7 +258,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`id`](./Enums.md#enum-id) | Mixed | Examples: `1, 0, Attic` | 16 |  |
 | `ID` | Number | Examples: `0 is reserved for empty` | 16 |  |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PICK_ANSW", "EVENT_LEAVE_ANSW", "EVENT_OPEN_ANSW"` | 16 |  |
-| [`on_store`](./Enums.md#enum-on_store) | Enum | Examples: `become_aux_coins, become_rare_furniture, become_furniture` | 16 |  |
 | [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum | Examples: `caves_intro, desert_intro, dybbuk` | 16 |  |
 | [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum | Examples: `beanies_bombquest_2, beanies_bombquest_fail_jarofradiation, beanies_bombquest_3` | 16 |  |
 | [`reverb_empty`](./Miscellaneous.md#context-reverb_empty) | Object | Examples: `{ ... }` | 16 |  |
@@ -307,7 +265,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sewers`](./Engine_EventKeys.md#valid-property-keys) | Object | Examples: `{ ... }, [ alley ], AREA_NAME_SEWERS` | 16 |  |
 | `specific_chapter` | Number | Examples: `3, 2, 1` | 16 |  |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none, dex` | 16 |  |
-| [`sub_ability`](./Enums.md#enum-sub_ability) | Enum | Examples: `TeamFlex_Impl, Huddle_Impl, Spin` | 16 |  |
 | [`unknown`](./Miscellaneous.md#context-unknown) | Object | Examples: `{ ... }` | 16 |  |
 | `wallet_size` | Number | Examples: `99` | 16 |  |
 | `width` | Number | Examples: `35, 16, 33` | 16 |  |
@@ -317,14 +274,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`nouns`](./Arrays.md#array-nouns) | Array | Examples: `[ "TEAMNAME_NOUN_FIGHTER0" "TEAMNAME_NOUN_FIGHTER1" "TEAM..., [ "TEAMNAME_NOU...` | 15 |  |
 | [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array | Examples: `[ -100 100 ], [ -50 50 ], [ -1000 1000 ]` | 15 |  |
 | [`tooltip_stacks_singular`](./Strings.md#string-tooltip_stacks_singular) | String | Examples: `"KEYWORD_CHARGEFISTS_DESC_SINGULAR", "KEYWORD_BLIND_DESC_STACKLESS", "KEYWORD...` | 15 |  |
-| [`ability_pool`](./Arrays.md#array-ability_pool) | Array | Examples: `[ HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate Sk..., [ Propell Hadou...` | 14 |  |
-| [`attack_pool`](./Arrays.md#array-attack_pool) | Array | Examples: `[ BasicButcherMelee ], [ BasicDruidAbility ], [ BasicMonkMelee ]` | 14 |  |
 | `boss_elite_buffs` | Number | Examples: `3, 2, 1` | 14 |  |
 | [`iceage`](./Miscellaneous.md#context-iceage) | Object | Examples: `{ ... }, [ lab ], AREA_NAME_ICEAGE` | 14 |  |
 | [`jurassic`](./Miscellaneous.md#context-jurassic) | Object | Examples: `{ ... }, [ iceage lab ], AREA_NAME_JURASSIC` | 14 |  |
 | [`lab`](./Engine_EventKeys.md#valid-property-keys) | Object | Examples: `{ ... }, AREA_NAME_LAB, [  ]` | 14 |  |
-| [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array | Examples: `[ int str lck ], [ con str lck ], [ cha int str ]` | 14 |  |
-| [`passive_pool`](./Arrays.md#array-passive_pool) | Array | Examples: `[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutto..., [ SafeSwitching...` | 14 |  |
 | [`reverb`](./Miscellaneous.md#context-reverb) | Object | Examples: `{ ... }` | 14 |  |
 | [`theend`](./Miscellaneous.md#context-theend) | Object | Examples: `{ ... }, AREA_NAME_THEEND, [ future lab ]` | 14 |  |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | Examples: `amb_rain.ogg, amb_windy.ogg, amb_heavyrain.ogg` | 13 |  |
@@ -339,14 +292,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`current_chapter_rare`](./Engine_EventKeys.md#valid-property-keys) | Mixed | Examples: `auto, 10` | 12 |  |
 | [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Mixed | Examples: `35, auto` | 12 |  |
 | [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Mixed | Examples: `auto, 1` | 12 |  |
-| [`global_tags`](./Arrays.md#array-global_tags) | Array | Examples: `[ fail_all_events ], [ all_cats_are_jester ], [ always_ambushed ]` | 12 |  |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array | Examples: `[ Heat ], [ Water ], [ Wind ]` | 12 |  |
 | [`junkyard`](./Engine_EventKeys.md#valid-property-keys) | Object | Examples: `{ ... }, AREA_NAME_JUNKYARD, [ alley ]` | 12 |  |
 | [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum | Examples: `beanies_bombquest_amnesia, beanies_bombquest_3, beanies_bombquest_2` | 12 |  |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum | Examples: `RestlessDeadUnlocked, PlotFlag_FrankBeanies, PlotFlag_Beanies_Homeless` | 12 |  |
 | [`size_in`](./Enums.md#enum-size_in) | Enum | Examples: `.1, .5, .3` | 12 |  |
 | [`size_out`](./Enums.md#enum-size_out) | Enum | Examples: `.25, .5, .9` | 12 |  |
-| [`starter_abilities`](./Arrays.md#array-starter_abilities) | Array | Examples: `[ SummonSquirrel SummonToad Encourage Protection SongOfSp..., [ Succ HogRush ...` | 12 |  |
 | [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum | Examples: `jestercat, gambit, queenhippo` | 12 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_dex_alt, choice_leave, choice_coins_ten` | 11 |  |
 | [`food`](./Arrays.md#array-food) | Array | Examples: `[ 4 8 ], [ 1 3 ], [ 4 7 ]` | 11 |  |
@@ -360,7 +311,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `early_spawn` | Boolean | Examples: `true` | 10 |  |
 | `flat_cast_bonus` | Number | Examples: `99999` | 10 |  |
 | [`friction_end`](./Arrays.md#array-friction_end) | Array | Examples: `[ .5 .5 .5 ], [ .2 .2 .2 ], [ 1 1 1 ]` | 10 |  |
-| [`hint_prerequisite_flag`](./Enums.md#enum-hint_prerequisite_flag) | Enum | Examples: `mapflag_BothObelisksUnlocked, mapflag_MeatWorldUnlocked, mapflag_MeatWorldUnl...` | 10 |  |
 | [`inherit_speed`](./Arrays.md#array-inherit_speed) | Array | Examples: `1, [ 5 30 ], [ 7 12 ]` | 10 |  |
 | [`minion_alt`](./Enums.md#enum-minion_alt) | Enum | Examples: `SubUndying, SubTwin, SlightlyDepressing` | 10 |  |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Examples: `stay_close` | 10 |  |
@@ -402,23 +352,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum | Examples: `examine, smash` | 8 |  |
 | [`empty_armor_scaled_stats`](./Miscellaneous.md#context-empty_armor_scaled_stats) | Object | Examples: `{ ... }` | 8 |  |
 | [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum | Examples: `JarOfRadiation, JarOfChaos, JarOfRadiatedBlood` | 8 |  |
-| `failable` | Boolean | Examples: `true` | 8 |  |
 | `fully_complete_difficulty` | Number | Examples: `2, 0, 1` | 8 |  |
-| [`global_passives`](./Miscellaneous.md#context-global_passives) | Object | Examples: `{ ... }` | 8 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 8 |  |
 | [`hide_text`](./Miscellaneous.md#context-hide_text) | Object | Examples: `{ ... }` | 8 |  |
-| [`innate_passives`](./Miscellaneous.md#context-innate_passives) | Object | Examples: `{ ... }` | 8 |  |
 | [`jestercat`](./Enums.md#enum-jestercat) | Enum | Examples: `auto` | 8 |  |
 | [`post_combat_cutscene`](./Enums.md#enum-post_combat_cutscene) | Enum | Examples: `obelisk2_moon, obelisk1_core, obelisk1_moon` | 8 |  |
 | [`preset`](./Enums.md#enum-preset) | Enum | Examples: `LIVINGROOM, AUDITORIUM` | 8 |  |
 | [`purchase_item`](./Miscellaneous.md#context-purchase_item) | Object | Examples: `{ ... }` | 8 |  |
-| `randomize_piece_frames` | Boolean | Examples: `true` | 8 |  |
 | `raptorbaby` | Number | Examples: `1` | 8 |  |
 | [`rotation_start`](./Arrays.md#array-rotation_start) | Array | Examples: `[ -10 10 ], [ 0 360 ]` | 8 |  |
 | `scorpioncat` | Number | Examples: `1` | 8 |  |
 | `simple` | Boolean | Examples: `true` | 8 |  |
-| `str_aux_is_copy_passive` | Boolean | Examples: `true` | 8 |  |
-| [`tags`](./Arrays.md#array-tags) | Array | Examples: `[ musical ], [ weapon_throw ], [ summon ]` | 8 |  |
 | [`time_machine`](./Miscellaneous.md#context-time_machine) | Object | Examples: `{ ... }` | 8 |  |
 | [`trigger_npc_sequence_tomorrow`](./Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum | Examples: `organ_boneyard_intro, frank_caves_intro, butch_boneyard_intro` | 8 |  |
 | [`unlock_npc_tomorrow`](./Enums.md#enum-unlock_npc_tomorrow) | Enum | Examples: `tracy, beanies, jack` | 8 |  |
@@ -454,8 +398,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chapters` | Object | Examples: `{ ... }` | 6 |  |
 | `Chicken` | Mixed | Examples: `.1, 2, .01` | 6 |  |
 | [`complete_checkmarks`](./Miscellaneous.md#context-complete_checkmarks) | Object | Examples: `{ ... }` | 6 |  |
-| [`complicated_abilities`](./Arrays.md#array-complicated_abilities) | Array | Examples: `[ FalconPunch Exert Challenge Stoopzerk Grapple ThinkTooH..., [ DealWithTheDe...` | 6 |  |
-| [`complicated_passives`](./Arrays.md#array-complicated_passives) | Array | Examples: `[ ElementalAttunement LatentEnergy MagicGuru One Two Four..., [ ShoulderCheck...` | 6 |  |
 | `consider_aoe` | Boolean | Examples: `false, true` | 6 |  |
 | `consumables` | Number | Examples: `60, 10` | 6 |  |
 | [`CoreObeliskUnlocked`](./Miscellaneous.md#context-coreobeliskunlocked) | Object | Examples: `{ ... }` | 6 |  |
@@ -464,12 +406,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `distance_to_corpse` | Mixed | Examples: `-100, 0, -.1` | 6 |  |
 | [`exit1`](./Miscellaneous.md#context-exit1) | Object | Examples: `{ ... }` | 6 |  |
 | [`forward_to_tips`](./Miscellaneous.md#context-forward_to_tips) | Object | Examples: `{ ... }` | 6 |  |
-| `fragile` | Boolean | Examples: `true` | 6 |  |
-| [`icon_hint`](./Enums.md#enum-icon_hint) | Enum | Examples: `ability_syringe, passive_syringe` | 6 |  |
 | [`initial_cutscene_night`](./Enums.md#enum-initial_cutscene_night) | Enum | Examples: `guillotina_3, guillotina_1, guillotina_2` | 6 |  |
 | `initial_form` | Number | Examples: `1, 5, 0` | 6 |  |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Examples: `room3, room4, attic` | 6 |  |
-| `max_health` | Number | Examples: `-1` | 6 |  |
 | [`MeatWorldUnlocked`](./Miscellaneous.md#context-meatworldunlocked) | Object | Examples: `{ ... }` | 6 |  |
 | [`MoonObeliskUnlocked`](./Miscellaneous.md#context-moonobeliskunlocked) | Object | Examples: `{ ... }` | 6 |  |
 | [`out_of_stock`](./Miscellaneous.md#context-out_of_stock) | Object | Examples: `{ ... }` | 6 |  |
@@ -478,13 +417,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`rematch_cutscene_night`](./Enums.md#enum-rematch_cutscene_night) | Enum | Examples: `house_boss_returns_tina3, house_boss_returns_tina1, house_boss_returns_tina2` | 6 |  |
 | `requires_monoclass_run` | Boolean | Examples: `true` | 6 |  |
 | [`requires_unlocked_npc`](./Enums.md#enum-requires_unlocked_npc) | Enum | Examples: `tracy, jack, frank` | 6 |  |
-| `reset_aux_on_store` | Number | Examples: `1` | 6 |  |
 | `robotom` | Number | Examples: `1` | 6 |  |
 | `sabertoothcat` | Number | Examples: `1` | 6 |  |
 | [`scale`](./Miscellaneous.md#object-scale) | Mixed | Examples: `.75, 1.33, 1` | 6 |  |
 | [`speed`](./Arrays.md#array-speed) | Array | Examples: `[ 0 10 ], [ 0 .5 ], [ 0 1 ]` | 6 |  |
-| `sticky` | Boolean | Examples: `true` | 6 |  |
-| `weightless` | Boolean | Examples: `true` | 6 |  |
 | [`angry`](./Miscellaneous.md#context-angry) | Object | Examples: `{ ... }` | 5 |  |
 | [`areas`](./Arrays.md#array-areas) | Array | Examples: `[ caves boneyard moon core jurassic theend meatworld dime...` | 5 |  |
 | [`classes`](./Arrays.md#array-classes) | Array | Examples: `[ Fighter Hunter Mage Medic Tank Thief Colorless Monk But...` | 5 |  |
@@ -524,12 +460,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`butchercat`](./Enums.md#enum-butchercat) | Enum | Examples: `auto` | 4 |  |
 | `cap_distance_to_enemy` | Number | Examples: `2, 5` | 4 |  |
 | [`class_unlock_jester`](./Miscellaneous.md#context-class_unlock_jester) | Object | Examples: `{ ... }` | 4 |  |
-| [`cloned_ability`](./Enums.md#enum-cloned_ability) | Enum | Examples: `attack` | 4 |  |
 | [`coins`](./Arrays.md#array-coins) | Array | Examples: `[ 1 6 ], [ 10 20 ]` | 4 |  |
 | [`complete_adventure`](./Enums.md#enum-complete_adventure) | Enum | Examples: `anywhere` | 4 |  |
 | [`DimensionXUnlocked`](./Miscellaneous.md#context-dimensionxunlocked) | Object | Examples: `{ ... }` | 4 |  |
 | `distance_to_water` | Mixed | Examples: `-1, -.0001` | 4 |  |
-| [`empty_self_damage`](./Miscellaneous.md#context-empty_self_damage) | Object | Examples: `{ ... }` | 4 |  |
 | `end_turn_on_formswitch` | Boolean | Examples: `true` | 4 |  |
 | [`EndOfTimeUnlocked`](./Miscellaneous.md#context-endoftimeunlocked) | Object | Examples: `{ ... }` | 4 |  |
 | `face_aggro_target` | Number | Examples: `1, 10` | 4 |  |
@@ -550,7 +484,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`house_upgrade_largehouse`](./Miscellaneous.md#context-house_upgrade_largehouse) | Object | Examples: `{ ... }` | 4 |  |
 | [`house_upgrade_mediumhouse`](./Miscellaneous.md#context-house_upgrade_mediumhouse) | Object | Examples: `{ ... }` | 4 |  |
 | [`icon`](./Enums.md#enum-icon) | Enum | Examples: `DejaVu3, DejaVu2` | 4 |  |
-| [`innate_items`](./Miscellaneous.md#context-innate_items) | Object | Examples: `{ ... }` | 4 |  |
 | [`jack_desert_intro`](./Miscellaneous.md#context-jack_desert_intro) | Object | Examples: `{ ... }` | 4 |  |
 | [`jack_max_intro`](./Miscellaneous.md#context-jack_max_intro) | Object | Examples: `{ ... }` | 4 |  |
 | [`jack_max_repeating`](./Miscellaneous.md#context-jack_max_repeating) | Object | Examples: `{ ... }` | 4 |  |
@@ -576,10 +509,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`organ_upgrade5`](./Miscellaneous.md#context-organ_upgrade5) | Object | Examples: `{ ... }` | 4 |  |
 | [`organ_upgrade6`](./Miscellaneous.md#context-organ_upgrade6) | Object | Examples: `{ ... }` | 4 |  |
 | [`override_move`](./Enums.md#enum-override_move) | Enum | Examples: `BasicJump` | 4 |  |
-| [`passive`](./Miscellaneous.md#context-passive) | Object | Examples: `{ ... }` | 4 |  |
-| `prevent_level_up` | Boolean | Examples: `true` | 4 |  |
 | [`psychiccat`](./Enums.md#enum-psychiccat) | Enum | Examples: `auto` | 4 |  |
-| [`quest_item_alias`](./Enums.md#enum-quest_item_alias) | Enum | Examples: `BlackShard, NuclearKnife` | 4 |  |
 | [`require_beat_house_boss`](./Enums.md#enum-require_beat_house_boss) | Enum | Examples: `pyrophina, zaratana` | 4 |  |
 | [`require_mapgen_flag`](./Enums.md#enum-require_mapgen_flag) | Enum | Examples: `MoonObeliskUnlocked, CoreObeliskUnlocked` | 4 |  |
 | `requires_corpse` | Boolean | Examples: `true` | 4 |  |
@@ -593,8 +523,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number | Examples: `25, 15, 10` | 4 |  |
 | [`steven_milliontrashed`](./Miscellaneous.md#context-steven_milliontrashed) | Object | Examples: `{ ... }` | 4 |  |
 | [`steven_postendgame`](./Miscellaneous.md#context-steven_postendgame) | Object | Examples: `{ ... }` | 4 |  |
-| [`str_aux_is_copy_ability`](./Miscellaneous.md#context-str_aux_is_copy_ability) | Object | Examples: `{ ... }` | 4 |  |
-| `str_aux_is_copy_item_passive` | Boolean | Examples: `true` | 4 |  |
 | [`surviving_kaiju`](./Enums.md#enum-surviving_kaiju) | Enum | Examples: `pyrophina, zaratana` | 4 |  |
 | [`thiefcat`](./Enums.md#enum-thiefcat) | Enum | Examples: `auto` | 4 |  |
 | [`tink_aggression`](./Miscellaneous.md#context-tink_aggression) | Object | Examples: `{ ... }` | 4 |  |
@@ -685,10 +613,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`zodiac`](./Enums.md#enum-zodiac) | Enum | Examples: `auto` | 3 |  |
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum | Examples: `auto` | 2 |  |
 | `advance` | Number | Examples: `1` | 2 |  |
-| [`ai_if_spawned_as_enemy`](./Miscellaneous.md#context-ai_if_spawned_as_enemy) | Object | Examples: `{ ... }` | 2 |  |
 | `ankylosaurus` | Number | Examples: `1` | 2 |  |
 | `Antidote` | Number | Examples: `1` | 2 |  |
-| `aux_is_catid` | Boolean | Examples: `true` | 2 |  |
 | [`BagOfSeeds`](./Enums.md#enum-bagofseeds) | Enum | Examples: `.3` | 2 |  |
 | [`base_stats`](./Miscellaneous.md#context-base_stats) | Object | Examples: `{ ... }` | 2 |  |
 | [`BasementUpgrade`](./Miscellaneous.md#context-basementupgrade) | Object | Examples: `{ ... }` | 2 |  |
@@ -831,7 +757,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BirdPoopHat`](./Enums.md#enum-birdpoophat) | Enum | Examples: `.3` | 2 |  |
 | `BlankTile` | Number | Examples: `5` | 2 |  |
 | [`BoneyardUnlocked`](./Miscellaneous.md#context-boneyardunlocked) | Object | Examples: `{ ... }` | 2 |  |
-| [`bonk_damage`](./Miscellaneous.md#context-bonk_damage) | Object | Examples: `{ ... }` | 2 |  |
 | [`boss_fight_intro`](./Miscellaneous.md#context-boss_fight_intro) | Object | Examples: `{ ... }` | 2 |  |
 | [`boss_fight_round2`](./Miscellaneous.md#context-boss_fight_round2) | Object | Examples: `{ ... }` | 2 |  |
 | [`breakdown2`](./Miscellaneous.md#context-breakdown2) | Object | Examples: `{ ... }` | 2 |  |
@@ -874,10 +799,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`cant_afford_jurassic`](./Miscellaneous.md#context-cant_afford_jurassic) | Object | Examples: `{ ... }` | 2 |  |
 | [`cant_afford_moon`](./Miscellaneous.md#context-cant_afford_moon) | Object | Examples: `{ ... }` | 2 |  |
 | [`cant_afford_theend`](./Miscellaneous.md#context-cant_afford_theend) | Object | Examples: `{ ... }` | 2 |  |
-| `cant_equip_to_colorless` | Boolean | Examples: `true` | 2 |  |
 | `cap_distance_to_character` | Number | Examples: `2` | 2 |  |
 | `cap_total_distance_moved` | Number | Examples: `1` | 2 |  |
-| `Catnip` | Number | Examples: `3` | 2 |  |
 | `CatnipBig` | Number | Examples: `2` | 2 |  |
 | [`cavecatfamily`](./Enums.md#enum-cavecatfamily) | Enum | Examples: `auto` | 2 |  |
 | [`CavesUnlocked`](./Miscellaneous.md#context-cavesunlocked) | Object | Examples: `{ ... }` | 2 |  |
@@ -903,10 +826,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CoreUnlocked`](./Miscellaneous.md#context-coreunlocked) | Object | Examples: `{ ... }` | 2 |  |
 | `count_nomove_in_eval` | Boolean | Examples: `false` | 2 |  |
 | [`CraterUnlocked`](./Miscellaneous.md#context-craterunlocked) | Object | Examples: `{ ... }` | 2 |  |
-| [`damage`](./Miscellaneous.md#context-damage) | Object | Examples: `{ ... }` | 2 |  |
 | [`DeadHummingbird`](./Enums.md#enum-deadhummingbird) | Enum | Examples: `.3` | 2 |  |
 | [`debug`](./Arrays.md#array-debug) | Array | Examples: `"Unknown", [  ]` | 2 |  |
-| `degrade_after_adventure` | Boolean | Examples: `false` | 2 |  |
 | [`destinations`](./Miscellaneous.md#context-destinations) | Object | Examples: `{ ... }` | 2 |  |
 | [`dinocouple`](./Enums.md#enum-dinocouple) | Enum | Examples: `auto` | 2 |  |
 | `distance_to_center` | Number | Examples: `-1` | 2 |  |
@@ -919,7 +840,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`druidcat`](./Enums.md#enum-druidcat) | Enum | Examples: `auto` | 2 |  |
 | `ears` | Number | Examples: `1500` | 2 |  |
 | [`ending`](./Miscellaneous.md#context-ending) | Object | Examples: `{ ... }` | 2 |  |
-| [`equip_sound`](./Enums.md#enum-equip_sound) | Enum | Examples: `SE_CatWeaponPoke_Chainsaw` | 2 |  |
 | [`exclude_characters_tagged`](./Enums.md#enum-exclude_characters_tagged) | Enum | Examples: `siren` | 2 |  |
 | [`exit_desert`](./Miscellaneous.md#context-exit_desert) | Object | Examples: `{ ... }` | 2 |  |
 | [`exit_lab`](./Miscellaneous.md#context-exit_lab) | Object | Examples: `{ ... }` | 2 |  |
@@ -933,7 +853,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`first_house_hint_retired`](./Miscellaneous.md#context-first_house_hint_retired) | Object | Examples: `{ ... }` | 2 |  |
 | [`Floor1_Large`](./Miscellaneous.md#context-floor1_large) | Object | Examples: `{ ... }` | 2 |  |
 | [`Floor1_Small`](./Miscellaneous.md#context-floor1_small) | Object | Examples: `{ ... }` | 2 |  |
-| `force_sticky` | Boolean | Examples: `true` | 2 |  |
 | [`frank_max1`](./Miscellaneous.md#context-frank_max1) | Object | Examples: `{ ... }` | 2 |  |
 | [`frank_max2`](./Miscellaneous.md#context-frank_max2) | Object | Examples: `{ ... }` | 2 |  |
 | [`frank_max3`](./Miscellaneous.md#context-frank_max3) | Object | Examples: `{ ... }` | 2 |  |
@@ -1093,7 +1012,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ratking`](./Enums.md#enum-ratking) | Enum | Examples: `auto` | 2 |  |
 | [`RavenFeather`](./Enums.md#enum-ravenfeather) | Enum | Examples: `.3` | 2 |  |
 | `requires_hard_path` | Boolean | Examples: `true` | 2 |  |
-| [`reset_str_aux_on_store`](./Enums.md#enum-reset_str_aux_on_store) | Enum | Examples: `ModelingClay_Default` | 2 |  |
 | [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum | Examples: `nuke_quest_begin` | 2 |  |
 | [`rockybobo`](./Enums.md#enum-rockybobo) | Enum | Examples: `auto` | 2 |  |
 | [`SewersUnlocked`](./Miscellaneous.md#context-sewersunlocked) | Object | Examples: `{ ... }` | 2 |  |
@@ -1141,9 +1059,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`steven_unlock_act3_crazy`](./Miscellaneous.md#context-steven_unlock_act3_crazy) | Object | Examples: `{ ... }` | 2 |  |
 | [`steven_unlock_act3_hard`](./Miscellaneous.md#context-steven_unlock_act3_hard) | Object | Examples: `{ ... }` | 2 |  |
 | [`steven_unlock_act3_impossible`](./Miscellaneous.md#context-steven_unlock_act3_impossible) | Object | Examples: `{ ... }` | 2 |  |
-| [`str_aux`](./Enums.md#enum-str_aux) | Enum | Examples: `ModelingClay_Default` | 2 |  |
-| `str_aux_is_copy_item_active` | Boolean | Examples: `true` | 2 |  |
-| `str_aux_is_copy_item_icon` | Boolean | Examples: `true` | 2 |  |
 | [`take_cats_inside`](./Miscellaneous.md#context-take_cats_inside) | Object | Examples: `{ ... }` | 2 |  |
 | `tall_grass` | Number | Examples: `5` | 2 |  |
 | `TallGrassTile` | Number | Examples: `80, 15` | 2 |  |
@@ -1514,7 +1429,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`medic_portrait`](./Miscellaneous.md#context-medic_portrait) | Object | Examples: `{ ... }` | 1 |  |
 | [`monk_portrait`](./Miscellaneous.md#context-monk_portrait) | Object | Examples: `{ ... }` | 1 |  |
 | [`mouth_open`](./Miscellaneous.md#context-mouth_open) | Object | Examples: `{ ... }` | 1 |  |
-| [`move_pool`](./Arrays.md#array-move_pool) | Array | Examples: `[ DefaultMove ]` | 1 |  |
 | [`necromancer_portrait`](./Miscellaneous.md#context-necromancer_portrait) | Object | Examples: `{ ... }` | 1 |  |
 | [`nemesis`](./Arrays.md#array-nemesis) | Array | Examples: `[ nemesis ]` | 1 |  |
 | [`one_eye_wink`](./Miscellaneous.md#context-one_eye_wink) | Object | Examples: `{ ... }` | 1 |  |
@@ -1552,9 +1466,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`thief_portrait`](./Miscellaneous.md#context-thief_portrait) | Object | Examples: `{ ... }` | 1 |  |
 | [`Thunderstorm`](./Miscellaneous.md#context-thunderstorm) | Object | Examples: `{ ... }` | 1 |  |
 | [`tinkerer_portrait`](./Miscellaneous.md#context-tinkerer_portrait) | Object | Examples: `{ ... }` | 1 |  |
-| [`tutorial_levelup_active_pool`](./Arrays.md#array-tutorial_levelup_active_pool) | Array | Examples: `[ Block LickHeal Dump ]` | 1 |  |
-| [`tutorial_levelup_active_pool_2`](./Arrays.md#array-tutorial_levelup_active_pool_2) | Array | Examples: `[ GainThorns ButtScoot Burst HireHitman ]` | 1 |  |
-| [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array | Examples: `[ Furious PressurePoints LateBloomer ZenkaiBoost ]` | 1 |  |
 | [`utility`](./Enums.md#enum-utility) | Enum | Examples: `PlayerSpawn` | 1 |  |
 | [`verymad`](./Miscellaneous.md#context-verymad) | Object | Examples: `{ ... }` | 1 |  |
 | `weather_element_alt` | Object | Examples: `{ ... }` | 1 |  |

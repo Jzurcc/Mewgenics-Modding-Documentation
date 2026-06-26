@@ -28,7 +28,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sound`](./Characters_and_Bosses.md#object-sound) | Object | Audio bindings. | 124 |  |
 | [`equipment`](./Characters_and_Bosses.md#object-equipment) | Object | List of item IDs the character spawns equipped with. | 88 |  |
 | [`alt_spawn_pool`](./Characters_and_Bosses.md#object-alt_spawn_pool) | Object | Alternative pools to draw minions from. | 36 |  |
-| [`attack`](./Enums.md#enum-attack) | Enum |  | 26 |  |
 | [`brain`](./Enums.md#enum-brain) | Enum |  | 10 |  |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum |  | 10 |  |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum |  | 10 |  |

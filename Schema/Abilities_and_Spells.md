@@ -29,9 +29,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spawn`](./Abilities_and_Spells.md#object-spawn) | Object | Parameters for summoning new characters, objects, or entities. | 692 |  |
 | [`self_damage`](./Abilities_and_Spells.md#object-self-damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives) | Object | Passives granted to the character while this ability is equipped. | 272 |  |
-| `attack` | Enum |  | 26 | `DustMelee` (Enum), `BasicShortRanged` (Enum) |
 | `can_get_bonus` | Boolean |  |  | `true` (Boolean) |
-| `durability` | Number | Consumes item durability. | 264 |  |
 | [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects) | Object | Status applications that wear off automatically or at the end of the turn. | 176 |  |
 | [`sounds`](./Abilities_and_Spells.md#object-sounds) | Object | Audio cues triggered by the ability. | 78 |  |
 | [`splash_damage`](./Abilities_and_Spells.md#object-splash_damage) | Object | Secondary Area of Effect blast parameters. | 68 |  |
@@ -75,7 +73,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `dont_orient` | Boolean | Prevents the character from turning to face the target. | 166 |  |
 | [`dash_animation`](./Enums.md#enum-dash_animation) | Enum | State-specific animations for trample/dash abilities. | 130 |  |
 | [`dash_start_animation`](./Enums.md#enum-dash_start_animation) | Enum |  | 126 |  |
-| `speed` | Number | Rotations per second. | 122 |  |
 | [`affected_particle`](./Enums.md#enum-affected_particle) | Enum | Visuals applied to the target receiving the effect. | 102 |  |
 | [`dash_attack_animation`](./Enums.md#enum-dash_attack_animation) | Enum |  | 90 |  |
 | `lob_height` | Number | Adjustments for arcing projectiles. | 90 |  |
@@ -83,7 +80,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_out`](./Enums.md#enum-animation_out) | Enum | Used for transition states (like burrowing). | 86 |  |
 | [`jump_attack_animation`](./Enums.md#enum-jump_attack_animation) | Enum | Overrides for jump physics. | 78 |  |
 | `use_projectile` | Boolean |  | 70 |  |
-| `palette` | Number | Swaps the color palette ID. | 66 |  |
 | [`full_jump_animation`](./Enums.md#enum-full_jump_animation) | Enum |  | 48 |  |
 | `full_jump_sync_frames` | Number |  | 48 |  |
 | `use_rotation` | Boolean |  | 48 |  |
@@ -203,8 +199,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String | The localization key for the ability's display description. | 3282 |  |
-| [`name`](./Strings.md#string-name) | String | The localization key for the ability's display name. | 3222 |  |
 | [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 1752 |  |
 | [`type_icon`](./Strings.md#string-type_icon) | String |  | 566 |  |
 | `animate_name` | Boolean | If true, adds a visual pop/animation to the name text when cast. | 354 |  |
@@ -436,7 +430,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `X_cant_be_zero` | Boolean | Applies or references the 'X_cant_be_zero' effect/state. | 22 |  |
 | `disallow_cost_modification` | Boolean | Prevents passives from making this cheaper. | 18 |  |
 | `coins` | Number | Consumes currency to cast. | 16 |  |
-| `durability` | Number | Consumes item durability. | 16 |  |
 | `main_turn_only` | Boolean | Cannot be cast during bonus or dispersed turns. | 16 |  |
 | `requires_destructible_weapon` | Boolean | The equipped weapon must be breakable. | 16 |  |
 | `requires_exact_character_aux` | Number | Hardcoded character specific lock. | 16 |  |
@@ -509,18 +502,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 330 |  |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 118 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 86 |  |
 | `ai_base_score` | Number |  | 62 |  |
 | [`additional_passives`](./Abilities_and_Spells.md#object-additional_passives) | Object | Passives granted intrinsically to a spawned entity. | 40 |  |
 | [`first_turn`](./Enums.md#enum-first_turn) | Enum |  | 34 |  |
 | [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | `String` |  | 28 |  |
-| [`catdata`](./Enums.md#enum-catdata) | Enum | Defines genetic/clone data cloning. | 26 |  |
 | `clone_items` | Boolean | If true, transfers inventory to the clone. | 24 |  |
 | `lob` | Boolean |  | 8 |  |
 | [`post_spawn_statuses`](./Abilities_and_Spells.md#object-post_spawn_statuses) | Object | Status effects applied immediately after an entity spawns. | 8 |  |
-| `size` | Number |  | 8 |  |
 | `face_camera` | Boolean |  | 4 |  |
 | `inherit_elite_buffs` | Boolean |  | 4 |  |
 | `start_dead` | Boolean |  | 4 |  |
@@ -601,7 +591,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Engine_LogicKeys.md#valid-property-keys) | String | The specific string tag to check for. | 981 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 76 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 72 |  |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 16 |  |
@@ -612,14 +601,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 6 |  |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 6 |  |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 4 |  |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 4 |  |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 4 |  |
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |  |
 | `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 4 |  |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 4 |  |
 | `FullHeal` | `Number` | Applies or references the 'FullHeal' effect/state. | 4 |  |
 | `RandomStatDown` | Number | Applies or references the 'RandomStatDown' effect/state. | 4 |  |
-| `Revive` | `Number` | Applies or references the 'Revive' effect/state. | 4 |  |
 | `SpawnBearTrapIfHitKills` | `Number` | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 4 |  |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'SpawnThingIfHitKills' effect/state. | 4 |  |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 3 |  |
@@ -679,7 +666,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 6 |  |
 | `RefreshActPoints` | `Number` | Applies or references the 'RefreshActPoints' effect/state. | 6 |  |
 | `AddLeechesStatus` | `Number` | Applies or references the 'AddLeechesStatus' effect/state. | 4 |  |
-| `Cleanse` | `Number` | Applies or references the 'Cleanse' effect/state. | 4 |  |
 | [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 4 |  |
 | [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'RemoveStatus' effect/state. | 4 |  |
 | `DisableWeapon` | `Number` | Applies or references the 'DisableWeapon' effect/state. | 2 |  |
@@ -711,7 +697,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 91 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |  |
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional-hastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 47 |  |
@@ -740,7 +725,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 2 |  |
 | [`PopAndSpawn`](./Abilities_and_Spells.md#object-popandspawn) | Object | Destroys the target and replaces it with a new spawned entity. | 2 |  |
 | [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'RemoveStatus' effect/state. | 2 |  |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |  |
 | `ScatterRandomPickups` | `Number` | Applies or references the 'ScatterRandomPickups' effect/state. | 2 |  |
 | `SetKnockback` | `Number` | Applies or references the 'SetKnockback' effect/state. | 2 |  |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | `String` | Forces the character or target to instantly use a specified ability. | 2 |  |
@@ -847,7 +831,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 29 |  |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 8 |  |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 6 |  |
 | `KnockbackDamageImmuneUntilSettled` | `Number` | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 6 |  |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 6 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 4 |  |
@@ -967,7 +950,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 27 |  |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 12 |  |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |  |
-| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 8 |  |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 8 |  |
 | [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'RemoveStatus' effect/state. | 8 |  |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |  |
@@ -976,7 +958,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'BonusDamage' effect/state. | 4 |  |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |  |
 | `ExplodeCharacter_NoDie` | `Number` | Applies or references the 'ExplodeCharacter_NoDie' effect/state. | 2 |  |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |  |
 | [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 2 |  |
 
 </details>
@@ -997,7 +978,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum |  | 26 |  |
 | `upgraded` | Boolean |  | 26 |  |
 
 </details>
@@ -1155,7 +1135,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Engine_LogicKeys.md#valid-property-keys) | Mixed |  | 150 |  |
-| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 2 |  |
 
 </details>
 
@@ -1180,7 +1159,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'RemoveItem' effect/state. | 6 |  |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'CompleteItemQuest' effect/state. | 4 |  |
 | `ManaGain` | `Number` | Applies or references the 'ManaGain' effect/state. | 4 |  |
-| `Revive` | `Number` | Applies or references the 'Revive' effect/state. | 4 |  |
 | [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | `String` | Upgrades or transforms an existing ability into a new one from the specified pool. | 2 |  |
 | `RefreshActPoints` | `Number` | Applies or references the 'RefreshActPoints' effect/state. | 2 |  |
 | `TakeExtraTurn` | `Number` | Applies or references the 'TakeExtraTurn' effect/state. | 2 |  |
@@ -1232,18 +1210,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `palette` | Number |  | 34 |  |
 | `ear1` | Number | Sprite variant ID for the front ear. | 26 |  |
-| `tail` | Number | Sprite variant ID for the tail. | 26 |  |
-| `arm2` | Number |  | 22 |  |
-| `arm1` | Number | Sprite variant ID for the front arm. | 20 |  |
 | `ear2` | Number |  | 20 |  |
-| `leg1` | Number | Sprite variant ID for the front leg. | 16 |  |
-| `leg2` | Number |  | 16 |  |
-| `mouth` | Number |  | 16 |  |
-| `head` | Number | Sprite variant ID for the head. | 12 |  |
-| `texture` | Number |  | 12 |  |
-| `body` | Number | Sprite variant ID for the body. | 10 |  |
 | `eye1` | Number |  | 6 |  |
 | `eye2` | Number |  | 6 |  |
 | `eyebrow1` | Number |  | 2 |  |
@@ -1286,9 +1254,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tile`](./Arrays.md#array-tile) | Array | The specific tile type to change into (e.g., GlassTile). | 22 |  |
 | `aoe` | Number |  | 4 |  |
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0 or percentage) of this occurring. | 4 |  |
 
 </details>
 
@@ -1322,7 +1288,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `CapDamage` | `Number` | Applies or references the 'CapDamage' effect/state. | 2 |  |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |  |
 | `RandomBonusDamage` | `Number` | Applies or references the 'RandomBonusDamage' effect/state. | 2 |  |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |  |
 
 </details>
 
@@ -1363,7 +1328,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ability triggered upon successfully breaking free. | 22 |  |
 | [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | The ability triggered if the break free attempt fails. | 6 |  |
 | `stacks` | Number | Percentage base chance to break free. | 6 |  |
 
@@ -1385,7 +1349,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0) that the cleave effect triggers. | 2 |  |
 
 </details>
 
@@ -1406,7 +1369,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 16 |  |
-| `Revive` | `Number` | Applies or references the 'Revive' effect/state. | 13 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 4 |  |
@@ -1474,7 +1436,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum |  | 30 |  |
 | [`slot`](./Enums.md#enum-slot) | Enum |  | 28 |  |
 | `temporary` | Boolean |  | 8 |  |
 | `works_with_tech` | Boolean |  | 8 |  |
@@ -1628,7 +1589,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | `ConjureRandomAbilityFromCat` | `Number` | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 4 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |  |
-| `Cleanse` | `Number` | Applies or references the 'Cleanse' effect/state. | 2 |  |
 | `GenericDebuff` | `Number` | Applies or references the 'GenericDebuff' effect/state. | 2 |  |
 | [`KnockOutClone`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'KnockOutClone' effect/state. | 2 |  |
 | `T2CopyCat` | `Number` | Applies or references the 'T2CopyCat' effect/state. | 2 |  |
@@ -1671,7 +1631,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 14 |  |
 | `stacks` | Number | Number of stacks or intensity to apply. | 14 |  |
 
 </details>
@@ -1713,7 +1672,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Engine_LogicKeys.md#valid-property-keys) | String | The specific string tag to check for. | 981 |  |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |  |
 | [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional-boss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 21 |  |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 20 |  |
@@ -1727,7 +1685,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 2 |  |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |  |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |  |
 
 </details>
 
@@ -1749,7 +1706,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Number |  | 12 |  |
 | `radius` | Number | Distance or area of effect in tiles. | 12 |  |
-| `speed` | Number |  | 12 |  |
 
 </details>
 
@@ -1790,8 +1746,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 14 |  |
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0) of spawning. | 4 |  |
 
 </details>
 
@@ -1917,8 +1871,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0 or percentage) of this occurring. | 8 |  |
-| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 4 |  |
 
 </details>
 
@@ -1963,7 +1915,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the object to spawn (e.g., Poop). | 4 |  |
 
 </details>
 
@@ -2008,7 +1959,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `enemies_only` | Boolean | If true, the arc will not bounce to friendly targets. | 8 |  |
 | `max_distance` | Number | The maximum tile range the lightning can jump between bounces. | 8 |  |
 | `stacks` | Number | The maximum number of targets the lightning can bounce to. | 8 |  |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 2 |  |
 | `ignore_self` | Boolean | If true, prevents the arc from bouncing back to the caster. | 2 |  |
 
 </details>
@@ -2155,7 +2105,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn. | 8 |  |
 
 </details>
 
@@ -2199,7 +2148,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The new ability ID to insert. | 8 |  |
 | `slot` | Number | The spell slot index to replace. | 8 |  |
 
 </details>
@@ -2243,7 +2191,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`radius`](./Arrays.md#array-radius) | Array | Swirl radius. | 4 |  |
-| [`speed`](./Arrays.md#array-speed) | Array | Rotations per second. | 4 |  |
 
 </details>
 
@@ -2308,7 +2255,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic) | Object | Changes the background music track or layer during combat. | 4 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
-| `Cleanse` | `Number` | Applies or references the 'Cleanse' effect/state. | 2 |  |
 | [`DoScreenShake`](./Abilities_and_Spells.md#object-doscreenshake) | Object | Triggers a camera screen shake effect. | 2 |  |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | `String` | Transforms the character into a different state or form (e.g., Rage, HasCat). | 2 |  |
 | `FullHeal` | `Number` | Applies or references the 'FullHeal' effect/state. | 2 |  |
@@ -2354,7 +2300,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`obj`](./Enums.md#enum-obj) | Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 6 |  |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0) of spawning the object. | 4 |  |
 | `slide` | Number |  | 2 |  |
 
 </details>
@@ -2375,10 +2320,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `arm1` | Number | Scale multiplier for the front arm. | 2 |  |
-| `arm2` | Number | Scale multiplier for the back arm. | 2 |  |
-| `body` | Number |  | 2 |  |
-| `mouth` | Number |  | 2 |  |
 
 </details>
 
@@ -2445,7 +2386,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The ID of the object/particle to spawn. | 6 |  |
 
 </details>
 
@@ -2568,7 +2508,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the visual decoy to spawn (e.g., PlayerCat_ThiefShade). | 4 |  |
 | `skilltemp` | Boolean | If true, the decoy is automatically destroyed once the skill finishes executing. | 4 |  |
 
 </details>
@@ -2632,7 +2571,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to autocast. | 18 |  |
 | `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 12 |  |
 
 </details>
@@ -2653,7 +2591,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to use when intercepting (e.g., BodyGuardSwap). | 4 |  |
 | `stacks` | Number | Number of stacks or intensity to apply. | 4 |  |
 
 </details>
@@ -2702,7 +2639,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |  |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -2847,7 +2783,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to conjure. | 4 |  |
 | `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 4 |  |
 
 </details>
@@ -2889,7 +2824,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BloodRain` | `Number` | Applies or references the 'BloodRain' effect/state. | 6 |  |
 | [`LowerAmbientLight`](./Abilities_and_Spells.md#object-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 6 |  |
 | [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |  |
 
@@ -2932,8 +2866,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability of finding the item. | 6 |  |
-| [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw from. | 4 |  |
 
 </details>
 
@@ -2953,8 +2885,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The movement ability to use. | 4 |  |
-| [`tag`](./Enums.md#enum-tag) | Enum | The entity tag to seek out. | 2 |  |
 
 </details>
 
@@ -2974,7 +2904,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 2 |  |
 | `stacks` | Number | Number of stacks or intensity to apply. | 2 |  |
 
 </details>
@@ -2995,7 +2924,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `speed` | Number | The transition speed. | 6 |  |
 | [`amount`](./Arrays.md#array-amount) | Array | The target opacity/dimness level. | 2 |  |
 
 </details>
@@ -3122,7 +3050,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | Probability of triggering the quake. | 4 |  |
 | `radius` | Number | The tile radius of the quake. | 4 |  |
 
 </details>
@@ -3245,7 +3172,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The underlying logic ability executed by the team. | 4 |  |
 | [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | Requires participants to share this tag. | 4 |  |
 | `same_orientation` | Boolean |  | 2 |  |
 
@@ -3598,7 +3524,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 2 |  |
 
 </details>
 
@@ -3881,7 +3806,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to cast later. | 2 |  |
 | `lingering` | Boolean |  | 2 |  |
 | `relative` | Boolean |  | 2 |  |
 
@@ -3945,7 +3869,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ability to execute after moving. | 2 |  |
 | `even_if_cant_reach` | Boolean | If true, executes the attack even if the move fails to reach the target. | 2 |  |
 
 </details>
@@ -4051,7 +3974,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `fights` | Number | The number of encounters this buff/debuff persists for. | 2 |  |
 | `MadnessChanceOnTurnBegin` | `Number` | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 2 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
@@ -4092,7 +4014,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | An array of ability IDs to randomly choose from. | 1 |  |
 
 </details>
 
@@ -4112,7 +4033,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn in place. | 4 |  |
 | `clone_items` | Boolean | If true, transfers inventory to the new entity. | 2 |  |
 | `clone_referenced_catdata` | Boolean | If true, copies the genetic data of the popped cat. | 2 |  |
 | `no_splatter` | Boolean |  | 2 |  |
@@ -4197,7 +4117,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dead`](./Enums.md#enum-dead) | Enum |  | 2 |  |
 | [`dying`](./Enums.md#enum-dying) | Enum |  | 2 |  |
 
 </details>
@@ -4240,7 +4159,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`disease`](./Enums.md#enum-disease) | Enum | The specific status effect ID representing the disease. | 26 |  |
-| `chance` | Number | Probability (0.0 to 1.0 or percentage) of transmitting. | 24 |  |
 
 </details>
 
@@ -4299,7 +4217,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | An array of weapon item IDs to draw from. | 1 |  |
 
 </details>
 
@@ -4359,7 +4276,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger. | 4 |  |
 | `respect_prime` | Boolean | If true, respects the ability's prime/cooldown state. | 4 |  |
 
 </details>
@@ -4380,7 +4296,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 2 |  |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | The AI positioning logic profile to use. | 2 |  |
 
 </details>
@@ -4446,12 +4361,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1888 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1390 |  |
-| [`tag`](./Engine_LogicKeys.md#valid-property-keys) | String | The entity tag to seek out. | 981 |  |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 204 |  |
 | `IgnoreSelf` | `Number` | Applies or references the 'IgnoreSelf' effect/state. | 150 |  |
 | [`ChangeTile`](./Abilities_and_Spells.md#object-changetile) | `String` | Transforms the terrain tile under the target. | 124 |  |
-| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 118 |  |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 88 |  |
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional-hastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 76 |  |
 | [`VisualFXTile`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'VisualFXTile' effect/state. | 72 |  |
 | [`BounceObject`](./Abilities_and_Spells.md#object-bounceobject) | `String` | Spawns a physics object that visually bounces off the target. | 70 |  |
@@ -4535,7 +4447,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`PopAndSpawn`](./Abilities_and_Spells.md#object-popandspawn) | `String` | Destroys the target and replaces it with a new spawned entity. | 10 |  |
 | `Purge` | `Number` | Applies or references the 'Purge' effect/state. | 10 |  |
 | `RefreshMovePointsIfHit` | `Number` | Applies or references the 'RefreshMovePointsIfHit' effect/state. | 10 |  |
-| `Revive` | `Number` | Applies or references the 'Revive' effect/state. | 10 |  |
 | `SafeDie` | `Number` | Applies or references the 'SafeDie' effect/state. | 10 |  |
 | `SpawnBearTrap` | `Number` | Applies or references the 'SpawnBearTrap' effect/state. | 10 |  |
 | `UpgradeRandomAbility` | `Number` | Applies or references the 'UpgradeRandomAbility' effect/state. | 10 |  |
@@ -4547,7 +4458,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ExplosionIfHitSomething` | `Number` | Applies or references the 'ExplosionIfHitSomething' effect/state. | 8 |  |
 | `FaceCamera` | `Number` | Applies or references the 'FaceCamera' effect/state. | 8 |  |
 | [`LateStatusApplication`](./Abilities_and_Spells.md#object-latestatusapplication) | Object | Applies a status effect after all primary damage and effects have fully resolved. | 8 |  |
-| `Reanimate` | `Number` | Applies or references the 'Reanimate' effect/state. | 8 |  |
 | `RemoveActPoints` | `Number` | Applies or references the 'RemoveActPoints' effect/state. | 8 |  |
 | `SendRock` | `Number` | Applies or references the 'SendRock' effect/state. | 8 |  |
 | [`SpecificInjury`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'SpecificInjury' effect/state. | 8 |  |
@@ -4750,7 +4660,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RefreshItemAbilities` | `Number` | Applies or references the 'RefreshItemAbilities' effect/state. | 2 |  |
 | `RefreshNonManaItemAbilities` | `Number` | Applies or references the 'RefreshNonManaItemAbilities' effect/state. | 2 |  |
 | `RefreshOncePerFightAbilities` | `Number` | Applies or references the 'RefreshOncePerFightAbilities' effect/state. | 2 |  |
-| `Regurge` | `Number` | Applies or references the 'Regurge' effect/state. | 2 |  |
 | [`RemoveStatusStacks`](./Abilities_and_Spells.md#object-removestatusstacks) | Object | Removes a specific number of stacks of a status effect. | 2 |  |
 | `RepairAllCondition` | `Number` | Applies or references the 'RepairAllCondition' effect/state. | 2 |  |
 | `RerollEnemy` | `Number` | Applies or references the 'RerollEnemy' effect/state. | 2 |  |
