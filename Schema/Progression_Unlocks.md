@@ -21,7 +21,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`popup`](#object-popup) | Object |  | 532 |  |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum |  | 254 |  |
 | [`intro`](./Arrays.md#array-intro) | Array |  | 216 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |  |
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum |  | 110 |  |
 | [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum |  | 96 |  |

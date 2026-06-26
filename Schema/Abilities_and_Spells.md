@@ -627,7 +627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`XIsRecycleCostReduction`](./Enums.md) | Integer | | 1 | 5 |
 | [`XIsSpellStormRampAndReset`](./Enums.md) | Integer / Object | | 2 | 0 |
 | [`XIsTimesDamageTaken`](./Enums.md) | Integer | | 2 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -657,7 +657,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `BearTrapTrail` | Integer | Applies or references the 'BearTrapTrail' effect/state. | 4 |  |
 | `DelayedWindTrail` | Integer | Applies or references the 'DelayedWindTrail' effect/state. | 2 |  |
 | [`JumpAttackLeaveBehind`](./Enums.md#enum-jumpattackleavebehind) | Enum | Applies or references the 'JumpAttackLeaveBehind' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`AfterImage`](./Enums.md) | Object | | 2 |   |
 | [`DoubleLoot`](./Enums.md) | Integer | | 5 | 2 |
 | [`KnockbackImmunity`](./Enums.md) | Integer | | 3 | 1 |
@@ -684,7 +684,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 76 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 72 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 72 |  |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 16 |  |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 14 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 12 |  |
@@ -776,7 +776,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 46 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 43 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 43 |  |
 | [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool) | `String` | Upgrades or transforms an existing ability into a new one from the specified pool. | 8 |  |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | `String` | Transforms the character into a different state or form (e.g., Rage, HasCat). | 8 |  |
 | [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'AddWeaponAux' effect/state. | 6 |  |
@@ -833,7 +833,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |  |
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional-hastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 47 |  |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |  |
@@ -891,7 +891,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 37 |  |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |  |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 6 |  |
@@ -989,7 +989,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional-enemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 44 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 29 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 29 |  |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 8 |  |
 | `KnockbackDamageImmuneUntilSettled` | `Number` | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 6 |  |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 6 |  |
@@ -1033,7 +1033,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 72 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |  |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 14 |  |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 |  |
@@ -1073,7 +1073,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomMagicMissile`](./Enums.md) | Integer / Object | | 14 | 5 |
 | [`Shield`](./Enums.md) | Enum / Integer | | 67 | 2*X |
 | [`Webbed`](./Enums.md) | Integer | | 6 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1126,7 +1126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional-goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 37 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 29 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 29 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 27 |  |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 12 |  |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |  |
@@ -1225,7 +1225,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SafeDoomed`](./Enums.md) | Enum / Integer | | 11 | 2 |
 | [`SchizoIllusionAIModifier`](./Enums.md) | Integer | | 1 | 1 |
 | [`SpeedUp`](./Enums.md) | Enum / Integer | | 43 | 4 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1256,7 +1256,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Quivered`](./Enums.md) | Integer | | 6 | 1 |
 | [`RemoveStatus`](./Enums.md) | Enum | | 15 | Sleep |
 | [`Slow`](./Enums.md) | Array / Enum / Integer | | 38 | [.1] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1339,7 +1339,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempCounterAttack`](./Enums.md) | Integer | | 3 | 1 |
 | [`Thorns`](./Enums.md) | Integer | | 23 | 2 |
 | [`Weakness`](./Enums.md) | Array / Integer | | 30 | [.1] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1363,7 +1363,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `force_contact` | `Boolean` | If true, enforces physical overlap. | 30 |  |
 | `instant` | `Boolean` |  | 24 |  |
 | [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | `String` | If true, treats the consumption as riding/mounting instead of eating. | 24 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 24 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 24 |  |
 | `do_not_pop_corpse` | `Boolean` |  | 22 |  |
 | [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | `String` |  | 22 |  |
 | `wet` | `Boolean` |  | 16 |  |
@@ -1391,7 +1391,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |  |
 | [`CanApplyToInanimate`](./Enums.md) | Object | | 15 |   |
 | [`CaptureFamiliar`](./Enums.md) | Integer | | 5 | 1 |
 | [`Conditional_HealthThreshold`](./Enums.md) | Object | | 6 |   |
@@ -1424,7 +1424,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Engine_LogicKeys.md#valid-property-keys) | Mixed |  | 150 |  |
 | [`chance`](./Enums.md) | Number | | 23 | .02 |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1445,7 +1444,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |  |
 | [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'RemoveItem' effect/state. | 6 |  |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'CompleteItemQuest' effect/state. | 4 |  |
 | `ManaGain` | `Number` | Applies or references the 'ManaGain' effect/state. | 4 |  |
@@ -1480,7 +1479,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 8 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 6 |  |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 6 |  |
 | `GetAggroTarget` | Integer | Applies or references the 'GetAggroTarget' effect/state. | 4 |  |
@@ -1563,7 +1562,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `aoe` | Integer |  | 4 |  |
 | [`chance`](./Enums.md) | Number | | 23 | .02 |
 | [`tile`](./Enums.md) | Array / Enum | | 90 | [BrambleTile] |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1588,7 +1586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 20 |  |
 | [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |  |
 | `IgnoreDamage` | `Number` | Applies or references the 'IgnoreDamage' effect/state. | 6 |  |
 | `BonusDamageBasedOnDistance` | `Number` | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 4 |  |
@@ -1682,7 +1680,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 16 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
 | `TakeExtraTurn` | Integer | Applies or references the 'TakeExtraTurn' effect/state. | 4 |  |
 | [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional-enemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |  |
 | `FlatAIBonus` | `Number` | Applies or references the 'FlatAIBonus' effect/state. | 2 |  |
@@ -1740,7 +1738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 16 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
 | [`OverrideKnockbackDamage`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'OverrideKnockbackDamage' effect/state. | 2 |  |
 | [`Burn`](./Enums.md) | Array / Enum / Integer | | 86 | [.1] |
 | [`Freeze`](./Enums.md) | Array / Integer | | 22 | [.1] |
@@ -1793,7 +1791,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`odds`](./Enums.md#enum-odds) | Number | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 16 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
 | `DieViolently` | `Number` | Applies or references the 'DieViolently' effect/state. | 2 |  |
 | `Instakill` | `Number` | Applies or references the 'Instakill' effect/state. | 2 |  |
@@ -1816,7 +1814,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 6 |  |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 6 |  |
@@ -1843,7 +1841,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Enums.md) | Object | | 51 |   |
 | [`Bleed`](./Enums.md) | Array / Integer | | 65 | [.1] |
 | [`LuckUp`](./Enums.md) | Enum / Integer | | 23 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1864,7 +1862,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 10 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'SpawnThingIfHitKills' effect/state. | 4 |  |
 | `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 4 |  |
@@ -1900,7 +1898,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 14 |  |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | `String` | Transforms the character into a different state or form (e.g., Rage, HasCat). | 10 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 2 |  |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | `String` | Forces the character or target to instantly use a specified ability. | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
@@ -1927,7 +1925,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | `ConjureRandomAbilityFromCat` | `Number` | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 4 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |  |
@@ -1998,7 +1996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 
@@ -2028,7 +2026,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional-hastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 6 |  |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 2 |  |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |  |
 | [`Else`](./Enums.md) | Object | | 71 |   |
@@ -2166,7 +2164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatUp`](./Enums.md) | Enum / Integer | | 27 | ceil(X/3) |
 | [`Shield`](./Enums.md) | Enum / Integer | | 67 | 2*X |
 | [`Tech`](./Enums.md) | Integer | | 10 | 3 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2290,7 +2288,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DeleteObject` | `Number` | Applies or references the 'DeleteObject' effect/state. | 6 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | `Die` | `Number` | Applies or references the 'Die' effect/state. | 2 |  |
 
 </details>
@@ -2316,7 +2314,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | The maximum number of targets the lightning can bounce to. | 8 |  |
 | `ignore_self` | Boolean | If true, prevents the arc from bouncing back to the caster. | 2 |  |
 | [`chance`](./Enums.md) | Number | | 23 | .02 |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2341,7 +2338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BonusDamage`](./Enums.md) | Enum / Integer | | 27 | -4 |
 | [`DamageUp`](./Enums.md) | Integer / String | | 44 | 3 |
 | [`DivineShield`](./Enums.md) | Integer | | 23 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2364,7 +2361,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`key`](./Enums.md#enum-key) | Enum |  | 6 |  |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'CompleteItemQuest' effect/state. | 4 |  |
 | `TriggerGameEnding` | `Number` | Applies or references the 'TriggerGameEnding' effect/state. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 
 </details>
 
@@ -2386,7 +2383,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 8 |  |
 | [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives) | Object | Grants the nested passive abilities dynamically. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |  |
 
 </details>
@@ -2411,7 +2408,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Burn`](./Enums.md) | Array / Enum / Integer | | 86 | [.1] |
 | [`Poison`](./Enums.md) | Array / Integer | | 83 | [.1] |
 | [`Tarred`](./Enums.md) | Array / Integer | | 9 | [.1] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2493,7 +2490,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 4 |  |
 | [`EnterMount`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'EnterMount' effect/state. | 2 |  |
 | [`VisualFXTile`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'VisualFXTile' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
@@ -2541,7 +2538,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AllStatsUp`](./Enums.md) | Enum / Integer | | 50 | 2 |
 | [`DivineShield`](./Enums.md) | Integer | | 23 | 2 |
 | [`Shield`](./Enums.md) | Enum / Integer | | 67 | 2*X |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2587,7 +2584,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Madness`](./Enums.md) | Array / Enum / Integer / Object | | 27 | [.1] |
 | [`Stun`](./Enums.md) | Array / Integer | | 102 | [0] |
 | [`TempNoManaRegen`](./Enums.md) | Integer | | 2 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2634,7 +2631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | The float time delay in seconds. | 8 |  |
 | [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic) | Object | Changes the background music track or layer during combat. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`DoScreenShake`](./Abilities_and_Spells.md#object-doscreenshake) | Integer / Object | Triggers a camera screen shake effect. | 2 |  |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | `String` | Transforms the character into a different state or form (e.g., Rage, HasCat). | 2 |  |
@@ -2667,7 +2664,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | The number of times the nested effects block should be repeatedly executed. | 6 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |  |
 | [`RandomStatusFromPool`](./Enums.md) | Object | | 19 |   |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2688,7 +2685,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`obj`](./Enums.md#enum-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 6 |  |
 | `slide` | Integer |  | 2 |  |
 | [`chance`](./Enums.md) | Number | | 23 | .02 |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2729,7 +2725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |  |
 | [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type to check for. | 6 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`BonusCritChance`](./Enums.md) | Integer | | 3 | 100 |
 | [`Burn`](./Enums.md) | Array / Enum / Integer | | 86 | [.1] |
@@ -2757,7 +2753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | `BonusDamage` | `Number` | Applies or references the 'BonusDamage' effect/state. | 2 |  |
 | [`DelayCastAbility`](./Abilities_and_Spells.md#object-delaycastability) | `String` | Queues an ability to be cast automatically after a certain delay or trigger. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`Bruise`](./Enums.md) | Array / Integer | | 80 | [.1] |
 
 </details>
@@ -2885,7 +2881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 187 |  |
 | [`Bleed`](./Enums.md) | Array / Integer | | 65 | [.1] |
 | [`Bruise`](./Enums.md) | Array / Integer | | 80 | [.1] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2927,7 +2923,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 
 </details>
 
@@ -2949,7 +2945,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ObjectOnHit`](./Abilities_and_Spells.md#object-objectonhit) | `String` | Spawns a specific physics/item object upon impact. | 4 |  |
 | `SpawnBearTrap` | `Number` | Applies or references the 'SpawnBearTrap' effect/state. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
 
@@ -3037,7 +3033,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 7 |  |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |  |
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`Conditional_InForm`](./Enums.md) | Object | | 7 |   |
@@ -3064,7 +3060,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ApplyToTile`](./Abilities_and_Spells.md#object-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 4 |  |
 | `VaporizeCorpse` | `Number` | Applies or references the 'VaporizeCorpse' effect/state. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 
 </details>
 
@@ -3084,7 +3080,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`LaunchOffScreen`](./Enums.md) | String | | 1 | 10+bonus_melee_ability_damage |
 | [`LaunchOffScreenInstakill`](./Enums.md) | Integer | | 1 | 1 |
 | [`TempInitiativeChange`](./Enums.md) | Integer | | 3 | -100 |
@@ -3108,7 +3104,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | `GenericBuff` | `Number` | Applies or references the 'GenericBuff' effect/state. | 2 |  |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested block. | 2 |  |
@@ -3135,7 +3131,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`Confusion`](./Enums.md) | Array / Integer | | 53 | [.1] |
 | [`Temporary`](./Enums.md) | Object | | 41 |   |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3321,7 +3317,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 |  |
 | [`chance`](./Enums.md) | Number | | 23 | .02 |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3366,7 +3361,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`ApplyToSource`](./Enums.md) | Object | | 51 |   |
 | [`Stun`](./Enums.md) | Array / Integer | | 102 | [0] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3476,7 +3471,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `radius` | Array / Integer | The tile radius of the quake. | 4 |  |
 | [`chance`](./Enums.md) | Number | | 23 | .02 |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3743,7 +3737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ForceMoveTowards` | `Number` | Applies or references the 'ForceMoveTowards' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 
@@ -3788,7 +3782,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`DestroyEquipmentAndAttachParasite`](./Enums.md) | Object | | 5 |   |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3809,7 +3803,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `BonusCritChance` | `Number` | Applies or references the 'BonusCritChance' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`Fear`](./Enums.md) | Array / Integer | | 31 | [.3] |
 
@@ -3852,7 +3846,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 2 |  |
 | [`DestroyEquipmentAndAttachParasite`](./Enums.md) | Object | | 5 |   |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3873,7 +3867,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Imprison`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'Imprison' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 
@@ -3894,7 +3888,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `SetKnockback` | `Number` | Applies or references the 'SetKnockback' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 
@@ -3915,7 +3909,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`extra_statuses`](./Abilities_and_Spells.md#object-extra-statuses) | Object | Additional generic status applications. | 4 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`ApplyToSource`](./Enums.md) | Object | | 51 |   |
@@ -3940,7 +3934,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DisplaceTowardsSource` | `Number` | Applies or references the 'DisplaceTowardsSource' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 
@@ -3964,7 +3958,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Enums.md) | Object | | 51 |   |
 | [`ScatterCoins`](./Enums.md) | Object | | 2 |   |
 | [`tag`](./Enums.md) | Enum | | 45 | megadino |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3987,7 +3981,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`Bruise`](./Enums.md) | Array / Integer | | 80 | [.1] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4420,7 +4414,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `MadnessChanceOnTurnBegin` | `Number` | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 2 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`fights`](./Enums.md) | Integer | | 1 | 9999 |
 
 </details>
@@ -4608,7 +4602,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`disease`](./Enums.md#enum-disease) | Enum | The specific status effect ID representing the disease. | 26 |  |
 | [`chance`](./Enums.md) | Number | | 23 | .02 |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4631,7 +4624,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |  |
 | [`DamageOrHealConditionally`](./Enums.md) | Integer | | 4 | 1 |
 | [`Freeze`](./Enums.md) | Array / Integer | | 22 | [.1] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4815,7 +4808,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1888 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1888 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1390 |  |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum / Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 204 |  |
 | `IgnoreSelf` | `Number` | Applies or references the 'IgnoreSelf' effect/state. | 150 |  |

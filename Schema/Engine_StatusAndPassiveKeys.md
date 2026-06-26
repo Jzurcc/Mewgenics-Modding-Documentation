@@ -17,823 +17,202 @@ This document lists every confirmed Status and Passive ID found across all game 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](#addstatustobasicattack) | Object | Injects a status effect payload that applies whenever the character performs a basic attack. | 178 |  |
-| [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |  |
-| [`bonus_passives`](#bonus_passives) | Object | Passives granted to the character while this ability is equipped. | 272 |  |
-| `Brace` | Enum / Integer / Object | Applies or references the 'Brace' effect/state. | 20 |  |
-| [`FormChanger`](#formchanger) | Object | AI Role: Designates the character as one that frequently shifts forms. | 106 |  |
-| `Thorns` | Integer | Applies or references the 'Thorns' effect/state. | 36 |  |
-| [`Trample`](./Arrays.md#array-trample) | Integer | Applies or references the 'Trample' effect/state. | 14 |  |
-| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 |  |
-| `Metal` | Integer | Applies or references the 'Metal' effect/state. | 2 |  |
-| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | Applies or references the 'Bleed' effect/state. | 9 |  |
-| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
-| [`SpawnOnDeath`](./Enums.md#enum-spawnondeath) | Enum / Object | Event Trigger: Spawns a specific entity when killed. | 81 |  |
-| [`MeleeRevengeDamage`](#meleerevengedamage) | Object | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 20 |  |
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 59 |  |
-| [`StatusEachTurnEnd`](#statuseachturnend) | Object | Applies or references the 'StatusEachTurnEnd' effect/state. | 16 |  |
-| [`passives`](#passives) | Object | Examples: `{ ... }` | 5118 |  |
-| [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum / Object | Applies or references the 'SpawnOnBattleStart' effect/state. | 24 |  |
-| [`StatusOnBattleEnd`](#statusonbattleend) | Object | Applies the nested status effects when the encounter finishes. | 6 |  |
-| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 |  |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 16 |  |
-| `Robot` | Integer / Object | Character Form: Behavior and stats for the 'Robot' state. | 2 |  |
-| [`StatusOnTookDamage`](#statusontookdamage) | Object | Event Trigger: Applies nested statuses when took damage. | 34 |  |
-| `RandomArmorPickup` | Number / Object | Applies or references the 'RandomArmorPickup' effect/state. | 43 |  |
-| [`StatusOnKill`](#statusonkill) | Object | Event Trigger: Applies statuses when this action occurs. | 18 |  |
-| [`SpawnThingOnDamage`](#spawnthingondamage) | Object | Applies or references the 'SpawnThingOnDamage' effect/state. | 18 |  |
-| [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Array / Enum | Applies or references the 'StatusImmunity' effect/state. | 38 |  |
-| `CritChanceUp` | Integer | Applies or references the 'CritChanceUp' effect/state. | 36 |  |
-| [`AddPassivesToMinions`](#addpassivestominions) | Object | Applies the 'AddPassivesToMinions' effect. | 30 |  |
-| [`CounterAttack`](./Enums.md#enum-counterattack) | Array / Enum / Object | Reaction: Executes a counter-attack ability when hit. | 4 |  |
-| [`DeathRattle`](./Enums.md#enum-deathrattle) | Enum / Object | Event Trigger: Executes logic or abilities exactly when the character dies. | 2 |  |
-| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 36 |  |
-| [`FormChangeWhileHasStatus`](#formchangewhilehasstatus) | Object | Logic: Changes form automatically while possessing a specific status. | 35 |  |
-| [`RevengeDamage`](#revengedamage) | Object | Reaction trigger: Deals damage to the attacker when hit. | 30 |  |
-| `Charge` | Integer | Applies or references the 'Charge' effect/state. | 30 |  |
-| [`damage`](./Arrays.md#array-damage) | Enum / Integer / Object | The base damage properties of an attack. | 2 |  |
-| [`EliteTint`](./Arrays.md#array-elitetint) | Array | Examples: `[ .4 .4 .4 ], [ .6 .6 .6 .50 ], red` | 30 |  |
-| `DodgeChance` | Integer | Examples: `2, 5, 10` | 30 |  |
-| `AddBonusRange` | Integer | Applies or references the 'AddBonusRange' effect/state. | 26 |  |
-| `KineticSpikes` | Integer | Applies or references the 'KineticSpikes' effect/state. | 6 |  |
-| [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum | Applies the 'MulticlassLevelUp' effect. | 32 |  |
-| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 27 |  |
-| [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 16 |  |
-| `Fire` | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 6 |  |
-| [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Array / Enum / Object | Reaction: Executes an ability instantly, interrupting the current sequence. | 26 |  |
-| `Knockback` | Integer | Applies or references the 'Knockback' effect/state. | 26 |  |
-| [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum / Object | AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage). | 4 |  |
-| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 25 |  |
-| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | Applies or references the 'Quivered' effect/state. | 10 |  |
-| `Undead` | Integer | Applies or references the 'Undead' effect/state. | 25 |  |
-| `AddMovement` | Integer | Applies or references the 'AddMovement' effect/state. | 6 |  |
-| `Brittle` | Integer | Applies or references the 'Brittle' effect/state. | 24 |  |
-| [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type to check for. | 1 |  |
-| [`party_status_next_fight`](#party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |  |
-| `water` | Variable |  | 5 |  |
-| [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum | Examples: `Ice, Electric, Water` | 32 |  |
-| `MissChance` | Integer | Applies the 'MissChance' effect. | 24 |  |
-| `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 |  |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 23 |  |
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 22 |  |
-| `Fragile` | Integer | Applies or references the 'Fragile' effect/state. | 6 |  |
-| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 22 |  |
-| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 8 |  |
-| [`SpawnEachTurn`](#spawneachturn) | Object | Applies or references the 'SpawnEachTurn' effect/state. | 12 |  |
-| [`StatusOnBreak`](#statusonbreak) | Object | Event Trigger: Applies statuses when this action occurs. | 22 |  |
-| [`threshold`](#threshold) | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 22 |  |
-| `WaterWalk` | Integer | Applies or references the 'WaterWalk' effect/state. | 10 |  |
-| `AddCorpseHealth` | Integer | Applies the 'AddCorpseHealth' effect. | 12 |  |
-| [`additional_passives`](#additional_passives) | Object | Passives granted intrinsically to a spawned entity. | 20 |  |
-| `ArmorDodgeChance` | Integer | Applies or references the 'ArmorDodgeChance' effect/state. | 2 |  |
-| [`BossRewards`](#bossrewards) | Object | Loot logic: Rewards dropped upon defeating a boss. | 20 |  |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum / Object | Applies or references the 'ForceUseAbility' effect/state. | 20 |  |
-| `BleedThorns` | Integer | Applies or references the 'BleedThorns' effect/state. | 8 |  |
-| [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum | Examples: `SpikeBuff, Lava_Distortion, SparkleBuff` | 19 |  |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum / Object | Generates an item drop from the specified loot pool. | 19 |  |
-| `AddCritMultiplier` | Integer | Applies the 'AddCritMultiplier' effect. | 28 |  |
-| [`BirdRewards`](#birdrewards) | Object | Loot logic: Rewards dropped by bird-type enemies. | 18 |  |
-| [`Buddy`](./Enums.md#enum-buddy) | Enum / Object | Character Form / AI State: Behavior and stats for the 'Buddy' familiar state. | 18 |  |
-| [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 8 |  |
-| [`PassiveWhenAffectedByElement`](#passivewhenaffectedbyelement) | Object | Examples: `{ ... }` | 24 |  |
-| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. | 17 |  |
-| `Conditional_GoodRoll` | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 17 |  |
-| `LuckUp` | Enum / Integer | Applies or references the 'LuckUp' effect/state. | 17 |  |
-| `RandomMagicMissile` | Integer / Object | Fires a randomized number of magic missiles. | 17 |  |
-| [`ReplaceBasicMove`](./Enums.md#enum-replacebasicmove) | Enum | Applies or references the 'ReplaceBasicMove' effect/state. | 10 |  |
-| `AddManaRegen` | Integer | Applies or references the 'AddManaRegen' effect/state. | 4 |  |
-| [`CharacterLightSource`](#characterlightsource) | Object | Visual: Attaches a dynamic lighting source to the character. | 16 |  |
-| [`HealthPickup`](#healthpickup) | Object | Pickup Logic: Defines what happens when a health item is collected. | 16 |  |
-| `less_or_equal` | Variable |  | 16 |  |
-| [`SizeScale`](./Enums.md#enum-sizescale) | Number | Applies or references the 'SizeScale' effect/state. | 4 |  |
-| [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. | 4 |  |
-| [`StatusOnBattleStart`](#statusonbattlestart) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
-| [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum | Applies or references the 'AbilityOnBattleStart' effect/state. | 6 |  |
-| `ExtraBasicAttacks` | Integer | Applies the 'ExtraBasicAttacks' effect. | 6 |  |
-| `HealthMultiplier` | Float | Examples: `1.5, .5, .8` | 15 |  |
-| `IgnoreTiles` | Integer | Applies or references the 'IgnoreTiles' effect/state. | 12 |  |
-| [`ReplaceSpawnedObjects`](./Arrays.md#array-replacespawnedobjects) | Array | Applies or references the 'ReplaceSpawnedObjects' effect/state. | 15 |  |
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |  |
-| `AddLevelUpRerolls` | Integer | Applies or references the 'AddLevelUpRerolls' effect/state. | 8 |  |
-| `Antidote` | Mixed | Applies or references the 'Antidote' effect/state. | 2 |  |
-| `Flying` | Integer | Applies or references the 'Flying' effect/state. | 2 |  |
-| [`MoveQuivered`](./Arrays.md#array-movequivered) | Integer | Applies or references the 'MoveQuivered' effect/state. | 6 |  |
-| [`PassiveGroup`](#passivegroup) | Object | Passive: A collection of passives grouped together for easier management. | 14 |  |
-| `PoisonThorns` | Integer | Applies or references the 'PoisonThorns' effect/state. | 6 |  |
-| `ReflectProjectiles` | Integer / Object | Passive: Reflects incoming projectiles back at the attacker. | 4 |  |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 14 |  |
-| [`statuses`](#statuses) | Object | Status effects possessed by the character. | 14 |  |
-| [`AbilityHealthThreshold`](#abilityhealththreshold) | Object | AI Trigger: Executes an ability when health drops below a specific threshold. | 2 |  |
-| [`AddStatusToAllDamage`](#addstatustoalldamage) | Object | Modifier: Injects a status effect into a specific action. | 4 |  |
-| `AlphaTurns` | Integer | Applies the 'AlphaTurns' effect. | 8 |  |
-| [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 13 |  |
-| [`BonusAbility`](./Enums.md#enum-bonusability) | Enum | Applies the 'BonusAbility' effect. | 12 |  |
-| [`DeathRattleRevive`](./Enums.md#enum-deathrattlerevive) | Enum / Object | Event Trigger: Revives the character immediately upon death. | 13 |  |
-| `Flammable` | Integer | Applies or references the 'Flammable' effect/state. | 13 |  |
-| `InjuryImmunity` | Integer | Applies or references the 'InjuryImmunity' effect/state. | 2 |  |
-| [`PassiveAtStatThreshold`](#passiveatstatthreshold) | Object | Applies the 'PassiveAtStatThreshold' effect. | 10 |  |
-| `SafeDoomed` | Enum / Integer | Applies or references the 'SafeDoomed' effect/state. | 13 |  |
-| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Array / Enum | Applies or references the 'TransformOnDeath' effect/state. | 13 |  |
-| `AddMaxHealth` | Integer | Applies or references the 'AddMaxHealth' effect/state. | 12 |  |
-| [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 |  |
-| [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Applies the 'AmplifyStatus' effect. | 8 |  |
-| `BackstabImmunity` | Integer | Applies or references the 'BackstabImmunity' effect/state. | 6 |  |
-| [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Applies or references the 'DeadAltAbility' effect/state. | 12 |  |
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 12 |  |
-| [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum | Applies the 'EquipTemporaryItem' effect. | 12 |  |
-| [`MoveWhenDamaged`](./Enums.md#enum-movewhendamaged) | Enum / Object | AI Movement: Forces a reposition when taking damage. | 2 |  |
-| `NoHealthOnlyShield` | Integer | Applies or references the 'NoHealthOnlyShield' effect/state. | 12 |  |
-| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum / Object | Spawns a specific character or entity upon impact. | 12 |  |
-| `AddBonusMeleeRange` | Integer | Applies the 'AddBonusMeleeRange' effect. | 12 |  |
-| [`AddSelfStatusToBasicAttack`](#addselfstatustobasicattack) | Object | Applies or references the 'AddSelfStatusToBasicAttack' effect/state. | 4 |  |
-| [`AddStatusToBasicMeleeAttack`](#addstatustobasicmeleeattack) | Object | Examples: `{ ... }` | 16 |  |
-| [`CritsApplyStatus`](#critsapplystatus) | Object | Applies the 'CritsApplyStatus' effect. | 12 |  |
-| [`EliteFlatTint`](./Arrays.md#array-eliteflattint) | Array | Examples: `[ 1.1 1.1 1.1 ], [ 1.1 1.1 1.3 ], [ 1.1 1.1 1 ]` | 11 |  |
-| [`MoveTowardsDamageSource`](./Enums.md#enum-movetowardsdamagesource) | Enum / Object | AI Movement: Closes distance on the last source of damage. | 2 |  |
-| `PermanentMadness` | Integer | Applies or references the 'PermanentMadness' effect/state. | 11 |  |
-| [`SpawnOnBattleStartRandomEmptyTile`](#spawnonbattlestartrandomemptytile) | Object | Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state. | 10 |  |
-| [`StatusOnKillEnemy`](#statusonkillenemy) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
-| [`YOffset`](./Enums.md#enum-yoffset) | Float | Applies or references the 'YOffset' effect/state. | 6 |  |
-| `AddInitiative` | Integer | Applies or references the 'AddInitiative' effect/state. | 2 |  |
-| [`AutocastEachRound`](#autocasteachround) | Enum / Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 4 |  |
-| `BrambleRandomTileEvent` | Object |  | 10 |  |
-| `CoinPickup` | Integer | Applies or references the 'CoinPickup' effect/state. | 10 |  |
-| [`DepressionAura`](#depressionaura) | Integer | Examples: `1` | 2 |  |
-| `DodgeChance_Status` | Integer | Applies or references the 'DodgeChance_Status' effect/state. | 2 |  |
-| `Electric` | Object | Examples: `{ ... }` | 6 |  |
-| `ExtraWeaponAttacks` | Integer | Applies the 'ExtraWeaponAttacks' effect. | 8 |  |
-| `FadeInsteadOfDie` | Integer | Applies or references the 'FadeInsteadOfDie' effect/state. | 10 |  |
-| [`GainCoins`](./Arrays.md#array-gaincoins) | Array / Integer | Applies or references the 'GainCoins' effect/state. | 10 |  |
-| `Ice` | Object | Examples: `{ ... }` | 7 |  |
-| `IncreaseExplosionDamage` | Integer | Applies the 'IncreaseExplosionDamage' effect. | 4 |  |
-| `KnockbackImmunity` | Integer | Applies the 'KnockbackImmunity' effect. | 6 |  |
-| `LimitDamage` | Integer | Applies or references the 'LimitDamage' effect/state. | 2 |  |
-| [`MovementReaction`](#movementreaction) | Object | Reaction: Triggers an effect or ability when forced to move. | 2 |  |
-| `PassiveLevelUpAtCombatEnd` | Integer | Applies the 'PassiveLevelUpAtCombatEnd' effect. | 16 |  |
-| `RandomPermanentStat` | Integer | Applies or references the 'RandomPermanentStat' effect/state. | 10 |  |
-| [`StatusAlliesOnBattleStart`](#statusalliesonbattlestart) | Object | Applies or references the 'StatusAlliesOnBattleStart' effect/state. | 2 |  |
-| [`StatusOnEndMove`](#statusonendmove) | Object | Event Trigger: Applies statuses when this action occurs. | 6 |  |
-| `StripStatuses` | Integer | Applies or references the 'StripStatuses' effect/state. | 10 |  |
-| `TrinketPassiveMultiplierBonus` | Integer | Applies or references the 'TrinketPassiveMultiplierBonus' effect/state. | 2 |  |
-| [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 6 |  |
-| `BoostHeals` | Integer | Applies or references the 'BoostHeals' effect/state. | 2 |  |
-| `BoostWeaponDamage` | Object | Applies the 'BoostWeaponDamage' effect. | 10 |  |
-| `ChanceToRevive` | Integer / Object | Applies or references the 'ChanceToRevive' effect/state. | 2 |  |
-| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 |  |
-| `Creep` | Variable |  | 9 |  |
-| `DiminishingHealthRegen` | Integer | Applies or references the 'DiminishingHealthRegen' effect/state. | 9 |  |
-| [`FormChangeOnElementInfluence`](#formchangeonelementinfluence) | Object | Logic: Changes form when affected by an element. | 9 |  |
-| `LimitHeal` | Integer | Applies or references the 'LimitHeal' effect/state. | 2 |  |
-| `ManaCostReduction` | Integer | Applies or references the 'ManaCostReduction' effect/state. | 4 |  |
-| [`PassiveAtHealthThreshold`](#passiveathealththreshold) | Object | Applies or references the 'PassiveAtHealthThreshold' effect/state. | 4 |  |
-| `Plant` | Integer | Applies or references the 'Plant' effect/state. | 9 |  |
-| `RandomMutation` | Integer | Applies or references the 'RandomMutation' effect/state. | 9 |  |
-| [`Rot`](./Arrays.md#array-rot) | Array / Integer | Applies or references the 'Rot' effect/state. | 9 |  |
-| `SmallRockBehavior` | Integer / Object | AI Logic: Movement/interaction profile for small rocks. | 9 |  |
-| `SpellDamageUp` | Integer | Applies or references the 'SpellDamageUp' effect/state. | 9 |  |
-| [`StatusCollector`](#statuscollector) | Object | Passive: Gains benefits based on the number of statuses applied to them. | 9 |  |
-| [`StatusOnDie`](#statusondie) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
-| [`StatusOnTookDamageFromAbility`](#statusontookdamagefromability) | Object | Event Trigger: Applies statuses when taking damage from an ability. | 6 |  |
-| [`TransformInXTurns`](#transforminxturns) | Object | Logic: Forces a form change after X turns. | 9 |  |
-| [`TransformOnElementInfluence`](#transformonelementinfluence) | Object | Logic: Changes form when affected by elements. | 9 |  |
-| `AddKnockbackDamage` | Integer | Applies or references the 'AddKnockbackDamage' effect/state. | 8 |  |
-| [`AddStatusToWeapons`](#addstatustoweapons) | Object | Applies the 'AddStatusToWeapons' effect. | 8 |  |
-| [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 1 |  |
-| `DebuffImmunity` | Integer | Applies or references the 'DebuffImmunity' effect/state. | 2 |  |
-| `ExtraMovePoints` | Integer | Applies the 'ExtraMovePoints' effect. | 10 |  |
-| [`ForceSpecificInjury`](./Enums.md#enum-forcespecificinjury) | Enum | Applies the 'ForceSpecificInjury' effect. | 8 |  |
-| [`FormChangeOffMap`](#formchangeoffmap) | Object | Logic: Changes form when pushed off the map. | 8 |  |
-| [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum | Applies the 'FreePathfindElement' effect. | 6 |  |
-| `NonStackingDivineShield` | Integer | Applies or references the 'NonStackingDivineShield' effect/state. | 8 |  |
-| `NonStackingShield` | Integer | Examples: `12, 4, 8` | 8 |  |
-| [`PassiveIfAllArmorEmpty`](#passiveifallarmorempty) | Object | Applies the 'PassiveIfAllArmorEmpty' effect. | 8 |  |
-| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | Applies or references the 'RandomizeAIWeightsEachTurn' effect/state. | 8 |  |
-| [`RandomStatusFromPool`](#randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 8 |  |
-| [`SecurityBotProtect`](#securitybotprotect) | Object | AI Logic: Guarding behavior for Security Bot units. | 2 |  |
-| `SetSpellCosts` | Integer | Applies the 'SetSpellCosts' effect. | 2 |  |
-| [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum | Examples: `CharmedKitten, CharmedFly` | 14 |  |
-| [`StatusAlliesOnDeath`](#statusalliesondeath) | Object | Event Trigger: Applies nested statuses to allies on death. | 8 |  |
-| [`StatusEachRoundBegin`](#statuseachroundbegin) | Object | Examples: `{ ... }` | 8 |  |
-| [`StatusEveryXSpellCasts`](#statuseveryxspellcasts) | Object | Applies or references the 'StatusEveryXSpellCasts' effect/state. | 8 |  |
-| [`StatusIfUnusedMovePoints`](#statusifunusedmovepoints) | Object | Event Trigger: Applies nested statuses to if unused move points. | 6 |  |
-| [`StatusOnCastSpell`](#statusoncastspell) | Object | Event Trigger: Applies nested statuses when cast spell. | 8 |  |
-| [`StatusOnCrit`](#statusoncrit) | Object | Event Trigger: Applies nested statuses when crit. | 10 |  |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
-| [`TileTrail`](./Enums.md#enum-tiletrail) | Enum | Applies or references the 'TileTrail' effect/state. | 4 |  |
-| `AbilityEnabledOncePerFightAtHealthThreshold` | Integer | Applies or references the 'AbilityEnabledOncePerFightAtHealthThreshold' effect/state. | 7 |  |
-| [`AbilityWhenBuddyDies`](./Enums.md#enum-abilitywhenbuddydies) | Enum | Applies or references the 'AbilityWhenBuddyDies' effect/state. | 7 |  |
-| [`AddTemporaryEffectsToBasicAttack`](#addtemporaryeffectstobasicattack) | Object | Applies the 'AddTemporaryEffectsToBasicAttack' effect. | 6 |  |
-| `BlastResistance` | Integer | Applies the 'BlastResistance' effect. | 6 |  |
-| [`BrittleDuringElement`](./Enums.md#enum-brittleduringelement) | Enum | Applies or references the 'BrittleDuringElement' effect/state. | 7 |  |
-| [`ChanceToSpitOnDamage`](#chancetospitondamage) | Object | Reaction: Probability to use a spit counter-attack when damaged. | 7 |  |
-| `CharismaUp` | Enum / Integer | Applies or references the 'CharismaUp' effect/state. | 7 |  |
-| [`ClassManaCostReduction`](#classmanacostreduction) | Object | Applies or references the 'ClassManaCostReduction' effect/state. | 4 |  |
-| [`DamageNeighborsOnEndMove`](#damageneighborsonendmove) | Object | Combat Trigger: Deals damage to neighbors on end move. | 7 |  |
-| [`DurabilityTransform`](#durabilitytransform) | Object | Applies or references the 'DurabilityTransform' effect/state. | 7 |  |
-| `GainCoinsRange` | Object | Grants the player a randomized amount of coins within a min/max range. | 7 |  |
-| `IncreaseExplosionSize` | Integer | Applies or references the 'IncreaseExplosionSize' effect/state. | 2 |  |
-| `MinimumKnockbackFromAllDamage` | Integer | Applies or references the 'MinimumKnockbackFromAllDamage' effect/state. | 7 |  |
-| [`OverrideBasicAttack`](./Enums.md#enum-overridebasicattack) | Enum | Applies or references the 'OverrideBasicAttack' effect/state. | 7 |  |
-| `OverrideMaxHealth` | Integer | Applies or references the 'OverrideMaxHealth' effect/state. | 7 |  |
-| [`PassiveIfEmptyFace`](#passiveifemptyface) | Object | Applies the 'PassiveIfEmptyFace' effect. | 8 |  |
-| [`PassiveIfEmptyHead`](#passiveifemptyhead) | Object | Applies the 'PassiveIfEmptyHead' effect. | 8 |  |
-| [`PassiveIfEmptyNeck`](#passiveifemptyneck) | Object | Applies the 'PassiveIfEmptyNeck' effect. | 8 |  |
-| [`PassiveIfStrAuxEquals`](#passiveifstrauxequals) | Object | Applies or references the 'PassiveIfStrAuxEquals' effect/state. | 7 |  |
-| [`PassiveWhenOnTile`](#passivewhenontile) | Object | State Trigger: Grants passives when this condition is met. | 7 |  |
-| [`SetFragileImmune`](./Enums.md#enum-setfragileimmune) | String | Applies or references the 'SetFragileImmune' effect/state. | 7 |  |
-| [`StatusOnUseAbilityWithTag`](#statusonuseabilitywithtag) | Object | Event Trigger: Applies nested statuses when use ability with tag. | 8 |  |
-| [`Webbed`](./Arrays.md#array-webbed) | Integer | Applies or references the 'Webbed' effect/state. | 7 |  |
-| `XIsFreeArmorSlots` | Integer | Applies or references the 'XIsFreeArmorSlots' effect/state. | 7 |  |
-| `AbilityEnabledPercentEachTurn` | Integer | Applies or references the 'AbilityEnabledPercentEachTurn' effect/state. | 6 |  |
-| `AddDamage` | Integer | Applies or references the 'AddDamage' effect/state. | 6 |  |
-| [`AddHiddenTag`](./Enums.md#enum-addhiddentag) | Enum | Applies or references the 'AddHiddenTag' effect/state. | 2 |  |
-| `AddStartingMana` | Number | Applies or references the 'AddStartingMana' effect/state. | 2 |  |
-| [`AddStatusToElementAbilities`](#addstatustoelementabilities) | Object | Applies the 'AddStatusToElementAbilities' effect. | 6 |  |
-| [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 4 |  |
-| [`BackstabCritChance`](./Enums.md#enum-backstabcritchance) | Float | Applies the 'BackstabCritChance' effect. | 2 |  |
-| `BasicAttackDamageMultiplier` | Integer | Applies the 'BasicAttackDamageMultiplier' effect. | 6 |  |
-| [`CaveFamilyEnrage`](#cavefamilyenrage) | Object | AI Trigger: Enrage logic triggered when a cave family member is killed. | 6 |  |
-| [`ChanceToBackflip`](#chancetobackflip) | Object | Applies or references the 'ChanceToBackflip' effect/state. | 4 |  |
-| `Conditional_BadRoll` | Object | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 6 |  |
-| [`CureDisease`](#curedisease) | Object | Applies the 'CureDisease' effect. | 6 |  |
-| [`DelayedAutoRevive`](#delayedautorevive) | Object | Applies or references the 'DelayedAutoRevive' effect/state. | 6 |  |
-| [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum | Applies or references the 'Divide4OnDeath' effect/state. | 6 |  |
-| `FaceShield` | Integer | Applies or references the 'FaceShield' effect/state. | 2 |  |
-| [`FormChangeWhilePrimingAbility`](#formchangewhileprimingability) | Object | Logic: Changes form while preparing/priming a specific ability. | 6 |  |
-| `FreeFirstCast` | Integer | Applies or references the 'FreeFirstCast' effect/state. | 6 |  |
-| `FreezePiercing` | Integer | Applies the 'FreezePiercing' effect. | 4 |  |
-| [`ItemAuxTransform`](#itemauxtransform) | Object | Applies or references the 'ItemAuxTransform' effect/state. | 6 |  |
-| `KaijuKnockbackImmune` | Integer | Applies or references the 'KaijuKnockbackImmune' effect/state. | 6 |  |
-| [`LevelUpClassOverride`](./Enums.md#enum-levelupclassoverride) | Enum | Applies the 'LevelUpClassOverride' effect. | 4 |  |
-| [`ManaCostReductionTagged`](#manacostreductiontagged) | Object | Applies the 'ManaCostReductionTagged' effect. | 8 |  |
-| [`PassiveWhileHasStatus`](#passivewhilehasstatus) | Object | Passive: Activates only while the character has the specified status. | 2 |  |
-| `PermanentConstitution` | Integer | Applies or references the 'PermanentConstitution' effect/state. | 6 |  |
-| [`ReplaceBasicAttackWhenCastable`](./Enums.md#enum-replacebasicattackwhencastable) | Enum | Applies the 'ReplaceBasicAttackWhenCastable' effect. | 6 |  |
-| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Object | Throws coins out into the level randomly. | 6 |  |
-| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | String | Applies or references the 'SetBrittleImmune' effect/state. | 6 |  |
-| [`SpawnObjectOnPopCorpse`](./Enums.md#enum-spawnobjectonpopcorpse) | Enum / Object | Applies or references the 'SpawnObjectOnPopCorpse' effect/state. | 2 |  |
-| [`StatusOnAllyCatDeath`](#statusonallycatdeath) | Object | Event Trigger: Applies nested statuses when ally cat death. | 4 |  |
-| [`StatusOnGainCoins`](#statusongaincoins) | Object | Event Trigger: Applies nested statuses when gain coins. | 4 |  |
-| [`StatusOnStanceSwitch`](#statusonstanceswitch) | Object | Event Trigger: Applies nested statuses when stance switch. | 6 |  |
-| `StunImmunity` | Integer / Object | Passive: Prevents Stun from being applied. | 6 |  |
-| [`TagGreed`](./Enums.md#enum-taggreed) | Enum | Applies or references the 'TagGreed' effect/state. | 6 |  |
-| `TrinketActiveEffectsMultiplierBonus` | Integer | Applies or references the 'TrinketActiveEffectsMultiplierBonus' effect/state. | 2 |  |
-| [`AbilityWhenTaggedCharacterMovesNear`](#abilitywhentaggedcharactermovesnear) | Object | AI Trigger: Executes an ability when a character with a specific tag moves adjacent. | 4 |  |
-| [`AddPassivesToCharmed`](#addpassivestocharmed) | Object | Applies the 'AddPassivesToCharmed' effect. | 4 |  |
-| `ally_chance` | Integer | Examples: `15, 100` | 5 |  |
-| `AmplifyKnockback` | Integer | Applies the 'AmplifyKnockback' effect. | 4 |  |
-| `Angel` | Integer | Applies or references the 'Angel' effect/state. | 5 |  |
-| `BasicAttackAOEBonus` | Integer | Applies the 'BasicAttackAOEBonus' effect. | 6 |  |
-| [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum | Examples: `food, catnip` | 8 |  |
-| [`CatchProjectiles`](#catchprojectiles) | Object | Applies or references the 'CatchProjectiles' effect/state. | 2 |  |
-| [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 5 |  |
-| [`Colorless`](./Arrays.md#array-colorless) | Object | Applies or references the 'Colorless' effect/state. | 140 |  |
-| `DamageOrHealConditionally` | Integer | Applies or references the 'DamageOrHealConditionally' effect/state. | 5 |  |
-| [`DisableAbilitiesWithTag`](./Enums.md#enum-disableabilitieswithtag) | Enum | Examples: `musical, consumable` | 8 |  |
-| [`ElementalManaCostReduction`](#elementalmanacostreduction) | Object | Applies the 'ElementalManaCostReduction' effect. | 4 |  |
-| [`ExtraStatusWhenDealingDamage`](#extrastatuswhendealingdamage) | Object | Applies or references the 'ExtraStatusWhenDealingDamage' effect/state. | 2 |  |
-| `Food` | Integer / Object | Applies or references the 'Food' effect/state. | 11 |  |
-| `HeadArmorPassiveMultiplierBonus` | Integer | Applies or references the 'HeadArmorPassiveMultiplierBonus' effect/state. | 5 |  |
-| `MakeSpellsRequireCharge` | Integer | Applies the 'MakeSpellsRequireCharge' effect. | 2 |  |
-| [`MoveTowardsKillers`](./Enums.md#enum-movetowardskillers) | Enum / Object | AI Movement: Seeks out entities that have recently killed an ally. | 5 |  |
-| `NoHealthRegen` | Number | Applies or references the 'NoHealthRegen' effect/state. | 5 |  |
-| [`PassiveWhenAtFullMana`](#passivewhenatfullmana) | Object | State Trigger: Grants nested passives when at full mana. | 6 |  |
-| `RepairTrinket` | Integer | Applies or references the 'RepairTrinket' effect/state. | 5 |  |
-| `SharkySmellsBlood` | Integer | Applies or references the 'SharkySmellsBlood' effect/state. | 5 |  |
-| [`SpawnCoinAnywhere`](./Arrays.md#array-spawncoinanywhere) | Array / Integer | Applies or references the 'SpawnCoinAnywhere' effect/state. | 5 |  |
-| `StartOffMap` | Integer | Applies or references the 'StartOffMap' effect/state. | 5 |  |
-| [`StatusGroup`](#statusgroup) | Object | Groups multiple status effects together for batch application. | 5 |  |
-| [`StatusKilledCharacters`](#statuskilledcharacters) | Object | Event Trigger: Applies nested statuses to killed characters. | 6 |  |
-| [`StatusOnEatFood`](#statusoneatfood) | Object | Event Trigger: Applies nested statuses when eat food. | 4 |  |
-| [`StatusOnOverHealed`](#statusonoverhealed) | Object | Event Trigger: Applies nested statuses when over healed. | 4 |  |
-| [`StatusOnPopCorpse`](#statusonpopcorpse) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
-| [`StatusOnTurnEndIfCastNSpells`](#statusonturnendifcastnspells) | Object | Event Trigger: Applies nested statuses when turn end if cast n spells. | 4 |  |
-| [`StatusOnTurnEndIfDidntCastAbilityTypes`](#statusonturnendifdidntcastabilitytypes) | Object | Event Trigger: Applies statuses when this action occurs. | 5 |  |
-| [`Tangled`](./Arrays.md#array-tangled) | Array / Integer / Object | Applies a tangled/ensnared status effect, often modifying visual sprites. | 5 |  |
-| [`TransformItemOnElementInfluence`](#transformitemonelementinfluence) | Object | Applies or references the 'TransformItemOnElementInfluence' effect/state. | 5 |  |
-| [`TransformOnDeathImmediately`](./Enums.md#enum-transformondeathimmediately) | Enum / Object | Logic: Bypasses death sequence to instantly assume a new form. | 5 |  |
-| [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum | Applies or references the 'XIsLivingAlliesWithTag' effect/state. | 5 |  |
 | [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | Applies or references the 'AbilityAfterEnemyCastSpell_Stackable' effect/state. | 4 |  |
-| `AddDamageToBasicAttack` | String | Applies the 'AddDamageToBasicAttack' effect. | 4 |  |
-| `AddMeleeKnockback` | Integer | Applies or references the 'AddMeleeKnockback' effect/state. | 4 |  |
-| `AddSpeed` | Integer | Applies the 'AddSpeed' effect. | 4 |  |
-| [`AddStatusToExplosions`](#addstatustoexplosions) | Object | Applies the 'AddStatusToExplosions' effect. | 2 |  |
-| [`AddStatusToSpells`](#addstatustospells) | Object | Modifier: Injects a status effect into a specific action. | 2 |  |
-| `AddUnfilledMaxHealth` | Integer | Applies the 'AddUnfilledMaxHealth' effect. | 2 |  |
-| [`AllyBonusAbilityAura`](./Enums.md#enum-allybonusabilityaura) | Enum | Applies the 'AllyBonusAbilityAura' effect. | 2 |  |
-| `AllyDamageReduction` | Integer | Applies the 'AllyDamageReduction' effect. | 4 |  |
-| [`AllyManaRegenAura`](#allymanaregenaura) | Object | Applies the 'AllyManaRegenAura' effect. | 4 |  |
-| [`ApplyStatusesToRandomEnemiesEachTurn`](#applystatusestorandomenemieseachturn) | Object | Applies or references the 'ApplyStatusesToRandomEnemiesEachTurn' effect/state. | 2 |  |
-| `AutoEquipConsumables` | Integer | Applies or references the 'AutoEquipConsumables' effect/state. | 2 |  |
-| `BackstabAllDirections` | Integer | Applies or references the 'BackstabAllDirections' effect/state. | 4 |  |
-| [`BaitAura`](#baitaura) | Object | Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots). | 4 |  |
-| `BeefyCharmedLeech` | Object |  | 4 |  |
-| [`Bird`](./Enums.md#enum-bird) | Enum / Object | Applies or references the 'Bird' effect/state. | 6 |  |
-| `BreakAtAux` | Integer | Applies or references the 'BreakAtAux' effect/state. | 4 |  |
-| `BuffImmunity` | Integer / Object | Applies or references the 'BuffImmunity' effect/state. | 4 |  |
-| `bug` | Variable |  | 4 |  |
-| `CatchBoomerang` | Integer | Applies or references the 'CatchBoomerang' effect/state. | 4 |  |
-| `ChanceToBlockAndCounter` | Integer / Object | Applies or references the 'ChanceToBlockAndCounter' effect/state. | 2 |  |
-| [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | Applies or references the 'ChangeTileOnPop' effect/state. | 4 |  |
-| `Conditional_PartyMember` | Object | Conditional constraint. Nested properties only trigger if this is true. | 4 |  |
-| `CopyBasicAttackEffects` | Integer | Applies or references the 'CopyBasicAttackEffects' effect/state. | 4 |  |
-| `CountAsCorpse` | Integer | Applies or references the 'CountAsCorpse' effect/state. | 4 |  |
-| `CreepTile` | Variable |  | 4 |  |
-| [`DamageNeighborsAfterMove`](#damageneighborsaftermove) | Object | Examples: `{ ... }` | 2 |  |
-| [`DisableAbilities`](./Enums.md#enum-disableabilities) | Enum | Applies or references the 'DisableAbilities' effect/state. | 4 |  |
-| [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum | Applies or references the 'DisplayDangerAOE' effect/state. | 4 |  |
-| [`DistanceBonusDamage`](#distancebonusdamage) | Object | Applies the 'DistanceBonusDamage' effect. | 4 |  |
-| [`DownRankAIIfWeaponUsable`](./Enums.md#enum-downrankaiifweaponusable) | Float | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. | 4 |  |
-| [`EMP`](#emp) | Object | Applies the 'EMP' effect. | 2 |  |
-| `equal` | Variable |  | 4 |  |
-| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 4 |  |
-| `ExtraDispersedTurns` | Integer | Applies or references the 'ExtraDispersedTurns' effect/state. | 4 |  |
-| `FaceArmorPassiveMultiplierBonus` | Integer | Applies or references the 'FaceArmorPassiveMultiplierBonus' effect/state. | 4 |  |
-| `FlowersOnEndTurn` | Integer | Applies or references the 'FlowersOnEndTurn' effect/state. | 2 |  |
-| [`FragileDuringElement`](./Enums.md#enum-fragileduringelement) | Enum | Applies or references the 'FragileDuringElement' effect/state. | 4 |  |
-| [`GroundFlopper`](./Enums.md#enum-groundflopper) | Enum | Applies or references the 'GroundFlopper' effect/state. | 4 |  |
-| `IncreaseSpellRange` | Integer | Applies or references the 'IncreaseSpellRange' effect/state. | 2 |  |
-| [`KillsToMeat`](./Enums.md#enum-killstomeat) | Enum | Applies or references the 'KillsToMeat' effect/state. | 2 |  |
-| [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum | Applies or references the 'LoopingSoundWhileAlive' effect/state. | 4 |  |
-| `Maggot` | Object |  | 15 |  |
-| `MoveOne` | Object |  | 2 |  |
-| `PartialCleanse` | Integer | Applies or references the 'PartialCleanse' effect/state. | 4 |  |
-| [`PassiveAfterXKills`](#passiveafterxkills) | Object | Applies or references the 'PassiveAfterXKills' effect/state. | 2 |  |
-| [`PassiveWhenDead`](#passivewhendead) | Object | State Trigger: Grants passives when this condition is met. | 4 |  |
-| `PermanentIntelligence` | Integer | Applies or references the 'PermanentIntelligence' effect/state. | 4 |  |
-| [`PoopWhenHit`](./Enums.md#enum-poopwhenhit) | Object | Examples: `Poop` | 4 |  |
-| `PrioritizeFarAwayTargets` | Integer | Applies or references the 'PrioritizeFarAwayTargets' effect/state. | 4 |  |
-| [`ProtectTargetedAllies`](./Enums.md#enum-protecttargetedallies) | Object | AI Logic: Navigates to intercept attacks directed at allies. | 2 |  |
-| [`RandomPassivePool`](#randompassivepool) | Object | Logic: Grants a random passive from the specified pool upon spawning. | 4 |  |
-| [`RandomSeededStatModifier`](./Arrays.md#array-randomseededstatmodifier) | Array | Applies or references the 'RandomSeededStatModifier' effect/state. | 4 |  |
-| `RangedTrueShot` | Integer | Applies or references the 'RangedTrueShot' effect/state. | 2 |  |
-| `Reflect` | Integer / Object | Applies or references the 'Reflect' effect/state. | 2 |  |
-| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | Applies or references the 'RepairWeapon' effect/state. | 4 |  |
-| [`ReplaceSpell`](#replacespell) | Object | Replaces a spell in the character's hand/deck with a different one. | 4 |  |
-| `ShowHiddenThings` | Integer | Examples: `1` | 6 |  |
-| [`SpawnCatCopyOnBattleStart`](#spawncatcopyonbattlestart) | Object | Applies the 'SpawnCatCopyOnBattleStart' effect. | 4 |  |
-| [`StatusAfterCastSpell`](#statusaftercastspell) | Object | Applies or references the 'StatusAfterCastSpell' effect/state. | 2 |  |
-| [`StatusAlliesOnKill`](#statusalliesonkill) | Object | Event Trigger: Applies nested statuses to allies on kill. | 2 |  |
-| [`StatusOnBreakItem`](#statusonbreakitem) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
-| [`StatusOnHealed`](#statusonhealed) | Object | Event Trigger: Applies nested statuses when healed. | 4 |  |
-| [`StatusOnTakeHealthOrShieldDamage`](#statusontakehealthorshielddamage) | Object | Event Trigger: Applies statuses when this action occurs. | 4 |  |
-| [`StatusOnTurnEndIfManaExact`](#statusonturnendifmanaexact) | Object | Event Trigger: Applies nested statuses when turn end if mana exact. | 4 |  |
-| [`StatusOnTurnEndIfManaOrHealthExact`](#statusonturnendifmanaorhealthexact) | Object | Event Trigger: Applies nested statuses when turn end if mana or health exact. | 4 |  |
-| [`StatusRandomEnemiesOnBattleStart`](#statusrandomenemiesonbattlestart) | Object | Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state. | 4 |  |
-| `TauntAlways` | Integer | Applies the 'TauntAlways' effect. | 4 |  |
-| [`TempPassiveWhileHasStatus`](#temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 4 |  |
-| [`Trapper`](#trapper) | Object | Character Form: Behavior and stats for the 'Trapper' state. | 4 |  |
-| `UncappedHP` | Integer | Applies the 'UncappedHP' effect. | 2 |  |
-| `WeaponsDontLoseDurability` | Integer | Applies or references the 'WeaponsDontLoseDurability' effect/state. | 2 |  |
-| [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | Applies or references the 'WeremanTransformationReceiver' effect/state. | 4 |  |
-| `AbilityEnabledOncePerRound` | Integer | Applies or references the 'AbilityEnabledOncePerRound' effect/state. | 3 |  |
-| [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Applies or references the 'AbilityEnableIfConsumedCharacterHasTag' effect/state. | 3 |  |
-| `AbilityInheritsWeaponEffects` | Integer | Applies or references the 'AbilityInheritsWeaponEffects' effect/state. | 3 |  |
-| `AddEndOfCombatRegen` | Integer | Applies or references the 'AddEndOfCombatRegen' effect/state. | 3 |  |
-| [`AddSelfStatusToWeapons`](#addselfstatustoweapons) | Object | Applies the 'AddSelfStatusToWeapons' effect. | 2 |  |
-| [`AddStatusToKnockbackDamage`](#addstatustoknockbackdamage) | Object | Modifier: Injects a status effect into a specific action. | 2 |  |
-| [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 2 |  |
-| `AggroTargetIsCurrentTurn` | Integer | Applies or references the 'AggroTargetIsCurrentTurn' effect/state. | 3 |  |
-| `AllStatsUpPerDisorder` | Integer | Applies or references the 'AllStatsUpPerDisorder' effect/state. | 3 |  |
-| `any` | Variable |  | 4 |  |
-| [`AutocastEachTurnBegin`](./Enums.md#enum-autocasteachturnbegin) | Enum | Applies the 'AutocastEachTurnBegin' effect. | 2 |  |
-| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Float | Applies or references the 'BaseStatMultiply' effect/state. | 3 |  |
-| [`BasicAttackCritChance`](./Enums.md#enum-basicattackcritchance) | Float | Applies the 'BasicAttackCritChance' effect. | 3 |  |
-| `bishop_hat` | Variable |  | 3 |  |
-| `BoneArmorPassive` | Integer | Applies or references the 'BoneArmorPassive' effect/state. | 3 |  |
-| [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Applies or references the 'BonusTurnPattern' effect/state. | 3 |  |
-| [`BouncyProjectiles`](#bouncyprojectiles) | Object | Applies the 'BouncyProjectiles' effect. | 2 |  |
-| `Bounty` | Integer | Applies the 'Bounty' effect. | 3 |  |
-| [`BreakOnElement`](./Enums.md#enum-breakonelement) | Enum | Applies or references the 'BreakOnElement' effect/state. | 3 |  |
-| [`CanMutateTo`](./Enums.md#enum-canmutateto) | Array / Enum | Applies or references the 'CanMutateTo' effect/state. | 3 |  |
-| `CanRemoveCursedItems` | Integer | Examples: `1` | 2 |  |
-| `CantCatchDiseases` | Integer | Applies or references the 'CantCatchDiseases' effect/state. | 3 |  |
-| `CantSpreadDiseases` | Integer | Applies or references the 'CantSpreadDiseases' effect/state. | 3 |  |
-| `CCImmunity` | Integer | Applies the 'CCImmunity' effect. | 2 |  |
-| `ChanceToBlock` | Integer | Applies or references the 'ChanceToBlock' effect/state. | 3 |  |
-| `CharmedFly` | Object |  | 8 |  |
-| `CharmedTinySpider` | Object |  | 4 |  |
-| `CharmedTinyTumor` | Object |  | 3 |  |
-| [`CobraReflex`](./Enums.md#enum-cobrareflex) | Enum | Applies the 'CobraReflex' effect. | 4 |  |
-| `Coin` | Integer / Object | Applies or references the 'Coin' effect/state. | 18 |  |
-| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional object: Executes nested logic only if the target is/has Adjacent. | 3 |  |
-| `Conditional_RandomChance` | Object | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 3 |  |
-| `Conditional_Shielded` | Object | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 3 |  |
-| `ConsumableEffectsMultiplierBonus` | Integer | Applies the 'ConsumableEffectsMultiplierBonus' effect. | 2 |  |
-| `ConsumablesInfiniteRange` | Integer | Applies the 'ConsumablesInfiniteRange' effect. | 4 |  |
-| `CookedChickenLeg` | Object |  | 3 |  |
-| `CopyPassiveSlot` | Integer | Applies or references the 'CopyPassiveSlot' effect/state. | 3 |  |
-| `CreateGlobalModifiers` | Object | Generates global map or encounter rules/modifiers. | 3 |  |
-| `crow` | Variable |  | 4 |  |
-| [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | Applies or references the 'DigestDeadBodies' effect/state. | 3 |  |
-| `DoubleCastWeapons` | Integer | Applies the 'DoubleCastWeapons' effect. | 2 |  |
-| [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Applies or references the 'DropAsFamiliarOnArmorBreak' effect/state. | 3 |  |
-| [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies or references the 'EquipPermanentItem' effect/state. | 3 |  |
-| [`Eternal`](#eternal) | Object | Applies the 'Eternal' effect. | 2 |  |
-| `ExtraBasicMoves_Status` | Integer | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 3 |  |
-| `Fights` | Number | Applies or references the 'Fights' effect/state. | 4 |  |
-| `FlyDamageIncrease` | Object | Applies the 'FlyDamageIncrease' effect. | 2 |  |
-| [`FormChangeHealthThreshold`](#formchangehealththreshold) | Object | Logic: Changes form when health crosses a threshold. | 3 |  |
-| `GainExtraShield` | Integer | Applies the 'GainExtraShield' effect. | 2 |  |
-| `Grass` | Object | Examples: `{ ... }` | 2 |  |
-| [`Holy`](./Enums.md#enum-holy) | Enum / Object | `MegaGuppy_TransformHoly` | 3 |  |
-| `HouseFoodRequirementMultiplier` | Integer | Examples: `0` | 4 |  |
-| `IllusionTint` | Integer | Applies or references the 'IllusionTint' effect/state. | 3 |  |
-| [`IncAuxCounterClamped`](#incauxcounterclamped) | Object | Increments a generic auxiliary counter on the character, capped by a maximum value. | 3 |  |
-| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 |  |
-| [`InfiniteRebirth`](#infiniterebirth) | Object | Applies the 'InfiniteRebirth' effect. | 2 |  |
-| [`Jester`](./Arrays.md#array-jester) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_JESTER_1 CAT_VS_BOSS_QUOTES_JESTER_2..., [ CAT_RETURN_EA...` | 32 |  |
-| [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Integer / Object | Forces the target to drop coins. | 3 |  |
-| `Lava_Distortion` | Variable |  | 3 |  |
-| `Lifesteal` | Integer | Applies or references the 'Lifesteal' effect/state. | 3 |  |
-| [`ManaPickup`](#manapickup) | Object | Pickup Logic: Defines what happens when a mana item is collected. | 3 |  |
-| `MimicSpawnerAttacks` | Integer | Applies or references the 'MimicSpawnerAttacks' effect/state. | 3 |  |
-| `MinimumKnockbackFromPhysicalAttacks` | Integer | Applies or references the 'MinimumKnockbackFromPhysicalAttacks' effect/state. | 3 |  |
-| `MoonHeadFinisherEnabler` | Integer | Applies or references the 'MoonHeadFinisherEnabler' effect/state. | 3 |  |
-| [`MoveAndUseAbilityEachTurnBeginIfPossible`](./Enums.md#enum-moveanduseabilityeachturnbeginifpossible) | Enum | Applies the 'MoveAndUseAbilityEachTurnBeginIfPossible' effect. | 3 |  |
-| [`MoveAwayFromDamageSource`](./Enums.md#enum-moveawayfromdamagesource) | Object | Examples: `BasicJump` | 2 |  |
-| `must_do_damage` | Boolean | `true` | 3 |  |
-| [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum | Applies or references the 'MutateViaAbility' effect/state. | 3 |  |
-| `NeckArmorPassiveMultiplierBonus` | Integer | Applies or references the 'NeckArmorPassiveMultiplierBonus' effect/state. | 3 |  |
-| [`PassiveWhileInMonkMeleeStance`](#passivewhileinmonkmeleestance) | Object | Applies the 'PassiveWhileInMonkMeleeStance' effect. | 2 |  |
-| `PermanentDexterity` | Integer | Applies or references the 'PermanentDexterity' effect/state. | 3 |  |
-| `PermanentSpeed` | Integer | Applies or references the 'PermanentSpeed' effect/state. | 3 |  |
-| `Piercing` | Integer | Applies the 'Piercing' effect. | 3 |  |
-| `PrioritizeHitDifferentTargets` | Integer | Applies or references the 'PrioritizeHitDifferentTargets' effect/state. | 3 |  |
-| `RangeUp` | Integer | Applies or references the 'RangeUp' effect/state. | 3 |  |
-| `rat` | Variable |  | 17 |  |
-| `RemoveLineOfSightRestrictions` | Integer | Applies the 'RemoveLineOfSightRestrictions' effect. | 2 |  |
-| [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum | Examples: `BasicJump, BasicDig` | 6 |  |
-| `robot` | Variable |  | 2 |  |
-| `RockyArmorPassive` | Integer | Applies or references the 'RockyArmorPassive' effect/state. | 3 |  |
-| `RunInXTurns` | Integer | Applies or references the 'RunInXTurns' effect/state. | 3 |  |
-| [`ScaledStatusOnSpendMana`](#scaledstatusonspendmana) | Object | Applies the 'ScaledStatusOnSpendMana' effect. | 2 |  |
-| [`SetDefaultFacePassive`](./Enums.md#enum-setdefaultfacepassive) | Enum | Applies or references the 'SetDefaultFacePassive' effect/state. | 3 |  |
-| `SharePickups` | Object | Applies the 'SharePickups' effect. | 2 |  |
-| `SharePickupsWithSpawner` | Integer | Applies or references the 'SharePickupsWithSpawner' effect/state. | 3 |  |
-| `SpawnCreepOnHit` | Integer | Applies or references the 'SpawnCreepOnHit' effect/state. | 3 |  |
-| [`StackingFlowerTrail`](#stackingflowertrail) | Object | Applies or references the 'StackingFlowerTrail' effect/state. | 3 |  |
-| [`StatusAllCharactersOnSpawn`](#statusallcharactersonspawn) | Object | Applies or references the 'StatusAllCharactersOnSpawn' effect/state. | 3 |  |
-| `StatusCarefulness` | Integer | Applies or references the 'StatusCarefulness' effect/state. | 2 |  |
-| [`StatusEachRoundEnd`](#statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 2 |  |
-| [`StatusEachTurnEndForEachTurn`](#statuseachturnendforeachturn) | Object | Event Trigger: Applies nested statuses to each turn end for each turn. | 2 |  |
-| [`StatusKillers`](#statuskillers) | Object | Instantly kills the target if they possess the specified status effects. | 2 |  |
-| [`StatusOnCollectPickup`](#statusoncollectpickup) | Object | Event Trigger: Applies nested statuses when collect pickup. | 2 |  |
-| [`StatusOnPickupCoins`](#statusonpickupcoins) | Object | Event Trigger: Applies nested statuses when pickup coins. | 2 |  |
-| [`StatusOnUseBasicAttack`](#statusonusebasicattack) | Object | Event Trigger: Applies nested statuses when use basic attack. | 2 |  |
-| [`StatusWhenAllySpendsMana`](#statuswhenallyspendsmana) | Object | Event Trigger: Applies nested statuses to when ally spends mana. | 2 |  |
-| [`SupportFormChangeInsteadOfRun`](./Enums.md#enum-supportformchangeinsteadofrun) | Enum / Object | AI Logic: Forces a support unit to transform rather than flee. | 3 |  |
-| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 |  |
-| [`TakeBonusTurnWithAIControl`](#takebonusturnwithaicontrol) | Object | Grants the character an immediate extra turn, but forces the AI to control them during it. | 3 |  |
-| `ThornUpX` | Object |  | 3 |  |
-| [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | Applies or references the 'TileTrail_Ahead' effect/state. | 3 |  |
-| [`TowerDefenseReflex`](./Enums.md#enum-towerdefensereflex) | Enum | Applies the 'TowerDefenseReflex' effect. | 2 |  |
-| `TrueShot` | Integer | Applies or references the 'TrueShot' effect/state. | 3 |  |
-| `TVOff` | Object |  | 3 |  |
-| `UncappedMana` | Integer | Applies the 'UncappedMana' effect. | 4 |  |
-| `UpgradeSpawnedPickups` | Integer | Applies the 'UpgradeSpawnedPickups' effect. | 2 |  |
-| [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 3 |  |
-| `Vegan` | Integer | Examples: `1` | 4 |  |
-| `Water` | Object | Character Form: Behavior and stats for the \'Water\' state. | 5 |  |
-| `WeaponDamageMultiplierBonus` | Integer | Applies the 'WeaponDamageMultiplierBonus' effect. | 2 |  |
-| [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | Applies or references the 'XIsMultipliedPercentHealth' effect/state. | 3 |  |
-| [`AbilityEnabledIfHasStatus`](./Enums.md#enum-abilityenabledifhasstatus) | Enum | Applies or references the 'AbilityEnabledIfHasStatus' effect/state. | 2 |  |
-| [`AbilityOnRoundEnd`](#abilityonroundend) | Object | AI Trigger: Executes an ability at the end of the combat round. | 2 |  |
-| `AbsorbBuff` | Variable |  | 2 |  |
-| `AbsorbManaAura` | Integer | Applies the 'AbsorbManaAura' effect. | 2 |  |
-| [`AddPassivesToSummonAbilityMinions`](#addpassivestosummonabilityminions) | Object | Applies the 'AddPassivesToSummonAbilityMinions' effect. | 2 |  |
-| [`AddPassiveToSpawnedRocks`](#addpassivetospawnedrocks) | Object | Applies the 'AddPassiveToSpawnedRocks' effect. | 2 |  |
-| `AddSpellDamage` | Integer | Applies the 'AddSpellDamage' effect. | 2 |  |
-| [`AddStatusToAllDamageAbilities`](#addstatustoalldamageabilities) | Object | Applies the 'AddStatusToAllDamageAbilities' effect. | 4 |  |
-| [`AddStatusToBasicAttackWithCooldown`](#addstatustobasicattackwithcooldown) | Object | Applies the 'AddStatusToBasicAttackWithCooldown' effect. | 2 |  |
-| [`AddStatusToFirstBasicAttack`](#addstatustofirstbasicattack) | Object | Applies the 'AddStatusToFirstBasicAttack' effect. | 2 |  |
-| [`AddStatusToMeleeDamage`](#addstatustomeleedamage) | Object | Applies the 'AddStatusToMeleeDamage' effect. | 2 |  |
-| `AddWeaponScaling` | Integer | Applies the 'AddWeaponScaling' effect. | 2 |  |
-| [`AfterImage`](./Enums.md#enum-afterimage) | Object | Spawns a visual decoy or shade at the caster's previous location. | 2 |  |
-| `AggroTargetIsBuddy` | Integer | Applies or references the 'AggroTargetIsBuddy' effect/state. | 2 |  |
-| `ai` | Object | Core block defining the AI behavior logic and weights. | 928 |  |
-| `all_items` | Variable |  | 2 |  |
-| `AllDamageImmune_IncludingSpeculative` | Integer | Applies or references the 'AllDamageImmune_IncludingSpeculative' effect/state. | 2 |  |
-| `AllowPassTurn` | Integer | Applies the 'AllowPassTurn' effect. | 2 |  |
-| [`AllyDamageReaction`](./Enums.md#enum-allydamagereaction) | Enum | Applies the 'AllyDamageReaction' effect. | 2 |  |
-| [`AllyHealthRegenAura`](#allyhealthregenaura) | Object | Applies the 'AllyHealthRegenAura' effect. | 2 |  |
-| [`AllyMoveAbilityAura`](./Enums.md#enum-allymoveabilityaura) | Enum | Applies the 'AllyMoveAbilityAura' effect. | 2 |  |
-| `AllyMultiplyKnockbackDamage` | Integer | Applies the 'AllyMultiplyKnockbackDamage' effect. | 2 |  |
-| [`AlternateCraftingPools`](#alternatecraftingpools) | Object | Applies the 'AlternateCraftingPools' effect. | 2 |  |
-| `AlwaysHitDifferentTargets` | Integer | Applies or references the 'AlwaysHitDifferentTargets' effect/state. | 2 |  |
-| `AmplifyPositiveStatus` | Integer | Applies the 'AmplifyPositiveStatus' effect. | 2 |  |
-| [`ApplyStatusIfCrit`](#applystatusifcrit) | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 2 |  |
-| [`ArmorBreakOnHit`](#armorbreakonhit) | Object | Applies or references the 'ArmorBreakOnHit' effect/state. | 2 |  |
-| [`AutocastEachTurn`](./Enums.md#enum-autocasteachturn) | Enum | Applies the 'AutocastEachTurn' effect. | 2 |  |
-| `AutoCritLowDamage` | Integer | Applies the 'AutoCritLowDamage' effect. | 2 |  |
-| `BasicAttackCantMiss` | Integer | Examples: `1` | 2 |  |
-| `BasicAttackStatusCarefulness` | Integer | Applies the 'BasicAttackStatusCarefulness' effect. | 2 |  |
-| `BasicMonkMelee` | Object |  | 2 |  |
-| `BonusFoodEachBattle` | Integer | Applies the 'BonusFoodEachBattle' effect. | 2 |  |
-| [`BoobyTrapItems`](#boobytrapitems) | Object | Applies the 'BoobyTrapItems' effect. | 2 |  |
-| `BoomerCatExplode` | Object |  | 2 |  |
-| `BoostAllyStatsOnDeath` | Integer | Applies the 'BoostAllyStatsOnDeath' effect. | 2 |  |
-| `BraceForEachNeighboringEnemy` | Integer | Applies the 'BraceForEachNeighboringEnemy' effect. | 2 |  |
-| `BreakWhenNoShield` | Integer | Applies or references the 'BreakWhenNoShield' effect/state. | 2 |  |
-| [`BungaEntrance`](#bungaentrance) | Object | Animation/AI State: Bunga entering the arena. | 2 |  |
-| `BungaSwipe` | Object |  | 2 |  |
-| `CanLevelUpWhenDead` | Integer | Applies or references the 'CanLevelUpWhenDead' effect/state. | 2 |  |
-| `CanShield` | Integer | Applies or references the 'CanShield' effect/state. | 2 |  |
-| `CapDamageFromAllies` | Integer | Applies the 'CapDamageFromAllies' effect. | 2 |  |
-| `CapMovementAbilityRange` | Integer | Applies or references the 'CapMovementAbilityRange' effect/state. | 2 |  |
-| `CapTechSpent` | Integer | Applies the 'CapTechSpent' effect. | 2 |  |
-| [`CatAPultAnimation`](#catapultanimation) | Object | Applies the 'CatAPultAnimation' effect. | 2 |  |
-| `ChainKnockback` | Integer | Applies the 'ChainKnockback' effect. | 2 |  |
-| `ChanceToDisableActionsIfNotCharmed` | Integer | Applies or references the 'ChanceToDisableActionsIfNotCharmed' effect/state. | 2 |  |
-| `ChangeTauntPriority` | Integer | Applies the 'ChangeTauntPriority' effect. | 2 |  |
-| [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | Applies or references the 'ChangeTileOnDeath' effect/state. | 2 |  |
-| [`ChargeSpiritBombAura`](./Enums.md#enum-chargespiritbombaura) | Enum | Applies or references the 'ChargeSpiritBombAura' effect/state. | 2 |  |
-| `CharmAllFlies` | Integer | Applies the 'CharmAllFlies' effect. | 2 |  |
-| `CharmedFlySwarm` | Object |  | 2 |  |
-| [`CherubimReaction`](#cherubimreaction) | Object | Reaction: Custom reaction triggers for Cherubim enemies. | 2 |  |
-| `CoinsAddDamage` | Integer | Applies the 'CoinsAddDamage' effect. | 2 |  |
-| `CollectPickupsOnBattleEnd` | Integer | Applies the 'CollectPickupsOnBattleEnd' effect. | 2 |  |
-| `Conductor` | Object | Applies the 'Conductor' effect. | 2 |  |
-| `ConjureCastSpellsForAllies` | Integer | Applies the 'ConjureCastSpellsForAllies' effect. | 2 |  |
-| `consumable` | Boolean | `true` | 140 |  |
-| `CopyCatPassive_Initializer` | Integer | Applies or references the 'CopyCatPassive_Initializer' effect/state. | 2 |  |
-| `DamageEnemiesOnHeal` | Integer | Combat Trigger: Deals damage to enemies on heal. | 2 |  |
-| `DamageEnemiesOnKill` | Integer | Combat Trigger: Deals damage to enemies on kill. | 2 |  |
-| [`DamageNeighborTilesWhenCastSpell`](#damageneighbortileswhencastspell) | Object | Combat Trigger: Deals damage to neighbor tiles when cast spell. | 2 |  |
-| [`DamageReductionAura`](#damagereductionaura) | Object | Combat Trigger: Deals damage to reduction aura. | 2 |  |
-| `DeathChill` | Integer | Applies the 'DeathChill' effect. | 2 |  |
-| `DejaVu` | Integer | Applies the 'DejaVu' effect. | 2 |  |
-| `DemonicGlyph_Bite` | Integer | Applies or references the 'DemonicGlyph_Bite' effect/state. | 2 |  |
-| `DemonicGlyph_Summon` | Integer | Applies or references the 'DemonicGlyph_Summon' effect/state. | 2 |  |
-| `DemonicGlyphFrames` | Integer | Applies or references the 'DemonicGlyphFrames' effect/state. | 2 |  |
-| [`DiesToElement`](./Enums.md#enum-diestoelement) | Enum / Object | Vulnerability: Character dies instantly if hit by this element. | 2 |  |
-| `DirtyClaws` | Integer | Applies the 'DirtyClaws' effect. | 2 |  |
-| `DisablePassiveSlot` | Integer | Applies or references the 'DisablePassiveSlot' effect/state. | 2 |  |
-| `DissuadeInstakills` | Integer | Applies or references the 'DissuadeInstakills' effect/state. | 2 |  |
-| `DrinkWater` | Integer | Applies or references the 'DrinkWater' effect/state. | 2 |  |
-| `DukeOfFlies` | Integer | Applies the 'DukeOfFlies' effect. | 2 |  |
-| [`Dyslexia`](./Arrays.md#array-dyslexia) | Array | Examples: `[ 6 9 ], [ 3 5 ]` | 2 |  |
-| `Earth` | Object | Examples: `{ ... }` | 2 |  |
-| [`ElementalAttunement`](#elementalattunement) | Object | Applies the 'ElementalAttunement' effect. | 2 |  |
-| `Empath` | Integer | Applies the 'Empath' effect. | 2 |  |
-| `EmptyMana` | Integer | Applies the 'EmptyMana' effect. | 2 |  |
-| `EnemiesGetPickupsKnockedOut` | Integer | Applies the 'EnemiesGetPickupsKnockedOut' effect. | 2 |  |
-| `EnergyStorm` | Integer | Applies the 'EnergyStorm' effect. | 2 |  |
-| `EquipmentPassiveMultiplierBonus` | Integer | Applies the 'EquipmentPassiveMultiplierBonus' effect. | 2 |  |
-| `EquipmentSetBonusBonus` | Integer | Applies the 'EquipmentSetBonusBonus' effect. | 2 |  |
-| [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum | Examples: `pills` | 4 |  |
-| [`EscapeSequence`](#escapesequence) | Object | Applies the 'EscapeSequence' effect. | 2 |  |
-| `euphoric` | Object | Examples: `{ ... }` | 1 |  |
-| `ExpireOnSpawnerTurnEnd` | Integer | Applies or references the 'ExpireOnSpawnerTurnEnd' effect/state. | 2 |  |
-| `ExplodeOverkilledEnemies` | Integer | Applies the 'ExplodeOverkilledEnemies' effect. | 2 |  |
-| `ExplosionImmunity` | Integer | Applies or references the 'ExplosionImmunity' effect/state. | 2 |  |
-| `ExtraTrinketUses` | Integer | Applies or references the 'ExtraTrinketUses' effect/state. | 2 |  |
-| `FaceLastDamage` | Integer / Object | Reaction: Forces the character to face towards the last damage source. | 2 |  |
-| [`FamiliarBonusAbility`](./Enums.md#enum-familiarbonusability) | Enum | Applies the 'FamiliarBonusAbility' effect. | 2 |  |
-| `FamiliarSecondaryDamageImmunity` | Integer | Applies the 'FamiliarSecondaryDamageImmunity' effect. | 2 |  |
-| [`FinalBossShield`](./Enums.md#enum-finalbossshield) | Enum | Applies or references the 'FinalBossShield' effect/state. | 2 |  |
-| [`FindExtraItemFromPoolOnBattleEnd`](./Enums.md#enum-findextraitemfrompoolonbattleend) | Enum | Applies or references the 'FindExtraItemFromPoolOnBattleEnd' effect/state. | 2 |  |
-| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. | 2 |  |
-| `FlippedFacingForceAttack` | Integer | Applies the 'FlippedFacingForceAttack' effect. | 2 |  |
-| `FlowerPowerAuraBrace` | Integer | Applies the 'FlowerPowerAuraBrace' effect. | 2 |  |
-| `FlowerPowerAuraStrength` | Integer | Applies the 'FlowerPowerAuraStrength' effect. | 2 |  |
-| [`FollowUp`](./Enums.md#enum-followup) | Enum | Applies the 'FollowUp' effect. | 2 |  |
-| [`FormChangeDuringWeatherElement`](#formchangeduringweatherelement) | Object | Logic: Changes form automatically during specific weather conditions. | 2 |  |
-| `FullHealthCritChance` | Integer | Applies the 'FullHealthCritChance' effect. | 2 |  |
-| `FullPower` | Integer | Applies the 'FullPower' effect. | 2 |  |
-| `GlobalManaBurnAura` | Integer | Examples: `-1` | 2 |  |
-| `GoopWalk` | Integer | Applies or references the 'GoopWalk' effect/state. | 2 |  |
-| `GrassTile` | Number | Examples: `80, 15` | 4 |  |
-| `GrassTileHealing` | Integer | Applies the 'GrassTileHealing' effect. | 2 |  |
-| [`GravityWell`](#gravitywell) | Object | Applies the 'GravityWell' effect. | 2 |  |
-| `greater` | Variable |  | 2 |  |
-| `GrenadeExplode` | Object |  | 2 |  |
-| `Haunt` | Object |  | 2 |  |
-| `HealAndOverhealToShield` | Integer | Applies the 'HealAndOverhealToShield' effect. | 2 |  |
-| `HealDamagesEnemies` | Integer | Applies the 'HealDamagesEnemies' effect. | 2 |  |
-| `HealsAlsoRegenMana` | Integer | Applies the 'HealsAlsoRegenMana' effect. | 2 |  |
-| `HealsCanRevive` | Integer | Applies the 'HealsCanRevive' effect. | 2 |  |
-| `HolyShieldTransferToSpawner` | Integer | Applies the 'HolyShieldTransferToSpawner' effect. | 2 |  |
-| [`HolyShieldTransferToTaggedMinions`](./Enums.md#enum-holyshieldtransfertotaggedminions) | Enum | Applies the 'HolyShieldTransferToTaggedMinions' effect. | 2 |  |
-| `HPGainBlock` | Integer | Applies or references the 'HPGainBlock' effect/state. | 2 |  |
-| `ImmobilePassive` | Integer | Applies or references the 'ImmobilePassive' effect/state. | 2 |  |
-| `ImmortalLeeches` | Integer | Applies the 'ImmortalLeeches' effect. | 2 |  |
-| `IncreaseHealingSpellRange` | Integer | Applies the 'IncreaseHealingSpellRange' effect. | 2 |  |
-| `int` | Enum / Integer | `aux` | 401 |  |
-| [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum | Applies or references the 'KaijuWinCon' effect/state. | 2 |  |
-| `KillsHeal` | Integer | Applies the 'KillsHeal' effect. | 2 |  |
-| [`LateBloomer`](#latebloomer) | Object | Applies the 'LateBloomer' effect. | 2 |  |
-| `lck` | Enum / Integer | `aux` | 351 |  |
-| [`LeaveBehindOnceEachMove`](./Enums.md#enum-leavebehindonceeachmove) | Enum | Applies or references the 'LeaveBehindOnceEachMove' effect/state. | 2 |  |
-| `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 2 |  |
-| `LightningAspectCharge` | Integer | Applies the 'LightningAspectCharge' effect. | 2 |  |
-| [`LightningRod`](#lightningrod) | Object | Applies the 'LightningRod' effect. | 2 |  |
-| [`LineOfSightTrueSightAura`](./Enums.md#enum-lineofsighttruesightaura) | Float | Applies the 'LineOfSightTrueSightAura' effect. | 2 |  |
-| `LobbedHook` | Integer | Applies the 'LobbedHook' effect. | 2 |  |
-| [`LowHealthAllyDodgeChanceAura`](#lowhealthallydodgechanceaura) | Object | Applies the 'LowHealthAllyDodgeChanceAura' effect. | 2 |  |
-| `MagicDamageImmune` | Integer | Applies or references the 'MagicDamageImmune' effect/state. | 2 |  |
-| `MakeBasicAttackPassThroughThings` | Integer | Applies the 'MakeBasicAttackPassThroughThings' effect. | 2 |  |
-| `MakeBasicAttackPull` | Integer | Examples: `1` | 2 |  |
-| `MamaCatAnimations` | Integer | Applies or references the 'MamaCatAnimations' effect/state. | 2 |  |
-| `ManaRegenMultiplierIfManaEmpty` | Integer | Applies the 'ManaRegenMultiplierIfManaEmpty' effect. | 2 |  |
-| `MegaMinions` | Integer | Applies the 'MegaMinions' effect. | 2 |  |
-| `MetalDetector` | Integer | Applies the 'MetalDetector' effect. | 2 |  |
-| `MinimumTech` | Integer | Applies the 'MinimumTech' effect. | 2 |  |
-| [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | Applies or references the 'MiniVolcanoReaction' effect/state. | 2 |  |
-| [`ModifyAbility`](#modifyability) | Object | Applies or references the 'ModifyAbility' effect/state. | 2 |  |
-| [`MotherTumorSpawnInCapture`](#mothertumorspawnincapture) | Object | Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning. | 2 |  |
-| [`MoveSpeedMultiplier`](./Enums.md#enum-movespeedmultiplier) | Float | Applies or references the 'MoveSpeedMultiplier' effect/state. | 2 |  |
-| `musical` | Variable |  | 4 |  |
-| [`NextBattleStatus`](#nextbattlestatus) | Object | Applies the 'NextBattleStatus' effect. | 2 |  |
-| `NoManaRegen` | Integer | Applies the 'NoManaRegen' effect. | 2 |  |
-| `NoReflection` | Integer | Applies the 'NoReflection' effect. | 2 |  |
-| `NubbyToss` | Object |  | 2 |  |
-| `NubbyTossPriority` | Integer | Applies the 'NubbyTossPriority' effect. | 2 |  |
-| [`NukeQuestFinalBossModifications`](#nukequestfinalbossmodifications) | Object | Special encounter trigger for the Nuke Quest ending. | 2 |  |
-| `NumbingLeeches` | Integer | Applies the 'NumbingLeeches' effect. | 2 |  |
-| `OneUseSpellDamageUp` | Integer | Applies the 'OneUseSpellDamageUp' effect. | 2 |  |
-| `OverhealGainsBothShield` | Integer | Applies the 'OverhealGainsBothShield' effect. | 2 |  |
-| `ParasitesArentCursed` | Integer | Applies the 'ParasitesArentCursed' effect. | 2 |  |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |  |
-| [`passive0`](./Enums.md#enum-passive0) | Enum | `HotBlooded`, `SelfAssured` | 2 |  |
-| [`PassiveAtFullHealth`](#passiveatfullhealth) | Object | Applies the 'PassiveAtFullHealth' effect. | 2 |  |
-| [`PassiveAtInjuryThreshold`](#passiveatinjurythreshold) | Object | Applies the 'PassiveAtInjuryThreshold' effect. | 2 |  |
-| `PassiveEnergized` | Variable |  | 2 |  |
-| [`PassiveIfWeaponIsUsable`](#passiveifweaponisusable) | Object | Applies or references the 'PassiveIfWeaponIsUsable' effect/state. | 2 |  |
-| `PassiveTar` | Variable |  | 2 |  |
-| [`PassiveUntilCastSpell`](#passiveuntilcastspell) | Object | Applies the 'PassiveUntilCastSpell' effect. | 2 |  |
-| [`PassiveUntilGetKill`](#passiveuntilgetkill) | Object | Applies the 'PassiveUntilGetKill' effect. | 2 |  |
-| [`PassiveWhenTheAlpha`](#passivewhenthealpha) | Object | State Trigger: Grants nested passives when the alpha. | 2 |  |
-| [`PassiveWhileInMonkRangedStance`](#passivewhileinmonkrangedstance) | Object | Applies the 'PassiveWhileInMonkRangedStance' effect. | 2 |  |
-| [`PassiveWhileNotHasStatus`](#passivewhilenothasstatus) | Object | Passive: Activates only while the character does NOT have the specified status. | 2 |  |
-| [`PassiveWhilePreviewingMonkRangedStance`](#passivewhilepreviewingmonkrangedstance) | Object | Applies the 'PassiveWhilePreviewingMonkRangedStance' effect. | 2 |  |
-| [`PassiveWhileWearingMetal`](#passivewhilewearingmetal) | Object | Applies the 'PassiveWhileWearingMetal' effect. | 2 |  |
-| `PermanentItems` | Integer | Applies the 'PermanentItems' effect. | 2 |  |
-| `Phasing` | Integer | Applies or references the 'Phasing' effect/state. | 2 |  |
-| `PrioritizeAggroTarget` | Integer | Applies or references the 'PrioritizeAggroTarget' effect/state. | 2 |  |
-| `PrioritizePlayerCats` | Integer | Applies or references the 'PrioritizePlayerCats' effect/state. | 2 |  |
-| `PrioritizeWeakestEnemy` | Integer | Applies or references the 'PrioritizeWeakestEnemy' effect/state. | 2 |  |
-| `Quiver` | Integer | Applies the 'Quiver' effect. | 2 |  |
-| [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Applies or references the 'RandomTaggedMutation' effect/state. | 2 |  |
-| `ReaperRevenge` | Object |  | 2 |  |
-| `red` | Object | Event Object: Story branch or dialog option representing the \'Red\' action. | 2 |  |
-| [`RefreshEquipmentAbilityOnElement`](#refreshequipmentabilityonelement) | Object | Applies or references the 'RefreshEquipmentAbilityOnElement' effect/state. | 2 |  |
-| `ReloadOnKill` | Integer | Applies or references the 'ReloadOnKill' effect/state. | 2 |  |
-| `ReloadOnKillEnemy` | Integer | Applies or references the 'ReloadOnKillEnemy' effect/state. | 2 |  |
-| `ReloadOnTotalDamageReceived` | Integer | Applies or references the 'ReloadOnTotalDamageReceived' effect/state. | 2 |  |
-| `RemoteLeech` | Integer | Applies or references the 'RemoteLeech' effect/state. | 2 |  |
-| `RemoveOncePerFightRestriction` | Integer | Applies the 'RemoveOncePerFightRestriction' effect. | 2 |  |
-| [`ReplaceBasicAttackWhenDead`](./Enums.md#enum-replacebasicattackwhendead) | Enum | Applies the 'ReplaceBasicAttackWhenDead' effect. | 2 |  |
-| `ReturnBoundItemOnBattleEnd` | Integer | Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state. | 2 |  |
-| `ReviveOnWin` | Integer | Applies the 'ReviveOnWin' effect. | 2 |  |
-| `RobotsInheritArmor` | Integer | Applies the 'RobotsInheritArmor' effect. | 2 |  |
-| `RockDetector` | Integer | Applies the 'RockDetector' effect. | 2 |  |
-| `SafeExplosions` | Integer | Applies the 'SafeExplosions' effect. | 2 |  |
-| [`ScaledStatusOnOverMana`](#scaledstatusonovermana) | Object | Applies the 'ScaledStatusOnOverMana' effect. | 2 |  |
-| `SelfStatusCarefulness` | Integer | Applies or references the 'SelfStatusCarefulness' effect/state. | 2 |  |
-| [`SetDefaultFace`](./Enums.md#enum-setdefaultface) | Enum | Applies or references the 'SetDefaultFace' effect/state. | 2 |  |
-| `SetItemAux` | Object | Applies or references the 'SetItemAux' effect/state. | 2 |  |
-| `ShareHealthRegen` | Integer | Applies the 'ShareHealthRegen' effect. | 2 |  |
-| `ShoulderCheck` | Integer | Applies the 'ShoulderCheck' effect. | 2 |  |
-| [`ShovingMatch`](./Enums.md#enum-shovingmatch) | Enum | Applies the 'ShovingMatch' effect. | 2 |  |
-| [`SlotMachineRollPool`](#slotmachinerollpool) | Object | Logic: Defines the possible outcomes for slot machine enemies. | 2 |  |
-| `SmallEnemiesIgnoreYou` | Integer | Applies the 'SmallEnemiesIgnoreYou' effect. | 2 |  |
-| [`SmiteEnemiesWhoKill`](#smiteenemieswhokill) | Object | Applies the 'SmiteEnemiesWhoKill' effect. | 2 |  |
-| `SparkleBuff` | Variable |  | 2 |  |
-| `SpawnBearTrapOnMiss` | Integer | Applies the 'SpawnBearTrapOnMiss' effect. | 2 |  |
-| [`SpawnCatCopyWhenDowned`](#spawncatcopywhendowned) | Object | Examples: `{ ... }` | 2 |  |
-| [`SpawnItemLinkedFamiliar`](#spawnitemlinkedfamiliar) | Object | Applies or references the 'SpawnItemLinkedFamiliar' effect/state. | 2 |  |
-| `SpawnNearEnemies` | Integer | Applies or references the 'SpawnNearEnemies' effect/state. | 2 |  |
-| [`SpecialFriends`](#specialfriends) | Object | Applies the 'SpecialFriends' effect. | 2 |  |
-| `SpikeBuff` | Variable |  | 2 |  |
-| `SplittableMove` | Integer | Applies the 'SplittableMove' effect. | 2 |  |
-| `SpreadExtraDebuffs` | Integer | Applies the 'SpreadExtraDebuffs' effect. | 2 |  |
-| `SpreadPainBonus` | Integer | Applies the 'SpreadPainBonus' effect. | 2 |  |
-| `StatMinimum` | Integer | Applies the 'StatMinimum' effect. | 2 |  |
-| [`StatsAtLowHealth`](#statsatlowhealth) | Object | Applies the 'StatsAtLowHealth' effect. | 2 |  |
-| [`StatusAfterXTurns`](#statusafterxturns) | Object | Event Trigger: Applies a status effect after X turns have passed. | 2 |  |
-| [`StatusAlliesOnGainCoins`](#statusalliesongaincoins) | Object | Event Trigger: Applies nested statuses to allies on gain coins. | 2 |  |
-| [`StatusAllyWhenAllySpendsMana`](#statusallywhenallyspendsmana) | Object | Event Trigger: Applies nested statuses to ally when ally spends mana. | 2 |  |
-| [`StatusAnyCatAllyWhoKills`](#statusanycatallywhokills) | Object | Event Trigger: Applies nested statuses to any cat ally who kills. | 2 |  |
-| [`StatusDamagers`](#statusdamagers) | Object | Event Trigger: Applies nested statuses to damagers. | 2 |  |
-| [`StatusEachTurnEndPerEnemyKill`](#statuseachturnendperenemykill) | Object | Event Trigger: Applies nested statuses to each turn end per enemy kill. | 2 |  |
-| [`StatusEnemiesOnDeath`](#statusenemiesondeath) | Object | Event Trigger: Applies nested statuses to enemies on death. | 2 |  |
-| [`StatusEveryXTurnBegins`](#statuseveryxturnbegins) | Object | Event Trigger: Applies nested statuses to every x turn begins. | 2 |  |
-| [`StatusIfUnusedActPoints`](#statusifunusedactpoints) | Object | Applies or references the 'StatusIfUnusedActPoints' effect/state. | 2 |  |
-| [`StatusOnAnyDeath`](#statusonanydeath) | Object | Event Trigger: Applies nested statuses when any death. | 2 |  |
-| [`StatusOnBackstab`](#statusonbackstab) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
-| [`StatusOnBattleEndIfKillThresholdMet`](#statusonbattleendifkillthresholdmet) | Object | Event Trigger: Applies nested statuses when battle end if kill threshold met. | 2 |  |
-| [`StatusOnDealtDamage`](#statusondealtdamage) | Object | Event Trigger: Applies nested statuses when dealt damage. | 2 |  |
-| [`StatusOnDealtDamageThreshold`](#statusondealtdamagethreshold) | Object | Event Trigger: Applies nested statuses when dealt damage threshold. | 2 |  |
-| [`StatusOnEatPill`](#statusoneatpill) | Object | Examples: `{ ... }` | 2 |  |
-| [`StatusOnGainShield`](#statusongainshield) | Object | Event Trigger: Applies nested statuses when gain shield. | 2 |  |
-| [`StatusOnHeal`](#statusonheal) | Object | Event Trigger: Applies nested statuses when heal. | 2 |  |
-| [`StatusOnOverMana`](#statusonovermana) | Object | Event Trigger: Applies nested statuses when over mana. | 2 |  |
-| [`StatusOnSetPieceBreak`](#statusonsetpiecebreak) | Object | Examples: `{ ... }` | 2 |  |
-| [`StatusOnSpawnIn`](#statusonspawnin) | Object | Event Trigger: Applies statuses immediately when spawned. | 2 |  |
-| [`StatusOnTookDamageFromEnemyAbility`](#statusontookdamagefromenemyability) | Object | Event Trigger: Applies nested statuses when took damage from enemy ability. | 2 |  |
-| [`StatusOnTriggerTrap`](#statusontriggertrap) | Object | Event Trigger: Applies nested statuses when trigger trap. | 2 |  |
-| [`StatusOnUseElementAbility`](#statusonuseelementability) | Object | Event Trigger: Applies nested statuses when use element ability. | 2 |  |
-| [`StatusPerInjury`](#statusperinjury) | Object | Event Trigger: Applies nested statuses to per injury. | 2 |  |
-| [`StatusReplacement`](./Arrays.md#array-statusreplacement) | Array | Examples: `[ Petrify PetrifyCharmed ]` | 2 |  |
-| [`StatusThingsKnockedBack`](#statusthingsknockedback) | Object | Event Trigger: Applies nested statuses to things knocked back. | 2 |  |
-| `StrengthForEachNeighboringEnemy` | Integer | Applies the 'StrengthForEachNeighboringEnemy' effect. | 2 |  |
-| `StrengthInNumbersAura` | Integer | Applies the 'StrengthInNumbersAura' effect. | 2 |  |
-| `Study` | Integer | Applies the 'Study' effect. | 2 |  |
-| `SurviveAt1HP` | Integer | Applies or references the 'SurviveAt1HP' effect/state. | 2 |  |
-| [`TaggedPickupEffectReplacement`](#taggedpickupeffectreplacement) | Object | Applies the 'TaggedPickupEffectReplacement' effect. | 2 |  |
-| `TempCounterAttack` | Integer | Applies or references the 'TempCounterAttack' effect/state. | 2 |  |
-| `TempNoManaRegen` | Integer | Applies or references the 'TempNoManaRegen' effect/state. | 2 |  |
-| `TileDamageMultiplier` | Integer | Applies the 'TileDamageMultiplier' effect. | 2 |  |
-| [`TinkererBasicAttackSwitching`](#tinkererbasicattackswitching) | Object | Logic: Allows Tinkerer to swap basic attacks. | 2 |  |
-| `ToadJump_BasicMove` | Object |  | 4 |  |
-| [`TowerDefense`](#towerdefense) | Object | Applies the 'TowerDefense' effect. | 2 |  |
-| [`TransformOnElementInfluencex`](#transformonelementinfluencex) | Object | Logic: Variant element influence transformation. | 2 |  |
-| [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | Applies or references the 'TransformWhenBuddyDies' effect/state. | 2 |  |
-| `TrapEffectsMultiplier` | Integer | Applies the 'TrapEffectsMultiplier' effect. | 2 |  |
-| `triggers_limit` | Integer | Examples: `1` | 2 |  |
-| `Uncontrollable` | Integer | Applies or references the 'Uncontrollable' effect/state. | 2 |  |
-| `UnlockOrientation` | Integer | Applies or references the 'UnlockOrientation' effect/state. | 2 |  |
-| [`UpgradeLevelUpClassActives`](./Enums.md#enum-upgradelevelupclassactives) | Enum | Applies the 'UpgradeLevelUpClassActives' effect. | 2 |  |
-| [`UpgradeLevelUpClassPassives`](./Enums.md#enum-upgradelevelupclasspassives) | Enum | Applies the 'UpgradeLevelUpClassPassives' effect. | 2 |  |
-| [`UpgradeTaggedSpawnsToChampions`](./Enums.md#enum-upgradetaggedspawnstochampions) | Enum | Examples: `worm, bug` | 2 |  |
-| `Vengeful` | Integer | Applies the 'Vengeful' effect. | 2 |  |
-| `WeaponActiveEffectsMultiplierBonus` | Integer | Examples: `2` | 2 |  |
-| `WeaponCountsAsBasicAttack` | Integer | Applies the 'WeaponCountsAsBasicAttack' effect. | 2 |  |
-| `WeaponPassiveMultiplierBonus` | Integer | Examples: `2` | 2 |  |
-| [`XIsLivingCharactersWithTag`](./Enums.md#enum-xislivingcharacterswithtag) | Enum | Applies or references the 'XIsLivingCharactersWithTag' effect/state. | 2 |  |
-| `XIsOtherHealsThisTurn` | Integer | Applies or references the 'XIsOtherHealsThisTurn' effect/state. | 2 |  |
-| `XIsSpellStormRampAndReset` | Integer / Object | Math variable assignment: Evaluates X based on Spell Storm stacks, then resets them. | 2 |  |
-| `XIsTimesDamageTaken` | Integer | Applies or references the 'XIsTimesDamageTaken' effect/state. | 2 |  |
-| `Zombie` | Number | Examples: `1` | 2 |  |
 | [`AbilityChargeRefundChance`](#abilitychargerefundchance) | Object | Applies the 'AbilityChargeRefundChance' effect. | 2 |  |
 | `AbilityDamageMultiplier` | Float | Examples: `1.5` | 1 |  |
 | `AbilityDisableIfLivingCrow` | Integer | Applies or references the 'AbilityDisableIfLivingCrow' effect/state. | 1 |  |
 | `AbilityEnabledAtHealthThreshold` | Integer | Applies or references the 'AbilityEnabledAtHealthThreshold' effect/state. | 1 |  |
 | `AbilityEnabledIfBasicAttackUsedThisTurn` | Integer | Applies or references the 'AbilityEnabledIfBasicAttackUsedThisTurn' effect/state. | 1 |  |
+| [`AbilityEnabledIfHasStatus`](./Enums.md#enum-abilityenabledifhasstatus) | Enum | Applies or references the 'AbilityEnabledIfHasStatus' effect/state. | 2 |  |
 | `AbilityEnabledIfMovementTrapped` | Integer | Applies or references the 'AbilityEnabledIfMovementTrapped' effect/state. | 1 |  |
 | `AbilityEnabledIfNoAggroTarget` | Integer | Applies or references the 'AbilityEnabledIfNoAggroTarget' effect/state. | 1 |  |
 | [`AbilityEnabledIfNotHasStatus`](./Enums.md#enum-abilityenabledifnothasstatus) | Enum | Applies or references the 'AbilityEnabledIfNotHasStatus' effect/state. | 1 |  |
 | [`AbilityEnabledIfSpecificItemEquipped`](./Enums.md#enum-abilityenabledifspecificitemequipped) | Enum | Applies or references the 'AbilityEnabledIfSpecificItemEquipped' effect/state. | 1 |  |
+| `AbilityEnabledOncePerFightAtHealthThreshold` | Integer | Applies or references the 'AbilityEnabledOncePerFightAtHealthThreshold' effect/state. | 7 |  |
+| `AbilityEnabledOncePerRound` | Integer | Applies or references the 'AbilityEnabledOncePerRound' effect/state. | 3 |  |
+| `AbilityEnabledPercentEachTurn` | Integer | Applies or references the 'AbilityEnabledPercentEachTurn' effect/state. | 6 |  |
+| [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Applies or references the 'AbilityEnableIfConsumedCharacterHasTag' effect/state. | 3 |  |
+| [`AbilityHealthThreshold`](#abilityhealththreshold) | Object | AI Trigger: Executes an ability when health drops below a specific threshold. | 2 |  |
+| `AbilityInheritsWeaponEffects` | Integer | Applies or references the 'AbilityInheritsWeaponEffects' effect/state. | 3 |  |
+| [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum | Applies or references the 'AbilityOnBattleStart' effect/state. | 6 |  |
+| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. | 17 |  |
 | [`AbilityOnBattleStart_UseAI`](./Enums.md#enum-abilityonbattlestart_useai) | Enum | Applies or references the 'AbilityOnBattleStart_UseAI' effect/state. | 1 |  |
+| [`AbilityOnRoundEnd`](#abilityonroundend) | Object | AI Trigger: Executes an ability at the end of the combat round. | 2 |  |
 | [`AbilityOnRoundEndOnce`](#abilityonroundendonce) | Object | Applies or references the 'AbilityOnRoundEndOnce' effect/state. | 1 |  |
+| [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum / Object | AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage). | 4 |  |
+| [`AbilityWhenBuddyDies`](./Enums.md#enum-abilitywhenbuddydies) | Enum | Applies or references the 'AbilityWhenBuddyDies' effect/state. | 7 |  |
+| [`AbilityWhenTaggedCharacterMovesNear`](#abilitywhentaggedcharactermovesnear) | Object | AI Trigger: Executes an ability when a character with a specific tag moves adjacent. | 4 |  |
+| `AbsorbBuff` | Variable |  | 2 |  |
+| `AbsorbManaAura` | Integer | Applies the 'AbsorbManaAura' effect. | 2 |  |
 | `AbsorbManaFromOtherSpells` | Integer | Applies or references the 'AbsorbManaFromOtherSpells' effect/state. | 1 |  |
+| `AcidRain` | Integer | Examples: `2` | 1 |  |
+| `AcidRain` | Number / Object |  |  | `2` (Number), `{ ... }` (Object) |
 | [`AddAdvantageToEvent`](#addadvantagetoevent) | Object | Applies or references the 'AddAdvantageToEvent' effect/state. | 1 |  |
 | `AddAllyNeighborsToAbilityRange` | Integer | Applies the 'AddAllyNeighborsToAbilityRange' effect. | 2 |  |
 | `AddAllyNeighborsToAttackRange` | Integer | Applies the 'AddAllyNeighborsToAttackRange' effect. | 1 |  |
+| `AddBonusMeleeRange` | Integer | Applies the 'AddBonusMeleeRange' effect. | 12 |  |
+| `AddBonusRange` | Integer | Applies or references the 'AddBonusRange' effect/state. | 26 |  |
 | `AddChaScalingSpellDamage` | Integer | Applies the 'AddChaScalingSpellDamage' effect. | 2 |  |
 | `AddConstitution` | Integer | Examples: `2` | 1 |  |
+| `AddCorpseHealth` | Integer | Applies the 'AddCorpseHealth' effect. | 12 |  |
+| `AddCritMultiplier` | Integer | Applies the 'AddCritMultiplier' effect. | 28 |  |
+| `AddDamage` | Integer | Applies or references the 'AddDamage' effect/state. | 6 |  |
+| `AddDamageToBasicAttack` | String | Applies the 'AddDamageToBasicAttack' effect. | 4 |  |
+| [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 6 |  |
+| [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum | Examples: `Ice, Electric, Water` | 32 |  |
 | [`AddElementsToSpells`](./Enums.md#enum-addelementstospells) | Enum | Applies or references the 'AddElementsToSpells' effect/state. | 1 |  |
+| `AddEndOfCombatRegen` | Integer | Applies or references the 'AddEndOfCombatRegen' effect/state. | 3 |  |
+| `AddExtraTurnsBeforeRun` | Integer | Examples: `2` | 1 |  |
+| [`AddHiddenTag`](./Enums.md#enum-addhiddentag) | Enum | Applies or references the 'AddHiddenTag' effect/state. | 2 |  |
+| `AddInitiative` | Integer | Applies or references the 'AddInitiative' effect/state. | 2 |  |
+| [`additional_passives`](#additional_passives) | Object | Passives granted intrinsically to a spawned entity. | 20 |  |
+| `AddKnockbackDamage` | Integer | Applies or references the 'AddKnockbackDamage' effect/state. | 8 |  |
 | `AddKnockbackToEverything` | Integer | Applies the 'AddKnockbackToEverything' effect. | 2 |  |
+| `AddLevelUpRerolls` | Integer | Applies or references the 'AddLevelUpRerolls' effect/state. | 8 |  |
 | `AddLevelUpStatMultiplier` | Integer | Applies the 'AddLevelUpStatMultiplier' effect. | 1 |  |
 | `AddLootMultiplier` | Integer | Examples: `1` | 2 |  |
+| `AddManaRegen` | Integer | Applies or references the 'AddManaRegen' effect/state. | 4 |  |
+| `AddMaxHealth` | Integer | Applies or references the 'AddMaxHealth' effect/state. | 12 |  |
+| `AddMeleeKnockback` | Integer | Applies or references the 'AddMeleeKnockback' effect/state. | 4 |  |
+| `AddMovement` | Integer | Applies or references the 'AddMovement' effect/state. | 6 |  |
+| [`AddPassivesToCharmed`](#addpassivestocharmed) | Object | Applies the 'AddPassivesToCharmed' effect. | 4 |  |
+| [`AddPassivesToMinions`](#addpassivestominions) | Object | Applies the 'AddPassivesToMinions' effect. | 30 |  |
+| [`AddPassivesToSummonAbilityMinions`](#addpassivestosummonabilityminions) | Object | Applies the 'AddPassivesToSummonAbilityMinions' effect. | 2 |  |
+| [`AddPassiveToSpawnedRocks`](#addpassivetospawnedrocks) | Object | Applies the 'AddPassiveToSpawnedRocks' effect. | 2 |  |
+| [`AddPostProcessEffect`](#addpostprocesseffect) | Object | Examples: `{ ... }` | 1 |  |
 | `AddRandomEliteBuff` | Integer | Examples: `1` | 1 |  |
 | `AddRangedCritChance` | Integer | Applies the 'AddRangedCritChance' effect. | 2 |  |
+| [`AddSelfStatusToBasicAttack`](#addselfstatustobasicattack) | Object | Applies or references the 'AddSelfStatusToBasicAttack' effect/state. | 4 |  |
+| [`AddSelfStatusToWeapons`](#addselfstatustoweapons) | Object | Applies the 'AddSelfStatusToWeapons' effect. | 2 |  |
+| `AddSpeed` | Integer | Applies the 'AddSpeed' effect. | 4 |  |
+| `AddSpellDamage` | Integer | Applies the 'AddSpellDamage' effect. | 2 |  |
+| `AddSpiritBombCharges` | Integer | Applies or references the 'AddSpiritBombCharges' effect/state. | 2 |  |
+| `AddStartingMana` | Number | Applies or references the 'AddStartingMana' effect/state. | 2 |  |
 | [`AddStatusesIfPersistentWeatherElement`](#addstatusesifpersistentweatherelement) | Object | Applies the 'AddStatusesIfPersistentWeatherElement' effect. | 1 |  |
 | [`AddStatusesToReceivedElementalDamage`](#addstatusestoreceivedelementaldamage) | Object | Applies the 'AddStatusesToReceivedElementalDamage' effect. | 1 |  |
+| [`AddStatusToAllDamage`](#addstatustoalldamage) | Object | Modifier: Injects a status effect into a specific action. | 4 |  |
+| [`AddStatusToAllDamageAbilities`](#addstatustoalldamageabilities) | Object | Applies the 'AddStatusToAllDamageAbilities' effect. | 4 |  |
 | [`AddStatusToBackstabs`](#addstatustobackstabs) | Object | Modifier: Injects a status effect into a specific action. | 1 |  |
+| [`AddStatusToBasicAttack`](#addstatustobasicattack) | Object | Injects a status effect payload that applies whenever the character performs a basic attack. | 178 |  |
+| [`AddStatusToBasicAttackWithCooldown`](#addstatustobasicattackwithcooldown) | Object | Applies the 'AddStatusToBasicAttackWithCooldown' effect. | 2 |  |
+| [`AddStatusToBasicMeleeAttack`](#addstatustobasicmeleeattack) | Object | Examples: `{ ... }` | 16 |  |
+| [`AddStatusToElementAbilities`](#addstatustoelementabilities) | Object | Applies the 'AddStatusToElementAbilities' effect. | 6 |  |
+| [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 4 |  |
+| [`AddStatusToExplosions`](#addstatustoexplosions) | Object | Applies the 'AddStatusToExplosions' effect. | 2 |  |
+| [`AddStatusToFirstBasicAttack`](#addstatustofirstbasicattack) | Object | Applies the 'AddStatusToFirstBasicAttack' effect. | 2 |  |
 | [`AddStatusToFirstSpellEachTurn`](#addstatustofirstspelleachturn) | Object | Examples: `{ ... }` | 1 |  |
+| [`AddStatusToKnockbackDamage`](#addstatustoknockbackdamage) | Object | Modifier: Injects a status effect into a specific action. | 2 |  |
+| [`AddStatusToMeleeDamage`](#addstatustomeleedamage) | Object | Applies the 'AddStatusToMeleeDamage' effect. | 2 |  |
 | [`AddStatusToReceivedDamage`](#addstatustoreceiveddamage) | Object | Modifier: Applies a status effect whenever the character takes damage. | 1 |  |
 | [`AddStatusToReceivedDamage_ExcludeStatuses`](#addstatustoreceiveddamage_excludestatuses) | Object | Applies the 'AddStatusToReceivedDamage_ExcludeStatuses' effect. | 1 |  |
+| [`AddStatusToSpells`](#addstatustospells) | Object | Modifier: Injects a status effect into a specific action. | 2 |  |
+| [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 2 |  |
+| [`AddStatusToWeapons`](#addstatustoweapons) | Object | Applies the 'AddStatusToWeapons' effect. | 8 |  |
+| [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 |  |
+| [`AddTemporaryEffectsToBasicAttack`](#addtemporaryeffectstobasicattack) | Object | Applies the 'AddTemporaryEffectsToBasicAttack' effect. | 6 |  |
 | [`AddTemporaryEffectsToEquipment`](#addtemporaryeffectstoequipment) | Object | Applies the 'AddTemporaryEffectsToEquipment' effect. | 2 |  |
+| [`AddTilesetObjects`](#addtilesetobjects) | Object | Examples: `{ ... }` | 1 |  |
+| `AddUnfilledMaxHealth` | Integer | Applies the 'AddUnfilledMaxHealth' effect. | 2 |  |
+| `AddWeaponScaling` | Integer | Applies the 'AddWeaponScaling' effect. | 2 |  |
+| `Adrenaline` | Integer | Applies or references the 'Adrenaline' effect/state. | 1 |  |
+| `Adrenaline` | Integer |  |  | `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
 | [`AdvancedTint`](./Arrays.md#array-advancedtint) | Array | Applies or references the 'AdvancedTint' effect/state. | 1 |  |
 | [`AdventureTokenPassivePool`](#adventuretokenpassivepool) | Object | Map/Metaprogression: Pool of passive modifiers applied by adventure tokens. | 1 |  |
+| [`AfterImage`](./Enums.md#enum-afterimage) | Object | Spawns a visual decoy or shade at the caster's previous location. | 2 |  |
+| `AggroTargetIsBuddy` | Integer | Applies or references the 'AggroTargetIsBuddy' effect/state. | 2 |  |
+| `AggroTargetIsCurrentTurn` | Integer | Applies or references the 'AggroTargetIsCurrentTurn' effect/state. | 3 |  |
 | [`AggroTargetIsGovernedByHitEffect`](#aggrotargetisgovernedbyhiteffect) | Object | AI Logic: Forces the character's aggro to follow specific hit effects rather than default proximity. | 1 |  |
 | `AggroTargetIsLastEnemyThatDealtDamage` | Integer | Applies or references the 'AggroTargetIsLastEnemyThatDealtDamage' effect/state. | 1 |  |
 | `AggroTargetIsLowestHealthEnemyTillItDies` | Integer | Applies or references the 'AggroTargetIsLowestHealthEnemyTillItDies' effect/state. | 1 |  |
 | `AggroTargetIsLowestMaxHealthCat` | Integer | Applies or references the 'AggroTargetIsLowestMaxHealthCat' effect/state. | 1 |  |
+| `ai` | Object | Core block defining the AI behavior logic and weights. | 928 |  |
 | [`AIControlNextTurn`](#aicontrolnextturn) | Object | Applies or references the 'AIControlNextTurn' effect/state. | 1 |  |
+| `AIFavorLowHealth` | Integer | Applies or references the 'AIFavorLowHealth' effect/state. | 1 |  |
 | [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array | Applies or references the 'AlienBeastDangerZones' effect/state. | 1 |  |
 | `AlienBeastEyeStalks` | Integer | Applies or references the 'AlienBeastEyeStalks' effect/state. | 1 |  |
+| `all_items` | Variable |  | 2 |  |
 | `all_spells` | Variable |  | 1 |  |
 | `AllDamageCrits` | Integer | Applies the 'AllDamageCrits' effect. | 2 |  |
+| `AllDamageImmune_IncludingSpeculative` | Integer | Applies or references the 'AllDamageImmune_IncludingSpeculative' effect/state. | 2 |  |
 | `AlliesAvoidTraps` | Integer | Applies the 'AlliesAvoidTraps' effect. | 2 |  |
 | `AlliesScrambleSpellAfterCast` | Integer | Applies or references the 'AlliesScrambleSpellAfterCast' effect/state. | 1 |  |
+| `AlliesTakeExtraTurn` | Integer | Applies or references the 'AlliesTakeExtraTurn' effect/state. | 1 |  |
+| `AllowPassTurn` | Integer | Applies the 'AllowPassTurn' effect. | 2 |  |
 | `AllSpellsCostActPoints` | Integer | Applies or references the 'AllSpellsCostActPoints' effect/state. | 1 |  |
 | `AllSpellsCostCharge` | Integer | Applies or references the 'AllSpellsCostCharge' effect/state. | 1 |  |
 | [`AllStatsAura`](#allstatsaura) | Object | Passive: Projects an aura that modifies all primary stats of nearby characters. | 1 |  |
+| `AllStatsUpPerDisorder` | Integer | Applies or references the 'AllStatsUpPerDisorder' effect/state. | 3 |  |
 | `AllUnitsExplodeOnDeath` | Integer | Applies or references the 'AllUnitsExplodeOnDeath' effect/state. | 1 |  |
 | [`AlluringDoodieEater`](#alluringdoodieeater) | Object | Applies or references the 'AlluringDoodieEater' effect/state. | 1 |  |
+| `ally_chance` | Integer | Examples: `15, 100` | 5 |  |
+| [`AllyBonusAbilityAura`](./Enums.md#enum-allybonusabilityaura) | Enum | Applies the 'AllyBonusAbilityAura' effect. | 2 |  |
 | `AllyChainKnockback` | Integer | Applies the 'AllyChainKnockback' effect. | 2 |  |
+| [`AllyDamageReaction`](./Enums.md#enum-allydamagereaction) | Enum | Applies the 'AllyDamageReaction' effect. | 2 |  |
+| `AllyDamageReduction` | Integer | Applies the 'AllyDamageReduction' effect. | 4 |  |
 | [`AllyDodgeChanceAura`](#allydodgechanceaura) | Object | Applies or references the 'AllyDodgeChanceAura' effect/state. | 1 |  |
+| [`AllyHealthRegenAura`](#allyhealthregenaura) | Object | Applies the 'AllyHealthRegenAura' effect. | 2 |  |
+| [`AllyManaRegenAura`](#allymanaregenaura) | Object | Applies the 'AllyManaRegenAura' effect. | 4 |  |
+| [`AllyMoveAbilityAura`](./Enums.md#enum-allymoveabilityaura) | Enum | Applies the 'AllyMoveAbilityAura' effect. | 2 |  |
+| `AllyMultiplyKnockbackDamage` | Integer | Applies the 'AllyMultiplyKnockbackDamage' effect. | 2 |  |
 | `AllyMultiplyKnockbackDistance` | Integer | Applies the 'AllyMultiplyKnockbackDistance' effect. | 2 |  |
 | `AllyUncappedHPAura` | Integer | Applies the 'AllyUncappedHPAura' effect. | 2 |  |
 | `AlphaAllStatsUp` | Integer | Applies or references the 'AlphaAllStatsUp' effect/state. | 1 |  |
 | `AlphaDodgeChance` | Integer | Applies or references the 'AlphaDodgeChance' effect/state. | 1 |  |
 | [`AlphaStatusOnTurnBegin`](#alphastatusonturnbegin) | Object | Grants a specific status effect to the 'Alpha' (the party leader) at the start of their turn. | 1 |  |
+| `AlphaTurns` | Integer | Applies the 'AlphaTurns' effect. | 8 |  |
+| [`AlternateCraftingPools`](#alternatecraftingpools) | Object | Applies the 'AlternateCraftingPools' effect. | 2 |  |
+| [`AlternateIdleAnimation`](./Enums.md#enum-alternateidleanimation) | Enum | Applies or references the 'AlternateIdleAnimation' effect/state. | 1 |  |
 | `AlwaysChosenForLevelUp` | Integer | Applies or references the 'AlwaysChosenForLevelUp' effect/state. | 1 |  |
+| `AlwaysHitDifferentTargets` | Integer | Applies or references the 'AlwaysHitDifferentTargets' effect/state. | 2 |  |
+| `Ammo` | Integer | Applies or references the 'Ammo' effect/state. | 9 |  |
+| `Ammo` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `6` (Number), `{ ... }` (Object) |
+| `AmplifyKnockback` | Integer | Applies the 'AmplifyKnockback' effect. | 4 |  |
 | `AmplifyNegativeStatus` | Integer | Applies the 'AmplifyNegativeStatus' effect. | 2 |  |
+| `AmplifyPositiveStatus` | Integer | Applies the 'AmplifyPositiveStatus' effect. | 2 |  |
+| [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Applies the 'AmplifyStatus' effect. | 8 |  |
+| `Angel` | Integer | Applies or references the 'Angel' effect/state. | 5 |  |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` | 6 |  |
+| `Antidote` | Mixed | Applies or references the 'Antidote' effect/state. | 2 |  |
+| `any` | Variable |  | 4 |  |
 | `AOEBonus` | Integer | Applies or references the 'AOEBonus' effect/state. | 1 |  |
+| `AOEPuddle` | Enum |  | 4 | `X-1` (Enum) |
+| [`ApplyMultipleTimes`](#applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 3 |  |
+| [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 13 |  |
 | [`ApplyPassivesToSpawnerWhileAlive`](#applypassivestospawnerwhilealive) | Object | Grants nested passives to the entity that spawned this object, lasting only as long as this object remains alive. | 1 |  |
+| `ApplyShieldToApplierBasedOnMaxHealth` | Integer | Applies or references the 'ApplyShieldToApplierBasedOnMaxHealth' effect/state. | 1 |  |
+| [`ApplyStatusesNextTurnBegin`](#applystatusesnextturnbegin) | Object | Delays the application of the nested status effects until the start of the target's next turn. | 1 |  |
+| [`ApplyStatusesToRandomEnemiesEachTurn`](#applystatusestorandomenemieseachturn) | Object | Applies or references the 'ApplyStatusesToRandomEnemiesEachTurn' effect/state. | 2 |  |
+| [`ApplyStatusIfCrit`](#applystatusifcrit) | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 2 |  |
+| [`ApplyToConsumed`](#applytoconsumed) | Object | Redirects the nested effects to apply to the entity that just consumed this object. | 4 |  |
+| [`ApplyToOthersWithSharedTagAndFaction`](#applytootherswithsharedtagandfaction) | Object | Redirects the nested effects to apply to all other entities on the map that share the target's faction and specified tags. | 1 |  |
+| [`ApplyToRandomClosestAlly`](#applytorandomclosestally) | Object | Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them. | 1 |  |
+| [`ApplyToSourceOnKill`](#applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 15 |  |
+| [`ApplyToTile`](#applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |  |
+| [`ArcLightning`](#arclightning) | Object | Executes a chain-lightning logic block that bounces between targets. | 4 |  |
+| [`ArmorBreakOnHit`](#armorbreakonhit) | Object | Applies or references the 'ArmorBreakOnHit' effect/state. | 2 |  |
+| `ArmorDodgeChance` | Integer | Applies or references the 'ArmorDodgeChance' effect/state. | 2 |  |
 | [`Autism`](#autism) | Object | Applies the 'Autism' effect. | 1 |  |
+| [`AutocastEachRound`](#autocasteachround) | Enum / Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 4 |  |
+| [`AutocastEachTurn`](./Enums.md#enum-autocasteachturn) | Enum | Applies the 'AutocastEachTurn' effect. | 2 |  |
+| [`AutocastEachTurnBegin`](./Enums.md#enum-autocasteachturnbegin) | Enum | Applies the 'AutocastEachTurnBegin' effect. | 2 |  |
+| `AutoCritLowDamage` | Integer | Applies the 'AutoCritLowDamage' effect. | 2 |  |
+| `AutoEquipConsumables` | Integer | Applies or references the 'AutoEquipConsumables' effect/state. | 2 |  |
 | `AvoidDamagingCharmedEnemies` | Integer | Applies or references the 'AvoidDamagingCharmedEnemies' effect/state. | 1 |  |
 | `AwardCoinsOnDeath` | Integer | Applies or references the 'AwardCoinsOnDeath' effect/state. | 1 |  |
+| `BackstabAllDirections` | Integer | Applies or references the 'BackstabAllDirections' effect/state. | 4 |  |
+| [`BackstabCritChance`](./Enums.md#enum-backstabcritchance) | Float | Applies the 'BackstabCritChance' effect. | 2 |  |
 | `BackstabFront` | Integer | Examples: `1` | 2 |  |
+| `BackstabImmunity` | Integer | Applies or references the 'BackstabImmunity' effect/state. | 6 |  |
 | `BackstabWeakness` | Float | Applies the 'BackstabWeakness' effect. | 1 |  |
+| [`BaitAura`](#baitaura) | Object | Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots). | 4 |  |
 | `BalanceStats` | Integer | Applies or references the 'BalanceStats' effect/state. | 1 |  |
+| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Float | Applies or references the 'BaseStatMultiply' effect/state. | 3 |  |
 | `BasicAIDangerZone` | Integer | Applies or references the 'BasicAIDangerZone' effect/state. | 1 |  |
+| `BasicAttackAOEBonus` | Integer | Applies the 'BasicAttackAOEBonus' effect. | 6 |  |
+| `BasicAttackCantMiss` | Integer | Examples: `1` | 2 |  |
+| [`BasicAttackCritChance`](./Enums.md#enum-basicattackcritchance) | Float | Applies the 'BasicAttackCritChance' effect. | 3 |  |
+| `BasicAttackDamageMultiplier` | Integer | Applies the 'BasicAttackDamageMultiplier' effect. | 6 |  |
+| `BasicAttackStatusCarefulness` | Integer | Applies the 'BasicAttackStatusCarefulness' effect. | 2 |  |
 | [`BasicAttackStatusSwap`](./Arrays.md#array-basicattackstatusswap) | Array | Examples: `[ TempDamageUp DamageUp ]` | 1 |  |
 | `BasicButcherMelee` | Object |  | 1 |  |
 | `BasicDruidAbility` | Object |  | 1 |  |
@@ -842,6 +221,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BasicMedicMelee` | Object |  | 1 |  |
 | `BasicMelee` | Object |  | 42 |  |
 | `BasicMelee_4Hits` | Object |  | 1 |  |
+| `BasicMonkMelee` | Object |  | 2 |  |
 | `BasicNecroRanged` | Object |  | 1 |  |
 | `BasicPsychicPull` | Object |  | 1 |  |
 | `BasicRanged` | Object |  | 2 |  |
@@ -851,10 +231,19 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`BattlefieldUniqueRandomPassive`](#battlefielduniquerandompassive) | Object | Map Rule: Grants a unique random passive modifier to the battlefield. | 1 |  |
 | `BBTransformMutant` | Object |  | 1 |  |
 | `BBTransformZealot` | Object |  | 1 |  |
+| `BeefyCharmedLeech` | Object |  | 4 |  |
 | `BiggestFood` | Integer / Object | Applies or references the 'BiggestFood' effect/state. | 1 |  |
 | `BigSplashDamage` | Integer | Applies the 'BigSplashDamage' effect. | 1 |  |
 | `Bionic` | Variable |  | 12 |  |
+| [`Bird`](./Enums.md#enum-bird) | Enum / Object | Applies or references the 'Bird' effect/state. | 6 |  |
+| [`BirdRewards`](#birdrewards) | Object | Loot logic: Rewards dropped by bird-type enemies. | 18 |  |
+| `bishop_hat` | Variable |  | 3 |  |
 | `BlackHolePassive` | Integer | Applies or references the 'BlackHolePassive' effect/state. | 1 |  |
+| `BlackHoleSuck` | Integer | Applies or references the 'BlackHoleSuck' effect/state. | 1 |  |
+| [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum | Examples: `food, catnip` | 8 |  |
+| `BlastResistance` | Integer | Applies the 'BlastResistance' effect. | 6 |  |
+| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | Applies or references the 'Bleed' effect/state. | 9 |  |
+| `BleedThorns` | Integer | Applies or references the 'BleedThorns' effect/state. | 8 |  |
 | `BlessingOfPeace` | Integer | Applies or references the 'BlessingOfPeace' effect/state. | 1 |  |
 | `BloatEyeMovement2` | Object |  | 1 |  |
 | [`BloatEyePassive2`](./Enums.md#enum-bloateyepassive2) | Enum | Applies or references the 'BloatEyePassive2' effect/state. | 1 |  |
@@ -862,164 +251,523 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BlockAllDamage` | Integer | Applies or references the 'BlockAllDamage' effect/state. | 1 |  |
 | `BlockDamageUnderThreshold` | Integer | Applies or references the 'BlockDamageUnderThreshold' effect/state. | 1 |  |
 | `BlockNegativeStatus` | Integer | Applies or references the 'BlockNegativeStatus' effect/state. | 1 |  |
+| `Bloodzerked` | Integer | Applies or references the 'Bloodzerked' effect/state. | 1 |  |
+| `Bloodzerked` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`BodyGuard`](#bodyguard) | Object | Protects an ally by intercepting attacks directed at them. | 2 |  |
+| `BodyGuard` | Object |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `BombBehavior` | Integer | Applies or references the 'BombBehavior' effect/state. | 1 |  |
+| `BombRatTurtle` | Integer / Object | Applies or references the 'BombRatTurtle' effect/state. | 1 |  |
+| `BombRatTurtle` | Integer / Object |  |  | `1` (Number), `{ ... }` (Object) |
+| `BoneArmorPassive` | Integer | Applies or references the 'BoneArmorPassive' effect/state. | 3 |  |
 | `BoneWormShotMed` | Object |  | 1 |  |
+| [`bonus_passives`](#bonus_passives) | Object | Passives granted to the character while this ability is equipped. | 272 |  |
+| [`BonusAbility`](./Enums.md#enum-bonusability) | Enum | Applies the 'BonusAbility' effect. | 12 |  |
 | [`BonusAbility_DelayedApplication`](./Enums.md#enum-bonusability_delayedapplication) | Enum | Applies or references the 'BonusAbility_DelayedApplication' effect/state. | 1 |  |
+| `BonusDamageBasedOnMana` | Integer | Applies or references the 'BonusDamageBasedOnMana' effect/state. | 1 |  |
+| `BonusFoodEachBattle` | Integer | Applies the 'BonusFoodEachBattle' effect. | 2 |  |
 | `BonusHealthRegenBasedOnDex` | Integer | Applies the 'BonusHealthRegenBasedOnDex' effect. | 2 |  |
 | `BonusHealthRegenPerDisorder` | Integer | Examples: `1` | 1 |  |
 | `BonusRangeBasedOnDex` | Integer | Applies the 'BonusRangeBasedOnDex' effect. | 2 |  |
 | `BonusToss` | Object |  | 2 |  |
 | `BonusToss2` | Object |  | 2 |  |
+| [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Applies or references the 'BonusTurnPattern' effect/state. | 3 |  |
+| [`BoobyTrapItems`](#boobytrapitems) | Object | Applies the 'BoobyTrapItems' effect. | 2 |  |
+| `BoomerCatExplode` | Object |  | 2 |  |
+| `BoostAllyStatsOnDeath` | Integer | Applies the 'BoostAllyStatsOnDeath' effect. | 2 |  |
 | `BoostDamageAura` | Integer | Applies the 'BoostDamageAura' effect. | 1 |  |
 | `BoostDamageGlobalAura` | Integer | Applies the 'BoostDamageGlobalAura' effect. | 2 |  |
+| `BoostHeals` | Integer | Applies or references the 'BoostHeals' effect/state. | 2 |  |
 | `BoostRangeAura` | Integer | Applies the 'BoostRangeAura' effect. | 1 |  |
 | `BoostRangeGlobalAura` | Integer | Applies the 'BoostRangeGlobalAura' effect. | 2 |  |
 | `BoostReceivedHealing` | Integer | Applies or references the 'BoostReceivedHealing' effect/state. | 1 |  |
+| `BoostWeaponDamage` | Object | Applies the 'BoostWeaponDamage' effect. | 10 |  |
+| [`BossRewards`](#bossrewards) | Object | Loot logic: Rewards dropped upon defeating a boss. | 20 |  |
+| [`BounceRock`](./Enums.md#enum-bouncerock) | Array / Enum | Applies or references the 'BounceRock' effect/state. | 6 |  |
+| `BounceRock` | Array / Enum |  |  | `[1 .2]` (Array), `LavaBoulder` (Enum), `SmallRock` (Enum) |
+| [`BouncyProjectiles`](#bouncyprojectiles) | Object | Applies the 'BouncyProjectiles' effect. | 2 |  |
+| `Bound` | Integer | Applies or references the 'Bound' effect/state. | 2 |  |
+| `Bounty` | Integer | Applies the 'Bounty' effect. | 3 |  |
 | `BoyDino` | Object |  | 1 |  |
 | `BoyDinoCry` | Object |  | 1 |  |
+| `Brace` | Enum / Integer / Object | Applies or references the 'Brace' effect/state. | 20 |  |
+| `BraceForEachNeighboringEnemy` | Integer | Applies the 'BraceForEachNeighboringEnemy' effect. | 2 |  |
+| `BrambleRandomTileEvent` | Object |  | 10 |  |
+| `BramblesOnHit` | Integer | Applies or references the 'BramblesOnHit' effect/state. | 7 |  |
+| `BreakAtAux` | Integer | Applies or references the 'BreakAtAux' effect/state. | 4 |  |
+| [`BreakOnElement`](./Enums.md#enum-breakonelement) | Enum | Applies or references the 'BreakOnElement' effect/state. | 3 |  |
+| `BreakWhenNoShield` | Integer | Applies or references the 'BreakWhenNoShield' effect/state. | 2 |  |
+| `Brittle` | Integer | Applies or references the 'Brittle' effect/state. | 24 |  |
 | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 1 |  |
 | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 1 |  |
 | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 1 |  |
+| [`BrittleDuringElement`](./Enums.md#enum-brittleduringelement) | Enum | Applies or references the 'BrittleDuringElement' effect/state. | 7 |  |
 | `BrittleIntelligenceUp` | Integer | Applies or references the 'BrittleIntelligenceUp' effect/state. | 1 |  |
 | `BrittleLuckUp` | Integer | Applies or references the 'BrittleLuckUp' effect/state. | 1 |  |
 | `BrittleSpeedUp` | Integer | Applies or references the 'BrittleSpeedUp' effect/state. | 1 |  |
 | `BrittleStrengthUp` | Integer | Applies or references the 'BrittleStrengthUp' effect/state. | 1 |  |
+| [`Buddy`](./Enums.md#enum-buddy) | Enum / Object | Character Form / AI State: Behavior and stats for the 'Buddy' familiar state. | 18 |  |
+| `BuffImmunity` | Integer / Object | Applies or references the 'BuffImmunity' effect/state. | 4 |  |
+| `bug` | Variable |  | 4 |  |
 | [`BungaCheers`](#bungacheers) | Object | Animation/AI State: Bunga cheering animation logic. | 1 |  |
+| [`BungaEntrance`](#bungaentrance) | Object | Animation/AI State: Bunga entering the arena. | 2 |  |
+| `BungaSwipe` | Object |  | 2 |  |
+| `ButterflySwarm` | Integer | Examples: `2` | 1 |  |
+| `ButterflySwarm` | Number / Object |  |  | `2` (Number), `{ ... }` (Object) |
+| `BypassRockKnockback` | Integer | Applies or references the 'BypassRockKnockback' effect/state. | 1 |  |
+| [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 15 |  |
+| `CanceledQueuedInput` | Integer | Applies or references the 'CanceledQueuedInput' effect/state. | 1 |  |
+| `CancelPrimedAbilities` | Integer | Applies or references the 'CancelPrimedAbilities' effect/state. | 2 |  |
+| `CanLevelUpWhenDead` | Integer | Applies or references the 'CanLevelUpWhenDead' effect/state. | 2 |  |
+| [`CanMutateTo`](./Enums.md#enum-canmutateto) | Array / Enum | Applies or references the 'CanMutateTo' effect/state. | 3 |  |
+| `CanRemoveCursedItems` | Integer | Examples: `1` | 2 |  |
+| `CanShield` | Integer | Applies or references the 'CanShield' effect/state. | 2 |  |
+| `CantCatchDiseases` | Integer | Applies or references the 'CantCatchDiseases' effect/state. | 3 |  |
 | `CantDodge` | Integer | Applies the 'CantDodge' effect. | 1 |  |
+| `CantSpreadDiseases` | Integer | Applies or references the 'CantSpreadDiseases' effect/state. | 3 |  |
 | `CapBasicAttackDamage` | Integer | Applies or references the 'CapBasicAttackDamage' effect/state. | 1 |  |
+| `CapDamageFromAllies` | Integer | Applies the 'CapDamageFromAllies' effect. | 2 |  |
+| `CapMovementAbilityRange` | Integer | Applies or references the 'CapMovementAbilityRange' effect/state. | 2 |  |
 | `CapReceivedDamage` | Integer | Applies or references the 'CapReceivedDamage' effect/state. | 1 |  |
+| `CapTechSpent` | Integer | Applies the 'CapTechSpent' effect. | 2 |  |
+| [`CatAPultAnimation`](#catapultanimation) | Object | Applies the 'CatAPultAnimation' effect. | 2 |  |
 | `CatapultJump` | Object |  | 2 |  |
 | `CatapultJump2` | Object |  | 2 |  |
+| `CatchBoomerang` | Integer | Applies or references the 'CatchBoomerang' effect/state. | 4 |  |
+| [`CatchProjectiles`](#catchprojectiles) | Object | Applies or references the 'CatchProjectiles' effect/state. | 2 |  |
 | `CatGoop` | Object |  | 1 |  |
 | [`CatPartsSizeScale`](#catpartssizescale) | Object | Applies or references the 'CatPartsSizeScale' effect/state. | 1 |  |
+| [`CatPartsSizeScaleStatus`](#catpartssizescalestatus) | Object | Visually scales specific body parts of a character. | 3 |  |
 | `CaveCatDad` | Object |  | 1 |  |
+| [`CaveFamilyEnrage`](#cavefamilyenrage) | Object | AI Trigger: Enrage logic triggered when a cave family member is killed. | 6 |  |
 | `CaveWomanBirthControl` | Integer | Applies or references the 'CaveWomanBirthControl' effect/state. | 1 |  |
+| `CCImmunity` | Integer | Applies the 'CCImmunity' effect. | 2 |  |
 | [`CerberubsAggroTargetBehavior`](#cerberubsaggrotargetbehavior) | Object | AI Logic: Custom aggro targeting rules for Cerberubs. | 1 |  |
 | `CerberubsStraightReaction` | Object |  | 1 |  |
+| `ChainKnockback` | Integer | Applies the 'ChainKnockback' effect. | 2 |  |
+| `ChampionUpgradeNextMinion` | Integer | Applies or references the 'ChampionUpgradeNextMinion' effect/state. | 1 |  |
+| `ChampionUpgradeNextMinion` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`chance`](./Enums.md#enum-chance) | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
 | `ChanceToAmbush` | Integer | Applies or references the 'ChanceToAmbush' effect/state. | 1 |  |
+| [`ChanceToBackflip`](#chancetobackflip) | Object | Applies or references the 'ChanceToBackflip' effect/state. | 4 |  |
+| `ChanceToBlock` | Integer | Applies or references the 'ChanceToBlock' effect/state. | 3 |  |
+| `ChanceToBlockAndCounter` | Integer / Object | Applies or references the 'ChanceToBlockAndCounter' effect/state. | 2 |  |
+| [`ChanceToBreakFree`](#chancetobreakfree) | Object | Provides a probability to escape a grapple or restraining effect. | 11 |  |
+| `ChanceToDisableActionsIfNotCharmed` | Integer | Applies or references the 'ChanceToDisableActionsIfNotCharmed' effect/state. | 2 |  |
 | [`ChanceToForceEvent`](#chancetoforceevent) | Object | Applies or references the 'ChanceToForceEvent' effect/state. | 1 |  |
 | [`ChanceToFormChangeOnAbilityDamage`](#chancetoformchangeonabilitydamage) | Object | Reaction: Probability to change forms when taking ability damage. | 1 |  |
+| `ChanceToRevive` | Integer / Object | Applies or references the 'ChanceToRevive' effect/state. | 2 |  |
+| [`ChanceToSpitOnDamage`](#chancetospitondamage) | Object | Reaction: Probability to use a spit counter-attack when damaged. | 7 |  |
+| [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Applies or references the 'ChangeCatClass' effect/state. | 14 |  |
+| [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Applies or references the 'ChangeFaction' effect/state. | 2 |  |
+| `ChangeTauntPriority` | Integer | Applies the 'ChangeTauntPriority' effect. | 2 |  |
+| [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | Applies or references the 'ChangeTileOnDeath' effect/state. | 2 |  |
+| [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | Applies or references the 'ChangeTileOnPop' effect/state. | 4 |  |
+| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 5 |  |
 | [`ChangeTileUnderCharacterAtStart`](./Enums.md#enum-changetileundercharacteratstart) | Enum | Applies or references the 'ChangeTileUnderCharacterAtStart' effect/state. | 1 |  |
+| `ChaosBossFlipMidTeleport` | Integer | Applies or references the 'ChaosBossFlipMidTeleport' effect/state. | 1 |  |
+| `ChaosBossFormChange` | Integer | Applies or references the 'ChaosBossFormChange' effect/state. | 1 |  |
 | [`ChaosBossFormChangeGuide`](#chaosbossformchangeguide) | Object | Boss Logic: Maps the form transition phases for the Chaos Boss. | 1 |  |
 | [`ChaosBossPieces`](#chaosbosspieces) | Object | Boss Logic: Defines the separate destructible pieces of the Chaos Boss. | 1 |  |
 | [`ChaosHeadDropIn`](#chaosheaddropin) | Object | Boss Logic: Drop-in attack/animation for the Chaos Head. | 1 |  |
+| [`CharacterLightSource`](#characterlightsource) | Object | Visual: Attaches a dynamic lighting source to the character. | 16 |  |
+| [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 1 |  |
+| `Charge` | Integer | Applies or references the 'Charge' effect/state. | 30 |  |
+| `ChargeFists` | Integer / Object | Applies or references the 'ChargeFists' effect/state. | 2 |  |
+| `ChargeFists` | Integer / Object |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`ChargeSpiritBombAura`](./Enums.md#enum-chargespiritbombaura) | Enum | Applies or references the 'ChargeSpiritBombAura' effect/state. | 2 |  |
 | `CharismaIsMaxStat` | Integer | Applies or references the 'CharismaIsMaxStat' effect/state. | 1 |  |
+| `CharismaUp` | Enum / Integer | Applies or references the 'CharismaUp' effect/state. | 7 |  |
+| `CharmAllFlies` | Integer | Applies the 'CharmAllFlies' effect. | 2 |  |
 | `CharmedDemonKitten` | Object |  | 2 |  |
+| `CharmedFacingForceAttack` | Integer | Applies or references the 'CharmedFacingForceAttack' effect/state. | 1 |  |
+| `CharmedFly` | Object |  | 8 |  |
+| `CharmedFlySwarm` | Object |  | 2 |  |
+| `CharmedForceAttack` | Integer | Applies or references the 'CharmedForceAttack' effect/state. | 2 |  |
 | `CharmedLeech` | Object |  | 1 |  |
 | `CharmedPooter` | Object |  | 1 |  |
 | `CharmedReaper` | Object |  | 1 |  |
+| `CharmedTinySpider` | Object |  | 4 |  |
+| `CharmedTinyTumor` | Object |  | 3 |  |
 | `CharmImmunity` | Integer | Applies or references the 'CharmImmunity' effect/state. | 1 |  |
+| [`CherubimReaction`](#cherubimreaction) | Object | Reaction: Custom reaction triggers for Cherubim enemies. | 2 |  |
 | `choose_favorite_cat` | Variable |  | 1 |  |
 | `Chubs` | Object |  | 1 |  |
 | `ChubsGoop` | Object |  | 1 |  |
 | `ChubsRage` | Object |  | 1 |  |
 | [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 1200 |  |
+| [`ClassManaCostReduction`](#classmanacostreduction) | Object | Applies or references the 'ClassManaCostReduction' effect/state. | 4 |  |
+| `ClearDefaultDebris` | Integer | Examples: `1` | 1 |  |
+| `ClearFinalBossBattlefield` | Integer | Applies or references the 'ClearFinalBossBattlefield' effect/state. | 1 |  |
+| `ClearNegativeEffects` | Integer | Applies the 'ClearNegativeEffects' effect. | 2 |  |
+| `ClearStarving` | Integer | Applies or references the 'ClearStarving' effect/state. | 6 |  |
+| `CloneWeaponTemp` | Integer | Applies or references the 'CloneWeaponTemp' effect/state. | 1 |  |
+| [`CobraReflex`](./Enums.md#enum-cobrareflex) | Enum | Applies the 'CobraReflex' effect. | 4 |  |
+| `CockroachSwarm` | Integer | Examples: `1` | 1 |  |
+| `CockroachSwarm` | Number / Object |  |  | `1` (Number), `{ ... }` (Object) |
+| `Coin` | Integer / Object | Applies or references the 'Coin' effect/state. | 18 |  |
+| `CoinPickup` | Integer | Applies or references the 'CoinPickup' effect/state. | 10 |  |
+| `CoinsAddDamage` | Integer | Applies the 'CoinsAddDamage' effect. | 2 |  |
+| [`CoinTossBounce`](./Enums.md#enum-cointossbounce) | Enum | Applies or references the 'CoinTossBounce' effect/state. | 1 |  |
+| `CollectPickupsOnBattleEnd` | Integer | Applies the 'CollectPickupsOnBattleEnd' effect. | 2 |  |
+| `CollectsPickups` | Integer | Applies or references the 'CollectsPickups' effect/state. | 17 |  |
+| [`CollectsPickupsWithAltEffects`](#collectspickupswithalteffects) | Object | Triggers alternative nested effects when collecting items or pickups. | 5 |  |
+| [`CollideWithConsumed`](./Math_Equations.md) | Equation | Applies or references the 'CollideWithConsumed' effect/state. | 3 |  |
+| `CollideWithConsumed` | String |  |  | `5+bonus_melee_damage` (Enum), `4+bonus_melee_damage` (Enum) |
+| `CollideWithThrowTarget` | Integer | Applies or references the 'CollideWithThrowTarget' effect/state. | 2 |  |
+| [`Colorless`](./Arrays.md#array-colorless) | Object | Applies or references the 'Colorless' effect/state. | 140 |  |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional object: Executes nested logic only if the target is/has Adjacent. | 3 |  |
+| `Conditional_BadRoll` | Object | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 6 |  |
 | [`Conditional_Flying`](#conditional_flying) | Object | Examples: `{ ... }` | 1 |  |
+| `Conditional_GoodRoll` | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 17 |  |
 | [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Conditional constraint. Nested properties only trigger if this is true. | 1 |  |
+| `Conditional_PartyMember` | Object | Conditional constraint. Nested properties only trigger if this is true. | 4 |  |
+| `Conditional_RandomChance` | Object | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 3 |  |
+| `Conditional_Shielded` | Object | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 3 |  |
 | [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Conditional object: Executes nested logic only if the target is/has SourceHasTag. | 1 |  |
 | [`Conditional_Tiny`](#conditional_tiny) | Object | Examples: `{ ... }` | 1 |  |
+| `Conductor` | Object | Applies the 'Conductor' effect. | 2 |  |
 | `ConductorManaRegen` | Integer | Applies the 'ConductorManaRegen' effect. | 2 |  |
 | [`ConfusionEffectOnTaggedAbilities`](./Enums.md#enum-confusioneffectontaggedabilities) | Enum | Applies the 'ConfusionEffectOnTaggedAbilities' effect. | 1 |  |
+| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum / Object | Adds a temporary bonus ability to the character's hand/deck. | 2 |  |
+| `ConjureBonusAbility` | Enum / Object |  | 2 | `random` (Enum), `Mage` (Enum), `{ ... }` (Object) |
+| `ConjureCastSpellsForAllies` | Integer | Applies the 'ConjureCastSpellsForAllies' effect. | 2 |  |
+| [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. | 1 |  |
+| `consumable` | Boolean | `true` | 140 |  |
+| `ConsumableEffectsMultiplierBonus` | Integer | Applies the 'ConsumableEffectsMultiplierBonus' effect. | 2 |  |
+| `ConsumablesInfiniteRange` | Integer | Applies the 'ConsumablesInfiniteRange' effect. | 4 |  |
 | `ConsumablesMeleeRange` | Integer | Applies the 'ConsumablesMeleeRange' effect. | 1 |  |
+| [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 18 |  |
+| `ContextualHeal` | Integer | Applies or references the 'ContextualHeal' effect/state. | 7 |  |
 | [`ConvertDamageToScaledStatus`](#convertdamagetoscaledstatus) | Object | Applies or references the 'ConvertDamageToScaledStatus' effect/state. | 1 |  |
+| `CookedChickenLeg` | Object |  | 3 |  |
+| `CopyBasicAttackEffects` | Integer | Applies or references the 'CopyBasicAttackEffects' effect/state. | 4 |  |
+| `CopyCatPassive_Initializer` | Integer | Applies or references the 'CopyCatPassive_Initializer' effect/state. | 2 |  |
+| `CopyPassiveSlot` | Integer | Applies or references the 'CopyPassiveSlot' effect/state. | 3 |  |
+| `CopySpells` | Integer / Object | Duplicates existing spells currently in the character's hand. | 2 |  |
+| `CopySpells` | Integer / Object |  |  | `1` (Number), `{ ... }` (Object) |
+| `CorpseVaporizer` | Integer | Applies or references the 'CorpseVaporizer' effect/state. | 3 |  |
+| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 |  |
+| `CountAsCorpse` | Integer | Applies or references the 'CountAsCorpse' effect/state. | 4 |  |
+| [`CounterAttack`](./Enums.md#enum-counterattack) | Array / Enum / Object | Reaction: Executes a counter-attack ability when hit. | 4 |  |
 | [`CounterAttackAfterEnemyCastSpell`](./Enums.md#enum-counterattackafterenemycastspell) | Enum | Applies or references the 'CounterAttackAfterEnemyCastSpell' effect/state. | 1 |  |
 | `CounterNextAttacks` | Integer | Applies or references the 'CounterNextAttacks' effect/state. | 1 |  |
+| `Counterspell` | Integer / Object | Applies or references the 'Counterspell' effect/state. | 2 |  |
+| `Counterspell` | Integer / Object |  |  | `1` (Number), `{ ... }` (Object) |
 | `CraterCreeperOut` | Object |  | 1 |  |
+| `CreateGlobalModifiers` | Object | Generates global map or encounter rules/modifiers. | 3 |  |
+| `Creep` | Variable |  | 9 |  |
+| `CreepTile` | Variable |  | 4 |  |
+| `CritChanceUp` | Integer | Applies or references the 'CritChanceUp' effect/state. | 36 |  |
+| [`CritsApplyStatus`](#critsapplystatus) | Object | Applies the 'CritsApplyStatus' effect. | 12 |  |
+| `crow` | Variable |  | 4 |  |
 | `CrowAttackLink` | Integer | Applies or references the 'CrowAttackLink' effect/state. | 1 |  |
+| [`CureDisease`](#curedisease) | Object | Applies the 'CureDisease' effect. | 6 |  |
+| `CurrentWeaponAddElectricElement` | Integer | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. | 1 |  |
 | [`CyborgTurns`](#cyborgturns) | Object | Examples: `{ ... }` | 1 |  |
+| [`damage`](./Arrays.md#array-damage) | Enum / Integer / Object | The base damage properties of an attack. | 2 |  |
+| `DamageBasedOnMissingHealth` | Integer | Applies or references the 'DamageBasedOnMissingHealth' effect/state. | 2 |  |
+| `DamageDistanceAOEFalloff` | Integer | Applies or references the 'DamageDistanceAOEFalloff' effect/state. | 2 |  |
+| `DamageEnemiesOnHeal` | Integer | Combat Trigger: Deals damage to enemies on heal. | 2 |  |
+| `DamageEnemiesOnKill` | Integer | Combat Trigger: Deals damage to enemies on kill. | 2 |  |
 | `DamageFromBehindOnly` | Integer | Applies or references the 'DamageFromBehindOnly' effect/state. | 1 |  |
 | [`DamageIfDidntUseSpecificAbility`](#damageifdidntusespecificability) | Object | Combat Trigger: Deals damage to if didnt use specific ability. | 1 |  |
+| [`DamageNeighborsAfterMove`](#damageneighborsaftermove) | Object | Examples: `{ ... }` | 2 |  |
+| [`DamageNeighborsOnEndMove`](#damageneighborsonendmove) | Object | Combat Trigger: Deals damage to neighbors on end move. | 7 |  |
+| [`DamageNeighborTilesWhenCastSpell`](#damageneighbortileswhencastspell) | Object | Combat Trigger: Deals damage to neighbor tiles when cast spell. | 2 |  |
+| `DamageOrHealConditionally` | Integer | Applies or references the 'DamageOrHealConditionally' effect/state. | 5 |  |
+| [`DamageReductionAura`](#damagereductionaura) | Object | Combat Trigger: Deals damage to reduction aura. | 2 |  |
+| `DamageTrinket` | Integer | Applies or references the 'DamageTrinket' effect/state. | 2 |  |
+| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 |  |
+| `DamageWeapon` | Integer | Applies or references the 'DamageWeapon' effect/state. | 1 |  |
 | `DarkOneStrike` | Object |  | 1 |  |
+| [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Applies or references the 'DeadAltAbility' effect/state. | 12 |  |
+| `DeathChill` | Integer | Applies the 'DeathChill' effect. | 2 |  |
+| [`DeathRattle`](./Enums.md#enum-deathrattle) | Enum / Object | Event Trigger: Executes logic or abilities exactly when the character dies. | 2 |  |
+| [`DeathRattleRevive`](./Enums.md#enum-deathrattlerevive) | Enum / Object | Event Trigger: Revives the character immediately upon death. | 13 |  |
+| [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the 'DeathwormUnderground' effect/state. | 1 |  |
+| `DebuffImmunity` | Integer | Applies or references the 'DebuffImmunity' effect/state. | 2 |  |
 | `DecoyExplode` | Object |  | 1 |  |
+| `DecoySwapper` | Integer | Applies or references the 'DecoySwapper' effect/state. | 1 |  |
 | `DefaultMove` | Object |  | 6 |  |
+| `DeferVaporize` | Integer | Applies or references the 'DeferVaporize' effect/state. | 9 |  |
+| `DejaVu` | Integer | Applies the 'DejaVu' effect. | 2 |  |
+| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum / Object | Queues an ability to be cast automatically after a certain delay or trigger. | 2 |  |
+| `DelayCastAbility` | Enum / Object |  |  | `HitlerNuke` (Enum), `{ ... }` (Object) |
+| `DelayCastAbility` | Enum / Object |  |  | `HitlerNuke` (Enum), `{ ... }` (Object) |
+| [`DelayedAutoRevive`](#delayedautorevive) | Object | Applies or references the 'DelayedAutoRevive' effect/state. | 6 |  |
+| `DelayedFury` | Integer | Applies or references the 'DelayedFury' effect/state. | 2 |  |
 | `DelayedPain` | Integer | Applies or references the 'DelayedPain' effect/state. | 1 |  |
+| [`DelayedWindCone`](#delayedwindcone) | Object | Creates a delayed Area of Effect cone. | 1 |  |
+| `DeleteInanimateObjectsChance` | Integer | Examples: `25` | 1 |  |
+| `DeleteTraps` | Integer | Applies or references the 'DeleteTraps' effect/state. | 1 |  |
+| `DemonicGlyph_Bite` | Integer | Applies or references the 'DemonicGlyph_Bite' effect/state. | 2 |  |
 | `DemonicGlyph_Bounce` | Integer | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 |  |
 | `DemonicGlyph_Fire` | Integer | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 |  |
 | `DemonicGlyph_Movement` | Integer | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 |  |
+| `DemonicGlyph_Summon` | Integer | Applies or references the 'DemonicGlyph_Summon' effect/state. | 2 |  |
+| `DemonicGlyphFrames` | Integer | Applies or references the 'DemonicGlyphFrames' effect/state. | 2 |  |
 | `DemonicGlyphStealer` | Integer | Applies or references the 'DemonicGlyphStealer' effect/state. | 1 |  |
+| [`DepressionAura`](#depressionaura) | Integer | Examples: `1` | 2 |  |
 | `DestroyerShieldBash` | Object |  | 1 |  |
+| `DestroyNeckArmor` | Integer | Applies or references the 'DestroyNeckArmor' effect/state. | 1 |  |
+| `DestroyWeapon` | Integer | Applies or references the 'DestroyWeapon' effect/state. | 3 |  |
+| `DestroyWeaponThrow` | Integer | Applies or references the 'DestroyWeaponThrow' effect/state. | 3 |  |
 | [`Diabetes`](#diabetes) | Object | Applies the 'Diabetes' effect. | 1 |  |
 | [`DiceBehavior`](#dicebehavior) | Object | AI Logic: Custom behavior for Dice enemies. | 1 |  |
 | [`DicerArt`](./Arrays.md#array-dicerart) | Array | Applies or references the 'DicerArt' effect/state. | 1 |  |
+| [`DiesToElement`](./Enums.md#enum-diestoelement) | Enum / Object | Vulnerability: Character dies instantly if hit by this element. | 2 |  |
 | [`DiesToPiercingAndSpikes`](#diestopiercingandspikes) | Object | Vulnerability: Character dies instantly if hit by piercing attacks or spikes. | 1 |  |
+| `DieViaAbilityInternally` | Integer | Applies or references the 'DieViaAbilityInternally' effect/state. | 2 |  |
 | `DieWhenOnlyGolemsLeft` | Integer | Applies or references the 'DieWhenOnlyGolemsLeft' effect/state. | 1 |  |
 | `DieWhenSpawnerDies` | Integer | Applies or references the 'DieWhenSpawnerDies' effect/state. | 1 |  |
 | `Digest` | Object |  | 1 |  |
+| [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | Applies or references the 'DigestDeadBodies' effect/state. | 3 |  |
+| `DiminishingHealthRegen` | Integer | Applies or references the 'DiminishingHealthRegen' effect/state. | 9 |  |
+| [`DinoLegAnimation`](./Enums.md#enum-dinoleganimation) | Enum | Applies or references the 'DinoLegAnimation' effect/state. | 1 |  |
+| `DirtyClaws` | Integer | Applies the 'DirtyClaws' effect. | 2 |  |
+| [`DisableAbilities`](./Enums.md#enum-disableabilities) | Enum | Applies or references the 'DisableAbilities' effect/state. | 4 |  |
+| [`DisableAbilitiesWithTag`](./Enums.md#enum-disableabilitieswithtag) | Enum | Examples: `musical, consumable` | 8 |  |
+| `DisablePassiveSlot` | Integer | Applies or references the 'DisablePassiveSlot' effect/state. | 2 |  |
 | `DisableSpells` | Integer | Applies or references the 'DisableSpells' effect/state. | 1 |  |
+| `Disguised` | Integer | Applies or references the 'Disguised' effect/state. | 1 |  |
 | [`DisguisedTrapper`](./Enums.md#enum-disguisedtrapper) | Enum | Applies or references the 'DisguisedTrapper' effect/state. | 1 |  |
+| `Displace` | Integer | Applies or references the 'Displace' effect/state. | 12 |  |
+| `DisplaceToOriginalPosition` | Integer | Applies or references the 'DisplaceToOriginalPosition' effect/state. | 2 |  |
 | `DisplayBuddyCatOnSpawn` | Integer | Applies or references the 'DisplayBuddyCatOnSpawn' effect/state. | 1 |  |
+| [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum | Applies or references the 'DisplayDangerAOE' effect/state. | 4 |  |
+| `DissolveRandomArmorPiece` | Integer | Applies or references the 'DissolveRandomArmorPiece' effect/state. | 1 |  |
+| `DissuadeInstakills` | Integer | Applies or references the 'DissuadeInstakills' effect/state. | 2 |  |
+| [`DistanceBonusDamage`](#distancebonusdamage) | Object | Applies the 'DistanceBonusDamage' effect. | 4 |  |
+| [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum | Applies or references the 'Divide4OnDeath' effect/state. | 6 |  |
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 22 |  |
 | `DivineShieldPickup` | Integer | Applies or references the 'DivineShieldPickup' effect/state. | 1 |  |
+| `DodgeChance` | Integer | Examples: `2, 5, 10` | 30 |  |
+| `DodgeChance_Status` | Integer | Applies or references the 'DodgeChance_Status' effect/state. | 2 |  |
 | `DodgeChanceWithBlindSpot` | Integer | Applies or references the 'DodgeChanceWithBlindSpot' effect/state. | 1 |  |
 | [`DodgeWhenTargeted`](#dodgewhentargeted) | Object | Reaction: Executes a dodge maneuver when targeted. | 1 |  |
+| [`DoDistortionRing`](#dodistortionring) | Object | Creates a visual distortion ring effect on the screen. | 6 |  |
+| [`DoScreenShake`](#doscreenshake) | Integer / Object | Triggers a camera screen shake effect. | 11 |  |
+| `DoubleCast` | Integer | Applies or references the 'DoubleCast' effect/state. | 1 |  |
+| `DoubleCast` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `DoubleCastSpell` | Integer | Applies or references the 'DoubleCastSpell' effect/state. | 2 |  |
+| `DoubleCastSpell` | Integer |  |  | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `DoubleCastSpellIfManaCostUnderThreshold` | Integer | Applies or references the 'DoubleCastSpellIfManaCostUnderThreshold' effect/state. | 1 |  |
+| `DoubleCastSpellsEachTurn_Status` | Integer | Applies or references the 'DoubleCastSpellsEachTurn_Status' effect/state. | 1 |  |
 | `DoubleCastSpellThisTurn` | Integer | Applies or references the 'DoubleCastSpellThisTurn' effect/state. | 1 |  |
 | [`DoubleCastTaggedSpells`](./Enums.md#enum-doublecasttaggedspells) | Enum | Applies or references the 'DoubleCastTaggedSpells' effect/state. | 1 |  |
+| `DoubleCastWeapons` | Integer | Applies the 'DoubleCastWeapons' effect. | 2 |  |
+| `DoubleLoot` | Integer / Object | Applies or references the 'DoubleLoot' effect/state. | 2 |  |
+| `DoubleLoot` | Integer / Object |  | 2 | `2` (Number), `1` (Number), `{ ... }` (Object) |
 | `DoubleReceivedNegativeStatus` | Integer | Applies or references the 'DoubleReceivedNegativeStatus' effect/state. | 1 |  |
 | `DoubleReceivedPositiveStatus` | Integer | Applies or references the 'DoubleReceivedPositiveStatus' effect/state. | 1 |  |
+| [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Applies or references the 'DoubleStatus' effect/state. | 3 |  |
+| [`DownRankAIIfWeaponUsable`](./Enums.md#enum-downrankaiifweaponusable) | Float | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. | 4 |  |
+| `DrainAllyCatsForFleshGolem` | Integer | Applies or references the 'DrainAllyCatsForFleshGolem' effect/state. | 1 |  |
+| `DrinkWater` | Integer | Applies or references the 'DrinkWater' effect/state. | 2 |  |
 | `DrMangler` | Object |  | 2 |  |
+| [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Applies or references the 'DropAsFamiliarOnArmorBreak' effect/state. | 3 |  |
 | [`DropAsFamiliarOnTookDamage`](./Enums.md#enum-dropasfamiliarontookdamage) | Enum | Applies or references the 'DropAsFamiliarOnTookDamage' effect/state. | 1 |  |
 | [`DropSoulJarOnDeath`](./Enums.md#enum-dropsouljarondeath) | Enum | Applies or references the 'DropSoulJarOnDeath' effect/state. | 1 |  |
+| `DukeOfFlies` | Integer | Applies the 'DukeOfFlies' effect. | 2 |  |
+| `DuplicateRandomEquippedItem` | Integer | Applies or references the 'DuplicateRandomEquippedItem' effect/state. | 1 |  |
+| [`DurabilityTransform`](#durabilitytransform) | Object | Applies or references the 'DurabilityTransform' effect/state. | 7 |  |
 | `DustCloudBehavior` | Integer | Applies or references the 'DustCloudBehavior' effect/state. | 1 |  |
+| [`DustOnHit`](#dustonhit) | Object | Spawns a specific particle or cloud object upon impact. | 3 |  |
 | `Dybbuk1HPTracker` | Integer | Applies or references the 'Dybbuk1HPTracker' effect/state. | 1 |  |
+| `DybbukManualExitTag` | Variable |  | 1 |  |
 | [`DybbukPossessionFallback`](#dybbukpossessionfallback) | Object | Logic: Fallback state when a Dybbuk possession fails. | 1 |  |
+| [`Dyslexia`](./Arrays.md#array-dyslexia) | Array | Examples: `[ 6 9 ], [ 3 5 ]` | 2 |  |
 | `EachSpellFreeAtFullMana` | Integer | Applies the 'EachSpellFreeAtFullMana' effect. | 2 |  |
+| `Earth` | Object | Examples: `{ ... }` | 2 |  |
 | `EatShit` | Object |  | 1 |  |
+| `Electric` | Object | Examples: `{ ... }` | 6 |  |
 | `ElectricArcs` | Integer | Applies or references the 'ElectricArcs' effect/state. | 1 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type to check for. | 1 |  |
+| [`ElementalAttunement`](#elementalattunement) | Object | Applies the 'ElementalAttunement' effect. | 2 |  |
+| [`ElementalManaCostReduction`](#elementalmanacostreduction) | Object | Applies the 'ElementalManaCostReduction' effect. | 4 |  |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 16 |  |
+| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 12 |  |
 | [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum | Applies or references the 'ElementWeakness' effect/state. | 1 |  |
+| [`EliteFlatTint`](./Arrays.md#array-eliteflattint) | Array | Examples: `[ 1.1 1.1 1.1 ], [ 1.1 1.1 1.3 ], [ 1.1 1.1 1 ]` | 11 |  |
+| [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum | Examples: `SpikeBuff, Lava_Distortion, SparkleBuff` | 19 |  |
+| [`EliteTint`](./Arrays.md#array-elitetint) | Array | Examples: `[ .4 .4 .4 ], [ .6 .6 .6 .50 ], red` | 30 |  |
+| `EliteUpgradeNextMinion` | Integer | Applies or references the 'EliteUpgradeNextMinion' effect/state. | 1 |  |
+| `EliteUpgradeNextMinion` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`EMP`](#emp) | Object | Applies the 'EMP' effect. | 2 |  |
+| `Empath` | Integer | Applies the 'Empath' effect. | 2 |  |
+| `EmptyMana` | Integer | Applies the 'EmptyMana' effect. | 2 |  |
+| `EmptyMind` | Integer / Object | Applies or references the 'EmptyMind' effect/state. | 2 |  |
+| `EmptyMind` | Integer / Object |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Applies or references the 'EnableWeather' effect/state. | 4 |  |
 | `end_of_round` | Boolean | `true` | 1 |  |
+| `EndTurn` | Integer | Applies or references the 'EndTurn' effect/state. | 14 |  |
 | `enemies` | Variable |  | 1 |  |
+| `EnemiesGetPickupsKnockedOut` | Integer | Applies the 'EnemiesGetPickupsKnockedOut' effect. | 2 |  |
+| `EnergyStorm` | Integer | Applies the 'EnergyStorm' effect. | 2 |  |
+| `Enlarge` | Integer / Object | Applies or references the 'Enlarge' effect/state. | 2 |  |
+| `Enlarge` | Integer / Object |  | 2 | `3` (Number), `{ ... }` (Object) |
 | `EnrageOnDamage` | Integer | Applies or references the 'EnrageOnDamage' effect/state. | 1 |  |
+| [`EnterMount`](./Enums.md#enum-entermount) | Enum | Applies or references the 'EnterMount' effect/state. | 1 |  |
+| `equal` | Variable |  | 4 |  |
+| `EquipmentPassiveMultiplierBonus` | Integer | Applies the 'EquipmentPassiveMultiplierBonus' effect. | 2 |  |
+| `EquipmentSetBonusBonus` | Integer | Applies the 'EquipmentSetBonusBonus' effect. | 2 |  |
+| [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies or references the 'EquipPermanentItem' effect/state. | 3 |  |
+| [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum | Examples: `pills` | 4 |  |
+| [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum | Applies the 'EquipTemporaryItem' effect. | 12 |  |
 | `EraseSpawnCoins` | Integer | Applies or references the 'EraseSpawnCoins' effect/state. | 1 |  |
+| [`EscapeSequence`](#escapesequence) | Object | Applies the 'EscapeSequence' effect. | 2 |  |
+| [`Eternal`](#eternal) | Object | Applies the 'Eternal' effect. | 2 |  |
+| `euphoric` | Object | Examples: `{ ... }` | 1 |  |
+| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 25 |  |
 | `EventBounterHunterPassive` | Integer | Applies or references the 'EventBounterHunterPassive' effect/state. | 1 |  |
 | `exclude_self` | Boolean | `false` | 1 |  |
 | [`ExcludeFromEvents`](./Enums.md#enum-excludefromevents) | Enum | Applies or references the 'ExcludeFromEvents' effect/state. | 1 |  |
 | `ExhaustionRoundChange` | Integer | Applies the 'ExhaustionRoundChange' effect. | 1 |  |
+| `ExistUntilIdleUpkeep` | Integer | Applies or references the 'ExistUntilIdleUpkeep' effect/state. | 1 |  |
+| `ExpireOnSpawnerTurnEnd` | Integer | Applies or references the 'ExpireOnSpawnerTurnEnd' effect/state. | 2 |  |
+| `ExplodeCharacter_DeathBloom` | Integer | Applies or references the 'ExplodeCharacter_DeathBloom' effect/state. | 1 |  |
+| `ExplodeCharacter_DeathBloom2` | Integer | Applies or references the 'ExplodeCharacter_DeathBloom2' effect/state. | 1 |  |
+| `ExplodeOverkilledEnemies` | Integer | Applies the 'ExplodeOverkilledEnemies' effect. | 2 |  |
+| `ExplosionIfHitSomething` | Integer | Applies or references the 'ExplosionIfHitSomething' effect/state. | 4 |  |
+| `ExplosionImmunity` | Integer | Applies or references the 'ExplosionImmunity' effect/state. | 2 |  |
+| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 4 |  |
+| `ExtraBasicAttacks` | Integer | Applies the 'ExtraBasicAttacks' effect. | 6 |  |
+| `ExtraBasicMoves_Status` | Integer | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 3 |  |
+| `ExtraDispersedTurns` | Integer | Applies or references the 'ExtraDispersedTurns' effect/state. | 4 |  |
 | `ExtraInjuryOnDeath` | Integer | Applies the 'ExtraInjuryOnDeath' effect. | 1 |  |
+| `ExtraMovePoints` | Integer | Applies the 'ExtraMovePoints' effect. | 10 |  |
+| [`ExtraStatusWhenDealingDamage`](#extrastatuswhendealingdamage) | Object | Applies or references the 'ExtraStatusWhenDealingDamage' effect/state. | 2 |  |
+| `ExtraTrinketUses` | Integer | Applies or references the 'ExtraTrinketUses' effect/state. | 2 |  |
 | [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum | Applies or references the 'ExtraTurnsPerTaggedUnit' effect/state. | 1 |  |
+| `ExtraWeaponAttacks` | Integer | Applies the 'ExtraWeaponAttacks' effect. | 8 |  |
 | `face_EatNeverstone` | Object |  | 1 |  |
 | `face_LeechBrood` | Object |  | 1 |  |
+| `FaceArmorPassiveMultiplierBonus` | Integer | Applies or references the 'FaceArmorPassiveMultiplierBonus' effect/state. | 4 |  |
 | [`FaceAwayLastDamage`](#faceawaylastdamage) | Object | Reaction: Forces the character to face away from the last damage source. | 1 |  |
+| `FaceLastDamage` | Integer / Object | Reaction: Forces the character to face towards the last damage source. | 2 |  |
+| `FaceShield` | Integer | Applies or references the 'FaceShield' effect/state. | 2 |  |
+| `FactionDisguiseSource` | Integer | Applies or references the 'FactionDisguiseSource' effect/state. | 1 |  |
+| [`FactionUprising`](./Enums.md#enum-factionuprising) | Enum | Examples: `alien, robot, ghost` | 4 |  |
+| `FactionUprising` | Enum / Object |  |  | `robot` (Enum), `ghost` (Enum), `{ ... }` (Object) |
+| `FadeInsteadOfDie` | Integer | Applies or references the 'FadeInsteadOfDie' effect/state. | 10 |  |
+| [`FamiliarBonusAbility`](./Enums.md#enum-familiarbonusability) | Enum | Applies the 'FamiliarBonusAbility' effect. | 2 |  |
+| `FamiliarSecondaryDamageImmunity` | Integer | Applies the 'FamiliarSecondaryDamageImmunity' effect. | 2 |  |
+| `FastKnockback` | Integer | Applies or references the 'FastKnockback' effect/state. | 1 |  |
+| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 59 |  |
 | `fetus` | Variable |  | 5 |  |
+| `Fights` | Number | Applies or references the 'Fights' effect/state. | 4 |  |
 | [`FinalBossBeamQueue`](#finalbossbeamqueue) | Object | Boss Logic: Attack queue for the final boss beam. | 1 |  |
 | [`FinalBossBecomeTheChild`](#finalbossbecomethechild) | Object | Boss Logic: Phase transition for the final boss. | 1 |  |
 | [`FinalBossHitCountdownBoris`](#finalbosshitcountdownboris) | Object | Boss Logic: Countdown trigger for Boris. | 1 |  |
 | [`FinalBossHitCountdownExplosive`](#finalbosshitcountdownexplosive) | Object | Boss Logic: Countdown trigger for explosives. | 1 |  |
 | [`FinalBossHitCountdownHoly`](#finalbosshitcountdownholy) | Object | Boss Logic: Countdown trigger for holy attacks. | 1 |  |
 | [`FinalBossPupils`](#finalbosspupils) | Object | Boss Logic: Pupil state management. | 1 |  |
+| `FinalBossQueueBeam` | Integer | Applies or references the 'FinalBossQueueBeam' effect/state. | 1 |  |
+| [`FinalBossShield`](./Enums.md#enum-finalbossshield) | Enum | Applies or references the 'FinalBossShield' effect/state. | 2 |  |
 | [`FinalBossShieldHealth`](#finalbossshieldhealth) | Object | Boss Logic: Shield health management. | 1 |  |
 | [`FinalBossSyncAnimations`](#finalbosssyncanimations) | Object | Boss Logic: Synchronizes multi-part boss animations. | 1 |  |
+| [`FindExtraItemFromPoolOnBattleEnd`](./Enums.md#enum-findextraitemfrompoolonbattleend) | Enum | Applies or references the 'FindExtraItemFromPoolOnBattleEnd' effect/state. | 2 |  |
+| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. | 2 |  |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum / Object | Generates an item drop from the specified loot pool. | 19 |  |
+| `Fire` | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 6 |  |
+| `FireArmor` | Integer / Object | Applies or references the 'FireArmor' effect/state. | 1 |  |
+| `FireArmor` | Integer / Object |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `FireArmor2` | Integer / Object | Applies or references the 'FireArmor2' effect/state. | 1 |  |
+| `FireArmor2` | Integer / Object |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `FireExtinguish_Steam` | Variable |  | 1 |  |
+| `FireflySwarm` | Integer | Examples: `2` | 1 |  |
+| `FireflySwarm` | Number / Object |  |  | `2` (Number), `{ ... }` (Object) |
+| `FireStorm` | Integer | Examples: `33, 0` | 2 |  |
+| `FireStorm` | Number / Object |  |  | `33` (Number), `0` (Number), `{ ... }` (Object) |
 | `FistOfFateUniqueEnemyTracker` | Integer | Applies or references the 'FistOfFateUniqueEnemyTracker' effect/state. | 1 |  |
+| `Flammable` | Integer | Applies or references the 'Flammable' effect/state. | 13 |  |
 | `FlatHealWhenDealDamage` | Integer | Examples: `1` | 2 |  |
+| `FlatLeechIfDamaged` | Integer | Applies or references the 'FlatLeechIfDamaged' effect/state. | 2 |  |
 | `FlingObjectsOnTop` | Integer | Applies or references the 'FlingObjectsOnTop' effect/state. | 1 |  |
+| `FlippedFacingForceAttack` | Integer | Applies the 'FlippedFacingForceAttack' effect. | 2 |  |
+| `FlowerPowerAuraBrace` | Integer | Applies the 'FlowerPowerAuraBrace' effect. | 2 |  |
+| `FlowerPowerAuraStrength` | Integer | Applies the 'FlowerPowerAuraStrength' effect. | 2 |  |
+| `FlowersOnEndTurn` | Integer | Applies or references the 'FlowersOnEndTurn' effect/state. | 2 |  |
+| `FlowersOnHit` | Integer | Applies or references the 'FlowersOnHit' effect/state. | 2 |  |
 | [`FlushmasterCelebration`](./Enums.md#enum-flushmastercelebration) | Enum | Applies or references the 'FlushmasterCelebration' effect/state. | 1 |  |
 | `FlyBuff` | Variable |  | 1 |  |
+| `FlyDamageIncrease` | Object | Applies the 'FlyDamageIncrease' effect. | 2 |  |
+| `Flying` | Integer | Applies or references the 'Flying' effect/state. | 2 |  |
+| `FlySwarm` | Object | Examples: `50` | 5 |  |
+| `FlySwarm` | Object |  | 5 | `50` (Number), `{ ... }` (Object) |
+| `Fog` | Integer | Examples: `1` | 1 |  |
+| `Fog` | Number / Object |  |  | `1` (Number), `{ ... }` (Object) |
+| [`FollowUp`](./Enums.md#enum-followup) | Enum | Applies the 'FollowUp' effect. | 2 |  |
+| `Food` | Integer / Object | Applies or references the 'Food' effect/state. | 11 |  |
+| `ForceCollectsPickups` | Integer | Applies or references the 'ForceCollectsPickups' effect/state. | 1 |  |
+| `ForceDisplace` | Integer | Applies or references the 'ForceDisplace' effect/state. | 3 |  |
 | `ForceDodgeEverything` | Integer | Applies or references the 'ForceDodgeEverything' effect/state. | 1 |  |
+| [`ForceImmediateMoveAndAttack`](#forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 1 |  |
+| `ForceMoveAndAttack` | Integer | Applies or references the 'ForceMoveAndAttack' effect/state. | 1 |  |
+| `ForceMoveNonAlliesInRangeTowardsTile` | Integer | Applies or references the 'ForceMoveNonAlliesInRangeTowardsTile' effect/state. | 2 |  |
+| `ForceMoveTowardsEnemies` | Enum / Integer | Applies or references the 'ForceMoveTowardsEnemies' effect/state. | 3 |  |
+| `ForceMoveTowardsEnemies` | Enum / Integer |  |  | `MoveOne` (Enum), `DumbMove_Impl` (Enum), `1` (Number) |
+| [`ForceMoveTowardsTaggedObject`](#forcemovetowardstaggedobject) | Object | Forces the character to move towards the nearest object with a specific tag. | 2 |  |
+| [`ForceSpecificInjury`](./Enums.md#enum-forcespecificinjury) | Enum | Applies the 'ForceSpecificInjury' effect. | 8 |  |
+| `ForceTransferWeapon` | Integer | Applies or references the 'ForceTransferWeapon' effect/state. | 1 |  |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum / Object | Applies or references the 'ForceUseAbility' effect/state. | 20 |  |
 | [`ForceUseAbilityOnTarget`](#forceuseabilityontarget) | Object | Applies or references the 'ForceUseAbilityOnTarget' effect/state. | 1 |  |
+| [`FormChangeDuringWeatherElement`](#formchangeduringweatherelement) | Object | Logic: Changes form automatically during specific weather conditions. | 2 |  |
+| [`FormChangeHealthThreshold`](#formchangehealththreshold) | Object | Logic: Changes form when health crosses a threshold. | 3 |  |
+| [`FormChangeOffMap`](#formchangeoffmap) | Object | Logic: Changes form when pushed off the map. | 8 |  |
+| [`FormChangeOnElementInfluence`](#formchangeonelementinfluence) | Object | Logic: Changes form when affected by an element. | 9 |  |
+| [`FormChanger`](#formchanger) | Object | AI Role: Designates the character as one that frequently shifts forms. | 106 |  |
 | [`FormChangeWhenBuddyDies`](./Enums.md#enum-formchangewhenbuddydies) | Enum | Applies or references the 'FormChangeWhenBuddyDies' effect/state. | 1 |  |
+| [`FormChangeWhileHasStatus`](#formchangewhilehasstatus) | Object | Logic: Changes form automatically while possessing a specific status. | 35 |  |
+| [`FormChangeWhilePrimingAbility`](#formchangewhileprimingability) | Object | Logic: Changes form while preparing/priming a specific ability. | 6 |  |
+| `Fragile` | Integer | Applies or references the 'Fragile' effect/state. | 6 |  |
+| [`FragileDuringElement`](./Enums.md#enum-fragileduringelement) | Enum | Applies or references the 'FragileDuringElement' effect/state. | 4 |  |
 | `FrankBolts` | Integer / Object | Applies or references the 'FrankBolts' effect/state. | 1 |  |
+| `FreeFirstCast` | Integer | Applies or references the 'FreeFirstCast' effect/state. | 6 |  |
 | `FreeFirstCastAndAfterSpendMana` | Integer | Applies or references the 'FreeFirstCastAndAfterSpendMana' effect/state. | 1 |  |
 | `FreeFirstCastEachMatch` | Integer | Applies or references the 'FreeFirstCastEachMatch' effect/state. | 1 |  |
+| [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum | Applies the 'FreePathfindElement' effect. | 6 |  |
 | `FreeSpellsAtFullMana` | Integer | Applies the 'FreeSpellsAtFullMana' effect. | 1 |  |
+| `FreezePiercing` | Integer | Applies the 'FreezePiercing' effect. | 4 |  |
 | `FrontstabBasicAttackCritChance` | Integer | Applies the 'FrontstabBasicAttackCritChance' effect. | 1 |  |
 | `FrontstabCritChance` | Integer | Applies the 'FrontstabCritChance' effect. | 2 |  |
 | `FullBlockEverything` | Integer | Applies or references the 'FullBlockEverything' effect/state. | 1 |  |
 | `FullBlockEverythingTo0Damage` | Integer | Applies or references the 'FullBlockEverythingTo0Damage' effect/state. | 1 |  |
 | `FullHealthAllStatsUp` | Integer | Applies the 'FullHealthAllStatsUp' effect. | 2 |  |
+| `FullHealthCritChance` | Integer | Applies the 'FullHealthCritChance' effect. | 2 |  |
 | `FullHealthManaRegen` | Integer | Applies the 'FullHealthManaRegen' effect. | 2 |  |
+| `FullPower` | Integer | Applies the 'FullPower' effect. | 2 |  |
 | [`FurnitureStats`](#furniturestats) | Object | Applies the 'FurnitureStats' effect. | 1 |  |
+| [`GainCoins`](./Arrays.md#array-gaincoins) | Array / Integer | Applies or references the 'GainCoins' effect/state. | 10 |  |
+| `GainCoinsRange` | Object | Grants the player a randomized amount of coins within a min/max range. | 7 |  |
+| `GainExtraShield` | Integer | Applies the 'GainExtraShield' effect. | 2 |  |
 | `GainManaWhenAnythingDies` | Integer | Examples: `1` | 2 |  |
 | `GasCanBehavior` | Integer | Applies or references the 'GasCanBehavior' effect/state. | 1 |  |
 | `GasCloudBehavior2` | Integer | Applies or references the 'GasCloudBehavior2' effect/state. | 1 |  |
 | `GeminiTwin` | Integer | Applies or references the 'GeminiTwin' effect/state. | 1 |  |
 | `GirlDino` | Object |  | 1 |  |
 | `GirlDinoCry` | Object |  | 1 |  |
+| `GiveBoundItemToTarget` | Integer | Applies or references the 'GiveBoundItemToTarget' effect/state. | 1 |  |
 | `GlobalFamiliarDamageBoost` | Integer | Examples: `1` | 1 |  |
 | `GlobalFamiliarMoveBoost` | Integer | Examples: `1` | 1 |  |
 | [`GlobalFlowerTrapperAura`](#globalflowertrapperaura) | Object | Examples: `{ ... }` | 1 |  |
+| `GlobalHealthRegenAura` | Integer | Examples: `3` | 1 |  |
+| `GlobalManaBurnAura` | Integer | Examples: `-1` | 2 |  |
 | `GlobalManaDrainAura` | Integer | Applies or references the 'GlobalManaDrainAura' effect/state. | 1 |  |
 | [`GlobalMeleeRevengeDamage`](#globalmeleerevengedamage) | Object | Applies or references the 'GlobalMeleeRevengeDamage' effect/state. | 1 |  |
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |  |
+| [`GlobalSpawnOnRoundEnd`](#globalspawnonroundend) | Object | Examples: `{ ... }` | 2 |  |
 | `GoopImmunity` | Integer | Applies or references the 'GoopImmunity' effect/state. | 1 |  |
+| `GoopWalk` | Integer | Applies or references the 'GoopWalk' effect/state. | 2 |  |
+| [`Grappled`](./Arrays.md#array-grappled) | Array / Integer | Applies or references the 'Grappled' effect/state. | 8 |  |
+| `Grappled` | Array / Integer |  |  | `[1 .5]` (Array), `[1 .75]` (Array), `1` (Number), `{ ... }` (Object) |
+| `Grass` | Object | Examples: `{ ... }` | 2 |  |
+| `GrassTile` | Number | Examples: `80, 15` | 4 |  |
+| `GrassTileHealing` | Integer | Applies the 'GrassTileHealing' effect. | 2 |  |
+| [`GravityWell`](#gravitywell) | Object | Applies the 'GravityWell' effect. | 2 |  |
+| `greater` | Variable |  | 2 |  |
+| `GrenadeExplode` | Object |  | 2 |  |
+| [`GroundFlopper`](./Enums.md#enum-groundflopper) | Enum | Applies or references the 'GroundFlopper' effect/state. | 4 |  |
 | `grub_familiar` | Variable |  | 1 |  |
 | `Guillotina2Body` | Object |  | 1 |  |
 | `Guillotina2Head` | Object |  | 1 |  |
@@ -1027,112 +775,400 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Guillotina3Head` | Object |  | 1 |  |
 | `GuillotinaDeathHead` | Integer | Applies or references the 'GuillotinaDeathHead' effect/state. | 1 |  |
 | [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | Applies or references the 'HarpoonTrapPassive' effect/state. | 1 |  |
+| `Haunt` | Object |  | 2 |  |
 | `HCHumanDie` | Object |  | 1 |  |
+| `HeadArmorPassiveMultiplierBonus` | Integer | Applies or references the 'HeadArmorPassiveMultiplierBonus' effect/state. | 5 |  |
+| `HealAndOverhealToShield` | Integer | Applies the 'HealAndOverhealToShield' effect. | 2 |  |
 | `HealAtStart` | Integer | Applies the 'HealAtStart' effect. | 2 |  |
+| `HealDamagesEnemies` | Integer | Applies the 'HealDamagesEnemies' effect. | 2 |  |
 | `HealingAura` | Integer | Applies the 'HealingAura' effect. | 2 |  |
 | [`HealNeighborsEachTurn`](#healneighborseachturn) | Object | Passive: Restores health to adjacent allies at the start of the turn. | 1 |  |
+| `HealPercentMaxHP` | Integer | Applies or references the 'HealPercentMaxHP' effect/state. | 1 |  |
+| `HealsAlsoRegenMana` | Integer | Applies the 'HealsAlsoRegenMana' effect. | 2 |  |
+| `HealsCanRevive` | Integer | Applies the 'HealsCanRevive' effect. | 2 |  |
+| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 36 |  |
+| `HealthMultiplier` | Float | Examples: `1.5, .5, .8` | 15 |  |
+| [`HealthPickup`](#healthpickup) | Object | Pickup Logic: Defines what happens when a health item is collected. | 16 |  |
+| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
+| `HealTo` | Integer | Applies or references the 'HealTo' effect/state. | 1 |  |
+| `HeatWave` | Integer | Examples: `1` | 1 |  |
+| `HeatWave` | Array / Number / Object |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `HeavyHits` | Integer | Applies or references the 'HeavyHits' effect/state. | 1 |  |
+| `HeavyHits` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `HemBounce` | Object |  | 1 |  |
 | `HiddenDoomed` | Integer | Applies or references the 'HiddenDoomed' effect/state. | 1 |  |
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. | 1 |  |
 | `HideSomeHudStuff` | Integer | Applies or references the 'HideSomeHudStuff' effect/state. | 1 |  |
+| `HitExplosion` | Integer | Applies or references the 'HitExplosion' effect/state. | 5 |  |
 | [`HitlerExecute`](#hitlerexecute) | Object | Boss Logic: Specific execution or ultimate attack state. | 1 |  |
+| [`Holy`](./Enums.md#enum-holy) | Enum / Object | `MegaGuppy_TransformHoly` | 3 |  |
 | `HolyDamageMultiplierBonus` | Integer | Applies the 'HolyDamageMultiplierBonus' effect. | 2 |  |
+| `HolyShieldTransferToSpawner` | Integer | Applies the 'HolyShieldTransferToSpawner' effect. | 2 |  |
+| [`HolyShieldTransferToTaggedMinions`](./Enums.md#enum-holyshieldtransfertotaggedminions) | Enum | Applies the 'HolyShieldTransferToTaggedMinions' effect. | 2 |  |
+| `HouseFoodRequirementMultiplier` | Integer | Examples: `0` | 4 |  |
 | [`HPAltStates`](#hpaltstates) | Object | Visual: Alternative sprite states based on current health. | 1 |  |
+| `HPGainBlock` | Integer | Applies or references the 'HPGainBlock' effect/state. | 2 |  |
 | [`Hunter`](./Arrays.md#array-hunter) | Object | Applies or references the 'Hunter' effect/state. | 68 |  |
 | `Hyde` | Object |  | 6 |  |
 | `Hypomania` | Integer | Applies the 'Hypomania' effect. | 1 |  |
+| `Ice` | Object | Examples: `{ ... }` | 7 |  |
+| `IceArmor` | Integer / Object | Applies or references the 'IceArmor' effect/state. | 2 |  |
+| `IceArmor` | Integer / Object |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `IceBlockBehavior` | Integer | Applies or references the 'IceBlockBehavior' effect/state. | 1 |  |
 | `IDSprout` | Object |  | 1 |  |
+| `IgnoreDebuffs` | Integer | Applies or references the 'IgnoreDebuffs' effect/state. | 1 |  |
+| `IgnoreSelf` | Boolean / Integer | Applies or references the 'IgnoreSelf' effect/state. | 75 |  |
+| `IgnoreSelf` | Boolean / Integer |  |  | `true` (Boolean), `1` (Number) |
+| `IgnoreTiles` | Integer | Applies or references the 'IgnoreTiles' effect/state. | 12 |  |
+| `IllusionTint` | Integer | Applies or references the 'IllusionTint' effect/state. | 3 |  |
+| [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Array / Enum / Object | Reaction: Executes an ability instantly, interrupting the current sequence. | 26 |  |
+| [`ImmediateUseDirectionalAbility`](./Enums.md#enum-immediateusedirectionalability) | Enum | Applies or references the 'ImmediateUseDirectionalAbility' effect/state. | 2 |  |
+| `ImmobilePassive` | Integer | Applies or references the 'ImmobilePassive' effect/state. | 2 |  |
+| `ImmortalLeeches` | Integer | Applies the 'ImmortalLeeches' effect. | 2 |  |
+| [`IncAuxCounterClamped`](#incauxcounterclamped) | Object | Increments a generic auxiliary counter on the character, capped by a maximum value. | 3 |  |
+| [`IncAuxCounterCycle`](#incauxcountercycle) | Object | Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum. | 1 |  |
+| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 3 |  |
+| `IncreaseCumulativeBlastDamage` | Integer | Applies or references the 'IncreaseCumulativeBlastDamage' effect/state. | 1 |  |
+| `IncreaseExplosionDamage` | Integer | Applies the 'IncreaseExplosionDamage' effect. | 4 |  |
+| `IncreaseExplosionSize` | Integer | Applies or references the 'IncreaseExplosionSize' effect/state. | 2 |  |
+| `IncreaseHealingSpellRange` | Integer | Applies the 'IncreaseHealingSpellRange' effect. | 2 |  |
+| `IncreaseItemAuxOnKill` | Integer | Applies or references the 'IncreaseItemAuxOnKill' effect/state. | 1 |  |
 | `IncreaseItemUsesOnEquip` | Integer | Applies the 'IncreaseItemUsesOnEquip' effect. | 2 |  |
+| `IncreaseSpellRange` | Integer | Applies or references the 'IncreaseSpellRange' effect/state. | 2 |  |
+| [`InfiniteRebirth`](#infiniterebirth) | Object | Applies the 'InfiniteRebirth' effect. | 2 |  |
 | `InheritSpawnerStats` | Integer | Applies or references the 'InheritSpawnerStats' effect/state. | 1 |  |
+| `InjuryImmunity` | Integer | Applies or references the 'InjuryImmunity' effect/state. | 2 |  |
+| [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 8 |  |
 | `insane` | Object | Examples: `{ ... }` | 1 |  |
 | `InsertIntoBackgroundPlaceholder` | Integer | Applies or references the 'InsertIntoBackgroundPlaceholder' effect/state. | 1 |  |
+| `InstantMaxHealthUp` | Integer | Applies or references the 'InstantMaxHealthUp' effect/state. | 3 |  |
+| `int` | Enum / Integer | `aux` | 401 |  |
 | `InterchangeDisabler` | Integer | Applies or references the 'InterchangeDisabler' effect/state. | 1 |  |
+| `InterchangeMoveActPoints` | Integer | Applies or references the 'InterchangeMoveActPoints' effect/state. | 1 |  |
 | `InvertBrainFaction` | Integer | Applies the 'InvertBrainFaction' effect. | 1 |  |
+| `Invulnerable` | Integer | Applies or references the 'Invulnerable' effect/state. | 1 |  |
+| `Invulnerable` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`ItemAuxTransform`](#itemauxtransform) | Object | Applies or references the 'ItemAuxTransform' effect/state. | 6 |  |
+| [`Jester`](./Arrays.md#array-jester) | Array | Examples: `[ CAT_VS_BOSS_QUOTES_JESTER_1 CAT_VS_BOSS_QUOTES_JESTER_2..., [ CAT_RETURN_EA...` | 32 |  |
 | `JesterLevelUpRerolls` | Integer | Applies or references the 'JesterLevelUpRerolls' effect/state. | 1 |  |
+| `JohnnyCriesForWashers` | Integer | Applies or references the 'JohnnyCriesForWashers' effect/state. | 2 |  |
 | [`JohnnyNeedsWashing`](#johnnyneedswashing) | Object | Character Form: Behavior and stats for the 'JohnnyNeedsWashing' state. | 1 |  |
 | [`JohnnyWasher`](./Enums.md#enum-johnnywasher) | Enum | Applies or references the 'JohnnyWasher' effect/state. | 1 |  |
+| `JudgementDay` | Integer | Examples: `25` | 1 |  |
+| `JudgementDay` | Number / Object |  |  | `25` (Number), `{ ... }` (Object) |
+| `KaijuKnockbackImmune` | Integer | Applies or references the 'KaijuKnockbackImmune' effect/state. | 6 |  |
+| [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum | Applies or references the 'KaijuWinCon' effect/state. | 2 |  |
+| `KillsHeal` | Integer | Applies the 'KillsHeal' effect. | 2 |  |
+| [`KillsToMeat`](./Enums.md#enum-killstomeat) | Enum | Applies or references the 'KillsToMeat' effect/state. | 2 |  |
+| `KineticSpikes` | Integer | Applies or references the 'KineticSpikes' effect/state. | 6 |  |
+| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 27 |  |
+| `Knockback` | Integer | Applies or references the 'Knockback' effect/state. | 26 |  |
+| `KnockbackDamageImmuneUntilSettled` | Integer | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 10 |  |
+| `KnockbackDirectionIsFacingDirection` | Enum / Integer | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. | 5 |  |
+| `KnockbackDirectionIsFacingDirection` | Enum / Integer |  |  | `flip` (Enum), `rotate_right` (Enum), `1` (Number) |
 | [`KnockbackIfCrit`](#knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 1 |  |
+| `KnockbackImmunity` | Integer | Applies the 'KnockbackImmunity' effect. | 6 |  |
+| [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Integer / Object | Forces the target to drop coins. | 3 |  |
+| [`LateBloomer`](#latebloomer) | Object | Applies the 'LateBloomer' effect. | 2 |  |
+| [`LateStatusApplication`](#latestatusapplication) | Object | Applies a status effect after all primary damage and effects have fully resolved. | 4 |  |
+| `Lava_Distortion` | Variable |  | 3 |  |
+| `lck` | Enum / Integer | `aux` | 351 |  |
+| [`LeaveBehindOnceEachMove`](./Enums.md#enum-leavebehindonceeachmove) | Enum | Applies or references the 'LeaveBehindOnceEachMove' effect/state. | 2 |  |
+| `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 2 |  |
 | [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum | Applies or references the 'LegacySpawnSavedCatIfExists' effect/state. | 1 |  |
 | `LennyCatDies` | Object |  | 1 |  |
+| `less_or_equal` | Variable |  | 16 |  |
+| [`LevelUpClassOverride`](./Enums.md#enum-levelupclassoverride) | Enum | Applies the 'LevelUpClassOverride' effect. | 4 |  |
+| `Lifesteal` | Integer | Applies or references the 'Lifesteal' effect/state. | 3 |  |
+| `LightningAspectCharge` | Integer | Applies the 'LightningAspectCharge' effect. | 2 |  |
+| [`LightningRod`](#lightningrod) | Object | Applies the 'LightningRod' effect. | 2 |  |
+| `LimitDamage` | Integer | Applies or references the 'LimitDamage' effect/state. | 2 |  |
 | [`LimitedTileTrail`](./Enums.md#enum-limitedtiletrail) | Enum | Applies the 'LimitedTileTrail' effect. | 1 |  |
+| `LimitHeal` | Integer | Applies or references the 'LimitHeal' effect/state. | 2 |  |
 | `LimitSelfKnockbackDamage` | Integer | Applies the 'LimitSelfKnockbackDamage' effect. | 1 |  |
+| [`LineOfSightTrueSightAura`](./Enums.md#enum-lineofsighttruesightaura) | Float | Applies the 'LineOfSightTrueSightAura' effect. | 2 |  |
+| `LobbedHook` | Integer | Applies the 'LobbedHook' effect. | 2 |  |
 | [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | Applies or references the 'LockOrientationFaceTile' effect/state. | 1 |  |
+| [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum | Applies or references the 'LoopingSoundWhileAlive' effect/state. | 4 |  |
+| `LowerAmbientLight` | Object | A visual effect that dims the map's lighting. | 4 |  |
+| `LowerAmbientLight` | Object | A visual effect that dims the map's lighting. | 4 |  |
+| `LowGravityKnockbackBoost` | Integer | Examples: `1` | 1 |  |
+| `LowGravityRangeBoost` | Integer | Examples: `2` | 1 |  |
+| [`LowHealthAllyDodgeChanceAura`](#lowhealthallydodgechanceaura) | Object | Applies the 'LowHealthAllyDodgeChanceAura' effect. | 2 |  |
+| `LuckUp` | Enum / Integer | Applies or references the 'LuckUp' effect/state. | 17 |  |
 | `Lucky` | Enum | data/boss_elite_buffs.gon, data/elite_buffs.gon | 8 |  |
+| `MadnessChanceOnTurnBegin` | Integer | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |  |
+| `Maggot` | Object |  | 15 |  |
+| `MagicDamageImmune` | Integer | Applies or references the 'MagicDamageImmune' effect/state. | 2 |  |
+| `MakeBasicAttackPassThroughThings` | Integer | Applies the 'MakeBasicAttackPassThroughThings' effect. | 2 |  |
+| `MakeBasicAttackPull` | Integer | Examples: `1` | 2 |  |
+| `MakeSpellsRequireCharge` | Integer | Applies the 'MakeSpellsRequireCharge' effect. | 2 |  |
+| `MakeWeaponUnbreakable` | Integer | Applies or references the 'MakeWeaponUnbreakable' effect/state. | 1 |  |
+| `MamaCatAnimations` | Integer | Applies or references the 'MamaCatAnimations' effect/state. | 2 |  |
+| `ManaCostReduction` | Integer | Applies or references the 'ManaCostReduction' effect/state. | 4 |  |
+| [`ManaCostReductionTagged`](#manacostreductiontagged) | Object | Applies the 'ManaCostReductionTagged' effect. | 8 |  |
 | [`ManaGainRange`](#managainrange) | Object | Applies or references the 'ManaGainRange' effect/state. | 1 |  |
+| [`ManaPickup`](#manapickup) | Object | Pickup Logic: Defines what happens when a mana item is collected. | 3 |  |
+| `ManaRegenMultiplierIfManaEmpty` | Integer | Applies the 'ManaRegenMultiplierIfManaEmpty' effect. | 2 |  |
+| `ManaSteal` | Integer | Applies or references the 'ManaSteal' effect/state. | 7 |  |
+| `ManaStealToHealth` | Integer | Applies or references the 'ManaStealToHealth' effect/state. | 1 |  |
+| `ManglerAttack` | Integer | Applies or references the 'ManglerAttack' effect/state. | 1 |  |
 | `ManglerEnrage` | Object |  | 1 |  |
 | `ManglerMonsterDashAttack` | Object |  | 1 |  |
 | [`ManglerMonsterPassive`](./Enums.md#enum-manglermonsterpassive) | Enum | Applies or references the 'ManglerMonsterPassive' effect/state. | 1 |  |
+| `ManglerShuffle` | Boolean | Applies or references the 'ManglerShuffle' effect/state. | 1 |  |
 | `ManglersMonster` | Object |  | 1 |  |
+| `MassAttackThis` | Integer | Applies or references the 'MassAttackThis' effect/state. | 1 |  |
+| [`Math`](#math) | Object | Triggers the Tinkerer's Math ability sequence. | 2 |  |
 | `MaxAccuracy` | Integer | Applies the 'MaxAccuracy' effect. | 1 |  |
+| `MaxHPUp` | Integer | Applies or references the 'MaxHPUp' effect/state. | 2 |  |
 | `MaxStartingMana` | Integer | Applies the 'MaxStartingMana' effect. | 1 |  |
 | `meat` | Variable |  | 14 |  |
+| `Meaty` | Integer | Applies or references the 'Meaty' effect/state. | 1 |  |
+| `Meaty` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `MechExplode` | Object |  | 1 |  |
 | [`Medic`](./Arrays.md#array-medic) | Object | Applies or references the 'Medic' effect/state. | 58 |  |
 | [`MegaDinoDropController`](#megadinodropcontroller) | Object | Boss Logic: Manages loot drops for the Mega Dino. | 1 |  |
 | `MegaFart` | Object |  | 1 |  |
 | `MegaGuppy_SummonTheChild` | Object |  | 1 |  |
+| `MegaMinions` | Integer | Applies the 'MegaMinions' effect. | 2 |  |
+| [`MeleeRevengeDamage`](#meleerevengedamage) | Object | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 20 |  |
+| [`MergeDamageInstance`](#mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 1 |  |
+| `Metal` | Integer | Applies or references the 'Metal' effect/state. | 2 |  |
+| `MetalDetector` | Integer | Applies the 'MetalDetector' effect. | 2 |  |
+| `Meteornado` | Integer | Examples: `1` | 3 |  |
+| `Meteornado` | Number / Object |  |  | `1` (Number), `{ ... }` (Object) |
+| `MeteorShower` | Integer | Examples: `25` | 1 |  |
+| `MeteorShower` | Number / Object |  |  | `25` (Number), `{ ... }` (Object) |
+| `Metronome` | Integer / Object | Executes a random musical or metronome ability. | 4 |  |
+| `Metronome` | Boolean (Flag) / Number / Object |  | 4 | `(Flag)` (Boolean (Flag)), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `MimicMetronome` | Integer | Applies or references the 'MimicMetronome' effect/state. | 1 |  |
+| `MimicSpawnerAttacks` | Integer | Applies or references the 'MimicSpawnerAttacks' effect/state. | 3 |  |
+| `MinimumKnockbackFromAllDamage` | Integer | Applies or references the 'MinimumKnockbackFromAllDamage' effect/state. | 7 |  |
+| `MinimumKnockbackFromPhysicalAttacks` | Integer | Applies or references the 'MinimumKnockbackFromPhysicalAttacks' effect/state. | 3 |  |
+| `MinimumTech` | Integer | Applies the 'MinimumTech' effect. | 2 |  |
+| [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | Applies or references the 'MiniVolcanoReaction' effect/state. | 2 |  |
+| `MissChance` | Integer | Applies the 'MissChance' effect. | 24 |  |
 | `MockingbirdForm` | Object |  | 2 |  |
+| [`mode`](./Enums.md#enum-mode) | Enum | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` | 22 |  |
 | `ModelingClayPassive` | Integer | Applies or references the 'ModelingClayPassive' effect/state. | 1 |  |
+| [`ModifyAbility`](#modifyability) | Object | Applies or references the 'ModifyAbility' effect/state. | 2 |  |
 | [`ModularPickup`](#modularpickup) | Object | Pickup Logic: Defines what happens when a modular item is collected. | 1 |  |
 | [`MonkCatReactionAbilities`](#monkcatreactionabilities) | Object | Reaction: Specific counter-attack or dodge abilities used by the Monk class. | 1 |  |
+| `MonkStanceSwitch` | Integer | Applies or references the 'MonkStanceSwitch' effect/state. | 5 |  |
 | `MoonHead_KillHands` | Object |  | 1 |  |
 | [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum | Applies or references the 'MoonHeadCrackedVisual' effect/state. | 1 |  |
+| `MoonHeadFinisherEnabler` | Integer | Applies or references the 'MoonHeadFinisherEnabler' effect/state. | 3 |  |
 | [`MotherGrowController`](#mothergrowcontroller) | Object | Boss Logic: Manages the growth phases of the Mother boss. | 1 |  |
+| `MotherTumorDebugForcePass` | Integer | Applies or references the 'MotherTumorDebugForcePass' effect/state. | 1 |  |
 | [`MotherTumorPassive`](#mothertumorpassive) | Object | Boss Logic: Passive effects applied to the Mother's tumors. | 1 |  |
+| [`MotherTumorSpawnInCapture`](#mothertumorspawnincapture) | Object | Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning. | 2 |  |
 | [`Mount`](#mount) | Object | Character Form: Behavior and stats for the 'Mount' state. | 1 |  |
 | [`move`](./Arrays.md#array-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 122 |  |
 | [`MoveAfterAnyAttemptedAttack`](#moveafteranyattemptedattack) | Object | AI Movement: Forces a move action immediately after attacking, even if it missed. | 1 |  |
+| [`MoveAndUseAbilityEachTurnBeginIfPossible`](./Enums.md#enum-moveanduseabilityeachturnbeginifpossible) | Enum | Applies the 'MoveAndUseAbilityEachTurnBeginIfPossible' effect. | 3 |  |
+| [`MoveAwayFromDamageSource`](./Enums.md#enum-moveawayfromdamagesource) | Object | Examples: `BasicJump` | 2 |  |
 | [`MoveAwayWhenEnemyAdjacent`](#moveawaywhenenemyadjacent) | Object | AI Movement: Moves away if an enemy enters an adjacent tile. | 1 |  |
+| [`MovementReaction`](#movementreaction) | Object | Reaction: Triggers an effect or ability when forced to move. | 2 |  |
+| `MoveOne` | Object |  | 2 |  |
+| [`MoveQuivered`](./Arrays.md#array-movequivered) | Integer | Applies or references the 'MoveQuivered' effect/state. | 6 |  |
 | `MoveRandomly` | Integer | Applies the 'MoveRandomly' effect. | 2 |  |
+| [`MoveSpeedMultiplier`](./Enums.md#enum-movespeedmultiplier) | Float | Applies or references the 'MoveSpeedMultiplier' effect/state. | 2 |  |
+| [`MoveTowardsDamageSource`](./Enums.md#enum-movetowardsdamagesource) | Enum / Object | AI Movement: Closes distance on the last source of damage. | 2 |  |
+| [`MoveTowardsKillers`](./Enums.md#enum-movetowardskillers) | Enum / Object | AI Movement: Seeks out entities that have recently killed an ally. | 5 |  |
+| [`MoveWhenDamaged`](./Enums.md#enum-movewhendamaged) | Enum / Object | AI Movement: Forces a reposition when taking damage. | 2 |  |
 | `MulticatHeads` | Integer | Applies or references the 'MulticatHeads' effect/state. | 1 |  |
+| [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum | Applies the 'MulticlassLevelUp' effect. | 32 |  |
 | `MultiplyCoinsOnBattleStart` | Integer | Applies or references the 'MultiplyCoinsOnBattleStart' effect/state. | 1 |  |
 | `MultiplyReceivedHealing` | Integer | Applies or references the 'MultiplyReceivedHealing' effect/state. | 1 |  |
 | [`MultiSpawnOnDeath`](#multispawnondeath) | Object | Event Trigger: Spawns multiple entities upon death. | 1 |  |
+| `musical` | Variable |  | 4 |  |
+| `must_do_damage` | Boolean | `true` | 3 |  |
 | `MutateAfterXTurns` | Integer | Applies or references the 'MutateAfterXTurns' effect/state. | 1 |  |
+| [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum | Applies or references the 'MutateViaAbility' effect/state. | 3 |  |
+| `Muted` | Integer | Applies or references the 'Muted' effect/state. | 1 |  |
+| `Muted` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `MuteDemonicGlyphDisplay` | Integer | Applies or references the 'MuteDemonicGlyphDisplay' effect/state. | 1 |  |
 | [`neck`](./Enums.md#enum-neck) | Enum | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` | 378 |  |
 | `neck_NukeBonus` | Object |  | 2 |  |
 | `neck_NukeExplode` | Object |  | 2 |  |
+| `NeckArmorPassiveMultiplierBonus` | Integer | Applies or references the 'NeckArmorPassiveMultiplierBonus' effect/state. | 3 |  |
 | `Necro_SoulDagger_Uncharged` | Object |  | 2 |  |
+| `NextAbilityHeals` | Integer | Applies or references the 'NextAbilityHeals' effect/state. | 1 |  |
+| `NextAbilityHeals` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextActionLuckUp` | Integer | Applies or references the 'NextActionLuckUp' effect/state. | 1 |  |
+| `NextActionLuckUp` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `99` (Number), `{ ... }` (Object) |
+| `NextAttackBonusRange` | Integer | Applies or references the 'NextAttackBonusRange' effect/state. | 3 |  |
+| `NextAttackBonusRange` | Integer |  |  | `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
+| `NextAttackSpecialCrit` | Integer / Object | Modifies the character's next attack to have special critical properties. | 2 |  |
+| `NextAttackSpecialCrit` | Integer / Object |  |  | `1` (Number), `{ ... }` (Object) |
+| [`NextBasicAttackCritsThisTurn`](#nextbasicattackcritsthisturn) | Object | Guarantees the next basic attack executed this turn will be a critical hit. | 1 |  |
+| `NextBasicAttackCritsThisTurn` | Object |  |  | `1` (Number), `{ ... }` (Object) |
+| [`NextBattleStatus`](#nextbattlestatus) | Object | Applies the 'NextBattleStatus' effect. | 2 |  |
+| [`NextBattleStatusStacks`](#nextbattlestatusstacks) | Object | Carries over the specified status effects into the next encounter/battle. | 1 |  |
+| `NextDamageReduceAndHealAllies` | Integer | Applies or references the 'NextDamageReduceAndHealAllies' effect/state. | 1 |  |
+| `NextDamageReduceAndHealAllies` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `NextTurnDoubleRangedDamage` | Integer | Applies or references the 'NextTurnDoubleRangedDamage' effect/state. | 1 |  |
+| `NextTurnDoubleRangedDamage` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `NoHead` | Object |  | 1 |  |
+| `NoHealthOnlyShield` | Integer | Applies or references the 'NoHealthOnlyShield' effect/state. | 12 |  |
+| `NoHealthRegen` | Number | Applies or references the 'NoHealthRegen' effect/state. | 5 |  |
+| `NoManaRegen` | Integer | Applies the 'NoManaRegen' effect. | 2 |  |
 | `NonChampionFlySwarm` | Object |  | 1 |  |
 | `NonLethal` | Integer | Applies the 'NonLethal' effect. | 1 |  |
+| `NonStackingDivineShield` | Integer | Applies or references the 'NonStackingDivineShield' effect/state. | 8 |  |
+| `NonStackingShield` | Integer | Examples: `12, 4, 8` | 8 |  |
+| `NoReflection` | Integer | Applies the 'NoReflection' effect. | 2 |  |
+| `NubbyToss` | Object |  | 2 |  |
+| `NubbyTossPriority` | Integer | Applies the 'NubbyTossPriority' effect. | 2 |  |
 | `Nubs` | Object |  | 1 |  |
 | `NubsGoop` | Object |  | 1 |  |
+| [`NukeQuestFinalBossModifications`](#nukequestfinalbossmodifications) | Object | Special encounter trigger for the Nuke Quest ending. | 2 |  |
+| `NumbingLeeches` | Integer | Applies the 'NumbingLeeches' effect. | 2 |  |
 | [`ObjectDetector`](#objectdetector) | Object | Applies or references the 'ObjectDetector' effect/state. | 1 |  |
+| [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum / Object | Spawns a specific physics/item object upon impact. | 5 |  |
+| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum / Object | Spawns a specific character or entity upon impact. | 12 |  |
+| [`ObjectOnHitEmpty`](./Enums.md#enum-objectonhitempty) | Enum | Applies or references the 'ObjectOnHitEmpty' effect/state. | 5 |  |
+| [`ObjectOnHitFullyEmpty`](./Enums.md#enum-objectonhitfullyempty) | Enum | Applies or references the 'ObjectOnHitFullyEmpty' effect/state. | 1 |  |
+| `OneUseSpellDamageUp` | Integer | Applies the 'OneUseSpellDamageUp' effect. | 2 |  |
 | `Ornstein` | Object |  | 1 |  |
 | `OrthogonalAIDangerZone` | Integer | Applies or references the 'OrthogonalAIDangerZone' effect/state. | 1 |  |
+| `OverhealGainsBothShield` | Integer | Applies the 'OverhealGainsBothShield' effect. | 2 |  |
+| `OverHealToShield` | Integer | Applies or references the 'OverHealToShield' effect/state. | 1 |  |
+| [`OverHealToStatuses`](#overhealtostatuses) | Object | Converts excessive healing beyond maximum health into specific status effects. | 2 |  |
 | `OverManaReducesManaCosts` | Integer | Examples: `1` | 1 |  |
+| [`OverrideBasicAttack`](./Enums.md#enum-overridebasicattack) | Enum | Applies or references the 'OverrideBasicAttack' effect/state. | 7 |  |
+| [`OverrideKnockbackDamage`](./Enums.md#enum-overrideknockbackdamage) | Enum / Integer | Applies or references the 'OverrideKnockbackDamage' effect/state. | 17 |  |
+| `OverrideKnockbackDamage` | Enum / Integer |  |  | `str` (Enum), `X*10` (Enum), `5` (Number), `2` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
+| `OverrideKnockbackDamage` | Enum / Integer |  |  | `str` (Enum), `3+bonus_melee_ability_damage` (Enum), `2` (Number), `3` (Number), `"max(5+bonus_melee_ability_damage, 1)"` (String) |
+| `OverrideMaxHealth` | Integer | Applies or references the 'OverrideMaxHealth' effect/state. | 7 |  |
 | `OverrideMaxMana` | Integer | Applies the 'OverrideMaxMana' effect. | 1 |  |
 | `OverridePalette` | Integer | Applies the 'OverridePalette' effect. | 1 |  |
 | `PackHunting` | Integer | Applies or references the 'PackHunting' effect/state. | 1 |  |
 | `Paper` | Variable |  | 26 |  |
 | [`Paranoia`](./Enums.md#enum-paranoia) | Enum | Applies the 'Paranoia' effect. | 1 |  |
+| `ParasitesArentCursed` | Integer | Applies the 'ParasitesArentCursed' effect. | 2 |  |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |  |
+| `PartialCleanse` | Integer | Applies or references the 'PartialCleanse' effect/state. | 4 |  |
+| `PartialPurge` | Integer | Applies or references the 'PartialPurge' effect/state. | 10 |  |
+| [`party_status_next_fight`](#party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |  |
+| [`passive0`](./Enums.md#enum-passive0) | Enum | `HotBlooded`, `SelfAssured` | 2 |  |
+| [`PassiveAfterXKills`](#passiveafterxkills) | Object | Applies or references the 'PassiveAfterXKills' effect/state. | 2 |  |
+| [`PassiveAtFullHealth`](#passiveatfullhealth) | Object | Applies the 'PassiveAtFullHealth' effect. | 2 |  |
+| [`PassiveAtHealthThreshold`](#passiveathealththreshold) | Object | Applies or references the 'PassiveAtHealthThreshold' effect/state. | 4 |  |
+| [`PassiveAtInjuryThreshold`](#passiveatinjurythreshold) | Object | Applies the 'PassiveAtInjuryThreshold' effect. | 2 |  |
+| [`PassiveAtStatThreshold`](#passiveatstatthreshold) | Object | Applies the 'PassiveAtStatThreshold' effect. | 10 |  |
+| `PassiveEnergized` | Variable |  | 2 |  |
+| [`PassiveGroup`](#passivegroup) | Object | Passive: A collection of passives grouped together for easier management. | 14 |  |
+| [`PassiveIfAllArmorEmpty`](#passiveifallarmorempty) | Object | Applies the 'PassiveIfAllArmorEmpty' effect. | 8 |  |
+| [`PassiveIfEmptyFace`](#passiveifemptyface) | Object | Applies the 'PassiveIfEmptyFace' effect. | 8 |  |
+| [`PassiveIfEmptyHead`](#passiveifemptyhead) | Object | Applies the 'PassiveIfEmptyHead' effect. | 8 |  |
+| [`PassiveIfEmptyNeck`](#passiveifemptyneck) | Object | Applies the 'PassiveIfEmptyNeck' effect. | 8 |  |
+| [`PassiveIfStrAuxEquals`](#passiveifstrauxequals) | Object | Applies or references the 'PassiveIfStrAuxEquals' effect/state. | 7 |  |
+| [`PassiveIfWeaponIsUsable`](#passiveifweaponisusable) | Object | Applies or references the 'PassiveIfWeaponIsUsable' effect/state. | 2 |  |
 | [`PassiveLevelScaledStatus`](#passivelevelscaledstatus) | Object | Applies the 'PassiveLevelScaledStatus' effect. | 1 |  |
+| `PassiveLevelUpAtCombatEnd` | Integer | Applies the 'PassiveLevelUpAtCombatEnd' effect. | 16 |  |
+| [`passives`](#passives) | Object | Examples: `{ ... }` | 5118 |  |
+| `PassiveTar` | Variable |  | 2 |  |
+| [`PassiveUntilCastSpell`](#passiveuntilcastspell) | Object | Applies the 'PassiveUntilCastSpell' effect. | 2 |  |
+| [`PassiveUntilGetKill`](#passiveuntilgetkill) | Object | Applies the 'PassiveUntilGetKill' effect. | 2 |  |
+| [`PassiveWhenAffectedByElement`](#passivewhenaffectedbyelement) | Object | Examples: `{ ... }` | 24 |  |
+| [`PassiveWhenAtFullMana`](#passivewhenatfullmana) | Object | State Trigger: Grants nested passives when at full mana. | 6 |  |
+| [`PassiveWhenDead`](#passivewhendead) | Object | State Trigger: Grants passives when this condition is met. | 4 |  |
+| [`PassiveWhenOnTile`](#passivewhenontile) | Object | State Trigger: Grants passives when this condition is met. | 7 |  |
+| [`PassiveWhenTheAlpha`](#passivewhenthealpha) | Object | State Trigger: Grants nested passives when the alpha. | 2 |  |
 | [`PassiveWhileHasDurability`](#passivewhilehasdurability) | Object | Applies or references the 'PassiveWhileHasDurability' effect/state. | 1 |  |
+| [`PassiveWhileHasStatus`](#passivewhilehasstatus) | Object | Passive: Activates only while the character has the specified status. | 2 |  |
+| [`PassiveWhileInMonkMeleeStance`](#passivewhileinmonkmeleestance) | Object | Applies the 'PassiveWhileInMonkMeleeStance' effect. | 2 |  |
+| [`PassiveWhileInMonkRangedStance`](#passivewhileinmonkrangedstance) | Object | Applies the 'PassiveWhileInMonkRangedStance' effect. | 2 |  |
+| [`PassiveWhileNotHasStatus`](#passivewhilenothasstatus) | Object | Passive: Activates only while the character does NOT have the specified status. | 2 |  |
 | [`PassiveWhileNotTakingTurn`](#passivewhilenottakingturn) | Object | Grants nested passives that are only active while it is NOT the character's turn. | 1 |  |
+| [`PassiveWhilePreviewingMonkRangedStance`](#passivewhilepreviewingmonkrangedstance) | Object | Applies the 'PassiveWhilePreviewingMonkRangedStance' effect. | 2 |  |
 | [`PassiveWhileShielded`](#passivewhileshielded) | Object | Applies or references the 'PassiveWhileShielded' effect/state. | 1 |  |
+| [`PassiveWhileWearingMetal`](#passivewhilewearingmetal) | Object | Applies the 'PassiveWhileWearingMetal' effect. | 2 |  |
 | `PercentHeal` | Integer | Applies the 'PercentHeal' effect. | 1 |  |
 | `PermanentConfusion` | Number | Applies or references the 'PermanentConfusion' effect/state. | 1 |  |
+| `PermanentConstitution` | Integer | Applies or references the 'PermanentConstitution' effect/state. | 6 |  |
+| `PermanentDexterity` | Integer | Applies or references the 'PermanentDexterity' effect/state. | 3 |  |
+| `PermanentImmobile` | Integer | Applies or references the 'PermanentImmobile' effect/state. | 1 |  |
+| `PermanentImmobile` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `PermanentIntelligence` | Integer | Applies or references the 'PermanentIntelligence' effect/state. | 4 |  |
+| `PermanentItems` | Integer | Applies the 'PermanentItems' effect. | 2 |  |
 | `PermanentKitten` | Integer | Applies the 'PermanentKitten' effect. | 1 |  |
+| `PermanentMadness` | Integer | Applies or references the 'PermanentMadness' effect/state. | 11 |  |
+| `PermanentSpeed` | Integer | Applies or references the 'PermanentSpeed' effect/state. | 3 |  |
+| `PermanentUpgradeRandomActive` | Integer | Applies or references the 'PermanentUpgradeRandomActive' effect/state. | 2 |  |
+| `PermanentUpgradeRandomActiveOrPassive` | Integer | Applies or references the 'PermanentUpgradeRandomActiveOrPassive' effect/state. | 1 |  |
+| [`PersistentElement`](./Enums.md#enum-persistentelement) | Enum | Examples: `Holy` | 1 |  |
+| `Phasing` | Integer | Applies or references the 'Phasing' effect/state. | 2 |  |
 | `PhysicalAttacksMiss` | Integer | Applies or references the 'PhysicalAttacksMiss' effect/state. | 1 |  |
 | `pickup` | Variable |  | 1 |  |
+| `Piercing` | Integer | Applies the 'Piercing' effect. | 3 |  |
+| `Plant` | Integer | Applies or references the 'Plant' effect/state. | 9 |  |
 | `plant` | Variable |  | 1 |  |
+| `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. | 3 |  |
 | `PlayerCat_ThiefShade2` | Object |  | 2 |  |
+| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 |  |
 | `PoisonMultiplier` | Integer | Applies the 'PoisonMultiplier' effect. | 2 |  |
+| `PoisonThorns` | Integer | Applies or references the 'PoisonThorns' effect/state. | 6 |  |
+| [`PoolMetronome`](#poolmetronome) | Object | Executes a random ability drawn from a specific pool. | 1 |  |
 | `Poop` | Object |  | 2 |  |
+| [`PoopWhenHit`](./Enums.md#enum-poopwhenhit) | Object | Examples: `Poop` | 4 |  |
 | `PreEmptiveCounterNextAttacks` | Integer | Applies or references the 'PreEmptiveCounterNextAttacks' effect/state. | 1 |  |
 | [`PreventSpecificInjury`](./Enums.md#enum-preventspecificinjury) | Enum | Applies or references the 'PreventSpecificInjury' effect/state. | 1 |  |
+| `PrioritizeAggroTarget` | Integer | Applies or references the 'PrioritizeAggroTarget' effect/state. | 2 |  |
+| `PrioritizeFarAwayTargets` | Integer | Applies or references the 'PrioritizeFarAwayTargets' effect/state. | 4 |  |
+| `PrioritizeHitDifferentTargets` | Integer | Applies or references the 'PrioritizeHitDifferentTargets' effect/state. | 3 |  |
+| `PrioritizePlayerCats` | Integer | Applies or references the 'PrioritizePlayerCats' effect/state. | 2 |  |
+| `PrioritizeWeakestEnemy` | Integer | Applies or references the 'PrioritizeWeakestEnemy' effect/state. | 2 |  |
+| [`ProtectTargetedAllies`](./Enums.md#enum-protecttargetedallies) | Object | AI Logic: Navigates to intercept attacks directed at allies. | 2 |  |
 | `pyrophina` | Variable |  | 16 |  |
+| [`QuakeAreaChance`](#quakeareachance) | Object | Provides a probability to trigger an earthquake Area of Effect. | 2 |  |
+| [`QueueUseAbility`](./Enums.md#enum-queueuseability) | Enum | Applies or references the 'QueueUseAbility' effect/state. | 1 |  |
+| `Quiver` | Integer | Applies the 'Quiver' effect. | 2 |  |
+| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | Applies or references the 'Quivered' effect/state. | 10 |  |
+| `RandomArmorPickup` | Number / Object | Applies or references the 'RandomArmorPickup' effect/state. | 43 |  |
+| `RandomDistanceDisplace` | Integer / Object | Displaces the target by a randomized distance. | 2 |  |
+| `RandomDistanceDisplace` | Integer / Object |  |  | `20` (Number), `{ ... }` (Object) |
+| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | Applies or references the 'RandomizeAIWeightsEachTurn' effect/state. | 8 |  |
+| [`RandomKnockback`](#randomknockback) | Object | Applies a randomized amount of knockback force. | 2 |  |
+| `RandomKnockbackDirection` | Integer | Applies or references the 'RandomKnockbackDirection' effect/state. | 1 |  |
+| `RandomLightning` | Integer | Examples: `50` | 2 |  |
+| `RandomMagicMissile` | Integer / Object | Fires a randomized number of magic missiles. | 17 |  |
+| `RandomMutation` | Integer | Applies or references the 'RandomMutation' effect/state. | 9 |  |
+| [`RandomPassivePool`](#randompassivepool) | Object | Logic: Grants a random passive from the specified pool upon spawning. | 4 |  |
+| `RandomPermanentStat` | Integer | Applies or references the 'RandomPermanentStat' effect/state. | 10 |  |
 | [`RandomPermanentStatsDistinct`](#randompermanentstatsdistinct) | Object | Examples: `{ ... }` | 1 |  |
+| [`RandomSeededStatModifier`](./Arrays.md#array-randomseededstatmodifier) | Array | Applies or references the 'RandomSeededStatModifier' effect/state. | 4 |  |
+| `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 |  |
+| [`RandomStatusFromPool`](#randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 8 |  |
+| [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Applies or references the 'RandomTaggedMutation' effect/state. | 2 |  |
+| [`RandomWeatherEachFight`](./Arrays.md#array-randomweathereachfight) | Array | Examples: `[ Fog Rain Windy Sandstorm HeatWave Snow Thunderstorm Bli...` | 1 |  |
+| `RangedTrueShot` | Integer | Applies or references the 'RangedTrueShot' effect/state. | 2 |  |
+| `RangeUp` | Integer | Applies or references the 'RangeUp' effect/state. | 3 |  |
+| `rat` | Variable |  | 17 |  |
 | `RatKing` | Object |  | 2 |  |
 | `RealTimePressure_OneUnit` | Integer | Applies the 'RealTimePressure_OneUnit' effect. | 1 |  |
+| `ReaperRevenge` | Object |  | 2 |  |
+| `RebukeDamage` | Integer | Applies or references the 'RebukeDamage' effect/state. | 2 |  |
 | [`ReceivedStatusReplacement`](./Arrays.md#array-receivedstatusreplacement) | Array | Examples: `[ Sleep SleepParalysis ]` | 1 |  |
 | `ReclaimItemOnBreak` | Integer | Applies or references the 'ReclaimItemOnBreak' effect/state. | 1 |  |
+| `red` | Object | Event Object: Story branch or dialog option representing the \'Red\' action. | 2 |  |
+| `ReduceManaCostExcludeBrainstorm` | Integer | Applies or references the 'ReduceManaCostExcludeBrainstorm' effect/state. | 1 |  |
+| `ReduceManaCostExcludeBrainstorm` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `ReduceSpellCostsPerDisorder` | Integer | Applies or references the 'ReduceSpellCostsPerDisorder' effect/state. | 1 |  |
 | `ReduceSpellCostsPerParasite` | Integer | Applies or references the 'ReduceSpellCostsPerParasite' effect/state. | 1 |  |
+| `Reflect` | Integer / Object | Applies or references the 'Reflect' effect/state. | 2 |  |
+| `ReflectProjectiles` | Integer / Object | Passive: Reflects incoming projectiles back at the attacker. | 4 |  |
+| `ReformMoonHead` | Integer | Applies or references the 'ReformMoonHead' effect/state. | 1 |  |
+| [`RefreshEquipmentAbilityOnElement`](#refreshequipmentabilityonelement) | Object | Applies or references the 'RefreshEquipmentAbilityOnElement' effect/state. | 2 |  |
+| `RefreshItemAbilities` | Integer | Applies or references the 'RefreshItemAbilities' effect/state. | 1 |  |
 | `RefreshMoveOnWeaponConnect` | Integer | Applies the 'RefreshMoveOnWeaponConnect' effect. | 2 |  |
+| `RefreshMovePointsIfHit` | Integer | Applies or references the 'RefreshMovePointsIfHit' effect/state. | 5 |  |
+| `RefreshNonManaItemAbilities` | Integer | Applies or references the 'RefreshNonManaItemAbilities' effect/state. | 1 |  |
+| `RefreshOncePerFightAbilities` | Integer | Applies or references the 'RefreshOncePerFightAbilities' effect/state. | 1 |  |
+| `Regurge` | Integer / Object | Applies or references the 'Regurge' effect/state. | 2 |  |
+| `Regurge` | Integer / Object |  | 2 | `1` (Number), `{ ... }` (Object) |
 | `ReloadOnAllyCatDies` | Integer | Applies or references the 'ReloadOnAllyCatDies' effect/state. | 1 |  |
 | `ReloadOnAllyDies` | Integer | Applies or references the 'ReloadOnAllyDies' effect/state. | 1 |  |
 | `ReloadOnAnyDamage` | Integer | Applies or references the 'ReloadOnAnyDamage' effect/state. | 1 |  |
@@ -1140,21 +1176,58 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ReloadOnElementalDamageReceived`](./Enums.md#enum-reloadonelementaldamagereceived) | Enum | Applies or references the 'ReloadOnElementalDamageReceived' effect/state. | 1 |  |
 | `ReloadOnGainCoins` | Integer | Applies or references the 'ReloadOnGainCoins' effect/state. | 1 |  |
 | `ReloadOnGainDivineShield` | Integer | Applies or references the 'ReloadOnGainDivineShield' effect/state. | 1 |  |
+| `ReloadOnKill` | Integer | Applies or references the 'ReloadOnKill' effect/state. | 2 |  |
+| `ReloadOnKillEnemy` | Integer | Applies or references the 'ReloadOnKillEnemy' effect/state. | 2 |  |
 | [`ReloadOnKillTagged`](./Enums.md#enum-reloadonkilltagged) | Enum | Applies or references the 'ReloadOnKillTagged' effect/state. | 1 |  |
 | `ReloadOnSpendMana` | Integer | Applies or references the 'ReloadOnSpendMana' effect/state. | 1 |  |
+| `ReloadOnTotalDamageReceived` | Integer | Applies or references the 'ReloadOnTotalDamageReceived' effect/state. | 2 |  |
 | `ReloadOnUseAbilityWithManaCost` | Integer | Applies or references the 'ReloadOnUseAbilityWithManaCost' effect/state. | 1 |  |
 | `RemoteFlatLeech` | Integer | Applies or references the 'RemoteFlatLeech' effect/state. | 1 |  |
+| `RemoteLeech` | Integer | Applies or references the 'RemoteLeech' effect/state. | 2 |  |
+| `RemoveActPoints` | Integer | Applies or references the 'RemoveActPoints' effect/state. | 4 |  |
 | [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Float | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |  |
 | `RemoveExtraDispersedTurn` | Integer | Examples: `1` | 1 |  |
 | [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array | Applies or references the 'RemoveGlobalModifiers' effect/state. | 1 |  |
+| `RemoveLineOfSightRestrictions` | Integer | Applies the 'RemoveLineOfSightRestrictions' effect. | 2 |  |
+| `RemoveOncePerFightRestriction` | Integer | Applies the 'RemoveOncePerFightRestriction' effect. | 2 |  |
+| `RepairAllCondition` | Integer | Applies or references the 'RepairAllCondition' effect/state. | 1 |  |
+| `RepairArmorCondition` | Integer | Applies or references the 'RepairArmorCondition' effect/state. | 2 |  |
+| `RepairOnKill` | Integer | Applies or references the 'RepairOnKill' effect/state. | 3 |  |
+| `RepairTrinket` | Integer | Applies or references the 'RepairTrinket' effect/state. | 5 |  |
+| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | Applies or references the 'RepairWeapon' effect/state. | 4 |  |
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 8 |  |
 | [`ReplaceBasicAttack_Mutation`](./Enums.md#enum-replacebasicattack_mutation) | Enum | Examples: `FetusSpit` | 2 |  |
+| [`ReplaceBasicAttackWhenCastable`](./Enums.md#enum-replacebasicattackwhencastable) | Enum | Applies the 'ReplaceBasicAttackWhenCastable' effect. | 6 |  |
+| [`ReplaceBasicAttackWhenDead`](./Enums.md#enum-replacebasicattackwhendead) | Enum | Applies the 'ReplaceBasicAttackWhenDead' effect. | 2 |  |
+| [`ReplaceBasicMove`](./Enums.md#enum-replacebasicmove) | Enum | Applies or references the 'ReplaceBasicMove' effect/state. | 10 |  |
+| [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum | Examples: `BasicJump, BasicDig` | 6 |  |
 | [`ReplaceBlankTilesOnBattleStart`](./Enums.md#enum-replaceblanktilesonbattlestart) | Enum | Applies or references the 'ReplaceBlankTilesOnBattleStart' effect/state. | 1 |  |
 | [`ReplaceBrain`](#replacebrain) | Object | Applies the 'ReplaceBrain' effect. | 2 |  |
+| [`ReplaceSpawnedObjects`](./Arrays.md#array-replacespawnedobjects) | Array | Applies or references the 'ReplaceSpawnedObjects' effect/state. | 15 |  |
+| [`ReplaceSpell`](#replacespell) | Object | Replaces a spell in the character's hand/deck with a different one. | 4 |  |
 | [`ReplaceSpellsWhenDead`](./Enums.md#enum-replacespellswhendead) | Enum | Applies the 'ReplaceSpellsWhenDead' effect. | 2 |  |
+| `RerollEnemy` | Integer | Applies or references the 'RerollEnemy' effect/state. | 1 |  |
 | `RerollItemsOnBattleEnd` | Integer | Applies or references the 'RerollItemsOnBattleEnd' effect/state. | 1 |  |
+| `ResetArmorShield` | Integer | Applies or references the 'ResetArmorShield' effect/state. | 2 |  |
+| `ReturnBoundItemOnBattleEnd` | Integer | Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state. | 2 |  |
+| `ReturnDinoLegs` | Integer | Applies or references the 'ReturnDinoLegs' effect/state. | 1 |  |
+| [`RevengeDamage`](#revengedamage) | Object | Reaction trigger: Deals damage to the attacker when hit. | 30 |  |
+| `ReviveOnWin` | Integer | Applies the 'ReviveOnWin' effect. | 2 |  |
+| `RNGCannonRandomDamage` | Integer | Applies or references the 'RNGCannonRandomDamage' effect/state. | 1 |  |
+| `Robot` | Integer / Object | Character Form: Behavior and stats for the 'Robot' state. | 2 |  |
+| `robot` | Variable |  | 2 |  |
+| `RobotsInheritArmor` | Integer | Applies the 'RobotsInheritArmor' effect. | 2 |  |
+| `RockDetector` | Integer | Applies the 'RockDetector' effect. | 2 |  |
+| `RockyArmorPassive` | Integer | Applies or references the 'RockyArmorPassive' effect/state. | 3 |  |
 | [`RockyArmorSalvage`](./Enums.md#enum-rockyarmorsalvage) | Float | Examples: `.75` | 1 |  |
+| [`Rot`](./Arrays.md#array-rot) | Array / Integer | Applies or references the 'Rot' effect/state. | 9 |  |
+| `RunInXTurns` | Integer | Applies or references the 'RunInXTurns' effect/state. | 3 |  |
 | `RunWhenKittensDead` | Integer | Applies or references the 'RunWhenKittensDead' effect/state. | 1 |  |
 | [`RunWhenLastPlayerCatIsCharmed`](#runwhenlastplayercatischarmed) | Object | AI Logic: Flee logic when the player team is entirely crowd-controlled. | 1 |  |
+| `SafeDoomed` | Enum / Integer | Applies or references the 'SafeDoomed' effect/state. | 13 |  |
+| `SafeExplosions` | Integer | Applies the 'SafeExplosions' effect. | 2 |  |
+| `Sandstorm` | Object | Examples: `1` | 2 |  |
+| `Sandstorm` | Object |  | 2 | `1` (Number), `{ ... }` (Object) |
 | `SandStormBuff` | Variable |  | 1 |  |
 | [`ScaldingOrbMoonBossOneShot`](#scaldingorbmoonbossoneshot) | Object | Applies or references the 'ScaldingOrbMoonBossOneShot' effect/state. | 1 |  |
 | [`ScaledStatusAlliesOnSpendMana`](#scaledstatusalliesonspendmana) | Object | Applies or references the 'ScaledStatusAlliesOnSpendMana' effect/state. | 1 |  |
@@ -1162,36 +1235,127 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ScaledStatusOnHolyShieldBlock`](#scaledstatusonholyshieldblock) | Object | Applies or references the 'ScaledStatusOnHolyShieldBlock' effect/state. | 1 |  |
 | [`ScaledStatusOnLoseShield`](#scaledstatusonloseshield) | Object | Applies the 'ScaledStatusOnLoseShield' effect. | 2 |  |
 | [`ScaledStatusOnOverHealed`](#scaledstatusonoverhealed) | Object | Applies the 'ScaledStatusOnOverHealed' effect. | 2 |  |
+| [`ScaledStatusOnOverMana`](#scaledstatusonovermana) | Object | Applies the 'ScaledStatusOnOverMana' effect. | 2 |  |
+| [`ScaledStatusOnSpendMana`](#scaledstatusonspendmana) | Object | Applies the 'ScaledStatusOnSpendMana' effect. | 2 |  |
 | [`ScalingAttackAnimation`](#scalingattackanimation) | Object | Visual: Animation scales based on damage output. | 1 |  |
+| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Object | Throws coins out into the level randomly. | 6 |  |
+| [`ScatterHeldCoin`](./Arrays.md#array-scatterheldcoin) | Array / Integer | Applies or references the 'ScatterHeldCoin' effect/state. | 6 |  |
+| `ScatterHeldCoin` | Array / Integer |  |  | `[1 .3]` (Array), `[1 .5]` (Array), `1` (Number) |
 | `SchizoIllusionAIModifier` | Integer | Applies or references the 'SchizoIllusionAIModifier' effect/state. | 1 |  |
 | `SchrodingerDisorder` | Integer | Applies the 'SchrodingerDisorder' effect. | 1 |  |
 | `Scleroderma` | Integer | Applies the 'Scleroderma' effect. | 1 |  |
+| `ScrambleEverything` | Integer | Applies or references the 'ScrambleEverything' effect/state. | 2 |  |
+| [`ScrambleLastUsedSpell`](#scramblelastusedspell) | Object | Randomizes or scrambles the properties of the last spell cast. | 1 |  |
+| [`SecurityBotProtect`](#securitybotprotect) | Object | AI Logic: Guarding behavior for Security Bot units. | 2 |  |
+| [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |  |
 | [`SelfDamageWhenDealDamage`](#selfdamagewhendealdamage) | Object | Applies the 'SelfDamageWhenDealDamage' effect. | 1 |  |
+| `SelfStatusCarefulness` | Integer | Applies or references the 'SelfStatusCarefulness' effect/state. | 2 |  |
+| [`SelfStun`](./Arrays.md#array-selfstun) | Array / Integer | Applies or references the 'SelfStun' effect/state. | 2 |  |
+| `SelfStun` | Array / Integer |  |  | `[1 .5]` (Array), `1` (Number) |
+| `SendRock` | Integer | Applies or references the 'SendRock' effect/state. | 4 |  |
 | `set_WitchJump` | Object |  | 1 |  |
+| [`SetAnimationAlts`](#setanimationalts) | Object | Overrides specific animation states with alternative animations. | 1 |  |
+| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | String | Applies or references the 'SetBrittleImmune' effect/state. | 6 |  |
+| [`SetCrazyEyeBackgroundWeights`](#setcrazyeyebackgroundweights) | Object | Adjusts visual rendering weights for the 'Crazy Eye' background effect. | 3 |  |
+| [`SetDefaultFace`](./Enums.md#enum-setdefaultface) | Enum | Applies or references the 'SetDefaultFace' effect/state. | 2 |  |
+| [`SetDefaultFacePassive`](./Enums.md#enum-setdefaultfacepassive) | Enum | Applies or references the 'SetDefaultFacePassive' effect/state. | 3 |  |
+| `SetDistanceDisplace` | Integer | Applies or references the 'SetDistanceDisplace' effect/state. | 6 |  |
 | [`SetFaction`](./Enums.md#enum-setfaction) | Enum | Applies or references the 'SetFaction' effect/state. | 1 |  |
+| [`SetFragileImmune`](./Enums.md#enum-setfragileimmune) | String | Applies or references the 'SetFragileImmune' effect/state. | 7 |  |
+| `SetItemAux` | Object | Applies or references the 'SetItemAux' effect/state. | 2 |  |
+| `SetSpellCosts` | Integer | Applies the 'SetSpellCosts' effect. | 2 |  |
+| `ShadowCrit` | Integer | Applies or references the 'ShadowCrit' effect/state. | 1 |  |
 | `Shadowstep` | Object |  | 2 |  |
+| `ShareHealthRegen` | Integer | Applies the 'ShareHealthRegen' effect. | 2 |  |
+| `SharePickups` | Object | Applies the 'SharePickups' effect. | 2 |  |
+| `SharePickupsWithSpawner` | Integer | Applies or references the 'SharePickupsWithSpawner' effect/state. | 3 |  |
+| `SharkySmellsBlood` | Integer | Applies or references the 'SharkySmellsBlood' effect/state. | 5 |  |
+| `Shatter` | Integer / Object | Applies or references the 'Shatter' effect/state. | 2 |  |
+| `Shatter` | Integer / Object |  |  | `15` (Number), `{ ... }` (Object) |
 | `ShineBuff` | Variable |  | 1 |  |
+| `ShootHereCommand` | Integer | Applies or references the 'ShootHereCommand' effect/state. | 1 |  |
+| `ShootHereReceiver` | Integer | Applies or references the 'ShootHereReceiver' effect/state. | 1 |  |
+| `ShortCircuit` | Integer / Object | Applies or references the 'ShortCircuit' effect/state. | 2 |  |
+| `ShortCircuit` | Integer / Object |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `ShoulderCheck` | Integer | Applies the 'ShoulderCheck' effect. | 2 |  |
 | `Shove` | Object |  | 1 |  |
+| [`ShovingMatch`](./Enums.md#enum-shovingmatch) | Enum | Applies the 'ShovingMatch' effect. | 2 |  |
+| `ShowHiddenThings` | Integer | Examples: `1` | 6 |  |
+| `SignalFinalBossShieldBroke` | Integer | Applies or references the 'SignalFinalBossShieldBroke' effect/state. | 2 |  |
+| [`SizeScale`](./Enums.md#enum-sizescale) | Number | Applies or references the 'SizeScale' effect/state. | 4 |  |
 | [`SkipFirstRounds`](#skipfirstrounds) | Object | AI Logic: Passes turn for the first X rounds of combat. | 1 |  |
 | `SleepDart` | Object |  | 1 |  |
 | `SleepDart2` | Object |  | 2 |  |
+| `SleepParalysis` | Variable |  | 1 |  |
+| [`SlotMachineRollPool`](#slotmachinerollpool) | Object | Logic: Defines the possible outcomes for slot machine enemies. | 2 |  |
+| `SmallEnemiesIgnoreYou` | Integer | Applies the 'SmallEnemiesIgnoreYou' effect. | 2 |  |
+| `SmallHitExplosion` | Integer | Applies or references the 'SmallHitExplosion' effect/state. | 1 |  |
+| `SmallRockBehavior` | Integer / Object | AI Logic: Movement/interaction profile for small rocks. | 9 |  |
+| `SmartMetronome` | Integer / Object | Executes a 'smart' random ability that aims to be beneficial based on context. | 4 |  |
+| `SmartMetronome` | Integer / Object |  | 4 | `20` (Number), `{ ... }` (Object) |
+| `SmellBlood` | Integer / Object | Applies or references the 'SmellBlood' effect/state. | 2 |  |
+| `SmellBlood` | Integer / Object |  | 2 | `1` (Number), `{ ... }` (Object) |
+| [`SmiteEnemiesWhoKill`](#smiteenemieswhokill) | Object | Applies the 'SmiteEnemiesWhoKill' effect. | 2 |  |
 | `SmokeBuff` | Variable |  | 1 |  |
 | `Smough` | Object |  | 1 |  |
+| `Snow` | Integer | Examples: `{ ... }` | 1 |  |
+| `Snow` | Number / Object |  | 1 | `1` (Number), `{ ... }` (Object) |
+| [`SolarFlare`](#solarflare) | Object | Examples: `{ ... }` | 1 |  |
+| [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Applies or references the 'SoundEventOnHit' effect/state. | 1 |  |
+| [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. | 1 |  |
+| `SparkleBuff` | Variable |  | 2 |  |
+| `SpawnBearTrapOnMiss` | Integer | Applies the 'SpawnBearTrapOnMiss' effect. | 2 |  |
 | `SpawnCatCloneOnCorpsePopped` | Integer | Applies or references the 'SpawnCatCloneOnCorpsePopped' effect/state. | 1 |  |
+| [`SpawnCatCopyOnBattleStart`](#spawncatcopyonbattlestart) | Object | Applies the 'SpawnCatCopyOnBattleStart' effect. | 4 |  |
+| [`SpawnCatCopyWhenDowned`](#spawncatcopywhendowned) | Object | Examples: `{ ... }` | 2 |  |
+| [`SpawnCoinAnywhere`](./Arrays.md#array-spawncoinanywhere) | Array / Integer | Applies or references the 'SpawnCoinAnywhere' effect/state. | 5 |  |
+| `SpawnCreep` | Integer | Applies or references the 'SpawnCreep' effect/state. | 9 |  |
+| `SpawnCreepOnHit` | Integer | Applies or references the 'SpawnCreepOnHit' effect/state. | 3 |  |
 | `SpawnCreepOnHitKnockback` | Integer | Applies or references the 'SpawnCreepOnHitKnockback' effect/state. | 1 |  |
+| [`SpawnCustomTrap`](./Enums.md#enum-spawncustomtrap) | Enum | Applies or references the 'SpawnCustomTrap' effect/state. | 3 |  |
+| [`SpawnEachTurn`](#spawneachturn) | Object | Applies or references the 'SpawnEachTurn' effect/state. | 12 |  |
 | `spawner` | Variable |  | 1 |  |
 | `SpawnerCatDataReference` | Integer | Applies or references the 'SpawnerCatDataReference' effect/state. | 1 |  |
+| `SpawnExtraThingsOnBattleStart` | Object | Examples: `{ ... }` | 2 |  |
+| [`SpawnItemLinkedFamiliar`](#spawnitemlinkedfamiliar) | Object | Applies or references the 'SpawnItemLinkedFamiliar' effect/state. | 2 |  |
 | [`SpawnMeatOnMove`](./Enums.md#enum-spawnmeatonmove) | Enum | Applies the 'SpawnMeatOnMove' effect. | 2 |  |
+| `SpawnNearEnemies` | Integer | Applies or references the 'SpawnNearEnemies' effect/state. | 2 |  |
+| `SpawnNeutralWebTrapOnMiss` | Integer | Applies or references the 'SpawnNeutralWebTrapOnMiss' effect/state. | 3 |  |
+| [`SpawnObjectOnPopCorpse`](./Enums.md#enum-spawnobjectonpopcorpse) | Enum / Object | Applies or references the 'SpawnObjectOnPopCorpse' effect/state. | 2 |  |
+| [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum / Object | Applies or references the 'SpawnOnBattleStart' effect/state. | 24 |  |
+| [`SpawnOnBattleStartRandomEmptyTile`](#spawnonbattlestartrandomemptytile) | Object | Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state. | 10 |  |
+| [`SpawnOnDeath`](./Enums.md#enum-spawnondeath) | Enum / Object | Event Trigger: Spawns a specific entity when killed. | 81 |  |
+| [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum | Examples: `CharmedKitten, CharmedFly` | 14 |  |
 | [`SpawnRandomPickupsOnTaggedUnitKilled`](#spawnrandompickupsontaggedunitkilled) | Object | Applies or references the 'SpawnRandomPickupsOnTaggedUnitKilled' effect/state. | 1 |  |
+| [`SpawnRock`](./Arrays.md#array-spawnrock) | Array / Integer | Applies or references the 'SpawnRock' effect/state. | 5 |  |
+| `SpawnRock` | Array / Integer |  |  | `[1 .20]` (Array), `1` (Number) |
+| [`SpawnThingOnDamage`](#spawnthingondamage) | Object | Applies or references the 'SpawnThingOnDamage' effect/state. | 18 |  |
+| [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. | 4 |  |
+| [`SpawnTilePuddleOnBattleStart`](#spawntilepuddleonbattlestart) | Object | Examples: `{ ... }` | 1 |  |
+| [`SpawnVolcanoOnBattleStart`](#spawnvolcanoonbattlestart) | Object | Examples: `{ ... }` | 3 |  |
+| `SpawnWebTrap` | Integer | Applies or references the 'SpawnWebTrap' effect/state. | 1 |  |
+| [`SpecialBossMultipartInstakill`](./Enums.md#enum-specialbossmultipartinstakill) | Enum | Applies or references the 'SpecialBossMultipartInstakill' effect/state. | 1 |  |
+| [`SpecialFriends`](#specialfriends) | Object | Applies the 'SpecialFriends' effect. | 2 |  |
+| [`SpecialGodRays`](#specialgodrays) | Object | Examples: `{ ... }` | 2 |  |
 | `SpeedUp_WithoutInitiative` | Integer | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. | 1 |  |
+| `SpellDamageUp` | Integer | Applies or references the 'SpellDamageUp' effect/state. | 9 |  |
+| `SpellShield` | Integer | Applies or references the 'SpellShield' effect/state. | 1 |  |
+| `SpellShield` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`SpewerAltGraphics`](#speweraltgraphics) | Object | Visual: Alternative graphics for Spewer enemies. | 1 |  |
 | `SpiderReturn` | Object |  | 1 |  |
+| `SpikeBuff` | Variable |  | 2 |  |
+| `SpitConsumed` | Integer | Applies or references the 'SpitConsumed' effect/state. | 1 |  |
+| `SplittableMove` | Integer | Applies the 'SplittableMove' effect. | 2 |  |
 | `Spook` | Object |  | 2 |  |
+| `SpreadExtraDebuffs` | Integer | Applies the 'SpreadExtraDebuffs' effect. | 2 |  |
+| `SpreadPainBonus` | Integer | Applies the 'SpreadPainBonus' effect. | 2 |  |
 | `SpreadPainBonusCrit` | Integer | Applies the 'SpreadPainBonusCrit' effect. | 2 |  |
 | `SpreadWater` | Integer | Applies or references the 'SpreadWater' effect/state. | 1 |  |
 | `sprout` | Variable |  | 1 |  |
 | `SproutsGrantMovement` | Integer | Applies or references the 'SproutsGrantMovement' effect/state. | 1 |  |
 | [`StackingDodgeChanceOnTookDamage`](#stackingdodgechanceontookdamage) | Object | Applies the 'StackingDodgeChanceOnTookDamage' effect. | 2 |  |
+| [`StackingFlowerTrail`](#stackingflowertrail) | Object | Applies or references the 'StackingFlowerTrail' effect/state. | 3 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 14 |  |
 | [`StacyMutant_Brace`](#stacymutant_brace) | Object | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 |  |
 | [`StacyMutant_Counter`](#stacymutant_counter) | Object | Character Form: Behavior and stats for the 'StacyMutant_Counter' state. | 1 |  |
 | [`StacyMutant_Damage`](#stacymutant_damage) | Object | Character Form: Behavior and stats for the 'StacyMutant_Damage' state. | 1 |  |
@@ -1205,92 +1369,332 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StacyMutant_Speed`](#stacymutant_speed) | Object | Character Form: Behavior and stats for the 'StacyMutant_Speed' state. | 1 |  |
 | [`StacyMutant_Thorns`](#stacymutant_thorns) | Object | Character Form: Behavior and stats for the 'StacyMutant_Thorns' state. | 1 |  |
 | `StartDead` | Integer | Applies or references the 'StartDead' effect/state. | 1 |  |
+| `StartOffMap` | Integer | Applies or references the 'StartOffMap' effect/state. | 5 |  |
+| `StatBounty` | Integer | Applies or references the 'StatBounty' effect/state. | 1 |  |
+| `StatBounty` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`StatDependentPassive`](#statdependentpassive) | Object | Applies or references the 'StatDependentPassive' effect/state. | 1 |  |
+| `StatMinimum` | Integer | Applies the 'StatMinimum' effect. | 2 |  |
+| [`StatsAtLowHealth`](#statsatlowhealth) | Object | Applies the 'StatsAtLowHealth' effect. | 2 |  |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 23 |  |
 | [`StatusAdjacentOnTheirTurnBegin`](#statusadjacentontheirturnbegin) | Object | Event Trigger: Applies nested statuses to adjacent on their turn begin. | 1 |  |
 | [`StatusAdjacentOnTheirTurnEnd`](#statusadjacentontheirturnend) | Object | Applies or references the 'StatusAdjacentOnTheirTurnEnd' effect/state. | 1 |  |
+| [`StatusAfterCastSpell`](#statusaftercastspell) | Object | Applies or references the 'StatusAfterCastSpell' effect/state. | 2 |  |
 | [`StatusAfterXStacks`](#statusafterxstacks) | Object | Applies or references the 'StatusAfterXStacks' effect/state. | 1 |  |
+| [`StatusAfterXTurns`](#statusafterxturns) | Object | Event Trigger: Applies a status effect after X turns have passed. | 2 |  |
+| [`StatusAllCharactersOnSpawn`](#statusallcharactersonspawn) | Object | Applies or references the 'StatusAllCharactersOnSpawn' effect/state. | 3 |  |
 | [`StatusAlliesEachTurn`](#statusallieseachturn) | Object | Applies or references the 'StatusAlliesEachTurn' effect/state. | 1 |  |
+| [`StatusAlliesOnBattleStart`](#statusalliesonbattlestart) | Object | Applies or references the 'StatusAlliesOnBattleStart' effect/state. | 2 |  |
+| [`StatusAlliesOnDeath`](#statusalliesondeath) | Object | Event Trigger: Applies nested statuses to allies on death. | 8 |  |
+| [`StatusAlliesOnGainCoins`](#statusalliesongaincoins) | Object | Event Trigger: Applies nested statuses to allies on gain coins. | 2 |  |
+| [`StatusAlliesOnKill`](#statusalliesonkill) | Object | Event Trigger: Applies nested statuses to allies on kill. | 2 |  |
 | [`StatusAlliesOnSpendMana`](#statusalliesonspendmana) | Object | Event Trigger: Applies nested statuses to allies on spend mana. | 2 |  |
 | [`StatusAlliesScaledByCursedOnDeath`](#statusalliesscaledbycursedondeath) | Object | Event Trigger: Applies nested statuses to allies scaled by cursed on death. | 2 |  |
+| [`StatusAllyWhenAllySpendsMana`](#statusallywhenallyspendsmana) | Object | Event Trigger: Applies nested statuses to ally when ally spends mana. | 2 |  |
+| [`StatusAnyCatAllyWhoKills`](#statusanycatallywhokills) | Object | Event Trigger: Applies nested statuses to any cat ally who kills. | 2 |  |
+| `StatusCarefulness` | Integer | Applies or references the 'StatusCarefulness' effect/state. | 2 |  |
+| [`StatusCharactersOnRoundEnd`](#statuscharactersonroundend) | Object | Examples: `{ ... }` | 3 |  |
+| [`StatusCharactersOnRoundStart`](#statuscharactersonroundstart) | Object | Examples: `{ ... }` | 2 |  |
+| [`StatusCollector`](#statuscollector) | Object | Passive: Gains benefits based on the number of statuses applied to them. | 9 |  |
+| [`StatusDamagers`](#statusdamagers) | Object | Event Trigger: Applies nested statuses to damagers. | 2 |  |
+| [`StatusEachRoundBegin`](#statuseachroundbegin) | Object | Examples: `{ ... }` | 8 |  |
+| [`StatusEachRoundEnd`](#statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 2 |  |
+| [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 16 |  |
 | [`StatusEachTurnBeginIfHasStatus`](#statuseachturnbeginifhasstatus) | Object | Event Trigger: Applies a status at the start of the turn if a prerequisite status is met. | 1 |  |
+| [`StatusEachTurnEnd`](#statuseachturnend) | Object | Applies or references the 'StatusEachTurnEnd' effect/state. | 16 |  |
+| [`StatusEachTurnEndForEachTurn`](#statuseachturnendforeachturn) | Object | Event Trigger: Applies nested statuses to each turn end for each turn. | 2 |  |
 | [`StatusEachTurnEndIfEnabledAtStartOfTurn`](#statuseachturnendifenabledatstartofturn) | Object | Event Trigger: Applies a status at the end of the turn if an enabling condition was met at the start. | 1 |  |
+| [`StatusEachTurnEndPerEnemyKill`](#statuseachturnendperenemykill) | Object | Event Trigger: Applies nested statuses to each turn end per enemy kill. | 2 |  |
+| [`StatusEnemiesOnDeath`](#statusenemiesondeath) | Object | Event Trigger: Applies nested statuses to enemies on death. | 2 |  |
+| [`statuses`](#statuses) | Object | Status effects possessed by the character. | 14 |  |
+| [`StatusEveryXSpellCasts`](#statuseveryxspellcasts) | Object | Applies or references the 'StatusEveryXSpellCasts' effect/state. | 8 |  |
 | [`StatusEveryXSpellCastsEachTurn`](#statuseveryxspellcastseachturn) | Object | Examples: `{ ... }` | 2 |  |
+| [`StatusEveryXTurnBegins`](#statuseveryxturnbegins) | Object | Event Trigger: Applies nested statuses to every x turn begins. | 2 |  |
+| [`StatusGroup`](#statusgroup) | Object | Groups multiple status effects together for batch application. | 5 |  |
 | [`StatusIfBattleAlreadyBegan`](#statusifbattlealreadybegan) | Object | Event Trigger: Applies nested statuses to if battle already began. | 1 |  |
 | [`StatusIfDidntMove`](#statusifdidntmove) | Object | Examples: `{ ... }` | 2 |  |
+| [`StatusIfUnusedActPoints`](#statusifunusedactpoints) | Object | Applies or references the 'StatusIfUnusedActPoints' effect/state. | 2 |  |
+| [`StatusIfUnusedMovePoints`](#statusifunusedmovepoints) | Object | Event Trigger: Applies nested statuses to if unused move points. | 6 |  |
+| [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Array / Enum | Applies or references the 'StatusImmunity' effect/state. | 38 |  |
+| [`StatusKilledCharacters`](#statuskilledcharacters) | Object | Event Trigger: Applies nested statuses to killed characters. | 6 |  |
+| [`StatusKillers`](#statuskillers) | Object | Instantly kills the target if they possess the specified status effects. | 2 |  |
+| [`StatusOnAllyCatDeath`](#statusonallycatdeath) | Object | Event Trigger: Applies nested statuses when ally cat death. | 4 |  |
+| [`StatusOnAnyDeath`](#statusonanydeath) | Object | Event Trigger: Applies nested statuses when any death. | 2 |  |
+| [`StatusOnBackstab`](#statusonbackstab) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
+| [`StatusOnBattleEnd`](#statusonbattleend) | Object | Applies the nested status effects when the encounter finishes. | 6 |  |
+| [`StatusOnBattleEndIfKillThresholdMet`](#statusonbattleendifkillthresholdmet) | Object | Event Trigger: Applies nested statuses when battle end if kill threshold met. | 2 |  |
+| [`StatusOnBattleStart`](#statusonbattlestart) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
+| [`StatusOnBreak`](#statusonbreak) | Object | Event Trigger: Applies statuses when this action occurs. | 22 |  |
+| [`StatusOnBreakItem`](#statusonbreakitem) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
+| [`StatusOnCastSpell`](#statusoncastspell) | Object | Event Trigger: Applies nested statuses when cast spell. | 8 |  |
+| [`StatusOnCollectPickup`](#statusoncollectpickup) | Object | Event Trigger: Applies nested statuses when collect pickup. | 2 |  |
+| [`StatusOnCrit`](#statusoncrit) | Object | Event Trigger: Applies nested statuses when crit. | 10 |  |
+| [`StatusOnDealtDamage`](#statusondealtdamage) | Object | Event Trigger: Applies nested statuses when dealt damage. | 2 |  |
+| [`StatusOnDealtDamageThreshold`](#statusondealtdamagethreshold) | Object | Event Trigger: Applies nested statuses when dealt damage threshold. | 2 |  |
+| [`StatusOnDie`](#statusondie) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
 | [`StatusOnDodge`](#statusondodge) | Object | Event Trigger: Applies statuses when this action occurs. | 1 |  |
+| [`StatusOnEatFood`](#statusoneatfood) | Object | Event Trigger: Applies nested statuses when eat food. | 4 |  |
+| [`StatusOnEatPill`](#statusoneatpill) | Object | Examples: `{ ... }` | 2 |  |
+| [`StatusOnEndMove`](#statusonendmove) | Object | Event Trigger: Applies statuses when this action occurs. | 6 |  |
 | [`StatusOnEnemyCastSpell`](#statusonenemycastspell) | Object | Examples: `{ ... }` | 1 |  |
 | [`StatusOnEnemyConfused`](#statusonenemyconfused) | Object | Event Trigger: Applies statuses when an enemy becomes confused. | 1 |  |
 | [`StatusOnEnemyDeath`](#statusonenemydeath) | Object | Event Trigger: Applies statuses when this action occurs. | 1 |  |
 | [`StatusOnFallAsleep`](#statusonfallasleep) | Object | Event Trigger: Applies statuses when this action occurs. | 1 |  |
 | [`StatusOnFullMana`](#statusonfullmana) | Object | Event Trigger: Applies statuses when this action occurs. | 1 |  |
+| [`StatusOnGainCoins`](#statusongaincoins) | Object | Event Trigger: Applies nested statuses when gain coins. | 4 |  |
+| [`StatusOnGainShield`](#statusongainshield) | Object | Event Trigger: Applies nested statuses when gain shield. | 2 |  |
+| [`StatusOnHeal`](#statusonheal) | Object | Event Trigger: Applies nested statuses when heal. | 2 |  |
+| [`StatusOnHealed`](#statusonhealed) | Object | Event Trigger: Applies nested statuses when healed. | 4 |  |
+| [`StatusOnKill`](#statusonkill) | Object | Event Trigger: Applies statuses when this action occurs. | 18 |  |
+| [`StatusOnKillEnemy`](#statusonkillenemy) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
 | [`StatusOnLoseShield`](#statusonloseshield) | Object | Event Trigger: Applies nested statuses when lose shield. | 1 |  |
+| [`StatusOnOverHealed`](#statusonoverhealed) | Object | Event Trigger: Applies nested statuses when over healed. | 4 |  |
+| [`StatusOnOverMana`](#statusonovermana) | Object | Event Trigger: Applies nested statuses when over mana. | 2 |  |
+| [`StatusOnPickupCoins`](#statusonpickupcoins) | Object | Event Trigger: Applies nested statuses when pickup coins. | 2 |  |
+| [`StatusOnPopCorpse`](#statusonpopcorpse) | Object | Event Trigger: Applies statuses when this action occurs. | 2 |  |
+| [`StatusOnSetPieceBreak`](#statusonsetpiecebreak) | Object | Examples: `{ ... }` | 2 |  |
+| [`StatusOnSpawnIn`](#statusonspawnin) | Object | Event Trigger: Applies statuses immediately when spawned. | 2 |  |
+| [`StatusOnStanceSwitch`](#statusonstanceswitch) | Object | Event Trigger: Applies nested statuses when stance switch. | 6 |  |
 | [`StatusOnTakeHealthDamage`](#statusontakehealthdamage) | Object | Event Trigger: Applies nested statuses when take health damage. | 1 |  |
+| [`StatusOnTakeHealthOrShieldDamage`](#statusontakehealthorshielddamage) | Object | Event Trigger: Applies statuses when this action occurs. | 4 |  |
+| [`StatusOnTookDamage`](#statusontookdamage) | Object | Event Trigger: Applies nested statuses when took damage. | 34 |  |
+| [`StatusOnTookDamageFromAbility`](#statusontookdamagefromability) | Object | Event Trigger: Applies statuses when taking damage from an ability. | 6 |  |
+| [`StatusOnTookDamageFromEnemyAbility`](#statusontookdamagefromenemyability) | Object | Event Trigger: Applies nested statuses when took damage from enemy ability. | 2 |  |
+| [`StatusOnTriggerTrap`](#statusontriggertrap) | Object | Event Trigger: Applies nested statuses when trigger trap. | 2 |  |
+| [`StatusOnTurnEndIfCastNSpells`](#statusonturnendifcastnspells) | Object | Event Trigger: Applies nested statuses when turn end if cast n spells. | 4 |  |
+| [`StatusOnTurnEndIfDidntCastAbilityTypes`](#statusonturnendifdidntcastabilitytypes) | Object | Event Trigger: Applies statuses when this action occurs. | 5 |  |
+| [`StatusOnTurnEndIfManaExact`](#statusonturnendifmanaexact) | Object | Event Trigger: Applies nested statuses when turn end if mana exact. | 4 |  |
+| [`StatusOnTurnEndIfManaOrHealthExact`](#statusonturnendifmanaorhealthexact) | Object | Event Trigger: Applies nested statuses when turn end if mana or health exact. | 4 |  |
+| [`StatusOnUseAbilityWithTag`](#statusonuseabilitywithtag) | Object | Event Trigger: Applies nested statuses when use ability with tag. | 8 |  |
+| [`StatusOnUseBasicAttack`](#statusonusebasicattack) | Object | Event Trigger: Applies nested statuses when use basic attack. | 2 |  |
+| [`StatusOnUseElementAbility`](#statusonuseelementability) | Object | Event Trigger: Applies nested statuses when use element ability. | 2 |  |
 | [`StatusOverlappingCharactersAndDie`](#statusoverlappingcharactersanddie) | Object | Event Trigger: Applies statuses to overlapping entities, then destroys self. | 1 |  |
+| [`StatusPerInjury`](#statusperinjury) | Object | Event Trigger: Applies nested statuses to per injury. | 2 |  |
+| [`StatusRandomEnemiesOnBattleStart`](#statusrandomenemiesonbattlestart) | Object | Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state. | 4 |  |
+| [`StatusReplacement`](./Arrays.md#array-statusreplacement) | Array | Examples: `[ Petrify PetrifyCharmed ]` | 2 |  |
+| [`StatusThingsKnockedBack`](#statusthingsknockedback) | Object | Event Trigger: Applies nested statuses to things knocked back. | 2 |  |
+| [`StatusWhenAllySpendsMana`](#statuswhenallyspendsmana) | Object | Event Trigger: Applies nested statuses to when ally spends mana. | 2 |  |
 | [`StatusWhenStatusCompletelyRemoved`](#statuswhenstatuscompletelyremoved) | Object | Event Trigger: Applies statuses when a tracked status effect is fully cleansed. | 1 |  |
+| `StealDemonicGlyph` | Integer | Applies or references the 'StealDemonicGlyph' effect/state. | 1 |  |
+| [`StealEquipment`](./Enums.md#enum-stealequipment) | Enum | Applies or references the 'StealEquipment' effect/state. | 1 |  |
+| `StealthCritChance` | Integer | Applies or references the 'StealthCritChance' effect/state. | 1 |  |
 | `StealthUntilBasicAttack` | Integer | Applies or references the 'StealthUntilBasicAttack' effect/state. | 1 |  |
+| `StealTurn` | Integer | Applies or references the 'StealTurn' effect/state. | 1 |  |
 | `StevenBolts` | Integer | Applies or references the 'StevenBolts' effect/state. | 1 |  |
+| `StrengthForEachNeighboringEnemy` | Integer | Applies the 'StrengthForEachNeighboringEnemy' effect. | 2 |  |
+| `StrengthInNumbersAura` | Integer | Applies the 'StrengthInNumbersAura' effect. | 2 |  |
 | `StrictLimitDamage` | Integer | Applies the 'StrictLimitDamage' effect. | 1 |  |
 | `StripKnockback` | Integer | Applies or references the 'StripKnockback' effect/state. | 1 |  |
+| `StripStatuses` | Integer | Applies or references the 'StripStatuses' effect/state. | 10 |  |
+| `Study` | Integer | Applies the 'Study' effect. | 2 |  |
+| `StunImmunity` | Integer / Object | Passive: Prevents Stun from being applied. | 6 |  |
 | [`SupportDieInsteadOfRun`](#supportdieinsteadofrun) | Object | AI Logic: Forces a support unit to die rather than flee. | 1 |  |
+| [`SupportFormChangeInsteadOfRun`](./Enums.md#enum-supportformchangeinsteadofrun) | Enum / Object | AI Logic: Forces a support unit to transform rather than flee. | 3 |  |
+| `SurviveAt1HP` | Integer | Applies or references the 'SurviveAt1HP' effect/state. | 2 |  |
+| `SwallowSmallCharacter` | Integer | Applies or references the 'SwallowSmallCharacter' effect/state. | 2 |  |
+| `SwapHighestAndLowestStat` | Integer | Applies or references the 'SwapHighestAndLowestStat' effect/state. | 2 |  |
+| [`SwapWeapon`](#swapweapon) | Object | Replaces the character's currently equipped weapon with one from a specified pool. | 1 |  |
 | [`SwimmingFormChange`](#swimmingformchange) | Object | Logic: Automates form change when entering/exiting water. | 1 |  |
+| `Switcheroo` | Integer / Object | Applies or references the 'Switcheroo' effect/state. | 2 |  |
+| `Switcheroo` | Integer / Object |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`SwitchMusic`](#switchmusic) | Object | Changes the background music track or layer during combat. | 4 |  |
 | [`SyncFormsWithBuddy`](#syncformswithbuddy) | Object | Logic: Forces this character's form to match their familiar/buddy. | 1 |  |
+| `T2CopyCatInternal` | Variable |  | 1 |  |
 | [`T3HitlerSpawningPhase`](#t3hitlerspawningphase) | Object | Boss Logic: Minion spawn phase for the T3 Hitler boss. | 1 |  |
+| `T3HitlerTriggerInitialSpawns` | Integer | Applies or references the 'T3HitlerTriggerInitialSpawns' effect/state. | 1 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `crow, grub_familiar` | 3 |  |
+| [`TaggedPickupEffectReplacement`](#taggedpickupeffectreplacement) | Object | Applies the 'TaggedPickupEffectReplacement' effect. | 2 |  |
+| [`TagGreed`](./Enums.md#enum-taggreed) | Enum | Applies or references the 'TagGreed' effect/state. | 6 |  |
+| [`TagMetronome`](./Enums.md#enum-tagmetronome) | Enum | Applies or references the 'TagMetronome' effect/state. | 1 |  |
+| [`TakeBonusTurnWithAIControl`](#takebonusturnwithaicontrol) | Object | Grants the character an immediate extra turn, but forces the AI to control them during it. | 3 |  |
 | [`TakeBonusTurnWithStatus`](#takebonusturnwithstatus) | Object | Grants the character an immediate extra turn while afflicted with specific statuses. | 1 |  |
+| `TakeExtraTurnEndOfRound` | Integer | Applies or references the 'TakeExtraTurnEndOfRound' effect/state. | 1 |  |
 | `TakeWeaponFromSpawner` | Integer | Applies or references the 'TakeWeaponFromSpawner' effect/state. | 1 |  |
 | `Tall` | Integer | Applies or references the 'Tall' effect/state. | 1 |  |
 | [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum | Applies or references the 'TallTumorManaBurn' effect/state. | 1 |  |
+| [`Tangled`](./Arrays.md#array-tangled) | Array / Integer / Object | Applies a tangled/ensnared status effect, often modifying visual sprites. | 5 |  |
+| `TargetedMetronome` | Integer | Applies or references the 'TargetedMetronome' effect/state. | 1 |  |
 | `TattersFear` | Object |  | 1 |  |
+| `TauntAlways` | Integer | Applies the 'TauntAlways' effect. | 4 |  |
 | `TauntAtFullHealth` | Integer | Applies the 'TauntAtFullHealth' effect. | 1 |  |
+| `Taunting` | Integer | Applies or references the 'Taunting' effect/state. | 1 |  |
+| `Taunting` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `TC_DashReaction` | Object |  | 1 |  |
+| [`TeamBonusAbility`](./Enums.md#enum-teambonusability) | Enum | Applies or references the 'TeamBonusAbility' effect/state. | 1 |  |
+| [`TeamCastAbility`](./Enums.md#enum-teamcastability) | Enum / Object | Requires or involves multiple characters to execute the ability. | 6 |  |
+| `TeamCastAbility` | Enum / Object |  |  | `TeamFlex_Impl2` (Enum), `TeamFlex_Impl` (Enum), `{ ... }` (Object) |
+| [`TeleportBackAtTurnEnd`](./Enums.md#enum-teleportbackatturnend) | Enum | Applies or references the 'TeleportBackAtTurnEnd' effect/state. | 1 |  |
+| `TempBackstab` | Integer | Applies or references the 'TempBackstab' effect/state. | 1 |  |
+| `TempBackstab` | Integer |  |  | `[1 .5]` (Array), `75` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempBackstabBleed` | Integer | Applies or references the 'TempBackstabBleed' effect/state. | 1 |  |
+| `TempBackstabPiercing` | Integer | Applies or references the 'TempBackstabPiercing' effect/state. | 1 |  |
+| `TempBackstabPoison` | Integer | Applies or references the 'TempBackstabPoison' effect/state. | 1 |  |
+| `TempBasicAttackBonusAOE` | Integer | Applies or references the 'TempBasicAttackBonusAOE' effect/state. | 1 |  |
+| `TempBonusKnockback` | Integer | Applies or references the 'TempBonusKnockback' effect/state. | 1 |  |
+| `TempBonusKnockback` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempBonusKnockbackDamage` | Integer | Applies or references the 'TempBonusKnockbackDamage' effect/state. | 1 |  |
+| `TempBonusKnockbackDamage` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempCounterAttack` | Integer | Applies or references the 'TempCounterAttack' effect/state. | 2 |  |
+| `TempCritChanceUp` | Integer | Applies or references the 'TempCritChanceUp' effect/state. | 2 |  |
+| `TempCritChanceUp` | Integer |  |  | `[1 .5]` (Array), `30` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInitiativeChange` | Integer | Applies or references the 'TempInitiativeChange' effect/state. | 3 |  |
+| `TempInitiativeChange` | Integer |  |  | `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInitiativeChange` | Integer |  |  | `[1 .5]` (Array), `9999` (Number), `1` (Number), `{ ... }` (Object) |
+| `TempInjuryImmunity` | Integer | Applies or references the 'TempInjuryImmunity' effect/state. | 1 |  |
+| `TempInjuryImmunity` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TempManaCostReduction` | Integer | Applies or references the 'TempManaCostReduction' effect/state. | 1 |  |
+| `TempManaCostReduction` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `TempMeleeRangeUp` | Integer | Applies or references the 'TempMeleeRangeUp' effect/state. | 1 |  |
+| `TempNoManaRegen` | Integer | Applies or references the 'TempNoManaRegen' effect/state. | 2 |  |
+| [`TempPassiveWhileHasStatus`](#temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 4 |  |
+| `TempPenetrate` | Integer | Applies or references the 'TempPenetrate' effect/state. | 1 |  |
+| `TempPreEmptiveCounterAttack` | Integer | Applies or references the 'TempPreEmptiveCounterAttack' effect/state. | 1 |  |
+| `TempPreEmptiveCounterAttack` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum | Applies or references the 'Terminator2Chase' effect/state. | 1 |  |
 | [`Terminator2Run`](#terminator2run) | Object | AI Movement: Specific run logic for Terminator2. | 1 |  |
 | [`TerminatorChase`](#terminatorchase) | Object | AI Movement: Specific chase logic for Terminator. | 1 |  |
 | [`TerminatorSkin`](#terminatorskin) | Object | Visual: Skin definition for Terminator. | 1 |  |
 | `TheCreator_SpawnCloneTeam` | Object |  | 1 |  |
 | [`TheHunger`](#thehunger) | Object | Applies the 'TheHunger' effect. | 1 |  |
+| `Thorns` | Integer | Applies or references the 'Thorns' effect/state. | 36 |  |
+| `ThornsDamageImmuneUntilSettled` | Integer | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. | 2 |  |
 | `ThornUp` | Object |  | 1 |  |
+| `ThornUpX` | Object |  | 3 |  |
+| [`threshold`](#threshold) | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 22 |  |
 | `ThrobbingKing2` | Object |  | 1 |  |
+| [`TickDownStatus`](./Enums.md#enum-tickdownstatus) | Enum | Applies or references the 'TickDownStatus' effect/state. | 1 |  |
+| `TileDamageImmuneUntilSettled` | Integer | Applies or references the 'TileDamageImmuneUntilSettled' effect/state. | 2 |  |
+| `TileDamageMultiplier` | Integer | Applies the 'TileDamageMultiplier' effect. | 2 |  |
 | [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum | Applies or references the 'TileElementDamageImmunity' effect/state. | 1 |  |
+| `TilesMovedToCritChance` | Integer | Applies or references the 'TilesMovedToCritChance' effect/state. | 1 |  |
+| `TilesMovedToCritChance` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToMana` | Integer | Applies or references the 'TilesMovedToMana' effect/state. | 1 |  |
+| `TilesMovedToMana` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`TilesMovedToNeighborHeal`](./Enums.md#enum-tilesmovedtoneighborheal) | Enum | Applies or references the 'TilesMovedToNeighborHeal' effect/state. | 1 |  |
+| `TilesMovedToNeighborHeal` | Enum |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TilesMovedToStrength` | Integer | Applies or references the 'TilesMovedToStrength' effect/state. | 1 |  |
+| `TilesMovedToStrength` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`TileTrail`](./Enums.md#enum-tiletrail) | Enum | Applies or references the 'TileTrail' effect/state. | 4 |  |
+| [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | Applies or references the 'TileTrail_Ahead' effect/state. | 3 |  |
+| [`TimeDelayStatusApplication`](#timedelaystatusapplication) | Object | Delays the nested effects by a specified amount of real-time seconds. | 4 |  |
 | [`Tinkerer`](./Arrays.md#array-tinkerer) | Object | Applies or references the 'Tinkerer' effect/state. | 70 |  |
+| [`TinkererBasicAttackSwitching`](#tinkererbasicattackswitching) | Object | Logic: Allows Tinkerer to swap basic attacks. | 2 |  |
 | [`TintItem`](#tintitem) | Object | Applies or references the 'TintItem' effect/state. | 1 |  |
 | `TireBehavior` | Integer | Applies or references the 'TireBehavior' effect/state. | 1 |  |
+| `ToadJump_BasicMove` | Object |  | 4 |  |
 | `TormentorHeal` | Integer | Applies or references the 'TormentorHeal' effect/state. | 1 |  |
 | `TormentorRuneAbsorb` | Object |  | 1 |  |
 | `TossTargetIsAggroTarget` | Integer | Applies or references the 'TossTargetIsAggroTarget' effect/state. | 1 |  |
 | `TossTargetIsBuddy` | Integer | Applies or references the 'TossTargetIsBuddy' effect/state. | 1 |  |
 | `TossTargetIsNotInWater` | Integer | Applies or references the 'TossTargetIsNotInWater' effect/state. | 1 |  |
 | [`TourettesMeows`](#tourettesmeows) | Object | Applies the 'TourettesMeows' effect. | 1 |  |
+| [`TowerDefense`](#towerdefense) | Object | Applies the 'TowerDefense' effect. | 2 |  |
+| [`TowerDefenseReflex`](./Enums.md#enum-towerdefensereflex) | Enum | Applies the 'TowerDefenseReflex' effect. | 2 |  |
+| `TowerDefenseStatus` | Integer | Applies or references the 'TowerDefenseStatus' effect/state. | 1 |  |
+| `TowerDefenseStatus` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `TowerDefenseStatus2` | Integer | Applies or references the 'TowerDefenseStatus2' effect/state. | 1 |  |
+| `TowerDefenseStatus2` | Integer |  |  | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 | `ToxicBubbles` | Variable |  | 1 |  |
 | `ToxPuff` | Object |  | 1 |  |
 | [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum | Applies or references the 'TrackAmountKilledByPlayer' effect/state. | 1 |  |
+| `TradeLife` | Integer / Object | Applies or references the 'TradeLife' effect/state. | 2 |  |
+| `TradeLife` | Integer / Object |  | 2 | `1` (Number), `{ ... }` (Object) |
+| `TrailBlazer` | Enum / Integer / Object | Applies or references the 'TrailBlazer' effect/state. | 2 |  |
+| `TrailBlazer` | Enum / Integer / Object |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Trample`](./Arrays.md#array-trample) | Integer | Applies or references the 'Trample' effect/state. | 14 |  |
+| [`TransformAbility`](./Enums.md#enum-transformability) | Enum | Applies or references the 'TransformAbility' effect/state. | 28 |  |
+| [`TransformBasicAttack`](./Enums.md#enum-transformbasicattack) | Enum | Applies or references the 'TransformBasicAttack' effect/state. | 14 |  |
+| [`TransformBasicMove`](./Enums.md#enum-transformbasicmove) | Enum | Applies or references the 'TransformBasicMove' effect/state. | 1 |  |
+| [`TransformEquipment`](#transformequipment) | Object | Upgrades or transforms a specific equipped item into another. | 1 |  |
+| [`TransformInXTurns`](#transforminxturns) | Object | Logic: Forces a form change after X turns. | 9 |  |
+| [`TransformItemOnElementInfluence`](#transformitemonelementinfluence) | Object | Applies or references the 'TransformItemOnElementInfluence' effect/state. | 5 |  |
+| [`TransformNow`](./Enums.md#enum-transformnow) | Enum | Applies or references the 'TransformNow' effect/state. | 1 |  |
+| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Array / Enum | Applies or references the 'TransformOnDeath' effect/state. | 13 |  |
+| [`TransformOnDeathImmediately`](./Enums.md#enum-transformondeathimmediately) | Enum / Object | Logic: Bypasses death sequence to instantly assume a new form. | 5 |  |
+| [`TransformOnElementInfluence`](#transformonelementinfluence) | Object | Logic: Changes form when affected by elements. | 9 |  |
+| [`TransformOnElementInfluencex`](#transformonelementinfluencex) | Object | Logic: Variant element influence transformation. | 2 |  |
 | [`TransformOnStatusThreshold`](#transformonstatusthreshold) | Object | Logic: Changes form when a status effect reaches a certain stack count. | 1 |  |
+| [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | Applies or references the 'TransformWhenBuddyDies' effect/state. | 2 |  |
+| `TrapEffectsMultiplier` | Integer | Applies the 'TrapEffectsMultiplier' effect. | 2 |  |
+| [`Trapper`](#trapper) | Object | Character Form: Behavior and stats for the 'Trapper' state. | 4 |  |
+| `Trapper_Status` | Integer | Applies or references the 'Trapper_Status' effect/state. | 1 |  |
 | `TrexSwitchTarget` | Object |  | 1 |  |
 | `TriggerBleedOnBleed` | Integer | Examples: `1` | 1 |  |
+| `TriggerDOTStatuses` | Integer | Applies or references the 'TriggerDOTStatuses' effect/state. | 2 |  |
+| `TriggerGameEnding` | Integer | Applies or references the 'TriggerGameEnding' effect/state. | 3 |  |
+| `TriggerMotherConsume` | Integer | Applies or references the 'TriggerMotherConsume' effect/state. | 1 |  |
+| `TriggerMotherGrow` | Integer | Applies or references the 'TriggerMotherGrow' effect/state. | 1 |  |
+| `triggers_limit` | Integer | Examples: `1` | 2 |  |
+| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array / Number | Applies or references the 'TriggerWerewolfTransform' effect/state. | 7 |  |
+| `TriggerWerewolfTransform` | Array / Number |  |  | `[1 .5]` (Array), `[1 .20]` (Array), `.5` (String) |
+| `TrinketActiveEffectsMultiplierBonus` | Integer | Applies or references the 'TrinketActiveEffectsMultiplierBonus' effect/state. | 2 |  |
+| `TrinketPassiveMultiplierBonus` | Integer | Applies or references the 'TrinketPassiveMultiplierBonus' effect/state. | 2 |  |
 | `Triskaidekaphobia` | Integer | Applies the 'Triskaidekaphobia' effect. | 1 |  |
+| `TrueShot` | Integer | Applies or references the 'TrueShot' effect/state. | 3 |  |
 | `TT_Thrash` | Object |  | 1 |  |
 | `tumor` | Variable |  | 1 |  |
 | [`TunnelVision`](#tunnelvision) | Object | Applies or references the 'TunnelVision' effect/state. | 1 |  |
+| `TurnAround` | Integer | Applies or references the 'TurnAround' effect/state. | 1 |  |
+| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Float | Applies or references the 'TurnControlDelay' effect/state. | 1 |  |
+| `TurnControlDelay` | Number |  |  | `.25` (String) |
+| `TurnRight` | Integer | Applies or references the 'TurnRight' effect/state. | 1 |  |
 | `TutorialBossRiggedFight` | Integer | Applies or references the 'TutorialBossRiggedFight' effect/state. | 1 |  |
 | `TVBotDisableAttack` | Integer | Applies or references the 'TVBotDisableAttack' effect/state. | 1 |  |
 | `TVBotDisableMove` | Integer | Applies or references the 'TVBotDisableMove' effect/state. | 1 |  |
 | `TVBotDisableSpells` | Integer | Applies or references the 'TVBotDisableSpells' effect/state. | 1 |  |
 | [`TVBotScreen`](#tvbotscreen) | Object | Visual: TV Bot screen state. | 1 |  |
+| `TVOff` | Object |  | 3 |  |
 | `Twister_loop` | Enum |  | 1 |  |
+| [`TwisterDisplaceWithDamage`](#twisterdisplacewithdamage) | Object | A whirlwind effect that randomly displaces targets and deals damage. | 6 |  |
 | [`TwisterFling`](#twisterfling) | Object | Logic: Fling behavior for tornado attacks. | 1 |  |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |  |
 | `UFO_BigExplode` | Object |  | 1 |  |
 | `UltraSmough` | Object |  | 1 |  |
+| `UncappedHP` | Integer | Applies the 'UncappedHP' effect. | 2 |  |
 | `UncappedHPBonusStr` | Integer | Applies the 'UncappedHPBonusStr' effect. | 2 |  |
+| `UncappedMana` | Integer | Applies the 'UncappedMana' effect. | 4 |  |
+| `Uncontrollable` | Integer | Applies or references the 'Uncontrollable' effect/state. | 2 |  |
+| `Undead` | Integer | Applies or references the 'Undead' effect/state. | 25 |  |
+| `UndoDamage` | Integer | Applies or references the 'UndoDamage' effect/state. | 1 |  |
 | [`UnlimitedDeathRattleRevive`](#unlimiteddeathrattlerevive) | Object | Logic: Endless resurrection on death. | 1 |  |
+| `UnlockOrientation` | Integer | Applies or references the 'UnlockOrientation' effect/state. | 2 |  |
+| [`UpgradeLevelUpClassActives`](./Enums.md#enum-upgradelevelupclassactives) | Enum | Applies the 'UpgradeLevelUpClassActives' effect. | 2 |  |
+| [`UpgradeLevelUpClassPassives`](./Enums.md#enum-upgradelevelupclasspassives) | Enum | Applies the 'UpgradeLevelUpClassPassives' effect. | 2 |  |
+| `UpgradeRandomAbility` | Integer | Applies or references the 'UpgradeRandomAbility' effect/state. | 5 |  |
+| `UpgradeSpawnedPickups` | Integer | Applies the 'UpgradeSpawnedPickups' effect. | 2 |  |
+| [`UpgradeTaggedSpawnsToChampions`](./Enums.md#enum-upgradetaggedspawnstochampions) | Enum | Examples: `worm, bug` | 2 |  |
 | `UpTireBehavior` | Integer | Applies or references the 'UpTireBehavior' effect/state. | 1 |  |
 | [`UseAbility_Madness`](./Enums.md#enum-useability_madness) | Enum | Applies the 'UseAbility_Madness' effect. | 1 |  |
+| [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 3 |  |
 | [`UseAbilityWhenOutOfStatus`](#useabilitywhenoutofstatus) | Object | Logic: Casts a specific ability the moment a status effect expires. | 1 |  |
 | [`UseAbilityWhenShieldDepleted`](./Enums.md#enum-useabilitywhenshielddepleted) | Enum | Applies or references the 'UseAbilityWhenShieldDepleted' effect/state. | 1 |  |
+| [`UseMoveAbilityWithAI`](#usemoveabilitywithai) | Object | Forces the character to execute a movement ability using specific AI weights. | 1 |  |
+| `UseRandomSpell_Madness` | Integer | Applies the 'UseRandomSpell_Madness' effect. | 1 |  |
+| `VaporizeDice` | Integer | Applies or references the 'VaporizeDice' effect/state. | 1 |  |
+| `VaporizeTarget` | Integer | Applies or references the 'VaporizeTarget' effect/state. | 3 |  |
+| `Vegan` | Integer | Examples: `1` | 4 |  |
+| `Vengeful` | Integer | Applies the 'Vengeful' effect. | 2 |  |
+| [`VisualCountDownThenApplyStatus`](#visualcountdownthenapplystatus) | Object | Displays a visual countdown above the target before applying the nested effects. | 1 |  |
+| `VisualFlySwarm` | Integer | Examples: `1` | 2 |  |
+| `VisualFlySwarm` | Number / Object |  |  | `1` (Number), `{ ... }` (Object) |
+| [`WaggleClone`](#waggleclone) | Object | Spawns visual clones or alternative hitbox variants of the projectile. | 1 |  |
 | `Wall` | Integer | Applies or references the 'Wall' effect/state. | 1 |  |
+| `water` | Variable |  | 5 |  |
+| `Water` | Object | Character Form: Behavior and stats for the \'Water\' state. | 5 |  |
+| `WaterWalk` | Integer | Applies or references the 'WaterWalk' effect/state. | 10 |  |
+| `WeaponActiveEffectsMultiplierBonus` | Integer | Examples: `2` | 2 |  |
+| `WeaponCountsAsBasicAttack` | Integer | Applies the 'WeaponCountsAsBasicAttack' effect. | 2 |  |
+| `WeaponDamageMultiplierBonus` | Integer | Applies the 'WeaponDamageMultiplierBonus' effect. | 2 |  |
+| `WeaponPassiveMultiplierBonus` | Integer | Examples: `2` | 2 |  |
+| `WeaponsDontLoseDurability` | Integer | Applies or references the 'WeaponsDontLoseDurability' effect/state. | 2 |  |
+| [`Webbed`](./Arrays.md#array-webbed) | Integer | Applies or references the 'Webbed' effect/state. | 7 |  |
+| [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | Applies or references the 'WeremanTransformationReceiver' effect/state. | 4 |  |
 | `Wet` | Integer | Applies or references the 'Wet' effect/state. | 1 |  |
 | [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | Applies or references the 'WhitelistPickupType' effect/state. | 1 |  |
 | `WideBackstab` | Integer | Applies or references the 'WideBackstab' effect/state. | 1 |  |
 | `Wind` | Object | Examples: `{ ... }` | 1 |  |
+| `Windy` | Integer | Examples: `{ ... }` | 1 |  |
+| `Windy` | Number / Object |  | 1 | `10` (Number), `1` (Number), `{ ... }` (Object) |
 | `WispDodge` | Integer | Applies or references the 'WispDodge' effect/state. | 1 |  |
 | `WobblyCat` | Integer | Applies the 'WobblyCat' effect. | 1 |  |
 | `Wood` | Variable |  | 38 |  |
@@ -1298,11 +1702,21 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `XIsCountDeaths` | Integer | Applies or references the 'XIsCountDeaths' effect/state. | 1 |  |
 | [`XIsCountStatusStacks`](./Enums.md#enum-xiscountstatusstacks) | Enum | Applies or references the 'XIsCountStatusStacks' effect/state. | 1 |  |
 | [`XIsFormulaLockedUntilComplete`](./Enums.md#enum-xisformulalockeduntilcomplete) | Enum | Applies or references the 'XIsFormulaLockedUntilComplete' effect/state. | 1 |  |
+| `XIsFreeArmorSlots` | Integer | Applies or references the 'XIsFreeArmorSlots' effect/state. | 7 |  |
 | `XIsIncreaseEachTurn` | Integer | Applies or references the 'XIsIncreaseEachTurn' effect/state. | 1 |  |
+| [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum | Applies or references the 'XIsLivingAlliesWithTag' effect/state. | 5 |  |
+| [`XIsLivingCharactersWithTag`](./Enums.md#enum-xislivingcharacterswithtag) | Enum | Applies or references the 'XIsLivingCharactersWithTag' effect/state. | 2 |  |
+| [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | Applies or references the 'XIsMultipliedPercentHealth' effect/state. | 3 |  |
+| `XIsOtherHealsThisTurn` | Integer | Applies or references the 'XIsOtherHealsThisTurn' effect/state. | 2 |  |
 | `XIsRampAndReset` | Integer | Applies or references the 'XIsRampAndReset' effect/state. | 1 |  |
 | `XIsRecycleCostReduction` | Integer | Applies or references the 'XIsRecycleCostReduction' effect/state. | 1 |  |
+| `XIsSpellStormRampAndReset` | Integer / Object | Math variable assignment: Evaluates X based on Spell Storm stacks, then resets them. | 2 |  |
+| [`XIsTargetHealth`](#xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 2 |  |
+| `XIsTimesDamageTaken` | Integer | Applies or references the 'XIsTimesDamageTaken' effect/state. | 2 |  |
+| [`YOffset`](./Enums.md#enum-yoffset) | Float | Applies or references the 'YOffset' effect/state. | 6 |  |
 | `zaratana` | Variable |  | 16 |  |
 | `ZeroKnockbackDamage` | Integer | Applies or references the 'ZeroKnockbackDamage' effect/state. | 1 |  |
+| `Zombie` | Number | Examples: `1` | 2 |  |
 
 | `AddDamageToElementDamage` | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 6 |
 | `AddLeechesStatus` | Integer | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
@@ -3195,8 +3609,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 </details>
 
-
-
 ## Discovered Objects
 
 > These tables were auto-generated by the schema audit tool. They document objects found in the `.gon` files that were not previously documented.
@@ -3207,13 +3619,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `alias` | Enum |  |  | `DodgeChance_Status` (Enum) |
 
-
 ### Object: `AlphaStatusOnTurnBegin`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DoubleCastSpellThisTurn` | Integer |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-
 
 ### Object: `ApplyPassivesToSpawnerWhileAlive`
 
@@ -3221,13 +3631,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `HideEquipment` | Enum |  | 2 | `neck` (Enum) |
 
-
 ### Object: `ApplyToRandomPartyMemberIfPossible`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `GainDisorderFromPool` | Enum / Object |  | 4 | `all_disorders` (Enum), `{ ... }` (Object) |
-
 
 ### Object: `ApplyToSource`
 
@@ -3259,7 +3667,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer |  | 12 | `[1 .5]` (Array), `4` (Number), `-2` (Number), `{ ... }` (Object) |
 | `Tech` | Integer |  | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
-
 ### Object: `BlessingOfPeace`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3267,7 +3674,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_BLESSINGOFPEACE_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_BLESSINGOFPEACE_DESC"` (String) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_BLESSINGOFPEACE_DESC_STACKLESS"` (String) |
-
 
 ### Object: `BounceObject`
 
@@ -3277,7 +3683,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `obj` | Array / Enum |  | 6 | `SmallLavaRock` (Enum), `chapter_corpse_medium` (Enum) |
 | `slide` | Integer |  | 2 | `10` (Number) |
 
-
 ### Object: `Bounty`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3286,7 +3691,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_BOUNTY_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_BOUNTY_DESC"` (String) |
 
-
 ### Object: `ChangeTile`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3294,7 +3698,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `aoe` | Integer |  | 4 | `1` (Number) |
 | `chance` | Number |  | 4 | `25` (Number), `.25` (String) |
 | `tile` | Array / Enum |  | 22 | `[TallGrassTile TallFlowerTile BrambleTile]` (Array), `LavaTile` (Enum), `ToxicTile` (Enum) |
-
 
 ### Object: `CharismaUp`
 
@@ -3306,7 +3709,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String |  |  | `"KEYWORD_CHADOWN_DESC"` (String) |
 | `tooltip_stacks_pos` | String |  |  | `"KEYWORD_CHAUP_DESC"` (String) |
 
-
 ### Object: `Charmed`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3314,7 +3716,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_CHARMED_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_CHARMED_DESC"` (String) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_CHARMED_DESC_STACKLESS"` (String) |
-
 
 ### Object: `Cleanse`
 
@@ -3327,7 +3728,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `target` | Object |  |  | `{ ... }` (Object) |
 | `template` | Enum |  |  | `spell` (Enum) |
 
-
 ### Object: `Cleave`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3337,14 +3737,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_CLEAVE_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_CLEAVE_DESC"` (String) |
 
-
 ### Object: `Conditional_Adjacent`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Bleed` | Array / Integer |  | 4 | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
 | `BonusDamage` | Enum / Integer |  | 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-
 
 ### Object: `Conditional_Ally`
 
@@ -3364,7 +3762,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempSpeedUp` | Enum / Integer |  | 4 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
 | `Thorns` | Integer |  | 2 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 
-
 ### Object: `Conditional_BadRoll`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3372,7 +3769,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Instakill` | Integer |  | 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
 | `Madness` | Array / Enum / Integer / Object |  | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
 | `odds` | Number |  | 16 | `0.5` (Number), `.16666666` (String), `.1` (String) |
-
 
 ### Object: `Conditional_Boss`
 
@@ -3384,7 +3780,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Drowsy` | Integer |  | 4 | `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
 | `Fear` | Array / Integer |  | 2 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | `Stun` | Array / Integer |  | 6 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-
 
 ### Object: `Conditional_Corpse`
 
@@ -3400,7 +3795,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Revive` | Integer / Object |  | 13 | `50` (Number), `100` (Number), `{ ... }` (Object) |
 | `SafeDoomed` | Enum / Integer |  | 4 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `SpeedUp` | Enum / Integer |  | 2 | `[1 .5]` (Array), `-2` (Number), `6` (Number), `{ ... }` (Object) |
-
 
 ### Object: `Conditional_Enemy`
 
@@ -3424,7 +3818,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempDamageUp` | Integer |  | 2 | `[1 .5]` (Array), `1` (Number), `-1` (Number), `{ ... }` (Object) |
 | `Weakness` | Array / Integer / Object |  | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
 
-
 ### Object: `Conditional_FirstApplicationThisTurn`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3433,7 +3826,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Charge` | Integer |  | 2 | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
 | `FillMana` | Integer |  | 2 | `[1 .25]` (Array), `[1 .10]` (Array), `1` (Number) |
 | `ManaGain` | Enum / Integer |  | 2 | `X-1` (Enum), `X+2` (Enum), `15` (Number), `10` (Number), `"max((X-1)*2, 0)"` (String), `"max(X*3, 0)"` (String) |
-
 
 ### Object: `Conditional_GoodRoll`
 
@@ -3447,7 +3839,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `RandomMutation` | Integer |  | 6 | `3` (Number), `1` (Number) |
 | `odds` | Number |  | 72 | `15` (Number), `50` (Number), `.5` (String) |
 
-
 ### Object: `Conditional_HasCleansableDebuffs`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3456,7 +3847,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `PartialCleanse` | Integer |  | 2 | `1` (Number), `9999` (Number) |
 | `RandomStatusFromPool` | Object |  | 2 | `{ ... }` (Object) |
 | `VisualFX` | Enum |  | 2 | `MagicMissleBlast` (Enum), `BigMagicMissileBlast` (Enum) |
-
 
 ### Object: `Conditional_HasStatus`
 
@@ -3469,7 +3859,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `FormChange` | Enum / Object |  | 2 | `passive` (Enum), `Bully` (Enum), `{ ... }` (Object) |
 | `Quivered` | Array / Integer |  | 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
 | `Slow` | Array / Enum / Integer / Object |  | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
-
 
 ### Object: `Conditional_HasTag`
 
@@ -3486,7 +3875,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `PopAndSpawn` | Enum / Object |  | 2 | `TheDestroyer` (Enum), `StemCat_HalfHealth` (Enum), `{ ... }` (Object) |
 | `UseAbility` | Enum / Object |  | 2 | `GirlDinoPoop` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
 
-
 ### Object: `Conditional_HealthThreshold`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3496,13 +3884,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `FlatLeech` | Integer |  | 2 | `X` (Enum), `10` (Number), `1` (Number) |
 | `Instakill` | Integer |  | 2 | `[25 .01]` (Array), `25` (Number), `50` (Number) |
 
-
 ### Object: `Conditional_ManaThreshold`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `RepairTrinket` | Integer |  | 2 | `1` (Number), `99` (Number) |
-
 
 ### Object: `Conditional_NotBoss`
 
@@ -3512,13 +3898,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Fear` | Array / Integer |  |  | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
 | `PermanentCharm` | Integer |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
 
-
 ### Object: `Conditional_PartyMember`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Charmed` | Array / Enum / Integer |  | 4 | `[1 .1+.02*cha]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-
 
 ### Object: `Conditional_Shielded`
 
@@ -3529,7 +3913,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SetItemAux` | Object |  | 2 | `{ ... }` (Object) |
 | `Stun` | Array / Integer |  | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
 
-
 ### Object: `ConstitutionUp`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3539,7 +3922,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | Enum |  |  | `none` (Enum) |
 | `tooltip_stacks_neg` | String |  |  | `"KEYWORD_CONDOWN_DESC"` (String) |
 | `tooltip_stacks_pos` | String |  |  | `"KEYWORD_CONUP_DESC"` (String) |
-
 
 ### Object: `Craft`
 
@@ -3556,7 +3938,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `temporary` | Boolean |  | 8 | `false` (Boolean) |
 | `works_with_tech` | Boolean |  | 8 | `true` (Boolean) |
 
-
 ### Object: `CureDisease`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3564,7 +3945,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `can_apply_to_anything` | Boolean |  | 2 | `true` (Boolean) |
 | `chance` | Number |  | 12 | `30` (Number), `15` (Number) |
 | `disease` | Enum |  | 12 | `Pox` (Enum), `Covid` (Enum) |
-
 
 ### Object: `DelayedPain`
 
@@ -3574,14 +3954,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_DELAYEDPAIN_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_DELAYEDPAIN_DESC"` (String) |
 
-
 ### Object: `DestroyEquipmentAndAttachParasite`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number |  | 8 | `1` (Number), `.75` (String), `.15` (String) |
 | `pool` | Array / Enum |  | 4 | `[AmoebaHat AmoebaNeck AmoebaFace]` (Array), `[FlyHat FlyMask FlyNeck]` (Array), `parasites` (Enum) |
-
 
 ### Object: `DexterityUp`
 
@@ -3593,7 +3971,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String |  |  | `"KEYWORD_DEXDOWN_DESC"` (String) |
 | `tooltip_stacks_pos` | String |  |  | `"KEYWORD_DEXUP_DESC"` (String) |
 
-
 ### Object: `DiminishingHealthRegen`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3602,14 +3979,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_DIMINISHREGEN_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_DIMINISHREGEN_DESC"` (String) |
 
-
 ### Object: `DistanceBonusDamage`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `min_range` | Integer |  | 8 | `3` (Number), `1` (Number) |
 | `stacks` | Enum / Integer |  | 8 | `1` (Number) |
-
 
 ### Object: `DoDamage`
 
@@ -3621,7 +3996,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `elements` | Array |  |  | `[Fire]` (Array), `[Water]` (Array) |
 | `type` | Enum |  | 14 | `melee` (Enum), `generic_physical` (Enum) |
 
-
 ### Object: `DoubleCastSpellThisTurn`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3629,14 +4003,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_DOUBLECASTTHISTURN_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_DOUBLECASTTHISTURN_DESC"` (String) |
 
-
 ### Object: `Drowsy`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | Enum |  |  | `"KEYWORD_DROWSY_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_DROWSY_DESC"` (String) |
-
 
 ### Object: `Else`
 
@@ -3676,7 +4048,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempSpeedUp` | Enum / Integer |  | 2 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
 | `Webbed` | Integer |  | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 
-
 ### Object: `Fear`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3684,13 +4055,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_FEAR_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_FEAR_DESC"` (String) |
 
-
 ### Object: `ForceAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `immediate` | Boolean |  | 4 | `true` (Boolean) |
-
 
 ### Object: `ForceUseAbilityOnTarget`
 
@@ -3699,14 +4068,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ability` | Enum |  | 2 | `head_MiniMoonArmorAsteroid` (Enum) |
 | `chance` | Number |  | 2 | `25` (Number) |
 
-
 ### Object: `FormChange`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number |  | 2 | `30` (Number) |
 | `form` | Enum / Integer |  | 150 | `Rage` (Enum), `"Default"` (Enum), `4` (Number), `1` (Number) |
-
 
 ### Object: `Freeze`
 
@@ -3715,7 +4082,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_FREEZE_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_FREEZE_DESC"` (String) |
 
-
 ### Object: `GainCoinsRange`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3723,14 +4089,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `max` | Integer |  | 22 | `30` (Number), `3` (Number) |
 | `min` | Integer |  | 22 | `30` (Number), `15` (Number) |
 
-
 ### Object: `GainDisorderFromPool`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number |  | 2 | `.1` (String) |
 | `pool` | Array / Enum |  | 2 | `diseases` (Enum) |
-
 
 ### Object: `Hex`
 
@@ -3740,7 +4104,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_HEX_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_HEX_DESC"` (String) |
 
-
 ### Object: `ImmediateUseAbility`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3748,14 +4111,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ability` | Enum |  | 2 | `wp_NuclearKnifeExplode` (Enum) |
 | `even_if_stunned` | Boolean |  | 2 | `true` (Boolean) |
 
-
 ### Object: `IncAuxCounterClamped`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `change` | Integer |  | 6 | `-2` (Number), `-3` (Number) |
 | `max` | Integer |  | 6 | `3` (Number) |
-
 
 ### Object: `Infested`
 
@@ -3784,7 +4145,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `value` | Enum |  |  | `1` (Number) |
 | `voice` | Enum |  |  | `female2` (Enum) |
 
-
 ### Object: `IntelligenceUp`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3795,14 +4155,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String |  |  | `"KEYWORD_INTDOWN_DESC"` (String) |
 | `tooltip_stacks_pos` | String |  |  | `"KEYWORD_INTUP_DESC"` (String) |
 
-
 ### Object: `KnockOutCoin`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number |  | 2 | `.5` (String) |
 | `stacks` | Enum / Integer |  | 2 | `1` (Number) |
-
 
 ### Object: `KnockUpAndAway`
 
@@ -3815,7 +4173,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `self_damage` | Boolean / Integer / Object |  | 4 | `false` (Boolean) |
 | `stacks` | Enum / Integer |  | 44 | `5+bonus_melee_ability_damage` (Enum), `3` (Number), `1` (Number) |
 
-
 ### Object: `Knockback`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3823,14 +4180,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"Knockback"` (Enum) |
 | `tooltip` | Enum |  |  | `None` (Enum) |
 
-
 ### Object: `KnockbackIfCrit`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `knockback` | Enum / Integer |  | 2 | `10` (Number) |
 | `override_chain_knockback` | Integer |  | 2 | `10` (Number) |
-
 
 ### Object: `Leech`
 
@@ -3842,7 +4197,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `passives` | Object |  |  | `{ ... }` (Object) |
 | `pieces_required` | Number |  |  | `3` (Number) |
 | `tooltip` | Enum |  |  | `"KEYWORD_LIFESTEAL2_DESC"` (String) |
-
 
 ### Object: `Leeches`
 
@@ -3860,7 +4214,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_LEECHES_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_LEECHES_DESC"` (String) |
 
-
 ### Object: `MagicWeakness`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3868,14 +4221,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_MAGICWEAKNESS_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_MAGICWEAKNESS_DESC"` (String) |
 
-
 ### Object: `ManaGainRange`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `max` | Integer |  | 2 | `4` (Number) |
 | `min` | Integer |  | 2 | `0` (Number) |
-
 
 ### Object: `ManaLeeches`
 
@@ -3886,7 +4237,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_reference_applier` | String |  |  | `"KEYWORD_MANALEECHES_DESC_APPLIER"` (String) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_MANALEECHES_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_MANALEECHES_DESC"` (String) |
-
 
 ### Object: `Marked`
 
@@ -3901,14 +4251,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | Enum |  |  | `targeted_status` (Enum) |
 | `tooltip` | Enum |  |  | `"KEYWORD_MARKED_DESC"` (String) |
 
-
 ### Object: `ModifyAbility`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cost` | Object |  | 4 | `{ ... }` (Object) |
 | `meta` | Object |  | 4 | `{ ... }` (Object) |
-
 
 ### Object: `MovementUp`
 
@@ -3921,7 +4269,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String |  |  | `"KEYWORD_MOVEMENTDOWN_DESC"` (String) |
 | `tooltip_stacks_pos` | String |  |  | `"KEYWORD_MOVEMENTUP_DESC"` (String) |
 
-
 ### Object: `NextBattleStatus`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3929,14 +4276,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AllStatsUp` | Enum / Integer |  | 4 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
 | `FullHeal` | Integer |  | 4 | `1` (Number), `0` (Number) |
 
-
 ### Object: `NoHealthRegen`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | Enum |  |  | `"KEYWORD_NOHEALTHREGEN_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_NOHEALTHREGEN_DESC"` (String) |
-
 
 ### Object: `NukeQuestFinalBossModifications`
 
@@ -3946,7 +4291,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `self_damage` | Boolean / Integer / Object |  | 4 | `{ ... }` (Object) |
 | `splash_damage` | Object |  | 2 | `{ ... }` (Object) |
 
-
 ### Object: `ObjectOnHitCharacter`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3955,13 +4299,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `object` | Array / Enum |  | 14 | `CharmedLeech` (Enum), `CharmedTinySpider` (Enum) |
 | `stacks` | Enum / Integer |  | 10 | `"floor(lck/4)"` (Enum), `1` (Number), `2` (Number) |
 
-
 ### Object: `OneUseSpellDamageUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `alias` | Enum |  |  | `SpellDamageUp` (Enum) |
-
 
 ### Object: `Ostracized`
 
@@ -3970,13 +4312,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_OSTRACIZED_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_OSTRACIZED_DESC"` (String) |
 
-
 ### Object: `PassiveWhileNotTakingTurn`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `AddStatusToBasicAttack` | Object |  | 2 | `{ ... }` (Object) |
-
 
 ### Object: `PermanentConfusion`
 
@@ -3986,7 +4326,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_CONFUSION_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_CONFUSION_DESC_STACKLESS"` (String) |
 
-
 ### Object: `Petrify`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -3995,7 +4334,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_PETRIFY_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_PETRIFY_DESC"` (String) |
 | `tooltip_stacks_singular` | String |  |  | `KEYWORD_PETRIFY_DESC_SINGULAR` (String) |
-
 
 ### Object: `PoisonLace`
 
@@ -4011,7 +4349,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_POISONLACE_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_POISONLACE_DESC"` (String) |
 
-
 ### Object: `Possessed`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4020,7 +4357,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_POSSESSED_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_POSSESSED_DESC"` (String) |
 | `tooltip_stacks_singular` | String |  |  | `KEYWORD_POSSESSED_DESC_SIGNULAR` (String) |
-
 
 ### Object: `PreEmptiveCounterNextAttacks`
 
@@ -4031,7 +4367,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String |  |  | `"KEYWORD_PREEMTIVECOUNTER_DESC"` (String) |
 | `tooltip_stacks_singular` | String |  |  | `"KEYWORD_PREEMTIVECOUNTER_DESC_STACKLESS"` (String) |
 
-
 ### Object: `ProbeCharmed`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4039,7 +4374,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_PROBED_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_PROBED_DESC"` (String) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_PROBED_DESC_STACKLESS"` (String) |
-
 
 ### Object: `Purge`
 
@@ -4052,7 +4386,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `target` | Object |  |  | `{ ... }` (Object) |
 | `template` | Enum |  |  | `spell` (Enum) |
 
-
 ### Object: `RandomInjury`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4060,7 +4393,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `icon_frame` | Number |  |  | `58` (Number) |
 | `name` | Enum |  |  | `"KEYWORD_RANDOMINJURY_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_RANDOMINJURY_DESC"` (String) |
-
 
 ### Object: `RandomMagicMissile`
 
@@ -4072,13 +4404,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Integer |  | 4 | `3` (Number), `4` (Number) |
 | `tooltip` | Enum |  |  | `"KEYWORD_SPARKLE_DESC"` (String) |
 
-
 ### Object: `RandomPermanentStatsDistinct`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stats` | Object |  |  | `[1 -1]` (Array) |
-
 
 ### Object: `RangeUp`
 
@@ -4087,7 +4417,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_RANGEUP_NAME"` (String) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_RANGEUP_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_RANGEUP_DESC"` (String) |
-
 
 ### Object: `Reanimate`
 
@@ -4099,7 +4428,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `meta` | Object |  |  | `{ ... }` (Object) |
 | `target` | Object |  |  | `{ ... }` (Object) |
 | `template` | Enum |  |  | `targeted_status` (Enum) |
-
 
 ### Object: `Reflect`
 
@@ -4114,7 +4442,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String |  |  | `"KEYWORD_REFLECT_DESC"` (String) |
 | `tooltip_stacks_singular` | String |  |  | `"KEYWORD_REFLECT_DESC_STACKLESS"` (String) |
 
-
 ### Object: `RemoveStatusStacks`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4122,14 +4449,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Integer |  | 8 | `10` (Number), `1` (Number) |
 | `status` | Enum |  | 8 | `Thorns` (Enum), `DodgeChance_Status` (Enum) |
 
-
 ### Object: `ReplaceSpell`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ability` | Enum |  | 8 | `MoonHeadCommandStopHittingYourself` (Enum), `None` (Enum) |
 | `slot` | Enum / Integer |  | 8 | `3` (Number), `1` (Number) |
-
 
 ### Object: `Revive`
 
@@ -4141,7 +4466,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `meta` | Object |  |  | `{ ... }` (Object) |
 | `target` | Object |  |  | `{ ... }` (Object) |
 | `template` | Enum |  |  | `melee_spell` (Enum) |
-
 
 ### Object: `ReviveNextRound`
 
@@ -4157,14 +4481,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String |  |  | `"KEYWORD_AUTOREVIVE_DESC"` (String) |
 | `tooltip_stacks_singular` | String |  |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"` (String) |
 
-
 ### Object: `Rot`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | Enum |  |  | `"KEYWORD_ROT_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_ROT_DESC"` (String) |
-
 
 ### Object: `ScatterCoins`
 
@@ -4173,7 +4495,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stackable` | Boolean |  | 4 | `true` (Boolean) |
 | `stacks` | Enum / Integer |  | 4 | `item_aux` (Enum), `"max(min(X+1, item_aux), 0)"` (String) |
 
-
 ### Object: `Scrambled`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4181,14 +4502,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_SCRAMBLED_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_SCRAMBLED_DESC"` (String) |
 
-
 ### Object: `SetItemAux`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `slot` | Enum / Integer |  | 6 | `face` (Enum), `head` (Enum) |
 | `value` | Enum |  | 6 | `item_aux+1` (Enum), `item_aux+2` (Enum) |
-
 
 ### Object: `Shield`
 
@@ -4198,7 +4517,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip` | Enum |  |  | `None` (Enum) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_SHIELD_DESC_STACKLESS"` (String) |
 
-
 ### Object: `Sleep`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4206,7 +4524,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_SLEEP_NAME"` (String) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_SLEEP_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_SLEEP_DESC"` (String) |
-
 
 ### Object: `SoulLink`
 
@@ -4221,13 +4538,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | Enum |  |  | `targeted_status` (Enum) |
 | `tooltip` | Enum |  |  | `"KEYWORD_SOULLINK_DESC"` (String) |
 
-
 ### Object: `SpeedUp_WithoutInitiative`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `alias` | Enum |  |  | `SpeedUp` (Enum) |
-
 
 ### Object: `SpiderInfested`
 
@@ -4235,7 +4550,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | Enum |  |  | `"KEYWORD_SPIDERINFESTED_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_SPIDERINFESTED_DESC"` (String) |
-
 
 ### Object: `SpreadDisease`
 
@@ -4245,14 +4559,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `chance` | Number |  | 24 | `30` (Number), `50` (Number) |
 | `disease` | Enum |  | 26 | `Pox` (Enum), `Toxoplasmosis` (Enum) |
 
-
 ### Object: `StacyMutant_Brace`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Brace` | Enum / Integer / Object |  | 2 | `[1 .5]` (Array), `4` (Number), `10` (Number), `{ ... }` (Object) |
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
-
 
 ### Object: `StacyMutant_Counter`
 
@@ -4262,7 +4574,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 | `CounterAttack` | Array / Enum / Object |  | 2 | `[attack GSScream]` (Array), `CollectiveCounter` (Enum), `YeticatSnowball_Counter` (Enum), `{ ... }` (Object) |
 
-
 ### Object: `StacyMutant_Damage`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4271,14 +4582,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AddMaxHealth` | Integer |  | 2 | `25` (Number), `-25` (Number) |
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 
-
 ### Object: `StacyMutant_DoubleHead`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 | `ExtraDispersedTurns` | Integer |  | 2 | `1` (Number), `-1` (Number) |
-
 
 ### Object: `StacyMutant_Fire`
 
@@ -4289,7 +4598,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ReplaceBasicAttack` | Enum |  | 2 | `BasicButcherMeleeWideSpin` (Enum), `BasicDruidAbilityVersatile` (Enum) |
 | `ReplaceBrain` | Object |  | 2 | `{ ... }` (Object) |
 
-
 ### Object: `StacyMutant_Health`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4299,14 +4607,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 | `SizeScale` | Number |  | 2 | `1.2` (Number), `1.65` (Number), `.6` (String), `.8` (String) |
 
-
 ### Object: `StacyMutant_Holy`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 | `DivineShield` | Array / Integer |  | 2 | `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-
 
 ### Object: `StacyMutant_Ice`
 
@@ -4318,7 +4624,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ReplaceBasicAttack` | Enum |  | 2 | `BasicButcherMeleeWideSpin` (Enum), `BasicDruidAbilityVersatile` (Enum) |
 | `ReplaceBrain` | Object |  | 2 | `{ ... }` (Object) |
 
-
 ### Object: `StacyMutant_Lightning`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4328,7 +4633,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ReplaceBasicAttack` | Enum |  | 2 | `SM_LightningDash` (Enum), `BasicButcherMeleeWideSpin` (Enum) |
 | `ReplaceBrain` | Object |  | 2 | `{ ... }` (Object) |
 
-
 ### Object: `StacyMutant_Mirror`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4336,7 +4640,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 | `ReflectProjectiles` | Integer / Object |  | 2 | `25` (Number), `20` (Number), `{ ... }` (Object) |
 | `StatusEachTurnEndForEachTurn` | Object |  | 2 | `{ ... }` (Object) |
-
 
 ### Object: `StacyMutant_Speed`
 
@@ -4347,14 +4650,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 | `SizeScale` | Number |  | 2 | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
 
-
 ### Object: `StacyMutant_Thorns`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `CatPartsTransform` | Object |  | 2 | `{ ... }` (Object) |
 | `Thorns` | Integer |  | 2 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
-
 
 ### Object: `StatusAfterXStacks`
 
@@ -4366,14 +4667,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stack_key` | Enum |  | 4 | `EMPTY_GENERATOR` (String), `FANNY_PACK` (String) |
 | `threshold` | Enum / Integer / Object |  | 4 | `3` (Number), `12` (Number) |
 
-
 ### Object: `StealthUntilBasicAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | Enum |  |  | `"KEYWORD_STEALTHUNTIL_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_STEALTHUNTIL_DESC"` (String) |
-
 
 ### Object: `Stun`
 
@@ -4382,7 +4681,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_STUN_NAME"` (String) |
 | `tooltip_stackless` | String |  |  | `"KEYWORD_STUN_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_STUN_DESC"` (String) |
-
 
 ### Object: `Tangled`
 
@@ -4393,7 +4691,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Integer |  | 2 | `1` (Number) |
 | `tooltip` | Enum |  |  | `"KEYWORD_TANGLED_DESC"` (String) |
 
-
 ### Object: `Tarred`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4402,7 +4699,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_TARRED_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_TARRED_DESC"` (String) |
 
-
 ### Object: `TempCounterAttack`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4410,13 +4706,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_TEMPCOUNTER_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_TEMPCOUNTER_DESC"` (String) |
 
-
 ### Object: `TempDamageUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `alias` | Enum |  |  | `DamageUp` (Enum) |
-
 
 ### Object: `TempMovement`
 
@@ -4424,14 +4718,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `alias` | Enum |  |  | `MovementUp` (Enum) |
 
-
 ### Object: `TempPassiveUntilSettled`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `LimitHeal` | Integer |  | 2 | `1` (Number), `0` (Number) |
 | `MeleeRevengeDamage` | Object |  | 4 | `{ ... }` (Object) |
-
 
 ### Object: `TempRangeUp`
 
@@ -4441,20 +4733,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String |  |  | `"KEYWORD_TEMPRANGE_DESC_STACKLESS"` (String) |
 | `tooltip_stacks` | String |  |  | `"KEYWORD_TEMPRANGE_DESC"` (String) |
 
-
 ### Object: `TempSpellDamageUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `alias` | Enum |  |  | `SpellDamageUp` (Enum) |
 
-
 ### Object: `TempStrengthUp`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `alias` | Enum |  |  | `StrengthUp` (Enum) |
-
 
 ### Object: `Temporary`
 
@@ -4469,14 +4758,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `status` | Enum |  | 112 | `Trample` (Enum), `Brace` (Enum) |
 | `turns` | Array / Integer / Object |  | 104 | `3` (Number), `1` (Number) |
 
-
 ### Object: `TransformWeapon`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `from` | Enum |  | 4 | `Necro_SoulDagger_Charged` (Enum), `Necro_SoulDagger_Uncharged` (Enum) |
 | `to` | Enum |  | 4 | `Necro_SoulDagger_Charged` (Enum), `Necro_SoulDagger_Uncharged` (Enum) |
-
 
 ### Object: `Webbed`
 
@@ -4485,7 +4772,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_WEBBED_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_WEBBED_DESC"` (String) |
 
-
 ### Object: `Wet`
 
 | Key | Type | Definition | Count | Example Inputs |
@@ -4493,11 +4779,1270 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | Enum |  |  | `"KEYWORD_WET_NAME"` (String) |
 | `tooltip` | Enum |  |  | `"KEYWORD_WET_DESC"` (String) |
 
-
 ### Object: `XIsSpellStormRampAndReset`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `reset_percent` | Integer |  | 2 | `50` (Number) |
 | `stacks` | Enum / Integer |  | 2 | `0` (Number) |
+
+#### `ApplyToSourceOnKill`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 15
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Enum / Integer |  |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `AlphaCat` | Integer |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `EvolveAbilityFromPool` | Enum / Object |  |  | `Hunter` (Enum), `Fighter` (Enum), `{ ... }` (Object) |
+| `HealthGain` | Integer |  |  | `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
+| `ManaGain` | Enum / Integer |  |  | `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| `Revive` | Integer / Object |  | 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
+| `StrengthUp` | Enum / Integer |  |  | `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `WeaponAuxMultiplier` | Number |  |  | `.5` (String) |
+
+</details>
+
+---
+
+#### `Consumed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 23
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 |  |
+| `force_contact` | Boolean | If true, enforces physical overlap. | 15 |  |
+| `instant` | Boolean | Examples: `true` | 12 |  |
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | If true, treats the consumption as riding/mounting instead of eating. | 12 |  |
+| `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |  |
+| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Examples: `false, true, deferred` | 11 |  |
+| `wet` | Boolean | Examples: `false, true` | 8 |  |
+| `drop_on_self_death` | Boolean | Examples: `true` | 3 |  |
+| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |  |
+| `use_placeholder` | Boolean | Examples: `true` | 3 |  |
+| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |  |
+| `kill_on_consume` | Boolean | Examples: `true` | 1 |  |
+
+</details>
+
+---
+
+### Object: `AcidRain`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha` | String |  |  | `.5` (String) |
+| `ambient_sound` | String |  |  | `amb_acidrain.ogg` (String) |
+| `chain` | Boolean |  |  | `AcidSplash` (Enum) |
+| `desc` | Enum |  |  | `"WEATHER_ACIDRAIN_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  |  | `1` (Number) |
+| `emit_box` | Array |  |  | `[0 10 10 10 0 10]` (Array) |
+| `emit_direction` | Array |  |  | `[0 -1 0]` (Array) |
+| `emit_rate` | Number |  |  | `100` (Number) |
+| `emit_spread` | Number |  |  | `0` (Number) |
+| `face_moving_direction` | Boolean |  |  | `true` (Boolean) |
+| `force` | Array |  |  | `[0 -10 0]` (Array) |
+| `live_bounds` | Array |  |  | `[-999 999 0 999 -999 999]` (Array) |
+| `movieclip` | Array / Enum |  |  | `AcidRainParticle` (Enum) |
+| `name` | Enum |  |  | `"WEATHER_ACIDRAIN_NAME"` (String) |
+| `particle_lifetime` | Number |  |  | `5` (Number) |
+| `projection_matrix` | Enum |  |  | `default` (Enum) |
+| `render_mode` | Enum |  |  | `separate` (Enum) |
+| `scripts` | Object |  |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  |  | `global` (Enum) |
+| `size_start` | String |  |  | `.5` (String) |
+| `speed_scale` | String |  |  | `.1` (String) |
+| `speed_start` | Number |  |  | `10` (Number) |
+
+### Object: `AddPostProcessEffect`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `requires_framebuffer` | Boolean |  | 1 | `false` (Boolean) |
+| `shader` | Enum |  | 1 | `shimmervignette` (Enum) |
+
+### Object: `AddTilesetObjects`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `FloatingDebris` | Object |  | 1 | `{ ... }` (Object) |
+
+### Object: `Adrenaline`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_ADRENALINE_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_ADRENALINE_DESC"` (String) |
+
+### Object: `ApplyMultipleTimes`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `RandomStatusFromPool` | Object |  | 6 | `{ ... }` (Object) |
+| `stacks` | Enum / Integer |  | 6 | `X` (Enum), `4` (Number), `8` (Number) |
+
+### Object: `ApplyStatusesNextTurnBegin`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Quivered` | Array / Integer |  | 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+
+### Object: `ApplyToConsumed`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `DeleteObject` | Integer |  | 6 | `1` (Number) |
+| `Die` | Integer / Object |  | 2 | `6` (Number), `1` (Number), `{ ... }` (Object) |
+
+### Object: `ApplyToOthersWithSharedTagAndFaction`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Marked` | Array / Integer / Object |  | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+
+### Object: `ApplyToRandomClosestAlly`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ForceMoveTowards` | Integer |  | 2 | `1` (Number) |
+
+### Object: `ApplyToTile`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ObjectOnHit` | Enum / Object |  | 4 | `BiggestFood` (Enum), `Bait` (Enum), `{ ... }` (Object) |
+| `SpawnBearTrap` | Integer |  | 4 | `1` (Number) |
+
+### Object: `ArcLightning`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `chance` | Number |  | 2 | `.5` (String) |
+| `enemies_only` | Boolean |  | 8 | `false` (Boolean), `true` (Boolean) |
+| `ignore_self` | Boolean |  | 2 | `true` (Boolean) |
+| `max_distance` | Integer |  | 8 | `3` (Number), `1` (Number) |
+| `stacks` | Enum / Integer |  | 8 | `100` (Number) |
+
+### Object: `Bloodzerked`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_BLOODZERK_NAME"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_BLOODZERK_DESC"` (String) |
+
+### Object: `BodyGuard`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | 4 | `BodyGuardSwap2` (Enum), `BodyGuardSwap` (Enum) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"KEYWORD_BODYGUARD_NAME"` (String) |
+| `stacks` | Enum / Integer |  | 4 | `1` (Number) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  |  | `"KEYWORD_BODYGUARD_DESC"` (String) |
+
+### Object: `BombRatTurtle`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+
+### Object: `ButterflySwarm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ambient_sound` | String |  |  | `amb_butterflyswarm.ogg` (String) |
+| `desc` | Enum |  |  | `"WEATHER_BUTTERFLY_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_BUTTERFLY_NAME"` (String) |
+
+### Object: `CanApplyToInanimate`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ApplyToSource` | Object |  | 6 | `{ ... }` (Object) |
+| `BreakIntoRocks` | Enum |  | 8 | `Coin` (Enum), `SmallRock` (Enum) |
+| `GetAggroTarget` | Integer |  | 4 | `1` (Number) |
+| `ObjectOnHitCharacter` | Enum / Object |  | 20 | `AllyRotFly` (Enum), `CharmedLeech` (Enum), `{ ... }` (Object) |
+| `PreventDeathTransforms` | Integer |  | 2 | `1` (Number) |
+| `Temporary` | Object |  | 2 | `{ ... }` (Object) |
+| `Vaporize` | Integer |  | 6 | `1` (Number), `20` (Number) |
+
+### Object: `CastAgainWithStatus`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `OverrideDamage` | Integer |  | 2 | `25` (Number), `10` (Number) |
+| `stacks` | Enum / Integer |  | 2 | `1` (Number) |
+
+### Object: `CatPartsSizeScaleStatus`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `arm1` | Number |  | 2 | `1.1` (Number) |
+| `arm2` | Number |  | 2 | `1.1` (Number) |
+| `body` | Number |  | 2 | `1.1` (Number) |
+| `mouth` | Number |  | 2 | `1.1` (Number) |
+
+### Object: `ChampionUpgradeNextMinion`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_PROMOTE_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_PROMOTE_DESC"` (String) |
+
+### Object: `ChanceToBreakFree`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | 22 | `CHuskDrop` (Enum), `LennyDrop` (Enum) |
+| `fail_ability` | Enum |  | 6 | `CHuskDropFail` (Enum), `XXX` (Enum) |
+| `stacks` | Enum / Integer |  | 6 | `25` (Number) |
+
+### Object: `ChargeFists`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `keyword_tooltips` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"KEYWORD_CHARGEFISTS_NAME"` (String) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_CHARGEFISTS_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_CHARGEFISTS_DESC"` (String) |
+| `tooltip_stacks_singular` | String |  |  | `"KEYWORD_CHARGEFISTS_DESC_SINGULAR"` (String) |
+
+### Object: `CockroachSwarm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | Enum |  |  | `"WEATHER_COCKROACHES_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_COCKROACHES_NAME"` (String) |
+
+### Object: `CollectsPickupsWithAltEffects`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `CurrentWeaponAddPoison` | Integer |  | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| `LuckUp` | Enum / Integer |  | 2 | `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
+| `Quivered` | Array / Integer |  | 2 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
+| `RandomStatUp` | Integer / String |  | 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `Shield` | Enum / Integer |  | 2 | `[1 .5]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| `Tech` | Integer |  | 4 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+
+### Object: `CopySpells`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `stacks` | Enum / Integer |  | 2 | `1` (Number) |
+| `upgraded` | Boolean |  | 2 | `true` (Boolean) |
+
+### Object: `Counterspell`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+
+### Object: `CurrentWeaponAddPoison`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_WPOISONLACE_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_WPOISONLACE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_WPOISONLACE_DESC"` (String) |
+
+### Object: `DelayCastAbility`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | 2 | `FetusAirstrike` (Enum) |
+| `lingering` | Boolean |  | 2 | `true` (Boolean) |
+| `relative` | Boolean |  | 2 | `false` (Boolean) |
+
+### Object: `DelayedWind`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `distance` | Integer |  | 2 | `2` (Number) |
+
+### Object: `DelayedWindCone`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage` | Equation |  | 2 | `5` (Equation) |
+| `distance` | Integer |  | 4 | `10` (Number) |
+
+### Object: `DoDistortionRing`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `intensity` | Integer |  | 12 | `-2` (Number), `1` (Number) |
+| `radius` | Array / Integer |  | 12 | `4` (Number), `5` (Number) |
+| `speed` | Array / Number |  | 12 | `30` (Number), `-30` (Number) |
+
+### Object: `DoScreenShake`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `intensity` | Integer |  | 20 | `10` (Number), `3` (Number) |
+| `time` | Number |  | 20 | `1` (Number), `2` (Number), `.75` (String), `.5` (String) |
+
+### Object: `DoubleCast`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_DOUBLECAST_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_DOUBLECAST_DESC"` (String) |
+
+### Object: `DoubleCastSpell`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_DOUBLECASTSPELL_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_DOUBLECASTSPELL_DESC"` (String) |
+
+### Object: `DoubleLoot`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+
+### Object: `Drag`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | Enum |  |  | `Psychic` (Enum) |
+| `desc` | Enum |  |  | `"PASSIVE_DRAG_DESC"` (String) |
+| `name` | Enum |  |  | `"PASSIVE_DRAG_NAME"` (String) |
+
+### Object: `DustOnHit`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `object` | Array / Enum |  | 6 | `GasCloud` (Enum) |
+
+### Object: `EliteUpgradeNextMinion`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_PROMOTE2_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_PROMOTE2_DESC"` (String) |
+
+### Object: `EmptyMind`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"KEYWORD_EMPTYMIND_NAME"` (String) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  |  | `"KEYWORD_EMPTYMIND_DESC"` (String) |
+
+### Object: `Enlarge`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `self_damage` | Boolean / Integer / Object |  |  | `{ ... }` (Object) |
+| `target` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `spell` (Enum) |
+
+### Object: `FactionUprising`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `extra_statuses` | Object |  | 1 | `{ ... }` (Object) |
+| `tag` | Array / Enum |  | 1 | `bird` (Enum) |
+
+### Object: `FireArmor`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | Enum |  |  | `Mage` (Enum) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `desc` | Enum |  |  | `"PASSIVE_FIREASPECT_DESC"` (String) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"FireArmor"` (Enum), `"PASSIVE_FIREASPECT_NAME"` (String) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `FireArmor2`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"FireArmor2"` (Enum) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `FireStorm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combo` | Array |  |  | `[Firestorm_Fire Firestorm_Embers Firestorm_Distortion]` (Array) |
+
+### Object: `FireflySwarm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | Enum |  |  | `"WEATHER_FIREFLY_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_FIREFLY_NAME"` (String) |
+
+### Object: `FlySwarm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `abilities` | Object |  |  | `{ ... }` (Object) |
+| `ai` | Object |  |  | `{ ... }` (Object) |
+| `ambient_sound` | String |  |  | `amb_flyswarm.ogg` (String) |
+| `desc` | Enum |  |  | `"WEATHER_FLYSWARM_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_FLYSWARM_NAME"` (String) |
+| `passives` | Object |  |  | `{ ... }` (Object) |
+| `properties` | Object |  |  | `{ ... }` (Object) |
+| `stats` | Object |  |  | `{ ... }` (Object) |
+
+### Object: `Fog`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_end` | Number |  |  | `0` (Number) |
+| `alpha_start` | Number |  |  | `2` (Number) |
+| `desc` | Enum |  |  | `"WEATHER_FOG_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  |  | `1` (Number) |
+| `emit_box` | Array |  |  | `[-5 10 0 2 -5 10]` (Array) |
+| `emit_direction` | Array |  |  | `[0 1 0]` (Array) |
+| `emit_rate` | Number |  |  | `100` (Number) |
+| `emit_spread` | Number |  |  | `360` (Number) |
+| `friction` | Array |  |  | `[0 1 0]` (Array) |
+| `live_bounds` | Array |  |  | `[-999 999 -999 999 -999 999]` (Array) |
+| `movieclip` | Array / Enum |  |  | `FogParticle` (Enum) |
+| `name` | Enum |  |  | `"WEATHER_FOG_NAME"` (String) |
+| `particle_lifetime` | Array |  |  | `[3 5]` (Array) |
+| `projection_matrix` | Enum |  |  | `default` (Enum) |
+| `render_mode` | Enum |  |  | `separate` (Enum) |
+| `scripts` | Object |  |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  |  | `global` (Enum) |
+| `size_start` | Array |  |  | `[.2 1]` (Array) |
+| `speed_start` | String |  |  | `.1` (String) |
+
+### Object: `ForceImmediateMoveAndAttack`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | 2 | `G3GrabHead` (Enum) |
+| `even_if_cant_reach` | Boolean |  | 2 | `true` (Boolean) |
+
+### Object: `ForceMoveTowardsTaggedObject`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | 4 | `MoveOneTrample` (Enum), `MoveTwoTrample` (Enum) |
+| `tag` | Array / Enum |  | 2 | `food` (Enum) |
+
+### Object: `GlobalSpawnOnRoundEnd`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `number` | Array / Integer |  |  | `[1 2]` (Array) |
+| `object` | Array / Enum |  | 2 | `NeutralZombieKitten` (Enum), `NeutralTwister` (Enum) |
+
+### Object: `Grappled`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_GRAPPLED_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_GRAPPLED_DESC"` (String) |
+
+### Object: `Grappling`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `exit_animations` | Object |  | 2 | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum / Integer |  | 2 | `Grapple` (Enum) |
+
+### Object: `HealAlliesEachTurn`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `exclude_self` | Boolean |  | 4 | `false` (Boolean) |
+| `mana` | Enum / Integer |  | 4 | `3` (Number), `2` (Number) |
+| `stacks` | Enum / Integer |  | 4 | `3` (Number), `2` (Number) |
+
+### Object: `HeatWave`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `combo` | Array |  |  | `[HeatWave_Particles HeatWave_Distortion]` (Array) |
+| `desc` | Enum |  |  | `"WEATHER_HEATWAVE_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `hint_persistent_elements` | Array |  |  | `[Heat]` (Array) |
+| `name` | Enum |  |  | `"WEATHER_HEATWAVE_NAME"` (String), `"KEYWORD_DEHYDRATED_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_DEHYDRATED_DESC"` (String) |
+
+### Object: `HeavyHits`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_HEAVYHITS_NAME"` (String) |
+| `tooltip_stackless` | Enum |  |  | `none` (Enum) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_HEAVYHITS_DESC_STACKS"` (String) |
+
+### Object: `HolyDamageBlessing`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Burn` | Array / Enum / Integer |  | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `damage_multiplier` | Number |  | 4 | `3` (Number), `2` (Number) |
+
+### Object: `IceArmor`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `class` | Enum |  |  | `Mage` (Enum) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `desc` | Enum |  |  | `"PASSIVE_ICEASPECT_DESC"` (String) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"IceArmor"` (Enum), `"PASSIVE_ICEASPECT_NAME"` (String) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `IncAuxCounterCycle`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `change` | Integer |  | 2 | `1` (Number) |
+| `max` | Integer |  | 2 | `3` (Number) |
+
+### Object: `Invulnerable`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_INVULNERABLE_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_INVULNERABLE_DESC"` (String) |
+
+### Object: `JudgementDay`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | Enum |  |  | `"WEATHER_JUDGEMENT_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_JUDGEMENT_NAME"` (String) |
+
+### Object: `KillEnemyOfTypeAtBattleStart`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `enemy_type` | Enum |  | 2 | `cat` (Enum), `any` (Enum) |
+| `fallback_spawn` | Array |  |  | `[TomTom Kitten CatCaller Mangy]` (Array) |
+
+### Object: `LateStatusApplication`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `AddWeaponAux` | Integer / String |  | 2 | `-item_aux` (Enum), `1` (Number), `2` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
+| `CurrentWeaponDamageUp` | Integer |  | 6 | `3` (Number), `1` (Number) |
+
+### Object: `LeaveBehind`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `object` | Array / Enum |  | 8 | `CharmedMaggot` (Enum), `Twister` (Enum) |
+
+### Object: `Math`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ApplyToSource` | Object |  | 2 | `{ ... }` (Object) |
+| `Stun` | Array / Integer |  | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `stacks` | Enum / Integer |  | 4 | `1` (Number) |
+| `target` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `spell` (Enum) |
+
+### Object: `Meaty`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_MEATY_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_MEATY_DESC"` (String) |
+
+### Object: `MergeDamageInstance`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `can_instapop` | Boolean |  | 2 | `false` (Boolean) |
+| `force_no_hit_animation` | Boolean |  | 2 | `true` (Boolean) |
+
+### Object: `MeteorShower`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `desc` | Enum |  |  | `"WEATHER_METEORS_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_METEORS_NAME"` (String) |
+
+### Object: `Meteornado`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha_in` | String |  |  | `.2` (String) |
+| `alpha_out` | String |  |  | `.2` (String) |
+| `desc` | Enum |  |  | `"WEATHER_METEORNADO_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  |  | `1` (Number) |
+| `emit_box` | Array |  |  | `[0 10 0 5 0 10]` (Array) |
+| `emit_direction` | Array |  |  | `[0 1 0]` (Array) |
+| `emit_rate` | Number |  |  | `200` (Number) |
+| `emit_spread` | Number |  |  | `360` (Number) |
+| `live_bounds` | Array |  |  | `[-999 999 -999 999 -999 999]` (Array) |
+| `movieclip` | Array / Enum |  |  | `FX_MoonRock` (Enum) |
+| `name` | Enum |  |  | `"WEATHER_METEORNADO_NAME"` (String) |
+| `particle_lifetime` | Array |  |  | `[.1 3]` (Array) |
+| `projection_matrix` | Enum |  |  | `default` (Enum) |
+| `render_mode` | Enum |  |  | `separate` (Enum) |
+| `rotation` | Array |  |  | `[0 360]` (Array) |
+| `rotation_speed` | Array |  |  | `[-1000 1000]` (Array) |
+| `scripts` | Object |  |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  |  | `global` (Enum) |
+| `size_start` | Array |  |  | `[.5 1.5]` (Array) |
+| `speed_start` | Number |  |  | `5` (Number) |
+
+### Object: `Metronome`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  |  | `tk_Metronome` (Enum) |
+| `banned_abilities` | Array |  |  | `[BatteryNuke WeAreOne Metronome SmartMetronome BecomeEntropy ForbiddenFamine]` (Array) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `desc` | Enum |  |  | `"ITEM_METRONOME_DESC"` (String) |
+| `frame` | Integer |  |  | `17` (Number) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `kind` | Enum |  |  | `trinket` (Enum) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"ITEM_METRONOME_NAME"` (String) |
+| `rarity` | Enum |  |  | `rare` (Enum) |
+| `set` | Array / Enum |  |  | `Jester` (Enum) |
+| `stacks` | Enum / Integer |  | 2 | `1` (Number) |
+| `tags` | Array / Enum |  |  | `[musical]` (Array) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+
+### Object: `Muted`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_MUTED_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_MUTED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_MUTED_DESC"` (String) |
+| `tooltip_stacks_singular` | String |  |  | `"KEYWORD_MUTED_DESC_SINGULAR"` (String) |
+
+### Object: `NextAbilityHeals`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"NextAbilityHeals"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `NextActionLuckUp`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alias` | Enum |  |  | `LuckUp` (Enum) |
+
+### Object: `NextAttackBonusRange`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_BONUSRANGE_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_BONUSRANGE_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_BONUSRANGE_DESC"` (String) |
+
+### Object: `NextAttackSpecialCrit`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `crit_multiplier_bonus` | Integer |  | 2 | `2` (Number) |
+| `extra_coins_per_stack` | Integer |  | 2 | `2` (Number) |
+| `luck_increase` | Integer |  | 2 | `1` (Number) |
+
+### Object: `NextBasicAttackCritsThisTurn`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cant_miss` | Boolean |  | 2 | `true` (Boolean) |
+| `piercing` | Boolean |  | 2 | `true` (Boolean) |
+| `stacks` | Enum / Integer |  | 2 | `1` (Number) |
+
+### Object: `NextBattleStatusStacks`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `MadnessChanceOnTurnBegin` | Integer |  | 2 | `2` (Number) |
+| `fights` | Integer |  | 2 | `9999` (Number) |
+
+### Object: `NextDamageReduceAndHealAllies`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"NextDamageReduceAndHealAllies"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `NextTurnDoubleRangedDamage`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_DOUBLERANGEDDMG_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_DOUBLERANGEDDMG_DESC"` (String) |
+
+### Object: `ObjectOnHit`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `object` | Array / Enum |  | 4 | `Poop` (Enum) |
+
+### Object: `OverHealToStatuses`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `RandomStatUp` | Integer / String |  | 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
+| `TakeExtraTurn` | Integer |  | 2 | `1` (Number) |
+| `stack_scale` | Integer |  | 2 | `0` (Number) |
+
+### Object: `PoolMetronome`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `pool` | Array / Enum |  |  | `[Shockwave Ping Telefrag Stasis Reduce Zealot]` (Array) |
+
+### Object: `QuakeAreaChance`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `chance` | Number |  | 4 | `50` (Number) |
+| `radius` | Array / Integer |  | 4 | `1` (Number), `0` (Number) |
+
+### Object: `RandomDistanceDisplace`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `min_dist` | Integer |  | 2 | `4` (Number) |
+| `stacks` | Enum / Integer |  | 2 | `20` (Number) |
+
+### Object: `RandomKnockback`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `max` | Integer |  | 4 | `10` (Number), `3` (Number) |
+| `min` | Integer |  | 4 | `1` (Number) |
+
+### Object: `ReduceManaCostExcludeBrainstorm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_INSIGHT_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_INSIGHT_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_INSIGHT_DESC"` (String) |
+
+### Object: `Regurge`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `self_damage` | Boolean / Integer / Object |  |  | `{ ... }` (Object) |
+| `spawn` | Object |  |  | `{ ... }` (Object) |
+| `target` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `spawn` (Enum) |
+
+### Object: `RepressedMemoriesMetronome`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `pool` | Array / Enum |  | 4 | `Psychic` (Enum), `Jester` (Enum) |
+| `stacks` | Enum / Integer |  | 4 | `1` (Number) |
+
+### Object: `Sandstorm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ambient_sound` | String |  |  | `amb_sandstorm.ogg` (String) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `desc` | Enum |  |  | `"WEATHER_SANDSTORM_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_SANDSTORM_NAME"` (String) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+
+### Object: `ScrambleLastUsedSpell`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `permanent` | Boolean |  | 2 | `true` (Boolean) |
+
+### Object: `SerratedClaws`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_SERRATED_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_SERRATED_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_SERRATED_DESC"` (String) |
+
+### Object: `SetAnimationAlts`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `dead` | Enum |  | 2 | `deadShot` (Enum) |
+| `dying` | Enum |  | 2 | `shot` (Enum) |
+
+### Object: `SetCrazyEyeBackgroundWeights`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `weights` | Array / Enum |  |  | `[0 0 1]` (Array), `[0 1 0]` (Array) |
+
+### Object: `Shatter`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `melee_attack` (Enum) |
+
+### Object: `ShortCircuit`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"KEYWORD_SHORTCIRCUIT_NAME"` (String) |
+| `target` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `spell` (Enum) |
+| `tooltip` | Enum |  |  | `"KEYWORD_SHORTCIRCUIT_DESC"` (String) |
+
+### Object: `SmartMetronome`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `stacks` | Enum / Integer |  | 2 | `20` (Number) |
+| `tags` | Array / Enum |  |  | `[musical]` (Array) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `upgraded` | Boolean |  | 2 | `true` (Boolean) |
+
+### Object: `SmellBlood`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+
+### Object: `Snow`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `adventure_weather` | Enum |  | 1 | `Snow` (Enum) |
+| `alpha` | String |  |  | `.5` (String) |
+| `ambient_sound` | String |  | 1 | `amb_snow.ogg` (String) |
+| `combo` | Array |  |  | `[SnowB SnowM SnowF]` (Array) |
+| `desc` | Enum |  |  | `"WEATHER_SNOW_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  |  | `1` (Number) |
+| `emit_box` | Array |  |  | `[0 10 10 10 0 10]` (Array) |
+| `emit_direction` | Array |  |  | `[0 -1 0]` (Array) |
+| `emit_rate` | Number |  |  | `200` (Number) |
+| `emit_spread` | Number |  |  | `10` (Number) |
+| `hint_persistent_elements` | Array |  |  | `[Ice]` (Array) |
+| `live_bounds` | Array |  |  | `[-0.5 999 -999 999 -0.5 999]` (Array) |
+| `movieclip` | Array / Enum |  |  | `ParticleTestNoRandom` (Enum) |
+| `name` | Enum |  |  | `"WEATHER_SNOW_NAME"` (String) |
+| `particle_lifetime` | Number |  |  | `7` (Number) |
+| `particles` | Array |  |  | `[Snow]` (Array) |
+| `prewarm` | Number |  | 1 | `20` (Number) |
+| `projection_matrix` | Enum |  |  | `default` (Enum) |
+| `render_mode` | Enum |  |  | `separate` (Enum) |
+| `rotation` | Array |  |  | `[0 360]` (Array) |
+| `rotation_speed` | Array |  |  | `[-100 100]` (Array) |
+| `rotation_speed_end` | Number |  |  | `0` (Number) |
+| `scripts` | Object |  |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  |  | `global` (Enum) |
+| `size_end` | Number |  |  | `0` (Number) |
+| `size_start` | Array |  |  | `[.3 .8]` (Array) |
+| `skybox_frame` | Enum |  | 1 | `day_snow` (Enum) |
+| `speed_start` | Array |  |  | `[2 4]` (Array) |
+
+### Object: `SolarFlare`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage` | Equation |  | 1 | `5` (Equation) |
+| `desc` | Enum |  |  | `"WEATHER_SOLARFLARE_DESC"` (String) |
+| `effects` | Object |  | 1 | `{ ... }` (Object) |
+| `elements` | Array |  |  | `[Fire]` (Array) |
+| `name` | Enum |  |  | `"WEATHER_SOLARFLARE_NAME"` (String) |
+
+### Object: `SpawnTilePuddleOnBattleStart`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `max_radius` | Number |  | 1 | `3.5` (Number) |
+| `min_radius` | Number |  | 1 | `1.5` (Number) |
+| `tile` | Array / Enum |  | 1 | `OilTile` (Enum) |
+
+### Object: `SpawnVolcanoOnBattleStart`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `max_radius` | Number |  | 2 | `2.2` (Number) |
+| `min_radius` | Number / String |  | 2 | `1` (Number), `.2` (String) |
+| `number` | Array / Integer |  |  | `[3 5]` (Array) |
+| `object` | Array / Enum |  | 3 | `Sprout` (Enum), `MiniVolcano` (Enum) |
+| `puddle_tile` | Array / Enum |  | 1 | `[BrambleTile TallBrambleTile]` (Array), `LavaTile` (Enum) |
+
+### Object: `SpecialGodRays`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Big` | Object |  | 2 | `{ ... }` (Object) |
+
+### Object: `SpellShield`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"SpellShield"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `StatBounty`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_STATBOUNTY_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_STATBOUNTY_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_STATBOUNTY_DESC"` (String) |
+
+### Object: `StatusCharactersOnRoundEnd`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Conditional_GoodRoll` | Object |  | 1 | `{ ... }` (Object) |
+| `FloatingRockTrap` | Integer |  | 1 | `1` (Number) |
+| `Thorns` | Integer |  | 1 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `tag_filter` | Enum |  | 1 | `rock` (Enum) |
+
+### Object: `StatusCharactersOnRoundStart`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Conditional_GoodRoll` | Object |  | 1 | `{ ... }` (Object) |
+| `Else` | Object |  | 1 | `{ ... }` (Object) |
+| `Madness` | Array / Enum / Integer / Object |  |  | `[1 .1]` (Array), `[1 .25]` (Array), `999` (Number), `3` (Number), `{ ... }` (Object) |
+
+### Object: `SwapWeapon`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `pool` | Array / Enum |  |  | `[TerminatorShotgun TerminatorSniper TerminatorUzi]` (Array) |
+
+### Object: `SwitchMusic`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `crossfade_speed` | Integer |  | 2 | `1` (Number) |
+| `new_layer` | Enum |  | 14 | `battle` (Enum), `map` (Enum) |
+| `new_song` | Enum |  | 12 | `same` (Enum) |
+
+### Object: `Switcheroo`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"Switcheroo"` (Enum) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `Taunting`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"Taunting"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `TeamCastAbility`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | 4 | `CollectiveSpinImpl` (Enum), `CollectiveCounterImpl` (Enum) |
+| `same_orientation` | Boolean |  | 2 | `true` (Boolean) |
+| `tag_restriction` | Enum |  | 4 | `collective` (Enum) |
+
+### Object: `TempBackstab`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_TEMPBACKSTAB_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_TEMPBACKSTAB_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_TEMPBACKSTAB_DESC"` (String) |
+
+### Object: `TempBonusKnockback`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_BONUSKNOCKBACK_NAME"` (String) |
+| `tooltip_stackless` | Enum |  |  | `None` (Enum) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_BONUSKNOCKBACK_DESC"` (String) |
+
+### Object: `TempBonusKnockbackDamage`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_BONUSKNOCKBACKDAMAGE_NAME"` (String) |
+| `tooltip_stackless` | Enum |  |  | `None` (Enum) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_BONUSKNOCKBACKDAMAGE_DESC"` (String) |
+
+### Object: `TempCritChanceUp`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alias` | Enum |  |  | `CritChanceUp` (Enum) |
+
+### Object: `TempInjuryImmunity`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_TEMPIMMUNE_NAME"` (String) |
+| `tooltip_stackless` | Enum |  |  | `none` (Enum) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_TEMPIMMUNE_DESC"` (String) |
+| `tooltip_stacks_singular` | String |  |  | `"KEYWORD_TEMPIMMUNE_DESC_SINGULAR"` (String) |
+
+### Object: `TempManaCostReduction`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_TEMPMANAREDUCTION_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_TEMPMANAREDUCTION_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_TEMPMANAREDUCTION_DESC"` (String) |
+
+### Object: `TempPreEmptiveCounterAttack`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_PRECOUNTER_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_PRECOUNTER_DESC"` (String) |
+
+### Object: `TemporaryItem`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `icon_frame` | Number |  |  | `164` (Number) |
+| `name` | Enum |  |  | `"KEYWORD_TEMPITEM_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_TEMPITEM_DESC"` (String) |
+
+### Object: `TilesMovedToCritChance`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"TilesMovedToCritChance"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `TilesMovedToMana`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"TilesMovedToMana"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `TilesMovedToNeighborHeal`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"TilesMovedToNeighborHeal"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `TilesMovedToStrength`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"TilesMovedToStrength"` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `TimeDelayStatusApplication`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Cleanse` | Integer / Object |  | 2 | `1` (Number), `0` (Number), `{ ... }` (Object) |
+| `CreateGlobalModifiers` | Object |  | 2 | `{ ... }` (Object) |
+| `DoScreenShake` | Integer / Object |  | 2 | `1` (Number), `{ ... }` (Object) |
+| `FormChange` | Enum / Object |  | 2 | `passive` (Enum), `Boris` (Enum), `{ ... }` (Object) |
+| `FullHeal` | Integer |  | 2 | `1` (Number), `0` (Number) |
+| `GlobalSpawnCharacter` | Enum |  | 2 | `MegaGuppy` (Enum) |
+| `PlayBackground` | Integer |  | 2 | `1` (Number), `0` (Number) |
+| `RemoveAmbientLightEffects` | Number |  | 2 | `4` (Number), `.5` (String) |
+| `SwitchMusic` | Object |  | 4 | `{ ... }` (Object) |
+| `Vaporize` | Integer |  | 2 | `1` (Number), `20` (Number) |
+| `delay` | Number |  | 8 | `1.13333` (Number), `3` (Number), `.1` (String), `.25` (String) |
+
+### Object: `TowerDefenseStatus`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_SENTRY_NAME"` (String) |
+| `tooltip` | Enum |  |  | `"KEYWORD_SENTRY_DESC"` (String) |
+
+### Object: `TowerDefenseStatus2`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `name` | Enum |  |  | `"KEYWORD_SENTRYPLUS_NAME"` (String) |
+| `tooltip_stackless` | String |  |  | `"KEYWORD_SENTRYPLUS_DESC_STACKLESS"` (String) |
+| `tooltip_stacks` | String |  |  | `"KEYWORD_SENTRYPLUS_DESC"` (String) |
+
+### Object: `TradeLife`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `bonus_passives` | Object |  |  | `{ ... }` (Object) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `target` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `spell` (Enum) |
+
+### Object: `TrailBlazer`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"Trail Blazer"` (String) |
+| `template` | Enum |  |  | `self_buff` (Enum) |
+| `tooltip` | Enum |  |  | `None` (Enum) |
+
+### Object: `TransformEquipment`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `from` | Enum |  | 2 | `JarOfChaos` (Enum) |
+| `to` | Enum |  | 2 | `JarOfNothing` (Enum) |
+
+### Object: `TwisterDisplaceWithDamage`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage` | Equation |  | 12 | `inherit` (Equation), `1` (Equation) |
+| `exclude_prefix` | Enum |  | 2 | `Twister` (Enum) |
+| `max_dist` | Integer |  | 12 | `3` (Number), `20` (Number) |
+| `min_dist` | Integer |  | 4 | `3` (Number), `2` (Number) |
+
+### Object: `UseMoveAbilityWithAI`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ability` | Enum |  | 2 | `LEPortFar` (Enum) |
+| `move_weights` | Enum |  | 2 | `stay_far_move_far` (Enum) |
+
+### Object: `VisualCountDownThenApplyStatus`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ForceUseAbility` | Enum / Object |  | 2 | `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
+
+### Object: `VisualFlySwarm`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `ambient_sound` | String |  |  | `amb_flyswarm.ogg` (String) |
+| `desc` | Enum |  |  | `"WEATHER_TORFLIES_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `name` | Enum |  |  | `"WEATHER_TORFLIES_NAME"` (String) |
+
+### Object: `WaggleClone`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `cWaggle` | Boolean (Flag) / Object |  | 2 | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| `cWaggle2x2` | Boolean (Flag) / Object |  | 2 | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| `cWaggle3x3` | Boolean (Flag) / Object |  |  | `(Flag)` (Boolean (Flag)), `{ ... }` (Object) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `stacks` | Enum / Integer |  | 2 | `5` (Number) |
+| `target` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `lobbed_attack` (Enum) |
+
+### Object: `Windy`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `adventure_weather` | Enum |  | 1 | `Windy` (Enum) |
+| `ambient_sound` | String |  | 1 | `amb_windy.ogg` (String) |
+| `desc` | Enum |  |  | `"WEATHER_WINDY_DESC"` (String) |
+| `effects` | Object |  |  | `{ ... }` (Object) |
+| `hint_persistent_elements` | Array |  |  | `[Wind]` (Array) |
+| `name` | Enum |  |  | `"WEATHER_WINDY_NAME"` (String) |
+| `particles` | Array |  |  | `[WindFull]` (Array) |
+| `prewarm` | Number |  | 1 | `5` (Number) |
+| `skybox_frame` | Enum |  | 1 | `day_windy` (Enum) |
+
+### Object: `XIsTargetHealth`
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `BonusDamage` | Enum / Integer |  | 4 | `"ceil(X/2)"` (Enum), `str` (Enum), `-4` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
 

@@ -20,7 +20,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`editor`](#object-editor) | Object |  | 578 |  |
 | [`object`](./Enums.md#enum-object) | Array / Enum |  | 545 |  |
 | `value` | Float |  | 485 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
 | `early_spawn` | Boolean |  | 10 |  |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 10 |  |
 | [`tag_location`](./Enums.md#enum-tag_location) | Enum |  | 5 |  |
