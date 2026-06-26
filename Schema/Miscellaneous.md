@@ -1493,7 +1493,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2827 |  |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BoneWormShotMed, BasicMelee_4Hits` | 16 |  |
-| [`ArmorPickup`](./Miscellaneous.md#context-armorpickup) | Object | Examples: `{ ... }` | 6 |  |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 4 |  |
 | `partial_animation_suffix` | Number | Examples: `4, 2` | 4 |  |
 | `animation_suffix` | Number | Examples: `1` | 2 |  |
@@ -1520,156 +1519,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `sing3, none, attack` | 3118 |  |
 | [`name`](./Strings.md#string-name) | String | Examples: `"ENEMY_MEDBIRD_NAME", "ENEMY_LITTLEBIRD_NAME", "ENEMY_BIRD_NAME"` | 1034 |  |
-| [`particle`](./Enums.md#enum-particle) | Enum | Examples: `None, none, PoisonPoof` | 976 |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum | Examples: `BirdLarge, BirdSmall, BirdMed` | 920 |  |
 | [`tooltip`](./Strings.md#string-tooltip) | String | Examples: `"ENEMY_CHERUB_FINALBOSS_DESC", "ENEMY_BIRD_DESC", "ENEMY_RADICALRAT_DESC"` | 818 |  |
-| [`projectile`](./Enums.md#enum-projectile) | Enum | Examples: `MagicSpikeProjectile, NeedleProjectile, LeechProjectile` | 460 |  |
-| `shadow_size` | Mixed | Examples: `3, .5, 2` | 302 |  |
-| [`scale`](./Enums.md#enum-scale) | Enum | Examples: `.5, .8, .9` | 298 |  |
 | `uifloaters_offset` | Number | Examples: `1.5, 2, 2.5` | 298 |  |
-| `lob` | Boolean | Examples: `false, true` | 260 |  |
-| [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum | Examples: `Mangy, Kitten, TomTom` | 254 |  |
 | `delay` | Number | Examples: `4, 2, 5` | 186 |  |
-| `dont_visualize_ai` | Boolean | Examples: `true` | 172 |  |
-| `dont_orient` | Boolean | Examples: `true` | 166 |  |
-| [`water_mask`](./Enums.md#enum-water_mask) | Enum | Examples: `medium, medmed, square` | 166 |  |
-| [`dash_animation`](./Enums.md#enum-dash_animation) | Enum | Examples: `roll, spinattackloop, headbuttdash` | 130 |  |
-| [`dash_start_animation`](./Enums.md#enum-dash_start_animation) | Enum | Examples: `headbuttdashStart, none, dashstart` | 126 |  |
 | [`speed`](./Miscellaneous.md#object-speed) | Mixed | Examples: `.5, 2, 20` | 122 |  |
-| [`affected_particle`](./Enums.md#enum-affected_particle) | Enum | Examples: `HealMed, HealBig, fx_tentaclestrangle` | 102 |  |
-| [`dash_attack_animation`](./Enums.md#enum-dash_attack_animation) | Enum | Examples: `none, headbuttdashEnd, spinattackloop` | 90 |  |
-| `lob_height` | Number | Examples: `4, 1, 0` | 90 |  |
-| [`animation_in`](./Enums.md#enum-animation_in) | Enum | Examples: `teleportIn, digUp, shadowStepIn` | 86 |  |
-| [`animation_out`](./Enums.md#enum-animation_out) | Enum | Examples: `shadowStepOut, teleportOut, digDown` | 86 |  |
-| [`jump_attack_animation`](./Enums.md#enum-jump_attack_animation) | Enum | Examples: `land, block, gravitySlamEnd` | 78 |  |
-| [`spawnin_animation`](./Strings.md#string-spawnin_animation) | Mixed | Examples: `"howl", "digUp", digUp` | 74 |  |
-| `use_projectile` | Boolean | Examples: `true` | 70 |  |
-| `palette` | Number | Examples: `6, 66, 64` | 66 |  |
-| `piece_alt_frame` | Number | Examples: `3, 5, 7` | 54 |  |
-| [`full_jump_animation`](./Enums.md#enum-full_jump_animation) | Enum | Examples: `jumpmove, attack, jumpattack` | 48 |  |
-| `full_jump_sync_frames` | Number | Examples: `46, 49, 38` | 48 |  |
-| `use_rotation` | Boolean | Examples: `false` | 48 |  |
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array | Examples: `[ [ idle cuteIdle ], [ [ idle girlyIdle ], [ [ idle twitchyIdle ]` | 47 |  |
-| [`shadow`](./Enums.md#enum-shadow) | Enum | Examples: `MedSlimeShadow, none, TormentorShadow` | 46 |  |
-| [`dash_end_animation`](./Enums.md#enum-dash_end_animation) | Enum | Examples: `launchStop, timberEnd, dashend` | 44 |  |
-| `full_jump_windup_frames` | Number | Examples: `13, 22, 20` | 40 |  |
-| `move_speed_sync_frames` | Number | Examples: `40, 7, 22.5` | 40 |  |
-| `visual_delay_but_simultaneous_damage` | Number | Examples: `3, 0, 8` | 36 |  |
-| [`center_particle`](./Enums.md#enum-center_particle) | Enum | Examples: `Explosion, FireBlastMushroom, none` | 34 |  |
 | `no_splatter` | Boolean | Examples: `true` | 34 |  |
-| [`area_particle`](./Enums.md#enum-area_particle) | Enum | Examples: `BurnTrigger, none, FireBlastSmall` | 32 |  |
-| `fall_from_sky` | Boolean | Examples: `true` | 32 |  |
 | `move_speed_multiplier` | Mixed | Examples: `.5, 1.75, .66` | 32 |  |
-| `dont_sink` | Boolean | Examples: `true` | 28 |  |
-| [`move_start_animation`](./Enums.md#enum-move_start_animation) | Enum | Examples: `startroll, buttScootStart, none` | 28 |  |
 | `use_placeholder` | Boolean | Examples: `true` | 28 |  |
-| [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum | Examples: `endroll, none, buttScootEnd` | 26 |  |
-| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum | Examples: `monk_portrait, druid_portrait, butcher_portrait` | 26 |  |
-| `face_toss_target` | Boolean | Examples: `true` | 24 |  |
-| `ignore_slowtiles` | Boolean | Examples: `true` | 24 |  |
-| [`chain_distance`](./Enums.md#enum-chain_distance) | Enum | Examples: `.38, .25` | 22 |  |
-| [`chain_movieclip`](./Enums.md#enum-chain_movieclip) | Enum | Examples: `ChainLink, Frogchain, Bramblechain` | 22 |  |
-| `darken_screen` | Boolean | Examples: `false, true` | 22 |  |
-| [`beam_cap`](./Enums.md#enum-beam_cap) | Enum | Examples: `thinlasercap, greenlasercap, greenmegalasercap` | 20 |  |
-| [`beam_clip`](./Enums.md#enum-beam_clip) | Enum | Examples: `greenlaser, thinlaser, greenmegalaser` | 20 |  |
-| `bounce_on_hit` | Boolean | Examples: `false, true` | 20 |  |
-| `darken_screen_exclude_characters_on_tile` | Boolean | Examples: `false, true` | 20 |  |
 | [`end`](./Enums.md#enum-end) | Enum | Examples: `lickAttack, attack, spinattackend` | 20 |  |
-| [`jump_start_animation`](./Enums.md#enum-jump_start_animation) | Enum | Examples: `gravitySlamStart, leapattackwindup, none` | 20 |  |
-| [`loop`](./Enums.md#enum-loop) | Enum | Examples: `lickAttack, spinattackloop, attack` | 20 |  |
-| [`prime_animation`](./Enums.md#enum-prime_animation) | Enum | Examples: `chargeholy, prouder, pointout` | 20 |  |
-| [`start`](./Enums.md#enum-start) | Enum | Examples: `spinattackstart, lickAttack, attack` | 20 |  |
-| `max_tiles_single_loop` | Number | Examples: `6, 1, 5` | 18 |  |
-| `sync_speed` | Number | Examples: `28, 22, 30` | 18 |  |
-| [`projectile_spawn_offset`](./Arrays.md#array-projectile_spawn_offset) | Array | Examples: `[ .25 1 ], [ 0 1.5 ], [ 0 1 ]` | 17 |  |
-| `fx_is_placeholder_animation` | Boolean | Examples: `true` | 16 |  |
-| `aoe_spell_on_land` | Boolean | Examples: `true` | 14 |  |
-| `art_flip` | Number | Examples: `-1` | 14 |  |
-| `fx_random_flip` | Boolean | Examples: `true` | 14 |  |
-| [`land_animation`](./Enums.md#enum-land_animation) | Enum | Examples: `none` | 14 |  |
-| [`miss_particle`](./Enums.md#enum-miss_particle) | Enum | Examples: `fx_tentaclestrangleMiss` | 14 |  |
-| `use_super_armor` | Boolean | Examples: `false, true` | 14 |  |
-| [`air_animation`](./Enums.md#enum-air_animation) | Enum | Examples: `entrance, gravitySlam_air, bellyflop_air` | 12 |  |
-| [`custom_priming_animation`](./Enums.md#enum-custom_priming_animation) | Enum | Examples: `idleCommand3, idleCommand2, priming` | 12 |  |
-| `darken_screen_exclude_self` | Boolean | Examples: `true` | 12 |  |
-| `darken_screen_start_early` | Boolean | Examples: `true` | 12 |  |
-| `depth_offset` | Mixed | Examples: `.01, 5, -.1` | 12 |  |
-| [`fall_randomize_timing`](./Enums.md#enum-fall_randomize_timing) | Enum | Examples: `.3` | 12 |  |
-| `min_throw_height` | Number | Examples: `4, 0, 1.75` | 12 |  |
-| `single_projectile` | Boolean | Examples: `true` | 12 |  |
-| [`detatched_animation`](./Enums.md#enum-detatched_animation) | Enum | Examples: `WaterGush, LiquidMetalSpear, TinaSpear` | 10 |  |
-| `detatched_animation_reach` | Number | Examples: `3, 4, 20` | 10 |  |
-| [`empty_animation`](./Enums.md#enum-empty_animation) | Enum | Examples: `empty` | 10 |  |
-| [`mode`](./Enums.md#enum-mode) | Enum | Examples: `yeet` | 10 |  |
-| [`random_delay`](./Arrays.md#array-random_delay) | Array | Examples: `[ 0 120 ], [ 30 50 ], [ 70 100 ]` | 9 |  |
-| `fixed_jump_height` | Number | Examples: `1, 3.5` | 8 |  |
-| `four_way_animations` | Boolean | Examples: `true` | 8 |  |
-| [`rocket_swirl`](./Miscellaneous.md#context-rocket_swirl) | Object | Examples: `{ ... }` | 8 |  |
-| `sync_frames` | Number | Examples: `34, 26` | 8 |  |
-| [`dash_decelerating_animation`](./Enums.md#enum-dash_decelerating_animation) | Enum | Examples: `dashslow` | 6 |  |
-| `decelerate` | Number | Examples: `5` | 6 |  |
-| `delay_from_map_edge` | Boolean | Examples: `false, true` | 6 |  |
-| `easing` | Number | Examples: `1` | 6 |  |
-| `fixed_jump_speed` | Mixed | Examples: `2, 1, .8` | 6 |  |
-| [`grab_animation`](./Enums.md#enum-grab_animation) | Enum | Examples: `grab` | 6 |  |
-| [`lob_yoff`](./Enums.md#enum-lob_yoff) | Enum | Examples: `-.5` | 6 |  |
-| `lock_orientation_during_dash` | Boolean | Examples: `true` | 6 |  |
-| [`miss_random_delay`](./Arrays.md#array-miss_random_delay) | Array | Examples: `[ 0 20 ], [ 0 60 ]` | 6 |  |
-| `show_infinity_damage_warning` | Boolean | Examples: `true` | 6 |  |
-| [`tint`](./Arrays.md#array-tint) | Array | Examples: `green, [ .7 1 .7 1 ], [ 0 0 0 1 ]` | 6 |  |
-| `use_projectile_spawn_offset` | Boolean | Examples: `true` | 6 |  |
-| `use_rotation_once` | Boolean | Examples: `true` | 6 |  |
-| `always_huge_mask` | Boolean | Examples: `true` | 4 |  |
-| `always_play_animations` | Boolean | Examples: `true` | 4 |  |
-| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum | Examples: `attack2, bite1` | 4 |  |
 | [`desc`](./Strings.md#string-desc) | Mixed | Examples: `"OBJECT_DECOY_DESC", ENEMY_FATWOMAN_DESC` | 4 |  |
-| `detatched_animation_cutoff` | Boolean | Examples: `true` | 4 |  |
-| `do_damage_immediately` | Boolean | Examples: `true` | 4 |  |
-| `jump_height_multiplier` | Mixed | Examples: `.25, 2` | 4 |  |
-| [`mask_center`](./Enums.md#enum-mask_center) | Enum | Examples: `SpearMaskCenter` | 4 |  |
-| [`mask_extent`](./Enums.md#enum-mask_extent) | Enum | Examples: `SpearMaskExtent` | 4 |  |
-| `max_throw_height` | Number | Examples: `1.75` | 4 |  |
-| [`particle_mat`](./Enums.md#enum-particle_mat) | Enum | Examples: `shadow_occluded_spelldissolve` | 4 |  |
-| [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum | Examples: `alertstart` | 4 |  |
-| [`primed_alt_animation`](./Strings.md#string-primed_alt_animation) | String | Examples: `"shootPrimed"` | 4 |  |
-| [`pseudoprojectile`](./Enums.md#enum-pseudoprojectile) | Enum | Examples: `RocketFromAbove` | 4 |  |
-| `reverse_orientation` | Boolean | Examples: `true` | 4 |  |
-| `self_damage_mid_port` | Boolean | Examples: `true` | 4 |  |
-| `shade_occluded_objects` | Boolean | Examples: `true` | 4 |  |
-| `throw_speed` | Number | Examples: `3` | 4 |  |
-| `use_hit_alts` | Boolean | Examples: `false` | 4 |  |
-| [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Examples: `statDown` | 2 |  |
-| [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Examples: `lickAttack` | 2 |  |
-| [`animate_name`](./Enums.md#enum-animate_name) | Enum | Examples: `pointout` | 2 |  |
-| `apex_distance` | Number | Examples: `0.875` | 2 |  |
-| [`apex_time`](./Enums.md#enum-apex_time) | Enum | Examples: `.35` | 2 |  |
-| `bypass_combatspeed` | Boolean | Examples: `true` | 2 |  |
-| [`damage_threshold_altanimations`](./Miscellaneous.md#context-damage_threshold_altanimations) | Object | Examples: `{ ... }` | 2 |  |
-| [`dash_bonk_animation`](./Enums.md#enum-dash_bonk_animation) | Enum | Examples: `bonk` | 2 |  |
-| [`default_face`](./Enums.md#enum-default_face) | Enum | Examples: `happy` | 2 |  |
-| `delay_from_map_center` | Boolean | Examples: `true` | 2 |  |
-| `delay_from_reverse_map_edge` | Boolean | Examples: `true` | 2 |  |
-| `do_animation_offscreen` | Boolean | Examples: `true` | 2 |  |
-| `do_not_clear_placeholder` | Boolean | Examples: `true` | 2 |  |
-| `face_targets` | Boolean | Examples: `true` | 2 |  |
-| `first_castpoint_is_self_damage_only` | Boolean | Examples: `true` | 2 |  |
-| [`hang_time`](./Enums.md#enum-hang_time) | Enum | Examples: `.6` | 2 |  |
-| `hud_palette` | Number | Examples: `11` | 2 |  |
-| `jump_speed_multiplier` | Number | Examples: `1.5` | 2 |  |
-| [`lob_speed`](./Enums.md#enum-lob_speed) | Enum | Examples: `.5` | 2 |  |
-| `max_range` | Number | Examples: `3` | 2 |  |
-| `min_range` | Number | Examples: `1` | 2 |  |
-| `no_horizontal_flip` | Boolean | Examples: `true` | 2 |  |
-| `othercat_placeholder_available` | Boolean | Examples: `true` | 2 |  |
-| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum | Examples: `Cherub` | 2 |  |
-| [`precast_delay`](./Enums.md#enum-precast_delay) | Enum | Examples: `.25` | 2 |  |
-| `randomize_starting_frame` | Boolean | Examples: `false` | 2 |  |
-| `status_display_count_max` | Number | Examples: `5` | 2 |  |
-| `uncatchable` | Boolean | Examples: `true` | 2 |  |
-| `use_directional_animations` | Boolean | Examples: `true` | 2 |  |
-| `use_origin_offsets` | Boolean | Examples: `false` | 2 |  |
-| [`non_blocking_animations`](./Arrays.md#array-non_blocking_animations) | Array | Examples: `[ "hit" "critical" ]` | 1 |  |
-| [`spawn_offset`](./Arrays.md#array-spawn_offset) | Array | Examples: `[ 0 .5 0 ]` | 1 |  |
 
 </details>
 
@@ -1692,28 +1551,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String | Examples: `"nothing", "ABILITY_CROWNOFPESTILENCE_DESC", "ABILITY_MELEEATTACK_DESC"` | 3282 |  |
 | [`name`](./Strings.md#string-name) | String | Examples: `"ABILITY_CROWNOFPESTILENCE_NAME", "None", "ABILITY_MELEEATTACK_NAME"` | 3222 |  |
 | [`class`](./Enums.md#enum-class) | Enum | Examples: `Fighter, Mage, Hunter` | 1752 |  |
-| [`type_icon`](./Strings.md#string-type_icon) | String | Examples: `"unknown", "defense", "misc"` | 566 |  |
-| `animate_name` | Boolean | Examples: `false, true` | 354 |  |
-| [`icon_shell_frame`](./Strings.md#string-icon_shell_frame) | Mixed | Examples: `"attack", multihit_attack, attack` | 56 |  |
-| [`is_move`](./Enums.md#enum-is_move) | Mixed | Examples: `auto, true` | 40 |  |
-| [`ability_icon`](./Enums.md#enum-ability_icon) | Enum | Examples: `Pestilence, BasicMelee, BasicRanged` | 28 |  |
-| [`description`](./Strings.md#string-description) | String | Examples: `"CAT_CLASS_DRUID_DESC", "CAT_CLASS_MONK_DESC", "CAT_CLASS_BUTCHER_DESC"` | 28 |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum | Examples: `Shop, JackOffice, TreasureRoom` | 25 |  |
-| [`icon_damage_display`](./Strings.md#string-icon_damage_display) | String | Examples: `"1-6", "0-25", "?"` | 16 |  |
-| [`icon_damage_display_eq`](./Math_Equations.md) | Equation | Examples: `"3+bonus_melee_ability_damage", item_aux, "10+bonus_melee_ability_damage"` | 14 |  |
 | `treasure_room` | Boolean | Examples: `true` | 14 |  |
-| `is_basic_attack` | Boolean | Examples: `false, true` | 12 |  |
-| [`tooltip_values`](./Arrays.md#array-tooltip_values) | Array | Examples: `[ "max((X-1)*2, 0)" ], [ "max(X*3, 0)" ], [ "X" ]` | 9 |  |
-| `is_weapon` | Boolean | Examples: `true` | 8 |  |
 | `delay_enable_tooltips` | Boolean | Examples: `true` | 7 |  |
 | `keeper` | Number | Examples: `0` | 7 |  |
 | [`npc_script`](./Enums.md#enum-npc_script) | Enum | Examples: `tracy_adventure_shop_script.gon` | 7 |  |
 | [`shopkeeper_fights`](./Arrays.md#array-shopkeeper_fights) | Array | Examples: `[ test.lvl ]` | 7 |  |
-| [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | Enum | Examples: `magic, physical` | 6 |  |
-| `is_trinket` | Boolean | Examples: `true` | 6 |  |
-| `dont_visualize_ai` | Boolean | Examples: `true` | 4 |  |
 | `house_shop` | Boolean | Examples: `true` | 4 |  |
-| [`icon_damage_display_suffix`](./Strings.md#string-icon_damage_display_suffix) | String | Examples: `"x2", "x10"` | 4 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `portin` | 2 |  |
 | [`welcome_message`](./Enums.md#enum-welcome_message) | Enum | Examples: `welcome_water, welcome_water_cheap` | 2 |  |
 | `pick_n` | Number | Examples: `1` | 1 |  |
@@ -1787,105 +1631,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_range` | Number | Examples: `1, 5, 20` | 2176 |  |
-| `max_aoe` | Number | Examples: `2, 0, 1` | 1590 |  |
-| `min_range` | Number | Examples: `3, 2, 1` | 1166 |  |
-| [`target_mode`](./Enums.md#enum-target_mode) | Enum | Examples: `random_tile, none, direction8` | 1006 |  |
-| [`aoe_mode`](./Enums.md#enum-aoe_mode) | Enum | Examples: `all, standard, custom` | 864 |  |
-| [`restrictions`](./Arrays.md#array-restrictions) | Array | Examples: `aoe_must_exist, [ must_have_buddy must_have_living_character ], none` | 632 |  |
-| [`knockback_mode`](./Enums.md#enum-knockback_mode) | Enum | Examples: `tile_to_target, tile_to_character, zero` | 530 |  |
-| [`min_aoe`](./Enums.md#enum-min_aoe) | Mixed | Examples: `2+size, 0, 1` | 506 |  |
-| `aoe_excludes_self` | Boolean | Examples: `false, true` | 482 |  |
-| `aoe_considers_character_size` | Boolean | Examples: `false, true` | 340 |  |
-| [`aoe_restrictions`](./Arrays.md#array-aoe_restrictions) | Array | Examples: `[ exclude_blocking ], must_have_tag, enemies_only` | 276 |  |
-| [`range_mode`](./Enums.md#enum-range_mode) | Enum | Examples: `water_move, standard, cross` | 228 |  |
-| [`X_is`](./Enums.md#enum-x_is) | Enum | Examples: `turn_count, current_health, custom` | 172 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 162 |  |
-| `multihit` | Number | Examples: `3, 2, 5` | 124 |  |
-| `max_targets` | Number | Examples: `1, 7, 15` | 112 |  |
-| `range_excludes_blocking` | Boolean | Examples: `false, true` | 106 |  |
-| `prioritize_dont_change_direction` | Mixed | Examples: `true, 1` | 104 |  |
-| [`custom_aoe`](./Arrays.md#array-custom_aoe) | Array | Examples: `[ [ -1 0 ], [ [ 1 1 ], [ [ 1 -1 ]` | 83 |  |
-| [`target_requires_tag`](./Enums.md#enum-target_requires_tag) | Enum | Examples: `bowling_ball, pickup, food` | 80 |  |
-| [`aoe_symmetry`](./Enums.md#enum-aoe_symmetry) | Enum | Examples: `eight_way, none, four_way` | 56 |  |
-| `prioritize_face_camera` | Mixed | Examples: `true, 1` | 52 |  |
-| `straight_shot` | Boolean | Examples: `false, true` | 48 |  |
-| `can_multihit` | Boolean | Examples: `false, true` | 34 |  |
-| `allow_any_orientation` | Boolean | Examples: `true` | 32 |  |
-| `range_considers_character_size` | Boolean | Examples: `false` | 32 |  |
-| `throw_consumed_character` | Boolean | Examples: `true` | 30 |  |
-| `min_targets` | Number | Examples: `2, 5, 1` | 28 |  |
-| `aoe_leading_edge_only` | Boolean | Examples: `true` | 26 |  |
-| `allow_diagonals` | Boolean | Examples: `true` | 24 |  |
-| `range_display_include_character_size` | Boolean | Examples: `true` | 24 |  |
-| `stagger_multihit_targets` | Boolean | Examples: `true` | 24 |  |
-| `upgrade_straight_shot_to_piercing` | Boolean | Examples: `true` | 22 |  |
-| `delayed_trigger` | Boolean | Examples: `false, true` | 20 |  |
-| `consider_trample` | Boolean | Examples: `false, true` | 18 |  |
-| `N` | Number | Examples: `3, 2, 5` | 14 |  |
-| `always_bounce` | Boolean | Examples: `true` | 12 |  |
-| `multihit_max` | Number | Examples: `3, 5, 10` | 12 |  |
-| `multihit_min` | Number | Examples: `3, 1, 5` | 12 |  |
-| `reorient_thrown_character` | Boolean | Examples: `true` | 12 |  |
-| [`toss_direction_restriction`](./Enums.md#enum-toss_direction_restriction) | Enum | Examples: `backwards, forwards` | 12 |  |
-| `aoe_hint_teamcast` | Boolean | Examples: `true` | 10 |  |
-| [`aoe_tile_requires_element`](./Enums.md#enum-aoe_tile_requires_element) | Enum | Examples: `Earth, Grass, Water` | 10 |  |
-| `distance_sort_targets` | Mixed | Examples: `true, 1` | 10 |  |
-| `dont_orient_aoe` | Boolean | Examples: `true` | 10 |  |
-| `hint_can_target_pickups` | Boolean | Examples: `true` | 10 |  |
-| `max_bounces` | Number | Examples: `3, -1, 10` | 10 |  |
-| `splash_damage_aoe_begin` | Number | Examples: `999, 1` | 10 |  |
-| [`aoe_chance`](./Enums.md#enum-aoe_chance) | Enum | Examples: `.5, .33, .4+.2*level` | 8 |  |
-| `as_the_crow_flies` | Boolean | Examples: `true` | 8 |  |
-| `force_ai_target_as_spell` | Boolean | Examples: `true` | 8 |  |
-| `range_display_include_aoe` | Boolean | Examples: `true` | 8 |  |
-| `shotgun_mode` | Boolean | Examples: `true` | 8 |  |
-| `shuffle_tile_order` | Boolean | Examples: `true` | 8 |  |
-| `upgrade_straight_shot_to_boomerang` | Boolean | Examples: `true` | 8 |  |
-| [`custom_range`](./Arrays.md#array-custom_range) | Array | Examples: `[ [ -2 0 ], [ [ 1 1 ], [ [ 1 2 ]` | 7 |  |
-| [`custom_aoe_util`](./Arrays.md#array-custom_aoe_util) | Array | Examples: `[ [ -1 1 ], [ [ 0 1 ], [ [ 1 1 ]` | 6 |  |
-| `dont_orient` | Boolean | Examples: `true` | 6 |  |
-| `low_health_character_threshold` | Mixed | Examples: `item_aux, 5, 10` | 6 |  |
-| `randomize_target_within_range` | Number | Examples: `3, 2, 0` | 6 |  |
-| [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | Examples: `FinalBossCloneSpot, FinalBossTheChildLocation, ChaosValidPosition` | 6 |  |
-| `track_target` | Boolean | Examples: `true` | 6 |  |
-| `corpse_priority` | Number | Examples: `5, 10` | 4 |  |
-| `hint_can_target_empty` | Boolean | Examples: `false, true` | 4 |  |
-| `low_gravity_boostable` | Boolean | Examples: `false, true` | 4 |  |
-| [`mouse_offset`](./Arrays.md#array-mouse_offset) | Array | Examples: `[ .5 .5 ]` | 4 |  |
-| `prioritize_change_direction` | Boolean | Examples: `true` | 4 |  |
-| [`range_bonuses`](./Enums.md#enum-range_bonuses) | Enum | Examples: `include_alpha` | 4 |  |
-| `range_display_include_direction` | Boolean | Examples: `true` | 4 |  |
-| `recalc_target_on_castpoint` | Boolean | Examples: `true` | 4 |  |
-| `redirect_location_if_blocked` | Boolean | Examples: `true` | 4 |  |
-| `trample_allies_too` | Boolean | Examples: `true` | 4 |  |
-| [`adjust_target`](./Enums.md#enum-adjust_target) | Enum | Examples: `stalk` | 2 |  |
-| `allow_diagonal_passthrough` | Boolean | Examples: `true` | 2 |  |
-| `ally_priority` | Number | Examples: `1` | 2 |  |
-| `aoe_display_exclude_restrictions` | Boolean | Examples: `true` | 2 |  |
-| `aoe_rotate_around_character_center` | Boolean | Examples: `true` | 2 |  |
-| `aoe_spell_on_land` | Boolean | Examples: `true` | 2 |  |
-| `bonus_pathing_leniency` | Number | Examples: `4` | 2 |  |
-| `damage_collided_only` | Boolean | Examples: `true` | 2 |  |
-| `enemy_priority` | Number | Examples: `10` | 2 |  |
-| `hint_can_target_static` | Boolean | Examples: `true` | 2 |  |
-| [`knockback_modifier`](./Enums.md#enum-knockback_modifier) | Enum | Examples: `rotate_cw` | 2 |  |
 | `lingering` | Boolean | Examples: `true` | 2 |  |
-| `mirror_custom_aoe` | Boolean | Examples: `true` | 2 |  |
-| [`prioritize_throw_target_with_passive`](./Enums.md#enum-prioritize_throw_target_with_passive) | Enum | Examples: `NubbyTossPriority` | 2 |  |
-| `randomize_knockback_direction_except_for_finisher` | Boolean | Examples: `true` | 2 |  |
-| `range_excludes_self` | Boolean | Examples: `false` | 2 |  |
-| `range_max` | Number | Examples: `4` | 2 |  |
-| `range_min` | Number | Examples: `1` | 2 |  |
-| [`range_symmetry`](./Enums.md#enum-range_symmetry) | Enum | Examples: `eight_way` | 2 |  |
-| `remain_off_map` | Boolean | Examples: `true` | 2 |  |
-| [`restructions`](./Enums.md#enum-restructions) | Enum | Examples: `aoe_must_exist` | 2 |  |
-| `reverse_target_direction` | Boolean | Examples: `true` | 2 |  |
-| `spin_steps` | Number | Examples: `-16` | 2 |  |
-| [`target_requires_element`](./Arrays.md#array-target_requires_element) | Array | Examples: `[ grass water ], [ grass ]` | 2 |  |
-| `uncounterable` | Boolean | Examples: `true` | 2 |  |
-| [`custom_aoe_mirror`](./Arrays.md#array-custom_aoe_mirror) | Array | Examples: `[ [ 1 0 ]` | 1 |  |
-| [`custom_aoe_util_mirror`](./Arrays.md#array-custom_aoe_util_mirror) | Array | Examples: `[ [ 1 1 ]` | 1 |  |
 
 </details>
 
@@ -1906,48 +1653,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `mana` | Number | Examples: `5, 7, 0` | 3210 |  |
-| `infcantrip` | Boolean | Examples: `false, true` | 1620 |  |
-| `cantrip` | Boolean | Examples: `false, true` | 1120 |  |
-| `once_per_fight` | Mixed | Examples: `3-X, false, true` | 196 |  |
-| `act_points` | Number | Examples: `3, 1, 0` | 172 |  |
-| `move_points` | Number | Examples: `1, 0` | 118 |  |
-| `prime` | Number | Examples: `1` | 60 |  |
-| `allow_offmap_casts` | Boolean | Examples: `true` | 44 |  |
-| `cant_cast` | Mixed | Examples: `X-5, false, true` | 36 |  |
 | [`charge`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `"1-clamp(spd,0,1)", 1, 0` | 36 |  |
-| `must_be_consuming` | Boolean | Examples: `true` | 34 |  |
-| `must_not_be_consuming` | Boolean | Examples: `true` | 28 |  |
-| `requires_reload` | Boolean | Examples: `true` | 28 |  |
-| `can_cast_while_dead` | Boolean | Examples: `true` | 24 |  |
-| [`cantrip_group`](./Enums.md#enum-cantrip_group) | Enum | Examples: `spewer_suck, kaiju_roar, THC_CoinRoll` | 24 |  |
-| `must_be_offmap` | Boolean | Examples: `true` | 24 |  |
-| `X_cant_be_zero` | Boolean | Examples: `true` | 22 |  |
-| `disallow_cost_modification` | Boolean | Examples: `true` | 18 |  |
-| `coins` | Number | Examples: `1, 5, 7` | 16 |  |
 | `durability` | Number | Examples: `0` | 16 |  |
-| `main_turn_only` | Boolean | Examples: `true` | 16 |  |
-| `requires_destructible_weapon` | Boolean | Examples: `true` | 16 |  |
-| `requires_exact_character_aux` | Number | Examples: `2, 0, 1` | 16 |  |
-| `must_not_be_a_summon` | Boolean | Examples: `true` | 14 |  |
-| `start_reloaded` | Boolean | Examples: `true` | 14 |  |
-| `must_be_first_action` | Boolean | Examples: `false, true` | 8 |  |
-| `enabled_formula` | Mixed | Examples: `X, 1, 1-X` | 6 |  |
-| `must_be_first_nonmove_action` | Boolean | Examples: `true` | 6 |  |
-| `must_have_weapon` | Boolean | Examples: `true` | 4 |  |
-| `can_be_refreshed` | Boolean | Examples: `false` | 2 |  |
-| `can_pay_over_multiple_turns` | Boolean | Examples: `true` | 2 |  |
-| `can_self_refresh` | Boolean | Examples: `false` | 2 |  |
-| `damage_cant_be_zero` | Boolean | Examples: `true` | 2 |  |
-| `initial_charge` | Number | Examples: `1` | 2 |  |
-| `manacost_cant_be_zero` | Boolean | Examples: `true` | 2 |  |
-| `minimum_con` | Number | Examples: `1` | 2 |  |
-| `minimum_spd` | Number | Examples: `1` | 2 |  |
-| `require_default_size` | Boolean | Examples: `true` | 2 |  |
-| `requires_attack_damage_threshold` | Number | Examples: `2` | 2 |  |
-| `requires_consumed_trinket` | Boolean | Examples: `true` | 2 |  |
-| `requires_empty_trinket` | Boolean | Examples: `true` | 2 |  |
-| `requires_hp_threshold` | Number | Examples: `200` | 2 |  |
-| `requires_weapon` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -2030,103 +1737,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum | Examples: `none, enemies, birds` | 1010 |  |
-| `health` | Number | Examples: `16, 2, 7` | 854 |  |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `boss, cat, object` | 560 |  |
-| `movement` | Number | Examples: `3, 4, 5` | 556 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 539 |  |
 | [`tag`](./Arrays.md#array-tag) | Array | Examples: `[ cat blob ], rat, animal` | 508 |  |
-| [`corpse_health`](./Enums.md#enum-corpse_health) | Mixed | Examples: `3, indestructible, 0` | 390 |  |
-| `inherit_faction` | Boolean | Examples: `false, true` | 230 |  |
-| `dispersed_bonus_turns` | Number | Examples: `3, 2, 0` | 208 |  |
-| `base_mana_regen` | Number | Examples: `3, 999, 0` | 180 |  |
-| [`size`](./Enums.md#enum-size) | Enum | Examples: `2x2, 3x3, gemini` | 160 |  |
 | `shield` | Number | Examples: `50, 65, 100` | 148 |  |
-| [`move_block`](./Enums.md#enum-move_block) | Enum | Examples: `nothing, everything_even_when_dead` | 146 |  |
-| `kill_required` | Boolean | Examples: `false, true` | 138 |  |
-| `can_be_backstabbed` | Boolean | Examples: `false` | 136 |  |
-| `initiative` | Number | Examples: `-100, 999, -999` | 122 |  |
-| `takes_turns` | Boolean | Examples: `false, true` | 122 |  |
-| `mana_regen` | Number | Examples: `999` | 102 |  |
 | `mana` | Number | Examples: `100` | 100 |  |
 | `flying` | Boolean | Examples: `true` | 94 |  |
 | `weak_threshold` | Number | Examples: `1, 5, 0` | 64 |  |
-| [`hidden_tag`](./Arrays.md#array-hidden_tag) | Array | Examples: `angeljunk, [ bird bonusbird ], the_coven` | 62 |  |
-| `knockback_immune` | Boolean | Examples: `true` | 50 |  |
-| [`banned_elite_buffs`](./Arrays.md#array-banned_elite_buffs) | Array | Examples: `[ Protected ], [ Twin ], [ Mad ]` | 45 |  |
-| `can_be_champion` | Boolean | Examples: `false, true` | 40 |  |
-| [`ai_scale`](./Enums.md#enum-ai_scale) | Enum | Examples: `.25, .5, .01` | 36 |  |
-| [`auto_run_priority`](./Enums.md#enum-auto_run_priority) | Enum | Examples: `support, stationary, default` | 32 |  |
-| `inanimate` | Boolean | Examples: `true` | 32 |  |
-| `disperse_main_turns` | Boolean | Examples: `false, true` | 30 |  |
-| `evenly_dispersed_bonus_turns` | Number | Examples: `3, 2, 1` | 26 |  |
-| `exclude_from_hallucinate` | Boolean | Examples: `true` | 26 |  |
-| [`hidden_tags`](./Arrays.md#array-hidden_tags) | Array | Examples: `[ terminator_mini dc_cat ], terminator_mini` | 26 |  |
-| `round_end_bonus_turns` | Number | Examples: `1` | 26 |  |
-| `can_be_overkilled` | Boolean | Examples: `false, true` | 24 |  |
-| `can_collect_coins` | Boolean | Examples: `false, true` | 20 |  |
-| `deathpoof_size` | Number | Examples: `1` | 20 |  |
-| `dispersed_bonus_turns_consider_initiative` | Boolean | Examples: `false` | 20 |  |
-| `initial_health` | Number | Examples: `14, 4, 10` | 20 |  |
-| [`lock_orientation`](./Arrays.md#array-lock_orientation) | Array | Examples: `[ 1 0 ], [ 0 -1 ], [ -1 0 ]` | 19 |  |
-| `can_eat_food` | Boolean | Examples: `false, true` | 18 |  |
-| `can_grant_extra_turns` | Boolean | Examples: `false` | 16 |  |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Dust ], [ Earth ], [ Rock ]` | 16 |  |
-| `tall` | Boolean | Examples: `true` | 16 |  |
-| `dispersed_bonus_turns_before_cats` | Boolean | Examples: `false, true` | 14 |  |
-| `divine_shield` | Number | Examples: `3, 2, 1` | 14 |  |
-| `is_player_cat` | Boolean | Examples: `false, true` | 14 |  |
 | [`tags`](./Arrays.md#array-tags) | Array | Examples: `[ cat robot ]` | 14 |  |
-| `boss_minions_runaway` | Boolean | Examples: `false` | 12 |  |
-| `mana_matters` | Boolean | Examples: `false, true` | 12 |  |
-| `access_to_player_inventory` | Boolean | Examples: `false, true` | 10 |  |
-| `act_points` | Number | Examples: `4, 2, 0` | 10 |  |
-| `takes_main_turn` | Boolean | Examples: `false` | 10 |  |
-| `visually_spiky` | Boolean | Examples: `true` | 10 |  |
-| `allow_passive_spelltransforming` | Boolean | Examples: `true` | 8 |  |
-| `base_crit_chance` | Number | Examples: `0` | 8 |  |
-| `last_turn_is_main_turn` | Boolean | Examples: `true` | 8 |  |
-| `round_start_bonus_turns` | Number | Examples: `1` | 8 |  |
-| `view_bleeding_characters_as_enemies` | Boolean | Examples: `true` | 8 |  |
-| [`aoe_pierce_mode`](./Enums.md#enum-aoe_pierce_mode) | Enum | Examples: `block` | 6 |  |
-| `base_initiative` | Number | Examples: `-1, 0` | 6 |  |
-| `base_movement` | Number | Examples: `4` | 6 |  |
-| `catdata_ignore_skills` | Boolean | Examples: `true` | 6 |  |
-| [`disallow_items`](./Enums.md#enum-disallow_items) | Enum | Examples: `all, Nuke` | 6 |  |
-| [`held_coins`](./Arrays.md#array-held_coins) | Array | Examples: `[ 5 10 ], 0, 5` | 6 |  |
-| `always_triggers_traps` | Boolean | Examples: `true` | 4 |  |
-| `base_health` | Number | Examples: `0` | 4 |  |
-| `base_health_regen` | Number | Examples: `0` | 4 |  |
-| `base_initial_mana` | Number | Examples: `0` | 4 |  |
-| `base_mana` | Number | Examples: `0` | 4 |  |
-| `blocking` | Boolean | Examples: `false` | 4 |  |
-| `can_be_elite` | Boolean | Examples: `false` | 4 |  |
-| `can_run` | Boolean | Examples: `false` | 4 |  |
-| `champion` | Boolean | Examples: `true` | 4 |  |
-| `force_not_familiar` | Boolean | Examples: `true` | 4 |  |
-| `hint_no_corpse` | Boolean | Examples: `true` | 4 |  |
-| `must_start_facing_camera` | Boolean | Examples: `false` | 4 |  |
-| `tile_desire_cost` | Number | Examples: `200, 100` | 4 |  |
-| `uncapturable` | Boolean | Examples: `false, true` | 4 |  |
-| `aggro_target_is_enemy` | Boolean | Examples: `true` | 2 |  |
-| `allow_flying_effect` | Boolean | Examples: `true` | 2 |  |
-| `allow_offmap_corpse` | Boolean | Examples: `true` | 2 |  |
-| `allow_replacebrain` | Boolean | Examples: `false` | 2 |  |
-| `always_face_forward` | Boolean | Examples: `true` | 2 |  |
-| `capture_as_cat` | Boolean | Examples: `true` | 2 |  |
-| `elite` | Boolean | Examples: `true` | 2 |  |
-| `first_turn_is_main_turn` | Boolean | Examples: `true` | 2 |  |
-| `ignore_mouseover` | Boolean | Examples: `true` | 2 |  |
-| `ignore_tiles` | Boolean | Examples: `true` | 2 |  |
-| `mouseover_priority` | Number | Examples: `10` | 2 |  |
-| `move_points` | Number | Examples: `2` | 2 |  |
-| `pickup_type` | Number | Examples: `1` | 2 |  |
-| `scale` | Number | Examples: `1.3` | 2 |  |
-| `speculative_inanimate` | Boolean | Examples: `false` | 2 |  |
-| `static` | Boolean | Examples: `true` | 2 |  |
-| `two_fronts` | Boolean | Examples: `true` | 2 |  |
-| `two_fronts_switch` | Boolean | Examples: `true` | 2 |  |
-| `view_bugs_as_enemies` | Boolean | Examples: `true` | 2 |  |
-| [`inanimate_can_receive_specific_statuses`](./Arrays.md#array-inanimate_can_receive_specific_statuses) | Array | Examples: `[ Burn ]` | 1 |  |
 
 </details>
 
@@ -2146,33 +1765,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`brain`](./Enums.md#enum-brain) | Enum | Examples: `PatternBrain, GenericBrain, PlayerBrain` | 1146 |  |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Examples: `simple, extra_careless, default` | 986 |  |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Examples: `chaotic_runaway, keep_distance_always_move, bird` | 980 |  |
-| [`pattern`](./Miscellaneous.md#context-pattern) | Object | Examples: `{ ... }` | 578 |  |
-| [`mainturn_pattern`](./Miscellaneous.md#context-mainturn_pattern) | Object | Examples: `{ ... }` | 88 |  |
-| `end_turn_on_formswitch` | Boolean | Examples: `false, true` | 78 |  |
-| [`virtual_abilities`](./Miscellaneous.md#context-virtual_abilities) | Object | Examples: `{ ... }` | 70 |  |
-| `auto_orient` | Boolean | Examples: `false` | 62 |  |
-| `reset_pattern_on_formswitch` | Boolean | Examples: `false, true` | 62 |  |
-| `stun_advances_pattern` | Boolean | Examples: `false, true` | 60 |  |
-| `fallback_advances_pattern` | Boolean | Examples: `false, true` | 56 |  |
-| [`bonusturn_pattern`](./Miscellaneous.md#context-bonusturn_pattern) | Object | Examples: `{ ... }` | 54 |  |
-| [`fallback`](./Miscellaneous.md#context-fallback) | Object | Examples: `{ ... }` | 46 |  |
-| [`round_end_bonusturn_pattern`](./Miscellaneous.md#context-round_end_bonusturn_pattern) | Object | Examples: `{ ... }` | 24 |  |
-| `consider_spells` | Boolean | Examples: `false` | 22 |  |
-| `animate_choice` | Boolean | Examples: `false, true` | 16 |  |
-| `clamp_pattern` | Boolean | Examples: `true` | 10 |  |
-| `randomize_pattern_start` | Boolean | Examples: `true` | 6 |  |
-| [`dispersed_bonusturn_pattern`](./Miscellaneous.md#context-dispersed_bonusturn_pattern) | Object | Examples: `{ ... }` | 4 |  |
-| `random_orient` | Boolean | Examples: `true` | 4 |  |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `JohnnyBlast` | 2 |  |
-| `never_hit_ally_corpses` | Boolean | Examples: `true` | 2 |  |
-| [`post_absorb_move_weights`](./Enums.md#enum-post_absorb_move_weights) | Enum | Examples: `minimum_move` | 2 |  |
-| `reset_pattern_on_round_begin` | Boolean | Examples: `true` | 2 |  |
-| [`roll_ability`](./Enums.md#enum-roll_ability) | Enum | Examples: `RollDice` | 2 |  |
-| [`round_start_bonusturn_pattern`](./Miscellaneous.md#context-round_start_bonusturn_pattern) | Object | Examples: `{ ... }` | 2 |  |
-| [`dice_abilities`](./Arrays.md#array-dice_abilities) | Array | Examples: `[ D6Fizzle D6Confused D6Poop D6Laser D6Quake D6Storm D6Wr...` | 1 |  |
 
 </details>
 
@@ -2212,13 +1807,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `strength` | Number | Examples: `4, 5, 8` | 772 |  |
-| `constitution` | Number | Examples: `9, 5, 8` | 760 |  |
-| `dexterity` | Number | Examples: `9, 5, 8` | 760 |  |
-| `charisma` | Number | Examples: `9, 5, 8` | 758 |  |
-| `intelligence` | Number | Examples: `9, 5, 10` | 758 |  |
 | `speed` | Number | Examples: `2, 5, 7` | 758 |  |
-| `luck` | Number | Examples: `3, 5, 8` | 320 |  |
 | `con` | Number | Examples: `4, 2, -1` | 65 |  |
 | `spd` | Number | Examples: `-2, -1, 1` | 53 |  |
 | `cha` | Number | Examples: `3, 2, -1` | 46 |  |
@@ -2247,8 +1836,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BasicShortLobbed, BasicMelee, None` | 874 |  |
 | [`move`](./Enums.md#enum-move) | Enum | Examples: `DefaultMove, None, DustMove` | 866 |  |
-| [`spells`](./Arrays.md#array-spells) | Array | Examples: `[ TrampleDash MoveOne ], [ SpawnBomb BombRatTurtle RockToss_BomberRat ], [ Bi...` | 381 |  |
-| `can_get_bonus` | Boolean | Examples: `true` | 60 |  |
 | `BoneWormShotSmall` | Boolean |  | 2 |  |
 | [`spell0`](./Enums.md#enum-spell0) | Enum | Examples: `Spit, Roll` | 2 |  |
 
@@ -2290,20 +1877,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum | Examples: `**SimonFlopper_WiggleGuaranteed, **SimonFlopper_WiggleFake, **SimonFlopper_Wi...` | 256 |  |
-| [`do_priority`](./Arrays.md#array-do_priority) | Array | Examples: `[ BumblefootEatCorpse BumblefootEatCat BumblefootBoneShot ], [ *QueenWeb atta...` | 106 |  |
-| [`do_all`](./Arrays.md#array-do_all) | Array | Examples: `[ CovenWar CovenRise4 ], [ CovenPestilence CovenRise2 ], [ CovenFamine CovenR...` | 101 |  |
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum | Examples: `SimonFlopper_SpawnMinion, attack, NubsJump` | 22 |  |
-| [`do_random`](./Arrays.md#array-do_random) | Array | Examples: `[ ScaryHaunt ScaryFear ], [ Escape attack DybbukReanimate DybbukWisps ], [ Es...` | 10 |  |
-| [`do_strict`](./Arrays.md#array-do_strict) | Array | Examples: `[ MCBlizzard ], [ MCFlamethrower ], [ MCStorm ]` | 6 |  |
-| [`do_nothing`](./Arrays.md#array-do_nothing) | Array | Examples: `[  ]` | 3 |  |
-| [`move_then_do_priority`](./Arrays.md#array-move_then_do_priority) | Array | Examples: `[ BBPickupCrown *attack *BBToss ], [ DrinkUp attack ], [ BBPickupCrown *BBTos...` | 3 |  |
-| [`move_then_do_random`](./Arrays.md#array-move_then_do_random) | Array | Examples: `[ ClotEvolveCatCopy ClotFailEvolve ], [ CerberubsJumpBlind CerberubsJumpNorma...` | 3 |  |
-| [`do_all_shuffle`](./Arrays.md#array-do_all_shuffle) | Array | Examples: `[ YetiSlam YetiSlam YetiSlam YetiBite YetiBite YetiBite Y..., [ attack Dybbuk...` | 2 |  |
-| [`do_best`](./Arrays.md#array-do_best) | Array | Examples: `[ JohnnyPush JohnnyPull ]` | 1 |  |
-| [`do_best_multiple`](./Arrays.md#array-do_best_multiple) | Array | Examples: `[ attack spell0 spell1 spell2 spell3 spell4 weapon trinket ]` | 1 |  |
-| [`do_priority_alternating`](./Arrays.md#array-do_priority_alternating) | Array | Examples: `[ *BadBone *GoodBone BadBone_copy GoodBone_copy BadBone G...` | 1 |  |
-| [`move_then_do_all`](./Arrays.md#array-move_then_do_all) | Array | Examples: `[ LennyShove LennyGrabDead LennyGrab ]` | 1 |  |
 
 </details>
 
@@ -2391,29 +1964,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cat_choice`](./Enums.md#enum-cat_choice) | Enum | Examples: `random` | 214 |  |
-| [`event_clip`](./Enums.md#enum-event_clip) | Enum | Examples: `NonWheelEvent` | 214 |  |
-| [`subject_clip`](./Enums.md#enum-subject_clip) | Enum | Examples: `EventSubject` | 214 |  |
-| [`subject_frame`](./Enums.md#enum-subject_frame) | Enum | Examples: `brokenwindow, mouse_nest, trashcan` | 214 |  |
-| [`title`](./Strings.md#string-title) | String | Examples: `"EVENT_MOUSENEST_NAME", "EVENT_TRASHBIN_NAME", "EVENT_CLOSEDWINDOW_NAME"` | 214 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 214 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_INTRO_3, NPC_BEANIES_INTRO_1, NPC_BEANIES_INTRO_2` | 52 |  |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 20 |  |
 | [`set_mood`](./Enums.md#enum-set_mood) | Enum | Examples: `veryhappy, happy, default` | 18 |  |
-| [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum | Examples: `ThrobbingGristle, GuillotinasHead, PutridLeech` | 9 |  |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `reject_cat, choose_cat2, choose_cat1` | 6 |  |
 | [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | Examples: `.05, 5.4` | 4 |  |
-| `different_from_last_x_cats` | Number | Examples: `3, 2, 1` | 3 |  |
-| `subject_frame_inner` | Number | Examples: `4, 2` | 3 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_BEANIES_INTRO_15` | 2 |  |
 | `lock_controls` | Number | Examples: `1` | 2 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `Intro_LabDisposal` | 2 |  |
 | `unlock_controls` | Number | Examples: `1` | 2 |  |
-| [`choose_cat_with_highest_stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
-| [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum | Examples: `weapon` | 1 |  |
 | `choose_cat_with_min_health` | Number | Examples: `75` | 1 |  |
-| `choose_cat_with_most_injuries` | Boolean | Examples: `true` | 1 |  |
-| `choose_cat_with_parasite` | Boolean | Examples: `true` | 1 |  |
 
 </details>
 
@@ -2454,215 +2015,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 144 |  |
-| [`ignore`](./Miscellaneous.md#context-ignore) | Object | Examples: `{ ... }` | 55 |  |
-| [`examine`](./Miscellaneous.md#context-examine) | Object | Examples: `{ ... }` | 43 |  |
-| [`loot`](./Miscellaneous.md#context-loot) | Object | Examples: `{ ... }` | 25 |  |
-| [`eat`](./Miscellaneous.md#context-eat) | Object | Examples: `{ ... }` | 23 |  |
-| [`smash`](./Miscellaneous.md#context-smash) | Object | Examples: `{ ... }` | 15 |  |
-| [`destroy`](./Miscellaneous.md#context-destroy) | Object | Examples: `{ ... }` | 13 |  |
-| [`bash`](./Miscellaneous.md#context-bash) | Object | Examples: `{ ... }` | 12 |  |
-| [`sneak`](./Miscellaneous.md#context-sneak) | Object | Examples: `{ ... }` | 11 |  |
-| [`open`](./Miscellaneous.md#context-open) | Object | Examples: `{ ... }` | 8 |  |
-| [`take`](./Miscellaneous.md#context-take) | Object | Examples: `{ ... }` | 8 |  |
-| [`a`](./Miscellaneous.md#context-a) | Object | Examples: `{ ... }` | 7 |  |
 | [`attack`](./Miscellaneous.md#context-attack) | Object | Examples: `{ ... }` | 7 |  |
-| [`b`](./Miscellaneous.md#context-b) | Object | Examples: `{ ... }` | 7 |  |
-| [`c`](./Miscellaneous.md#context-c) | Object | Examples: `{ ... }` | 7 |  |
-| [`charm`](./Miscellaneous.md#context-charm) | Object | Examples: `{ ... }` | 7 |  |
-| [`fight`](./Miscellaneous.md#context-fight) | Object | Examples: `{ ... }` | 7 |  |
-| [`touch`](./Miscellaneous.md#context-touch) | Object | Examples: `{ ... }` | 7 |  |
-| [`activate_p`](./Miscellaneous.md#context-activate_p) | Object | Examples: `{ ... }` | 6 |  |
-| [`activate_z`](./Miscellaneous.md#context-activate_z) | Object | Examples: `{ ... }` | 6 |  |
-| [`d`](./Miscellaneous.md#context-d) | Object | Examples: `{ ... }` | 6 |  |
-| [`enter`](./Miscellaneous.md#context-enter) | Object | Examples: `{ ... }` | 6 |  |
-| [`inspect`](./Miscellaneous.md#context-inspect) | Object | Examples: `{ ... }` | 6 |  |
-| [`lick`](./Miscellaneous.md#context-lick) | Object | Examples: `{ ... }` | 6 |  |
-| [`drink`](./Miscellaneous.md#context-drink) | Object | Examples: `{ ... }` | 5 |  |
-| [`kiss`](./Miscellaneous.md#context-kiss) | Object | Examples: `{ ... }` | 5 |  |
-| [`run`](./Miscellaneous.md#context-run) | Object | Examples: `{ ... }` | 5 |  |
-| [`bite`](./Miscellaneous.md#context-bite) | Object | Examples: `{ ... }` | 4 |  |
 | [`damage`](./Miscellaneous.md#context-damage) | Object | Examples: `{ ... }` | 4 |  |
-| [`go_around`](./Miscellaneous.md#context-go_around) | Object | Examples: `{ ... }` | 4 |  |
-| [`home`](./Miscellaneous.md#context-home) | Object | Examples: `{ ... }` | 4 |  |
-| [`past`](./Miscellaneous.md#context-past) | Object | Examples: `{ ... }` | 4 |  |
-| [`skip`](./Miscellaneous.md#context-skip) | Object | Examples: `{ ... }` | 4 |  |
-| [`investigate`](./Miscellaneous.md#context-investigate) | Object | Examples: `{ ... }` | 3 |  |
-| [`repell`](./Miscellaneous.md#context-repell) | Object | Examples: `{ ... }` | 3 |  |
-| [`attach_antenna`](./Miscellaneous.md#context-attach_antenna) | Object | Examples: `{ ... }` | 2 |  |
-| [`boogers`](./Miscellaneous.md#context-boogers) | Object | Examples: `{ ... }` | 2 |  |
-| [`copy`](./Miscellaneous.md#context-copy) | Object | Examples: `{ ... }` | 2 |  |
-| [`find_another_way`](./Miscellaneous.md#context-find_another_way) | Object | Examples: `{ ... }` | 2 |  |
-| [`move_closer`](./Miscellaneous.md#context-move_closer) | Object | Examples: `{ ... }` | 2 |  |
-| [`play`](./Miscellaneous.md#context-play) | Object | Examples: `{ ... }` | 2 |  |
 | [`poop`](./Miscellaneous.md#context-poop) | Object | Examples: `{ ... }` | 2 |  |
-| [`print`](./Miscellaneous.md#context-print) | Object | Examples: `{ ... }` | 2 |  |
-| [`protection`](./Miscellaneous.md#context-protection) | Object | Examples: `{ ... }` | 2 |  |
-| [`repair`](./Miscellaneous.md#context-repair) | Object | Examples: `{ ... }` | 2 |  |
-| [`sacrifice`](./Miscellaneous.md#context-sacrifice) | Object | Examples: `{ ... }` | 2 |  |
-| [`scale`](./Miscellaneous.md#context-scale) | Object | Examples: `{ ... }` | 2 |  |
-| [`turnon`](./Miscellaneous.md#context-turnon) | Object | Examples: `{ ... }` | 2 |  |
-| [`altar_sacrifice`](./Miscellaneous.md#context-altar_sacrifice) | Object | Examples: `{ ... }` | 1 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_one` | 1 |  |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |  |
-| [`arm`](./Miscellaneous.md#context-arm) | Object | Examples: `{ ... }` | 1 |  |
-| [`attach_amplifier`](./Miscellaneous.md#context-attach_amplifier) | Object | Examples: `{ ... }` | 1 |  |
-| [`attach_leech`](./Miscellaneous.md#context-attach_leech) | Object | Examples: `{ ... }` | 1 |  |
-| [`bash_past_alt`](./Miscellaneous.md#context-bash_past_alt) | Object | Examples: `{ ... }` | 1 |  |
-| [`bite_it_off`](./Miscellaneous.md#context-bite_it_off) | Object | Examples: `{ ... }` | 1 |  |
-| [`blue`](./Miscellaneous.md#context-blue) | Object | Examples: `{ ... }` | 1 |  |
-| [`blue_needle`](./Miscellaneous.md#context-blue_needle) | Object | Examples: `{ ... }` | 1 |  |
 | [`body`](./Miscellaneous.md#context-body) | Object | Examples: `{ ... }` | 1 |  |
-| [`book`](./Miscellaneous.md#context-book) | Object | Examples: `{ ... }` | 1 |  |
 | [`brace`](./Miscellaneous.md#context-brace) | Object | Examples: `{ ... }` | 1 |  |
-| [`break_ice`](./Miscellaneous.md#context-break_ice) | Object | Examples: `{ ... }` | 1 |  |
-| [`break_lock`](./Miscellaneous.md#context-break_lock) | Object | Examples: `{ ... }` | 1 |  |
-| [`bribe`](./Miscellaneous.md#context-bribe) | Object | Examples: `{ ... }` | 1 |  |
-| [`button`](./Miscellaneous.md#context-button) | Object | Examples: `{ ... }` | 1 |  |
-| [`buy1`](./Miscellaneous.md#context-buy1) | Object | Examples: `{ ... }` | 1 |  |
 | [`catch`](./Miscellaneous.md#context-catch) | Object | Examples: `{ ... }` | 1 |  |
-| [`challenge_to_game`](./Miscellaneous.md#context-challenge_to_game) | Object | Examples: `{ ... }` | 1 |  |
-| [`chaos_ending`](./Miscellaneous.md#context-chaos_ending) | Object | Examples: `{ ... }` | 1 |  |
-| [`chapter_cutscene`](./Miscellaneous.md#context-chapter_cutscene) | Object | Examples: `{ ... }` | 1 |  |
-| [`charm_past_alt`](./Miscellaneous.md#context-charm_past_alt) | Object | Examples: `{ ... }` | 1 |  |
-| [`climb`](./Miscellaneous.md#context-climb) | Object | Examples: `{ ... }` | 1 |  |
-| [`comfort`](./Miscellaneous.md#context-comfort) | Object | Examples: `{ ... }` | 1 |  |
-| [`communicate`](./Miscellaneous.md#context-communicate) | Object | Examples: `{ ... }` | 1 |  |
-| [`concheck`](./Miscellaneous.md#context-concheck) | Object | Examples: `{ ... }` | 1 |  |
-| [`counter`](./Miscellaneous.md#context-counter) | Object | Examples: `{ ... }` | 1 |  |
-| [`crack_open`](./Miscellaneous.md#context-crack_open) | Object | Examples: `{ ... }` | 1 |  |
-| [`cross`](./Miscellaneous.md#context-cross) | Object | Examples: `{ ... }` | 1 |  |
-| [`cut_wires`](./Miscellaneous.md#context-cut_wires) | Object | Examples: `{ ... }` | 1 |  |
-| [`damage_1`](./Miscellaneous.md#context-damage_1) | Object | Examples: `{ ... }` | 1 |  |
-| [`damage_full`](./Miscellaneous.md#context-damage_full) | Object | Examples: `{ ... }` | 1 |  |
-| [`damage_half`](./Miscellaneous.md#context-damage_half) | Object | Examples: `{ ... }` | 1 |  |
-| [`desert_cutscene`](./Miscellaneous.md#context-desert_cutscene) | Object | Examples: `{ ... }` | 1 |  |
-| [`dexcheck`](./Miscellaneous.md#context-dexcheck) | Object | Examples: `{ ... }` | 1 |  |
-| [`dig`](./Miscellaneous.md#context-dig) | Object | Examples: `{ ... }` | 1 |  |
-| [`disarm`](./Miscellaneous.md#context-disarm) | Object | Examples: `{ ... }` | 1 |  |
-| [`dive`](./Miscellaneous.md#context-dive) | Object | Examples: `{ ... }` | 1 |  |
-| [`donate`](./Miscellaneous.md#context-donate) | Object | Examples: `{ ... }` | 1 |  |
-| [`donate_10`](./Miscellaneous.md#context-donate_10) | Object | Examples: `{ ... }` | 1 |  |
-| [`donate_15`](./Miscellaneous.md#context-donate_15) | Object | Examples: `{ ... }` | 1 |  |
-| [`donate_20`](./Miscellaneous.md#context-donate_20) | Object | Examples: `{ ... }` | 1 |  |
-| [`donate_5`](./Miscellaneous.md#context-donate_5) | Object | Examples: `{ ... }` | 1 |  |
-| [`double`](./Miscellaneous.md#context-double) | Object | Examples: `{ ... }` | 1 |  |
-| [`eat_meat`](./Miscellaneous.md#context-eat_meat) | Object | Examples: `{ ... }` | 1 |  |
-| [`enter_crater`](./Miscellaneous.md#context-enter_crater) | Object | Examples: `{ ... }` | 1 |  |
-| [`face`](./Miscellaneous.md#context-face) | Object | Examples: `{ ... }` | 1 |  |
-| [`fiddle`](./Miscellaneous.md#context-fiddle) | Object | Examples: `{ ... }` | 1 |  |
-| [`fill_jar`](./Miscellaneous.md#context-fill_jar) | Object | Examples: `{ ... }` | 1 |  |
-| [`find`](./Miscellaneous.md#context-find) | Object | Examples: `{ ... }` | 1 |  |
-| [`fire`](./Miscellaneous.md#context-fire) | Object | Examples: `{ ... }` | 1 |  |
-| [`flush_yourself`](./Miscellaneous.md#context-flush_yourself) | Object | Examples: `{ ... }` | 1 |  |
-| [`follow`](./Miscellaneous.md#context-follow) | Object | Examples: `{ ... }` | 1 |  |
 | [`free`](./Miscellaneous.md#context-free) | Object | Examples: `{ ... }` | 1 |  |
 | [`future`](./Miscellaneous.md#context-future) | Object | Examples: `{ ... }` | 1 |  |
-| [`give_parasite`](./Miscellaneous.md#context-give_parasite) | Object | Examples: `{ ... }` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`hack`](./Miscellaneous.md#context-hack) | Object | Examples: `{ ... }` | 1 |  |
-| [`head`](./Miscellaneous.md#context-head) | Object | Examples: `{ ... }` | 1 |  |
-| [`holy`](./Miscellaneous.md#context-holy) | Object | Examples: `{ ... }` | 1 |  |
-| [`hp`](./Miscellaneous.md#context-hp) | Object | Examples: `{ ... }` | 1 |  |
-| [`ice`](./Miscellaneous.md#context-ice) | Object | Examples: `{ ... }` | 1 |  |
-| [`infinite`](./Miscellaneous.md#context-infinite) | Object | Examples: `{ ... }` | 1 |  |
-| [`intcheck`](./Miscellaneous.md#context-intcheck) | Object | Examples: `{ ... }` | 1 |  |
-| [`intimidation`](./Miscellaneous.md#context-intimidation) | Object | Examples: `{ ... }` | 1 |  |
-| [`itchies`](./Miscellaneous.md#context-itchies) | Object | Examples: `{ ... }` | 1 |  |
-| [`join`](./Miscellaneous.md#context-join) | Object | Examples: `{ ... }` | 1 |  |
-| [`jump`](./Miscellaneous.md#context-jump) | Object | Examples: `{ ... }` | 1 |  |
-| [`jump_over`](./Miscellaneous.md#context-jump_over) | Object | Examples: `{ ... }` | 1 |  |
-| [`keep_going`](./Miscellaneous.md#context-keep_going) | Object | Examples: `{ ... }` | 1 |  |
-| [`kiss_meat`](./Miscellaneous.md#context-kiss_meat) | Object | Examples: `{ ... }` | 1 |  |
-| [`knife`](./Miscellaneous.md#context-knife) | Object | Examples: `{ ... }` | 1 |  |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BEGGAR_5_ANSW"` | 1 |  |
-| [`leave_it_in`](./Miscellaneous.md#context-leave_it_in) | Object | Examples: `{ ... }` | 1 |  |
-| [`leg`](./Miscellaneous.md#context-leg) | Object | Examples: `{ ... }` | 1 |  |
-| [`lever`](./Miscellaneous.md#context-lever) | Object | Examples: `{ ... }` | 1 |  |
-| [`lick_alt`](./Miscellaneous.md#context-lick_alt) | Object | Examples: `{ ... }` | 1 |  |
-| [`lightning`](./Miscellaneous.md#context-lightning) | Object | Examples: `{ ... }` | 1 |  |
-| [`listen`](./Miscellaneous.md#context-listen) | Object | Examples: `{ ... }` | 1 |  |
-| [`looks`](./Miscellaneous.md#context-looks) | Object | Examples: `{ ... }` | 1 |  |
-| [`loot_heart`](./Miscellaneous.md#context-loot_heart) | Object | Examples: `{ ... }` | 1 |  |
-| [`makeup`](./Miscellaneous.md#context-makeup) | Object | Examples: `{ ... }` | 1 |  |
-| [`mind`](./Miscellaneous.md#context-mind) | Object | Examples: `{ ... }` | 1 |  |
-| [`neck`](./Miscellaneous.md#context-neck) | Object | Examples: `{ ... }` | 1 |  |
-| [`nothanks`](./Miscellaneous.md#context-nothanks) | Object | Examples: `{ ... }` | 1 |  |
-| [`outsmart`](./Miscellaneous.md#context-outsmart) | Object | Examples: `{ ... }` | 1 |  |
-| [`patch_up`](./Miscellaneous.md#context-patch_up) | Object | Examples: `{ ... }` | 1 |  |
-| [`pick_lock`](./Miscellaneous.md#context-pick_lock) | Object | Examples: `{ ... }` | 1 |  |
 | [`pilfer`](./Miscellaneous.md#context-pilfer) | Object | Examples: `{ ... }` | 1 |  |
-| [`pirouette`](./Miscellaneous.md#context-pirouette) | Object | Examples: `{ ... }` | 1 |  |
-| [`place_gristle`](./Miscellaneous.md#context-place_gristle) | Object | Examples: `{ ... }` | 1 |  |
-| [`power`](./Miscellaneous.md#context-power) | Object | Examples: `{ ... }` | 1 |  |
-| [`pull`](./Miscellaneous.md#context-pull) | Object | Examples: `{ ... }` | 1 |  |
-| [`pull_it_out`](./Miscellaneous.md#context-pull_it_out) | Object | Examples: `{ ... }` | 1 |  |
-| [`pull_lever`](./Miscellaneous.md#context-pull_lever) | Object | Examples: `{ ... }` | 1 |  |
-| [`purify`](./Miscellaneous.md#context-purify) | Object | Examples: `{ ... }` | 1 |  |
-| [`push_buttons`](./Miscellaneous.md#context-push_buttons) | Object | Examples: `{ ... }` | 1 |  |
-| [`push_through`](./Miscellaneous.md#context-push_through) | Object | Examples: `{ ... }` | 1 |  |
-| [`put_in_coins`](./Miscellaneous.md#context-put_in_coins) | Object | Examples: `{ ... }` | 1 |  |
-| [`put_out_of_misery`](./Miscellaneous.md#context-put_out_of_misery) | Object | Examples: `{ ... }` | 1 |  |
-| [`reach_inside`](./Miscellaneous.md#context-reach_inside) | Object | Examples: `{ ... }` | 1 |  |
-| [`read`](./Miscellaneous.md#context-read) | Object | Examples: `{ ... }` | 1 |  |
-| [`receive`](./Miscellaneous.md#context-receive) | Object | Examples: `{ ... }` | 1 |  |
-| [`red`](./Miscellaneous.md#context-red) | Object | Examples: `{ ... }` | 1 |  |
-| [`red_needle`](./Miscellaneous.md#context-red_needle) | Object | Examples: `{ ... }` | 1 |  |
 | [`reflect`](./Miscellaneous.md#context-reflect) | Object | Examples: `{ ... }` | 1 |  |
-| [`remove`](./Miscellaneous.md#context-remove) | Object | Examples: `{ ... }` | 1 |  |
-| [`remove_the_nail`](./Miscellaneous.md#context-remove_the_nail) | Object | Examples: `{ ... }` | 1 |  |
-| [`repair_quest`](./Miscellaneous.md#context-repair_quest) | Object | Examples: `{ ... }` | 1 |  |
-| [`rest`](./Miscellaneous.md#context-rest) | Object | Examples: `{ ... }` | 1 |  |
 | [`revive`](./Miscellaneous.md#context-revive) | Object | Examples: `{ ... }` | 1 |  |
-| [`rub`](./Miscellaneous.md#context-rub) | Object | Examples: `{ ... }` | 1 |  |
-| [`run_again`](./Miscellaneous.md#context-run_again) | Object | Examples: `{ ... }` | 1 |  |
-| [`run_away`](./Miscellaneous.md#context-run_away) | Object | Examples: `{ ... }` | 1 |  |
-| [`sacrifice_full_favor`](./Miscellaneous.md#context-sacrifice_full_favor) | Object | Examples: `{ ... }` | 1 |  |
-| [`sacrifice_normal`](./Miscellaneous.md#context-sacrifice_normal) | Object | Examples: `{ ... }` | 1 |  |
-| [`sacrifice_partial_favor`](./Miscellaneous.md#context-sacrifice_partial_favor) | Object | Examples: `{ ... }` | 1 |  |
-| [`sacrifice_quest`](./Miscellaneous.md#context-sacrifice_quest) | Object | Examples: `{ ... }` | 1 |  |
-| [`scream`](./Miscellaneous.md#context-scream) | Object | Examples: `{ ... }` | 1 |  |
-| [`shake`](./Miscellaneous.md#context-shake) | Object | Examples: `{ ... }` | 1 |  |
-| [`slip_through`](./Miscellaneous.md#context-slip_through) | Object | Examples: `{ ... }` | 1 |  |
-| [`sneak_by`](./Miscellaneous.md#context-sneak_by) | Object | Examples: `{ ... }` | 1 |  |
-| [`sneak_past_alt`](./Miscellaneous.md#context-sneak_past_alt) | Object | Examples: `{ ... }` | 1 |  |
-| [`soul`](./Miscellaneous.md#context-soul) | Object | Examples: `{ ... }` | 1 |  |
 | [`speed`](./Miscellaneous.md#context-speed) | Object | Examples: `{ ... }` | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum | Examples: `coins` | 1 |  |
 | `stat_max` | Number | Examples: `5` | 1 |  |
 | `stat_min` | Number | Examples: `5` | 1 |  |
-| [`surprise`](./Miscellaneous.md#context-surprise) | Object | Examples: `{ ... }` | 1 |  |
-| [`sweet_talk`](./Miscellaneous.md#context-sweet_talk) | Object | Examples: `{ ... }` | 1 |  |
-| [`swim`](./Miscellaneous.md#context-swim) | Object | Examples: `{ ... }` | 1 |  |
-| [`tail`](./Miscellaneous.md#context-tail) | Object | Examples: `{ ... }` | 1 |  |
-| [`take_blood`](./Miscellaneous.md#context-take_blood) | Object | Examples: `{ ... }` | 1 |  |
-| [`talk`](./Miscellaneous.md#context-talk) | Object | Examples: `{ ... }` | 1 |  |
-| [`talk_to`](./Miscellaneous.md#context-talk_to) | Object | Examples: `{ ... }` | 1 |  |
-| [`tappytoes`](./Miscellaneous.md#context-tappytoes) | Object | Examples: `{ ... }` | 1 |  |
-| [`teleport`](./Miscellaneous.md#context-teleport) | Object | Examples: `{ ... }` | 1 |  |
 | [`thorns`](./Miscellaneous.md#context-thorns) | Object | Examples: `{ ... }` | 1 |  |
-| [`throw`](./Miscellaneous.md#context-throw) | Object | Examples: `{ ... }` | 1 |  |
-| [`timemachine`](./Miscellaneous.md#context-timemachine) | Object | Examples: `{ ... }` | 1 |  |
-| [`traverse`](./Miscellaneous.md#context-traverse) | Object | Examples: `{ ... }` | 1 |  |
-| [`upgrade_yourself`](./Miscellaneous.md#context-upgrade_yourself) | Object | Examples: `{ ... }` | 1 |  |
-| [`use_item`](./Miscellaneous.md#context-use_item) | Object | Examples: `{ ... }` | 1 |  |
-| [`use_toilet_con`](./Miscellaneous.md#context-use_toilet_con) | Object | Examples: `{ ... }` | 1 |  |
-| [`use_toilet_str`](./Miscellaneous.md#context-use_toilet_str) | Object | Examples: `{ ... }` | 1 |  |
-| [`use_weapon`](./Miscellaneous.md#context-use_weapon) | Object | Examples: `{ ... }` | 1 |  |
-| [`w1`](./Miscellaneous.md#context-w1) | Object | Examples: `{ ... }` | 1 |  |
-| [`w2`](./Miscellaneous.md#context-w2) | Object | Examples: `{ ... }` | 1 |  |
-| [`w3`](./Miscellaneous.md#context-w3) | Object | Examples: `{ ... }` | 1 |  |
-| [`w4`](./Miscellaneous.md#context-w4) | Object | Examples: `{ ... }` | 1 |  |
-| [`w5`](./Miscellaneous.md#context-w5) | Object | Examples: `{ ... }` | 1 |  |
-| [`w6`](./Miscellaneous.md#context-w6) | Object | Examples: `{ ... }` | 1 |  |
-| [`wealth`](./Miscellaneous.md#context-wealth) | Object | Examples: `{ ... }` | 1 |  |
-| [`wheezies`](./Miscellaneous.md#context-wheezies) | Object | Examples: `{ ... }` | 1 |  |
-| [`wish_genes`](./Miscellaneous.md#context-wish_genes) | Object | Examples: `{ ... }` | 1 |  |
-| [`wish_items`](./Miscellaneous.md#context-wish_items) | Object | Examples: `{ ... }` | 1 |  |
-| [`wish_levelups`](./Miscellaneous.md#context-wish_levelups) | Object | Examples: `{ ... }` | 1 |  |
-| [`wish_strength`](./Miscellaneous.md#context-wish_strength) | Object | Examples: `{ ... }` | 1 |  |
-| [`withstand`](./Miscellaneous.md#context-withstand) | Object | Examples: `{ ... }` | 1 |  |
-| [`yank_it_out`](./Miscellaneous.md#context-yank_it_out) | Object | Examples: `{ ... }` | 1 |  |
-| [`yellow_needle`](./Miscellaneous.md#context-yellow_needle) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -2710,14 +2082,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`counter_minimum`](./Arrays.md#array-counter_minimum) | Array | Examples: `[ WorldEventLegacyCounter_TestLegacyFoo 3 ], [ WorldEventLegacyCounter_CrackI...` | 26 |  |
 | [`cat_has_item_equipped`](./Arrays.md#array-cat_has_item_equipped) | Array | Examples: `[ FaceCovering InfamousMask ], FaceCovering, PutridLeech` | 23 |  |
 | [`counter_maximum`](./Arrays.md#array-counter_maximum) | Array | Examples: `[ WorldEventLegacyCounter_FooCounter 10 ], [ WorldEventLegacyCounter_SealedCr...` | 19 |  |
-| [`is_not_chapter`](./Arrays.md#array-is_not_chapter) | Array | Examples: `[ iceage jurassic ], [ jurassic iceage ], [ future theend ]` | 16 |  |
-| [`is_chapter`](./Arrays.md#array-is_chapter) | Array | Examples: `[ future ], [ theend ], [ future theend ]` | 8 |  |
 | [`not_cat_has_item_equipped`](./Enums.md#enum-not_cat_has_item_equipped) | Enum | Examples: `CryogenicTimeChamber_Full, GuillotinasHead, Horns` | 3 |  |
-| `minimum_party_size` | Number | Examples: `2` | 2 |  |
-| `not_on_quest` | Number | Examples: `1` | 2 |  |
-| `cat_has_injury_count_min` | Number | Examples: `2` | 1 |  |
-| [`cat_has_item_slot_equipped`](./Enums.md#enum-cat_has_item_slot_equipped) | Enum | Examples: `weapon` | 1 |  |
-| `cat_has_parasite` | Boolean | Examples: `true` | 1 |  |
 | `has_parasite` | Boolean | Examples: `true` | 1 |  |
 
 </details>
@@ -2742,23 +2107,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`faction`](./Enums.md#enum-faction) | Enum | Examples: `solitary_enemies, self, default` | 118 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 86 |  |
 | `ai_base_score` | Number | Examples: `999999, 9999, 99999` | 62 |  |
-| [`additional_passives`](./Miscellaneous.md#context-additional_passives) | Object | Examples: `{ ... }` | 40 |  |
-| [`first_turn`](./Enums.md#enum-first_turn) | Enum | Examples: `next_turn, initiative, end_of_round` | 34 |  |
-| [`catdata`](./Enums.md#enum-catdata) | Enum | Examples: `clone, item_aux_catid, teamclone` | 26 |  |
 | `clone_items` | Boolean | Examples: `true` | 24 |  |
-| `lob` | Boolean | Examples: `false` | 8 |  |
-| [`post_spawn_statuses`](./Miscellaneous.md#context-post_spawn_statuses) | Object | Examples: `{ ... }` | 8 |  |
-| `size` | Number | Examples: `2` | 8 |  |
-| `face_camera` | Boolean | Examples: `true` | 4 |  |
-| `inherit_elite_buffs` | Boolean | Examples: `false` | 4 |  |
-| `start_dead` | Boolean | Examples: `true` | 4 |  |
-| [`appearance`](./Enums.md#enum-appearance) | Enum | Examples: `GolemCat` | 2 |  |
-| [`auto_cast_on_spawn`](./Enums.md#enum-auto_cast_on_spawn) | Enum | Examples: `Dash_Enemy` | 2 |  |
 | [`chapter`](./Enums.md#enum-chapter) | Enum | Examples: `alley` | 2 |  |
-| `include_passives` | Boolean | Examples: `true` | 2 |  |
-| `redirect_location_if_blocked` | Boolean | Examples: `true` | 2 |  |
-| [`spawnin_animation`](./Enums.md#enum-spawnin_animation) | Enum | Examples: `summonspawnin` | 2 |  |
-| `trigger_battle_start` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -2820,8 +2170,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `con` | Number | Examples: `2, -1, 1` | 35 |  |
 | `random` | Number | Examples: `2, -1, 1` | 25 |  |
-| `int` | Number | Examples: `-4, 1, -1` | 21 |  |
-| `lck` | Number | Examples: `-2, -1, 1` | 18 |  |
 | `spd` | Number | Examples: `-2, -1, 1` | 18 |  |
 | `str` | Number | Examples: `2, -1, 1` | 16 |  |
 | [`cha`](./Engine_EventKeys.md#valid-property-keys) | Mixed | Examples: `+1, 1, -1` | 14 |  |
@@ -2894,161 +2242,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 120 |  |
-| [`initial_form`](./Enums.md#enum-initial_form) | Enum | Examples: `Flop, Default, Up` | 112 |  |
 | [`Default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 82 |  |
 | [`default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 82 |  |
 | [`Normal`](./Miscellaneous.md#context-normal) | Object | Examples: `{ ... }` | 22 |  |
-| [`Rage`](./Miscellaneous.md#context-rage) | Object | Examples: `{ ... }` | 20 |  |
-| [`HasCat`](./Miscellaneous.md#context-hascat) | Object | Examples: `{ ... }` | 10 |  |
-| [`hot`](./Miscellaneous.md#context-hot) | Object | Examples: `{ ... }` | 8 |  |
 | [`OffMap`](./Miscellaneous.md#context-offmap) | Object | Examples: `{ ... }` | 8 |  |
-| [`AllAlive`](./Miscellaneous.md#context-allalive) | Object | Examples: `{ ... }` | 6 |  |
-| [`Down`](./Miscellaneous.md#context-down) | Object | Examples: `{ ... }` | 6 |  |
-| [`Full`](./Miscellaneous.md#context-full) | Object | Examples: `{ ... }` | 6 |  |
-| [`OneAlive`](./Miscellaneous.md#context-onealive) | Object | Examples: `{ ... }` | 6 |  |
-| [`TwoAlive`](./Miscellaneous.md#context-twoalive) | Object | Examples: `{ ... }` | 6 |  |
-| [`Up`](./Miscellaneous.md#context-up) | Object | Examples: `{ ... }` | 6 |  |
-| [`active`](./Miscellaneous.md#context-active) | Object | Examples: `{ ... }` | 4 |  |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 4 |  |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BoneWormShotTall, BasicMelee_5Hits` | 4 |  |
 | [`Big`](./Miscellaneous.md#context-big) | Object | Examples: `{ ... }` | 4 |  |
 | [`Boris`](./Miscellaneous.md#context-boris) | Object | Examples: `{ ... }` | 4 |  |
-| [`CaveMan`](./Miscellaneous.md#context-caveman) | Object | Examples: `{ ... }` | 4 |  |
-| [`CaveManSpear`](./Miscellaneous.md#context-cavemanspear) | Object | Examples: `{ ... }` | 4 |  |
-| [`Empty`](./Miscellaneous.md#context-empty) | Object | Examples: `{ ... }` | 4 |  |
 | [`Explosive`](./Miscellaneous.md#context-explosive) | Object | Examples: `{ ... }` | 4 |  |
-| [`Holding`](./Miscellaneous.md#context-holding) | Object | Examples: `{ ... }` | 4 |  |
-| [`Holy`](./Miscellaneous.md#context-holy) | Object | Examples: `{ ... }` | 4 |  |
-| [`NotPriming`](./Miscellaneous.md#context-notpriming) | Object | Examples: `{ ... }` | 4 |  |
 | `partial_animation_suffix` | Number | Examples: `3, 5` | 4 |  |
-| [`passive`](./Miscellaneous.md#context-passive) | Object | Examples: `{ ... }` | 4 |  |
-| [`Priming`](./Miscellaneous.md#context-priming) | Object | Examples: `{ ... }` | 4 |  |
 | [`Small`](./Miscellaneous.md#context-small) | Object | Examples: `{ ... }` | 4 |  |
 | [`SquirrelForm`](./Miscellaneous.md#context-squirrelform) | Object | Examples: `{ ... }` | 4 |  |
-| [`Turtled`](./Miscellaneous.md#context-turtled) | Object | Examples: `{ ... }` | 4 |  |
-| [`Alert`](./Miscellaneous.md#context-alert) | Object | Examples: `{ ... }` | 2 |  |
-| [`Angry`](./Miscellaneous.md#context-angry) | Object | Examples: `{ ... }` | 2 |  |
-| [`Attacker`](./Miscellaneous.md#context-attacker) | Object | Examples: `{ ... }` | 2 |  |
-| [`BellyFull`](./Miscellaneous.md#context-bellyfull) | Object | Examples: `{ ... }` | 2 |  |
-| [`BigHolding`](./Miscellaneous.md#context-bigholding) | Object | Examples: `{ ... }` | 2 |  |
-| [`BigHoldingCat`](./Miscellaneous.md#context-bigholdingcat) | Object | Examples: `{ ... }` | 2 |  |
-| [`Bishop`](./Miscellaneous.md#context-bishop) | Object | Examples: `{ ... }` | 2 |  |
-| [`BlackHole`](./Miscellaneous.md#context-blackhole) | Object | Examples: `{ ... }` | 2 |  |
-| [`Bomb`](./Miscellaneous.md#context-bomb) | Object | Examples: `{ ... }` | 2 |  |
-| [`Bully`](./Miscellaneous.md#context-bully) | Object | Examples: `{ ... }` | 2 |  |
-| [`Butcher`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`CaveBaby`](./Miscellaneous.md#context-cavebaby) | Object | Examples: `{ ... }` | 2 |  |
-| [`CaveWoman`](./Miscellaneous.md#context-cavewoman) | Object | Examples: `{ ... }` | 2 |  |
-| [`CaveWomanHasCat`](./Miscellaneous.md#context-cavewomanhascat) | Object | Examples: `{ ... }` | 2 |  |
-| [`Charging`](./Miscellaneous.md#context-charging) | Object | Examples: `{ ... }` | 2 |  |
-| [`Close`](./Miscellaneous.md#context-close) | Object | Examples: `{ ... }` | 2 |  |
-| [`Colorless`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Cultist`](./Miscellaneous.md#context-cultist) | Object | Examples: `{ ... }` | 2 |  |
-| [`Damaged`](./Miscellaneous.md#context-damaged) | Object | Examples: `{ ... }` | 2 |  |
-| [`Default_Ceiling`](./Miscellaneous.md#context-default_ceiling) | Object | Examples: `{ ... }` | 2 |  |
-| [`Default_Ground`](./Miscellaneous.md#context-default_ground) | Object | Examples: `{ ... }` | 2 |  |
-| [`DesireMech`](./Miscellaneous.md#context-desiremech) | Object | Examples: `{ ... }` | 2 |  |
 | [`Druid`](./Engine_LogicKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Drunker`](./Miscellaneous.md#context-drunker) | Object | Examples: `{ ... }` | 2 |  |
 | [`DualSword`](./Miscellaneous.md#context-dualsword) | Object | Examples: `{ ... }` | 2 |  |
-| [`DualSword_Primed`](./Miscellaneous.md#context-dualsword_primed) | Object | Examples: `{ ... }` | 2 |  |
-| [`Dumb`](./Miscellaneous.md#context-dumb) | Object | Examples: `{ ... }` | 2 |  |
-| [`Explody`](./Miscellaneous.md#context-explody) | Object | Examples: `{ ... }` | 2 |  |
 | [`Fighter`](./Engine_LogicKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`FightPhase`](./Miscellaneous.md#context-fightphase) | Object | Examples: `{ ... }` | 2 |  |
-| [`Fire`](./Miscellaneous.md#context-fire) | Object | Examples: `{ ... }` | 2 |  |
-| [`FireFull`](./Miscellaneous.md#context-firefull) | Object | Examples: `{ ... }` | 2 |  |
-| [`Flop`](./Miscellaneous.md#context-flop) | Object | Examples: `{ ... }` | 2 |  |
-| [`Flop2`](./Miscellaneous.md#context-flop2) | Object | Examples: `{ ... }` | 2 |  |
-| [`Flush`](./Miscellaneous.md#context-flush) | Object | Examples: `{ ... }` | 2 |  |
-| [`FlushBubs`](./Miscellaneous.md#context-flushbubs) | Object | Examples: `{ ... }` | 2 |  |
-| [`FlushHost`](./Miscellaneous.md#context-flushhost) | Object | Examples: `{ ... }` | 2 |  |
-| [`FlushNettle`](./Miscellaneous.md#context-flushnettle) | Object | Examples: `{ ... }` | 2 |  |
-| [`Grappling`](./Miscellaneous.md#context-grappling) | Object | Examples: `{ ... }` | 2 |  |
 | [`Grown`](./Miscellaneous.md#context-grown) | Object | Examples: `{ ... }` | 2 |  |
-| [`GuaranteedJackpot`](./Miscellaneous.md#context-guaranteedjackpot) | Object | Examples: `{ ... }` | 2 |  |
-| [`Guarding`](./Miscellaneous.md#context-guarding) | Object | Examples: `{ ... }` | 2 |  |
 | [`HalfDead`](./Miscellaneous.md#context-halfdead) | Object | Examples: `{ ... }` | 2 |  |
-| [`HasDeadCat`](./Miscellaneous.md#context-hasdeadcat) | Object | Examples: `{ ... }` | 2 |  |
-| [`HasRock`](./Miscellaneous.md#context-hasrock) | Object | Examples: `{ ... }` | 2 |  |
-| [`Headless`](./Miscellaneous.md#context-headless) | Object | Examples: `{ ... }` | 2 |  |
-| [`Hint_CrackedVisuals`](./Miscellaneous.md#context-hint_crackedvisuals) | Object | Examples: `{ ... }` | 2 |  |
-| [`Hint_CrackedVisuals2`](./Miscellaneous.md#context-hint_crackedvisuals2) | Object | Examples: `{ ... }` | 2 |  |
-| [`Hint_CrackedVisuals3`](./Miscellaneous.md#context-hint_crackedvisuals3) | Object | Examples: `{ ... }` | 2 |  |
-| [`HumanDead`](./Miscellaneous.md#context-humandead) | Object | Examples: `{ ... }` | 2 |  |
-| [`Hunter`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`InitialPhase`](./Miscellaneous.md#context-initialphase) | Object | Examples: `{ ... }` | 2 |  |
-| [`Insane_Ceiling`](./Miscellaneous.md#context-insane_ceiling) | Object | Examples: `{ ... }` | 2 |  |
-| [`Insane_Ground`](./Miscellaneous.md#context-insane_ground) | Object | Examples: `{ ... }` | 2 |  |
-| [`Johnny`](./Miscellaneous.md#context-johnny) | Object | Examples: `{ ... }` | 2 |  |
-| [`JohnnyBubs`](./Miscellaneous.md#context-johnnybubs) | Object | Examples: `{ ... }` | 2 |  |
-| [`JohnnyHost`](./Miscellaneous.md#context-johnnyhost) | Object | Examples: `{ ... }` | 2 |  |
-| [`JohnnyNettle`](./Miscellaneous.md#context-johnnynettle) | Object | Examples: `{ ... }` | 2 |  |
-| [`Joystick`](./Miscellaneous.md#context-joystick) | Object | Examples: `{ ... }` | 2 |  |
-| [`LastHit`](./Miscellaneous.md#context-lasthit) | Object | Examples: `{ ... }` | 2 |  |
-| [`Lifted`](./Miscellaneous.md#context-lifted) | Object | Examples: `{ ... }` | 2 |  |
-| [`Lit`](./Miscellaneous.md#context-lit) | Object | Examples: `{ ... }` | 2 |  |
-| [`Mage`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Medic`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
 | [`Monk`](./Engine_LogicKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Mounted`](./Miscellaneous.md#context-mounted) | Object | Examples: `{ ... }` | 2 |  |
-| [`MouthFull`](./Miscellaneous.md#context-mouthfull) | Object | Examples: `{ ... }` | 2 |  |
-| [`Mutant`](./Miscellaneous.md#context-mutant) | Object | Examples: `{ ... }` | 2 |  |
-| [`Necromancer`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`NeutronStar`](./Miscellaneous.md#context-neutronstar) | Object | Examples: `{ ... }` | 2 |  |
 | [`NoDeathRattle`](./Engine_LogicKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`NoEyes`](./Miscellaneous.md#context-noeyes) | Object | Examples: `{ ... }` | 2 |  |
-| [`NormalFull`](./Miscellaneous.md#context-normalfull) | Object | Examples: `{ ... }` | 2 |  |
-| [`NoStick`](./Miscellaneous.md#context-nostick) | Object | Examples: `{ ... }` | 2 |  |
 | [`Nuke`](./Miscellaneous.md#context-nuke) | Object | Examples: `{ ... }` | 2 |  |
-| [`Obey`](./Miscellaneous.md#context-obey) | Object | Examples: `{ ... }` | 2 |  |
-| [`Off`](./Miscellaneous.md#context-off) | Object | Examples: `{ ... }` | 2 |  |
-| [`OffScreen`](./Miscellaneous.md#context-offscreen) | Object | Examples: `{ ... }` | 2 |  |
-| [`OneEye`](./Miscellaneous.md#context-oneeye) | Object | Examples: `{ ... }` | 2 |  |
-| [`Open`](./Miscellaneous.md#context-open) | Object | Examples: `{ ... }` | 2 |  |
-| [`OpenCat`](./Miscellaneous.md#context-opencat) | Object | Examples: `{ ... }` | 2 |  |
-| [`Out`](./Miscellaneous.md#context-out) | Object | Examples: `{ ... }` | 2 |  |
-| [`Possessing`](./Miscellaneous.md#context-possessing) | Object | Examples: `{ ... }` | 2 |  |
-| [`Primed`](./Miscellaneous.md#context-primed) | Object | Examples: `{ ... }` | 2 |  |
-| [`Psychic`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
 | [`Pulp2`](./Miscellaneous.md#context-pulp2) | Object | Examples: `{ ... }` | 2 |  |
-| [`Pulp3`](./Miscellaneous.md#context-pulp3) | Object | Examples: `{ ... }` | 2 |  |
-| [`Pulp4`](./Miscellaneous.md#context-pulp4) | Object | Examples: `{ ... }` | 2 |  |
-| [`Pulp5`](./Miscellaneous.md#context-pulp5) | Object | Examples: `{ ... }` | 2 |  |
-| [`Pulp6`](./Miscellaneous.md#context-pulp6) | Object | Examples: `{ ... }` | 2 |  |
-| [`Pulp7`](./Miscellaneous.md#context-pulp7) | Object | Examples: `{ ... }` | 2 |  |
-| [`Sitting`](./Miscellaneous.md#context-sitting) | Object | Examples: `{ ... }` | 2 |  |
 | [`SmallHolding`](./Miscellaneous.md#context-smallholding) | Object | Examples: `{ ... }` | 2 |  |
 | [`SmallHoldingCat`](./Miscellaneous.md#context-smallholdingcat) | Object | Examples: `{ ... }` | 2 |  |
-| [`SpawningPhase`](./Miscellaneous.md#context-spawningphase) | Object | Examples: `{ ... }` | 2 |  |
 | [`Standing`](./Miscellaneous.md#context-standing) | Object | Examples: `{ ... }` | 2 |  |
-| [`Standing2`](./Miscellaneous.md#context-standing2) | Object | Examples: `{ ... }` | 2 |  |
-| [`Start_Ceiling`](./Miscellaneous.md#context-start_ceiling) | Object | Examples: `{ ... }` | 2 |  |
-| [`Stop`](./Miscellaneous.md#context-stop) | Object | Examples: `{ ... }` | 2 |  |
-| [`SwordAndShield`](./Miscellaneous.md#context-swordandshield) | Object | Examples: `{ ... }` | 2 |  |
-| [`SwordAndShield_Primed`](./Miscellaneous.md#context-swordandshield_primed) | Object | Examples: `{ ... }` | 2 |  |
-| `sync_brain_patterns` | Boolean | Examples: `true` | 2 |  |
-| [`Tank`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Tar`](./Miscellaneous.md#context-tar) | Object | Examples: `{ ... }` | 2 |  |
-| [`TarFull`](./Miscellaneous.md#context-tarfull) | Object | Examples: `{ ... }` | 2 |  |
-| [`Thief`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Throb`](./Miscellaneous.md#context-throb) | Object | Examples: `{ ... }` | 2 |  |
-| [`ThrobBubs`](./Miscellaneous.md#context-throbbubs) | Object | Examples: `{ ... }` | 2 |  |
-| [`ThrobHost`](./Miscellaneous.md#context-throbhost) | Object | Examples: `{ ... }` | 2 |  |
-| [`ThrobNettle`](./Miscellaneous.md#context-throbnettle) | Object | Examples: `{ ... }` | 2 |  |
-| [`Tinkerer`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Transformed`](./Miscellaneous.md#context-transformed) | Object | Examples: `{ ... }` | 2 |  |
-| [`TwoEyes`](./Miscellaneous.md#context-twoeyes) | Object | Examples: `{ ... }` | 2 |  |
 | `uifloaters_offset` | Number | Examples: `3` | 2 |  |
-| [`Unlit`](./Miscellaneous.md#context-unlit) | Object | Examples: `{ ... }` | 2 |  |
-| [`Unmounted`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Examples: `{ ... }` | 2 |  |
-| [`Unwashed`](./Miscellaneous.md#context-unwashed) | Object | Examples: `{ ... }` | 2 |  |
-| [`Washed`](./Miscellaneous.md#context-washed) | Object | Examples: `{ ... }` | 2 |  |
-| [`Washer`](./Miscellaneous.md#context-washer) | Object | Examples: `{ ... }` | 2 |  |
-| [`Water`](./Miscellaneous.md#context-water) | Object | Examples: `{ ... }` | 2 |  |
-| [`WereMan`](./Miscellaneous.md#context-wereman) | Object | Examples: `{ ... }` | 2 |  |
-| [`Zealot`](./Miscellaneous.md#context-zealot) | Object | Examples: `{ ... }` | 2 |  |
-| [`ZealotBomb`](./Miscellaneous.md#context-zealotbomb) | Object | Examples: `{ ... }` | 2 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
@@ -3069,16 +2287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CastAgain` | Number | Examples: `4, 2, 1` | 40 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 34 |  |
-| `DisableTrample` | Number | Examples: `1` | 20 |  |
-| `Fury` | Number | Examples: `75, 55` | 14 |  |
-| `JustInCaseTrample` | Number | Examples: `0` | 10 |  |
-| [`LeaveBehind`](./Miscellaneous.md#context-leavebehind) | Object | Examples: `{ ... }, Bait` | 10 |  |
-| `DashFury` | Number | Examples: `4` | 6 |  |
-| `BearTrapTrail` | Number | Examples: `1` | 4 |  |
-| `DelayedWindTrail` | Number | Examples: `1` | 2 |  |
-| [`JumpAttackLeaveBehind`](./Enums.md#enum-jumpattackleavebehind) | Enum | Examples: `BungaThrone` | 2 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -3191,8 +2400,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_sounds`](./Arrays.md#array-alt_sounds) | Array | Examples: `[ [ SE_BirdSmall_DyingCall SE_BirdDying_Hummingbird ], [ [ SE_BirdSmall_Dying...` | 61 |  |
-| [`animation_prefix`](./Enums.md#enum-animation_prefix) | Enum | Examples: `RattleSnake` | 2 |  |
 
 </details>
 
@@ -3235,11 +2442,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 59 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 57 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_IGNORE_ANSW", "EVENT_LEAVE_ANSW", EVENT_IGNORE_ANSW` | 57 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `con, none` | 56 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 55 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 3 |  |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Examples: `home` | 2 |  |
 
 </details>
 
@@ -3282,11 +2485,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Number | Examples: `1, 5, 10` | 114 |  |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Thorns, Brace, AllDamageImmune` | 112 |  |
 | `turns` | Number | Examples: `3, 1` | 104 |  |
-| `expires_on_begin_turn` | Boolean | Examples: `true` | 50 |  |
-| `expires_on_end_turn` | Boolean | Examples: `true` | 42 |  |
-| `data` | Number | Examples: `2` | 4 |  |
-| `expires_on_appliers_turn` | Boolean | Examples: `true` | 4 |  |
-| `expires_on_move` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -3380,7 +2578,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allow_energize_self` | Boolean | Examples: `true` | 4 |  |
-| [`alternate_energized_effect`](./Miscellaneous.md#context-alternate_energized_effect) | Object | Examples: `{ ... }` | 4 |  |
 
 </details>
 
@@ -3442,13 +2639,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `takes_turns` | Boolean | Examples: `false, true` | 46 |  |
-| `dispersed_bonus_turns` | Number | Examples: `2, 0, 1` | 36 |  |
-| `takes_main_turn` | Boolean | Examples: `false, true` | 20 |  |
-| `evenly_dispersed_bonus_turns` | Number | Examples: `2, 1` | 14 |  |
-| `round_end_bonus_turns` | Number | Examples: `1` | 10 |  |
-| `wait_till_next_round_to_update_turns` | Boolean | Examples: `true` | 8 |  |
-| `round_start_bonus_turns` | Number | Examples: `1` | 2 |  |
 
 </details>
 
@@ -3489,10 +2679,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`face`](./Enums.md#enum-face) | Enum | Examples: `MetalPlate, AtomicMark, WesternHat` | 32 |  |
-| [`head`](./Enums.md#enum-head) | Enum | Examples: `CoinBag, LoansharksFedora, Banana` | 28 |  |
-| [`neck`](./Enums.md#enum-neck) | Enum | Examples: `MageCollar, Poncho, Slime` | 20 |  |
-| [`weapon`](./Enums.md#enum-weapon) | Enum | Examples: `GunslingerPistol, AstroTaser, ButcherHook` | 14 |  |
 
 </details>
 
@@ -3513,10 +2699,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_EXAMINE_ANSW", EVENT_EXAMINE_ANSW` | 43 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck, int` | 43 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 41 |  |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Examples: `open, smash` | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 
 </details>
@@ -3537,11 +2720,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum | Examples: `**TrampleDash, HealSelf, **BombRatTurtle` | 46 |  |
-| [`do_all`](./Arrays.md#array-do_all) | Array | Examples: `[ *AlienBeastScream *AlienBeastEat *AlienBeastPuke *Alien..., [ *MarshmallowZ...` | 9 |  |
-| [`do_priority`](./Arrays.md#array-do_priority) | Array | Examples: `[ attack Simon_Shot ], [ *HitlerHeil attack move ], [ ChumShot_Damage ChumSho...` | 8 |  |
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum | Examples: `RockSong, attack` | 4 |  |
-| [`do_strict`](./Arrays.md#array-do_strict) | Array | Examples: `[ *WizSpellShield WizBlizzard ], [ BasicMelee RageUp ]` | 2 |  |
 
 </details>
 
@@ -3587,7 +2765,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`count`](./Arrays.md#array-count) | Array | Examples: `[ 3 6 ], 3, 8` | 32 |  |
 | [`object`](./Arrays.md#array-object) | Array | Examples: `[ Junk Junk TrashBag ], RandomNonCoinPickup, DeadPinky` | 31 |  |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum | Examples: `anywhere, enemies, cats` | 31 |  |
-| [`side`](./Enums.md#enum-side) | Enum | Examples: `enemies` | 3 |  |
 
 </details>
 
@@ -3627,22 +2804,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`palette`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | Examples: `Fighter, 86, Hunter` | 34 |  |
-| `ear1` | Number | Examples: `23, 1501, 325` | 26 |  |
-| `tail` | Number | Examples: `1503, 4, 1502` | 26 |  |
 | `arm2` | Number | Examples: `1501, 1013, 324` | 22 |  |
 | `arm1` | Number | Examples: `1501, 1013, 338` | 20 |  |
-| `ear2` | Number | Examples: `23, 1036, 1501` | 20 |  |
-| `leg1` | Number | Examples: `41, 1501, 338` | 16 |  |
-| `leg2` | Number | Examples: `41, 1501, 338` | 16 |  |
 | `mouth` | Number | Examples: `1501, 1071, 1005` | 16 |  |
-| `head` | Number | Examples: `12, 1019, 1504` | 12 |  |
-| `texture` | Number | Examples: `19, 322, 1008` | 12 |  |
 | `body` | Number | Examples: `1012, 31, 1029` | 10 |  |
-| `eye1` | Number | Examples: `1069, 1013, 1057` | 6 |  |
-| `eye2` | Number | Examples: `1069, 1013, 1057` | 6 |  |
-| `eyebrow1` | Number | Examples: `1069` | 2 |  |
-| `eyebrow2` | Number | Examples: `1070` | 2 |  |
 
 </details>
 
@@ -3662,10 +2827,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ontrigger`](./Enums.md#enum-ontrigger) | Enum | Examples: `Spawn_Donate, Spiderweb_Break, SE_BullRushDash` | 64 |  |
-| [`oncast`](./Enums.md#enum-oncast) | Enum | Examples: `AbilitySnd_BoulderDrop, AbilitySnd_Assassinate` | 6 |  |
-| [`oncastpoint`](./Enums.md#enum-oncastpoint) | Enum | Examples: `AirHorn, Batterup_Swing_Castpoint` | 6 |  |
-| [`ontrigger_intentional`](./Enums.md#enum-ontrigger_intentional) | Enum | Examples: `Lenny_HereKitty` | 2 |  |
 
 </details>
 
@@ -3736,12 +2897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `Rat, TinySpider, AnimatedSmallRock` | 76 |  |
 | `good` | Boolean | Examples: `false, true` | 40 |  |
 | [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `50, 33, .25` | 24 |  |
-| `spawn_on_death_hit` | Boolean | Examples: `false` | 20 |  |
-| `coins` | Number | Examples: `1` | 4 |  |
-| `consider_all_layers` | Boolean | Examples: `true` | 4 |  |
 | `shield_only` | Boolean | Examples: `true` | 4 |  |
-| [`auto_cast`](./Enums.md#enum-auto_cast) | Enum | Examples: `Dash_Enemy` | 2 |  |
-| `melee_ability_only` | Boolean | Examples: `true` | 2 |  |
 | `number` | Number | Examples: `1` | 2 |  |
 
 </details>
@@ -3850,11 +3006,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `set_MummySetCurse, MiniNukeExplodey, set_HumanFleshSetCurse` | 26 |  |
 | `pop_corpse` | Boolean | Examples: `false` | 22 |  |
-| `is_dying_animation` | Boolean | Examples: `true` | 14 |  |
-| `cancel_knockback` | Boolean | Examples: `true` | 2 |  |
-| `immediate` | Boolean | Examples: `true` | 2 |  |
-| `must_target_killer` | Boolean | Examples: `true` | 2 |  |
-| `target_killer` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -3875,8 +3026,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Consuming, Grappling, Counterspell` | 70 |  |
-| [`form_hasnot`](./Enums.md#enum-form_hasnot) | Enum | Examples: `Small, Big, Default` | 60 |  |
-| [`form_has`](./Enums.md#enum-form_has) | Enum | Examples: `HasCat, Full, HasRock` | 50 |  |
 
 </details>
 
@@ -3897,11 +3046,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |  |
-| `TemporaryItem` | Number | Examples: `1 BonusAbility TinkererThrow` | 2 |  |
-| `TVBotDie` | Number | Examples: `1` | 2 |  |
-| `TVBotDumb` | Number | Examples: `1` | 2 |  |
-| `TVBotObey` | Number | Examples: `1` | 2 |  |
-| `TVBotStop` | Number | Examples: `1` | 2 |  |
 
 </details>
 
@@ -3966,35 +3110,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MoveAway`](./Miscellaneous.md#context-moveaway) | Object | Examples: `{ ... }` | 8 |  |
-| [`MoveClose`](./Miscellaneous.md#context-moveclose) | Object | Examples: `{ ... }` | 8 |  |
-| [`DashRandomly`](./Miscellaneous.md#context-dashrandomly) | Object | Examples: `{ ... }` | 4 |  |
-| [`Escape`](./Miscellaneous.md#context-escape) | Object | Examples: `{ ... }` | 4 |  |
-| [`MoveCenter`](./Miscellaneous.md#context-movecenter) | Object | Examples: `{ ... }` | 4 |  |
-| [`MoveForThrow`](./Miscellaneous.md#context-moveforthrow) | Object | Examples: `{ ... }` | 4 |  |
-| [`SpearRun`](./Miscellaneous.md#context-spearrun) | Object | Examples: `{ ... }` | 4 |  |
-| [`CerberubsJumpBlind`](./Miscellaneous.md#context-cerberubsjumpblind) | Object | Examples: `{ ... }` | 2 |  |
-| [`CerberubsJumpNormal`](./Miscellaneous.md#context-cerberubsjumpnormal) | Object | Examples: `{ ... }` | 2 |  |
-| [`CloseConvert`](./Miscellaneous.md#context-closeconvert) | Object | Examples: `{ ... }` | 2 |  |
-| [`FoodMove`](./Miscellaneous.md#context-foodmove) | Object | Examples: `{ ... }` | 2 |  |
-| [`ForceTrample`](./Miscellaneous.md#context-forcetrample) | Object | Examples: `{ ... }` | 2 |  |
-| [`LeapClose`](./Miscellaneous.md#context-leapclose) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveForBarrage`](./Miscellaneous.md#context-moveforbarrage) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveForDash`](./Miscellaneous.md#context-movefordash) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveForGrass`](./Miscellaneous.md#context-moveforgrass) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveForPounce`](./Miscellaneous.md#context-moveforpounce) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveForSpin`](./Miscellaneous.md#context-moveforspin) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveOneForPuke`](./Miscellaneous.md#context-moveoneforpuke) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveSpaced`](./Miscellaneous.md#context-movespaced) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveToHead`](./Miscellaneous.md#context-movetohead) | Object | Examples: `{ ... }` | 2 |  |
-| [`MoveTowards`](./Miscellaneous.md#context-movetowards) | Object | Examples: `{ ... }` | 2 |  |
-| [`NCGravecrawlFAR`](./Miscellaneous.md#context-ncgravecrawlfar) | Object | Examples: `{ ... }` | 2 |  |
-| [`ReturnA`](./Miscellaneous.md#context-returna) | Object | Examples: `{ ... }` | 2 |  |
-| [`RunFar`](./Miscellaneous.md#context-runfar) | Object | Examples: `{ ... }` | 2 |  |
-| [`SuckMF`](./Miscellaneous.md#context-suckmf) | Object | Examples: `{ ... }` | 2 |  |
-| [`TF_TargetAllies`](./Miscellaneous.md#context-tf_targetallies) | Object | Examples: `{ ... }` | 2 |  |
-| [`TF_TargetEnemies`](./Miscellaneous.md#context-tf_targetenemies) | Object | Examples: `{ ... }` | 2 |  |
-| [`Unflip`](./Miscellaneous.md#context-unflip) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -4016,8 +3131,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 30 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_IGNORE_ANSW", "EVENT_WALKAWAY_ANSW", "EVENT_LEAVE_ANSW"` | 30 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none, spd` | 30 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 28 |  |
 
 </details>
@@ -4131,11 +3244,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum | Examples: `DustDash, move, *SpawnBomb` | 38 |  |
-| [`do_priority`](./Arrays.md#array-do_priority) | Array | Examples: `[ TormentorSpawn TormentorBite attack ], [ TormentorBite TormentorSpawn attac...` | 11 |  |
-| [`do_strict`](./Arrays.md#array-do_strict) | Array | Examples: `[ WizStorm ], [ WizFlamethrower ], [  ]` | 5 |  |
-| [`do_all`](./Arrays.md#array-do_all) | Array | Examples: `[ CloseConvert attack ], [ attack AlienBeastOpenEyes ], [ TrembloSuck *Trembl...` | 4 |  |
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum | Examples: `RatKingSpawn` | 2 |  |
 
 </details>
 
@@ -4224,7 +3332,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `1, 5, 5+bonus_melee_ability_damage` | 44 |  |
 | `displace` | Boolean | Examples: `true` | 4 |  |
 | `height` | Number | Examples: `2, 0` | 4 |  |
-| `circular_variance` | Number | Examples: `2` | 2 |  |
 
 </details>
 
@@ -4247,9 +3354,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_dex_alt, choice_misc` | 25 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 25 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `QEVENT_DEADKING_LOOTCORPSE_ANSW, EVENT_LOOT_ANSW, "EVENT_LOOT_ANSW"` | 25 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck, dex` | 25 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -4272,18 +3376,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `eyes` | Number | Examples: `-2, 702, 442` | 13 |  |
 | `mouth` | Number | Examples: `705, 900, -2` | 11 |  |
 | `ears` | Number | Examples: `310, -2, 328` | 10 |  |
-| `eyebrows` | Number | Examples: `440, 900, -2` | 8 |  |
-| `head` | Number | Examples: `305, 900` | 7 |  |
-| `legs` | Number | Examples: `900, 322` | 7 |  |
-| `arms` | Number | Examples: `900` | 6 |  |
 | `body` | Number | Examples: `900` | 6 |  |
 | `tail` | Number | Examples: `900` | 6 |  |
-| `eye1` | Number | Examples: `-2, -1` | 3 |  |
 | `arm1` | Number | Examples: `-2` | 2 |  |
-| `ear1` | Number | Examples: `-2` | 2 |  |
-| `eyebrow1` | Number | Examples: `-2` | 2 |  |
-| `leg1` | Number | Examples: `-2` | 2 |  |
-| `eye2` | Number | Examples: `-1` | 1 |  |
 
 </details>
 
@@ -4383,17 +3478,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `MoonHandDash, ButtFlip, attack` | 20 |  |
-| `ability_damage_only` | Boolean | Examples: `true` | 14 |  |
-| `backstabs_only` | Boolean | Examples: `true` | 6 |  |
-| `only_when_not_your_turn` | Boolean | Examples: `true` | 6 |  |
-| `cancel_knockback` | Boolean | Examples: `true` | 2 |  |
 | `chance` | Number | Examples: `15` | 2 |  |
 | `enemies_only` | Boolean | Examples: `true` | 2 |  |
-| `even_on_0_damage` | Boolean | Examples: `true` | 2 |  |
-| `even_on_0_damage_if_knockback` | Boolean | Examples: `true` | 2 |  |
-| `match_knockback_direction` | Boolean | Examples: `true` | 2 |  |
-| `ranged_only` | Boolean | Examples: `true` | 2 |  |
-| `verify_target` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -4415,8 +3501,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 66 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 23 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_DRINK_ANSW", EVENT_EAT_ANSW, "EVENT_EAT_ANSW"` | 23 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 23 |  |
 
 </details>
 
@@ -4436,13 +3520,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum | Examples: `JohnnyBlast, attack, RockToss_ColorlessCat_AsCloseAsPossible` | 24 |  |
-| [`do_priority`](./Arrays.md#array-do_priority) | Array | Examples: `[ attack TrembloEat ], [ attack Magnetize YeetTowardsBuddy ], [ *attack RunFar ]` | 6 |  |
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum | Examples: `CerberubsCalm` | 2 |  |
-| [`do_all`](./Arrays.md#array-do_all) | Array | Examples: `[ move *CoreFreakFury ]` | 1 |  |
-| [`do_best`](./Arrays.md#array-do_best) | Array | Examples: `[ Magnetize attack GuillotinaTossCollide YeetTowardsBuddy...` | 1 |  |
-| [`do_nothing`](./Arrays.md#array-do_nothing) | Array | Examples: `[  ]` | 1 |  |
-| [`do_random`](./Arrays.md#array-do_random) | Array | Examples: `[ CHSpawn CHCry ]` | 1 |  |
 
 </details>
 
@@ -4678,16 +3755,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `count` | Number | Examples: `3, 1` | 8 |  |
 | `tail` | Number | Examples: `1500, 760, -1` | 7 |  |
 | `ears` | Number | Examples: `1500, -2, -1` | 5 |  |
-| `eyes` | Number | Examples: `-2, -1, 1029` | 5 |  |
-| `legs` | Number | Examples: `306, -1` | 5 |  |
 | `body` | Number | Examples: `758, -1` | 4 |  |
-| `eyebrows` | Number | Examples: `-2, -1` | 3 |  |
-| `head` | Number | Examples: `759, -1` | 3 |  |
 | `arm1` | Number | Examples: `-2, -1` | 2 |  |
 | `arm2` | Number | Examples: `-2, -1` | 2 |  |
-| `leg1` | Number | Examples: `-1` | 1 |  |
-| `leg2` | Number | Examples: `-1` | 1 |  |
-| `texture` | Number | Examples: `-1` | 1 |  |
 
 </details>
 
@@ -4811,52 +3881,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Antidote`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `.5, 1` | 10 |  |
-| `Blessing` | Mixed | Examples: `.5, 1` | 10 |  |
-| `BigCatnip` | Number | Examples: `6, 1, 10` | 8 |  |
-| `BiggestFood` | Number | Examples: `6, 1, 15` | 8 |  |
-| `BigScrap` | Number | Examples: `6, 1, 4.5` | 8 |  |
-| `Coin` | Number | Examples: `1, 70` | 8 |  |
-| `BigFood` | Number | Examples: `5, 20` | 4 |  |
-| `Coin10` | Mixed | Examples: `.1, 1` | 4 |  |
-| `Coin3` | Number | Examples: `1` | 4 |  |
-| `Coin4` | Number | Examples: `1` | 4 |  |
-| `MedCatnip` | Number | Examples: `5, 20` | 4 |  |
-| `MedScrap` | Number | Examples: `5, 20` | 4 |  |
-| `RandomArmorPickup` | Number | Examples: `40, 4.5` | 4 |  |
-| `RandomCatnipPickup` | Number | Examples: `10, 30` | 4 |  |
-| `RandomFoodPickup` | Number | Examples: `40, 15` | 4 |  |
-| `Bear` | Number | Examples: `1` | 2 |  |
-| `BlackBird` | Number | Examples: `3000` | 2 |  |
-| `Catepillar` | Number | Examples: `10` | 2 |  |
-| `Catnip` | Number | Examples: `20` | 2 |  |
-| `CharmedDip` | Number | Examples: `1` | 2 |  |
-| `CharmedFloater` | Number | Examples: `1` | 2 |  |
-| `CharmedPile` | Number | Examples: `1` | 2 |  |
-| `Cherub` | Number | Examples: `1` | 2 |  |
-| `Chicken` | Number | Examples: `3000` | 2 |  |
-| `Coin2` | Number | Examples: `1` | 2 |  |
-| `Dove` | Number | Examples: `1000` | 2 |  |
-| `Eagle` | Number | Examples: `300` | 2 |  |
 | `Food` | Number | Examples: `20` | 2 |  |
-| `Harpy` | Number | Examples: `1` | 2 |  |
-| `HummingBird` | Number | Examples: `300` | 2 |  |
-| `LargeBirdPool` | Number | Examples: `1` | 2 |  |
-| `MedBirdPool` | Number | Examples: `1` | 2 |  |
-| `Mutant` | Number | Examples: `1` | 2 |  |
-| `Pigeon` | Number | Examples: `3000` | 2 |  |
-| `RandomBiggerArmorPickup` | Number | Examples: `4.5` | 2 |  |
-| `RandomBiggerCatnipPickup` | Number | Examples: `10` | 2 |  |
-| `RandomBiggerFoodPickup` | Number | Examples: `15` | 2 |  |
-| `Raven` | Number | Examples: `300` | 2 |  |
-| `Scrap` | Number | Examples: `20` | 2 |  |
-| `Seagull` | Number | Examples: `1000` | 2 |  |
-| `SmallBirdPool` | Number | Examples: `1` | 2 |  |
 | `Snake` | Number | Examples: `10` | 2 |  |
-| `Squirrel` | Number | Examples: `10` | 2 |  |
-| `Toad` | Number | Examples: `10` | 2 |  |
-| `Turkey` | Number | Examples: `1000` | 2 |  |
-| `Turtle` | Number | Examples: `10` | 2 |  |
 
 </details>
 
@@ -4876,7 +3902,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_rewards`](./Miscellaneous.md#context-ally_rewards) | Object | Examples: `{ ... }` | 36 |  |
 | [`statuses`](./Miscellaneous.md#context-statuses) | Object | Examples: `{ ... }` | 10 |  |
 
 </details>
@@ -4918,9 +3943,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `size` | Number | Examples: `1.5, 4, 2` | 32 |  |
-| [`color`](./Arrays.md#array-color) | Array | Examples: `[ .3 .7 1 ], [ .7 .8 .9 ], [ .8 .9 1 ]` | 16 |  |
-| [`glow`](./Arrays.md#array-glow) | Array | Examples: `[ .7 .8 .9 .5 ], [ .3 .7 1 .5 ], [ 1 1 1 .5 ]` | 8 |  |
 
 </details>
 
@@ -4982,10 +4004,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Number | Examples: `4, 7, 10` | 30 |  |
-| `stored_food_value` | Number | Examples: `3, 2, 1` | 30 |  |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 3 4 ], [ 1 2 ], [ 5 5 ]` | 15 |  |
-| `anything_eats` | Boolean | Examples: `true` | 8 |  |
-| `force_frame` | Number | Examples: `12` | 2 |  |
 
 </details>
 
@@ -5027,10 +4045,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GOLEMSMASH_ANSW", "EVENT_MYSTERIOUSTOMB_ANSW", "EVENT_SMASH_ANSW"` | 15 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `str, none, dex` | 15 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 14 |  |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Examples: `open` | 1 |  |
 
 </details>
 
@@ -5141,9 +4156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum | Examples: `stick, tinkerer_default, allsticks` | 30 |  |
-| [`slot`](./Enums.md#enum-slot) | Enum | Examples: `random_empty_armor, trinket, weapon` | 28 |  |
 | `temporary` | Boolean | Examples: `false` | 8 |  |
-| `works_with_tech` | Boolean | Examples: `true` | 8 |  |
 
 </details>
 
@@ -5187,8 +4200,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 14 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DESTROY_ANSW"` | 14 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 14 |  |
 
 </details>
 
@@ -5289,13 +4300,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `FormShrinkThree, FormShrinkFour, DybbukPossess` | 26 |  |
-| `even_if_stunned` | Boolean | Examples: `true` | 14 |  |
-| `immediate` | Boolean | Examples: `true` | 12 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |  |
-| `use_ai` | Boolean | Examples: `true` | 4 |  |
-| `also_use_if_buddy_is_dead` | Boolean | Examples: `true` | 2 |  |
 | `aux` | Number | Examples: `25` | 2 |  |
-| [`threshold_min`](./Math_Equations.md) | Equation | Examples: `X` | 2 |  |
 
 </details>
 
@@ -5316,7 +4322,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |  |
-| `must_do_damage` | Boolean | Examples: `true` | 6 |  |
 
 </details>
 
@@ -5355,14 +4360,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `ButtWeb_AlreadyEnraged, AlienBeastGoop, ButtWeb` | 26 |  |
-| `ability_damage_only` | Boolean | Examples: `true` | 12 |  |
-| `backstabs_only` | Boolean | Examples: `true` | 4 |  |
-| `damage_threshold` | Number | Examples: `10` | 4 |  |
-| `even_if_blocked` | Boolean | Examples: `true` | 4 |  |
-| `even_if_stunned` | Boolean | Examples: `true` | 4 |  |
-| `health_threshold` | Number | Examples: `50, 70` | 4 |  |
-| `buddy_damage_only` | Boolean | Examples: `true` | 2 |  |
-| `target_furthest_valid` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -5403,7 +4400,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `full_size` | Boolean | Examples: `true` | 4 |  |
 | `stacks` | Number | Examples: `3, 4` | 4 |  |
 
 </details>
@@ -5424,7 +4420,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`disease`](./Enums.md#enum-disease) | Enum | Examples: `Cancer, CommonCold, Rabies` | 26 |  |
 | `chance` | Number | Examples: `50, 25, 30` | 24 |  |
 | `can_apply_to_anything` | Boolean | Examples: `true` | 12 |  |
 
@@ -5448,11 +4443,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `con` | Number | Examples: `3, 2, -2` | 18 |  |
 | `cha` | Number | Examples: `3, 2, -1` | 14 |  |
-| `int` | Number | Examples: `4, 2, 1` | 12 |  |
 | `spd` | Number | Examples: `1, -1, -2` | 12 |  |
 | `str` | Number | Examples: `2, -1, -2` | 12 |  |
 | `dex` | Number | Examples: `3, -1` | 8 |  |
-| `lck` | Number | Examples: `2, -1, 1` | 8 |  |
 
 </details>
 
@@ -5496,9 +4489,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`attack`](./Arrays.md#array-attack) | Array | Examples: `[ Fartoom Mutilate SkullBash Shred Chomp BodySlam SliceAn..., [ SquirrelSquad...` | 12 |  |
-| [`misc`](./Arrays.md#array-misc) | Array | Examples: `[ SelfMutilate Succ Consume BloodMagic SmellBlood Vurp Li..., [ StoneFists Br...` | 12 |  |
 | [`move`](./Arrays.md#array-move) | Array | Examples: `[ DruidSwap FlowerFeet ThornyFeet RaccoonForm HydroPump C..., [ HogRush Trudg...` | 12 |  |
-| [`defense`](./Arrays.md#array-defense) | Array | Examples: `[ SongOfSpring SummonTurtle PullToSafety Protection Safet..., [ Burp ForceFee...` | 10 |  |
 
 </details>
 
@@ -5520,9 +4511,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 12 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BASH_ANSW", "EVENT_BASHOPEN_ANSW"` | 12 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 12 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -5541,7 +4529,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tile`](./Arrays.md#array-tile) | Array | Examples: `ToxicTile, [ TallGrassTile TallFlowerTile BrambleTile ], GlassTile` | 22 |  |
-| `aoe` | Number | Examples: `1` | 4 |  |
 | [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `.25, 25` | 4 |  |
 
 </details>
@@ -5671,7 +4658,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`weights`](./Enums.md#enum-weights) | Enum | Examples: `stay_far_always_move, stay_near_allies_always_move, chaotic` | 18 |  |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `MoveOne, WaterTrailMove` | 4 |  |
 
 </details>
 
@@ -5710,12 +4696,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum | Examples: `RallyMaggots, CutterCut, SuckMF` | 6 |  |
-| [`do_all`](./Arrays.md#array-do_all) | Array | Examples: `[ MoonHead_CallForHelp MoonHead_RefreshBrace ], [ *QueenHippoUppercut QueenHi...` | 6 |  |
-| [`do_one`](./Arrays.md#array-do_one) | Array | Examples: `[ **ZaratanaVSWeatherRoar **ZaratanaVSRoar ], [ **PyrophinaVSWeatherRoar **Py...` | 2 |  |
-| [`do_random`](./Arrays.md#array-do_random) | Array | Examples: `[ TKNG_Spread TKNG_Kneel TKNG_Roulette TKNG_GoAway ], [ SimonSays_Scatter Sim...` | 2 |  |
-| [`do_nothing`](./Arrays.md#array-do_nothing) | Array | Examples: `[  ]` | 1 |  |
-| [`do_priority`](./Arrays.md#array-do_priority) | Array | Examples: `[ NCReanimate NCGravecrawlFAR ]` | 1 |  |
 
 </details>
 
@@ -5917,12 +4897,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `MoonHead_EatCat, MoonHandGrab, weapon` | 22 |  |
 | `enemies_only` | Boolean | Examples: `false, true` | 14 |  |
-| `on_self_move_too` | Boolean | Examples: `true` | 6 |  |
-| `create_temp_ability` | Boolean | Examples: `true` | 4 |  |
-| `objects_too` | Boolean | Examples: `true` | 4 |  |
-| `blind_spot` | Boolean | Examples: `true` | 2 |  |
-| `forward_only` | Boolean | Examples: `true` | 2 |  |
-| `self_move_exclude_self_abilities` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -5942,16 +4916,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `TrampleMoveOne, MoveOne, MD_WalkOne` | 10 |  |
-| `move_far` | Boolean | Examples: `false` | 8 |  |
-| [`check_in_form`](./Enums.md#enum-check_in_form) | Enum | Examples: `Boris, Default` | 4 |  |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move` | 2 |  |
-| `can_move_zero` | Boolean | Examples: `true` | 2 |  |
-| [`check_has_status`](./Enums.md#enum-check_has_status) | Enum | Examples: `FinalBossHitCountdownBoris` | 2 |  |
-| `do_not_move_on_top` | Boolean | Examples: `true` | 2 |  |
-| `face_towards_after` | Boolean | Examples: `true` | 2 |  |
-| [`ignore_tagged_sources`](./Enums.md#enum-ignore_tagged_sources) | Enum | Examples: `megadino` | 2 |  |
-| `move_short` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -6018,10 +4983,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_OPEN_ANSW"` | 8 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 8 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |  |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Examples: `smash` | 1 |  |
 
 </details>
 
@@ -6043,9 +5005,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 11 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_SNEAKBY_ANSW", EVENT_SNEAKBY_ANSW, EVENT_RUN_ANSW` | 11 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex, spd` | 11 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -6150,7 +5109,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |  |
-| [`KillEnemyOfTypeAtBattleStart`](./Miscellaneous.md#context-killenemyoftypeatbattlestart) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -6433,9 +5391,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum | Examples: `hot, Unlit, default` | 18 |  |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `very_hot, wind, water` | 16 |  |
-| [`exclude`](./Enums.md#enum-exclude) | Enum | Examples: `fire, water` | 10 |  |
-| [`particle`](./Enums.md#enum-particle) | Enum | Examples: `FireExtinguish` | 10 |  |
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `FireExtinguish` | 10 |  |
 
 </details>
 
@@ -6609,7 +5564,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Number | Examples: `3, 2, 1` | 16 |  |
 | [`object`](./Arrays.md#array-object) | Array | Examples: `TallSkeletonCatRevived, [ Squirrel Crow Snake Turtle Toad Catepillar ], Skele...` | 12 |  |
-| [`initiative`](./Enums.md#enum-initiative) | Enum | Examples: `keep_turns_end_turn` | 8 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `hatch` | 4 |  |
 | [`turns`](./Arrays.md#array-turns) | Array | Examples: `[ 1 4 ]` | 1 |  |
 
@@ -6780,7 +5734,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `HitlerPulp2, AZ_LoseHead, HitlerPulp1` | 16 |  |
-| `even_if_stunned` | Boolean | Examples: `true` | 16 |  |
 
 </details>
 
@@ -6800,8 +5753,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_offmap`](./Enums.md#enum-form_offmap) | Enum | Examples: `Insane_Ceiling, Default_Ceiling, Start_Ceiling` | 16 |  |
-| [`form_onmap`](./Enums.md#enum-form_onmap) | Enum | Examples: `Insane_Ground, Default, Default_Ground` | 16 |  |
 
 </details>
 
@@ -6867,7 +5818,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Examples: `SBotAngryMove, MoveThree, None` | 10 |  |
 | `enemies_only` | Boolean | Examples: `true` | 6 |  |
 | [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | Examples: `dc_cat, dinofamily` | 6 |  |
-| `not_on_kill` | Boolean | Examples: `true` | 4 |  |
 
 </details>
 
@@ -7011,8 +5961,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 17 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 8 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GOAROUND_ANSW", "EVENT_TAKE_ANSW"` | 8 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck, con, spd` | 8 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_dex_alt` | 1 |  |
 
 </details>
@@ -7058,8 +6006,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"1 injury", "class ability pool", "1"` | 7 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 5 |  |
 
 </details>
@@ -7080,9 +6026,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fury` | Number | Examples: `75, 10` | 8 |  |
 | `CastAgain` | Number | Examples: `2, 1` | 4 |  |
-| [`CastAgainWithStatus`](./Miscellaneous.md#context-castagainwithstatus) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -7103,8 +6047,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BASH_ANSW", "EVENT_BREAK_ANSW", "EVENT_ATTACK_ANSW"` | 7 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 7 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |  |
 
 </details>
@@ -7126,8 +6068,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"set ability pool", "5", "many injuries"` | 7 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 5 |  |
 
 </details>
@@ -7169,8 +6109,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"specific disorder", "all (symmetric)", "class passive pool"` | 7 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 5 |  |
 
 </details>
@@ -7192,10 +6130,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `TinaSpit, PteroEscape, MoonHandDrop` | 14 |  |
-| `flat_chance` | Number | Examples: `50, 100` | 10 |  |
-| `chance_per_damage` | Number | Examples: `2, 0` | 6 |  |
-| `backstabs_only` | Boolean | Examples: `true` | 2 |  |
-| `even_on_0_damage_if_knockback` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -7217,9 +6151,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `EVENT_CHARM_ANSW, "EVENT_CHARM_ANSW"` | 7 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 7 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -7352,7 +6283,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `damage` | Number | Examples: `0, 5, 8` | 14 |  |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `generic_physical, spell, melee` | 14 |  |
-| [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | Examples: `all` | 8 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ], [ Water ]` | 2 |  |
 
@@ -7374,8 +6304,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eq`](./Arrays.md#array-eq) | Array | Examples: `[ 0 WaterBottle_Empty ], [ 1 WaterBottle_Half ], [ 0 JarOfNothing ]` | 11 |  |
-| [`ge`](./Arrays.md#array-ge) | Array | Examples: `[ 2 WaterBottle_Full ], [ 3 EstusFlask_Full ]` | 4 |  |
 
 </details>
 
@@ -7397,9 +6325,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `EVENT_FIGHT_ANSW, "EVENT_FIGHT_ANSW"` | 7 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 7 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -7439,7 +6364,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `immediate` | Boolean | Examples: `true` | 4 |  |
 
 </details>
 
@@ -7560,7 +6484,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`value`](./Math_Equations.md) | Equation | Examples: `str, con, dex` | 14 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
@@ -7668,8 +6591,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_MYSTERIOUSOBELISK_TOUCH_ANSW", QEVENT_OBELISK_CORE_TOUCH_ANSW, QEVENT_...` | 7 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none, cha` | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 6 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
@@ -7693,9 +6614,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 6 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_OBELISK_CORE_ACTIVATE_ANSW, QEVENT_OBELISK_MOON_ACTIVATE_ANSW` | 6 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 6 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none, quest` | 6 |  |
 
 </details>
 
@@ -7717,9 +6635,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 6 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_OBELISK_CORE_ACTIVATE_ANSW, QEVENT_OBELISK_MOON_ACTIVATE_ANSW` | 6 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 6 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none, quest` | 6 |  |
 
 </details>
 
@@ -7952,8 +6867,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"set passive pool", "all (asymmetric)", "pool disorder"` | 6 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 6 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 5 |  |
 
 </details>
@@ -8040,10 +6953,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `QEVENT_DIMENSIONXPORTAL_ENTER_ANSW, "EVENT_ENTER_ANSW", "EVENT_HOLEINTHEEARTH...` | 6 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, con, none` | 5 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Examples: `dimensionx` | 1 |  |
 
 </details>
 
@@ -8063,8 +6973,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`priming`](./Enums.md#enum-priming) | Enum | Examples: `DualSword_Primed, Priming, SwordAndShield_Primed` | 16 |  |
-| [`not_priming`](./Enums.md#enum-not_priming) | Enum | Examples: `DualSword, NotPriming, SwordAndShield` | 12 |  |
 
 </details>
 
@@ -8085,8 +6993,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_INSPECT_ANSW"` | 6 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 6 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |  |
 
 </details>
@@ -8107,9 +7013,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`le`](./Arrays.md#array-le) | Array | Examples: `[ 10 MoneyBag_Small ], [ 50 MoneyBag_Large ], [ 25 MoneyBag_Medium ]` | 6 |  |
-| [`ge`](./Arrays.md#array-ge) | Array | Examples: `[ 10 NuclearKnife_Glowing ], [ 20 BlackShard_Glowing ]` | 2 |  |
-| [`lt`](./Arrays.md#array-lt) | Array | Examples: `[ 10 NuclearKnife ]` | 1 |  |
 
 </details>
 
@@ -8131,10 +7034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `QEVENT_GLOWINGORB_LICK_ANSW, "EVENT_LICK_ANSW", "EVENT_GOLEMLICK_ANSW"` | 6 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `con, none, cha` | 6 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -8319,7 +7219,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cleanse_on_apply` | Boolean | Examples: `false` | 2 |  |
 
 </details>
 
@@ -8363,7 +7262,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move, MoveTwo` | 10 |  |
-| [`range`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Mixed | Examples: `4, 2, global` | 10 |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 10 |  |
 
 </details>
@@ -8406,8 +7304,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_con` | 4 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 4 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_THROBBINGARTERY_BITE_ANSW, QEVENT_WALLOFFLESH_BITE2_ANSW, QEVENT_WALLO...` | 4 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str, con` | 4 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | `eyebrow_rotation` | Number | Examples: `30` | 1 |  |
 | `eyebrow_up` | Number | Examples: `10` | 1 |  |
@@ -8432,7 +7328,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ally_chance` | Number | Examples: `15, 100` | 10 |  |
 | `chance` | Number | Examples: `50, 33, 15` | 10 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |  |
 
@@ -8516,9 +7411,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 4 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BAHPHOMET_HEALTH_ANSW", "QEVENT_STACYMUTANT3_ANSW2", "EVENT_DAMAGE_ANSW"` | 4 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 3 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 3 |  |
 | `damage` | Number | Examples: `0` | 2 |  |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `none` | 2 |  |
 
@@ -8542,8 +7435,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 5 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_DRINK_ANSW", EVENT_DRINK_ANSW` | 5 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck, con` | 5 |  |
 
 </details>
 
@@ -8563,7 +7454,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `reduction` | Number | Examples: `2, 1` | 10 |  |
 | [`element`](./Arrays.md#array-element) | Array | Examples: `[ Fire Ice Electric Earth Wind Water Grass Holy Gravity ], [ Holy ], [ Fire E...` | 4 |  |
 
 </details>
@@ -8628,7 +7518,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `TheChild_Pulse, DysenteryPoop, TheChild_Wrath` | 10 |  |
 | [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `.5, 33, .2` | 6 |  |
-| `show_name` | Boolean | Examples: `true` | 4 |  |
 
 </details>
 
@@ -8675,9 +7564,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 4 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 4 |  |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Examples: `home` | 4 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_TIMEMACHINE_HOME_ANSW` | 4 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 4 |  |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `home` | 2 |  |
 
 </details>
@@ -8700,8 +7586,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 5 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_KISS_ANSW"` | 5 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 5 |  |
 
 </details>
 
@@ -8762,8 +7646,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `SpiderReturn` | 6 |  |
-| [`character_filter`](./Arrays.md#array-character_filter) | Array | Examples: `[ SpiderCat TallSpiderCat ]` | 3 |  |
 
 </details>
 
@@ -8823,7 +7705,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `revive_health` | Number | Examples: `50, 1, 100` | 8 |  |
 | `stacks` | Number | Examples: `2` | 4 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 
@@ -8847,9 +7728,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 5 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_RUN_ANSW"` | 5 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 5 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 1 |  |
 
 </details>
@@ -8871,7 +7749,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `count` | Number | Examples: `2` | 2 |  |
-| `except_tiny` | Boolean | Examples: `true` | 2 |  |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedTinySpider` | 2 |  |
 
 </details>
@@ -9056,8 +7933,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, Greater_Water` | 10 |  |
-| `full_repair` | Boolean | Examples: `true` | 10 |  |
-| [`item`](./Enums.md#enum-item) | Enum | Examples: `WaterBottle_Full, EstusFlask_Full, GallonOfWater` | 10 |  |
 
 </details>
 
@@ -9077,8 +7952,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`first_turn`](./Enums.md#enum-first_turn) | Enum | Examples: `keep_turns` | 8 |  |
-| [`obj`](./Enums.md#enum-obj) | Enum | Examples: `TallSkeletonCatCorpse, SkeletonShamblerCorpse, SkeletonCatCorpse` | 8 |  |
 
 </details>
 
@@ -9266,7 +8139,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `range` | Number | Examples: `3` | 8 |  |
 
 </details>
 
@@ -9331,7 +8203,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exclude`](./Enums.md#enum-exclude) | Enum | Examples: `SpellDamageUp` | 2 |  |
 
 </details>
 
@@ -9567,10 +8438,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean | Examples: `true` | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Examples: `future` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_TIMEMACHINE_FUTURE_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -9590,8 +8457,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalEnemyAutoRevive` | Number | Examples: `100, 30` | 4 |  |
-| `RealTimePressure` | Number | Examples: `5` | 2 |  |
 | [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -9614,8 +8479,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 4 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TAKELONGWAY_ANSW", "EVENT_GOAROUND_ANSW"` | 4 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none, spd` | 3 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 2 |  |
 
 </details>
@@ -9722,7 +8585,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
-| [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 |  |
 
 </details>
 
@@ -9825,7 +8687,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weather_roll`](./Arrays.md#array-weather_roll) | Array | Examples: `[ { weight 1 set_frame 2 prompt "EVENT_HAPPENING_FOG_REW"...` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -9849,8 +8710,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `cha` | Number | Examples: `2, 1` | 4 |  |
 | `con` | Number | Examples: `2, 1` | 4 |  |
 | `dex` | Number | Examples: `2, 1` | 4 |  |
-| `int` | Number | Examples: `2, 1` | 4 |  |
-| `lck` | Number | Examples: `2, 1` | 4 |  |
 | `spd` | Number | Examples: `2, 1` | 4 |  |
 | `str` | Number | Examples: `2, 1` | 4 |  |
 
@@ -9935,10 +8794,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 4 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 4 |  |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Examples: `iceage, jurassic, endoftime` | 4 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_TIMEMACHINE_JURASSIC_INFINITE_ANSW, QEVENT_TIMEMACHINE_ICEAGE_PAST_ANS...` | 4 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 4 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 4 |  |
 
 </details>
 
@@ -10043,10 +8898,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`brain`](./Enums.md#enum-brain) | Enum | Examples: `PatternBrain, GenericBrain` | 8 |  |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Examples: `default` | 8 |  |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Examples: `stay_close, keep_distance` | 8 |  |
-| [`pattern`](./Miscellaneous.md#context-pattern) | Object | Examples: `{ ... }` | 6 |  |
 
 </details>
 
@@ -10067,7 +8920,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `None, MoonHeadCommandStopHittingYourself` | 8 |  |
-| `slot` | Number | Examples: `2, 0, 1` | 8 |  |
 
 </details>
 
@@ -10109,8 +8961,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 4 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT3_ANSW4", "QEVENT_STACYMUTANT1_ANSW4", "QEVENT_STACYMUTANT...` | 4 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 4 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 
 </details>
@@ -10151,8 +9001,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum | Examples: `solitary_enemies, allies, enemies` | 8 |  |
-| [`obj`](./Arrays.md#array-obj) | Array | Examples: `RiftKitten, [ Spookie Spookie Scary Coin2 Coin3 Coin4 ], [ Kitten Kitten TomT...` | 4 |  |
-| [`additional_statuses`](./Miscellaneous.md#context-additional_statuses) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -10445,9 +9293,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `YA_Laser, HellHandGrab, BloatSideLaser` | 8 |  |
-| `cancel_movement` | Boolean | Examples: `false` | 4 |  |
-| `pathfinding_avoidance` | Number | Examples: `250` | 4 |  |
-| `range` | Number | Examples: `10` | 4 |  |
 
 </details>
 
@@ -10774,7 +9619,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Number | Examples: `6, 4, 2` | 6 |  |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 6 6 ], [ 1 2 ], [ 3 5 ]` | 3 |  |
 
 </details>
 
@@ -10817,9 +9661,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`obj`](./Enums.md#enum-obj) | Enum | Examples: `chapter_corpse_medium, SmallLavaRock` | 6 |  |
 | [`chance`](./Enums.md#enum-chance) | Enum | Examples: `.25, .5` | 4 |  |
-| `slide` | Number | Examples: `10` | 2 |  |
 
 </details>
 
@@ -10839,8 +9681,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_bounces` | Number | Examples: `2, 1` | 6 |  |
-| `max_range` | Number | Examples: `3, 4, 2` | 6 |  |
 
 </details>
 
@@ -10858,9 +9698,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | Examples: `false` | 6 |  |
-| [`obj`](./Enums.md#enum-obj) | Enum | Examples: `ZaratanaVS, PyrophinaVS, Dice` | 6 |  |
-| `reclaim_if_lost` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -10948,7 +9785,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `backstab_only` | Boolean | Examples: `true` | 2 |  |
 | `chance` | Number | Examples: `100` | 2 |  |
 
 </details>
@@ -11116,7 +9952,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `health_percent` | Number | Examples: `50, 100` | 6 |  |
 | `stacks` | Number | Examples: `1` | 6 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 
@@ -11160,10 +9995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_above`](./Enums.md#enum-form_above) | Enum | Examples: `Full, Default, Standing` | 6 |  |
-| [`form_below`](./Enums.md#enum-form_below) | Enum | Examples: `Standing2, DesireMech, Damaged` | 6 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
-| `count_shield` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -11268,9 +10100,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `health` | Number | Examples: `1, 25` | 6 |  |
-| `playercat_health` | Number | Examples: `25, 100` | 6 |  |
-| `immediate` | Boolean | Examples: `true` | 2 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
@@ -11292,8 +10121,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 3 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_INVESTIGATE_ANSW"` | 3 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 3 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
@@ -11396,7 +10223,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Number | Examples: `6, 4, 2` | 6 |  |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 6 6 ], [ 1 2 ], [ 3 5 ]` | 3 |  |
 
 </details>
 
@@ -11501,7 +10327,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `SwapPositions_TankCat` | 4 |  |
-| [`target_filter`](./Enums.md#enum-target_filter) | Enum | Examples: `Kitten, any` | 4 |  |
 
 </details>
 
@@ -11548,8 +10373,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 3 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCAVE3_CLIMB_ANSW", "EVENT_MYSTERIOUSCAVE1_TALKTO_ANSW", "EVE...` | 3 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str, dex, cha` | 3 |  |
 
 </details>
 
@@ -11640,8 +10463,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`slot`](./Enums.md#enum-slot) | Enum | Examples: `trinket, face, head` | 6 |  |
-| [`value`](./Math_Equations.md) | Equation | Examples: `item_aux+2, item_aux+1, item_aux-1` | 6 |  |
 
 </details>
 
@@ -11704,7 +10525,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stack_key`](./Enums.md#enum-stack_key) | Enum | Examples: `FLOWER_SET` | 6 |  |
 | `stacks` | Number | Examples: `1` | 6 |  |
 
 </details>
@@ -11866,7 +10686,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `TVChangeDie, SBotAnger` | 4 |  |
-| `wait_till_turn` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -11907,7 +10726,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_art`](./Enums.md#enum-alt_art) | Enum | Examples: `TangledMeat` | 2 |  |
 | `stacks` | Number | Examples: `1` | 2 |  |
 
 </details>
@@ -11968,8 +10786,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum | Examples: `TinkererCraft` | 6 |  |
-| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | Examples: `TinkererThrow` | 6 |  |
 
 </details>
 
@@ -12056,7 +10872,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `DestroyerRaise` | 4 |  |
-| `force_display_name` | Boolean | Examples: `true` | 4 |  |
 
 </details>
 
@@ -12216,7 +11031,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `PlayerCat_ThiefShade` | 4 |  |
-| `skilltemp` | Boolean | Examples: `true` | 4 |  |
 
 </details>
 
@@ -12356,8 +11170,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance_to_break` | Number | Examples: `5, 10` | 4 |  |
-| `durability_loss` | Number | Examples: `0` | 4 |  |
 
 </details>
 
@@ -12379,9 +11191,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_GLOWINGORB_ANTENNA_ANSW, QEVENT_VOLCANO_ANTENNA_ANSW` | 2 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 2 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 2 |  |
 
 </details>
 
@@ -12549,8 +11358,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BEEPIS_ANSW", "EVENT_BOOGERS_ANSW"` | 2 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 2 |  |
 
 </details>
 
@@ -12682,9 +11489,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BecomeTheDestroyer, BungaEntrance` | 4 |  |
-| `even_if_stunned` | Boolean | Examples: `true` | 4 |  |
-| `health_threshold` | Number | Examples: `-1, 150` | 4 |  |
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Examples: `bungawarrior, finalboss_clonecat` | 4 |  |
 
 </details>
 
@@ -12775,8 +11579,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Leave`](./Enums.md#enum-leave) | Enum | Examples: `CherubimLeave, LELeave` | 4 |  |
-| [`Return`](./Enums.md#enum-return) | Enum | Examples: `LEReturn, CherubimReturn` | 4 |  |
 
 </details>
 
@@ -12996,7 +11798,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSMACHINE_COPY_ANSW"` | 2 |  |
 
 </details>
 
@@ -13039,9 +11840,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `head_IronJaw, neck_TentacleArmorCounter, StegoTailSwipe` | 10 |  |
 | `chance` | Number | Examples: `15` | 2 |  |
-| `melee_only` | Boolean | Examples: `true` | 2 |  |
-| `ranged_only` | Boolean | Examples: `true` | 2 |  |
-| `without_orienting` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -13189,7 +11987,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum | Examples: `Simon_Tentacle, Simon_Trash, attack` | 6 |  |
 
 </details>
 
@@ -13420,7 +12217,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `use_turn_animations` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -13441,10 +12237,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JAGEDPATHWAY_ANSW_AROUND", "EVENT_FINDANOTHERWAY_ANSW"` | 2 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -13490,8 +12284,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ]` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT2_ANSW1"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -13512,7 +12304,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | Examples: `true` | 2 |  |
 | `stacks` | Number | Examples: `2` | 2 |  |
 
 </details>
@@ -13937,8 +12728,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Ice ]` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT2_ANSW2"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -13960,7 +12749,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `wp_NuclearKnifeExplode` | 2 |  |
-| `even_if_stunned` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -13980,8 +12768,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weapon`](./Enums.md#enum-weapon) | Enum | Examples: `MonkFist, ButcherHook` | 4 |  |
-| [`trinket`](./Enums.md#enum-trinket) | Enum | Examples: `MonkStyleChanger` | 2 |  |
 
 </details>
 
@@ -14250,8 +13036,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Electric ]` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT2_ANSW3"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -14419,8 +13203,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Cat`](./Miscellaneous.md#context-cat) | Object | Examples: `{ ... }` | 4 |  |
-| [`NonCat`](./Miscellaneous.md#context-noncat) | Object | Examples: `{ ... }` | 4 |  |
-| [`Nothing`](./Miscellaneous.md#context-nothing) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -14442,8 +13224,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ELEPHANTSFOOT_ANSW", "EVENT_ELEPHANTSFOOTCLOSER_ANSW"` | 2 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 2 |  |
 
 </details>
 
@@ -14463,7 +13243,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `BirdFly` | 2 |  |
 
 </details>
 
@@ -15105,9 +13884,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `count` | Number | Examples: `1` | 2 |  |
-| `ears` | Number | Examples: `-2` | 2 |  |
-| `eyebrows` | Number | Examples: `-2` | 2 |  |
-| `eyes` | Number | Examples: `-2` | 2 |  |
 | `mouth` | Number | Examples: `-2` | 2 |  |
 
 </details>
@@ -15335,8 +14111,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_ANSW"` | 2 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 2 |  |
 
 </details>
 
@@ -15358,8 +14132,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_FEEBIS_ANSW", "EVENT_POOP_ANSW"` | 2 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 2 |  |
 
 </details>
 
@@ -15422,7 +14194,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSMACHINE_PRINT_ANSW"` | 2 |  |
 
 </details>
 
@@ -15444,8 +14215,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PROTECTION_ANSW", "EVENT_CUTS_ANSW"` | 2 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 2 |  |
 
 </details>
 
@@ -15529,7 +14298,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 4 |  |
-| [`text`](./Strings.md#string-text) | String | Examples: `"COMBAT_POPUP_RECHARGED"` | 4 |  |
 
 </details>
 
@@ -15550,9 +14318,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | Mixed | Examples: `EVENT_REPAIR_ANSW, "EVENT_REPAIR_ANSW"` | 2 |  |
-| [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none` | 2 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -15595,10 +14360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_VOLCANO_SACRIFICE_ANSW", "EVENT_BAHPHOMET_SACRIFICE_ANSW"` | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -15620,7 +14382,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSMACHINE_SCALE_ANSW"` | 2 |  |
 
 </details>
 
@@ -15660,7 +14421,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stackable` | Boolean | Examples: `true` | 4 |  |
 | [`stacks`](./Math_Equations.md) | Equation | Examples: `item_aux, "max(min(X+1, item_aux), 0)"` | 4 |  |
 
 </details>
@@ -15722,7 +14482,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `include_coins` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -15742,10 +14501,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SlotResult_Jackpot_Coins` | Number | Examples: `1` | 4 |  |
-| `SlotResult_Explode` | Number | Examples: `1` | 2 |  |
-| `SlotResult_Nothing` | Number | Examples: `7` | 2 |  |
-| `SlotResult_RandomPickup` | Number | Examples: `11` | 2 |  |
 
 </details>
 
@@ -15851,7 +14606,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `break_on_pop_only` | Boolean | Examples: `true` | 4 |  |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `PyrophinaFamiliar, ZaratanaFamiliar` | 4 |  |
 
 </details>
@@ -15979,8 +14733,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stack_key`](./Enums.md#enum-stack_key) | Enum | Examples: `FANNY_PACK, EMPTY_GENERATOR` | 4 |  |
-| `expires_on_end_turn` | Boolean | Examples: `true` | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
@@ -16260,7 +15012,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SerratedClaws` | Number | Examples: `1` | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -17577,8 +16328,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TURNONTV_ANSW", "EVENT_MYSTERIOUSMACHINE_TURNITON_ANSW"` | 2 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck, int` | 2 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -17961,8 +16710,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | Examples: `1` | 2 |  |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_USE_WEAPON_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -18022,7 +16769,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `reset_percent` | Number | Examples: `50` | 2 |  |
 | `stacks` | Number | Examples: `0` | 2 |  |
 
 </details>
@@ -18084,7 +16830,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `wp_SignalAmplifierSpawnTerminator` | 2 |  |
-| `even_of_stunned` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -18104,7 +16849,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `add` | Number | Examples: `5` | 2 |  |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `treasure_box` | 2 |  |
 
 </details>
@@ -18366,10 +17110,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`brain`](./Enums.md#enum-brain) | Enum | Examples: `PatternBrain` | 2 |  |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Examples: `default` | 2 |  |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Examples: `keep_distance` | 2 |  |
-| [`pattern`](./Miscellaneous.md#context-pattern) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -18389,7 +17131,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `include_spells` | Boolean | Examples: `true` | 2 |  |
 | `stacks` | Number | Examples: `1` | 2 |  |
 
 </details>
@@ -18432,8 +17173,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum | Examples: `humanoid` | 2 |  |
-| [`range`](./Enums.md#enum-range) | Enum | Examples: `global` | 2 |  |
 | `stacks` | Number | Examples: `1` | 2 |  |
 
 </details>
@@ -18476,7 +17215,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | Examples: `25` | 2 |  |
-| `range` | Number | Examples: `1` | 2 |  |
 
 </details>
 
@@ -18538,8 +17276,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"king intro"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -18684,8 +17420,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ARMINSIDE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -18707,9 +17441,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_THEHEAD_AMPLIFIER_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -18731,9 +17462,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_THROBBINGARTERY_ATTACH_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -18990,9 +17718,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BASH_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 
 </details>
 
@@ -19012,11 +17737,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bite` | Number | Examples: `1` | 2 |  |
-| `DemonicGlyph_Bounce` | Number | Examples: `1` | 2 |  |
-| `DemonicGlyph_Fire` | Number | Examples: `1` | 2 |  |
-| `DemonicGlyph_Movement` | Number | Examples: `1` | 2 |  |
-| `DemonicGlyph_Summon` | Number | Examples: `1` | 2 |  |
 
 </details>
 
@@ -22226,8 +20946,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BIGTOE_BITE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -22319,10 +21037,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Examples: `red` | 1 |  |
-| `fixed_chance` | Number | Examples: `50` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BLUE_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -22344,9 +21058,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_NEEDLES_BLUE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -22366,8 +21077,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_GENIE_CHOICE_CURSEBODY` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -22452,8 +21161,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SOMEOLDBOOK_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -22543,8 +21250,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT1_ANSW2"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -22565,7 +21270,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_FROZENHUMANOID_BREAKICE_ANSW"` | 1 |  |
 
 </details>
 
@@ -22586,8 +21290,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LOCKEDCRATE_BREAK_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -22610,8 +21312,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_BRIBE_ANSW` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -22653,11 +21353,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_damage`](./Enums.md#enum-ally_damage) | Enum | Examples: `littleboo` | 2 |  |
-| [`ally_dead`](./Enums.md#enum-ally_dead) | Enum | Examples: `bigboo` | 2 |  |
-| [`enemy_damage`](./Enums.md#enum-enemy_damage) | Enum | Examples: `littlecheer` | 2 |  |
-| [`enemy_dead`](./Enums.md#enum-enemy_dead) | Enum | Examples: `bigcheer` | 2 |  |
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Examples: `bungawarrior` | 2 |  |
 
 </details>
 
@@ -23249,10 +21944,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Examples: `lever` | 1 |  |
-| `fixed_chance` | Number | Examples: `50` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PUSHBUTTON_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -23274,12 +21965,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_one` | 1 |  |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BUY_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `coins` | 1 |  |
-| `stat_max` | Number | Examples: `1` | 1 |  |
-| `stat_min` | Number | Examples: `1` | 1 |  |
 
 </details>
 
@@ -23550,8 +22236,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CATCH_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |  |
 
 </details>
 
@@ -23571,7 +22255,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `head` | Number | Examples: `1.3` | 2 |  |
 
 </details>
 
@@ -23686,8 +22369,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alert_form`](./Enums.md#enum-alert_form) | Enum | Examples: `Alert` | 2 |  |
-| [`default_form`](./Enums.md#enum-default_form) | Enum | Examples: `Normal` | 2 |  |
 
 </details>
 
@@ -23750,8 +22431,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEATH_CHALLENGE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -23773,7 +22452,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | Examples: `25` | 2 |  |
-| [`event`](./Enums.md#enum-event) | Enum | Examples: `Blessing` | 2 |  |
 
 </details>
 
@@ -23815,8 +22493,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"chaos ending"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -23856,9 +22532,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `passives_health_threshold` | Number | Examples: `50` | 2 |  |
-| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | Examples: `[ Johnny Throb Flush ]` | 1 |  |
-| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | Examples: `[ Host Nettle Bubs ]` | 1 |  |
 
 </details>
 
@@ -23878,8 +22551,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | Examples: `[ Johnny Throb Flush ]` | 1 |  |
-| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | Examples: `[ Host Nettle Bubs ]` | 1 |  |
 
 </details>
 
@@ -23900,7 +22571,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `ChaosSpawnIn` | 2 |  |
-| [`new_music`](./Enums.md#enum-new_music) | Enum | Examples: `chaos_boss_part2` | 2 |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `riftheadguardian` | 2 |  |
 
 </details>
@@ -23922,8 +22592,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"chap"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -23968,9 +22636,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CHARM_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 
 </details>
 
@@ -24189,8 +22854,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CLIMB_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -24322,8 +22985,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_COMFORT_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 
 </details>
 
@@ -24344,8 +23005,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_COMMUNICATE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -24390,8 +23049,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GETINTHEHOLE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -24805,8 +23462,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT4_ANSW2"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -24827,8 +23482,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CRACKOPEN_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -24870,7 +23523,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CROSS_ANSW"` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -24918,8 +23570,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CUTWIRES_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 
 </details>
 
@@ -24961,8 +23611,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEMONICIDOL_1DAMAGE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -24983,8 +23631,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEMONICIDOL_FULLDAMAGE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -25007,8 +23653,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEMONICIDOL_HALFDAMAGE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -25028,8 +23672,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `heaviestMelee` | Number | Examples: `20` | 2 |  |
-| `heavyMelee` | Number | Examples: `10` | 2 |  |
 
 </details>
 
@@ -25246,8 +23888,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"desert"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -25364,8 +24004,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GETINTHEHOLE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -25406,8 +24044,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dice_size` | Number | Examples: `6` | 2 |  |
-| `knockback_damage` | Number | Examples: `5` | 2 |  |
 
 </details>
 
@@ -25469,9 +24105,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DIG_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 
 </details>
 
@@ -25493,8 +24126,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DISARM_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -25541,8 +24172,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DIVE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -25607,8 +24236,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"Donate"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -25630,13 +24257,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_ten` | 1 |  |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DONATE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `coins` | 1 |  |
-| `stat_max` | Number | Examples: `10` | 1 |  |
-| `stat_min` | Number | Examples: `10` | 1 |  |
 
 </details>
 
@@ -25658,13 +24279,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_ten` | 1 |  |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DONATE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `coins` | 1 |  |
-| `stat_max` | Number | Examples: `15` | 1 |  |
-| `stat_min` | Number | Examples: `15` | 1 |  |
 
 </details>
 
@@ -25686,13 +24301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_twentyfive` | 1 |  |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DONATE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `coins` | 1 |  |
-| `stat_max` | Number | Examples: `20` | 1 |  |
-| `stat_min` | Number | Examples: `20` | 1 |  |
 
 </details>
 
@@ -25714,13 +24323,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_one` | 1 |  |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DONATE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `coins` | 1 |  |
-| `stat_max` | Number | Examples: `5` | 1 |  |
-| `stat_min` | Number | Examples: `5` | 1 |  |
 
 </details>
 
@@ -25830,8 +24433,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT4_ANSW1"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -26202,8 +24803,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LEAKINGMEAT_EAT_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -26287,8 +24886,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCRATER_ENTER_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -26445,7 +25042,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GIFTOFGLORG_FACE_ANSW"` | 1 |  |
 
 </details>
 
@@ -26695,9 +25291,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability_damage_only` | Boolean | Examples: `true` | 2 |  |
-| `override_hit_animation` | Boolean | Examples: `true` | 2 |  |
-| `use_turn_animations` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -27473,9 +26066,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_EXAMINE_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -27545,9 +26135,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_THEHEAD_FILLJAR_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -27567,9 +26154,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`queue`](./Enums.md#enum-queue) | Enum | Examples: `TheChild_TargetBeam` | 2 |  |
-| [`release`](./Enums.md#enum-release) | Enum | Examples: `TheChild_ReleaseBeams` | 2 |  |
-| [`transform`](./Enums.md#enum-transform) | Enum | Examples: `TheChild_TransformBoris` | 2 |  |
 
 </details>
 
@@ -27609,8 +26193,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon` | Number | Examples: `802` | 2 |  |
-| `icon_ready` | Number | Examples: `803` | 2 |  |
 | `stacks` | Number | Examples: `7` | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
@@ -27632,8 +26214,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon` | Number | Examples: `800` | 2 |  |
-| `icon_ready` | Number | Examples: `801` | 2 |  |
 | `stacks` | Number | Examples: `7` | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
@@ -27655,8 +26235,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon` | Number | Examples: `804` | 2 |  |
-| `icon_ready` | Number | Examples: `805` | 2 |  |
 | `stacks` | Number | Examples: `7` | 2 |  |
 
 </details>
@@ -27678,12 +26256,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `radius` | Number | Examples: `13` | 2 |  |
-| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Enum | Examples: `.1` | 2 |  |
-| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Enum | Examples: `.05` | 2 |  |
-| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Enum | Examples: `.01` | 2 |  |
-| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Enum | Examples: `.1` | 2 |  |
-| [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | Examples: `[ 0 2.5 0 ]` | 1 |  |
-| [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | Examples: `[ 11 2 11 ]` | 1 |  |
 
 </details>
 
@@ -27703,8 +26275,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`break_ability`](./Enums.md#enum-break_ability) | Enum | Examples: `DestroyerBreakShield` | 2 |  |
-| [`state_health`](./Arrays.md#array-state_health) | Array | Examples: `[ 0 35 35 35 35 0 ]` | 1 |  |
 
 </details>
 
@@ -27724,8 +26294,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`other_character`](./Enums.md#enum-other_character) | Enum | Examples: `MegaGuppy` | 2 |  |
-| [`other_form_change_abilities`](./Miscellaneous.md#context-other_form_change_abilities) | Object | Examples: `{ ... }` | 2 |  |
 
 </details>
 
@@ -27746,8 +26314,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GOLEMFIND_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -28038,8 +26604,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_FLUSHYOURSELF_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -28147,8 +26711,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_FOLLOW_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |  |
 
 </details>
 
@@ -28647,8 +27209,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_FREE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -28813,8 +27373,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BODYOFGLORG_PARASITE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
 
@@ -28982,8 +27540,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_HACK_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 
 </details>
 
@@ -29186,7 +27742,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GIFTOFGLORG_HEAD_ANSW"` | 1 |  |
 
 </details>
 
@@ -29228,7 +27783,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | Examples: `true` | 2 |  |
 | `stacks` | Number | Examples: `3` | 2 |  |
 
 </details>
@@ -29333,8 +27887,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT1_ANSW3"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -29721,8 +28273,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT3_ANSW1"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -29742,8 +28292,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`clipname`](./Enums.md#enum-clipname) | Enum | Examples: `poopmain` | 2 |  |
-| [`thresholds`](./Arrays.md#array-thresholds) | Array | Examples: `[ [ 1 0 ]` | 1 |  |
 
 </details>
 
@@ -29852,10 +28400,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Examples: `endoftime` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_TIMEMACHINE_THEEND_INFINITE_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -29969,8 +28513,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GETINTHEHOLE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 
 </details>
 
@@ -29992,8 +28534,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_INTIMIDATION_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -30036,8 +28576,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ITCHIES_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -30385,8 +28923,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum | Examples: `Unwashed` | 2 |  |
-| [`form_washed`](./Enums.md#enum-form_washed) | Enum | Examples: `Washed` | 2 |  |
 
 </details>
 
@@ -30429,8 +28965,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JOININ_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 
 </details>
 
@@ -30473,8 +29007,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JUMPOVER_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |  |
 
 </details>
 
@@ -30496,8 +29028,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JUMPOVER_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -30558,7 +29088,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_KEEPGOING_ANSW"` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -30581,8 +29110,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LEAKINGMEAT_KISS_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 
 </details>
 
@@ -30604,8 +29131,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"Get a knife"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -30626,7 +29151,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `knockback` | Number | Examples: `10` | 2 |  |
-| `override_chain_knockback` | Number | Examples: `10` | 2 |  |
 
 </details>
 
@@ -30753,8 +29277,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JAGGEDPATHWAY_STALACTITE_ANSW2"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -30776,8 +29298,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LEGINSIDE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -30870,10 +29390,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| `fixed_chance` | Number | Examples: `50` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PULLLEVER_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -30895,9 +29412,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LICK_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -30942,8 +29456,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LISTEN_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 
 </details>
 
@@ -30985,8 +29497,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_GENIE_CHOICE_LOOKS` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -31008,9 +29518,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_DEADKING_TAKEHEART_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -31074,7 +29581,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Number | Examples: `1` | 2 |  |
-| `tickdown_this_turn` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -31120,8 +29626,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MAKEUP_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -31367,10 +29871,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head_drop`](./Enums.md#enum-head_drop) | Enum | Examples: `MD_HeadDrop` | 2 |  |
-| [`leg_leave`](./Enums.md#enum-leg_leave) | Enum | Examples: `MD_LegLeave` | 2 |  |
-| [`leg_return`](./Enums.md#enum-leg_return) | Enum | Examples: `MD_LegReturn` | 2 |  |
-| `stable_legs` | Number | Examples: `3` | 2 |  |
 
 </details>
 
@@ -31685,8 +30185,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_GENIE_CHOICE_CURSEMIND` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -31706,7 +30204,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`sound_event`](./Enums.md#enum-sound_event) | Enum | Examples: `EatAntidote` | 2 |  |
 
 </details>
 
@@ -31753,8 +30250,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `attack` | 6 |  |
 | [`move`](./Enums.md#enum-move) | Enum | Examples: `move` | 4 |  |
 | [`spell`](./Enums.md#enum-spell) | Enum | Examples: `MCHadouken` | 2 |  |
-| [`trinket`](./Enums.md#enum-trinket) | Enum | Examples: `MCHadouken` | 2 |  |
-| [`weapon`](./Enums.md#enum-weapon) | Enum | Examples: `attack` | 2 |  |
 
 </details>
 
@@ -31814,8 +30309,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eat_damage`](./Miscellaneous.md#context-eat_damage) | Object | Examples: `{ ... }` | 2 |  |
-| [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | Examples: `MotherTumor` | 2 |  |
 
 </details>
 
@@ -31836,11 +30329,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Cat`](./Miscellaneous.md#context-cat) | Object | Examples: `{ ... }` | 2 |  |
-| [`grow_ability`](./Enums.md#enum-grow_ability) | Enum | Examples: `MotherTumorGrow` | 2 |  |
-| [`NonCat`](./Miscellaneous.md#context-noncat) | Object | Examples: `{ ... }` | 2 |  |
-| [`pass_ani`](./Enums.md#enum-pass_ani) | Enum | Examples: `pass` | 2 |  |
-| [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | Examples: `receive` | 2 |  |
-| [`considered_forms`](./Arrays.md#array-considered_forms) | Array | Examples: `[ Big BigHolding BigHoldingCat ]` | 1 |  |
 
 </details>
 
@@ -31860,8 +30348,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eject_ability`](./Enums.md#enum-eject_ability) | Enum | Examples: `MechSuitEject` | 2 |  |
-| [`enter_ability`](./Enums.md#enum-enter_ability) | Enum | Examples: `EnterMech` | 2 |  |
 
 </details>
 
@@ -31964,8 +30450,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `YA_Jetpack` | 2 |  |
-| `once_per_turn` | Boolean | Examples: `true` | 2 |  |
 | [`weights`](./Enums.md#enum-weights) | Enum | Examples: `stay_far_always_move` | 2 |  |
 
 </details>
@@ -32183,7 +30667,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`obj`](./Enums.md#enum-obj) | Enum | Examples: `Maggot` | 2 |  |
 | [`count`](./Arrays.md#array-count) | Array | Examples: `[ 0 2 ]` | 1 |  |
 
 </details>
@@ -32275,7 +30758,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GIFTOFGLORG_NECK_ANSW"` | 1 |  |
 
 </details>
 
@@ -32470,8 +30952,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_NOTHANKS_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -32947,7 +31427,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`Boris`](./Enums.md#enum-boris) | Enum | Examples: `MegaGuppy_TransformBoris` | 2 |  |
 | [`Explosive`](./Enums.md#enum-explosive) | Enum | Examples: `MegaGuppy_TransformExplosive` | 2 |  |
-| [`Holy`](./Enums.md#enum-holy) | Enum | Examples: `MegaGuppy_TransformHoly` | 2 |  |
 
 </details>
 
@@ -32988,8 +31467,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BUTCHTUTORIAL_OUTSMART_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 
 </details>
 
@@ -33110,8 +31587,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PATCHUP_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -33182,8 +31657,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LOCKEDCRATE_PICK_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -33204,8 +31677,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PILFER_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -33228,8 +31699,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PIROUETTE_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -33251,9 +31720,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_WALLOFFLESH_PLACE_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -33339,8 +31805,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_GENIE_CHOICE_POWER` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -33432,8 +31896,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PULLKNIFE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -33456,8 +31918,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JAGGEDPATHWAY_STALACTITE_ANSW1"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -33479,7 +31939,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ODDDEVICE_PULLLEVER_ANSW"` | 1 |  |
 
 </details>
 
@@ -33833,8 +32292,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCHAMBER_PURIFY_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -33856,7 +32313,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ODDDEVICE_PUSHBUTTONS_ANSW"` | 1 |  |
 
 </details>
 
@@ -33877,8 +32333,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JAGEDPATHWAY_ANSW_PUSH"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -33900,12 +32354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_ten` | 1 |  |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_VENDINGMACHINE_COINS_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `coins` | 1 |  |
-| `stat_max` | Number | Examples: `10` | 1 |  |
-| `stat_min` | Number | Examples: `10` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -33927,8 +32376,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_PUTOUTOFMISERY_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -34332,8 +32779,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SMALLBLACKHOLE_REACHINSIDE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |  |
 
 </details>
 
@@ -34354,8 +32799,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_READ_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -34426,9 +32869,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"Receive"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -34450,10 +32890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| `fixed_chance` | Number | Examples: `50` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_RED_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -34475,9 +32912,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_NEEDLES_RED_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -34499,8 +32933,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT4_ANSW3"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -34521,8 +32953,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_REMOVE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -34545,8 +32975,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BIGTOE_NAIL_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -34567,9 +32995,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_REPAIR_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -34590,8 +33015,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_REST_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -34633,8 +33056,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_REVIVE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -34654,7 +33075,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_priority`](./Arrays.md#array-do_priority) | Array | Examples: `[ MutateAOE SpawnMaggots ]` | 1 |  |
 
 </details>
 
@@ -34675,8 +33095,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_RUB_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -34699,9 +33117,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_RUN_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |  |
 
 </details>
 
@@ -34722,8 +33137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_RUNAWAY_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -34765,8 +33178,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allow_decision_mid_turn` | Boolean | Examples: `true` | 2 |  |
-| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | Examples: `Legacy_Marshmallow_StolenCatID` | 2 |  |
 
 </details>
 
@@ -34788,9 +33199,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_VOLCANO_SACRIFICE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -34812,9 +33220,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_MEATALTAR_SACRIFICE_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -34836,9 +33241,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_VOLCANO_SACRIFICE_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -34861,9 +33263,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_MEATALTAR_SACRIFICE_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -35053,7 +33452,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`default`](./Enums.md#enum-default) | Enum | Examples: `bite1` | 2 |  |
-| [`thresholds`](./Arrays.md#array-thresholds) | Array | Examples: `[ [ 5 bite2 ]` | 1 |  |
 
 </details>
 
@@ -35094,8 +33492,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GOLEMSCREAM_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -35178,8 +33574,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_VENDINGMACHINE_SHAKE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 
 </details>
 
@@ -35384,7 +33778,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pop_chance` | Number | Examples: `50` | 2 |  |
 | `stacks` | Number | Examples: `2` | 2 |  |
 
 </details>
@@ -35407,8 +33800,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SLIPTHROUGH_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -35587,8 +33978,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SNEAKBY_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -35610,9 +33999,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SNEAKBY_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |  |
 
 </details>
 
@@ -35678,8 +34064,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_GENIE_CHOICE_CURSESOUL` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -35765,8 +34149,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT3_ANSW3"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -35786,12 +34168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fire` | Number | Examples: `1` | 2 |  |
-| `FireFull` | Number | Examples: `1` | 2 |  |
 | `Normal` | Number | Examples: `0` | 2 |  |
-| `NormalFull` | Number | Examples: `0` | 2 |  |
-| `Tar` | Number | Examples: `2` | 2 |  |
-| `TarFull` | Number | Examples: `2` | 2 |  |
 
 </details>
 
@@ -36259,7 +34636,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `pulse3` | 2 |  |
-| `consume` | Boolean | Examples: `true` | 2 |  |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Counterspell` | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
@@ -37444,8 +35820,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_dead_ani`](./Enums.md#enum-alt_dead_ani) | Enum | Examples: `off` | 2 |  |
-| [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum | Examples: `shutdown` | 2 |  |
 
 </details>
 
@@ -37490,8 +35864,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SURPRISE_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -37533,8 +35905,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEATH_SWEETTALK_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 
 </details>
 
@@ -37556,8 +35926,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SWIM_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 
 </details>
 
@@ -37577,8 +35945,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_in`](./Enums.md#enum-form_in) | Enum | Examples: `Water` | 2 |  |
-| [`form_out`](./Enums.md#enum-form_out) | Enum | Examples: `Out` | 2 |  |
 
 </details>
 
@@ -37643,7 +36009,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`no_buddy`](./Enums.md#enum-no_buddy) | Enum | Examples: `Rage` | 2 |  |
 
 </details>
 
@@ -37663,7 +36028,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array | Examples: `[ [ T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T...` | 1 |  |
 
 </details>
 
@@ -37685,8 +36049,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TAILINSIDE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -37708,9 +36070,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_DEADKING_DRAINBLOOD_ANSW` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `quest` | 1 |  |
 
 </details>
 
@@ -37755,8 +36114,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_TALKTO_ANSW` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 
 </details>
 
@@ -37777,8 +36134,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TALKTO_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -37850,8 +36205,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TAPPYTOES_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -37918,8 +36271,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCHAMBER_TELEPORT_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -37939,7 +36290,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `T2GoopRun` | 2 |  |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Examples: `stay_far_always_move` | 2 |  |
 
 </details>
@@ -37982,7 +36332,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Brace` | 2 |  |
-| [`groups`](./Arrays.md#array-groups) | Array | Examples: `[ { stacks 48 ParticleBurst Gibs_terminatorskin CatPartsT...` | 1 |  |
 
 </details>
 
@@ -38154,8 +36503,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT1_ANSW1"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -38280,8 +36627,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_HOLEINTHEEARTH_THROW_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -38348,8 +36693,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"Go to The Past"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -38877,9 +37220,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum | Examples: `ModelingClay_Default` | 2 |  |
-| [`add`](./Arrays.md#array-add) | Array | Examples: `[ 0.05 0.05 0.05 ]` | 1 |  |
-| [`mul`](./Arrays.md#array-mul) | Array | Examples: `[ 0.45 0.3 0.25 ]` | 1 |  |
 
 </details>
 
@@ -39176,7 +37516,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TRAVERSETHENECROPOLIS_ANSW"` | 1 |  |
 
 </details>
 
@@ -39312,11 +37651,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Dumb` | Number | Examples: `3` | 2 |  |
-| `Fuck` | Number | Examples: `5` | 2 |  |
-| `Obey` | Number | Examples: `1` | 2 |  |
-| `Shit` | Number | Examples: `4` | 2 |  |
-| `Stop` | Number | Examples: `2` | 2 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -39401,7 +37735,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `MD_Lift` | 2 |  |
-| `even_if_stunned` | Boolean | Examples: `true` | 2 |  |
 
 </details>
 
@@ -39694,8 +38027,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCHAMBER_UPGRADE_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 
@@ -39742,8 +38073,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_USE_ITEM_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -39766,8 +38095,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_USETOILET_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -39788,8 +38115,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_USETOILET_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -39811,7 +38136,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `Destroyer2HolyAttack, T3Pebbles_BoulderDrop` | 4 |  |
-| `respect_prime` | Boolean | Examples: `true` | 4 |  |
 
 </details>
 
@@ -39918,8 +38242,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CRATERWEATHER_ANSW1"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -39941,8 +38263,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CRATERWEATHER_ANSW2"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -39964,8 +38284,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CRATERWEATHER_ANSW3"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -39987,8 +38305,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CRATERWEATHER_ANSW4"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40010,8 +38326,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CRATERWEATHER_ANSW5"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40033,8 +38347,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CRATERWEATHER_ANSW6"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40144,8 +38456,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_GENIE_CHOICE_WEALTH` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40614,8 +38924,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_WHEEZIES_ANSW"` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
@@ -40707,9 +39015,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MONKEYPAW_WISH2"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40730,9 +39035,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MONKEYPAW_WISH3"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40753,9 +39055,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MONKEYPAW_WISH4"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40776,9 +39075,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MONKEYPAW_WISH1"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |  |
 
 </details>
 
@@ -40800,8 +39096,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ELEPHANTSFOOTEVENCLOSER_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |  |
 
 </details>
 
@@ -40872,8 +39166,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BIGTOE_YANK_ANSW"` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |  |
 
 </details>
 
@@ -40895,9 +39187,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |  |
-| [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_NEEDLES_YELLOW_ANSW"` | 1 |  |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |  |
-| [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |  |
 
 </details>
 

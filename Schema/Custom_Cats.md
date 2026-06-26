@@ -36,7 +36,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `frame` | Integer |  | 4 |  |
-| `texture` | Integer |  | 4 |  |
 
 </details>
 
@@ -55,7 +54,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `frame` | Integer |  | 4 |  |
-| `texture` | Integer |  | 4 |  |
 
 </details>
 
