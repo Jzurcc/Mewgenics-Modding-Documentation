@@ -17,9 +17,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object || 982 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 ||
-| `id` | Integer || 16 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object || 461 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 ||
+| `id` | Integer || 14 ||
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum || 13 ||
 | [`text`](./Strings.md#string-text) | String || 13 ||
 | [`scars`](#object-scars) | Object || 10 ||
@@ -42,13 +42,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer || 65 ||
-| `spd` | Enum / Integer || 53 ||
-| `cha` | Enum / Integer || 46 ||
-| `int` | Enum / Integer || 46 ||
-| `str` | Enum / Integer || 42 ||
-| `dex` | Enum / Integer || 34 ||
-| `lck` | Enum / Integer || 29 ||
+| `con` | Enum / Integer || 34 ||
+| `spd` | Enum / Integer || 27 ||
+| `cha` | Enum / Integer || 24 ||
+| `int` | Enum / Integer || 24 ||
+| `str` | Enum / Integer || 22 ||
+| `dex` | Enum / Integer || 18 ||
+| `lck` | Enum / Integer || 16 ||
 
 </details>
 

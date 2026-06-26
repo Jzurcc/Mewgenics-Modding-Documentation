@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Examples: `{ ... }` | 4719 ||
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Examples: `{ ... }` | 2372 ||
 | [`breakdown`](Miscellaneous.md#object-breakdown) | Object | Examples: `{ ... }` | 24 ||
 | [`item_groups`](Miscellaneous.md#object-item_groups) | Object | Examples: `{ ... }` | 24 ||
 | [`item_rarity_costs`](Miscellaneous.md#object-item_rarity_costs) | Object | Examples: `{ ... }` | 9 ||
@@ -46,10 +46,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object | Examples: `0, 15, 10` | 21 ||
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Examples: `rare, shop_common, treasure_easy` | 18 ||
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | Examples: `rare, shop_common, treasure_easy` | 37 ||
 | `mandatory` | Boolean | Examples: `true` | 14 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 ||
-| [`weight`](./Enums.md) | Integer || 4 | 5 |
+| [`weight`](./Enums.md) | Integer || 2 | 5 |
 
 </details>
 
@@ -182,7 +182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `very_rare` | Number | Examples: `80, 40, 15` | 9 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 ||
 | [`common`](./Enums.md) | Integer || 9 | 7 |
-| [`rare`](./Enums.md) | Integer || 13 | 20 |
+| [`rare`](./Enums.md) | Integer || 9 | 20 |
 
 </details>
 
@@ -222,7 +222,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 10 ||
+| [`Item`](Engine_LogicKeys.md#object-item) | Object | Examples: `{ ... }` | 6 ||
 
 </details>
 
@@ -267,7 +267,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `amount` | Array | Examples: `10` | 4 ||
 | [`cost`](Abilities_and_Spells.md#object-cost) | Object | Examples: `5` | 4 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 ||
-| [`weight`](./Enums.md) | Integer || 4 | 5 |
+| [`weight`](./Enums.md) | Integer || 2 | 5 |
 
 </details>
 

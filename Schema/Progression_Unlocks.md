@@ -17,122 +17,122 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 883 |  |
-| [`popup`](Miscellaneous.md#object-popup) | Object || 532 ||
-| [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum || 254 ||
-| [`intro`](./Arrays.md#array-intro) | Array || 216 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 664 |  |
+| [`popup`](Miscellaneous.md#object-popup) | Object || 266 ||
+| [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum || 127 ||
+| [`intro`](./Arrays.md#array-intro) | Array || 239 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 ||
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array || 129 ||
-| [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum || 110 ||
-| [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum || 96 ||
-| [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum || 90 ||
-| `required_difficulty` | Integer || 72 ||
-| `repeat` | Integer || 66 ||
-| [`beat_chapter_boss`](./Enums.md#enum-beat_chapter_boss) | Enum || 62 ||
-| [`unlock_ability`](./Enums.md#enum-unlock_ability) | Enum || 62 ||
-| [`unlock_passive`](./Enums.md#enum-unlock_passive) | Enum || 58 ||
-| [`unlock_song`](./Enums.md#enum-unlock_song) | Enum || 58 ||
-| [`set_mapgen_flag`](./Enums.md#enum-set_mapgen_flag) | Enum || 46 ||
-| [`complete_checklist_with_class`](./Enums.md#enum-complete_checklist_with_class) | Enum || 28 ||
-| [`unlock_quest_item`](./Enums.md#enum-unlock_quest_item) | Enum || 26 ||
-| `repeatable` | Boolean || 20 ||
-| [`trigger_house_boss`](./Enums.md#enum-trigger_house_boss) | Enum || 20 ||
-| [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum || 16 ||
-| [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum || 16 ||
-| [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum || 12 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 12 ||
-| [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum || 12 ||
+| [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum || 53 ||
+| [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum || 48 ||
+| [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum || 37 ||
+| `required_difficulty` | Integer || 36 ||
+| `repeat` | Integer || 33 ||
+| [`beat_chapter_boss`](./Enums.md#enum-beat_chapter_boss) | Enum || 31 ||
+| [`unlock_ability`](./Enums.md#enum-unlock_ability) | Enum || 28 ||
+| [`unlock_passive`](./Enums.md#enum-unlock_passive) | Enum || 28 ||
+| [`unlock_song`](./Enums.md#enum-unlock_song) | Enum || 29 ||
+| [`set_mapgen_flag`](./Enums.md#enum-set_mapgen_flag) | Enum || 23 ||
+| [`complete_checklist_with_class`](./Enums.md#enum-complete_checklist_with_class) | Enum || 14 ||
+| [`unlock_quest_item`](./Enums.md#enum-unlock_quest_item) | Enum || 13 ||
+| `repeatable` | Boolean || 10 ||
+| [`trigger_house_boss`](./Enums.md#enum-trigger_house_boss) | Enum || 10 ||
+| [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum || 8 ||
+| [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum || 2 ||
+| [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum || 4 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 6 ||
+| [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum || 6 ||
 | [`complete_act_difficulty`](./Arrays.md#array-complete_act_difficulty) | Array || 9 ||
 | [`unlock_act_difficulty`](./Arrays.md#array-unlock_act_difficulty) | Array || 9 ||
-| [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum || 8 ||
-| `fully_complete_difficulty` | Integer || 8 ||
-| [`post_combat_cutscene`](./Enums.md#enum-post_combat_cutscene) | Enum || 8 ||
-| [`trigger_npc_sequence_tomorrow`](./Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum || 8 ||
-| [`unlock_npc_tomorrow`](./Enums.md#enum-unlock_npc_tomorrow) | Enum || 8 ||
-| [`visit_chapter`](./Enums.md#enum-visit_chapter) | Enum || 8 ||
-| `requires_monoclass_run` | Boolean || 6 ||
-| [`requires_unlocked_npc`](./Enums.md#enum-requires_unlocked_npc) | Enum || 6 ||
-| [`beanies_quests_intro`](Miscellaneous.md#object-beanies_quests_intro) | Object || 4 ||
-| [`beanies_quests_repeat`](Miscellaneous.md#object-beanies_quests_repeat) | Object || 4 ||
-| [`complete_adventure`](./Enums.md#enum-complete_adventure) | Enum || 4 ||
-| [`frank_max_intro`](Miscellaneous.md#object-frank_max_intro) | Object || 4 ||
-| [`frank_max_repeating`](Miscellaneous.md#object-frank_max_repeating) | Object || 4 ||
-| [`house_upgrade_4throom`](Miscellaneous.md#object-house_upgrade_4throom) | Object || 4 ||
-| [`house_upgrade_attic`](Miscellaneous.md#object-house_upgrade_attic) | Object || 4 ||
-| [`house_upgrade_largehouse`](Miscellaneous.md#object-house_upgrade_largehouse) | Object || 4 ||
-| [`house_upgrade_mediumhouse`](Miscellaneous.md#object-house_upgrade_mediumhouse) | Object || 4 ||
-| [`jack_max_intro`](Miscellaneous.md#object-jack_max_intro) | Object || 4 ||
-| [`jack_max_repeating`](Miscellaneous.md#object-jack_max_repeating) | Object || 4 ||
-| [`jack_shopupgrade1`](Miscellaneous.md#object-jack_shopupgrade1) | Object || 4 ||
-| [`jack_shopupgrade2`](Miscellaneous.md#object-jack_shopupgrade2) | Object || 4 ||
-| [`jack_shopupgrade3`](Miscellaneous.md#object-jack_shopupgrade3) | Object || 4 ||
-| [`jack_shopupgrade4`](Miscellaneous.md#object-jack_shopupgrade4) | Object || 4 ||
-| [`organ_max_intro`](Miscellaneous.md#object-organ_max_intro) | Object || 4 ||
-| [`organ_max_repeating`](Miscellaneous.md#object-organ_max_repeating) | Object || 4 ||
-| [`organ_unlock`](Miscellaneous.md#object-organ_unlock) | Object || 4 ||
-| [`organ_upgrade1`](Miscellaneous.md#object-organ_upgrade1) | Object || 4 ||
-| [`organ_upgrade2`](Miscellaneous.md#object-organ_upgrade2) | Object || 4 ||
-| [`organ_upgrade3`](Miscellaneous.md#object-organ_upgrade3) | Object || 4 ||
-| [`organ_upgrade4`](Miscellaneous.md#object-organ_upgrade4) | Object || 4 ||
-| [`organ_upgrade5`](Miscellaneous.md#object-organ_upgrade5) | Object || 4 ||
-| [`organ_upgrade6`](Miscellaneous.md#object-organ_upgrade6) | Object || 4 ||
-| [`require_beat_house_boss`](./Enums.md#enum-require_beat_house_boss) | Enum || 4 ||
-| [`require_mapgen_flag`](./Enums.md#enum-require_mapgen_flag) | Enum || 4 ||
-| [`steven_milliontrashed`](Miscellaneous.md#object-steven_milliontrashed) | Object || 4 ||
-| [`surviving_kaiju`](./Enums.md#enum-surviving_kaiju) | Enum || 4 ||
-| [`tink_aggression`](Miscellaneous.md#object-tink_aggression) | Object || 4 ||
-| [`tink_basestats`](Miscellaneous.md#object-tink_basestats) | Object || 4 ||
-| [`tink_inbreeding`](Miscellaneous.md#object-tink_inbreeding) | Object || 4 ||
-| [`tink_max_intro`](Miscellaneous.md#object-tink_max_intro) | Object || 4 ||
-| [`tink_max_repeating`](Miscellaneous.md#object-tink_max_repeating) | Object || 4 ||
-| [`tink_prettybow`](Miscellaneous.md#object-tink_prettybow) | Object || 4 ||
-| [`tink_relationships`](Miscellaneous.md#object-tink_relationships) | Object || 4 ||
-| [`tink_sexuality`](Miscellaneous.md#object-tink_sexuality) | Object || 4 ||
-| [`tink_tags`](Miscellaneous.md#object-tink_tags) | Object || 4 ||
-| [`tracy_blankcollar1`](Miscellaneous.md#object-tracy_blankcollar1) | Object || 4 ||
-| [`tracy_blankcollar2`](Miscellaneous.md#object-tracy_blankcollar2) | Object || 4 ||
-| [`tracy_blankcollar3`](Miscellaneous.md#object-tracy_blankcollar3) | Object || 4 ||
-| [`tracy_foodstorage1`](Miscellaneous.md#object-tracy_foodstorage1) | Object || 4 ||
-| [`tracy_foodstorage10`](Miscellaneous.md#object-tracy_foodstorage10) | Object || 4 ||
-| [`tracy_foodstorage2`](Miscellaneous.md#object-tracy_foodstorage2) | Object || 4 ||
-| [`tracy_foodstorage3`](Miscellaneous.md#object-tracy_foodstorage3) | Object || 4 ||
-| [`tracy_foodstorage4`](Miscellaneous.md#object-tracy_foodstorage4) | Object || 4 ||
-| [`tracy_foodstorage5`](Miscellaneous.md#object-tracy_foodstorage5) | Object || 4 ||
-| [`tracy_foodstorage6`](Miscellaneous.md#object-tracy_foodstorage6) | Object || 4 ||
-| [`tracy_foodstorage7`](Miscellaneous.md#object-tracy_foodstorage7) | Object || 4 ||
-| [`tracy_foodstorage8`](Miscellaneous.md#object-tracy_foodstorage8) | Object || 4 ||
-| [`tracy_foodstorage9`](Miscellaneous.md#object-tracy_foodstorage9) | Object || 4 ||
-| [`tracy_idol1`](Miscellaneous.md#object-tracy_idol1) | Object || 4 ||
-| [`tracy_idol2`](Miscellaneous.md#object-tracy_idol2) | Object || 4 ||
-| [`tracy_idol3`](Miscellaneous.md#object-tracy_idol3) | Object || 4 ||
-| [`tracy_idol4`](Miscellaneous.md#object-tracy_idol4) | Object || 4 ||
-| [`tracy_idol5`](Miscellaneous.md#object-tracy_idol5) | Object || 4 ||
-| [`tracy_idol6`](Miscellaneous.md#object-tracy_idol6) | Object || 4 ||
-| [`tracy_idol7`](Miscellaneous.md#object-tracy_idol7) | Object || 4 ||
-| [`tracy_max_intro`](Miscellaneous.md#object-tracy_max_intro) | Object || 4 ||
-| [`tracy_max_repeating`](Miscellaneous.md#object-tracy_max_repeating) | Object || 4 ||
-| [`unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup) | Enum || 4 ||
-| [`upgrade_storage_1`](Miscellaneous.md#object-upgrade_storage_1) | Object || 4 ||
-| [`upgrade_storage_2`](Miscellaneous.md#object-upgrade_storage_2) | Object || 4 ||
-| [`upgrade_storage_3`](Miscellaneous.md#object-upgrade_storage_3) | Object || 4 ||
-| [`upgrade_storage_4`](Miscellaneous.md#object-upgrade_storage_4) | Object || 4 ||
-| [`upgrade_storage_5`](Miscellaneous.md#object-upgrade_storage_5) | Object || 4 ||
-| [`upgrade_storage_6`](Miscellaneous.md#object-upgrade_storage_6) | Object || 4 ||
-| [`upgrade_storage_7`](Miscellaneous.md#object-upgrade_storage_7) | Object || 4 ||
-| [`upgrade_storage_repeating_crazy`](Miscellaneous.md#object-upgrade_storage_repeating_crazy) | Object || 4 ||
-| [`upgrade_storage_repeating_hard`](Miscellaneous.md#object-upgrade_storage_repeating_hard) | Object || 4 ||
-| [`upgrade_storage_repeating_impossible`](Miscellaneous.md#object-upgrade_storage_repeating_impossible) | Object || 4 ||
-| [`upgrade_storage_repeating_intro`](Miscellaneous.md#object-upgrade_storage_repeating_intro) | Object || 4 ||
-| [`upgrade_storage_repeating_normal`](Miscellaneous.md#object-upgrade_storage_repeating_normal) | Object || 4 ||
+| [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum || 4 ||
+| `fully_complete_difficulty` | Integer || 4 ||
+| [`post_combat_cutscene`](./Enums.md#enum-post_combat_cutscene) | Enum || 4 ||
+| [`trigger_npc_sequence_tomorrow`](./Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum || 3 ||
+| [`unlock_npc_tomorrow`](./Enums.md#enum-unlock_npc_tomorrow) | Enum || 4 ||
+| [`visit_chapter`](./Enums.md#enum-visit_chapter) | Enum || 4 ||
+| `requires_monoclass_run` | Boolean || 3 ||
+| [`requires_unlocked_npc`](./Enums.md#enum-requires_unlocked_npc) | Enum || 3 ||
+| [`beanies_quests_intro`](Miscellaneous.md#object-beanies_quests_intro) | Object || 2 ||
+| [`beanies_quests_repeat`](Miscellaneous.md#object-beanies_quests_repeat) | Object || 2 ||
+| [`complete_adventure`](./Enums.md#enum-complete_adventure) | Enum || 2 ||
+| [`frank_max_intro`](Miscellaneous.md#object-frank_max_intro) | Object || 2 ||
+| [`frank_max_repeating`](Miscellaneous.md#object-frank_max_repeating) | Object || 2 ||
+| [`house_upgrade_4throom`](Miscellaneous.md#object-house_upgrade_4throom) | Object || 2 ||
+| [`house_upgrade_attic`](Miscellaneous.md#object-house_upgrade_attic) | Object || 2 ||
+| [`house_upgrade_largehouse`](Miscellaneous.md#object-house_upgrade_largehouse) | Object || 2 ||
+| [`house_upgrade_mediumhouse`](Miscellaneous.md#object-house_upgrade_mediumhouse) | Object || 2 ||
+| [`jack_max_intro`](Miscellaneous.md#object-jack_max_intro) | Object || 2 ||
+| [`jack_max_repeating`](Miscellaneous.md#object-jack_max_repeating) | Object || 2 ||
+| [`jack_shopupgrade1`](Miscellaneous.md#object-jack_shopupgrade1) | Object || 2 ||
+| [`jack_shopupgrade2`](Miscellaneous.md#object-jack_shopupgrade2) | Object || 2 ||
+| [`jack_shopupgrade3`](Miscellaneous.md#object-jack_shopupgrade3) | Object || 2 ||
+| [`jack_shopupgrade4`](Miscellaneous.md#object-jack_shopupgrade4) | Object || 2 ||
+| [`organ_max_intro`](Miscellaneous.md#object-organ_max_intro) | Object || 2 ||
+| [`organ_max_repeating`](Miscellaneous.md#object-organ_max_repeating) | Object || 2 ||
+| [`organ_unlock`](Miscellaneous.md#object-organ_unlock) | Object || 2 ||
+| [`organ_upgrade1`](Miscellaneous.md#object-organ_upgrade1) | Object || 2 ||
+| [`organ_upgrade2`](Miscellaneous.md#object-organ_upgrade2) | Object || 2 ||
+| [`organ_upgrade3`](Miscellaneous.md#object-organ_upgrade3) | Object || 2 ||
+| [`organ_upgrade4`](Miscellaneous.md#object-organ_upgrade4) | Object || 2 ||
+| [`organ_upgrade5`](Miscellaneous.md#object-organ_upgrade5) | Object || 2 ||
+| [`organ_upgrade6`](Miscellaneous.md#object-organ_upgrade6) | Object || 2 ||
+| [`require_beat_house_boss`](./Enums.md#enum-require_beat_house_boss) | Enum || 2 ||
+| [`require_mapgen_flag`](./Enums.md#enum-require_mapgen_flag) | Enum || 2 ||
+| [`steven_milliontrashed`](Miscellaneous.md#object-steven_milliontrashed) | Object || 2 ||
+| [`surviving_kaiju`](./Enums.md#enum-surviving_kaiju) | Enum || 2 ||
+| [`tink_aggression`](Miscellaneous.md#object-tink_aggression) | Object || 2 ||
+| [`tink_basestats`](Miscellaneous.md#object-tink_basestats) | Object || 2 ||
+| [`tink_inbreeding`](Miscellaneous.md#object-tink_inbreeding) | Object || 2 ||
+| [`tink_max_intro`](Miscellaneous.md#object-tink_max_intro) | Object || 2 ||
+| [`tink_max_repeating`](Miscellaneous.md#object-tink_max_repeating) | Object || 2 ||
+| [`tink_prettybow`](Miscellaneous.md#object-tink_prettybow) | Object || 2 ||
+| [`tink_relationships`](Miscellaneous.md#object-tink_relationships) | Object || 2 ||
+| [`tink_sexuality`](Miscellaneous.md#object-tink_sexuality) | Object || 2 ||
+| [`tink_tags`](Miscellaneous.md#object-tink_tags) | Object || 2 ||
+| [`tracy_blankcollar1`](Miscellaneous.md#object-tracy_blankcollar1) | Object || 2 ||
+| [`tracy_blankcollar2`](Miscellaneous.md#object-tracy_blankcollar2) | Object || 2 ||
+| [`tracy_blankcollar3`](Miscellaneous.md#object-tracy_blankcollar3) | Object || 2 ||
+| [`tracy_foodstorage1`](Miscellaneous.md#object-tracy_foodstorage1) | Object || 2 ||
+| [`tracy_foodstorage10`](Miscellaneous.md#object-tracy_foodstorage10) | Object || 2 ||
+| [`tracy_foodstorage2`](Miscellaneous.md#object-tracy_foodstorage2) | Object || 2 ||
+| [`tracy_foodstorage3`](Miscellaneous.md#object-tracy_foodstorage3) | Object || 2 ||
+| [`tracy_foodstorage4`](Miscellaneous.md#object-tracy_foodstorage4) | Object || 2 ||
+| [`tracy_foodstorage5`](Miscellaneous.md#object-tracy_foodstorage5) | Object || 2 ||
+| [`tracy_foodstorage6`](Miscellaneous.md#object-tracy_foodstorage6) | Object || 2 ||
+| [`tracy_foodstorage7`](Miscellaneous.md#object-tracy_foodstorage7) | Object || 2 ||
+| [`tracy_foodstorage8`](Miscellaneous.md#object-tracy_foodstorage8) | Object || 2 ||
+| [`tracy_foodstorage9`](Miscellaneous.md#object-tracy_foodstorage9) | Object || 2 ||
+| [`tracy_idol1`](Miscellaneous.md#object-tracy_idol1) | Object || 2 ||
+| [`tracy_idol2`](Miscellaneous.md#object-tracy_idol2) | Object || 2 ||
+| [`tracy_idol3`](Miscellaneous.md#object-tracy_idol3) | Object || 2 ||
+| [`tracy_idol4`](Miscellaneous.md#object-tracy_idol4) | Object || 2 ||
+| [`tracy_idol5`](Miscellaneous.md#object-tracy_idol5) | Object || 2 ||
+| [`tracy_idol6`](Miscellaneous.md#object-tracy_idol6) | Object || 2 ||
+| [`tracy_idol7`](Miscellaneous.md#object-tracy_idol7) | Object || 2 ||
+| [`tracy_max_intro`](Miscellaneous.md#object-tracy_max_intro) | Object || 2 ||
+| [`tracy_max_repeating`](Miscellaneous.md#object-tracy_max_repeating) | Object || 2 ||
+| [`unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup) | Enum || 2 ||
+| [`upgrade_storage_1`](Miscellaneous.md#object-upgrade_storage_1) | Object || 2 ||
+| [`upgrade_storage_2`](Miscellaneous.md#object-upgrade_storage_2) | Object || 2 ||
+| [`upgrade_storage_3`](Miscellaneous.md#object-upgrade_storage_3) | Object || 2 ||
+| [`upgrade_storage_4`](Miscellaneous.md#object-upgrade_storage_4) | Object || 2 ||
+| [`upgrade_storage_5`](Miscellaneous.md#object-upgrade_storage_5) | Object || 2 ||
+| [`upgrade_storage_6`](Miscellaneous.md#object-upgrade_storage_6) | Object || 2 ||
+| [`upgrade_storage_7`](Miscellaneous.md#object-upgrade_storage_7) | Object || 2 ||
+| [`upgrade_storage_repeating_crazy`](Miscellaneous.md#object-upgrade_storage_repeating_crazy) | Object || 2 ||
+| [`upgrade_storage_repeating_hard`](Miscellaneous.md#object-upgrade_storage_repeating_hard) | Object || 2 ||
+| [`upgrade_storage_repeating_impossible`](Miscellaneous.md#object-upgrade_storage_repeating_impossible) | Object || 2 ||
+| [`upgrade_storage_repeating_intro`](Miscellaneous.md#object-upgrade_storage_repeating_intro) | Object || 2 ||
+| [`upgrade_storage_repeating_normal`](Miscellaneous.md#object-upgrade_storage_repeating_normal) | Object || 2 ||
 | [`complete_chapters`](./Arrays.md#array-complete_chapters) | Array || 3 ||
-| [`destinations`](Miscellaneous.md#object-destinations) | Object || 2 ||
-| [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum || 2 ||
-| [`finish_quest`](./Enums.md#enum-finish_quest) | Enum || 2 ||
-| [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String || 2 ||
-| [`prereqs`](Miscellaneous.md#object-prereqs) | Object || 2 ||
-| `requires_hard_path` | Boolean || 2 ||
-| [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum || 2 ||
-| [`unlock_item`](./Enums.md#enum-unlock_item) | Enum || 2 ||
+| [`destinations`](Miscellaneous.md#object-destinations) | Object || 1 ||
+| [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum || 1 ||
+| [`finish_quest`](./Enums.md#enum-finish_quest) | Enum || 1 ||
+| [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String || 1 ||
+| [`prereqs`](Miscellaneous.md#object-prereqs) | Object || 1 ||
+| `requires_hard_path` | Boolean || 1 ||
+| [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum || 1 ||
+| [`unlock_item`](./Enums.md#enum-unlock_item) | Enum || 1 ||
 | [`main_pool`](./Arrays.md#array-main_pool) | Array || 1 ||
 
 </details>
@@ -153,8 +153,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `immediate` | Boolean || 442 ||
-| [`frame`](./Enums.md#enum-frame) | Integer || 318 ||
+| `immediate` | Boolean || 221 ||
+| [`frame`](./Enums.md#enum-frame) | Integer || 159 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 266 ||
 
 </details>
@@ -175,8 +175,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object || 44 ||
-| [`type`](./Enums.md#enum-type) | Enum || 44 ||
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object || 22 ||
+| [`type`](./Enums.md#enum-type) | Enum || 22 ||
 
 </details>
 
@@ -196,9 +196,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -218,11 +218,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -242,10 +242,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -265,11 +265,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -289,9 +289,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -311,9 +311,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -333,9 +333,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 4 ||
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 1 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -355,9 +355,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 4 ||
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum || 1 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -377,10 +377,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `rep_reward_count` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `rep_reward_count` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -400,11 +400,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `rep_reward_count` | Integer || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `rep_reward_count` | Integer || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -424,9 +424,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -446,9 +446,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -468,9 +468,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -490,9 +490,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -512,10 +512,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`gift_item`](./Enums.md#enum-gift_item) | Enum || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`gift_item`](./Enums.md#enum-gift_item) | Enum || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -535,11 +535,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`gift_item`](./Enums.md#enum-gift_item) | Enum || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`gift_item`](./Enums.md#enum-gift_item) | Enum || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -559,9 +559,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -581,9 +581,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -603,9 +603,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -625,9 +625,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -647,9 +647,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -669,9 +669,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -691,9 +691,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
 
 </details>
 
@@ -713,9 +713,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
 
 </details>
 
@@ -735,9 +735,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 ||
 
 </details>
 
@@ -757,9 +757,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 ||
 
 </details>
 
@@ -779,9 +779,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 ||
 
 </details>
 
@@ -801,10 +801,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer || 2 ||
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `coins` | Integer || 1 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -824,11 +824,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer || 2 ||
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `coins` | Integer || 1 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -848,9 +848,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`gift_item`](./Enums.md#enum-gift_item) | Enum || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`gift_item`](./Enums.md#enum-gift_item) | Enum || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -870,9 +870,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 ||
 
 </details>
 
@@ -892,9 +892,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 ||
 
 </details>
 
@@ -914,9 +914,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 ||
 
 </details>
 
@@ -936,11 +936,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -960,11 +960,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -984,11 +984,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1008,11 +1008,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1032,11 +1032,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1056,11 +1056,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1080,11 +1080,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1104,11 +1104,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1128,11 +1128,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1152,11 +1152,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1176,11 +1176,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1200,11 +1200,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1224,11 +1224,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1248,11 +1248,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1272,11 +1272,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1296,11 +1296,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1320,11 +1320,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1344,11 +1344,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1368,11 +1368,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1392,11 +1392,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `shop_level_up` | Integer || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `shop_level_up` | Integer || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1416,11 +1416,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1440,12 +1440,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
-| `required_age` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
+| `required_age` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 ||
 
 </details>
 
@@ -1465,11 +1465,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `storage_expansion` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `storage_expansion` | Integer || 1 ||
 
 </details>
 
@@ -1489,11 +1489,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `storage_expansion` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `storage_expansion` | Integer || 1 ||
 
 </details>
 
@@ -1513,11 +1513,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `storage_expansion` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `storage_expansion` | Integer || 1 ||
 
 </details>
 
@@ -1537,11 +1537,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `storage_expansion` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `storage_expansion` | Integer || 1 ||
 
 </details>
 
@@ -1561,11 +1561,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `storage_expansion` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `storage_expansion` | Integer || 1 ||
 
 </details>
 
@@ -1585,11 +1585,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `storage_expansion` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `storage_expansion` | Integer || 1 ||
 
 </details>
 
@@ -1609,11 +1609,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
-| `storage_expansion` | Integer || 2 ||
+| `favor` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
+| `storage_expansion` | Integer || 1 ||
 
 </details>
 
@@ -1633,14 +1633,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `rep_reward_count` | Integer || 2 ||
-| `repeat` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| `required_difficulty` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `rep_reward_count` | Integer || 1 ||
+| `repeat` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| `required_difficulty` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -1660,14 +1660,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `rep_reward_count` | Integer || 2 ||
-| `repeat` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| `required_difficulty` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `rep_reward_count` | Integer || 1 ||
+| `repeat` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| `required_difficulty` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -1687,14 +1687,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `rep_reward_count` | Integer || 2 ||
-| [`repeat`](./Enums.md#enum-repeat) | Enum || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| `required_difficulty` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `rep_reward_count` | Integer || 1 ||
+| [`repeat`](./Enums.md#enum-repeat) | Enum || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| `required_difficulty` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -1714,13 +1714,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `rep_reward_count` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| `required_difficulty` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `rep_reward_count` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| `required_difficulty` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -1740,14 +1740,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer || 2 ||
-| [`level_display`](./Enums.md#enum-level_display) | Enum || 2 ||
-| `rep_reward_count` | Integer || 2 ||
-| `repeat` | Integer || 2 ||
-| `required_act` | Integer || 2 ||
-| `required_chapter` | Integer || 2 ||
-| `required_difficulty` | Integer || 2 ||
-| [`reward_text`](./Strings.md#string-reward_text) | String || 2 ||
+| `favor` | Integer || 1 ||
+| [`level_display`](./Enums.md#enum-level_display) | Enum || 1 ||
+| `rep_reward_count` | Integer || 1 ||
+| `repeat` | Integer || 1 ||
+| `required_act` | Integer || 1 ||
+| `required_chapter` | Integer || 1 ||
+| `required_difficulty` | Integer || 1 ||
+| [`reward_text`](./Strings.md#string-reward_text) | String || 1 ||
 
 </details>
 
@@ -1768,15 +1768,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `boneyard` | Integer || 2 ||
-| `caves` | Integer || 2 ||
-| `core` | Integer || 2 ||
-| `dimensionx` | Integer || 2 ||
-| `endoftime` | Integer || 2 ||
-| `jurassic` | Integer || 2 ||
-| `meatworld` | Integer || 2 ||
-| `moon` | Integer || 2 ||
-| `theend` | Integer || 2 ||
+| `boneyard` | Integer || 1 ||
+| `caves` | Integer || 1 ||
+| `core` | Integer || 1 ||
+| `dimensionx` | Integer || 1 ||
+| `endoftime` | Integer || 1 ||
+| `jurassic` | Integer || 1 ||
+| `meatworld` | Integer || 1 ||
+| `moon` | Integer || 1 ||
+| `theend` | Integer || 1 ||
 
 </details>
 
@@ -1796,12 +1796,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`endoftime`](./Enums.md#enum-endoftime) | Enum || 6 ||
-| [`core`](./Enums.md#enum-core) | Enum || 2 ||
-| [`dimensionx`](./Enums.md#enum-dimensionx) | Enum || 2 ||
-| [`jurassic`](./Enums.md#enum-jurassic) | Enum || 2 ||
-| [`moon`](./Enums.md#enum-moon) | Enum || 2 ||
-| [`theend`](./Enums.md#enum-theend) | Enum || 2 ||
+| [`endoftime`](./Enums.md#enum-endoftime) | Enum || 1 ||
+| [`core`](./Enums.md#enum-core) | Enum || 1 ||
+| [`dimensionx`](./Enums.md#enum-dimensionx) | Enum || 1 ||
+| [`jurassic`](./Enums.md#enum-jurassic) | Enum || 1 ||
+| [`moon`](./Enums.md#enum-moon) | Enum || 1 ||
+| [`theend`](./Enums.md#enum-theend) | Enum || 1 ||
 
 </details>
 

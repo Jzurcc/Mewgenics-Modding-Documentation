@@ -22,10 +22,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
-| [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
-| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
-| `item_chance` | Float |  | 6 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 3 |  |
+| [`food`](./Arrays.md#array-food) | Array |  | 3 |  |
+| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 3 |  |
+| `item_chance` | Float |  | 3 |  |
 
 </details>
 
@@ -45,10 +45,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
-| [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
-| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
-| [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 3 |  |
+| [`food`](./Arrays.md#array-food) | Array |  | 3 |  |
+| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 3 |  |
+| [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 3 |  |
 
 </details>
 
@@ -68,10 +68,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
-| [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
-| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
-| [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 3 |  |
+| [`food`](./Arrays.md#array-food) | Array |  | 3 |  |
+| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 3 |  |
+| [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 3 |  |
 
 </details>
 
@@ -91,10 +91,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
-| [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
-| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
-| [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 3 |  |
+| [`food`](./Arrays.md#array-food) | Array |  | 3 |  |
+| [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 3 |  |
+| [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 3 |  |
 
 </details>
 
@@ -116,13 +116,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float |  | 4 |  |
-| `food_bonus` | Float |  | 4 |  |
-| [`boss`](#object-boss) | Object |  | 3 |  |
-| [`hard`](#object-hard) | Object |  | 3 |  |
-| [`miniboss`](#object-miniboss) | Object |  | 3 |  |
-| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
-| `chapters` | Object || 1 ||
 
 </details>
 
@@ -140,13 +133,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float || 4 ||
-| `food_bonus` | Float || 4 ||
-| [`boss`](#object-boss) | Object || 3 ||
-| [`hard`](#object-hard) | Object || 3 ||
-| [`miniboss`](#object-miniboss) | Object || 3 ||
-| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
-| `chapters` | Object || 1 ||
 
 </details>
 
@@ -164,13 +150,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Float || 4 ||
-| `food_bonus` | Float || 4 ||
-| [`boss`](#object-boss) | Object || 3 ||
-| [`hard`](#object-hard) | Object || 3 ||
-| [`miniboss`](#object-miniboss) | Object || 3 ||
-| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
-| `chapters` | Object || 1 ||
 
 </details>
 
@@ -188,12 +167,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](#object-boss) | Object || 3 ||
-| `coins_bonus` | Float || 3 ||
-| `food_bonus` | Float || 3 ||
-| [`hard`](#object-hard) | Object || 3 ||
-| [`miniboss`](#object-miniboss) | Object || 3 ||
-| [`normal`](Characters_and_Bosses.md#object-normal) | Object || 3 ||
 
 </details>
 

@@ -17,8 +17,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
-| [`color`](./Arrays.md#array-color) | Array |  | 10 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
+| [`color`](./Arrays.md#array-color) | Array |  | 26 |  |
 | [`right_icon`](./Enums.md#enum-right_icon) | String |  | 10 |  |
 | [`back_icon`](./Enums.md#enum-back_icon) | String |  | 8 |  |
 | [`outline_color`](./Enums.md#enum-outline_color) | Enum |  | 2 |  |

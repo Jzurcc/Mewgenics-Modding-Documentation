@@ -19067,8 +19067,6 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Undocumented. | 1 ||
-| `variant_of` | String | Undocumented. | 1 | `Waggle` |
 
 </details>
 
@@ -19081,12 +19079,6 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | Undocumented. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Undocumented. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
-| `variant_of` | String | Undocumented. | 1 | `cWaggle` |
 
 </details>
 
@@ -19099,9 +19091,5 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Undocumented. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
-| `variant_of` | String | Undocumented. | 1 | `cWaggle2x2` |
 
 </details>

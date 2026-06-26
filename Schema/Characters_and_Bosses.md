@@ -17,29 +17,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Visual parameters and animation bindings. | 5218 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage logic on contact. | 4688 ||
-| [`variant_of`](./Enums.md#enum-variant_of) | Enum || 2364 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1570 ||
-| [`properties`](#object-properties) | Object | General engine properties. | 1200 ||
-| [`stats`](#object-stats) | Object | Core character metrics (Health, Strength, etc.). | 982 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 928 ||
-| [`abilities`](#object-abilities) | Object | Lists the ability IDs the character possesses. | 918 ||
-| [`sound`](#object-sound) | Object | Audio bindings. | 124 ||
-| [`equipment`](#object-equipment) | Object | List of item IDs the character spawns equipped with. | 88 ||
-| [`alt_spawn_pool`](#object-alt_spawn_pool) | Object | Alternative pools to draw minions from. | 36 ||
-| [`brain`](./Enums.md#enum-brain) | Enum || 10 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 10 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 10 ||
-| `animation_suffix` | Enum / Integer | Examples: `3, 4, 2` | 6 ||
-| `initial_form` | Enum / Integer | Examples: `1, 5, 0` | 6 ||
-| `partial_animation_suffix` | Enum / Integer | Examples: `3, 2, 1` | 6 ||
-| [`pattern`](#object-pattern) | Object | AI sequence logic. | 6 ||
-| [`scale`](./Enums.md#enum-scale) | Number || 6 ||
-| `end_turn_on_formswitch` | Boolean || 4 ||
-| [`ai_if_spawned_as_enemy`](#object-ai_if_spawned_as_enemy) | Object | AI logic override used only if the character is spawned as an enemy. | 2 ||
-| `consider_spells` | Boolean || 2 ||
-| `uifloaters_offset` | Number || 2 ||
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Visual parameters and animation bindings. | 2609 ||
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage logic on contact. | 2344 ||
+| [`variant_of`](./Enums.md#enum-variant_of) | Enum || 1195 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2985 ||
+| [`properties`](#object-properties) | Object | General engine properties. | 600 ||
+| [`stats`](#object-stats) | Object | Core character metrics (Health, Strength, etc.). | 461 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 459 ||
+| [`abilities`](#object-abilities) | Object | Lists the ability IDs the character possesses. | 460 ||
+| [`sound`](#object-sound) | Object | Audio bindings. | 62 ||
+| [`equipment`](#object-equipment) | Object | List of item IDs the character spawns equipped with. | 44 ||
+| [`alt_spawn_pool`](#object-alt_spawn_pool) | Object | Alternative pools to draw minions from. | 18 ||
+| [`brain`](./Enums.md#enum-brain) | Enum || 5 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 5 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 5 ||
+| `animation_suffix` | Enum / Integer | Examples: `3, 4, 2` | 1 ||
+| `partial_animation_suffix` | Enum / Integer | Examples: `3, 2, 1` | 2 ||
+| [`pattern`](#object-pattern) | Object | AI sequence logic. | 3 ||
+| [`scale`](./Enums.md#enum-scale) | Number || 5 ||
+| `end_turn_on_formswitch` | Boolean || 2 ||
+| [`ai_if_spawned_as_enemy`](#object-ai_if_spawned_as_enemy) | Object | AI logic override used only if the character is spawned as an enemy. | 1 ||
+| `consider_spells` | Boolean || 1 ||
+| `uifloaters_offset` | Number || 1 ||
 | [`accurate_knockback`](./Enums.md) | Boolean || 32 | false |
 | [`buff_ally`](./Enums.md) | Integer || 32 | 0 |
 | [`buff_enemy`](./Enums.md) | Integer || 32 | 0 |
@@ -82,12 +81,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`kill_enemy`](./Enums.md) | Number || 32 | 0 |
 | [`lava`](./Enums.md) | Integer || 1 | 5 |
 | [`negative_weight_scale`](./Enums.md) | Number || 32 | .99 |
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1910 ||
 | [`preferred_distance`](./Enums.md) | Enum / Integer || 55 | reach |
 | [`randomness`](./Enums.md) | Integer || 5 | 50 |
 | [`revive_ally_corpse`](./Enums.md) | Integer || 32 | 0 |
 | [`revive_enemy_corpse`](./Enums.md) | Integer || 32 | 0 |
-| [`simple`](./Enums.md) | Boolean || 38 | true |
+| [`simple`](./Enums.md) | Boolean || 3 | true |
 | [`spawn_object`](./Enums.md) | Integer || 32 | 0 |
 | [`spawn_object_distance_to_ally`](./Enums.md) | Number || 32 | .0001 |
 | [`spawn_object_distance_to_enemy`](./Enums.md) | Number || 32 | 0 |
@@ -114,44 +113,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1034 ||
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum || 920 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 818 ||
-| `shadow_size` | Number || 302 ||
-| [`scale`](./Enums.md#enum-scale) | Number || 298 ||
-| `uifloaters_offset` | Number || 298 ||
-| [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum || 254 ||
-| [`water_mask`](./Enums.md#enum-water_mask) | Enum || 166 ||
-| [`spawnin_animation`](./Strings.md#string-spawnin_animation) | Enum || 74 ||
-| `piece_alt_frame` | Integer || 54 ||
-| [`shadow`](./Enums.md#enum-shadow) | Enum || 46 ||
-| `move_speed_sync_frames` | Number || 40 ||
-| `no_splatter` | Boolean || 34 ||
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array || 33 ||
-| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Number || 32 ||
-| `dont_sink` | Boolean || 28 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 517 ||
+| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum || 461 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 409 ||
+| `shadow_size` | Number || 151 ||
+| [`scale`](./Enums.md#enum-scale) | Number || 149 ||
+| `uifloaters_offset` | Number || 149 ||
+| [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum || 127 ||
+| [`water_mask`](./Enums.md#enum-water_mask) | Enum || 83 ||
+| [`spawnin_animation`](./Strings.md#string-spawnin_animation) | Enum || 37 ||
+| `piece_alt_frame` | Integer || 27 ||
+| [`shadow`](./Enums.md#enum-shadow) | Enum || 23 ||
+| `move_speed_sync_frames` | Number || 20 ||
+| `no_splatter` | Boolean || 17 ||
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array || 47 ||
+| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Number || 16 ||
+| `dont_sink` | Boolean || 14 ||
 | [`projectile_spawn_offset`](./Arrays.md#array-projectile_spawn_offset) | Array || 17 ||
-| [`dying`](./Enums.md#enum-dying) | Enum || 16 ||
-| `art_flip` | Integer || 14 ||
-| [`depth_offset`](./Enums.md#enum-depth_offset) | Number || 12 ||
-| `four_way_animations` | Boolean || 8 ||
-| `show_infinity_damage_warning` | Boolean || 6 ||
-| [`tint`](./Arrays.md#array-tint) | Array / Enum || 6 ||
-| `always_huge_mask` | Boolean || 4 ||
-| [`dead`](./Enums.md#enum-dead) | Enum || 4 ||
-| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum || 4 ||
-| [`desc`](./Strings.md#string-desc) | Enum | Localization key for the character's desc. | 4 ||
-| [`hit`](./Enums.md#enum-hit) | Enum || 4 ||
-| `shade_occluded_objects` | Boolean || 4 ||
-| [`stunned`](./Enums.md#enum-stunned) | Enum || 4 ||
-| [`weak`](./Enums.md#enum-weak) | Enum || 4 ||
-| [`deadhit`](./Enums.md#enum-deadhit) | Enum || 3 ||
-| [`dodge`](./Enums.md#enum-dodge) | Enum || 2 ||
-| `no_horizontal_flip` | Boolean || 2 ||
-| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum || 2 ||
-| `randomize_starting_frame` | Boolean || 2 ||
-| `status_display_count_max` | Integer || 2 ||
-| [`walk`](./Enums.md#enum-walk) | Enum || 2 ||
+| `art_flip` | Integer || 7 ||
+| [`depth_offset`](./Enums.md#enum-depth_offset) | Number || 6 ||
+| `four_way_animations` | Boolean || 4 ||
+| `show_infinity_damage_warning` | Boolean || 3 ||
+| [`tint`](./Arrays.md#array-tint) | Array / Enum || 17 ||
+| `always_huge_mask` | Boolean || 2 ||
+| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum || 2 ||
+| [`desc`](./Strings.md#string-desc) | Enum | Localization key for the character's desc. | 2 ||
+| `shade_occluded_objects` | Boolean || 2 ||
+| `no_horizontal_flip` | Boolean || 1 ||
+| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum || 1 ||
+| `randomize_starting_frame` | Boolean || 1 ||
+| `status_display_count_max` | Integer || 1 ||
 | [`non_blocking_animations`](./Arrays.md#array-non_blocking_animations) | Array || 1 ||
 
 </details>
@@ -172,8 +163,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging impact triggers. | 3574 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1731 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging impact triggers. | 1787 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2344 ||
 
 </details>
 
@@ -193,34 +184,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2827 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 16 ||
-| [`ArmorPickup`](#object-armorpickup) | Object | Pickup Logic: Defines what happens when an armor item is collected. | 6 ||
-| [`ai`](#object-ai) | Object | Examples: `{ ... }` | 4 ||
-| `partial_animation_suffix` | Enum / Integer | Examples: `4, 2` | 4 ||
-| `animation_suffix` | Enum / Integer | Examples: `1` | 2 ||
-| `uifloaters_offset` | Number | Examples: `2.2` | 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2039 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`ArmorPickup`](#object-armorpickup) | Object | Pickup Logic: Defines what happens when an armor item is collected. | 3 ||
+| [`ai`](#object-ai) | Object | Examples: `{ ... }` | 2 ||
+| `partial_animation_suffix` | Enum / Integer | Examples: `4, 2` | 2 ||
+| `animation_suffix` | Enum / Integer | Examples: `1` | 1 ||
+| `uifloaters_offset` | Number | Examples: `2.2` | 1 ||
 | [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md) | Enum || 4 | ThornUp |
 | [`AbilityHealthThreshold`](#object-abilityhealththreshold) | Object || 12 ||
 | [`AbilityOnBattleStart_UseAI`](./Enums.md) | Enum || 1 | TheCreator_SpawnCloneTeam |
 | [`AbilityOnRoundEnd`](#object-abilityonroundend) | Object || 2 ||
-| [`AbilityReaction`](#object-abilityreaction) | Enum / Object || 19 | MoonWormCurl |
+| [`AbilityReaction`](#object-abilityreaction) | Enum / Object || 23 | MoonWormCurl |
 | [`AbilityWhenBuddyDies`](./Enums.md) | Enum || 7 | Guillotina2Rage |
-| [`AbilityWhenTaggedCharacterMovesNear`](Cat_Mutations.md#object-abilitywhentaggedcharactermovesnear) | Object || 2 ||
-| [`AddCorpseHealth`](./Enums.md) | Integer || 2 | -999 |
-| [`AddDamage`](./Enums.md) | Integer || 8 | 2 |
-| [`AddElementsToBasicAttack`](./Enums.md) | Enum || 1 | Fire |
-| [`AddHiddenTag`](./Enums.md) | Enum || 3 | hitler_clone_fetus |
-| [`AddInitiative`](./Enums.md) | Integer || 3 | 999999 |
-| [`AddMaxHealth`](./Enums.md) | Integer || 6 | -25 |
+| [`AbilityWhenTaggedCharacterMovesNear`](Cat_Mutations.md#object-abilitywhentaggedcharactermovesnear) | Object || 3 ||
+| [`AddCorpseHealth`](./Enums.md) | Integer || 14 | -999 |
+| [`AddDamage`](./Enums.md) | Integer || 6 | 2 |
+| [`AddElementsToBasicAttack`](./Enums.md) | Enum || 7 | Fire |
+| [`AddHiddenTag`](./Enums.md) | Enum || 5 | hitler_clone_fetus |
+| [`AddInitiative`](./Enums.md) | Integer || 7 | 999999 |
+| [`AddMaxHealth`](./Enums.md) | Integer || 4 | -25 |
 | [`AddMeleeKnockback`](./Enums.md) | Integer || 4 | 2 |
-| [`AddMovement`](./Enums.md) | Integer || 17 | 2 |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 32 ||
+| [`AddMovement`](./Enums.md) | Integer || 20 | 2 |
+| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 133 ||
 | [`AddStatusToReceivedDamage`](#object-addstatustoreceiveddamage) | Object || 1 ||
-| [`AddStatusToSpells`](#object-addstatustospells) | Object || 1 ||
-| [`AddStatusToWeapons`](#object-addstatustoweapons) | Object || 1 ||
-| [`AddTag`](./Enums.md) | Enum || 3 | fetus |
-| [`AddTemporaryEffectsToBasicAttack`](Cat_Mutations.md#object-addtemporaryeffectstobasicattack) | Object || 2 ||
+| [`AddStatusToSpells`](#object-addstatustospells) | Object || 3 ||
+| [`AddStatusToWeapons`](#object-addstatustoweapons) | Object || 4 ||
+| [`AddTag`](./Enums.md) | Enum || 9 | fetus |
+| [`AddTemporaryEffectsToBasicAttack`](Cat_Mutations.md#object-addtemporaryeffectstobasicattack) | Object || 4 ||
 | [`AdvancedTint`](./Enums.md) | Array || 1 | [0] |
 | [`AdventureTokenPassivePool`](#object-adventuretokenpassivepool) | Object || 1 ||
 | [`AggroTargetIsBuddy`](./Enums.md) | Integer || 2 | 1 |
@@ -234,21 +225,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AllDamageImmune_IncludingSpeculative`](./Enums.md) | Integer || 2 | 1 |
 | [`AllSpellsCostActPoints`](./Enums.md) | Integer || 1 | 1 |
 | [`AllStatsAura`](#object-allstatsaura) | Object || 1 ||
-| [`AllStatsUp`](./Enums.md) | Integer || 8 | 2 |
-| [`AlphaTurns`](./Enums.md) | Integer || 2 | 1 |
+| [`AllStatsUp`](./Enums.md) | Integer || 14 | 2 |
+| [`AlphaTurns`](./Enums.md) | Integer || 7 | 1 |
 | [`AlwaysHitDifferentTargets`](./Enums.md) | Integer || 2 | 1 |
 | [`Ammo`](./Enums.md) | Integer || 4 | 3 |
-| [`Angel`](./Enums.md) | Integer || 11 | 1 |
-| [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object || 2 | SpiderReturn |
+| [`Angel`](./Enums.md) | Integer || 5 | 1 |
+| [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object || 5 | SpiderReturn |
 | [`AvoidDamagingCharmedEnemies`](./Enums.md) | Integer || 1 | 1 |
 | [`AwardCoinsOnDeath`](./Enums.md) | Integer || 1 | 10 |
 | [`BackstabAllDirections`](./Enums.md) | Integer || 4 | 1 |
-| [`BackstabImmunity`](./Enums.md) | Integer || 8 | 1 |
+| [`BackstabImmunity`](./Enums.md) | Integer || 9 | 1 |
 | [`BaitAura`](#object-baitaura) | Object || 4 ||
 | [`BaseStatMultiply`](./Enums.md) | Number || 3 | .5 |
 | [`BasicAIDangerZone`](./Enums.md) | Integer || 1 | 2 |
 | [`BattlefieldUniqueRandomPassive`](#object-battlefielduniquerandompassive) | Object || 1 ||
-| [`Bird`](./Enums.md) | Enum || 5 | CookedChickenLeg |
+| [`Bird`](./Enums.md) | Enum || 4 | CookedChickenLeg |
 | [`BirdRewards`](#object-birdrewards) | Object || 18 ||
 | [`BlackHolePassive`](./Enums.md) | Integer || 1 | 1 |
 | [`BloatEyePassive2`](./Enums.md) | Enum || 1 | BloatEyeMovement2 |
@@ -256,20 +247,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BombBehavior`](./Enums.md) | Integer || 1 | 1 |
 | [`BonusTurnPattern`](./Enums.md) | Array || 3 | [0] |
 | [`BossRewards`](#object-bossrewards) | Object || 20 ||
-| [`Brace`](./Enums.md) | Integer || 42 | 99 |
+| [`Brace`](./Enums.md) | Integer || 94 | 99 |
 | [`Buddy`](#object-buddy) | Enum / Object || 17 | Guillotina3Head |
-| [`BuffImmunity`](./Enums.md) | Integer || 2 | 1 |
+| [`BuffImmunity`](./Enums.md) | Integer || 4 | 1 |
 | [`BungaCheers`](#object-bungacheers) | Object || 1 ||
-| [`BungaEntrance`](#object-bungaentrance) | Object || 4 ||
-| [`Burn`](./Enums.md) | Integer || 12 | 2 |
-| [`CCImmunity`](./Enums.md) | Integer || 1 | 1 |
+| [`BungaEntrance`](#object-bungaentrance) | Object || 2 ||
+| [`Burn`](./Enums.md) | Integer || 5 | 2 |
+| [`CCImmunity`](./Enums.md) | Integer || 2 | 1 |
 | [`CanMutateTo`](./Enums.md) | Array / Enum || 3 | [Leaper] |
 | [`CanShield`](./Enums.md) | Integer || 2 | 1 |
 | [`CapReceivedDamage`](./Enums.md) | Integer || 1 | 1 |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
 | [`CaveFamilyEnrage`](#object-cavefamilyenrage) | Object || 6 ||
 | [`CerberubsAggroTargetBehavior`](#object-cerberubsaggrotargetbehavior) | Object || 1 ||
-| [`ChanceToBackflip`](Cat_Mutations.md#object-chancetobackflip) | Object || 1 ||
+| [`ChanceToBackflip`](Cat_Mutations.md#object-chancetobackflip) | Object || 4 ||
 | [`ChanceToDisableActionsIfNotCharmed`](./Enums.md) | Integer || 2 | 75 |
 | [`ChanceToFormChangeOnAbilityDamage`](#object-chancetoformchangeonabilitydamage) | Object || 1 ||
 | [`ChanceToSpitOnDamage`](#object-chancetospitondamage) | Object || 7 ||
@@ -283,15 +274,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CoinPickup`](./Enums.md) | Integer || 10 | 4 |
 | [`ConjureBonusAbility`](./Enums.md) | Enum || 1 | random |
 | [`CountAsCorpse`](./Enums.md) | Integer || 4 | 1 |
-| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object || 31 | [GSScream] |
+| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object || 34 | [GSScream] |
 | [`CounterAttackAfterEnemyCastSpell`](./Enums.md) | Enum || 1 | Telekinesis |
-| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object || 1 ||
+| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object || 2 ||
 | [`CrowAttackLink`](./Enums.md) | Integer || 1 | 1 |
 | [`DamageFromBehindOnly`](./Enums.md) | Integer || 1 | 1 |
-| [`DeathRattle`](#object-deathrattle) | Enum / Object || 29 | BBExplode |
-| [`DeathRattleRevive`](#object-deathrattlerevive) | Enum / Object || 10 | HCHumanDie |
-| [`DebuffImmunity`](./Enums.md) | Integer || 5 | 1 |
-| [`DelayedAutoRevive`](#object-delayedautorevive) | Object || 1 ||
+| [`DeathRattle`](#object-deathrattle) | Enum / Object || 35 | BBExplode |
+| [`DeathRattleRevive`](#object-deathrattlerevive) | Enum / Object || 13 | HCHumanDie |
+| [`DebuffImmunity`](./Enums.md) | Integer || 7 | 1 |
+| [`DelayedAutoRevive`](#object-delayedautorevive) | Object || 6 ||
 | [`DemonicGlyphFrames`](./Enums.md) | Integer || 2 | 1 |
 | [`DemonicGlyphStealer`](./Enums.md) | Integer || 1 | 1 |
 | [`DiceBehavior`](#object-dicebehavior) | Object || 1 ||
@@ -308,32 +299,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DisplayDangerAOE`](./Enums.md) | Enum || 4 | TheChild_Wrath |
 | [`DissuadeInstakills`](./Enums.md) | Integer || 2 | 1 |
 | [`Divide4OnDeath`](./Enums.md) | Enum || 6 | MedSlime |
-| [`DivineShield`](./Enums.md) | Integer || 8 | 2 |
+| [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
 | [`DivineShieldPickup`](./Enums.md) | Integer || 1 | 1 |
-| [`DodgeChance`](./Enums.md) | Integer || 1 | 50 |
+| [`DodgeChance`](./Enums.md) | Integer || 14 | 50 |
 | [`DodgeChanceWithBlindSpot`](./Enums.md) | Integer || 1 | 25 |
-| [`DodgeChance_Status`](./Enums.md) | Integer || 3 | 66 |
+| [`DodgeChance_Status`](./Enums.md) | Integer || 6 | 66 |
 | [`DodgeWhenTargeted`](#object-dodgewhentargeted) | Object || 1 ||
 | [`DustCloudBehavior`](./Enums.md) | Integer || 1 | 1 |
 | [`Dybbuk1HPTracker`](./Enums.md) | Integer || 1 | 1 |
 | [`DybbukPossessionFallback`](#object-dybbukpossessionfallback) | Object || 1 ||
 | [`ElectricArcs`](./Enums.md) | Integer || 1 | 1 |
-| [`ElementImmune`](./Enums.md) | Enum || 30 | Ice |
+| [`ElementImmune`](./Enums.md) | Enum || 39 | Ice |
 | [`ElementWeakness`](./Enums.md) | Enum || 1 | Fire |
 | [`EnrageOnDamage`](./Enums.md) | Integer || 1 | 1 |
 | [`EraseSpawnCoins`](./Enums.md) | Integer || 1 | 1 |
 | [`EventBounterHunterPassive`](./Enums.md) | Integer || 1 | 1 |
 | [`ExpireOnSpawnerTurnEnd`](./Enums.md) | Integer || 2 | 1 |
-| [`ExtraDispersedTurns`](./Enums.md) | Integer || 3 | 1 |
-| [`ExtraMovePoints`](./Enums.md) | Integer || 1 | 1 |
+| [`ExtraDispersedTurns`](./Enums.md) | Integer || 4 | 1 |
+| [`ExtraMovePoints`](./Enums.md) | Integer || 3 | 1 |
 | [`ExtraTurnsPerTaggedUnit`](./Enums.md) | Enum || 1 | sprout |
 | [`FaceAwayLastDamage`](#object-faceawaylastdamage) | Object || 1 ||
 | [`FaceLastDamage`](#object-facelastdamage) | Integer / Object || 2 | 1 |
-| [`FaceShield`](./Enums.md) | Integer || 3 | 0 |
+| [`FaceShield`](./Enums.md) | Integer || 5 | 0 |
 | [`FadeInsteadOfDie`](./Enums.md) | Integer || 8 | 1 |
 | [`FinalBossBeamQueue`](#object-finalbossbeamqueue) | Object || 1 ||
 | [`FinalBossBecomeTheChild`](#object-finalbossbecomethechild) | Object || 1 ||
-| [`FinalBossHitCountdownBoris`](#object-finalbosshitcountdownboris) | Object || 2 ||
+| [`FinalBossHitCountdownBoris`](#object-finalbosshitcountdownboris) | Object || 1 ||
 | [`FinalBossHitCountdownExplosive`](#object-finalbosshitcountdownexplosive) | Object || 1 ||
 | [`FinalBossHitCountdownHoly`](#object-finalbosshitcountdownholy) | Object || 1 ||
 | [`FinalBossPupils`](#object-finalbosspupils) | Object || 1 ||
@@ -342,17 +333,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FinalBossSyncAnimations`](#object-finalbosssyncanimations) | Object || 1 ||
 | [`FlingObjectsOnTop`](./Enums.md) | Integer || 1 | 8 |
 | [`FlushmasterCelebration`](./Enums.md) | Enum || 1 | celebrate |
-| [`Flying`](./Enums.md) | Integer || 2 | 1 |
+| [`Flying`](./Enums.md) | Integer || 9 | 1 |
 | [`ForceDodgeEverything`](./Enums.md) | Integer || 1 | 1 |
 | [`FormChangeDuringWeatherElement`](#object-formchangeduringweatherelement) | Object || 2 ||
 | [`FormChangeHealthThreshold`](#object-formchangehealththreshold) | Object || 3 ||
 | [`FormChangeOffMap`](#object-formchangeoffmap) | Object || 8 ||
-| [`FormChangeOnElementInfluence`](#object-formchangeonelementinfluence) | Object || 9 ||
+| [`FormChangeOnElementInfluence`](#object-formchangeonelementinfluence) | Object || 8 ||
 | [`FormChangeWhenBuddyDies`](./Enums.md) | Enum || 1 | Rage |
 | [`FormChangeWhileHasStatus`](#object-formchangewhilehasstatus) | Object || 35 ||
 | [`FormChangeWhilePrimingAbility`](#object-formchangewhileprimingability) | Object || 6 ||
-| [`FormChanger`](#object-formchanger) | Object || 118 ||
-| [`FreePathfindElement`](./Enums.md) | Enum || 1 | Water |
+| [`FormChanger`](#object-formchanger) | Object || 106 ||
+| [`FreePathfindElement`](./Enums.md) | Enum || 2 | Water |
 | [`FullBlockEverything`](./Enums.md) | Integer || 1 | 1 |
 | [`FullBlockEverythingTo0Damage`](./Enums.md) | Integer || 1 | 1 |
 | [`GasCanBehavior`](./Enums.md) | Integer || 1 | 1 |
@@ -366,27 +357,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HPAltStates`](#object-hpaltstates) | Object || 1 ||
 | [`HarpoonTrapPassive`](./Enums.md) | Enum || 1 | HarpoonTrapPull |
 | [`HealNeighborsEachTurn`](#object-healneighborseachturn) | Object || 1 ||
-| [`HealthGain`](./Enums.md) | Integer || 10 | 5 |
+| [`HealthGain`](./Enums.md) | Integer || 6 | 5 |
 | [`HealthPickup`](#object-healthpickup) | Object || 16 ||
-| [`HealthRegenUp`](./Enums.md) | Integer || 3 | 2 |
+| [`HealthRegenUp`](./Enums.md) | Integer || 52 | 2 |
 | [`HiddenDoomed`](./Enums.md) | Integer || 1 | 2 |
 | [`HitlerExecute`](#object-hitlerexecute) | Object || 1 ||
 | [`IceBlockBehavior`](./Enums.md) | Integer || 1 | 1 |
-| [`IgnoreTiles`](./Enums.md) | Integer || 4 | 1 |
+| [`IgnoreTiles`](./Enums.md) | Integer || 6 | 1 |
 | [`IllusionTint`](./Enums.md) | Integer || 1 | 1 |
 | [`ImmediateAbilityReaction`](#object-immediateabilityreaction) | Array / Enum / Object || 26 | [ManglerFumbleEven] |
 | [`ImmobilePassive`](./Enums.md) | Integer || 2 | 1 |
-| [`InfiniteRebirth`](#object-infiniterebirth) | Object || 1 ||
+| [`InfiniteRebirth`](#object-infiniterebirth) | Object || 2 ||
 | [`InheritSpawnerStats`](./Enums.md) | Integer || 1 | 1 |
-| [`InjuryImmunity`](./Enums.md) | Integer || 3 | 1 |
-| [`InnateElement`](./Enums.md) | Enum || 6 | Water |
+| [`InjuryImmunity`](./Enums.md) | Integer || 5 | 1 |
+| [`InnateElement`](./Enums.md) | Enum || 14 | Water |
 | [`InsertIntoBackgroundPlaceholder`](./Enums.md) | Integer || 1 | 1 |
 | [`JohnnyNeedsWashing`](#object-johnnyneedswashing) | Object || 1 ||
 | [`JohnnyWasher`](./Enums.md) | Enum || 1 | BBTransformZealot |
 | [`KaijuKnockbackImmune`](./Enums.md) | Integer || 6 | 1 |
 | [`KaijuWinCon`](./Enums.md) | Enum || 2 | zaratana |
-| [`KineticSpikes`](./Enums.md) | Integer || 5 | 5 |
-| [`KnockbackImmunity`](./Enums.md) | Integer || 1 | 1 |
+| [`KineticSpikes`](./Enums.md) | Integer || 15 | 5 |
+| [`KnockbackImmunity`](./Enums.md) | Integer || 5 | 1 |
 | [`LegacySpawnSavedCatIfExists`](./Enums.md) | Enum || 1 | Legacy_Marshmallow_StolenCatID |
 | [`LimitDamage`](./Enums.md) | Integer || 10 | 1 |
 | [`LimitHeal`](./Enums.md) | Integer || 9 | 0 |
@@ -394,15 +385,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LoopingSoundWhileAlive`](./Enums.md) | Enum || 4 | Bomb_FuseLoop |
 | [`MagicDamageImmune`](./Enums.md) | Integer || 2 | 1 |
 | [`MamaCatAnimations`](./Enums.md) | Integer || 2 | 1 |
-| [`ManaPickup`](#object-manapickup) | Object || 6 ||
+| [`ManaPickup`](#object-manapickup) | Object || 3 ||
 | [`ManglerMonsterPassive`](./Enums.md) | Enum || 1 | ManglerMonsterDashAttack |
 | [`MegaDinoDropController`](#object-megadinodropcontroller) | Object || 1 ||
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object || 19 ||
+| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object || 59 ||
 | [`MimicSpawnerAttacks`](./Enums.md) | Integer || 3 | -1 |
 | [`MiniVolcanoReaction`](./Enums.md) | Enum || 2 | ThrobShot_Reaction |
-| [`MinimumKnockbackFromAllDamage`](./Enums.md) | Integer || 5 | 1 |
+| [`MinimumKnockbackFromAllDamage`](./Enums.md) | Integer || 7 | 1 |
 | [`MinimumKnockbackFromPhysicalAttacks`](./Enums.md) | Integer || 3 | 1 |
-| [`MissChance`](./Enums.md) | Integer || 1 | 20 |
+| [`MissChance`](./Enums.md) | Integer || 9 | 20 |
 | [`ModularPickup`](#object-modularpickup) | Object || 1 ||
 | [`MonkCatReactionAbilities`](#object-monkcatreactionabilities) | Object || 1 ||
 | [`MoonHeadCrackedVisual`](./Enums.md) | Enum || 1 | Cracked |
@@ -411,12 +402,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`MotherTumorSpawnInCapture`](#object-mothertumorspawnincapture) | Object || 2 ||
 | [`Mount`](#object-mount) | Object || 1 ||
 | [`MoveAfterAnyAttemptedAttack`](#object-moveafteranyattemptedattack) | Object || 1 ||
-| [`MoveAwayFromDamageSource`](#object-moveawayfromdamagesource) | Object || 1 ||
+| [`MoveAwayFromDamageSource`](#object-moveawayfromdamagesource) | Object || 2 ||
 | [`MoveAwayWhenEnemyAdjacent`](#object-moveawaywhenenemyadjacent) | Object || 1 ||
-| [`MoveTowardsDamageSource`](#object-movetowardsdamagesource) | Enum / Object || 6 | MoveOne |
+| [`MoveTowardsDamageSource`](#object-movetowardsdamagesource) | Enum / Object || 10 | MoveOne |
 | [`MoveTowardsKillers`](#object-movetowardskillers) | Enum / Object || 5 | ReaperRevenge |
-| [`MoveWhenDamaged`](Cat_Mutations.md#object-movewhendamaged) | Enum / Object || 10 | move |
-| [`MovementReaction`](#object-movementreaction) | Object || 7 ||
+| [`MoveWhenDamaged`](Cat_Mutations.md#object-movewhendamaged) | Enum / Object || 11 | move |
+| [`MovementReaction`](#object-movementreaction) | Object || 9 ||
 | [`MultiSpawnOnDeath`](#object-multispawnondeath) | Object || 1 ||
 | [`MulticatHeads`](./Enums.md) | Integer || 1 | 0 |
 | [`MutateAfterXTurns`](./Enums.md) | Integer || 1 | 3 |
@@ -424,72 +415,72 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`MuteDemonicGlyphDisplay`](./Enums.md) | Integer || 1 | 1 |
 | [`NoHealthOnlyShield`](./Enums.md) | Integer || 12 | 1 |
 | [`OrthogonalAIDangerZone`](./Enums.md) | Integer || 1 | 10 |
-| [`OverrideMaxHealth`](./Enums.md) | Integer || 6 | 25 |
+| [`OverrideMaxHealth`](./Enums.md) | Integer || 7 | 25 |
 | [`PackHunting`](./Enums.md) | Integer || 1 | 1 |
-| [`PassiveWhenAffectedByElement`](Cat_Mutations.md#object-passivewhenaffectedbyelement) | Object || 1 ||
-| [`PassiveWhenDead`](#object-passivewhendead) | Object || 1 ||
-| [`PassiveWhileHasStatus`](Cat_Mutations.md#object-passivewhilehasstatus) | Object || 5 ||
+| [`PassiveWhenAffectedByElement`](Cat_Mutations.md#object-passivewhenaffectedbyelement) | Object || 4 ||
+| [`PassiveWhenDead`](#object-passivewhendead) | Object || 4 ||
+| [`PassiveWhileHasStatus`](Cat_Mutations.md#object-passivewhilehasstatus) | Object || 2 ||
 | [`PassiveWhileNotHasStatus`](#object-passivewhilenothasstatus) | Object || 2 ||
-| [`PermanentMadness`](./Enums.md) | Integer || 4 | 1 |
+| [`PermanentMadness`](./Enums.md) | Integer || 8 | 1 |
 | [`Phasing`](./Enums.md) | Integer || 1 | 1 |
 | [`Plant`](./Enums.md) | Integer || 8 | 1 |
-| [`PoisonThorns`](./Enums.md) | Integer || 1 | 3 |
+| [`PoisonThorns`](./Enums.md) | Integer || 9 | 3 |
 | [`PrioritizeAggroTarget`](./Enums.md) | Integer || 2 | 1 |
-| [`PrioritizeFarAwayTargets`](./Enums.md) | Integer || 9 | 10 |
-| [`PrioritizeHitDifferentTargets`](./Enums.md) | Integer || 4 | 1 |
+| [`PrioritizeFarAwayTargets`](./Enums.md) | Integer || 4 | 10 |
+| [`PrioritizeHitDifferentTargets`](./Enums.md) | Integer || 3 | 1 |
 | [`PrioritizePlayerCats`](./Enums.md) | Integer || 2 | 1 |
 | [`PrioritizeWeakestEnemy`](./Enums.md) | Integer || 2 | 1 |
-| [`ProtectTargetedAllies`](#object-protecttargetedallies) | Object || 2 ||
+| [`ProtectTargetedAllies`](#object-protecttargetedallies) | Object || 3 ||
 | [`RandomPassivePool`](#object-randompassivepool) | Object || 3 ||
 | [`RandomizeAIWeightsEachTurn`](./Enums.md) | Array || 8 | [chubs_and_nubs_blind] |
-| [`ReflectProjectiles`](#object-reflectprojectiles) | Integer / Object || 10 | 100 |
+| [`ReflectProjectiles`](#object-reflectprojectiles) | Integer / Object || 12 | 100 |
 | [`ReturnBoundItemOnBattleEnd`](./Enums.md) | Integer || 1 | 1 |
-| [`RevengeDamage`](Abilities_and_Spells.md#object-revengedamage) | Object || 1 ||
-| [`Robot`](#object-robot) | Integer / Object || 46 | 1 |
+| [`RevengeDamage`](Abilities_and_Spells.md#object-revengedamage) | Object || 15 ||
+| [`Robot`](#object-robot) | Integer / Object || 47 | 1 |
 | [`RunInXTurns`](./Enums.md) | Integer || 3 | 2 |
 | [`RunWhenKittensDead`](./Enums.md) | Integer || 1 | 1 |
 | [`RunWhenLastPlayerCatIsCharmed`](#object-runwhenlastplayercatischarmed) | Object || 1 ||
 | [`SafeDoomed`](./Enums.md) | Integer || 2 | 1 |
 | [`ScalingAttackAnimation`](#object-scalingattackanimation) | Object || 1 ||
-| [`SecurityBotProtect`](#object-securitybotprotect) | Object || 6 ||
-| [`SetSpellCosts`](./Enums.md) | Integer || 1 | 0 |
-| [`SharePickups`](#object-sharepickups) | Object || 1 ||
+| [`SecurityBotProtect`](#object-securitybotprotect) | Object || 7 ||
+| [`SetSpellCosts`](./Enums.md) | Integer || 7 | 0 |
+| [`SharePickups`](#object-sharepickups) | Object || 2 ||
 | [`SharePickupsWithSpawner`](./Enums.md) | Integer || 3 | 0 |
-| [`SharkySmellsBlood`](./Enums.md) | Integer || 4 | 1 |
+| [`SharkySmellsBlood`](./Enums.md) | Integer || 5 | 1 |
 | [`SkipFirstRounds`](#object-skipfirstrounds) | Object || 1 ||
 | [`SlotMachineRollPool`](#object-slotmachinerollpool) | Object || 2 ||
-| [`SmallRockBehavior`](#object-smallrockbehavior) | Integer / Object || 8 | 0 |
-| [`SpawnCreepOnHit`](./Enums.md) | Integer || 2 | 1 |
+| [`SmallRockBehavior`](#object-smallrockbehavior) | Integer / Object || 9 | 0 |
+| [`SpawnCreepOnHit`](./Enums.md) | Integer || 3 | 1 |
 | [`SpawnCreepOnHitKnockback`](./Enums.md) | Integer || 1 | 1 |
-| [`SpawnOnDeath`](#object-spawnondeath) | Enum / Object || 79 | BiggestFood |
-| [`SpawnThingOnDamage`](Cat_Mutations.md#object-spawnthingondamage) | Object || 12 ||
-| [`SpawnThingOnDeath`](./Enums.md) | Enum || 3 | Boulder |
+| [`SpawnOnDeath`](#object-spawnondeath) | Enum / Object || 21 | BiggestFood |
+| [`SpawnThingOnDamage`](Cat_Mutations.md#object-spawnthingondamage) | Object || 28 ||
+| [`SpawnThingOnDeath`](./Enums.md) | Enum || 12 | Boulder |
 | [`SpawnerCatDataReference`](./Enums.md) | Integer || 1 | 1 |
-| [`SpeedUp`](./Enums.md) | Integer || 4 | 2 |
+| [`SpeedUp`](./Enums.md) | Integer || 7 | 2 |
 | [`SpewerAltGraphics`](#object-speweraltgraphics) | Object || 1 ||
 | [`SpreadWater`](./Enums.md) | Integer || 1 | 1 |
 | [`SproutsGrantMovement`](./Enums.md) | Integer || 1 | 1 |
 | [`StartDead`](./Enums.md) | Integer || 1 | 100 |
 | [`StartOffMap`](./Enums.md) | Integer || 5 | 1 |
-| [`StatusAfterXTurns`](#object-statusafterxturns) | Object || 1 ||
+| [`StatusAfterXTurns`](#object-statusafterxturns) | Object || 2 ||
 | [`StatusCollector`](#object-statuscollector) | Object || 9 ||
 | [`StatusEachTurnBeginIfHasStatus`](#object-statuseachturnbeginifhasstatus) | Object || 1 ||
-| [`StatusEachTurnEnd`](Cat_Mutations.md#object-statuseachturnend) | Object || 9 ||
+| [`StatusEachTurnEnd`](Cat_Mutations.md#object-statuseachturnend) | Object || 49 ||
 | [`StatusEachTurnEndIfEnabledAtStartOfTurn`](#object-statuseachturnendifenabledatstartofturn) | Object || 1 ||
-| [`StatusImmunity`](./Enums.md) | Array / Enum || 19 | [Burn] |
-| [`StatusOnDie`](Cat_Mutations.md#object-statusondie) | Object || 1 ||
-| [`StatusOnEndMove`](Cat_Mutations.md#object-statusonendmove) | Object || 1 ||
+| [`StatusImmunity`](./Enums.md) | Array / Enum || 34 | [Burn] |
+| [`StatusOnDie`](Cat_Mutations.md#object-statusondie) | Object || 8 ||
+| [`StatusOnEndMove`](Cat_Mutations.md#object-statusonendmove) | Object || 7 ||
 | [`StatusOnEnemyConfused`](#object-statusonenemyconfused) | Object || 1 ||
-| [`StatusOnGainCoins`](#object-statusongaincoins) | Object || 1 ||
-| [`StatusOnKill`](Cat_Mutations.md#object-statusonkill) | Object || 4 ||
+| [`StatusOnGainCoins`](#object-statusongaincoins) | Object || 4 ||
+| [`StatusOnKill`](Cat_Mutations.md#object-statusonkill) | Object || 29 ||
 | [`StatusOnSpawnIn`](#object-statusonspawnin) | Object || 2 ||
-| [`StatusOnTookDamage`](Cat_Mutations.md#object-statusontookdamage) | Object || 2 ||
-| [`StatusOnTookDamageFromAbility`](Cat_Mutations.md#object-statusontookdamagefromability) | Object || 4 ||
+| [`StatusOnTookDamage`](Cat_Mutations.md#object-statusontookdamage) | Object || 29 ||
+| [`StatusOnTookDamageFromAbility`](Cat_Mutations.md#object-statusontookdamagefromability) | Object || 6 ||
 | [`StatusOverlappingCharactersAndDie`](#object-statusoverlappingcharactersanddie) | Object || 1 ||
 | [`StatusWhenStatusCompletelyRemoved`](#object-statuswhenstatuscompletelyremoved) | Object || 1 ||
-| [`StrengthUp`](./Enums.md) | Integer || 9 | 2 |
+| [`StrengthUp`](./Enums.md) | Integer || 3 | 2 |
 | [`StripStatuses`](./Enums.md) | Integer || 10 | 1 |
-| [`StunImmunity`](#object-stunimmunity) | Integer / Object || 4 | 1 |
+| [`StunImmunity`](#object-stunimmunity) | Integer / Object || 6 | 1 |
 | [`SupportDieInsteadOfRun`](#object-supportdieinsteadofrun) | Object || 1 ||
 | [`SupportFormChangeInsteadOfRun`](#object-supportformchangeinsteadofrun) | Enum / Object || 3 | Attacker |
 | [`SurviveAt1HP`](./Enums.md) | Integer || 2 | 1 |
@@ -508,17 +499,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Terminator2Run`](#object-terminator2run) | Object || 1 ||
 | [`TerminatorChase`](#object-terminatorchase) | Object || 1 ||
 | [`TerminatorSkin`](#object-terminatorskin) | Object || 1 ||
-| [`Thorns`](./Enums.md) | Integer || 17 | 2 |
+| [`Thorns`](./Enums.md) | Integer || 65 | 2 |
 | [`TileElementDamageImmunity`](./Enums.md) | Enum || 1 | Ice |
-| [`TileTrail`](./Enums.md) | Enum || 2 | ShadowTile |
+| [`TileTrail`](./Enums.md) | Enum || 6 | ShadowTile |
 | [`TileTrail_Ahead`](./Enums.md) | Enum || 3 | WaterTile |
-| [`TinkererBasicAttackSwitching`](Cat_Classes.md#object-tinkererbasicattackswitching) | Object || 2 ||
+| [`TinkererBasicAttackSwitching`](Cat_Classes.md#object-tinkererbasicattackswitching) | Object || 1 ||
 | [`TireBehavior`](./Enums.md) | Integer || 1 | 1 |
 | [`TormentorHeal`](./Enums.md) | Integer || 1 | 1 |
-| [`TowerDefenseReflex`](./Enums.md) | Enum || 1 | attack |
+| [`TowerDefenseReflex`](./Enums.md) | Enum || 2 | attack |
 | [`TrackAmountKilledByPlayer`](./Enums.md) | Enum || 1 | BonusBirdsKilled |
-| [`Trample`](./Enums.md) | Integer || 76 | 3 |
-| [`TransformInXTurns`](#object-transforminxturns) | Object || 9 ||
+| [`Trample`](./Enums.md) | Integer || 88 | 3 |
+| [`TransformInXTurns`](#object-transforminxturns) | Object || 7 ||
 | [`TransformOnDeath`](./Enums.md) | Array / Enum || 13 | [Hive] |
 | [`TransformOnDeathImmediately`](#object-transformondeathimmediately) | Enum / Object || 5 | NoHead |
 | [`TransformOnElementInfluence`](#object-transformonelementinfluence) | Object || 9 ||
@@ -528,16 +519,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Trapper`](#object-trapper) | Object || 4 ||
 | [`TutorialBossRiggedFight`](./Enums.md) | Integer || 1 | 16 |
 | [`TwisterFling`](#object-twisterfling) | Object || 1 ||
-| [`UncappedHP`](./Enums.md) | Integer || 1 | 1 |
-| [`Undead`](./Enums.md) | Integer || 24 | 1 |
+| [`UncappedHP`](./Enums.md) | Integer || 2 | 1 |
+| [`Undead`](./Enums.md) | Integer || 25 | 1 |
 | [`UnlimitedDeathRattleRevive`](#object-unlimiteddeathrattlerevive) | Object || 1 ||
 | [`UnlockOrientation`](./Enums.md) | Integer || 2 | 1 |
 | [`UpTireBehavior`](./Enums.md) | Integer || 1 | 5 |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object || 5 | KirbySpit |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object || 2 | KirbySpit |
 | [`UseAbilityWhenOutOfStatus`](#object-useabilitywhenoutofstatus) | Object || 1 ||
 | [`UseAbilityWhenShieldDepleted`](./Enums.md) | Enum || 1 | T3Pebbles_PrimeBoulderDrop |
 | [`Wall`](./Enums.md) | Integer || 1 | 1 |
-| [`WaterWalk`](./Enums.md) | Integer || 12 | 1 |
+| [`WaterWalk`](./Enums.md) | Integer || 14 | 1 |
 | [`WeaponsDontLoseDurability`](./Enums.md) | Integer || 3 | 1 |
 | [`WeremanTransformationReceiver`](./Enums.md) | Enum || 4 | CaveWomanDropTransform |
 | [`WhitelistPickupType`](./Enums.md) | Enum || 1 | food |
@@ -545,7 +536,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`WispDodge`](./Enums.md) | Integer || 1 | 1 |
 | [`YOffset`](./Enums.md) | Number || 6 | -.18 |
 | [`ZeroKnockbackDamage`](./Enums.md) | Integer || 1 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 
 </details>
 
@@ -565,104 +556,104 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`faction`](./Enums.md#enum-faction) | Enum || 1010 ||
-| `health` | Integer || 854 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 560 ||
-| `movement` | Integer || 556 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 539 ||
-| [`tag`](./Arrays.md#array-tag) | Array / Enum | Specific entity tag required. | 508 ||
-| [`corpse_health`](./Enums.md#enum-corpse_health) | Mixed || 390 ||
-| `inherit_faction` | Boolean || 230 ||
-| `dispersed_bonus_turns` | Integer || 208 ||
-| `base_mana_regen` | Integer || 180 ||
-| [`size`](./Enums.md#enum-size) | Enum / Number || 160 ||
-| `shield` | Enum / Integer || 148 ||
-| [`move_block`](./Enums.md#enum-move_block) | Enum || 146 ||
-| `kill_required` | Boolean || 138 ||
-| `can_be_backstabbed` | Boolean || 136 ||
-| `initiative` | Enum / Integer || 122 ||
-| `takes_turns` | Boolean || 122 ||
-| `mana_regen` | Integer || 102 ||
-| `mana` | Enum / Integer | Base maximum mana pool. | 100 ||
-| `flying` | Boolean || 94 ||
-| `weak_threshold` | Integer || 64 ||
-| [`hidden_tag`](./Arrays.md#array-hidden_tag) | Array / Enum || 62 ||
-| `knockback_immune` | Boolean || 50 ||
+| [`faction`](./Enums.md#enum-faction) | Enum || 505 ||
+| `health` | Integer || 427 ||
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 280 ||
+| `movement` | Integer || 277 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 538 ||
+| [`tag`](./Arrays.md#array-tag) | Array / Enum | Specific entity tag required. | 399 ||
+| [`corpse_health`](./Enums.md#enum-corpse_health) | Mixed || 195 ||
+| `inherit_faction` | Boolean || 115 ||
+| `dispersed_bonus_turns` | Integer || 104 ||
+| `base_mana_regen` | Integer || 90 ||
+| [`size`](./Enums.md#enum-size) | Enum / Number || 80 ||
+| `shield` | Enum / Integer || 74 ||
+| [`move_block`](./Enums.md#enum-move_block) | Enum || 73 ||
+| `kill_required` | Boolean || 69 ||
+| `can_be_backstabbed` | Boolean || 68 ||
+| `initiative` | Enum / Integer || 61 ||
+| `takes_turns` | Boolean || 61 ||
+| `mana_regen` | Integer || 51 ||
+| `mana` | Enum / Integer | Base maximum mana pool. | 50 ||
+| `flying` | Boolean || 47 ||
+| `weak_threshold` | Integer || 32 ||
+| [`hidden_tag`](./Arrays.md#array-hidden_tag) | Array / Enum || 38 ||
+| `knockback_immune` | Boolean || 25 ||
 | [`banned_elite_buffs`](./Arrays.md#array-banned_elite_buffs) | Array || 45 ||
-| `can_be_champion` | Boolean || 40 ||
-| [`ai_scale`](./Enums.md#enum-ai_scale) | Number || 36 ||
-| [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | `String` || 34 ||
-| [`auto_run_priority`](./Enums.md#enum-auto_run_priority) | Enum || 32 ||
-| `inanimate` | Boolean || 32 ||
-| `disperse_main_turns` | Boolean || 30 ||
-| `evenly_dispersed_bonus_turns` | Integer || 26 ||
-| `exclude_from_hallucinate` | Boolean || 26 ||
-| [`hidden_tags`](./Arrays.md#array-hidden_tags) | Array / Enum || 26 ||
-| `round_end_bonus_turns` | Integer || 26 ||
-| `can_be_overkilled` | Boolean || 24 ||
-| `can_collect_coins` | Boolean || 20 ||
-| `deathpoof_size` | Integer || 20 ||
-| `dispersed_bonus_turns_consider_initiative` | Boolean || 20 ||
-| `initial_health` | Integer || 20 ||
+| `can_be_champion` | Boolean || 20 ||
+| [`ai_scale`](./Enums.md#enum-ai_scale) | Number || 18 ||
+| [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | `String` || 17 ||
+| [`auto_run_priority`](./Enums.md#enum-auto_run_priority) | Enum || 16 ||
+| `inanimate` | Boolean || 16 ||
+| `disperse_main_turns` | Boolean || 15 ||
+| `evenly_dispersed_bonus_turns` | Integer || 13 ||
+| `exclude_from_hallucinate` | Boolean || 13 ||
+| [`hidden_tags`](./Arrays.md#array-hidden_tags) | Array / Enum || 14 ||
+| `round_end_bonus_turns` | Integer || 13 ||
+| `can_be_overkilled` | Boolean || 12 ||
+| `can_collect_coins` | Boolean || 10 ||
+| `deathpoof_size` | Integer || 10 ||
+| `dispersed_bonus_turns_consider_initiative` | Boolean || 10 ||
+| `initial_health` | Integer || 10 ||
 | [`lock_orientation`](./Arrays.md#array-lock_orientation) | Array || 19 ||
-| `can_eat_food` | Boolean || 18 ||
-| `can_grant_extra_turns` | Boolean || 16 ||
+| `can_eat_food` | Boolean || 9 ||
+| `can_grant_extra_turns` | Boolean || 8 ||
 | [`elements`](./Arrays.md#array-elements) | Array || 16 ||
-| `tall` | Boolean || 16 ||
-| `dispersed_bonus_turns_before_cats` | Boolean || 14 ||
-| `divine_shield` | Integer || 14 ||
-| `is_player_cat` | Boolean || 14 ||
+| `tall` | Boolean || 8 ||
+| `dispersed_bonus_turns_before_cats` | Boolean || 7 ||
+| `divine_shield` | Integer || 7 ||
+| `is_player_cat` | Boolean || 7 ||
 | [`tags`](./Arrays.md#array-tags) | Array / Enum || 14 ||
-| `boss_minions_runaway` | Boolean || 12 ||
-| `mana_matters` | Boolean || 12 ||
-| `access_to_player_inventory` | Boolean || 10 ||
-| `act_points` | Integer || 10 ||
-| `takes_main_turn` | Boolean || 10 ||
-| `visually_spiky` | Boolean || 10 ||
-| `allow_passive_spelltransforming` | Boolean || 8 ||
-| `base_crit_chance` | Integer || 8 ||
-| `last_turn_is_main_turn` | Boolean || 8 ||
-| `round_start_bonus_turns` | Integer || 8 ||
-| `view_bleeding_characters_as_enemies` | Boolean || 8 ||
-| [`aoe_pierce_mode`](./Enums.md#enum-aoe_pierce_mode) | Enum || 6 ||
-| `base_initiative` | Integer || 6 ||
-| `base_movement` | Integer || 6 ||
-| `catdata_ignore_skills` | Boolean || 6 ||
-| [`disallow_items`](./Enums.md#enum-disallow_items) | Enum || 6 ||
-| [`held_coins`](./Arrays.md#array-held_coins) | Array / Integer || 6 ||
-| `always_triggers_traps` | Boolean || 4 ||
-| `base_health` | Integer || 4 ||
-| `base_health_regen` | Integer || 4 ||
-| `base_initial_mana` | Integer || 4 ||
-| `base_mana` | Integer || 4 ||
-| `blocking` | Boolean || 4 ||
-| `can_be_elite` | Boolean || 4 ||
-| `can_run` | Boolean || 4 ||
-| `champion` | Boolean || 4 ||
-| `force_not_familiar` | Boolean || 4 ||
-| `hint_no_corpse` | Boolean || 4 ||
-| `must_start_facing_camera` | Boolean || 4 ||
-| `tile_desire_cost` | Integer || 4 ||
-| `uncapturable` | Boolean || 4 ||
-| `aggro_target_is_enemy` | Boolean || 2 ||
-| `allow_flying_effect` | Boolean || 2 ||
-| `allow_offmap_corpse` | Boolean || 2 ||
-| `allow_replacebrain` | Boolean || 2 ||
-| `always_face_forward` | Boolean || 2 ||
-| `capture_as_cat` | Boolean || 2 ||
-| `elite` | Boolean || 2 ||
-| `first_turn_is_main_turn` | Boolean || 2 ||
-| `ignore_mouseover` | Boolean || 2 ||
-| `ignore_tiles` | Boolean || 2 ||
-| `mouseover_priority` | Integer || 2 ||
-| `move_points` | Integer || 2 ||
-| `pickup_type` | Integer || 2 ||
-| `scale` | Number || 2 ||
-| `speculative_inanimate` | Boolean || 2 ||
-| `static` | Boolean || 2 ||
-| `two_fronts` | Boolean || 2 ||
-| `two_fronts_switch` | Boolean || 2 ||
-| `view_bugs_as_enemies` | Boolean || 2 ||
+| `boss_minions_runaway` | Boolean || 6 ||
+| `mana_matters` | Boolean || 6 ||
+| `access_to_player_inventory` | Boolean || 5 ||
+| `act_points` | Integer || 5 ||
+| `takes_main_turn` | Boolean || 5 ||
+| `visually_spiky` | Boolean || 5 ||
+| `allow_passive_spelltransforming` | Boolean || 4 ||
+| `base_crit_chance` | Integer || 4 ||
+| `last_turn_is_main_turn` | Boolean || 4 ||
+| `round_start_bonus_turns` | Integer || 4 ||
+| `view_bleeding_characters_as_enemies` | Boolean || 4 ||
+| [`aoe_pierce_mode`](./Enums.md#enum-aoe_pierce_mode) | Enum || 3 ||
+| `base_initiative` | Integer || 3 ||
+| `base_movement` | Integer || 3 ||
+| `catdata_ignore_skills` | Boolean || 3 ||
+| [`disallow_items`](./Enums.md#enum-disallow_items) | Enum || 3 ||
+| [`held_coins`](./Arrays.md#array-held_coins) | Array / Integer || 10 ||
+| `always_triggers_traps` | Boolean || 2 ||
+| `base_health` | Integer || 2 ||
+| `base_health_regen` | Integer || 2 ||
+| `base_initial_mana` | Integer || 2 ||
+| `base_mana` | Integer || 2 ||
+| `blocking` | Boolean || 2 ||
+| `can_be_elite` | Boolean || 2 ||
+| `can_run` | Boolean || 2 ||
+| `champion` | Boolean || 2 ||
+| `force_not_familiar` | Boolean || 2 ||
+| `hint_no_corpse` | Boolean || 2 ||
+| `must_start_facing_camera` | Boolean || 2 ||
+| `tile_desire_cost` | Integer || 2 ||
+| `uncapturable` | Boolean || 2 ||
+| `aggro_target_is_enemy` | Boolean || 1 ||
+| `allow_flying_effect` | Boolean || 1 ||
+| `allow_offmap_corpse` | Boolean || 1 ||
+| `allow_replacebrain` | Boolean || 1 ||
+| `always_face_forward` | Boolean || 1 ||
+| `capture_as_cat` | Boolean || 1 ||
+| `elite` | Boolean || 1 ||
+| `first_turn_is_main_turn` | Boolean || 1 ||
+| `ignore_mouseover` | Boolean || 1 ||
+| `ignore_tiles` | Boolean || 1 ||
+| `mouseover_priority` | Integer || 1 ||
+| `move_points` | Integer || 1 ||
+| `pickup_type` | Integer || 1 ||
+| `scale` | Number || 1 ||
+| `speculative_inanimate` | Boolean || 1 ||
+| `static` | Boolean || 1 ||
+| `two_fronts` | Boolean || 1 ||
+| `two_fronts_switch` | Boolean || 1 ||
+| `view_bugs_as_enemies` | Boolean || 1 ||
 | [`inanimate_can_receive_specific_statuses`](./Arrays.md#array-inanimate_can_receive_specific_statuses) | Array || 1 ||
 
 </details>
@@ -683,32 +674,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`brain`](./Enums.md#enum-brain) | Enum || 1146 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 986 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 980 ||
-| [`pattern`](#object-pattern) | Object | AI sequence logic. | 578 ||
-| [`mainturn_pattern`](#object-mainturn_pattern) | Object | AI Logic: Determines standard ability usage during the main turn. | 88 ||
-| `end_turn_on_formswitch` | Boolean || 78 ||
-| [`virtual_abilities`](#object-virtual_abilities) | Object | Abilities that are evaluated but not directly castable by the player. | 70 ||
-| `auto_orient` | Boolean || 62 ||
-| `reset_pattern_on_formswitch` | Boolean || 62 ||
-| `stun_advances_pattern` | Boolean || 60 ||
-| `fallback_advances_pattern` | Boolean || 56 ||
-| [`bonusturn_pattern`](#object-bonusturn_pattern) | Object | AI Logic: Determines ability usage during bonus turns. | 54 ||
-| [`fallback`](#object-fallback) | Object | Logic executed if primary options fail. | 46 ||
-| [`round_end_bonusturn_pattern`](#object-round_end_bonusturn_pattern) | Object | AI Logic: Ability usage pattern during round-end bonus turns. | 24 ||
-| `consider_spells` | Boolean || 22 ||
-| `animate_choice` | Boolean || 16 ||
-| `clamp_pattern` | Boolean || 10 ||
-| `randomize_pattern_start` | Boolean || 6 ||
-| [`dispersed_bonusturn_pattern`](#object-dispersed_bonusturn_pattern) | Object | AI Logic: Alternative bonus turn ability pattern. | 4 ||
-| `random_orient` | Boolean || 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| `never_hit_ally_corpses` | Boolean || 2 ||
-| [`post_absorb_move_weights`](./Enums.md#enum-post_absorb_move_weights) | Enum || 2 ||
-| `reset_pattern_on_round_begin` | Boolean || 2 ||
-| [`roll_ability`](./Enums.md#enum-roll_ability) | Enum || 2 ||
-| [`round_start_bonusturn_pattern`](#object-round_start_bonusturn_pattern) | Object | AI Logic: Ability usage pattern during round-start bonus turns. | 2 ||
+| [`brain`](./Enums.md#enum-brain) | Enum || 573 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 493 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 490 ||
+| [`pattern`](#object-pattern) | Object | AI sequence logic. | 289 ||
+| [`mainturn_pattern`](#object-mainturn_pattern) | Object | AI Logic: Determines standard ability usage during the main turn. | 44 ||
+| `end_turn_on_formswitch` | Boolean || 39 ||
+| [`virtual_abilities`](#object-virtual_abilities) | Object | Abilities that are evaluated but not directly castable by the player. | 35 ||
+| `auto_orient` | Boolean || 31 ||
+| `reset_pattern_on_formswitch` | Boolean || 31 ||
+| `stun_advances_pattern` | Boolean || 30 ||
+| `fallback_advances_pattern` | Boolean || 28 ||
+| [`bonusturn_pattern`](#object-bonusturn_pattern) | Object | AI Logic: Determines ability usage during bonus turns. | 27 ||
+| [`fallback`](#object-fallback) | Object | Logic executed if primary options fail. | 23 ||
+| [`round_end_bonusturn_pattern`](#object-round_end_bonusturn_pattern) | Object | AI Logic: Ability usage pattern during round-end bonus turns. | 12 ||
+| `consider_spells` | Boolean || 11 ||
+| `animate_choice` | Boolean || 8 ||
+| `clamp_pattern` | Boolean || 5 ||
+| `randomize_pattern_start` | Boolean || 3 ||
+| [`dispersed_bonusturn_pattern`](#object-dispersed_bonusturn_pattern) | Object | AI Logic: Alternative bonus turn ability pattern. | 2 ||
+| `random_orient` | Boolean || 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| `never_hit_ally_corpses` | Boolean || 1 ||
+| [`post_absorb_move_weights`](./Enums.md#enum-post_absorb_move_weights) | Enum || 1 ||
+| `reset_pattern_on_round_begin` | Boolean || 1 ||
+| [`roll_ability`](./Enums.md#enum-roll_ability) | Enum || 1 ||
+| [`round_start_bonusturn_pattern`](#object-round_start_bonusturn_pattern) | Object | AI Logic: Ability usage pattern during round-start bonus turns. | 1 ||
 | [`dice_abilities`](./Arrays.md#array-dice_abilities) | Array || 1 ||
 
 </details>
@@ -729,13 +720,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `strength` | Integer || 772 ||
-| `constitution` | Integer || 760 ||
-| `dexterity` | Integer || 760 ||
-| `charisma` | Integer || 758 ||
-| `intelligence` | Integer || 758 ||
-| `speed` | Array / Number | Base speed/initiative stat. | 758 ||
-| `luck` | Integer || 320 ||
+| `strength` | Integer || 386 ||
+| `constitution` | Integer || 380 ||
+| `dexterity` | Integer || 380 ||
+| `charisma` | Integer || 379 ||
+| `intelligence` | Integer || 379 ||
+| `speed` | Array / Number | Base speed/initiative stat. | 379 ||
+| `luck` | Integer || 160 ||
 
 </details>
 
@@ -755,11 +746,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`attack`](./Enums.md#enum-attack) | Enum || 874 ||
-| [`move`](./Enums.md#enum-move) | Enum || 866 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 438 ||
+| [`move`](./Enums.md#enum-move) | Enum || 433 ||
 | [`spells`](./Arrays.md#array-spells) | Array || 381 ||
-| `can_get_bonus` | Boolean || 60 ||
-| [`BoneWormShotSmall`](#object-bonewormshotsmall) | Object || 2 ||
+| `can_get_bonus` | Boolean || 30 ||
 
 </details>
 
@@ -779,14 +769,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum || 256 ||
-| [`do_priority`](./Arrays.md#array-do_priority) | Array || 106 ||
-| [`do_all`](./Arrays.md#array-do_all) | Array || 101 ||
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 22 ||
-| [`do_random`](./Arrays.md#array-do_random) | Array || 10 ||
-| [`do_strict`](./Arrays.md#array-do_strict) | Array || 6 ||
+| [`do`](./Enums.md#enum-do) | Enum || 101 ||
+| [`do_priority`](./Arrays.md#array-do_priority) | Array || 82 ||
+| [`do_all`](./Arrays.md#array-do_all) | Array || 91 ||
+| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 11 ||
+| [`do_random`](./Arrays.md#array-do_random) | Array || 9 ||
+| [`do_strict`](./Arrays.md#array-do_strict) | Array || 4 ||
 | [`do_nothing`](./Arrays.md#array-do_nothing) | Array || 3 ||
-| [`move_then_do_priority`](./Arrays.md#array-move_then_do_priority) | Array || 3 ||
+| [`move_then_do_priority`](./Arrays.md#array-move_then_do_priority) | Array || 2 ||
 | [`move_then_do_random`](./Arrays.md#array-move_then_do_random) | Array || 3 ||
 | [`do_all_shuffle`](./Arrays.md#array-do_all_shuffle) | Array || 2 ||
 | [`do_best`](./Arrays.md#array-do_best) | Array || 1 ||
@@ -812,12 +802,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 10 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 5 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 10 ||
 
 </details>
 
@@ -837,8 +827,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -858,165 +848,165 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 120 ||
-| [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer || 112 ||
-| [`Default`](#object-default) | Enum / Object | Character Form: The baseline default behavior state. | 82 ||
-| [`default`](#object-default) | Enum / Object | Baseline configuration. | 82 ||
-| [`Normal`](#object-normal) | Integer / Object | Character Form: Behavior and stats for the \'Normal\' state. | 22 ||
-| [`Rage`](#object-rage) | Object | Character Form: Behavior and stats for the \'Rage\' state. | 20 ||
-| [`HasCat`](#object-hascat) | Object | Character Form: Behavior and stats for the \'HasCat\' state. | 10 ||
-| [`hot`](#object-hot) | Object | Visual effect indicator. | 8 ||
-| [`OffMap`](#object-offmap) | Object | Character Form: Behavior and stats for the 'OffMap' state. | 8 ||
-| [`AllAlive`](#object-allalive) | Object | Encounter State: Logic executed when all specific entities are currently alive. | 6 ||
-| [`Down`](#object-down) | Object | Character Form: Behavior and stats for the \'Down\' state. | 6 ||
-| [`Full`](#object-full) | Object | Character Form: Behavior and stats for the \'Full\' state. | 6 ||
-| [`OneAlive`](#object-onealive) | Object | Encounter State: Logic executed when exactly one target is alive. | 6 ||
-| [`TwoAlive`](#object-twoalive) | Object | Encounter State: Logic executed when exactly two targets are alive. | 6 ||
-| [`Up`](#object-up) | Object | Character Form: Behavior and stats for the \'Up\' state. | 6 ||
-| [`active`](#object-active) | Object | Defines actively executed abilities. | 4 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
-| [`Big`](#object-big) | Object | Character Form / AI State: Behavior and stats for the \'Big\' state. | 4 ||
-| [`Boris`](#object-boris) | Enum / Object | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 4 ||
-| [`CaveMan`](#object-caveman) | Object | Character Form: Behavior and stats for the \'CaveMan\' state. | 4 ||
-| [`CaveManSpear`](#object-cavemanspear) | Object | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 4 ||
-| [`Empty`](#object-empty) | Object | Character Form: Behavior and stats for the \'Empty\' state. | 4 ||
-| [`Explosive`](#object-explosive) | Enum / Object | Character Form: Behavior and stats for the \'Explosive\' state. | 4 ||
-| [`Holding`](#object-holding) | Object | Character Form: Behavior and stats for the \'Holding\' state. | 4 ||
-| [`Holy`](#object-holy) | Enum / Object | Character Form: Behavior and stats for the \'Holy\' state. | 4 ||
-| [`NotPriming`](#object-notpriming) | Object | Character Form: Behavior and stats when not charging an ability. | 4 ||
-| `partial_animation_suffix` | Enum / Integer || 4 ||
-| [`passive`](#object-passive) | Object | Intrinsic passive modifier. | 4 ||
-| [`Priming`](#object-priming) | Object | Character Form: Behavior and stats when charging an ability. | 4 ||
-| [`Rain`](#object-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 4 ||
-| [`Small`](#object-small) | Object | Character Form: Behavior and stats for the \'Small\' state. | 4 ||
-| [`SquirrelForm`](#object-squirrelform) | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 4 ||
-| [`Turtled`](#object-turtled) | Object | Character Form: Behavior and stats for the 'Turtled' state. | 4 ||
-| [`Alert`](#object-alert) | Object | AI State: The behavior profile used when the character is alerted to enemies. | 2 ||
-| [`Angry`](#object-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 2 ||
-| [`Attacker`](#object-attacker) | Object | AI Role: Designates the character as an attacker rather than support. | 2 ||
-| [`BellyFull`](#object-bellyfull) | Object | Character Form / AI State: Behavior and stats for the \'BellyFull\' state. | 2 ||
-| [`BigHolding`](#object-bigholding) | Object | Character Form / AI State: Behavior and stats for the \'BigHolding\' state. | 2 ||
-| [`BigHoldingCat`](#object-bigholdingcat) | Object | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 2 ||
-| [`Bishop`](#object-bishop) | Object | Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 2 ||
-| [`BlackHole`](#object-blackhole) | Object | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 2 ||
-| [`Bomb`](#object-bomb) | Object | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 2 ||
-| [`Bully`](#object-bully) | Object | Character Form / AI State: Behavior and stats for the 'Bully' state. | 2 ||
-| [`Butcher`](Engine_LogicKeys.md#object-butcher) | Object | Applies or references the 'Butcher' effect/state. | 2 ||
-| [`CaveBaby`](#object-cavebaby) | Object | Character Form: Behavior and stats for the \'CaveBaby\' state. | 2 ||
-| [`CaveWoman`](#object-cavewoman) | Object | Character Form: Behavior and stats for the \'CaveWoman\' state. | 2 ||
-| [`CaveWomanHasCat`](#object-cavewomanhascat) | Object | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 2 ||
-| [`Charging`](#object-charging) | Object | Character Form / AI State: Behavior when charging an attack. | 2 ||
-| [`Close`](#object-close) | Object | AI Movement logic: Maneuvers into close/melee range. | 2 ||
-| [`Colorless`](Engine_LogicKeys.md#object-colorless) | Object | Applies or references the 'Colorless' effect/state. | 2 ||
-| [`Cultist`](#object-cultist) | Object | Character Form: Behavior and stats for the \'Cultist\' state. | 2 ||
-| [`Damaged`](#object-damaged) | Object | Character Form / AI State: Behavior when health is critically low. | 2 ||
-| [`Default_Ceiling`](#object-default_ceiling) | Object | Character Form: The baseline behavior state while attached to the ceiling. | 2 ||
-| [`Default_Ground`](#object-default_ground) | Object | Character Form: The baseline behavior state while on the ground. | 2 ||
-| [`DesireMech`](#object-desiremech) | Object | Character Form: Behavior and stats for the 'DesireMech' state. | 2 ||
-| [`Die`](#object-die) | Integer / Object | Character Form / Logic: Forces the character to die. | 2 ||
-| [`Druid`](Engine_LogicKeys.md#object-druid) | Object | Applies or references the 'Druid' effect/state. | 2 ||
-| [`Drunker`](#object-drunker) | Object | Character Form: Behavior and stats for the 'Drunker' state. | 2 ||
-| [`DualSword`](#object-dualsword) | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 2 ||
-| [`DualSword_Primed`](#object-dualsword_primed) | Object | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 2 ||
-| [`Dumb`](#object-dumb) | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 2 ||
-| [`Explody`](#object-explody) | Object | Character Form: Behavior and stats for the 'Explody' state. | 2 ||
-| [`Fighter`](Engine_LogicKeys.md#object-fighter) | Object | Applies or references the 'Fighter' effect/state. | 2 ||
-| [`FightPhase`](#object-fightphase) | Object | Boss Logic: Main combat phase. | 2 ||
-| [`Fire`](#object-fire) | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 2 ||
-| [`FireFull`](#object-firefull) | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 2 ||
-| [`Flop`](#object-flop) | Object | Character Form: Behavior and stats for the \'Flop\' state. | 2 ||
-| [`Flop2`](#object-flop2) | Object | Character Form: Behavior and stats for the \'Flop2\' state. | 2 ||
-| [`Flush`](#object-flush) | Object | Character Form: Behavior and stats for the 'Flush' state. | 2 ||
-| [`FlushBubs`](#object-flushbubs) | Object | Character Form: Behavior and stats for the 'FlushBubs' state. | 2 ||
-| [`FlushHost`](#object-flushhost) | Object | Character Form: Behavior and stats for the 'FlushHost' state. | 2 ||
-| [`FlushNettle`](#object-flushnettle) | Object | Character Form: Behavior and stats for the 'FlushNettle' state. | 2 ||
-| [`Grappling`](#object-grappling) | Object | Character Form / AI State: Behavior while grappling an opponent. | 2 ||
-| [`Grown`](#object-grown) | Object | Character Form: Behavior and stats for the \'Grown\' state. | 2 ||
-| [`GuaranteedJackpot`](#object-guaranteedjackpot) | Object | Loot Logic: Guarantees a high-tier drop. | 2 ||
-| [`Guarding`](#object-guarding) | Object | Character Form / AI State: Defensive behavior state. | 2 ||
-| [`HalfDead`](#object-halfdead) | Object | Character Form: Behavior and stats for the \'HalfDead\' state. | 2 ||
-| [`HasDeadCat`](#object-hasdeadcat) | Object | Character Form: Behavior and stats for the \'HasDeadCat\' state. | 2 ||
-| [`HasRock`](#object-hasrock) | Object | Character Form: Behavior and stats for the \'HasRock\' state. | 2 ||
-| [`Headless`](#object-headless) | Object | Character Form: Behavior and stats for the \'Headless\' state. | 2 ||
-| [`Hint_CrackedVisuals`](#object-hint_crackedvisuals) | Object | Visual: Overlay effects for cracked/damaged terrain or objects. | 2 ||
-| [`Hint_CrackedVisuals2`](#object-hint_crackedvisuals2) | Object | Visual: Secondary cracked visual overlay. | 2 ||
-| [`Hint_CrackedVisuals3`](#object-hint_crackedvisuals3) | Object | Visual: Tertiary cracked visual overlay. | 2 ||
-| [`HumanDead`](#object-humandead) | Object | Character Form: Behavior and stats for the \'HumanDead\' state. | 2 ||
-| [`Hunter`](Engine_LogicKeys.md#object-hunter) | Object | Applies or references the 'Hunter' effect/state. | 2 ||
-| [`InitialPhase`](#object-initialphase) | Object | Boss Logic: The starting phase of an encounter. | 2 ||
-| [`Insane_Ceiling`](#object-insane_ceiling) | Object | Character Form: Insane behavior state while attached to the ceiling. | 2 ||
-| [`Insane_Ground`](#object-insane_ground) | Object | Character Form: Insane behavior state while on the ground. | 2 ||
-| [`Johnny`](#object-johnny) | Object | Character Form: Behavior and stats for the 'Johnny' state. | 2 ||
-| [`JohnnyBubs`](#object-johnnybubs) | Object | Character Form: Behavior and stats for the 'JohnnyBubs' state. | 2 ||
-| [`JohnnyHost`](#object-johnnyhost) | Object | Character Form: Behavior and stats for the 'JohnnyHost' state. | 2 ||
-| [`JohnnyNettle`](#object-johnnynettle) | Object | Character Form: Behavior and stats for the 'JohnnyNettle' state. | 2 ||
-| [`Joystick`](#object-joystick) | Object | Character Form: Behavior and stats for the \'Joystick\' state. | 2 ||
-| [`LastHit`](#object-lasthit) | Object | Logic: Executes logic on the final hit of a multi-hit attack. | 2 ||
-| [`Lifted`](#object-lifted) | Object | Character Form: Behavior and stats for the \'Lifted\' state. | 2 ||
-| [`Lit`](#object-lit) | Object | Character Form: Behavior and stats for the 'Lit' state. | 2 ||
-| [`Mage`](Engine_LogicKeys.md#object-mage) | Object | Applies or references the 'Mage' effect/state. | 2 ||
-| [`Medic`](Engine_LogicKeys.md#object-medic) | Object | Applies or references the 'Medic' effect/state. | 2 ||
-| [`Monk`](Engine_LogicKeys.md#object-monk) | Object | Applies or references the 'Monk' effect/state. | 2 ||
-| [`Mounted`](#object-mounted) | Object | Character Form: Behavior and stats for the \'Mounted\' state. | 2 ||
-| [`MouthFull`](#object-mouthfull) | Object | Character Form: Behavior and stats for the \'MouthFull\' state. | 2 ||
-| [`Mutant`](#object-mutant) | Integer / Object | Character Form: Behavior and stats for the \'Mutant\' state. | 2 ||
-| [`Necromancer`](Engine_LogicKeys.md#object-necromancer) | Object | Applies or references the 'Necromancer' effect/state. | 2 ||
-| [`NeutronStar`](#object-neutronstar) | Object | Character Form: Behavior and stats for the 'NeutronStar' state. | 2 ||
-| [`NoDeathRattle`](./Engine_LogicKeys.md#valid-property-keys) | Object | Applies or references the 'NoDeathRattle' effect/state. | 2 ||
-| [`NoEyes`](#object-noeyes) | Object | Character Form: Behavior and stats for the \'NoEyes\' state. | 2 ||
-| [`NormalFull`](#object-normalfull) | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 2 ||
-| [`NoStick`](#object-nostick) | Object | Character Form: Behavior and stats for the 'NoStick' state. | 2 ||
-| [`Nuke`](#object-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 2 ||
-| [`Obey`](#object-obey) | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 2 ||
-| [`Off`](#object-off) | Object | Character Form: Behavior and stats for the 'Off' state. | 2 ||
-| [`OffScreen`](#object-offscreen) | Object | Character Form: Behavior and stats for the 'OffScreen' state. | 2 ||
-| [`OneEye`](#object-oneeye) | Object | Character Form: Behavior and stats for the \'OneEye\' state. | 2 ||
-| [`Open`](#object-open) | Object | Character Form: Behavior and stats for the 'Open' state. | 2 ||
-| [`OpenCat`](#object-opencat) | Object | Character Form: Behavior and stats for the 'OpenCat' state. | 2 ||
-| [`Out`](#object-out) | Object | Character Form: Behavior and stats for the 'Out' state. | 2 ||
-| [`Possessing`](#object-possessing) | Object | Character Form: Behavior and stats for the \'Possessing\' state. | 2 ||
-| [`Primed`](#object-primed) | Object | Character Form: Behavior and stats for the 'Primed' state. | 2 ||
-| [`Psychic`](Engine_LogicKeys.md#object-psychic) | Object | Applies or references the 'Psychic' effect/state. | 2 ||
-| [`Pulp2`](#object-pulp2) | Object | Character Form: Behavior and stats for the 'Pulp2' state. | 2 ||
-| [`Pulp3`](#object-pulp3) | Object | Character Form: Behavior and stats for the 'Pulp3' state. | 2 ||
-| [`Pulp4`](#object-pulp4) | Object | Character Form: Behavior and stats for the 'Pulp4' state. | 2 ||
-| [`Pulp5`](#object-pulp5) | Object | Character Form: Behavior and stats for the 'Pulp5' state. | 2 ||
-| [`Pulp6`](#object-pulp6) | Object | Character Form: Behavior and stats for the 'Pulp6' state. | 2 ||
-| [`Pulp7`](#object-pulp7) | Object | Character Form: Behavior and stats for the 'Pulp7' state. | 2 ||
-| [`Sitting`](#object-sitting) | Object | Character Form: Behavior and stats for the 'Sitting' state. | 2 ||
-| [`SmallHolding`](#object-smallholding) | Object | Character Form: Behavior and stats for the \'SmallHolding\' state. | 2 ||
-| [`SmallHoldingCat`](#object-smallholdingcat) | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 2 ||
-| [`SpawningPhase`](#object-spawningphase) | Object | Boss Logic: Phase focused on summoning minions. | 2 ||
-| [`Standing`](#object-standing) | Object | Character Form: Behavior and stats for the 'Standing' state. | 2 ||
-| [`Standing2`](#object-standing2) | Object | Character Form: Behavior and stats for the 'Standing2' state. | 2 ||
-| [`Start_Ceiling`](#object-start_ceiling) | Object | Character Form: Behavior and stats for the 'Start_Ceiling' state. | 2 ||
-| [`Stop`](#object-stop) | Integer / Object | AI Movement: Forces the character to cease movement. | 2 ||
-| [`SwordAndShield`](#object-swordandshield) | Object | Character Form: Behavior and stats for the 'SwordAndShield' state. | 2 ||
-| [`SwordAndShield_Primed`](#object-swordandshield_primed) | Object | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 2 ||
-| `sync_brain_patterns` | Boolean || 2 ||
-| [`Tank`](Engine_LogicKeys.md#object-tank) | Object | Applies or references the 'Tank' effect/state. | 2 ||
-| [`Tar`](#object-tar) | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 2 ||
-| [`TarFull`](#object-tarfull) | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 2 ||
-| [`Thief`](Engine_LogicKeys.md#object-thief) | Object | Applies or references the 'Thief' effect/state. | 2 ||
-| [`Throb`](#object-throb) | Object | Character Form: Behavior and stats for the 'Throb' state. | 2 ||
-| [`ThrobBubs`](#object-throbbubs) | Object | Character Form: Behavior and stats for the 'ThrobBubs' state. | 2 ||
-| [`ThrobHost`](#object-throbhost) | Object | Character Form: Behavior and stats for the 'ThrobHost' state. | 2 ||
-| [`ThrobNettle`](#object-throbnettle) | Object | Character Form: Behavior and stats for the 'ThrobNettle' state. | 2 ||
-| [`Tinkerer`](Engine_LogicKeys.md#object-tinkerer) | Object | Applies or references the 'Tinkerer' effect/state. | 2 ||
-| [`Transformed`](#object-transformed) | Object | Character Form: Behavior and stats for the 'Transformed' state. | 2 ||
-| [`TwoEyes`](#object-twoeyes) | Object | Character Form: Behavior and stats for the 'TwoEyes' state. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`Unlit`](#object-unlit) | Object | Character Form: Behavior and stats for the 'Unlit' state. | 2 ||
-| [`Unmounted`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Unmounted' effect/state. | 2 ||
-| [`Unwashed`](#object-unwashed) | Object | Character Form: Behavior and stats for the 'Unwashed' state. | 2 ||
-| [`Washed`](#object-washed) | Object | Character Form: Behavior and stats for the 'Washed' state. | 2 ||
-| [`Washer`](#object-washer) | Object | Character Form: Behavior and stats for the \'Washer\' state. | 2 ||
-| [`Water`](#object-water) | Object | Character Form: Behavior and stats for the \'Water\' state. | 2 ||
-| [`WereMan`](#object-wereman) | Object | Character Form: Behavior and stats for the \'WereMan\' state. | 2 ||
-| [`Zealot`](#object-zealot) | Object | Character Form: Behavior and stats for the \'Zealot\' state. | 2 ||
-| [`ZealotBomb`](#object-zealotbomb) | Object | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 2 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 ||
+| [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer || 56 ||
+| [`Default`](#object-default) | Enum / Object | Character Form: The baseline default behavior state. | 37 ||
+| [`default`](#object-default) | Enum / Object | Baseline configuration. | 4 ||
+| [`Normal`](#object-normal) | Integer / Object | Character Form: Behavior and stats for the \'Normal\' state. | 11 ||
+| [`Rage`](#object-rage) | Object | Character Form: Behavior and stats for the \'Rage\' state. | 10 ||
+| [`HasCat`](#object-hascat) | Object | Character Form: Behavior and stats for the \'HasCat\' state. | 5 ||
+| [`hot`](#object-hot) | Object | Visual effect indicator. | 4 ||
+| [`OffMap`](#object-offmap) | Object | Character Form: Behavior and stats for the 'OffMap' state. | 4 ||
+| [`AllAlive`](#object-allalive) | Object | Encounter State: Logic executed when all specific entities are currently alive. | 3 ||
+| [`Down`](#object-down) | Object | Character Form: Behavior and stats for the \'Down\' state. | 3 ||
+| [`Full`](#object-full) | Object | Character Form: Behavior and stats for the \'Full\' state. | 3 ||
+| [`OneAlive`](#object-onealive) | Object | Encounter State: Logic executed when exactly one target is alive. | 3 ||
+| [`TwoAlive`](#object-twoalive) | Object | Encounter State: Logic executed when exactly two targets are alive. | 3 ||
+| [`Up`](#object-up) | Object | Character Form: Behavior and stats for the \'Up\' state. | 3 ||
+| [`active`](#object-active) | Object | Defines actively executed abilities. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`Big`](#object-big) | Object | Character Form / AI State: Behavior and stats for the \'Big\' state. | 2 ||
+| [`Boris`](#object-boris) | Enum / Object | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 2 ||
+| [`CaveMan`](#object-caveman) | Object | Character Form: Behavior and stats for the \'CaveMan\' state. | 2 ||
+| [`CaveManSpear`](#object-cavemanspear) | Object | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 ||
+| [`Empty`](#object-empty) | Object | Character Form: Behavior and stats for the \'Empty\' state. | 2 ||
+| [`Explosive`](#object-explosive) | Enum / Object | Character Form: Behavior and stats for the \'Explosive\' state. | 2 ||
+| [`Holding`](#object-holding) | Object | Character Form: Behavior and stats for the \'Holding\' state. | 2 ||
+| [`Holy`](#object-holy) | Enum / Object | Character Form: Behavior and stats for the \'Holy\' state. | 2 ||
+| [`NotPriming`](#object-notpriming) | Object | Character Form: Behavior and stats when not charging an ability. | 2 ||
+| `partial_animation_suffix` | Enum / Integer || 2 ||
+| [`passive`](#object-passive) | Object | Intrinsic passive modifier. | 2 ||
+| [`Priming`](#object-priming) | Object | Character Form: Behavior and stats when charging an ability. | 2 ||
+| [`Rain`](#object-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 2 ||
+| [`Small`](#object-small) | Object | Character Form: Behavior and stats for the \'Small\' state. | 2 ||
+| [`SquirrelForm`](#object-squirrelform) | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 ||
+| [`Turtled`](#object-turtled) | Object | Character Form: Behavior and stats for the 'Turtled' state. | 2 ||
+| [`Alert`](#object-alert) | Object | AI State: The behavior profile used when the character is alerted to enemies. | 1 ||
+| [`Angry`](#object-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 1 ||
+| [`Attacker`](#object-attacker) | Object | AI Role: Designates the character as an attacker rather than support. | 1 ||
+| [`BellyFull`](#object-bellyfull) | Object | Character Form / AI State: Behavior and stats for the \'BellyFull\' state. | 1 ||
+| [`BigHolding`](#object-bigholding) | Object | Character Form / AI State: Behavior and stats for the \'BigHolding\' state. | 1 ||
+| [`BigHoldingCat`](#object-bigholdingcat) | Object | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 ||
+| [`Bishop`](#object-bishop) | Object | Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 1 ||
+| [`BlackHole`](#object-blackhole) | Object | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 ||
+| [`Bomb`](#object-bomb) | Object | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 ||
+| [`Bully`](#object-bully) | Object | Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 ||
+| [`Butcher`](Engine_LogicKeys.md#object-butcher) | Object | Applies or references the 'Butcher' effect/state. | 1 ||
+| [`CaveBaby`](#object-cavebaby) | Object | Character Form: Behavior and stats for the \'CaveBaby\' state. | 1 ||
+| [`CaveWoman`](#object-cavewoman) | Object | Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 ||
+| [`CaveWomanHasCat`](#object-cavewomanhascat) | Object | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 ||
+| [`Charging`](#object-charging) | Object | Character Form / AI State: Behavior when charging an attack. | 1 ||
+| [`Close`](#object-close) | Object | AI Movement logic: Maneuvers into close/melee range. | 1 ||
+| [`Colorless`](Engine_LogicKeys.md#object-colorless) | Object | Applies or references the 'Colorless' effect/state. | 1 ||
+| [`Cultist`](#object-cultist) | Object | Character Form: Behavior and stats for the \'Cultist\' state. | 1 ||
+| [`Damaged`](#object-damaged) | Object | Character Form / AI State: Behavior when health is critically low. | 1 ||
+| [`Default_Ceiling`](#object-default_ceiling) | Object | Character Form: The baseline behavior state while attached to the ceiling. | 1 ||
+| [`Default_Ground`](#object-default_ground) | Object | Character Form: The baseline behavior state while on the ground. | 1 ||
+| [`DesireMech`](#object-desiremech) | Object | Character Form: Behavior and stats for the 'DesireMech' state. | 1 ||
+| [`Die`](#object-die) | Integer / Object | Character Form / Logic: Forces the character to die. | 1 ||
+| [`Druid`](Engine_LogicKeys.md#object-druid) | Object | Applies or references the 'Druid' effect/state. | 1 ||
+| [`Drunker`](#object-drunker) | Object | Character Form: Behavior and stats for the 'Drunker' state. | 1 ||
+| [`DualSword`](#object-dualsword) | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 ||
+| [`DualSword_Primed`](#object-dualsword_primed) | Object | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 ||
+| [`Dumb`](#object-dumb) | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 1 ||
+| [`Explody`](#object-explody) | Object | Character Form: Behavior and stats for the 'Explody' state. | 1 ||
+| [`Fighter`](Engine_LogicKeys.md#object-fighter) | Object | Applies or references the 'Fighter' effect/state. | 1 ||
+| [`FightPhase`](#object-fightphase) | Object | Boss Logic: Main combat phase. | 1 ||
+| [`Fire`](#object-fire) | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 1 ||
+| [`FireFull`](#object-firefull) | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 ||
+| [`Flop`](#object-flop) | Object | Character Form: Behavior and stats for the \'Flop\' state. | 1 ||
+| [`Flop2`](#object-flop2) | Object | Character Form: Behavior and stats for the \'Flop2\' state. | 1 ||
+| [`Flush`](#object-flush) | Object | Character Form: Behavior and stats for the 'Flush' state. | 1 ||
+| [`FlushBubs`](#object-flushbubs) | Object | Character Form: Behavior and stats for the 'FlushBubs' state. | 1 ||
+| [`FlushHost`](#object-flushhost) | Object | Character Form: Behavior and stats for the 'FlushHost' state. | 1 ||
+| [`FlushNettle`](#object-flushnettle) | Object | Character Form: Behavior and stats for the 'FlushNettle' state. | 1 ||
+| [`Grappling`](#object-grappling) | Object | Character Form / AI State: Behavior while grappling an opponent. | 1 ||
+| [`Grown`](#object-grown) | Object | Character Form: Behavior and stats for the \'Grown\' state. | 1 ||
+| [`GuaranteedJackpot`](#object-guaranteedjackpot) | Object | Loot Logic: Guarantees a high-tier drop. | 1 ||
+| [`Guarding`](#object-guarding) | Object | Character Form / AI State: Defensive behavior state. | 1 ||
+| [`HalfDead`](#object-halfdead) | Object | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 ||
+| [`HasDeadCat`](#object-hasdeadcat) | Object | Character Form: Behavior and stats for the \'HasDeadCat\' state. | 1 ||
+| [`HasRock`](#object-hasrock) | Object | Character Form: Behavior and stats for the \'HasRock\' state. | 1 ||
+| [`Headless`](#object-headless) | Object | Character Form: Behavior and stats for the \'Headless\' state. | 1 ||
+| [`Hint_CrackedVisuals`](#object-hint_crackedvisuals) | Object | Visual: Overlay effects for cracked/damaged terrain or objects. | 1 ||
+| [`Hint_CrackedVisuals2`](#object-hint_crackedvisuals2) | Object | Visual: Secondary cracked visual overlay. | 1 ||
+| [`Hint_CrackedVisuals3`](#object-hint_crackedvisuals3) | Object | Visual: Tertiary cracked visual overlay. | 1 ||
+| [`HumanDead`](#object-humandead) | Object | Character Form: Behavior and stats for the \'HumanDead\' state. | 1 ||
+| [`Hunter`](Engine_LogicKeys.md#object-hunter) | Object | Applies or references the 'Hunter' effect/state. | 1 ||
+| [`InitialPhase`](#object-initialphase) | Object | Boss Logic: The starting phase of an encounter. | 1 ||
+| [`Insane_Ceiling`](#object-insane_ceiling) | Object | Character Form: Insane behavior state while attached to the ceiling. | 1 ||
+| [`Insane_Ground`](#object-insane_ground) | Object | Character Form: Insane behavior state while on the ground. | 1 ||
+| [`Johnny`](#object-johnny) | Object | Character Form: Behavior and stats for the 'Johnny' state. | 1 ||
+| [`JohnnyBubs`](#object-johnnybubs) | Object | Character Form: Behavior and stats for the 'JohnnyBubs' state. | 1 ||
+| [`JohnnyHost`](#object-johnnyhost) | Object | Character Form: Behavior and stats for the 'JohnnyHost' state. | 1 ||
+| [`JohnnyNettle`](#object-johnnynettle) | Object | Character Form: Behavior and stats for the 'JohnnyNettle' state. | 1 ||
+| [`Joystick`](#object-joystick) | Object | Character Form: Behavior and stats for the \'Joystick\' state. | 1 ||
+| [`LastHit`](#object-lasthit) | Object | Logic: Executes logic on the final hit of a multi-hit attack. | 1 ||
+| [`Lifted`](#object-lifted) | Object | Character Form: Behavior and stats for the \'Lifted\' state. | 1 ||
+| [`Lit`](#object-lit) | Object | Character Form: Behavior and stats for the 'Lit' state. | 1 ||
+| [`Mage`](Engine_LogicKeys.md#object-mage) | Object | Applies or references the 'Mage' effect/state. | 1 ||
+| [`Medic`](Engine_LogicKeys.md#object-medic) | Object | Applies or references the 'Medic' effect/state. | 1 ||
+| [`Monk`](Engine_LogicKeys.md#object-monk) | Object | Applies or references the 'Monk' effect/state. | 1 ||
+| [`Mounted`](#object-mounted) | Object | Character Form: Behavior and stats for the \'Mounted\' state. | 1 ||
+| [`MouthFull`](#object-mouthfull) | Object | Character Form: Behavior and stats for the \'MouthFull\' state. | 1 ||
+| [`Mutant`](#object-mutant) | Integer / Object | Character Form: Behavior and stats for the \'Mutant\' state. | 1 ||
+| [`Necromancer`](Engine_LogicKeys.md#object-necromancer) | Object | Applies or references the 'Necromancer' effect/state. | 1 ||
+| [`NeutronStar`](#object-neutronstar) | Object | Character Form: Behavior and stats for the 'NeutronStar' state. | 1 ||
+| [`NoDeathRattle`](./Engine_LogicKeys.md#valid-property-keys) | Object | Applies or references the 'NoDeathRattle' effect/state. | 1 ||
+| [`NoEyes`](#object-noeyes) | Object | Character Form: Behavior and stats for the \'NoEyes\' state. | 1 ||
+| [`NormalFull`](#object-normalfull) | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 ||
+| [`NoStick`](#object-nostick) | Object | Character Form: Behavior and stats for the 'NoStick' state. | 1 ||
+| [`Nuke`](#object-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 1 ||
+| [`Obey`](#object-obey) | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 ||
+| [`Off`](#object-off) | Object | Character Form: Behavior and stats for the 'Off' state. | 1 ||
+| [`OffScreen`](#object-offscreen) | Object | Character Form: Behavior and stats for the 'OffScreen' state. | 1 ||
+| [`OneEye`](#object-oneeye) | Object | Character Form: Behavior and stats for the \'OneEye\' state. | 1 ||
+| [`Open`](#object-open) | Object | Character Form: Behavior and stats for the 'Open' state. | 1 ||
+| [`OpenCat`](#object-opencat) | Object | Character Form: Behavior and stats for the 'OpenCat' state. | 1 ||
+| [`Out`](#object-out) | Object | Character Form: Behavior and stats for the 'Out' state. | 1 ||
+| [`Possessing`](#object-possessing) | Object | Character Form: Behavior and stats for the \'Possessing\' state. | 1 ||
+| [`Primed`](#object-primed) | Object | Character Form: Behavior and stats for the 'Primed' state. | 1 ||
+| [`Psychic`](Engine_LogicKeys.md#object-psychic) | Object | Applies or references the 'Psychic' effect/state. | 1 ||
+| [`Pulp2`](#object-pulp2) | Object | Character Form: Behavior and stats for the 'Pulp2' state. | 1 ||
+| [`Pulp3`](#object-pulp3) | Object | Character Form: Behavior and stats for the 'Pulp3' state. | 1 ||
+| [`Pulp4`](#object-pulp4) | Object | Character Form: Behavior and stats for the 'Pulp4' state. | 1 ||
+| [`Pulp5`](#object-pulp5) | Object | Character Form: Behavior and stats for the 'Pulp5' state. | 1 ||
+| [`Pulp6`](#object-pulp6) | Object | Character Form: Behavior and stats for the 'Pulp6' state. | 1 ||
+| [`Pulp7`](#object-pulp7) | Object | Character Form: Behavior and stats for the 'Pulp7' state. | 1 ||
+| [`Sitting`](#object-sitting) | Object | Character Form: Behavior and stats for the 'Sitting' state. | 1 ||
+| [`SmallHolding`](#object-smallholding) | Object | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 ||
+| [`SmallHoldingCat`](#object-smallholdingcat) | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 ||
+| [`SpawningPhase`](#object-spawningphase) | Object | Boss Logic: Phase focused on summoning minions. | 1 ||
+| [`Standing`](#object-standing) | Object | Character Form: Behavior and stats for the 'Standing' state. | 1 ||
+| [`Standing2`](#object-standing2) | Object | Character Form: Behavior and stats for the 'Standing2' state. | 1 ||
+| [`Start_Ceiling`](#object-start_ceiling) | Object | Character Form: Behavior and stats for the 'Start_Ceiling' state. | 1 ||
+| [`Stop`](#object-stop) | Integer / Object | AI Movement: Forces the character to cease movement. | 1 ||
+| [`SwordAndShield`](#object-swordandshield) | Object | Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 ||
+| [`SwordAndShield_Primed`](#object-swordandshield_primed) | Object | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 ||
+| `sync_brain_patterns` | Boolean || 1 ||
+| [`Tank`](Engine_LogicKeys.md#object-tank) | Object | Applies or references the 'Tank' effect/state. | 1 ||
+| [`Tar`](#object-tar) | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 1 ||
+| [`TarFull`](#object-tarfull) | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 ||
+| [`Thief`](Engine_LogicKeys.md#object-thief) | Object | Applies or references the 'Thief' effect/state. | 1 ||
+| [`Throb`](#object-throb) | Object | Character Form: Behavior and stats for the 'Throb' state. | 1 ||
+| [`ThrobBubs`](#object-throbbubs) | Object | Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 ||
+| [`ThrobHost`](#object-throbhost) | Object | Character Form: Behavior and stats for the 'ThrobHost' state. | 1 ||
+| [`ThrobNettle`](#object-throbnettle) | Object | Character Form: Behavior and stats for the 'ThrobNettle' state. | 1 ||
+| [`Tinkerer`](Engine_LogicKeys.md#object-tinkerer) | Object | Applies or references the 'Tinkerer' effect/state. | 1 ||
+| [`Transformed`](#object-transformed) | Object | Character Form: Behavior and stats for the 'Transformed' state. | 1 ||
+| [`TwoEyes`](#object-twoeyes) | Object | Character Form: Behavior and stats for the 'TwoEyes' state. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`Unlit`](#object-unlit) | Object | Character Form: Behavior and stats for the 'Unlit' state. | 1 ||
+| [`Unmounted`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Applies or references the 'Unmounted' effect/state. | 1 ||
+| [`Unwashed`](#object-unwashed) | Object | Character Form: Behavior and stats for the 'Unwashed' state. | 1 ||
+| [`Washed`](#object-washed) | Object | Character Form: Behavior and stats for the 'Washed' state. | 1 ||
+| [`Washer`](#object-washer) | Object | Character Form: Behavior and stats for the \'Washer\' state. | 1 ||
+| [`Water`](#object-water) | Object | Character Form: Behavior and stats for the \'Water\' state. | 1 ||
+| [`WereMan`](#object-wereman) | Object | Character Form: Behavior and stats for the \'WereMan\' state. | 1 ||
+| [`Zealot`](#object-zealot) | Object | Character Form: Behavior and stats for the \'Zealot\' state. | 1 ||
+| [`ZealotBomb`](#object-zealotbomb) | Object | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 56 ||
 
 </details>
 
@@ -1036,9 +1026,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`faction`](./Enums.md#enum-faction) | Enum || 8 ||
+| [`faction`](./Enums.md#enum-faction) | Enum || 4 ||
 | [`obj`](./Arrays.md#array-obj) | Array / Enum || 4 ||
-| [`additional_statuses`](#object-additional_statuses) | Object | Generic statuses added to the character. | 2 ||
+| [`additional_statuses`](#object-additional_statuses) | Object | Generic statuses added to the character. | 1 ||
 
 </details>
 
@@ -1059,7 +1049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alt_sounds`](./Arrays.md#array-alt_sounds) | Array || 61 ||
-| [`animation_prefix`](./Enums.md#enum-animation_prefix) | Enum || 2 ||
+| [`animation_prefix`](./Enums.md#enum-animation_prefix) | Enum || 1 ||
 
 </details>
 
@@ -1079,7 +1069,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alternate_energized_effect`](#object-alternate_energized_effect) | Object | Overrides default energized visuals. | 4 ||
+| [`alternate_energized_effect`](#object-alternate_energized_effect) | Object | Overrides default energized visuals. | 2 ||
 
 </details>
 
@@ -1099,13 +1089,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `takes_turns` | Boolean || 46 ||
-| `dispersed_bonus_turns` | Integer || 36 ||
-| `takes_main_turn` | Boolean || 20 ||
-| `evenly_dispersed_bonus_turns` | Integer || 14 ||
-| `round_end_bonus_turns` | Integer || 10 ||
-| `wait_till_next_round_to_update_turns` | Boolean || 8 ||
-| `round_start_bonus_turns` | Integer || 2 ||
+| `takes_turns` | Boolean || 23 ||
+| `dispersed_bonus_turns` | Integer || 18 ||
+| `takes_main_turn` | Boolean || 10 ||
+| `evenly_dispersed_bonus_turns` | Integer || 7 ||
+| `round_end_bonus_turns` | Integer || 5 ||
+| `wait_till_next_round_to_update_turns` | Boolean || 4 ||
+| `round_start_bonus_turns` | Integer || 1 ||
 
 </details>
 
@@ -1125,10 +1115,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`face`](./Enums.md#enum-face) | Enum || 32 ||
-| [`head`](./Enums.md#enum-head) | Enum / Number || 28 ||
-| [`neck`](./Enums.md#enum-neck) | Enum || 20 ||
-| [`weapon`](./Enums.md#enum-weapon) | Enum | Weapon item constraint. | 14 ||
+| [`face`](./Enums.md#enum-face) | Enum || 16 ||
+| [`head`](./Enums.md#enum-head) | Enum / Number || 14 ||
+| [`neck`](./Enums.md#enum-neck) | Enum || 10 ||
+| [`weapon`](./Enums.md#enum-weapon) | Enum | Weapon item constraint. | 7 ||
 
 </details>
 
@@ -1148,10 +1138,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum || 46 ||
+| [`do`](./Enums.md#enum-do) | Enum || 23 ||
 | [`do_all`](./Arrays.md#array-do_all) | Array || 9 ||
 | [`do_priority`](./Arrays.md#array-do_priority) | Array || 8 ||
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 4 ||
+| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 2 ||
 | [`do_strict`](./Arrays.md#array-do_strict) | Array || 2 ||
 
 </details>
@@ -1172,13 +1162,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 20 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 10 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 28 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 24 ||
 
 </details>
 
@@ -1198,9 +1188,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 70 ||
-| [`form_hasnot`](./Enums.md#enum-form_hasnot) | Enum || 60 ||
-| [`form_has`](./Enums.md#enum-form_has) | Enum || 50 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 35 ||
+| [`form_hasnot`](./Enums.md#enum-form_hasnot) | Enum || 30 ||
+| [`form_has`](./Enums.md#enum-form_has) | Enum || 25 ||
 
 </details>
 
@@ -1220,10 +1210,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TVBotDie` | Integer | Applies or references the 'TVBotDie' effect/state. | 2 ||
-| `TVBotDumb` | Integer | Applies or references the 'TVBotDumb' effect/state. | 2 ||
-| `TVBotObey` | Integer | Applies or references the 'TVBotObey' effect/state. | 2 ||
-| `TVBotStop` | Integer | Applies or references the 'TVBotStop' effect/state. | 2 ||
+| `TVBotDie` | Integer | Applies or references the 'TVBotDie' effect/state. | 1 ||
+| `TVBotDumb` | Integer | Applies or references the 'TVBotDumb' effect/state. | 1 ||
+| `TVBotObey` | Integer | Applies or references the 'TVBotObey' effect/state. | 1 ||
+| `TVBotStop` | Integer | Applies or references the 'TVBotStop' effect/state. | 1 ||
 
 </details>
 
@@ -1243,35 +1233,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MoveAway`](#object-moveaway) | Object | AI Movement: Moves away from the target. | 8 ||
-| [`MoveClose`](#object-moveclose) | Object | AI Movement: Moves into melee range. | 8 ||
-| [`DashRandomly`](#object-dashrandomly) | Object | AI Movement: Dashes to a random valid tile. | 4 ||
-| [`Escape`](#object-escape) | Object | AI Movement: Logic for fleeing or escaping the map. | 4 ||
-| [`MoveCenter`](#object-movecenter) | Object | AI Movement: Moves toward the center of the map. | 4 ||
-| [`MoveForThrow`](#object-moveforthrow) | Object | AI Movement: Repositions to gain line of sight for throwing. | 4 ||
-| [`SpearRun`](#object-spearrun) | Object | AI Movement: Specific movement logic for Spear enemies. | 4 ||
-| [`CerberubsJumpBlind`](#object-cerberubsjumpblind) | Object | AI Logic: Blind jump attack pattern for Cerberubs. | 2 ||
-| [`CerberubsJumpNormal`](#object-cerberubsjumpnormal) | Object | AI Logic: Normal jump attack pattern for Cerberubs. | 2 ||
-| [`CloseConvert`](#object-closeconvert) | Object | AI State: Logic for converting adjacent units. | 2 ||
-| [`FoodMove`](#object-foodmove) | Object | AI Movement: Logic for seeking out food items. | 2 ||
-| [`ForceTrample`](#object-forcetrample) | Object | Logic: Forces movement to act as a trample attack. | 2 ||
-| [`LeapClose`](#object-leapclose) | Object | AI Movement: Executes a jumping maneuver to close distance. | 2 ||
-| [`MoveForBarrage`](#object-moveforbarrage) | Object | AI Movement: Repositions to optimize a barrage attack. | 2 ||
-| [`MoveForDash`](#object-movefordash) | Object | AI Movement: Repositions to set up a dash attack line. | 2 ||
-| [`MoveForGrass`](#object-moveforgrass) | Object | AI Movement: Moves toward grass tiles. | 2 ||
-| [`MoveForPounce`](#object-moveforpounce) | Object | AI Movement: Repositions to optimize a pounce trajectory. | 2 ||
-| [`MoveForSpin`](#object-moveforspin) | Object | AI Movement: Repositions into a cluster of enemies for a spin attack. | 2 ||
-| [`MoveOneForPuke`](#object-moveoneforpuke) | Object | AI Movement: Specific positioning logic for puke attacks. | 2 ||
-| [`MoveSpaced`](#object-movespaced) | Object | AI Movement: Moves to maintain a specific distance from targets. | 2 ||
-| [`MoveToHead`](#object-movetohead) | Object | AI Movement: Navigates toward the 'head' or primary target. | 2 ||
-| [`MoveTowards`](#object-movetowards) | Object | AI Movement: Moves toward the nearest target. | 2 ||
-| [`NCGravecrawlFAR`](#object-ncgravecrawlfar) | Object | AI Movement: Specific grapple/crawl logic. | 2 ||
-| [`ReturnA`](#object-returna) | Object | Boss Logic: Specific phase return trigger. | 2 ||
-| [`RunFar`](#object-runfar) | Object | AI Movement: Maximize distance from targets. | 2 ||
-| [`SuckMF`](#object-suckmf) | Object | Character Form: Behavior and stats for the 'SuckMF' state. | 2 ||
-| [`TF_TargetAllies`](#object-tf_targetallies) | Object | AI Targeting: Prioritizes allies. | 2 ||
-| [`TF_TargetEnemies`](#object-tf_targetenemies) | Object | AI Targeting: Prioritizes enemies. | 2 ||
-| [`Unflip`](#object-unflip) | Object | Logic: Reverses a flipped state. | 2 ||
+| [`MoveAway`](#object-moveaway) | Object | AI Movement: Moves away from the target. | 4 ||
+| [`MoveClose`](#object-moveclose) | Object | AI Movement: Moves into melee range. | 4 ||
+| [`DashRandomly`](#object-dashrandomly) | Object | AI Movement: Dashes to a random valid tile. | 2 ||
+| [`Escape`](#object-escape) | Object | AI Movement: Logic for fleeing or escaping the map. | 2 ||
+| [`MoveCenter`](#object-movecenter) | Object | AI Movement: Moves toward the center of the map. | 2 ||
+| [`MoveForThrow`](#object-moveforthrow) | Object | AI Movement: Repositions to gain line of sight for throwing. | 2 ||
+| [`SpearRun`](#object-spearrun) | Object | AI Movement: Specific movement logic for Spear enemies. | 2 ||
+| [`CerberubsJumpBlind`](#object-cerberubsjumpblind) | Object | AI Logic: Blind jump attack pattern for Cerberubs. | 1 ||
+| [`CerberubsJumpNormal`](#object-cerberubsjumpnormal) | Object | AI Logic: Normal jump attack pattern for Cerberubs. | 1 ||
+| [`CloseConvert`](#object-closeconvert) | Object | AI State: Logic for converting adjacent units. | 1 ||
+| [`FoodMove`](#object-foodmove) | Object | AI Movement: Logic for seeking out food items. | 1 ||
+| [`ForceTrample`](#object-forcetrample) | Object | Logic: Forces movement to act as a trample attack. | 1 ||
+| [`LeapClose`](#object-leapclose) | Object | AI Movement: Executes a jumping maneuver to close distance. | 1 ||
+| [`MoveForBarrage`](#object-moveforbarrage) | Object | AI Movement: Repositions to optimize a barrage attack. | 1 ||
+| [`MoveForDash`](#object-movefordash) | Object | AI Movement: Repositions to set up a dash attack line. | 1 ||
+| [`MoveForGrass`](#object-moveforgrass) | Object | AI Movement: Moves toward grass tiles. | 1 ||
+| [`MoveForPounce`](#object-moveforpounce) | Object | AI Movement: Repositions to optimize a pounce trajectory. | 1 ||
+| [`MoveForSpin`](#object-moveforspin) | Object | AI Movement: Repositions into a cluster of enemies for a spin attack. | 1 ||
+| [`MoveOneForPuke`](#object-moveoneforpuke) | Object | AI Movement: Specific positioning logic for puke attacks. | 1 ||
+| [`MoveSpaced`](#object-movespaced) | Object | AI Movement: Moves to maintain a specific distance from targets. | 1 ||
+| [`MoveToHead`](#object-movetohead) | Object | AI Movement: Navigates toward the 'head' or primary target. | 1 ||
+| [`MoveTowards`](#object-movetowards) | Object | AI Movement: Moves toward the nearest target. | 1 ||
+| [`NCGravecrawlFAR`](#object-ncgravecrawlfar) | Object | AI Movement: Specific grapple/crawl logic. | 1 ||
+| [`ReturnA`](#object-returna) | Object | Boss Logic: Specific phase return trigger. | 1 ||
+| [`RunFar`](#object-runfar) | Object | AI Movement: Maximize distance from targets. | 1 ||
+| [`SuckMF`](#object-suckmf) | Object | Character Form: Behavior and stats for the 'SuckMF' state. | 1 ||
+| [`TF_TargetAllies`](#object-tf_targetallies) | Object | AI Targeting: Prioritizes allies. | 1 ||
+| [`TF_TargetEnemies`](#object-tf_targetenemies) | Object | AI Targeting: Prioritizes enemies. | 1 ||
+| [`Unflip`](#object-unflip) | Object | Logic: Reverses a flipped state. | 1 ||
 
 </details>
 
@@ -1291,27 +1281,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 187 ||
-| [`Bleed`](./Enums.md) | Integer || 17 | 2 |
-| [`Bruise`](./Enums.md) | Integer || 3 | 1 |
-| [`Burn`](./Enums.md) | Integer || 12 | 2 |
-| [`Confusion`](./Enums.md) | Integer || 2 | 1 |
-| [`DamageUp`](./Enums.md) | Integer || 2 | 2 |
-| [`Fear`](./Enums.md) | Integer || 3 | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 205 ||
+| [`Bleed`](./Enums.md) | Integer || 30 | 2 |
+| [`Bruise`](./Enums.md) | Integer || 12 | 1 |
+| [`Burn`](./Enums.md) | Integer || 16 | 2 |
+| [`Confusion`](./Enums.md) | Integer || 7 | 1 |
+| [`DamageUp`](./Enums.md) | Integer || 1 | 2 |
+| [`Fear`](./Enums.md) | Integer || 13 | 1 |
 | [`GainDisorderFromPool`](#object-gaindisorderfrompool) | Object || 1 ||
-| [`Knockback`](./Enums.md) | Integer || 1 | 3 |
-| [`Leech`](./Enums.md) | Integer || 2 | 2 |
-| [`Madness`](./Enums.md) | Integer || 2 | 1 |
-| [`Poison`](./Enums.md) | Integer || 24 | 2 |
+| [`Knockback`](./Enums.md) | Integer || 24 | 3 |
+| [`Leech`](./Enums.md) | Integer || 5 | 2 |
+| [`Madness`](./Enums.md) | Integer || 3 | 1 |
+| [`Poison`](./Enums.md) | Integer || 29 | 2 |
 | [`Possessed`](./Enums.md) | Integer || 1 | 1 |
 | [`RandomStatUp`](./Enums.md) | Integer || 1 | -1 |
 | [`RemoteFlatLeech`](./Enums.md) | Integer || 1 | 1 |
 | [`RemoteLeech`](./Enums.md) | Integer || 2 | 1 |
-| [`Rot`](./Enums.md) | Integer || 1 | 1 |
-| [`Slow`](./Enums.md) | Integer || 5 | 2 |
-| [`Stun`](./Enums.md) | Integer || 3 | 1 |
-| [`Weakness`](./Enums.md) | Integer || 1 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`Rot`](./Enums.md) | Integer || 5 | 1 |
+| [`Slow`](./Enums.md) | Integer || 10 | 2 |
+| [`Stun`](./Enums.md) | Integer || 8 | 1 |
+| [`Weakness`](./Enums.md) | Integer || 7 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 56 |
 
 </details>
 
@@ -1331,13 +1321,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 26 ||
-| `pop_corpse` | Boolean || 22 ||
-| `is_dying_animation` | Boolean || 14 ||
-| `cancel_knockback` | Boolean || 2 ||
-| `immediate` | Boolean || 2 ||
-| `must_target_killer` | Boolean || 2 ||
-| `target_killer` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 13 ||
+| `pop_corpse` | Boolean || 11 ||
+| `is_dying_animation` | Boolean || 7 ||
+| `cancel_knockback` | Boolean || 1 ||
+| `immediate` | Boolean || 1 ||
+| `must_target_killer` | Boolean || 1 ||
+| `target_killer` | Boolean || 1 ||
 
 </details>
 
@@ -1357,11 +1347,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum || 38 ||
-| [`do_priority`](./Arrays.md#array-do_priority) | Array || 11 ||
-| [`do_strict`](./Arrays.md#array-do_strict) | Array || 5 ||
+| [`do`](./Enums.md#enum-do) | Enum || 15 ||
+| [`do_priority`](./Arrays.md#array-do_priority) | Array || 4 ||
+| [`do_strict`](./Arrays.md#array-do_strict) | Array || 3 ||
 | [`do_all`](./Arrays.md#array-do_all) | Array || 4 ||
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 2 ||
+| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 1 ||
 
 </details>
 
@@ -1381,19 +1371,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`palette`](./Enums.md#enum-palette) | Enum / Integer || 34 ||
-| `ear1` | Integer | Sprite variant ID for the front ear. | 26 ||
-| `tail` | Integer | Sprite variant ID for the tail. | 26 ||
-| `arm2` | Number || 22 ||
-| `arm1` | Number | Sprite variant ID for the front arm. | 20 ||
-| `ear2` | Integer || 20 ||
-| `leg1` | Integer | Sprite variant ID for the front leg. | 16 ||
-| `leg2` | Integer || 16 ||
-| `head` | Enum / Number | Sprite variant ID for the head. | 12 ||
-| `texture` | Integer || 12 ||
-| `body` | Number | Sprite variant ID for the body. | 10 ||
-| `eye1` | Integer || 6 ||
-| `eye2` | Integer || 6 ||
+| [`palette`](./Enums.md#enum-palette) | Enum / Integer || 17 ||
+| `ear1` | Integer | Sprite variant ID for the front ear. | 13 ||
+| `tail` | Integer | Sprite variant ID for the tail. | 13 ||
+| `arm2` | Number || 11 ||
+| `arm1` | Number | Sprite variant ID for the front arm. | 10 ||
+| `ear2` | Integer || 10 ||
+| `leg1` | Integer | Sprite variant ID for the front leg. | 8 ||
+| `leg2` | Integer || 8 ||
+| `head` | Enum / Number | Sprite variant ID for the head. | 6 ||
+| `texture` | Integer || 6 ||
+| `body` | Number | Sprite variant ID for the body. | 5 ||
+| `eye1` | Integer || 3 ||
+| `eye2` | Integer || 3 ||
 
 </details>
 
@@ -1413,9 +1403,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum || 24 ||
+| [`do`](./Enums.md#enum-do) | Enum || 12 ||
 | [`do_priority`](./Arrays.md#array-do_priority) | Array || 6 ||
-| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 2 ||
+| [`move_then_do`](./Enums.md#enum-move_then_do) | Enum || 1 ||
 | [`do_all`](./Arrays.md#array-do_all) | Array || 1 ||
 | [`do_best`](./Arrays.md#array-do_best) | Array || 1 ||
 | [`do_nothing`](./Arrays.md#array-do_nothing) | Array || 1 ||
@@ -1439,8 +1429,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`common`](./Engine_EventKeys.md#valid-property-keys) | `String` || 40 ||
-| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `String` || 32 ||
+| [`common`](./Engine_EventKeys.md#valid-property-keys) | `String` || 20 ||
+| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `String` || 16 ||
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 ||
 
 </details>
@@ -1461,17 +1451,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 20 ||
-| `ability_damage_only` | Boolean || 14 ||
-| `backstabs_only` | Boolean || 6 ||
-| `only_when_not_your_turn` | Boolean || 6 ||
-| `cancel_knockback` | Boolean || 2 ||
-| `enemies_only` | Boolean || 2 ||
-| `even_on_0_damage` | Boolean || 2 ||
-| `even_on_0_damage_if_knockback` | Boolean || 2 ||
-| `match_knockback_direction` | Boolean || 2 ||
-| `ranged_only` | Boolean || 2 ||
-| `verify_target` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 10 ||
+| `ability_damage_only` | Boolean || 7 ||
+| `backstabs_only` | Boolean || 3 ||
+| `only_when_not_your_turn` | Boolean || 3 ||
+| `cancel_knockback` | Boolean || 1 ||
+| `enemies_only` | Boolean || 1 ||
+| `even_on_0_damage` | Boolean || 1 ||
+| `even_on_0_damage_if_knockback` | Boolean || 1 ||
+| `match_knockback_direction` | Boolean || 1 ||
+| `ranged_only` | Boolean || 1 ||
+| `verify_target` | Boolean || 1 ||
 
 </details>
 
@@ -1491,13 +1481,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging impact triggers. | 94 ||
-| `knockback` | Enum / Integer || 48 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 44 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 36 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 20 ||
-| [`elements`](./Arrays.md#array-elements) | Array || 5 ||
-| `cant_miss` | `Boolean` || 2 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging impact triggers. | 47 ||
+| `knockback` | Enum / Integer || 24 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 22 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 70 ||
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 10 ||
+| [`elements`](./Arrays.md#array-elements) | Array || 10 ||
+| `cant_miss` | `Boolean` || 1 ||
 
 </details>
 
@@ -1519,9 +1509,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 ||
 | [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object || 2 ||
-| [`FindItemFromPool`](./Enums.md) | Enum || 22 | eagle_pool |
+| [`FindItemFromPool`](./Enums.md) | Enum || 16 | eagle_pool |
 | [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object || 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -1541,52 +1531,52 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Antidote`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Applies or references the 'Antidote' effect/state. | 10 ||
-| `Blessing` | Mixed | Applies or references the 'Blessing' effect/state. | 10 ||
-| [`BigCatnip`](Engine_LogicKeys.md#object-bigcatnip) | Integer / Object | Applies or references the 'BigCatnip' effect/state. | 8 ||
-| [`BiggestFood`](Engine_LogicKeys.md#object-biggestfood) | Integer / Object | Applies or references the 'BiggestFood' effect/state. | 8 ||
-| [`BigScrap`](Engine_LogicKeys.md#object-bigscrap) | Number / Object | Applies or references the 'BigScrap' effect/state. | 8 ||
-| [`Coin`](Engine_LogicKeys.md#object-coin) | Integer / Object | Applies or references the 'Coin' effect/state. | 8 ||
-| [`BigFood`](Engine_LogicKeys.md#object-bigfood) | Integer / Object | Applies or references the 'BigFood' effect/state. | 4 ||
-| `Coin10` | Mixed | Applies or references the 'Coin10' effect/state. | 4 ||
-| [`Coin3`](Engine_LogicKeys.md#object-coin3) | Integer / Object | Applies or references the 'Coin3' effect/state. | 4 ||
-| [`Coin4`](Engine_LogicKeys.md#object-coin4) | Integer / Object | Applies or references the 'Coin4' effect/state. | 4 ||
-| [`MedCatnip`](Engine_LogicKeys.md#object-medcatnip) | Integer / Object | Applies or references the 'MedCatnip' effect/state. | 4 ||
-| [`MedScrap`](Engine_LogicKeys.md#object-medscrap) | Integer / Object | Applies or references the 'MedScrap' effect/state. | 4 ||
-| [`RandomArmorPickup`](Engine_LogicKeys.md#object-randomarmorpickup) | Number / Object | Applies or references the 'RandomArmorPickup' effect/state. | 4 ||
-| [`RandomCatnipPickup`](Engine_LogicKeys.md#object-randomcatnippickup) | Integer / Object | Applies or references the 'RandomCatnipPickup' effect/state. | 4 ||
-| [`RandomFoodPickup`](Engine_LogicKeys.md#object-randomfoodpickup) | Integer / Object | Applies or references the 'RandomFoodPickup' effect/state. | 4 ||
-| [`Bear`](Engine_LogicKeys.md#object-bear) | Integer / Object | Applies or references the 'Bear' effect/state. | 2 ||
-| [`BlackBird`](Engine_LogicKeys.md#object-blackbird) | Integer / Object | Applies or references the 'BlackBird' effect/state. | 2 ||
-| [`Catepillar`](Engine_LogicKeys.md#object-catepillar) | Integer / Object | Applies or references the 'Catepillar' effect/state. | 2 ||
-| [`Catnip`](Engine_LogicKeys.md#object-catnip) | Integer / Object | Applies or references the 'Catnip' effect/state. | 2 ||
-| [`CharmedDip`](Engine_LogicKeys.md#object-charmeddip) | Integer / Object | Applies or references the 'CharmedDip' effect/state. | 2 ||
-| [`CharmedFloater`](Engine_LogicKeys.md#object-charmedfloater) | Integer / Object | Applies or references the 'CharmedFloater' effect/state. | 2 ||
-| [`CharmedPile`](Engine_LogicKeys.md#object-charmedpile) | Integer / Object | Applies or references the 'CharmedPile' effect/state. | 2 ||
-| [`Cherub`](Engine_LogicKeys.md#object-cherub) | Integer / Object | Applies or references the 'Cherub' effect/state. | 2 ||
-| [`Chicken`](Engine_LogicKeys.md#object-chicken) | Integer / Object | Applies or references the 'Chicken' effect/state. | 2 ||
-| [`Coin2`](Engine_LogicKeys.md#object-coin2) | Integer / Object | Applies or references the 'Coin2' effect/state. | 2 ||
-| [`Dove`](Engine_LogicKeys.md#object-dove) | Integer / Object | Applies or references the 'Dove' effect/state. | 2 ||
-| [`Eagle`](Engine_LogicKeys.md#object-eagle) | Integer / Object | Applies or references the 'Eagle' effect/state. | 2 ||
-| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | Applies or references the 'Food' effect/state. | 2 ||
-| [`Harpy`](Engine_LogicKeys.md#object-harpy) | Integer / Object | Applies or references the 'Harpy' effect/state. | 2 ||
-| [`HummingBird`](Engine_LogicKeys.md#object-hummingbird) | Integer / Object | Applies or references the 'HummingBird' effect/state. | 2 ||
-| [`LargeBirdPool`](Engine_LogicKeys.md#object-largebirdpool) | Integer / Object | Applies or references the 'LargeBirdPool' effect/state. | 2 ||
-| [`MedBirdPool`](Engine_LogicKeys.md#object-medbirdpool) | Integer / Object | Applies or references the 'MedBirdPool' effect/state. | 2 ||
-| [`Mutant`](#object-mutant) | Integer / Object | Character Form: Behavior and stats for the 'Mutant' state. | 2 ||
-| [`Pigeon`](Engine_LogicKeys.md#object-pigeon) | Integer / Object | Applies or references the 'Pigeon' effect/state. | 2 ||
-| [`RandomBiggerArmorPickup`](Engine_LogicKeys.md#object-randombiggerarmorpickup) | Number / Object | Applies or references the 'RandomBiggerArmorPickup' effect/state. | 2 ||
-| [`RandomBiggerCatnipPickup`](Engine_LogicKeys.md#object-randombiggercatnippickup) | Integer / Object | Applies or references the 'RandomBiggerCatnipPickup' effect/state. | 2 ||
-| [`RandomBiggerFoodPickup`](Engine_LogicKeys.md#object-randombiggerfoodpickup) | Integer / Object | Applies or references the 'RandomBiggerFoodPickup' effect/state. | 2 ||
-| [`Raven`](Engine_LogicKeys.md#object-raven) | Integer / Object | Applies or references the 'Raven' effect/state. | 2 ||
-| [`Scrap`](Engine_LogicKeys.md#object-scrap) | Integer / Object | Applies or references the 'Scrap' effect/state. | 2 ||
-| [`Seagull`](Engine_LogicKeys.md#object-seagull) | Integer / Object | Applies or references the 'Seagull' effect/state. | 2 ||
-| [`SmallBirdPool`](Engine_LogicKeys.md#object-smallbirdpool) | Integer / Object | Applies or references the 'SmallBirdPool' effect/state. | 2 ||
-| [`Snake`](Engine_LogicKeys.md#object-snake) | Integer / Object | Applies or references the 'Snake' effect/state. | 2 ||
-| [`Squirrel`](Engine_LogicKeys.md#object-squirrel) | Integer / Object | Applies or references the 'Squirrel' effect/state. | 2 ||
-| [`Toad`](Engine_LogicKeys.md#object-toad) | Integer / Object | Applies or references the 'Toad' effect/state. | 2 ||
-| [`Turkey`](Engine_LogicKeys.md#object-turkey) | Integer / Object | Applies or references the 'Turkey' effect/state. | 2 ||
-| [`Turtle`](Engine_LogicKeys.md#object-turtle) | Integer / Object | Applies or references the 'Turtle' effect/state. | 2 ||
+| [`Antidote`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Applies or references the 'Antidote' effect/state. | 5 ||
+| `Blessing` | Mixed | Applies or references the 'Blessing' effect/state. | 5 ||
+| [`BigCatnip`](Engine_LogicKeys.md#object-bigcatnip) | Integer / Object | Applies or references the 'BigCatnip' effect/state. | 4 ||
+| [`BiggestFood`](Engine_LogicKeys.md#object-biggestfood) | Integer / Object | Applies or references the 'BiggestFood' effect/state. | 4 ||
+| [`BigScrap`](Engine_LogicKeys.md#object-bigscrap) | Number / Object | Applies or references the 'BigScrap' effect/state. | 4 ||
+| [`Coin`](Engine_LogicKeys.md#object-coin) | Integer / Object | Applies or references the 'Coin' effect/state. | 4 ||
+| [`BigFood`](Engine_LogicKeys.md#object-bigfood) | Integer / Object | Applies or references the 'BigFood' effect/state. | 2 ||
+| `Coin10` | Mixed | Applies or references the 'Coin10' effect/state. | 2 ||
+| [`Coin3`](Engine_LogicKeys.md#object-coin3) | Integer / Object | Applies or references the 'Coin3' effect/state. | 2 ||
+| [`Coin4`](Engine_LogicKeys.md#object-coin4) | Integer / Object | Applies or references the 'Coin4' effect/state. | 2 ||
+| [`MedCatnip`](Engine_LogicKeys.md#object-medcatnip) | Integer / Object | Applies or references the 'MedCatnip' effect/state. | 2 ||
+| [`MedScrap`](Engine_LogicKeys.md#object-medscrap) | Integer / Object | Applies or references the 'MedScrap' effect/state. | 2 ||
+| [`RandomArmorPickup`](Engine_LogicKeys.md#object-randomarmorpickup) | Number / Object | Applies or references the 'RandomArmorPickup' effect/state. | 2 ||
+| [`RandomCatnipPickup`](Engine_LogicKeys.md#object-randomcatnippickup) | Integer / Object | Applies or references the 'RandomCatnipPickup' effect/state. | 2 ||
+| [`RandomFoodPickup`](Engine_LogicKeys.md#object-randomfoodpickup) | Integer / Object | Applies or references the 'RandomFoodPickup' effect/state. | 2 ||
+| [`Bear`](Engine_LogicKeys.md#object-bear) | Integer / Object | Applies or references the 'Bear' effect/state. | 1 ||
+| [`BlackBird`](Engine_LogicKeys.md#object-blackbird) | Integer / Object | Applies or references the 'BlackBird' effect/state. | 1 ||
+| [`Catepillar`](Engine_LogicKeys.md#object-catepillar) | Integer / Object | Applies or references the 'Catepillar' effect/state. | 1 ||
+| [`Catnip`](Engine_LogicKeys.md#object-catnip) | Integer / Object | Applies or references the 'Catnip' effect/state. | 1 ||
+| [`CharmedDip`](Engine_LogicKeys.md#object-charmeddip) | Integer / Object | Applies or references the 'CharmedDip' effect/state. | 1 ||
+| [`CharmedFloater`](Engine_LogicKeys.md#object-charmedfloater) | Integer / Object | Applies or references the 'CharmedFloater' effect/state. | 1 ||
+| [`CharmedPile`](Engine_LogicKeys.md#object-charmedpile) | Integer / Object | Applies or references the 'CharmedPile' effect/state. | 1 ||
+| [`Cherub`](Engine_LogicKeys.md#object-cherub) | Integer / Object | Applies or references the 'Cherub' effect/state. | 1 ||
+| [`Chicken`](Engine_LogicKeys.md#object-chicken) | Integer / Object | Applies or references the 'Chicken' effect/state. | 1 ||
+| [`Coin2`](Engine_LogicKeys.md#object-coin2) | Integer / Object | Applies or references the 'Coin2' effect/state. | 1 ||
+| [`Dove`](Engine_LogicKeys.md#object-dove) | Integer / Object | Applies or references the 'Dove' effect/state. | 1 ||
+| [`Eagle`](Engine_LogicKeys.md#object-eagle) | Integer / Object | Applies or references the 'Eagle' effect/state. | 1 ||
+| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | Applies or references the 'Food' effect/state. | 1 ||
+| [`Harpy`](Engine_LogicKeys.md#object-harpy) | Integer / Object | Applies or references the 'Harpy' effect/state. | 1 ||
+| [`HummingBird`](Engine_LogicKeys.md#object-hummingbird) | Integer / Object | Applies or references the 'HummingBird' effect/state. | 1 ||
+| [`LargeBirdPool`](Engine_LogicKeys.md#object-largebirdpool) | Integer / Object | Applies or references the 'LargeBirdPool' effect/state. | 1 ||
+| [`MedBirdPool`](Engine_LogicKeys.md#object-medbirdpool) | Integer / Object | Applies or references the 'MedBirdPool' effect/state. | 1 ||
+| [`Mutant`](#object-mutant) | Integer / Object | Character Form: Behavior and stats for the 'Mutant' state. | 1 ||
+| [`Pigeon`](Engine_LogicKeys.md#object-pigeon) | Integer / Object | Applies or references the 'Pigeon' effect/state. | 1 ||
+| [`RandomBiggerArmorPickup`](Engine_LogicKeys.md#object-randombiggerarmorpickup) | Number / Object | Applies or references the 'RandomBiggerArmorPickup' effect/state. | 1 ||
+| [`RandomBiggerCatnipPickup`](Engine_LogicKeys.md#object-randombiggercatnippickup) | Integer / Object | Applies or references the 'RandomBiggerCatnipPickup' effect/state. | 1 ||
+| [`RandomBiggerFoodPickup`](Engine_LogicKeys.md#object-randombiggerfoodpickup) | Integer / Object | Applies or references the 'RandomBiggerFoodPickup' effect/state. | 1 ||
+| [`Raven`](Engine_LogicKeys.md#object-raven) | Integer / Object | Applies or references the 'Raven' effect/state. | 1 ||
+| [`Scrap`](Engine_LogicKeys.md#object-scrap) | Integer / Object | Applies or references the 'Scrap' effect/state. | 1 ||
+| [`Seagull`](Engine_LogicKeys.md#object-seagull) | Integer / Object | Applies or references the 'Seagull' effect/state. | 1 ||
+| [`SmallBirdPool`](Engine_LogicKeys.md#object-smallbirdpool) | Integer / Object | Applies or references the 'SmallBirdPool' effect/state. | 1 ||
+| [`Snake`](Engine_LogicKeys.md#object-snake) | Integer / Object | Applies or references the 'Snake' effect/state. | 1 ||
+| [`Squirrel`](Engine_LogicKeys.md#object-squirrel) | Integer / Object | Applies or references the 'Squirrel' effect/state. | 1 ||
+| [`Toad`](Engine_LogicKeys.md#object-toad) | Integer / Object | Applies or references the 'Toad' effect/state. | 1 ||
+| [`Turkey`](Engine_LogicKeys.md#object-turkey) | Integer / Object | Applies or references the 'Turkey' effect/state. | 1 ||
+| [`Turtle`](Engine_LogicKeys.md#object-turtle) | Integer / Object | Applies or references the 'Turtle' effect/state. | 1 ||
 
 </details>
 
@@ -1606,8 +1596,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_rewards`](#object-ally_rewards) | Object | Loot logic triggered if an ally dies. | 36 ||
-| [`statuses`](#object-statuses) | Object | Status effects possessed by the character. | 10 ||
+| [`ally_rewards`](#object-ally_rewards) | Object | Loot logic triggered if an ally dies. | 18 ||
+| [`statuses`](#object-statuses) | Object | Status effects possessed by the character. | 5 ||
 
 </details>
 
@@ -1627,7 +1617,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `size` | Enum / Number || 32 ||
+| `size` | Enum / Number || 16 ||
 | [`color`](./Arrays.md#array-color) | Array || 16 ||
 | [`glow`](./Arrays.md#array-glow) | Array || 8 ||
 
@@ -1649,11 +1639,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 30 ||
-| `stored_food_value` | Integer || 30 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 15 ||
+| `stored_food_value` | Integer || 15 ||
 | [`frame_range`](./Arrays.md#array-frame_range) | Array || 15 ||
-| `anything_eats` | Boolean || 8 ||
-| `force_frame` | Integer || 2 ||
+| `anything_eats` | Boolean || 4 ||
+| `force_frame` | Integer || 1 ||
 
 </details>
 
@@ -1673,10 +1663,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`AllStatsUp`](./Enums.md) | Integer || 8 | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 ||
+| [`AllStatsUp`](./Enums.md) | Integer || 4 | 2 |
 | [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object || 4 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -1715,15 +1705,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1888 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1390 ||
-| `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 42 ||
-| `BlackHoleSuck` | `Number` | Applies or references the 'BlackHoleSuck' effect/state. | 2 ||
-| [`Burn`](./Enums.md) | Integer || 12 | 2 |
-| [`Confusion`](./Enums.md) | Integer || 2 | 1 |
-| [`ConstitutionUp`](./Enums.md) | Integer || 2 | -1 |
-| [`Stun`](./Enums.md) | Integer || 3 | 1 |
-| [`Thorns`](./Enums.md) | Integer || 17 | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 750 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1695 ||
+| `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 21 ||
+| `BlackHoleSuck` | `Number` | Applies or references the 'BlackHoleSuck' effect/state. | 1 ||
+| [`Burn`](./Enums.md) | Integer || 85 | 2 |
+| [`Confusion`](./Enums.md) | Integer || 37 | 1 |
+| [`ConstitutionUp`](./Enums.md) | Integer || 22 | -1 |
+| [`Stun`](./Enums.md) | Integer || 98 | 1 |
+| [`Thorns`](./Enums.md) | Integer || 12 | 2 |
 
 </details>
 
@@ -1741,15 +1731,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 26 ||
-| `ability_damage_only` | Boolean || 12 ||
-| `backstabs_only` | Boolean || 4 ||
-| `damage_threshold` | Integer || 4 ||
-| `even_if_blocked` | Boolean || 4 ||
-| `even_if_stunned` | Boolean || 4 ||
-| `health_threshold` | Integer || 4 ||
-| `buddy_damage_only` | Boolean || 2 ||
-| `target_furthest_valid` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 13 ||
+| `ability_damage_only` | Boolean || 6 ||
+| `backstabs_only` | Boolean || 2 ||
+| `damage_threshold` | Integer || 2 ||
+| `even_if_blocked` | Boolean || 2 ||
+| `even_if_stunned` | Boolean || 2 ||
+| `health_threshold` | Integer || 2 ||
+| `buddy_damage_only` | Boolean || 1 ||
+| `target_furthest_valid` | Boolean || 1 ||
 
 </details>
 
@@ -1769,14 +1759,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 26 ||
-| `even_if_stunned` | Boolean || 14 ||
-| `immediate` | Boolean || 12 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 13 ||
+| `even_if_stunned` | Boolean || 7 ||
+| `immediate` | Boolean || 6 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 ||
-| `use_ai` | Boolean || 4 ||
-| `also_use_if_buddy_is_dead` | Boolean || 2 ||
-| [`threshold_min`](./Math_Equations.md) | Equation || 2 ||
-| [`threshold`](./Enums.md) | Enum / Integer || 18 | 200 |
+| `use_ai` | Boolean || 2 ||
+| `also_use_if_buddy_is_dead` | Boolean || 1 ||
+| [`threshold_min`](./Math_Equations.md) | Equation || 1 ||
+| [`threshold`](./Enums.md) | Enum / Integer || 12 | 200 |
 
 </details>
 
@@ -1797,14 +1787,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`ExtraBasicAttacks`](./Enums.md) | Integer || 2 | 1 |
-| [`FormChange`](./Enums.md) | Enum || 13 | Druid |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum || 14 | BasicStraightShot |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 12 ||
+| [`ExtraBasicAttacks`](./Enums.md) | Integer || 1 | 1 |
+| [`FormChange`](./Enums.md) | Enum || 12 | Druid |
+| [`ReplaceBasicAttack`](./Enums.md) | Enum || 11 | BasicStraightShot |
 | [`SelfStatusCarefulness`](./Enums.md) | Integer || 2 | 1 |
 | [`StatusCarefulness`](./Enums.md) | Integer || 2 | 1 |
-| [`TinkererBasicAttackSwitching`](Cat_Classes.md#object-tinkererbasicattackswitching) | Object || 2 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`TinkererBasicAttackSwitching`](Cat_Classes.md#object-tinkererbasicattackswitching) | Object || 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
 
 </details>
 
@@ -1824,7 +1814,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum || 6 ||
+| [`do`](./Enums.md#enum-do) | Enum || 3 ||
 | [`do_all`](./Arrays.md#array-do_all) | Array || 6 ||
 | [`do_one`](./Arrays.md#array-do_one) | Array || 2 ||
 | [`do_random`](./Arrays.md#array-do_random) | Array || 2 ||
@@ -1849,14 +1839,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum || 76 ||
-| `good` | Boolean || 40 ||
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0) of executing this action. | 24 ||
-| `spawn_on_death_hit` | Boolean || 20 ||
-| `coins` | Integer || 4 ||
-| `consider_all_layers` | Boolean || 4 ||
-| [`auto_cast`](./Enums.md#enum-auto_cast) | Enum || 2 ||
-| `melee_ability_only` | Boolean || 2 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum || 38 ||
+| `good` | Boolean || 20 ||
+| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Probability (0.0 to 1.0) of executing this action. | 12 ||
+| `spawn_on_death_hit` | Boolean || 10 ||
+| `coins` | Integer || 2 ||
+| `consider_all_layers` | Boolean || 2 ||
+| [`auto_cast`](./Enums.md#enum-auto_cast) | Enum || 1 ||
+| `melee_ability_only` | Boolean || 1 ||
 
 </details>
 
@@ -1876,8 +1866,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 16 ||
-| `even_if_stunned` | Boolean || 16 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 8 ||
+| `even_if_stunned` | Boolean || 8 ||
 
 </details>
 
@@ -1897,8 +1887,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum || 18 ||
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 4 ||
+| [`weights`](./Enums.md#enum-weights) | Array / Enum || 9 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 2 ||
 
 </details>
 
@@ -1918,14 +1908,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 16 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 12 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 8 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| `move_speed_multiplier` | Number || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 8 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 6 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 4 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| `move_speed_multiplier` | Number || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 6 ||
 
 </details>
 
@@ -1945,11 +1935,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum / Integer || 18 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 16 ||
-| [`exclude`](./Enums.md#enum-exclude) | Enum || 10 ||
-| [`particle`](./Enums.md#enum-particle) | Enum || 10 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum || 10 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer || 9 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 9 ||
+| [`exclude`](./Enums.md#enum-exclude) | Enum || 5 ||
+| [`particle`](./Enums.md#enum-particle) | Enum || 5 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum || 5 ||
 
 </details>
 
@@ -1989,10 +1979,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 ||
-| [`Poison`](./Enums.md) | Integer || 24 | 2 |
-| [`Slow`](./Enums.md) | Integer || 5 | 2 |
-| [`StrengthUp`](./Enums.md) | Integer || 9 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`Poison`](./Enums.md) | Integer || 4 | 2 |
+| [`Slow`](./Enums.md) | Integer || 4 | 2 |
+| [`StrengthUp`](./Enums.md) | Integer || 7 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -2012,10 +2002,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 16 ||
-| [`object`](./Arrays.md#array-object) | Array / Enum || 12 ||
-| [`initiative`](./Enums.md#enum-initiative) | Enum / Integer || 8 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 4 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 8 ||
+| [`object`](./Arrays.md#array-object) | Array / Enum || 8 ||
+| [`initiative`](./Enums.md#enum-initiative) | Enum / Integer || 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
 | [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
 
 </details>
@@ -2036,8 +2026,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 18 ||
-| [`object`](./Enums.md#enum-object) | Array / Enum || 18 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 9 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum || 9 ||
 
 </details>
 
@@ -2057,8 +2047,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_offmap`](./Enums.md#enum-form_offmap) | Enum || 16 ||
-| [`form_onmap`](./Enums.md#enum-form_onmap) | Enum || 16 ||
+| [`form_offmap`](./Enums.md#enum-form_offmap) | Enum || 8 ||
+| [`form_onmap`](./Enums.md#enum-form_onmap) | Enum || 8 ||
 
 </details>
 
@@ -2078,9 +2068,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 8 ||
-| `knockback` | Enum / Integer || 8 ||
-| `chain` | Boolean || 4 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 4 ||
+| `knockback` | Enum / Integer || 4 ||
+| `chain` | Boolean || 2 ||
 
 </details>
 
@@ -2100,11 +2090,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 14 ||
-| `flat_chance` | Integer || 10 ||
-| `chance_per_damage` | Integer || 6 ||
-| `backstabs_only` | Boolean || 2 ||
-| `even_on_0_damage_if_knockback` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 7 ||
+| `flat_chance` | Integer || 5 ||
+| `chance_per_damage` | Integer || 3 ||
+| `backstabs_only` | Boolean || 1 ||
+| `even_on_0_damage_if_knockback` | Boolean || 1 ||
 
 </details>
 
@@ -2124,13 +2114,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 22 ||
-| `enemies_only` | Boolean || 14 ||
-| `on_self_move_too` | Boolean || 6 ||
-| `objects_too` | Boolean || 4 ||
-| `blind_spot` | Boolean || 2 ||
-| `forward_only` | Boolean || 2 ||
-| `self_move_exclude_self_abilities` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 11 ||
+| `enemies_only` | Boolean || 7 ||
+| `on_self_move_too` | Boolean || 3 ||
+| `objects_too` | Boolean || 2 ||
+| `blind_spot` | Boolean || 1 ||
+| `forward_only` | Boolean || 1 ||
+| `self_move_exclude_self_abilities` | Boolean || 1 ||
 
 </details>
 
@@ -2150,9 +2140,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 12 ||
-| `count` | Array / Integer | The numerical quantity. | 12 ||
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 12 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 6 ||
+| `count` | Array / Integer | The numerical quantity. | 6 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 6 ||
 
 </details>
 
@@ -2172,8 +2162,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`priming`](./Enums.md#enum-priming) | Enum || 16 ||
-| [`not_priming`](./Enums.md#enum-not_priming) | Enum || 12 ||
+| [`priming`](./Enums.md#enum-priming) | Enum || 6 ||
+| [`not_priming`](./Enums.md#enum-not_priming) | Enum || 6 ||
 
 </details>
 
@@ -2193,16 +2183,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 10 ||
-| `move_far` | Boolean || 8 ||
-| [`check_in_form`](./Enums.md#enum-check_in_form) | Enum || 4 ||
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| `can_move_zero` | Boolean || 2 ||
-| [`check_has_status`](./Enums.md#enum-check_has_status) | Enum || 2 ||
-| `do_not_move_on_top` | Boolean || 2 ||
-| `face_towards_after` | Boolean || 2 ||
-| [`ignore_tagged_sources`](./Enums.md#enum-ignore_tagged_sources) | Enum || 2 ||
-| `move_short` | Boolean || 2 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 5 ||
+| `move_far` | Boolean || 4 ||
+| [`check_in_form`](./Enums.md#enum-check_in_form) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| `can_move_zero` | Boolean || 1 ||
+| [`check_has_status`](./Enums.md#enum-check_has_status) | Enum || 1 ||
+| `do_not_move_on_top` | Boolean || 1 ||
+| `face_towards_after` | Boolean || 1 ||
+| [`ignore_tagged_sources`](./Enums.md#enum-ignore_tagged_sources) | Enum || 1 ||
+| `move_short` | Boolean || 1 ||
 
 </details>
 
@@ -2222,11 +2212,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 14 ||
-| [`move`](./Enums.md#enum-move) | Enum || 10 ||
-| `enemies_only` | Boolean || 6 ||
-| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum || 6 ||
-| `not_on_kill` | Boolean || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 7 ||
+| [`move`](./Enums.md#enum-move) | Enum || 5 ||
+| `enemies_only` | Boolean || 3 ||
+| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum || 3 ||
+| `not_on_kill` | Boolean || 2 ||
 
 </details>
 
@@ -2246,13 +2236,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 10 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 10 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 8 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 5 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 5 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 4 ||
 
 </details>
 
@@ -2272,7 +2262,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 6 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 3 ||
 | [`character_filter`](./Arrays.md#array-character_filter) | Array || 3 ||
 
 </details>
@@ -2293,9 +2283,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 12 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 6 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 6 ||
 
 </details>
 
@@ -2315,8 +2305,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`first_turn`](./Enums.md#enum-first_turn) | Enum || 8 ||
-| [`obj`](./Enums.md#enum-obj) | Array / Enum || 8 ||
+| [`first_turn`](./Enums.md#enum-first_turn) | Enum || 4 ||
+| [`obj`](./Enums.md#enum-obj) | Array / Enum || 4 ||
 
 </details>
 
@@ -2336,7 +2326,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `range` | Enum / Integer | Distance or area of effect in tiles. | 8 ||
+| `range` | Enum / Integer | Distance or area of effect in tiles. | 4 ||
 
 </details>
 
@@ -2356,10 +2346,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed || 4 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed || 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -2379,14 +2369,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Ability triggered by the consumed entity while inside the consumer. | 34 ||
-| `force_contact` | `Boolean` | If true, enforces physical overlap. | 30 ||
-| `instant` | `Boolean` || 24 ||
-| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | `String` | If true, treats the consumption as riding/mounting instead of eating. | 24 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 24 ||
-| `do_not_pop_corpse` | `Boolean` || 22 ||
-| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | `String` || 22 ||
-| `use_placeholder` | Boolean || 6 ||
+| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Ability triggered by the consumed entity while inside the consumer. | 17 ||
+| `force_contact` | `Boolean` | If true, enforces physical overlap. | 15 ||
+| `instant` | `Boolean` || 12 ||
+| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | `String` | If true, treats the consumption as riding/mounting instead of eating. | 12 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 ||
+| `do_not_pop_corpse` | `Boolean` || 11 ||
+| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | `String` || 11 ||
+| `use_placeholder` | Boolean || 3 ||
 
 </details>
 
@@ -2406,8 +2396,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 10 ||
-| `show_name` | Boolean || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 5 ||
+| `show_name` | Boolean || 2 ||
 
 </details>
 
@@ -2427,9 +2417,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -2449,10 +2439,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 8 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 8 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 4 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 4 ||
 
 </details>
 
@@ -2472,8 +2462,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 8 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 8 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 4 ||
 
 </details>
 
@@ -2493,9 +2483,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 8 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 8 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 6 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 4 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 3 ||
 
 </details>
 
@@ -2515,8 +2505,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 6 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 3 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
 
 </details>
 
@@ -2536,7 +2526,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
 
 </details>
 
@@ -2557,12 +2547,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 55 ||
-| [`AllStatsUp`](./Enums.md) | Integer || 8 | 2 |
+| [`AllStatsUp`](./Enums.md) | Integer || 1 | 2 |
 | [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object || 1 ||
-| [`DivineShield`](./Enums.md) | Integer || 8 | 2 |
-| [`HealthGain`](./Enums.md) | Integer || 10 | 5 |
-| [`SpeedUp`](./Enums.md) | Integer || 4 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
+| [`HealthGain`](./Enums.md) | Integer || 1 | 5 |
+| [`SpeedUp`](./Enums.md) | Integer || 5 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 
 </details>
 
@@ -2582,8 +2572,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 36 ||
-| [`HealthGain`](./Enums.md) | Integer || 10 | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 34 ||
+| [`HealthGain`](./Enums.md) | Integer || 5 | 5 |
 | [`UseAbility_NonStack`](./Enums.md) | Enum || 3 | BBTransformZealot |
 
 </details>
@@ -2605,11 +2595,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`Bleed`](./Enums.md) | Integer || 17 | 2 |
+| [`Bleed`](./Enums.md) | Integer || 1 | 2 |
 | [`ExtraBasicAttacks_Status`](./Enums.md) | Integer || 2 | 1 |
-| [`HealthRegenUp`](./Enums.md) | Integer || 3 | 2 |
-| [`TakeExtraTurn`](./Enums.md) | Integer || 2 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`HealthRegenUp`](./Enums.md) | Integer || 1 | 2 |
+| [`TakeExtraTurn`](./Enums.md) | Integer || 1 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -2629,7 +2619,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cleanse_on_apply` | Boolean || 2 ||
+| `cleanse_on_apply` | Boolean || 1 ||
 
 </details>
 
@@ -2649,10 +2639,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 8 ||
-| `cancel_movement` | Boolean || 4 ||
-| `pathfinding_avoidance` | Integer || 4 ||
-| `range` | Enum / Integer | Distance or area of effect in tiles. | 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
+| `cancel_movement` | Boolean || 2 ||
+| `pathfinding_avoidance` | Integer || 2 ||
+| `range` | Enum / Integer | Distance or area of effect in tiles. | 2 ||
 
 </details>
 
@@ -2691,7 +2681,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 6 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 ||
 | [`frame_range`](./Arrays.md#array-frame_range) | Array || 3 ||
 
 </details>
@@ -2712,9 +2702,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -2732,9 +2722,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean || 6 ||
-| [`obj`](./Enums.md#enum-obj) | Array / Enum || 6 ||
-| `reclaim_if_lost` | Boolean || 2 ||
+| `allies_only` | Boolean || 3 ||
+| [`obj`](./Enums.md#enum-obj) | Array / Enum || 3 ||
+| `reclaim_if_lost` | Boolean || 1 ||
 
 </details>
 
@@ -2754,9 +2744,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`formchange`](./Enums.md#enum-formchange) | Enum || 6 ||
-| [`statuses`](#object-statuses) | Object | Status effects possessed by the character. | 4 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`formchange`](./Enums.md#enum-formchange) | Enum || 3 ||
+| [`statuses`](#object-statuses) | Object | Status effects possessed by the character. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
 
 </details>
 
@@ -2776,13 +2766,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 ||
 
 </details>
 
@@ -2802,12 +2792,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 3 ||
 
 </details>
 
@@ -2828,9 +2818,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -2850,11 +2840,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_above`](./Enums.md#enum-form_above) | Enum || 6 ||
-| [`form_below`](./Enums.md#enum-form_below) | Enum || 6 ||
+| [`form_above`](./Enums.md#enum-form_above) | Enum || 3 ||
+| [`form_below`](./Enums.md#enum-form_below) | Enum || 3 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| `count_shield` | Boolean || 2 ||
-| [`threshold`](./Enums.md) | Enum / Integer || 18 | 200 |
+| `count_shield` | Boolean || 1 ||
+| [`threshold`](./Enums.md) | Enum / Integer || 3 | 200 |
 
 </details>
 
@@ -2874,12 +2864,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
-| [`statuses_on_enter_form`](#object-statuses_on_enter_form) | Object | Status effects instantly applied upon transitioning into this form. | 4 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`statuses_on_enter_form`](#object-statuses_on_enter_form) | Object | Status effects instantly applied upon transitioning into this form. | 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 ||
 
 </details>
 
@@ -2899,7 +2889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 6 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 ||
 | [`frame_range`](./Arrays.md#array-frame_range) | Array || 3 ||
 
 </details>
@@ -2920,9 +2910,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`formchange`](./Enums.md#enum-formchange) | Enum || 6 ||
-| [`statuses`](#object-statuses) | Object | Status effects possessed by the character. | 4 ||
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`formchange`](./Enums.md#enum-formchange) | Enum || 3 ||
+| [`statuses`](#object-statuses) | Object | Status effects possessed by the character. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
 
 </details>
 
@@ -2942,9 +2932,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 6 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 3 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 3 ||
 
 </details>
 
@@ -2964,10 +2954,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 26 ||
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 32 ||
-| [`PassiveGroup`](#object-passivegroup) | Object || 12 ||
-| [`TransformInXTurns`](#object-transforminxturns) | Object || 9 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
+| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 1 ||
+| [`PassiveGroup`](#object-passivegroup) | Object || 2 ||
+| [`TransformInXTurns`](#object-transforminxturns) | Object || 1 ||
 
 </details>
 
@@ -2987,10 +2977,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`brain`](./Enums.md#enum-brain) | Enum || 8 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 8 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 8 ||
-| [`pattern`](#object-pattern) | Object | AI sequence logic. | 6 ||
+| [`brain`](./Enums.md#enum-brain) | Enum || 4 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 4 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 4 ||
+| [`pattern`](#object-pattern) | Object | AI sequence logic. | 3 ||
 
 </details>
 
@@ -3010,11 +3000,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 ||
 
 </details>
 
@@ -3034,8 +3024,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| `wait_till_turn` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| `wait_till_turn` | Boolean || 1 ||
 
 </details>
 
@@ -3055,9 +3045,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 6 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 3 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 3 ||
 
 </details>
 
@@ -3077,11 +3067,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 3 ||
 
 </details>
 
@@ -3101,9 +3091,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3123,8 +3113,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| `force_display_name` | Boolean || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| `force_display_name` | Boolean || 2 ||
 
 </details>
 
@@ -3144,9 +3134,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 10 ||
-| `range` | Enum / Integer | Distance or area of effect in tiles. | 10 ||
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 10 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 5 ||
+| `range` | Enum / Integer | Distance or area of effect in tiles. | 5 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 5 ||
 
 </details>
 
@@ -3185,7 +3175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fury` | Integer | Applies or references the 'Fury' effect/state. | 8 ||
+| `Fury` | Integer | Applies or references the 'Fury' effect/state. | 4 ||
 
 </details>
 
@@ -3206,9 +3196,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`FormChange`](./Enums.md) | Enum || 13 | Druid |
+| [`FormChange`](./Enums.md) | Enum || 1 | Druid |
 | [`SpellDamageUp`](./Enums.md) | Integer || 1 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3228,8 +3218,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to autocast. | 18 ||
-| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 12 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to autocast. | 9 ||
+| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 6 ||
 
 </details>
 
@@ -3249,15 +3239,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3277,12 +3267,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3302,9 +3292,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3324,10 +3314,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| `even_if_stunned` | Boolean || 4 ||
-| `health_threshold` | Integer || 4 ||
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| `even_if_stunned` | Boolean || 2 ||
+| `health_threshold` | Integer || 2 ||
+| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum || 2 ||
 
 </details>
 
@@ -3347,13 +3337,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3373,13 +3363,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 ||
 
 </details>
 
@@ -3399,13 +3389,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3425,8 +3415,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Leave`](Engine_LogicKeys.md#object-leave) | Enum / Object | Applies or references the 'Leave' effect/state. | 4 ||
-| [`Return`](Engine_LogicKeys.md#object-return) | Enum / Object | Applies or references the 'Return' effect/state. | 4 ||
+| [`Leave`](Engine_LogicKeys.md#object-leave) | Enum / Object | Applies or references the 'Leave' effect/state. | 2 ||
+| [`Return`](Engine_LogicKeys.md#object-return) | Enum / Object | Applies or references the 'Return' effect/state. | 2 ||
 
 </details>
 
@@ -3446,11 +3436,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 72 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 ||
-| [`FindItemFromPool`](./Enums.md) | Enum || 22 | eagle_pool |
-| `effects` | Object | Effects to execute. | | |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | | |
+| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 28 ||
+| [`FindItemFromPool`](./Enums.md) | Enum || 5 | eagle_pool |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | 37 | |
 
 </details>
 
@@ -3470,13 +3459,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3496,8 +3485,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
 
 </details>
 
@@ -3517,8 +3506,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 2 ||
-| `instant` | `Boolean` || 2 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
+| `instant` | `Boolean` || 1 ||
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 
 </details>
@@ -3539,7 +3528,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do`](./Enums.md#enum-do) | Enum || 6 ||
+| [`do`](./Enums.md#enum-do) | Enum || 2 ||
 
 </details>
 
@@ -3559,7 +3548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
 
 </details>
 
@@ -3579,8 +3568,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
 
 </details>
 
@@ -3600,9 +3589,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 4 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3622,7 +3611,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `use_turn_animations` | Boolean || 2 ||
+| `use_turn_animations` | Boolean || 1 ||
 
 </details>
 
@@ -3642,11 +3631,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3666,7 +3655,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 
 </details>
 
@@ -3686,8 +3675,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 4 ||
-| [`form`](./Enums.md#enum-form) | Enum / Integer || 4 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 2 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer || 2 ||
 
 </details>
 
@@ -3707,11 +3696,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3731,7 +3720,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 
 </details>
 
@@ -3751,11 +3740,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance` | Integer | The distance in tiles to knock the target away. | 48 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 44 ||
-| `displace` | Boolean || 4 ||
-| [`self_damage`](./Enums.md) | Boolean / Integer || 9 | 2 |
-| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Object | All valid keys from the specified engine key are applicable to this context/block. ||
+| `distance` | Integer | The distance in tiles to knock the target away. | 24 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 22 ||
+| `displace` | Boolean || 2 ||
+| [`self_damage`](./Enums.md) | Boolean / Integer || 2 | 2 |
+| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Object | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -3775,7 +3764,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
 
 </details>
 
@@ -3795,9 +3784,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](#object-cat) | Object | Character Form: Base form for standard cats. | 4 ||
-| [`NonCat`](#object-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 4 ||
-| [`Nothing`](#object-nothing) | Object | Character Form: Behavior and stats for the 'Nothing' state. | 2 ||
+| [`Cat`](#object-cat) | Object | Character Form: Base form for standard cats. | 2 ||
+| [`NonCat`](#object-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 2 ||
+| [`Nothing`](#object-nothing) | Object | Character Form: Behavior and stats for the 'Nothing' state. | 1 ||
 
 </details>
 
@@ -3817,8 +3806,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
 
 </details>
 
@@ -3838,9 +3827,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 4 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
 
 </details>
 
@@ -3860,15 +3849,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Number || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Number || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3888,9 +3877,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3910,9 +3899,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 4 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3932,13 +3921,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -3958,9 +3947,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 4 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 ||
 
 </details>
 
@@ -3980,9 +3969,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 4 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 ||
 
 </details>
 
@@ -4002,8 +3991,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| [`target_filter`](./Enums.md#enum-target_filter) | Enum || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| [`target_filter`](./Enums.md#enum-target_filter) | Enum || 2 ||
 
 </details>
 
@@ -4023,7 +4012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
 
 </details>
 
@@ -4043,8 +4032,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | The number of stacks to remove. | 8 ||
-| [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 8 ||
+| `stacks` | Enum / Integer | The number of stacks to remove. | 4 ||
+| [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 4 ||
 
 </details>
 
@@ -4064,10 +4053,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SlotResult_Jackpot_Coins`](Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 4 ||
-| [`SlotResult_Explode`](Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object | Applies or references the 'SlotResult_Explode' effect/state. | 2 ||
-| [`SlotResult_Nothing`](Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object | Applies or references the 'SlotResult_Nothing' effect/state. | 2 ||
-| [`SlotResult_RandomPickup`](Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object | Applies or references the 'SlotResult_RandomPickup' effect/state. | 2 ||
+| [`SlotResult_Jackpot_Coins`](Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 2 ||
+| [`SlotResult_Explode`](Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object | Applies or references the 'SlotResult_Explode' effect/state. | 1 ||
+| [`SlotResult_Nothing`](Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object | Applies or references the 'SlotResult_Nothing' effect/state. | 1 ||
+| [`SlotResult_RandomPickup`](Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object | Applies or references the 'SlotResult_RandomPickup' effect/state. | 1 ||
 
 </details>
 
@@ -4087,8 +4076,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
 
 </details>
 
@@ -4108,9 +4097,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 4 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
 
 </details>
 
@@ -4150,7 +4139,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
-| [`FindItemFromPool`](./Enums.md) | Enum || 22 | eagle_pool |
+| [`FindItemFromPool`](./Enums.md) | Enum || 2 | eagle_pool |
 
 </details>
 
@@ -4189,11 +4178,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 ||
-| [`ConstitutionUp`](./Enums.md) | Integer || 2 | -1 |
-| [`RemoveStatusStacks`](Abilities_and_Spells.md#object-removestatusstacks) | Object || 2 ||
-| [`StrengthUp`](./Enums.md) | Integer || 9 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 38 ||
+| [`ConstitutionUp`](./Enums.md) | Integer || 3 | -1 |
+| [`RemoveStatusStacks`](Abilities_and_Spells.md#object-removestatusstacks) | Object || 1 ||
+| [`StrengthUp`](./Enums.md) | Integer || 4 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 14 |
 
 </details>
 
@@ -4213,8 +4202,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object || 19 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
+| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object || 2 ||
 
 </details>
 
@@ -4234,8 +4223,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum || 6 ||
-| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum || 6 ||
+| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum || 3 ||
+| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum || 3 ||
 
 </details>
 
@@ -4255,8 +4244,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 4 ||
-| [`object`](./Enums.md#enum-object) | Array / Enum || 4 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 2 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum || 2 ||
 
 </details>
 
@@ -4276,12 +4265,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 4 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 4 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 4 ||
-| [`move`](./Enums.md#enum-move) | Enum || 4 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`move`](./Enums.md#enum-move) | Enum || 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 2 ||
 
 </details>
 
@@ -4301,13 +4290,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4327,13 +4316,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4354,7 +4343,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`PermanentMadness`](./Enums.md) | Integer || 4 | 1 |
+| [`PermanentMadness`](./Enums.md) | Integer || 1 | 1 |
 
 </details>
 
@@ -4432,7 +4421,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`Bleed`](./Enums.md) | Integer || 17 | 2 |
+| [`Bleed`](./Enums.md) | Integer || 3 | 2 |
 
 </details>
 
@@ -4452,7 +4441,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`StacyMutant_Brace`](#object-stacymutant_brace) | Object || 1 ||
 | [`StacyMutant_Counter`](#object-stacymutant_counter) | Object || 1 ||
 | [`StacyMutant_Damage`](#object-stacymutant_damage) | Object || 1 ||
@@ -4484,7 +4473,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `enemies_only` | Boolean || 2 ||
+| `enemies_only` | Boolean || 1 ||
 
 </details>
 
@@ -4504,10 +4493,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`brain`](./Enums.md#enum-brain) | Enum || 2 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
-| [`pattern`](#object-pattern) | Object | AI sequence logic. | 2 ||
+| [`brain`](./Enums.md#enum-brain) | Enum || 1 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
+| [`pattern`](#object-pattern) | Object | AI sequence logic. | 1 ||
 
 </details>
 
@@ -4527,10 +4516,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4550,9 +4539,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum || 2 ||
-| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 2 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
+| [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum || 1 ||
+| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 1 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
 
 </details>
 
@@ -4572,7 +4561,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 
 </details>
 
@@ -4592,8 +4581,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 14 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 14 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 7 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 7 ||
 
 </details>
 
@@ -4613,11 +4602,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bite` | Integer | Applies or references the 'DemonicGlyph_Bite' effect/state. | 2 ||
-| `DemonicGlyph_Bounce` | Integer | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 2 ||
-| `DemonicGlyph_Fire` | Integer | Applies or references the 'DemonicGlyph_Fire' effect/state. | 2 ||
-| `DemonicGlyph_Movement` | Integer | Applies or references the 'DemonicGlyph_Movement' effect/state. | 2 ||
-| `DemonicGlyph_Summon` | Integer | Applies or references the 'DemonicGlyph_Summon' effect/state. | 2 ||
+| `DemonicGlyph_Bite` | Integer | Applies or references the 'DemonicGlyph_Bite' effect/state. | 1 ||
+| `DemonicGlyph_Bounce` | Integer | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 ||
+| `DemonicGlyph_Fire` | Integer | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 ||
+| `DemonicGlyph_Movement` | Integer | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 ||
+| `DemonicGlyph_Summon` | Integer | Applies or references the 'DemonicGlyph_Summon' effect/state. | 1 ||
 
 </details>
 
@@ -4637,10 +4626,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4660,9 +4649,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4682,9 +4671,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4704,10 +4693,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4727,11 +4716,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_damage`](./Enums.md#enum-ally_damage) | Enum || 2 ||
-| [`ally_dead`](./Enums.md#enum-ally_dead) | Enum || 2 ||
-| [`enemy_damage`](./Enums.md#enum-enemy_damage) | Enum || 2 ||
-| [`enemy_dead`](./Enums.md#enum-enemy_dead) | Enum || 2 ||
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum || 2 ||
+| [`ally_damage`](./Enums.md#enum-ally_damage) | Enum || 1 ||
+| [`ally_dead`](./Enums.md#enum-ally_dead) | Enum || 1 ||
+| [`enemy_damage`](./Enums.md#enum-enemy_damage) | Enum || 1 ||
+| [`enemy_dead`](./Enums.md#enum-enemy_dead) | Enum || 1 ||
+| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum || 1 ||
 
 </details>
 
@@ -4751,13 +4740,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4777,8 +4766,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alert_form`](./Enums.md#enum-alert_form) | Enum || 2 ||
-| [`default_form`](./Enums.md#enum-default_form) | Enum || 2 ||
+| [`alert_form`](./Enums.md#enum-alert_form) | Enum || 1 ||
+| [`default_form`](./Enums.md#enum-default_form) | Enum || 1 ||
 
 </details>
 
@@ -4798,8 +4787,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 1 ||
 
 </details>
 
@@ -4819,8 +4808,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 1 ||
 
 </details>
 
@@ -4840,8 +4829,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 12 ||
-| `chance` | Number | Probability (0.0 to 1.0) of executing this action. | 12 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 6 ||
+| `chance` | Number | Probability (0.0 to 1.0) of executing this action. | 6 ||
 
 </details>
 
@@ -4861,8 +4850,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | Probability (0.0 to 1.0) of executing this action. | 2 ||
-| [`form`](./Enums.md#enum-form) | Enum / Integer || 2 ||
+| `chance` | Number | Probability (0.0 to 1.0) of executing this action. | 1 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer || 1 ||
 
 </details>
 
@@ -4882,7 +4871,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `passives_health_threshold` | Integer || 2 ||
+| `passives_health_threshold` | Integer || 1 ||
 | [`active_pieces`](./Arrays.md#array-active_pieces) | Array || 1 ||
 | [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array || 1 ||
 
@@ -4925,9 +4914,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`new_music`](./Enums.md#enum-new_music) | Enum || 2 ||
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`new_music`](./Enums.md#enum-new_music) | Enum || 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 1 ||
 
 </details>
 
@@ -4947,11 +4936,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4972,7 +4961,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -4992,8 +4981,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -5013,11 +5002,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 16 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 ||
-| [`Madness`](./Enums.md) | Integer || 2 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
-| `effects` | Object | Effects to execute. | | |
+| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 8 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
+| [`Madness`](./Enums.md) | Integer || 1 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 
 </details>
 
@@ -5037,12 +5025,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 2 ||
-| `RemoveKnockback` | `Number` | Applies or references the 'RemoveKnockback' effect/state. | 2 ||
-| [`TempPassiveUntilSettled`](#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 ||
+| `RemoveKnockback` | `Number` | Applies or references the 'RemoveKnockback' effect/state. | 1 ||
+| [`TempPassiveUntilSettled`](#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| `effects` | Object | Effects to execute. | | |
 
 </details>
 
@@ -5062,12 +5049,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 2 ||
-| `RemoveKnockback` | `Number` | Applies or references the 'RemoveKnockback' effect/state. | 2 ||
-| [`TempPassiveUntilSettled`](#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 ||
+| `RemoveKnockback` | `Number` | Applies or references the 'RemoveKnockback' effect/state. | 1 ||
+| [`TempPassiveUntilSettled`](#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| `effects` | Object | Effects to execute. | | |
 
 </details>
 
@@ -5085,8 +5071,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 10 ||
-| `without_orienting` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 5 ||
+| `without_orienting` | Boolean || 1 ||
 
 </details>
 
@@ -5106,8 +5092,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BloodRain` | `Number` | Applies or references the 'BloodRain' effect/state. | 6 ||
-| [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | Visual: Dims the map lighting. | 6 ||
+| `BloodRain` | `Number` | Applies or references the 'BloodRain' effect/state. | 3 ||
+| [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | Visual: Dims the map lighting. | 3 ||
 | [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
 
 </details>
@@ -5128,7 +5114,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 
 </details>
 
@@ -5148,10 +5134,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5171,10 +5157,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5194,8 +5180,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `health` | Integer || 12 ||
-| `rounds` | Integer || 12 ||
+| `health` | Integer || 6 ||
+| `rounds` | Integer || 6 ||
 
 </details>
 
@@ -5215,7 +5201,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 
 </details>
 
@@ -5235,8 +5221,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dice_size` | Integer || 2 ||
-| `knockback_damage` | Integer || 2 ||
+| `dice_size` | Integer || 1 ||
+| `knockback_damage` | Integer || 1 ||
 
 </details>
 
@@ -5256,9 +5242,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5278,7 +5264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `deferred` | Boolean || 2 ||
+| `deferred` | Boolean || 1 ||
 
 </details>
 
@@ -5298,7 +5284,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
 
 </details>
 
@@ -5318,7 +5304,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -5338,13 +5324,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| `move_speed_multiplier` | Number || 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| `move_speed_multiplier` | Number || 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5364,13 +5350,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| `move_speed_multiplier` | Number || 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| `move_speed_multiplier` | Number || 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5390,9 +5376,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 2 ||
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5412,8 +5398,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum || 2 ||
-| [`form`](./Enums.md#enum-form) | Enum / Integer || 2 ||
+| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum || 1 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer || 1 ||
 
 </details>
 
@@ -5433,12 +5419,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cant_miss` | `Boolean` || 2 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 2 ||
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging impact triggers. | 2 ||
-| `makes_contact` | `Boolean` || 2 ||
-| `piercing` | `Boolean` || 2 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 2 ||
+| `cant_miss` | `Boolean` || 1 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 1 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging impact triggers. | 1 ||
+| `makes_contact` | `Boolean` || 1 ||
+| `piercing` | `Boolean` || 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 1 ||
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
 
 </details>
@@ -5459,9 +5445,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 72 ||
-| [`Conditional_HasKnockback`](#object-conditional_hasknockback) | Object | Conditional: Executes logic if the triggering attack deals knockback. | 2 ||
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 2 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 ||
+| [`Conditional_HasKnockback`](#object-conditional_hasknockback) | Object | Conditional: Executes logic if the triggering attack deals knockback. | 1 ||
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 ||
 
 </details>
 
@@ -5481,7 +5467,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Default`](#object-default) | Enum / Object | Character Form: The baseline default behavior state. | 2 ||
+| [`Default`](#object-default) | Enum / Object | Character Form: The baseline default behavior state. | 1 ||
 
 </details>
 
@@ -5501,12 +5487,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5526,9 +5512,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability_damage_only` | Boolean || 2 ||
-| `override_hit_animation` | Boolean || 2 ||
-| `use_turn_animations` | Boolean || 2 ||
+| `ability_damage_only` | Boolean || 1 ||
+| `override_hit_animation` | Boolean || 1 ||
+| `use_turn_animations` | Boolean || 1 ||
 
 </details>
 
@@ -5548,12 +5534,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5573,9 +5559,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`queue`](./Enums.md#enum-queue) | Enum || 2 ||
-| [`release`](./Enums.md#enum-release) | Enum || 2 ||
-| [`transform`](./Enums.md#enum-transform) | Enum || 2 ||
+| [`queue`](./Enums.md#enum-queue) | Enum || 1 ||
+| [`release`](./Enums.md#enum-release) | Enum || 1 ||
+| [`transform`](./Enums.md#enum-transform) | Enum || 1 ||
 
 </details>
 
@@ -5595,10 +5581,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GlobalSpawnCharacter`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'GlobalSpawnCharacter' effect/state. | 2 ||
-| `PlayBackground` | `Number` | Applies or references the 'PlayBackground' effect/state. | 2 ||
-| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Event Trigger: Changes background music track. | 2 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`GlobalSpawnCharacter`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 ||
+| `PlayBackground` | `Number` | Applies or references the 'PlayBackground' effect/state. | 1 ||
+| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Event Trigger: Changes background music track. | 1 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -5618,11 +5604,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon` | Integer || 2 ||
-| `icon_ready` | Integer || 2 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
+| `icon` | Integer || 1 ||
+| `icon_ready` | Integer || 1 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 6 | CancerExplode |
+| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 1 | CancerExplode |
 
 </details>
 
@@ -5642,11 +5628,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon` | Integer || 2 ||
-| `icon_ready` | Integer || 2 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
+| `icon` | Integer || 1 ||
+| `icon_ready` | Integer || 1 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 6 | CancerExplode |
+| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 1 | CancerExplode |
 
 </details>
 
@@ -5666,9 +5652,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon` | Integer || 2 ||
-| `icon_ready` | Integer || 2 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
+| `icon` | Integer || 1 ||
+| `icon_ready` | Integer || 1 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
 
 </details>
 
@@ -5688,11 +5674,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `radius` | Array / Integer | Distance or area of effect in tiles. | 2 ||
-| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Number || 2 ||
-| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Number || 2 ||
-| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Number || 2 ||
-| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Number || 2 ||
+| `radius` | Array / Integer | Distance or area of effect in tiles. | 1 ||
+| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Number || 1 ||
+| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Number || 1 ||
+| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Number || 1 ||
+| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Number || 1 ||
 | [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array || 1 ||
 | [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array || 1 ||
 
@@ -5714,7 +5700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`break_ability`](./Enums.md#enum-break_ability) | Enum || 2 ||
+| [`break_ability`](./Enums.md#enum-break_ability) | Enum || 1 ||
 | [`state_health`](./Arrays.md#array-state_health) | Array || 1 ||
 
 </details>
@@ -5735,8 +5721,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`other_character`](./Enums.md#enum-other_character) | Enum || 2 ||
-| [`other_form_change_abilities`](#object-other_form_change_abilities) | Object | Lists secondary abilities used to change forms. | 2 ||
+| [`other_character`](./Enums.md#enum-other_character) | Enum || 1 ||
+| [`other_form_change_abilities`](#object-other_form_change_abilities) | Object | Lists secondary abilities used to change forms. | 1 ||
 
 </details>
 
@@ -5756,10 +5742,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5779,10 +5765,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5802,9 +5788,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5824,10 +5810,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5847,9 +5833,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5869,8 +5855,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -5890,8 +5876,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 1 ||
 
 </details>
 
@@ -5911,8 +5897,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0) of executing this action. | 2 ||
-| [`pool`](./Enums.md#enum-pool) | Array / Enum || 2 ||
+| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0) of executing this action. | 1 ||
+| [`pool`](./Enums.md#enum-pool) | Array / Enum || 1 ||
 
 </details>
 
@@ -5932,8 +5918,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit_animations`](#object-exit_animations) | Object | Animations played when leaving a form/state. | 2 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`exit_animations`](#object-exit_animations) | Object | Animations played when leaving a form/state. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -5953,14 +5939,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| `weak_threshold` | Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| `weak_threshold` | Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -5999,10 +5985,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6022,11 +6008,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6046,11 +6032,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6070,9 +6056,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
 
 </details>
 
@@ -6092,10 +6078,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6115,8 +6101,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean || 2 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
+| `allies_only` | Boolean || 1 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
 
 </details>
 
@@ -6136,7 +6122,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -6156,7 +6142,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -6176,7 +6162,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -6196,10 +6182,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`threshold`](./Enums.md) | Enum / Integer || 18 | 200 |
+| [`threshold`](./Enums.md) | Enum / Integer || 1 | 200 |
 
 </details>
 
@@ -6219,7 +6205,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`clipname`](./Enums.md#enum-clipname) | Enum || 2 ||
+| [`clipname`](./Enums.md#enum-clipname) | Enum || 1 ||
 | [`thresholds`](./Arrays.md#array-thresholds) | Array || 1 ||
 
 </details>
@@ -6240,9 +6226,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
 
 </details>
 
@@ -6262,9 +6248,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `health` | Integer || 6 ||
-| `playercat_health` | Integer || 6 ||
-| `immediate` | Boolean || 2 ||
+| `health` | Integer || 3 ||
+| `playercat_health` | Integer || 3 ||
+| `immediate` | Boolean || 1 ||
 
 </details>
 
@@ -6284,12 +6270,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6309,11 +6295,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6333,11 +6319,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6357,9 +6343,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6379,10 +6365,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6402,8 +6388,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum || 2 ||
-| [`form_washed`](./Enums.md#enum-form_washed) | Enum || 2 ||
+| [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum || 1 ||
+| [`form_washed`](./Enums.md#enum-form_washed) | Enum || 1 ||
 
 </details>
 
@@ -6423,9 +6409,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6445,9 +6431,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6467,8 +6453,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6488,12 +6474,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6513,9 +6499,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6535,8 +6521,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `speed` | Array / Number | The transition speed. | 6 ||
-| [`amount`](./Arrays.md#array-amount) | Array | The target opacity/dimness level. | 1 ||
+| `speed` | Array / Number | The transition speed. | 3 ||
+| [`amount`](./Arrays.md#array-amount) | Array | The target opacity/dimness level. | 3 ||
 
 </details>
 
@@ -6556,10 +6542,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head_drop`](./Enums.md#enum-head_drop) | Enum || 2 ||
-| [`leg_leave`](./Enums.md#enum-leg_leave) | Enum || 2 ||
-| [`leg_return`](./Enums.md#enum-leg_return) | Enum || 2 ||
-| `stable_legs` | Integer || 2 ||
+| [`head_drop`](./Enums.md#enum-head_drop) | Enum || 1 ||
+| [`leg_leave`](./Enums.md#enum-leg_leave) | Enum || 1 ||
+| [`leg_return`](./Enums.md#enum-leg_return) | Enum || 1 ||
+| `stable_legs` | Integer || 1 ||
 
 </details>
 
@@ -6579,10 +6565,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`sound_event`](./Enums.md#enum-sound_event) | Enum || 2 ||
+| [`sound_event`](./Enums.md#enum-sound_event) | Enum || 1 ||
 | [`Cleanse`](./Enums.md) | Integer || 1 | 0 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6602,11 +6588,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`attack`](./Enums.md#enum-attack) | Enum || 6 ||
-| [`move`](./Enums.md#enum-move) | Enum || 4 ||
-| [`spell`](./Enums.md#enum-spell) | Enum || 2 ||
-| [`trinket`](./Enums.md#enum-trinket) | Enum || 2 ||
-| [`weapon`](./Enums.md#enum-weapon) | Enum | Weapon item constraint. | 2 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`spell`](./Enums.md#enum-spell) | Enum || 1 ||
+| [`trinket`](./Enums.md#enum-trinket) | Enum || 1 ||
+| [`weapon`](./Enums.md#enum-weapon) | Enum | Weapon item constraint. | 1 ||
 
 </details>
 
@@ -6626,8 +6612,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eat_damage`](#object-eat_damage) | Object | Damage dealt when this entity consumes another. | 2 ||
-| [`tumor_object`](./Enums.md#enum-tumor_object) | Enum || 2 ||
+| [`eat_damage`](#object-eat_damage) | Object | Damage dealt when this entity consumes another. | 1 ||
+| [`tumor_object`](./Enums.md#enum-tumor_object) | Enum || 1 ||
 
 </details>
 
@@ -6647,11 +6633,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](#object-cat) | Object | Character Form: Base form for standard cats. | 2 ||
-| [`grow_ability`](./Enums.md#enum-grow_ability) | Enum || 2 ||
-| [`NonCat`](#object-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 2 ||
-| [`pass_ani`](./Enums.md#enum-pass_ani) | Enum || 2 ||
-| [`receive_ani`](./Enums.md#enum-receive_ani) | Enum || 2 ||
+| [`Cat`](#object-cat) | Object | Character Form: Base form for standard cats. | 1 ||
+| [`grow_ability`](./Enums.md#enum-grow_ability) | Enum || 1 ||
+| [`NonCat`](#object-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 1 ||
+| [`pass_ani`](./Enums.md#enum-pass_ani) | Enum || 1 ||
+| [`receive_ani`](./Enums.md#enum-receive_ani) | Enum || 1 ||
 | [`considered_forms`](./Arrays.md#array-considered_forms) | Array || 1 ||
 
 </details>
@@ -6672,8 +6658,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eject_ability`](./Enums.md#enum-eject_ability) | Enum || 2 ||
-| [`enter_ability`](./Enums.md#enum-enter_ability) | Enum || 2 ||
+| [`eject_ability`](./Enums.md#enum-eject_ability) | Enum || 1 ||
+| [`enter_ability`](./Enums.md#enum-enter_ability) | Enum || 1 ||
 
 </details>
 
@@ -6693,7 +6679,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -6713,10 +6699,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -6736,7 +6722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum || 2 ||
+| [`weights`](./Enums.md#enum-weights) | Array / Enum || 1 ||
 
 </details>
 
@@ -6756,7 +6742,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 2 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 1 ||
 
 </details>
 
@@ -6776,9 +6762,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 2 ||
-| `once_per_turn` | Boolean || 2 ||
-| [`weights`](./Enums.md#enum-weights) | Array / Enum || 2 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 1 ||
+| `once_per_turn` | Boolean || 1 ||
+| [`weights`](./Enums.md#enum-weights) | Array / Enum || 1 ||
 
 </details>
 
@@ -6798,9 +6784,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6820,9 +6806,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6842,9 +6828,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6864,9 +6850,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6886,9 +6872,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6908,9 +6894,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6930,8 +6916,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6951,9 +6937,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6973,9 +6959,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -6995,7 +6981,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`obj`](./Enums.md#enum-obj) | Array / Enum || 2 ||
+| [`obj`](./Enums.md#enum-obj) | Array / Enum || 1 ||
 | [`count`](./Arrays.md#array-count) | Array / Integer | The numerical quantity. | 1 ||
 
 </details>
@@ -7016,8 +7002,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -7037,7 +7023,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -7057,11 +7043,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7081,8 +7067,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
 
 </details>
 
@@ -7102,7 +7088,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
 
 </details>
 
@@ -7122,9 +7108,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 2 ||
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7144,7 +7130,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -7164,9 +7150,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7186,9 +7172,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7208,11 +7194,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7232,9 +7218,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7254,9 +7240,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Boris`](#object-boris) | Enum / Object | Character Form / AI State: Behavior and stats for the 'Boris' state. | 2 ||
-| [`Explosive`](#object-explosive) | Enum / Object | Character Form: Behavior and stats for the 'Explosive' state. | 2 ||
-| [`Holy`](#object-holy) | Enum / Object | Character Form: Behavior and stats for the 'Holy' state. | 2 ||
+| [`Boris`](#object-boris) | Enum / Object | Character Form / AI State: Behavior and stats for the 'Boris' state. | 1 ||
+| [`Explosive`](#object-explosive) | Enum / Object | Character Form: Behavior and stats for the 'Explosive' state. | 1 ||
+| [`Holy`](#object-holy) | Enum / Object | Character Form: Behavior and stats for the 'Holy' state. | 1 ||
 
 </details>
 
@@ -7277,7 +7263,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7297,9 +7283,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 36 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 33 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 18 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 18 ||
 
 </details>
 
@@ -7338,10 +7324,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7361,11 +7347,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7385,14 +7371,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| `animation_suffix` | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7412,14 +7398,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| `animation_suffix` | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7439,14 +7425,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| `animation_suffix` | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7466,14 +7452,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| `animation_suffix` | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7493,14 +7479,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| `animation_suffix` | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7520,14 +7506,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| `uifloaters_offset` | Number || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| `animation_suffix` | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| `uifloaters_offset` | Number || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7547,8 +7533,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 35 ||
-| [`StatusGroup`](Abilities_and_Spells.md#object-statusgroup) | Object || 2 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 33 ||
+| [`StatusGroup`](Abilities_and_Spells.md#object-statusgroup) | Object || 3 ||
 
 </details>
 
@@ -7568,8 +7554,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -7589,9 +7575,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 16 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 10 ||
-| `knockback` | Enum / Integer || 6 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 8 ||
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 5 ||
+| `knockback` | Enum / Integer || 3 ||
 
 </details>
 
@@ -7625,7 +7611,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -7636,7 +7622,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -7647,7 +7633,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -7658,7 +7644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -7669,7 +7655,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 ||
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -7680,7 +7666,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -7691,7 +7677,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -7709,8 +7695,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -7730,8 +7716,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allow_decision_mid_turn` | Boolean || 2 ||
-| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum || 2 ||
+| `allow_decision_mid_turn` | Boolean || 1 ||
+| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum || 1 ||
 
 </details>
 
@@ -7751,7 +7737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](#object-default) | Enum / Object | Baseline configuration. | 2 ||
+| [`default`](#object-default) | Enum / Object | Baseline configuration. | 1 ||
 | [`thresholds`](./Arrays.md#array-thresholds) | Array || 1 ||
 
 </details>
@@ -7772,7 +7758,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `include_coins` | Boolean || 2 ||
+| `include_coins` | Boolean || 1 ||
 
 </details>
 
@@ -7792,13 +7778,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7818,8 +7804,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pop_chance` | Integer || 2 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
+| `pop_chance` | Integer || 1 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
 
 </details>
 
@@ -7839,9 +7825,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7861,9 +7847,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7883,9 +7869,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -7905,12 +7891,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Fire`](#object-fire) | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 2 ||
-| [`FireFull`](#object-firefull) | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 2 ||
-| [`Normal`](#object-normal) | Integer / Object | Character Form: Behavior and stats for the 'Normal' state. | 2 ||
-| [`NormalFull`](#object-normalfull) | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 2 ||
-| [`Tar`](#object-tar) | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 2 ||
-| [`TarFull`](#object-tarfull) | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 2 ||
+| [`Fire`](#object-fire) | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 1 ||
+| [`FireFull`](#object-firefull) | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 ||
+| [`Normal`](#object-normal) | Integer / Object | Character Form: Behavior and stats for the 'Normal' state. | 1 ||
+| [`NormalFull`](#object-normalfull) | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 ||
+| [`Tar`](#object-tar) | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 1 ||
+| [`TarFull`](#object-tarfull) | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 ||
 
 </details>
 
@@ -7931,9 +7917,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`Brace`](./Enums.md) | Integer || 42 | 99 |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`Brace`](./Enums.md) | Integer || 1 | 99 |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7953,11 +7939,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 32 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object || 31 | [GSScream] |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object || 1 ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object || 1 | [GSScream] |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7978,10 +7964,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`AddDamage`](./Enums.md) | Integer || 8 | 2 |
-| [`AddMaxHealth`](./Enums.md) | Integer || 6 | -25 |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`AddDamage`](./Enums.md) | Integer || 1 | 2 |
+| [`AddMaxHealth`](./Enums.md) | Integer || 1 | -25 |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8002,9 +7988,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`ExtraDispersedTurns`](./Enums.md) | Integer || 3 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`ExtraDispersedTurns`](./Enums.md) | Integer || 1 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8025,11 +8011,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`ElementImmune`](./Enums.md) | Enum || 30 | Ice |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum || 14 | BasicStraightShot |
-| [`ReplaceBrain`](#object-replacebrain) | Object || 3 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`ElementImmune`](./Enums.md) | Enum || 1 | Ice |
+| [`ReplaceBasicAttack`](./Enums.md) | Enum || 1 | BasicStraightShot |
+| [`ReplaceBrain`](#object-replacebrain) | Object || 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8050,11 +8036,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`AddMaxHealth`](./Enums.md) | Integer || 6 | -25 |
-| [`AddSpeed`](./Enums.md) | Integer || 2 | 6 |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`SizeScale`](./Enums.md) | Number || 2 | .8 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`AddMaxHealth`](./Enums.md) | Integer || 1 | -25 |
+| [`AddSpeed`](./Enums.md) | Integer || 1 | 6 |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`SizeScale`](./Enums.md) | Number || 1 | .8 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8075,9 +8061,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`DivineShield`](./Enums.md) | Integer || 8 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`DivineShield`](./Enums.md) | Integer || 1 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8098,12 +8084,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`AddMovement`](./Enums.md) | Integer || 17 | 2 |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`ElementImmune`](./Enums.md) | Enum || 30 | Ice |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum || 14 | BasicStraightShot |
-| [`ReplaceBrain`](#object-replacebrain) | Object || 3 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`AddMovement`](./Enums.md) | Integer || 1 | 2 |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`ElementImmune`](./Enums.md) | Enum || 1 | Ice |
+| [`ReplaceBasicAttack`](./Enums.md) | Enum || 1 | BasicStraightShot |
+| [`ReplaceBrain`](#object-replacebrain) | Object || 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8124,11 +8110,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`ElementImmune`](./Enums.md) | Enum || 30 | Ice |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum || 14 | BasicStraightShot |
-| [`ReplaceBrain`](#object-replacebrain) | Object || 3 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`ElementImmune`](./Enums.md) | Enum || 1 | Ice |
+| [`ReplaceBasicAttack`](./Enums.md) | Enum || 1 | BasicStraightShot |
+| [`ReplaceBrain`](#object-replacebrain) | Object || 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8148,11 +8134,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`ReflectProjectiles`](#object-reflectprojectiles) | Integer / Object || 10 | 100 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`ReflectProjectiles`](#object-reflectprojectiles) | Integer / Object || 1 | 100 |
 | [`StatusEachTurnEndForEachTurn`](#object-statuseachturnendforeachturn) | Object || 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8173,11 +8159,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`AddDamage`](./Enums.md) | Integer || 8 | 2 |
-| [`AddSpeed`](./Enums.md) | Integer || 2 | 6 |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`SizeScale`](./Enums.md) | Number || 2 | .8 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`AddDamage`](./Enums.md) | Integer || 1 | 2 |
+| [`AddSpeed`](./Enums.md) | Integer || 1 | 6 |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`SizeScale`](./Enums.md) | Number || 1 | .8 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8198,9 +8184,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 41 ||
-| [`Thorns`](./Enums.md) | Integer || 17 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object || 1 ||
+| [`Thorns`](./Enums.md) | Integer || 1 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8220,12 +8206,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8245,12 +8231,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
-| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
+| [`turns`](#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8271,7 +8257,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8291,9 +8277,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 4 ||
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 6 | CancerExplode |
+| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 2 | CancerExplode |
 
 </details>
 
@@ -8313,14 +8299,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum || 2 ||
-| `consume` | Boolean || 2 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum || 1 ||
+| `consume` | Boolean || 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`AllStatsUp`](./Enums.md) | Integer || 8 | 2 |
-| [`DamageUp`](./Enums.md) | Integer || 2 | 2 |
-| [`HealthGain`](./Enums.md) | Integer || 10 | 5 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`AllStatsUp`](./Enums.md) | Integer || 1 | 2 |
+| [`DamageUp`](./Enums.md) | Integer || 1 | 2 |
+| [`HealthGain`](./Enums.md) | Integer || 1 | 5 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -8341,7 +8327,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`RandomMagicMissile`](./Enums.md) | Integer || 1 | 1 |
+| [`RandomMagicMissile`](./Enums.md) | Integer || 3 | 1 |
 
 </details>
 
@@ -8362,7 +8348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 6 | CancerExplode |
+| [`ForceUseAbility`](#object-forceuseability) | Enum / Object || 1 | CancerExplode |
 
 </details>
 
@@ -8382,7 +8368,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 ||
 | [`RemoveAmbientLightEffects`](./Enums.md) | Integer || 1 | 4 |
 | [`RemoveGlobalModifiers`](./Enums.md) | Array || 1 | [BloodRain] |
 
@@ -8443,8 +8429,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Object || 2 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Object || 1 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8465,7 +8451,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`Poison`](./Enums.md) | Integer || 24 | 2 |
+| [`Poison`](./Enums.md) | Integer || 1 | 2 |
 
 </details>
 
@@ -8485,10 +8471,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object || 5 | KirbySpit |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object || 1 | KirbySpit |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8508,9 +8494,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 2 ||
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8530,9 +8516,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -8552,8 +8538,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_dead_ani`](./Enums.md#enum-alt_dead_ani) | Enum || 2 ||
-| [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum || 2 ||
+| [`alt_dead_ani`](./Enums.md#enum-alt_dead_ani) | Enum || 1 ||
+| [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum || 1 ||
 
 </details>
 
@@ -8573,8 +8559,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_in`](./Enums.md#enum-form_in) | Enum || 2 ||
-| [`form_out`](./Enums.md#enum-form_out) | Enum || 2 ||
+| [`form_in`](./Enums.md#enum-form_in) | Enum || 1 ||
+| [`form_out`](./Enums.md#enum-form_out) | Enum || 1 ||
 
 </details>
 
@@ -8594,8 +8580,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`new_layer`](./Enums.md#enum-new_layer) | Enum | The specific audio layer to transition to (e.g., map, battle). | 14 ||
-| [`new_song`](./Enums.md#enum-new_song) | Enum | The ID of the new music track. | 12 ||
+| [`new_layer`](./Enums.md#enum-new_layer) | Enum | The specific audio layer to transition to (e.g., map, battle). | 7 ||
+| [`new_song`](./Enums.md#enum-new_song) | Enum | The ID of the new music track. | 6 ||
 
 </details>
 
@@ -8615,10 +8601,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8638,11 +8624,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8662,7 +8648,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`no_buddy`](./Enums.md#enum-no_buddy) | Enum || 2 ||
+| [`no_buddy`](./Enums.md#enum-no_buddy) | Enum || 1 ||
 
 </details>
 
@@ -8702,10 +8688,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8725,11 +8711,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8749,8 +8735,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -8770,8 +8756,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move`](./Enums.md#enum-move) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move`](./Enums.md#enum-move) | Enum || 1 ||
 
 </details>
 
@@ -8791,7 +8777,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
 | [`groups`](./Arrays.md#array-groups) | Array || 1 ||
 
 </details>
@@ -8812,8 +8798,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 1 ||
 
 </details>
 
@@ -8833,8 +8819,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum || 1 ||
 
 </details>
 
@@ -8854,7 +8840,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 
 </details>
 
@@ -8874,9 +8860,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8896,10 +8882,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8919,9 +8905,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -8941,9 +8927,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -8963,10 +8949,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum || 2 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum || 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`threshold`](./Enums.md) | Enum / Integer || 18 | 200 |
+| [`threshold`](./Enums.md) | Enum / Integer || 1 | 200 |
 
 </details>
 
@@ -8986,13 +8972,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Die` | `Number` | Character Form / Logic: Forces the character to die. | 2 ||
-| [`Dumb`](#object-dumb) | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 2 ||
-| `Fuck` | Integer | Applies or references the 'Fuck' effect/state. | 2 ||
-| [`Obey`](#object-obey) | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 2 ||
-| `Shit` | Integer | Applies or references the 'Shit' effect/state. | 2 ||
-| [`Stop`](#object-stop) | Integer / Object | AI Movement: Forces the character to cease movement. | 2 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| `Die` | `Number` | Character Form / Logic: Forces the character to die. | 1 ||
+| [`Dumb`](#object-dumb) | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 1 ||
+| `Fuck` | Integer | Applies or references the 'Fuck' effect/state. | 1 ||
+| [`Obey`](#object-obey) | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 ||
+| `Shit` | Integer | Applies or references the 'Shit' effect/state. | 1 ||
+| [`Stop`](#object-stop) | Integer / Object | AI Movement: Forces the character to cease movement. | 1 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 ||
 
 </details>
 
@@ -9012,9 +8998,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 2 ||
-| `max_dist` | Integer || 2 ||
-| `min_dist` | Integer || 2 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 1 ||
+| `max_dist` | Integer || 1 ||
+| `min_dist` | Integer || 1 ||
 
 </details>
 
@@ -9053,9 +9039,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 2 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum || 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum || 1 ||
 
 </details>
 
@@ -9075,8 +9061,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| `even_if_stunned` | Boolean || 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| `even_if_stunned` | Boolean || 1 ||
 
 </details>
 
@@ -9096,9 +9082,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -9118,8 +9104,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer || 1 ||
 
 </details>
 
@@ -9139,8 +9125,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger. | 4 ||
-| `respect_prime` | Boolean | If true, respects the ability's prime/cooldown state. | 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger. | 2 ||
+| `respect_prime` | Boolean | If true, respects the ability's prime/cooldown state. | 2 ||
 
 </details>
 
@@ -9160,8 +9146,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
 
 </details>
 
@@ -9181,9 +9167,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -9203,13 +9189,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer || 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -9229,13 +9215,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 ||
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 2 ||
-| [`attack`](./Enums.md#enum-attack) | Enum || 2 ||
-| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 2 ||
-| [`tooltip`](./Strings.md#string-tooltip) | Enum || 2 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object || 747 ||
+| [`ai`](#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 ||
+| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer || 1 ||
+| [`attack`](./Enums.md#enum-attack) | Enum || 1 ||
+| [`name`](./Strings.md#string-name) | Enum | Localization key for the character's name. | 1 ||
+| [`tooltip`](./Strings.md#string-tooltip) | Enum || 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object || 1 ||
 
 </details>
 
@@ -9256,11 +9242,5 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Undocumented. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Undocumented. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Undocumented. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Undocumented. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Undocumented. | 1 ||
-| `template` | String | Undocumented. | 1 | `lobbed_attack` |
 
 </details>
