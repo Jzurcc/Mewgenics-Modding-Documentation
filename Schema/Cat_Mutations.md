@@ -15,23 +15,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 489
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 5441 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1570 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 981 |
-| `cha` | Number | Examples: `2, -1, 1` | 468 |
-| `spd` | Number | Examples: `1, -1, -2` | 424 |
-| `shield` | Number | Examples: `12, 5, 10` | 422 |
-| `con` | Number | Examples: `-2, -3, 1` | 416 |
-| `int` | Number | Examples: `2, -1, 1` | 401 |
-| `lck` | Number | Examples: `2, -1, 1` | 351 |
-| `str` | Number | Examples: `2, -1, 1` | 337 |
-| `dex` | Number | Examples: `2, -1, -2` | 301 |
-| `divine_shield` | Number | Examples: `1` | 54 |
-| [`attack`](./Enums.md#enum-attack) | Enum | Examples: `FetusSpit` | 26 |
-| `speed` | Number | Examples: `-4` | 6 |
-| [`override_move`](./Enums.md#enum-override_move) | Enum | Examples: `BasicJump` | 4 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`desc`](./Strings.md#string-desc) | String | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 5441 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1570 |  |
+| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 981 |  |
+| `cha` | Number | Examples: `2, -1, 1` | 468 |  |
+| `spd` | Number | Examples: `1, -1, -2` | 424 |  |
+| `shield` | Number | Examples: `12, 5, 10` | 422 |  |
+| `con` | Number | Examples: `-2, -3, 1` | 416 |  |
+| `int` | Number | Examples: `2, -1, 1` | 401 |  |
+| `lck` | Number | Examples: `2, -1, 1` | 351 |  |
+| `str` | Number | Examples: `2, -1, 1` | 337 |  |
+| `dex` | Number | Examples: `2, -1, -2` | 301 |  |
+| `divine_shield` | Number | Examples: `1` | 54 |  |
+| [`attack`](./Enums.md#enum-attack) | Enum | Examples: `FetusSpit` | 26 |  |
+| `speed` | Number | Examples: `-4` | 6 |  |
+| [`override_move`](./Enums.md#enum-override_move) | Enum | Examples: `BasicJump` | 4 |  |
 
 </details>
 
@@ -49,9 +49,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#context-passivewhenaffectedbyelement), [`PassiveWhileHasStatus`](./Cat_Mutations.md#context-passivewhilehasstatus), [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2827 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2827 |  |
 
 </details>
 
@@ -69,9 +69,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root), [`passives`](./Cat_Mutations.md#context-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 187 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 187 |  |
 
 </details>
 
@@ -89,10 +89,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root), [`passives`](./Cat_Mutations.md#context-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Examples: `water` | 36 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 33 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`element`](./Enums.md#enum-element) | Enum | Examples: `water` | 36 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 33 |  |
 
 </details>
 
@@ -110,9 +110,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage), [`RevengeDamage`](./Cat_Mutations.md#context-revengedamage)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1390 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1390 |  |
 
 </details>
 
@@ -130,11 +130,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `damage` | Number | Examples: `0` | 16 |
-| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 10 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage` | Number | Examples: `0` | 16 |  |
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 10 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 10 |  |
 
 </details>
 
@@ -152,13 +152,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 75 |
-| `knockback` | Number | Examples: `2, 1` | 48 |
-| `damage` | Number | Examples: `0` | 44 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 36 |
-| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 20 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 75 |  |
+| `knockback` | Number | Examples: `2, 1` | 48 |  |
+| `damage` | Number | Examples: `0` | 44 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |  |
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 20 |  |
 
 </details>
 
@@ -176,11 +176,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedFlea, SmallRock, Coin` | 76 |
-| `good` | Boolean | Examples: `false` | 40 |
-| `chance` | Number | Examples: `20, 100, 10` | 24 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedFlea, SmallRock, Coin` | 76 |  |
+| `good` | Boolean | Examples: `false` | 40 |  |
+| `chance` | Number | Examples: `20, 100, 10` | 24 |  |
 
 </details>
 
@@ -198,9 +198,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 10 |  |
 
 </details>
 
@@ -218,9 +218,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 40 |  |
 
 </details>
 
@@ -238,9 +238,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 |  |
 
 </details>
 
@@ -258,9 +258,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`StatusOnTookDamageFromAbility`](./Cat_Mutations.md#context-statusontookdamagefromability), [`effects`](./Cat_Mutations.md#context-effects)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 35 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 35 |  |
 
 </details>
 
@@ -278,11 +278,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `chance` | Number | Examples: `50, 5, 25` | 40 |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 34 |
-| `good` | Boolean | Examples: `false` | 4 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `chance` | Number | Examples: `50, 5, 25` | 40 |  |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 34 |  |
+| `good` | Boolean | Examples: `false` | 4 |  |
 
 </details>
 
@@ -300,9 +300,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root), [`passives`](./Cat_Mutations.md#context-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 55 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 55 |  |
 
 </details>
 
@@ -320,10 +320,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `Coin, RandomFoodPickup` | 22 |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 3 ], 2` | 6 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `Coin, RandomFoodPickup` | 22 |  |
+| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 3 ], 2` | 6 |  |
 
 </details>
 
@@ -341,9 +341,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusKilledCharacters`](./Cat_Mutations.md#context-statuskilledcharacters)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `odds` | Number | Examples: `10` | 8 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `odds` | Number | Examples: `10` | 8 |  |
 
 </details>
 
@@ -361,10 +361,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `stacks` | Number | Examples: `4, 8` | 16 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `stacks` | Number | Examples: `4, 8` | 16 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 |  |
 
 </details>
 
@@ -382,8 +382,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 
 </details>
 
@@ -401,9 +401,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 58 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 58 |  |
 
 </details>
 
@@ -421,8 +421,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 
 </details>
 
@@ -440,9 +440,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
 
 </details>
 
@@ -460,11 +460,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move` | 10 |
-| `range` | Number | Examples: `2` | 10 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 10 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move` | 10 |  |
+| `range` | Number | Examples: `2` | 10 |  |
+| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 10 |  |
 
 </details>
 
@@ -482,10 +482,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `damage` | Number | Examples: `1` | 18 |
-| [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 18 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage` | Number | Examples: `1` | 18 |  |
+| [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 18 |  |
 
 </details>
 
@@ -503,9 +503,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `Fury` | Number | Examples: `10` | 8 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Fury` | Number | Examples: `10` | 8 |  |
 
 </details>
 
@@ -523,10 +523,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BackflipDodge` | 14 |
-| `stacks` | Number | Examples: `2` | 14 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BackflipDodge` | 14 |  |
+| `stacks` | Number | Examples: `2` | 14 |  |
 
 </details>
 
@@ -544,10 +544,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BackflipDodge` | 12 |
-| `chance` | Number | Examples: `10` | 12 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BackflipDodge` | 12 |  |
+| `chance` | Number | Examples: `10` | 12 |  |
 
 </details>
 
@@ -565,10 +565,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `reduction` | Number | Examples: `1` | 14 |
-| [`class`](./Enums.md#enum-class) | Enum | Examples: `Colorless` | 12 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `reduction` | Number | Examples: `1` | 14 |  |
+| [`class`](./Enums.md#enum-class) | Enum | Examples: `Colorless` | 12 |  |
 
 </details>
 
@@ -586,9 +586,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 7 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 7 |  |
 
 </details>
 
@@ -606,10 +606,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `odds` | Number | Examples: `25` | 72 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 30 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `odds` | Number | Examples: `25` | 72 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 30 |  |
 
 </details>
 
@@ -627,10 +627,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `ChainLightning` | 10 |
-| `chance` | Number | Examples: `15` | 2 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `ChainLightning` | 10 |  |
+| `chance` | Number | Examples: `15` | 2 |  |
 
 </details>
 
@@ -648,10 +648,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `distance` | Number | Examples: `3` | 48 |
-| `stacks` | Number | Examples: `3` | 44 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `distance` | Number | Examples: `3` | 48 |  |
+| `stacks` | Number | Examples: `3` | 44 |  |
 
 </details>
 
@@ -669,10 +669,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Enum | Examples: `chaotic` | 18 |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `MoveOne` | 4 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`weights`](./Enums.md#enum-weights) | Enum | Examples: `chaotic` | 18 |  |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `MoveOne` | 4 |  |
 
 </details>
 
@@ -690,9 +690,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 5 |  |
 
 </details>
 
@@ -710,10 +710,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | Examples: `Bleed` | 12 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 11 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`status`](./Enums.md#enum-status) | Enum | Examples: `Bleed` | 12 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 |  |
 
 </details>
 
@@ -731,10 +731,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup` | 19 |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 3 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup` | 19 |  |
+| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 3 |  |
 
 </details>
 
@@ -752,9 +752,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 |  |
 
 </details>
 
@@ -772,10 +772,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `stacks` | Number | Examples: `3` | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `stacks` | Number | Examples: `3` | 2 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 
@@ -793,9 +793,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 
@@ -813,9 +813,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
 
 </details>
 
@@ -833,9 +833,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |  |
 
 </details>
 
@@ -853,9 +853,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
 
 </details>
 
@@ -873,9 +873,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |  |
 
 </details>
 
@@ -893,9 +893,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |  |
 
 </details>
 
@@ -913,9 +913,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 36 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |  |
 
 </details>
 
@@ -927,9 +927,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 0
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |  |
 
 </details>
 
@@ -938,9 +938,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 0
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |  |
 
 </details>
 
@@ -949,8 +949,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 9
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 |  |
 
 </details>

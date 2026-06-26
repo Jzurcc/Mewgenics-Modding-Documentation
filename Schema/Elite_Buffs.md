@@ -15,19 +15,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 **Total Count:** 54
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1570 |
-| `value` | Float |  | 485 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
-| `icon_frame` | Integer |  | 128 |
-| `unique` | Boolean |  | 72 |
-| `specific_chapter` | Integer |  | 16 |
-| [`minion_alt`](./Enums.md#enum-minion_alt) | Enum |  | 10 |
-| `rollable` | Boolean |  | 10 |
-| `only_at_battle_start` | Boolean |  | 4 |
-| `requires_corpse` | Boolean |  | 4 |
-| `roll_limit` | Integer |  | 4 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1570 |  |
+| `value` | Float |  | 485 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
+| `icon_frame` | Integer |  | 128 |  |
+| `unique` | Boolean |  | 72 |  |
+| `specific_chapter` | Integer |  | 16 |  |
+| [`minion_alt`](./Enums.md#enum-minion_alt) | Enum |  | 10 |  |
+| `rollable` | Boolean |  | 10 |  |
+| `only_at_battle_start` | Boolean |  | 4 |  |
+| `requires_corpse` | Boolean |  | 4 |  |
+| `roll_limit` | Integer |  | 4 |  |
 
 </details>
 
@@ -45,10 +45,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](#object-root)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2827 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 181 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2827 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 181 |  |
 
 </details>
 
@@ -66,10 +66,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`DamageNeighborsAfterMove`](#object-damageneighborsaftermove), [`MeleeRevengeDamage`](#object-meleerevengedamage), [`RevengeDamage`](#object-revengedamage)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1888 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 59 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1888 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 59 |  |
 </details>
 
 ---
@@ -86,8 +86,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 </details>
 
 ---
@@ -104,11 +104,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `knockback` | Integer |  | 48 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 36 |
-| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `knockback` | Integer |  | 48 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |  |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |  |
 
 </details>
 
@@ -126,8 +126,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 </details>
 
 ---
@@ -144,8 +144,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 </details>
 
 ---
@@ -156,10 +156,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 187
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 187 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 187 |  |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |  |
 
 </details>
 
@@ -168,9 +168,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 0
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |  |
 
 </details>
 
@@ -179,9 +179,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 6
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |  |
 
 </details>
 
@@ -190,10 +190,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Total Count:** 36
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |  |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |  |
 
 </details>
 
@@ -209,10 +209,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 72 |
-| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum |  | 4 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`object`](./Enums.md#enum-object) | Enum |  | 72 |  |
+| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum |  | 4 |  |
 
 </details>
 
@@ -230,9 +230,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 10 |  |
 
 </details>
 
@@ -250,9 +250,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ChanceToRevive`](#object-chancetorevive)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
- | `Zombie` | Number |  | 2 | 
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `Zombie` | Number |  | 4 |  |
 </details> 
 
 ---
@@ -269,8 +269,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 </details>
 
 ---
@@ -287,8 +287,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 
 </details>
 
@@ -306,9 +306,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
 
 </details>
 
@@ -326,11 +326,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `stacks` | Integer |  | 10 |
-| `health` | Integer |  | 8 |
-| [`statuses`](#object-statuses) | Object |  | 6 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `stacks` | Integer |  | 10 |  |
+| `health` | Integer |  | 8 |  |
+| [`statuses`](#object-statuses) | Object |  | 6 |  |
 
 </details>
 
@@ -348,11 +348,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `aura_effects_allies` | Boolean |  | 8 |
-| `range` | Integer |  | 8 |
-| `stacks` | Integer |  | 8 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `aura_effects_allies` | Boolean |  | 8 |  |
+| `range` | Integer |  | 8 |  |
+| `stacks` | Integer |  | 8 |  |
 
 </details>
 
@@ -370,12 +370,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `damage` | Integer |  | 8 |
-| [`type`](./Enums.md#enum-type) | Enum |  | 8 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
-| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `damage` | Integer |  | 8 |  |
+| [`type`](./Enums.md#enum-type) | Enum |  | 8 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 4 |  |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |  |
 
 </details>
 
@@ -393,9 +393,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
 </details>
 
 ---
@@ -412,9 +412,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](#object-passives)
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
 
 </details>
 

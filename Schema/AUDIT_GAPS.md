@@ -23,60 +23,60 @@ Keys found in `.gon` files that are **not documented** in any context of their s
 ### Characters & Bosses — **54 undocumented keys**
 
 | :--- | :--- | :--- |
-| `accurate_knockback` | 1 | data/ai_presets/decision_presets.gon |
-| `buff_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `buff_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `buff_self` | 1 | data/ai_presets/decision_presets.gon |
-| `cap_distance_to_ally` | 1 | data/ai_presets/move_presets.gon |
-| `cap_distance_to_character` | 1 | data/ai_presets/move_presets.gon |
-| `cap_distance_to_enemy` | 1 | data/ai_presets/move_presets.gon |
-| `cap_total_distance_moved` | 1 | data/ai_presets/move_presets.gon |
-| `consider_aggro_target_enemy` | 1 | data/ai_presets/move_presets.gon |
-| `consider_aoe` | 1 | data/ai_presets/decision_presets.gon |
-| `consider_overkill` | 1 | data/ai_presets/decision_presets.gon |
-| `consider_secondary_damage` | 1 | data/ai_presets/decision_presets.gon |
-| `consider_total_damage` | 1 | data/ai_presets/decision_presets.gon |
-| `count_nomove_in_eval` | 1 | data/ai_presets/move_presets.gon |
-| `damage_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_ally_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_self` | 1 | data/ai_presets/decision_presets.gon |
-| `danger_avoidance` | 1 | data/ai_presets/move_presets.gon |
-| `debuff_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `debuff_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `debuff_self` | 1 | data/ai_presets/decision_presets.gon |
-| `distance_to_aggro_target` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_ally` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_center` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_character` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_corpse` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_enemy` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_water` | 1 | data/ai_presets/move_presets.gon |
-| `exclude_characters_tagged` | 1 | data/ai_presets/move_presets.gon |
-| `face_aggro_target` | 1 | data/ai_presets/move_presets.gon |
-| `face_camera` | 1 | data/ai_presets/move_presets.gon |
-| `face_closest_enemy` | 1 | data/ai_presets/move_presets.gon |
-| `flat_cast_bonus` | 1 | data/ai_presets/decision_presets.gon |
-| `heal_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `heal_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `heal_self` | 1 | data/ai_presets/decision_presets.gon |
-| `kill_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `kill_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `lava` | 1 | data/ai_presets/move_presets.gon |
-| `negative_weight_scale` | 1 | data/ai_presets/decision_presets.gon |
-| `preferred_distance` | 1 | data/ai_presets/move_presets.gon |
-| `randomness` | 1 | data/ai_presets/move_presets.gon |
-| `revive_ally_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `revive_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `simple` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object_distance_to_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object_distance_to_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object_preferred_distance` | 1 | data/ai_presets/decision_presets.gon |
-| `spend_mana_scale` | 1 | data/ai_presets/decision_presets.gon |
-| `tall_grass` | 1 | data/ai_presets/move_presets.gon |
-| `total_distance_moved` | 1 | data/ai_presets/move_presets.gon |
+| `accurate_knockback` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `buff_ally` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `buff_enemy` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `buff_self` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `cap_distance_to_ally` | 1 | data/ai_presets/move_presets.gon | 8 
+| `cap_distance_to_character` | 1 | data/ai_presets/move_presets.gon | 2 
+| `cap_distance_to_enemy` | 1 | data/ai_presets/move_presets.gon | 4 
+| `cap_total_distance_moved` | 1 | data/ai_presets/move_presets.gon | 2 
+| `consider_aggro_target_enemy` | 1 | data/ai_presets/move_presets.gon | 2 
+| `consider_aoe` | 1 | data/ai_presets/decision_presets.gon | 6 
+| `consider_overkill` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `consider_secondary_damage` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `consider_total_damage` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `count_nomove_in_eval` | 1 | data/ai_presets/move_presets.gon | 2 
+| `damage_ally` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `damage_ally_corpse` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `damage_enemy` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `damage_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `damage_self` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `danger_avoidance` | 1 | data/ai_presets/move_presets.gon | 6 
+| `debuff_ally` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `debuff_enemy` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `debuff_self` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `distance_to_aggro_target` | 1 | data/ai_presets/move_presets.gon | 6 
+| `distance_to_ally` | 1 | data/ai_presets/move_presets.gon | 110 
+| `distance_to_center` | 1 | data/ai_presets/move_presets.gon | 2 
+| `distance_to_character` | 1 | data/ai_presets/move_presets.gon | 110 
+| `distance_to_corpse` | 1 | data/ai_presets/move_presets.gon | 6 
+| `distance_to_enemy` | 1 | data/ai_presets/move_presets.gon | 110 
+| `distance_to_water` | 1 | data/ai_presets/move_presets.gon | 4 
+| `exclude_characters_tagged` | 1 | data/ai_presets/move_presets.gon | 2 
+| `face_aggro_target` | 1 | data/ai_presets/move_presets.gon | 4 
+| `face_camera` | 1 | data/ai_presets/move_presets.gon | 2 
+| `face_closest_enemy` | 1 | data/ai_presets/move_presets.gon | 110 
+| `flat_cast_bonus` | 1 | data/ai_presets/decision_presets.gon | 10 
+| `heal_ally` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `heal_enemy` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `heal_self` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `kill_ally` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `kill_enemy` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `lava` | 1 | data/ai_presets/move_presets.gon | 2 
+| `negative_weight_scale` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `preferred_distance` | 1 | data/ai_presets/move_presets.gon | 110 
+| `randomness` | 1 | data/ai_presets/move_presets.gon | 10 
+| `revive_ally_corpse` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `revive_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `simple` | 1 | data/ai_presets/decision_presets.gon | 8 
+| `spawn_object` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `spawn_object_distance_to_ally` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `spawn_object_distance_to_enemy` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `spawn_object_preferred_distance` | 1 | data/ai_presets/decision_presets.gon | 4 
+| `spend_mana_scale` | 1 | data/ai_presets/decision_presets.gon | 64 
+| `tall_grass` | 1 | data/ai_presets/move_presets.gon | 2 
+| `total_distance_moved` | 1 | data/ai_presets/move_presets.gon | 110 
 | Undocumented Key | # Files | Example Sources |
 
 ### Enemy AI ✅ (no gaps)
@@ -86,9 +86,9 @@ Keys found in `.gon` files that are **not documented** in any context of their s
 ### Item Pools — **2 undocumented keys**
 
 | :--- | :--- | :--- |
-| `Turkey` | 1 | data/item_pools/bird_pools.gon |
+| `Turkey` | 1 | data/item_pools/bird_pools.gon | 2 
 | Undocumented Key | # Files | Example Sources |
-| `WishBone` | 1 | data/item_pools/bird_pools.gon |
+| `WishBone` | 1 | data/item_pools/bird_pools.gon | 2 
 
 ### Items & Equipment ✅ (no gaps)
 
@@ -120,9 +120,9 @@ Values found in `.gon` files that are **not in their Enum** in `Enums.md`.
 | `Flaming` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Hardy` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Healthy` | 1 | data/elite_buffs.gon |
-| `Infested` | 1 | data/elite_buffs.gon |
-| `Lucky` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
-| `Mad` | 1 | data/elite_buffs.gon |
+| `Infested` | 1 | data/elite_buffs.gon | 1 
+| `Lucky` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon | 8 
+| `Mad` | 1 | data/elite_buffs.gon | 15 
 | `Mega` | 1 | data/elite_buffs.gon |
 | `Mirror` | 1 | data/elite_buffs.gon |
 | Missing Value | # Files | Example Sources |
@@ -135,13 +135,13 @@ Values found in `.gon` files that are **not in their Enum** in `Enums.md`.
 | `Shielded2` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Shielded3` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Shielded4` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
-| `SlightlyDepressing` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
+| `SlightlyDepressing` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon | 4 
 | `Speedy` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Spiky` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Static` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
-| `Sticky` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
-| `SubTwin` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
-| `SubUndying` | 1 | data/elite_buffs.gon |
+| `Sticky` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon | 6 
+| `SubTwin` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon | 4 
+| `SubUndying` | 1 | data/elite_buffs.gon | 2 
 | `Tough` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Twin` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Undying` | 1 | data/elite_buffs.gon |
@@ -164,11 +164,11 @@ All unique property keys seen across ALL `.gon` files, sorted by frequency.
 Use this to spot any completely undocumented keys.
 
 | :--- | :--- | :--- |
-| `abandonedones` | 1 | `auto` |
-| `abilities` | 24 |  |
-| `ability` | 47 | `AZ_LoseHead`, `AlienBeam`, `AlienBeastGoop`, `AlienBeastMoveOne`, `BBPullBomb` |
+| `abandonedones` | 1 | `auto` | 2 
+| `abilities` | 24 |  | 918 
+| `ability` | 47 | `AZ_LoseHead`, `AlienBeam`, `AlienBeastGoop`, `AlienBeastMoveOne`, `BBPullBomb` | 730 
 | `ability_damage_only` | 5 | `true` |
-| `ability_groups` | 2 |  |
+| `ability_groups` | 2 |  | 24 
 | `ability_icon` | 5 | `BasicButcherMeleeWideSpin`, `BasicMelee`, `BasicRanged`, `BasicStraightShot`, `BreakShortCircuit` |
 | `ability_pool` | 2 |  |
 | `AbilityBanner` | 1 |  |
@@ -178,8 +178,8 @@ Use this to spot any completely undocumented keys.
 | `AbilityTargetConfirm_Move` | 1 |  |
 | `AbilityTargetConfirm_Spell` | 1 |  |
 | `access_to_player_inventory` | 4 | `false`, `true` |
-| `accurate_knockback` | 1 | `false` |
-| `act` | 1 |  |
+| `accurate_knockback` | 1 | `false` | 64 
+| `act` | 1 |  | 9 
 | `act_points` | 17 |  |
 | `actchooser` | 1 |  |
 | `activate_p` | 1 |  |
@@ -201,23 +201,23 @@ Use this to spot any completely undocumented keys.
 | `addstacks` | 1 |  |
 | `adjectives` | 1 |  |
 | `adjust_target` | 1 | `stalk` |
-| `advance` | 1 |  |
+| `advance` | 1 |  | 2 
 | `advantage_polarity` | 1 |  |
 | `advantage_softcap` | 1 |  |
-| `adventure_unlock` | 1 | `class_unlock_monocolorless_face`, `class_unlock_monocolorless_head`, `class_unlock_monocolorless_neck`, `map_unlock_iceage`, `nuke_quest_complete` |
+| `adventure_unlock` | 1 | `class_unlock_monocolorless_face`, `class_unlock_monocolorless_head`, `class_unlock_monocolorless_neck`, `map_unlock_iceage`, `nuke_quest_complete` | 44 
 | `adventure_weather` | 1 | `Rain`, `Snow`, `Thunderstorm`, `Windy` |
 | `aggro_target_is_enemy` | 1 | `true` |
-| `ai` | 23 |  |
-| `ai_ability` | 4 | `AZ_Jump_AI`, `BasicBigMelee`, `BasicMelee`, `BungaSwipe_ai`, `CerberubsJump_AI` |
+| `ai` | 23 |  | 928 
+| `ai_ability` | 4 | `AZ_Jump_AI`, `BasicBigMelee`, `BasicMelee`, `BungaSwipe_ai`, `CerberubsJump_AI` | 58 
 | `ai_base_score` | 16 |  |
-| `ai_if_spawned_as_enemy` | 1 |  |
+| `ai_if_spawned_as_enemy` | 1 |  | 2 
 | `ai_scale` | 4 |  |
 | `AirHorn` | 1 |  |
 | `Alert` | 1 |  |
 | `alert_form` | 1 | `Alert` |
-| `alias` | 1 | `AllStatsUp`, `Brace`, `Brittle`, `Charmed`, `CritChanceUp` |
+| `alias` | 1 | `AllStatsUp`, `Brace`, `Brittle`, `Charmed`, `CritChanceUp` | 57 
 | `AllAlive` | 1 |  |
-| `alley` | 2 | `AREA_NAME_ALLEY`, `departed_first_real_adventure` |
+| `alley` | 2 | `AREA_NAME_ALLEY`, `departed_first_real_adventure` | 18 
 | `allies_only` | 5 | `false`, `true` |
 | `allow_any_orientation` | 7 | `true` |
 | `allow_decision_mid_turn` | 1 | `true` |
@@ -236,28 +236,28 @@ Use this to spot any completely undocumented keys.
 | `ally_multiplier` | 1 |  |
 | `ally_priority` | 1 |  |
 | `ally_rewards` | 2 |  |
-| `alpha` | 2 |  |
-| `alpha_end` | 1 |  |
-| `alpha_in` | 2 |  |
-| `alpha_out` | 2 |  |
-| `alpha_start` | 1 |  |
-| `also` | 8 |  |
+| `alpha` | 2 |  | 41 
+| `alpha_end` | 1 |  | 61 
+| `alpha_in` | 2 |  | 24 
+| `alpha_out` | 2 |  | 28 
+| `alpha_start` | 1 |  | 51 
+| `also` | 8 |  | 16 
 | `also_use_if_buddy_is_dead` | 1 | `true` |
 | `alt_art` | 1 | `TangledMeat` |
 | `alt_dead_ani` | 1 | `off` |
 | `alt_dying_ani` | 1 | `shutdown` |
 | `alt_sounds` | 8 |  |
-| `alt_spawn_pool` | 4 |  |
+| `alt_spawn_pool` | 4 |  | 36 
 | `altar_sacrifice` | 1 |  |
 | `alternate_energized_effect` | 2 |  |
 | `always_bounce` | 5 | `true` |
 | `always_face_forward` | 1 | `true` |
 | `always_triggers_traps` | 2 | `true` |
 | `ambient` | 1 |  |
-| `ambient_sound` | 2 | `amb_acidrain.ogg`, `amb_blizzard.ogg`, `amb_butterflyswarm.ogg`, `amb_flyswarm.ogg`, `amb_heavyrain.ogg` |
-| `amount` | 7 |  |
-| `Angry` | 221 |  |
-| `angry` | 1 |  |
+| `ambient_sound` | 2 | `amb_acidrain.ogg`, `amb_blizzard.ogg`, `amb_butterflyswarm.ogg`, `amb_flyswarm.ogg`, `amb_heavyrain.ogg` | 13 
+| `amount` | 7 |  | 8 
+| `Angry` | 221 |  | 5 
+| `angry` | 1 |  | 5 
 | `ANGRY_PARAMS` | 220 |  |
 | `Ani_AcidOoze_dying_Frame2` | 1 |  |
 | `Ani_AcidOoze_hit_Frame2` | 1 |  |
@@ -4381,11 +4381,11 @@ Use this to spot any completely undocumented keys.
 | `Ani_Zodiac_walk_Frame23` | 1 |  |
 | `Ani_Zodiac_walk_Frame4` | 1 |  |
 | `animate_choice` | 3 | `false`, `true` |
-| `animation_fail` | 3 | `choice_no_coins` |
+| `animation_fail` | 3 | `choice_no_coins` | 4 
 | `animation_prefix` | 1 | `RattleSnake` |
-| `animation_suffix` | 8 | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` |
-| `ankylosaurus` | 1 |  |
-| `Antidote` | 2 |  |
+| `animation_suffix` | 8 | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` | 6 
+| `ankylosaurus` | 1 |  | 2 
+| `Antidote` | 2 |  | 2 
 | `anything_eats` | 1 | `true` |
 | `aoe` | 2 |  |
 | `aoe_chance` | 3 | `.4+.2*level` |
@@ -4401,20 +4401,20 @@ Use this to spot any completely undocumented keys.
 | `aoe_symmetry` | 7 | `eight_way`, `four_way`, `none` |
 | `aoe_tile_requires_element` | 3 | `Earth`, `Grass`, `Water` |
 | `AOEPuddle` | 1 | `X-1` |
-| `Appeal` | 2 |  |
+| `Appeal` | 2 |  | 338 
 | `appearance` | 1 | `GolemCat` |
 | `areas` | 1 |  |
 | `arm` | 1 |  |
-| `arm1` | 7 |  |
-| `arm2` | 6 |  |
+| `arm1` | 7 |  | 354 
+| `arm2` | 6 |  | 358 
 | `arms` | 2 |  |
-| `arrival_unlock` | 1 | `npc_houseboss_intro_guillotina_1`, `npc_houseboss_intro_guillotina_2`, `npc_houseboss_intro_guillotina_3`, `npc_houseboss_intro_pyrophina`, `npc_houseboss_intro_pyrophina_vs_zaratana` |
+| `arrival_unlock` | 1 | `npc_houseboss_intro_guillotina_1`, `npc_houseboss_intro_guillotina_2`, `npc_houseboss_intro_guillotina_3`, `npc_houseboss_intro_pyrophina`, `npc_houseboss_intro_pyrophina_vs_zaratana` | 9 
 | `as_the_crow_flies` | 3 | `true` |
-| `asymmetric` | 6 | `false`, `true` |
+| `asymmetric` | 6 | `false`, `true` | 1 
 | `attach_amplifier` | 1 |  |
 | `attach_antenna` | 1 |  |
 | `attach_leech` | 1 |  |
-| `attack` | 36 | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` |
+| `attack` | 36 | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 
 | `attack_pool` | 2 |  |
 | `Attacker` | 1 |  |
 | `aura_effects_allies` | 2 | `false` |
@@ -4422,25 +4422,25 @@ Use this to spot any completely undocumented keys.
 | `auto_cast` | 1 | `Dash_Enemy` |
 | `auto_cast_on_spawn` | 1 | `Dash_Enemy` |
 | `auto_orient` | 6 | `false` |
-| `auto_plus_signs_on_name` | 1 | `false` |
+| `auto_plus_signs_on_name` | 1 | `false` | 8 
 | `auto_run_priority` | 3 | `default`, `stationary`, `support` |
 | `autosave` | 1 | `adventure`, `housebossprep` |
-| `aux` | 7 |  |
-| `aux_is_catid` | 1 | `true` |
+| `aux` | 7 |  | 82 
+| `aux_is_catid` | 1 | `true` | 2 
 | `aux_positions` | 1 |  |
 | `axis` | 1 |  |
-| `back` | 1 | `false`, `true` |
-| `back_icon` | 1 | `bleed`, `burn`, `confusion`, `knockback`, `leech` |
-| `background_extra_shader` | 1 | `crazyeye`, `meatpulse`, `water` |
-| `background_shader` | 1 | `meatpulse_ground` |
+| `back` | 1 | `false`, `true` | 1 
+| `back_icon` | 1 | `bleed`, `burn`, `confusion`, `knockback`, `leech` | 8 
+| `background_extra_shader` | 1 | `crazyeye`, `meatpulse`, `water` | 3 
+| `background_shader` | 1 | `meatpulse_ground` | 1 
 | `backstab_only` | 1 | `true` |
 | `backstabs_only` | 3 | `true` |
-| `BagOfSeeds` | 1 |  |
+| `BagOfSeeds` | 1 |  | 2 
 | `banned_abilities` | 1 |  |
 | `banned_elite_buffs` | 10 |  |
-| `barf` | 1 |  |
-| `barf_attack` | 1 |  |
-| `barf_prep` | 1 |  |
+| `barf` | 1 |  | 1 
+| `barf_attack` | 1 |  | 1 
+| `barf_prep` | 1 |  | 1 
 | `base_crit_chance` | 4 |  |
 | `base_health` | 2 |  |
 | `base_health_regen` | 2 |  |
@@ -4449,178 +4449,178 @@ Use this to spot any completely undocumented keys.
 | `base_mana` | 2 |  |
 | `base_mana_regen` | 10 |  |
 | `base_movement` | 3 |  |
-| `base_stats` | 1 |  |
+| `base_stats` | 1 |  | 2 
 | `Basement0` | 1 |  |
 | `Basement1` | 1 |  |
 | `Basement2` | 1 |  |
 | `Basement3` | 1 |  |
 | `Basement4` | 1 |  |
-| `BasementUpgrade` | 1 |  |
-| `BasementUpgrade2` | 1 |  |
-| `BasementUpgrade3` | 1 |  |
-| `BasementUpgrade4` | 1 |  |
-| `BasementUpgrade5` | 1 |  |
+| `BasementUpgrade` | 1 |  | 2 
+| `BasementUpgrade2` | 1 |  | 2 
+| `BasementUpgrade3` | 1 |  | 2 
+| `BasementUpgrade4` | 1 |  | 2 
+| `BasementUpgrade5` | 1 |  | 2 
 | `bash` | 6 |  |
 | `bash_past_alt` | 1 |  |
-| `basic_consumables` | 2 |  |
+| `basic_consumables` | 2 |  | 4 
 | `Batterup_Connect` | 1 |  |
 | `Batterup_Swing_Castpoint` | 1 |  |
-| `beanies_begin_accepting_cats` | 1 |  |
-| `beanies_bombquest_2` | 1 |  |
-| `beanies_bombquest_3` | 1 |  |
-| `beanies_bombquest_amnesia` | 1 |  |
-| `beanies_bombquest_begin` | 1 |  |
-| `beanies_bombquest_fail_jarofblood` | 1 |  |
-| `beanies_bombquest_fail_jarofchaos` | 1 |  |
-| `beanies_bombquest_fail_jarofradiation` | 1 |  |
-| `beanies_bombquest_fail_nuke` | 1 |  |
-| `beanies_future_intro` | 1 |  |
-| `beanies_hitler3` | 1 |  |
-| `beanies_hitler3_defeat` | 1 |  |
-| `beanies_iloveyou` | 1 |  |
-| `beanies_infinite_intro` | 1 |  |
+| `beanies_begin_accepting_cats` | 1 |  | 2 
+| `beanies_bombquest_2` | 1 |  | 8 
+| `beanies_bombquest_3` | 1 |  | 6 
+| `beanies_bombquest_amnesia` | 1 |  | 4 
+| `beanies_bombquest_begin` | 1 |  | 4 
+| `beanies_bombquest_fail_jarofblood` | 1 |  | 6 
+| `beanies_bombquest_fail_jarofchaos` | 1 |  | 6 
+| `beanies_bombquest_fail_jarofradiation` | 1 |  | 4 
+| `beanies_bombquest_fail_nuke` | 1 |  | 4 
+| `beanies_future_intro` | 1 |  | 4 
+| `beanies_hitler3` | 1 |  | 2 
+| `beanies_hitler3_defeat` | 1 |  | 2 
+| `beanies_iloveyou` | 1 |  | 2 
+| `beanies_infinite_intro` | 1 |  | 2 
 | `beanies_intensestatic` | 1 |  |
 | `beanies_intensestatic_to_offscreen` | 1 |  |
-| `beanies_jurassic_intro` | 1 |  |
-| `beanies_lab_intro` | 1 |  |
+| `beanies_jurassic_intro` | 1 |  | 4 
+| `beanies_lab_intro` | 1 |  | 4 
 | `beanies_offscreen_to_intensestatic` | 1 |  |
 | `beanies_offscreen_to_right` | 1 |  |
-| `beanies_quest_complete` | 1 |  |
-| `beanies_quest_fail` | 1 |  |
-| `beanies_quests_intro` | 2 |  |
-| `beanies_quests_repeat` | 2 |  |
-| `beanies_rift_intro` | 1 |  |
+| `beanies_quest_complete` | 1 |  | 2 
+| `beanies_quest_fail` | 1 |  | 2 
+| `beanies_quests_intro` | 2 |  | 4 
+| `beanies_quests_repeat` | 2 |  | 4 
+| `beanies_rift_intro` | 1 |  | 2 
 | `beanies_right` | 1 |  |
 | `beanies_right_to_offscreen` | 1 |  |
-| `beanies_screenshake_test` | 1 |  |
-| `beanies_seefuture` | 1 |  |
-| `beanies_seetheend` | 1 |  |
-| `beanies_terminator1_defeat` | 1 |  |
-| `beanies_terminator2_defeat` | 1 |  |
-| `beanies_theend_intro` | 1 |  |
-| `beanies_timemachine_2` | 1 |  |
-| `beanies_timemachine_intro` | 1 |  |
-| `beanies_vscreator1` | 1 |  |
-| `beanies_vscreator2` | 1 |  |
-| `beanies_vscreator3` | 1 |  |
-| `beanies_vscreator4` | 1 |  |
-| `beanies_vscreatorintro` | 1 |  |
+| `beanies_screenshake_test` | 1 |  | 2 
+| `beanies_seefuture` | 1 |  | 2 
+| `beanies_seetheend` | 1 |  | 2 
+| `beanies_terminator1_defeat` | 1 |  | 2 
+| `beanies_terminator2_defeat` | 1 |  | 2 
+| `beanies_theend_intro` | 1 |  | 4 
+| `beanies_timemachine_2` | 1 |  | 2 
+| `beanies_timemachine_intro` | 1 |  | 2 
+| `beanies_vscreator1` | 1 |  | 2 
+| `beanies_vscreator2` | 1 |  | 2 
+| `beanies_vscreator3` | 1 |  | 2 
+| `beanies_vscreator4` | 1 |  | 2 
+| `beanies_vscreatorintro` | 1 |  | 2 
 | `BeaniesEnding_Banging` | 1 |  |
-| `beaniesquest_complete_AI` | 1 |  |
-| `beaniesquest_complete_AirHorn` | 1 |  |
-| `beaniesquest_complete_AngryFace` | 1 |  |
-| `beaniesquest_complete_AnimalHands` | 1 |  |
-| `beaniesquest_complete_BubbleBoy` | 1 |  |
-| `beaniesquest_complete_ChadImplant` | 1 |  |
-| `beaniesquest_complete_ChaosDevice` | 1 |  |
-| `beaniesquest_complete_DimensionalDivider` | 1 |  |
-| `beaniesquest_complete_DiseaseJar` | 1 |  |
-| `beaniesquest_complete_ExperimentalTreatment` | 1 |  |
-| `beaniesquest_complete_FartFace` | 1 |  |
-| `beaniesquest_complete_FigLeaf` | 1 |  |
-| `beaniesquest_complete_Generic` | 1 |  |
-| `beaniesquest_complete_GlassCannon` | 1 |  |
-| `beaniesquest_complete_HardPill` | 1 |  |
-| `beaniesquest_complete_HiveMind` | 1 |  |
-| `beaniesquest_complete_MagicMirror` | 1 |  |
-| `beaniesquest_complete_MeStone` | 1 |  |
-| `beaniesquest_complete_MultilinkCable` | 1 |  |
-| `beaniesquest_complete_MysteriousDice` | 1 |  |
-| `beaniesquest_complete_MysteriousGlasses` | 1 |  |
-| `beaniesquest_complete_NDEDevice` | 1 |  |
-| `beaniesquest_complete_NuclearKnife` | 1 |  |
-| `beaniesquest_complete_PartialLobotomy` | 1 |  |
-| `beaniesquest_complete_PartyDetonator` | 1 |  |
-| `beaniesquest_complete_PersonalHeater` | 1 |  |
-| `beaniesquest_complete_PersuasionDevice` | 1 |  |
-| `beaniesquest_complete_PrincessHat` | 1 |  |
-| `beaniesquest_complete_RealityScrambler` | 1 |  |
-| `beaniesquest_complete_Redacted` | 1 |  |
-| `beaniesquest_complete_SpiderInjector` | 1 |  |
-| `beaniesquest_complete_Stopwatch` | 1 |  |
-| `beaniesquest_complete_StorageLocker` | 1 |  |
-| `beaniesquest_complete_TheIOU` | 1 |  |
-| `beaniesquest_complete_TheLoner` | 1 |  |
-| `beaniesquest_complete_Trapfest99` | 1 |  |
-| `beaniesquest_complete_UltraVision3000` | 1 |  |
-| `beaniesquest_fail_AI` | 1 |  |
-| `beaniesquest_fail_AirHorn` | 1 |  |
-| `beaniesquest_fail_AngryFace` | 1 |  |
-| `beaniesquest_fail_AnimalHands` | 1 |  |
-| `beaniesquest_fail_BubbleBoy` | 1 |  |
-| `beaniesquest_fail_ChadImplant` | 1 |  |
-| `beaniesquest_fail_ChaosDevice` | 1 |  |
-| `beaniesquest_fail_DimensionalDivider` | 1 |  |
-| `beaniesquest_fail_DiseaseJar` | 1 |  |
-| `beaniesquest_fail_ExperimentalTreatment` | 1 |  |
-| `beaniesquest_fail_FartFace` | 1 |  |
-| `beaniesquest_fail_FigLeaf` | 1 |  |
-| `beaniesquest_fail_Generic` | 1 |  |
-| `beaniesquest_fail_GlassCannon` | 1 |  |
-| `beaniesquest_fail_HardPill` | 1 |  |
-| `beaniesquest_fail_HiveMind` | 1 |  |
-| `beaniesquest_fail_MagicMirror` | 1 |  |
-| `beaniesquest_fail_MeStone` | 1 |  |
-| `beaniesquest_fail_MultilinkCable` | 1 |  |
-| `beaniesquest_fail_MysteriousDice` | 1 |  |
-| `beaniesquest_fail_MysteriousGlasses` | 1 |  |
-| `beaniesquest_fail_NDEDevice` | 1 |  |
-| `beaniesquest_fail_NuclearKnife` | 1 |  |
-| `beaniesquest_fail_PartialLobotomy` | 1 |  |
-| `beaniesquest_fail_PartyDetonator` | 1 |  |
-| `beaniesquest_fail_PersonalHeater` | 1 |  |
-| `beaniesquest_fail_PersuasionDevice` | 1 |  |
-| `beaniesquest_fail_PrincessHat` | 1 |  |
-| `beaniesquest_fail_RealityScrambler` | 1 |  |
-| `beaniesquest_fail_Redacted` | 1 |  |
-| `beaniesquest_fail_SpiderInjector` | 1 |  |
-| `beaniesquest_fail_Stopwatch` | 1 |  |
-| `beaniesquest_fail_StorageLocker` | 1 |  |
-| `beaniesquest_fail_TheIOU` | 1 |  |
-| `beaniesquest_fail_TheLoner` | 1 |  |
-| `beaniesquest_fail_Trapfest99` | 1 |  |
-| `beaniesquest_fail_UltraVision3000` | 1 |  |
-| `beaniesquest_intro_AI` | 1 |  |
-| `beaniesquest_intro_AirHorn` | 1 |  |
-| `beaniesquest_intro_AngryFace` | 1 |  |
-| `beaniesquest_intro_AnimalHands` | 1 |  |
-| `beaniesquest_intro_BubbleBoy` | 1 |  |
-| `beaniesquest_intro_ChadImplant` | 1 |  |
-| `beaniesquest_intro_ChaosDevice` | 1 |  |
-| `beaniesquest_intro_DimensionalDivider` | 1 |  |
-| `beaniesquest_intro_DiseaseJar` | 1 |  |
-| `beaniesquest_intro_ExperimentalTreatment` | 1 |  |
-| `beaniesquest_intro_FartFace` | 1 |  |
-| `beaniesquest_intro_FigLeaf` | 1 |  |
-| `beaniesquest_intro_Generic` | 1 |  |
-| `beaniesquest_intro_GlassCannon` | 1 |  |
-| `beaniesquest_intro_HardPill` | 1 |  |
-| `beaniesquest_intro_HiveMind` | 1 |  |
-| `beaniesquest_intro_MagicMirror` | 1 |  |
-| `beaniesquest_intro_MeStone` | 1 |  |
-| `beaniesquest_intro_MultilinkCable` | 1 |  |
-| `beaniesquest_intro_MysteriousDice` | 1 |  |
-| `beaniesquest_intro_MysteriousGlasses` | 1 |  |
-| `beaniesquest_intro_NDEDevice` | 1 |  |
-| `beaniesquest_intro_NuclearKnife` | 1 |  |
-| `beaniesquest_intro_PartialLobotomy` | 1 |  |
-| `beaniesquest_intro_PartyDetonator` | 1 |  |
-| `beaniesquest_intro_PersonalHeater` | 1 |  |
-| `beaniesquest_intro_PersuasionDevice` | 1 |  |
-| `beaniesquest_intro_PrincessHat` | 1 |  |
-| `beaniesquest_intro_RealityScrambler` | 1 |  |
-| `beaniesquest_intro_Redacted` | 1 |  |
-| `beaniesquest_intro_SpiderInjector` | 1 |  |
-| `beaniesquest_intro_Stopwatch` | 1 |  |
-| `beaniesquest_intro_StorageLocker` | 1 |  |
-| `beaniesquest_intro_TheIOU` | 1 |  |
-| `beaniesquest_intro_TheLoner` | 1 |  |
-| `beaniesquest_intro_Trapfest99` | 1 |  |
-| `beaniesquest_intro_UltraVision3000` | 1 |  |
-| `Bear` | 1 |  |
+| `beaniesquest_complete_AI` | 1 |  | 2 
+| `beaniesquest_complete_AirHorn` | 1 |  | 2 
+| `beaniesquest_complete_AngryFace` | 1 |  | 2 
+| `beaniesquest_complete_AnimalHands` | 1 |  | 2 
+| `beaniesquest_complete_BubbleBoy` | 1 |  | 2 
+| `beaniesquest_complete_ChadImplant` | 1 |  | 2 
+| `beaniesquest_complete_ChaosDevice` | 1 |  | 2 
+| `beaniesquest_complete_DimensionalDivider` | 1 |  | 2 
+| `beaniesquest_complete_DiseaseJar` | 1 |  | 2 
+| `beaniesquest_complete_ExperimentalTreatment` | 1 |  | 2 
+| `beaniesquest_complete_FartFace` | 1 |  | 2 
+| `beaniesquest_complete_FigLeaf` | 1 |  | 2 
+| `beaniesquest_complete_Generic` | 1 |  | 2 
+| `beaniesquest_complete_GlassCannon` | 1 |  | 2 
+| `beaniesquest_complete_HardPill` | 1 |  | 2 
+| `beaniesquest_complete_HiveMind` | 1 |  | 2 
+| `beaniesquest_complete_MagicMirror` | 1 |  | 2 
+| `beaniesquest_complete_MeStone` | 1 |  | 2 
+| `beaniesquest_complete_MultilinkCable` | 1 |  | 2 
+| `beaniesquest_complete_MysteriousDice` | 1 |  | 2 
+| `beaniesquest_complete_MysteriousGlasses` | 1 |  | 2 
+| `beaniesquest_complete_NDEDevice` | 1 |  | 2 
+| `beaniesquest_complete_NuclearKnife` | 1 |  | 2 
+| `beaniesquest_complete_PartialLobotomy` | 1 |  | 2 
+| `beaniesquest_complete_PartyDetonator` | 1 |  | 2 
+| `beaniesquest_complete_PersonalHeater` | 1 |  | 2 
+| `beaniesquest_complete_PersuasionDevice` | 1 |  | 2 
+| `beaniesquest_complete_PrincessHat` | 1 |  | 2 
+| `beaniesquest_complete_RealityScrambler` | 1 |  | 2 
+| `beaniesquest_complete_Redacted` | 1 |  | 2 
+| `beaniesquest_complete_SpiderInjector` | 1 |  | 2 
+| `beaniesquest_complete_Stopwatch` | 1 |  | 2 
+| `beaniesquest_complete_StorageLocker` | 1 |  | 2 
+| `beaniesquest_complete_TheIOU` | 1 |  | 2 
+| `beaniesquest_complete_TheLoner` | 1 |  | 2 
+| `beaniesquest_complete_Trapfest99` | 1 |  | 2 
+| `beaniesquest_complete_UltraVision3000` | 1 |  | 2 
+| `beaniesquest_fail_AI` | 1 |  | 2 
+| `beaniesquest_fail_AirHorn` | 1 |  | 2 
+| `beaniesquest_fail_AngryFace` | 1 |  | 2 
+| `beaniesquest_fail_AnimalHands` | 1 |  | 2 
+| `beaniesquest_fail_BubbleBoy` | 1 |  | 2 
+| `beaniesquest_fail_ChadImplant` | 1 |  | 2 
+| `beaniesquest_fail_ChaosDevice` | 1 |  | 2 
+| `beaniesquest_fail_DimensionalDivider` | 1 |  | 2 
+| `beaniesquest_fail_DiseaseJar` | 1 |  | 2 
+| `beaniesquest_fail_ExperimentalTreatment` | 1 |  | 2 
+| `beaniesquest_fail_FartFace` | 1 |  | 2 
+| `beaniesquest_fail_FigLeaf` | 1 |  | 2 
+| `beaniesquest_fail_Generic` | 1 |  | 2 
+| `beaniesquest_fail_GlassCannon` | 1 |  | 2 
+| `beaniesquest_fail_HardPill` | 1 |  | 2 
+| `beaniesquest_fail_HiveMind` | 1 |  | 2 
+| `beaniesquest_fail_MagicMirror` | 1 |  | 2 
+| `beaniesquest_fail_MeStone` | 1 |  | 2 
+| `beaniesquest_fail_MultilinkCable` | 1 |  | 2 
+| `beaniesquest_fail_MysteriousDice` | 1 |  | 2 
+| `beaniesquest_fail_MysteriousGlasses` | 1 |  | 2 
+| `beaniesquest_fail_NDEDevice` | 1 |  | 2 
+| `beaniesquest_fail_NuclearKnife` | 1 |  | 2 
+| `beaniesquest_fail_PartialLobotomy` | 1 |  | 2 
+| `beaniesquest_fail_PartyDetonator` | 1 |  | 2 
+| `beaniesquest_fail_PersonalHeater` | 1 |  | 2 
+| `beaniesquest_fail_PersuasionDevice` | 1 |  | 2 
+| `beaniesquest_fail_PrincessHat` | 1 |  | 2 
+| `beaniesquest_fail_RealityScrambler` | 1 |  | 2 
+| `beaniesquest_fail_Redacted` | 1 |  | 2 
+| `beaniesquest_fail_SpiderInjector` | 1 |  | 2 
+| `beaniesquest_fail_Stopwatch` | 1 |  | 2 
+| `beaniesquest_fail_StorageLocker` | 1 |  | 2 
+| `beaniesquest_fail_TheIOU` | 1 |  | 2 
+| `beaniesquest_fail_TheLoner` | 1 |  | 2 
+| `beaniesquest_fail_Trapfest99` | 1 |  | 2 
+| `beaniesquest_fail_UltraVision3000` | 1 |  | 2 
+| `beaniesquest_intro_AI` | 1 |  | 2 
+| `beaniesquest_intro_AirHorn` | 1 |  | 2 
+| `beaniesquest_intro_AngryFace` | 1 |  | 2 
+| `beaniesquest_intro_AnimalHands` | 1 |  | 2 
+| `beaniesquest_intro_BubbleBoy` | 1 |  | 2 
+| `beaniesquest_intro_ChadImplant` | 1 |  | 2 
+| `beaniesquest_intro_ChaosDevice` | 1 |  | 2 
+| `beaniesquest_intro_DimensionalDivider` | 1 |  | 2 
+| `beaniesquest_intro_DiseaseJar` | 1 |  | 2 
+| `beaniesquest_intro_ExperimentalTreatment` | 1 |  | 2 
+| `beaniesquest_intro_FartFace` | 1 |  | 2 
+| `beaniesquest_intro_FigLeaf` | 1 |  | 2 
+| `beaniesquest_intro_Generic` | 1 |  | 2 
+| `beaniesquest_intro_GlassCannon` | 1 |  | 2 
+| `beaniesquest_intro_HardPill` | 1 |  | 2 
+| `beaniesquest_intro_HiveMind` | 1 |  | 2 
+| `beaniesquest_intro_MagicMirror` | 1 |  | 2 
+| `beaniesquest_intro_MeStone` | 1 |  | 2 
+| `beaniesquest_intro_MultilinkCable` | 1 |  | 2 
+| `beaniesquest_intro_MysteriousDice` | 1 |  | 2 
+| `beaniesquest_intro_MysteriousGlasses` | 1 |  | 2 
+| `beaniesquest_intro_NDEDevice` | 1 |  | 2 
+| `beaniesquest_intro_NuclearKnife` | 1 |  | 2 
+| `beaniesquest_intro_PartialLobotomy` | 1 |  | 2 
+| `beaniesquest_intro_PartyDetonator` | 1 |  | 2 
+| `beaniesquest_intro_PersonalHeater` | 1 |  | 2 
+| `beaniesquest_intro_PersuasionDevice` | 1 |  | 2 
+| `beaniesquest_intro_PrincessHat` | 1 |  | 2 
+| `beaniesquest_intro_RealityScrambler` | 1 |  | 2 
+| `beaniesquest_intro_Redacted` | 1 |  | 2 
+| `beaniesquest_intro_SpiderInjector` | 1 |  | 2 
+| `beaniesquest_intro_Stopwatch` | 1 |  | 2 
+| `beaniesquest_intro_StorageLocker` | 1 |  | 2 
+| `beaniesquest_intro_TheIOU` | 1 |  | 2 
+| `beaniesquest_intro_TheLoner` | 1 |  | 2 
+| `beaniesquest_intro_Trapfest99` | 1 |  | 2 
+| `beaniesquest_intro_UltraVision3000` | 1 |  | 2 
+| `Bear` | 1 |  | 6 
 | `BearTrapTrail` | 1 |  |
-| `beat_chapter_boss` | 1 | `alley`, `boneyard`, `bunker`, `core`, `crater` |
-| `beat_house_boss` | 1 | `any`, `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina` |
+| `beat_chapter_boss` | 1 | `alley`, `boneyard`, `bunker`, `core`, `crater` | 62 
+| `beat_house_boss` | 1 | `any`, `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina` | 96 
 | `begin` | 2 |  |
 | `begin_accepting_cats` | 6 | `beanies`, `butch`, `jack`, `organgrinder`, `tink` |
 | `BellyFull` | 1 |  |
@@ -4634,107 +4634,107 @@ Use this to spot any completely undocumented keys.
 | `bigrays` | 1 |  |
 | `BigScrap` | 1 |  |
 | `BigUFO_ambient_looping` | 1 |  |
-| `BirdFeed` | 1 |  |
-| `BirdPoopHat` | 1 |  |
+| `BirdFeed` | 1 |  | 2 
+| `BirdPoopHat` | 1 |  | 2 
 | `Bishop` | 1 |  |
-| `bite` | 2 |  |
+| `bite` | 2 |  | 1 
 | `bite_it_off` | 1 |  |
 | `BlackBird` | 1 |  |
 | `BlackHole` | 1 |  |
-| `BlankTile` | 1 |  |
+| `BlankTile` | 1 |  | 2 
 | `Blessing` | 1 |  |
 | `blind_spot` | 1 | `true` |
 | `blocking` | 2 | `false`, `idlenoani` |
-| `bloodthirsty` | 1 |  |
-| `bloodthirsty_eyes_closed` | 1 |  |
-| `blue` | 1 |  |
+| `bloodthirsty` | 1 |  | 1 
+| `bloodthirsty_eyes_closed` | 1 |  | 1 
+| `blue` | 1 |  | 1 
 | `blue_needle` | 1 |  |
-| `body` | 9 |  |
+| `body` | 9 |  | 346 
 | `Bomb` | 1 |  |
 | `Bomb_FuseLoop` | 1 |  |
 | `Bomb_Land` | 1 |  |
 | `BoneWormShotSmall` | 1 |  |
-| `boneyard` | 3 | `AREA_NAME_BONEYARD`, `mapflag_BoneyardUnlocked` |
-| `BoneyardUnlocked` | 1 |  |
-| `bonk_damage` | 1 |  |
-| `bonus_itemroll_luck` | 1 |  |
+| `boneyard` | 3 | `AREA_NAME_BONEYARD`, `mapflag_BoneyardUnlocked` | 21 
+| `BoneyardUnlocked` | 1 |  | 2 
+| `bonk_damage` | 1 |  | 2 
+| `bonus_itemroll_luck` | 1 |  | 16 
 | `bonus_items` | 3 |  |
-| `bonus_passives` | 20 |  |
+| `bonus_passives` | 20 |  | 272 
 | `bonus_pathing_leniency` | 1 |  |
 | `bonusturn_pattern` | 8 |  |
 | `boogers` | 1 |  |
 | `book` | 1 |  |
-| `bored` | 1 |  |
-| `Boris` | 1 | `MegaGuppy_TransformBoris` |
-| `boss` | 22 | `alley/eatinrats_boss.ogg`, `boneyard/boneyard_boss.ogg`, `caves/caves_boss.ogg`, `chaos/chaos_boss.ogg`, `core/core_boss.ogg` |
-| `boss_background_alt` | 1 | `CoreBossBG` |
+| `bored` | 1 |  | 1 
+| `Boris` | 1 | `MegaGuppy_TransformBoris` | 1 
+| `boss` | 22 | `alley/eatinrats_boss.ogg`, `boneyard/boneyard_boss.ogg`, `caves/caves_boss.ogg`, `chaos/chaos_boss.ogg`, `core/core_boss.ogg` | 63 
+| `boss_background_alt` | 1 | `CoreBossBG` | 1 
 | `boss_cutscene` | 17 | `alienqueen`, `boris`, `chaos`, `chubsandnubs`, `coven` |
-| `boss_elite_buffs` | 1 |  |
-| `boss_fight_intro` | 1 |  |
-| `boss_fight_round2` | 1 |  |
-| `boss_health_multiplier` | 1 |  |
+| `boss_elite_buffs` | 1 |  | 14 
+| `boss_fight_intro` | 1 |  | 2 
+| `boss_fight_round2` | 1 |  | 2 
+| `boss_health_multiplier` | 1 |  | 16 
 | `boss_minions_runaway` | 2 | `false` |
-| `BothObelisksUnlocked` | 2 |  |
-| `brace` | 1 |  |
-| `brain` | 24 | `DicerBrain`, `GenericBrain`, `MountBrain`, `NoBrain`, `PatternBrain` |
+| `BothObelisksUnlocked` | 2 |  | 8 
+| `brace` | 1 |  | 20 
+| `brain` | 24 | `DicerBrain`, `GenericBrain`, `MountBrain`, `NoBrain`, `PatternBrain` | 10 
 | `break_ability` | 1 | `DestroyerBreakShield` |
 | `break_ice` | 1 |  |
 | `break_lock` | 1 |  |
 | `break_on_pop_only` | 1 | `true` |
-| `breakdown` | 3 |  |
-| `breakdown2` | 1 |  |
-| `breakdown3` | 1 |  |
-| `breakdown4` | 1 |  |
+| `breakdown` | 3 |  | 24 
+| `breakdown2` | 1 |  | 2 
+| `breakdown3` | 1 |  | 2 
+| `breakdown4` | 1 |  | 2 
 | `BreakIntoRocks` | 2 | `Coin`, `SmallRock` |
-| `BreedSuppression` | 1 |  |
+| `BreedSuppression` | 1 |  | 1 
 | `bribe` | 1 |  |
 | `buddy_damage_only` | 1 | `true` |
-| `buff_ally` | 1 |  |
-| `buff_enemy` | 1 |  |
-| `buff_self` | 1 |  |
+| `buff_ally` | 1 |  | 64 
+| `buff_enemy` | 1 |  | 64 
+| `buff_self` | 1 |  | 64 
 | `built_in_collision` | 1 |  |
 | `Bully` | 1 |  |
-| `bumblefoot` | 1 | `auto` |
-| `bunker` | 2 | `AREA_NAME_BUNKER`, `mapflag_BunkerUnlocked` |
-| `BunkerUnlocked` | 1 |  |
-| `butch_begin_accepting_cats` | 1 |  |
-| `butch_boneyard_intro` | 1 |  |
-| `butch_first_house_boss_beat` | 1 |  |
+| `bumblefoot` | 1 | `auto` | 3 
+| `bunker` | 2 | `AREA_NAME_BUNKER`, `mapflag_BunkerUnlocked` | 20 
+| `BunkerUnlocked` | 1 |  | 2 
+| `butch_begin_accepting_cats` | 1 |  | 2 
+| `butch_boneyard_intro` | 1 |  | 4 
+| `butch_first_house_boss_beat` | 1 |  | 2 
 | `butch_left` | 1 |  |
 | `butch_left_to_offscreen` | 1 |  |
 | `butch_left_to_right` | 1 |  |
 | `butch_offscreen_to_left` | 1 |  |
 | `butch_offscreen_to_right` | 1 |  |
-| `butch_pyro` | 1 |  |
+| `butch_pyro` | 1 |  | 2 
 | `butch_right` | 1 |  |
 | `butch_right_to_left` | 1 |  |
 | `butch_right_to_offscreen` | 1 |  |
-| `butch_tina1` | 1 |  |
-| `butch_tips_backstab` | 1 |  |
-| `butch_tips_charisma` | 1 |  |
-| `butch_tips_combat` | 1 |  |
-| `butch_tips_disorders` | 1 |  |
-| `butch_tips_drafting` | 1 |  |
-| `butch_tips_elements` | 1 |  |
-| `butch_tips_hard` | 1 |  |
-| `butch_tips_headhome` | 1 |  |
-| `butch_tips_houseboss` | 1 |  |
-| `butch_tips_info` | 1 |  |
-| `butch_tips_intelligence` | 1 |  |
-| `butch_tips_intro` | 1 |  |
-| `butch_tips_items` | 1 |  |
-| `butch_tips_lesscats` | 1 |  |
-| `butch_tips_magicdamage` | 1 |  |
-| `butch_tips_passives` | 1 |  |
-| `butch_tips_reorient` | 1 |  |
-| `butch_tips_rewards` | 1 |  |
-| `butch_tips_tacticalview` | 1 |  |
-| `butch_tips_turnorder` | 1 |  |
-| `butch_tips_wellrounded` | 1 |  |
+| `butch_tina1` | 1 |  | 2 
+| `butch_tips_backstab` | 1 |  | 2 
+| `butch_tips_charisma` | 1 |  | 2 
+| `butch_tips_combat` | 1 |  | 2 
+| `butch_tips_disorders` | 1 |  | 2 
+| `butch_tips_drafting` | 1 |  | 2 
+| `butch_tips_elements` | 1 |  | 2 
+| `butch_tips_hard` | 1 |  | 2 
+| `butch_tips_headhome` | 1 |  | 2 
+| `butch_tips_houseboss` | 1 |  | 2 
+| `butch_tips_info` | 1 |  | 2 
+| `butch_tips_intelligence` | 1 |  | 2 
+| `butch_tips_intro` | 1 |  | 2 
+| `butch_tips_items` | 1 |  | 2 
+| `butch_tips_lesscats` | 1 |  | 2 
+| `butch_tips_magicdamage` | 1 |  | 2 
+| `butch_tips_passives` | 1 |  | 2 
+| `butch_tips_reorient` | 1 |  | 2 
+| `butch_tips_rewards` | 1 |  | 2 
+| `butch_tips_tacticalview` | 1 |  | 2 
+| `butch_tips_turnorder` | 1 |  | 2 
+| `butch_tips_wellrounded` | 1 |  | 2 
 | `ButchBox` | 1 |  |
-| `Butcher` | 2 |  |
-| `butcher_portrait` | 1 |  |
-| `butchercat` | 1 | `auto` |
+| `Butcher` | 2 |  | 72 
+| `butcher_portrait` | 1 |  | 1 
+| `butchercat` | 1 | `auto` | 4 
 | `button` | 1 |  |
 | `Button_Controls_Gamepad_Hover` | 1 |  |
 | `Button_Controls_Keyboard_Hover` | 1 |  |
@@ -4760,7 +4760,7 @@ Use this to spot any completely undocumented keys.
 | `Button_HouseBossResummon_a3h3_Hover` | 1 |  |
 | `Button_LowerDifficulty_Click` | 1 |  |
 | `Button_LowerDifficulty_Hover` | 1 |  |
-| `button_nav` | 4 |  |
+| `button_nav` | 4 |  | 7 
 | `Button_PauseMenu_GiveUp_Click` | 1 |  |
 | `Button_PauseMenu_GiveUp_Hover` | 1 |  |
 | `Button_PauseMenu_GiveUp_Press` | 1 |  |
@@ -4794,15 +4794,15 @@ Use this to spot any completely undocumented keys.
 | `Button_Settings_Video_Hover` | 1 |  |
 | `Button_Settings_Video_Press` | 1 |  |
 | `buy1` | 1 |  |
-| `buy2` | 1 |  |
-| `buy3` | 1 |  |
+| `buy2` | 1 |  | 1 
+| `buy3` | 1 |  | 1 
 | `call_letter` | 1 |  |
 | `can_apply_to_anything` | 1 | `true` |
 | `can_be_backstabbed` | 10 | `false` |
 | `can_be_champion` | 5 | `false`, `true` |
 | `can_be_elite` | 1 | `false` |
 | `can_be_overkilled` | 6 | `false`, `true` |
-| `can_be_rare` | 1 | `false` |
+| `can_be_rare` | 1 | `false` | 10 
 | `can_be_refreshed` | 1 | `false` |
 | `can_cast_while_dead` | 5 | `true` |
 | `can_collect_coins` | 7 | `false`, `true` |
@@ -4814,35 +4814,35 @@ Use this to spot any completely undocumented keys.
 | `can_pay_over_multiple_turns` | 1 | `true` |
 | `can_run` | 2 | `false` |
 | `can_self_refresh` | 1 | `false` |
-| `can_still_use_attack` | 1 |  |
-| `can_still_use_attack_didntspell` | 1 |  |
+| `can_still_use_attack` | 1 |  | 2 
+| `can_still_use_attack_didntspell` | 1 |  | 2 
 | `cancel_knockback` | 2 | `true` |
 | `cancel_movement` | 2 | `false` |
 | `cancelable` | 4 | `true` |
-| `cancreeper` | 1 | `auto` |
-| `cant_afford` | 3 |  |
-| `cant_afford_a` | 1 |  |
-| `cant_afford_b` | 1 |  |
-| `cant_afford_c` | 1 |  |
-| `cant_afford_d` | 1 |  |
-| `cant_afford_iceage` | 1 |  |
-| `cant_afford_jurassic` | 1 |  |
-| `cant_afford_moon` | 1 |  |
-| `cant_afford_theend` | 1 |  |
+| `cancreeper` | 1 | `auto` | 2 
+| `cant_afford` | 3 |  | 6 
+| `cant_afford_a` | 1 |  | 2 
+| `cant_afford_b` | 1 |  | 2 
+| `cant_afford_c` | 1 |  | 2 
+| `cant_afford_d` | 1 |  | 2 
+| `cant_afford_iceage` | 1 |  | 2 
+| `cant_afford_jurassic` | 1 |  | 2 
+| `cant_afford_moon` | 1 |  | 2 
+| `cant_afford_theend` | 1 |  | 2 
 | `cant_cast` | 7 | `1-X`, `2-X`, `3-X`, `5-X`, `X` |
-| `cant_equip_to_colorless` | 1 | `true` |
+| `cant_equip_to_colorless` | 1 | `true` | 2 
 | `cantrip` | 23 | `false`, `true` |
 | `cantrip_group` | 2 | `THC_CoinRoll`, `cavemomtoss`, `kaiju_roar`, `spewer_suck` |
 | `cap` | 1 |  |
-| `cap_distance_to_ally` | 1 |  |
-| `cap_distance_to_character` | 1 |  |
-| `cap_distance_to_enemy` | 1 |  |
-| `cap_total_distance_moved` | 1 |  |
+| `cap_distance_to_ally` | 1 |  | 8 
+| `cap_distance_to_character` | 1 |  | 2 
+| `cap_distance_to_enemy` | 1 |  | 4 
+| `cap_total_distance_moved` | 1 |  | 2 
 | `capture_as_cat` | 1 | `true` |
 | `CardboardBox_ItemReveal` | 1 |  |
 | `CastAgain` | 8 | `9+X` |
 | `CastAgainWithStatus` | 1 |  |
-| `Cat` | 1 |  |
+| `Cat` | 1 |  | 10 
 | `cat_choice` | 27 | `random` |
 | `Cat_Donated_To_NPC` | 1 |  |
 | `Cat_Ejected_From_Pipe` | 1 |  |
@@ -4870,12 +4870,12 @@ Use this to spot any completely undocumented keys.
 | `cat_swears` | 8 | `true` |
 | `Cat_Trashed` | 1 |  |
 | `catch` | 1 |  |
-| `catdata` | 9 | `Beaver`, `Bigfoot`, `Bunny`, `Dog`, `Edmund` |
+| `catdata` | 9 | `Beaver`, `Bigfoot`, `Bunny`, `Dog`, `Edmund` | 17 
 | `catdata_ignore_skills` | 1 | `true` |
-| `category` | 2 |  |
+| `category` | 2 |  | 577 
 | `Catepillar` | 1 |  |
-| `Catnip` | 2 |  |
-| `CatnipBig` | 1 |  |
+| `Catnip` | 2 |  | 2 
+| `CatnipBig` | 1 |  | 2 
 | `CatSelector_Left_Click` | 1 |  |
 | `CatSelector_Left_Hover` | 1 |  |
 | `CatSelector_Right_Click` | 1 |  |
@@ -4886,41 +4886,41 @@ Use this to spot any completely undocumented keys.
 | `CatVolume_Button_Right_Click` | 1 |  |
 | `CatVolume_Button_Right_Hover` | 1 |  |
 | `CatVolume_Button_Right_Press` | 1 |  |
-| `CaveBaby` | 1 |  |
-| `cavecatfamily` | 1 | `auto` |
-| `CaveMan` | 1 |  |
+| `CaveBaby` | 1 |  | 3 
+| `cavecatfamily` | 1 | `auto` | 2 
+| `CaveMan` | 1 |  | 7 
 | `CaveManSpear` | 1 |  |
-| `caves` | 3 | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` |
-| `CavesUnlocked` | 1 |  |
-| `CaveWoman` | 1 |  |
+| `caves` | 3 | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` | 12 
+| `CavesUnlocked` | 1 |  | 2 
+| `CaveWoman` | 1 |  | 1 
 | `CaveWomanHasCat` | 1 |  |
-| `cerberubs` | 1 | `auto` |
+| `cerberubs` | 1 | `auto` | 2 
 | `CerberubsJumpBlind` | 1 |  |
 | `CerberubsJumpNormal` | 1 |  |
-| `cha` | 39 | `+1`, `aux` |
-| `chain` | 3 | `AcidSplash`, `CaveSplash`, `FireFullSmall`, `Kingblood2`, `MeatCaveSplash` |
-| `chain_ability` | 6 | `BoyDinoDash`, `ChaosStacyAttackChain`, `ControlPlantsPartTwo`, `ControlPlantsPartTwo2`, `ControlWaterPartTwo` |
-| `chain_chance` | 1 |  |
+| `cha` | 39 | `+1`, `aux` | 468 
+| `chain` | 3 | `AcidSplash`, `CaveSplash`, `FireFullSmall`, `Kingblood2`, `MeatCaveSplash` | 22 
+| `chain_ability` | 6 | `BoyDinoDash`, `ChaosStacyAttackChain`, `ControlPlantsPartTwo`, `ControlPlantsPartTwo2`, `ControlWaterPartTwo` | 30 
+| `chain_chance` | 1 |  | 1 
 | `ChakramProjectileCatch` | 1 |  |
 | `ChakramProjectileSpin` | 1 |  |
 | `challenge_to_game` | 1 |  |
-| `champ_budget` | 1 |  |
-| `champ_chance_mini` | 1 |  |
+| `champ_budget` | 1 |  | 32 
+| `champ_chance_mini` | 1 |  | 30 
 | `champion` | 1 | `true` |
-| `chance` | 32 |  |
+| `chance` | 32 |  | 1 
 | `chance_per_damage` | 2 |  |
 | `chance_to_break` | 2 |  |
 | `change` | 1 |  |
 | `channel` | 12 | `actchooser`, `cat_foley`, `johnny_idle`, `no_falloff`, `non_spatial` |
 | `chaos_ending` | 1 |  |
 | `Chaos_Growl` | 1 |  |
-| `ChaosAntennaAttached` | 1 |  |
-| `chapter` | 2 | `alley` |
-| `chapter_common` | 1 |  |
+| `ChaosAntennaAttached` | 1 |  | 2 
+| `chapter` | 2 | `alley` | 6 
+| `chapter_common` | 1 |  | 7 
 | `chapter_cutscene` | 1 |  |
-| `chapter_item_pool` | 19 | `alleyitems`, `boneyarditems`, `bunkeritems`, `cavesitems`, `coreitems` |
-| `chapter_rare` | 1 |  |
-| `chapters` | 1 |  |
+| `chapter_item_pool` | 19 | `alleyitems`, `boneyarditems`, `bunkeritems`, `cavesitems`, `coreitems` | 38 
+| `chapter_rare` | 1 |  | 10 
+| `chapters` | 1 |  | 6 
 | `character_filter` | 1 |  |
 | `character_sphere_offset` | 1 |  |
 | `charge` | 6 | `1-clamp(spd,0,1)` |
@@ -4933,7 +4933,7 @@ Use this to spot any completely undocumented keys.
 | `CharmedPile` | 1 |  |
 | `check_has_status` | 1 | `FinalBossHitCountdownBoris` |
 | `check_in_form` | 2 | `Boris`, `Default` |
-| `Cherub` | 1 |  |
+| `Cherub` | 1 |  | 2 
 | `ChestButton_alley_Click` | 1 |  |
 | `ChestButton_alley_Hover` | 1 |  |
 | `ChestButton_bunker_Click` | 1 |  |
@@ -4954,38 +4954,38 @@ Use this to spot any completely undocumented keys.
 | `ChestButton_theinfinite_Click` | 1 |  |
 | `ChestButton_therift_Click` | 1 |  |
 | `ChestButton_tutorial_Click` | 1 |  |
-| `Chicken` | 3 |  |
+| `Chicken` | 3 |  | 6 
 | `choose_cat_with_highest_stat` | 1 | `int` |
 | `choose_cat_with_item` | 1 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `PutridLeech`, `ReceiverAntenna`, `ThrobbingGristle` |
 | `choose_cat_with_item_slot_equipped` | 1 | `weapon` |
-| `choose_cat_with_min_health` | 2 |  |
+| `choose_cat_with_min_health` | 2 |  | 1 
 | `choose_cat_with_most_injuries` | 1 | `true` |
 | `choose_cat_with_parasite` | 1 | `true` |
 | `choose_one` | 1 |  |
 | `choosecats` | 1 |  |
 | `circular_variance` | 1 |  |
 | `clamp_pattern` | 2 | `true` |
-| `class` | 43 | `AOESpellAbility`, `BounceDashAbility`, `Butcher`, `CloneAbility`, `Colorless` |
-| `class_anis` | 1 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` |
-| `class_unlock_butcher` | 1 |  |
-| `class_unlock_druid` | 1 |  |
-| `class_unlock_jester` | 1 |  |
-| `class_unlock_medic` | 1 |  |
-| `class_unlock_monk` | 1 |  |
-| `class_unlock_necromancer` | 1 |  |
-| `class_unlock_psychic` | 1 |  |
-| `class_unlock_thief` | 1 |  |
-| `class_unlock_tinkerer` | 1 |  |
+| `class` | 43 | `AOESpellAbility`, `BounceDashAbility`, `Butcher`, `CloneAbility`, `Colorless` | 1200 
+| `class_anis` | 1 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` | 80 
+| `class_unlock_butcher` | 1 |  | 2 
+| `class_unlock_druid` | 1 |  | 2 
+| `class_unlock_jester` | 1 |  | 4 
+| `class_unlock_medic` | 1 |  | 2 
+| `class_unlock_monk` | 1 |  | 2 
+| `class_unlock_necromancer` | 1 |  | 2 
+| `class_unlock_psychic` | 1 |  | 2 
+| `class_unlock_thief` | 1 |  | 2 
+| `class_unlock_tinkerer` | 1 |  | 2 
 | `classes` | 1 |  |
-| `claws` | 1 |  |
+| `claws` | 1 |  | 392 
 | `cleanse_on_apply` | 1 | `false` |
 | `clear_token` | 1 | `do_not_end_turn`, `map_equip_items2`, `melee_cat_spit_ignore`, `melee_move2`, `take_cats_inside` |
-| `clericcat` | 1 | `auto` |
+| `clericcat` | 1 | `auto` | 2 
 | `climb` | 1 |  |
 | `clipname` | 1 | `poopmain` |
 | `clone_items` | 8 | `false`, `true` |
 | `clone_referenced_catdata` | 1 | `true` |
-| `cloned_ability` | 1 | `attack` |
+| `cloned_ability` | 1 | `attack` | 4 
 | `Close` | 1 |  |
 | `CloseButton_Click` | 1 |  |
 | `CloseConvert` | 1 |  |
@@ -4993,22 +4993,22 @@ Use this to spot any completely undocumented keys.
 | `closeup` | 3 |  |
 | `Cockroach` | 1 |  |
 | `Cockroach_Squish` | 1 |  |
-| `Coin` | 1 |  |
+| `Coin` | 1 |  | 18 
 | `Coin10` | 1 |  |
 | `Coin2` | 1 |  |
 | `Coin3` | 1 |  |
 | `Coin4` | 1 |  |
-| `coins` | 5 |  |
-| `coins_bonus` | 1 |  |
-| `coins_multiplier` | 1 |  |
-| `collected_new_items` | 1 |  |
-| `collected_nothing` | 1 |  |
-| `color` | 9 | `black`, `gray`, `white` |
-| `Colorless` | 2 |  |
+| `coins` | 5 |  | 4 
+| `coins_bonus` | 1 |  | 30 
+| `coins_multiplier` | 1 |  | 16 
+| `collected_new_items` | 1 |  | 2 
+| `collected_nothing` | 1 |  | 2 
+| `color` | 9 | `black`, `gray`, `white` | 10 
+| `Colorless` | 2 |  | 140 
 | `Colorless_Tutorial` | 1 |  |
 | `Combat_AttackButton_Click` | 1 |  |
 | `Combat_AttackButton_Hover` | 1 |  |
-| `combat_background` | 1 | `AlleyBGTest`, `BoneYardBG`, `BunkerBG`, `CavesBG`, `CoreBG` |
+| `combat_background` | 1 | `AlleyBGTest`, `BoneYardBG`, `BunkerBG`, `CavesBG`, `CoreBG` | 21 
 | `Combat_ButtonsAppear` | 1 |  |
 | `Combat_ButtonsHide` | 1 |  |
 | `Combat_EndTurnButton_Click` | 1 |  |
@@ -5023,7 +5023,7 @@ Use this to spot any completely undocumented keys.
 | `Combat_PassiveButton_Hover` | 1 |  |
 | `Combat_SpellButton_Click` | 1 |  |
 | `Combat_SpellButton_Hover` | 1 |  |
-| `combat_ui_background` | 1 | `CoreUI`, `DesertUI`, `LabUI`, `MoonUI`, `UI_Background` |
+| `combat_ui_background` | 1 | `CoreUI`, `DesertUI`, `LabUI`, `MoonUI`, `UI_Background` | 21 
 | `CombatMessage_Ambushed` | 1 |  |
 | `CombatMessage_Ambushing` | 1 |  |
 | `CombatMessage_BattleStart` | 1 |  |
@@ -5033,67 +5033,67 @@ Use this to spot any completely undocumented keys.
 | `CombatMessage_Victory` | 1 |  |
 | `CombatMessage_VictoryWithRewards` | 1 |  |
 | `combo` | 2 |  |
-| `Comfort` | 2 |  |
-| `comfort` | 1 |  |
+| `Comfort` | 2 |  | 406 
+| `comfort` | 1 |  | 406 
 | `commercial` | 1 |  |
 | `commercial_intro` | 1 |  |
 | `common_item` | 1 |  |
 | `communicate` | 1 |  |
 | `complete_act_difficulty` | 1 |  |
-| `complete_adventure` | 1 | `anywhere` |
-| `complete_chapter` | 2 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
+| `complete_adventure` | 1 | `anywhere` | 4 
+| `complete_chapter` | 2 | `alley`, `boneyard`, `bunker`, `caves`, `core` | 90 
 | `complete_chapter_with_class` | 1 |  |
 | `complete_chapters` | 1 |  |
-| `complete_checklist_with_class` | 1 | `Butcher`, `Colorless`, `Druid`, `Fighter`, `Hunter` |
-| `complete_checkmarks` | 1 |  |
-| `complete_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` |
+| `complete_checklist_with_class` | 1 | `Butcher`, `Colorless`, `Druid`, `Fighter`, `Hunter` | 28 
+| `complete_checkmarks` | 1 |  | 6 
+| `complete_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` | 9 
 | `CompleteItemSet` | 1 |  |
 | `CompletionCheckmarkTooltip` | 1 |  |
 | `complicated_abilities` | 1 |  |
 | `complicated_passives` | 1 |  |
-| `con` | 45 | `aux` |
-| `concentrate` | 1 |  |
+| `con` | 45 | `aux` | 416 
+| `concentrate` | 1 |  | 1 
 | `concheck` | 1 |  |
-| `consider_aggro_target_enemy` | 1 | `true` |
+| `consider_aggro_target_enemy` | 1 | `true` | 2 
 | `consider_all_layers` | 2 | `true` |
-| `consider_aoe` | 1 | `false`, `true` |
-| `consider_overkill` | 1 | `false`, `true` |
-| `consider_secondary_damage` | 1 | `false`, `true` |
-| `consider_spells` | 4 | `false` |
-| `consider_total_damage` | 1 | `false`, `true` |
+| `consider_aoe` | 1 | `false`, `true` | 6 
+| `consider_overkill` | 1 | `false`, `true` | 64 
+| `consider_secondary_damage` | 1 | `false`, `true` | 64 
+| `consider_spells` | 4 | `false` | 2 
+| `consider_total_damage` | 1 | `false`, `true` | 64 
 | `consider_trample` | 4 | `false`, `true` |
 | `considered_forms` | 1 |  |
 | `constant` | 2 | `pitch`, `volume` |
 | `constitution` | 20 |  |
-| `consumable` | 4 | `true` |
-| `consumable_chance` | 1 |  |
-| `consumable_common` | 2 |  |
-| `consumable_rare` | 2 |  |
-| `consumable_uncommon` | 2 |  |
-| `consumable_very_rare` | 2 |  |
-| `consumables` | 1 |  |
-| `consumables_consumable_common` | 1 |  |
-| `consumables_consumable_rare` | 1 |  |
-| `consumables_consumable_uncommon` | 1 |  |
-| `consumables_consumable_very_rare` | 1 |  |
-| `consume` | 1 | `true` |
+| `consumable` | 4 | `true` | 140 
+| `consumable_chance` | 1 |  | 72 
+| `consumable_common` | 2 |  | 26 
+| `consumable_rare` | 2 |  | 24 
+| `consumable_uncommon` | 2 |  | 16 
+| `consumable_very_rare` | 2 |  | 10 
+| `consumables` | 1 |  | 6 
+| `consumables_consumable_common` | 1 |  | 2 
+| `consumables_consumable_rare` | 1 |  | 2 
+| `consumables_consumable_uncommon` | 1 |  | 2 
+| `consumables_consumable_very_rare` | 1 |  | 2 
+| `consume` | 1 | `true` | 2 
 | `contact_requires_adjacency` | 2 | `false` |
-| `continual_emission` | 1 | `true` |
+| `continual_emission` | 1 | `true` | 1 
 | `ControlRebind_Failed` | 1 |  |
 | `ControlRebind_RemovedBinding` | 1 |  |
 | `ControlRebind_Success` | 1 |  |
 | `cooldown` | 1 |  |
 | `copy` | 1 |  |
-| `copy_results` | 3 | `examine`, `lever`, `open`, `red`, `smash` |
-| `core` | 3 | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` |
-| `CoreObeliskUnlocked` | 1 |  |
-| `CoreUnlocked` | 1 |  |
+| `copy_results` | 3 | `examine`, `lever`, `open`, `red`, `smash` | 8 
+| `core` | 3 | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` | 20 
+| `CoreObeliskUnlocked` | 1 |  | 6 
+| `CoreUnlocked` | 1 |  | 2 
 | `corpse_health` | 19 | `indestructible` |
 | `corpse_priority` | 1 |  |
-| `cost` | 35 |  |
-| `cough` | 1 |  |
-| `count` | 27 |  |
-| `count_nomove_in_eval` | 1 | `false` |
+| `cost` | 35 |  | 3702 
+| `cough` | 1 |  | 3 
+| `count` | 27 |  | 3 
+| `count_nomove_in_eval` | 1 | `false` | 2 
 | `count_overkill` | 1 | `true` |
 | `count_self` | 1 | `true` |
 | `count_shield` | 1 | `true` |
@@ -5103,21 +5103,21 @@ Use this to spot any completely undocumented keys.
 | `counter_range` | 5 |  |
 | `crack_open` | 1 |  |
 | `craft_ability` | 3 | `TinkererCraft` |
-| `crater` | 2 | `AREA_NAME_CRATER`, `mapflag_CraterUnlocked` |
-| `CraterUnlocked` | 1 |  |
+| `crater` | 2 | `AREA_NAME_CRATER`, `mapflag_CraterUnlocked` | 16 
+| `CraterUnlocked` | 1 |  | 2 
 | `create_temp_ability` | 1 | `true` |
 | `crit_multiplier_bonus` | 1 |  |
 | `cross` | 1 |  |
 | `crossfade_speed` | 1 |  |
-| `Cultist` | 1 |  |
-| `current_chapter_common` | 1 | `auto` |
-| `current_chapter_rare` | 1 | `auto` |
-| `current_chapter_uncommon` | 1 | `auto` |
-| `current_chapter_very_rare` | 1 | `auto` |
+| `Cultist` | 1 |  | 11 
+| `current_chapter_common` | 1 | `auto` | 12 
+| `current_chapter_rare` | 1 | `auto` | 12 
+| `current_chapter_uncommon` | 1 | `auto` | 12 
+| `current_chapter_very_rare` | 1 | `auto` | 12 
 | `CurrentTurnIndicator_GoToAlly` | 1 |  |
 | `CurrentTurnIndicator_GoToEnemy` | 1 |  |
 | `CurrentWeaponAddPoison` | 1 |  |
-| `cursed` | 8 | `true` |
+| `cursed` | 8 | `true` | 154 
 | `custom_aoe` | 18 |  |
 | `custom_aoe_mirror` | 1 |  |
 | `custom_aoe_util` | 4 |  |
@@ -5125,23 +5125,23 @@ Use this to spot any completely undocumented keys.
 | `custom_range` | 5 |  |
 | `cut_wires` | 1 |  |
 | `Cutscene_AdventureEmbark` | 1 |  |
-| `cWaggle` | 1 |  |
-| `cWaggle2x2` | 1 |  |
+| `cWaggle` | 1 |  | 2 
+| `cWaggle2x2` | 1 |  | 2 
 | `cWaggle3x3` | 1 |  |
 | `cycle_start` | 2 |  |
-| `damage` | 75 | `(15+bonus_melee_damage)*.5`, `(4+bonus_ranged_damage+1)/2`, `(5+bonus_melee_ability_damage)*.5`, `(5+bonus_melee_ability_damage)/2`, `(5+bonus_melee_damage+1)/2` |
+| `damage` | 75 | `(15+bonus_melee_damage)*.5`, `(4+bonus_ranged_damage+1)/2`, `(5+bonus_melee_ability_damage)*.5`, `(5+bonus_melee_ability_damage)/2`, `(5+bonus_melee_damage+1)/2` | 2 
 | `damage_1` | 1 |  |
-| `damage_ally` | 1 |  |
-| `damage_ally_corpse` | 1 |  |
+| `damage_ally` | 1 |  | 64 
+| `damage_ally_corpse` | 1 |  | 64 
 | `damage_cant_be_zero` | 1 | `true` |
 | `damage_collided_only` | 1 | `true` |
-| `damage_enemy` | 1 |  |
-| `damage_enemy_corpse` | 1 |  |
+| `damage_enemy` | 1 |  | 64 
+| `damage_enemy_corpse` | 1 |  | 64 
 | `damage_full` | 1 |  |
 | `damage_half` | 1 |  |
-| `damage_instance` | 34 |  |
+| `damage_instance` | 34 |  | 4688 
 | `damage_multiplier` | 1 |  |
-| `damage_self` | 1 |  |
+| `damage_self` | 1 |  | 64 
 | `damage_threshold` | 1 |  |
 | `damage_tiles` | 4 | `all` |
 | `DamageBlocked` | 1 |  |
@@ -5159,13 +5159,13 @@ Use this to spot any completely undocumented keys.
 | `DamageMiss` | 1 |  |
 | `DamageShield` | 1 |  |
 | `dampening` | 2 |  |
-| `danger_avoidance` | 1 |  |
+| `danger_avoidance` | 1 |  | 6 
 | `DashFury` | 2 |  |
 | `DashRandomly` | 1 |  |
 | `data` | 1 |  |
-| `dead_facecenter` | 1 |  |
-| `dead_faceleft` | 1 |  |
-| `DeadHummingbird` | 1 |  |
+| `dead_facecenter` | 1 |  | 1 
+| `dead_faceleft` | 1 |  | 1 
+| `DeadHummingbird` | 1 |  | 2 
 | `Death` | 219 |  |
 | `DEATH_PARAMS` | 220 |  |
 | `DeathExplode` | 1 |  |
@@ -5176,24 +5176,24 @@ Use this to spot any completely undocumented keys.
 | `DeathPoof5` | 1 |  |
 | `DeathPoof_PlayerCat` | 1 |  |
 | `deathpoof_size` | 2 |  |
-| `deathsound` | 1 | `Injury_Bleed`, `Injury_BrokenLeg`, `Injury_BrokenPaw`, `Injury_BrokenRib`, `Injury_Burn` |
+| `deathsound` | 1 | `Injury_Bleed`, `Injury_BrokenLeg`, `Injury_BrokenPaw`, `Injury_BrokenRib`, `Injury_Burn` | 13 
 | `Deathx` | 1 |  |
-| `debris` | 1 | `CaveDebris`, `Debris`, `Debris10`, `Debris11`, `Debris12` |
-| `debuff_ally` | 1 |  |
-| `debuff_enemy` | 1 |  |
-| `debuff_self` | 1 |  |
-| `debug` | 1 | `Unknown` |
+| `debris` | 1 | `CaveDebris`, `Debris`, `Debris10`, `Debris11`, `Debris12` | 30 
+| `debuff_ally` | 1 |  | 64 
+| `debuff_enemy` | 1 |  | 64 
+| `debuff_self` | 1 |  | 64 
+| `debug` | 1 | `Unknown` | 2 
 | `DecayTime` | 1 |  |
-| `decision_weights` | 21 | `always_cast`, `always_cast_careless`, `angry`, `blind`, `careless` |
-| `Default` | 9 | `release` |
-| `default` | 7 | `bite1` |
+| `decision_weights` | 21 | `always_cast`, `always_cast_careless`, `angry`, `blind`, `careless` | 10 
+| `Default` | 9 | `release` | 199 
+| `default` | 7 | `bite1` | 199 
 | `Default_Ceiling` | 1 |  |
 | `default_form` | 1 | `Normal` |
-| `default_frame` | 1 |  |
+| `default_frame` | 1 |  | 420 
 | `Default_Ground` | 1 |  |
 | `defense` | 2 |  |
 | `deferred` | 1 | `true` |
-| `degrade_after_adventure` | 1 | `false` |
+| `degrade_after_adventure` | 1 | `false` | 2 
 | `delay_enable_tooltips` | 1 | `true` |
 | `delay_frames` | 2 |  |
 | `delay_range` | 1 |  |
@@ -5208,17 +5208,17 @@ Use this to spot any completely undocumented keys.
 | `Depart_Sign_Click` | 1 |  |
 | `Depart_Sign_Hover` | 1 |  |
 | `Depart_Sign_Move` | 1 |  |
-| `depth_bias` | 1 |  |
-| `desc_multiclass` | 1 | `PASSIVE_BARBED2_MULTICLASS_DESC`, `PASSIVE_BARBED_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK2_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK_MULTICLASS_DESC`, `PASSIVE_HARPOONER2_MULTICLASS_DESC` |
+| `depth_bias` | 1 |  | 16 
+| `desc_multiclass` | 1 | `PASSIVE_BARBED2_MULTICLASS_DESC`, `PASSIVE_BARBED_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK2_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK_MULTICLASS_DESC`, `PASSIVE_HARPOONER2_MULTICLASS_DESC` | 20 
 | `description` | 2 | `CAT_CLASS_BUTCHER_DESC`, `CAT_CLASS_COLORLESS_DESC`, `CAT_CLASS_DRUID_DESC`, `CAT_CLASS_FIGHTER_DESC`, `CAT_CLASS_HUNTER_DESC` |
-| `desert` | 2 | `AREA_NAME_DESERT`, `mapflag_DesertUnlocked` |
+| `desert` | 2 | `AREA_NAME_DESERT`, `mapflag_DesertUnlocked` | 16 
 | `desert_cutscene` | 1 |  |
 | `DesireMech` | 1 |  |
-| `destinations` | 1 |  |
-| `destroy` | 2 |  |
-| `devious` | 1 |  |
-| `devious2` | 1 |  |
-| `dex` | 34 | `aux` |
+| `destinations` | 1 |  | 2 
+| `destroy` | 2 |  | 1 
+| `devious` | 1 |  | 1 
+| `devious2` | 1 |  | 1 
+| `dex` | 34 | `aux` | 301 
 | `dexcheck` | 1 |  |
 | `dexterity` | 20 |  |
 | `dialog` | 12 | `NPC_BEANIES_ALSO_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_10`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_3` |
@@ -5227,9 +5227,9 @@ Use this to spot any completely undocumented keys.
 | `dice_size` | 1 |  |
 | `different_from_last_x_cats` | 1 |  |
 | `dig` | 1 |  |
-| `dimensionx` | 3 | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` |
-| `DimensionXUnlocked` | 2 |  |
-| `dinocouple` | 1 | `auto` |
+| `dimensionx` | 3 | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` | 27 
+| `DimensionXUnlocked` | 2 |  | 4 
+| `dinocouple` | 1 | `auto` | 2 
 | `DisableTrample` | 3 |  |
 | `disallow_cost_modification` | 7 | `true` |
 | `disallow_items` | 1 | `Nuke`, `all` |
@@ -5244,18 +5244,18 @@ Use this to spot any completely undocumented keys.
 | `distance` | 10 |  |
 | `distance_scale` | 12 |  |
 | `distance_sort_targets` | 4 | `true` |
-| `distance_to_aggro_target` | 1 |  |
-| `distance_to_ally` | 1 |  |
-| `distance_to_center` | 1 |  |
-| `distance_to_character` | 1 |  |
-| `distance_to_corpse` | 1 |  |
-| `distance_to_enemy` | 1 |  |
-| `distance_to_water` | 1 |  |
+| `distance_to_aggro_target` | 1 |  | 6 
+| `distance_to_ally` | 1 |  | 110 
+| `distance_to_center` | 1 |  | 2 
+| `distance_to_character` | 1 |  | 110 
+| `distance_to_corpse` | 1 |  | 6 
+| `distance_to_enemy` | 1 |  | 110 
+| `distance_to_water` | 1 |  | 4 
 | `distinctly_female` | 41 | `true` |
 | `distinctly_male` | 103 | `true` |
-| `distraught` | 1 |  |
+| `distraught` | 1 |  | 1 
 | `dive` | 1 |  |
-| `divine_shield` | 17 |  |
+| `divine_shield` | 17 |  | 54 
 | `dj_segment` | 1 |  |
 | `do` | 15 | `**BombRatTurtle`, `**G3Shake`, `**RockySlam`, `**SimonFlopper_WiggleChance`, `**SimonFlopper_WiggleFake` |
 | `do_all` | 10 |  |
@@ -5264,7 +5264,7 @@ Use this to spot any completely undocumented keys.
 | `do_best_multiple` | 1 |  |
 | `do_doppler` | 12 | `false`, `true` |
 | `do_falloff` | 13 | `false`, `true` |
-| `do_not_end_turn` | 1 |  |
+| `do_not_end_turn` | 1 |  | 2 
 | `do_not_move_on_top` | 1 | `true` |
 | `do_nothing` | 3 |  |
 | `do_one` | 1 |  |
@@ -5275,18 +5275,18 @@ Use this to spot any completely undocumented keys.
 | `do_sequence` | 3 | `butch_tips_intelligence`, `forward_to_tips`, `tink_tips_comfort` |
 | `do_sidequest_sequence` | 1 | `beaniesquest_complete`, `beaniesquest_fail`, `beaniesquest_intro` |
 | `do_strict` | 4 |  |
-| `donate` | 1 |  |
+| `donate` | 1 |  | 2 
 | `donate_10` | 1 |  |
 | `donate_15` | 1 |  |
 | `donate_20` | 1 |  |
 | `donate_5` | 1 |  |
-| `done_spitting_fail_ally` | 1 |  |
-| `done_spitting_fail_miss` | 1 |  |
-| `done_spitting_fail_rat` | 1 |  |
-| `done_spitting_success` | 1 |  |
-| `dont_destroy_on_0` | 3 | `true` |
+| `done_spitting_fail_ally` | 1 |  | 2 
+| `done_spitting_fail_miss` | 1 |  | 2 
+| `done_spitting_fail_rat` | 1 |  | 2 
+| `done_spitting_success` | 1 |  | 2 
+| `dont_destroy_on_0` | 3 | `true` | 26 
 | `dont_orient_aoe` | 5 | `true` |
-| `double` | 1 |  |
+| `double` | 1 |  | 2 
 | `Dove` | 1 |  |
 | `Down` | 3 |  |
 | `Drag` | 1 |  |
@@ -5302,33 +5302,33 @@ Use this to spot any completely undocumented keys.
 | `DrawerOpen_Stats` | 1 |  |
 | `DrawerOpen_Storage` | 1 |  |
 | `DrawerOpen_Store` | 1 |  |
-| `dreamworks` | 1 |  |
-| `dreamworks2` | 1 |  |
+| `dreamworks` | 1 |  | 1 
+| `dreamworks2` | 1 |  | 1 
 | `drink` | 3 |  |
-| `drmangler` | 1 | `auto` |
-| `Druid` | 2 |  |
-| `druid_portrait` | 1 |  |
-| `druidcat` | 1 | `auto` |
+| `drmangler` | 1 | `auto` | 2 
+| `Druid` | 2 |  | 80 
+| `druid_portrait` | 1 |  | 1 
+| `druidcat` | 1 | `auto` | 2 
 | `Drunker` | 1 |  |
 | `DualSword` | 1 |  |
 | `DualSword_Primed` | 1 |  |
 | `Dumb` | 1 |  |
-| `durability` | 11 |  |
+| `durability` | 11 |  | 264 
 | `durability_loss` | 2 |  |
 | `Eagle` | 1 |  |
 | `ear1` | 5 |  |
 | `ear2` | 3 |  |
 | `ear_rotation` | 1 |  |
-| `early_spawn` | 1 | `true` |
-| `ears` | 8 |  |
-| `ears_down` | 1 |  |
-| `ears_down_overshoot` | 1 |  |
-| `ears_left` | 1 |  |
-| `ears_right` | 1 |  |
-| `ears_up` | 1 |  |
-| `ears_up_overshoot` | 1 |  |
-| `Earth` | 1 |  |
-| `easy` | 21 |  |
+| `early_spawn` | 1 | `true` | 10 
+| `ears` | 8 |  | 2 
+| `ears_down` | 1 |  | 1 
+| `ears_down_overshoot` | 1 |  | 1 
+| `ears_left` | 1 |  | 1 
+| `ears_right` | 1 |  | 1 
+| `ears_up` | 1 |  | 1 
+| `ears_up_overshoot` | 1 |  | 1 
+| `Earth` | 1 |  | 2 
+| `easy` | 21 |  | 16 
 | `eat` | 7 |  |
 | `eat_damage` | 1 |  |
 | `eat_meat` | 1 |  |
@@ -5336,41 +5336,41 @@ Use this to spot any completely undocumented keys.
 | `EatCatnip` | 1 |  |
 | `EatFood` | 1 |  |
 | `EatScrap` | 1 |  |
-| `editor` | 2 |  |
+| `editor` | 2 |  | 578 
 | `eject_ability` | 1 | `MechSuitEject` |
-| `Electric` | 1 |  |
-| `element` | 21 | `Electric`, `Fire`, `Gravity`, `Greater_Water`, `Holy` |
+| `Electric` | 1 |  | 6 
+| `element` | 21 | `Electric`, `Fire`, `Gravity`, `Greater_Water`, `Holy` | 1 
 | `elements` | 44 |  |
 | `elite` | 1 | `true` |
-| `elite_budget` | 1 |  |
-| `elite_buffs` | 1 |  |
-| `elite_chance_mini` | 1 |  |
-| `else` | 8 |  |
-| `emit_amount` | 2 |  |
+| `elite_budget` | 1 |  | 30 
+| `elite_buffs` | 1 |  | 32 
+| `elite_chance_mini` | 1 |  | 26 
+| `else` | 8 |  | 1 
+| `emit_amount` | 2 |  | 135 
 | `emit_box` | 2 |  |
 | `emit_direction` | 2 |  |
-| `emit_radius` | 1 |  |
-| `emit_rate` | 2 |  |
-| `emit_shell` | 1 |  |
-| `emit_spread` | 2 |  |
-| `emit_timespread` | 1 |  |
-| `emit_timespread_curve` | 1 | `ease_out` |
+| `emit_radius` | 1 |  | 30 
+| `emit_rate` | 2 |  | 150 
+| `emit_shell` | 1 |  | 5 
+| `emit_spread` | 2 |  | 144 
+| `emit_timespread` | 1 |  | 5 
+| `emit_timespread_curve` | 1 | `ease_out` | 3 
 | `emitshape_scale` | 1 |  |
-| `Empty` | 1 |  |
-| `empty` | 1 |  |
-| `empty_armor_scaled_stats` | 1 |  |
-| `empty_self_damage` | 2 |  |
+| `Empty` | 1 |  | 1 
+| `empty` | 1 |  | 1 
+| `empty_armor_scaled_stats` | 1 |  | 8 
+| `empty_self_damage` | 2 |  | 4 
 | `enabled_formula` | 1 | `1-X`, `X` |
 | `end_of_round` | 1 | `true` |
 | `end_on_collision` | 1 | `true` |
-| `end_turn_on_formswitch` | 7 | `false`, `true` |
+| `end_turn_on_formswitch` | 7 | `false`, `true` | 4 
 | `EndDay_Sign_Click` | 1 |  |
 | `EndDay_Sign_Hover` | 1 |  |
-| `ending` | 1 |  |
-| `ending_cutscene` | 1 | `hitler_end` |
-| `ending_cutscene2` | 1 | `credits_3` |
-| `endoftime` | 3 | `AREA_NAME_ENDOFTIME`, `endoftime`, `mapflag_EndOfTimeUnlocked` |
-| `EndOfTimeUnlocked` | 2 |  |
+| `ending` | 1 |  | 2 
+| `ending_cutscene` | 1 | `hitler_end` | 1 
+| `ending_cutscene2` | 1 | `credits_3` | 1 
+| `endoftime` | 3 | `AREA_NAME_ENDOFTIME`, `endoftime`, `mapflag_EndOfTimeUnlocked` | 18 
+| `EndOfTimeUnlocked` | 2 |  | 4 
 | `enemies_only` | 9 | `false`, `true` |
 | `enemy_damage` | 1 | `littlecheer` |
 | `enemy_dead` | 1 | `bigcheer` |
@@ -5380,8 +5380,8 @@ Use this to spot any completely undocumented keys.
 | `enter_ability` | 1 | `EnterMech` |
 | `enter_crater` | 1 |  |
 | `eq` | 2 |  |
-| `equip_sound` | 1 | `SE_CatWeaponPoke_Chainsaw` |
-| `equipment` | 5 |  |
+| `equip_sound` | 1 | `SE_CatWeaponPoke_Chainsaw` | 2 
+| `equipment` | 5 |  | 88 
 | `EquipmentBrokeInCombat` | 1 |  |
 | `EquippedButton_Collar_Click` | 1 |  |
 | `EquippedButton_Collar_Hover` | 1 |  |
@@ -5396,7 +5396,7 @@ Use this to spot any completely undocumented keys.
 | `EquippedButton_weapon_Click` | 1 |  |
 | `EquippedButton_weapon_Hover` | 1 |  |
 | `Escape` | 1 |  |
-| `euphoric` | 1 |  |
+| `euphoric` | 1 |  | 1 
 | `even_if_blocked` | 1 | `true` |
 | `even_if_cant_reach` | 1 | `true` |
 | `even_if_dead` | 11 | `true` |
@@ -5405,34 +5405,34 @@ Use this to spot any completely undocumented keys.
 | `even_on_0_damage` | 1 | `true` |
 | `even_on_0_damage_if_knockback` | 1 | `true` |
 | `evenly_dispersed_bonus_turns` | 6 |  |
-| `event` | 6 | `Blessing`, `Death`, `Tragedy`, `alley/eatinrats_event.ogg`, `boneyard/boneyard_event.ogg` |
+| `event` | 6 | `Blessing`, `Death`, `Tragedy`, `alley/eatinrats_event.ogg`, `boneyard/boneyard_event.ogg` | 3 
 | `Event_ChoiceButton_Click` | 1 |  |
 | `Event_ChoiceButton_Hover` | 1 |  |
 | `event_clip` | 27 | `NonWheelEvent` |
-| `event_difficulty` | 1 |  |
+| `event_difficulty` | 1 |  | 16 
 | `Event_ExitButton_Click` | 1 |  |
 | `Event_ExitButton_Hover` | 1 |  |
-| `event_piece_frame` | 1 | `alley`, `bunker`, `caves`, `core`, `crater` |
+| `event_piece_frame` | 1 | `alley`, `bunker`, `caves`, `core`, `crater` | 21 
 | `EventOutcome_Bad` | 1 |  |
 | `EventOutcome_Bad_Crit` | 1 |  |
 | `EventOutcome_Good` | 1 |  |
 | `EventOutcome_Good_Crit` | 1 |  |
-| `Evolution` | 1 |  |
-| `examine` | 7 |  |
+| `Evolution` | 1 |  | 53 
+| `examine` | 7 |  | 1 
 | `Example` | 2 |  |
 | `except_tiny` | 1 | `true` |
 | `exclude` | 2 | `SpellDamageUp`, `fire`, `water` |
 | `exclude_basicattack` | 1 | `true` |
-| `exclude_characters_tagged` | 1 | `siren` |
+| `exclude_characters_tagged` | 1 | `siren` | 2 
 | `exclude_from_hallucinate` | 5 | `true` |
 | `exclude_prefix` | 1 | `Twister` |
 | `exclude_self` | 1 | `false` |
-| `exit0` | 15 |  |
-| `exit1` | 3 |  |
+| `exit0` | 15 |  | 30 
+| `exit1` | 3 |  | 6 
 | `exit_ability` | 2 | `DybbukReturn` |
 | `exit_animations` | 1 |  |
-| `exit_desert` | 1 |  |
-| `exit_lab` | 1 |  |
+| `exit_desert` | 1 |  | 2 
+| `exit_lab` | 1 |  | 2 
 | `expires_on_appliers_turn` | 1 | `true` |
 | `expires_on_begin_turn` | 11 | `true` |
 | `expires_on_end_turn` | 10 | `true` |
@@ -5453,192 +5453,192 @@ Use this to spot any completely undocumented keys.
 | `eyebrow_up` | 1 |  |
 | `eyebrows` | 6 |  |
 | `eyes` | 10 | `close`, `closed`, `open` |
-| `eyes_closed` | 1 |  |
-| `face` | 6 | `AtomicMark`, `ButcherMask`, `ButcherMask_Terminator`, `HuntersPatch`, `HuntersPatch_Terminator` |
-| `face_aggro_target` | 1 |  |
-| `face_camera` | 3 | `true` |
-| `face_center` | 1 |  |
-| `face_closest_enemy` | 1 |  |
-| `face_down_wince` | 1 |  |
-| `face_far_down` | 1 |  |
-| `face_far_down_right` | 1 |  |
-| `face_far_left` | 1 |  |
-| `face_far_left_eyes_closed` | 1 |  |
-| `face_far_right` | 1 |  |
-| `face_far_up` | 1 |  |
-| `face_far_up_left` | 1 |  |
-| `face_far_up_right` | 1 |  |
-| `face_left_wince` | 1 |  |
-| `face_moving_direction` | 2 | `false`, `true` |
+| `eyes_closed` | 1 |  | 1 
+| `face` | 6 | `AtomicMark`, `ButcherMask`, `ButcherMask_Terminator`, `HuntersPatch`, `HuntersPatch_Terminator` | 398 
+| `face_aggro_target` | 1 |  | 4 
+| `face_camera` | 3 | `true` | 2 
+| `face_center` | 1 |  | 1 
+| `face_closest_enemy` | 1 |  | 110 
+| `face_down_wince` | 1 |  | 1 
+| `face_far_down` | 1 |  | 1 
+| `face_far_down_right` | 1 |  | 1 
+| `face_far_left` | 1 |  | 1 
+| `face_far_left_eyes_closed` | 1 |  | 1 
+| `face_far_right` | 1 |  | 1 
+| `face_far_up` | 1 |  | 1 
+| `face_far_up_left` | 1 |  | 1 
+| `face_far_up_right` | 1 |  | 1 
+| `face_left_wince` | 1 |  | 1 
+| `face_moving_direction` | 2 | `false`, `true` | 76 
 | `face_offset` | 1 |  |
 | `face_towards_after` | 1 | `true` |
-| `facecenter` | 1 |  |
-| `facecenter_back` | 1 |  |
-| `facecenter_eyes_closed` | 1 |  |
-| `facecenter_happy` | 1 |  |
-| `facecenter_happy_overshoot` | 1 |  |
-| `facecenter_hardblink` | 1 |  |
-| `facecenter_right` | 1 |  |
-| `facecenter_shock` | 1 |  |
-| `facecenter_suprise` | 1 |  |
-| `facecenter_worried` | 1 |  |
-| `facedown` | 1 |  |
-| `facedown_back` | 1 |  |
-| `facedown_eyes_closed` | 1 |  |
-| `facedown_eyes_closed_overshoot` | 1 |  |
-| `facedownleft` | 1 |  |
-| `facedownleft_eyes_closed` | 1 |  |
-| `facedownright` | 1 |  |
-| `facedownright_eyes_closed` | 1 |  |
-| `facedownright_focused` | 1 |  |
-| `facedownright_more` | 1 |  |
-| `faceleft` | 1 |  |
-| `faceleft_back` | 1 |  |
-| `faceleft_eyes_closed` | 1 |  |
-| `faceleft_mouth_open` | 1 |  |
-| `faceright` | 1 |  |
-| `faceright_back` | 1 |  |
-| `faceup` | 1 |  |
-| `faceup_back` | 1 |  |
-| `faceup_eyes_closed` | 1 |  |
-| `faceup_shock` | 1 |  |
-| `faceupleft` | 1 |  |
-| `faceupleft_eyes_closed` | 1 |  |
-| `faceupright` | 1 |  |
-| `faceupright_supermad` | 1 |  |
+| `facecenter` | 1 |  | 1 
+| `facecenter_back` | 1 |  | 1 
+| `facecenter_eyes_closed` | 1 |  | 1 
+| `facecenter_happy` | 1 |  | 1 
+| `facecenter_happy_overshoot` | 1 |  | 1 
+| `facecenter_hardblink` | 1 |  | 1 
+| `facecenter_right` | 1 |  | 1 
+| `facecenter_shock` | 1 |  | 1 
+| `facecenter_suprise` | 1 |  | 1 
+| `facecenter_worried` | 1 |  | 1 
+| `facedown` | 1 |  | 1 
+| `facedown_back` | 1 |  | 1 
+| `facedown_eyes_closed` | 1 |  | 1 
+| `facedown_eyes_closed_overshoot` | 1 |  | 1 
+| `facedownleft` | 1 |  | 1 
+| `facedownleft_eyes_closed` | 1 |  | 1 
+| `facedownright` | 1 |  | 1 
+| `facedownright_eyes_closed` | 1 |  | 1 
+| `facedownright_focused` | 1 |  | 1 
+| `facedownright_more` | 1 |  | 1 
+| `faceleft` | 1 |  | 1 
+| `faceleft_back` | 1 |  | 1 
+| `faceleft_eyes_closed` | 1 |  | 1 
+| `faceleft_mouth_open` | 1 |  | 1 
+| `faceright` | 1 |  | 1 
+| `faceright_back` | 1 |  | 1 
+| `faceup` | 1 |  | 1 
+| `faceup_back` | 1 |  | 1 
+| `faceup_eyes_closed` | 1 |  | 1 
+| `faceup_shock` | 1 |  | 1 
+| `faceupleft` | 1 |  | 1 
+| `faceupleft_eyes_closed` | 1 |  | 1 
+| `faceupright` | 1 |  | 1 
+| `faceupright_supermad` | 1 |  | 1 
 | `faction` | 37 | `allies`, `auto`, `birds`, `cavemen`, `default` |
 | `fail_ability` | 1 | `CHuskDropFail`, `LennyStruggleFail`, `XXX` |
-| `fail_adventure` | 1 | `anywhere` |
-| `fail_item_quest` | 1 | `JarOfChaos`, `JarOfRadiatedBlood`, `JarOfRadiation`, `Nuke` |
-| `failable` | 1 | `true` |
+| `fail_adventure` | 1 | `anywhere` | 2 
+| `fail_item_quest` | 1 | `JarOfChaos`, `JarOfRadiatedBlood`, `JarOfRadiation`, `Nuke` | 8 
+| `failable` | 1 | `true` | 8 
 | `fallback` | 8 |  |
 | `fallback_advances_pattern` | 9 | `false`, `true` |
 | `fallback_spawn` | 1 |  |
 | `falloff` | 2 | `by`, `global`, `multiplied`, `setting`, `volume_falloff_range` |
 | `falloff_range` | 2 |  |
 | `favor` | 1 |  |
-| `female1` | 1 |  |
-| `female10` | 1 |  |
-| `female11` | 1 |  |
-| `female12` | 1 |  |
-| `female13` | 1 |  |
-| `female14` | 1 |  |
-| `female15` | 1 |  |
-| `female16` | 1 |  |
-| `female17` | 1 |  |
-| `female18` | 1 |  |
-| `female19` | 1 |  |
-| `female2` | 1 |  |
-| `female20` | 1 |  |
-| `female21` | 1 |  |
-| `female22` | 1 |  |
-| `female23` | 1 |  |
-| `female24` | 1 |  |
-| `female25` | 1 |  |
-| `female26` | 1 |  |
-| `female27` | 1 |  |
-| `female28` | 1 |  |
-| `female29` | 1 |  |
-| `female3` | 1 |  |
-| `female30` | 1 |  |
-| `female31` | 1 |  |
-| `female32` | 1 |  |
-| `female33` | 1 |  |
-| `female34` | 1 |  |
-| `female35` | 1 |  |
-| `female36` | 1 |  |
-| `female37` | 1 |  |
-| `female38` | 1 |  |
-| `female39` | 1 |  |
-| `female4` | 1 |  |
-| `female40` | 1 |  |
-| `female41` | 1 |  |
-| `female42` | 1 |  |
-| `female43` | 1 |  |
-| `female44` | 1 |  |
-| `female45` | 1 |  |
-| `female46` | 1 |  |
-| `female47` | 1 |  |
-| `female48` | 1 |  |
-| `female49` | 1 |  |
-| `female5` | 1 |  |
-| `female50` | 1 |  |
-| `female51` | 1 |  |
-| `female52` | 1 |  |
-| `female53` | 1 |  |
-| `female54` | 1 |  |
-| `female55` | 1 |  |
-| `female56` | 1 |  |
-| `female57` | 1 |  |
-| `female58` | 1 |  |
-| `female59` | 1 |  |
-| `female6` | 1 |  |
-| `female60` | 1 |  |
-| `female61` | 1 |  |
-| `female62` | 1 |  |
-| `female63` | 1 |  |
-| `female64` | 1 |  |
-| `female7` | 1 |  |
-| `female8` | 1 |  |
-| `female9` | 1 |  |
+| `female1` | 1 |  | 1 
+| `female10` | 1 |  | 5 
+| `female11` | 1 |  | 1 
+| `female12` | 1 |  | 7 
+| `female13` | 1 |  | 1 
+| `female14` | 1 |  | 1 
+| `female15` | 1 |  | 1 
+| `female16` | 1 |  | 1 
+| `female17` | 1 |  | 3 
+| `female18` | 1 |  | 1 
+| `female19` | 1 |  | 1 
+| `female2` | 1 |  | 15 
+| `female20` | 1 |  | 1 
+| `female21` | 1 |  | 1 
+| `female22` | 1 |  | 1 
+| `female23` | 1 |  | 1 
+| `female24` | 1 |  | 1 
+| `female25` | 1 |  | 1 
+| `female26` | 1 |  | 5 
+| `female27` | 1 |  | 1 
+| `female28` | 1 |  | 1 
+| `female29` | 1 |  | 9 
+| `female3` | 1 |  | 7 
+| `female30` | 1 |  | 7 
+| `female31` | 1 |  | 1 
+| `female32` | 1 |  | 1 
+| `female33` | 1 |  | 1 
+| `female34` | 1 |  | 1 
+| `female35` | 1 |  | 1 
+| `female36` | 1 |  | 1 
+| `female37` | 1 |  | 1 
+| `female38` | 1 |  | 1 
+| `female39` | 1 |  | 3 
+| `female4` | 1 |  | 1 
+| `female40` | 1 |  | 1 
+| `female41` | 1 |  | 1 
+| `female42` | 1 |  | 1 
+| `female43` | 1 |  | 1 
+| `female44` | 1 |  | 1 
+| `female45` | 1 |  | 3 
+| `female46` | 1 |  | 1 
+| `female47` | 1 |  | 1 
+| `female48` | 1 |  | 1 
+| `female49` | 1 |  | 1 
+| `female5` | 1 |  | 5 
+| `female50` | 1 |  | 1 
+| `female51` | 1 |  | 1 
+| `female52` | 1 |  | 1 
+| `female53` | 1 |  | 1 
+| `female54` | 1 |  | 1 
+| `female55` | 1 |  | 1 
+| `female56` | 1 |  | 1 
+| `female57` | 1 |  | 1 
+| `female58` | 1 |  | 1 
+| `female59` | 1 |  | 1 
+| `female6` | 1 |  | 7 
+| `female60` | 1 |  | 1 
+| `female61` | 1 |  | 1 
+| `female62` | 1 |  | 1 
+| `female63` | 1 |  | 1 
+| `female64` | 1 |  | 1 
+| `female7` | 1 |  | 1 
+| `female8` | 1 |  | 1 
+| `female9` | 1 |  | 5 
 | `fextra_events` | 1 | `SE_CatWalk` |
 | `fiddle` | 1 |  |
 | `fight` | 5 |  |
-| `FightBonusRewards` | 1 |  |
-| `Fighter` | 2 |  |
-| `fighter_portrait` | 1 |  |
-| `fightercat` | 1 | `auto` |
+| `FightBonusRewards` | 1 |  | 1 
+| `Fighter` | 2 |  | 80 
+| `fighter_portrait` | 1 |  | 1 
+| `fightercat` | 1 | `auto` | 4 
 | `FightPhase` | 1 |  |
-| `FightRisk` | 1 |  |
-| `fights` | 2 |  |
-| `fights_skipped` | 3 |  |
+| `FightRisk` | 1 |  | 1 
+| `fights` | 2 |  | 4 
+| `fights_skipped` | 3 |  | 2 
 | `files` | 232 | `AlienBeast_attack.wav`, `AlienBeast_dying.wav`, `AlienBeast_dying_land.wav`, `AlienBeast_eat.wav`, `AlienBeast_howl.wav` |
 | `fill_jar` | 1 |  |
 | `find` | 1 |  |
 | `find_another_way` | 2 |  |
-| `finish_adventure` | 1 |  |
-| `finish_quest` | 1 | `JarOfChaos` |
-| `Fire` | 2 |  |
-| `fire` | 2 |  |
+| `finish_adventure` | 1 |  | 2 
+| `finish_quest` | 1 | `JarOfChaos` | 2 
+| `Fire` | 2 |  | 6 
+| `fire` | 2 |  | 6 
 | `FireExtinguish` | 1 |  |
 | `Firefly` | 1 |  |
 | `FireFull` | 1 |  |
-| `first_fight_intro` | 1 |  |
-| `first_house_boss_tomorrow` | 1 |  |
-| `first_house_hint_retired` | 1 |  |
+| `first_fight_intro` | 1 |  | 2 
+| `first_house_boss_tomorrow` | 1 |  | 2 
+| `first_house_hint_retired` | 1 |  | 2 
 | `first_turn` | 8 | `end_of_round`, `initiative`, `keep_turns`, `next_round`, `next_turn` |
 | `first_turn_is_main_turn` | 1 | `true` |
 | `fixed_chance` | 1 |  |
-| `flat_cast_bonus` | 1 |  |
+| `flat_cast_bonus` | 1 |  | 10 
 | `flat_chance` | 3 |  |
-| `flat_movement` | 1 | `true` |
+| `flat_movement` | 1 | `true` | 16 
 | `FloatingDebris` | 1 |  |
-| `Floor1_Large` | 1 |  |
-| `Floor1_Small` | 1 |  |
+| `Floor1_Large` | 1 |  | 2 
+| `Floor1_Small` | 1 |  | 2 
 | `Floor2_Large` | 1 |  |
 | `Floor2_Small` | 1 |  |
 | `Flop` | 1 |  |
 | `Flop2` | 1 |  |
-| `Flush` | 1 |  |
+| `Flush` | 1 |  | 4 
 | `flush_yourself` | 1 |  |
 | `FlushBubs` | 1 |  |
 | `FlushHost` | 1 |  |
-| `flushmaster` | 1 | `auto` |
+| `flushmaster` | 1 | `auto` | 3 
 | `FlushNettle` | 1 |  |
-| `Fly` | 1 |  |
-| `flying` | 10 | `true` |
-| `focused` | 1 |  |
-| `folder` | 20 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
+| `Fly` | 1 |  | 21 
+| `flying` | 10 | `true` | 2 
+| `focused` | 1 |  | 1 
+| `folder` | 20 | `alley`, `boneyard`, `bunker`, `caves`, `core` | 40 
 | `follow` | 1 |  |
 | `follow_character_tag` | 1 | `zaratana` |
-| `Food` | 2 |  |
-| `food` | 1 |  |
-| `food_bonus` | 1 |  |
-| `food_multiplier` | 1 |  |
-| `FoodBig` | 1 |  |
-| `FoodMedium` | 1 |  |
+| `Food` | 2 |  | 11 
+| `food` | 1 |  | 11 
+| `food_bonus` | 1 |  | 30 
+| `food_multiplier` | 1 |  | 16 
+| `FoodBig` | 1 |  | 4 
+| `FoodMedium` | 1 |  | 4 
 | `FoodMove` | 1 |  |
-| `FoodStorage` | 1 |  |
+| `FoodStorage` | 1 |  | 1 
 | `force` | 2 |  |
 | `force_ai_target_as_spell` | 2 | `true` |
 | `force_current_cat_use_ability` | 1 | `neck_NukeBonus_remote` |
@@ -5648,8 +5648,8 @@ Use this to spot any completely undocumented keys.
 | `force_no_hit_animation` | 1 | `true` |
 | `force_not_familiar` | 2 | `true` |
 | `force_start` | 1 |  |
-| `force_sticky` | 1 | `true` |
-| `forced_placement` | 1 | `true` |
+| `force_sticky` | 1 | `true` | 2 
+| `forced_placement` | 1 | `true` | 3 
 | `ForceTrample` | 1 |  |
 | `form` | 8 | `Angry`, `Big`, `Bishop`, `BlackHole`, `Bomb` |
 | `form_above` | 3 | `Default`, `Full`, `Standing` |
@@ -5662,39 +5662,39 @@ Use this to spot any completely undocumented keys.
 | `form_out` | 1 | `Out` |
 | `form_unwashed` | 1 | `Unwashed` |
 | `form_washed` | 1 | `Washed` |
-| `format` | 1 | `TEAMNAME_FORMAT` |
-| `format2` | 1 | `TEAMNAME_FORMAT2` |
+| `format` | 1 | `TEAMNAME_FORMAT` | 1 
+| `format2` | 1 | `TEAMNAME_FORMAT2` | 1 
 | `formchange` | 1 | `BigHolding`, `BigHoldingCat`, `SmallHolding`, `SmallHoldingCat` |
 | `formula` | 3 | `X`, `X*10`, `X+1`, `X-1`, `X-2` |
 | `forward_only` | 1 | `true` |
-| `forward_to_tips` | 3 |  |
-| `fragile` | 1 | `true` |
-| `frame` | 18 | `QuestUnlock_Amplifier`, `QuestUnlock_Cooler`, `QuestUnlock_Gristle`, `QuestUnlock_Head`, `QuestUnlock_Jar` |
-| `frame_label` | 1 | `AlienBeast`, `ColorlessCat_Tutorial`, `DrMangler`, `GirlDino`, `LightningElemental` |
+| `forward_to_tips` | 3 |  | 6 
+| `fragile` | 1 | `true` | 6 
+| `frame` | 18 | `QuestUnlock_Amplifier`, `QuestUnlock_Cooler`, `QuestUnlock_Gristle`, `QuestUnlock_Head`, `QuestUnlock_Jar` | 2212 
+| `frame_label` | 1 | `AlienBeast`, `ColorlessCat_Tutorial`, `DrMangler`, `GirlDino`, `LightningElemental` | 67 
 | `frame_range` | 1 |  |
-| `frank_caves_intro` | 1 |  |
-| `frank_ending` | 1 |  |
-| `frank_max1` | 1 |  |
-| `frank_max2` | 1 |  |
-| `frank_max3` | 1 |  |
-| `frank_max4` | 1 |  |
-| `frank_max5` | 1 |  |
-| `frank_max_intro` | 2 |  |
-| `frank_max_repeating` | 2 |  |
+| `frank_caves_intro` | 1 |  | 4 
+| `frank_ending` | 1 |  | 4 
+| `frank_max1` | 1 |  | 2 
+| `frank_max2` | 1 |  | 2 
+| `frank_max3` | 1 |  | 2 
+| `frank_max4` | 1 |  | 2 
+| `frank_max5` | 1 |  | 2 
+| `frank_max_intro` | 2 |  | 4 
+| `frank_max_repeating` | 2 |  | 4 
 | `frank_offscreen_to_right` | 1 |  |
 | `frank_right` | 1 |  |
 | `frank_right_to_offscreen` | 1 |  |
-| `frank_terminator2` | 1 |  |
-| `frank_tips_1` | 1 |  |
-| `frank_tips_10` | 1 |  |
-| `frank_tips_2` | 1 |  |
-| `frank_tips_3` | 1 |  |
-| `frank_tips_4` | 1 |  |
-| `frank_tips_5` | 1 |  |
-| `frank_tips_6` | 1 |  |
-| `frank_tips_7` | 1 |  |
-| `frank_tips_8` | 1 |  |
-| `frank_tips_9` | 1 |  |
+| `frank_terminator2` | 1 |  | 2 
+| `frank_tips_1` | 1 |  | 2 
+| `frank_tips_10` | 1 |  | 2 
+| `frank_tips_2` | 1 |  | 2 
+| `frank_tips_3` | 1 |  | 2 
+| `frank_tips_4` | 1 |  | 2 
+| `frank_tips_5` | 1 |  | 2 
+| `frank_tips_6` | 1 |  | 2 
+| `frank_tips_7` | 1 |  | 2 
+| `frank_tips_8` | 1 |  | 2 
+| `frank_tips_9` | 1 |  | 2 
 | `free` | 2 | `false` |
 | `friction` | 2 |  |
 | `friction_end` | 2 |  |
@@ -5704,7 +5704,7 @@ Use this to spot any completely undocumented keys.
 | `Full` | 1 |  |
 | `full_repair` | 1 | `true` |
 | `full_size` | 1 | `true` |
-| `fully_complete_difficulty` | 1 |  |
+| `fully_complete_difficulty` | 1 |  | 8 
 | `Furniture` | 1 |  |
 | `FurniturePiece_PickedUpFromAir` | 1 |  |
 | `FurniturePiece_PickedUpFromDrawer` | 1 |  |
@@ -5713,23 +5713,23 @@ Use this to spot any completely undocumented keys.
 | `FurniturePiece_PlacedInDrawer` | 1 |  |
 | `FurniturePiece_PlacedInRoom` | 1 |  |
 | `Fury` | 8 |  |
-| `future` | 3 | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` |
-| `futurebot` | 1 |  |
-| `FutureUnlocked` | 1 |  |
+| `future` | 3 | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` | 16 
+| `futurebot` | 1 |  | 4 
+| `FutureUnlocked` | 1 |  | 2 
 | `GainDivineShield` | 1 |  |
 | `GainMana` | 1 |  |
 | `GainShield` | 1 |  |
-| `gambit` | 1 | `auto` |
+| `gambit` | 1 | `auto` | 3 
 | `gather_questitem_info` | 1 | `fail`, `newest`, `success` |
 | `ge` | 3 |  |
-| `gender` | 1 | `any`, `male` |
-| `general_common` | 1 | `auto` |
-| `general_rare` | 1 | `auto` |
-| `general_uncommon` | 1 | `auto` |
-| `general_very_rare` | 1 | `auto` |
+| `gender` | 1 | `any`, `male` | 17 
+| `general_common` | 1 | `auto` | 2 
+| `general_rare` | 1 | `auto` | 2 
+| `general_uncommon` | 1 | `auto` | 2 
+| `general_very_rare` | 1 | `auto` | 2 
 | `generate_beanies_quest` | 1 | `intro`, `main_pool` |
-| `GenFlag_Boss_Spewer` | 1 |  |
-| `GenFlag_Boss_Stacy` | 1 |  |
+| `GenFlag_Boss_Spewer` | 1 |  | 2 
+| `GenFlag_Boss_Stacy` | 1 |  | 2 
 | `get` | 8 | `npc_reward`, `sidequest_fail`, `sidequest_reward` |
 | `get_random_furniture_piece` | 1 |  |
 | `get_token` | 1 | `can_still_use_attack`, `can_still_use_attack_didntspell`, `ranged_cat_attack`, `use_attack_after_used_weapon`, `use_weapon` |
@@ -5737,22 +5737,22 @@ Use this to spot any completely undocumented keys.
 | `gift_item` | 1 | `TinksBow`, `disorder_needle` |
 | `gift_item_from_pool` | 1 | `parasites` |
 | `give_parasite` | 1 |  |
-| `global_objects` | 1 |  |
+| `global_objects` | 1 |  | 22 
 | `global_particles` | 1 |  |
-| `global_passives` | 2 |  |
+| `global_passives` | 2 |  | 8 
 | `global_tags` | 2 |  |
 | `GlobalEnemyAutoRevive` | 1 |  |
 | `glow` | 5 |  |
-| `GlowingSeed` | 1 |  |
+| `GlowingSeed` | 1 |  | 2 
 | `go_around` | 4 |  |
-| `GoldenEgg` | 1 |  |
-| `gone` | 1 |  |
-| `good` | 41 | `false`, `true` |
-| `grant_ability` | 1 | `Rest` |
-| `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` |
+| `GoldenEgg` | 1 |  | 2 
+| `gone` | 1 |  | 2 
+| `good` | 41 | `false`, `true` | 8 
+| `grant_ability` | 1 | `Rest` | 2 
+| `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` | 5218 
 | `Grappling` | 1 |  |
-| `Grass` | 1 |  |
-| `GrassTile` | 1 |  |
+| `Grass` | 1 |  | 2 
+| `GrassTile` | 1 |  | 4 
 | `Gravity` | 1 |  |
 | `groups` | 1 |  |
 | `grow_ability` | 1 | `MotherTumorGrow` |
@@ -5762,43 +5762,43 @@ Use this to spot any completely undocumented keys.
 | `Guarding` | 1 |  |
 | `hack` | 1 |  |
 | `HalfDead` | 1 |  |
-| `Happy` | 220 |  |
-| `happy` | 1 |  |
-| `happy_eyes_closed` | 1 |  |
-| `happy_left` | 1 |  |
+| `Happy` | 220 |  | 5 
+| `happy` | 1 |  | 5 
+| `happy_eyes_closed` | 1 |  | 1 
+| `happy_left` | 1 |  | 1 
 | `HAPPY_PARAMS` | 220 |  |
-| `happy_up_eyes_closed` | 1 |  |
-| `hard` | 22 |  |
-| `hard_initial` | 2 |  |
-| `hardblink` | 1 |  |
-| `HardPathUnlocked` | 2 |  |
+| `happy_up_eyes_closed` | 1 |  | 1 
+| `hard` | 22 |  | 42 
+| `hard_initial` | 2 |  | 4 
+| `hardblink` | 1 |  | 1 
+| `HardPathUnlocked` | 2 |  | 4 
 | `Harpy` | 1 |  |
-| `HarpysClaw` | 1 |  |
+| `HarpysClaw` | 1 |  | 2 
 | `has_parasite` | 1 | `true` |
 | `has_token` | 12 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_HasTakenNeedle`, `AdventureToken_Mirage1`, `AdventureToken_Mirage2` |
 | `HasCat` | 3 |  |
 | `HasDeadCat` | 1 |  |
 | `HasRock` | 1 |  |
-| `head` | 11 | `BabyHair`, `Banana`, `BulbHead`, `CoinBag`, `CoinBag_Terminator` |
+| `head` | 11 | `BabyHair`, `Banana`, `BulbHead`, `CoinBag`, `CoinBag_Terminator` | 784 
 | `head_drop` | 1 | `MD_HeadDrop` |
-| `head_start` | 1 |  |
+| `head_start` | 1 |  | 2 
 | `Headless` | 1 |  |
-| `heal_ally` | 1 |  |
-| `heal_enemy` | 1 |  |
-| `heal_self` | 1 |  |
+| `heal_ally` | 1 |  | 64 
+| `heal_enemy` | 1 |  | 64 
+| `heal_self` | 1 |  | 64 
 | `HealAlliesEachTurn` | 1 |  |
-| `health` | 26 |  |
-| `Health` | 1 |  |
+| `health` | 26 |  | 67 
+| `Health` | 1 |  | 67 
 | `health_percent` | 2 |  |
 | `health_threshold` | 3 |  |
 | `heaviestMelee` | 1 |  |
 | `heavyMelee` | 1 |  |
-| `height` | 3 |  |
+| `height` | 3 |  | 16 
 | `held_coins` | 6 |  |
 | `hidden` | 8 | `false`, `true` |
 | `hidden_tag` | 12 | `angeljunk`, `bird`, `bloateye`, `bungawarrior`, `cavefamily` |
 | `hidden_tags` | 1 | `terminator_mini` |
-| `hide_text` | 4 |  |
+| `hide_text` | 4 |  | 8 
 | `hint_can_target_empty` | 2 | `false`, `true` |
 | `hint_can_target_pickups` | 2 | `true` |
 | `hint_can_target_static` | 1 | `true` |
@@ -5806,11 +5806,11 @@ Use this to spot any completely undocumented keys.
 | `Hint_CrackedVisuals` | 1 |  |
 | `Hint_CrackedVisuals2` | 1 |  |
 | `Hint_CrackedVisuals3` | 1 |  |
-| `hint_destination` | 1 | `boneyard`, `caves`, `core`, `dimensionx`, `endoftime` |
+| `hint_destination` | 1 | `boneyard`, `caves`, `core`, `dimensionx`, `endoftime` | 32 
 | `hint_no_corpse` | 1 | `true` |
 | `hint_persistent_elements` | 1 |  |
-| `hint_prerequisite_flag` | 1 | `mapflag_BothObelisksUnlocked`, `mapflag_DimensionXUnlocked`, `mapflag_MeatWorldUnlocked`, `mapflag_MeatWorldUnlockedFull` |
-| `Hiss` | 219 |  |
+| `hint_prerequisite_flag` | 1 | `mapflag_BothObelisksUnlocked`, `mapflag_DimensionXUnlocked`, `mapflag_MeatWorldUnlocked`, `mapflag_MeatWorldUnlockedFull` | 10 
+| `Hiss` | 219 |  | 2 
 | `HISS_PARAMS` | 220 |  |
 | `Hissx` | 1 |  |
 | `Hit` | 220 |  |
@@ -5819,30 +5819,30 @@ Use this to spot any completely undocumented keys.
 | `Holy` | 2 | `MegaGuppy_TransformHoly` |
 | `holy` | 1 |  |
 | `HolyDamageBlessing` | 1 |  |
-| `home` | 2 |  |
+| `home` | 2 |  | 2 
 | `hot` | 1 |  |
-| `House1` | 1 |  |
-| `House2` | 1 |  |
-| `House3` | 1 |  |
-| `house_intro` | 1 |  |
-| `house_kitten_box` | 1 |  |
-| `house_pass_day` | 1 |  |
-| `house_pass_day2` | 1 |  |
-| `house_pipe` | 1 |  |
-| `house_retired_cat_box` | 1 |  |
+| `House1` | 1 |  | 2 
+| `House2` | 1 |  | 2 
+| `House3` | 1 |  | 2 
+| `house_intro` | 1 |  | 2 
+| `house_kitten_box` | 1 |  | 2 
+| `house_pass_day` | 1 |  | 2 
+| `house_pass_day2` | 1 |  | 2 
+| `house_pipe` | 1 |  | 2 
+| `house_retired_cat_box` | 1 |  | 2 
 | `house_shop` | 3 | `true` |
-| `house_starred_box` | 1 |  |
-| `house_strays` | 1 |  |
+| `house_starred_box` | 1 |  | 2 
+| `house_strays` | 1 |  | 2 
 | `house_upgrade` | 1 | `LargeHouse`, `LargeHouse_Floor2Large`, `LargeHouse_Floor2Small`, `MediumHouse`, `MediumHouse_SmallRoom` |
-| `house_upgrade_4throom` | 2 |  |
-| `house_upgrade_attic` | 2 |  |
-| `house_upgrade_basement` | 1 |  |
-| `house_upgrade_basement2` | 1 |  |
-| `house_upgrade_basement3` | 1 |  |
-| `house_upgrade_basement4` | 1 |  |
-| `house_upgrade_basement5` | 1 |  |
-| `house_upgrade_largehouse` | 2 |  |
-| `house_upgrade_mediumhouse` | 2 |  |
+| `house_upgrade_4throom` | 2 |  | 4 
+| `house_upgrade_attic` | 2 |  | 4 
+| `house_upgrade_basement` | 1 |  | 2 
+| `house_upgrade_basement2` | 1 |  | 2 
+| `house_upgrade_basement3` | 1 |  | 2 
+| `house_upgrade_basement4` | 1 |  | 2 
+| `house_upgrade_basement5` | 1 |  | 2 
+| `house_upgrade_largehouse` | 2 |  | 4 
+| `house_upgrade_mediumhouse` | 2 |  | 4 
 | `HouseButton_Hover` | 1 |  |
 | `HouseCatVolume_Button_Left_Click` | 1 |  |
 | `HouseCatVolume_Button_Left_Hover` | 1 |  |
@@ -5855,58 +5855,58 @@ Use this to spot any completely undocumented keys.
 | `hp` | 1 |  |
 | `HumanDead` | 1 |  |
 | `HummingBird` | 1 |  |
-| `Hunter` | 2 |  |
-| `hunter_portrait` | 1 |  |
-| `huntercat` | 1 | `auto` |
-| `ice` | 2 |  |
-| `Ice` | 1 |  |
-| `iceage` | 2 | `AREA_NAME_ICEAGE`, `mapflag_IceAgeUnlocked` |
-| `IceAgeUnlocked` | 1 |  |
-| `iceelemental` | 1 | `auto` |
-| `icon` | 2 | `DejaVu2`, `DejaVu3` |
+| `Hunter` | 2 |  | 68 
+| `hunter_portrait` | 1 |  | 1 
+| `huntercat` | 1 | `auto` | 2 
+| `ice` | 2 |  | 7 
+| `Ice` | 1 |  | 7 
+| `iceage` | 2 | `AREA_NAME_ICEAGE`, `mapflag_IceAgeUnlocked` | 14 
+| `IceAgeUnlocked` | 1 |  | 2 
+| `iceelemental` | 1 | `auto` | 2 
+| `icon` | 2 | `DejaVu2`, `DejaVu3` | 4 
 | `icon_damage_display` | 4 | `?` |
 | `icon_damage_display_eq` | 5 | `1+bonus_spell_damage_display`, `10+bonus_melee_ability_damage`, `3+bonus_melee_ability_damage`, `X*10`, `item_aux` |
 | `icon_damage_display_suffix` | 2 | `x10`, `x2` |
 | `icon_damage_type` | 2 | `magic`, `physical` |
-| `icon_frame` | 3 |  |
-| `icon_hint` | 1 | `ability_syringe`, `passive_syringe` |
+| `icon_frame` | 3 |  | 128 
+| `icon_hint` | 1 | `ability_syringe`, `passive_syringe` | 6 
 | `icon_ready` | 1 |  |
 | `icon_shell_frame` | 12 | `attack`, `big_damage`, `damage`, `multihit_attack`, `nodamage` |
-| `id` | 3 | `Attic`, `Wind` |
-| `ID` | 1 | `empty`, `for`, `is`, `reserved` |
+| `id` | 3 | `Attic`, `Wind` | 16 
+| `ID` | 1 | `empty`, `for`, `is`, `reserved` | 16 
 | `idle` | 10 |  |
-| `ignore` | 13 |  |
+| `ignore` | 13 |  | 2 
 | `ignore_during_movement` | 1 | `true` |
 | `ignore_if_str_aux_equals` | 1 | `ModelingClay_Default` |
 | `ignore_mouseover` | 1 | `true` |
 | `ignore_self` | 1 | `true` |
 | `ignore_tagged_sources` | 1 | `megadino` |
 | `ignore_tiles` | 1 | `true` |
-| `image` | 2 | `empty.png` |
-| `image_tint` | 2 | `blue`, `red` |
+| `image` | 2 | `empty.png` | 2 
+| `image_tint` | 2 | `blue`, `red` | 3 
 | `immediate` | 5 | `false`, `true` |
 | `inanimate` | 4 | `true` |
 | `inanimate_can_receive_specific_statuses` | 1 |  |
-| `include` | 19 | `standard_nodes.gon`, `voice_template.gon` |
+| `include` | 19 | `standard_nodes.gon`, `voice_template.gon` | 38 
 | `include_coins` | 1 | `true` |
 | `include_passives` | 1 | `true` |
 | `include_spells` | 4 | `true` |
-| `increment_savefile_counter` | 1 | `GameStat_CountNukeQuestCompletions` |
-| `indestructible` | 2 | `true` |
-| `index` | 1 |  |
+| `increment_savefile_counter` | 1 | `GameStat_CountNukeQuestCompletions` | 2 
+| `indestructible` | 2 | `true` | 40 
+| `index` | 1 |  | 9 
 | `infcantrip` | 22 | `false`, `true` |
-| `infestedduo` | 1 | `auto` |
+| `infestedduo` | 1 | `auto` | 2 
 | `infinite` | 1 |  |
 | `inherit_elite_buffs` | 2 | `false` |
 | `inherit_faction` | 6 | `false`, `true` |
-| `inherit_speed` | 1 |  |
+| `inherit_speed` | 1 |  | 10 
 | `inherit_velocity` | 1 |  |
 | `initial_charge` | 1 |  |
 | `initial_cooldown` | 1 |  |
-| `initial_cutscene_day` | 1 | `kaiju_fight`, `moonboss_intro`, `pyro_intro` |
-| `initial_cutscene_night` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `hitler_intro`, `t1000_intro` |
-| `initial_form` | 7 | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` |
-| `initial_health` | 5 |  |
+| `initial_cutscene_day` | 1 | `kaiju_fight`, `moonboss_intro`, `pyro_intro` | 3 
+| `initial_cutscene_night` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `hitler_intro`, `t1000_intro` | 6 
+| `initial_form` | 7 | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` | 6 
+| `initial_health` | 5 |  | 1 
 | `InitialPhase` | 1 |  |
 | `initiative` | 14 | `keep_turns_end_turn` |
 | `Injury_Bleed` | 1 |  |
@@ -5920,23 +5920,23 @@ Use this to spot any completely undocumented keys.
 | `Injury_Poison` | 1 |  |
 | `Injury_TornTendon` | 1 |  |
 | `innate` | 1 |  |
-| `innate_items` | 1 |  |
-| `innate_passives` | 1 |  |
-| `insane` | 1 |  |
+| `innate_items` | 1 |  | 4 
+| `innate_passives` | 1 |  | 8 
+| `insane` | 1 |  | 1 
 | `Insane_Ceiling` | 1 |  |
 | `Insane_Ground` | 1 |  |
 | `inspect` | 5 |  |
-| `int` | 41 | `aux` |
+| `int` | 41 | `aux` | 401 
 | `intcheck` | 1 |  |
 | `intelligence` | 20 |  |
 | `intensity` | 6 |  |
-| `interstitial_bg_frame` | 1 | `attic`, `room1`, `room2`, `room3`, `room4` |
+| `interstitial_bg_frame` | 1 | `attic`, `room1`, `room2`, `room3`, `room4` | 6 
 | `intimidation` | 1 |  |
-| `intro` | 31 | `alley/eatinrats_intro.ogg`, `boneyard/boneyard_intro.ogg`, `bunker/bunker_intro.ogg`, `caves/caves_intro.ogg`, `chaos/chaos_boss_intro.ogg` |
+| `intro` | 31 | `alley/eatinrats_intro.ogg`, `boneyard/boneyard_intro.ogg`, `bunker/bunker_intro.ogg`, `caves/caves_intro.ogg`, `chaos/chaos_boss_intro.ogg` | 216 
 | `Intro_CatSelected` | 1 |  |
 | `Intro_LabDisposal` | 1 |  |
 | `Intro_WakingUp` | 1 |  |
-| `introduce_hard_path` | 1 |  |
+| `introduce_hard_path` | 1 |  | 2 
 | `intros` | 1 |  |
 | `InventoryButton_Collar_Click` | 1 |  |
 | `InventoryButton_Collar_Hover` | 1 |  |
@@ -5951,7 +5951,7 @@ Use this to spot any completely undocumented keys.
 | `InventoryButton_weapon_Click` | 1 |  |
 | `InventoryButton_weapon_Hover` | 1 |  |
 | `investigate` | 2 |  |
-| `is_3D` | 1 | `false` |
+| `is_3D` | 1 | `false` | 1 
 | `is_basic_attack` | 4 | `false`, `true` |
 | `is_chapter` | 2 |  |
 | `is_dying_animation` | 3 | `true` |
@@ -5964,32 +5964,32 @@ Use this to spot any completely undocumented keys.
 | `itchies` | 1 |  |
 | `item` | 2 | `EstusFlask_Full`, `GallonOfWater`, `WaterBottle_Full` |
 | `Item` | 2 |  |
-| `item_chance` | 1 |  |
-| `item_groups` | 3 |  |
-| `item_rarity_costs` | 2 |  |
-| `jack_begin_accepting_cats` | 1 |  |
-| `jack_desert_intro` | 1 |  |
-| `Jack_Gainaltfurniture` | 1 |  |
-| `jack_introduction` | 1 |  |
-| `jack_max1` | 1 |  |
-| `jack_max2` | 1 |  |
-| `jack_max3` | 1 |  |
-| `jack_max4` | 1 |  |
-| `jack_max5` | 1 |  |
-| `jack_max_intro` | 2 |  |
-| `jack_max_repeating` | 2 |  |
+| `item_chance` | 1 |  | 72 
+| `item_groups` | 3 |  | 24 
+| `item_rarity_costs` | 2 |  | 9 
+| `jack_begin_accepting_cats` | 1 |  | 2 
+| `jack_desert_intro` | 1 |  | 4 
+| `Jack_Gainaltfurniture` | 1 |  | 2 
+| `jack_introduction` | 1 |  | 2 
+| `jack_max1` | 1 |  | 2 
+| `jack_max2` | 1 |  | 2 
+| `jack_max3` | 1 |  | 2 
+| `jack_max4` | 1 |  | 2 
+| `jack_max5` | 1 |  | 2 
+| `jack_max_intro` | 2 |  | 4 
+| `jack_max_repeating` | 2 |  | 4 
 | `jack_offscreen_to_right` | 1 |  |
 | `jack_right` | 1 |  |
 | `jack_right_to_offscreen` | 1 |  |
-| `jack_shopupgrade1` | 2 |  |
-| `jack_shopupgrade2` | 2 |  |
-| `jack_shopupgrade3` | 2 |  |
-| `jack_shopupgrade4` | 2 |  |
-| `jack_zara` | 1 |  |
-| `Jester` | 1 |  |
-| `jester_portrait` | 1 |  |
-| `jestercat` | 3 | `auto` |
-| `Johnny` | 1 |  |
+| `jack_shopupgrade1` | 2 |  | 4 
+| `jack_shopupgrade2` | 2 |  | 4 
+| `jack_shopupgrade3` | 2 |  | 4 
+| `jack_shopupgrade4` | 2 |  | 4 
+| `jack_zara` | 1 |  | 2 
+| `Jester` | 1 |  | 32 
+| `jester_portrait` | 1 |  | 1 
+| `jestercat` | 3 | `auto` | 8 
+| `Johnny` | 1 |  | 1 
 | `johnny_idle` | 1 |  |
 | `JohnnyBubs` | 1 |  |
 | `JohnnyHost` | 1 |  |
@@ -6001,21 +6001,21 @@ Use this to spot any completely undocumented keys.
 | `jump` | 1 |  |
 | `jump_over` | 1 |  |
 | `JumpAttackLeaveBehind` | 1 | `BungaThrone` |
-| `junkyard` | 2 | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` |
-| `JunkyardUnlocked` | 1 |  |
-| `jurassic` | 3 | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` |
-| `JurassicUnlocked` | 1 |  |
+| `junkyard` | 2 | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` | 12 
+| `JunkyardUnlocked` | 1 |  | 2 
+| `jurassic` | 3 | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` | 14 
+| `JurassicUnlocked` | 1 |  | 2 
 | `JustInCaseTrample` | 3 |  |
 | `keep_going` | 1 |  |
 | `keeper` | 1 |  |
 | `key` | 3 | `EtherSoakedRag`, `JewelOfDrog`, `TaintedOffering`, `TaintedOffering2`, `gamewin` |
-| `keyword_tooltips` | 15 |  |
-| `kill_ally` | 1 |  |
-| `kill_enemy` | 1 |  |
+| `keyword_tooltips` | 15 |  | 62 
+| `kill_ally` | 1 |  | 64 
+| `kill_enemy` | 1 |  | 64 
 | `kill_required` | 10 | `false`, `true` |
 | `KillEnemyOfTypeAtBattleStart` | 2 |  |
 | `kills` | 1 |  |
-| `kind` | 15 | `face`, `head`, `modifier`, `neck`, `trinket` |
+| `kind` | 15 | `face`, `head`, `modifier`, `neck`, `trinket` | 2212 
 | `kiss` | 5 |  |
 | `kiss_meat` | 1 |  |
 | `knife` | 1 |  |
@@ -6024,43 +6024,43 @@ Use this to spot any completely undocumented keys.
 | `knockback_immune` | 6 | `true` |
 | `knockback_mode` | 29 | `back_orientation`, `character_to_target`, `character_to_tile`, `character_to_tile_4snap`, `none` |
 | `knockback_modifier` | 1 | `rotate_cw` |
-| `lab` | 2 | `AREA_NAME_LAB`, `mapflag_LabUnlocked` |
-| `label` | 26 | `1 injury`, `A`, `B`, `C`, `D` |
+| `lab` | 2 | `AREA_NAME_LAB`, `mapflag_LabUnlocked` | 14 
+| `label` | 26 | `1 injury`, `A`, `B`, `C`, `D` | 16 
 | `large` | 19 |  |
 | `LargeAttic` | 1 |  |
 | `LargeBirdPool` | 1 |  |
-| `LargeHouse` | 1 |  |
-| `LargeHouse_Floor2Large` | 1 |  |
-| `LargeHouse_Floor2Small` | 1 |  |
+| `LargeHouse` | 1 |  | 2 
+| `LargeHouse_Floor2Large` | 1 |  | 2 
+| `LargeHouse_Floor2Small` | 1 |  | 2 
 | `last_turn_is_main_turn` | 3 | `true` |
-| `LastHit` | 1 |  |
-| `lava` | 1 |  |
-| `lck` | 40 | `aux` |
+| `LastHit` | 1 |  | 2 
+| `lava` | 1 |  | 2 
+| `lck` | 40 | `aux` | 351 
 | `le` | 1 |  |
-| `lead_time` | 1 |  |
+| `lead_time` | 1 |  | 9 
 | `LeapClose` | 1 |  |
 | `learned` | 1 |  |
-| `Leave` | 2 | `CherubimLeave`, `LELeave` |
+| `Leave` | 2 | `CherubimLeave`, `LELeave` | 16 
 | `leave_it_in` | 1 |  |
 | `LeaveBehind` | 3 | `Bait` |
-| `leftear` | 1 |  |
-| `lefteye` | 1 |  |
-| `lefteyebrow` | 1 |  |
+| `leftear` | 1 |  | 374 
+| `lefteye` | 1 |  | 396 
+| `lefteyebrow` | 1 |  | 350 
 | `leg` | 1 |  |
-| `leg1` | 5 |  |
-| `leg2` | 4 |  |
+| `leg1` | 5 |  | 348 
+| `leg2` | 4 |  | 344 
 | `leg_leave` | 1 | `MD_LegLeave` |
 | `leg_return` | 1 | `MD_LegReturn` |
-| `legacy_quest` | 1 | `true` |
+| `legacy_quest` | 1 | `true` | 34 
 | `legacy_savekey` | 1 | `Legacy_Marshmallow_StolenCatID` |
 | `legs` | 4 |  |
-| `lenny` | 1 | `auto` |
+| `lenny` | 1 | `auto` | 2 
 | `Lenny_HereKitty` | 1 |  |
-| `level` | 17 | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` |
+| `level` | 17 | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` | 33 
 | `level_display` | 1 | `max` |
-| `level_up_didnt_select_sunburn` | 1 |  |
-| `level_up_intro` | 1 |  |
-| `level_up_selected_sunburn` | 1 |  |
+| `level_up_didnt_select_sunburn` | 1 |  | 2 
+| `level_up_intro` | 1 |  | 2 
+| `level_up_selected_sunburn` | 1 |  | 2 
 | `levelup` | 1 |  |
 | `LevelUp` | 1 |  |
 | `Levelup_Boon_Click` | 1 |  |
@@ -6088,7 +6088,7 @@ Use this to spot any completely undocumented keys.
 | `Lighting` | 1 |  |
 | `lightning` | 2 |  |
 | `lightning_fx` | 1 | `true` |
-| `lightningelemental` | 1 | `auto` |
+| `lightningelemental` | 1 | `auto` | 2 
 | `limbs` | 1 |  |
 | `limit` | 3 | `actchooser`, `channel` |
 | `limit_amount` | 3 | `amount`, `at`, `can`, `limit`, `of` |
@@ -6098,28 +6098,28 @@ Use this to spot any completely undocumented keys.
 | `Lit` | 1 |  |
 | `live_bounds` | 2 |  |
 | `lock_controls` | 6 |  |
-| `lock_item_slot` | 1 |  |
+| `lock_item_slot` | 1 |  | 32 
 | `lock_mouse` | 1 |  |
 | `lock_orientation` | 4 |  |
-| `locked` | 10 | `false`, `true` |
+| `locked` | 10 | `false`, `true` | 2 
 | `look_at_offset` | 1 |  |
 | `looks` | 1 |  |
 | `loot` | 8 |  |
 | `loot_heart` | 1 |  |
 | `LoseMana` | 1 |  |
-| `LostSoul` | 1 |  |
+| `LostSoul` | 1 |  | 2 
 | `low_gravity_boostable` | 2 | `false`, `true` |
 | `low_health_character_threshold` | 2 | `item_aux` |
-| `low_on_food` | 1 |  |
+| `low_on_food` | 1 |  | 2 
 | `lt` | 1 |  |
 | `luck` | 14 |  |
 | `luck_increase` | 1 |  |
-| `mad` | 1 |  |
-| `Mage` | 2 |  |
-| `mage_portrait` | 1 |  |
-| `magecat` | 1 | `auto` |
-| `MagicSeed` | 1 |  |
-| `main` | 40 |  |
+| `mad` | 1 |  | 15 
+| `Mage` | 2 |  | 70 
+| `mage_portrait` | 1 |  | 1 
+| `magecat` | 1 | `auto` | 4 
+| `MagicSeed` | 1 |  | 2 
+| `main` | 40 |  | 214 
 | `main_pool` | 1 |  |
 | `main_turn_only` | 5 | `true` |
 | `MainMenu_Button_Meow_Hover` | 1 |  |
@@ -6135,160 +6135,160 @@ Use this to spot any completely undocumented keys.
 | `mainturn_pattern` | 7 |  |
 | `major_class_checkmarks` | 1 |  |
 | `makeup` | 1 |  |
-| `male1` | 1 |  |
-| `male10` | 1 |  |
-| `male100` | 1 |  |
-| `male101` | 1 |  |
-| `male102` | 1 |  |
-| `male103` | 1 |  |
-| `male105` | 1 |  |
-| `male106` | 1 |  |
-| `male107` | 1 |  |
-| `male108` | 1 |  |
-| `male109` | 1 |  |
-| `male11` | 1 |  |
-| `male110` | 1 |  |
-| `male111` | 1 |  |
-| `male112` | 1 |  |
-| `male113` | 1 |  |
-| `male114` | 1 |  |
-| `male115` | 1 |  |
-| `male116` | 1 |  |
-| `male117` | 1 |  |
-| `male118` | 1 |  |
-| `male119` | 1 |  |
-| `male12` | 1 |  |
-| `male120` | 1 |  |
-| `male122` | 1 |  |
-| `male123` | 1 |  |
-| `male124` | 1 |  |
-| `male125` | 1 |  |
-| `male126` | 1 |  |
-| `male127` | 1 |  |
-| `male128` | 1 |  |
-| `male129` | 1 |  |
-| `male13` | 1 |  |
-| `male130` | 1 |  |
-| `male131` | 1 |  |
-| `male132` | 1 |  |
-| `male133` | 1 |  |
-| `male134` | 1 |  |
-| `male135` | 1 |  |
-| `male136` | 1 |  |
-| `male137` | 1 |  |
-| `male138` | 1 |  |
-| `male139` | 1 |  |
-| `male14` | 1 |  |
-| `male140` | 1 |  |
-| `male141` | 1 |  |
-| `male142` | 1 |  |
-| `male15` | 1 |  |
-| `male16` | 1 |  |
-| `male17` | 1 |  |
-| `male18` | 1 |  |
-| `male19` | 1 |  |
-| `male2` | 1 |  |
-| `male20` | 1 |  |
-| `male21` | 1 |  |
-| `male22` | 1 |  |
-| `male23` | 1 |  |
-| `male24` | 1 |  |
-| `male25` | 1 |  |
-| `male26` | 1 |  |
-| `male27` | 1 |  |
-| `male28` | 1 |  |
-| `male29` | 1 |  |
-| `male3` | 1 |  |
-| `male30` | 1 |  |
-| `male31` | 1 |  |
-| `male32` | 1 |  |
-| `male33` | 1 |  |
-| `male34` | 1 |  |
-| `male35` | 1 |  |
-| `male36` | 1 |  |
-| `male37` | 1 |  |
-| `male38` | 1 |  |
-| `male39` | 1 |  |
-| `male4` | 1 |  |
-| `male40` | 1 |  |
-| `male41` | 1 |  |
-| `male42` | 1 |  |
-| `male43` | 1 |  |
-| `male44` | 1 |  |
-| `male45` | 1 |  |
-| `male46` | 1 |  |
-| `male47` | 1 |  |
-| `male48` | 1 |  |
-| `male49` | 1 |  |
-| `male5` | 1 |  |
-| `male50` | 1 |  |
-| `male51` | 1 |  |
-| `male52` | 1 |  |
-| `male53` | 1 |  |
-| `male54` | 1 |  |
-| `male55` | 1 |  |
-| `male56` | 1 |  |
-| `male57` | 1 |  |
-| `male58` | 1 |  |
-| `male59` | 1 |  |
-| `male6` | 1 |  |
-| `male60` | 1 |  |
-| `male61` | 1 |  |
-| `male62` | 1 |  |
-| `male63` | 1 |  |
-| `male64` | 1 |  |
-| `male65` | 1 |  |
-| `male66` | 1 |  |
-| `male67` | 1 |  |
-| `male68` | 1 |  |
-| `male69` | 1 |  |
-| `male7` | 1 |  |
-| `male70` | 1 |  |
-| `male71` | 1 |  |
-| `male72` | 1 |  |
-| `male73` | 1 |  |
-| `male74` | 1 |  |
-| `male75` | 1 |  |
-| `male76` | 1 |  |
-| `male77` | 1 |  |
-| `male78` | 1 |  |
-| `male79` | 1 |  |
-| `male8` | 1 |  |
-| `male80` | 1 |  |
-| `male81` | 1 |  |
-| `male82` | 1 |  |
-| `male83` | 1 |  |
-| `male84` | 1 |  |
-| `male85` | 1 |  |
-| `male86` | 1 |  |
-| `male87` | 1 |  |
-| `male88` | 1 |  |
-| `male89` | 1 |  |
-| `male9` | 1 |  |
-| `male90` | 1 |  |
-| `male91` | 1 |  |
-| `male92` | 1 |  |
-| `male93` | 1 |  |
-| `male94` | 1 |  |
-| `male95` | 1 |  |
-| `male96` | 1 |  |
-| `male97` | 1 |  |
-| `male98` | 1 |  |
-| `male99` | 1 |  |
-| `mamamaggot` | 1 | `auto` |
-| `mammothbaby` | 1 |  |
+| `male1` | 1 |  | 23 
+| `male10` | 1 |  | 1 
+| `male100` | 1 |  | 1 
+| `male101` | 1 |  | 1 
+| `male102` | 1 |  | 3 
+| `male103` | 1 |  | 1 
+| `male105` | 1 |  | 1 
+| `male106` | 1 |  | 1 
+| `male107` | 1 |  | 1 
+| `male108` | 1 |  | 1 
+| `male109` | 1 |  | 1 
+| `male11` | 1 |  | 5 
+| `male110` | 1 |  | 1 
+| `male111` | 1 |  | 1 
+| `male112` | 1 |  | 1 
+| `male113` | 1 |  | 1 
+| `male114` | 1 |  | 1 
+| `male115` | 1 |  | 1 
+| `male116` | 1 |  | 1 
+| `male117` | 1 |  | 1 
+| `male118` | 1 |  | 1 
+| `male119` | 1 |  | 1 
+| `male12` | 1 |  | 1 
+| `male120` | 1 |  | 1 
+| `male122` | 1 |  | 1 
+| `male123` | 1 |  | 1 
+| `male124` | 1 |  | 1 
+| `male125` | 1 |  | 1 
+| `male126` | 1 |  | 1 
+| `male127` | 1 |  | 1 
+| `male128` | 1 |  | 1 
+| `male129` | 1 |  | 1 
+| `male13` | 1 |  | 5 
+| `male130` | 1 |  | 1 
+| `male131` | 1 |  | 1 
+| `male132` | 1 |  | 1 
+| `male133` | 1 |  | 1 
+| `male134` | 1 |  | 1 
+| `male135` | 1 |  | 1 
+| `male136` | 1 |  | 1 
+| `male137` | 1 |  | 1 
+| `male138` | 1 |  | 1 
+| `male139` | 1 |  | 1 
+| `male14` | 1 |  | 1 
+| `male140` | 1 |  | 1 
+| `male141` | 1 |  | 1 
+| `male142` | 1 |  | 1 
+| `male15` | 1 |  | 1 
+| `male16` | 1 |  | 1 
+| `male17` | 1 |  | 1 
+| `male18` | 1 |  | 1 
+| `male19` | 1 |  | 7 
+| `male2` | 1 |  | 19 
+| `male20` | 1 |  | 1 
+| `male21` | 1 |  | 3 
+| `male22` | 1 |  | 1 
+| `male23` | 1 |  | 1 
+| `male24` | 1 |  | 1 
+| `male25` | 1 |  | 1 
+| `male26` | 1 |  | 3 
+| `male27` | 1 |  | 1 
+| `male28` | 1 |  | 1 
+| `male29` | 1 |  | 7 
+| `male3` | 1 |  | 13 
+| `male30` | 1 |  | 1 
+| `male31` | 1 |  | 1 
+| `male32` | 1 |  | 1 
+| `male33` | 1 |  | 1 
+| `male34` | 1 |  | 1 
+| `male35` | 1 |  | 1 
+| `male36` | 1 |  | 1 
+| `male37` | 1 |  | 3 
+| `male38` | 1 |  | 1 
+| `male39` | 1 |  | 1 
+| `male4` | 1 |  | 1 
+| `male40` | 1 |  | 1 
+| `male41` | 1 |  | 1 
+| `male42` | 1 |  | 1 
+| `male43` | 1 |  | 1 
+| `male44` | 1 |  | 1 
+| `male45` | 1 |  | 1 
+| `male46` | 1 |  | 3 
+| `male47` | 1 |  | 1 
+| `male48` | 1 |  | 1 
+| `male49` | 1 |  | 1 
+| `male5` | 1 |  | 7 
+| `male50` | 1 |  | 1 
+| `male51` | 1 |  | 7 
+| `male52` | 1 |  | 3 
+| `male53` | 1 |  | 1 
+| `male54` | 1 |  | 1 
+| `male55` | 1 |  | 3 
+| `male56` | 1 |  | 1 
+| `male57` | 1 |  | 1 
+| `male58` | 1 |  | 1 
+| `male59` | 1 |  | 1 
+| `male6` | 1 |  | 1 
+| `male60` | 1 |  | 3 
+| `male61` | 1 |  | 1 
+| `male62` | 1 |  | 1 
+| `male63` | 1 |  | 1 
+| `male64` | 1 |  | 1 
+| `male65` | 1 |  | 1 
+| `male66` | 1 |  | 1 
+| `male67` | 1 |  | 1 
+| `male68` | 1 |  | 1 
+| `male69` | 1 |  | 1 
+| `male7` | 1 |  | 5 
+| `male70` | 1 |  | 1 
+| `male71` | 1 |  | 1 
+| `male72` | 1 |  | 1 
+| `male73` | 1 |  | 1 
+| `male74` | 1 |  | 1 
+| `male75` | 1 |  | 1 
+| `male76` | 1 |  | 1 
+| `male77` | 1 |  | 1 
+| `male78` | 1 |  | 1 
+| `male79` | 1 |  | 7 
+| `male8` | 1 |  | 9 
+| `male80` | 1 |  | 7 
+| `male81` | 1 |  | 1 
+| `male82` | 1 |  | 1 
+| `male83` | 1 |  | 3 
+| `male84` | 1 |  | 1 
+| `male85` | 1 |  | 1 
+| `male86` | 1 |  | 1 
+| `male87` | 1 |  | 1 
+| `male88` | 1 |  | 1 
+| `male89` | 1 |  | 3 
+| `male9` | 1 |  | 9 
+| `male90` | 1 |  | 1 
+| `male91` | 1 |  | 1 
+| `male92` | 1 |  | 1 
+| `male93` | 1 |  | 1 
+| `male94` | 1 |  | 1 
+| `male95` | 1 |  | 3 
+| `male96` | 1 |  | 1 
+| `male97` | 1 |  | 1 
+| `male98` | 1 |  | 1 
+| `male99` | 1 |  | 1 
+| `mamamaggot` | 1 | `auto` | 2 
+| `mammothbaby` | 1 |  | 4 
 | `mana` | 39 | `10-X`, `10-X*6`, `15-X`, `15-X*2`, `16-X*16` |
 | `mana_matters` | 5 | `false`, `true` |
 | `mana_regen` | 8 |  |
 | `manacost_cant_be_zero` | 1 | `true` |
 | `mandatory` | 2 | `true` |
 | `map` | 1 | `alley/eatinrats_map.ogg`, `boneyard/boneyard_map.ogg`, `bunker/bunker_map.ogg`, `caves/caves_map.ogg`, `core/core_map.ogg` |
-| `map_areas` | 1 |  |
+| `map_areas` | 1 |  | 2 
 | `Map_Backpack_Click` | 1 |  |
 | `Map_Backpack_Hover` | 1 |  |
-| `map_click_node` | 1 |  |
-| `map_equip_items` | 1 |  |
-| `map_equip_items2` | 1 |  |
+| `map_click_node` | 1 |  | 2 
+| `map_equip_items` | 1 |  | 2 
+| `map_equip_items2` | 1 |  | 2 
 | `Map_Node_Click` | 1 |  |
 | `Map_Node_Hover` | 1 |  |
 | `MapCats_Move` | 1 |  |
@@ -6306,80 +6306,80 @@ Use this to spot any completely undocumented keys.
 | `MasterVolume_Button_Right_Hover` | 1 |  |
 | `MasterVolume_Button_Right_Press` | 1 |  |
 | `match_knockback_direction` | 1 | `true` |
-| `material` | 1 | `distorter`, `mist` |
+| `material` | 1 | `distorter`, `mist` | 5 
 | `max` | 9 |  |
 | `max_aoe` | 30 | `(X+1)/2`, `1+bonus_melee_range`, `10+bonus_range`, `2+X`, `3+bonus_range` |
 | `max_bounces` | 5 |  |
 | `max_dist` | 4 |  |
 | `max_distance` | 2 |  |
-| `max_durability` | 2 |  |
-| `max_health` | 1 |  |
-| `max_npc` | 1 | `Beanies`, `Butch`, `Frank`, `Jack`, `OrganGrinder` |
-| `max_particles` | 1 |  |
+| `max_durability` | 2 |  | 22 
+| `max_health` | 1 |  | 6 
+| `max_npc` | 1 | `Beanies`, `Butch`, `Frank`, `Jack`, `OrganGrinder` | 7 
+| `max_particles` | 1 |  | 2 
 | `max_radius` | 1 |  |
 | `max_range` | 34 | `1+X`, `1+X*2`, `1+bonus_melee_range`, `1+bonus_range`, `2*X` |
 | `max_sounds` | 13 |  |
 | `max_targets` | 13 | `-X` |
-| `meatworld` | 3 | `AREA_NAME_MEATWORLD`, `mapflag_MeatWorldUnlockedFull` |
-| `MeatWorldUnlocked` | 2 |  |
-| `MeatWorldUnlockedFull` | 1 |  |
+| `meatworld` | 3 | `AREA_NAME_MEATWORLD`, `mapflag_MeatWorldUnlockedFull` | 24 
+| `MeatWorldUnlocked` | 2 |  | 6 
+| `MeatWorldUnlockedFull` | 1 |  | 2 
 | `MedBirdPool` | 1 |  |
 | `MedCatnip` | 1 |  |
-| `Medic` | 2 |  |
-| `medic_portrait` | 1 |  |
+| `Medic` | 2 |  | 58 
+| `medic_portrait` | 1 |  | 1 
 | `medium` | 19 |  |
-| `MediumHouse` | 1 |  |
-| `MediumHouse_SmallRoom` | 1 |  |
+| `MediumHouse` | 1 |  | 2 
+| `MediumHouse_SmallRoom` | 1 |  | 2 
 | `MedScrap` | 1 |  |
 | `melee_ability_only` | 1 | `true` |
-| `melee_attack_rat` | 1 |  |
-| `melee_cat_spit` | 1 |  |
-| `melee_cat_spit_fail_ally` | 1 |  |
-| `melee_cat_spit_fail_miss` | 1 |  |
-| `melee_cat_spit_fail_rat` | 1 |  |
-| `melee_cat_spit_ignore` | 1 |  |
-| `melee_cat_spit_success` | 1 |  |
-| `melee_killed_rat` | 1 |  |
-| `melee_move2` | 1 |  |
+| `melee_attack_rat` | 1 |  | 2 
+| `melee_cat_spit` | 1 |  | 2 
+| `melee_cat_spit_fail_ally` | 1 |  | 2 
+| `melee_cat_spit_fail_miss` | 1 |  | 2 
+| `melee_cat_spit_fail_rat` | 1 |  | 2 
+| `melee_cat_spit_ignore` | 1 |  | 2 
+| `melee_cat_spit_success` | 1 |  | 2 
+| `melee_killed_rat` | 1 |  | 2 
+| `melee_move2` | 1 |  | 2 
 | `melee_only` | 1 | `true` |
-| `melee_out_of_actions` | 1 |  |
-| `meta` | 40 |  |
+| `melee_out_of_actions` | 1 |  | 2 
+| `meta` | 40 |  | 4719 
 | `midi` | 1 | `alley/eatinrats_midi.mid`, `boneyard/boneyard_midi.mid`, `bunker/bunker_midi.mid`, `caves/caves_midi.mid`, `core/core_midi.mid` |
 | `min` | 8 |  |
 | `min_aoe` | 27 | `1+size`, `2+X`, `2+size` |
-| `min_difficulty` | 1 |  |
+| `min_difficulty` | 1 |  | 5 
 | `min_dist` | 4 |  |
 | `min_radius` | 1 |  |
 | `min_targets` | 5 |  |
 | `mind` | 1 |  |
-| `miniboss` | 21 |  |
-| `miniboss_event` | 1 |  |
+| `miniboss` | 21 |  | 24 
+| `miniboss_event` | 1 |  | 2 
 | `minimum_con` | 1 |  |
 | `minimum_party_size` | 2 |  |
 | `minimum_spd` | 1 |  |
-| `minion_alt` | 2 | `SlightlyDepressing`, `SubTwin`, `SubUndying` |
+| `minion_alt` | 2 | `SlightlyDepressing`, `SubTwin`, `SubUndying` | 10 
 | `mirror_custom_aoe` | 1 | `true` |
 | `misc` | 2 |  |
 | `MjolnirProjectileCatch` | 1 |  |
 | `mode` | 14 | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` |
-| `Monk` | 2 |  |
-| `monk_portrait` | 1 |  |
-| `monkcat` | 1 | `auto` |
+| `Monk` | 2 |  | 66 
+| `monk_portrait` | 1 |  | 1 
+| `monkcat` | 1 | `auto` | 4 
 | `MonkStances` | 1 |  |
-| `mono_cat_run` | 1 | `false`, `true` |
-| `moon` | 3 | `AREA_NAME_MOON`, `mapflag_IceAgeUnlocked`, `mapflag_MoonUnlocked` |
+| `mono_cat_run` | 1 | `false`, `true` | 5 
+| `moon` | 3 | `AREA_NAME_MOON`, `mapflag_IceAgeUnlocked`, `mapflag_MoonUnlocked` | 20 
 | `MoonHead_hitrocks` | 1 |  |
 | `MoonHead_Uncrack` | 1 |  |
-| `MoonObeliskUnlocked` | 1 |  |
-| `MoonUnlocked` | 1 |  |
+| `MoonObeliskUnlocked` | 1 |  | 6 
+| `MoonUnlocked` | 1 |  | 2 
 | `mostly_food` | 1 |  |
 | `Mounted` | 1 |  |
 | `mouse_offset` | 4 |  |
 | `mouseover_priority` | 1 |  |
-| `mouth` | 14 | `closed`, `open`, `smile` |
-| `mouth_open` | 1 |  |
+| `mouth` | 14 | `closed`, `open`, `smile` | 386 
+| `mouth_open` | 1 |  | 1 
 | `MouthFull` | 1 |  |
-| `move` | 25 | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` |
+| `move` | 25 | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 122 
 | `move_ability` | 9 | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` |
 | `move_block` | 11 | `everything_even_when_dead`, `nothing` |
 | `move_closer` | 2 |  |
@@ -6392,7 +6392,7 @@ Use this to spot any completely undocumented keys.
 | `move_then_do_all` | 1 |  |
 | `move_then_do_priority` | 1 |  |
 | `move_then_do_random` | 3 |  |
-| `move_weights` | 22 | `bird`, `blind_move_far`, `chaos_always_move`, `chaotic`, `chaotic_runaway` |
+| `move_weights` | 22 | `bird`, `blind_move_far`, `chaos_always_move`, `chaotic`, `chaotic_runaway` | 10 
 | `MoveAway` | 3 |  |
 | `MoveCenter` | 2 |  |
 | `MoveClose` | 2 |  |
@@ -6409,14 +6409,14 @@ Use this to spot any completely undocumented keys.
 | `MoveTowards` | 1 |  |
 | `movieclip_bg` | 1 | `HouseBackground1`, `HouseBackground2`, `HouseBackground3` |
 | `movieclip_fg` | 1 | `HouseForeground1`, `HouseForeground2`, `HouseForeground3` |
-| `movieclip_timescale` | 1 |  |
+| `movieclip_timescale` | 1 |  | 2 
 | `mul` | 1 |  |
 | `multihit` | 15 | `X`, `X*2+1`, `X+1` |
 | `multihit_max` | 5 |  |
 | `multihit_min` | 5 |  |
 | `multiplier` | 1 |  |
-| `music` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
-| `musiclayer` | 2 | `boss` |
+| `music` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` | 9 
+| `musiclayer` | 2 | `boss` | 2 
 | `MusicVolume_Button_Left_Click` | 1 |  |
 | `MusicVolume_Button_Left_Hover` | 1 |  |
 | `MusicVolume_Button_Left_Press` | 1 |  |
@@ -6435,42 +6435,42 @@ Use this to spot any completely undocumented keys.
 | `must_target_killer` | 1 | `true` |
 | `Mutant` | 2 |  |
 | `mute_during_explicit_scenarios` | 10 | `true` |
-| `mw_altar` | 1 |  |
-| `mw_battle1` | 1 |  |
-| `mw_boss` | 1 |  |
-| `mw_earlyhome` | 1 |  |
-| `mw_event1` | 1 |  |
-| `mw_hard1` | 1 |  |
-| `mw_home` | 1 |  |
-| `mw_quest_event` | 1 |  |
-| `mw_treasure` | 1 |  |
-| `name_mod` | 2 | `CAT_NAME_MOD_AMOEBA`, `CAT_NAME_MOD_COOL`, `CAT_NAME_MOD_DEMONIC`, `CAT_NAME_MOD_DWARF`, `CAT_NAME_MOD_GIGANTISM` |
-| `name_reference_applier` | 1 | `KEYWORD_ATTRACTION_REF`, `KEYWORD_LEECHES_NAME_APPLIER`, `KEYWORD_MANALEECHES_NAME_APPLIER` |
-| `name_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_NAME`, `KEYWORD_CHADOWN_NAME`, `KEYWORD_CONDOWN_NAME`, `KEYWORD_DAMAGEDOWN_NAME`, `KEYWORD_DEXDOWN_NAME` |
+| `mw_altar` | 1 |  | 2 
+| `mw_battle1` | 1 |  | 2 
+| `mw_boss` | 1 |  | 2 
+| `mw_earlyhome` | 1 |  | 2 
+| `mw_event1` | 1 |  | 2 
+| `mw_hard1` | 1 |  | 2 
+| `mw_home` | 1 |  | 2 
+| `mw_quest_event` | 1 |  | 2 
+| `mw_treasure` | 1 |  | 2 
+| `name_mod` | 2 | `CAT_NAME_MOD_AMOEBA`, `CAT_NAME_MOD_COOL`, `CAT_NAME_MOD_DEMONIC`, `CAT_NAME_MOD_DWARF`, `CAT_NAME_MOD_GIGANTISM` | 22 
+| `name_reference_applier` | 1 | `KEYWORD_ATTRACTION_REF`, `KEYWORD_LEECHES_NAME_APPLIER`, `KEYWORD_MANALEECHES_NAME_APPLIER` | 3 
+| `name_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_NAME`, `KEYWORD_CHADOWN_NAME`, `KEYWORD_CONDOWN_NAME`, `KEYWORD_DAMAGEDOWN_NAME`, `KEYWORD_DEXDOWN_NAME` | 11 
 | `NCGravecrawlFAR` | 1 |  |
-| `neck` | 4 | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` |
-| `necrocat` | 1 | `auto` |
-| `Necromancer` | 2 |  |
-| `necromancer_portrait` | 1 |  |
-| `negative_weight_scale` | 1 |  |
+| `neck` | 4 | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` | 378 
+| `necrocat` | 1 | `auto` | 4 
+| `Necromancer` | 2 |  | 72 
+| `necromancer_portrait` | 1 |  | 1 
+| `negative_weight_scale` | 1 |  | 64 
 | `nemesis` | 1 |  |
-| `NeutronStar` | 1 |  |
+| `NeutronStar` | 1 |  | 2 
 | `never_hit_ally_corpses` | 1 | `true` |
-| `new_adventure` | 1 |  |
+| `new_adventure` | 1 |  | 2 
 | `new_layer` | 4 | `battle`, `event`, `map` |
 | `new_music` | 1 | `chaos_boss_part2` |
 | `new_song` | 3 | `same` |
 | `next` | 1 |  |
 | `next_map` | 15 | `boneyard.gon`, `bunker.gon`, `caves.gon`, `core.gon`, `crater.gon` |
-| `no_breed` | 1 | `true` |
+| `no_breed` | 1 | `true` | 4 
 | `no_buddy` | 1 | `Rage` |
 | `no_falloff` | 1 |  |
 | `NoDeathRattle` | 1 |  |
 | `NoEyes` | 1 |  |
 | `non_spatial` | 1 |  |
 | `NonCat` | 1 |  |
-| `Normal` | 223 |  |
-| `normal` | 21 |  |
+| `Normal` | 223 |  | 24 
+| `normal` | 21 |  | 24 
 | `NORMAL_PARAMS` | 220 |  |
 | `NormalFull` | 1 |  |
 | `NoStick` | 1 |  |
@@ -6487,8 +6487,8 @@ Use this to spot any completely undocumented keys.
 | `NPC_Location_Open` | 1 |  |
 | `NPC_Location_Tracy_Open` | 1 |  |
 | `npc_script` | 1 | `tracy_adventure_shop_script.gon` |
-| `nuke` | 1 | `PlotFlag_FrankBeanies` |
-| `Nuke` | 1 |  |
+| `nuke` | 1 | `PlotFlag_FrankBeanies` | 10 
+| `Nuke` | 1 |  | 10 
 | `number` | 17 |  |
 | `Obey` | 1 |  |
 | `obj` | 10 | `BeefyCharmedLeech`, `Dice`, `Maggot`, `PyrophinaVS`, `RiftKitten` |
@@ -6505,7 +6505,7 @@ Use this to spot any completely undocumented keys.
 | `Obj_TireLand` | 1 |  |
 | `Obj_TrashBagLand` | 1 |  |
 | `Obj_TumorLand` | 1 |  |
-| `object` | 74 | `AlbinoTomTom`, `AlbinoTomTom_Elite`, `AlienBeast`, `AlienEgg`, `AllyRotFly` |
+| `object` | 74 | `AlbinoTomTom`, `AlbinoTomTom_Elite`, `AlienBeast`, `AlienEgg`, `AllyRotFly` | 545 
 | `objects_too` | 2 | `true` |
 | `odds` | 19 |  |
 | `Off` | 1 |  |
@@ -6515,7 +6515,7 @@ Use this to spot any completely undocumented keys.
 | `OldHose_Start_Trigger` | 1 |  |
 | `on_break` | 1 |  |
 | `on_self_move_too` | 3 | `true` |
-| `on_store` | 3 | `become_aux_coins`, `become_furniture`, `become_rare_furniture` |
+| `on_store` | 3 | `become_aux_coins`, `become_furniture`, `become_rare_furniture` | 16 
 | `on_throw` | 1 |  |
 | `oncast` | 3 | `AbilitySnd_Assassinate`, `AbilitySnd_BoulderDrop` |
 | `oncastpoint` | 2 | `AirHorn`, `Batterup_Swing_Castpoint` |
@@ -6523,62 +6523,62 @@ Use this to spot any completely undocumented keys.
 | `once_per_turn` | 1 | `true` |
 | `One_Cat` | 1 |  |
 | `One_Cat_EmptyHouse` | 1 |  |
-| `one_eye_wink` | 1 |  |
+| `one_eye_wink` | 1 |  | 1 
 | `OneAlive` | 1 |  |
 | `OneEye` | 1 |  |
-| `only_at_battle_start` | 2 | `true` |
+| `only_at_battle_start` | 2 | `true` | 4 
 | `only_when_not_your_turn` | 2 | `true` |
 | `ontrigger` | 5 | `OldHose_Start_Trigger`, `SE_AnkylosaurusAttack`, `SE_AstroTaserPoke`, `SE_BullRushDash`, `SE_CatWeaponPoke_Chainsaw` |
 | `ontrigger_intentional` | 1 | `Lenny_HereKitty` |
-| `open` | 3 |  |
-| `Open` | 1 |  |
+| `open` | 3 |  | 3 
+| `Open` | 1 |  | 3 
 | `OpenCat` | 1 |  |
-| `organ_boneyard_intro` | 1 |  |
-| `organ_intro` | 1 |  |
-| `organ_max1` | 1 |  |
-| `organ_max2` | 1 |  |
-| `organ_max3` | 1 |  |
-| `organ_max4` | 1 |  |
-| `organ_max5` | 1 |  |
-| `organ_max_intro` | 2 |  |
-| `organ_max_repeating` | 2 |  |
-| `organ_rename` | 1 |  |
-| `organ_throbbingdomain_intro` | 1 |  |
-| `organ_tina3` | 1 |  |
-| `organ_unlock` | 2 |  |
-| `organ_upgrade1` | 2 |  |
-| `organ_upgrade2` | 2 |  |
-| `organ_upgrade3` | 2 |  |
-| `organ_upgrade4` | 2 |  |
-| `organ_upgrade5` | 2 |  |
-| `organ_upgrade6` | 2 |  |
-| `orientation` | 2 | `east`, `north`, `south`, `west` |
+| `organ_boneyard_intro` | 1 |  | 4 
+| `organ_intro` | 1 |  | 2 
+| `organ_max1` | 1 |  | 2 
+| `organ_max2` | 1 |  | 2 
+| `organ_max3` | 1 |  | 2 
+| `organ_max4` | 1 |  | 2 
+| `organ_max5` | 1 |  | 2 
+| `organ_max_intro` | 2 |  | 4 
+| `organ_max_repeating` | 2 |  | 4 
+| `organ_rename` | 1 |  | 2 
+| `organ_throbbingdomain_intro` | 1 |  | 4 
+| `organ_tina3` | 1 |  | 2 
+| `organ_unlock` | 2 |  | 4 
+| `organ_upgrade1` | 2 |  | 4 
+| `organ_upgrade2` | 2 |  | 4 
+| `organ_upgrade3` | 2 |  | 4 
+| `organ_upgrade4` | 2 |  | 4 
+| `organ_upgrade5` | 2 |  | 4 
+| `organ_upgrade6` | 2 |  | 4 
+| `orientation` | 2 | `east`, `north`, `south`, `west` | 10 
 | `other_character` | 1 | `MegaGuppy` |
 | `other_form_change_abilities` | 1 |  |
 | `Out` | 1 |  |
-| `out_of_stock` | 3 |  |
-| `outline_color` | 1 | `white` |
+| `out_of_stock` | 3 |  | 6 
+| `outline_color` | 1 | `white` | 2 
 | `outro` | 1 |  |
 | `outros` | 1 |  |
 | `outsmart` | 1 |  |
-| `override_art` | 19 | `MapNodeExit_Boneyard`, `MapNodeExit_Bunker`, `MapNodeExit_Caves`, `MapNodeExit_Core`, `MapNodeExit_Crater` |
-| `override_basic_attack` | 5 | `BasicButcherMeleeWideDoubleSpin`, `BasicButcherMeleeWideSpin`, `BasicDruidAbilityVersatile`, `BasicMagicMissile`, `BasicMedicRanged` |
+| `override_art` | 19 | `MapNodeExit_Boneyard`, `MapNodeExit_Bunker`, `MapNodeExit_Caves`, `MapNodeExit_Core`, `MapNodeExit_Crater` | 24 
+| `override_basic_attack` | 5 | `BasicButcherMeleeWideDoubleSpin`, `BasicButcherMeleeWideSpin`, `BasicDruidAbilityVersatile`, `BasicMagicMissile`, `BasicMedicRanged` | 20 
 | `override_chain_knockback` | 1 |  |
 | `override_hit_animation` | 1 | `true` |
-| `override_move` | 1 | `BasicJump` |
+| `override_move` | 1 | `BasicJump` | 4 
 | `override_music` | 3 | `chaos_boss`, `finalboss`, `throbbingking` |
-| `ownership` | 1 | `local` |
-| `paint` | 2 | `false`, `true` |
+| `ownership` | 1 | `local` | 23 
+| `paint` | 2 | `false`, `true` | 576 
 | `pan_falloff` | 2 | `by`, `global`, `multiplied`, `need`, `not` |
 | `pan_falloff_range` | 12 |  |
 | `Paper_Appear` | 1 |  |
 | `Paper_Away` | 1 |  |
-| `parasaurolophus` | 1 |  |
-| `parasite` | 4 | `true` |
+| `parasaurolophus` | 1 |  | 2 
+| `parasite` | 4 | `true` | 102 
 | `parent` | 13 | `environment`, `none` |
-| `Parousworm` | 1 |  |
-| `partial_animation_suffix` | 6 | ``, `Alert`, `Angry`, `Belly`, `Button` |
-| `particle_lifetime` | 2 |  |
+| `Parousworm` | 1 |  | 2 
+| `partial_animation_suffix` | 6 | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 
+| `particle_lifetime` | 2 |  | 70 
 | `ParticleAttractor` | 1 |  |
 | `ParticleBouncePlane` | 2 |  |
 | `ParticleCharacterCollision` | 1 |  |
@@ -6589,7 +6589,7 @@ Use this to spot any completely undocumented keys.
 | `ParticleTornadoForce` | 1 |  |
 | `PartyBlower` | 1 |  |
 | `pass_ani` | 1 | `pass` |
-| `passive` | 3 |  |
+| `passive` | 3 |  | 4 
 | `passive0` | 1 | `HotBlooded`, `SelfAssured` |
 | `passive_pieces` | 1 |  |
 | `passive_pool` | 2 |  |
@@ -6597,26 +6597,26 @@ Use this to spot any completely undocumented keys.
 | `past` | 1 |  |
 | `patch_up` | 1 |  |
 | `pathfinding_avoidance` | 2 |  |
-| `pattern` | 15 |  |
+| `pattern` | 15 |  | 6 
 | `PauseMenu_Close` | 1 |  |
 | `PauseMenu_Open` | 1 |  |
-| `PeaceSymbol` | 1 |  |
-| `PeaceSymbolFacePaint` | 1 |  |
+| `PeaceSymbol` | 1 |  | 2 
+| `PeaceSymbolFacePaint` | 1 |  | 2 
 | `period` | 1 |  |
 | `permanent` | 1 | `true` |
-| `petted` | 1 |  |
-| `petted2` | 1 |  |
-| `pick` | 2 |  |
+| `petted` | 1 |  | 1 
+| `petted2` | 1 |  | 1 
+| `pick` | 2 |  | 3 
 | `pick_lock` | 1 |  |
 | `pick_n` | 1 |  |
 | `pickup_type` | 1 |  |
 | `PickupCoin` | 1 |  |
-| `pieces_required` | 1 |  |
+| `pieces_required` | 1 |  | 202 
 | `Pigeon` | 1 |  |
 | `pilfer` | 1 |  |
-| `pills` | 1 |  |
+| `pills` | 1 |  | 2 
 | `pirouette` | 1 |  |
-| `pitch` | 4 | `and`, `between`, `for`, `pitch_range`, `randomized` |
+| `pitch` | 4 | `and`, `between`, `for`, `pitch_range`, `randomized` | 232 
 | `pitch_range` | 3 |  |
 | `place_gristle` | 1 |  |
 | `plane` | 1 | `back`, `right` |
@@ -6628,28 +6628,28 @@ Use this to spot any completely undocumented keys.
 | `Plural_Team` | 1 |  |
 | `Plural_Team_EmptyHouse` | 1 |  |
 | `point` | 1 |  |
-| `pool` | 28 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` |
-| `poop` | 1 |  |
-| `poopcat` | 1 |  |
+| `pool` | 28 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` | 1 
+| `poop` | 1 |  | 2 
+| `poopcat` | 1 |  | 1 
 | `pop_chance` | 1 |  |
 | `pop_corpse` | 5 | `false` |
 | `pop_corpses` | 1 | `true` |
 | `Pop_Poop` | 1 |  |
-| `popup` | 1 |  |
-| `position` | 2 |  |
+| `popup` | 1 |  | 532 
+| `position` | 2 |  | 2 
 | `Possessing` | 1 |  |
 | `post_absorb_move_weights` | 1 | `minimum_move` |
-| `post_combat_cutscene` | 1 | `obelisk1_core`, `obelisk1_moon`, `obelisk2_core`, `obelisk2_moon` |
+| `post_combat_cutscene` | 1 | `obelisk1_core`, `obelisk1_moon`, `obelisk2_core`, `obelisk2_moon` | 8 
 | `post_spawn_statuses` | 3 |  |
 | `power` | 1 |  |
 | `preempt` | 1 |  |
-| `preempt_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia` |
-| `preferred_distance` | 1 | `mov`, `mov+1`, `mov+5`, `mov+reach`, `mov-2` |
+| `preempt_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia` | 12 
+| `preferred_distance` | 1 | `mov`, `mov+1`, `mov+5`, `mov+reach`, `mov-2` | 110 
 | `prereq` | 1 | `BasementUpgrade`, `BasementUpgrade2`, `BasementUpgrade3`, `BasementUpgrade4`, `Default` |
-| `prereqs` | 1 |  |
-| `preset` | 2 | `AUDITORIUM`, `Alley`, `Cave`, `Forest`, `LIVINGROOM` |
+| `prereqs` | 1 |  | 2 
+| `preset` | 2 | `AUDITORIUM`, `Alley`, `Cave`, `Forest`, `LIVINGROOM` | 8 
 | `prevent_chain_tag` | 4 | `ancestorset_shade`, `eb_twin`, `minime_clone`, `necroset_shade` |
-| `prevent_level_up` | 2 | `true` |
+| `prevent_level_up` | 2 | `true` | 4 
 | `PreventDeathTransforms` | 1 |  |
 | `prewarm` | 1 |  |
 | `prime` | 6 |  |
@@ -6772,13 +6772,13 @@ Use this to spot any completely undocumented keys.
 | `ProjectileSpawn_Tarshot` | 1 |  |
 | `ProjectileSpawn_Tumorball` | 1 |  |
 | `ProjectileSpawn_Webball` | 1 |  |
-| `projection_matrix` | 2 | `default` |
-| `properties` | 23 |  |
+| `projection_matrix` | 2 | `default` | 156 
+| `properties` | 23 |  | 1200 
 | Property Key | # Files | Sample Values |
 | `protection` | 1 |  |
-| `Psychic` | 2 |  |
-| `psychic_portrait` | 1 |  |
-| `psychiccat` | 1 | `auto` |
+| `Psychic` | 2 |  | 66 
+| `psychic_portrait` | 1 |  | 1 
+| `psychiccat` | 1 | `auto` | 4 
 | `puddle_tile` | 1 | `LavaTile` |
 | `pull` | 1 |  |
 | `pull_it_out` | 1 |  |
@@ -6790,17 +6790,17 @@ Use this to spot any completely undocumented keys.
 | `Pulp6` | 1 |  |
 | `Pulp7` | 1 |  |
 | `punch_self_ability` | 1 | `Dybbuk_StopHittingYourself` |
-| `purchase_item` | 4 |  |
-| `purchase_item_a` | 1 |  |
-| `purchase_item_b` | 1 |  |
-| `purchase_item_c` | 1 |  |
-| `purchase_item_d` | 1 |  |
-| `purchase_item_iceage` | 1 |  |
-| `purchase_item_jurassic` | 1 |  |
-| `purchase_item_moon` | 1 |  |
-| `purchase_item_theend` | 1 |  |
+| `purchase_item` | 4 |  | 8 
+| `purchase_item_a` | 1 |  | 2 
+| `purchase_item_b` | 1 |  | 2 
+| `purchase_item_c` | 1 |  | 2 
+| `purchase_item_d` | 1 |  | 2 
+| `purchase_item_iceage` | 1 |  | 2 
+| `purchase_item_jurassic` | 1 |  | 2 
+| `purchase_item_moon` | 1 |  | 2 
+| `purchase_item_theend` | 1 |  | 2 
 | `purify` | 1 |  |
-| `Purr` | 218 |  |
+| `Purr` | 218 |  | 2 
 | `PURR_PARAMS` | 220 |  |
 | `Purrx` | 2 |  |
 | `push_buttons` | 1 |  |
@@ -6809,18 +6809,18 @@ Use this to spot any completely undocumented keys.
 | `put_in_coins` | 1 |  |
 | `put_out_of_misery` | 1 |  |
 | `pyrophina_backgroundfootstep` | 1 |  |
-| `queenhippo` | 1 | `auto` |
-| `quest_event` | 9 |  |
-| `quest_item` | 2 | `false`, `true` |
-| `quest_item_alias` | 2 | `BlackShard`, `NuclearKnife` |
-| `quest_reward_item` | 1 | `AirHorn_Fixed`, `AngryFace_Fixed`, `BubbleBoy_Fixed`, `ChaosDevice_Fixed`, `ExperimentalTreatment_Fixed` |
+| `queenhippo` | 1 | `auto` | 5 
+| `quest_event` | 9 |  | 18 
+| `quest_item` | 2 | `false`, `true` | 80 
+| `quest_item_alias` | 2 | `BlackShard`, `NuclearKnife` | 4 
+| `quest_reward_item` | 1 | `AirHorn_Fixed`, `AngryFace_Fixed`, `BubbleBoy_Fixed`, `ChaosDevice_Fixed`, `ExperimentalTreatment_Fixed` | 44 
 | `queue` | 1 | `TheChild_TargetBeam` |
-| `queue_cutscene_immediate` | 1 | `caves_intro`, `core_intro`, `desert_intro`, `dybbuk`, `jurassic_intro` |
+| `queue_cutscene_immediate` | 1 | `caves_intro`, `core_intro`, `desert_intro`, `dybbuk`, `jurassic_intro` | 16 
 | `quotes` | 1 |  |
-| `radicalrat` | 1 | `auto` |
+| `radicalrat` | 1 | `auto` | 3 
 | `radius` | 8 |  |
 | `Rage` | 4 |  |
-| `random` | 8 |  |
+| `random` | 8 |  | 1 
 | `random_orient` | 2 | `true` |
 | `RandomArmorPickup` | 1 |  |
 | `RandomBiggerArmorPickup` | 1 |  |
@@ -6830,9 +6830,9 @@ Use this to spot any completely undocumented keys.
 | `RandomFoodPickup` | 1 |  |
 | `randomize_knockback_direction_except_for_finisher` | 1 | `true` |
 | `randomize_pattern_start` | 1 | `true` |
-| `randomize_piece_frames` | 2 | `true` |
+| `randomize_piece_frames` | 2 | `true` | 8 
 | `randomize_target_within_range` | 2 |  |
-| `randomness` | 1 |  |
+| `randomness` | 1 |  | 10 
 | `range` | 13 | `global` |
 | `range_bonuses` | 1 | `include_alpha` |
 | `range_considers_character_size` | 6 | `false` |
@@ -6845,133 +6845,133 @@ Use this to spot any completely undocumented keys.
 | `range_min` | 1 |  |
 | `range_mode` | 23 | `8cross`, `cross`, `custom`, `diagcross`, `ground_move` |
 | `range_symmetry` | 1 | `eight_way` |
-| `ranged_attack_tomtom` | 1 |  |
-| `ranged_attack_tomtom_fail_ally` | 1 |  |
-| `ranged_attack_tomtom_fail_miss` | 1 |  |
-| `ranged_attack_tomtom_fail_rat` | 1 |  |
-| `ranged_cat_attack` | 1 |  |
-| `ranged_cat_early_attack2_ally` | 1 |  |
-| `ranged_cat_early_attack2_miss` | 1 |  |
-| `ranged_cat_early_attack2_rat` | 1 |  |
-| `ranged_cat_early_attack_ally` | 1 |  |
-| `ranged_cat_early_attack_miss` | 1 |  |
-| `ranged_cat_early_attack_rat` | 1 |  |
-| `ranged_cat_failmove` | 1 |  |
-| `ranged_cat_intro` | 1 |  |
-| `ranged_cat_roll` | 1 |  |
-| `ranged_cat_rolled_first` | 1 |  |
+| `ranged_attack_tomtom` | 1 |  | 2 
+| `ranged_attack_tomtom_fail_ally` | 1 |  | 2 
+| `ranged_attack_tomtom_fail_miss` | 1 |  | 2 
+| `ranged_attack_tomtom_fail_rat` | 1 |  | 2 
+| `ranged_cat_attack` | 1 |  | 2 
+| `ranged_cat_early_attack2_ally` | 1 |  | 2 
+| `ranged_cat_early_attack2_miss` | 1 |  | 2 
+| `ranged_cat_early_attack2_rat` | 1 |  | 2 
+| `ranged_cat_early_attack_ally` | 1 |  | 2 
+| `ranged_cat_early_attack_miss` | 1 |  | 2 
+| `ranged_cat_early_attack_rat` | 1 |  | 2 
+| `ranged_cat_failmove` | 1 |  | 2 
+| `ranged_cat_intro` | 1 |  | 2 
+| `ranged_cat_roll` | 1 |  | 2 
+| `ranged_cat_rolled_first` | 1 |  | 2 
 | `ranged_only` | 2 | `true` |
-| `raptor` | 1 |  |
-| `raptorbaby` | 1 |  |
-| `RaptorEgg` | 1 |  |
-| `rare_elite_buffs` | 1 |  |
-| `rarity` | 13 | `common`, `consumable_common`, `consumable_rare`, `consumable_uncommon`, `consumable_very_rare` |
-| `ratking` | 1 | `auto` |
+| `raptor` | 1 |  | 2 
+| `raptorbaby` | 1 |  | 8 
+| `RaptorEgg` | 1 |  | 2 
+| `rare_elite_buffs` | 1 |  | 32 
+| `rarity` | 13 | `common`, `consumable_common`, `consumable_rare`, `consumable_uncommon`, `consumable_very_rare` | 1934 
+| `ratking` | 1 | `auto` | 2 
 | `Raven` | 1 |  |
-| `RavenFeather` | 1 |  |
+| `RavenFeather` | 1 |  | 2 
 | `reach_inside` | 1 |  |
 | `read` | 1 |  |
-| `real_wink` | 1 |  |
-| `real_wink_overshoot` | 1 |  |
+| `real_wink` | 1 |  | 1 
+| `real_wink_overshoot` | 1 |  | 1 
 | `RealTimePressure` | 1 |  |
 | `recalc_target_on_castpoint` | 2 | `true` |
 | `receive` | 1 |  |
 | `receive_ani` | 1 | `receive` |
 | `reclaim_if_lost` | 1 | `true` |
-| `red` | 1 |  |
+| `red` | 1 |  | 2 
 | `red_needle` | 1 |  |
 | `redirect_location_if_blocked` | 2 | `true` |
 | `reduction` | 9 |  |
-| `reflect` | 1 |  |
+| `reflect` | 1 |  | 2 
 | `relative` | 1 | `false` |
 | `release` | 1 | `TheChild_ReleaseBeams` |
 | `remain_off_map` | 1 | `true` |
 | `rematch_cooldown` | 1 |  |
-| `rematch_cutscene_day` | 1 | `house_boss_returns_kaijufight`, `house_boss_returns_pyro`, `house_boss_returns_zara` |
-| `rematch_cutscene_night` | 1 | `house_boss_returns_t1`, `house_boss_returns_t2`, `house_boss_returns_t3`, `house_boss_returns_tina1`, `house_boss_returns_tina2` |
+| `rematch_cutscene_day` | 1 | `house_boss_returns_kaijufight`, `house_boss_returns_pyro`, `house_boss_returns_zara` | 3 
+| `rematch_cutscene_night` | 1 | `house_boss_returns_t1`, `house_boss_returns_t2`, `house_boss_returns_t3`, `house_boss_returns_tina1`, `house_boss_returns_tina2` | 6 
 | `remove` | 1 |  |
 | `remove_the_nail` | 1 |  |
-| `removed` | 1 | `true` |
-| `render_layer` | 2 | `background`, `sorted_distortions`, `splatters`, `top` |
-| `render_mode` | 2 | `default`, `separate` |
+| `removed` | 1 | `true` | 1 
+| `render_layer` | 2 | `background`, `sorted_distortions`, `splatters`, `top` | 13 
+| `render_mode` | 2 | `default`, `separate` | 159 
 | `reorient_thrown_character` | 2 | `true` |
 | `rep_reward_count` | 1 |  |
-| `repair` | 2 |  |
+| `repair` | 2 |  | 2 
 | `repair_quest` | 1 |  |
-| `repeat` | 3 | `infinite`, `never` |
-| `repeatable` | 1 | `true` |
+| `repeat` | 3 | `infinite`, `never` | 66 
+| `repeatable` | 1 | `true` | 20 
 | `repell` | 1 |  |
 | `RepressedMemoriesMetronome` | 1 |  |
 | `request_cat_info` | 1 | `stray` |
-| `require_beat_house_boss` | 1 | `pyrophina`, `zaratana` |
+| `require_beat_house_boss` | 1 | `pyrophina`, `zaratana` | 4 
 | `require_default_size` | 1 | `true` |
-| `require_mapgen_flag` | 1 | `CoreObeliskUnlocked`, `MoonObeliskUnlocked` |
+| `require_mapgen_flag` | 1 | `CoreObeliskUnlocked`, `MoonObeliskUnlocked` | 4 
 | `required_act` | 1 |  |
 | `required_age` | 1 |  |
 | `required_chapter` | 1 |  |
-| `required_difficulty` | 2 |  |
-| `requirements` | 19 |  |
+| `required_difficulty` | 2 |  | 72 
+| `requirements` | 19 |  | 13 
 | `requires_attack_damage_threshold` | 1 |  |
 | `requires_consumed_trinket` | 1 | `true` |
-| `requires_corpse` | 1 | `true` |
+| `requires_corpse` | 1 | `true` | 4 
 | `requires_destructible_weapon` | 6 | `true` |
 | `requires_empty_trinket` | 1 | `true` |
 | `requires_exact_character_aux` | 2 |  |
 | `requires_framebuffer` | 1 | `false` |
-| `requires_hard_path` | 1 | `true` |
+| `requires_hard_path` | 1 | `true` | 2 
 | `requires_hp_threshold` | 1 |  |
-| `requires_monoclass_run` | 1 | `true` |
+| `requires_monoclass_run` | 1 | `true` | 6 
 | `requires_reload` | 7 | `true` |
-| `requires_unlocked_npc` | 1 | `frank`, `jack`, `tracy` |
+| `requires_unlocked_npc` | 1 | `frank`, `jack`, `tracy` | 6 
 | `requires_weapon` | 1 | `true` |
-| `reset_aux_on_store` | 1 |  |
+| `reset_aux_on_store` | 1 |  | 6 
 | `reset_center_because_no_target_halflife` | 1 |  |
 | `reset_center_because_of_animation_halflife` | 1 |  |
-| `reset_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin`, `beanies_bombquest_fail_jarofblood` |
+| `reset_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin`, `beanies_bombquest_fail_jarofblood` | 16 
 | `reset_pattern_on_formswitch` | 6 | `false`, `true` |
 | `reset_pattern_on_round_begin` | 1 | `true` |
 | `reset_percent` | 1 |  |
-| `reset_str_aux_on_store` | 1 | `ModelingClay_Default` |
+| `reset_str_aux_on_store` | 1 | `ModelingClay_Default` | 2 
 | `reset_turn` | 1 | `act`, `both` |
-| `reset_unlock` | 1 | `nuke_quest_begin` |
+| `reset_unlock` | 1 | `nuke_quest_begin` | 2 
 | `respect_prime` | 2 | `true` |
-| `rest` | 1 |  |
+| `rest` | 1 |  | 4 
 | `restart_npc_music` | 1 |  |
-| `restrict` | 5 | `armor`, `consumables`, `trinket`, `weapon` |
+| `restrict` | 5 | `armor`, `consumables`, `trinket`, `weapon` | 1 
 | `restrictions` | 29 | `aoe_must_be_displaceable`, `aoe_must_be_force_displaceable`, `aoe_must_exist`, `cant_target_behind`, `dash_must_move` |
 | `restructions` | 1 | `aoe_must_exist` |
 | `results` | 2 | `a`, `in`, `new`, `of`, `range` |
-| `Return` | 2 | `CherubimReturn`, `LEReturn` |
-| `return_as` | 2 | `enemy` |
-| `return_during` | 2 | `boss` |
+| `Return` | 2 | `CherubimReturn`, `LEReturn` | 26 
+| `return_as` | 2 | `enemy` | 1 
+| `return_during` | 2 | `boss` | 1 
 | `ReturnA` | 1 |  |
-| `reverb` | 1 |  |
-| `reverb_empty` | 1 |  |
-| `reverb_full` | 1 |  |
+| `reverb` | 1 |  | 14 
+| `reverb_empty` | 1 |  | 16 
+| `reverb_full` | 1 |  | 16 
 | `ReverbDelay` | 1 |  |
 | `reverse_target_direction` | 1 | `true` |
-| `revive` | 1 |  |
-| `revive_ally_corpse` | 1 |  |
-| `revive_enemy_corpse` | 1 |  |
+| `revive` | 1 |  | 2 
+| `revive_ally_corpse` | 1 |  | 64 
+| `revive_enemy_corpse` | 1 |  | 64 
 | `revive_health` | 3 |  |
 | `reward_text` | 1 | `FAVOR_BEANIES_INTRO`, `FAVOR_BEANIES_REPEAT`, `FAVOR_BUTCH_UPGRADE`, `FAVOR_FRANK_ATTIC`, `FAVOR_FRANK_PARASITE` |
-| `right_icon` | 1 | `coin`, `divineshield`, `heal`, `mana`, `shield` |
-| `rightear` | 1 |  |
-| `righteye` | 1 |  |
-| `righteyebrow` | 1 |  |
-| `robotom` | 1 |  |
-| `rockybobo` | 1 | `auto` |
+| `right_icon` | 1 | `coin`, `divineshield`, `heal`, `mana`, `shield` | 10 
+| `rightear` | 1 |  | 376 
+| `righteye` | 1 |  | 400 
+| `righteyebrow` | 1 |  | 352 
+| `robotom` | 1 |  | 6 
+| `rockybobo` | 1 | `auto` | 2 
 | `roll_ability` | 1 | `RollDice` |
-| `roll_limit` | 2 |  |
-| `rollable` | 2 | `false` |
+| `roll_limit` | 2 |  | 4 
+| `rollable` | 2 | `false` | 10 
 | `Roof_LeftEdge` | 1 |  |
 | `Roof_RightEdge` | 1 |  |
 | `Roof_Top` | 1 |  |
 | `room_positions` | 1 |  |
-| `rotation` | 2 |  |
+| `rotation` | 2 |  | 5 
 | `rotation_dampening` | 1 |  |
 | `rotation_speed` | 2 |  |
-| `rotation_speed_end` | 2 |  |
+| `rotation_speed_end` | 2 |  | 22 
 | `rotation_speed_start` | 1 |  |
 | `rotation_start` | 1 |  |
 | `round_end_bonus_turns` | 8 |  |
@@ -6989,41 +6989,41 @@ Use this to spot any completely undocumented keys.
 | `RunesAppear4` | 1 |  |
 | `RunesAppear5` | 1 |  |
 | `RunFar` | 1 |  |
-| `sabertoothcat` | 1 |  |
+| `sabertoothcat` | 1 |  | 6 
 | `sacrifice` | 2 |  |
 | `sacrifice_full_favor` | 1 |  |
 | `sacrifice_normal` | 1 |  |
 | `sacrifice_partial_favor` | 1 |  |
 | `sacrifice_quest` | 1 |  |
-| `Sad` | 220 |  |
-| `sad` | 1 |  |
-| `sad_left` | 1 |  |
+| `Sad` | 220 |  | 1 
+| `sad` | 1 |  | 1 
+| `sad_left` | 1 |  | 1 
 | `SAD_PARAMS` | 220 |  |
 | `SafeExplosionIfHitSomething` | 1 |  |
 | `same` | 2 | `a`, `as`, `but`, `range` |
-| `same_cat` | 3 | `true` |
+| `same_cat` | 3 | `true` | 1 
 | `same_orientation` | 1 | `true` |
-| `save_file_flag` | 1 | `AntennaQuest_Orb`, `AntennaQuest_Rift`, `AntennaQuest_Volcano`, `MeatWorldQuest_Gristle`, `MeatWorldQuest_Leech` |
+| `save_file_flag` | 1 | `AntennaQuest_Orb`, `AntennaQuest_Rift`, `AntennaQuest_Volcano`, `MeatWorldQuest_Gristle`, `MeatWorldQuest_Leech` | 9 
 | `SaveFile_Continue` | 1 |  |
 | `SaveFile_Delete` | 1 |  |
 | `SaveFile_Hover0` | 1 |  |
 | `SaveFile_Hover1` | 1 |  |
 | `SaveFile_Hover2` | 1 |  |
 | `SaveFile_New` | 1 |  |
-| `savefile_string` | 1 | `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3`, `SAVE_FILE_FIGHT_HOUSEBOSS_KAIJUFIGHT`, `SAVE_FILE_FIGHT_HOUSEBOSS_PYROPHINA` |
+| `savefile_string` | 1 | `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3`, `SAVE_FILE_FIGHT_HOUSEBOSS_KAIJUFIGHT`, `SAVE_FILE_FIGHT_HOUSEBOSS_PYROPHINA` | 9 
 | `SaveFile_TerminateButton_Click` | 1 |  |
 | `SaveFile_TerminateButton_Hover` | 1 |  |
 | `SaveFile_TerminateButton_Press` | 1 |  |
 | `scaled` | 1 | `true` |
-| `scars` | 1 |  |
-| `schadenfreude_scaled_stats` | 1 |  |
-| `scorpioncat` | 1 |  |
-| `Scrap` | 1 |  |
+| `scars` | 1 |  | 10 
+| `schadenfreude_scaled_stats` | 1 |  | 4 
+| `scorpioncat` | 1 |  | 8 
+| `Scrap` | 1 |  | 16 
 | `scream` | 1 |  |
 | `Screen_FadeIn` | 1 |  |
 | `Screen_FadeOut` | 1 |  |
 | `screenshake` | 2 |  |
-| `scripts` | 2 |  |
+| `scripts` | 2 |  | 108 
 | `SE_AnkylosaurusAttack` | 1 |  |
 | `SE_AstroTaserPoke` | 1 |  |
 | `SE_BirdDying_Blackbird` | 1 |  |
@@ -7076,7 +7076,7 @@ Use this to spot any completely undocumented keys.
 | `SE_CatWalk_House` | 1 |  |
 | `SE_CatWalkWater` | 1 |  |
 | `SE_CatWeaponPoke` | 1 |  |
-| `SE_CatWeaponPoke_Chainsaw` | 1 |  |
+| `SE_CatWeaponPoke_Chainsaw` | 1 |  | 2 
 | `SE_CE_Astro_Jump` | 1 |  |
 | `SE_ChainDash` | 1 |  |
 | `SE_ChalkDraw` | 1 |  |
@@ -7168,21 +7168,21 @@ Use this to spot any completely undocumented keys.
 | `SelectorWidget_Button_Right_Press` | 1 |  |
 | `self_move_exclude_self_abilities` | 1 | `true` |
 | `SerratedClaws` | 1 |  |
-| `set` | 13 | `80s`, `90s`, `AdvancedAlloy`, `Alloy`, `Amoeba` |
-| `Set` | 1 | `Monk` |
+| `set` | 13 | `80s`, `90s`, `AdvancedAlloy`, `Alloy`, `Amoeba` | 1504 
+| `Set` | 1 | `Monk` | 1504 
 | `set_house` | 1 | `House1`, `House2`, `House3` |
-| `set_mapgen_flag` | 1 | `BoneyardUnlocked`, `BothObelisksUnlocked`, `BunkerUnlocked`, `CavesUnlocked`, `CoreObeliskUnlocked` |
+| `set_mapgen_flag` | 1 | `BoneyardUnlocked`, `BothObelisksUnlocked`, `BunkerUnlocked`, `CavesUnlocked`, `CoreObeliskUnlocked` | 46 
 | `set_mood` | 2 | `default`, `happy`, `pondering`, `sad`, `veryhappy` |
 | `set_npc_voice` | 1 | `beanies` |
 | `set_organ_name` | 1 | `Tyler` |
-| `set_savefile_flag` | 2 | `AlienInvasionUnlocked`, `HauntedNightUnlocked`, `PlotFlag_Beanies_Homeless`, `PlotFlag_FrankBeanies`, `RestlessDeadUnlocked` |
+| `set_savefile_flag` | 2 | `AlienInvasionUnlocked`, `HauntedNightUnlocked`, `PlotFlag_Beanies_Homeless`, `PlotFlag_FrankBeanies`, `RestlessDeadUnlocked` | 12 
 | `set_state` | 10 | `beanies_intensestatic`, `beanies_right`, `blocking`, `butch_left`, `butch_levelup` |
 | `SetDifficulty_0` | 1 |  |
 | `SetDifficulty_1` | 1 |  |
 | `SetDifficulty_2` | 1 |  |
 | `SetDifficulty_3` | 1 |  |
-| `sewers` | 2 | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` |
-| `SewersUnlocked` | 1 |  |
+| `sewers` | 2 | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` | 16 
+| `SewersUnlocked` | 1 |  | 2 
 | `sfx` | 5 | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` |
 | `SFXVolume_Button_Left_Click` | 1 |  |
 | `SFXVolume_Button_Left_Hover` | 1 |  |
@@ -7191,105 +7191,105 @@ Use this to spot any completely undocumented keys.
 | `SFXVolume_Button_Right_Hover` | 1 |  |
 | `SFXVolume_Button_Right_Press` | 1 |  |
 | `shader` | 1 | `shimmervignette` |
-| `Shadow` | 1 |  |
+| `Shadow` | 1 |  | 2 
 | `shake` | 1 |  |
-| `shake1` | 1 |  |
-| `shake2` | 1 |  |
-| `shield` | 31 | `aux`, `max((aux-1)*2, 0)` |
+| `shake1` | 1 |  | 1 
+| `shake2` | 1 |  | 1 
+| `shield` | 31 | `aux`, `max((aux-1)*2, 0)` | 422 
 | `shield_only` | 1 | `true` |
 | `Shit` | 1 |  |
-| `shock` | 1 |  |
-| `shock_left` | 1 |  |
+| `shock` | 1 |  | 1 
+| `shock_left` | 1 |  | 1 
 | `Shop_BuyButton_Hover` | 1 |  |
 | `Shop_BuyItem` | 1 |  |
 | `Shop_CantAfford` | 1 |  |
-| `shop_cheapwater` | 1 |  |
-| `shop_common` | 1 |  |
+| `shop_cheapwater` | 1 |  | 2 
+| `shop_common` | 1 |  | 4 
 | `Shop_ExitButton_Click` | 1 |  |
 | `Shop_ExitButton_Hover` | 1 |  |
 | `shop_level_up` | 1 |  |
 | `Shop_StealButton_Hover` | 1 |  |
-| `shop_water` | 1 |  |
+| `shop_water` | 1 |  | 2 
 | `shopkeeper_fights` | 1 |  |
 | `shotgun_mode` | 3 | `true` |
 | `should` | 2 | `need`, `not` |
 | `show_name` | 1 | `true` |
 | `shuffle_tile_order` | 3 | `true` |
 | `side` | 1 | `enemies` |
-| `simple` | 1 | `true` |
-| `simulation_space` | 2 | `global` |
+| `simple` | 1 | `true` | 8 
+| `simulation_space` | 2 | `global` | 157 
 | `Sing` | 220 |  |
 | `SING_PARAMS` | 220 |  |
 | `Singlular_Team` | 1 |  |
 | `Singlular_Team_EmptyHouse` | 1 |  |
 | `Sitting` | 1 |  |
-| `size` | 20 | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` |
-| `size_end` | 2 |  |
-| `size_in` | 2 |  |
-| `size_out` | 2 |  |
-| `size_start` | 2 |  |
+| `size` | 20 | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` | 3 
+| `size_end` | 2 |  | 65 
+| `size_in` | 2 |  | 12 
+| `size_out` | 2 |  | 12 
+| `size_start` | 2 |  | 59 
 | `SizeScalePercent` | 1 | `sqrt(1.0+(.05*(X-1)))*100` |
 | `skilltemp` | 2 | `true` |
 | `skip` | 1 |  |
-| `skip_result_screen` | 3 | `true` |
+| `skip_result_screen` | 3 | `true` | 1 
 | `skybox_frame` | 1 | `day_rain`, `day_snow`, `day_thunderstorm`, `day_windy` |
 | `slide` | 1 |  |
-| `slime` | 1 | `auto` |
+| `slime` | 1 | `auto` | 2 
 | `slip_through` | 1 |  |
 | `slot` | 13 | `face`, `head`, `neck`, `random_empty`, `random_empty_armor` |
-| `SlotResult_Explode` | 1 |  |
+| `SlotResult_Explode` | 1 |  | 2 
 | `SlotResult_Jackpot_Coins` | 1 |  |
 | `SlotResult_Nothing` | 1 |  |
 | `SlotResult_RandomPickup` | 1 |  |
 | `small` | 19 |  |
 | `Small` | 2 |  |
-| `SmallAttic` | 1 |  |
+| `SmallAttic` | 1 |  | 2 
 | `SmallBirdPool` | 1 |  |
 | `SmallCompletionCheckmarkTooltip` | 1 |  |
 | `SmallHolding` | 1 |  |
 | `SmallHoldingCat` | 1 |  |
-| `SmallHouse_Attic` | 1 |  |
+| `SmallHouse_Attic` | 1 |  | 2 
 | `smallray_clip` | 1 | `Bunkerlight`, `labligtht` |
 | `smallrays` | 1 |  |
-| `smash` | 5 |  |
-| `smile` | 1 |  |
-| `smug` | 1 |  |
-| `smug_left` | 1 |  |
-| `Snake` | 1 |  |
+| `smash` | 5 |  | 3 
+| `smile` | 1 |  | 1 
+| `smug` | 1 |  | 1 
+| `smug_left` | 1 |  | 1 
+| `Snake` | 1 |  | 2 
 | `sneak` | 3 |  |
 | `sneak_by` | 1 |  |
 | `sneak_past_alt` | 1 |  |
-| `solo_cat_run` | 1 | `false`, `true` |
+| `solo_cat_run` | 1 | `false`, `true` | 5 
 | `song` | 1 |  |
 | `songs_only` | 1 |  |
 | `soul` | 1 |  |
-| `sound` | 9 |  |
+| `sound` | 9 |  | 124 
 | `sound_event` | 1 | `EatAntidote` |
-| `sounds` | 8 |  |
-| `spawn` | 20 |  |
+| `sounds` | 8 |  | 78 
+| `spawn` | 20 |  | 692 
 | `Spawn_Donate` | 1 |  |
-| `spawn_node` | 1 | `start` |
-| `spawn_object` | 1 |  |
-| `spawn_object_distance_to_ally` | 1 |  |
-| `spawn_object_distance_to_enemy` | 1 |  |
-| `spawn_object_preferred_distance` | 1 |  |
+| `spawn_node` | 1 | `start` | 2 
+| `spawn_object` | 1 |  | 64 
+| `spawn_object_distance_to_ally` | 1 |  | 64 
+| `spawn_object_distance_to_enemy` | 1 |  | 64 
+| `spawn_object_preferred_distance` | 1 |  | 4 
 | `spawn_on_death_hit` | 7 | `false` |
-| `spawn_side` | 11 | `anywhere`, `cats`, `enemies` |
+| `spawn_side` | 11 | `anywhere`, `cats`, `enemies` | 1 
 | `SpawningPhase` | 1 |  |
 | `SpawnScaledRotFly` | 1 |  |
-| `spd` | 43 | `aux` |
+| `spd` | 43 | `aux` | 424 
 | `SpearRun` | 1 |  |
-| `special` | 20 | `true` |
+| `special` | 20 | `true` | 10 
 | `special_playlist` | 1 | `intros`, `outros` |
 | `special_tile_tag` | 2 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation` |
-| `specific_chapter` | 2 |  |
+| `specific_chapter` | 2 |  | 16 
 | `speculative_inanimate` | 1 | `false` |
-| `speed` | 47 |  |
-| `speed_end` | 1 |  |
+| `speed` | 47 |  | 6 
+| `speed_end` | 1 |  | 2 
 | `speed_of_sound` | 12 |  |
-| `speed_scale` | 2 |  |
-| `speed_start` | 2 |  |
-| `spell` | 1 | `MCHadouken` |
+| `speed_scale` | 2 |  | 67 
+| `speed_start` | 2 |  | 77 
+| `spell` | 1 | `MCHadouken` | 924 
 | `spell0` | 1 | `Roll`, `Spit` |
 | `spell_graphics_override` | 1 |  |
 | `spell_use_groups` | 1 |  |
@@ -7345,24 +7345,24 @@ Use this to spot any completely undocumented keys.
 | `SpellSpawn_TwistingFlames` | 1 |  |
 | `SpellSpawn_WaterConduct` | 1 |  |
 | `SpellSpawn_Wave` | 1 |  |
-| `spend_mana_scale` | 1 |  |
-| `spewer` | 1 | `auto` |
-| `spidercat` | 1 |  |
+| `spend_mana_scale` | 1 |  | 64 
+| `spewer` | 1 | `auto` | 3 
+| `spidercat` | 1 |  | 4 
 | `Spiderweb_Break` | 1 |  |
 | `spin_cats` | 1 | `true` |
 | `spin_steps` | 1 |  |
-| `splash_damage` | 11 |  |
+| `splash_damage` | 11 |  | 68 
 | `splash_damage_aoe_begin` | 3 |  |
-| `spurt` | 1 | `GibsBloodSpurt`, `GibsBloodSpurtHuge`, `PassiveTarSplat`, `VolcanoSpurt_Trail` |
+| `spurt` | 1 | `GibsBloodSpurt`, `GibsBloodSpurtHuge`, `PassiveTarSplat`, `VolcanoSpurt_Trail` | 5 
 | `square` | 1 | `true` |
 | `Squirrel` | 1 |  |
-| `SquirrelForm` | 2 |  |
+| `SquirrelForm` | 2 |  | 2 
 | `stable_legs` | 1 |  |
 | `stack_key` | 4 | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` |
 | `stack_scale` | 1 |  |
 | `stackable` | 1 | `true` |
 | `stacks` | 52 | `5+bonus_melee_ability_damage`, `X`, `floor(lck/4)`, `item_aux`, `max(min(X+1, item_aux), 0)` |
-| `stacy` | 1 | `auto` |
+| `stacy` | 1 | `auto` | 2 
 | `stagger_multihit_targets` | 5 | `true` |
 | `Standing` | 1 |  |
 | `Standing2` | 1 |  |
@@ -7370,21 +7370,21 @@ Use this to spot any completely undocumented keys.
 | `start_dead` | 2 | `true` |
 | `start_reloaded` | 3 | `true` |
 | `starter_abilities` | 2 |  |
-| `stat` | 26 | `cha`, `coins`, `con`, `dex`, `int` |
-| `stat_max` | 3 |  |
-| `stat_min` | 3 |  |
-| `stat_mods` | 2 |  |
+| `stat` | 26 | `cha`, `coins`, `con`, `dex`, `int` | 16 
+| `stat_max` | 3 |  | 4 
+| `stat_min` | 3 |  | 4 
+| `stat_mods` | 2 |  | 26 
 | `state_health` | 1 |  |
-| `states` | 12 |  |
+| `states` | 12 |  | 24 
 | `static` | 1 | `true` |
-| `static_1x1_a` | 1 | `BunkerObjects1`, `CaveRock1`, `CoreObjects1`, `CraterObjects1`, `DesertRocks` |
-| `static_1x1_b` | 1 | `Bricks`, `Bricks3`, `BunkerObjects2`, `CaveRock2`, `CoreObjects2` |
-| `static_1x1_c` | 1 | `Bricks`, `CaveRock3`, `CoreObjects3`, `CraterObjects1`, `DesertRocks` |
-| `static_2x2_a` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigPipes`, `Bunker2x2`, `Core2x2` |
-| `static_2x2_b` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigGravelPile`, `Desert2x2`, `Dumpster` |
-| `static_tall_a` | 1 | `BunkerTall1`, `CoreTall1`, `CraterTall1`, `DesertTall`, `Iceagetall1` |
-| `static_tall_b` | 1 | `BunkerTall2`, `CoreTall2`, `CraterTall2`, `DesertTall2`, `Endt` |
-| `stats` | 33 |  |
+| `static_1x1_a` | 1 | `BunkerObjects1`, `CaveRock1`, `CoreObjects1`, `CraterObjects1`, `DesertRocks` | 21 
+| `static_1x1_b` | 1 | `Bricks`, `Bricks3`, `BunkerObjects2`, `CaveRock2`, `CoreObjects2` | 21 
+| `static_1x1_c` | 1 | `Bricks`, `CaveRock3`, `CoreObjects3`, `CraterObjects1`, `DesertRocks` | 21 
+| `static_2x2_a` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigPipes`, `Bunker2x2`, `Core2x2` | 21 
+| `static_2x2_b` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigGravelPile`, `Desert2x2`, `Dumpster` | 21 
+| `static_tall_a` | 1 | `BunkerTall1`, `CoreTall1`, `CraterTall1`, `DesertTall`, `Iceagetall1` | 21 
+| `static_tall_b` | 1 | `BunkerTall2`, `CoreTall2`, `CraterTall2`, `DesertTall2`, `Endt` | 21 
+| `stats` | 33 |  | 982 
 | `status` | 35 | `AddKnockbackToEverything`, `AllDamageCrits`, `AllDamageImmune`, `AllStatsUp`, `AlphaCat` |
 | `status_explosion_override` | 1 | `WaterConduct` |
 | `Status_Unfreeze` | 1 |  |
@@ -7398,69 +7398,69 @@ Use this to spot any completely undocumented keys.
 | `StatusApply_Webbed` | 1 |  |
 | `statuses` | 6 |  |
 | `statuses_on_enter_form` | 1 |  |
-| `steven_100` | 1 |  |
+| `steven_100` | 1 |  | 2 
 | `Steven_Appear` | 1 |  |
 | `steven_center` | 1 |  |
 | `steven_center_to_offscreen` | 1 |  |
-| `steven_introduction` | 1 |  |
+| `steven_introduction` | 1 |  | 2 
 | `Steven_Leave` | 1 |  |
-| `steven_milliontrashed` | 2 |  |
+| `steven_milliontrashed` | 2 |  | 4 
 | `steven_offscreen_to_center` | 1 |  |
-| `steven_postendgame` | 1 |  |
-| `steven_resummon` | 1 |  |
-| `steven_savescum_1` | 1 |  |
-| `steven_savescum_100` | 1 |  |
-| `steven_savescum_1alt1` | 1 |  |
-| `steven_savescum_1alt2` | 1 |  |
-| `steven_savescum_1alt3` | 1 |  |
-| `steven_savescum_2` | 1 |  |
-| `steven_savescum_2alt1` | 1 |  |
-| `steven_savescum_2alt2` | 1 |  |
-| `steven_savescum_2alt3` | 1 |  |
-| `steven_savescum_3` | 1 |  |
-| `steven_savescum_3alt1` | 1 |  |
-| `steven_savescum_3alt2` | 1 |  |
-| `steven_savescum_3alt3` | 1 |  |
-| `steven_savescum_4` | 1 |  |
-| `steven_savescum_4alt1` | 1 |  |
-| `steven_savescum_4alt2` | 1 |  |
-| `steven_savescum_4alt3` | 1 |  |
-| `steven_savescum_houseboss_1` | 1 |  |
-| `steven_savescum_houseboss_100` | 1 |  |
-| `steven_savescum_houseboss_2` | 1 |  |
-| `steven_savescum_houseboss_3` | 1 |  |
-| `steven_savescum_intro` | 1 |  |
-| `steven_savescum_intro_houseboss` | 1 |  |
-| `steven_unlock_act1_crazy` | 1 |  |
-| `steven_unlock_act1_impossible` | 1 |  |
-| `steven_unlock_act2_crazy` | 1 |  |
-| `steven_unlock_act2_hard` | 1 |  |
-| `steven_unlock_act2_impossible` | 1 |  |
-| `steven_unlock_act3_crazy` | 1 |  |
-| `steven_unlock_act3_hard` | 1 |  |
-| `steven_unlock_act3_impossible` | 1 |  |
+| `steven_postendgame` | 1 |  | 4 
+| `steven_resummon` | 1 |  | 2 
+| `steven_savescum_1` | 1 |  | 2 
+| `steven_savescum_100` | 1 |  | 2 
+| `steven_savescum_1alt1` | 1 |  | 2 
+| `steven_savescum_1alt2` | 1 |  | 2 
+| `steven_savescum_1alt3` | 1 |  | 2 
+| `steven_savescum_2` | 1 |  | 2 
+| `steven_savescum_2alt1` | 1 |  | 2 
+| `steven_savescum_2alt2` | 1 |  | 2 
+| `steven_savescum_2alt3` | 1 |  | 2 
+| `steven_savescum_3` | 1 |  | 2 
+| `steven_savescum_3alt1` | 1 |  | 2 
+| `steven_savescum_3alt2` | 1 |  | 2 
+| `steven_savescum_3alt3` | 1 |  | 2 
+| `steven_savescum_4` | 1 |  | 2 
+| `steven_savescum_4alt1` | 1 |  | 2 
+| `steven_savescum_4alt2` | 1 |  | 2 
+| `steven_savescum_4alt3` | 1 |  | 2 
+| `steven_savescum_houseboss_1` | 1 |  | 2 
+| `steven_savescum_houseboss_100` | 1 |  | 2 
+| `steven_savescum_houseboss_2` | 1 |  | 2 
+| `steven_savescum_houseboss_3` | 1 |  | 2 
+| `steven_savescum_intro` | 1 |  | 2 
+| `steven_savescum_intro_houseboss` | 1 |  | 2 
+| `steven_unlock_act1_crazy` | 1 |  | 2 
+| `steven_unlock_act1_impossible` | 1 |  | 2 
+| `steven_unlock_act2_crazy` | 1 |  | 2 
+| `steven_unlock_act2_hard` | 1 |  | 2 
+| `steven_unlock_act2_impossible` | 1 |  | 2 
+| `steven_unlock_act3_crazy` | 1 |  | 2 
+| `steven_unlock_act3_hard` | 1 |  | 2 
+| `steven_unlock_act3_impossible` | 1 |  | 2 
 | `StevenRadioIntro` | 1 |  |
-| `sticky` | 1 | `true` |
-| `Stimulation` | 2 |  |
-| `stock_fill_order` | 4 |  |
+| `sticky` | 1 | `true` | 6 
+| `Stimulation` | 2 |  | 268 
+| `stock_fill_order` | 4 |  | 9 
 | `Stop` | 1 |  |
 | `storage_expansion` | 1 |  |
 | `stored_food_value` | 1 |  |
-| `str` | 39 | `aux` |
-| `str_aux` | 1 | `ModelingClay_Default` |
-| `str_aux_initialize` | 5 | `random_class_ability`, `random_class_passive`, `random_copyable_class_ability`, `random_copyable_colorless_ability`, `random_copyable_colorless_passive` |
-| `str_aux_is_copy_ability` | 1 |  |
-| `str_aux_is_copy_item_active` | 1 | `true` |
-| `str_aux_is_copy_item_icon` | 1 | `true` |
-| `str_aux_is_copy_item_passive` | 1 | `true` |
-| `str_aux_is_copy_passive` | 2 | `true` |
+| `str` | 39 | `aux` | 337 
+| `str_aux` | 1 | `ModelingClay_Default` | 2 
+| `str_aux_initialize` | 5 | `random_class_ability`, `random_class_passive`, `random_copyable_class_ability`, `random_copyable_colorless_ability`, `random_copyable_colorless_passive` | 30 
+| `str_aux_is_copy_ability` | 1 |  | 4 
+| `str_aux_is_copy_item_active` | 1 | `true` | 2 
+| `str_aux_is_copy_item_icon` | 1 | `true` | 2 
+| `str_aux_is_copy_item_passive` | 1 | `true` | 4 
+| `str_aux_is_copy_passive` | 2 | `true` | 8 
 | `straight_shot` | 11 | `false`, `true` |
 | `StraySpawn` | 1 |  |
 | `strength` | 22 |  |
 | `stun_advances_pattern` | 9 | `false`, `true` |
 | `style` | 1 |  |
-| `sub_ability` | 4 | `CollectiveCounterImpl`, `CollectiveSpinImpl`, `HomingBlasts2_sub`, `HomingBlasts_sub`, `Huddle_Impl` |
-| `subcategory` | 2 |  |
+| `sub_ability` | 4 | `CollectiveCounterImpl`, `CollectiveSpinImpl`, `HomingBlasts2_sub`, `HomingBlasts_sub`, `Huddle_Impl` | 16 
+| `subcategory` | 2 |  | 35 
 | `subject_clip` | 27 | `EventSubject` |
 | `subject_frame` | 27 | `a_beggar`, `a_few_coins`, `a_large_poop`, `a_mega_large_poop`, `a_poop` |
 | `subject_frame_inner` | 1 |  |
@@ -7468,86 +7468,86 @@ Use this to spot any completely undocumented keys.
 | `SuccessfulEquipItem_face` | 1 |  |
 | `SuccessfulUnequipItem_Collar` | 1 |  |
 | `SuckMF` | 1 |  |
-| `suffix` | 1 | `!!!` |
-| `supermad` | 1 |  |
-| `suprise` | 1 |  |
+| `suffix` | 1 | `!!!` | 1 
+| `supermad` | 1 |  | 1 
+| `suprise` | 1 |  | 1 
 | `surprise` | 1 |  |
-| `surviving_kaiju` | 1 | `pyrophina`, `zaratana` |
+| `surviving_kaiju` | 1 | `pyrophina`, `zaratana` | 4 
 | `sweet_talk` | 1 |  |
 | `swim` | 1 |  |
 | `SwordAndShield` | 1 |  |
 | `SwordAndShield_Primed` | 1 |  |
 | `sync_brain_patterns` | 1 | `true` |
-| `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` |
-| `tag_location` | 1 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation`, `HitlerMiniInitial` |
+| `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` | 981 
+| `tag_location` | 1 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation`, `HitlerMiniInitial` | 5 
 | `tag_restriction` | 3 | `collective`, `dc_cat`, `dinofamily` |
-| `tags` | 25 | `consumable` |
-| `tail` | 11 |  |
+| `tags` | 25 | `consumable` | 8 
+| `tail` | 11 |  | 362 
 | `take` | 4 |  |
 | `take_blood` | 1 |  |
-| `take_cats_inside` | 1 |  |
+| `take_cats_inside` | 1 |  | 2 
 | `TakeExtraDamage` | 1 |  |
 | `takes_main_turn` | 7 | `false`, `true` |
 | `takes_turns` | 13 | `false`, `true` |
 | `talk` | 1 |  |
 | `talk_to` | 1 |  |
 | `tall` | 2 | `true` |
-| `tall_grass` | 1 |  |
-| `TallGrassTile` | 1 |  |
-| `Tank` | 2 |  |
-| `tank_portrait` | 1 |  |
-| `tankcat` | 1 | `auto` |
-| `tantrum_cry` | 1 |  |
+| `tall_grass` | 1 |  | 2 
+| `TallGrassTile` | 1 |  | 2 
+| `Tank` | 2 |  | 74 
+| `tank_portrait` | 1 |  | 1 
+| `tankcat` | 1 | `auto` | 2 
+| `tantrum_cry` | 1 |  | 1 
 | `tappytoes` | 1 |  |
 | `Tar` | 1 |  |
 | `TarFull` | 1 |  |
-| `target` | 32 |  |
+| `target` | 32 |  | 3724 
 | `target_filter` | 2 | `Kitten`, `any` |
 | `target_furthest_valid` | 1 | `true` |
 | `target_killer` | 1 | `true` |
 | `target_mode` | 32 | `direction`, `direction8`, `none`, `random_closest_tile`, `random_farthest_tile` |
 | `target_requires_element` | 2 |  |
 | `target_requires_tag` | 13 | `bishop_hat`, `bowling_ball`, `food`, `hitler_clone`, `hitler_clone_fetus` |
-| `teleport` | 1 |  |
+| `teleport` | 1 |  | 112 
 | `teleport_tracking_halflife` | 1 |  |
-| `template` | 33 | `dash_attack`, `jump_attack`, `jump_move`, `laser`, `leave` |
+| `template` | 33 | `dash_attack`, `jump_attack`, `jump_move`, `laser`, `leave` | 4348 
 | `temporary` | 3 | `false` |
-| `temporary_effects` | 17 |  |
+| `temporary_effects` | 17 |  | 176 
 | `TemporaryItem` | 1 | `BonusAbility`, `TinkererThrow` |
-| `terminator` | 1 |  |
-| `terminator_boss` | 1 |  |
-| `terror` | 1 |  |
-| `test_gamepad_prompts` | 1 |  |
-| `text` | 3 | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` |
+| `terminator` | 1 |  | 3 
+| `terminator_boss` | 1 |  | 5 
+| `terror` | 1 |  | 1 
+| `test_gamepad_prompts` | 1 |  | 2 
+| `text` | 3 | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` | 13 
 | `TextPopup_COMBAT_POPUP_RUN` | 1 |  |
 | `TextPopup_Reload` | 1 |  |
 | `TextPopup_ReloadMove` | 1 |  |
-| `texture` | 4 |  |
+| `texture` | 4 |  | 422 
 | `TF_TargetAllies` | 1 |  |
 | `TF_TargetEnemies` | 1 |  |
 | `the` | 2 | `Example`, `PlaySound`, `access`, `effect`, `engine` |
-| `thebloat` | 1 | `auto` |
-| `theend` | 3 | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` |
-| `TheEndUnlocked` | 1 |  |
+| `thebloat` | 1 | `auto` | 2 
+| `theend` | 3 | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` | 14 
+| `TheEndUnlocked` | 1 |  | 2 
 | `theshold` | 1 |  |
-| `Thief` | 2 |  |
-| `thief_portrait` | 1 |  |
-| `thiefcat` | 1 | `auto` |
-| `thorns` | 1 |  |
+| `Thief` | 2 |  | 76 
+| `thief_portrait` | 1 |  | 1 
+| `thiefcat` | 1 | `auto` | 4 
+| `thorns` | 1 |  | 36 
 | `threshold_expr` | 1 | `item_aux` |
 | `threshold_flat` | 5 |  |
 | `threshold_min` | 1 | `X` |
 | `threshold_percent` | 2 |  |
 | `thresholds` | 2 |  |
 | `Throb` | 1 |  |
-| `ThrobbingArteryDone` | 1 |  |
+| `ThrobbingArteryDone` | 1 |  | 2 
 | `ThrobBubs` | 1 |  |
 | `ThrobHost` | 1 |  |
 | `ThrobNettle` | 1 |  |
 | `throw` | 1 |  |
 | `throw_ability` | 3 | `TinkererThrow` |
 | `throw_consumed_character` | 3 | `true` |
-| `Thunderstorm` | 1 |  |
+| `Thunderstorm` | 1 |  | 1 
 | `Tick_Bleed` | 1 |  |
 | `Tick_Bound` | 1 |  |
 | `Tick_Burn` | 1 |  |
@@ -7570,13 +7570,13 @@ Use this to spot any completely undocumented keys.
 | `Tick_Stun` | 1 |  |
 | `Tick_Webbed` | 1 |  |
 | `tickdown_this_turn` | 1 | `true` |
-| `TieDyeBandana` | 1 |  |
-| `tile` | 10 | `BrambleTile`, `CreepTile`, `DirtTile`, `FireTile`, `FlowerTile` |
+| `TieDyeBandana` | 1 |  | 2 
+| `tile` | 10 | `BrambleTile`, `CreepTile`, `DirtTile`, `FireTile`, `FlowerTile` | 26 
 | `tile_desire_cost` | 1 |  |
-| `tile_layer` | 1 |  |
+| `tile_layer` | 1 |  | 26 
 | `tileset` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
 | `time` | 3 |  |
-| `time_machine` | 4 |  |
+| `time_machine` | 4 |  | 8 
 | `timemachine` | 1 |  |
 | `TimerChallengeCountdown_0` | 1 |  |
 | `TimerChallengeCountdown_1` | 1 |  |
@@ -7584,54 +7584,54 @@ Use this to spot any completely undocumented keys.
 | `TimerChallengeCountdown_3` | 1 |  |
 | `TimerChallengeCountdown_4` | 1 |  |
 | `TimerChallengeCountdown_5` | 1 |  |
-| `tink_aggression` | 2 |  |
-| `tink_basestats` | 2 |  |
-| `tink_begin_accepting_cats` | 1 |  |
-| `tink_inbreeding` | 2 |  |
+| `tink_aggression` | 2 |  | 4 
+| `tink_basestats` | 2 |  | 4 
+| `tink_begin_accepting_cats` | 1 |  | 2 
+| `tink_inbreeding` | 2 |  | 4 
 | `tink_left` | 1 |  |
 | `tink_left_to_offscreen` | 1 |  |
 | `tink_left_to_right` | 1 |  |
-| `tink_max1` | 1 |  |
-| `tink_max10` | 1 |  |
-| `tink_max2` | 1 |  |
-| `tink_max3` | 1 |  |
-| `tink_max4` | 1 |  |
-| `tink_max5` | 1 |  |
-| `tink_max6` | 1 |  |
-| `tink_max7` | 1 |  |
-| `tink_max8` | 1 |  |
-| `tink_max9` | 1 |  |
-| `tink_max_intro` | 2 |  |
-| `tink_max_repeating` | 2 |  |
+| `tink_max1` | 1 |  | 2 
+| `tink_max10` | 1 |  | 2 
+| `tink_max2` | 1 |  | 2 
+| `tink_max3` | 1 |  | 2 
+| `tink_max4` | 1 |  | 2 
+| `tink_max5` | 1 |  | 2 
+| `tink_max6` | 1 |  | 2 
+| `tink_max7` | 1 |  | 2 
+| `tink_max8` | 1 |  | 2 
+| `tink_max9` | 1 |  | 2 
+| `tink_max_intro` | 2 |  | 4 
+| `tink_max_repeating` | 2 |  | 4 
 | `tink_offscreen_to_left` | 1 |  |
 | `tink_offscreen_to_right` | 1 |  |
-| `tink_prettybow` | 2 |  |
-| `tink_relationships` | 2 |  |
+| `tink_prettybow` | 2 |  | 4 
+| `tink_relationships` | 2 |  | 4 
 | `tink_right` | 1 |  |
 | `tink_right_to_left` | 1 |  |
 | `tink_right_to_offscreen` | 1 |  |
-| `tink_sexuality` | 2 |  |
-| `tink_tags` | 2 |  |
-| `tink_terminator` | 1 |  |
-| `tink_tina2` | 1 |  |
-| `tink_tips_appeal` | 1 |  |
-| `tink_tips_basestats` | 1 |  |
-| `tink_tips_cleaning` | 1 |  |
-| `tink_tips_comfort` | 1 |  |
-| `tink_tips_health` | 1 |  |
-| `tink_tips_inbreeding` | 1 |  |
-| `tink_tips_intro` | 1 |  |
-| `tink_tips_multiclassing` | 1 |  |
-| `tink_tips_mutation` | 1 |  |
-| `tink_tips_stimulation` | 1 |  |
-| `Tinkerer` | 2 |  |
+| `tink_sexuality` | 2 |  | 4 
+| `tink_tags` | 2 |  | 4 
+| `tink_terminator` | 1 |  | 2 
+| `tink_tina2` | 1 |  | 2 
+| `tink_tips_appeal` | 1 |  | 2 
+| `tink_tips_basestats` | 1 |  | 2 
+| `tink_tips_cleaning` | 1 |  | 2 
+| `tink_tips_comfort` | 1 |  | 2 
+| `tink_tips_health` | 1 |  | 2 
+| `tink_tips_inbreeding` | 1 |  | 2 
+| `tink_tips_intro` | 1 |  | 2 
+| `tink_tips_multiclassing` | 1 |  | 2 
+| `tink_tips_mutation` | 1 |  | 2 
+| `tink_tips_stimulation` | 1 |  | 2 
+| `Tinkerer` | 2 |  | 70 
 | `tinkerer_0` | 1 | `tinkerer_0_bombs` |
 | `tinkerer_1` | 1 | `tinkerer_1_bombs` |
-| `tinkerer_portrait` | 1 |  |
-| `tinkerercat` | 1 | `auto` |
+| `tinkerer_portrait` | 1 |  | 1 
+| `tinkerercat` | 1 | `auto` | 4 
 | `title` | 27 | `Ability Pool Test`, `Blessing!`, `EVENT_ABEGGAR_NAME`, `EVENT_ACAT_NAME`, `EVENT_AFEWCOINS_NAME` |
 | `to` | 3 | `JarOfNothing`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |
-| `Toad` | 1 |  |
+| `Toad` | 1 |  | 6 
 | `TogglableRoundEndExtraTurn` | 1 |  |
 | `ToggleButton_Off_Click` | 1 |  |
 | `ToggleButton_Off_Hover` | 1 |  |
@@ -7640,54 +7640,54 @@ Use this to spot any completely undocumented keys.
 | `ToggleButton_On_Hover` | 1 |  |
 | `ToggleButton_On_Press` | 1 |  |
 | `tooltip_dialog` | 4 | `NPC_JACK_SHOP_TOOLTIP`, `NPC_ORGANGRINDER_SHOP_TOOLTIP`, `NPC_TRACY_SHOP_TOOLTIP` |
-| `tooltip_reference_applier` | 1 | `KEYWORD_ATTRACTION_DESC_REF`, `KEYWORD_LEECHES_DESC_APPLIER`, `KEYWORD_MANALEECHES_DESC_APPLIER` |
-| `tooltip_stackless` | 1 | `KEYWORD_ALPHA_DESC_STACKLESS`, `KEYWORD_ATTRACTION_DESC_STACKLESS`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC_STACKLESS`, `KEYWORD_BLEEDTHORNS_DESC_STACKLESS` |
-| `tooltip_stackless_neg` | 1 | `KEYWORD_DAMAGEDOWN_DESC_STACKLESS`, `KEYWORD_MOVEMENTDOWN_DESC_STACKLESS`, `KEYWORD_TEMPINITDOWN_DESC` |
-| `tooltip_stackless_pos` | 1 | `KEYWORD_DAMAGEUP_DESC_STACKLESS`, `KEYWORD_MOVEMENTUP_DESC_STACKLESS` |
-| `tooltip_stacks` | 1 | `KEYWORD_AMMO_DESC`, `KEYWORD_ATTRACTION_DESC`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC`, `KEYWORD_BLEEDTHORNS_DESC` |
-| `tooltip_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_DESC`, `KEYWORD_CHADOWN_DESC`, `KEYWORD_CONDOWN_DESC`, `KEYWORD_DAMAGEDOWN_DESC`, `KEYWORD_DEXDOWN_DESC` |
-| `tooltip_stacks_pos` | 1 | `KEYWORD_ALLSTATSUP_DESC`, `KEYWORD_CHAUP_DESC`, `KEYWORD_CONUP_DESC`, `KEYWORD_DAMAGEUP_DESC`, `KEYWORD_DEXUP_DESC` |
-| `tooltip_stacks_singular` | 1 | `KEYWORD_AUTOREVIVE_DESC_SINGULAR`, `KEYWORD_BLIND_DESC_STACKLESS`, `KEYWORD_BONUSMOVE_DESC`, `KEYWORD_CHARGEFISTS_DESC_SINGULAR`, `KEYWORD_COUNTER_DESC` |
+| `tooltip_reference_applier` | 1 | `KEYWORD_ATTRACTION_DESC_REF`, `KEYWORD_LEECHES_DESC_APPLIER`, `KEYWORD_MANALEECHES_DESC_APPLIER` | 3 
+| `tooltip_stackless` | 1 | `KEYWORD_ALPHA_DESC_STACKLESS`, `KEYWORD_ATTRACTION_DESC_STACKLESS`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC_STACKLESS`, `KEYWORD_BLEEDTHORNS_DESC_STACKLESS` | 76 
+| `tooltip_stackless_neg` | 1 | `KEYWORD_DAMAGEDOWN_DESC_STACKLESS`, `KEYWORD_MOVEMENTDOWN_DESC_STACKLESS`, `KEYWORD_TEMPINITDOWN_DESC` | 3 
+| `tooltip_stackless_pos` | 1 | `KEYWORD_DAMAGEUP_DESC_STACKLESS`, `KEYWORD_MOVEMENTUP_DESC_STACKLESS` | 2 
+| `tooltip_stacks` | 1 | `KEYWORD_AMMO_DESC`, `KEYWORD_ATTRACTION_DESC`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC`, `KEYWORD_BLEEDTHORNS_DESC` | 69 
+| `tooltip_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_DESC`, `KEYWORD_CHADOWN_DESC`, `KEYWORD_CONDOWN_DESC`, `KEYWORD_DAMAGEDOWN_DESC`, `KEYWORD_DEXDOWN_DESC` | 13 
+| `tooltip_stacks_pos` | 1 | `KEYWORD_ALLSTATSUP_DESC`, `KEYWORD_CHAUP_DESC`, `KEYWORD_CONUP_DESC`, `KEYWORD_DAMAGEUP_DESC`, `KEYWORD_DEXUP_DESC` | 10 
+| `tooltip_stacks_singular` | 1 | `KEYWORD_AUTOREVIVE_DESC_SINGULAR`, `KEYWORD_BLIND_DESC_STACKLESS`, `KEYWORD_BONUSMOVE_DESC`, `KEYWORD_CHARGEFISTS_DESC_SINGULAR`, `KEYWORD_COUNTER_DESC` | 15 
 | `tooltip_values` | 2 |  |
 | `toss_direction_restriction` | 2 | `backwards`, `forwards` |
-| `total_distance_moved` | 1 |  |
+| `total_distance_moved` | 1 |  | 110 
 | `touch` | 2 |  |
 | `towards` | 1 |  |
 | `track_target` | 3 | `true` |
 | `tracking_acquisition_halflife` | 1 |  |
-| `tracy_blankcollar1` | 2 |  |
-| `tracy_blankcollar2` | 2 |  |
-| `tracy_blankcollar3` | 2 |  |
-| `tracy_foodbonus1` | 1 |  |
-| `tracy_foodstorage1` | 2 |  |
-| `tracy_foodstorage10` | 2 |  |
-| `tracy_foodstorage2` | 2 |  |
-| `tracy_foodstorage3` | 2 |  |
-| `tracy_foodstorage4` | 2 |  |
-| `tracy_foodstorage5` | 2 |  |
-| `tracy_foodstorage6` | 2 |  |
-| `tracy_foodstorage7` | 2 |  |
-| `tracy_foodstorage8` | 2 |  |
-| `tracy_foodstorage9` | 2 |  |
-| `tracy_idol1` | 2 |  |
-| `tracy_idol2` | 2 |  |
-| `tracy_idol3` | 2 |  |
-| `tracy_idol4` | 2 |  |
-| `tracy_idol5` | 2 |  |
-| `tracy_idol6` | 2 |  |
-| `tracy_idol7` | 2 |  |
-| `tracy_introduction` | 1 |  |
-| `tracy_kaijufight` | 1 |  |
-| `tracy_max1` | 1 |  |
-| `tracy_max2` | 1 |  |
-| `tracy_max3` | 1 |  |
-| `tracy_max4` | 1 |  |
-| `tracy_max5` | 1 |  |
-| `tracy_max_intro` | 2 |  |
-| `tracy_max_repeating` | 2 |  |
+| `tracy_blankcollar1` | 2 |  | 4 
+| `tracy_blankcollar2` | 2 |  | 4 
+| `tracy_blankcollar3` | 2 |  | 4 
+| `tracy_foodbonus1` | 1 |  | 2 
+| `tracy_foodstorage1` | 2 |  | 4 
+| `tracy_foodstorage10` | 2 |  | 4 
+| `tracy_foodstorage2` | 2 |  | 4 
+| `tracy_foodstorage3` | 2 |  | 4 
+| `tracy_foodstorage4` | 2 |  | 4 
+| `tracy_foodstorage5` | 2 |  | 4 
+| `tracy_foodstorage6` | 2 |  | 4 
+| `tracy_foodstorage7` | 2 |  | 4 
+| `tracy_foodstorage8` | 2 |  | 4 
+| `tracy_foodstorage9` | 2 |  | 4 
+| `tracy_idol1` | 2 |  | 4 
+| `tracy_idol2` | 2 |  | 4 
+| `tracy_idol3` | 2 |  | 4 
+| `tracy_idol4` | 2 |  | 4 
+| `tracy_idol5` | 2 |  | 4 
+| `tracy_idol6` | 2 |  | 4 
+| `tracy_idol7` | 2 |  | 4 
+| `tracy_introduction` | 1 |  | 2 
+| `tracy_kaijufight` | 1 |  | 2 
+| `tracy_max1` | 1 |  | 2 
+| `tracy_max2` | 1 |  | 2 
+| `tracy_max3` | 1 |  | 2 
+| `tracy_max4` | 1 |  | 2 
+| `tracy_max5` | 1 |  | 2 
+| `tracy_max_intro` | 2 |  | 4 
+| `tracy_max_repeating` | 2 |  | 4 
 | `tracy_special_item` | 1 |  |
 | `trample_allies_too` | 2 | `true` |
-| `trampy` | 1 | `auto` |
+| `trampy` | 1 | `auto` | 2 
 | `transform` | 1 | `TheChild_TransformBoris` |
 | `Transformed` | 1 |  |
 | `Transition_Adventure_Depart` | 1 |  |
@@ -7724,32 +7724,32 @@ Use this to spot any completely undocumented keys.
 | `TransitionExit_QuitToMenuTransition` | 1 |  |
 | `TransitionExit_ShopInTransition` | 1 |  |
 | `TransitionExit_ShopOutTransition` | 1 |  |
-| `transitions` | 12 |  |
-| `trap` | 2 | `BearTrap`, `LandMine`, `WaterKittenTrap`, `WebTrap` |
+| `transitions` | 12 |  | 24 
+| `trap` | 2 | `BearTrap`, `LandMine`, `WaterKittenTrap`, `WebTrap` | 2 
 | `traverse` | 1 |  |
-| `treasure` | 2 |  |
+| `treasure` | 2 |  | 26 
 | `Treasure_ExitButton_Click` | 1 |  |
 | `Treasure_ExitButton_Hover` | 1 |  |
 | `treasure_room` | 1 | `true` |
-| `triattack` | 1 |  |
+| `triattack` | 1 |  | 2 
 | `trigger_battle_start` | 1 | `true` |
-| `trigger_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` |
-| `trigger_npc_sequence` | 1 | `beanies_begin_accepting_cats`, `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin` |
-| `trigger_npc_sequence_tomorrow` | 1 | `butch_boneyard_intro`, `frank_caves_intro`, `jack_desert_intro`, `organ_boneyard_intro` |
+| `trigger_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` | 20 
+| `trigger_npc_sequence` | 1 | `beanies_begin_accepting_cats`, `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin` | 110 
+| `trigger_npc_sequence_tomorrow` | 1 | `butch_boneyard_intro`, `frank_caves_intro`, `jack_desert_intro`, `organ_boneyard_intro` | 8 
 | `trigger_unlock` | 1 | `nuke_quest_get_nuke`, `nuke_quest_loop`, `quest_begin_amplifier2`, `quest_begin_receiver2`, `quest_begin_transmitter2` |
 | `triggering` | 2 | `at`, `chooses`, `file`, `from`, `here` |
 | `triggers_limit` | 1 |  |
-| `trinket` | 2 | `MCHadouken`, `MonkStyleChanger` |
-| `try_again_attack_rat` | 1 |  |
-| `try_again_melee_move` | 1 |  |
+| `trinket` | 2 | `MCHadouken`, `MonkStyleChanger` | 544 
+| `try_again_attack_rat` | 1 |  | 2 
+| `try_again_melee_move` | 1 |  | 2 
 | `tumor_object` | 1 | `MotherTumor` |
-| `Turkey` | 2 |  |
+| `Turkey` | 2 |  | 2 
 | `turnon` | 2 |  |
 | `turns` | 27 |  |
 | `Turtle` | 1 |  |
 | `Turtled` | 1 |  |
-| `tutorial` | 1 | `AREA_NAME_TUTORIAL` |
-| `tutorial_cat_dies` | 1 |  |
+| `tutorial` | 1 | `AREA_NAME_TUTORIAL` | 5 
+| `tutorial_cat_dies` | 1 |  | 2 
 | `tutorial_levelup_active_pool` | 1 |  |
 | `tutorial_levelup_active_pool_2` | 1 |  |
 | `tutorial_levelup_passive_pool` | 1 |  |
@@ -7764,7 +7764,7 @@ Use this to spot any completely undocumented keys.
 | `two_fronts_switch` | 1 | `true` |
 | `TwoAlive` | 1 |  |
 | `TwoEyes` | 1 |  |
-| `type` | 87 | `attack`, `battle`, `blankcollar`, `bonus_rare_item`, `boss` |
+| `type` | 87 | `attack`, `battle`, `blankcollar`, `bonus_rare_item`, `boss` | 54 
 | `type_icon` | 16 | `attack`, `buff`, `debuff`, `defense`, `heal` |
 | `UISFX_BeaniesAppear` | 1 |  |
 | `UISFX_BeaniesAway` | 1 |  |
@@ -7778,82 +7778,82 @@ Use this to spot any completely undocumented keys.
 | `UISFX_ButchMoveHint2` | 1 |  |
 | `UISFX_EndTurnShow` | 1 |  |
 | `uncapturable` | 1 | `false`, `true` |
-| `uncommon` | 3 |  |
+| `uncommon` | 3 |  | 574 
 | `uncounterable` | 1 | `true` |
 | `Unflip` | 1 |  |
-| `unique` | 2 | `true` |
-| `unknown` | 8 |  |
-| `Unlit` | 1 |  |
-| `unlit` | 1 | `true` |
-| `unlock_ability` | 1 | `BallOfSpiders`, `Bump`, `Ethereal`, `HundredHandSlap`, `HyperBeam` |
+| `unique` | 2 | `true` | 72 
+| `unknown` | 8 |  | 16 
+| `Unlit` | 1 |  | 9 
+| `unlit` | 1 | `true` | 9 
+| `unlock_ability` | 1 | `BallOfSpiders`, `Bump`, `Ethereal`, `HundredHandSlap`, `HyperBeam` | 62 
 | `unlock_act_difficulty` | 1 |  |
-| `unlock_boss` | 1 | `bumblefoot`, `gambit`, `infestedduo`, `jestercat`, `queenhippo` |
+| `unlock_boss` | 1 | `bumblefoot`, `gambit`, `infestedduo`, `jestercat`, `queenhippo` | 12 
 | `unlock_class` | 1 | `Butcher`, `Druid`, `Jester`, `Medic`, `Monk` |
 | `unlock_controls` | 6 |  |
-| `unlock_item` | 1 | `MomsKnife` |
-| `unlock_item_immediate` | 1 | `AnointingOil`, `BagOfBags`, `BagOfSeeds`, `BallOfYarn`, `BallPeenHammer` |
-| `unlock_levelgroup` | 1 | `bigsharklevels` |
+| `unlock_item` | 1 | `MomsKnife` | 2 
+| `unlock_item_immediate` | 1 | `AnointingOil`, `BagOfBags`, `BagOfSeeds`, `BallOfYarn`, `BallPeenHammer` | 254 
+| `unlock_levelgroup` | 1 | `bigsharklevels` | 4 
 | `unlock_mouse` | 1 |  |
-| `unlock_npc_tomorrow` | 1 | `beanies`, `jack`, `steven`, `tracy` |
-| `unlock_passive` | 1 | `AlphaStrike`, `ArmorSpecialist`, `Bouncer`, `ButchersSoul`, `ClericsSoul` |
-| `unlock_quest_item` | 1 | `BlackShard`, `CryogenicTimeChamber_Empty`, `GuillotinasHead`, `JarOfRadiation`, `Nuke` |
+| `unlock_npc_tomorrow` | 1 | `beanies`, `jack`, `steven`, `tracy` | 8 
+| `unlock_passive` | 1 | `AlphaStrike`, `ArmorSpecialist`, `Bouncer`, `ButchersSoul`, `ClericsSoul` | 58 
+| `unlock_quest_item` | 1 | `BlackShard`, `CryogenicTimeChamber_Empty`, `GuillotinasHead`, `JarOfRadiation`, `Nuke` | 26 
 | `unlock_room` | 1 | `Attic`, `Basement0`, `Basement1`, `Basement2`, `Basement3` |
-| `unlock_song` | 1 | `alone_in_the_dark`, `angel_wings`, `bolt_of_lightning`, `brush_your_teeth`, `chaos` |
+| `unlock_song` | 1 | `alone_in_the_dark`, `angel_wings`, `bolt_of_lightning`, `brush_your_teeth`, `chaos` | 58 
 | `unlockcheck_on_complete` | 1 | `map_unlock_junkyard` |
 | `Unmounted` | 1 |  |
-| `unprompted` | 8 |  |
-| `unprompted1` | 1 |  |
-| `unprompted2` | 1 |  |
-| `unprompted3` | 1 |  |
-| `unprompted4` | 1 |  |
-| `unprompted5` | 1 |  |
-| `unprompted6` | 1 |  |
-| `unprompted_a` | 4 |  |
-| `unprompted_b` | 4 |  |
-| `unprompted_c` | 4 |  |
-| `unprompted_d` | 4 |  |
-| `unprompted_e` | 4 |  |
-| `unprompted_f` | 4 |  |
-| `unprompted_g` | 4 |  |
-| `unprompted_h` | 4 |  |
-| `unprompted_i` | 4 |  |
+| `unprompted` | 8 |  | 18 
+| `unprompted1` | 1 |  | 2 
+| `unprompted2` | 1 |  | 2 
+| `unprompted3` | 1 |  | 2 
+| `unprompted4` | 1 |  | 2 
+| `unprompted5` | 1 |  | 2 
+| `unprompted6` | 1 |  | 2 
+| `unprompted_a` | 4 |  | 8 
+| `unprompted_b` | 4 |  | 8 
+| `unprompted_c` | 4 |  | 8 
+| `unprompted_d` | 4 |  | 8 
+| `unprompted_e` | 4 |  | 8 
+| `unprompted_f` | 4 |  | 8 
+| `unprompted_g` | 4 |  | 8 
+| `unprompted_h` | 4 |  | 8 
+| `unprompted_i` | 4 |  | 8 
 | `Unwashed` | 1 |  |
 | `Up` | 3 |  |
-| `upgrade_storage_1` | 2 |  |
-| `upgrade_storage_2` | 2 |  |
-| `upgrade_storage_3` | 2 |  |
-| `upgrade_storage_4` | 2 |  |
-| `upgrade_storage_5` | 2 |  |
-| `upgrade_storage_6` | 2 |  |
-| `upgrade_storage_7` | 2 |  |
-| `upgrade_storage_max1` | 1 |  |
-| `upgrade_storage_max2` | 1 |  |
-| `upgrade_storage_max3` | 1 |  |
-| `upgrade_storage_max4` | 1 |  |
-| `upgrade_storage_max5` | 1 |  |
-| `upgrade_storage_repeating_crazy` | 2 |  |
-| `upgrade_storage_repeating_hard` | 2 |  |
-| `upgrade_storage_repeating_impossible` | 2 |  |
-| `upgrade_storage_repeating_intro` | 2 |  |
-| `upgrade_storage_repeating_normal` | 2 |  |
+| `upgrade_storage_1` | 2 |  | 4 
+| `upgrade_storage_2` | 2 |  | 4 
+| `upgrade_storage_3` | 2 |  | 4 
+| `upgrade_storage_4` | 2 |  | 4 
+| `upgrade_storage_5` | 2 |  | 4 
+| `upgrade_storage_6` | 2 |  | 4 
+| `upgrade_storage_7` | 2 |  | 4 
+| `upgrade_storage_max1` | 1 |  | 2 
+| `upgrade_storage_max2` | 1 |  | 2 
+| `upgrade_storage_max3` | 1 |  | 2 
+| `upgrade_storage_max4` | 1 |  | 2 
+| `upgrade_storage_max5` | 1 |  | 2 
+| `upgrade_storage_repeating_crazy` | 2 |  | 4 
+| `upgrade_storage_repeating_hard` | 2 |  | 4 
+| `upgrade_storage_repeating_impossible` | 2 |  | 4 
+| `upgrade_storage_repeating_intro` | 2 |  | 4 
+| `upgrade_storage_repeating_normal` | 2 |  | 4 
 | `upgrade_straight_shot_to_boomerang` | 2 | `true` |
 | `upgrade_straight_shot_to_piercing` | 6 | `true` |
 | `upgrade_yourself` | 1 |  |
 | `upgraded` | 4 | `true` |
 | `use_ai` | 2 | `true` |
-| `use_attack_after_used_weapon` | 1 |  |
+| `use_attack_after_used_weapon` | 1 |  | 2 
 | `use_item` | 1 |  |
 | `use_toilet_con` | 1 |  |
 | `use_toilet_str` | 1 |  |
 | `use_turn_animations` | 2 | `true` |
-| `use_weapon` | 2 |  |
-| `utility` | 1 | `PlayerSpawn` |
-| `value` | 6 | `cha`, `con`, `dex`, `int`, `item_aux+1` |
-| `variant_of` | 47 | `Absorb`, `AbsorbSoul`, `Adoubement`, `Aftershock`, `AirBurst` |
+| `use_weapon` | 2 |  | 2 
+| `utility` | 1 | `PlayerSpawn` | 1 
+| `value` | 6 | `cha`, `con`, `dex`, `int`, `item_aux+1` | 485 
+| `variant_of` | 47 | `Absorb`, `AbsorbSoul`, `Adoubement`, `Aftershock`, `AirBurst` | 2364 
 | `verify_target` | 1 | `true` |
-| `very_rare` | 3 |  |
+| `very_rare` | 3 |  | 316 
 | `verycloseup` | 3 |  |
-| `verymad` | 1 |  |
+| `verymad` | 1 |  | 1 
 | `Victory_Cheer1` | 1 |  |
 | `Victory_Cheer2` | 1 |  |
 | `Victory_Cheer3` | 1 |  |
@@ -7864,9 +7864,9 @@ Use this to spot any completely undocumented keys.
 | `view_bugs_as_enemies` | 1 | `true` |
 | `virtual_abilities` | 8 |  |
 | `virtual_head_position` | 1 |  |
-| `visit_chapter` | 1 | `dimensionx`, `future`, `iceage`, `theend` |
+| `visit_chapter` | 1 | `dimensionx`, `future`, `iceage`, `theend` | 8 
 | `visually_spiky` | 2 | `true` |
-| `voice` | 10 | `ankylosaurus`, `female1`, `female10`, `female12`, `female17` |
+| `voice` | 10 | `ankylosaurus`, `female1`, `female10`, `female12`, `female17` | 400 
 | `voice_0` | 9 |  |
 | `voice_1` | 9 |  |
 | `voice_2` | 9 |  |
@@ -7903,9 +7903,9 @@ Use this to spot any completely undocumented keys.
 | `voice_x` | 9 |  |
 | `voice_y` | 9 |  |
 | `voice_z` | 9 |  |
-| `VolcanoAntennaAttached` | 2 |  |
+| `VolcanoAntennaAttached` | 2 |  | 4 
 | `volume` | 13 | `SE_Interstitial_RaiseSwish`, `and`, `between`, `extra_events`, `for` |
-| `volume_adjustment` | 2 |  |
+| `volume_adjustment` | 2 |  | 4 
 | `volume_falloff_range` | 12 |  |
 | `volume_range` | 2 |  |
 | `w1` | 1 |  |
@@ -7918,70 +7918,70 @@ Use this to spot any completely undocumented keys.
 | `wait_for_cancel` | 4 |  |
 | `wait_till_next_round_to_update_turns` | 2 | `true` |
 | `wait_till_turn` | 1 | `true` |
-| `wallet_size` | 1 |  |
-| `WallOfFleshDone` | 1 |  |
+| `wallet_size` | 1 |  | 16 
+| `WallOfFleshDone` | 1 |  | 2 
 | `warrior_tag` | 2 | `bungawarrior`, `finalboss_clonecat` |
 | `Washed` | 1 |  |
 | `Washer` | 1 |  |
-| `Water` | 2 |  |
-| `water_alt_shader` | 1 | `blood` |
-| `water_alt_shroud` | 1 | `BloodShroud` |
-| `water_alt_tile` | 1 | `BloodTile` |
+| `Water` | 2 |  | 5 
+| `water_alt_shader` | 1 | `blood` | 2 
+| `water_alt_shroud` | 1 | `BloodShroud` | 2 
+| `water_alt_tile` | 1 | `BloodTile` | 2 
 | `weak_threshold` | 10 |  |
 | `wealth` | 1 |  |
-| `weapon` | 4 | `AstroTaser`, `ButcherHook`, `CaveCatClub`, `GunslingerPistol`, `MonkFist` |
+| `weapon` | 4 | `AstroTaser`, `ButcherHook`, `CaveCatClub`, `GunslingerPistol`, `MonkFist` | 474 
 | `weather` | 1 |  |
-| `weather_element_alt` | 1 |  |
-| `weather_event` | 1 |  |
+| `weather_element_alt` | 1 |  | 1 
+| `weather_event` | 1 |  | 2 
 | `weather_roll` | 1 |  |
-| `weightless` | 1 | `true` |
+| `weightless` | 1 | `true` | 6 
 | `weights` | 6 | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` |
-| `WeirdEgg` | 1 |  |
-| `welcome` | 1 |  |
-| `welcome_boneyard` | 1 |  |
-| `welcome_bunker` | 1 |  |
-| `welcome_caves` | 1 |  |
-| `welcome_core` | 1 |  |
-| `welcome_crater` | 1 |  |
-| `welcome_desert` | 1 |  |
-| `welcome_future` | 1 |  |
-| `welcome_iceage` | 1 |  |
-| `welcome_junkyard` | 1 |  |
-| `welcome_jurassic` | 1 |  |
-| `welcome_lab` | 1 |  |
+| `WeirdEgg` | 1 |  | 2 
+| `welcome` | 1 |  | 2 
+| `welcome_boneyard` | 1 |  | 2 
+| `welcome_bunker` | 1 |  | 2 
+| `welcome_caves` | 1 |  | 2 
+| `welcome_core` | 1 |  | 2 
+| `welcome_crater` | 1 |  | 2 
+| `welcome_desert` | 1 |  | 2 
+| `welcome_future` | 1 |  | 2 
+| `welcome_iceage` | 1 |  | 2 
+| `welcome_junkyard` | 1 |  | 2 
+| `welcome_jurassic` | 1 |  | 2 
+| `welcome_lab` | 1 |  | 2 
 | `welcome_message` | 1 | `welcome_water`, `welcome_water_cheap` |
-| `welcome_moon` | 1 |  |
-| `welcome_sewers` | 1 |  |
-| `welcome_theend` | 1 |  |
-| `welcome_water` | 1 |  |
-| `welcome_water_cheap` | 1 |  |
-| `WereMan` | 1 |  |
+| `welcome_moon` | 1 |  | 2 
+| `welcome_sewers` | 1 |  | 2 
+| `welcome_theend` | 1 |  | 2 
+| `welcome_water` | 1 |  | 2 
+| `welcome_water_cheap` | 1 |  | 2 
+| `WereMan` | 1 |  | 1 
 | `wheezies` | 1 |  |
-| `width` | 1 |  |
-| `wince` | 1 |  |
+| `width` | 1 |  | 16 
+| `wince` | 1 |  | 1 
 | `Wind` | 1 |  |
-| `wink` | 1 |  |
+| `wink` | 1 |  | 1 
 | `wish_genes` | 1 |  |
 | `wish_items` | 1 |  |
 | `wish_levelups` | 1 |  |
 | `wish_strength` | 1 |  |
-| `WishBone` | 1 |  |
+| `WishBone` | 1 |  | 2 
 | `with` | 2 | `a`, `base`, `of`, `setting`, `settingh` |
 | `without_orienting` | 1 | `true` |
 | `withstand` | 1 |  |
-| `wolfcat` | 1 |  |
+| `wolfcat` | 1 |  | 2 
 | `works_with_tech` | 3 | `true` |
-| `worried` | 1 |  |
-| `worried_left` | 1 |  |
+| `worried` | 1 |  | 9 
+| `worried_left` | 1 |  | 1 
 | `X_cant_be_zero` | 9 | `true` |
 | `X_is` | 18 | `alpha_exists`, `basic_attack_damage`, `cast_count`, `current_health`, `current_mana` |
 | `yank_it_out` | 1 |  |
 | `yellow_needle` | 1 |  |
-| `yeticat` | 1 |  |
+| `yeticat` | 1 |  | 2 
 | `zaratana_backgroundfootstep` | 1 |  |
-| `Zealot` | 1 |  |
+| `Zealot` | 1 |  | 2 
 | `ZealotBomb` | 1 |  |
-| `zodiac` | 1 | `auto` |
+| `zodiac` | 1 | `auto` | 3 
 | `zoomedout` | 3 |  |
 | `zoomout_catvolume` | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |

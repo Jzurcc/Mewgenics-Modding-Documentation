@@ -15,11 +15,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 **Total Count:** 67
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
-| [`frame_label`](./Enums.md#enum-frame_label) | Enum |  | 67 |
-| [`quotes`](./Arrays.md#array-quotes) | Array |  | 36 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
+| [`frame_label`](./Enums.md#enum-frame_label) | Enum |  | 67 |  |
+| [`quotes`](./Arrays.md#array-quotes) | Array |  | 36 |  |
 
 </details>
 

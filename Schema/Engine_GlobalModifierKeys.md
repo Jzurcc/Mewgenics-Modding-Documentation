@@ -13,12 +13,12 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 <details>
 <summary><b>Expand</b></summary>
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`CreateGlobalModifiers`](#createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 5 |
-| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. | 3 |
-| `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. | 1 |
-| `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. | 1 |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`CreateGlobalModifiers`](#createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 5 |  |
+| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. | 2 |  |
+| `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. | 1 |  |
+| `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. | 1 |  |
 
 </details>
 
@@ -35,10 +35,10 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 
 > **Total Count:** 5
 
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`LowerAmbientLight`](#lowerambientlight) | Number / Object | A visual effect that dims the map's lighting. | 3 |
-| `BloodRain` | Number / Object |  | `1` (Number), `{ ... }` (Object) |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`LowerAmbientLight`](#lowerambientlight) | Number / Object | A visual effect that dims the map's lighting. | 3 |  |
+| `BloodRain` | Number / Object |  | 2 | `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -50,39 +50,39 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 
 ### Object: `BloodRain`
 
-| Key | Type | Definition | Example Inputs |
-| :--- | :--- | :--- | :--- |
-| `alpha` | String |  | `.5` (String) |
-| `cost` | Object |  | `{ ... }` (Object) |
-| `damage_instance` | Object |  | `{ ... }` (Object) |
-| `emit_amount` | Number |  | `1` (Number) |
-| `emit_box` | Array |  | `[0 10 0 0 0 10]` (Array) |
-| `emit_direction` | Array |  | `[0 1 0]` (Array) |
-| `emit_rate` | Number |  | `200` (Number) |
-| `emit_spread` | Number |  | `0` (Number) |
-| `face_moving_direction` | Boolean |  | `true` (Boolean) |
-| `force` | Array |  | `[0 10 0]` (Array) |
-| `graphics` | Object |  | `{ ... }` (Object) |
-| `live_bounds` | Array |  | `[-999 999 0 999 -999 999]` (Array) |
-| `meta` | Object |  | `{ ... }` (Object) |
-| `movieclip` | Enum |  | `Particle_BloodDrip` (Enum) |
-| `particle_lifetime` | Number |  | `5` (Number) |
-| `projection_matrix` | Enum |  | `default` (Enum) |
-| `render_mode` | Enum |  | `separate` (Enum) |
-| `scripts` | Object |  | `{ ... }` (Object) |
-| `self_damage` | Object |  | `{ ... }` (Object) |
-| `simulation_space` | Enum |  | `global` (Enum) |
-| `size_start` | Array |  | `[.25 1]` (Array) |
-| `speed_scale` | String |  | `.2` (String) |
-| `speed_start` | Number |  | `0` (Number) |
-| `target` | Object |  | `{ ... }` (Object) |
-| `template` | Enum |  | `spell` (Enum) |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `alpha` | String |  |  | `.5` (String) |
+| `cost` | Object |  |  | `{ ... }` (Object) |
+| `damage_instance` | Object |  |  | `{ ... }` (Object) |
+| `emit_amount` | Number |  |  | `1` (Number) |
+| `emit_box` | Array |  |  | `[0 10 0 0 0 10]` (Array) |
+| `emit_direction` | Array |  |  | `[0 1 0]` (Array) |
+| `emit_rate` | Number |  |  | `200` (Number) |
+| `emit_spread` | Number |  |  | `0` (Number) |
+| `face_moving_direction` | Boolean |  |  | `true` (Boolean) |
+| `force` | Array |  |  | `[0 10 0]` (Array) |
+| `graphics` | Object |  |  | `{ ... }` (Object) |
+| `live_bounds` | Array |  |  | `[-999 999 0 999 -999 999]` (Array) |
+| `meta` | Object |  |  | `{ ... }` (Object) |
+| `movieclip` | Enum |  |  | `Particle_BloodDrip` (Enum) |
+| `particle_lifetime` | Number |  |  | `5` (Number) |
+| `projection_matrix` | Enum |  |  | `default` (Enum) |
+| `render_mode` | Enum |  |  | `separate` (Enum) |
+| `scripts` | Object |  |  | `{ ... }` (Object) |
+| `self_damage` | Object |  |  | `{ ... }` (Object) |
+| `simulation_space` | Enum |  |  | `global` (Enum) |
+| `size_start` | Array |  |  | `[.25 1]` (Array) |
+| `speed_scale` | String |  |  | `.2` (String) |
+| `speed_start` | Number |  |  | `0` (Number) |
+| `target` | Object |  |  | `{ ... }` (Object) |
+| `template` | Enum |  |  | `spell` (Enum) |
 
 
 ### Object: `LowerAmbientLight`
 
-| Key | Type | Definition | Example Inputs |
-| :--- | :--- | :--- | :--- |
-| `amount` | Array |  | `[50 60 60]` (Array) |
-| `speed` | Number |  | `4` (Number) |
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `amount` | Array |  |  | `[50 60 60]` (Array) |
+| `speed` | Number |  | 6 | `4` (Number) |
 
