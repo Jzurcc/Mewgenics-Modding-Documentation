@@ -74,12 +74,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`monkcat`](./Enums.md#enum-monkcat) | Enum |  | 4 |  |
 | [`necrocat`](./Enums.md#enum-necrocat) | Enum |  | 4 |  |
 | [`psychiccat`](./Enums.md#enum-psychiccat) | Enum |  | 4 |  |
-| [`start`](./Map_Generation_and_Routing.md#context-start) | Object |  | 4 |  |
+| [`start`](./Map_Generation_and_Routing.md#context-start) | Enum |  | 4 |  |
 | [`thiefcat`](./Enums.md#enum-thiefcat) | Enum |  | 4 |  |
 | [`tinkerercat`](./Enums.md#enum-tinkerercat) | Enum |  | 4 |  |
 | [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached) | Object | Applies or references the 'VolcanoAntennaAttached' effect/state. | 4 |  |
 | [`bumblefoot`](./Enums.md#enum-bumblefoot) | Enum |  | 3 |  |
-| [`event`](./Map_Generation_and_Routing.md#context-event) | Object |  | 3 |  |
+| [`event`](./Map_Generation_and_Routing.md#context-event) | Enum |  | 3 |  |
 | [`flushmaster`](./Enums.md#enum-flushmaster) | Enum |  | 3 |  |
 | [`gambit`](./Enums.md#enum-gambit) | Enum |  | 3 |  |
 | [`radicalrat`](./Enums.md#enum-radicalrat) | Enum |  | 3 |  |
@@ -148,6 +148,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`choose_one`](./Arrays.md#array-choose_one) | Array |  | 1 |  |
 | [`nemesis`](./Arrays.md#array-nemesis) | Array |  | 1 |  |
 | :--- | :--- | :--- | :--- | :--- |
+| [`battle`](./Enums.md) | Object | | 6 |   |
 
 </details>
 

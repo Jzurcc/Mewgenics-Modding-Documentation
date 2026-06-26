@@ -17,20 +17,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 5441 |  |
+| [`desc`](./Strings.md#string-desc) | Enum | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 5441 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1570 |  |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 981 |  |
-| `cha` | Number | Examples: `2, -1, 1` | 468 |  |
-| `spd` | Number | Examples: `1, -1, -2` | 424 |  |
-| `shield` | Number | Examples: `12, 5, 10` | 422 |  |
-| `con` | Number | Examples: `-2, -3, 1` | 416 |  |
-| `int` | Number | Examples: `2, -1, 1` | 401 |  |
-| `lck` | Number | Examples: `2, -1, 1` | 351 |  |
-| `str` | Number | Examples: `2, -1, 1` | 337 |  |
-| `dex` | Number | Examples: `2, -1, -2` | 301 |  |
-| `divine_shield` | Number | Examples: `1` | 54 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Examples: `common, melted, animal` | 981 |  |
+| `cha` | Enum / Integer | Examples: `2, -1, 1` | 468 |  |
+| `spd` | Enum / Integer | Examples: `1, -1, -2` | 424 |  |
+| `shield` | Enum / Integer | Examples: `12, 5, 10` | 422 |  |
+| `con` | Enum / Integer | Examples: `-2, -3, 1` | 416 |  |
+| `int` | Enum / Integer | Examples: `2, -1, 1` | 401 |  |
+| `lck` | Enum / Integer | Examples: `2, -1, 1` | 351 |  |
+| `str` | Enum / Integer | Examples: `2, -1, 1` | 337 |  |
+| `dex` | Enum / Integer | Examples: `2, -1, -2` | 301 |  |
+| `divine_shield` | Integer | Examples: `1` | 54 |  |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `FetusSpit` | 26 |  |
-| `speed` | Number | Examples: `-4` | 6 |  |
+| `speed` | Array / Number | Examples: `-4` | 6 |  |
 | [`override_move`](./Enums.md#enum-override_move) | Enum | Examples: `BasicJump` | 4 |  |
 
 </details>
@@ -52,6 +52,112 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2827 |  |
+| [`AbilityReaction`](./Enums.md) | Enum | | 1 | SkunkTail |
+| [`AbilityWhenTaggedCharacterMovesNear`](./Enums.md) | Object | | 1 |   |
+| [`AddBonusMeleeRange`](./Enums.md) | Integer | | 3 | 1 |
+| [`AddBonusRange`](./Enums.md) | Integer | | 6 | 1 |
+| [`AddCorpseHealth`](./Enums.md) | Integer | | 3 | 2 |
+| [`AddDamageToElementDamage`](./Enums.md) | Object | | 1 |   |
+| [`AddElementsToBasicAttack`](./Enums.md) | Enum | | 13 | Ice |
+| [`AddInitiative`](./Enums.md) | Integer | | 1 | -20 |
+| [`AddKnockbackDamage`](./Enums.md) | Integer | | 2 | 1 |
+| [`AddLevelUpRerolls`](./Enums.md) | Integer | | 3 | 1 |
+| [`AddLootMultiplier`](./Enums.md) | Integer | | 1 | 1 |
+| [`AddManaRegen`](./Enums.md) | Integer | | 3 | 1 |
+| [`AddMovement`](./Enums.md) | Integer | | 3 | 1 |
+| [`AddStatusToBasicAttack`](./Enums.md) | Object | | 52 |   |
+| [`AddStatusToBasicMeleeAttack`](./Enums.md) | Object | | 6 |   |
+| [`AddTemporaryEffectsToBasicAttack`](./Enums.md) | Object | | 1 |   |
+| [`AllStatsUp`](./Enums.md) | Integer | | 3 | 1 |
+| [`AlphaTurns`](./Enums.md) | Integer | | 1 | 1 |
+| [`BackflipWhenTargeted`](./Enums.md) | Object | | 1 |   |
+| [`BackstabFront`](./Enums.md) | Integer | | 1 | 1 |
+| [`BackstabImmunity`](./Enums.md) | Integer | | 2 | 1 |
+| [`BasicAttackCantMiss`](./Enums.md) | Integer | | 1 | 1 |
+| [`BlacklistPickupType`](./Enums.md) | Enum | | 4 | catnip |
+| [`Bleed`](./Enums.md) | Array / Integer | | 14 | [3] |
+| [`BleedThorns`](./Enums.md) | Integer | | 4 | 2 |
+| [`Blind`](./Enums.md) | Array / Integer | | 6 | [.10] |
+| [`BoostWeaponDamage`](./Enums.md) | Integer | | 1 | 1 |
+| [`Brace`](./Enums.md) | Integer | | 6 | 1 |
+| [`Bruise`](./Enums.md) | Integer | | 5 | 2 |
+| [`CanRemoveCursedItems`](./Enums.md) | Integer | | 1 | 1 |
+| [`ChanceToBackflip`](./Enums.md) | Object | | 1 |   |
+| [`ClassManaCostReduction`](./Enums.md) | Object | | 1 |   |
+| [`Confusion`](./Enums.md) | Array / Integer | | 7 | [2] |
+| [`ConjureBonusAbility`](./Enums.md) | Enum | | 1 | random |
+| [`CounterAttack`](./Enums.md) | Object | | 2 |   |
+| [`CritChanceUp`](./Enums.md) | Integer | | 2 | 5 |
+| [`DamageUp`](./Enums.md) | Integer | | 4 | 2 |
+| [`DepressionAura`](./Enums.md) | Integer | | 1 | 1 |
+| [`DisableAbilitiesWithTag`](./Enums.md) | Enum | | 4 | consumable |
+| [`DodgeChance`](./Enums.md) | Integer | | 12 | 2 |
+| [`DodgeChance_Status`](./Enums.md) | Integer | | 1 | 10 |
+| [`DrinkWater`](./Enums.md) | Integer | | 1 | 1 |
+| [`ElementImmune`](./Enums.md) | Enum | | 4 | Ice |
+| [`EquipRandomTemporaryItemFromPool`](./Enums.md) | Enum | | 1 | pills |
+| [`EquipTemporaryItem`](./Enums.md) | Enum | | 2 | WaterBottle_Full |
+| [`ExtraBasicAttacks`](./Enums.md) | Integer | | 1 | 2 |
+| [`FlatHealWhenDealDamage`](./Enums.md) | Integer | | 1 | 1 |
+| [`FreePathfindElement`](./Enums.md) | Enum | | 1 | Water |
+| [`GainManaWhenAnythingDies`](./Enums.md) | Integer | | 1 | 1 |
+| [`HealthRegenUp`](./Enums.md) | Integer | | 14 | 2 |
+| [`HouseFoodRequirementMultiplier`](./Enums.md) | Integer | | 2 | 0 |
+| [`IgnoreTiles`](./Enums.md) | Integer | | 4 | 1 |
+| [`Immobile`](./Enums.md) | Array / Integer | | 5 | [.05] |
+| [`KineticSpikes`](./Enums.md) | Integer | | 5 | 1 |
+| [`KnockbackImmunity`](./Enums.md) | Integer | | 1 | 1 |
+| [`MakeBasicAttackPull`](./Enums.md) | Integer | | 2 | 1 |
+| [`ManaCostReduction`](./Enums.md) | Integer | | 1 | 1 |
+| [`MeleeRevengeDamage`](./Enums.md) | Object | | 7 |   |
+| [`MissChance`](./Enums.md) | Integer | | 3 | 20 |
+| [`MoveAwayFromDamageSource`](./Enums.md) | Enum | | 1 | BasicJump |
+| [`MoveWhenDamaged`](./Enums.md) | Object | | 1 |   |
+| [`MulticlassLevelUp`](./Enums.md) | Enum | | 4 | Hunter |
+| [`PassiveWhenAffectedByElement`](./Enums.md) | Object | | 12 |   |
+| [`PassiveWhenAtFullMana`](./Enums.md) | Object | | 1 |   |
+| [`PassiveWhileHasStatus`](./Enums.md) | Object | | 1 |   |
+| [`Poison`](./Enums.md) | Integer | | 10 | 1 |
+| [`PoisonThorns`](./Enums.md) | Integer | | 2 | 2 |
+| [`PoopWhenHit`](./Enums.md) | Enum | | 2 | Poop |
+| [`Quivered`](./Enums.md) | Array / Integer | | 5 | [0.1] |
+| [`RandomStatUp`](./Enums.md) | Integer | | 5 | 2 |
+| [`ReflectProjectiles`](./Enums.md) | Integer | | 2 | 10 |
+| [`ReplaceBasicAttack_Mutation`](./Enums.md) | Enum | | 2 | FetusSpit |
+| [`ReplaceBasicMove`](./Enums.md) | Enum | | 3 | ToadJump_BasicMove |
+| [`ReplaceBasicMove_Mutation`](./Enums.md) | Enum | | 3 | BasicJump |
+| [`RevengeDamage`](./Enums.md) | Object | | 9 |   |
+| [`ShowHiddenThings`](./Enums.md) | Integer | | 2 | 1 |
+| [`Slow`](./Enums.md) | Array / Integer | | 4 | [.1] |
+| [`SpawnEachTurn`](./Enums.md) | Object | | 4 |   |
+| [`SpawnExtraThingsOnBattleStart`](./Enums.md) | Object | | 1 |   |
+| [`SpawnOnBattleStartRandomEmptyTile`](./Enums.md) | Object | | 3 |   |
+| [`SpawnOnDowned`](./Enums.md) | Enum | | 7 | CharmedFly |
+| [`SpawnThingOnDamage`](./Enums.md) | Object | | 7 |   |
+| [`StatusEachRoundEnd`](./Enums.md) | Object | | 1 |   |
+| [`StatusEachTurnBegin`](./Enums.md) | Object | | 5 |   |
+| [`StatusEachTurnEnd`](./Enums.md) | Object | | 4 |   |
+| [`StatusEveryXSpellCasts`](./Enums.md) | Object | | 2 |   |
+| [`StatusEveryXSpellCastsEachTurn`](./Enums.md) | Object | | 1 |   |
+| [`StatusIfDidntMove`](./Enums.md) | Object | | 1 |   |
+| [`StatusIfUnusedMovePoints`](./Enums.md) | Object | | 1 |   |
+| [`StatusImmunity`](./Enums.md) | Array | | 1 | [Freeze] |
+| [`StatusKilledCharacters`](./Enums.md) | Object | | 2 |   |
+| [`StatusOnAllyCatDeath`](./Enums.md) | Object | | 1 |   |
+| [`StatusOnBattleEnd`](./Enums.md) | Object | | 2 |   |
+| [`StatusOnCastSpell`](./Enums.md) | Object | | 1 |   |
+| [`StatusOnDie`](./Enums.md) | Object | | 1 |   |
+| [`StatusOnEatFood`](./Enums.md) | Object | | 1 |   |
+| [`StatusOnEndMove`](./Enums.md) | Object | | 2 |   |
+| [`StatusOnKill`](./Enums.md) | Object | | 1 |   |
+| [`StatusOnTookDamage`](./Enums.md) | Object | | 6 |   |
+| [`StatusOnTookDamageFromAbility`](./Enums.md) | Object | | 2 |   |
+| [`SwapHighestAndLowestStat`](./Enums.md) | Integer | | 1 | 1 |
+| [`Thorns`](./Enums.md) | Integer | | 18 | 2 |
+| [`Trample`](./Enums.md) | Integer | | 3 | 3 |
+| [`Vegan`](./Enums.md) | Integer | | 2 | 1 |
+| [`WaterWalk`](./Enums.md) | Integer | | 5 | 1 |
+| [`YOffset`](./Enums.md) | Number | | 3 | .25 |
 
 </details>
 
@@ -72,6 +178,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 187 |  |
+| [`Bleed`](./Enums.md) | Array / Integer | | 14 | [3] |
+| [`Bruise`](./Enums.md) | Integer | | 5 | 2 |
+| [`Burn`](./Enums.md) | Integer | | 6 | 1 |
+| [`ChangeTile`](./Enums.md) | Enum | | 5 | WaterTile |
+| [`Charmed`](./Enums.md) | Array | | 2 | [.15] |
+| [`Confusion`](./Enums.md) | Array / Integer | | 7 | [2] |
+| [`FaceAway`](./Enums.md) | Integer | | 1 | 1 |
+| [`Fear`](./Enums.md) | Array | | 9 | [.15] |
+| [`FlatLeech`](./Enums.md) | Integer | | 1 | 1 |
+| [`Freeze`](./Enums.md) | Array | | 3 | [0.15] |
+| [`Immobile`](./Enums.md) | Array / Integer | | 5 | [.05] |
+| [`Instakill`](./Enums.md) | Array | | 1 | [25] |
+| [`Knockback`](./Enums.md) | Integer | | 8 | 2 |
+| [`Leeches`](./Enums.md) | Integer | | 2 | 1 |
+| [`Petrify`](./Enums.md) | Array | | 2 | [.05] |
+| [`Poison`](./Enums.md) | Integer | | 10 | 1 |
+| [`RandomStatusFromPool`](./Enums.md) | Object | | 4 |   |
+| [`Slow`](./Enums.md) | Array / Integer | | 4 | [.1] |
+| [`SoulLink`](./Enums.md) | Integer | | 1 | 1 |
+| [`Stun`](./Enums.md) | Array | | 3 | [.05] |
+| [`VaporizeInanimate`](./Enums.md) | Integer | | 1 | 1 |
+| [`VisualFXTile`](./Enums.md) | Enum | | 2 | fx_windSpell |
+| [`Webbed`](./Enums.md) | Array | | 1 | [.1] |
 
 </details>
 
@@ -91,8 +220,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Examples: `water` | 36 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Examples: `water` | 36 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 33 |  |
+| [`passives`](./Enums.md) | Object | | 291 |   |
 
 </details>
 
@@ -113,6 +243,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1390 |  |
+| [`Blind`](./Enums.md) | Array / Integer | | 6 | [.10] |
+| [`Charmed`](./Enums.md) | Array | | 2 | [.15] |
+| [`Confusion`](./Enums.md) | Array / Integer | | 7 | [2] |
+| [`Fear`](./Enums.md) | Array | | 9 | [.15] |
+| [`Petrify`](./Enums.md) | Array | | 2 | [.05] |
+| [`RandomStatusFromPool`](./Enums.md) | Object | | 4 |   |
 
 </details>
 
@@ -132,9 +268,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Number | Examples: `0` | 16 |  |
+| `damage` | Enum / Integer / Object | Examples: `0` | 16 |  |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 10 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 10 |  |
+| [`effects`](./Enums.md) | Object | | 10 |   |
 
 </details>
 
@@ -155,10 +292,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 75 |  |
-| `knockback` | Number | Examples: `2, 1` | 48 |  |
-| `damage` | Number | Examples: `0` | 44 |  |
+| `knockback` | Enum / Integer | Examples: `2, 1` | 48 |  |
+| `damage` | Enum / Integer / Object | Examples: `0` | 44 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |  |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 20 |  |
+| [`Freeze`](./Enums.md) | Array | | 3 | [0.15] |
+| [`Immobile`](./Enums.md) | Array / Integer | | 5 | [.05] |
+| [`effects`](./Enums.md) | Object | | 10 |   |
 
 </details>
 
@@ -178,7 +318,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedFlea, SmallRock, Coin` | 76 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `CharmedFlea, SmallRock, Coin` | 76 |  |
 | `good` | Boolean | Examples: `false` | 40 |  |
 | `chance` | Number | Examples: `20, 100, 10` | 24 |  |
 
@@ -201,6 +341,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 10 |  |
+| [`Bleed`](./Enums.md) | Array / Integer | | 14 | [3] |
+| [`Immobile`](./Enums.md) | Array / Integer | | 5 | [.05] |
+| [`KnockUpAndAway`](./Enums.md) | Object | | 1 |   |
+| [`Knockback`](./Enums.md) | Integer | | 8 | 2 |
 
 </details>
 
@@ -221,6 +365,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 40 |  |
+| [`ChangeTilesUnder`](./Enums.md) | Enum | | 3 | GlassTile |
+| [`Charge`](./Enums.md) | Integer | | 10 | 2 |
+| [`LuckUp`](./Enums.md) | Integer | | 1 | 1 |
 
 </details>
 
@@ -241,6 +388,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 |  |
+| [`MissChance`](./Enums.md) | Integer | | 3 | 20 |
+| [`MoveQuivered`](./Enums.md) | Array | | 1 | [0.1] |
+| [`Quivered`](./Enums.md) | Array / Integer | | 5 | [0.1] |
+| [`SpeedUp`](./Enums.md) | Integer | | 1 | 1 |
 
 </details>
 
@@ -261,6 +412,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 35 |  |
+| [`Bleed`](./Enums.md) | Array / Integer | | 14 | [3] |
+| [`Blind`](./Enums.md) | Array / Integer | | 6 | [.10] |
+| [`Burn`](./Enums.md) | Integer | | 6 | 1 |
+| [`Charge`](./Enums.md) | Integer | | 10 | 2 |
+| [`DiminishingHealthRegen`](./Enums.md) | Integer | | 2 | 1 |
+| [`KineticSpikes`](./Enums.md) | Integer | | 5 | 1 |
+| [`Poison`](./Enums.md) | Integer | | 10 | 1 |
+| [`RandomStatUp`](./Enums.md) | Integer | | 5 | 2 |
+| [`Shield`](./Enums.md) | Integer | | 3 | 1 |
+| [`Thorns`](./Enums.md) | Integer | | 18 | 2 |
+| [`Weakness`](./Enums.md) | Integer | | 2 | 1 |
 
 </details>
 
@@ -281,7 +443,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | Examples: `50, 5, 25` | 40 |  |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 34 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 34 |  |
 | `good` | Boolean | Examples: `false` | 4 |  |
 
 </details>
@@ -303,6 +465,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 55 |  |
+| [`Charge`](./Enums.md) | Integer | | 10 | 2 |
+| [`IntelligenceUp`](./Enums.md) | Integer | | 1 | 1 |
+| [`RandomStatDown`](./Enums.md) | Integer | | 1 | 1 |
+| [`RandomStatUp`](./Enums.md) | Integer | | 5 | 2 |
+| [`Shield`](./Enums.md) | Integer | | 3 | 1 |
 
 </details>
 
@@ -322,8 +489,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `Coin, RandomFoodPickup` | 22 |  |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 3 ], 2` | 6 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `Coin, RandomFoodPickup` | 22 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 1 3 ], 2` | 6 |  |
 
 </details>
 
@@ -344,6 +511,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Number | Examples: `10` | 8 |  |
+| [`AutoReanimate`](./Enums.md) | Integer | | 2 | 50 |
 
 </details>
 
@@ -363,8 +531,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Examples: `4, 8` | 16 |  |
+| `stacks` | Enum / Integer | Examples: `4, 8` | 16 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 9 |  |
+| [`Charge`](./Enums.md) | Integer | | 10 | 2 |
+| [`RandomMagicMissile`](./Enums.md) | Integer | | 1 | 4 |
 
 </details>
 
@@ -404,6 +574,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 58 |  |
+| [`FindItemFromPool`](./Enums.md) | Enum | | 1 | consumables |
+| [`PermanentIntelligence`](./Enums.md) | Integer | | 1 | 1 |
 
 </details>
 
@@ -443,6 +615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
+| [`RandomStatusFromPool`](./Enums.md) | Object | | 4 |   |
 
 </details>
 
@@ -463,8 +636,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move` | 10 |  |
-| `range` | Number | Examples: `2` | 10 |  |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 10 |  |
+| `range` | Enum / Integer | Examples: `2` | 10 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Examples: `food` | 10 |  |
 
 </details>
 
@@ -484,8 +657,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Number | Examples: `1` | 18 |  |
-| [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 18 |  |
+| `damage` | Enum / Integer / Object | Examples: `1` | 18 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Examples: `Electric` | 18 |  |
 
 </details>
 
@@ -505,7 +678,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fury` | Number | Examples: `10` | 8 |  |
+| `Fury` | Integer | Examples: `10` | 8 |  |
 
 </details>
 
@@ -526,7 +699,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BackflipDodge` | 14 |  |
-| `stacks` | Number | Examples: `2` | 14 |  |
+| `stacks` | Enum / Integer | Examples: `2` | 14 |  |
 
 </details>
 
@@ -567,7 +740,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `reduction` | Number | Examples: `1` | 14 |  |
+| `reduction` | Integer | Examples: `1` | 14 |  |
 | [`class`](./Enums.md#enum-class) | Enum | Examples: `Colorless` | 12 |  |
 
 </details>
@@ -589,6 +762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 7 |  |
+| [`Charge`](./Enums.md) | Integer | | 10 | 2 |
 
 </details>
 
@@ -610,6 +784,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Number | Examples: `25` | 72 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 30 |  |
+| [`ChangeTilesUnder`](./Enums.md) | Enum | | 3 | GlassTile |
 
 </details>
 
@@ -650,8 +825,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance` | Number | Examples: `3` | 48 |  |
-| `stacks` | Number | Examples: `3` | 44 |  |
+| `distance` | Integer | Examples: `3` | 48 |  |
+| `stacks` | Enum / Integer | Examples: `3` | 44 |  |
 
 </details>
 
@@ -671,7 +846,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Enum | Examples: `chaotic` | 18 |  |
+| [`weights`](./Enums.md#enum-weights) | Array / Enum | Examples: `chaotic` | 18 |  |
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `MoveOne` | 4 |  |
 
 </details>
@@ -693,6 +868,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 5 |  |
+| [`DamageUp`](./Enums.md) | Integer | | 4 | 2 |
 
 </details>
 
@@ -714,6 +890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Bleed` | 12 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 |  |
+| [`passives`](./Enums.md) | Object | | 291 |   |
 
 </details>
 
@@ -733,8 +910,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup` | 19 |  |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 3 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `RandomPickup` | 19 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 1 2 ]` | 3 |  |
 
 </details>
 
@@ -755,6 +932,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 |  |
+| [`UseAbility`](./Enums.md) | Enum | | 1 | Spit |
 
 </details>
 
@@ -774,8 +952,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Examples: `3` | 2 |  |
+| `stacks` | Enum / Integer | Examples: `3` | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
+| [`HealthGain`](./Enums.md) | Integer | | 1 | 2 |
 
 </details>
 
@@ -796,6 +975,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
+| [`Charge`](./Enums.md) | Integer | | 10 | 2 |
 
 </details>
 
@@ -816,6 +996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
+| [`ManaGain`](./Enums.md) | Integer | | 1 | 3 |
 
 </details>
 
@@ -836,6 +1017,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |  |
+| [`DamageUp`](./Enums.md) | Integer | | 4 | 2 |
 
 </details>
 
@@ -856,6 +1038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
+| [`Charge`](./Enums.md) | Integer | | 10 | 2 |
 
 </details>
 
@@ -876,6 +1059,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |  |
+| [`ScatterCoins`](./Enums.md) | Array / Integer | | 6 | [.5] |
 
 </details>
 
@@ -896,6 +1080,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |  |
+| [`HealthRegenUp`](./Enums.md) | Integer | | 14 | 2 |
 
 </details>
 
@@ -916,6 +1101,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |  |
+| [`RangeUp`](./Enums.md) | Integer | | 1 | 1 |
 
 </details>
 

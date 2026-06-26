@@ -17,18 +17,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 1067 |  |
+| [`common`](./Events_and_Encounters.md#object-common) | Enum | Event Node: Story branch or dialog option representing the 'Common' action. | 1067 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 883 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
-| `cha` | Number |  | 468 |  |
-| [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| `cha` | Enum / Integer |  | 468 |  |
+| [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | `normal` | Array |  | 24 | `[common boneyard_events.gon]` (Array), `[common core_events.gon]` (Array) |
-| `spd` | Number |  | 424 |  |
-| `con` | Number |  | 416 |  |
-| `int` | Number |  | 401 |  |
-| `lck` | Number |  | 351 |  |
-| `str` | Number |  | 337 |  |
-| `dex` | Number |  | 301 |  |
+| `spd` | Enum / Integer |  | 424 |  |
+| `con` | Enum / Integer |  | 416 |  |
+| `int` | Enum / Integer |  | 401 |  |
+| `lck` | Enum / Integer |  | 351 |  |
+| `str` | Enum / Integer |  | 337 |  |
+| `dex` | Enum / Integer |  | 301 |  |
 | [`intro`](./Events_and_Encounters.md#context-intro) | Object | Event Node: The initial text block when a story event first loads. | 216 |  |
 | [`main`](./Events_and_Encounters.md#context-main) | Object | Event Node: The central hub or recurring menu of a story event. | 214 |  |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |  |
@@ -45,7 +45,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 |  |
 | `weight` | `Number` | Probability weight for this outcome. | 10 |  |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 8 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 8 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the 'Good' action. | 8 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | String |  | 5 |  |
@@ -100,9 +100,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1364 |  |
-| [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |  |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| [`common`](./Events_and_Encounters.md#object-common) | Enum | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |  |
+| `self_damage` | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 73 |  |
@@ -140,6 +140,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |  |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | `weight` | `Number` | Probability weight for this outcome. | 1 |  |
+| [`party_damage`](./Enums.md) | Array / Integer | | 32 | [15] |
+| [`random_pool`](./Enums.md) | Array | | 89 | [event_now] |
 
 </details>
 
@@ -168,7 +170,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 27 |  |
 | `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 25 |  |
 | [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 24 |  |
-| [`damage`](./Arrays.md#array-damage) | Array | Event Node: Story branch or dialog option representing the 'Damage' action. | 24 |  |
+| [`damage`](./Arrays.md#array-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 24 |  |
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 23 |  |
 | `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 22 |  |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 21 |  |
@@ -206,9 +208,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_heal_disorder` | `Number` |  | 2 |  |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |  |
 | [`spin`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 2 |  |
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum / Integer |  | 1 |  |
 | `clear_result_animation` | `Number` |  | 1 |  |
-| `con` | Number |  | 1 |  |
+| `con` | Enum / Integer |  | 1 |  |
 | [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | `heal_disorder` | `Number` |  | 1 |  |
@@ -217,8 +219,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `self_heal` | `Number` |  | 1 |  |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
-| `spd` | Number |  | 1 |  |
+| `spd` | Enum / Integer |  | 1 |  |
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
+| [`random_pool`](./Enums.md) | Array | | 89 | [event_now] |
 
 </details>
 
@@ -257,7 +260,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 21 |  |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 |  |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 15 |  |
+| `damage` | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 15 |  |
 | `next_event_bonus` | `Number` |  | 14 |  |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |  |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 |  |
@@ -280,11 +283,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 6 |  |
 | `ally_ambush_next_fights` | `Number` |  | 5 |  |
 | [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 5 |  |
-| `spd` | Number |  | 5 |  |
+| `spd` | Enum / Integer |  | 5 |  |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |  |
 | `full_heal` | `Number` |  | 4 |  |
 | [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |  |
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |  |
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum / Integer |  | 3 |  |
 | `gain_cat_familiar` | `Number` |  | 3 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 |  |
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 3 |  |
@@ -304,7 +307,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 2 |  |
 | [`ambush`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | `clear_result_animation` | `Number` |  | 1 |  |
-| `con` | Number |  | 1 |  |
+| `con` | Enum / Integer |  | 1 |  |
 | [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | `heal_disorder` | `Number` |  | 1 |  |
@@ -318,6 +321,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
+| [`random_pool`](./Enums.md) | Array | | 89 | [event_now] |
 
 </details>
 
@@ -338,7 +342,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 464 |  |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| `self_damage` | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |  |
 | `set_frame` | `Number` |  | 285 |  |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 185 |  |
@@ -371,7 +375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 4 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |  |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |  |
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |  |
 | `heal_injury` | `Number` |  | 3 |  |
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |  |
@@ -405,6 +409,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `trigger_butterfly_effect` | `Number` |  | 1 |  |
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
+| [`party_gain_disorder_from_pool`](./Enums.md) | Array | | 3 | [Gigantism] |
+| [`random_pool`](./Enums.md) | Array | | 89 | [event_now] |
+| [`random_pool_consider_luck`](./Enums.md) | Array | | 4 | [Clover] |
+| [`transform_item`](./Enums.md) | Array | | 3 | [JarOfRadiatedBlood] |
 
 </details>
 
@@ -444,9 +452,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |  |
 | `next_event_bonus` | Number |  | 2 |  |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |  |
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
-| `con` | Number |  | 1 |  |
-| `dex` | Number |  | 1 |  |
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum / Integer |  | 1 |  |
+| `con` | Enum / Integer |  | 1 |  |
+| `dex` | Enum / Integer |  | 1 |  |
 | [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
@@ -455,7 +463,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random` | Number |  | 1 |  |
 | [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
-| `spd` | Number |  | 1 |  |
+| `spd` | Enum / Integer |  | 1 |  |
 
 </details>
 
@@ -511,7 +519,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | `Array` | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 220 |  |
-| [`options`](./Events_and_Encounters.md#object-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |  |
+| [`options`](./Events_and_Encounters.md#object-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |  |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 208 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -544,10 +552,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |  |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 1 |  |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |  |
 | [`requires_flag`](./Engine_EventKeys.md#valid-property-keys) | `String` | Prerequisite: Must meet this condition. | 1 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |  |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
+| [`buy2`](./Enums.md) | Object | | 1 |   |
+| [`buy3`](./Enums.md) | Object | | 1 |   |
+| [`examine`](./Enums.md) | Object | | 50 |   |
+| [`ignore`](./Enums.md) | Object | | 57 |   |
+| [`open`](./Enums.md) | Object | | 14 |   |
+| [`pick`](./Enums.md) | Object | | 4 |   |
 
 </details>
 
@@ -567,7 +581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| `self_damage` | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 144 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
@@ -589,7 +603,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`open`](./Events_and_Encounters.md#context-open) | Object | Event Node: Story branch or dialog option representing the \'Open\' action. | 8 |  |
 | [`take`](./Events_and_Encounters.md#context-take) | Object | Event Node: Story branch or dialog option representing the \'Take\' action. | 8 |  |
 | [`a`](./Events_and_Encounters.md#context-a) | Object | Event Node: Story branch or dialog option representing the \'A\' action. | 7 |  |
-| [`attack`](./Events_and_Encounters.md#context-attack) | Object | Event Node: Story branch or dialog option representing the \'Attack\' action. | 7 |  |
+| [`attack`](./Events_and_Encounters.md#context-attack) | Enum | Event Node: Story branch or dialog option representing the \'Attack\' action. | 7 |  |
 | [`b`](./Events_and_Encounters.md#context-b) | Object | Event Node: Story branch or dialog option representing the \'B\' action. | 7 |  |
 | [`c`](./Events_and_Encounters.md#context-c) | Object | Event Node: Story branch or dialog option representing the \'C\' action. | 7 |  |
 | [`charm`](./Events_and_Encounters.md#context-charm) | Object | Event Node: Story branch or dialog option representing the \'Charm\' action. | 7 |  |
@@ -609,7 +623,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`run`](./Events_and_Encounters.md#context-run) | Object | Event Node: Story branch or dialog option representing the \'Run\' action. | 5 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |  |
 | [`bite`](./Events_and_Encounters.md#context-bite) | Object | Event Node: Story branch or dialog option representing the 'Bite' action. | 4 |  |
-| [`damage`](./Events_and_Encounters.md#context-damage) | Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 4 |  |
+| [`damage`](./Events_and_Encounters.md#context-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 4 |  |
 | [`go_around`](./Events_and_Encounters.md#context-go_around) | Object | Event Node: Story branch or dialog option representing the \'Go Around\' action. | 4 |  |
 | [`home`](./Events_and_Encounters.md#context-home) | Object | Event Node: Story branch or dialog option representing the 'Home' action. | 4 |  |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |  |
@@ -619,7 +633,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`investigate`](./Events_and_Encounters.md#context-investigate) | Object | Event Node: Story branch or dialog option representing the \'Investigate\' action. | 3 |  |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |  |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 3 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 3 |  |
 | [`repell`](./Events_and_Encounters.md#context-repell) | Object | Event Node: Story branch or dialog option representing the \'Repell\' action. | 3 |  |
 | [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna) | Object | Event Node: Story branch or dialog option representing the 'Attach Antenna' action. | 2 |  |
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
@@ -636,7 +650,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`protection`](./Events_and_Encounters.md#context-protection) | Object | Event Node: Story branch or dialog option representing the \'Protection\' action. | 2 |  |
 | [`repair`](./Events_and_Encounters.md#context-repair) | Object | Event Node: Story branch or dialog option representing the \'Repair\' action. | 2 |  |
 | [`sacrifice`](./Events_and_Encounters.md#context-sacrifice) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice\' action. | 2 |  |
-| [`scale`](./Events_and_Encounters.md#context-scale) | Object | Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 |  |
+| [`scale`](./Events_and_Encounters.md#context-scale) | Number | Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 |  |
 | [`turnon`](./Events_and_Encounters.md#context-turnon) | Object | Event Node: Story branch or dialog option representing the \'Turnon\' action. | 2 |  |
 | [`weight`](./Engine_EventKeys.md#valid-property-keys) | `String` | Probability weight for this outcome. | 2 |  |
 | `ally_ambush_next_fights` | Number |  | 1 |  |
@@ -650,7 +664,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off) | Object | Event Node: Story branch or dialog option representing the \'Bite It Off\' action. | 1 |  |
 | [`blue`](./Events_and_Encounters.md#context-blue) | Object | Event Node: Story branch or dialog option representing the \'Blue\' action. | 1 |  |
 | [`blue_needle`](./Events_and_Encounters.md#context-blue_needle) | Object | Event Node: Story branch or dialog option representing the \'Blue Needle\' action. | 1 |  |
-| [`body`](./Events_and_Encounters.md#context-body) | Object | Event Node: Story branch or dialog option representing the 'Body' action. | 1 |  |
+| [`body`](./Events_and_Encounters.md#context-body) | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 1 |  |
 | [`book`](./Events_and_Encounters.md#context-book) | Object | Event Node: Story branch or dialog option representing the \'Book\' action. | 1 |  |
 | [`brace`](./Events_and_Encounters.md#context-brace) | Object | Event Node: Story branch or dialog option representing the \'Brace\' action. | 1 |  |
 | [`break_ice`](./Events_and_Encounters.md#context-break_ice) | Object | Event Node: Story branch or dialog option representing the \'Break Ice\' action. | 1 |  |
@@ -688,7 +702,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`double`](./Events_and_Encounters.md#context-double) | Object | Event Node: Story branch or dialog option representing the \'Double\' action. | 1 |  |
 | [`eat_meat`](./Events_and_Encounters.md#context-eat_meat) | Object | Event Node: Story branch or dialog option representing the \'Eat Meat\' action. | 1 |  |
 | [`enter_crater`](./Events_and_Encounters.md#context-enter_crater) | Object | Event Node: Story branch or dialog option representing the \'Enter Crater\' action. | 1 |  |
-| [`face`](./Events_and_Encounters.md#context-face) | Object | Event Node: Story branch or dialog option representing the \'Face\' action. | 1 |  |
+| [`face`](./Events_and_Encounters.md#context-face) | Enum | Event Node: Story branch or dialog option representing the \'Face\' action. | 1 |  |
 | [`fiddle`](./Events_and_Encounters.md#context-fiddle) | Object | Event Node: Story branch or dialog option representing the 'Fiddle' action. | 1 |  |
 | [`fill_jar`](./Events_and_Encounters.md#context-fill_jar) | Object | Event Node: Story branch or dialog option representing the 'Fill Jar' action. | 1 |  |
 | [`find`](./Events_and_Encounters.md#context-find) | Object | Event Node: Story branch or dialog option representing the \'Find\' action. | 1 |  |
@@ -701,9 +715,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | String | Event Action: Adds a specific familiar to the party. | 1 |  |
 | [`give_parasite`](./Events_and_Encounters.md#context-give_parasite) | Object | Event Action: Equips a parasite item to a character. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |  |
 | [`hack`](./Events_and_Encounters.md#context-hack) | Object | Event Node: Story branch or dialog option representing the \'Hack\' action. | 1 |  |
-| [`head`](./Events_and_Encounters.md#context-head) | Object | Event Node: Story branch or dialog option representing the \'Head\' action. | 1 |  |
+| [`head`](./Events_and_Encounters.md#context-head) | Enum / Number | Event Node: Story branch or dialog option representing the \'Head\' action. | 1 |  |
 | [`holy`](./Events_and_Encounters.md#context-holy) | Object | Event Node: Story branch or dialog option representing the \'Holy\' action. | 1 |  |
 | [`hp`](./Events_and_Encounters.md#context-hp) | Object | Event Node: Story branch or dialog option representing the \'Hp\' action. | 1 |  |
 | [`ice`](./Events_and_Encounters.md#context-ice) | Object | Event Node: Story branch or dialog option representing the \'Ice\' action. | 1 |  |
@@ -730,7 +744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`makeup`](./Events_and_Encounters.md#context-makeup) | Object | Event Node: Story branch or dialog option representing the \'Makeup\' action. | 1 |  |
 | [`mind`](./Events_and_Encounters.md#context-mind) | Object | Event Node: Story branch or dialog option representing the 'Mind' action. | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
-| [`neck`](./Events_and_Encounters.md#context-neck) | Object | Event Node: Story branch or dialog option representing the \'Neck\' action. | 1 |  |
+| [`neck`](./Events_and_Encounters.md#context-neck) | Enum | Event Node: Story branch or dialog option representing the \'Neck\' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
 | [`nothanks`](./Events_and_Encounters.md#context-nothanks) | Object | Event Node: Story branch or dialog option representing the \'Nothanks\' action. | 1 |  |
 | [`outsmart`](./Events_and_Encounters.md#context-outsmart) | Object | Event Node: Story branch or dialog option representing the \'Outsmart\' action. | 1 |  |
@@ -776,14 +790,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sneak_by`](./Events_and_Encounters.md#context-sneak_by) | Object | Event Node: Story branch or dialog option representing the \'Sneak By\' action. | 1 |  |
 | [`sneak_past_alt`](./Events_and_Encounters.md#context-sneak_past_alt) | Object | Event Node: Story branch or dialog option representing the \'Sneak Past Alt\' action. | 1 |  |
 | [`soul`](./Events_and_Encounters.md#context-soul) | Object | Event Node: Story branch or dialog option representing the 'Soul' action. | 1 |  |
-| [`speed`](./Events_and_Encounters.md#context-speed) | Object | Event Node: Story branch or dialog option representing the \'Speed\' action. | 1 |  |
+| [`speed`](./Events_and_Encounters.md#context-speed) | Array / Number | Event Node: Story branch or dialog option representing the \'Speed\' action. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 | `stat_max` | Number |  | 1 |  |
 | `stat_min` | Number |  | 1 |  |
 | [`surprise`](./Events_and_Encounters.md#context-surprise) | Object | Event Node: Story branch or dialog option representing the \'Surprise\' action. | 1 |  |
 | [`sweet_talk`](./Events_and_Encounters.md#context-sweet_talk) | Object | Event Node: Story branch or dialog option representing the \'Sweet Talk\' action. | 1 |  |
 | [`swim`](./Events_and_Encounters.md#context-swim) | Object | Event Node: Story branch or dialog option representing the \'Swim\' action. | 1 |  |
-| [`tail`](./Events_and_Encounters.md#context-tail) | Object | Event Node: Story branch or dialog option representing the \'Tail\' action. | 1 |  |
+| [`tail`](./Events_and_Encounters.md#context-tail) | Integer | Event Node: Story branch or dialog option representing the \'Tail\' action. | 1 |  |
 | [`take_blood`](./Events_and_Encounters.md#context-take_blood) | Object | Event Node: Story branch or dialog option representing the 'Take Blood' action. | 1 |  |
 | [`talk`](./Events_and_Encounters.md#context-talk) | Object | Event Node: Story branch or dialog option representing the 'Talk' action. | 1 |  |
 | [`talk_to`](./Events_and_Encounters.md#context-talk_to) | Object | Event Node: Story branch or dialog option representing the \'Talk To\' action. | 1 |  |
@@ -866,6 +880,45 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 133 |  |
+| [`AbilityOnBattleStart`](./Enums.md) | Enum | | 1 | Flush |
+| [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum | | 18 | Flush |
+| [`AddInitiative`](./Enums.md) | Integer | | 1 | -99 |
+| [`AddStartingMana`](./Enums.md) | Integer | | 3 | 5 |
+| [`AllStatsUp`](./Enums.md) | Integer | | 8 | 1 |
+| [`AlphaTurns`](./Enums.md) | Integer | | 1 | 1 |
+| [`Bleed`](./Enums.md) | Integer | | 26 | 2 |
+| [`Blind`](./Enums.md) | Integer | | 4 | 6 |
+| [`Bruise`](./Enums.md) | Integer | | 4 | 1 |
+| [`Burn`](./Enums.md) | Integer | | 5 | 5 |
+| [`ChangeTileUnderCharacterAtStart`](./Enums.md) | Enum | | 1 | GlassTile |
+| [`CharismaUp`](./Enums.md) | Integer | | 5 | -2 |
+| [`Confusion`](./Enums.md) | Integer | | 5 | 2 |
+| [`ConstitutionUp`](./Enums.md) | Integer | | 6 | -1 |
+| [`DexterityUp`](./Enums.md) | Integer | | 4 | 2 |
+| [`DivineShield`](./Enums.md) | Integer | | 2 | 2 |
+| [`Fear`](./Enums.md) | Integer | | 43 | 2 |
+| [`Fights`](./Enums.md) | Integer | | 7 | 3 |
+| [`HealthRegenUp`](./Enums.md) | Integer | | 5 | 2 |
+| [`IntelligenceUp`](./Enums.md) | Integer | | 4 | 3 |
+| [`LuckUp`](./Enums.md) | Integer | | 3 | 1 |
+| [`Madness`](./Enums.md) | Integer | | 3 | 1 |
+| [`MissChance`](./Enums.md) | Integer | | 1 | 10 |
+| [`NoHealthRegen`](./Enums.md) | Integer | | 6 | 1 |
+| [`NoManaRegen`](./Enums.md) | Integer | | 1 | 1 |
+| [`PermanentConfusion`](./Enums.md) | Integer | | 1 | 1 |
+| [`Poison`](./Enums.md) | Integer | | 41 | 4 |
+| [`ProbeCharmed`](./Enums.md) | Integer | | 1 | 1 |
+| [`RandomStatUp`](./Enums.md) | Integer | | 2 | 1 |
+| [`Rot`](./Enums.md) | Integer | | 1 | 2 |
+| [`Sleep`](./Enums.md) | Integer | | 4 | 2 |
+| [`Slow`](./Enums.md) | Integer | | 1 | 3 |
+| [`SpeedUp`](./Enums.md) | Integer | | 7 | -2 |
+| [`SpiderInfested`](./Enums.md) | Integer | | 1 | 1 |
+| [`StrengthUp`](./Enums.md) | Integer | | 7 | 2 |
+| [`Stun`](./Enums.md) | Integer | | 6 | 1 |
+| [`Tarred`](./Enums.md) | Integer | | 2 | 1 |
+| [`TempStrengthUp`](./Enums.md) | Integer | | 1 | 1 |
+| [`Webbed`](./Enums.md) | Integer | | 4 | 2 |
 
 </details>
 
@@ -885,14 +938,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 35 |  |
+| `con` | Enum / Integer |  | 35 |  |
 | `random` | Number |  | 25 |  |
-| `int` | Number |  | 21 |  |
-| `lck` | Number |  | 18 |  |
-| `spd` | Number |  | 18 |  |
-| `str` | Number |  | 16 |  |
+| `int` | Enum / Integer |  | 21 |  |
+| `lck` | Enum / Integer |  | 18 |  |
+| `spd` | Enum / Integer |  | 18 |  |
+| `str` | Enum / Integer |  | 16 |  |
 | [`cha`](./Engine_EventKeys.md#valid-property-keys) | Mixed |  | 14 |  |
-| `dex` | Number |  | 9 |  |
+| `dex` | Enum / Integer |  | 9 |  |
 
 </details>
 
@@ -942,12 +995,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 59 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 57 |  |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 56 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 55 |  |
@@ -985,14 +1038,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 43 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 43 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |  |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |  |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |  |
 | `set_frame` | Number |  | 36 |  |
@@ -1027,8 +1080,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`count`](./Arrays.md#array-count) | Array | Quantity. | 32 |  |
-| [`object`](./Arrays.md#array-object) | Array |  | 31 |  |
+| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 32 |  |
+| [`object`](./Arrays.md#array-object) | Array / Enum |  | 31 |  |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum |  | 31 |  |
 | [`side`](./Enums.md#enum-side) | Enum |  | 3 |  |
 
@@ -1050,7 +1103,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum |  | 40 |  |
+| [`pool`](./Enums.md#enum-pool) | Array / Enum |  | 40 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |  |
 | [`restrict`](./Arrays.md#array-restrict) | Array |  | 17 |  |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
@@ -1082,11 +1135,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | `Number` |  | 5 |  |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |  |
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 2 |  |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |  |
+| `damage` | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |  |
 | `next_event_bonus` | `Number` |  | 1 |  |
 | [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 1 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |  |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
+| [`conditional_reward`](./Enums.md) | Object | | 124 |   |
+| [`random_pool`](./Enums.md) | Array | | 89 | [event_now] |
 
 </details>
 
@@ -1106,7 +1161,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1114,7 +1169,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |  |
 | `set_frame` | Number |  | 36 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |  |
 | [`label`](./Strings.md#string-label) | String |  | 30 |  |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 30 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 28 |  |
@@ -1147,7 +1202,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| `self_damage` | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1157,7 +1212,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |  |
 | `set_frame` | Number |  | 36 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 25 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 25 |  |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |  |
@@ -1180,7 +1235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |  |
 | `party_heal` | Number |  | 1 |  |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |  |
 
 </details>
 
@@ -1204,17 +1259,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mouth` | Number |  | 11 |  |
 | `ears` | Number |  | 10 |  |
 | `eyebrows` | Number |  | 8 |  |
-| `head` | Number | Event Node: Story branch or dialog option representing the 'Head' action. | 7 |  |
+| `head` | Enum / Number | Event Node: Story branch or dialog option representing the 'Head' action. | 7 |  |
 | `legs` | Number |  | 7 |  |
 | `arms` | Number |  | 6 |  |
 | `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 6 |  |
-| `tail` | Number | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 |  |
-| `eye1` | Number |  | 3 |  |
+| `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 |  |
+| `eye1` | Integer |  | 3 |  |
 | `arm1` | Number |  | 2 |  |
-| `ear1` | Number |  | 2 |  |
-| `eyebrow1` | Number |  | 2 |  |
-| `leg1` | Number |  | 2 |  |
-| `eye2` | Number |  | 1 |  |
+| `ear1` | Integer |  | 2 |  |
+| `eyebrow1` | Integer |  | 2 |  |
+| `leg1` | Integer |  | 2 |  |
+| `eye2` | Integer |  | 1 |  |
 
 </details>
 
@@ -1235,6 +1290,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 |  |
+| [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum | | 18 | Flush |
+| [`Bleed`](./Enums.md) | Integer | | 26 | 2 |
+| [`DivineShield`](./Enums.md) | Integer | | 2 | 2 |
+| [`Fear`](./Enums.md) | Integer | | 43 | 2 |
+| [`HealthRegenUp`](./Enums.md) | Integer | | 5 | 2 |
+| [`Immobile`](./Enums.md) | Integer | | 3 | 1 |
+| [`NoHealthRegen`](./Enums.md) | Integer | | 6 | 1 |
+| [`Poison`](./Enums.md) | Integer | | 41 | 4 |
+| [`Tangled`](./Enums.md) | Integer | | 1 | 2 |
+| [`Tarred`](./Enums.md) | Integer | | 2 | 1 |
+| [`Webbed`](./Enums.md) | Integer | | 4 | 2 |
 
 </details>
 
@@ -1254,7 +1320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1263,7 +1329,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |  |
 | `set_frame` | Number |  | 36 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 23 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 23 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
@@ -1339,19 +1405,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `mouth` | Number |  | 9 |  |
-| `count` | Number | Quantity. | 8 |  |
-| `tail` | Number | Event Node: Story branch or dialog option representing the 'Tail' action. | 7 |  |
+| `count` | Array / Integer | Quantity. | 8 |  |
+| `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 7 |  |
 | `ears` | Number |  | 5 |  |
 | `eyes` | Number |  | 5 |  |
 | `legs` | Number |  | 5 |  |
 | `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 4 |  |
 | `eyebrows` | Number |  | 3 |  |
-| `head` | Number | Event Node: Story branch or dialog option representing the 'Head' action. | 3 |  |
+| `head` | Enum / Number | Event Node: Story branch or dialog option representing the 'Head' action. | 3 |  |
 | `arm1` | Number |  | 2 |  |
 | `arm2` | Number |  | 2 |  |
-| `leg1` | Number |  | 1 |  |
-| `leg2` | Number |  | 1 |  |
-| `texture` | Number |  | 1 |  |
+| `leg1` | Integer |  | 1 |  |
+| `leg2` | Integer |  | 1 |  |
+| `texture` | Integer |  | 1 |  |
 
 </details>
 
@@ -1371,8 +1437,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Number | Quantity. | 15 |  |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 12 |  |
+| `count` | Array / Integer | Quantity. | 15 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 12 |  |
 | `asymmetric` | Boolean |  | 8 |  |
 
 </details>
@@ -1393,7 +1459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1403,7 +1469,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |  |
 | [`label`](./Strings.md#string-label) | String |  | 15 |  |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 15 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
@@ -1434,7 +1500,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1442,7 +1508,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |  |
 | `set_frame` | Number |  | 36 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |  |
 | [`label`](./Strings.md#string-label) | String |  | 14 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 14 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 13 |  |
@@ -1474,7 +1540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1483,7 +1549,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | Number |  | 36 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |  |
 | [`label`](./Strings.md#string-label) | String |  | 12 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 12 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
@@ -1517,6 +1583,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |  |
 | [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 |  |
+| [`CharacterTypeGainsStatusAtBattleStart`](./Enums.md) | Object | | 5 |   |
+| [`Fights`](./Enums.md) | Integer | | 7 | 3 |
+| [`StatusRandomEnemiesOnBattleStart`](./Enums.md) | Object | | 3 |   |
 
 </details>
 
@@ -1536,7 +1605,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1548,7 +1617,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 8 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
@@ -1577,7 +1646,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1587,7 +1656,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 11 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 11 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
@@ -1640,7 +1709,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1650,7 +1719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 17 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |  |
 | [`label`](./Strings.md#string-label) | String |  | 8 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
@@ -1681,7 +1750,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
 | [`label`](./Strings.md#string-label) | String |  | 7 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |  |
@@ -1704,7 +1773,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| `self_damage` | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1720,7 +1789,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 7 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |  |
@@ -1734,7 +1803,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |  |
 | `party_heal` | Number |  | 1 |  |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |  |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |  |
 
 </details>
 
@@ -1754,7 +1823,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
 | [`label`](./Strings.md#string-label) | String |  | 7 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |  |
@@ -1777,7 +1846,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
 | [`label`](./Strings.md#string-label) | String |  | 7 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |  |
@@ -1800,7 +1869,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1810,7 +1879,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
@@ -1841,7 +1910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1850,7 +1919,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | Number |  | 36 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |  |
@@ -1882,7 +1951,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -1890,7 +1959,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |  |
 | `set_frame` | Number |  | 36 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |  |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 7 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |  |
@@ -1924,7 +1993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 6 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |  |
@@ -1948,7 +2017,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 6 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |  |
@@ -1971,7 +2040,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
 | [`label`](./Strings.md#string-label) | String |  | 6 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |  |
@@ -1994,7 +2063,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2003,7 +2072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | Number |  | 36 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |  |
@@ -2036,7 +2105,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2045,7 +2114,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | Number |  | 36 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
 | [`label`](./Strings.md#string-label) | String |  | 6 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 6 |  |
@@ -2076,7 +2145,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2085,7 +2154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | Number |  | 36 |  |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 6 |  |
@@ -2120,7 +2189,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`event`](./Enums.md#enum-event) | Enum |  | 5 |  |
 | `same_cat` | Boolean |  | 5 |  |
-| `count` | Number | Quantity. | 4 |  |
+| `count` | Array / Integer | Quantity. | 4 |  |
 
 </details>
 
@@ -2140,8 +2209,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 8 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 8 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
+| [`AllStatsUp`](./Enums.md) | Integer | | 8 | 1 |
+| [`Fear`](./Enums.md) | Integer | | 43 | 2 |
+| [`Stun`](./Enums.md) | Integer | | 6 | 1 |
 
 </details>
 
@@ -2161,7 +2233,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2172,7 +2244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 5 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |  |
@@ -2201,7 +2273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2212,7 +2284,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |  |
 | [`label`](./Strings.md#string-label) | String |  | 5 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |  |
@@ -2241,7 +2313,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2252,7 +2324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |  |
 | [`label`](./Strings.md#string-label) | String |  | 5 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |  |
@@ -2283,7 +2355,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2295,7 +2367,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
@@ -2324,7 +2396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
 | [`label`](./Strings.md#string-label) | String |  | 4 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 3 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 3 |  |
@@ -2347,7 +2419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2359,7 +2431,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
 | [`label`](./Strings.md#string-label) | String |  | 4 |  |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 3 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |  |
@@ -2389,7 +2461,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |  |
@@ -2415,6 +2487,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`weather_roll`](./Arrays.md#array-weather_roll) | Array |  | 1 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [`play_animation`](./Enums.md) | Array / Enum | | 178 | [0] |
+| [`random_pool`](./Enums.md) | Array | | 89 | [event_now] |
 
 </details>
 
@@ -2434,13 +2508,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 4 |  |
-| `con` | Number |  | 4 |  |
-| `dex` | Number |  | 4 |  |
-| `int` | Number |  | 4 |  |
-| `lck` | Number |  | 4 |  |
-| `spd` | Number |  | 4 |  |
-| `str` | Number |  | 4 |  |
+| `cha` | Enum / Integer |  | 4 |  |
+| `con` | Enum / Integer |  | 4 |  |
+| `dex` | Enum / Integer |  | 4 |  |
+| `int` | Enum / Integer |  | 4 |  |
+| `lck` | Enum / Integer |  | 4 |  |
+| `spd` | Enum / Integer |  | 4 |  |
+| `str` | Enum / Integer |  | 4 |  |
 
 </details>
 
@@ -2461,7 +2535,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |  |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 4 |  |
@@ -2513,7 +2587,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2524,7 +2598,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |  |
 | [`label`](./Strings.md#string-label) | String |  | 3 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
@@ -2553,7 +2627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 2 |  |
+| `con` | Enum / Integer |  | 2 |  |
 
 </details>
 
@@ -2573,7 +2647,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2585,7 +2659,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |  |
 | [`label`](./Strings.md#string-label) | String |  | 3 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
@@ -2632,8 +2706,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Number | Quantity. | 11 |  |
+| `count` | Array / Integer | Quantity. | 11 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
+| [`Bleed`](./Enums.md) | Integer | | 26 | 2 |
+| [`Fear`](./Enums.md) | Integer | | 43 | 2 |
 
 </details>
 
@@ -2654,7 +2730,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 2 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |  |
@@ -2678,7 +2754,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |  |
 
@@ -2700,7 +2776,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 
 </details>
@@ -2721,7 +2797,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2732,7 +2808,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
@@ -2760,8 +2836,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `initial_health` | Number |  | 1 |  |
-| [`object`](./Enums.md#enum-object) | Enum |  | 1 |  |
+| `initial_health` | Integer |  | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 1 |  |
 
 </details>
 
@@ -2802,7 +2878,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2814,7 +2890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
@@ -2842,7 +2918,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Number | Quantity. | 2 |  |
+| `count` | Array / Integer | Quantity. | 2 |  |
 | `ears` | Number |  | 2 |  |
 | `eyebrows` | Number |  | 2 |  |
 | `eyes` | Number |  | 2 |  |
@@ -2866,7 +2942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -2878,7 +2954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
@@ -2907,7 +2983,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |  |
 
@@ -2929,7 +3005,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 
 </details>
@@ -2951,7 +3027,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |  |
 
@@ -2995,7 +3071,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3005,7 +3081,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | Mixed |  | 2 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
@@ -3036,7 +3112,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3046,7 +3122,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |  |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
@@ -3078,7 +3154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 
 </details>
@@ -3099,7 +3175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3110,7 +3186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |  |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |  |
 | [`label`](./Strings.md#string-label) | String |  | 2 |  |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |  |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
@@ -3139,7 +3215,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -3161,7 +3237,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3176,7 +3252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3202,7 +3278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -3226,7 +3302,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -3249,7 +3325,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3264,7 +3340,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3290,7 +3366,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3305,7 +3381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3354,7 +3430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3369,7 +3445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3423,7 +3499,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -3446,7 +3522,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -3468,8 +3544,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -3489,7 +3566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3503,7 +3580,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3529,7 +3606,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3544,7 +3621,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3593,7 +3670,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |  |
 | `set_frame` | Number |  | 36 |  |
@@ -3605,7 +3682,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3635,7 +3712,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3650,7 +3727,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3675,7 +3752,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3689,7 +3766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3715,7 +3792,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -3737,7 +3814,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -3759,7 +3836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3774,7 +3851,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3800,7 +3877,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3815,7 +3892,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3840,7 +3917,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3855,7 +3932,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3880,7 +3957,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3894,7 +3971,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3920,7 +3997,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3934,7 +4011,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -3961,7 +4038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -3983,7 +4060,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -3997,7 +4074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4023,7 +4100,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4036,7 +4113,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4061,7 +4138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4076,7 +4153,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4101,7 +4178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4116,7 +4193,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4141,7 +4218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4155,7 +4232,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4181,7 +4258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4196,7 +4273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4221,7 +4298,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -4243,7 +4320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4257,7 +4334,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4283,7 +4360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4298,7 +4375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4324,7 +4401,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4339,7 +4416,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4364,7 +4441,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4379,7 +4456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4405,7 +4482,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -4427,7 +4504,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4444,7 +4521,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
@@ -4473,7 +4550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4490,7 +4567,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
@@ -4519,7 +4596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4536,7 +4613,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
@@ -4565,7 +4642,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4582,7 +4659,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
@@ -4612,7 +4689,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -4634,7 +4711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4649,7 +4726,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4674,9 +4751,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -4696,7 +4774,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 
 </details>
@@ -4717,7 +4795,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -4741,7 +4819,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -4764,7 +4842,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -4787,7 +4865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -4809,7 +4887,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 
@@ -4831,7 +4909,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4846,7 +4924,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4871,7 +4949,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4886,7 +4964,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4912,7 +4990,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
@@ -4936,7 +5014,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 1 |  |
 
 </details>
 
@@ -4956,7 +5034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -4971,7 +5049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -4996,9 +5074,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -5018,7 +5097,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 
 </details>
@@ -5040,7 +5119,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5063,7 +5142,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5086,7 +5165,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5109,7 +5188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
@@ -5133,9 +5212,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -5156,7 +5236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5206,7 +5286,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5221,7 +5301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5246,7 +5326,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5261,7 +5341,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5286,7 +5366,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5301,7 +5381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5326,7 +5406,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5339,7 +5419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5364,7 +5444,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5379,7 +5459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5405,7 +5485,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5427,7 +5507,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5443,7 +5523,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5468,7 +5548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5483,7 +5563,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5508,7 +5588,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5525,7 +5605,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | `fixed_chance` | Number |  | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5550,7 +5630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5565,7 +5645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5592,7 +5672,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5614,9 +5694,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -5636,7 +5717,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5659,7 +5740,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -5683,7 +5764,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5707,6 +5788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -5726,7 +5808,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 
 </details>
@@ -5748,7 +5830,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5770,7 +5852,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
 
@@ -5792,7 +5874,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5806,7 +5888,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5832,7 +5914,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5847,7 +5929,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5872,7 +5954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5886,7 +5968,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -5913,7 +5995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5936,7 +6018,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -5959,7 +6041,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -5981,7 +6063,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -5995,7 +6077,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6021,7 +6103,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6036,7 +6118,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6061,7 +6143,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6075,7 +6157,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6099,7 +6181,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6114,7 +6196,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6139,7 +6221,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6153,7 +6235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6177,7 +6259,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6191,7 +6273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6217,7 +6299,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6233,7 +6315,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | String |  | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
@@ -6262,7 +6344,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6276,7 +6358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6302,7 +6384,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
 
@@ -6324,7 +6406,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6338,7 +6420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6365,7 +6447,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -6388,7 +6470,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6405,7 +6487,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | `fixed_chance` | Number |  | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6430,7 +6512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6445,7 +6527,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6472,7 +6554,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -6494,7 +6576,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6508,7 +6590,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6534,7 +6616,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6549,7 +6631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6574,7 +6656,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -6597,9 +6679,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -6619,9 +6702,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -6641,9 +6725,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -6663,7 +6748,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6679,7 +6764,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6705,7 +6790,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6719,7 +6804,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6746,7 +6831,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -6770,7 +6855,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
@@ -6793,7 +6878,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6808,7 +6893,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6836,7 +6921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -6859,7 +6944,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -6881,9 +6966,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -6903,7 +6989,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6918,7 +7004,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6943,7 +7029,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6958,7 +7044,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -6983,7 +7069,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -6998,7 +7084,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7026,6 +7112,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -7046,7 +7133,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7069,7 +7156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7091,7 +7178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7106,7 +7193,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7131,7 +7218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7146,7 +7233,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7171,7 +7258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7186,7 +7273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7212,7 +7299,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -7235,7 +7322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7250,7 +7337,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7275,7 +7362,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7289,7 +7376,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7316,7 +7403,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7338,7 +7425,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7353,7 +7440,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7379,7 +7466,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7401,9 +7488,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -7423,7 +7511,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7445,7 +7533,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |  |
 | `set_frame` | Number |  | 36 |  |
@@ -7454,7 +7542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |  |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |  |
@@ -7479,7 +7567,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7494,7 +7582,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7519,7 +7607,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7533,7 +7621,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7559,7 +7647,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7574,7 +7662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7599,7 +7687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7613,7 +7701,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7639,9 +7727,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
+| [`bad`](./Enums.md) | Object | | 347 |   |
 
 </details>
 
@@ -7662,7 +7751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7685,7 +7774,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7708,7 +7797,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7731,7 +7820,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7754,7 +7843,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7777,7 +7866,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7799,7 +7888,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
 
@@ -7849,7 +7938,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -7872,7 +7961,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -7895,7 +7984,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -7918,7 +8007,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |  |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |  |
@@ -7941,7 +8030,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7956,7 +8045,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -7981,7 +8070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -7996,7 +8085,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |
@@ -8021,7 +8110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |  |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |  |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |  |
@@ -8036,7 +8125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |  |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |  |
 | [`label`](./Strings.md#string-label) | String |  | 1 |  |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |  |
 | `next_event_bonus` | Number |  | 1 |  |

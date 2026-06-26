@@ -16,7 +16,7 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`CreateGlobalModifiers`](#createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 5 |  |
-| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. | 2 |  |
+| `BloodRain` | Integer / Object | Applies or references the 'BloodRain' effect/state. | 2 |  |
 | `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. | 1 |  |
 | `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. | 1 |  |
 
@@ -37,8 +37,8 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LowerAmbientLight`](#lowerambientlight) | Number / Object | A visual effect that dims the map's lighting. | 3 |  |
-| `BloodRain` | Number / Object |  | 2 | `1` (Number), `{ ... }` (Object) |
+| [`LowerAmbientLight`](#lowerambientlight) | Object | A visual effect that dims the map's lighting. | 3 |  |
+| `BloodRain` | Integer / Object |  | 2 | `1` (Number), `{ ... }` (Object) |
 
 </details>
 
@@ -65,12 +65,12 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | `graphics` | Object |  |  | `{ ... }` (Object) |
 | `live_bounds` | Array |  |  | `[-999 999 0 999 -999 999]` (Array) |
 | `meta` | Object |  |  | `{ ... }` (Object) |
-| `movieclip` | Enum |  |  | `Particle_BloodDrip` (Enum) |
+| `movieclip` | Array / Enum |  |  | `Particle_BloodDrip` (Enum) |
 | `particle_lifetime` | Number |  |  | `5` (Number) |
 | `projection_matrix` | Enum |  |  | `default` (Enum) |
 | `render_mode` | Enum |  |  | `separate` (Enum) |
 | `scripts` | Object |  |  | `{ ... }` (Object) |
-| `self_damage` | Object |  |  | `{ ... }` (Object) |
+| `self_damage` | Boolean / Integer / Object |  |  | `{ ... }` (Object) |
 | `simulation_space` | Enum |  |  | `global` (Enum) |
 | `size_start` | Array |  |  | `[.25 1]` (Array) |
 | `speed_scale` | String |  |  | `.2` (String) |
@@ -84,5 +84,5 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `amount` | Array |  |  | `[50 60 60]` (Array) |
-| `speed` | Number |  | 6 | `4` (Number) |
+| `speed` | Array / Number |  | 6 | `4` (Number) |
 

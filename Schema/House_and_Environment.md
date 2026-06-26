@@ -19,7 +19,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1274 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
-| [`Default`](#object-default) | Object |  | 199 |  |
+| [`Default`](#object-default) | Enum / Object |  | 199 |  |
 | `height` | Integer |  | 16 |  |
 | [`id`](./Enums.md#enum-id) | Enum |  | 16 |  |
 | [`reverb_empty`](#object-reverb_empty) | Object |  | 16 |  |
@@ -134,7 +134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 91 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum |  | 91 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 63 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 63 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
@@ -218,9 +218,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Enum |  | 19 |  |
-| [`tile`](./Enums.md#enum-tile) | Enum |  | 7 |  |
-| [`number`](./Arrays.md#array-number) | Array |  | 3 |  |
+| [`object`](./Arrays.md#array-object) | Array / Enum |  | 19 |  |
+| [`tile`](./Enums.md#enum-tile) | Array / Enum |  | 7 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer |  | 3 |  |
 | [`trap`](./Enums.md#enum-trap) | Enum |  | 2 |  |
 
 </details>
@@ -323,7 +323,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 8 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum |  | 8 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 |  |
 
 </details>
@@ -428,9 +428,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Number |  | 1 |  |
+| `AllStatsUp` | Enum / Integer |  | 1 |  |
 | [`Conditional_HasTag`](./House_and_Environment.md#object-conditional_hastag) | Object |  | 1 |  |
-| `HealthGain` | Number |  | 1 |  |
+| `HealthGain` | Integer |  | 1 |  |
 </details> 
 
 ---
@@ -653,10 +653,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 3 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 3 |  |
 | `max_radius` | Float |  | 2 |  |
 | [`min_radius`](./Enums.md#enum-min_radius) | Float |  | 2 |  |
-| [`number`](./Arrays.md#array-number) | Array |  | 1 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer |  | 1 |  |
 | [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array |  | 1 |  |
 
 </details>
@@ -724,7 +724,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 1 |  |
-| [`object`](./Enums.md#enum-object) | Enum |  | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 1 |  |
 
 </details>
 
@@ -744,8 +744,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 2 |  |
-| [`number`](./Arrays.md#array-number) | Array |  | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 2 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer |  | 1 |  |
 
 </details>
 
@@ -765,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Integer |  | 1 |  |
+| `damage` | Enum / Integer / Object |  | 1 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 |  |
 
@@ -994,7 +994,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum |  | 1 |  |
 
 </details>
 
@@ -1014,7 +1014,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Integer |  | 1 |  |
+| `count` | Array / Integer |  | 1 |  |
 
 </details>
 
@@ -1310,7 +1310,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `max_radius` | Float |  | 1 |  |
 | `min_radius` | Float |  | 1 |  |
-| [`tile`](./Enums.md#enum-tile) | Enum |  | 1 |  |
+| [`tile`](./Enums.md#enum-tile) | Array / Enum |  | 1 |  |
 
 </details>
 

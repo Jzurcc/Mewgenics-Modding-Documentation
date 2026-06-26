@@ -17,13 +17,13 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | :--- | :--- | :--- | :--- | :--- |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
-| [`common`](./Enums.md#enum-common) | Object | Event Object: Story branch or dialog option representing the 'Common' action. | 1067 |  |
+| [`common`](./Enums.md#enum-common) | Enum | Event Object: Story branch or dialog option representing the 'Common' action. | 1067 |  |
 | [`reward`](#reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 5 |  |
-| [`rare`](./Enums.md#enum-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
-| [`good`](#good) | Object | `false`, `true` | 8 |  |
+| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`good`](#good) | Boolean | `false`, `true` | 8 |  |
 | [`main`](#main) | Object | Event Object: The central hub or recurring menu of a story event. | 214 |  |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 |  |
-| [`options`](./Arrays.md#array-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |  |
+| [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |  |
 | [`play_animation`](./Enums.md#enum-play_animation) | Enum | Examples: `resultVeryGood, resultBad` | 160 |  |
 | [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |  |
 | [`permanent_stats`](#permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 |  |
@@ -76,7 +76,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | Examples: `iceage.gon, dimensionx.gon, future.gon` | 12 |  |
 | [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum | Examples: `BlackShard, JarOfRadiation, ScaldingOrb` | 18 |  |
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 12 |  |
-| `CharmedMaggot` | Variable |  | 11 |  |
+| `CharmedMaggot` | Object |  | 11 |  |
 | `auto` | Variable |  | 82 |  |
 | `consumables` | Number | Examples: `60, 10` | 6 |  |
 | [`global_effect_next_fight`](#global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 10 |  |
@@ -89,7 +89,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `heal_disorder` | Integer | Examples: `2` | 7 |  |
 | [`leave_party_temporarily`](#leave_party_temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 |  |
 | [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 7 |  |
-| `spd` | Number | `aux` | 424 |  |
+| `spd` | Enum / Integer | `aux` | 424 |  |
 | [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall` | 6 |  |
 | `hide_appearance_changes` | Integer | Examples: `1` | 6 |  |
 | `QEVENT_OBELISK_IGNORE` | Variable |  | 6 |  |
@@ -101,16 +101,16 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `WorldEventLegacyCounter_CrackInTheWall` | Variable |  | 6 |  |
 | `WorldEventLegacyToken_StartDigging` | Variable |  | 6 |  |
 | `blood_altar_items` | Variable |  | 5 |  |
-| `Bottles` | Variable |  | 2 |  |
-| `cha` | Number | `+1`, `aux` | 468 |  |
+| `Bottles` | Object |  | 2 |  |
+| `cha` | Enum / Integer | `+1`, `aux` | 468 |  |
 | `current_chapter_common` | Mixed | `auto` | 12 |  |
 | `current_chapter_rare` | Mixed | `auto` | 12 |  |
 | [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | Examples: `infinite_intro` | 5 |  |
 | [`food`](./Arrays.md#array-food) | Array | Examples: `[ 4 8 ], [ 1 3 ], [ 4 7 ]` | 11 |  |
 | `physical_disorders` | Variable |  | 5 |  |
-| `SlagTight` | Variable |  | 5 |  |
+| `SlagTight` | Object |  | 5 |  |
 | [`bad`](#bad) | Object | Event Object: Story branch or dialog option representing the 'Bad' action. | 10 |  |
-| `con` | Number | `aux` | 416 |  |
+| `con` | Enum / Integer | `aux` | 416 |  |
 | `diseases` | Variable |  | 4 |  |
 | `fleshhead_items` | Variable |  | 4 |  |
 | [`goto`](./Enums.md#enum-goto) | Enum | Examples: `end` | 4 |  |
@@ -131,7 +131,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `bone_equipment` | Variable |  | 3 |  |
 | `chapter_common` | Number | Examples: `1` | 7 |  |
 | `chapter_specific_item` | Variable |  | 3 |  |
-| `CryogenicTimeChamber_Full` | Variable |  | 3 |  |
+| `CryogenicTimeChamber_Full` | Object |  | 3 |  |
 | `end_of_time_unlock` | Variable |  | 3 |  |
 | `gain_cat_familiar` | Integer | Examples: `1` | 1 |  |
 | [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array | Examples: `AnyUnlocked` | 3 |  |
@@ -147,7 +147,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `resultVeryGood` | Variable |  | 3 |  |
 | `Scatological` | Variable |  | 3 |  |
 | `shuffle_options` | Boolean | Examples: `true` | 3 |  |
-| `SlagMight` | Variable |  | 3 |  |
+| `SlagMight` | Object |  | 3 |  |
 | `spawn_reflection_next_fight` | Integer | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 |  |
 | [`transform_item`](./Arrays.md#array-transform_item) | Array | Examples: `[ CryogenicTimeChamber_Empty CryogenicTimeChamber_Full ], [ JarOfRadiation Ja...` | 3 |  |
 | [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | Examples: `CryogenicTimeChamber_Full, JarOfChaos, JarOfRadiatedBlood` | 3 |  |
@@ -156,9 +156,9 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `AdventureToken_YellowNeedle` | Variable |  | 2 |  |
 | `all` | Variable |  | 2 |  |
 | `Anxiety` | Variable |  | 2 |  |
-| `Cancer` | Variable |  | 2 |  |
-| `CharmedPinky` | Variable |  | 2 |  |
-| `CharmedRaptorBaby` | Variable |  | 2 |  |
+| `Cancer` | Object |  | 2 |  |
+| `CharmedPinky` | Object |  | 2 |  |
+| `CharmedRaptorBaby` | Object |  | 2 |  |
 | `clear_result_animation` | Integer | Examples: `1` | 2 |  |
 | [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum | Examples: `pyrophina, zaratana` | 2 |  |
 | `Depression` | Variable |  | 2 |  |
@@ -168,31 +168,31 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `glitched_items` | Variable |  | 2 |  |
 | `HasHitPinata` | Variable |  | 2 |  |
 | `HauntedNight` | Variable |  | 2 |  |
-| `JarOfRadiatedBlood` | Variable |  | 4 |  |
+| `JarOfRadiatedBlood` | Object |  | 4 |  |
 | `map_unlock_dimensionx` | Variable |  | 2 |  |
 | [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | Examples: `[ Dwarfism ], [ Gigantism ]` | 2 |  |
 | `party_heal_injury` | Integer | Examples: `99` | 2 |  |
 | [`party_permanent_stats`](#party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 2 |  |
 | [`party_random_mutation_from_set`](#party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |  |
-| `PawShards` | Variable |  | 2 |  |
+| `PawShards` | Object |  | 2 |  |
 | `poop_items` | Variable |  | 2 |  |
-| `PutridLeech` | Variable |  | 2 |  |
-| `PyrophinasCollar` | Variable |  | 2 |  |
+| `PutridLeech` | Object |  | 2 |  |
+| `PyrophinasCollar` | Object |  | 2 |  |
 | `QEVENT_OBELISK_QUES1` | Variable |  | 2 |  |
 | `QEVENT_THROBBINGARTERY_REW1` | Variable |  | 2 |  |
 | `QEVENT_THROBBINGARTERY_REW2` | Variable |  | 2 |  |
 | `QEVENT_VOLCANO_REW1` | Variable |  | 2 |  |
-| `ReceiverAntenna` | Variable |  | 2 |  |
+| `ReceiverAntenna` | Object |  | 2 |  |
 | `resultBad` | Variable |  | 2 |  |
-| `Rocks` | Variable |  | 2 |  |
+| `Rocks` | Object |  | 2 |  |
 | [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 2 |  |
 | `set_age` | Integer | Examples: `1` | 2 |  |
-| `SignalAmplifier` | Variable |  | 2 |  |
-| `Snake` | Number | Applies or references the 'Snake' effect/state. | 2 |  |
+| `SignalAmplifier` | Object |  | 2 |  |
+| `Snake` | Integer / Object | Applies or references the 'Snake' effect/state. | 2 |  |
 | [`spin`](./Enums.md#enum-spin) | Enum | Examples: `again` | 4 |  |
-| `ThrobbingGristle` | Variable |  | 2 |  |
-| `TransmitterAntenna` | Variable |  | 2 |  |
-| `ZaratanasCollar` | Variable |  | 2 |  |
+| `ThrobbingGristle` | Object |  | 2 |  |
+| `TransmitterAntenna` | Object |  | 2 |  |
+| `ZaratanasCollar` | Object |  | 2 |  |
 | `AdventureToken_HasRunFromDeath` | Variable |  | 1 |  |
 | `AdventureToken_MysteriousCave_FamiliarVoice` | Variable |  | 1 |  |
 | `AdventureToken_MysteriousJarRepeat` | Variable |  | 1 |  |
@@ -208,7 +208,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `AntennaQuest_Orb` | Variable |  | 1 |  |
 | `AntennaQuest_Rift` | Variable |  | 1 |  |
 | `AntennaQuest_Volcano` | Variable |  | 1 |  |
-| `Beepis` | Variable |  | 1 |  |
+| `Beepis` | Object |  | 1 |  |
 | `bleeding` | Variable |  | 1 |  |
 | `bloody_items` | Variable |  | 1 |  |
 | [`boneyard`](./Enums.md#enum-boneyard) | Enum | `AREA_NAME_BONEYARD`, `mapflag_BoneyardUnlocked` | 21 |  |
@@ -220,26 +220,26 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`caves`](./Enums.md#enum-caves) | Enum | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` | 12 |  |
 | [`chapter`](./Enums.md#enum-chapter) | Enum | `alley` | 6 |  |
 | `chapter_rare` | Number | Examples: `1` | 10 |  |
-| `CharmedTarBaby` | Variable |  | 1 |  |
+| `CharmedTarBaby` | Object |  | 1 |  |
 | `clone_self_to_party` | Integer | Examples: `1` | 1 |  |
 | `copy_items_to_party` | Integer | Examples: `1` | 1 |  |
 | `copy_party_items` | Integer | Examples: `1` | 1 |  |
 | [`core`](./Enums.md#enum-core) | Enum | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` | 20 |  |
 | [`crater`](./Enums.md#enum-crater) | Enum | `AREA_NAME_CRATER`, `mapflag_CraterUnlocked` | 16 |  |
-| `CryogenicTimeChamber_Empty` | Variable |  | 2 |  |
-| `Cunch` | Variable |  | 1 |  |
+| `CryogenicTimeChamber_Empty` | Object |  | 2 |  |
+| `Cunch` | Object |  | 1 |  |
 | `cursed` | Boolean | `true` | 154 |  |
-| `CursedStickman` | Variable |  | 1 |  |
-| `DeathsScythe` | Variable |  | 1 |  |
+| `CursedStickman` | Object |  | 1 |  |
+| `DeathsScythe` | Object |  | 1 |  |
 | [`desert`](./Enums.md#enum-desert) | Enum | `AREA_NAME_DESERT`, `mapflag_DesertUnlocked` | 16 |  |
-| `dex` | Number | `aux` | 301 |  |
+| `dex` | Enum / Integer | `aux` | 301 |  |
 | [`dimensionx`](./Enums.md#enum-dimensionx) | Enum | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` | 27 |  |
 | `dimensionx.gon` | Variable |  | 1 |  |
-| `EnchantingPoop` | Variable |  | 2 |  |
+| `EnchantingPoop` | Object |  | 2 |  |
 | `EVENT_USETHETOILET_AGAIN` | Variable |  | 1 |  |
-| `FecalHood_Cursed` | Variable |  | 1 |  |
-| `FecalMask_Cursed` | Variable |  | 1 |  |
-| `Feebis` | Variable |  | 1 |  |
+| `FecalHood_Cursed` | Object |  | 1 |  |
+| `FecalMask_Cursed` | Object |  | 1 |  |
+| `Feebis` | Object |  | 1 |  |
 | [`future`](./Enums.md#enum-future) | Enum | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` | 16 |  |
 | [`gain_clone_familiar`](#gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |  |
 | [`general_common`](./Enums.md#enum-general_common) | Enum | `auto` | 2 |  |
@@ -249,13 +249,13 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `Gigachad` | Variable |  | 1 |  |
 | `godly_items` | Variable |  | 1 |  |
 | `grass_items` | Variable |  | 1 |  |
-| `GuillotinasHead` | Variable |  | 2 |  |
+| `GuillotinasHead` | Object |  | 2 |  |
 | `hide_items` | Variable |  | 1 |  |
-| `Host` | Variable |  | 1 |  |
+| `Host` | Object |  | 1 |  |
 | [`iceage`](./Enums.md#enum-iceage) | Enum | `AREA_NAME_ICEAGE`, `mapflag_IceAgeUnlocked` | 14 |  |
 | `iceage.gon` | Variable |  | 1 |  |
-| `JarOfChaos` | Variable |  | 4 |  |
-| `JarOfRadiation` | Variable |  | 6 |  |
+| `JarOfChaos` | Object |  | 4 |  |
+| `JarOfRadiation` | Object |  | 6 |  |
 | [`junkyard`](./Enums.md#enum-junkyard) | Enum | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` | 12 |  |
 | `junkyard_items` | Variable |  | 1 |  |
 | [`jurassic`](./Enums.md#enum-jurassic) | Enum | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` | 14 |  |
@@ -273,7 +273,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `MeatWorldQuest_Gristle` | Variable |  | 1 |  |
 | `MeatWorldQuest_Leech` | Variable |  | 1 |  |
 | `MeteorShowerUnlocked` | Variable |  | 1 |  |
-| `MomsKnife` | Variable |  | 2 |  |
+| `MomsKnife` | Object |  | 2 |  |
 | `monkey_paw_1finger` | Variable |  | 1 |  |
 | `monkey_paw_2fingers` | Variable |  | 1 |  |
 | `monkey_paw_3fingers` | Variable |  | 1 |  |
@@ -366,7 +366,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `QEVENT_WALLOFFLESH_REW_IGNORE` | Variable |  | 1 |  |
 | [`random_chance`](#random_chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |  |
 | `raptor_nest_eggs` | Variable |  | 1 |  |
-| [`RaptorEgg`](./Enums.md#enum-raptoregg) | Enum | Examples: `.1` | 2 |  |
+| [`RaptorEgg`](./Enums.md#enum-raptoregg) | Object | Examples: `.1` | 2 |  |
 | [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 5 |  |
 | `resultConfused` | Variable |  | 1 |  |
 | `resultVeryBad` | Variable |  | 1 |  |
@@ -376,8 +376,8 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | Examples: `glitched_items` | 1 |  |
 | `self_heal` | Integer | Examples: `10` | 1 |  |
 | [`sewers`](./Enums.md#enum-sewers) | Enum | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` | 16 |  |
-| `SludgeHat` | Variable |  | 1 |  |
-| `SludgeMask` | Variable |  | 1 |  |
+| `SludgeHat` | Object |  | 1 |  |
+| `SludgeMask` | Object |  | 1 |  |
 | `Soulless` | Variable |  | 1 |  |
 | `Steven_disorders` | Variable |  | 1 |  |
 | `StrangeEggs` | Variable |  | 1 |  |
@@ -461,7 +461,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
 | `damage` | Array / Equation |  | 2 | `[3 6]` (Array), `[5 10]` (Array), `8` (Equation), `5` (Equation) |
-| `self_damage` | Array / Number |  | 436 | `[4 8]` (Array), `[5 10]` (Array), `50` (Number), `8` (Number) |
+| `self_damage` | Boolean / Integer / Object |  | 436 | `[4 8]` (Array), `[5 10]` (Array), `50` (Number), `8` (Number) |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 |  |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 21 |  |
@@ -528,7 +528,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Enums.md#enum-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 52 |  |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
@@ -599,8 +599,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Enums.md#enum-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
-| [`options`](./Arrays.md#array-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |  |
+| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |  |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
 | [`setup`](#setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 |  |
@@ -637,7 +637,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 41 |  |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
 | `damage` | Array / Equation |  | 2 | `[3 4]` (Array), `[2 5]` (Array), `5` (Equation), `7` (Equation) |
-| `self_damage` | Array / Number |  | 436 | `[6 10]` (Array), `50` (Number), `10` (Number) |
+| `self_damage` | Boolean / Integer / Object |  | 436 | `[6 10]` (Array), `50` (Number), `10` (Number) |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 30 |  |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 30 |  |
@@ -723,8 +723,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`common`](./Enums.md#enum-common) | Object | Event Object: Story branch or dialog option representing the 'Common' action. | 1067 |  |
-| [`rare`](./Enums.md#enum-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
+| [`common`](./Enums.md#enum-common) | Enum | Event Object: Story branch or dialog option representing the 'Common' action. | 1067 |  |
+| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |  |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 |  |

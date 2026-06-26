@@ -22,7 +22,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
 | [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
 | `item_chance` | Float |  | 6 |  |
@@ -45,7 +45,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
 | [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
 | [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
@@ -68,7 +68,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
 | [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
 | [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
@@ -91,7 +91,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |  |
+| [`coins`](./Arrays.md#array-coins) | Integer |  | 12 |  |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |  |
 | [`consumable_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |
 | [`item_chance`](./Math_Equations.md) | Equation | (Must be float values) | 6 |  |

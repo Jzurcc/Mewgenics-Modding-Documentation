@@ -68,7 +68,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `count_nomove_in_eval` | Boolean | Examples: `false` | 2 |  |
 | `distance_to_center` | Number | Examples: `-1` | 2 |  |
 | [`exclude_characters_tagged`](./Enums.md#enum-exclude_characters_tagged) | Enum | Examples: `siren` | 2 |  |
-| `face_camera` | Number | Examples: `1000` | 2 |  |
+| `face_camera` | Boolean | Examples: `1000` | 2 |  |
 | `lava` | Number | Examples: `5` | 2 |  |
 | `tall_grass` | Number | Examples: `5` | 2 |  |
 

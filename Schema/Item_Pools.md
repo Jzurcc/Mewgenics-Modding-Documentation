@@ -27,43 +27,45 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `current_chapter_very_rare` | Mixed | Examples: `auto, 1` | 12 |  |
 | `chapter_rare` | Number | Examples: `1` | 10 |  |
 | `chapter_common` | Number | Examples: `1` | 7 |  |
-| `chapter` | Number | Examples: `1` | 6 |  |
+| `chapter` | Enum | Examples: `1` | 6 |  |
 | `Chicken` | Mixed | Examples: `.1, 2, .01` | 6 |  |
 | `consumables` | Number | Examples: `60, 10` | 6 |  |
 | `basic_consumables` | Number | Examples: `90, 100` | 4 |  |
-| `FoodBig` | Number | Examples: `2, 1` | 4 |  |
-| `FoodMedium` | Number | Examples: `1, 5` | 4 |  |
+| `FoodBig` | Object | Examples: `2, 1` | 4 |  |
+| `FoodMedium` | Object | Examples: `1, 5` | 4 |  |
 | `shop_common` | Number | Examples: `1` | 4 |  |
-| `Antidote` | Number | Examples: `1` | 2 |  |
-| [`BagOfSeeds`](./Enums.md#enum-bagofseeds) | Enum | Examples: `.3` | 2 |  |
-| [`BirdFeed`](./Enums.md#enum-birdfeed) | Enum | Examples: `.3` | 2 |  |
-| [`BirdPoopHat`](./Enums.md#enum-birdpoophat) | Enum | Examples: `.3` | 2 |  |
-| `Catnip` | Number | Examples: `3` | 2 |  |
-| `CatnipBig` | Number | Examples: `2` | 2 |  |
+| `Antidote` | Number / Object | Examples: `1` | 2 |  |
+| [`BagOfSeeds`](./Enums.md#enum-bagofseeds) | Object | Examples: `.3` | 2 |  |
+| [`BirdFeed`](./Enums.md#enum-birdfeed) | Object | Examples: `.3` | 2 |  |
+| [`BirdPoopHat`](./Enums.md#enum-birdpoophat) | Object | Examples: `.3` | 2 |  |
+| `Catnip` | Integer / Object | Examples: `3` | 2 |  |
+| `CatnipBig` | Object | Examples: `2` | 2 |  |
 | `consumables_consumable_common` | Number | Examples: `50` | 2 |  |
 | `consumables_consumable_rare` | Number | Examples: `15` | 2 |  |
 | `consumables_consumable_uncommon` | Number | Examples: `35` | 2 |  |
 | `consumables_consumable_very_rare` | Number | Examples: `1` | 2 |  |
-| [`DeadHummingbird`](./Enums.md#enum-deadhummingbird) | Enum | Examples: `.3` | 2 |  |
+| [`DeadHummingbird`](./Enums.md#enum-deadhummingbird) | Object | Examples: `.3` | 2 |  |
 | [`general_common`](./Enums.md#enum-general_common) | Enum | Examples: `auto` | 2 |  |
 | [`general_rare`](./Enums.md#enum-general_rare) | Enum | Examples: `auto` | 2 |  |
 | [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum | Examples: `auto` | 2 |  |
 | [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum | Examples: `auto` | 2 |  |
-| [`GlowingSeed`](./Enums.md#enum-glowingseed) | Enum | Examples: `.3` | 2 |  |
-| [`GoldenEgg`](./Enums.md#enum-goldenegg) | Enum | Examples: `.3` | 2 |  |
-| [`HarpysClaw`](./Enums.md#enum-harpysclaw) | Enum | Examples: `.5` | 2 |  |
-| [`LostSoul`](./Enums.md#enum-lostsoul) | Enum | Examples: `.5` | 2 |  |
-| [`MagicSeed`](./Enums.md#enum-magicseed) | Enum | Examples: `.3` | 2 |  |
-| [`Parousworm`](./Enums.md#enum-parousworm) | Enum | Examples: `.5` | 2 |  |
-| [`PeaceSymbol`](./Enums.md#enum-peacesymbol) | Enum | Examples: `.3` | 2 |  |
-| [`PeaceSymbolFacePaint`](./Enums.md#enum-peacesymbolfacepaint) | Enum | Examples: `.3` | 2 |  |
+| [`GlowingSeed`](./Enums.md#enum-glowingseed) | Object | Examples: `.3` | 2 |  |
+| [`GoldenEgg`](./Enums.md#enum-goldenegg) | Object | Examples: `.3` | 2 |  |
+| [`HarpysClaw`](./Enums.md#enum-harpysclaw) | Object | Examples: `.5` | 2 |  |
+| [`LostSoul`](./Enums.md#enum-lostsoul) | Object | Examples: `.5` | 2 |  |
+| [`MagicSeed`](./Enums.md#enum-magicseed) | Object | Examples: `.3` | 2 |  |
+| [`Parousworm`](./Enums.md#enum-parousworm) | Object | Examples: `.5` | 2 |  |
+| [`PeaceSymbol`](./Enums.md#enum-peacesymbol) | Object | Examples: `.3` | 2 |  |
+| [`PeaceSymbolFacePaint`](./Enums.md#enum-peacesymbolfacepaint) | Object | Examples: `.3` | 2 |  |
 | `pills` | Number | Examples: `7` | 2 |  |
-| [`RaptorEgg`](./Enums.md#enum-raptoregg) | Enum | Examples: `.1` | 2 |  |
-| [`RavenFeather`](./Enums.md#enum-ravenfeather) | Enum | Examples: `.3` | 2 |  |
-| [`TieDyeBandana`](./Enums.md#enum-tiedyebandana) | Enum | Examples: `.3` | 2 |  |
-| `Turkey` | Number | Examples: `2` | 2 |  |
-| [`WeirdEgg`](./Enums.md#enum-weirdegg) | Enum | Examples: `.3` | 2 |  |
-| [`WishBone`](./Enums.md#enum-wishbone) | Enum | Examples: `.3` | 2 |  |
+| [`RaptorEgg`](./Enums.md#enum-raptoregg) | Object | Examples: `.1` | 2 |  |
+| [`RavenFeather`](./Enums.md#enum-ravenfeather) | Object | Examples: `.3` | 2 |  |
+| [`TieDyeBandana`](./Enums.md#enum-tiedyebandana) | Object | Examples: `.3` | 2 |  |
+| `Turkey` | Integer / Object | Examples: `2` | 2 |  |
+| [`WeirdEgg`](./Enums.md#enum-weirdegg) | Object | Examples: `.3` | 2 |  |
+| [`WishBone`](./Enums.md#enum-wishbone) | Object | Examples: `.3` | 2 |  |
+| [`common`](./Enums.md) | Integer | | 12 | 50 |
+| [`rare`](./Enums.md) | Integer | | 17 | 40 |
 
 </details>
 

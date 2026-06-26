@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set`](./Enums.md#enum-set) | Enum |  | 1504 |  |
+| [`set`](./Enums.md#enum-set) | Array / Enum |  | 1504 |  |
 | `Comfort` | Integer | Applies or references the 'Comfort' effect/state. | 406 |  |
 | `Appeal` | Integer | Applies or references the 'Appeal' effect/state. | 338 |  |
 | `Stimulation` | Integer | Applies or references the 'Stimulation' effect/state. | 268 |  |

@@ -53,7 +53,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `palette` | Number |  | 66 |  |
+| `palette` | Enum / Integer |  | 66 |  |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 26 |  |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |  |
 | [`default_face`](./Enums.md#enum-default_face) | Enum |  | 2 |  |
@@ -77,7 +77,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](./Strings.md#string-name) | String | Examples: `"CAT_CLASS_MONK_NAME", "CAT_CLASS_BUTCHER_NAME", "CAT_CLASS_DRUID_NAME"` | 3222 |  |
+| [`name`](./Strings.md#string-name) | Enum | Examples: `"CAT_CLASS_MONK_NAME", "CAT_CLASS_BUTCHER_NAME", "CAT_CLASS_DRUID_NAME"` | 3222 |  |
 | [`description`](./Strings.md#string-description) | String | Examples: `"CAT_CLASS_DRUID_DESC", "CAT_CLASS_MONK_DESC", "CAT_CLASS_BUTCHER_DESC"` | 28 |  |
 
 </details>
@@ -98,13 +98,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Number | Examples: `3, 2, -2` | 18 |  |
-| `cha` | Number | Examples: `3, 2, -1` | 14 |  |
-| `int` | Number | Examples: `4, 2, 1` | 12 |  |
-| `spd` | Number | Examples: `1, -1, -2` | 12 |  |
-| `str` | Number | Examples: `2, -1, -2` | 12 |  |
-| `dex` | Number | Examples: `3, -1` | 8 |  |
-| `lck` | Number | Examples: `2, -1, 1` | 8 |  |
+| `con` | Enum / Integer | Examples: `3, 2, -2` | 18 |  |
+| `cha` | Enum / Integer | Examples: `3, 2, -1` | 14 |  |
+| `int` | Enum / Integer | Examples: `4, 2, 1` | 12 |  |
+| `spd` | Enum / Integer | Examples: `1, -1, -2` | 12 |  |
+| `str` | Enum / Integer | Examples: `2, -1, -2` | 12 |  |
+| `dex` | Enum / Integer | Examples: `3, -1` | 8 |  |
+| `lck` | Enum / Integer | Examples: `2, -1, 1` | 8 |  |
 
 </details>
 
@@ -124,9 +124,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`attack`](./Arrays.md#array-attack) | Array | Examples: `[ Fartoom Mutilate SkullBash Shred Chomp BodySlam SliceAn..., [ SquirrelSquad...` | 12 |  |
+| [`attack`](./Arrays.md#array-attack) | Enum | Examples: `[ Fartoom Mutilate SkullBash Shred Chomp BodySlam SliceAn..., [ SquirrelSquad...` | 12 |  |
 | [`misc`](./Arrays.md#array-misc) | Array | Examples: `[ SelfMutilate Succ Consume BloodMagic SmellBlood Vurp Li..., [ StoneFists Br...` | 12 |  |
-| [`move`](./Arrays.md#array-move) | Array | Examples: `[ DruidSwap FlowerFeet ThornyFeet RaccoonForm HydroPump C..., [ HogRush Trudg...` | 12 |  |
+| [`move`](./Arrays.md#array-move) | Enum | Examples: `[ DruidSwap FlowerFeet ThornyFeet RaccoonForm HydroPump C..., [ HogRush Trudg...` | 12 |  |
 | [`defense`](./Arrays.md#array-defense) | Array | Examples: `[ SongOfSpring SummonTurtle PullToSafety Protection Safet..., [ Burp ForceFee...` | 10 |  |
 
 </details>
@@ -149,6 +149,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 |  |
+| [`AddStartingMana`](./Enums.md) | Integer | | 1 | 5 |
+| [`SpawnOnBattleStart`](./Enums.md) | Enum | | 1 | Crow |
+| [`TinkererBasicAttackSwitching`](./Enums.md) | Object | | 1 |   |
 
 </details>
 

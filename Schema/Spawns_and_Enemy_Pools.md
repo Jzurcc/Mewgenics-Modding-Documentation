@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`editor`](#object-editor) | Object |  | 578 |  |
-| [`object`](./Enums.md#enum-object) | Enum |  | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 545 |  |
 | `value` | Float |  | 485 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 206 |  |
 | `early_spawn` | Boolean |  | 10 |  |
@@ -27,7 +27,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `forced_placement` | Boolean |  | 3 |  |
 | [`image`](./Strings.md#string-image) | String |  | 2 |  |
 | [`trap`](./Enums.md#enum-trap) | Enum |  | 2 |  |
-| [`element`](./Engine_LogicKeys.md#valid-property-keys) | String | Specific element type required or applied. | 1 |  |
+| [`element`](./Engine_LogicKeys.md#valid-property-keys) | Array / Enum | Specific element type required or applied. | 1 |  |
 | [`reserved`](./Enums.md#enum-reserved) | Enum |  | 1 |  |
 | [`utility`](./Enums.md#enum-utility) | Enum |  | 1 |  |
 | [`weather_element_alt`](#object-weather_element_alt) | Object |  | 1 |  |
@@ -76,8 +76,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
-| [`object`](./Enums.md#enum-object) | Enum |  | 1 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 1 |  |
 
 </details>
 

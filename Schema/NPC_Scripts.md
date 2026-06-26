@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`intro`](./NPC_Scripts.md#context-intro) | Object | Examples: `{ ... }` | 216 |  |
-| [`tooltip`](./NPC_Scripts.md#context-tooltip) | Object | Examples: `{ ... }` | 165 |  |
+| [`tooltip`](./NPC_Scripts.md#context-tooltip) | Enum | Examples: `{ ... }` | 165 |  |
 | [`states`](./NPC_Scripts.md#context-states) | Object | Examples: `{ ... }` | 24 |  |
 | [`transitions`](./NPC_Scripts.md#context-transitions) | Object | Examples: `{ ... }` | 24 |  |
 | [`unprompted`](./NPC_Scripts.md#context-unprompted) | Object | Examples: `{ ... }` | 18 |  |
@@ -1266,7 +1266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_INFINITE_INTRO_3, NPC_POPUP_BEANIES_INFINITE_INTRO_2, NPC_P...` | 22 |  |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_right` | 4 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 4 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.25` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.25` | 2 |  |
 
 </details>
 
@@ -1424,7 +1424,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_RIFT_INTRO_1, NPC_POPUP_BEANIES_RIFT_INTRO_2, NPC_POPUP_BEA...` | 22 |  |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_right` | 4 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 4 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.25` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.25` | 2 |  |
 
 </details>
 
@@ -4130,7 +4130,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BOSS_FIGHT_INTRO_2, NPC_POPUP_BOSS_FIGHT_INTRO_1, NPC_POPUP_BOSS_FI...` | 10 |  |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 8 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 8 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.25, .5` | 4 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.25, .5` | 4 |  |
 
 </details>
 
@@ -5332,7 +5332,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_right, butch_point_team, butch_point_enemies` | 16 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveHint, UISFX_ButchHint, UISFX_ButchMove` | 12 |  |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected, cat_turn` | 4 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_FIRST_FIGHT_INTRO_14` | 2 |  |
 | [`set_mood`](./Enums.md#enum-set_mood) | Enum | Examples: `default` | 2 |  |
 | `unlock_controls` | Number | Examples: `1` | 2 |  |
@@ -5837,7 +5837,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_INTRO_1, NPC_POPUP_HOUSE_INTRO_2, NPC_POPUP_HOUSE_INTRO_3` | 20 |  |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left, tink_point_cats` | 6 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 4 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_HOUSE_INTRO_11` | 2 |  |
 | `unlock_controls` | Number | Examples: `1` | 2 |  |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click` | 2 |  |
@@ -5995,7 +5995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_STRAYS_3, NPC_POPUP_HOUSE_STRAYS_2, NPC_POPUP_HOUSE_STRAYS_1` | 8 |  |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left, tink_point_strays` | 6 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 6 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_HOUSE_STRAYS_5` | 2 |  |
 | [`request_cat_info`](./Enums.md#enum-request_cat_info) | Enum | Examples: `stray` | 2 |  |
 | `unlock_controls` | Number | Examples: `1` | 2 |  |
@@ -6668,7 +6668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_levelup, butch_point_hotblooded, butch_point_sunburn` | 10 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 8 |  |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click, hovered_passive` | 4 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_LEVEL_UP_INTRO_6` | 2 |  |
 | `lock_mouse` | Number | Examples: `1` | 2 |  |
 | `unlock_mouse` | Number | Examples: `1` | 2 |  |
@@ -8077,7 +8077,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_INTRODUCTION_2, NPC_STEVEN_STEVEN_INTRODUCTION_3, NPC_STEVE...` | 38 |  |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, talking` | 26 |  |
-| [`blocking`](./Enums.md#enum-blocking) | Enum | Examples: `idlenoani` | 6 |  |
+| [`blocking`](./Enums.md#enum-blocking) | Boolean | Examples: `idlenoani` | 6 |  |
 | `lock_controls` | Number | Examples: `1` | 2 |  |
 | `unlock_controls` | Number | Examples: `1` | 2 |  |
 
@@ -10897,7 +10897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -10921,7 +10921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BONEYARD_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BONEYARD_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -10946,7 +10946,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BUNKER_2, NPC_TRACY_SHOP_WELCOME_BUNKER_1` | 4 |  |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BUNKER_3` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 
@@ -10969,7 +10969,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CAVES_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CAVES_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -10993,7 +10993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CORE_1` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 
@@ -11016,7 +11016,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CRATER_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CRATER_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -11040,7 +11040,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_DESERT_1` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 
@@ -11063,7 +11063,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_FUTURE_1` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 
@@ -11086,7 +11086,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_ICEAGE_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_ICEAGE_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -11110,7 +11110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JUNKYARD_1` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 
@@ -11133,7 +11133,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JURASSIC_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JURASSIC_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -11157,7 +11157,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_LAB_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_LAB_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -11181,7 +11181,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_MOON_1` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 
@@ -11204,7 +11204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_SEWERS_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_SEWERS_2` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
@@ -11228,7 +11228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_THEEND_1` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_THEEND_2` | 2 |  |
 | [`set_npc_voice`](./Enums.md#enum-set_npc_voice) | Enum | Examples: `beanies` | 2 |  |
@@ -11253,7 +11253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_WATER_1` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 
@@ -11276,7 +11276,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | Examples: `true` | 2 |  |
-| [`delay`](./Enums.md#enum-delay) | Enum | Examples: `.5` | 2 |  |
+| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 2 |  |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1` | 2 |  |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |  |
 

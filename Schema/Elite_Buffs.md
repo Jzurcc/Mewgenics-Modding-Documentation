@@ -106,7 +106,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Integer |  | 48 |  |
+| `knockback` | Enum / Integer |  | 48 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |  |
 
@@ -211,7 +211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 72 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum |  | 72 |  |
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum |  | 4 |  |
 
 </details>
@@ -328,7 +328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Integer |  | 10 |  |
+| `stacks` | Enum / Integer |  | 10 |  |
 | `health` | Integer |  | 8 |  |
 | [`statuses`](#object-statuses) | Object |  | 6 |  |
 
@@ -351,8 +351,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `aura_effects_allies` | Boolean |  | 8 |  |
-| `range` | Integer |  | 8 |  |
-| `stacks` | Integer |  | 8 |  |
+| `range` | Enum / Integer |  | 8 |  |
+| `stacks` | Enum / Integer |  | 8 |  |
 
 </details>
 
@@ -372,7 +372,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Integer |  | 8 |  |
+| `damage` | Enum / Integer / Object |  | 8 |  |
 | [`type`](./Enums.md#enum-type) | Enum |  | 8 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 4 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |  |

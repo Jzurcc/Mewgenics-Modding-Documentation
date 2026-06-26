@@ -42,13 +42,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 65 |  |
-| `spd` | Integer |  | 53 |  |
-| `cha` | Integer |  | 46 |  |
-| `int` | Integer |  | 46 |  |
-| `str` | Integer |  | 42 |  |
-| `dex` | Integer |  | 34 |  |
-| `lck` | Integer |  | 29 |  |
+| `con` | Enum / Integer |  | 65 |  |
+| `spd` | Enum / Integer |  | 53 |  |
+| `cha` | Enum / Integer |  | 46 |  |
+| `int` | Enum / Integer |  | 46 |  |
+| `str` | Enum / Integer |  | 42 |  |
+| `dex` | Enum / Integer |  | 34 |  |
+| `lck` | Enum / Integer |  | 29 |  |
 
 </details>
 
@@ -68,8 +68,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Arrays.md#array-head) | Array |  | 6 |  |
-| [`body`](./Arrays.md#array-body) | Array |  | 3 |  |
+| [`head`](./Arrays.md#array-head) | Enum / Number |  | 6 |  |
+| [`body`](./Arrays.md#array-body) | Number |  | 3 |  |
 | [`arms`](./Arrays.md#array-arms) | Array |  | 1 |  |
 | [`legs`](./Arrays.md#array-legs) | Array |  | 1 |  |
 | [`limbs`](./Arrays.md#array-limbs) | Array |  | 1 |  |

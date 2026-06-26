@@ -59,9 +59,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 2 |  |
-| `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |  |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |  |
+| `BonusCritChance` | Integer | Applies or references the 'BonusCritChance' effect/state. | 2 |  |
+| `Burn` | Array / Enum / Integer | Applies or references the 'Burn' effect/state. | 1 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type to check for. | 1 |  |
 
 </details>
 
@@ -81,8 +81,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 1 |  |
-| [`Fear`](./Arrays.md#array-fear) | Number | Applies or references the 'Fear' effect/state. | 1 |  |
+| `BonusCritChance` | Integer | Applies or references the 'BonusCritChance' effect/state. | 1 |  |
+| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 1 |  |
 
 </details>
 
@@ -102,7 +102,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Immobile`](./Arrays.md#array-immobile) | Array | Applies or references the 'Immobile' effect/state. | 4 |  |
+| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | Applies or references the 'Immobile' effect/state. | 4 |  |
 
 </details>
 
@@ -185,7 +185,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ApplyToTile`](./Abilities_and_Spells.md#context-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |  |
-| `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 2 |  |
+| `VaporizeCorpse` | Integer | Applies or references the 'VaporizeCorpse' effect/state. | 2 |  |
 
 </details>
 
@@ -206,8 +206,8 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 1 |  |
-| `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 |  |
-| `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. | 1 |  |
+| `LaunchOffScreenInstakill` | Integer | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 |  |
+| `TempInitiativeChange` | Integer | Applies or references the 'TempInitiativeChange' effect/state. | 1 |  |
 
 </details>
 
@@ -227,10 +227,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 6 |  |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |  |
-| [`DivineShield`](./Arrays.md#array-divineshield) | Number | Applies or references the 'DivineShield' effect/state. | 1 |  |
+| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 |  |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
+| `BonusDamage` | Enum / Integer | Applies or references the 'BonusDamage' effect/state. | 1 |  |
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 1 |  |
 
 </details>
 
@@ -287,15 +287,15 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |  |
+| `Shield` | Enum / Integer | Applies or references the 'Shield' effect/state. | 422 |  |
 | [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |  |
-| [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 4 |  |
+| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | Applies or references the 'Immobile' effect/state. | 4 |  |
 | [`Slow`](./Arrays.md#array-slow) | Equation | Applies or references the 'Slow' effect/state. | 4 |  |
 | [`Burn`](./Math_Equations.md) | Equation | Applies or references the 'Burn' effect/state. | 1 |  |
-| [`Freeze`](./Arrays.md#array-freeze) | Number | Applies or references the 'Freeze' effect/state. | 1 |  |
+| [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | Applies or references the 'Freeze' effect/state. | 1 |  |
 | [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | Applies or references the 'OverrideKnockbackDamage' effect/state. | 1 |  |
-| `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 1 |  |
-| [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 1 |  |
+| `SpeedUp` | Enum / Integer | Applies or references the 'SpeedUp' effect/state. | 1 |  |
+| [`Stun`](./Arrays.md#array-stun) | Array / Integer | Applies or references the 'Stun' effect/state. | 1 |  |
 
 </details>
 
@@ -315,8 +315,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GenericBuff` | Number | Applies or references the 'GenericBuff' effect/state. | 1 |  |
-| `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 1 |  |
+| `GenericBuff` | Integer | Applies or references the 'GenericBuff' effect/state. | 1 |  |
+| `PartialCleanse` | Integer | Applies or references the 'PartialCleanse' effect/state. | 1 |  |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 |  |
 
 </details>
@@ -338,7 +338,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 |  |
-| `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |  |
+| `RemoveKnockback` | Integer | Applies or references the 'RemoveKnockback' effect/state. | 1 |  |
 | [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |  |
 
 </details>
@@ -359,20 +359,20 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Number | A flat numerical health value threshold. | 4 |  |
+| `threshold_flat` | Integer | A flat numerical health value threshold. | 4 |  |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 2 |  |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |  |
+| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |  |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 1 |  |
-| `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |  |
-| `Die` | Number | Applies or references the 'Die' effect/state. | 1 |  |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 1 |  |
-| `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 1 |  |
-| `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 1 |  |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |  |
-| [`Instakill`](./Arrays.md#array-instakill) | Number | Applies or references the 'Instakill' effect/state. | 1 |  |
+| `CaptureFamiliar` | Integer | Applies or references the 'CaptureFamiliar' effect/state. | 1 |  |
+| `Die` | Integer / Object | Applies or references the 'Die' effect/state. | 1 |  |
+| `DieViolently` | Integer | Applies or references the 'DieViolently' effect/state. | 1 |  |
+| `FactionConversion` | Integer | Applies or references the 'FactionConversion' effect/state. | 1 |  |
+| `FlatLeech` | Integer | Applies or references the 'FlatLeech' effect/state. | 1 |  |
+| `FullHeal` | Integer | Applies or references the 'FullHeal' effect/state. | 1 |  |
+| [`Instakill`](./Arrays.md#array-instakill) | Integer | Applies or references the 'Instakill' effect/state. | 1 |  |
 | [`threshold_expr`](./Math_Equations.md) | Equation | `item_aux` | 1 |  |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 1 |  |
+| `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 1 |  |
 
 </details>
 
@@ -392,14 +392,14 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CritChanceUp` | Number | Applies or references the 'CritChanceUp' effect/state. | 36 |  |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |  |
-| `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 6 |  |
-| [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 |  |
-| `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 2 |  |
+| `CritChanceUp` | Integer | Applies or references the 'CritChanceUp' effect/state. | 36 |  |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 7 |  |
+| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 |  |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum / Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 |  |
+| `DodgeChance_Status` | Integer | Applies or references the 'DodgeChance_Status' effect/state. | 2 |  |
 | [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#context-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 1 |  |
-| `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 1 |  |
-| [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 1 |  |
+| `SpeedUp` | Enum / Integer | Applies or references the 'SpeedUp' effect/state. | 1 |  |
+| [`UseAbility`](./Enums.md#enum-useability) | Enum / Object | Forces the character or target to instantly use a specified ability. | 1 |  |
 
 </details>
 
@@ -420,7 +420,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 |  |
-| `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |  |
+| `RemoveKnockback` | Integer | Applies or references the 'RemoveKnockback' effect/state. | 1 |  |
 | [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 |  |
 
 </details>
@@ -441,7 +441,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |  |
+| `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. | 1 |  |
 
 </details>
 
@@ -461,7 +461,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 1 |  |
+| `SetKnockback` | Integer | Applies or references the 'SetKnockback' effect/state. | 1 |  |
 
 </details>
 
@@ -481,10 +481,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |  |
+| `Bruise` | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 |  |
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 2 |  |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |  |
-| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | Queues an ability to be cast automatically after a certain delay or trigger. | 1 |  |
+| `BonusDamage` | Enum / Integer | Applies or references the 'BonusDamage' effect/state. | 1 |  |
+| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum / Object | Queues an ability to be cast automatically after a certain delay or trigger. | 1 |  |
 
 </details>
 
@@ -526,8 +526,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |  |
-| `threshold_flat` | Number | A flat numerical health value threshold. | 1 |  |
+| `RepairTrinket` | Integer | Applies or references the 'RepairTrinket' effect/state. | 1 |  |
+| `threshold_flat` | Integer | A flat numerical health value threshold. | 1 |  |
 
 </details>
 
@@ -547,7 +547,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 6 |  |
+| [`Confusion`](./Arrays.md#array-confusion) | Array / Integer / Object | Applies or references the 'Confusion' effect/state. | 6 |  |
 | [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |  |
 
 </details>
@@ -568,7 +568,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. | 1 |  |
+| `DisplaceTowardsSource` | Integer | Applies or references the 'DisplaceTowardsSource' effect/state. | 1 |  |
 
 </details>
 
@@ -588,7 +588,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 4 |  |
+| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | Applies or references the 'Immobile' effect/state. | 4 |  |
 
 </details>
 
@@ -608,7 +608,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 2 |  |
+| `Knockback` | Integer | Applies or references the 'Knockback' effect/state. | 2 |  |
 
 </details>
 
@@ -630,7 +630,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |  |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |  |
-| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Number | Applies or references the 'RepairWeapon' effect/state. | 1 |  |
+| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | Applies or references the 'RepairWeapon' effect/state. | 1 |  |
 
 </details>
 
@@ -652,7 +652,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |  |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 2 |  |
-| `TriggerGameEnding` | Number | Applies or references the 'TriggerGameEnding' effect/state. | 2 |  |
+| `TriggerGameEnding` | Integer | Applies or references the 'TriggerGameEnding' effect/state. | 2 |  |
 
 </details>
 
@@ -672,14 +672,14 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |  |
-| `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |  |
-| `Adrenaline` | Number | Applies or references the 'Adrenaline' effect/state. | 1 |  |
+| `Cleanse` | Integer / Object | Applies or references the 'Cleanse' effect/state. | 2 |  |
+| `ConjureRandomAbilityFromCat` | Integer | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |  |
+| `Adrenaline` | Integer | Applies or references the 'Adrenaline' effect/state. | 1 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |  |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 1 |  |
+| `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. | 1 |  |
 | [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. | 1 |  |
-| `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. | 1 |  |
-| `T2CopyCat` | Number | Applies or references the 'T2CopyCat' effect/state. | 1 |  |
+| `Scrambled` | Integer | Applies or references the 'Scrambled' effect/state. | 1 |  |
+| `T2CopyCat` | Integer | Applies or references the 'T2CopyCat' effect/state. | 1 |  |
 
 </details>
 
@@ -720,7 +720,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |  |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Object | Throws coins out into the level randomly. | 1 |  |
 
@@ -742,7 +742,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |  |
+| `Bruise` | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 |  |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |  |
 
 </details>
@@ -763,13 +763,13 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 3 |  |
-| `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |  |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |  |
-| `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 1 |  |
+| `IgnoreDamage` | Integer | Applies or references the 'IgnoreDamage' effect/state. | 3 |  |
+| `BonusDamageBasedOnDistance` | Integer | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |  |
+| `BonusDamage` | Enum / Integer | Applies or references the 'BonusDamage' effect/state. | 1 |  |
+| `CapDamage` | Integer | Applies or references the 'CapDamage' effect/state. | 1 |  |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |  |
-| `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 1 |  |
-| `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. | 1 |  |
+| `Knockback` | Integer | Applies or references the 'Knockback' effect/state. | 1 |  |
+| `RandomBonusDamage` | Integer | Applies or references the 'RandomBonusDamage' effect/state. | 1 |  |
 
 </details>
 
@@ -901,7 +901,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllUnitsExplodeOnDeath` | Number | Applies or references the | 2 |  |
+| `AllUnitsExplodeOnDeath` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -919,7 +919,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlliesScrambleSpellAfterCast` | Number | Applies or references the | 2 |  |
+| `AlliesScrambleSpellAfterCast` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -941,18 +941,18 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 |  |
-| `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 2 |  |
+| `AlphaCat` | Integer | Applies or references the 'AlphaCat' effect/state. | 2 |  |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |  |
-| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 2 |  |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 2 |  |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |  |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
-| [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 1 |  |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 1 |  |
-| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 1 |  |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |  |
+| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 2 |  |
+| `ManaGain` | Enum / Integer | Applies or references the 'ManaGain' effect/state. | 2 |  |
+| `Revive` | Integer / Object | Applies or references the 'Revive' effect/state. | 2 |  |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
+| [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum / Object | Upgrades or transforms an existing ability into a new one from the specified pool. | 1 |  |
+| `RefreshActPoints` | Integer | Applies or references the 'RefreshActPoints' effect/state. | 1 |  |
+| `StrengthUp` | Enum / Integer | Applies or references the 'StrengthUp' effect/state. | 1 |  |
+| `TakeExtraTurn` | Integer | Applies or references the 'TakeExtraTurn' effect/state. | 1 |  |
 | [`TransformWeapon`](./Abilities_and_Spells.md#context-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 1 |  |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Enum | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |  |
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |  |
 
 </details>
 
@@ -972,8 +972,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance_to_break` | Number | Examples: `5, 10` | 2 |  |
-| `durability_loss` | Number | Examples: `0` | 2 |  |
+| `chance_to_break` | Integer | Examples: `5, 10` | 2 |  |
+| `durability_loss` | Integer | Examples: `0` | 2 |  |
 
 </details>
 
@@ -994,7 +994,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 730 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 4 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 4 |  |
 
 </details>
 
@@ -1029,7 +1029,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BramblesOnHit` | Number | Applies or references the | 14 |  |
+| `BramblesOnHit` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1047,7 +1047,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CanLevelUpWhenDead` | Number | Applies or references the | 4 |  |
+| `CanLevelUpWhenDead` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1069,8 +1069,8 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
-| `flat_chance` | Number | Examples: `50, 100` | 5 |  |
-| `chance_per_damage` | Number | Examples: `2, 0` | 3 |  |
+| `flat_chance` | Integer | Examples: `50, 100` | 5 |  |
+| `chance_per_damage` | Integer | Examples: `2, 0` | 3 |  |
 | `backstabs_only` | Boolean | `true` | 1 |  |
 | `even_on_0_damage_if_knockback` | Boolean | `true` | 1 |  |
 
@@ -1110,8 +1110,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Return`](./Enums.md#enum-return) | Enum | Applies or references the 'Return' effect/state. | 26 |  |
-| [`Leave`](./Enums.md#enum-leave) | Enum | Applies or references the 'Leave' effect/state. | 16 |  |
+| [`Return`](./Enums.md#enum-return) | Enum / Object | Applies or references the 'Return' effect/state. | 26 |  |
+| [`Leave`](./Enums.md#enum-leave) | Enum / Object | Applies or references the 'Leave' effect/state. | 16 |  |
 
 </details>
 
@@ -1146,7 +1146,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CounterNextAttacks` | Number | Applies or references the | 2 |  |
+| `CounterNextAttacks` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1164,7 +1164,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Counterspell` | Number | Applies or references the | 4 |  |
+| `Counterspell` | Integer / Object | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1182,7 +1182,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CrackMoonHead` | Number | Applies or references the | 2 |  |
+| `CrackMoonHead` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1224,8 +1224,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `health` | Number | Examples: `16, 2, 7` | 67 |  |
-| `rounds` | Number | Examples: `2, 1` | 1 |  |
+| `health` | Integer | Examples: `16, 2, 7` | 67 |  |
+| `rounds` | Integer | Examples: `2, 1` | 1 |  |
 
 </details>
 
@@ -1242,7 +1242,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedFury` | Number | Applies or references the | 4 |  |
+| `DelayedFury` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1260,7 +1260,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedPain` | Number | Applies or references the | 4 |  |
+| `DelayedPain` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1278,7 +1278,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedWindTrail` | Number | Applies or references the | 2 |  |
+| `DelayedWindTrail` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1296,7 +1296,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieWhenOnlyGolemsLeft` | Number | Applies or references the | 2 |  |
+| `DieWhenOnlyGolemsLeft` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1332,7 +1332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellIfManaCostUnderThreshold` | Number | Applies or references the | 2 |  |
+| `DoubleCastSpellIfManaCostUnderThreshold` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1350,7 +1350,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellThisTurn` | Number | Applies or references the | 4 |  |
+| `DoubleCastSpellThisTurn` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1368,7 +1368,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellsEachTurn_Status` | Number | Applies or references the | 3 |  |
+| `DoubleCastSpellsEachTurn_Status` | Integer | Applies or references the | 3 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1389,7 +1389,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The ID of the object/particle to spawn. | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The ID of the object/particle to spawn. | 545 |  |
 
 </details>
 
@@ -1406,7 +1406,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EnrageOnDamage` | Number | Applies or references the | 2 |  |
+| `EnrageOnDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1460,7 +1460,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlowersOnHit` | Number | Applies or references the | 4 |  |
+| `FlowersOnHit` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1478,7 +1478,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FreeFirstCastAndAfterSpendMana` | Number | Applies or references the | 2 |  |
+| `FreeFirstCastAndAfterSpendMana` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1518,10 +1518,10 @@
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
 | `ability_damage_only` | Boolean | `true` | 6 |  |
 | `backstabs_only` | Boolean | `true` | 2 |  |
-| `damage_threshold` | Number | Examples: `10` | 2 |  |
+| `damage_threshold` | Integer | Examples: `10` | 2 |  |
 | `even_if_blocked` | Boolean | `true` | 2 |  |
 | `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 2 |  |
-| `health_threshold` | Number | Examples: `50, 70` | 2 |  |
+| `health_threshold` | Integer | Examples: `50, 70` | 2 |  |
 | `buddy_damage_only` | Boolean | `true` | 1 |  |
 | `target_furthest_valid` | Boolean | `true` | 1 |  |
 
@@ -1543,8 +1543,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `change` | Number | Examples: `-2, -1, -3` | 3 |  |
-| `max` | Number | Maximum coins granted. | 3 |  |
+| `change` | Integer | Examples: `-2, -1, -3` | 3 |  |
+| `max` | Integer | Maximum coins granted. | 3 |  |
 
 </details>
 
@@ -1564,8 +1564,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `change` | Number | Examples: `-2, -1, -3` | 1 |  |
-| `max` | Number | Maximum coins granted. | 1 |  |
+| `change` | Integer | Examples: `-2, -1, -3` | 1 |  |
+| `max` | Integer | Maximum coins granted. | 1 |  |
 
 </details>
 
@@ -1582,7 +1582,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IncreaseItemAuxOnKill` | Number | Applies or references the | 2 |  |
+| `IncreaseItemAuxOnKill` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1600,7 +1600,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MadnessChanceOnTurnBegin` | Number | Applies or references the | 4 |  |
+| `MadnessChanceOnTurnBegin` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1678,7 +1678,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MoonHeadFinisherEnabler` | Number | Applies or references the | 6 |  |
+| `MoonHeadFinisherEnabler` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1696,7 +1696,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MutateAfterXTurns` | Number | Applies or references the | 2 |  |
+| `MutateAfterXTurns` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1717,7 +1717,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the object to spawn (e.g., Poop). | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the object to spawn (e.g., Poop). | 545 |  |
 
 </details>
 
@@ -1794,7 +1794,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Items_and_Equipment.md#context-passives) | Object | Passives granted by equipping this. | 5118 |  |
-| [`tile`](./Arrays.md#array-tile) | Array | The specific tile type to change into (e.g., GlassTile). | 26 |  |
+| [`tile`](./Arrays.md#array-tile) | Array / Enum | The specific tile type to change into (e.g., GlassTile). | 26 |  |
 
 </details>
 
@@ -1811,7 +1811,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PreEmptiveCounterNextAttacks` | Number | Applies or references the | 2 |  |
+| `PreEmptiveCounterNextAttacks` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1829,7 +1829,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReformMoonHead` | Number | Applies or references the | 2 |  |
+| `ReformMoonHead` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1847,7 +1847,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnKill` | Number | Applies or references the | 4 |  |
+| `ReloadOnKill` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1865,7 +1865,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnKillEnemy` | Number | Applies or references the | 4 |  |
+| `ReloadOnKillEnemy` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1901,7 +1901,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairOnKill` | Number | Applies or references the | 6 |  |
+| `RepairOnKill` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1937,7 +1937,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RerollItemsOnBattleEnd` | Number | Applies or references the | 2 |  |
+| `RerollItemsOnBattleEnd` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1955,7 +1955,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReturnBoundItemOnBattleEnd` | Number | Applies or references the | 3 |  |
+| `ReturnBoundItemOnBattleEnd` | Integer | Applies or references the | 3 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1995,10 +1995,10 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` | 2 |  |
-| `threshold` | Number | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 2 |  |
+| `threshold` | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 2 |  |
 | `expires_on_end_turn` | Boolean | `true` | 1 |  |
-| `ExtraBasicMoves_Status` | Number | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 1 |  |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 1 |  |
+| `ExtraBasicMoves_Status` | Integer | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 1 |  |
+| `RefreshActPoints` | Integer | Applies or references the 'RefreshActPoints' effect/state. | 1 |  |
 
 </details>
 
@@ -2018,8 +2018,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -2039,8 +2039,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Thorns` | Number | Examples: `1` | 36 |  |
-| `FloatingRockTrap` | Number | Examples: `1` | 1 |  |
+| `Thorns` | Integer | Examples: `1` | 36 |  |
+| `FloatingRockTrap` | Integer | Examples: `1` | 1 |  |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 |  |
 
 </details>
@@ -2062,7 +2062,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Else`](./Miscellaneous.md#context-else) | Object | Examples: `{ ... }` | 1 |  |
-| [`Madness`](./Arrays.md#array-madness) | Array | Examples: `[ 1 .25 ]` | 1 |  |
+| [`Madness`](./Arrays.md#array-madness) | Array / Enum / Integer / Object | Examples: `[ 1 .25 ]` | 1 |  |
 
 </details>
 
@@ -2082,8 +2082,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Examples: `1` | 1 |  |
-| `HealthGain` | Number | Examples: `1` | 1 |  |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Examples: `1` | 1 |  |
+| `HealthGain` | Integer | Examples: `1` | 1 |  |
 
 </details>
 
@@ -2103,9 +2103,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 9 |  |
-| [`count`](./Arrays.md#array-count) | Number | Quantity. | 3 |  |
-| [`Fear`](./Arrays.md#array-fear) | Number | Applies or references the 'Fear' effect/state. | 2 |  |
+| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | Applies or references the 'Bleed' effect/state. | 9 |  |
+| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 |  |
+| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 2 |  |
 
 </details>
 
@@ -2122,7 +2122,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempCounterAttack` | Number | Applies or references the | 6 |  |
+| `TempCounterAttack` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2140,7 +2140,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempPreEmptiveCounterAttack` | Number | Applies or references the | 2 |  |
+| `TempPreEmptiveCounterAttack` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2176,7 +2176,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerDOTStatuses` | Number | Applies or references the | 4 |  |
+| `TriggerDOTStatuses` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2194,7 +2194,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerGameEnding` | Number | Applies or references the | 6 |  |
+| `TriggerGameEnding` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2212,7 +2212,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerMotherConsume` | Number | Applies or references the | 2 |  |
+| `TriggerMotherConsume` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2230,7 +2230,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerMotherGrow` | Number | Applies or references the | 2 |  |
+| `TriggerMotherGrow` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2292,7 +2292,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AIFavorLowHealth` | Number | Applies or references the | 2 |  |
+| `AIFavorLowHealth` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2328,7 +2328,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledAtHealthThreshold` | Number | Applies or references the | 2 |  |
+| `AbilityEnabledAtHealthThreshold` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2382,7 +2382,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledOncePerFightAtHealthThreshold` | Number | Applies or references the | 14 |  |
+| `AbilityEnabledOncePerFightAtHealthThreshold` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2404,7 +2404,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
-| `threshold` | Number | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 11 |  |
+| `threshold` | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 11 |  |
 | `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 6 |  |
 | `immediate` | Boolean | `false`, `true` | 5 |  |
 | `use_ai` | Boolean | `true` | 2 |  |
@@ -2426,7 +2426,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbsorbManaFromOtherSpells` | Number | Applies or references the | 2 |  |
+| `AbsorbManaFromOtherSpells` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2448,7 +2448,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 54 |  |
-| [`add`](./Arrays.md#array-add) | Number | Examples: `5` | 1 |  |
+| [`add`](./Arrays.md#array-add) | Array / Integer | Examples: `5` | 1 |  |
 | [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 1 |  |
 
 </details>
@@ -2484,7 +2484,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddDamage` | Number | Applies or references the | 16 |  |
+| `AddDamage` | Integer | Applies or references the | 16 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2520,7 +2520,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddEndOfCombatRegen` | Number | Applies or references the | 6 |  |
+| `AddEndOfCombatRegen` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2538,7 +2538,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddLeechesStatus` | Number | Applies or references the | 4 |  |
+| `AddLeechesStatus` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2577,7 +2577,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddSpiritBombCharges` | Number | Applies or references the | 4 |  |
+| `AddSpiritBombCharges` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2598,7 +2598,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 9 |  |
+| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | Applies or references the 'Bleed' effect/state. | 9 |  |
 
 </details>
 
@@ -2675,7 +2675,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddWeaponAux` | Number | Examples: `"-max(min(X+1, item_aux), 0)", 1, -item_aux` | 10 |  |
+| `AddWeaponAux` | Integer / String | Examples: `"-max(min(X+1, item_aux), 0)", 1, -item_aux` | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2693,7 +2693,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsLastEnemyThatDealtDamage` | Number | Applies or references the | 2 |  |
+| `AggroTargetIsLastEnemyThatDealtDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2711,7 +2711,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsLowestHealthEnemyTillItDies` | Number | Applies or references the | 2 |  |
+| `AggroTargetIsLowestHealthEnemyTillItDies` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2729,7 +2729,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsLowestMaxHealthCat` | Number | Applies or references the | 2 |  |
+| `AggroTargetIsLowestMaxHealthCat` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2747,7 +2747,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllSpellsCostActPoints` | Number | Applies or references the | 2 |  |
+| `AllSpellsCostActPoints` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2765,7 +2765,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllSpellsCostCharge` | Number | Applies or references the | 2 |  |
+| `AllSpellsCostCharge` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2783,7 +2783,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUpPerDisorder` | Number | Applies or references the | 6 |  |
+| `AllStatsUpPerDisorder` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2801,7 +2801,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlwaysChosenForLevelUp` | Number | Applies or references the | 2 |  |
+| `AlwaysChosenForLevelUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2823,7 +2823,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 3 |  |
-| `stacks` | Number | The number of times the nested effects block should be repeatedly executed. | 3 |  |
+| `stacks` | Enum / Integer | The number of times the nested effects block should be repeatedly executed. | 3 |  |
 
 </details>
 
@@ -2843,7 +2843,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Quivered`](./Arrays.md#array-quivered) | Number | Applies or references the 'Quivered' effect/state. | 10 |  |
+| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | Applies or references the 'Quivered' effect/state. | 10 |  |
 
 </details>
 
@@ -2860,7 +2860,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BalanceStats` | Number | Applies or references the | 2 |  |
+| `BalanceStats` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2878,7 +2878,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Enum | Applies or references the | 6 |  |
+| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Number | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2896,7 +2896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamageBasedOnDistance` | Number | Applies or references the | 4 |  |
+| `BonusDamageBasedOnDistance` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2914,7 +2914,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamageBasedOnMana` | Number | Applies or references the | 2 |  |
+| `BonusDamageBasedOnMana` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2968,7 +2968,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BoostReceivedHealing` | Number | Applies or references the | 2 |  |
+| `BoostReceivedHealing` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2986,7 +2986,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleCharismaUp` | Number | Applies or references the | 2 |  |
+| `BrittleCharismaUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3004,7 +3004,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleConstitutionUp` | Number | Applies or references the | 2 |  |
+| `BrittleConstitutionUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3022,7 +3022,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleDexterityUp` | Number | Applies or references the | 2 |  |
+| `BrittleDexterityUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3040,7 +3040,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleIntelligenceUp` | Number | Applies or references the | 2 |  |
+| `BrittleIntelligenceUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3058,7 +3058,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleLuckUp` | Number | Applies or references the | 2 |  |
+| `BrittleLuckUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3076,7 +3076,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleSpeedUp` | Number | Applies or references the | 2 |  |
+| `BrittleSpeedUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3094,7 +3094,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleStrengthUp` | Number | Applies or references the | 2 |  |
+| `BrittleStrengthUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3112,7 +3112,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CantSpreadDiseases` | Number | Applies or references the | 6 |  |
+| `CantSpreadDiseases` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3130,7 +3130,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CapBasicAttackDamage` | Number | Applies or references the | 2 |  |
+| `CapBasicAttackDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3148,7 +3148,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CapDamage` | Number | Applies or references the | 2 |  |
+| `CapDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3166,7 +3166,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CapReceivedDamage` | Number | Applies or references the | 2 |  |
+| `CapReceivedDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3187,8 +3187,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -3208,7 +3208,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Number | Sprite variant ID for the head. | 784 |  |
+| [`head`](./Enums.md#enum-head) | Enum / Number | Sprite variant ID for the head. | 784 |  |
 
 </details>
 
@@ -3251,10 +3251,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |  |
-| [`Fear`](./Arrays.md#array-fear) | Number | Applies or references the 'Fear' effect/state. | 2 |  |
-| [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 2 |  |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
+| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 2 |  |
+| [`Stun`](./Arrays.md#array-stun) | Array / Integer | Applies or references the 'Stun' effect/state. | 2 |  |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
 
 </details>
 
@@ -3271,7 +3271,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChargeFists` | Number | Applies or references the | 2 |  |
+| `ChargeFists` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3289,7 +3289,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CharismaIsMaxStat` | Number | Applies or references the | 2 |  |
+| `CharismaIsMaxStat` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3346,7 +3346,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ContextualHeal` | Number | Applies or references the | 14 |  |
+| `ContextualHeal` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3367,8 +3367,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedPain` | Number | Applies or references the 'DelayedPain' effect/state. | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `DelayedPain` | Integer | Applies or references the 'DelayedPain' effect/state. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -3385,7 +3385,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CurrentWeaponAddElectricElement` | Number | Applies or references the | 2 |  |
+| `CurrentWeaponAddElectricElement` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3403,7 +3403,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CurrentWeaponAddPoison` | Number | Applies or references the | 2 |  |
+| `CurrentWeaponAddPoison` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3421,7 +3421,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageBasedOnMissingHealth` | Number | Applies or references the | 4 |  |
+| `DamageBasedOnMissingHealth` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3439,7 +3439,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageFromBehindOnly` | Number | Applies or references the | 2 |  |
+| `DamageFromBehindOnly` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3457,7 +3457,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageTrinket` | Number | Applies or references the | 4 |  |
+| `DamageTrinket` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3475,7 +3475,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageWeapon` | Number | Applies or references the | 2 |  |
+| `DamageWeapon` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3498,7 +3498,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |  |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 54 |  |
-| [`damage`](./Arrays.md#array-damage) | Number | The flat damage amount. | 2 |  |
+| [`damage`](./Arrays.md#array-damage) | Enum / Integer / Object | The flat damage amount. | 2 |  |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | `all` | 2 |  |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 2 |  |
 
@@ -3517,7 +3517,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DontHealEnemies` | Number | Applies or references the | 2 |  |
+| `DontHealEnemies` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3535,7 +3535,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleReceivedNegativeStatus` | Number | Applies or references the | 2 |  |
+| `DoubleReceivedNegativeStatus` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3553,7 +3553,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleReceivedPositiveStatus` | Number | Applies or references the | 2 |  |
+| `DoubleReceivedPositiveStatus` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3589,7 +3589,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DuplicateRandomEquippedItem` | Number | Applies or references the | 2 |  |
+| `DuplicateRandomEquippedItem` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3607,7 +3607,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExistUntilIdleUpkeep` | Number | Applies or references the | 2 |  |
+| `ExistUntilIdleUpkeep` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3625,7 +3625,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExtraBasicAttacks_Status` | Number | Applies or references the | 12 |  |
+| `ExtraBasicAttacks_Status` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3686,7 +3686,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `bird` | 981 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Examples: `bird` | 981 |  |
 | [`extra_statuses`](./Miscellaneous.md#context-extra_statuses) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
@@ -3704,7 +3704,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlatAIBonus` | Number | Applies or references the | 6 |  |
+| `FlatAIBonus` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3725,7 +3725,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Number | The base physics pushing power (in tiles). | 1 |  |
+| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 1 |  |
 
 </details>
 
@@ -3767,7 +3767,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean | `false`, `true` | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -3784,7 +3784,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealPercentMaxHP` | Number | Applies or references the | 2 |  |
+| `HealPercentMaxHP` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3802,7 +3802,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealRandomInjury` | Number | Applies or references the | 6 |  |
+| `HealRandomInjury` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3820,7 +3820,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealTo` | Number | Applies or references the | 2 |  |
+| `HealTo` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3856,7 +3856,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreDamage` | Number | Applies or references the | 18 |  |
+| `IgnoreDamage` | Integer | Applies or references the | 18 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3874,7 +3874,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IncreaseCumulativeBlastDamage` | Number | Applies or references the | 2 |  |
+| `IncreaseCumulativeBlastDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3892,7 +3892,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InstantMaxHealthUp` | Number | Applies or references the | 6 |  |
+| `InstantMaxHealthUp` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3910,7 +3910,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `JesterLevelUpRerolls` | Number | Applies or references the | 2 |  |
+| `JesterLevelUpRerolls` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3931,10 +3931,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance` | Number | The distance in tiles to knock the target away. | 20 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 18 |  |
-| `height` | Number | Examples: `9, 5, 7` | 16 |  |
-| `circular_variance` | Number | Examples: `2` | 1 |  |
+| `distance` | Integer | The distance in tiles to knock the target away. | 20 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 18 |  |
+| `height` | Integer | Examples: `9, 5, 7` | 16 |  |
+| `circular_variance` | Integer | Examples: `2` | 1 |  |
 
 </details>
 
@@ -3954,8 +3954,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |  |
-| `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 1 |  |
+| `CurrentWeaponDamageUp` | Integer | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |  |
+| `AddWeaponAux` | Integer / String | Applies or references the 'AddWeaponAux' effect/state. | 1 |  |
 
 </details>
 
@@ -3993,8 +3993,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Number | Maximum coins granted. | 1 |  |
-| `min` | Number | Minimum coins granted. | 1 |  |
+| `max` | Integer | Maximum coins granted. | 1 |  |
+| `min` | Integer | Minimum coins granted. | 1 |  |
 
 </details>
 
@@ -4011,7 +4011,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MaxHPUp` | Number | Applies or references the | 4 |  |
+| `MaxHPUp` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4050,7 +4050,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MulticatHeads` | Number | Applies or references the | 2 |  |
+| `MulticatHeads` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4068,7 +4068,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MultiplyReceivedHealing` | Number | Applies or references the | 2 |  |
+| `MultiplyReceivedHealing` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4086,7 +4086,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextAbilityHeals` | Number | Applies or references the | 2 |  |
+| `NextAbilityHeals` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4104,7 +4104,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextActionLuckUp` | Number | Applies or references the | 2 |  |
+| `NextActionLuckUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4122,7 +4122,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextAttackBonusRange` | Number | Applies or references the | 6 |  |
+| `NextAttackBonusRange` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4143,9 +4143,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `crit_multiplier_bonus` | Number | Flat addition to the critical damage multiplier. | 1 |  |
-| `extra_coins_per_stack` | Number | Grants bonus coins based on stacks. | 1 |  |
-| `luck_increase` | Number | Increases luck stat for the attack. | 1 |  |
+| `crit_multiplier_bonus` | Integer | Flat addition to the critical damage multiplier. | 1 |  |
+| `extra_coins_per_stack` | Integer | Grants bonus coins based on stacks. | 1 |  |
+| `luck_increase` | Integer | Increases luck stat for the attack. | 1 |  |
 
 </details>
 
@@ -4165,8 +4165,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `fights` | Number | The number of encounters this buff/debuff persists for. | 4 |  |
-| `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |  |
+| `fights` | Integer | The number of encounters this buff/debuff persists for. | 4 |  |
+| `MadnessChanceOnTurnBegin` | Integer | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |  |
 
 </details>
 
@@ -4183,7 +4183,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextDamageReduceAndHealAllies` | Number | Applies or references the | 2 |  |
+| `NextDamageReduceAndHealAllies` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4201,7 +4201,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextTurnDoubleRangedDamage` | Number | Applies or references the | 2 |  |
+| `NextTurnDoubleRangedDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4240,9 +4240,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 2 |  |
-| `stack_scale` | Number | Examples: `0` | 1 |  |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |  |
+| `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 |  |
+| `stack_scale` | Integer | Examples: `0` | 1 |  |
+| `TakeExtraTurn` | Integer | Applies or references the 'TakeExtraTurn' effect/state. | 1 |  |
 
 </details>
 
@@ -4319,7 +4319,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentUpgradeRandomActive` | Number | Applies or references the | 4 |  |
+| `PermanentUpgradeRandomActive` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4337,7 +4337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentUpgradeRandomActiveOrPassive` | Number | Applies or references the | 2 |  |
+| `PermanentUpgradeRandomActiveOrPassive` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4355,7 +4355,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RNGCannonRandomDamage` | Number | Applies or references the | 2 |  |
+| `RNGCannonRandomDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4373,7 +4373,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomBonusDamage` | Number | Applies or references the | 2 |  |
+| `RandomBonusDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4394,7 +4394,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](./Arrays.md#array-stats) | Array | Examples: `[ 1 -1 ]` | 982 |  |
+| [`stats`](./Arrays.md#array-stats) | Object | Examples: `[ 1 -1 ]` | 982 |  |
 
 </details>
 
@@ -4429,7 +4429,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array | Examples: `"ceil(X/3)", "ceil(X/2)"` | 20 |  |
+| [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array / Integer / String | Examples: `"ceil(X/3)", "ceil(X/2)"` | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4447,7 +4447,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RebukeDamage` | Number | Applies or references the | 4 |  |
+| `RebukeDamage` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4465,7 +4465,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReduceManaCostExcludeBrainstorm` | Number | Applies or references the | 2 |  |
+| `ReduceManaCostExcludeBrainstorm` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4483,7 +4483,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReduceSpellCostsPerDisorder` | Number | Applies or references the | 2 |  |
+| `ReduceSpellCostsPerDisorder` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4501,7 +4501,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReduceSpellCostsPerParasite` | Number | Applies or references the | 2 |  |
+| `ReduceSpellCostsPerParasite` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4519,7 +4519,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshNonManaItemAbilities` | Number | Applies or references the | 2 |  |
+| `RefreshNonManaItemAbilities` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4537,7 +4537,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnAnyDamage` | Number | Applies or references the | 2 |  |
+| `ReloadOnAnyDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4573,7 +4573,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnSpendMana` | Number | Applies or references the | 2 |  |
+| `ReloadOnSpendMana` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4591,7 +4591,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnTotalDamageReceived` | Number | Applies or references the | 4 |  |
+| `ReloadOnTotalDamageReceived` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4609,7 +4609,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnUseAbilityWithManaCost` | Number | Applies or references the | 2 |  |
+| `ReloadOnUseAbilityWithManaCost` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4627,7 +4627,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoteFlatLeech` | Number | Applies or references the | 2 |  |
+| `RemoteFlatLeech` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4645,7 +4645,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoteLeech` | Number | Applies or references the | 4 |  |
+| `RemoteLeech` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4682,7 +4682,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SelfStatusCarefulness` | Number | Applies or references the | 4 |  |
+| `SelfStatusCarefulness` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4700,7 +4700,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetHealth` | Number | Applies or references the | 18 |  |
+| `SetHealth` | Integer | Applies or references the | 18 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4718,7 +4718,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShadowCrit` | Number | Applies or references the | 2 |  |
+| `ShadowCrit` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4739,7 +4739,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 | [`style`](./Arrays.md#array-style) | Array | The visual font style for the text (e.g., [crit]). | 1 |  |
 
 </details>
@@ -4757,7 +4757,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpeedUp_WithoutInitiative` | Number | Applies or references the | 2 |  |
+| `SpeedUp_WithoutInitiative` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4775,7 +4775,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StanceSwitchToRanged` | Number | Applies or references the | 2 |  |
+| `StanceSwitchToRanged` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4793,7 +4793,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StatBounty` | Number | Applies or references the | 2 |  |
+| `StatBounty` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4834,7 +4834,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveAway` | Number | Applies or references the 'ForceMoveAway' effect/state. | 1 |  |
+| `ForceMoveAway` | Integer | Applies or references the 'ForceMoveAway' effect/state. | 1 |  |
 
 </details>
 
@@ -4854,9 +4854,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Number | Applies or references the 'Poison' effect/state. | 8 |  |
-| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 7 |  |
-| [`Slow`](./Arrays.md#array-slow) | Number | Applies or references the 'Slow' effect/state. | 4 |  |
+| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 |  |
+| `StrengthUp` | Enum / Integer | Applies or references the 'StrengthUp' effect/state. | 7 |  |
+| [`Slow`](./Arrays.md#array-slow) | Array / Enum / Integer / Object | Applies or references the 'Slow' effect/state. | 4 |  |
 
 </details>
 
@@ -4896,7 +4896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`UseAbility`](./Enums.md#enum-useability) | Enum | Examples: `Spit` | 1 |  |
+| [`UseAbility`](./Enums.md#enum-useability) | Enum / Object | Examples: `Spit` | 1 |  |
 
 </details>
 
@@ -4917,10 +4917,10 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 11 |  |
-| `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 6 |  |
+| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 |  |
 | `consume` | Boolean | `true` | 2 |  |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
-| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |  |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
+| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 1 |  |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |  |
 
 </details>
@@ -4941,7 +4941,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 1 |  |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 1 |  |
 
 </details>
 
@@ -4961,8 +4961,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthGain` | Number | Examples: `2` | 1 |  |
-| `stacks` | Number | Examples: `3` | 1 |  |
+| `HealthGain` | Integer | Examples: `2` | 1 |  |
+| `stacks` | Enum / Integer | Examples: `3` | 1 |  |
 
 </details>
 
@@ -5003,8 +5003,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |  |
-| `SerratedClaws` | Number | Applies or references the 'SerratedClaws' effect/state. | 1 |  |
+| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 1 |  |
+| `SerratedClaws` | Integer | Applies or references the 'SerratedClaws' effect/state. | 1 |  |
 
 </details>
 
@@ -5024,21 +5024,21 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
-| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |  |
+| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
+| `Bruise` | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 |  |
 | [`GainCoinsRange`](./Items_and_Equipment.md#context-gaincoinsrange) | Object | Grants the player a randomized amount of coins within a min/max range. | 5 |  |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 3 |  |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 3 |  |
-| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 3 |  |
-| `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. | 3 |  |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum / Object | Generates an item drop from the specified loot pool. | 3 |  |
+| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 3 |  |
+| `PermanentConstitution` | Integer | Applies or references the 'PermanentConstitution' effect/state. | 3 |  |
 | [`ApplyToRandomPartyMemberIfPossible`](./Items_and_Equipment.md#context-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 1 |  |
-| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Number | Applies or references the 'ConstitutionUp' effect/state. | 1 |  |
-| `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. | 1 |  |
+| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | Applies or references the 'ConstitutionUp' effect/state. | 1 |  |
+| `DexterityUp` | Enum / Integer | Applies or references the 'DexterityUp' effect/state. | 1 |  |
 | [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. | 1 |  |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. | 1 |  |
-| `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 1 |  |
-| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 1 |  |
-| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 1 |  |
+| `IntelligenceUp` | Enum / Integer | Applies or references the 'IntelligenceUp' effect/state. | 1 |  |
+| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum / Object | Spawns a specific character or entity upon impact. | 1 |  |
+| `StrengthUp` | Enum / Integer | Applies or references the 'StrengthUp' effect/state. | 1 |  |
 
 </details>
 
@@ -5058,7 +5058,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array | Examples: `5, [ 1 .5 ]` | 6 |  |
+| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Object | Examples: `5, [ 1 .5 ]` | 6 |  |
 
 </details>
 
@@ -5078,7 +5078,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |  |
+| [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum / Object | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |  |
 
 </details>
 
@@ -5098,7 +5098,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |  |
+| `Charge` | Integer | Applies or references the 'Charge' effect/state. | 1 |  |
 
 </details>
 
@@ -5118,9 +5118,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
-| [`FillMana`](./Arrays.md#array-fillmana) | Number | Applies or references the 'FillMana' effect/state. | 1 |  |
-| `HealRandomInjury` | Number | Applies or references the 'HealRandomInjury' effect/state. | 1 |  |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 |  |
+| [`FillMana`](./Arrays.md#array-fillmana) | Integer | Applies or references the 'FillMana' effect/state. | 1 |  |
+| `HealRandomInjury` | Integer | Applies or references the 'HealRandomInjury' effect/state. | 1 |  |
 
 </details>
 
@@ -5159,15 +5159,15 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set`](./Enums.md#enum-set) | Enum | Examples: `Recycled` | 1504 |  |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `rare` | 1 |  |
-| `PermanentCharisma` | Number | Examples: `1` | 1 |  |
-| `PermanentConstitution` | Number | Examples: `1` | 1 |  |
-| `PermanentDexterity` | Number | Examples: `1` | 1 |  |
-| `PermanentIntelligence` | Number | Examples: `1` | 1 |  |
-| `PermanentLuck` | Number | Examples: `1` | 1 |  |
-| `PermanentSpeed` | Number | Examples: `1` | 1 |  |
-| `PermanentStrength` | Number | Examples: `1` | 1 |  |
+| [`set`](./Enums.md#enum-set) | Array / Enum | Examples: `Recycled` | 1504 |  |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum / Object | Examples: `rare` | 1 |  |
+| `PermanentCharisma` | Integer | Examples: `1` | 1 |  |
+| `PermanentConstitution` | Integer | Examples: `1` | 1 |  |
+| `PermanentDexterity` | Integer | Examples: `1` | 1 |  |
+| `PermanentIntelligence` | Integer | Examples: `1` | 1 |  |
+| `PermanentLuck` | Integer | Examples: `1` | 1 |  |
+| `PermanentSpeed` | Integer | Examples: `1` | 1 |  |
+| `PermanentStrength` | Integer | Examples: `1` | 1 |  |
 
 </details>
 
@@ -5187,7 +5187,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Number | Applies or references the 'Poison' effect/state. | 8 |  |
+| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 |  |
 
 </details>
 
@@ -5204,7 +5204,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StripStatuses` | Number | Applies or references the | 20 |  |
+| `StripStatuses` | Integer | Applies or references the | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5222,7 +5222,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SwapHighestAndLowestStat` | Number | Applies or references the | 2 |  |
+| `SwapHighestAndLowestStat` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5296,7 +5296,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempCritChanceUp` | Number | Applies or references the | 4 |  |
+| `TempCritChanceUp` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5314,7 +5314,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempManaCostReduction` | Number | Applies or references the | 2 |  |
+| `TempManaCostReduction` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5332,7 +5332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempMeleeRangeUp` | Number | Applies or references the | 2 |  |
+| `TempMeleeRangeUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5350,7 +5350,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempNoManaRegen` | Number | Applies or references the | 4 |  |
+| `TempNoManaRegen` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5371,9 +5371,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
+| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
 | [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage) | Object | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 20 |  |
-| `AddManaRegen` | Number | Applies or references the 'AddManaRegen' effect/state. | 4 |  |
+| `AddManaRegen` | Integer | Applies or references the 'AddManaRegen' effect/state. | 4 |  |
 | [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell) | Object | Replaces a spell in the character's hand/deck with a different one. | 4 |  |
 | [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |  |
 
@@ -5392,7 +5392,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempRangeUp` | Number | Applies or references the | 16 |  |
+| `TempRangeUp` | Integer | Applies or references the | 16 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5432,16 +5432,16 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`delay`](./Enums.md#enum-delay) | Number | The float time delay in seconds. | 4 |  |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |  |
+| `Cleanse` | Integer / Object | Applies or references the 'Cleanse' effect/state. | 2 |  |
 | [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic) | Object | Changes the background music track or layer during combat. | 2 |  |
 | [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 1 |  |
-| [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake) | Object | Triggers a camera screen shake effect. | 1 |  |
-| [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 |  |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |  |
+| [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake) | Integer / Object | Triggers a camera screen shake effect. | 1 |  |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum / Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 |  |
+| `FullHeal` | Integer | Applies or references the 'FullHeal' effect/state. | 1 |  |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |  |
-| `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |  |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Enum | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |  |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 1 |  |
+| `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. | 1 |  |
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |  |
+| `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 1 |  |
 
 </details>
 
@@ -5458,7 +5458,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TormentorHeal` | Number | Applies or references the | 2 |  |
+| `TormentorHeal` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5476,7 +5476,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TowerDefenseStatus` | Number | Applies or references the | 2 |  |
+| `TowerDefenseStatus` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5494,7 +5494,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TowerDefenseStatus2` | Number | Applies or references the | 2 |  |
+| `TowerDefenseStatus2` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5512,7 +5512,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Trapper_Status` | Number | Applies or references the | 2 |  |
+| `Trapper_Status` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5530,7 +5530,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UndoDamage` | Number | Applies or references the | 2 |  |
+| `UndoDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5548,7 +5548,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UpTireBehavior` | Number | Applies or references the | 2 |  |
+| `UpTireBehavior` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5566,7 +5566,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UpgradeRandomAbility` | Number | Applies or references the | 10 |  |
+| `UpgradeRandomAbility` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5587,7 +5587,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |  |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum / Object | Applies or references the 'ForceUseAbility' effect/state. | 1 |  |
 
 </details>
 
@@ -5604,7 +5604,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Enum | Applies or references the | 2 |  |
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5658,7 +5658,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsOtherHealsThisTurn` | Number | Applies or references the | 4 |  |
+| `XIsOtherHealsThisTurn` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5676,7 +5676,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsRecycleCostReduction` | Number | Applies or references the | 2 |  |
+| `XIsRecycleCostReduction` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5714,7 +5714,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsTimesDamageTaken` | Number | Applies or references the | 4 |  |
+| `XIsTimesDamageTaken` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5734,7 +5734,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllDamageImmune_IncludingSpeculative` | Number | Applies or references the | 4 |  |
+| `AllDamageImmune_IncludingSpeculative` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5752,7 +5752,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplyShieldToApplierBasedOnMaxHealth` | Number | Applies or references the | 2 |  |
+| `ApplyShieldToApplierBasedOnMaxHealth` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5770,7 +5770,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlockAllDamage` | Number | Applies or references the | 2 |  |
+| `BlockAllDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5788,7 +5788,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlockDamageUnderThreshold` | Number | Applies or references the | 2 |  |
+| `BlockDamageUnderThreshold` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5806,7 +5806,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlockNegativeStatus` | Number | Applies or references the | 2 |  |
+| `BlockNegativeStatus` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5824,7 +5824,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BreakWhenNoShield` | Number | Applies or references the | 4 |  |
+| `BreakWhenNoShield` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5842,7 +5842,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CanShield` | Number | Applies or references the | 4 |  |
+| `CanShield` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5860,7 +5860,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChanceToBlock` | Number | Applies or references the | 6 |  |
+| `ChanceToBlock` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5878,7 +5878,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CharmImmunity` | Number | Applies or references the | 2 |  |
+| `CharmImmunity` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5896,7 +5896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DivineShieldPickup` | Number | Applies or references the | 2 |  |
+| `DivineShieldPickup` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5914,7 +5914,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DodgeChanceWithBlindSpot` | Number | Applies or references the | 2 |  |
+| `DodgeChanceWithBlindSpot` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5932,7 +5932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DodgeChance_Status` | Number | Applies or references the | 2 |  |
+| `DodgeChance_Status` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5970,7 +5970,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceDodgeEverything` | Number | Applies or references the | 2 |  |
+| `ForceDodgeEverything` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5988,7 +5988,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FullBlockEverything` | Number | Applies or references the | 2 |  |
+| `FullBlockEverything` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6006,7 +6006,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FullBlockEverythingTo0Damage` | Number | Applies or references the | 2 |  |
+| `FullBlockEverythingTo0Damage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6024,7 +6024,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GoopImmunity` | Number | Applies or references the | 2 |  |
+| `GoopImmunity` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6042,7 +6042,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IceBlockBehavior` | Number | Applies or references the | 2 |  |
+| `IceBlockBehavior` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6060,7 +6060,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Invulnerable` | Number | Applies or references the | 2 |  |
+| `Invulnerable` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6078,7 +6078,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `KaijuKnockbackImmune` | Number | Applies or references the | 12 |  |
+| `KaijuKnockbackImmune` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6096,7 +6096,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `KnockbackDamageImmuneUntilSettled` | Number | Applies or references the | 20 |  |
+| `KnockbackDamageImmuneUntilSettled` | Integer | Applies or references the | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6114,7 +6114,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MagicDamageImmune` | Number | Applies or references the | 4 |  |
+| `MagicDamageImmune` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6132,7 +6132,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NoHealthOnlyShield` | Number | Applies or references the | 24 |  |
+| `NoHealthOnlyShield` | Integer | Applies or references the | 24 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6168,7 +6168,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverHealToShield` | Number | Applies or references the | 2 |  |
+| `OverHealToShield` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6189,7 +6189,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
+| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 |  |
 
 </details>
 
@@ -6206,7 +6206,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnGainDivineShield` | Number | Applies or references the | 2 |  |
+| `ReloadOnGainDivineShield` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6224,7 +6224,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ResetArmorShield` | Number | Applies or references the | 4 |  |
+| `ResetArmorShield` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6245,7 +6245,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 1 |  |
+| `RandomMagicMissile` | Integer / Object | Fires a randomized number of magic missiles. | 1 |  |
 
 </details>
 
@@ -6298,7 +6298,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetShield` | Number | Applies or references the | 6 |  |
+| `SetShield` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6316,7 +6316,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpellShield` | Number | Applies or references the | 2 |  |
+| `SpellShield` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6337,7 +6337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 2 |  |
+| `DodgeChance_Status` | Integer | Applies or references the 'DodgeChance_Status' effect/state. | 2 |  |
 
 </details>
 
@@ -6357,8 +6357,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Metronome` | Number | Executes a random musical or metronome ability. | 4 |  |
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 2 |  |
+| `Metronome` | Integer / Object | Executes a random musical or metronome ability. | 4 |  |
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 2 |  |
 
 </details>
 
@@ -6395,7 +6395,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempInjuryImmunity` | Number | Applies or references the | 2 |  |
+| `TempInjuryImmunity` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6413,7 +6413,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ThornsDamageImmuneUntilSettled` | Number | Applies or references the | 4 |  |
+| `ThornsDamageImmuneUntilSettled` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6431,7 +6431,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TileDamageImmuneUntilSettled` | Number | Applies or references the | 4 |  |
+| `TileDamageImmuneUntilSettled` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6485,7 +6485,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `WispDodge` | Number | Applies or references the | 2 |  |
+| `WispDodge` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6505,7 +6505,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AOEBonus` | Number | Applies or references the | 2 |  |
+| `AOEBonus` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6545,8 +6545,8 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum | `humanoid` | 1 |  |
-| [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -6588,7 +6588,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
-| [`range`](./Enums.md#enum-range) | Number | Distance or area of effect in tiles. | 1 |  |
+| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 1 |  |
 
 </details>
 
@@ -6608,7 +6608,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`range`](./Enums.md#enum-range) | Number | Distance or area of effect in tiles. | 4 |  |
+| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 4 |  |
 
 </details>
 
@@ -6625,7 +6625,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BasicAIDangerZone` | Number | Applies or references the | 2 |  |
+| `BasicAIDangerZone` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6646,11 +6646,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bite` | Number | Applies or references the 'DemonicGlyph_Bite' effect/state. | 1 |  |
-| `DemonicGlyph_Bounce` | Number | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 |  |
-| `DemonicGlyph_Fire` | Number | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 |  |
-| `DemonicGlyph_Movement` | Number | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 |  |
-| `DemonicGlyph_Summon` | Number | Applies or references the 'DemonicGlyph_Summon' effect/state. | 1 |  |
+| `DemonicGlyph_Bite` | Integer | Applies or references the 'DemonicGlyph_Bite' effect/state. | 1 |  |
+| `DemonicGlyph_Bounce` | Integer | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 |  |
+| `DemonicGlyph_Fire` | Integer | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 |  |
+| `DemonicGlyph_Movement` | Integer | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 |  |
+| `DemonicGlyph_Summon` | Integer | Applies or references the 'DemonicGlyph_Summon' effect/state. | 1 |  |
 
 </details>
 
@@ -6703,7 +6703,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageDistanceAOEFalloff` | Number | Applies or references the | 4 |  |
+| `DamageDistanceAOEFalloff` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6742,9 +6742,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `intensity` | Number | Examples: `3, 20, 10` | 6 |  |
-| [`radius`](./Arrays.md#array-radius) | Number | Distance or area of effect in tiles. | 6 |  |
-| [`speed`](./Arrays.md#array-speed) | Number | Rotations per second. | 6 |  |
+| `intensity` | Integer | Examples: `3, 20, 10` | 6 |  |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | Distance or area of effect in tiles. | 6 |  |
+| [`speed`](./Arrays.md#array-speed) | Array / Number | Rotations per second. | 6 |  |
 
 </details>
 
@@ -6782,7 +6782,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Tangled`](./Arrays.md#array-tangled) | Array | Examples: `[ 1 .1 ]` | 1 |  |
+| [`Tangled`](./Arrays.md#array-tangled) | Array / Integer / Object | Examples: `[ 1 .1 ]` | 1 |  |
 
 </details>
 
@@ -6835,7 +6835,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalManaDrainAura` | Number | Applies or references the | 2 |  |
+| `GlobalManaDrainAura` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6853,7 +6853,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OrthogonalAIDangerZone` | Number | Applies or references the | 2 |  |
+| `OrthogonalAIDangerZone` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6871,7 +6871,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBasicAttackBonusAOE` | Number | Applies or references the | 2 |  |
+| `TempBasicAttackBonusAOE` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6891,7 +6891,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledIfMovementTrapped` | Number | Applies or references the | 2 |  |
+| `AbilityEnabledIfMovementTrapped` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6927,7 +6927,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddMeleeKnockback` | Number | Applies or references the | 8 |  |
+| `AddMeleeKnockback` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6945,7 +6945,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusKnockbackDamage` | Number | Applies or references the | 7 |  |
+| `BonusKnockbackDamage` | Integer | Applies or references the | 7 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6963,7 +6963,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BypassRockKnockback` | Number | Applies or references the | 2 |  |
+| `BypassRockKnockback` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7002,7 +7002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CharmedFacingForceAttack` | Number | Applies or references the | 2 |  |
+| `CharmedFacingForceAttack` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7020,7 +7020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DashFury` | Number | Applies or references the | 6 |  |
+| `DashFury` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7038,7 +7038,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Movement` | Number | Applies or references the | 2 |  |
+| `DemonicGlyph_Movement` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7056,7 +7056,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisableTrample` | Number | Applies or references the | 20 |  |
+| `DisableTrample` | Integer | Applies or references the | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7074,7 +7074,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Displace` | Number | Applies or references the | 24 |  |
+| `Displace` | Integer | Applies or references the | 24 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7092,7 +7092,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceToAbilityTarget` | Number | Applies or references the | 6 |  |
+| `DisplaceToAbilityTarget` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7110,7 +7110,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceToOriginalPosition` | Number | Applies or references the | 4 |  |
+| `DisplaceToOriginalPosition` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7128,7 +7128,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceTowardsSource` | Number | Applies or references the | 10 |  |
+| `DisplaceTowardsSource` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7146,7 +7146,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FastKnockback` | Number | Applies or references the | 2 |  |
+| `FastKnockback` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7164,7 +7164,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlingObjectsOnTop` | Number | Applies or references the | 2 |  |
+| `FlingObjectsOnTop` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7182,7 +7182,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceDisplace` | Number | Applies or references the | 6 |  |
+| `ForceDisplace` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7200,7 +7200,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceImmediateMove` | Number | Applies or references the | 2 |  |
+| `ForceImmediateMove` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7239,7 +7239,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveAndAttack` | Number | Applies or references the | 2 |  |
+| `ForceMoveAndAttack` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7257,7 +7257,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveNonAlliesInRangeTowardsTile` | Number | Applies or references the | 4 |  |
+| `ForceMoveNonAlliesInRangeTowardsTile` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7275,7 +7275,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowards` | Number | Applies or references the | 14 |  |
+| `ForceMoveTowards` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7314,7 +7314,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | The entity tag to seek out. | 981 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | The entity tag to seek out. | 981 |  |
 | [`ability`](./Enums.md#enum-ability) | Enum | The movement ability to use. | 730 |  |
 
 </details>
@@ -7332,7 +7332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceTransferWeapon` | Number | Applies or references the | 2 |  |
+| `ForceTransferWeapon` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7371,7 +7371,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InterchangeMoveActPoints` | Number | Applies or references the | 2 |  |
+| `InterchangeMoveActPoints` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7389,7 +7389,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `JustInCaseTrample` | Number | Applies or references the | 10 |  |
+| `JustInCaseTrample` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7428,8 +7428,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Number | The base physics pushing power (in tiles). | 1 |  |
-| `override_chain_knockback` | Number | Examples: `10` | 1 |  |
+| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 1 |  |
+| `override_chain_knockback` | Integer | Examples: `10` | 1 |  |
 
 </details>
 
@@ -7482,7 +7482,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MinimumKnockbackFromAllDamage` | Number | Applies or references the | 12 |  |
+| `MinimumKnockbackFromAllDamage` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7500,7 +7500,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MinimumKnockbackFromPhysicalAttacks` | Number | Applies or references the | 6 |  |
+| `MinimumKnockbackFromPhysicalAttacks` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7518,7 +7518,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MotherTumorDebugForcePass` | Number | Applies or references the | 2 |  |
+| `MotherTumorDebugForcePass` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7539,7 +7539,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 |  |
+| [`weights`](./Enums.md#enum-weights) | Array / Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 |  |
 
 </details>
 
@@ -7561,7 +7561,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` | 1 |  |
 | `once_per_turn` | Boolean | `true` | 1 |  |
-| [`weights`](./Enums.md#enum-weights) | Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 |  |
+| [`weights`](./Enums.md#enum-weights) | Array / Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 |  |
 
 </details>
 
@@ -7620,8 +7620,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Number | Maximum knockback distance. | 2 |  |
-| `min` | Number | Minimum knockback distance. | 2 |  |
+| `max` | Integer | Maximum knockback distance. | 2 |  |
+| `min` | Integer | Minimum knockback distance. | 2 |  |
 
 </details>
 
@@ -7638,7 +7638,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomKnockbackDirection` | Number | Applies or references the | 2 |  |
+| `RandomKnockbackDirection` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7656,7 +7656,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshMovePointsIfHit` | Number | Applies or references the | 10 |  |
+| `RefreshMovePointsIfHit` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7674,7 +7674,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveActPoints` | Number | Applies or references the | 8 |  |
+| `RemoveActPoints` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7692,7 +7692,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Enum | Applies or references the | 4 |  |
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7764,7 +7764,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveKnockback` | Number | Applies or references the | 4 |  |
+| `RemoveKnockback` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7782,7 +7782,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveMovePoints` | Number | Applies or references the | 6 |  |
+| `RemoveMovePoints` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7821,7 +7821,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | The number of stacks to remove. | 1 |  |
+| `stacks` | Enum / Integer | The number of stacks to remove. | 1 |  |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 1 |  |
 
 </details>
@@ -7839,7 +7839,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveTurnsThisRound` | Number | Applies or references the | 2 |  |
+| `RemoveTurnsThisRound` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7875,7 +7875,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RunInXTurns` | Number | Applies or references the | 6 |  |
+| `RunInXTurns` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7893,7 +7893,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RunWhenKittensDead` | Number | Applies or references the | 2 |  |
+| `RunWhenKittensDead` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7932,7 +7932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetDistanceDisplace` | Number | Applies or references the | 12 |  |
+| `SetDistanceDisplace` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7950,7 +7950,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetKnockback` | Number | Applies or references the | 4 |  |
+| `SetKnockback` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7968,7 +7968,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the | 6 |  |
+| `SpeculativeMoveSelfCorpseOffMap` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7986,7 +7986,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SproutsGrantMovement` | Number | Applies or references the | 2 |  |
+| `SproutsGrantMovement` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8007,7 +8007,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charge` | Number | Examples: `3` | 1 |  |
+| `Charge` | Integer | Examples: `3` | 1 |  |
 
 </details>
 
@@ -8028,7 +8028,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |  |
-| [`UseAbility`](./Enums.md#enum-useability) | Object | Logic: Forces execution of an ability. | 1 |  |
+| [`UseAbility`](./Enums.md#enum-useability) | Enum / Object | Logic: Forces execution of an ability. | 1 |  |
 
 </details>
 
@@ -8045,7 +8045,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StripKnockback` | Number | Applies or references the | 2 |  |
+| `StripKnockback` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8084,7 +8084,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TVBotDisableMove` | Number | Applies or references the | 2 |  |
+| `TVBotDisableMove` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8102,7 +8102,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBonusKnockback` | Number | Applies or references the | 2 |  |
+| `TempBonusKnockback` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8120,7 +8120,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBonusKnockbackDamage` | Number | Applies or references the | 2 |  |
+| `TempBonusKnockbackDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8138,7 +8138,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempTrampleUntilSettled` | Number | Applies or references the | 6 |  |
+| `TempTrampleUntilSettled` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8216,7 +8216,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TilesMovedToCritChance` | Number | Applies or references the | 2 |  |
+| `TilesMovedToCritChance` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8234,7 +8234,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TilesMovedToMana` | Number | Applies or references the | 2 |  |
+| `TilesMovedToMana` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8270,7 +8270,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TilesMovedToStrength` | Number | Applies or references the | 2 |  |
+| `TilesMovedToStrength` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8291,9 +8291,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_dist` | Number | Maximum displacement distance. | 6 |  |
-| [`damage`](./Arrays.md#array-damage) | Object | The damage formula or inherit flag. | 2 |  |
-| `min_dist` | Number | Minimum displacement distance. | 2 |  |
+| `max_dist` | Integer | Maximum displacement distance. | 6 |  |
+| [`damage`](./Arrays.md#array-damage) | Enum / Integer / Object | The damage formula or inherit flag. | 2 |  |
+| `min_dist` | Integer | Minimum displacement distance. | 2 |  |
 | [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | `Twister` | 1 |  |
 
 </details>
@@ -8314,9 +8314,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](./Arrays.md#array-damage) | Number | The base damage properties of an attack. | 2 |  |
-| `max_dist` | Number | Maximum displacement distance. | 1 |  |
-| `min_dist` | Number | Minimum displacement distance. | 1 |  |
+| [`damage`](./Arrays.md#array-damage) | Enum / Integer / Object | The base damage properties of an attack. | 2 |  |
+| `max_dist` | Integer | Maximum displacement distance. | 1 |  |
+| `min_dist` | Integer | Minimum displacement distance. | 1 |  |
 
 </details>
 
@@ -8354,7 +8354,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ZeroKnockbackDamage` | Number | Applies or references the | 2 |  |
+| `ZeroKnockbackDamage` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8392,7 +8392,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsBuddy` | Number | Applies or references the | 4 |  |
+| `AggroTargetIsBuddy` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8432,7 +8432,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean | `false`, `true` | 3 |  |
-| [`obj`](./Enums.md#enum-obj) | Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 |  |
+| [`obj`](./Enums.md#enum-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 |  |
 | `reclaim_if_lost` | Boolean | `true` | 1 |  |
 
 </details>
@@ -8450,7 +8450,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Summon` | Number | Applies or references the | 2 |  |
+| `DemonicGlyph_Summon` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8468,7 +8468,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieWhenSpawnerDies` | Number | Applies or references the | 2 |  |
+| `DieWhenSpawnerDies` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8486,7 +8486,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplayBuddyCatOnSpawn` | Number | Applies or references the | 2 |  |
+| `DisplayBuddyCatOnSpawn` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8540,7 +8540,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EraseSpawnCoins` | Number | Applies or references the | 2 |  |
+| `EraseSpawnCoins` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8558,7 +8558,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExpireOnSpawnerTurnEnd` | Number | Applies or references the | 4 |  |
+| `ExpireOnSpawnerTurnEnd` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8633,8 +8633,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `NeutralZombieKitten, NeutralTwister` | 545 |  |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `NeutralZombieKitten, NeutralTwister` | 545 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 1 2 ]` | 1 |  |
 
 </details>
 
@@ -8651,7 +8651,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InheritSpawnerStats` | Number | Applies or references the | 2 |  |
+| `InheritSpawnerStats` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8687,7 +8687,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MimicSpawnerAttacks` | Number | Applies or references the | 6 |  |
+| `MimicSpawnerAttacks` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8730,8 +8730,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`count`](./Arrays.md#array-count) | Array | The numerical quantity. | 3 |  |
-| [`obj`](./Enums.md#enum-obj) | Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 1 |  |
+| [`count`](./Arrays.md#array-count) | Array / Integer | The numerical quantity. | 3 |  |
+| [`obj`](./Enums.md#enum-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 1 |  |
 
 </details>
 
@@ -8751,7 +8751,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn in place. | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID to spawn in place. | 545 |  |
 | `clone_items` | Boolean | If true, transfers inventory to the new entity. | 1 |  |
 | `clone_referenced_catdata` | Boolean | If true, copies the genetic data of the popped cat. | 1 |  |
 | `no_splatter` | Boolean | Examples: `true` | 1 |  |
@@ -8771,7 +8771,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SharePickupsWithSpawner` | Number | Applies or references the | 6 |  |
+| `SharePickupsWithSpawner` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8789,7 +8789,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnBearTrap` | Number | Applies or references the | 14 |  |
+| `SpawnBearTrap` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8807,7 +8807,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the | 4 |  |
+| `SpawnBearTrapIfHitKills` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8825,7 +8825,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnCatCloneOnCorpsePopped` | Number | Applies or references the | 2 |  |
+| `SpawnCatCloneOnCorpsePopped` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8846,7 +8846,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `PlayerCat_AncestralShade, PlayerCat_NecroShade` | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `PlayerCat_AncestralShade, PlayerCat_NecroShade` | 545 |  |
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | Examples: `necroset_shade, ancestorset_shade` | 2 |  |
 
 </details>
@@ -8864,7 +8864,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnCreep` | Number | Applies or references the | 18 |  |
+| `SpawnCreep` | Integer | Applies or references the | 18 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8882,7 +8882,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnCreepOnHitKnockback` | Number | Applies or references the | 2 |  |
+| `SpawnCreepOnHitKnockback` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8921,8 +8921,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup` | 545 |  |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `RandomPickup` | 545 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 1 2 ]` | 1 |  |
 
 </details>
 
@@ -8960,7 +8960,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
 | `break_on_pop_only` | Boolean | `true` | 2 |  |
 
 </details>
@@ -8978,7 +8978,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnNearEnemies` | Number | Applies or references the | 4 |  |
+| `SpawnNearEnemies` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8996,7 +8996,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnNeutralWebTrapOnMiss` | Number | Applies or references the | 6 |  |
+| `SpawnNeutralWebTrapOnMiss` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9018,7 +9018,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 3 |  |
-| [`obj`](./Arrays.md#array-obj) | Array | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 |  |
+| [`obj`](./Arrays.md#array-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 |  |
 | [`additional_statuses`](./Characters_and_Bosses.md#context-additional_statuses) | Object | Generic statuses added to the character. | 1 |  |
 
 </details>
@@ -9057,8 +9057,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |  |
-| [`count`](./Arrays.md#array-count) | Array | Quantity. | 3 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
+| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 |  |
 
 </details>
 
@@ -9075,7 +9075,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SpawnRock`](./Arrays.md#array-spawnrock) | Array | Applies or references the | 10 |  |
+| [`SpawnRock`](./Arrays.md#array-spawnrock) | Array / Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9114,7 +9114,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tile`](./Enums.md#enum-tile) | Enum | Examples: `OilTile` | 26 |  |
+| [`tile`](./Enums.md#enum-tile) | Array / Enum | Examples: `OilTile` | 26 |  |
 | `max_radius` | Number | Examples: `3.5` | 1 |  |
 | [`min_radius`](./Enums.md#enum-min_radius) | Number | Examples: `1.5` | 1 |  |
 
@@ -9136,11 +9136,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `MiniVolcano, Sprout, PunchingBag` | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `MiniVolcano, Sprout, PunchingBag` | 545 |  |
 | `max_radius` | Number | Examples: `2.2` | 2 |  |
 | [`min_radius`](./Enums.md#enum-min_radius) | Number | Examples: `1, .2` | 2 |  |
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | Examples: `[ BrambleTile TallBrambleTile ], LavaTile` | 2 |  |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 3 5 ]` | 1 |  |
+| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 3 5 ]` | 1 |  |
 
 </details>
 
@@ -9157,7 +9157,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnWebTrap` | Number | Applies or references the | 2 |  |
+| `SpawnWebTrap` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9175,7 +9175,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnerCatDataReference` | Number | Applies or references the | 2 |  |
+| `SpawnerCatDataReference` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9196,7 +9196,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Number | Applies or references the 'Poison' effect/state. | 8 |  |
+| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 |  |
 
 </details>
 
@@ -9216,8 +9216,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |  |
-| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 1 |  |
+| `CaptureFamiliar` | Integer | Applies or references the 'CaptureFamiliar' effect/state. | 1 |  |
+| `SetHealth` | Integer | Applies or references the 'SetHealth' effect/state. | 1 |  |
 
 </details>
 
@@ -9274,7 +9274,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `T3HitlerTriggerInitialSpawns` | Number | Applies or references the | 2 |  |
+| `T3HitlerTriggerInitialSpawns` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9292,7 +9292,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TakeWeaponFromSpawner` | Number | Applies or references the | 2 |  |
+| `TakeWeaponFromSpawner` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9310,7 +9310,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TossTargetIsBuddy` | Number | Applies or references the | 2 |  |
+| `TossTargetIsBuddy` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9352,7 +9352,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 3 4 ], [ 1 2 ], [ 5 5 ]` | 3 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 3 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 |  |
 
 </details>
 
@@ -9369,7 +9369,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AwardCoinsOnDeath` | Number | Applies or references the | 2 |  |
+| `AwardCoinsOnDeath` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9411,7 +9411,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
 | [`new_music`](./Enums.md#enum-new_music) | Enum | `chaos_boss_part2` | 1 |  |
 
@@ -9430,7 +9430,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CoinPickup` | Number | Applies or references the | 20 |  |
+| `CoinPickup` | Integer | Applies or references the | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9466,7 +9466,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CollectsPickups` | Number | Applies or references the | 34 |  |
+| `CollectsPickups` | Integer | Applies or references the | 34 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9487,12 +9487,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |  |
-| [`Quivered`](./Arrays.md#array-quivered) | Number | Applies or references the 'Quivered' effect/state. | 10 |  |
-| `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 2 |  |
-| `Tech` | Number | Applies or references the 'Tech' effect/state. | 2 |  |
-| `CurrentWeaponAddPoison` | Number | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 |  |
-| `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |  |
+| `Shield` | Enum / Integer | Applies or references the 'Shield' effect/state. | 422 |  |
+| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | Applies or references the 'Quivered' effect/state. | 10 |  |
+| `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 |  |
+| `Tech` | Integer | Applies or references the 'Tech' effect/state. | 2 |  |
+| `CurrentWeaponAddPoison` | Integer | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 |  |
+| `LuckUp` | Enum / Integer | Applies or references the 'LuckUp' effect/state. | 1 |  |
 
 </details>
 
@@ -9509,7 +9509,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyphStealer` | Number | Applies or references the | 2 |  |
+| `DemonicGlyphStealer` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9527,7 +9527,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleLoot` | Number | Applies or references the | 2 |  |
+| `DoubleLoot` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9581,7 +9581,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceCollectsPickups` | Number | Applies or references the | 2 |  |
+| `ForceCollectsPickups` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9599,7 +9599,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainCoins`](./Arrays.md#array-gaincoins) | Number | Applies or references the | 20 |  |
+| [`GainCoins`](./Arrays.md#array-gaincoins) | Array / Integer | Applies or references the | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9620,8 +9620,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Number | Maximum coins granted. | 4 |  |
-| `min` | Number | Minimum coins granted. | 4 |  |
+| `max` | Integer | Maximum coins granted. | 4 |  |
+| `min` | Integer | Minimum coins granted. | 4 |  |
 
 </details>
 
@@ -9642,10 +9642,10 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 3 4 ], [ 1 2 ], [ 5 5 ]` | 15 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 15 |  |
-| `stored_food_value` | Number | Examples: `3, 2, 1` | 15 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 15 |  |
+| `stored_food_value` | Integer | Examples: `3, 2, 1` | 15 |  |
 | `anything_eats` | Boolean | `true` | 4 |  |
-| `force_frame` | Number | Examples: `12` | 1 |  |
+| `force_frame` | Integer | Examples: `12` | 1 |  |
 
 </details>
 
@@ -9662,7 +9662,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Lifesteal` | Number | Applies or references the | 10 |  |
+| `Lifesteal` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9684,7 +9684,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 3 4 ], [ 1 2 ], [ 5 5 ]` | 3 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 3 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 |  |
 
 </details>
 
@@ -9701,7 +9701,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ManaSteal` | Number | Applies or references the | 14 |  |
+| `ManaSteal` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9719,7 +9719,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ManaStealToHealth` | Number | Applies or references the | 2 |  |
+| `ManaStealToHealth` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9743,7 +9743,7 @@
 | [`head_drop`](./Enums.md#enum-head_drop) | Enum | `MD_HeadDrop` | 1 |  |
 | [`leg_leave`](./Enums.md#enum-leg_leave) | Enum | `MD_LegLeave` | 1 |  |
 | [`leg_return`](./Enums.md#enum-leg_return) | Enum | `MD_LegReturn` | 1 |  |
-| `stable_legs` | Number | Examples: `3` | 1 |  |
+| `stable_legs` | Integer | Examples: `3` | 1 |  |
 
 </details>
 
@@ -9763,7 +9763,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |  |
+| `Cleanse` | Integer / Object | Applies or references the 'Cleanse' effect/state. | 2 |  |
 | [`sound_event`](./Enums.md#enum-sound_event) | Enum | `EatAntidote` | 1 |  |
 
 </details>
@@ -9781,7 +9781,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MultiplyCoinsOnBattleStart` | Number | Applies or references the | 2 |  |
+| `MultiplyCoinsOnBattleStart` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9799,7 +9799,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnGainCoins` | Number | Applies or references the | 2 |  |
+| `ReloadOnGainCoins` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9838,7 +9838,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ScatterHeldCoin`](./Arrays.md#array-scatterheldcoin) | Array | Examples: `1, [ 1 .3 ], [ 1 .5 ]` | 12 |  |
+| [`ScatterHeldCoin`](./Arrays.md#array-scatterheldcoin) | Array / Integer | Examples: `1, [ 1 .3 ], [ 1 .5 ]` | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9856,7 +9856,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ScatterRandomPickups` | Number | Applies or references the | 4 |  |
+| `ScatterRandomPickups` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9874,7 +9874,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealDemonicGlyph` | Number | Applies or references the | 2 |  |
+| `StealDemonicGlyph` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9910,7 +9910,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealTurn` | Number | Applies or references the | 2 |  |
+| `StealTurn` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9928,7 +9928,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealthCritChance` | Number | Applies or references the | 2 |  |
+| `StealthCritChance` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9946,7 +9946,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealthUntilBasicAttack` | Number | Applies or references the | 2 |  |
+| `StealthUntilBasicAttack` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9987,22 +9987,22 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Number | Sprite variant ID for the head. | 784 |  |
-| `texture` | Number | Examples: `1050, 1002, 1000` | 422 |  |
-| [`palette`](./Enums.md#enum-palette) | Number | Swaps the color palette ID. | 420 |  |
+| [`head`](./Enums.md#enum-head) | Enum / Number | Sprite variant ID for the head. | 784 |  |
+| `texture` | Integer | Examples: `1050, 1002, 1000` | 422 |  |
+| [`palette`](./Enums.md#enum-palette) | Enum / Integer | Swaps the color palette ID. | 420 |  |
 | [`mouth`](./Enums.md#enum-mouth) | Number | `closed`, `open`, `smile` | 386 |  |
-| `tail` | Number | Sprite variant ID for the tail. | 362 |  |
+| `tail` | Integer | Sprite variant ID for the tail. | 362 |  |
 | `arm2` | Number | Scale multiplier for the back arm. | 358 |  |
 | `arm1` | Number | Sprite variant ID for the front arm. | 354 |  |
-| `leg1` | Number | Sprite variant ID for the front leg. | 348 |  |
+| `leg1` | Integer | Sprite variant ID for the front leg. | 348 |  |
 | [`body`](./Arrays.md#array-body) | Number | Sprite variant ID for the body. | 346 |  |
-| `leg2` | Number | Examples: `3, 1019, 1001` | 344 |  |
-| `ear1` | Number | Sprite variant ID for the front ear. | 10 |  |
-| `ear2` | Number | Examples: `23, 1036, 1501` | 9 |  |
-| `eye1` | Number | Examples: `1069, 1013, 1057` | 1 |  |
-| `eye2` | Number | Examples: `1069, 1013, 1057` | 1 |  |
-| `eyebrow1` | Number | Examples: `1069` | 1 |  |
-| `eyebrow2` | Number | Examples: `1070` | 1 |  |
+| `leg2` | Integer | Examples: `3, 1019, 1001` | 344 |  |
+| `ear1` | Integer | Sprite variant ID for the front ear. | 10 |  |
+| `ear2` | Integer | Examples: `23, 1036, 1501` | 9 |  |
+| `eye1` | Integer | Examples: `1069, 1013, 1057` | 1 |  |
+| `eye2` | Integer | Examples: `1069, 1013, 1057` | 1 |  |
+| `eyebrow1` | Integer | Examples: `1069` | 1 |  |
+| `eyebrow2` | Integer | Examples: `1070` | 1 |  |
 
 </details>
 
@@ -10023,7 +10023,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0) of executing this action. | 1 |  |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 1 |  |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 1 |  |
 
 </details>
 
@@ -10040,7 +10040,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChaosBossFormChange` | Number | Applies or references the | 2 |  |
+| `ChaosBossFormChange` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10063,7 +10063,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`active_pieces`](./Arrays.md#array-active_pieces) | Array | Examples: `[ Johnny Throb Flush ]` | 1 |  |
 | [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | Examples: `[ Host Nettle Bubs ]` | 1 |  |
-| `passives_health_threshold` | Number | Examples: `50` | 1 |  |
+| `passives_health_threshold` | Integer | Examples: `50` | 1 |  |
 
 </details>
 
@@ -10104,7 +10104,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 75 |  |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 75 |  |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
 
 </details>
@@ -10125,8 +10125,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 2 |  |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 2 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
 
 </details>
 
@@ -10148,7 +10148,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`form_above`](./Enums.md#enum-form_above) | Enum | `Default`, `Full`, `Standing` | 3 |  |
 | [`form_below`](./Enums.md#enum-form_below) | Enum | `Damaged`, `DesireMech`, `Standing2` | 3 |  |
-| `threshold` | Number | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 3 |  |
+| `threshold` | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 3 |  |
 | `count_shield` | Boolean | `true` | 1 |  |
 
 </details>
@@ -10190,11 +10190,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 9 |  |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 9 |  |
 | [`exclude`](./Enums.md#enum-exclude) | Enum | `SpellDamageUp`, `fire`, `water` | 5 |  |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. | 5 |  |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` | 5 |  |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
 
 </details>
 
@@ -10277,8 +10277,8 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Object | Object listing intrinsic passive modifiers. | 5118 |  |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Object | Core block defining the AI behavior logic and weights. | 928 |  |
-| [`Default`](./Enums.md#enum-default) | Object | Character Form: The baseline default behavior state. | 199 |  |
-| [`default`](./Enums.md#enum-default) | Object | Baseline configuration. | 199 |  |
+| [`Default`](./Enums.md#enum-default) | Enum / Object | Character Form: The baseline default behavior state. | 199 |  |
+| [`default`](./Enums.md#enum-default) | Enum / Object | Baseline configuration. | 199 |  |
 | [`Colorless`](./Arrays.md#array-colorless) | Object | Applies or references the 'Colorless' effect/state. | 140 |  |
 | [`Druid`](./Arrays.md#array-druid) | Object | Applies or references the 'Druid' effect/state. | 80 |  |
 | [`Fighter`](./Arrays.md#array-fighter) | Object | Applies or references the 'Fighter' effect/state. | 80 |  |
@@ -10293,15 +10293,15 @@
 | [`Psychic`](./Arrays.md#array-psychic) | Object | Applies or references the 'Psychic' effect/state. | 66 |  |
 | [`Medic`](./Arrays.md#array-medic) | Object | Applies or references the 'Medic' effect/state. | 58 |  |
 | [`attack`](./Enums.md#enum-attack) | Enum | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 |  |
-| [`Normal`](./Characters_and_Bosses.md#context-normal) | Object | Character Form: Behavior and stats for the \'Normal\' state. | 24 |  |
+| [`Normal`](./Characters_and_Bosses.md#context-normal) | Integer / Object | Character Form: Behavior and stats for the \'Normal\' state. | 24 |  |
 | [`Cultist`](./Characters_and_Bosses.md#context-cultist) | Object | Character Form: Behavior and stats for the \'Cultist\' state. | 11 |  |
 | [`Nuke`](./Characters_and_Bosses.md#context-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 10 |  |
 | [`Rage`](./Characters_and_Bosses.md#context-rage) | Object | Character Form: Behavior and stats for the \'Rage\' state. | 10 |  |
 | [`Unlit`](./Characters_and_Bosses.md#context-unlit) | Object | Character Form: Behavior and stats for the 'Unlit' state. | 9 |  |
 | [`CaveMan`](./Characters_and_Bosses.md#context-caveman) | Object | Character Form: Behavior and stats for the \'CaveMan\' state. | 7 |  |
-| [`Fire`](./Characters_and_Bosses.md#context-fire) | Object | Character Form: Behavior and stats for the 'Fire' state. | 6 |  |
-| [`initial_form`](./Enums.md#enum-initial_form) | Enum | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` | 6 |  |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Number | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |  |
+| [`Fire`](./Characters_and_Bosses.md#context-fire) | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 6 |  |
+| [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` | 6 |  |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |  |
 | [`Angry`](./Characters_and_Bosses.md#context-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 5 |  |
 | [`HasCat`](./Characters_and_Bosses.md#context-hascat) | Object | Character Form: Behavior and stats for the \'HasCat\' state. | 5 |  |
 | [`Water`](./Characters_and_Bosses.md#context-water) | Object | Character Form: Behavior and stats for the \'Water\' state. | 5 |  |
@@ -10320,9 +10320,9 @@
 | [`active`](./Characters_and_Bosses.md#context-active) | Object | Defines actively executed abilities. | 2 |  |
 | [`Big`](./Characters_and_Bosses.md#context-big) | Object | Character Form / AI State: Behavior and stats for the \'Big\' state. | 2 |  |
 | [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear) | Object | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 |  |
-| [`Explosive`](./Enums.md#enum-explosive) | Object | Character Form: Behavior and stats for the \'Explosive\' state. | 2 |  |
+| [`Explosive`](./Enums.md#enum-explosive) | Enum / Object | Character Form: Behavior and stats for the \'Explosive\' state. | 2 |  |
 | [`Holding`](./Characters_and_Bosses.md#context-holding) | Object | Character Form: Behavior and stats for the \'Holding\' state. | 2 |  |
-| [`Holy`](./Enums.md#enum-holy) | Object | Character Form: Behavior and stats for the \'Holy\' state. | 2 |  |
+| [`Holy`](./Enums.md#enum-holy) | Enum / Object | Character Form: Behavior and stats for the \'Holy\' state. | 2 |  |
 | [`LastHit`](./Characters_and_Bosses.md#context-lasthit) | Object | Logic: Executes logic on the final hit of a multi-hit attack. | 2 |  |
 | [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar) | Object | Character Form: Behavior and stats for the 'NeutronStar' state. | 2 |  |
 | [`NotPriming`](./Characters_and_Bosses.md#context-notpriming) | Object | Character Form: Behavior and stats when not charging an ability. | 2 |  |
@@ -10340,7 +10340,7 @@
 | [`Bishop`](./Characters_and_Bosses.md#context-bishop) | Object | Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 1 |  |
 | [`BlackHole`](./Characters_and_Bosses.md#context-blackhole) | Object | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 |  |
 | [`Bomb`](./Characters_and_Bosses.md#context-bomb) | Object | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 |  |
-| [`Boris`](./Enums.md#enum-boris) | Object | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 1 |  |
+| [`Boris`](./Enums.md#enum-boris) | Enum / Object | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 1 |  |
 | [`Bully`](./Characters_and_Bosses.md#context-bully) | Object | Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 |  |
 | [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman) | Object | Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 |  |
 | [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat) | Object | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |  |
@@ -10350,15 +10350,15 @@
 | [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling) | Object | Character Form: The baseline behavior state while attached to the ceiling. | 1 |  |
 | [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground) | Object | Character Form: The baseline behavior state while on the ground. | 1 |  |
 | [`DesireMech`](./Characters_and_Bosses.md#context-desiremech) | Object | Character Form: Behavior and stats for the 'DesireMech' state. | 1 |  |
-| [`Die`](./Characters_and_Bosses.md#context-die) | Object | Character Form / Logic: Forces the character to die. | 1 |  |
+| [`Die`](./Characters_and_Bosses.md#context-die) | Integer / Object | Character Form / Logic: Forces the character to die. | 1 |  |
 | [`Drunker`](./Characters_and_Bosses.md#context-drunker) | Object | Character Form: Behavior and stats for the 'Drunker' state. | 1 |  |
 | [`DualSword`](./Characters_and_Bosses.md#context-dualsword) | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |  |
 | [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed) | Object | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |  |
-| [`Dumb`](./Characters_and_Bosses.md#context-dumb) | Object | AI Profile: A simplified, less optimal decision-making profile. | 1 |  |
+| [`Dumb`](./Characters_and_Bosses.md#context-dumb) | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 1 |  |
 | [`Empty`](./Characters_and_Bosses.md#context-empty) | Object | Character Form: Behavior and stats for the \'Empty\' state. | 1 |  |
 | [`Explody`](./Characters_and_Bosses.md#context-explody) | Object | Character Form: Behavior and stats for the 'Explody' state. | 1 |  |
 | [`FightPhase`](./Characters_and_Bosses.md#context-fightphase) | Object | Boss Logic: Main combat phase. | 1 |  |
-| [`FireFull`](./Characters_and_Bosses.md#context-firefull) | Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 |  |
+| [`FireFull`](./Characters_and_Bosses.md#context-firefull) | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 |  |
 | [`Flop`](./Characters_and_Bosses.md#context-flop) | Object | Character Form: Behavior and stats for the \'Flop\' state. | 1 |  |
 | [`Flop2`](./Characters_and_Bosses.md#context-flop2) | Object | Character Form: Behavior and stats for the \'Flop2\' state. | 1 |  |
 | [`FlushBubs`](./Characters_and_Bosses.md#context-flushbubs) | Object | Character Form: Behavior and stats for the 'FlushBubs' state. | 1 |  |
@@ -10388,12 +10388,12 @@
 | [`Lit`](./Characters_and_Bosses.md#context-lit) | Object | Character Form: Behavior and stats for the 'Lit' state. | 1 |  |
 | [`Mounted`](./Characters_and_Bosses.md#context-mounted) | Object | Character Form: Behavior and stats for the \'Mounted\' state. | 1 |  |
 | [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull) | Object | Character Form: Behavior and stats for the \'MouthFull\' state. | 1 |  |
-| [`Mutant`](./Characters_and_Bosses.md#context-mutant) | Object | Character Form: Behavior and stats for the \'Mutant\' state. | 1 |  |
+| [`Mutant`](./Characters_and_Bosses.md#context-mutant) | Integer / Object | Character Form: Behavior and stats for the \'Mutant\' state. | 1 |  |
 | `NoDeathRattle` | Object | Applies or references the 'NoDeathRattle' effect/state. | 1 |  |
 | [`NoEyes`](./Characters_and_Bosses.md#context-noeyes) | Object | Character Form: Behavior and stats for the \'NoEyes\' state. | 1 |  |
-| [`NormalFull`](./Characters_and_Bosses.md#context-normalfull) | Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |  |
+| [`NormalFull`](./Characters_and_Bosses.md#context-normalfull) | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |  |
 | [`NoStick`](./Characters_and_Bosses.md#context-nostick) | Object | Character Form: Behavior and stats for the 'NoStick' state. | 1 |  |
-| [`Obey`](./Characters_and_Bosses.md#context-obey) | Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |  |
+| [`Obey`](./Characters_and_Bosses.md#context-obey) | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |  |
 | [`Off`](./Characters_and_Bosses.md#context-off) | Object | Character Form: Behavior and stats for the 'Off' state. | 1 |  |
 | [`OffScreen`](./Characters_and_Bosses.md#context-offscreen) | Object | Character Form: Behavior and stats for the 'OffScreen' state. | 1 |  |
 | [`OneEye`](./Characters_and_Bosses.md#context-oneeye) | Object | Character Form: Behavior and stats for the \'OneEye\' state. | 1 |  |
@@ -10415,12 +10415,12 @@
 | [`Standing`](./Characters_and_Bosses.md#context-standing) | Object | Character Form: Behavior and stats for the 'Standing' state. | 1 |  |
 | [`Standing2`](./Characters_and_Bosses.md#context-standing2) | Object | Character Form: Behavior and stats for the 'Standing2' state. | 1 |  |
 | [`Start_Ceiling`](./Characters_and_Bosses.md#context-start_ceiling) | Object | Character Form: Behavior and stats for the 'Start_Ceiling' state. | 1 |  |
-| [`Stop`](./Characters_and_Bosses.md#context-stop) | Object | AI Movement: Forces the character to cease movement. | 1 |  |
+| [`Stop`](./Characters_and_Bosses.md#context-stop) | Integer / Object | AI Movement: Forces the character to cease movement. | 1 |  |
 | [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield) | Object | Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 |  |
 | [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed) | Object | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |  |
 | `sync_brain_patterns` | Boolean | `true` | 1 |  |
-| [`Tar`](./Characters_and_Bosses.md#context-tar) | Object | Character Form: Behavior and stats for the 'Tar' state. | 1 |  |
-| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 |  |
+| [`Tar`](./Characters_and_Bosses.md#context-tar) | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 1 |  |
+| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 |  |
 | [`Throb`](./Characters_and_Bosses.md#context-throb) | Object | Character Form: Behavior and stats for the 'Throb' state. | 1 |  |
 | [`ThrobBubs`](./Characters_and_Bosses.md#context-throbbubs) | Object | Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 |  |
 | [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost) | Object | Character Form: Behavior and stats for the 'ThrobHost' state. | 1 |  |
@@ -10471,7 +10471,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PreventDeathTransforms` | Number | Applies or references the | 2 |  |
+| `PreventDeathTransforms` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10609,11 +10609,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
+| [`object`](./Arrays.md#array-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 11 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 8 |  |
-| [`initiative`](./Enums.md#enum-initiative) | Enum | `keep_turns_end_turn` | 4 |  |
-| [`turns`](./Arrays.md#array-turns) | Array | Turn counter tracking. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 8 |  |
+| [`initiative`](./Enums.md#enum-initiative) | Enum / Integer | `keep_turns_end_turn` | 4 |  |
+| [`turns`](./Arrays.md#array-turns) | Array / Integer / Object | Turn counter tracking. | 1 |  |
 
 </details>
 
@@ -10635,7 +10635,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `full_repair` | Boolean | `true` | 5 |  |
 | [`item`](./Enums.md#enum-item) | Enum | Item ID to reference. | 5 |  |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
 
 </details>
 
@@ -10670,7 +10670,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Enum | Examples: `SimonFlopper, Carcus, RatKing` | 26 |  |
+| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Array / Enum | Examples: `SimonFlopper, Carcus, RatKing` | 26 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10692,7 +10692,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`first_turn`](./Enums.md#enum-first_turn) | Enum | `end_of_round`, `initiative`, `keep_turns`, `next_round`, `next_turn` | 4 |  |
-| [`obj`](./Enums.md#enum-obj) | Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 4 |  |
+| [`obj`](./Enums.md#enum-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 4 |  |
 
 </details>
 
@@ -10712,8 +10712,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
 
 </details>
 
@@ -10733,8 +10733,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
 
 </details>
 
@@ -10754,9 +10754,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |  |
-| `threshold` | Number | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 1 |  |
+| `threshold` | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 1 |  |
 
 </details>
 
@@ -10812,7 +10812,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array | Examples: `[ 1 .15 ], .5, [ 1 .5 ]` | 14 |  |
+| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array / Number | Examples: `[ 1 .15 ], .5, [ 1 .5 ]` | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10868,7 +10868,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlphaAllStatsUp` | Number | Applies or references the | 2 |  |
+| `AlphaAllStatsUp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10886,7 +10886,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlphaDodgeChance` | Number | Applies or references the | 2 |  |
+| `AlphaDodgeChance` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10907,7 +10907,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellThisTurn` | Number | Applies or references the 'DoubleCastSpellThisTurn' effect/state. | 1 |  |
+| `DoubleCastSpellThisTurn` | Integer | Applies or references the 'DoubleCastSpellThisTurn' effect/state. | 1 |  |
 
 </details>
 
@@ -10945,7 +10945,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChampionUpgradeNextMinion` | Number | Applies or references the | 2 |  |
+| `ChampionUpgradeNextMinion` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10963,7 +10963,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChaosBossFlipMidTeleport` | Number | Applies or references the | 2 |  |
+| `ChaosBossFlipMidTeleport` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11002,7 +11002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ClearFinalBossBattlefield` | Number | Applies or references the | 2 |  |
+| `ClearFinalBossBattlefield` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11074,7 +11074,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EliteUpgradeNextMinion` | Number | Applies or references the | 2 |  |
+| `EliteUpgradeNextMinion` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11092,7 +11092,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_PartyBoss` | Number | Applies or references the | 4 |  |
+| `ExplodeCharacter_PartyBoss` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11136,7 +11136,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |  |
-| `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |  |
+| `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. | 1 |  |
 | [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic) | Object | Event Trigger: Changes background music track. | 1 |  |
 
 </details>
@@ -11157,10 +11157,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |  |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Object | Logic: Forces the execution of a specific ability. | 2 |  |
-| `icon_ready` | Number | Examples: `803` | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| [`icon`](./Enums.md#enum-icon) | Integer | `DejaVu2`, `DejaVu3` | 4 |  |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 2 |  |
+| `icon_ready` | Integer | Examples: `803` | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -11180,10 +11180,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |  |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Object | Logic: Forces the execution of a specific ability. | 2 |  |
-| `icon_ready` | Number | Examples: `803` | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| [`icon`](./Enums.md#enum-icon) | Integer | `DejaVu2`, `DejaVu3` | 4 |  |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 2 |  |
+| `icon_ready` | Integer | Examples: `803` | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -11203,9 +11203,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Number | `DejaVu2`, `DejaVu3` | 4 |  |
-| `icon_ready` | Number | Examples: `803` | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| [`icon`](./Enums.md#enum-icon) | Integer | `DejaVu2`, `DejaVu3` | 4 |  |
+| `icon_ready` | Integer | Examples: `803` | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -11226,11 +11226,11 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | Examples: `[ 0 2.5 0 ]` | 1 |  |
-| [`radius`](./Arrays.md#array-radius) | Number | Distance or area of effect in tiles. | 1 |  |
-| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Enum | Examples: `.1` | 1 |  |
-| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Enum | Examples: `.05` | 1 |  |
-| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Enum | Examples: `.01` | 1 |  |
-| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Enum | Examples: `.1` | 1 |  |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | Distance or area of effect in tiles. | 1 |  |
+| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Number | Examples: `.1` | 1 |  |
+| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Number | Examples: `.05` | 1 |  |
+| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Number | Examples: `.01` | 1 |  |
+| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Number | Examples: `.1` | 1 |  |
 | [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | Examples: `[ 11 2 11 ]` | 1 |  |
 
 </details>
@@ -11248,7 +11248,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FinalBossQueueBeam` | Number | Applies or references the | 2 |  |
+| `FinalBossQueueBeam` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11330,7 +11330,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 4688 |  |
-| [`self_damage`](./Arrays.md#array-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| [`self_damage`](./Arrays.md#array-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 | [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Object | Secondary Area of Effect blast parameters. | 68 |  |
 
 </details>
@@ -11369,7 +11369,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SignalFinalBossShieldBroke` | Number | Applies or references the | 4 |  |
+| `SignalFinalBossShieldBroke` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11405,7 +11405,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TutorialBossRiggedFight` | Number | Applies or references the | 2 |  |
+| `TutorialBossRiggedFight` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11447,7 +11447,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -11464,7 +11464,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityDisableIfLivingCrow` | Number | Applies or references the | 2 |  |
+| `AbilityDisableIfLivingCrow` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11500,7 +11500,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledIfBasicAttackUsedThisTurn` | Number | Applies or references the | 2 |  |
+| `AbilityEnabledIfBasicAttackUsedThisTurn` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11518,7 +11518,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledIfNoAggroTarget` | Number | Applies or references the | 2 |  |
+| `AbilityEnabledIfNoAggroTarget` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11554,7 +11554,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledOncePerRound` | Number | Applies or references the | 6 |  |
+| `AbilityEnabledOncePerRound` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11572,7 +11572,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledPercentEachTurn` | Number | Applies or references the | 12 |  |
+| `AbilityEnabledPercentEachTurn` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11590,7 +11590,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityInheritsWeaponEffects` | Number | Applies or references the | 6 |  |
+| `AbilityInheritsWeaponEffects` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11626,7 +11626,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Adrenaline` | Number | Applies or references the | 2 |  |
+| `Adrenaline` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11693,7 +11693,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsCurrentTurn` | Number | Applies or references the | 6 |  |
+| `AggroTargetIsCurrentTurn` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11731,7 +11731,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlienBeastEyeStalks` | Number | Applies or references the | 2 |  |
+| `AlienBeastEyeStalks` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11749,7 +11749,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlliesTakeExtraTurn` | Number | Applies or references the | 2 |  |
+| `AlliesTakeExtraTurn` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11770,7 +11770,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedMaggot` | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `CharmedMaggot` | 545 |  |
 | [`faction`](./Enums.md#enum-faction) | Enum | Examples: `allies` | 1 |  |
 
 </details>
@@ -11806,7 +11806,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlwaysHitDifferentTargets` | Number | Applies or references the | 4 |  |
+| `AlwaysHitDifferentTargets` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11824,7 +11824,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Ammo` | Number | Applies or references the | 26 |  |
+| `Ammo` | Integer | Applies or references the | 26 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11842,7 +11842,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Angel` | Number | Applies or references the | 10 |  |
+| `Angel` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11864,14 +11864,14 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 16 |  |
-| `IgnoreTiles` | Number | Applies or references the 'IgnoreTiles' effect/state. | 12 |  |
+| `IgnoreTiles` | Integer | Applies or references the 'IgnoreTiles' effect/state. | 12 |  |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 8 |  |
-| `KnockbackImmunity` | Number | Applies or references the 'KnockbackImmunity' effect/state. | 6 |  |
+| `KnockbackImmunity` | Integer | Applies or references the 'KnockbackImmunity' effect/state. | 6 |  |
 | [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Object | Applies the nested status effects when the encounter finishes. | 6 |  |
-| [`YOffset`](./Enums.md#enum-yoffset) | Enum | Applies or references the 'YOffset' effect/state. | 6 |  |
+| [`YOffset`](./Enums.md#enum-yoffset) | Number | Applies or references the 'YOffset' effect/state. | 6 |  |
 | [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 |  |
-| `Flying` | Number | Applies or references the 'Flying' effect/state. | 2 |  |
-| `Plant` | Number | Applies or references the 'Plant' effect/state. | 1 |  |
+| `Flying` | Integer | Applies or references the 'Flying' effect/state. | 2 |  |
+| `Plant` | Integer | Applies or references the 'Plant' effect/state. | 1 |  |
 
 </details>
 
@@ -11891,8 +11891,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 3 |  |
-| `Die` | Number | Applies or references the 'Die' effect/state. | 1 |  |
+| `DeleteObject` | Integer | Applies or references the 'DeleteObject' effect/state. | 3 |  |
+| `Die` | Integer / Object | Applies or references the 'Die' effect/state. | 1 |  |
 
 </details>
 
@@ -11912,7 +11912,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Marked`](./Arrays.md#array-marked) | Number | Applies or references the 'Marked' effect/state. | 1 |  |
+| [`Marked`](./Arrays.md#array-marked) | Array / Integer / Object | Applies or references the 'Marked' effect/state. | 1 |  |
 
 </details>
 
@@ -11932,7 +11932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 1 |  |
+| `ForceMoveTowards` | Integer | Applies or references the 'ForceMoveTowards' effect/state. | 1 |  |
 
 </details>
 
@@ -11972,8 +11972,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | Spawns a specific physics/item object upon impact. | 2 |  |
-| `SpawnBearTrap` | Number | Applies or references the 'SpawnBearTrap' effect/state. | 2 |  |
+| [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum / Object | Spawns a specific physics/item object upon impact. | 2 |  |
+| `SpawnBearTrap` | Integer | Applies or references the 'SpawnBearTrap' effect/state. | 2 |  |
 
 </details>
 
@@ -11994,9 +11994,9 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `enemies_only` | Boolean | If true, the arc will not bounce to friendly targets. | 4 |  |
-| `max_distance` | Number | The maximum tile range the lightning can jump between bounces. | 4 |  |
-| `stacks` | Number | The maximum number of targets the lightning can bounce to. | 4 |  |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
+| `max_distance` | Integer | The maximum tile range the lightning can jump between bounces. | 4 |  |
+| `stacks` | Enum / Integer | The maximum number of targets the lightning can bounce to. | 4 |  |
+| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
 | `ignore_self` | Boolean | If true, prevents the arc from bouncing back to the caster. | 1 |  |
 
 </details>
@@ -12014,7 +12014,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Attraction` | Number | Applies or references the | 6 |  |
+| `Attraction` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12032,7 +12032,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AvoidDamagingCharmedEnemies` | Number | Applies or references the | 2 |  |
+| `AvoidDamagingCharmedEnemies` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12050,7 +12050,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BackstabAllDirections` | Number | Applies or references the | 8 |  |
+| `BackstabAllDirections` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12086,7 +12086,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BasicAttackCantMiss` | Number | Applies or references the | 2 |  |
+| `BasicAttackCantMiss` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12104,7 +12104,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BearTrapTrail` | Number | Applies or references the | 4 |  |
+| `BearTrapTrail` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12122,7 +12122,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlackHolePassive` | Number | Applies or references the | 2 |  |
+| `BlackHolePassive` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12140,7 +12140,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlackHoleSuck` | Number | Applies or references the | 2 |  |
+| `BlackHoleSuck` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12158,7 +12158,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlessingOfPeace` | Number | Applies or references the | 2 |  |
+| `BlessingOfPeace` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12194,7 +12194,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BloodRain` | Number | Applies or references the | 2 |  |
+| `BloodRain` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12212,7 +12212,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bloodzerked` | Number | Applies or references the | 2 |  |
+| `Bloodzerked` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12234,7 +12234,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to use when intercepting (e.g., BodyGuardSwap). | 730 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 2 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 |  |
 
 </details>
 
@@ -12251,7 +12251,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BombBehavior` | Number | Applies or references the | 2 |  |
+| `BombBehavior` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12269,7 +12269,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BombRatTurtle` | Number | Applies or references the | 2 |  |
+| `BombRatTurtle` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12287,7 +12287,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BoneArmorPassive` | Number | Applies or references the | 6 |  |
+| `BoneArmorPassive` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12305,7 +12305,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BounceRock`](./Arrays.md#array-bouncerock) | Array | Examples: `SmallRock, SmallLavaRock, [ 1 .2 ]` | 12 |  |
+| [`BounceRock`](./Arrays.md#array-bouncerock) | Array / Enum | Examples: `SmallRock, SmallLavaRock, [ 1 .2 ]` | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12323,7 +12323,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bound` | Number | Applies or references the | 4 |  |
+| `Bound` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12341,7 +12341,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BreakAtAux` | Number | Applies or references the | 8 |  |
+| `BreakAtAux` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12395,7 +12395,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Brittle` | Number | Applies or references the | 48 |  |
+| `Brittle` | Integer | Applies or references the | 48 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12442,7 +12442,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
 | `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 2 |  |
-| `health_threshold` | Number | Examples: `50, 70` | 2 |  |
+| `health_threshold` | Integer | Examples: `50, 70` | 2 |  |
 | [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | `bungawarrior`, `finalboss_clonecat` | 2 |  |
 
 </details>
@@ -12481,12 +12481,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 10 |  |
+| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum / Object | Spawns a specific character or entity upon impact. | 10 |  |
 | [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 4 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |  |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 3 |  |
-| `GetAggroTarget` | Number | Applies or references the 'GetAggroTarget' effect/state. | 2 |  |
-| `PreventDeathTransforms` | Number | Applies or references the 'PreventDeathTransforms' effect/state. | 1 |  |
+| `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 3 |  |
+| `GetAggroTarget` | Integer | Applies or references the 'GetAggroTarget' effect/state. | 2 |  |
+| `PreventDeathTransforms` | Integer | Applies or references the 'PreventDeathTransforms' effect/state. | 1 |  |
 | [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 |  |
 
 </details>
@@ -12504,7 +12504,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array | Examples: `[ TumorousMaggot ChargeyMaggot SwappyMaggot ], Hyde, [ Lumpy Leaper ]` | 6 |  |
+| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array / Enum | Examples: `[ TumorousMaggot ChargeyMaggot SwappyMaggot ], Hyde, [ Lumpy Leaper ]` | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12522,7 +12522,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CancelPrimedAbilities` | Number | Applies or references the | 4 |  |
+| `CancelPrimedAbilities` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12540,7 +12540,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CanceledQueuedInput` | Number | Applies or references the | 2 |  |
+| `CanceledQueuedInput` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12558,7 +12558,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CantCatchDiseases` | Number | Applies or references the | 6 |  |
+| `CantCatchDiseases` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12576,7 +12576,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CatchBoomerang` | Number | Applies or references the | 8 |  |
+| `CatchBoomerang` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12597,9 +12597,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
-| [`count`](./Arrays.md#array-count) | Number | The numerical quantity. | 3 |  |
+| [`count`](./Arrays.md#array-count) | Array / Integer | The numerical quantity. | 3 |  |
 
 </details>
 
@@ -12616,7 +12616,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CaveWomanBirthControl` | Number | Applies or references the | 2 |  |
+| `CaveWomanBirthControl` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12655,7 +12655,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChanceToAmbush` | Number | Applies or references the | 2 |  |
+| `ChanceToAmbush` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12678,7 +12678,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ability triggered upon successfully breaking free. | 730 |  |
 | [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | The ability triggered if the break free attempt fails. | 3 |  |
-| `stacks` | Number | Percentage base chance to break free. | 3 |  |
+| `stacks` | Enum / Integer | Percentage base chance to break free. | 3 |  |
 
 </details>
 
@@ -12695,7 +12695,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChanceToDisableActionsIfNotCharmed` | Number | Applies or references the | 4 |  |
+| `ChanceToDisableActionsIfNotCharmed` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12808,7 +12808,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`color`](./Arrays.md#array-color) | Array | `black`, `gray`, `white` | 10 |  |
 | [`glow`](./Arrays.md#array-glow) | Array | Examples: `[ .7 .8 .9 .5 ], [ .3 .7 1 .5 ], [ 1 1 1 .5 ]` | 8 |  |
-| [`size`](./Enums.md#enum-size) | Number | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` | 3 |  |
+| [`size`](./Enums.md#enum-size) | Enum / Number | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` | 3 |  |
 
 </details>
 
@@ -12843,7 +12843,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ClearStarving` | Number | Applies or references the | 12 |  |
+| `ClearStarving` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12861,7 +12861,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CloneWeaponTemp` | Number | Applies or references the | 2 |  |
+| `CloneWeaponTemp` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12915,7 +12915,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CollideWithThrowTarget` | Number | Applies or references the | 4 |  |
+| `CollideWithThrowTarget` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12951,7 +12951,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ConjureRandomAbilityFromCat` | Number | Applies or references the | 4 |  |
+| `ConjureRandomAbilityFromCat` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12975,10 +12975,10 @@
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 13 |  |
 | `force_contact` | Boolean | If true, enforces physical overlap. | 11 |  |
 | `instant` | Boolean | Examples: `true` | 8 |  |
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Enum | If true, treats the consumption as riding/mounting instead of eating. | 8 |  |
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | If true, treats the consumption as riding/mounting instead of eating. | 8 |  |
 | `wet` | Boolean | Examples: `false, true` | 8 |  |
 | `do_not_pop_corpse` | Boolean | Examples: `true` | 7 |  |
-| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Enum | Examples: `false, true, deferred` | 7 |  |
+| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Examples: `false, true, deferred` | 7 |  |
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 |  |
 | [`extra_statuses`](./Abilities_and_Spells.md#context-extra_statuses) | Object | Additional generic status applications. | 3 |  |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |  |
@@ -13000,7 +13000,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CopyBasicAttackEffects` | Number | Applies or references the | 8 |  |
+| `CopyBasicAttackEffects` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13018,7 +13018,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CopyCatPassive_Initializer` | Number | Applies or references the | 4 |  |
+| `CopyCatPassive_Initializer` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13036,7 +13036,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CopyPassiveSlot` | Number | Applies or references the | 6 |  |
+| `CopyPassiveSlot` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13057,7 +13057,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 | `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 1 |  |
 
 </details>
@@ -13075,7 +13075,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CorpseVaporizer` | Number | Applies or references the | 6 |  |
+| `CorpseVaporizer` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13093,7 +13093,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CountAsCorpse` | Number | Applies or references the | 8 |  |
+| `CountAsCorpse` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13114,7 +13114,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BloodRain` | Number | Applies or references the 'BloodRain' effect/state. | 2 |  |
+| `BloodRain` | Integer / Object | Applies or references the 'BloodRain' effect/state. | 2 |  |
 | [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 2 |  |
 
 </details>
@@ -13132,7 +13132,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CrowAttackLink` | Number | Applies or references the | 2 |  |
+| `CrowAttackLink` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13153,7 +13153,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Examples: `1` | 1 |  |
+| `stacks` | Enum / Integer | Examples: `1` | 1 |  |
 | [`TakeBonusTurnWithAIControl`](./Miscellaneous.md#context-takebonusturnwithaicontrol) | Object | Examples: `{ ... }` | 1 |  |
 
 </details>
@@ -13207,7 +13207,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DecoySwapper` | Number | Applies or references the | 2 |  |
+| `DecoySwapper` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13225,7 +13225,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeferVaporize` | Number | Applies or references the | 18 |  |
+| `DeferVaporize` | Integer | Applies or references the | 18 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13283,7 +13283,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteObject` | Number | Applies or references the | 14 |  |
+| `DeleteObject` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13301,7 +13301,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteTraps` | Number | Applies or references the | 2 |  |
+| `DeleteTraps` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13319,7 +13319,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyphFrames` | Number | Applies or references the | 4 |  |
+| `DemonicGlyphFrames` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13337,7 +13337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bite` | Number | Applies or references the | 2 |  |
+| `DemonicGlyph_Bite` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13355,7 +13355,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bounce` | Number | Applies or references the | 2 |  |
+| `DemonicGlyph_Bounce` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13373,7 +13373,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Fire` | Number | Applies or references the | 2 |  |
+| `DemonicGlyph_Fire` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13395,7 +13395,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
-| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 1 |  |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum | The item pool to draw the parasite from. | 1 |  |
 
 </details>
 
@@ -13412,7 +13412,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyNeckArmor` | Number | Applies or references the | 2 |  |
+| `DestroyNeckArmor` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13430,7 +13430,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyTrinket` | Number | Applies or references the | 10 |  |
+| `DestroyTrinket` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13448,7 +13448,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyWeapon` | Number | Applies or references the | 6 |  |
+| `DestroyWeapon` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13466,7 +13466,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyWeaponThrow` | Number | Applies or references the | 6 |  |
+| `DestroyWeaponThrow` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13487,8 +13487,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dice_size` | Number | Examples: `6` | 1 |  |
-| `knockback_damage` | Number | Examples: `5` | 1 |  |
+| `dice_size` | Integer | Examples: `6` | 1 |  |
+| `knockback_damage` | Integer | Examples: `5` | 1 |  |
 
 </details>
 
@@ -13544,7 +13544,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieViaAbilityInternally` | Number | Applies or references the | 4 |  |
+| `DieViaAbilityInternally` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13562,7 +13562,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieViolently` | Number | Applies or references the | 8 |  |
+| `DieViolently` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13583,7 +13583,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
 | `instant` | Boolean | Examples: `true` | 1 |  |
 
 </details>
@@ -13657,7 +13657,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisablePassiveSlot` | Number | Applies or references the | 4 |  |
+| `DisablePassiveSlot` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13675,7 +13675,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisableSpells` | Number | Applies or references the | 2 |  |
+| `DisableSpells` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13693,7 +13693,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisableWeapon` | Number | Applies or references the | 2 |  |
+| `DisableWeapon` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13711,7 +13711,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Disguised` | Number | Applies or references the | 4 |  |
+| `Disguised` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13747,7 +13747,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DissolveRandomArmorPiece` | Number | Applies or references the | 2 |  |
+| `DissolveRandomArmorPiece` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13765,7 +13765,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DissuadeInstakills` | Number | Applies or references the | 4 |  |
+| `DissuadeInstakills` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13786,7 +13786,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `intensity` | Number | Examples: `3, 20, 10` | 10 |  |
+| `intensity` | Integer | Examples: `3, 20, 10` | 10 |  |
 | `time` | Mixed | Examples: `.75, .5, 2` | 10 |  |
 
 </details>
@@ -13804,7 +13804,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCast` | Number | Applies or references the | 2 |  |
+| `DoubleCast` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13840,7 +13840,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DrainAllyCatsForFleshGolem` | Number | Applies or references the | 2 |  |
+| `DrainAllyCatsForFleshGolem` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13858,7 +13858,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DrinkWater` | Number | Applies or references the | 2 |  |
+| `DrinkWater` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13876,7 +13876,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Drowsy` | Number | Applies or references the | 15 |  |
+| `Drowsy` | Integer | Applies or references the | 15 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13894,7 +13894,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DustCloudBehavior` | Number | Applies or references the | 2 |  |
+| `DustCloudBehavior` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13912,7 +13912,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Dybbuk1HPTracker` | Number | Applies or references the | 2 |  |
+| `Dybbuk1HPTracker` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13951,7 +13951,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ElectricArcs` | Number | Applies or references the | 2 |  |
+| `ElectricArcs` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13987,7 +13987,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EmptyMind` | Number | Applies or references the | 2 |  |
+| `EmptyMind` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14023,7 +14023,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EndTurn` | Number | Applies or references the | 28 |  |
+| `EndTurn` | Integer | Applies or references the | 28 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14041,7 +14041,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Enlarge` | Number | Applies or references the | 2 |  |
+| `Enlarge` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14077,7 +14077,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EventBounterHunterPassive` | Number | Applies or references the | 2 |  |
+| `EventBounterHunterPassive` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14095,7 +14095,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EventBounty` | Number | Applies or references the | 2 |  |
+| `EventBounty` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14117,7 +14117,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 13 |  |
-| [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw the parasite from. | 1 |  |
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | The item pool to draw the parasite from. | 1 |  |
 
 </details>
 
@@ -14152,7 +14152,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter` | Number | Applies or references the | 4 |  |
+| `ExplodeCharacter` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14170,7 +14170,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_DeathBloom` | Number | Applies or references the | 2 |  |
+| `ExplodeCharacter_DeathBloom` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14188,7 +14188,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_DeathBloom2` | Number | Applies or references the | 2 |  |
+| `ExplodeCharacter_DeathBloom2` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14206,7 +14206,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_NoDie` | Number | Applies or references the | 4 |  |
+| `ExplodeCharacter_NoDie` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14224,7 +14224,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_Party` | Number | Applies or references the | 2 |  |
+| `ExplodeCharacter_Party` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14242,7 +14242,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_RockCrusher` | Number | Applies or references the | 4 |  |
+| `ExplodeCharacter_RockCrusher` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14260,7 +14260,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Number | Applies or references the | 4 |  |
+| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14278,7 +14278,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplosionIfHitSomething` | Number | Applies or references the | 8 |  |
+| `ExplosionIfHitSomething` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14296,7 +14296,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExtraDispersedTurns` | Number | Applies or references the | 8 |  |
+| `ExtraDispersedTurns` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14332,7 +14332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FaceCamera` | Number | Applies or references the | 10 |  |
+| `FaceCamera` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14350,7 +14350,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FactionDisguiseSource` | Number | Applies or references the | 2 |  |
+| `FactionDisguiseSource` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14368,7 +14368,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FadeInsteadOfDie` | Number | Applies or references the | 20 |  |
+| `FadeInsteadOfDie` | Integer | Applies or references the | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14386,7 +14386,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FireArmor2` | Number | Applies or references the | 2 |  |
+| `FireArmor2` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14440,7 +14440,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Flammable` | Number | Applies or references the | 26 |  |
+| `Flammable` | Integer | Applies or references the | 26 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14458,7 +14458,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FloatingRockTrap` | Number | Applies or references the | 13 |  |
+| `FloatingRockTrap` | Integer | Applies or references the | 13 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14494,7 +14494,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlySwarm` | Number | Examples: `50` | 5 |  |
+| `FlySwarm` | Object | Examples: `50` | 5 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14530,7 +14530,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fragile` | Number | Applies or references the | 6 |  |
+| `Fragile` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14548,7 +14548,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FrankBolts` | Number | Applies or references the | 2 |  |
+| `FrankBolts` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14566,7 +14566,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FreeFirstCast` | Number | Applies or references the | 12 |  |
+| `FreeFirstCast` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14584,7 +14584,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FreeFirstCastEachMatch` | Number | Applies or references the | 2 |  |
+| `FreeFirstCastEachMatch` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14623,8 +14623,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0) of executing this action. | 1 |  |
-| [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw the parasite from. | 1 |  |
+| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0) of executing this action. | 1 |  |
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | The item pool to draw the parasite from. | 1 |  |
 
 </details>
 
@@ -14659,7 +14659,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GasCanBehavior` | Number | Applies or references the | 2 |  |
+| `GasCanBehavior` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14677,7 +14677,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GasCloudBehavior2` | Number | Applies or references the | 2 |  |
+| `GasCloudBehavior2` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14695,7 +14695,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GeminiTwin` | Number | Applies or references the | 2 |  |
+| `GeminiTwin` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14713,7 +14713,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GenericBuff` | Number | Applies or references the | 4 |  |
+| `GenericBuff` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14731,7 +14731,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GenericDebuff` | Number | Applies or references the | 30 |  |
+| `GenericDebuff` | Integer | Applies or references the | 30 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14749,7 +14749,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GetAggroTarget` | Number | Applies or references the | 4 |  |
+| `GetAggroTarget` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14767,7 +14767,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GiveBoundItemToTarget` | Number | Applies or references the | 2 |  |
+| `GiveBoundItemToTarget` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14785,7 +14785,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalEnemyAutoRevive` | Number | Applies or references the | 4 |  |
+| `GlobalEnemyAutoRevive` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14803,7 +14803,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GoopWalk` | Number | Applies or references the | 4 |  |
+| `GoopWalk` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14821,7 +14821,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Grappled`](./Arrays.md#array-grappled) | Number | Examples: `1, [ 1 .75 ], [ 1 .50 ]` | 16 |  |
+| [`Grappled`](./Arrays.md#array-grappled) | Array / Integer | Examples: `1, [ 1 .75 ], [ 1 .50 ]` | 16 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14842,7 +14842,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |  |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 |  |
 | [`exit_animations`](./Characters_and_Bosses.md#context-exit_animations) | Object | Animations played when leaving a form/state. | 1 |  |
 
 </details>
@@ -14878,7 +14878,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GuillotinaDeathHead` | Number | Applies or references the | 2 |  |
+| `GuillotinaDeathHead` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14932,7 +14932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HeavyHits` | Number | Applies or references the | 2 |  |
+| `HeavyHits` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14950,7 +14950,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Hex` | Number | Applies or references the | 8 |  |
+| `Hex` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14968,7 +14968,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HiddenDoomed` | Number | Applies or references the | 2 |  |
+| `HiddenDoomed` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15004,7 +15004,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HideSomeHudStuff` | Number | Applies or references the | 2 |  |
+| `HideSomeHudStuff` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15025,9 +15025,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |  |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 |  |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
-| `threshold` | Number | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 1 |  |
+| `threshold` | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 1 |  |
 
 </details>
 
@@ -15044,7 +15044,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreDebuffs` | Number | Applies or references the | 2 |  |
+| `IgnoreDebuffs` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15080,7 +15080,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IllusionTint` | Number | Applies or references the | 6 |  |
+| `IllusionTint` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15155,7 +15155,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ImmobilePassive` | Number | Applies or references the | 4 |  |
+| `ImmobilePassive` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15191,7 +15191,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InsertIntoBackgroundPlaceholder` | Number | Applies or references the | 2 |  |
+| `InsertIntoBackgroundPlaceholder` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15209,7 +15209,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Instakill`](./Arrays.md#array-instakill) | Number | Applies or references the | 24 |  |
+| [`Instakill`](./Arrays.md#array-instakill) | Integer | Applies or references the | 24 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15227,7 +15227,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InterchangeDisabler` | Number | Applies or references the | 2 |  |
+| `InterchangeDisabler` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15245,7 +15245,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `JohnnyCriesForWashers` | Number | Applies or references the | 4 |  |
+| `JohnnyCriesForWashers` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15413,7 +15413,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `LaunchOffScreenInstakill` | Number | Applies or references the | 2 |  |
+| `LaunchOffScreenInstakill` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15434,7 +15434,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn. | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID to spawn. | 545 |  |
 
 </details>
 
@@ -15491,7 +15491,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`amount`](./Arrays.md#array-amount) | Array | The target opacity/dimness level. | 8 |  |
-| [`speed`](./Arrays.md#array-speed) | Number | The transition speed. | 6 |  |
+| [`speed`](./Arrays.md#array-speed) | Array / Number | The transition speed. | 6 |  |
 
 </details>
 
@@ -15508,7 +15508,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MakeBasicAttackPull` | Number | Applies or references the | 2 |  |
+| `MakeBasicAttackPull` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15526,7 +15526,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MakeWeaponUnbreakable` | Number | Applies or references the | 2 |  |
+| `MakeWeaponUnbreakable` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15544,7 +15544,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MamaCatAnimations` | Number | Applies or references the | 4 |  |
+| `MamaCatAnimations` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15562,7 +15562,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ManglerAttack` | Number | Applies or references the | 2 |  |
+| `ManglerAttack` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15616,7 +15616,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MassAttackThis` | Number | Applies or references the | 2 |  |
+| `MassAttackThis` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15637,8 +15637,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Number of stacks or intensity to apply. | 2 |  |
-| [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 2 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 |  |
+| [`Stun`](./Arrays.md#array-stun) | Array / Integer | Applies or references the 'Stun' effect/state. | 2 |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |  |
 
 </details>
@@ -15656,7 +15656,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Meaty` | Number | Applies or references the | 2 |  |
+| `Meaty` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15714,7 +15714,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array | Examples: `[ BatteryNuke WeAreOne Metronome SmartMetronome BecomeEnt...` | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -15731,7 +15731,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MimicMetronome` | Number | Applies or references the | 2 |  |
+| `MimicMetronome` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15749,7 +15749,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ModelingClayPassive` | Number | Applies or references the | 2 |  |
+| `ModelingClayPassive` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15788,7 +15788,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MonkStanceSwitch` | Number | Applies or references the | 10 |  |
+| `MonkStanceSwitch` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15909,7 +15909,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MuteDemonicGlyphDisplay` | Number | Applies or references the | 2 |  |
+| `MuteDemonicGlyphDisplay` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15927,7 +15927,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Muted` | Number | Applies or references the | 2 |  |
+| `Muted` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15945,7 +15945,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextPlayerCatTakesExtraTurn` | Number | Applies or references the | 2 |  |
+| `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15963,7 +15963,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NoCorpses` | Number | Applies or references the | 4 |  |
+| `NoCorpses` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15984,7 +15984,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 |  |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |  |
 
 </details>
@@ -16002,7 +16002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Ostracized` | Number | Applies or references the | 6 |  |
+| `Ostracized` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16020,7 +16020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PackHunting` | Number | Applies or references the | 2 |  |
+| `PackHunting` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16038,7 +16038,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PartialPurge` | Number | Applies or references the | 20 |  |
+| `PartialPurge` | Integer | Applies or references the | 20 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16080,7 +16080,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Brace` | Number | Applies or references the 'Brace' effect/state. | 20 |  |
+| `Brace` | Enum / Integer / Object | Applies or references the 'Brace' effect/state. | 20 |  |
 
 </details>
 
@@ -16137,7 +16137,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentCharisma` | Number | Applies or references the | 5 |  |
+| `PermanentCharisma` | Integer | Applies or references the | 5 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16173,7 +16173,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentLuck` | Number | Applies or references the | 5 |  |
+| `PermanentLuck` | Integer | Applies or references the | 5 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16209,7 +16209,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PhysicalAttacksMiss` | Number | Applies or references the | 2 |  |
+| `PhysicalAttacksMiss` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16227,7 +16227,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Plant` | Number | Applies or references the | 18 |  |
+| `Plant` | Integer | Applies or references the | 18 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16245,7 +16245,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PlayBackground` | Number | Applies or references the | 10 |  |
+| `PlayBackground` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16263,7 +16263,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PoisonLace` | Number | Examples: `"X/5", 1, "X/3"` | 2 |  |
+| `PoisonLace` | Integer / Object / String | Examples: `"X/5", 1, "X/3"` | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16284,7 +16284,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | An array of ability IDs to randomly choose from. | 1 |  |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum | An array of ability IDs to randomly choose from. | 1 |  |
 
 </details>
 
@@ -16301,7 +16301,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Possessed` | Number | Applies or references the | 6 |  |
+| `Possessed` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16337,7 +16337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeAggroTarget` | Number | Applies or references the | 4 |  |
+| `PrioritizeAggroTarget` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16355,7 +16355,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeFarAwayTargets` | Number | Applies or references the | 8 |  |
+| `PrioritizeFarAwayTargets` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16373,7 +16373,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeHitDifferentTargets` | Number | Applies or references the | 6 |  |
+| `PrioritizeHitDifferentTargets` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16391,7 +16391,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizePlayerCats` | Number | Applies or references the | 4 |  |
+| `PrioritizePlayerCats` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16409,7 +16409,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeWeakestEnemy` | Number | Applies or references the | 4 |  |
+| `PrioritizeWeakestEnemy` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16427,7 +16427,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ProbeCharmed` | Number | Applies or references the | 4 |  |
+| `ProbeCharmed` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16445,7 +16445,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PullSourceToTarget` | Number | Applies or references the | 8 |  |
+| `PullSourceToTarget` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16463,7 +16463,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PurgeAll` | Number | Applies or references the | 22 |  |
+| `PurgeAll` | Integer | Applies or references the | 22 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16484,7 +16484,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`radius`](./Arrays.md#array-radius) | Number | The tile radius of the quake. | 2 |  |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | The tile radius of the quake. | 2 |  |
 | [`chance`](./Enums.md#enum-chance) | Number | Probability of triggering the quake. | 1 |  |
 
 </details>
@@ -16592,7 +16592,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RealTimePressure` | Number | Applies or references the | 2 |  |
+| `RealTimePressure` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16610,7 +16610,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReclaimItemOnBreak` | Number | Applies or references the | 2 |  |
+| `ReclaimItemOnBreak` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16631,7 +16631,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](./Arrays.md#array-self_damage) | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
+| [`self_damage`](./Arrays.md#array-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |  |
 
 </details>
 
@@ -16652,7 +16652,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`text`](./Strings.md#string-text) | String | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` | 13 |  |
-| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |  |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 |  |
 
 </details>
 
@@ -16669,7 +16669,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshItemAbilities` | Number | Applies or references the | 2 |  |
+| `RefreshItemAbilities` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16687,7 +16687,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshOncePerFightAbilities` | Number | Applies or references the | 2 |  |
+| `RefreshOncePerFightAbilities` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16705,7 +16705,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshWeaponAbility` | Number | Applies or references the | 8 |  |
+| `RefreshWeaponAbility` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16723,7 +16723,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Regurge` | Number | Applies or references the | 2 |  |
+| `Regurge` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16741,7 +16741,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnAllyCatDies` | Number | Applies or references the | 2 |  |
+| `ReloadOnAllyCatDies` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16759,7 +16759,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnAllyDies` | Number | Applies or references the | 2 |  |
+| `ReloadOnAllyDies` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16777,7 +16777,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnBackstab` | Number | Applies or references the | 2 |  |
+| `ReloadOnBackstab` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16795,7 +16795,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairAll` | Number | Applies or references the | 10 |  |
+| `RepairAll` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16813,7 +16813,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairAllCondition` | Number | Applies or references the | 2 |  |
+| `RepairAllCondition` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16831,7 +16831,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairArmorCondition` | Number | Applies or references the | 4 |  |
+| `RepairArmorCondition` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16849,7 +16849,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairTrinket` | Number | Applies or references the | 12 |  |
+| `RepairTrinket` | Integer | Applies or references the | 12 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16889,7 +16889,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The new ability ID to insert. | 730 |  |
-| [`slot`](./Enums.md#enum-slot) | Number | The spell slot index to replace. | 4 |  |
+| [`slot`](./Enums.md#enum-slot) | Enum / Integer | The spell slot index to replace. | 4 |  |
 
 </details>
 
@@ -16906,7 +16906,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RerollEnemy` | Number | Applies or references the | 2 |  |
+| `RerollEnemy` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16924,7 +16924,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReturnDinoLegs` | Number | Applies or references the | 2 |  |
+| `ReturnDinoLegs` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16945,11 +16945,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |  |
-| `revive_health` | Number | The flat amount of health to revive with. | 3 |  |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 2 |  |
-| [`DivineShield`](./Arrays.md#array-divineshield) | Number | Applies or references the 'DivineShield' effect/state. | 1 |  |
+| `Shield` | Enum / Integer | Applies or references the 'Shield' effect/state. | 422 |  |
+| `revive_health` | Integer | The flat amount of health to revive with. | 3 |  |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 2 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 |  |
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 1 |  |
 
 </details>
 
@@ -16966,7 +16966,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RockyArmorPassive` | Number | Applies or references the | 6 |  |
+| `RockyArmorPassive` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17002,7 +17002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SafeDie` | Number | Applies or references the | 14 |  |
+| `SafeDie` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17020,7 +17020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Sandstorm` | Number | Examples: `1` | 2 |  |
+| `Sandstorm` | Object | Examples: `1` | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17041,7 +17041,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](./Enums.md#enum-default) | Enum | Baseline configuration. | 199 |  |
+| [`default`](./Enums.md#enum-default) | Enum / Object | Baseline configuration. | 199 |  |
 | [`thresholds`](./Arrays.md#array-thresholds) | Array | Examples: `[ [ 1 0 ]` | 1 |  |
 
 </details>
@@ -17059,7 +17059,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SchizoIllusionAIModifier` | Number | Applies or references the | 2 |  |
+| `SchizoIllusionAIModifier` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17077,7 +17077,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ScrambleEverything` | Number | Applies or references the | 4 |  |
+| `ScrambleEverything` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17115,7 +17115,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Scrambled` | Number | Applies or references the | 4 |  |
+| `Scrambled` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17133,7 +17133,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SelfStun`](./Arrays.md#array-selfstun) | Array | Applies or references the | 4 |  |
+| [`SelfStun`](./Arrays.md#array-selfstun) | Array / Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17151,7 +17151,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SendRock` | Number | Applies or references the | 8 |  |
+| `SendRock` | Integer | Applies or references the | 8 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17169,7 +17169,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SerratedClaws` | Number | Applies or references the | 2 |  |
+| `SerratedClaws` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17211,7 +17211,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Arrays.md#array-weights) | Array | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 3 |  |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 3 |  |
 
 </details>
 
@@ -17250,7 +17250,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`value`](./Math_Equations.md) | Equation | `cha`, `con`, `dex`, `int`, `item_aux+1` | 485 |  |
-| [`slot`](./Enums.md#enum-slot) | Enum | Equipment slot (weapon, hat, face, chest, etc.). | 3 |  |
+| [`slot`](./Enums.md#enum-slot) | Enum / Integer | Equipment slot (weapon, hat, face, chest, etc.). | 3 |  |
 
 </details>
 
@@ -17267,7 +17267,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SharkySmellsBlood` | Number | Applies or references the | 10 |  |
+| `SharkySmellsBlood` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17285,7 +17285,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shatter` | Number | Applies or references the | 4 |  |
+| `Shatter` | Integer / Object | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17303,7 +17303,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShootHereCommand` | Number | Applies or references the | 2 |  |
+| `ShootHereCommand` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17321,7 +17321,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShootHereReceiver` | Number | Applies or references the | 2 |  |
+| `ShootHereReceiver` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17339,7 +17339,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShortCircuit` | Number | Applies or references the | 2 |  |
+| `ShortCircuit` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17378,8 +17378,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pop_chance` | Number | Examples: `50` | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `pop_chance` | Integer | Examples: `50` | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -17399,10 +17399,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SlotResult_Explode` | Number | Applies or references the 'SlotResult_Explode' effect/state. | 2 |  |
-| `SlotResult_Jackpot_Coins` | Number | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 2 |  |
-| `SlotResult_Nothing` | Number | Applies or references the 'SlotResult_Nothing' effect/state. | 1 |  |
-| `SlotResult_RandomPickup` | Number | Applies or references the 'SlotResult_RandomPickup' effect/state. | 1 |  |
+| `SlotResult_Explode` | Integer / Object | Applies or references the 'SlotResult_Explode' effect/state. | 2 |  |
+| `SlotResult_Jackpot_Coins` | Integer / Object | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 2 |  |
+| `SlotResult_Nothing` | Integer / Object | Applies or references the 'SlotResult_Nothing' effect/state. | 1 |  |
+| `SlotResult_RandomPickup` | Integer / Object | Applies or references the 'SlotResult_RandomPickup' effect/state. | 1 |  |
 
 </details>
 
@@ -17419,7 +17419,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SmallHitExplosion` | Number | Applies or references the | 2 |  |
+| `SmallHitExplosion` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17440,7 +17440,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 | `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 1 |  |
 
 </details>
@@ -17458,7 +17458,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SmellBlood` | Number | Applies or references the | 2 |  |
+| `SmellBlood` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17504,7 +17504,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`effects`](./Miscellaneous.md#context-effects) | Object | Examples: `{ ... }` | 62 |  |
-| [`damage`](./Arrays.md#array-damage) | Number | Examples: `5` | 2 |  |
+| [`damage`](./Arrays.md#array-damage) | Enum / Integer / Object | Examples: `5` | 2 |  |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ]` | 1 |  |
 
 </details>
@@ -17581,12 +17581,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Normal` | Number | Character Form: Behavior and stats for the 'Normal' state. | 24 |  |
-| `Fire` | Number | Character Form: Behavior and stats for the 'Fire' state. | 6 |  |
-| `FireFull` | Number | Character Form: Behavior and stats for the 'FireFull' state. | 1 |  |
-| `NormalFull` | Number | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |  |
-| `Tar` | Number | Character Form: Behavior and stats for the 'Tar' state. | 1 |  |
-| `TarFull` | Number | Character Form: Behavior and stats for the 'TarFull' state. | 1 |  |
+| `Normal` | Integer / Object | Character Form: Behavior and stats for the 'Normal' state. | 24 |  |
+| `Fire` | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 6 |  |
+| `FireFull` | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 |  |
+| `NormalFull` | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |  |
+| `Tar` | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 1 |  |
+| `TarFull` | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 |  |
 
 </details>
 
@@ -17603,7 +17603,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpiderInfested` | Number | Applies or references the | 18 |  |
+| `SpiderInfested` | Integer | Applies or references the | 18 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17621,7 +17621,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpitConsumed` | Number | Applies or references the | 2 |  |
+| `SpitConsumed` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17639,7 +17639,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpreadWater` | Number | Applies or references the | 2 |  |
+| `SpreadWater` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17661,7 +17661,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` | 3 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 3 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 |  |
 
 </details>
 
@@ -17678,7 +17678,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StackingSandstorm` | Number | Applies or references the | 3 |  |
+| `StackingSandstorm` | Integer | Applies or references the | 3 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17696,7 +17696,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StanceSwitchToMelee` | Number | Applies or references the | 6 |  |
+| `StanceSwitchToMelee` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17714,7 +17714,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StartDead` | Number | Applies or references the | 2 |  |
+| `StartDead` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17732,7 +17732,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StartOffMap` | Number | Applies or references the | 10 |  |
+| `StartOffMap` | Integer | Applies or references the | 10 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17750,7 +17750,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StevenBolts` | Number | Applies or references the | 2 |  |
+| `StevenBolts` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17768,7 +17768,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SurviveAt1HP` | Number | Applies or references the | 4 |  |
+| `SurviveAt1HP` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17786,7 +17786,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SwallowSmallCharacter` | Number | Applies or references the | 4 |  |
+| `SwallowSmallCharacter` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17807,7 +17807,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | An array of weapon item IDs to draw from. | 1 |  |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum | An array of weapon item IDs to draw from. | 1 |  |
 
 </details>
 
@@ -17829,7 +17829,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`new_layer`](./Enums.md#enum-new_layer) | Enum | The specific audio layer to transition to (e.g., map, battle). | 6 |  |
 | [`new_song`](./Enums.md#enum-new_song) | Enum | The ID of the new music track. | 5 |  |
-| `crossfade_speed` | Number | Examples: `1` | 1 |  |
+| `crossfade_speed` | Integer | Examples: `1` | 1 |  |
 
 </details>
 
@@ -17846,7 +17846,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Switcheroo` | Number | Applies or references the | 2 |  |
+| `Switcheroo` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17864,7 +17864,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `T2CopyCat` | Number | Applies or references the | 2 |  |
+| `T2CopyCat` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17882,7 +17882,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TVBotDisableAttack` | Number | Applies or references the | 2 |  |
+| `TVBotDisableAttack` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17900,7 +17900,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TVBotDisableSpells` | Number | Applies or references the | 2 |  |
+| `TVBotDisableSpells` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17921,12 +17921,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Die` | Number | Character Form / Logic: Forces the character to die. | 1 |  |
-| `Dumb` | Number | AI Profile: A simplified, less optimal decision-making profile. | 1 |  |
-| `Fuck` | Number | Applies or references the 'Fuck' effect/state. | 1 |  |
-| `Obey` | Number | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |  |
-| `Shit` | Number | Applies or references the 'Shit' effect/state. | 1 |  |
-| `Stop` | Number | AI Movement: Forces the character to cease movement. | 1 |  |
+| `Die` | Integer / Object | Character Form / Logic: Forces the character to die. | 1 |  |
+| `Dumb` | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 1 |  |
+| `Fuck` | Integer | Applies or references the 'Fuck' effect/state. | 1 |  |
+| `Obey` | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |  |
+| `Shit` | Integer | Applies or references the 'Shit' effect/state. | 1 |  |
+| `Stop` | Integer / Object | AI Movement: Forces the character to cease movement. | 1 |  |
 
 </details>
 
@@ -17979,7 +17979,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TakeExtraTurnEndOfRound` | Number | Applies or references the | 2 |  |
+| `TakeExtraTurnEndOfRound` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17997,7 +17997,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Tall` | Number | Applies or references the | 2 |  |
+| `Tall` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18019,7 +18019,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alt_art`](./Enums.md#enum-alt_art) | Enum | The alternative sprite art to use while tangled. | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -18036,7 +18036,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TargetedMetronome` | Number | Applies or references the | 2 |  |
+| `TargetedMetronome` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18054,7 +18054,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Taunting` | Number | Applies or references the | 2 |  |
+| `Taunting` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18110,7 +18110,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstab` | Number | Applies or references the | 2 |  |
+| `TempBackstab` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18128,7 +18128,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstabBleed` | Number | Applies or references the | 2 |  |
+| `TempBackstabBleed` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18146,7 +18146,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstabPiercing` | Number | Applies or references the | 2 |  |
+| `TempBackstabPiercing` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18164,7 +18164,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstabPoison` | Number | Applies or references the | 2 |  |
+| `TempBackstabPoison` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18202,7 +18202,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempPenetrate` | Number | Applies or references the | 2 |  |
+| `TempPenetrate` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18283,7 +18283,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`add`](./Arrays.md#array-add) | Array | Examples: `5` | 1 |  |
+| [`add`](./Arrays.md#array-add) | Array / Integer | Examples: `5` | 1 |  |
 | [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum | `ModelingClay_Default` | 1 |  |
 | [`mul`](./Arrays.md#array-mul) | Array | Examples: `[ 0.45 0.3 0.25 ]` | 1 |  |
 
@@ -18302,7 +18302,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TireBehavior` | Number | Applies or references the | 2 |  |
+| `TireBehavior` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18320,7 +18320,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TossTargetIsAggroTarget` | Number | Applies or references the | 2 |  |
+| `TossTargetIsAggroTarget` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18338,7 +18338,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TossTargetIsNotInWater` | Number | Applies or references the | 2 |  |
+| `TossTargetIsNotInWater` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18374,7 +18374,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TradeLife` | Number | Applies or references the | 2 |  |
+| `TradeLife` | Integer / Object | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18415,8 +18415,8 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 |  |
 | `cancel_movement` | Boolean | `false` | 2 |  |
-| `pathfinding_avoidance` | Number | Examples: `250` | 2 |  |
-| [`range`](./Enums.md#enum-range) | Number | Distance or area of effect in tiles. | 2 |  |
+| `pathfinding_avoidance` | Integer | Examples: `250` | 2 |  |
+| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 2 |  |
 
 </details>
 
@@ -18433,7 +18433,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TrueShot` | Number | Applies or references the | 6 |  |
+| `TrueShot` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18471,7 +18471,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TurnAround` | Number | Applies or references the | 2 |  |
+| `TurnAround` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18489,7 +18489,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Enum | Applies or references the | 2 |  |
+| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Number | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18507,7 +18507,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TurnRight` | Number | Applies or references the | 2 |  |
+| `TurnRight` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18525,7 +18525,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Uncontrollable` | Number | Applies or references the | 4 |  |
+| `Uncontrollable` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18543,7 +18543,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Undead` | Number | Applies or references the | 50 |  |
+| `Undead` | Integer | Applies or references the | 50 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18561,7 +18561,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UnlockOrientation` | Number | Applies or references the | 4 |  |
+| `UnlockOrientation` | Integer | Applies or references the | 4 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18616,7 +18616,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Vaporize` | Number | Applies or references the | 66 |  |
+| `Vaporize` | Integer | Applies or references the | 66 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18634,7 +18634,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeCorpse` | Number | Applies or references the | 36 |  |
+| `VaporizeCorpse` | Integer | Applies or references the | 36 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18670,7 +18670,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeDice` | Number | Applies or references the | 2 |  |
+| `VaporizeDice` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18688,7 +18688,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeInanimate` | Number | Applies or references the | 16 |  |
+| `VaporizeInanimate` | Integer | Applies or references the | 16 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18706,7 +18706,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeTarget` | Number | Applies or references the | 6 |  |
+| `VaporizeTarget` | Integer | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18763,10 +18763,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cWaggle` | Boolean |  | 2 |  |
-| `cWaggle2x2` | Boolean |  | 2 |  |
-| `cWaggle3x3` | Boolean |  | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `cWaggle` | Object |  | 2 |  |
+| `cWaggle2x2` | Object |  | 2 |  |
+| `cWaggle3x3` | Object |  | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -18783,7 +18783,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Wall` | Number | Applies or references the | 2 |  |
+| `Wall` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18801,7 +18801,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Webbed`](./Arrays.md#array-webbed) | Number | Applies or references the | 23 |  |
+| [`Webbed`](./Arrays.md#array-webbed) | Integer | Applies or references the | 23 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18819,7 +18819,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Wet` | Number | Applies or references the | 2 |  |
+| `Wet` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18837,7 +18837,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `WideBackstab` | Number | Applies or references the | 2 |  |
+| `WideBackstab` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18879,7 +18879,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsConsumedCharacterMaxHP` | Number | Applies or references the | 2 |  |
+| `XIsConsumedCharacterMaxHP` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18897,7 +18897,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsCountDeaths` | Number | Applies or references the | 2 |  |
+| `XIsCountDeaths` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18915,7 +18915,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsFreeArmorSlots` | Number | Applies or references the | 14 |  |
+| `XIsFreeArmorSlots` | Integer | Applies or references the | 14 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18933,7 +18933,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsIncreaseEachTurn` | Number | Applies or references the | 2 |  |
+| `XIsIncreaseEachTurn` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18987,7 +18987,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsRampAndReset` | Number | Applies or references the | 2 |  |
+| `XIsRampAndReset` | Integer | Applies or references the | 2 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -19008,8 +19008,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `reset_percent` | Number | The percentage of stacks to keep after resetting. | 1 |  |
-| `stacks` | Number | Number of stacks or intensity to apply. | 1 |  |
+| `reset_percent` | Integer | The percentage of stacks to keep after resetting. | 1 |  |
+| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 |  |
 
 </details>
 
@@ -19026,7 +19026,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`YOffset`](./Enums.md#enum-yoffset) | Enum | Applies or references the | 6 |  |
+| [`YOffset`](./Enums.md#enum-yoffset) | Number | Applies or references the | 6 |  |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
