@@ -2252,7 +2252,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- |
 | `IntelligenceUp` | Array / Number / Object |  | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
 | `ReduceManaCost` | Array / Number / Object |  | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `RepairWeaponCondition` | Number |  | `1` (Number) |
+| `RepairWeaponCondition` | Array / Number |  | `1` (Number) |
 | `stacks` | Integer | Number of stacks or intensity to apply. | 8 |
 
 </details>

@@ -1576,7 +1576,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_Familiar`](#conditional_familiar) | Object | Nested conditional. | 4 |
 | `Bleed` | Array / Number / Object |  | `[1 .1]` (Array), `[3 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `Brace` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `ChangeTilesUnder` | Enum |  | `LavaTile` (Enum), `DirtTile` (Enum) |
+| `ChangeTilesUnder` | Enum / Object |  | `LavaTile` (Enum), `DirtTile` (Enum) |
 | `Charge` | Array / Number / Object |  | `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
 | `CharismaUp` | Array / Number / Object |  | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
 | `CreateGlobalModifiers` | Object |  | `{ ... }` (Object) |
