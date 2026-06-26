@@ -919,6 +919,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Tarred`](./Enums.md) | Integer | | 2 | 1 |
 | [`TempStrengthUp`](./Enums.md) | Integer | | 1 | 1 |
 | [`Webbed`](./Enums.md) | Integer | | 4 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1301,6 +1302,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Tangled`](./Enums.md) | Integer | | 1 | 2 |
 | [`Tarred`](./Enums.md) | Integer | | 2 | 1 |
 | [`Webbed`](./Enums.md) | Integer | | 4 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1586,6 +1588,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CharacterTypeGainsStatusAtBattleStart`](./Enums.md) | Object | | 5 |   |
 | [`Fights`](./Enums.md) | Integer | | 7 | 3 |
 | [`StatusRandomEnemiesOnBattleStart`](./Enums.md) | Object | | 3 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2214,6 +2217,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AllStatsUp`](./Enums.md) | Integer | | 8 | 1 |
 | [`Fear`](./Enums.md) | Integer | | 43 | 2 |
 | [`Stun`](./Enums.md) | Integer | | 6 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 

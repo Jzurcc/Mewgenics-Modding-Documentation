@@ -697,6 +697,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`WeaponPassiveMultiplierBonus`](./Enums.md) | Integer | | 1 | 2 |
 | [`WeaponsDontLoseDurability`](./Enums.md) | Integer | | 1 | 0 |
 | [`WobblyCat`](./Enums.md) | Integer | | 2 | 25 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -786,6 +787,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpreadDisease`](./Enums.md) | Object | | 12 |   |
 | [`Stun`](./Enums.md) | Array / Integer | | 19 | [.05*X] |
 | [`Weakness`](./Enums.md) | Enum / Integer | | 18 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -823,6 +825,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Stun`](./Enums.md) | Array / Integer | | 19 | [.05*X] |
 | [`VisualFXTile`](./Enums.md) | Enum | | 12 | IcePoof |
 | [`Weakness`](./Enums.md) | Enum / Integer | | 18 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -870,6 +873,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`UncappedHP`](./Enums.md) | Integer | | 3 | 1 |
 | [`WaterWalk`](./Enums.md) | Integer | | 4 | 1 |
 | [`tag_filter`](./Enums.md) | Enum | | 2 | crow |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -929,6 +933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempMovement`](./Enums.md) | Integer | | 1 | 1 |
 | [`Temporary`](./Enums.md) | Object | | 11 |   |
 | [`Thorns`](./Enums.md) | Integer | | 17 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1044,6 +1049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Stealth`](./Enums.md) | Integer | | 3 | 1 |
 | [`StrengthUp`](./Enums.md) | Integer | | 13 | 2 |
 | [`TakeBonusTurnWithStatus`](./Enums.md) | Object | | 1 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1120,6 +1126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ForceUseAbility`](./Enums.md) | Enum / Object | | 10 | Hallucinate_Disorder |
 | [`IntelligenceUp`](./Enums.md) | Integer | | 11 | -1 |
 | [`RandomStatUp`](./Enums.md) | Integer | | 11 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1179,6 +1186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ObjectOnHitCharacter`](./Enums.md) | Enum / Object | | 11 | Coin |
 | [`Stun`](./Enums.md) | Array / Integer | | 19 | [.05*X] |
 | [`Weakness`](./Enums.md) | Enum / Integer | | 18 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1270,6 +1278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 58 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |  |
 | `knockback` | Enum / Integer |  | 6 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1297,6 +1306,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Poison`](./Enums.md) | Array / Enum / Integer | | 22 | [.5] |
 | [`SpreadDisease`](./Enums.md) | Object | | 12 |   |
 | [`Weakness`](./Enums.md) | Enum / Integer | | 18 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1381,6 +1391,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Tarred`](./Enums.md) | Integer | | 2 | 1 |
 | [`Thorns`](./Enums.md) | Integer | | 17 | 2 |
 | [`Weakness`](./Enums.md) | Enum / Integer | | 18 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1406,6 +1417,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LuckUp`](./Enums.md) | Integer | | 15 | 2 |
 | [`RandomStatUp`](./Enums.md) | Integer | | 11 | 2 |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1431,6 +1443,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Else`](./Enums.md) | Object | | 6 |   |
 | [`RandomStatusFromPool`](./Enums.md) | Object | | 8 |   |
 | [`Stun`](./Enums.md) | Array / Integer | | 19 | [.05*X] |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1456,6 +1469,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 12 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |  |
 | `knockback` | Enum / Integer |  | 2 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1579,6 +1593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealAndOverhealToShield`](./Enums.md) | Integer | | 2 | 12 |
 | [`Reanimate`](./Enums.md) | Integer | | 2 | 33 |
 | [`TakeExtraTurn`](./Enums.md) | Integer | | 9 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1606,6 +1621,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | | 20 | 2*X |
 | [`RandomStatUp`](./Enums.md) | Integer | | 11 | 2 |
 | [`RefreshActPoints`](./Enums.md) | Integer | | 5 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1631,6 +1647,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ChangeTile`](./Enums.md) | Enum / Object | | 4 | FloatingGlassTile |
 | [`Conditional_Ally`](./Enums.md) | Object | | 11 |   |
 | [`Conditional_Enemy`](./Enums.md) | Object | | 7 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1655,6 +1672,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Cleave`](./Enums.md) | Integer | | 3 | 1 |
 | [`LeechPercent`](./Enums.md) | Integer | | 2 | 50 |
 | [`PullSourceToKnockbackImmuneTarget`](./Enums.md) | Integer | | 2 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1836,6 +1854,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FaceAway`](./Enums.md) | Integer | | 2 | 1 |
 | [`SpreadDisease`](./Enums.md) | Object | | 12 |   |
 | [`Stun`](./Enums.md) | Array / Integer | | 19 | [.05*X] |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1859,6 +1878,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charge`](./Enums.md) | Integer | | 5 | 2 |
 | [`CurrentWeaponDamageUp`](./Enums.md) | Integer | | 3 | 1 |
 | [`HealthGain`](./Enums.md) | Integer / String | | 20 | 2*X |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1883,6 +1903,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CurrentWeaponDamageUp`](./Enums.md) | Integer | | 3 | 1 |
 | [`ForceUseAbility_NonStack`](./Enums.md) | Enum | | 2 | Indigestion_Fart2 |
 | [`StrengthUp`](./Enums.md) | Integer | | 13 | 2 |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -1951,6 +1972,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
 | [`Burn`](./Enums.md) | Enum / Integer | | 28 | 2 |
 | [`Conditional_Corpse`](./Enums.md) | Object | | 2 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2082,6 +2104,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FillMana`](./Enums.md) | Array / Integer | | 4 | [.25] |
 | [`ManaGain`](./Enums.md) | Integer | | 6 | 2 |
 | [`TakeExtraTurn`](./Enums.md) | Integer | | 9 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2288,6 +2311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ManaGain`](./Enums.md) | Integer | | 6 | 2 |
 | [`MoveQuivered`](./Enums.md) | Integer | | 11 | 2 |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2367,6 +2391,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
 | [`SpellDamageUp`](./Enums.md) | Integer | | 7 | 1 |
 | [`Temporary`](./Enums.md) | Object | | 11 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2453,6 +2478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`odds`](./Enums.md#enum-odds) | Number | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 16 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |  |
 | [`Temporary`](./Enums.md) | Object | | 11 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2671,6 +2697,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RepairWeapon`](./Enums.md) | Integer | | 1 | 1 |
 | [`RepairWeaponCondition`](./Enums.md) | Integer | | 1 | 1 |
 | [`SpellDamageUp`](./Enums.md) | Integer | | 7 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2739,6 +2766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | | 20 | 2*X |
 | [`PercentHeal`](./Enums.md) | Integer | | 1 | 50 |
 | [`TakeExtraTurn`](./Enums.md) | Integer | | 9 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2761,6 +2789,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |  |
 | [`FullHeal`](./Enums.md) | Integer | | 6 | 1 |
 | [`Sleep`](./Enums.md) | Integer | | 5 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2807,6 +2836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |  |
 | [`DivineShield`](./Enums.md) | Integer | | 10 | 1 |
 | [`RandomStatusFromPool`](./Enums.md) | Object | | 8 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2830,6 +2860,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ObjectOnHitCharacter`](./Enums.md) | Enum / Object | | 11 | Coin |
 | [`RandomStatusFromPool`](./Enums.md) | Object | | 8 |   |
 | [`Thorns`](./Enums.md) | Integer | | 17 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2854,6 +2885,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | | 20 | 2*X |
 | [`ManaGain`](./Enums.md) | Integer | | 6 | 2 |
 | [`RefreshMovePoints`](./Enums.md) | Integer | | 7 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2876,6 +2908,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
 | [`DiminishingHealthRegen`](./Enums.md) | Integer | | 5 | 2 |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -2921,6 +2954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DamageUp`](./Enums.md) | Integer | | 26 | 2 |
 | [`Doomed`](./Enums.md) | Integer | | 3 | 3 |
 | [`MovementUp`](./Enums.md) | Integer | | 3 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3045,6 +3079,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`DelayedWind`](./Passives_and_Statuses.md#context-delayedwind) | Object | Applies the 'DelayedWind' effect. | 2 |  |
 | [`DelayedWindCone`](./Enums.md) | Object | | 1 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3149,6 +3184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |  |
 | [`Purge`](./Enums.md) | Integer | | 2 | 0 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3171,6 +3207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 46 |  |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | | 38 | [.5] |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3388,6 +3425,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Bleed`](./Enums.md) | Array / Integer | | 23 | [.1] |
 | [`BonusCritChance`](./Enums.md) | Integer | | 4 | 50 |
 | [`BonusDamage`](./Enums.md) | Integer | | 2 | 2 |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3410,6 +3448,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 27 |  |
 | [`Charmed`](./Enums.md) | Array / Integer | | 14 | [.40] |
 | [`Stun`](./Enums.md) | Array / Integer | | 19 | [.05*X] |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3521,6 +3560,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `BonusCritChance` | `Number` | Applies the 'BonusCritChance' effect. | 4 |  |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3566,6 +3606,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 8 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3725,6 +3766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | | 38 | [.5] |
 | [`TakeExtraTurn`](./Enums.md) | Integer | | 9 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3829,6 +3871,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |  |
 | [`cant_miss`](./Enums.md) | Boolean | | 8 | true |
 | [`effects`](./Enums.md) | Object | | 30 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -3872,6 +3916,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`FlatLeech`](./Enums.md) | Enum | | 2 | X |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4477,6 +4522,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 2 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4544,6 +4590,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`TempDamageUp`](./Enums.md) | Integer | | 4 | 2 |
 | [`TempSpellDamageUp`](./Enums.md) | Integer | | 2 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4817,6 +4864,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
 | [`Thorns`](./Enums.md) | Integer | | 17 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4861,6 +4909,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempDexterityUp`](./Enums.md) | Integer | | 2 | 2 |
 | [`TempLuckUp`](./Enums.md) | Integer | | 1 | 2 |
 | [`TempStrengthUp`](./Enums.md) | Integer | | 2 | 2 |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4887,6 +4936,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RefreshMovePoints`](./Enums.md) | Integer | | 7 | 1 |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
 | [`threshold`](./Enums.md) | Integer / Object | | 22 | 7 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4927,6 +4977,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`Temporary`](./Enums.md) | Object | | 11 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -4995,6 +5046,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DexterityUp`](./Enums.md) | Integer | | 4 | 2 |
 | [`RefreshMovePoints`](./Enums.md) | Integer | | 7 | 1 |
 | [`SpeedUp`](./Enums.md) | Integer | | 21 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5128,6 +5180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |  |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
 | [`StrengthUp`](./Enums.md) | Integer | | 13 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5170,6 +5223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |  |
 | [`ManaGain`](./Enums.md) | Integer | | 6 | 2 |
 | [`OneUseSpellDamageUp`](./Enums.md) | Integer | | 2 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5520,6 +5574,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Enums.md#enum-tag) | Array / Enum | The specific entity tag required or applied. | 2 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
 | [`Conditional_Ally`](./Enums.md) | Object | | 11 |   |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5648,6 +5703,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5714,6 +5770,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5738,6 +5795,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |  |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -5801,6 +5859,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SizeScalePercent`](./Math_Equations.md) | Equation | Applies the 'SizeScalePercent' effect. | 2 |  |
 | [`Shield`](./Enums.md) | Integer / String | | 21 | 2 |
 | [`Trample`](./Enums.md) | Array / Integer | | 10 | [3] |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -6153,6 +6213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 8 |  |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |  |
 | [`ManaGain`](./Enums.md) | Integer | | 6 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -6614,6 +6675,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `{Status and Passive Keys}` | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |  |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 </details>
 
@@ -6682,6 +6744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `Conditional_IsSelf` | Object |  | 2 | `{ ... }` (Object) |
 | `Else` | Object |  | 2 | `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `AddStatusToReceivedDamage`
@@ -6690,6 +6753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `Conditional_IsPhysicalAttack` | Object |  | 2 | `{ ... }` (Object) |
 | `Else` | Object |  | 2 | `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `AfterImage`
@@ -7154,6 +7218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `name` | Enum |  |  | `"ITEM_CONDUCTOR_NAME"` (String), `"PASSIVE_CONDUCTOR_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
 | `rarity` | Enum |  |  | `uncommon` (Enum) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `Confusion`
@@ -7394,6 +7459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `desc` | Enum |  |  | `"DISORDER_DYSLEXIA_DESC"` (String) |
 | `name` | Enum |  |  | `"DISORDER_DYSLEXIA_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `Empath`
@@ -7404,6 +7470,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `desc` | Enum |  |  | `"DISORDER_EMPATH_DESC"` (String) |
 | `name` | Enum |  |  | `"DISORDER_EMPATH_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `ExtraBasicAttacks_Status`
@@ -7468,6 +7535,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `name` | Enum |  |  | `"KEYWORD_CHILDPULSE_NAME"` (String) |
 | `stacks` | Enum / Integer |  | 2 | `7` (Number) |
 | `tooltip` | Enum |  |  | `"KEYWORD_CHILDPULSE_DESC"` (String) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `FinalBossHitCountdownExplosive`
@@ -7480,6 +7548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `name` | Enum |  |  | `"KEYWORD_CHILDWRATH_NAME"` (String) |
 | `stacks` | Enum / Integer |  | 2 | `7` (Number) |
 | `tooltip` | Enum |  |  | `"KEYWORD_CHILDWRATH_DESC"` (String) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `FinalBossHitCountdownHoly`
@@ -7801,6 +7870,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `rarity` | Enum |  |  | `uncommon` (Enum) |
 | `set` | Array / Enum |  |  | `[Bionic Cyborg]` (Array) |
 | `shield` | Enum / Integer |  |  | `[1 .5]` (Array), `2` (Number) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `FullPower`
@@ -7902,6 +7972,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `desc` | Enum |  |  | `"DISORDER_HYPOMANIA_DESC"` (String) |
 | `name` | Enum |  |  | `"DISORDER_HYPOMANIA_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `ImmediateAbilityReaction`
@@ -8198,6 +8269,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `desc` | Enum |  |  | `"DISORDER_PARANOIA_DESC"` (String) |
 | `name` | Enum |  |  | `"DISORDER_PARANOIA_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `PassiveIfStrAuxEquals`
@@ -8206,6 +8278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `passives` | Object |  | 14 | `{ ... }` (Object) |
 | `value` | Enum |  | 14 | `int` (Enum), `spd` (Enum) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `PassiveIfWeaponIsUsable`
@@ -8220,6 +8293,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `AutocastEachRound` | Enum / Object |  | 2 | `SpiderReturn` (Enum), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `PassiveWhenOnTile`
@@ -8228,6 +8303,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `passives` | Object |  | 14 | `{ ... }` (Object) |
 | `tile` | Array / Enum |  |  | `[WaterTile]` (Array), `[TallGrassTile TallFlowerTile]` (Array) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `PassiveWhileHasDurability`
@@ -8235,6 +8311,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `MovementReaction` | Object |  | 2 | `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `PassiveWhileNotHasStatus`
@@ -8243,6 +8321,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `passives` | Object |  | 4 | `{ ... }` (Object) |
 | `status` | Enum |  | 4 | `DemonicGlyph_Movement` (Enum), `ExistUntilIdleUpkeep` (Enum) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `PassiveWhileShielded`
@@ -8371,6 +8450,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Conditional_Adjacent` | Object |  | 2 | `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `ScaledStatusOnHolyShieldBlock`
@@ -8396,6 +8477,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `desc` | Enum |  |  | `"DISORDER_SCHRODINGERDISORDER_DESC"` (String) |
 | `name` | Enum |  |  | `"DISORDER_SCHRODINGERDISORDER_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `Scleroderma`
@@ -8406,6 +8488,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `desc` | Enum |  |  | `"DISORDER_SCLERODERMA_DESC"` (String) |
 | `name` | Enum |  |  | `"DISORDER_SCLERODERMA_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `SharePickups`
@@ -8594,6 +8677,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ForceUseAbility` | Enum / Object |  | 4 | `neck_ChefsApron` (Enum), `CancerExplode` (Enum), `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusAllCharactersOnSpawn`
@@ -8602,6 +8686,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `Else` | Object |  | 1 | `{ ... }` (Object) |
 | `Poison` | Array / Integer |  | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusCollector`
@@ -8645,6 +8730,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ForceUseAbility` | Enum / Object |  | 2 | `neck_ChefsApron` (Enum), `T2UnClone` (Enum), `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusEveryXSpellCastsEachTurn`
@@ -8668,6 +8754,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `BackflipWhenTargeted` | Enum / Integer / Object |  | 2 | `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
 | `Craft` | Object |  | 2 | `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusOnBackstab`
@@ -8692,6 +8779,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `IntelligenceUp` | Enum / Integer |  | 2 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
 | `ObjectOnHitCharacter` | Enum / Object |  | 2 | `BestBud` (Enum), `Maggot` (Enum), `{ ... }` (Object) |
 | `StrengthUp` | Enum / Integer |  | 2 | `[1 .5]` (Array), `4` (Number), `-2` (Number), `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusOnDie`
@@ -8702,6 +8790,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RandomMagicMissile` | Integer / Object |  | 2 | `[1 .5]` (Array), `10` (Number), `6` (Number), `{ ... }` (Object) |
 | `RemoveAmbientLightEffects` | Number |  | 2 | `4` (Number), `.5` (String) |
 | `ScatterCoins` | Object |  | 2 | `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusOnDodge`
@@ -8762,6 +8851,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `PermanentSpeed` | Integer |  | 2 | `1` (Number), `2` (Number) |
 | `PermanentStrength` | Integer |  | 2 | `1` (Number), `2` (Number) |
 | `set` | Array / Enum |  | 2 | `Recycled` (Enum) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusOnSpawnIn`
@@ -8779,6 +8869,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Conditional_GoodRoll` | Object |  | 2 | `{ ... }` (Object) |
 | `DivineShield` | Array / Integer |  |  | `[1 .33]` (Array), `[1 .5]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
 | `Metronome` | Boolean (Flag) / Number / Object |  | 2 | `(Flag)` (Boolean (Flag)), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `StatusOverlappingCharactersAndDie`
@@ -9045,6 +9137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `desc` | Enum |  |  | `"DISORDER_TRISKAIDEKAPHOBIA_DESC"` (String) |
 | `name` | Enum |  |  | `"DISORDER_TRISKAIDEKAPHOBIA_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `TunnelVision`
@@ -9096,6 +9189,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `name` | Enum |  |  | `"DISORDER_VEGAN_NAME"` (String) |
 | `name_mod` | String |  |  | `"CAT_NAME_MOD_VEGAN"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `Vengeful`
@@ -9132,6 +9226,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `name` | Enum |  |  | `"DISORDER_WOBBLYCATSYNDROME_NAME"` (String) |
 | `passives` | Object |  |  | `{ ... }` (Object) |
 | `stats` | Object |  |  | `{ ... }` (Object) |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | |
 
 
 ### Object: `Zombie`
