@@ -17,7 +17,6 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
 | [`spell`](./Enums.md#enum-spell) | Enum | Specifies the spell ability to use as a reaction. | 924 | `MCHadouken` |
-| `false` | Variable | Represents the boolean value false, used as a key in certain contexts. | 655 ||
 | [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 369 | `[`<br>`[Heat Fire]` |
 | `str` | Enum / Integer | The Strength stat value or modifier. | 337 | `-1`<br>`-2`<br>`-3` |
