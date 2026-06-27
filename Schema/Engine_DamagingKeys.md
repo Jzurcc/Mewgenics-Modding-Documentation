@@ -97,6 +97,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `toss_towards_bottomleft` | Variable | A variable that specifies the direction of a toss towards the bottom-left of the map. | 1 ||
 
 </details>
+
 ### Valid Nested Objects
 
 The following objects all behave as `{Damaging Keys}` containers. Each has its own unique parameters listed below its entry.

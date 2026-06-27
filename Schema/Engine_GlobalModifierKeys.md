@@ -21,6 +21,7 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 | `NoCorpses` | Integer | If set to 1, corpses are prevented from spawning. | 1 | `1` |
 
 </details>
+
 ### Valid Nested Objects
 
 The following objects all behave as `{Global Modifier Keys}` containers. Each has its own unique parameters listed below its entry.

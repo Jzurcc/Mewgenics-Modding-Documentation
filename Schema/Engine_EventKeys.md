@@ -408,6 +408,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `spawn_reflection_next_fight` | Number | The number of reflections to spawn in the next battle, optionally with a mutation. | 0 | `1` |
 
 </details>
+
 ### Valid Nested Objects
 
 The following objects all behave as `{Event Keys}` containers. Each has its own unique parameters listed below its entry.

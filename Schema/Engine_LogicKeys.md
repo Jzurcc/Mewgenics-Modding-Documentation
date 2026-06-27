@@ -263,6 +263,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 0 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
+
 ### Valid Nested Objects
 
 The following objects all behave as `{Logic Keys}` containers. Each has its own unique parameters listed below its entry.
