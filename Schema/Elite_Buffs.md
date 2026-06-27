@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Elite Buffs
 
 > **Associated Files:** `data/elite_buffs.gon, data/boss_elite_buffs.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -30,14 +31,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `roll_limit` | Integer | The maximum number of times this buff can be rolled. | 2 | `2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `passives`
 
 
 **Definition:** Object listing intrinsic passive modifiers.  
 **Total Count:** 2805
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -51,14 +54,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 `damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+
 ---
+
 
 ### Object: `effects`
 
 
 **Definition:** Non-damaging status applications and logic triggers executed on impact.  
 **Total Count:** 2166
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -70,15 +75,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 750 | `Default`<br>`FormChange`<br>`Druid` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
-</details>`damage_instance`<br>`spell`<br>`self_damage`
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+</details>
+
+
 ---
+
 
 ### Object: `AddStatusToBasicAttack`
 
 
 **Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
 **Total Count:** 248
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -89,14 +99,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `MeleeRevengeDamage`
 
 
 **Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
 **Total Count:** 73
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -110,7 +122,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 10 | `[`<br>`[Heat Fire]` |`damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEnd`
 
@@ -118,7 +133,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Applies or references the 'StatusEachTurnEnd' effect/state.  
 **Total Count:** 57
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -128,7 +142,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnKill`
 
@@ -136,7 +153,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 40
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -146,6 +162,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
 
 
@@ -191,12 +209,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ### Object: `SpawnOnBattleStart`
 
 
 **Definition:** No definition provided.  `damage_instance`<br>`spell`<br>`self_damage`
 **Total Count:** 38
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -209,14 +228,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 2 | `ancestorset_shade`<br>`eb_twin`<br>`minime_clone` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RevengeDamage`
 
 
 **Definition:** Reaction trigger: Deals damage to the attacker when hit.  
 **Total Count:** 31
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -228,14 +249,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 31 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `statuses`
 
 
 **Definition:** Status effects possessed by the character.  `damage_instance`<br>`spell`<br>`self_damage`
 **Total Count:** 14
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -247,7 +270,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Zombie` | Number | The number of stacks or value for the Zombie status. | 2 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnDie`
 
@@ -255,7 +281,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 9
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -265,7 +290,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `ReflectProjectiles`
 
@@ -273,7 +301,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 8
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -283,14 +310,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachRoundBegin`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -302,14 +331,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChanceToRevive`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -323,14 +354,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DepressionAura`
 
 
 **Definition:** Examples: `1`  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -344,14 +377,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DamageNeighborsAfterMove`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -366,14 +401,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 4 | `[`<br>`[Heat Fire]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachRoundEnd`
 
 
 **Definition:** Applies or references the 'StatusEachRoundEnd' effect/state.  
 **Total Count:** 3
-
 
 <details>`damage_instance`<br>`spell`<br>`self_damage`
 <summary><b>Expand</b></summary
@@ -385,14 +422,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEnemyCastSpell`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -404,4 +443,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---

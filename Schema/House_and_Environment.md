@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## House & Environment
 
 > **Associated Files:** `data/house.gon, data/house_weather.gon, data/weather.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -54,13 +55,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Thunderstorm`](./Miscellaneous.md#object-thunderstorm) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `effects`
 
+
 **Definition:** Non-damaging status applications and logic triggers executed on impact.  
 **Total Count:** 2166
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -74,15 +78,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Variable | Inherits game-wide rule modifiers. You can utilize any key from the Engine Global Modifier Keys list here to alter overarching game mechanics (e.g., changing gravity or stamina costs). | 1 | `CreateGlobalModifiers`<br>`BloodRain`<br>`NextPlayerCatTakesExtraTurn` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
-</details>`damage_instance`<br>`spell`<br>`self_damage`
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+</details>
+
+
 ---
+
 
 ### Object: `Else`
 
 
 **Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
 **Total Count:** 85
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -96,14 +105,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
 ---`damage_instance`<br>`spell`<br>`self_damage`
+
 
 ### Object: `StatusOnBattleEnd`
 
 
 **Definition:** Applies the nested status effects when the encounter finishes.  
 **Total Count:** 53
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -114,14 +124,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_HasTag`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target possesses the specified entity tag.  
 **Total Count:** 47
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -136,14 +148,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
+
 `damage_instance`<br>`spell`<br>`self_damage`
+
+
 ### Object: `Default`
 
 
 **Definition:** Character Form: The baseline default behavior state.  
 **Total Count:** 38
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -156,14 +173,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_GoodRoll`
 
 
 **Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
 **Total Count:** 37
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -177,14 +196,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 28 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RandomStatusFromPool`
 
 
 **Definition:** Selects and applies a random status effect from the provided nested object.  
 **Total Count:** 35
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -195,14 +216,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnExtraThingsOnBattleStart`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 32
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -217,14 +240,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trap`](./Enums.md#enum-trap) | Enum || 2 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ApplyPassives`
 
 
 **Definition:** Grants the nested passive abilities dynamically.  
 **Total Count:** 13
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -236,14 +261,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 13 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_Corpse`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target is a dead body/corpse.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -255,14 +282,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `reverb_empty`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -276,14 +305,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `volume_adjustment` | Float || 10 | `1.3`<br>`1.35`<br>`1.5` |
 
 </details>
+
+
 ---
+
 
 ### Object: `reverb_full`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -296,14 +327,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`preset`](./Enums.md#enum-preset) | Enum || 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
 **Definition:** Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -316,14 +349,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_PartyMember`
 
 
 **Definition:** Conditional constraint. Nested properties only trigger if this is true.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -335,14 +370,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Rain`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Rain' state.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -358,14 +395,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAllCharactersOnSpawn`
 
 
 **Definition:** Applies or references the 'StatusAllCharactersOnSpawn' effect/state.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -377,14 +416,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Big`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the \'Big\' state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -397,14 +438,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`position`](./Arrays.md#array-position) | Array | The world-space coordinates for this object. | 2 | `10.5`<br>`[4.5 4.5]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `extra_statuses`
 
 
 **Definition:** Additional generic status applications.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -418,6 +461,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
 
 
@@ -525,7 +570,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
-</details>`damage_instance`<br>`spell`<br>`self_damage`
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+</details>
+
+
 <details>
 <summary><b>extra_statuses</b></summary>
 
@@ -536,12 +586,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ### Object: `Snow`
+
+
 `damage_instance`<br>`spell`<br>`self_damage`
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -557,14 +610,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
+
+
 ---
+
 
 ### Object: `aux_positions``damage_instance`<br>`spell`<br>`self_damage`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -581,14 +636,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StraySpawn`](./Arrays.md#array-strayspawn) | Array || 3 | `[-3 0]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `room_positions`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -610,14 +667,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SmallAttic`](./Arrays.md#array-smallattic) | Array || 1 | `[0, 9]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnVolcanoOnBattleStart`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -633,14 +692,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`number`](./Arrays.md#array-number) | Array / Integer || 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusCharactersOnRoundEnd`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -653,14 +714,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Thunderstorm`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -677,14 +740,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AllyInfested`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -697,14 +762,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
+
+
 ---
+
 
 ### Object: `GlobalSpawnOnRoundEnd`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -717,14 +784,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`number`](./Arrays.md#array-number) | Array / Integer || 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SolarFlare`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -738,14 +807,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpecialGodRays`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -757,14 +828,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Big`](./Miscellaneous.md#object-big) | Object  || 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusCharactersOnRoundStart`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -775,14 +848,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `Windy`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -798,14 +873,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddPostProcessEffect`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -818,14 +895,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`shader`](./Enums.md#enum-shader) | Enum || 1 | `shimmervignette` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddTilesetObjects`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -837,7 +916,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BasementUpgrade`
 
@@ -845,7 +927,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -857,7 +938,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BasementUpgrade2`
 
@@ -865,7 +949,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -877,7 +960,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BasementUpgrade3`
 
@@ -885,7 +971,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -897,7 +982,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BasementUpgrade4`
 
@@ -905,7 +993,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -917,7 +1004,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BasementUpgrade5`
 
@@ -925,7 +1015,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -937,14 +1026,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FactionUprising`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -954,14 +1045,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FloatingDebris`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -973,7 +1066,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Floor1_Large`
 
@@ -981,7 +1077,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -996,7 +1091,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Floor1_Small`
 
@@ -1004,7 +1102,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -1019,7 +1116,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ---
+
 
 ### Object: `House1`
 
@@ -1027,7 +1127,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -1043,7 +1142,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
+
+
 ---
+
 
 ### Object: `House2`
 
@@ -1051,7 +1153,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -1067,7 +1168,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
+
+
 ---
+
 
 ### Object: `House3`
 
@@ -1075,7 +1179,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -1091,7 +1194,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LargeHouse`
 
@@ -1099,7 +1205,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -1111,7 +1216,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LargeHouse_Floor2Large`
 
@@ -1119,7 +1227,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -1131,7 +1238,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LargeHouse_Floor2Small`
 
@@ -1139,7 +1249,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -1151,14 +1260,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MediumHouse`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -1171,14 +1282,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MediumHouse_SmallRoom`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -1191,14 +1304,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SmallAttic`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -1215,14 +1330,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`n`](./Arrays.md#array-n) | Array || 1 | `[-1 -2]`<br>`[1 -2]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SmallHouse_Attic`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -1235,14 +1352,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnTilePuddleOnBattleStart`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -1256,4 +1375,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
+
+
 ---

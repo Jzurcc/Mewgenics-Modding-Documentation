@@ -10477,4 +10477,3 @@ These contexts exist in both files but have different property tables.
 **In split file but NOT in Master (14):** `alias`, `icon_frame`, `name_reference_applier`, `name_stacks_neg`, `tooltip_reference_applier`, `tooltip_stackless`, `tooltip_stackless_neg`, `tooltip_stackless_pos`, `tooltip_stacks`, `tooltip_stacks_neg`, `tooltip_stacks_pos`, `tooltip_stacks_singular`, `{Graphics Keys}`, `{Logic Keys}`
 
 **In Master but NOT in split file (9):** `breakdown`, `breakdown2`, `breakdown3`, `breakdown4`, `button_nav`, `item_groups`, `item_rarity_costs`, `meta`, `stock_fill_order`
-

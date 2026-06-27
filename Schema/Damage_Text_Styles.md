@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Damage Text Styles
 
 > **Associated Files:** `data/damage_text_styles.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -25,5 +26,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`suffix`](./Strings.md#string-suffix) | String | A string appended to the damage text. | 1 | `"!!!"` |
 
 </details>
----
 
+
+---

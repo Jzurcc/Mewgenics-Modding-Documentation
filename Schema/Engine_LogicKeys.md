@@ -267,7 +267,9 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 
 The following objects all behave as `{Logic Keys}` containers. Each has its own unique parameters listed below its entry.
 
+
 ---
+
 
 #### `ApplyToRandomPartyMemberIfPossible`
 
@@ -281,7 +283,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`GainDisorderFromPool`](./Miscellaneous.md#object-gaindisorderfrompool) | Enum / Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. || `{ . . . }`<br>`all_disorders` |
 
 </details>
+
+
 ---
+
 
 #### `ApplyToSource`
 
@@ -319,7 +324,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_ActiveWeather_Any`
 
@@ -334,7 +342,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 0 | `[FlySwarm FireflySwarm ButterflySwarm]` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Adjacent`
 
@@ -352,7 +363,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_AffectedByElement`
 
@@ -369,7 +383,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Ally`
 
@@ -398,7 +415,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `10`<br>`4`<br>`X` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Backstab`
 
@@ -413,7 +433,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_BadRoll`
 
@@ -430,7 +453,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Boss`
 
@@ -451,7 +477,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_BossOrBig`
 
@@ -466,7 +495,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Buddy`
 
@@ -481,7 +513,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_CanBeHealed`
 
@@ -495,7 +530,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Corpse`
 
@@ -520,7 +558,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_DebuffRoll`
 
@@ -535,7 +576,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_DestructibleCorpse`
 
@@ -549,7 +593,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Displaceable`
 
@@ -564,7 +611,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `LaunchOffScreen` | String | A formula string that determines the knockback force to launch the unit off-screen. || `10+bonus_melee_ability_damage` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Enemy`
 
@@ -598,7 +648,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `-1`<br>`1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Familiar`
 
@@ -616,7 +669,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_FirstApplicationThisTurn`
 
@@ -635,7 +691,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_FormulaIsPositive`
 
@@ -657,7 +716,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_GoodRoll`
 
@@ -679,7 +741,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `RandomMutation` | Integer | The number of random mutations to apply. || `1`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_HasKnockback`
 
@@ -693,7 +758,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_HasStatus`
 
@@ -715,7 +783,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_HasTag`
 
@@ -743,7 +814,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_HealthThreshold`
 
@@ -765,7 +839,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_InForm`
 
@@ -786,7 +863,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_IsPhysicalAttack`
 
@@ -800,7 +880,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_IsSelf`
 
@@ -814,7 +897,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_IsTrample`
 
@@ -828,7 +914,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_LastHit`
 
@@ -844,7 +933,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_LivingPlayerCat`
 
@@ -858,7 +950,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_ManaThreshold`
 
@@ -874,7 +969,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. || `1`<br>`99` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_NotAlly`
 
@@ -889,7 +987,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_NotBig`
 
@@ -903,7 +1004,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_NotBoss`
 
@@ -922,7 +1026,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_NotBossOrBig`
 
@@ -937,7 +1044,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_NotShielded`
 
@@ -952,7 +1062,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Object`
 
@@ -968,7 +1081,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `1`<br>`6`<br>`99` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_OncePerBattle`
 
@@ -986,7 +1102,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `1`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_PartyMember`
 
@@ -1005,7 +1124,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ApplyPassives`](./Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 0 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_PlayerCat`
 
@@ -1022,7 +1144,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `Scrambled` | Integer | The number of stacks of Scrambled applied. || `1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_RandomChance`
 
@@ -1037,7 +1162,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Shielded`
 
@@ -1055,7 +1183,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_SourceAbilityHasTag`
 
@@ -1071,7 +1202,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_SourceHasStatus`
 
@@ -1087,7 +1221,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_SourceHasTag`
 
@@ -1103,7 +1240,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 #### `Conditional_Speculative`
 
@@ -1120,7 +1260,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `Else`
 
@@ -1175,7 +1318,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
+
+
 ---
+
 
 #### `effects`
 
@@ -1353,9 +1499,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 ### Object: `Alert`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1364,22 +1510,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `AllAlive`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `AllyInfested`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1388,11 +1538,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
+
+
 ### Object: `Angry`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1400,11 +1552,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ### Object: `Antidote`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1422,11 +1576,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Appeal`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1434,11 +1590,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `ApplyPassives`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1446,22 +1604,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `YOffset` | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 4 | `-.18`<br>`.25`<br>`.35` |
 
 </details>
+
+
 ### Object: `Attacker`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Attraction`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1472,11 +1634,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 </details>
+
+
 ### Object: `BagOfSeeds`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1489,11 +1653,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `Basement0`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1504,11 +1670,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Basement1`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1519,11 +1687,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Basement2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1534,11 +1704,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Basement3`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1549,11 +1721,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Basement4`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1564,11 +1738,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `BasementUpgrade`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1576,11 +1752,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `BasementUpgrade2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1588,11 +1766,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `BasementUpgrade3`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1600,11 +1780,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `BasementUpgrade4`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1612,11 +1794,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `BasementUpgrade5`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1624,11 +1808,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `Bear`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1640,11 +1826,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `BellyFull`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1653,11 +1841,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Big`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1668,11 +1858,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`position`](./Arrays.md#array-position) | Array  | The world-space coordinates for this object. || `10.5`<br>`[4.5 4.5]` |
 
 </details>
+
+
 ### Object: `BigCatnip`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1682,11 +1874,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BigFood`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1696,11 +1890,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BigHolding`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1708,11 +1904,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `BigHoldingCat`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1720,11 +1918,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `BigScrap`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1734,11 +1934,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BiggestFood`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1748,11 +1950,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BirdFeed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1764,11 +1968,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `BirdPoopHat`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1782,11 +1988,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `Bishop`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1806,11 +2014,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `BlackBird`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1820,11 +2030,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BlackHole`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1836,11 +2048,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Blessing`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1852,11 +2066,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Bomb`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1876,22 +2092,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`sound`](./Miscellaneous.md#object-sound) | Object  | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `BoneyardUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Boris`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1899,22 +2119,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `BothObelisksUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Bully`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1923,22 +2147,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `BunkerUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Butcher`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1964,11 +2192,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Cat`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1977,11 +2207,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`animation`](./Enums.md#enum-animation) | Enum  | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ### Object: `Catepillar`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1993,11 +2225,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Catnip`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2016,11 +2250,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CatnipBig`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2035,11 +2271,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `CaveBaby`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2053,11 +2291,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CaveMan`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2070,11 +2310,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CaveManSpear`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2086,11 +2328,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `CaveWoman`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2104,11 +2348,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CaveWomanHasCat`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2120,22 +2366,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `CavesUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CerberubsJumpBlind`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2143,11 +2393,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum   | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ### Object: `CerberubsJumpNormal`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2155,22 +2407,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum   | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ### Object: `ChaosAntennaAttached`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2181,11 +2437,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Stealth`](./Arrays.md#array-stealth) | Array / Integer  | The number of stealth stacks applied. | 1 | `1`<br>`2`<br>`[1 .1]` |
 
 </details>
+
+
 ### Object: `Charging`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2195,11 +2453,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CharmedDip`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2207,11 +2467,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedFloater`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2219,11 +2481,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedPile`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2231,11 +2495,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Cherub`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2244,11 +2510,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Chicken`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2267,22 +2535,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Close`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CloseConvert`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2290,22 +2562,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `Cockroach`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `0`<br>`1`<br>`10` |
 
 </details>
+
+
 ### Object: `Coin`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2316,11 +2592,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Coin10`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2328,11 +2606,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Coin2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2340,11 +2620,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Coin3`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2352,11 +2634,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Coin4`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2364,11 +2648,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Colorless`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2386,11 +2672,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array   | An array of passive ability names presented during tutorial level-up. || `[` |
 
 </details>
+
+
 ### Object: `Comfort`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2398,11 +2686,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Conditional_DoesDamage`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2411,11 +2701,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ### Object: `Conditional_FinishedSpawning`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2424,44 +2716,52 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ### Object: `CoreObeliskUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CoreUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CraterUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Cultist`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2477,22 +2777,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Damaged`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `DashRandomly`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2500,11 +2804,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum   | Specifies the named set of decision weight presets used by the AI. | 4 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ### Object: `DeadHummingbird`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2520,11 +2826,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `Default`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2538,11 +2846,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `Default_Ceiling`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2551,11 +2861,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Default_Ground`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2564,11 +2876,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `DemonicGlyph_Bite`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2576,11 +2890,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `DemonicGlyph_Bounce`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2588,11 +2904,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `DemonicGlyph_Fire`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2600,11 +2918,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `DemonicGlyph_Movement`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2612,11 +2932,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `DemonicGlyph_Summon`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2624,22 +2946,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `DesireMech`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Die`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2647,22 +2973,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `DimensionXUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Dove`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2672,11 +3002,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Down`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2687,11 +3019,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move`](./Enums.md#enum-move) | Enum  | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
 </details>
+
+
 ### Object: `Druid`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2713,22 +3047,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Drunker`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ### Object: `DualSword`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2740,11 +3078,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `DualSword_Primed`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2756,11 +3096,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Dumb`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2768,11 +3110,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `DybbukPossessed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2782,11 +3126,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Eagle`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2797,55 +3143,65 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Earth`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `damage` | Equation | Specifies the amount of damage dealt, can be a number or expression. | 4 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
+
+
 ### Object: `Electric`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Empty`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ### Object: `EndOfTimeUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Escape`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2853,11 +3209,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `EventBounty`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2865,11 +3223,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 </details>
+
+
 ### Object: `Evolution`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2877,11 +3237,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `EvolveAbilityFromPool`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2889,11 +3251,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 26 | `true` |
 
 </details>
+
+
 ### Object: `Explody`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2904,11 +3268,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Explosive`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2916,11 +3282,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `FightPhase`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2931,11 +3299,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Fighter`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2959,11 +3329,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Fire`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2973,11 +3345,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `FireFull`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2988,33 +3362,39 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`combo`](./Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. || `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
 
 </details>
+
+
 ### Object: `Firefly`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `0`<br>`1`<br>`10` |
 
 </details>
+
+
 ### Object: `FloatingDebris`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
+
+
 ### Object: `Floor1_Large`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3026,11 +3406,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. | 2 | `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Floor1_Small`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3042,11 +3424,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. | 2 | `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Floor2_Large`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3058,11 +3442,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Floor2_Small`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3074,11 +3460,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `Flop`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3087,11 +3475,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Flop2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3100,11 +3490,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Flush`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3117,11 +3509,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `FlushBubs`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3129,11 +3523,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `FlushHost`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3142,11 +3538,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `FlushNettle`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3154,11 +3552,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Fly`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3174,11 +3574,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Food`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3192,11 +3594,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `FoodBig`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3211,11 +3615,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `FoodMedium`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3230,11 +3636,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `FoodMove`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3242,22 +3650,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `ForceMoveAway`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `free` | Boolean | If true, this option requires no cost to activate. | 2 | `false` |
 
 </details>
+
+
 ### Object: `ForceTrample`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3265,11 +3677,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum   | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ### Object: `FreeSpell`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3277,11 +3691,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Full`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3292,33 +3708,39 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`statuses_on_enter_form`](./Miscellaneous.md#object-statuses_on_enter_form) | Object  | Statuses or abilities applied when entering this form. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `FutureUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `GenFlag_Boss_Spewer`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `GenFlag_Boss_Stacy`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3326,11 +3748,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`miniboss_event`](./Miscellaneous.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `GlowingSeed`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3342,11 +3766,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `GoldenEgg`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3358,33 +3784,39 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `Grass`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 4 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ### Object: `Gravity`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Weakness`](./Passives_and_Statuses.md#object-weakness) | Array / Integer / Object  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Grown`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3397,22 +3829,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 2 | `0`<br>`1`<br>`15` |
 
 </details>
+
+
 ### Object: `GuaranteedJackpot`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Guarding`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3421,11 +3857,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `HalfDead`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3435,22 +3873,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `HardPathUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`hard_initial`](./Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Harpy`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3459,11 +3901,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `HarpysClaw`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3475,11 +3919,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `HasCat`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3491,11 +3937,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ### Object: `HasDeadCat`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3505,11 +3953,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `HasRock`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3518,11 +3968,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`attack`](./Enums.md#enum-attack) | Enum  | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ### Object: `Headless`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3531,11 +3983,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `HealRandomInjury`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3544,11 +3998,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Health`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3556,44 +4012,52 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Hint_CrackedVisuals`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ### Object: `Hint_CrackedVisuals2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ### Object: `Hint_CrackedVisuals3`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ### Object: `Holding`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3603,11 +4067,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Holy`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3616,11 +4082,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `House1`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3632,11 +4100,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.6`<br>`.7`<br>`.8` |
 
 </details>
+
+
 ### Object: `House2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3648,11 +4118,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.6`<br>`.7`<br>`.8` |
 
 </details>
+
+
 ### Object: `House3`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3664,11 +4136,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.6`<br>`.7`<br>`.8` |
 
 </details>
+
+
 ### Object: `HumanDead`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3677,11 +4151,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `HummingBird`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3691,11 +4167,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Hunter`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3718,33 +4196,39 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Ice`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 
 </details>
+
+
 ### Object: `IceAgeUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `InitialPhase`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3755,11 +4239,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Insane_Ceiling`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3769,11 +4255,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Insane_Ground`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3783,11 +4271,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Item`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3797,11 +4287,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `weight` | Number | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
+
+
 ### Object: `Jack_Gainaltfurniture`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3811,11 +4303,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 2 | `1` |
 
 </details>
+
+
 ### Object: `Jester`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3834,11 +4328,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Johnny`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3850,11 +4346,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `JohnnyBubs`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3862,11 +4360,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `JohnnyHost`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3875,11 +4375,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `JohnnyNettle`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3887,11 +4389,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Joystick`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3899,33 +4403,39 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `JunkyardUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `JurassicUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `LargeAttic`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3940,11 +4450,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
+
+
 ### Object: `LargeBirdPool`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3952,11 +4464,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `LargeHouse`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3964,11 +4478,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set_house`](./Enums.md#enum-set_house) | Enum   | Specifies which house layout to use for this upgrade. | 2 | `House1`<br>`House2`<br>`House3` |
 
 </details>
+
+
 ### Object: `LargeHouse_Floor2Large`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3976,11 +4492,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `LargeHouse_Floor2Small`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3988,11 +4506,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `LastHit`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4005,11 +4525,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `LeapClose`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4017,11 +4539,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `Leave`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4032,22 +4556,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `LevelUp`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Lifted`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4058,11 +4586,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Lighting`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4072,11 +4602,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`smallrays`](./Arrays.md#array-smallrays) | Array  | A two-value array defining the intensity or count of small light rays. || `[0, 0]`<br>`[1, 2]`<br>`[2, 6]` |
 
 </details>
+
+
 ### Object: `Lit`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4084,11 +4616,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `LostSoul`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4100,11 +4634,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `Mage`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4127,11 +4663,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `MagicSeed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4143,11 +4681,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`rarity`](./Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
+
+
 ### Object: `MeatWorldUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4155,11 +4695,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `MeatWorldUnlockedFull`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4173,11 +4715,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`mw_treasure`](./Miscellaneous.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `MedBirdPool`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4185,11 +4729,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `MedCatnip`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4199,11 +4745,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `MedScrap`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4213,11 +4761,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Medic`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4236,11 +4786,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `MediumHouse`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4248,11 +4800,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set_house`](./Enums.md#enum-set_house) | Enum   | Specifies which house layout to use for this upgrade. | 2 | `House1`<br>`House2`<br>`House3` |
 
 </details>
+
+
 ### Object: `MediumHouse_SmallRoom`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4260,11 +4814,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `Monk`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4287,44 +4843,52 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `MoonObeliskUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `MoonUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Mounted`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ### Object: `MouthFull`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4333,11 +4897,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `MoveAway`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4345,11 +4911,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 8 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveCenter`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4357,11 +4925,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveClose`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4370,11 +4940,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum   | Specifies the ability that the unit needs to move close to use. | 6 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
 
 </details>
+
+
 ### Object: `MoveForBarrage`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4383,11 +4955,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveForDash`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4396,11 +4970,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveForGrass`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4409,11 +4985,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveForPounce`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4422,11 +5000,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveForSpin`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4435,11 +5015,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveForThrow`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4448,11 +5030,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveOneForPuke`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4461,11 +5045,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveSpaced`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4473,11 +5059,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveToHead`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4486,11 +5074,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `MoveTowards`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4499,11 +5089,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `Mutant`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4519,11 +5111,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `NCGravecrawlFAR`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4531,11 +5125,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `Necromancer`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4556,11 +5152,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `NeutronStar`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4571,22 +5169,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `NoEyes`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ### Object: `NoStick`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4594,11 +5196,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`attack`](./Enums.md#enum-attack) | Enum  | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ### Object: `NonCat`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4607,11 +5211,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`animation`](./Enums.md#enum-animation) | Enum  | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ### Object: `Normal`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4622,11 +5228,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `NormalFull`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4636,11 +5244,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `NotPriming`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4648,22 +5258,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Nothing`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum  | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ### Object: `Nuke`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4688,11 +5302,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. || `-1`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ### Object: `Obey`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4700,22 +5316,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Off`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ### Object: `OffMap`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4723,11 +5343,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `OffScreen`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4735,11 +5357,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `OneAlive`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4747,11 +5371,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `OneEye`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4759,11 +5385,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Open`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4773,11 +5401,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `OpenCat`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4785,22 +5415,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Out`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Parousworm`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4814,11 +5448,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `ParticleAttractor`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4828,11 +5464,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`towards`](./Arrays.md#array-towards) | Array  | A 3D vector point that the force pulls particles towards. || `[0 .5 0]`<br>`[5 0 5]` |
 
 </details>
+
+
 ### Object: `ParticleBouncePlane`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4843,11 +5481,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `rotation_dampening` | Number | The amount of rotational velocity retained after bouncing, where 1 is full retention. | 1 | `1` |
 
 </details>
+
+
 ### Object: `ParticleCharacterCollision`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4856,11 +5496,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `pushforce` | Number | The magnitude of force applied to push the character away from the particle on collision. | 1 | `2` |
 
 </details>
+
+
 ### Object: `ParticleGlobalForce`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4868,11 +5510,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`id`](./Enums.md#enum-id) | Enum  | The unique numerical identifier for this injury or status effect. | 27 | `-1`<br>`0`<br>`1` |
 
 </details>
+
+
 ### Object: `ParticleLineCollisions`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4881,11 +5525,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `end_on_collision` | Boolean | If true, the particle is destroyed when it collides with a line. | 2 | `true` |
 
 </details>
+
+
 ### Object: `ParticleRandomForce`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4893,11 +5539,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`end`](./Enums.md#enum-end) | Enum  | Defines the final animation state or offset vector for a particle's lifespan. || `[-20, 0, 20]`<br>`[0, -450, 0]`<br>`[0, [200, 900], 0]` |
 
 </details>
+
+
 ### Object: `ParticleTornadoForce`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4906,11 +5554,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`point`](./Arrays.md#array-point) | Array  | The 3D position of the tornado's center point relative to the particle system. || `[0 -8 0]`<br>`[0 .8 0]`<br>`[0 0 0]` |
 
 </details>
+
+
 ### Object: `PeaceSymbol`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4924,11 +5574,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `PeaceSymbolFacePaint`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4941,22 +5593,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `PermanentCharm`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
+
+
 ### Object: `Pigeon`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4966,11 +5622,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `PopAndSpawn`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4980,11 +5638,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 2 | `false`<br>`true` |
 
 </details>
+
+
 ### Object: `Possessing`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4993,11 +5653,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Primed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5007,11 +5669,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Priming`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5019,11 +5683,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Psychic`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5045,11 +5711,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Pulp2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5062,11 +5730,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
+
+
 ### Object: `Pulp3`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5079,11 +5749,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
+
+
 ### Object: `Pulp4`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5096,11 +5768,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
+
+
 ### Object: `Pulp5`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5113,11 +5787,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
+
+
 ### Object: `Pulp6`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5130,11 +5806,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
+
+
 ### Object: `Pulp7`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5147,11 +5825,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
+
+
 ### Object: `Rage`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5164,11 +5844,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `.5`<br>`.66`<br>`.75` |
 
 </details>
+
+
 ### Object: `Rain`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5204,11 +5886,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `speed_start` | Number | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `RandomArmorPickup`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5216,11 +5900,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `RandomBiggerArmorPickup`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5228,11 +5914,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `RandomBiggerCatnipPickup`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5240,11 +5928,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `RandomBiggerFoodPickup`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5252,11 +5942,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `RandomCatnipPickup`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5264,11 +5956,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `RandomFoodPickup`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5276,11 +5970,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `RaptorEgg`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5294,11 +5990,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Raven`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5308,11 +6006,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `RavenFeather`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5325,11 +6025,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `Return`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5339,11 +6041,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ReturnA`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5351,11 +6055,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `RunFar`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5363,11 +6069,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `Scrap`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5381,11 +6089,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Seagull`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5395,22 +6105,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `SewersUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Shadow`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5425,11 +6139,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ShowFakeDamage`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5437,11 +6153,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`style`](./Arrays.md#array-style) | Array  | Specifies the visual styles (e.g., crit) used for the fake damage display. || `[crit]` |
 
 </details>
+
+
 ### Object: `Sitting`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5453,11 +6171,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `SlotResult_Explode`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5468,11 +6188,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `SlotResult_Jackpot_Coins`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5483,11 +6205,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `SlotResult_Nothing`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5495,11 +6219,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `SlotResult_RandomPickup`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5509,11 +6235,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Small`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5521,11 +6249,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`attack`](./Enums.md#enum-attack) | Enum  | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ### Object: `SmallAttic`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5540,11 +6270,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`reverb_full`](./Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `SmallBirdPool`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5552,11 +6284,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `SmallHolding`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5564,11 +6298,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `SmallHoldingCat`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5576,11 +6312,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `SmallHouse_Attic`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5588,11 +6326,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum   | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
+
+
 ### Object: `Snake`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5604,11 +6344,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `SpawningPhase`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5616,11 +6358,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `SpearRun`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5629,11 +6373,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `Squirrel`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5645,11 +6391,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `SquirrelForm`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5667,11 +6415,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Standing`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5682,11 +6432,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Standing2`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5697,22 +6449,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `Start_Ceiling`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Stimulation`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5720,11 +6476,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Stop`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5732,11 +6490,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `SuckMF`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5745,11 +6505,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `SwordAndShield`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5758,11 +6520,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `SwordAndShield_Primed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5772,11 +6536,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `TF_TargetAllies`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5784,11 +6550,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum   | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ### Object: `TF_TargetEnemies`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5796,11 +6564,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum   | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ### Object: `TVBotDie`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5809,11 +6579,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `TVBotDumb`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5822,11 +6594,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `TVBotObey`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5835,11 +6609,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `TVBotStop`
 
+
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5848,11 +6624,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Tank`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5875,11 +6653,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Tar`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5888,11 +6668,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `TarFull`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5902,55 +6684,65 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `TempDexterityUp`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
+
+
 ### Object: `TempPassiveWhileHasStatus`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 2 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `TempSpeedUp`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
+
+
 ### Object: `TheEndUnlocked`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Thief`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5973,22 +6765,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Throb`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ThrobBubs`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5996,11 +6792,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ThrobHost`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6009,11 +6807,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ThrobNettle`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6021,22 +6821,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ThrobbingArteryDone`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Thunderstorm`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6053,11 +6857,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`particles`](./Arrays.md#array-particles) | Array  | A list of particle system identifiers used to render the weather effects. || `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 
 </details>
+
+
 ### Object: `TieDyeBandana`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6070,11 +6876,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `Tinkerer`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6096,11 +6904,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stat_mods`](./Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Toad`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6112,11 +6922,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Transformed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6124,11 +6936,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Turkey`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6147,11 +6961,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Turtle`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6163,11 +6979,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
+
+
 ### Object: `Turtled`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6178,11 +6996,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `TwoAlive`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6190,22 +7010,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ### Object: `TwoEyes`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Unflip`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6214,11 +7038,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ### Object: `Unlit`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6226,11 +7052,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Unwashed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6238,11 +7066,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ### Object: `Up`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6252,33 +7082,39 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `VolcanoAntennaAttached`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `WallOfFleshDone`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Washed`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6286,11 +7122,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Washer`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6302,11 +7140,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ### Object: `Water`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6314,11 +7154,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `WeirdEgg`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6333,11 +7175,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `WereMan`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6351,22 +7195,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum   | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Wind`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ### Object: `WishBone`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6381,11 +7229,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `Zealot`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6402,11 +7252,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ZealotBomb`
+
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6418,12 +7270,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ---
+
 
 ## Auto-Discovered Objects
 
 
 ### Object: `AntlerSwipe`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6439,7 +7295,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `AntlerSwipe2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6453,7 +7312,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BasicDashAttackMove_NoKnockback`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6469,7 +7331,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BerserkDash`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6486,7 +7351,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BirthSquirrel`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6504,7 +7372,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BlackShard`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6528,7 +7399,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `Boulder`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6545,7 +7419,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`sound`](./Miscellaneous.md#object-sound) | Object  | A container object defining audio configurations, including alternate sound lists. | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CharmTrap`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6563,7 +7440,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Chitter`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6580,7 +7460,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `DeathWormEat`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6597,7 +7480,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`temporary_effects`](./Miscellaneous.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `EtherSoakedRag`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6615,7 +7501,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `HardenSkin`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6631,7 +7520,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `HardenSkin2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6645,7 +7537,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `HeadTumor`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6662,7 +7557,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `HornCharge`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6678,7 +7576,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `JewelOfDrog`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6696,7 +7597,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
+
+
 ### Object: `MegaGuppy`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6713,8 +7617,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `MockSong`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6730,8 +7637,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MockSong2`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6747,7 +7657,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MonkeyThrow`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6764,7 +7677,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MonkeyThrow2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6778,7 +7694,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `MoonHandDrop`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6792,7 +7711,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `MoonHeadFlail`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6805,7 +7727,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Pounce`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6822,7 +7747,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Prance`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6838,7 +7766,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Prance2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6852,7 +7783,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `RandomPickup`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6865,7 +7799,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Scavenge`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6881,7 +7818,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Scavenge2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6895,7 +7835,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Synthesize`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6911,7 +7854,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Synthesize2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6925,7 +7871,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `TaintedOffering`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6942,7 +7891,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TaintedOffering2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6956,7 +7908,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Tease`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6974,7 +7929,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Tease2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6988,7 +7946,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `TheDestroyer`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7005,7 +7966,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Thrash`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7022,8 +7986,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ThrowPoop`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7038,8 +8005,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TigerSwipes`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7054,7 +8024,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TigerSwipes2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7068,7 +8041,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Timber`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7086,8 +8062,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`temporary_effects`](./Miscellaneous.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `TinaFlail`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7099,8 +8078,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `TinaFlailRage`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7112,7 +8094,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `ZombieCatFamiliar`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7129,7 +8114,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `cm_RaptorEggSpawn`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7146,7 +8134,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `head_CrownOfHorns`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7161,7 +8152,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `megadino`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7176,7 +8170,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
 
 </details>
+
+
 ### Object: `moonhead`
+
 
 <details>
 <summary><b>Expand</b></summary>

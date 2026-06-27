@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Difficulties
 
 > **Associated Files:** `data/difficulties.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -22,14 +23,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `hard`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 21
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -40,6 +43,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
 
 
@@ -49,7 +54,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 8
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -59,4 +63,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---

@@ -10,6 +10,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ROOT`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -127,14 +128,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Weakness`](./Passives_and_Statuses.md#object-weakness) | Array / Integer / Object  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `passives`
 
 
 **Definition:** Object listing intrinsic passive modifiers.  
 **Total Count:** 884
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -582,14 +585,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`WobblyCat`](./Enums.md) | Integer || 1 | `25%` |
 
 </details>
+
+
 ---
+
 
 ### Object: `stats`
 
 
 **Definition:** Core character metrics (Health, Strength, etc.).  
 **Total Count:** 97
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -607,14 +612,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`lck`](./Enums.md#enum-lck) | Enum / Integer  || 16 | `-1`<br>`-2`<br>`-3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToBasicAttack`
 
 
 **Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
 **Total Count:** 92
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -669,13 +676,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SplashDamage`](./Enums.md) | Integer | The radius (in tiles) for splash damage applied to adjacent targets. | 1 | `1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `effects`
 
+
 **Definition:** Non-damaging status applications and logic triggers executed on impact.  
 **Total Count:** 30
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -704,14 +714,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpreadDisease`](./Passives_and_Statuses.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 8 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddPassivesToMinions`
 
 
 **Definition:** Applies the 'AddPassivesToMinions' effect.  
 **Total Count:** 29
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -750,14 +762,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`UncappedHP`](./Enums.md) | Integer | If 1, the unit's maximum HP is not capped by standard limits. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnOnBattleStart`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 21
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -770,14 +784,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`number`](./Arrays.md#array-number) | Array / Integer || 29 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTookDamage`
 
 
 **Definition:** Event Trigger: Applies nested statuses when took damage.  
 **Total Count:** 21
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -807,14 +823,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempMovement`](./Enums.md) | Integer | The amount of temporary movement range added, or a string alias like 'mov'. | 1 | `1`<br>`20`<br>`mov` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEnd`
 
 
 **Definition:** Applies or references the 'StatusEachTurnEnd' effect/state.  
 **Total Count:** 20
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -837,14 +855,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`UseAbility_Madness`](./Enums.md#enum-useability_madness) | Enum  || 1 | `weapon` |
 
 </details>
+
+
 ---
+
 
 ### Object: `lock_item_slot`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 16
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -857,14 +877,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `frame` | Integer | The sprite frame index to display. | 3 | `1`<br>`10`<br>`100` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnBattleEnd`
 
 
 **Definition:** Applies the nested status effects when the encounter finishes.  
 **Total Count:** 16
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -886,14 +908,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`PermanentStrength`](./Enums.md) | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 1 | `1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnKill`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 16
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -918,14 +942,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TakeBonusTurnWithStatus`](./Passives_and_Statuses.md#object-takebonusturnwithstatus) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnStanceSwitch`
 
 
 **Definition:** Event Trigger: Applies nested statuses when stance switch.  
 **Total Count:** 14
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -944,14 +970,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpreadDisease`
 
 
 **Definition:** Provides a chance to transmit a disease status to adjacent targets.  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -965,14 +993,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `can_apply_to_anything` | Boolean | If true, this disease can be spread to any unit, regardless of type. | 6 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnBegin`
 
 
 **Definition:** Event Trigger: Applies nested statuses to each turn begin.  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -991,14 +1021,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_Ally`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target is friendly to the caster.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1020,14 +1052,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CritsApplyStatus`
 
 
 **Definition:** Applies the 'CritsApplyStatus' effect.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1048,14 +1082,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Immobile`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | `0`<br>`1`<br>`10%` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Temporary`
 
 
 **Definition:** A wrapper object for applying status effects that automatically expire.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1071,14 +1107,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 21 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveAtStatThreshold`
 
 
 **Definition:** Applies the 'PassiveAtStatThreshold' effect.  
 **Total Count:** 10
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1093,14 +1131,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 13 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `threshold`
 
 
 **Definition:** Examples: `4*champion_multiplier, 3*champion_multiplier, 1`  
 **Total Count:** 10
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1114,14 +1154,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RevengeDamage`
 
 
 **Definition:** Reaction trigger: Deals damage to the attacker when hit.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1135,14 +1177,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 29 | `Default`<br>`FormChange`<br>`Druid` | `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 3 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MeleeRevengeDamage`
 
 
 **Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1161,14 +1205,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Weakness`](./Enums.md) | Enum / Integer | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveIfAllArmorEmpty`
 
 
 **Definition:** Applies the 'PassiveIfAllArmorEmpty' effect.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1187,14 +1233,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Flying`](./Enums.md) | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RandomStatusFromPool`
 
 
 **Definition:** Selects and applies a random status effect from the provided nested object.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1243,14 +1291,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpawnCoinAnywhere`](./Enums.md) | Integer | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 1 | `1`<br>`[1 .5]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnCrit`
 
 
 **Definition:** Event Trigger: Applies nested statuses when crit.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1268,14 +1318,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_Enemy`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target is hostile to the caster.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1292,14 +1344,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DamageNeighborsOnEndMove`
 
 
 **Definition:** Combat Trigger: Deals damage to neighbors on end move.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1316,14 +1370,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ForceUseAbility`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1335,8 +1391,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 5 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A probability (decimal or percentage) for a form change or other effect to occur. | 3 | `.02`<br>`.1`<br>`.15` |
 
-</details>`damage_instance`<br>`spell`<br>`self_damage`
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+</details>
+
+
 ---
+
 
 ### Object: `PassiveIfEmptyFace`
 
@@ -1344,7 +1406,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Applies the 'PassiveIfEmptyFace' effect.  
 **Total Count:** 7
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1360,7 +1421,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveIfEmptyHead`
 
@@ -1368,7 +1432,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Applies the 'PassiveIfEmptyHead' effect.  
 **Total Count:** 7
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1384,7 +1447,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveIfEmptyNeck`
 
@@ -1392,7 +1458,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Applies the 'PassiveIfEmptyNeck' effect.  
 **Total Count:** 7
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1408,14 +1473,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAlliesOnDeath`
 
 
 **Definition:** Event Trigger: Applies nested statuses to allies on death.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1434,14 +1501,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FullHeal`](./Enums.md) | Integer | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnUseAbilityWithTag`
 
 
 **Definition:** Event Trigger: Applies nested statuses when use ability with tag.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1460,14 +1529,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToElementAbilities`
 
 
 **Definition:** Applies the 'AddStatusToElementAbilities' effect.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1484,14 +1555,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToWeapons`
 
 
 **Definition:** Applies the 'AddStatusToWeapons' effect.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1507,14 +1580,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LeechPercent`](./Enums.md) | Integer || 1 | `50` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CureDisease`
 
 
 **Definition:** Applies the 'CureDisease' effect.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1528,14 +1603,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `can_apply_to_anything` | Boolean | If true, this disease can be spread to any unit, regardless of type. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Else`
 
 
 **Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1554,14 +1631,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempSpeedUp`](./Enums.md) | Integer | The number of stacks of temporary Speed Up applied to the unit. | 1 | `10`<br>`4`<br>`X` |
 
 </details>
+
+
 ---
+
 
 ### Object: `keyword_tooltips`
 
 
 **Definition:** Forces specific UI tooltips to appear when hovering over the ability.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1574,14 +1653,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Weakness`](./Enums.md) | Enum / Integer | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ManaCostReductionTagged`
 
 
 **Definition:** Applies the 'ManaCostReductionTagged' effect.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1594,14 +1675,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnEachTurn`
 
 
 **Definition:** Applies or references the 'SpawnEachTurn' effect/state.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1616,14 +1699,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`number`](./Arrays.md#array-number) | Array / Integer  || 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnThingOnDamage`
 
 
 **Definition:** Applies or references the 'SpawnThingOnDamage' effect/state.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1638,14 +1723,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consider_all_layers` | Boolean | If true, considers all map layers when determining the spawn location. | 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToAllDamage`
 
 
 **Definition:** Modifier: Injects a status effect into a specific action.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1656,14 +1743,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToBasicMeleeAttack`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1680,14 +1769,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnCastSpell`
 
 
 **Definition:** Event Trigger: Applies nested statuses when cast spell.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1703,14 +1794,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnOverHealed`
 
 
 **Definition:** Event Trigger: Applies nested statuses when over healed.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1726,14 +1819,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddDamageToElementDamage`
 
 
 **Definition:** Applies or references the 'AddDamageToElementDamage' effect/state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1746,14 +1841,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddPassivesToCharmed`
 
 
 **Definition:** Applies the 'AddPassivesToCharmed' effect.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1769,14 +1866,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DamageUp`](./Enums.md) | Integer | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 2 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToElementDamage`
 
 
 **Definition:** Applies the 'AddStatusToElementDamage' effect.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1792,14 +1891,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToExplosions`
 
 
 **Definition:** Applies the 'AddStatusToExplosions' effect.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1813,14 +1914,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Burn`](./Enums.md) | Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 4 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AllyBonusAbilityAura`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1833,14 +1936,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `square` | Boolean || 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AllyManaRegenAura`
 
 
 **Definition:** Applies the 'AllyManaRegenAura' effect.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1853,14 +1958,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AmplifyStatus`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1873,14 +1980,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AutocastEachRound`
 
 
 **Definition:** Forces the character to automatically cast a specific ability at the start of each combat round.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1894,14 +2003,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `force_display_name` | Boolean | If true, forces the display name to show for the ability. | 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_FirstApplicationThisTurn`
 
 
 **Definition:** Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1917,14 +2028,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ManaGain`](./Enums.md) | Integer | The amount of mana restored to the source, which can be an expression. | 1 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DistanceBonusDamage`
 
 
 **Definition:** Applies the 'DistanceBonusDamage' effect.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1937,14 +2050,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `EMP`
 
 
 **Definition:** Applies the 'EMP' effect.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1957,14 +2072,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`status_explosion_override`](./Enums.md#enum-status_explosion_override) | Enum || 4 | `WaterConduct` |
 
 </details>
+
+
 ---
+
 
 ### Object: `empty_armor_scaled_stats`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1978,14 +2095,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveAtHealthThreshold`
 
 
 **Definition:** Applies or references the 'PassiveAtHealthThreshold' effect/state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2000,14 +2119,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 9 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhenAffectedByElement`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2021,14 +2142,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 18 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhenAtFullMana`
 
 
 **Definition:** State Trigger: Grants nested passives when at full mana.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2045,14 +2168,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ReplaceBasicMove`](./Enums.md#enum-replacebasicmove) | Enum  | Specifies an alternative movement ability that replaces the unit's default move. | 1 | `BasicDashAttackMove`<br>`BasicJump`<br>`BellyFlop_BasicMove` |
 
 </details>
+
+
 ---
+
 
 ### Object: `spell_graphics_override`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2067,14 +2192,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`particle`](./Enums.md#enum-particle) | Enum | Specifies the particle effect displayed. | 4 | `ArrowFromAbove`<br>`BigMagicMissileBlast`<br>`Bolt` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAlliesOnKill`
 
 
 **Definition:** Event Trigger: Applies nested statuses to allies on kill.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2089,14 +2216,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusIfUnusedMovePoints`
 
 
 **Definition:** Event Trigger: Applies nested statuses to if unused move points.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2115,14 +2244,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTurnEndIfCastNSpells`
 
 
 **Definition:** Event Trigger: Applies nested statuses when turn end if cast n spells.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2139,14 +2270,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTurnEndIfManaExact`
 
 
 **Definition:** Event Trigger: Applies nested statuses when turn end if mana exact.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2164,14 +2297,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpellDamageUp`](./Enums.md) | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 1 | `1`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTurnEndIfManaOrHealthExact`
 
 
 **Definition:** Event Trigger: Applies nested statuses when turn end if mana or health exact.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2191,14 +2326,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityReaction`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2212,14 +2349,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddSelfStatusToBasicAttack`
 
 
 **Definition:** Applies or references the 'AddSelfStatusToBasicAttack' effect/state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2232,14 +2371,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 7 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddTemporaryEffectsToBasicAttack`
 
 
 **Definition:** Applies the 'AddTemporaryEffectsToBasicAttack' effect.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2252,14 +2393,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `CastAgain` | Integer / String | The number of additional times the ability can be cast this turn. | 2 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_BadRoll`
 
 
 **Definition:** Conditional trigger: Executes nested logic based on a randomized bad outcome probability.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2273,14 +2416,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 5 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_HasStatus`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target currently has the specified status effect.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2294,14 +2439,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DeathRattle`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2314,14 +2461,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `pop_corpse` | Boolean | If true, the corpse is destroyed instead of left behind on death. | 11 | `false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ElementalManaCostReduction`
 
 
 **Definition:** Applies the 'ElementalManaCostReduction' effect.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2334,14 +2483,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`element`](./Arrays.md#array-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 5 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FindItemFromPool`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2354,14 +2505,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 2 | `2`<br>`3`<br>`4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveTowardsDamageSource`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2374,14 +2527,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `move_far` | Boolean | If true, the unit moves the maximum distance towards the damage source. | 4 | `false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ObjectOnHitCharacter`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2394,14 +2549,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 5 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnCatCopyOnBattleStart`
 
 
 **Definition:** Applies the 'SpawnCatCopyOnBattleStart' effect.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2414,14 +2571,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 4 | `ancestorset_shade`<br>`eb_twin`<br>`minime_clone` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnOnBattleStartRandomEmptyTile`
 
 
 **Definition:** Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2434,14 +2593,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`number`](./Arrays.md#array-number) | Array / Integer || 10 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `statuses`
 
 
 **Definition:** Status effects possessed by the character.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2457,14 +2618,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEveryXSpellCasts`
 
 
 **Definition:** Applies or references the 'StatusEveryXSpellCasts' effect/state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2482,14 +2645,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RepairWeaponCondition`](./Enums.md) | Integer | The amount of weapon condition restored. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusGroup`
 
 
 **Definition:** Groups multiple status effects together for batch application.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2505,14 +2670,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpawnCoinAnywhere`](./Enums.md) | Integer | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 1 | `1`<br>`[1 .5]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusKilledCharacters`
 
 
 **Definition:** Event Trigger: Applies nested statuses to killed characters.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2523,14 +2690,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnAllyCatDeath`
 
 
 **Definition:** Event Trigger: Applies nested statuses when ally cat death.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2548,14 +2717,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnBattleStart`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2569,14 +2740,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Sleep`](./Enums.md) | Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEatFood`
 
 
 **Definition:** Event Trigger: Applies nested statuses when eat food.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2592,14 +2765,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnGainCoins`
 
 
 **Definition:** Event Trigger: Applies nested statuses when gain coins.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2614,14 +2789,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnHealed`
 
 
 **Definition:** Event Trigger: Applies nested statuses when healed.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2637,14 +2814,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnKillEnemy`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2661,14 +2840,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTookDamageFromAbility`
 
 
 **Definition:** Event Trigger: Applies statuses when taking damage from an ability.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2682,14 +2863,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`Shield`](./Enums.md) | Integer / String | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
 **Definition:** AI Trigger: Executes an ability when a character with a specific tag moves adjacent.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2703,14 +2886,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 5 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddPassivesToSummonAbilityMinions`
 
 
 **Definition:** Applies the 'AddPassivesToSummonAbilityMinions' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2726,14 +2911,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `AddPassiveToSpawnedRocks`
 
 
 **Definition:** Applies the 'AddPassiveToSpawnedRocks' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2746,14 +2933,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `JoinSpawnerFaction` | Number | The faction ID that spawned rocks should join. | 2 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddSelfStatusToWeapons`
 
 
 **Definition:** Applies the 'AddSelfStatusToWeapons' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2764,14 +2953,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToAllDamageAbilities`
 
 
 **Definition:** Applies the 'AddStatusToAllDamageAbilities' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2786,14 +2977,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Weakness`](./Enums.md) | Enum / Integer | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToBasicAttackWithCooldown`
 
 
 **Definition:** Applies the 'AddStatusToBasicAttackWithCooldown' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2806,14 +2999,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToFirstBasicAttack`
 
 
 **Definition:** Applies the 'AddStatusToFirstBasicAttack' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2824,14 +3019,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToMeleeDamage`
 
 
 **Definition:** Applies the 'AddStatusToMeleeDamage' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2845,14 +3042,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToTrampleDamage`
 
 
 **Definition:** Applies the 'AddStatusToTrampleDamage' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2863,14 +3062,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AllyHealthRegenAura`
 
 
 **Definition:** Applies the 'AllyHealthRegenAura' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2883,14 +3084,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AlternateCraftingPools`
 
 
 **Definition:** Applies the 'AlternateCraftingPools' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2903,14 +3106,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tinkerer_1`](./Enums.md#enum-tinkerer_1) | Enum || 2 | `tinkerer_1_bombs` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ApplyStatusesToRandomEnemiesEachTurn`
 
 
 **Definition:** Applies or references the 'ApplyStatusesToRandomEnemiesEachTurn' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2924,14 +3129,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 | `0`<br>`1`<br>`10` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ApplyStatusIfCrit`
 
 
 **Definition:** Conditional trigger: Executes the nested logic only if the triggering action was a critical hit.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2944,14 +3151,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Purge`](./Enums.md) | Integer | The number of status effects to purge from the target. | 2 | `0`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ApplyToSource`
 
 
 **Definition:** Redirects the nested effects to apply to the caster/source of the ability instead of the target.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2965,14 +3174,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Shield`](./Enums.md) | Integer / String | The amount of shield granted to the source, absorbing incoming damage. | 5 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AutocastEachTurnBegin`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2986,14 +3197,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BoobyTrapItems`
 
 
 **Definition:** Applies the 'BoobyTrapItems' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3006,14 +3219,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`on_throw`](./Passives_and_Statuses.md#object-on_throw) | Object  || 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BoostWeaponDamage`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3027,14 +3242,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 4 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BouncyProjectiles`
 
 
 **Definition:** Applies the 'BouncyProjectiles' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3047,14 +3264,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`max_range`](./Enums.md#enum-max_range) | Enum / Integer   || 3 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CatAPultAnimation`
 
 
 **Definition:** Applies the 'CatAPultAnimation' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3067,14 +3286,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CatchProjectiles`
 
 
 **Definition:** Applies or references the 'CatchProjectiles' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3090,14 +3311,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer  | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChanceToBackflip`
 
 
 **Definition:** Applies or references the 'ChanceToBackflip' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3110,14 +3333,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 6 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
 ---`damage_instance`<br>`spell`<br>`self_damage`
+
 
 ### Object: `ChangeTile`
 
 
 **Definition:** Transforms the terrain tile under the target.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3130,14 +3354,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `aoe` | Integer | The radius (in tiles) of the area affected by the tile change. | 2 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ClassManaCostReduction`
 
 
 **Definition:** Applies or references the 'ClassManaCostReduction' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3150,14 +3376,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`class`](./Enums.md#enum-class) | Enum | Specifies the class that this ability belongs to, used for categorization and restrictions. | 6 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_Adjacent`
 
 
 **Definition:** Conditional object: Executes nested logic only if the target is/has Adjacent.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3173,14 +3401,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag`
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_Boss`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target is a Boss.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3194,14 +3424,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 2 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_Corpse`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target is a dead body/corpse.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3221,14 +3453,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_HasTag`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target possesses the specified entity tag.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3244,14 +3478,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_NotBoss`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target is NOT a Boss.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3263,14 +3499,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_PartyMember`
 
 
 **Definition:** Conditional constraint. Nested properties only trigger if this is true.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3282,14 +3520,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_Shielded`
 
 
 **Definition:** Conditional trigger: Executes nested logic if the target currently has a Shield status.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3302,14 +3542,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Craft`
 
 
 **Definition:** Synthesizes or spawns a new item from a specific pool.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3322,14 +3564,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 14 | `0`<br>`1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DamageNeighborsAfterMove`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3346,14 +3590,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `DamageNeighborTilesWhenCastSpell`
 
 
 **Definition:** Combat Trigger: Deals damage to neighbor tiles when cast spell.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3368,14 +3614,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`triattack`](./Passives_and_Statuses.md#object-triattack) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DamageReductionAura`
 
 
 **Definition:** Combat Trigger: Deals damage to reduction aura.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3389,14 +3637,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Earth`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3408,14 +3658,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`damage`](./Math_Equations.md) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Electric`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3426,14 +3678,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `ElementalAttunement`
 
 
 **Definition:** Applies the 'ElementalAttunement' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3454,14 +3708,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Wind`](./Passives_and_Statuses.md#object-wind) | Object  | Defines the properties for the Wind element, such as knockback amount. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `EscapeSequence`
 
 
 **Definition:** Applies the 'EscapeSequence' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3475,14 +3731,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Eternal`
 
 
 **Definition:** Applies the 'Eternal' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3499,14 +3757,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `ExtraStatusWhenDealingDamage`
 
 
 **Definition:** Applies or references the 'ExtraStatusWhenDealingDamage' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3517,14 +3777,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `Fire`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Fire' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3537,14 +3799,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Burn`](./Enums.md) | Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Grass`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3557,14 +3821,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Poison`](./Arrays.md#array-poison) | Array / Enum / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Gravity`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3575,14 +3841,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `GravityWell`
 
 
 **Definition:** Applies the 'GravityWell' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3599,14 +3867,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2 | `Key`<br>`damage_instance`<br>`spell`
 
 </details>
+
+
 ---
+
 
 ### Object: `HealAlliesEachTurn`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3620,14 +3890,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Holy`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Holy\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3641,14 +3913,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `HolyDamageBlessing`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3661,14 +3935,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Burn`](./Enums.md) | Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Ice`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3679,14 +3955,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `InfiniteRebirth`
 
 
 **Definition:** Applies the 'InfiniteRebirth' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3701,14 +3979,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempSpeedUp`](./Enums.md) | Integer | The number of stacks of temporary Speed Up applied to the unit. | 2 | `10`<br>`4`<br>`X` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LateBloomer`
 
 
 **Definition:** Applies the 'LateBloomer' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3722,14 +4002,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer  | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LightningRod`
 
 
 **Definition:** Applies the 'LightningRod' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3742,14 +4024,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LowHealthAllyDodgeChanceAura`
 
 
 **Definition:** Applies the 'LowHealthAllyDodgeChanceAura' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3762,14 +4046,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `theshold` | Number || 2 | `5` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MovementReaction`
 
 
 **Definition:** Reaction: Triggers an effect or ability when forced to move.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3782,14 +4068,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 7 | `false`<br>`true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NextBattleStatus`
 
 
 **Definition:** Applies the 'NextBattleStatus' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3800,14 +4088,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `on_break`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3819,14 +4109,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SafeExplosionIfHitSomething` | Number | The radius of a safe explosion that only occurs if it hits an obstacle or entity. | 2 | `10`<br>`5` |
 
 </details>
+
+
 ---
+
 
 ### Object: `on_throw`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3839,14 +4131,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveAfterXKills`
 
 
 **Definition:** Applies or references the 'PassiveAfterXKills' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3860,14 +4154,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveAtFullHealth`
 
 
 **Definition:** Applies the 'PassiveAtFullHealth' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3881,14 +4177,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ManaCostReduction`](./Enums.md) | Integer | The amount or percentage by which ability mana costs are reduced for this unit. | 2 | `-2`<br>`1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveAtInjuryThreshold`
 
 
 **Definition:** Applies the 'PassiveAtInjuryThreshold' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3905,14 +4203,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveGroup`
 
 
 **Definition:** Passive: A collection of passives grouped together for easier management.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3929,14 +4229,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveUntilCastSpell`
 
 
 **Definition:** Applies the 'PassiveUntilCastSpell' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3950,14 +4252,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StatusAlliesEachTurn`](./Passives_and_Statuses.md#object-statusallieseachturn) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveUntilGetKill`
 
 
 **Definition:** Applies the 'PassiveUntilGetKill' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3969,14 +4273,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HolyDamageBlessing`](./Passives_and_Statuses.md#object-holydamageblessing) | Object  | An object defining the damage multiplier and status effects applied as a holy damage blessing. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhenTheAlpha`
 
 
 **Definition:** State Trigger: Grants nested passives when the alpha.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3988,14 +4294,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `TogglableRoundEndExtraTurn` | Number | The number of extra turns granted at the end of each round while the unit is the alpha. | 2 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhileInMonkMeleeStance`
 
 
 **Definition:** Applies the 'PassiveWhileInMonkMeleeStance' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4009,14 +4317,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhileInMonkRangedStance`
 
 
 **Definition:** Applies the 'PassiveWhileInMonkRangedStance' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4031,14 +4341,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhilePreviewingMonkRangedStance`
 
 
 **Definition:** Applies the 'PassiveWhilePreviewingMonkRangedStance' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4051,14 +4363,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AddBonusRange`](./Enums.md) | Integer | The number of additional tiles of range added to the unit's abilities. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhileWearingMetal`
 
 
 **Definition:** Applies the 'PassiveWhileWearingMetal' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4070,14 +4384,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AddElementsToWeapon`](./Enums.md#enum-addelementstoweapon) | Enum | Specifies the element to add to the unit's attacks while wearing metal equipment. | 2 | `Electric` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RepressedMemoriesMetronome`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4090,14 +4406,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ScaledStatusOnOverMana`
 
 
 **Definition:** Applies the 'ScaledStatusOnOverMana' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4111,14 +4429,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Cleanse`](./Enums.md) | Integer | The number of stacks of negative status effects removed from the target. | 1 | `0`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ScaledStatusOnSpendMana`
 
 
 **Definition:** Applies the 'ScaledStatusOnSpendMana' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4130,14 +4450,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#object-repressedmemoriesmetronome) | Object  | An object defining the metronome status effect and its pool triggered on mana spend. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `schadenfreude_scaled_stats`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4150,14 +4472,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`str`](./Enums.md#enum-str) | Enum / Integer  || 1 | `-1`<br>`-2`<br>`-3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SecurityBotProtect`
 
 
 **Definition:** AI Logic: Guarding behavior for Security Bot units.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4170,14 +4494,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 5 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Shadow`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4190,14 +4516,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SmiteEnemiesWhoKill`
 
 
 **Definition:** Applies the 'SmiteEnemiesWhoKill' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4214,14 +4542,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `SpecialFriends`
 
 
 **Definition:** Applies the 'SpecialFriends' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4235,14 +4565,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | The amount of health restored to the source. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatsAtLowHealth`
 
 
 **Definition:** Applies the 'StatsAtLowHealth' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4257,14 +4589,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `strength` | Integer | The base strength stat, used for physical damage calculations. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAfterCastSpell`
 
 
 **Definition:** Applies or references the 'StatusAfterCastSpell' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4278,14 +4612,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempDamageUp`](./Enums.md) | Integer | The amount of temporary damage increase applied. | 1 | `-1`<br>`1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAlliesOnBattleStart`
 
 
 **Definition:** Applies or references the 'StatusAlliesOnBattleStart' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4298,14 +4634,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum  | Specifies which temporary item is equipped. | 2 | `Bottles`<br>`ButcherHook_Temporary`<br>`FoodBig` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAlliesOnGainCoins`
 
 
 **Definition:** Event Trigger: Applies nested statuses to allies on gain coins.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4319,15 +4657,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
 | `scaled` | Boolean || 1 | `true` |
 
-</details>`damage_instance`<br>`spell`<br>`self_damage`
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+</details>
+
+
 ---
+
 
 ### Object: `StatusAllyWhenAllySpendsMana`
 
 
 **Definition:** Event Trigger: Applies nested statuses to ally when ally spends mana.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4341,14 +4684,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
+
 `damage_instance`<br>`spell`<br>`self_damage`
+
+
 ### Object: `StatusAnyCatAllyWhoKills`
 
 
 **Definition:** Event Trigger: Applies nested statuses to any cat ally who kills.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4359,14 +4707,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusDamagers`
 
 
 **Definition:** Event Trigger: Applies nested statuses to damagers.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4380,14 +4730,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEndForEachTurn`
 
 
 **Definition:** Event Trigger: Applies nested statuses to each turn end for each turn.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4400,14 +4752,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 3 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEndPerEnemyKill`
 
 
 **Definition:** Event Trigger: Applies nested statuses to each turn end per enemy kill.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4420,14 +4774,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 2 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEnemiesOnDeath`
 
 
 **Definition:** Event Trigger: Applies nested statuses to enemies on death.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4438,14 +4794,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEveryXTurnBegins`
 
 
 **Definition:** Event Trigger: Applies nested statuses to every x turn begins.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4459,14 +4817,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 2 | `1`<br>`2`<br>`4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusKillers`
 
 
 **Definition:** Instantly kills the target if they possess the specified status effects.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4477,14 +4837,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnAnyDeath`
 
 
 **Definition:** Event Trigger: Applies nested statuses when any death.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4497,14 +4859,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnBattleEndIfKillThresholdMet`
 
 
 **Definition:** Event Trigger: Applies nested statuses when battle end if kill threshold met.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4517,14 +4881,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnBreakItem`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4539,14 +4905,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnCollectPickup`
 
 
 **Definition:** Event Trigger: Applies nested statuses when collect pickup.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4559,14 +4927,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnDealtDamage`
 
 
 **Definition:** Event Trigger: Applies nested statuses when dealt damage.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4581,14 +4951,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnDealtDamageThreshold`
 
 
 **Definition:** Event Trigger: Applies nested statuses when dealt damage threshold.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4607,14 +4979,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEndMove`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4625,14 +4999,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnGainShield`
 
 
 **Definition:** Event Trigger: Applies nested statuses when gain shield.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4646,14 +5022,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnHeal`
 
 
 **Definition:** Event Trigger: Applies nested statuses when heal.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4667,14 +5045,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnOverMana`
 
 
 **Definition:** Event Trigger: Applies nested statuses when over mana.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4689,14 +5069,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnPickupCoins`
 
 
 **Definition:** Event Trigger: Applies nested statuses when pickup coins.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4712,14 +5094,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnPopCorpse`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4732,14 +5116,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | The amount of health restored to the source. | 3 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTookDamageFromEnemyAbility`
 
 
 **Definition:** Event Trigger: Applies nested statuses when took damage from enemy ability.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4753,14 +5139,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`MoveQuivered`](./Enums.md) | Integer | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`[1, 0.1]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTriggerTrap`
 
 
 **Definition:** Event Trigger: Applies nested statuses when trigger trap.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4774,14 +5162,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Quivered`](./Enums.md) | Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnUseBasicAttack`
 
 
 **Definition:** Event Trigger: Applies nested statuses when use basic attack.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4794,14 +5184,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FlippedFacingForceAttack`](./Enums.md) | Integer || 2 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnUseElementAbility`
 
 
 **Definition:** Event Trigger: Applies nested statuses when use element ability.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4815,14 +5207,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusPerInjury`
 
 
 **Definition:** Event Trigger: Applies nested statuses to per injury.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4840,14 +5234,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusThingsKnockedBack`
 
 
 **Definition:** Event Trigger: Applies nested statuses to things knocked back.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4859,14 +5255,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Drag` | Number | The distance (in tiles) that the unit drags knocked-back targets toward itself. | 2 | `1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusWhenAllySpendsMana`
 
 
 **Definition:** Event Trigger: Applies nested statuses to when ally spends mana.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4881,14 +5279,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `TaggedPickupEffectReplacement`
 
 
 **Definition:** Applies the 'TaggedPickupEffectReplacement' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4902,14 +5302,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer / String | The amount of health restored to the source. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TowerDefense`
 
 
 **Definition:** Applies the 'TowerDefense' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4922,14 +5324,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Water`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Water\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4941,14 +5345,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AOEPuddle`](./Math_Equations.md) | Equation | Specifies the pattern or shape of an area-of-effect puddle left on the ground. | 2 | `X-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Wind`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4960,14 +5366,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`knockback`](./Math_Equations.md) | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 2 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityChargeRefundChance`
 
 
 **Definition:** Applies the 'AbilityChargeRefundChance' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4980,7 +5388,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusesIfPersistentWeatherElement`
 
@@ -4988,7 +5399,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Applies the 'AddStatusesIfPersistentWeatherElement' effect.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5001,7 +5411,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Burn`](./Enums.md) | Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusesToReceivedElementalDamage`
 
@@ -5009,7 +5422,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Applies the 'AddStatusesToReceivedElementalDamage' effect.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5022,14 +5434,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Burn`](./Enums.md) | Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToKnockbackDamage`
 
 
 **Definition:** Modifier: Injects a status effect into a specific action.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5040,14 +5454,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToReceivedDamage_ExcludeStatuses`
 
 
 **Definition:** Applies the 'AddStatusToReceivedDamage_ExcludeStatuses' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5058,14 +5474,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToSpells`
 
 
 **Definition:** Modifier: Injects a status effect into a specific action.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5076,14 +5494,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddTemporaryEffectsToEquipment`
 
 
 **Definition:** Applies the 'AddTemporaryEffectsToEquipment' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5095,14 +5515,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `CastAgain` | Integer / String | The number of additional times the ability can be cast this turn. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Autism`
 
 
 **Definition:** Applies the 'Autism' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5115,14 +5537,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `learned` | Number || 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChanceToRevive`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5135,14 +5559,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CollectPickupsOnBattleEnd`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5154,14 +5580,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `pop_corpses` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_DoesDamage`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5173,14 +5601,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_GoodRoll`
 
 
 **Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5194,14 +5624,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `UseRandomSpell_Madness` | `Number` | The number of random spells cast when Madness triggers. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_SourceHasTag`
 
 
 **Definition:** Conditional object: Executes nested logic only if the target is/has SourceHasTag.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5216,14 +5648,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `DamageIfDidntUseSpecificAbility`
 
 
 **Definition:** Combat Trigger: Deals damage to if didnt use specific ability.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5236,14 +5670,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DelayedWind`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5255,14 +5691,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `distance` | Integer | The number of tiles the target is knocked back or pulled. | 1 | `-3`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DelayedWindCone`
 
 
 **Definition:** Creates a delayed Area of Effect cone.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5274,14 +5712,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `distance` | Integer | The number of tiles the target is knocked back or pulled. | 2 | `-3`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Diabetes`
 
 
 **Definition:** Applies the 'Diabetes' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5295,14 +5735,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Confusion`](./Enums.md) | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `EnergyStorm`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5315,14 +5757,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `period` | Number || 1 | `3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `fire`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Fire' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5339,14 +5783,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `ForceMoveAway`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5358,14 +5804,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `free` | Boolean | If true, this option requires no cost to activate. | 1 | `false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FurnitureStats`
 
 
 **Definition:** Applies the 'FurnitureStats' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5379,7 +5827,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Stimulation` | Number | The amount of stimulation provided by the furniture piece to the room. | 1 | `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ice`
 
@@ -5387,7 +5838,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5403,7 +5853,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `lightning`
 
@@ -5411,7 +5864,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5427,14 +5879,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `MegaMinions`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5447,14 +5901,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveWhenDamaged`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5466,14 +5922,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 9 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveLevelScaledStatus`
 
 
 **Definition:** Applies the 'PassiveLevelScaledStatus' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5488,14 +5946,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Key`<br>`Default`<br>`FormChange`
 
 </details>
+
+
 ---
+
 
 ### Object: `RandomPassivePool`
 
 
 **Definition:** Logic: Grants a random passive from the specified pool upon spawning.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5507,15 +5967,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` |
 | [`PassiveGroup`](./Passives_and_Statuses.md#object-passivegroup) | Object  | A group of passive abilities that can be randomly assigned. | 2 | `{ . . . }` |
 
-</details>`damage_instance`<br>`spell`<br>`self_damage`
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+</details>
+
+
 ---
+
 
 ### Object: `ReplaceBrain`
 
 
 **Definition:** Applies the 'ReplaceBrain' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5529,14 +5994,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Robot`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5548,14 +6015,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `allow_energize_self` | Boolean || 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ScaledStatusOnBleedDamage`
 
 
 **Definition:** Applies the 'ScaledStatusOnBleedDamage' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5568,14 +6037,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charge`](./Enums.md) | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
 
+
 ### Object: `ScaledStatusOnLoseShield`
+
 
 `damage_instance`<br>`spell`<br>`self_damage`
 **Definition:** Applies the 'ScaledStatusOnLoseShield' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5588,7 +6060,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ScaledStatusOnOverHealed`
 
@@ -5607,14 +6082,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnScaledRotFly` | Number | The number of scaled Rot Flies to spawn when over-healed. | 1 | `0`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SelfDamageWhenDealDamage`
 
 
 **Definition:** Applies the 'SelfDamageWhenDealDamage' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5627,14 +6104,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StackingDodgeChanceOnTookDamage`
 
 
 **Definition:** Applies the 'StackingDodgeChanceOnTookDamage' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5647,14 +6126,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `cap` | Number || 1 | `10`<br>`50%` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAdjacentOnTheirTurnBegin`
 
 
 **Definition:** Event Trigger: Applies nested statuses to adjacent on their turn begin.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5665,14 +6146,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAlliesEachTurn`
 
 
 **Definition:** Applies or references the 'StatusAlliesEachTurn' effect/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5686,14 +6169,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAlliesOnSpendMana`
 
 
 **Definition:** Event Trigger: Applies nested statuses to allies on spend mana.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5704,14 +6189,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAlliesScaledByCursedOnDeath`
 
 
 **Definition:** Event Trigger: Applies nested statuses to allies scaled by cursed on death.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5724,14 +6211,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusIfBattleAlreadyBegan`
 
 
 **Definition:** Event Trigger: Applies nested statuses to if battle already began.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5744,14 +6233,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`PermanentMadness`](./Enums.md) | Integer | The number of permanent madness stacks applied. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEatPill`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5762,14 +6253,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnLoseShield`
 
 
 **Definition:** Event Trigger: Applies nested statuses when lose shield.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5782,14 +6275,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTakeHealthDamage`
 
 
 **Definition:** Event Trigger: Applies nested statuses when take health damage.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5802,14 +6297,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`PermanentConstitution`](./Enums.md) | Integer | The amount of permanent Constitution stat added or removed. | 1 | `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTurnEndIfDidntCastAbilityTypes`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5824,14 +6321,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StrengthInNumbersAura`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5844,14 +6343,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Study`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5864,14 +6365,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TakeBonusTurnWithStatus`
 
 
 **Definition:** Grants the character an immediate extra turn while afflicted with specific statuses.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5884,14 +6387,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Madness`](./Enums.md) | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 3 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TheHunger`
 
 
 **Definition:** Applies the 'TheHunger' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5904,14 +6409,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Madness`](./Enums.md) | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TileDamageMultiplier`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5924,14 +6431,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `multiplier` | Number | A multiplier applied to tile damage dealt to enemies. | 1 | `2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TourettesMeows`
 
 
 **Definition:** Applies the 'TourettesMeows' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5944,14 +6453,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `triattack`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5967,6 +6478,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
 
 
@@ -6256,7 +6769,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > These tables were auto-generated by the schema audit tool. They document objects found in the `.gon` files that were not previously documented.
 
+
 ### Object: `AIControlNextTurn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6265,6 +6780,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `AbilityHealthThreshold`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6280,6 +6796,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AbilityOnRoundEnd`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -6288,6 +6805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AbilityOnRoundEndOnce`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -6295,6 +6813,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `AddAdvantageToEvent`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6305,6 +6824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AddStatusToBackstabs`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
@@ -6312,19 +6832,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AddStatusToFirstSpellEachTurn`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_IsSelf`](./Miscellaneous.md#object-conditional_isself) | Object  || 1 | `{ . . . }` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` 
+
+
 ### Object: `AddStatusToReceivedDamage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_IsPhysicalAttack`](./Miscellaneous.md#object-conditional_isphysicalattack) | Object  || 1 | `{ . . . }` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` 
+
+
 ### Object: `AfterImage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6334,12 +6861,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AggroTargetIsGovernedByHitEffect`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 1 | `false`<br>`true` |
 
 
 ### Object: `AllStatsAura`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6350,11 +6879,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AllStatsUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `AlluringDoodieEater`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6364,6 +6895,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AllyDodgeChanceAura`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
@@ -6372,11 +6904,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AlphaAllStatsUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `AlphaCat`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6384,11 +6918,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Ammo`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ArmorBreakOnHit`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6398,6 +6934,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ArmorPickup`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array   | Specifies the minimum and maximum animation frame for the health pickup. | 3 | `[1 2]`<br>`[11 12]`<br>`[13 13]` |
@@ -6405,6 +6942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `BackflipWhenTargeted`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6414,12 +6952,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BaitAura`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
 
 
 ### Object: `BattlefieldUniqueRandomPassive`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6432,11 +6972,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Bird`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `BirdRewards`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6446,11 +6988,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BlastResistance`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `Bleed`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6458,11 +7002,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BleedThorns`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `Blind`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6470,17 +7016,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BoostDamageAura`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `BoostDamageGlobalAura`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `BossRewards`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6490,11 +7039,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Brace`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `BraceForEachNeighboringEnemy`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6502,11 +7053,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Brittle`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `BrittleDuringElement`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6514,11 +7067,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Bruise`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `Buddy`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6529,12 +7084,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BuffImmunity`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exclude`](./Enums.md#enum-exclude) | Enum  | Specifies an element or effect that does not trigger the form change. | 1 | `SpellDamageUp`<br>`fire`<br>`water` |
 
 
 ### Object: `BungaCheers`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6547,6 +7104,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BungaEntrance`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -6557,11 +7115,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Burn`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `CatPartsSizeScale`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6569,6 +7129,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `CatPartsTransform`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6592,6 +7153,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CaveFamilyEnrage`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 6 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -6601,6 +7163,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CerberubsAggroTargetBehavior`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alert_form`](./Enums.md#enum-alert_form) | Enum   | Specifies the form to use when the unit is alerted. | 1 | `Alert` |
@@ -6609,11 +7172,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChainKnockback`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ChanceToBlockAndCounter`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6623,6 +7188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChanceToForceEvent`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
@@ -6631,6 +7197,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChanceToFormChangeOnAbilityDamage`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
@@ -6638,6 +7205,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `ChanceToSpitOnDamage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6650,6 +7218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChaosBossFormChangeGuide`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`active_pieces`](./Arrays.md#array-active_pieces) | Array   | An array of piece names that are considered actively part of the current form. | 1 | `[Johnny Throb Flush]` |
@@ -6659,6 +7228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChaosBossPieces`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`active_pieces`](./Arrays.md#array-active_pieces) | Array   | An array of piece names that are considered actively part of the current form. | 1 | `[Johnny Throb Flush]` |
@@ -6666,6 +7236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `ChaosHeadDropIn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6676,6 +7247,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CharacterLightSource`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`color`](./Arrays.md#array-color) | Array  | The RGB color of the light source. | 16 | `[.27 .47 .18]`<br>`[.3, .7, 1]`<br>`[.32 .10 .10]` |
@@ -6685,17 +7257,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Charge`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `CharmAllFlies`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `CherubimReaction`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6705,16 +7280,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conductor`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `Confusion`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ConjureBonusAbility`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6724,6 +7304,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Consumed`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum   || 12 | `auto`<br>`true` |
@@ -6732,6 +7313,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ConvertDamageToScaledStatus`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DelayedPain` | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 1 | `1` |
@@ -6739,6 +7321,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `CounterAttack`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6751,11 +7334,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CounterNextAttacks`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `CreateGlobalModifiers`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6765,11 +7350,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CritChanceUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `CyborgTurns`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6779,17 +7366,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DamageUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `DeathChill`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `DeathRattleRevive`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6799,11 +7389,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DejaVu`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `DelayedAutoRevive`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6812,6 +7404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `DepressionAura`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6822,6 +7415,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DiceBehavior`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `dice_size` | Integer | The number of sides on the die. | 1 | `6` |
@@ -6829,6 +7423,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `DiesToElement`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6838,6 +7433,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DiesToPiercingAndSpikes`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `deferred` | Boolean | If true, the destruction is deferred until the character is settled. | 1 | `true` |
@@ -6845,11 +7441,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DirtyClaws`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `DivineShield`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6857,11 +7455,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DodgeChance_Status`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `DodgeWhenTargeted`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6870,17 +7470,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Doomed`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `DukeOfFlies`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `DurabilityTransform`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6890,6 +7493,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DybbukPossessionFallback`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit_ability`](./Enums.md#enum-exit_ability) | Enum   | Determines the ability used when the Dybbuk possession ends. | 1 | `DybbukReturn` |
@@ -6898,15 +7502,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Dyslexia`
 
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
-### Object: `Empath`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
+### Object: `Empath`
+
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `ExtraBasicAttacks_Status`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6914,11 +7525,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ExtraBasicMoves_Status`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `FaceAwayLastDamage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6929,12 +7542,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FaceLastDamage`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `use_turn_animations` | Boolean | If true, uses turn-based animations for the face change. | 1 | `true` |
 
 
 ### Object: `FinalBossBeamQueue`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6945,6 +7560,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FinalBossBecomeTheChild`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum  || 1 | `MegaGuppy` |
@@ -6954,14 +7570,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FinalBossHitCountdownBoris`
 
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| `icon` | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 1 | `800`<br>`802`<br>`804` |
-| `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` 
-### Object: `FinalBossHitCountdownExplosive`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6970,7 +7578,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` 
+
+
+### Object: `FinalBossHitCountdownExplosive`
+
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| `icon` | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 1 | `800`<br>`802`<br>`804` |
+| `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `FinalBossHitCountdownHoly`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6980,6 +7603,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `FinalBossPupils`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6994,6 +7618,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FinalBossShieldHealth`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`break_ability`](./Enums.md#enum-break_ability) | Enum   | Specifies the ability used to break the shield. | 1 | `DestroyerBreakShield` |
@@ -7001,6 +7626,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `FinalBossSyncAnimations`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7010,11 +7636,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Flammable`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `FlyDamageIncrease`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7024,17 +7652,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Flying`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `FollowUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `FormChangeDuringWeatherElement`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7043,6 +7674,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `FormChangeHealthThreshold`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7054,6 +7686,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FormChangeOffMap`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form_offmap`](./Enums.md#enum-form_offmap) | Enum   | Specifies the form name to use when the unit is off the map. | 8 | `Default_Ceiling`<br>`Insane_Ceiling`<br>`OffMap` |
@@ -7061,6 +7694,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `FormChangeOnElementInfluence`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7073,6 +7707,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FormChangeWhileHasStatus`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum  || 35 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
@@ -7082,6 +7717,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FormChangeWhilePrimingAbility`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`not_priming`](./Enums.md#enum-not_priming) | Enum   | Specifies the form name to use when the unit is not priming an ability. | 6 | `DualSword`<br>`NotPriming`<br>`SwordAndShield` |
@@ -7089,6 +7725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `FormChanger`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7249,11 +7886,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Fragile`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `FragileDuringElement`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7261,10 +7900,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FrankBolts`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `FullPower`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7272,17 +7915,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `GlobalFamiliarDamageBoost`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `GlobalFamiliarMoveBoost`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `GlobalFlowerTrapperAura`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7291,12 +7937,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `GlobalMeleeRevengeDamage`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 
 ### Object: `HPAltStates`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7306,6 +7954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `HealNeighborsEachTurn`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean | If true, the effect only applies to allied units. | 1 | `false`<br>`true` |
@@ -7314,11 +7963,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `HealingAura`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `HealthPickup`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7331,11 +7982,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `HealthRegenUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `HitlerExecute`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7346,10 +7999,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Hypomania`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `ImmediateAbilityReaction`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7366,17 +8023,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Immobile`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ImmortalLeeches`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ItemAuxTransform`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7387,6 +8047,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `JohnnyNeedsWashing`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum   | Specifies the form name for the unwashed state. | 1 | `Unwashed` |
@@ -7395,11 +8056,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `KillsHeal`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `KineticSpikes`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7407,17 +8070,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Lifesteal`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `LuckUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `Madness`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7427,6 +8093,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ManaPickup`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array   | Specifies the minimum and maximum animation frame for the health pickup. | 3 | `[1 2]`<br>`[11 12]`<br>`[13 13]` |
@@ -7434,6 +8101,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `MegaDinoDropController`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7445,11 +8113,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Metal`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `MetalDetector`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7457,11 +8127,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MissChance`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ModularPickup`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7470,6 +8142,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `MonkCatReactionAbilities`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7482,6 +8155,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MotherGrowController`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`eat_damage`](./Miscellaneous.md#object-eat_damage) | Object  || 1 | `{ . . . }` |
@@ -7489,6 +8163,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `MotherTumorPassive`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7502,6 +8177,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MotherTumorSpawnInCapture`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Cat`](./Miscellaneous.md#object-cat) | Object  || 2 | `{ . . . }` |
@@ -7511,6 +8187,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Mount`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`eject_ability`](./Enums.md#enum-eject_ability) | Enum   | Specifies the ability used to eject the mounted character. | 1 | `MechSuitEject` |
@@ -7519,6 +8196,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MoveAfterAnyAttemptedAttack`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
@@ -7526,12 +8204,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MoveAwayFromDamageSource`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum   | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 1 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 
 
 ### Object: `MoveAwayWhenEnemyAdjacent`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7542,11 +8222,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MoveQuivered`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `MoveTowardsKillers`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7556,6 +8238,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MultiSpawnOnDeath`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
@@ -7564,11 +8247,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MutateAfterXTurns`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `NoManaRegen`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7576,17 +8261,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `NonStackingDivineShield`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `NumbingLeeches`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ObjectDetector`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7596,17 +8284,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Paranoia`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `PassiveIfStrAuxEquals`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 7 | `{ . . . }` |
 | `value` | Enum | The numeric value or formula associated with the buff. | 7 | `.5`<br>`0`<br>`1` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `PassiveIfWeaponIsUsable`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7615,32 +8310,44 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `PassiveWhenDead`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` | [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object | Contains an ability name and optional 'even_if_stunned' flag to autocast each round. | 1 | `{ . . . }`<br>`SpiderReturn` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` 
+
+
 ### Object: `PassiveWhenOnTile`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 7 | `{ . . . }` |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `PassiveWhileHasDurability`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`MovementReaction`](./Passives_and_Statuses.md#object-movementreaction) | Object  | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Key`<br>`Default`<br>`FormChange` 
 
+
 ### Object: `PassiveWhileNotHasStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 | [`status`](./Enums.md#enum-status) | Enum  || 2 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `PassiveWhileShielded`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7649,11 +8356,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `PermanentImmobile`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `PermanentMadness`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7661,17 +8370,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Poison`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `PoisonThorns`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `PoopWhenHit`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7681,6 +8393,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ProtectTargetedAllies`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -7689,11 +8402,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Quiver`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `Quivered`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7701,11 +8416,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ReduceManaCost`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ReflectProjectiles`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7713,6 +8430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `RefreshEquipmentAbilityOnElement`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7722,6 +8440,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `RunWhenLastPlayerCatIsCharmed`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allow_decision_mid_turn` | Boolean | If true, allows the decision to run to occur mid-turn instead of at the end. | 1 | `true` |
@@ -7730,11 +8449,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SafeDoomed`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ScaldingOrbMoonBossOneShot`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7744,12 +8465,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ScaledStatusAlliesOnSpendMana`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_Adjacent`](./Passives_and_Statuses.md#object-conditional_adjacent) | Object  || 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Key`<br>`Default`<br>`FormChange` 
 
+
 ### Object: `ScaledStatusOnHolyShieldBlock`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7757,6 +8481,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `ScalingAttackAnimation`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7766,15 +8491,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SchrodingerDisorder`
 
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
-### Object: `Scleroderma`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
+### Object: `Scleroderma`
+
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `SharePickups`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7783,17 +8515,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ShoulderCheck`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `ShovingMatch`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `SkipFirstRounds`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7802,6 +8537,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `SlotMachineRollPool`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7813,11 +8549,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Slow`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `SmallRockBehavior`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7828,6 +8566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnCatCopyWhenDowned`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
@@ -7835,6 +8574,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `SpawnExtraThingsOnBattleStart`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7846,6 +8586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnItemLinkedFamiliar`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `break_on_pop_only` | Boolean || 2 | `true` |
@@ -7853,6 +8594,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `SpawnObjectOnPopCorpse`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7863,6 +8605,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnOnDeath`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum  | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 4 | `allies`<br>`auto`<br>`birds` |
@@ -7872,6 +8615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnRandomPickupsOnTaggedUnitKilled`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
@@ -7880,17 +8624,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpeedUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `SpellDamageUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `SpewerAltGraphics`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7904,11 +8651,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SproutsGrantMovement`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `StackingFlowerTrail`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7918,12 +8667,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatDependentPassive`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `AddDamageToBasicAttack` | String || 1 | `1`<br>`2`<br>`4` |
 
 
 ### Object: `StatusAdjacentOnTheirTurnEnd`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7932,11 +8683,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusAfterXTurns`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `StatusAllCharactersOnSpawn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7945,6 +8700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `StatusCollector`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7955,12 +8711,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusEachRoundBegin`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `NonStackingShield` | Number || 8 | `12`<br>`16`<br>`3` |
 
 
 ### Object: `StatusEachRoundEnd`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7969,6 +8727,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `StatusEachTurnBeginIfHasStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7982,11 +8741,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusEachTurnEndIfEnabledAtStartOfTurn`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `StatusEveryXSpellCastsEachTurn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7996,12 +8759,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusIfDidntMove`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Charge` | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 
 ### Object: `StatusIfUnusedActPoints`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8011,6 +8776,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnBackstab`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
@@ -8018,6 +8784,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `StatusOnBreak`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8035,6 +8802,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnDie`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 9 | `passives`<br>`class`<br>`tag` | [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. | 1 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
@@ -8045,12 +8813,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnDodge`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
 
 
 ### Object: `StatusOnEnemyCastSpell`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8060,6 +8830,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnEnemyConfused`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
@@ -8067,12 +8838,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnEnemyDeath`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Charge` | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 
 ### Object: `StatusOnFallAsleep`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8083,12 +8856,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnFullMana`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_OncePerBattle`](./Miscellaneous.md#object-conditional_onceperbattle) | Object  || 1 | `{ . . . }` |
 
 
 ### Object: `StatusOnSetPieceBreak`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8105,6 +8880,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnSpawnIn`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 1 | `1` |
@@ -8113,13 +8889,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnTakeHealthOrShieldDamage`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` | `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 2 | `1`<br>`2`<br>`4` |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
 | [`Metronome`](./Miscellaneous.md#object-metronome) | Boolean (Flag) / Number / Object  | The number of times Metronome triggers, or an object with stacks and banned abilities. | 1 | `{ . . . }`<br>`1`<br>`2` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` 
+
+
 ### Object: `StatusOverlappingCharactersAndDie`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8127,6 +8907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `StatusRandomEnemiesOnBattleStart`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8139,6 +8920,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusWhenStatusCompletelyRemoved`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
@@ -8147,11 +8929,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Stealth`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `StrengthForEachNeighboringEnemy`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8159,11 +8943,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StrengthUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `StunImmunity`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8171,6 +8957,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `SupportDieInsteadOfRun`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8180,6 +8967,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SupportFormChangeInsteadOfRun`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -8187,6 +8975,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `SwimmingFormChange`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8196,6 +8985,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SyncFormsWithBuddy`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`no_buddy`](./Enums.md#enum-no_buddy) | Enum   | Specifies an alternative form to use when there is no buddy. | 1 | `Rage` |
@@ -8203,12 +8993,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `T3HitlerSpawningPhase`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array   | List of spell use groups that the spawning phase can use. | 1 | `[` |
 
 
 ### Object: `TVBotScreen`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8222,17 +9014,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Tech`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `TempInitiativeChange`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `Terminator2Run`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8242,6 +9037,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TerminatorChase`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -8249,6 +9045,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `TerminatorSkin`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8258,11 +9055,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Thorns`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `TinkererBasicAttackSwitching`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8271,6 +9070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `TintItem`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8281,11 +9081,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Trample`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `TransformInXTurns`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8298,6 +9100,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TransformItemOnElementInfluence`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`element`](./Arrays.md#array-element) | Array / Enum  || 5 | `Electric`<br>`Fire`<br>`Gravity` |
@@ -8307,6 +9110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TransformOnDeathImmediately`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`first_turn`](./Enums.md#enum-first_turn) | Enum   | Determines when the spawned unit takes its first turn relative to the spawn event. | 4 | `end_of_round`<br>`initiative`<br>`keep_turns` |
@@ -8314,6 +9118,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `TransformOnElementInfluence`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8323,6 +9128,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TransformOnElementInfluencex`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`element`](./Arrays.md#array-element) | Array / Enum  || 2 | `Electric`<br>`Fire`<br>`Gravity` |
@@ -8330,6 +9136,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `TransformOnStatusThreshold`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8339,6 +9146,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `Trapper`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8350,10 +9158,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Triskaidekaphobia`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `TunnelVision`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8361,6 +9173,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `TwisterFling`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8371,6 +9184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `UnlimitedDeathRattleRevive`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -8378,6 +9192,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 ### Object: `UseAbility`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8387,6 +9202,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `UseAbilityWhenOutOfStatus`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
@@ -8395,10 +9211,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Vegan`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `Vengeful`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8406,17 +9226,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Weakness`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 
 
 ### Object: `WobblyCat`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` 
+
+
 ### Object: `Zombie`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-

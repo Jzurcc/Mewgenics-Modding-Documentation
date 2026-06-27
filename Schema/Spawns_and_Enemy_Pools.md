@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Spawns & Enemy Pools
 
 > **Associated Files:** `data/spawns.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -24,14 +25,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
+
+
 ---
+
 
 ### Object: `editor`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 578
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -44,14 +47,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 `damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+
 ---
+
 
 ### Object: `weather_element_alt`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -62,5 +67,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
----
 
+
+---

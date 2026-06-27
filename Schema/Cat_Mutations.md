@@ -10,6 +10,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ROOT`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -33,14 +34,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 7 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ---
+
 
 ### Object: `passives`
 
 
 **Definition:** Object listing intrinsic passive modifiers.  
 **Total Count:** 284
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -145,14 +148,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Vegan`](./Enums.md) | Integer | If nonzero, sets the unit as Vegan; can also be an object with localization fields and the `Disorder` class. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToBasicAttack`
 
 
 **Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
 **Total Count:** 52
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -187,14 +192,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Webbed`](./Arrays.md#array-webbed) | Array  | The amount of webbed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .1]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhenAffectedByElement`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -208,13 +215,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 18 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `effects`
 
+
 **Definition:** Non-damaging status applications and logic triggers executed on impact.  
 **Total Count:** 10
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -232,14 +242,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 14 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RevengeDamage`
 
 
 **Definition:** Reaction trigger: Deals damage to the attacker when hit.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -254,14 +266,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
 ---`damage_instance`<br>`spell`<br>`self_damage`
+
 
 ### Object: `MeleeRevengeDamage`
 
 
 **Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -280,14 +293,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | `0`<br>`1`<br>`10%` |`damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnThingOnDamage`
 
 
 **Definition:** Applies or references the 'SpawnThingOnDamage' effect/state.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -301,14 +316,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToBasicMeleeAttack`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -324,14 +341,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTookDamage`
 
 
 **Definition:** Event Trigger: Applies nested statuses when took damage.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -346,14 +365,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnBegin`
 
 
 **Definition:** Event Trigger: Applies nested statuses to each turn begin.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -369,14 +390,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`MoveQuivered`](./Arrays.md#array-movequivered) | Array  | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`[1, 0.1]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RandomStatusFromPool`
 
 
 **Definition:** Selects and applies a random status effect from the provided nested object.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -399,14 +422,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 5 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnEachTurn`
 
 
 **Definition:** Applies or references the 'SpawnEachTurn' effect/state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -420,14 +445,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEnd`
 
 
 **Definition:** Applies or references the 'StatusEachTurnEnd' effect/state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -444,14 +471,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomStatDown`](./Enums.md) | Integer | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnOnBattleStartRandomEmptyTile`
 
 
 **Definition:** Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -464,14 +493,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 10 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_RandomChance`
 
 
 **Definition:** Conditional trigger: Executes nested logic based on a flat percentage random roll.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -484,14 +515,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` | [`AutoReanimate`](./Enums.md) | Integer | The percentage chance for the unit to automatically reanimate upon death. | 2 | `100%`<br>`50%` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEveryXSpellCasts`
 
 
 **Definition:** Applies or references the 'StatusEveryXSpellCasts' effect/state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -506,14 +539,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusKilledCharacters`
 
 
 **Definition:** Event Trigger: Applies nested statuses to killed characters.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -524,14 +559,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnBattleEnd`
 
 
 **Definition:** Applies the nested status effects when the encounter finishes.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -545,14 +582,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`PermanentIntelligence`](./Enums.md) | Integer | The permanent amount of intelligence added or removed. | 3 | `-1`<br>`1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEndMove`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -563,14 +602,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTookDamageFromAbility`
 
 
 **Definition:** Event Trigger: Applies statuses when taking damage from an ability.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -584,14 +625,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
 **Definition:** AI Trigger: Executes an ability when a character with a specific tag moves adjacent.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -605,14 +648,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 5 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddDamageToElementDamage`
 
 
 **Definition:** Applies or references the 'AddDamageToElementDamage' effect/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -625,14 +670,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddTemporaryEffectsToBasicAttack`
 
 
 **Definition:** Applies the 'AddTemporaryEffectsToBasicAttack' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -644,14 +691,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Fury` | Integer | The amount of Fury (bonus damage or charges) gained. | 4 | `10`<br>`55`<br>`75` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BackflipWhenTargeted`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -664,14 +713,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 7 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChanceToBackflip`
 
 
 **Definition:** Applies or references the 'ChanceToBackflip' effect/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -684,14 +735,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 6 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ClassManaCostReduction`
 
 
 **Definition:** Applies or references the 'ClassManaCostReduction' effect/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -704,14 +757,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`class`](./Enums.md#enum-class) | Enum | Specifies the class that this ability belongs to, used for categorization and restrictions. | 6 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_FirstApplicationThisTurn`
 
 
 **Definition:** Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -725,14 +780,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charge`](./Enums.md) | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_GoodRoll`
 
 
 **Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -747,14 +804,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 1 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CounterAttack`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -767,14 +826,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `KnockUpAndAway`
 
 
 **Definition:** Displaces the target vertically and horizontally away from the source.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -787,14 +848,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 22 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveWhenDamaged`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -807,14 +870,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 2 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhenAtFullMana`
 
 
 **Definition:** State Trigger: Grants nested passives when at full mana.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -827,14 +892,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DamageUp`](./Enums.md) | Integer | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhileHasStatus`
 
 
 **Definition:** Passive: Activates only while the character has the specified status.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -848,14 +915,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnExtraThingsOnBattleStart`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -868,14 +937,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 23 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachRoundEnd`
 
 
 **Definition:** Applies or references the 'StatusEachRoundEnd' effect/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -888,14 +959,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`UseAbility`](./Enums.md#enum-useability) | Enum  | The name of the ability the target is forced to use. | 1 | `GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEveryXSpellCastsEachTurn`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -909,14 +982,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusIfDidntMove`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -929,14 +1004,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charge`](./Enums.md) | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusIfUnusedMovePoints`
 
 
 **Definition:** Event Trigger: Applies nested statuses to if unused move points.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -950,14 +1027,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnAllyCatDeath`
 
 
 **Definition:** Event Trigger: Applies nested statuses when ally cat death.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -970,14 +1049,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DamageUp`](./Enums.md) | Integer | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnCastSpell`
 
 
 **Definition:** Event Trigger: Applies nested statuses when cast spell.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -990,14 +1071,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charge`](./Enums.md) | Integer | The number of charge stacks applied. | 4 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnDie`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1010,14 +1093,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array / Integer  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `5`<br>`[1 .5]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEatFood`
 
 
 **Definition:** Event Trigger: Applies nested statuses when eat food.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1030,14 +1115,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnKill`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1050,6 +1137,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RangeUp`](./Enums.md) | Integer | The number of stacks of bonus attack range applied. | 1 | `1` |
 
 </details>
+
+
 ---
 
 

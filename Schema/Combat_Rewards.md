@@ -3,17 +3,16 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Combat Rewards
 
 > **Associated Files:** `data/combat_reward_table.gon`
+
 
 ### Object: `boss`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 33
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -28,7 +27,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `item_chance` | Float | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `hard`
 
@@ -36,7 +38,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 21
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -50,7 +51,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`item_chance`](./Math_Equations.md) | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `miniboss`
 
@@ -58,7 +62,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 13
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -72,7 +75,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`item_chance`](./Math_Equations.md) | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `normal`
 
@@ -80,7 +86,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'Normal\' state.  
 **Total Count:** 12
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -94,11 +99,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`item_chance`](./Math_Equations.md) | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Numerical Objects
 
 > The following objects are numeric keys or array indices.
+
 
 ### Object: `1`
 
@@ -106,7 +115,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 4
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -114,7 +122,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `2`
 
@@ -122,7 +133,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 4
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -130,7 +140,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `3`
 
@@ -138,7 +151,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 4
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -146,7 +158,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `4`
 
@@ -154,7 +169,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 3
 
-
 <details>
 <summary><b>Expand</b></summary
 
@@ -162,5 +176,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
----
 
+
+---

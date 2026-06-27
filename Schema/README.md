@@ -5,7 +5,9 @@
 
 If you are looking for how to format a `.gon` file (the *syntax* rules like comments, braces, and arrays), see the `gon-docs/spec/` folder.
 
+
 ---
+
 
 ## How to Read These Files
 
@@ -33,7 +35,9 @@ Because the game updates and new keys are discovered, `AUDIT_GAPS.md` lists keys
 
 > **Note:** `Master_Schema_Dictionary.md` and `MASTER_SYNC_AUDIT.md` are legacy/abandoned files and may contain outdated information. Stick to the specific markdown files.
 
+
 ---
+
 
 ## Type Reference Table
 
@@ -51,7 +55,9 @@ Because the game updates and new keys are discovered, `AUDIT_GAPS.md` lists keys
 | **Object** | A nested key-value structure | `{ key value }` |
 | **Equation** | Engine evaluates as a mathematical formula (may reference stat variables) | `1+bonus_melee_range`, `"ceil(X*.25)"` |
 
+
 ---
+
 
 ## File Index
 

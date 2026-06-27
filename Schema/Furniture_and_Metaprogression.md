@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Furniture & Metaprogression
 
 > **Associated Files:** `data/furniture_effects.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -33,5 +34,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `removed` | Boolean |  | 1 | `true` |
 
 </details>
----
 
+
+---

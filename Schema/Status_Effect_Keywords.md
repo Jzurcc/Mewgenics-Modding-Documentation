@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Status Effect Keywords
 
 > **Associated Files:** `data/keyword_tooltips.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -32,5 +33,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip_stackless_pos`](./Strings.md#string-tooltip_stackless_pos) | String | Localization key for the tooltip of the positive variant when not showing stack count. | 2 | `"KEYWORD_DAMAGEUP_DESC_STACKLESS"`<br>`"KEYWORD_MOVEMENTUP_DESC_STACKLESS"` |
 
 </details>
----
 
+
+---

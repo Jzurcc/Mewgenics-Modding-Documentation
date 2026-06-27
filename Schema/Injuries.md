@@ -3,12 +3,13 @@
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
 ## Injuries
 
 > **Associated Files:** `data/injuries.gon`
 
+
 ### Object: `ROOT`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -25,14 +26,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`scars`](./Miscellaneous.md#object-scars) | Object  || 10 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `stats`
 
 
 **Definition:** Core character metrics (Health, Strength, etc.).  
 **Total Count:** 497
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -50,14 +53,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`lck`](./Enums.md#enum-lck) | Enum / Integer  || 16 | `-1`<br>`-2`<br>`-3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `scars`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 10
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -73,5 +78,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`limbs`](./Arrays.md#array-limbs) | Array || 1 | `[21 31]` |
 
 </details>
----
 
+
+---

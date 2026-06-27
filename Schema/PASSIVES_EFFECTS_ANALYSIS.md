@@ -9,7 +9,9 @@ Three tiers are used:
 - **Partially Shared** — appears in 2+ categories but not all
 - **Truly Exclusive** — appears in exactly ONE category only
 
+
 ---
+
 
 ## Block: `passives`
 
@@ -1350,7 +1352,9 @@ Three tiers are used:
 | `HotBlooded` | 1 |
 | `SelfAssured` | 1 |
 
+
 ---
+
 
 ## Block: `effects`
 
@@ -2155,4 +2159,3 @@ Three tiers are used:
 | `ButterflySwarm` | 1 |
 | `SpawnTilePuddleOnBattleStart` | 1 |
 | `alien` | 1 |
-

@@ -4497,7 +4497,6 @@ This document lists all valid Sound Effect triggers parsed from the unpacked aud
 - `pyrophina_backgroundfootstep`
 - `zaratana_backgroundfootstep`
 
-
 ## house_sfx.gon (16 sounds)
 
 - `Cat_Donated_To_NPC`
@@ -4516,7 +4515,6 @@ This document lists all valid Sound Effect triggers parsed from the unpacked aud
 - `Cat_Trashed`
 - `Example`
 - `Pop_Poop`
-
 
 ## ui_sfx.gon (439 sounds)
 
@@ -4959,4 +4957,3 @@ This document lists all valid Sound Effect triggers parsed from the unpacked aud
 - `Victory_Cheer4`
 - `Victory_Cheer5`
 - `Victory_Cheer6`
-

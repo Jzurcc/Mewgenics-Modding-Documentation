@@ -10,6 +10,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ROOT`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -96,14 +97,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tall_grass`](./Enums.md) | Integer | A weight or priority value for preferring tall grass tiles in AI movement decisions. | 1 | `5` |
 
 </details>
+
+
 ---
+
 
 ### Object: `graphics`
 
 
 **Definition:** Object defining visual animations and sequence timings.  
 **Total Count:** 2609
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -145,14 +148,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`non_blocking_animations`](./Arrays.md#array-non_blocking_animations) | Array | A list of animation names that do not block gameplay or chain into new actions. | 1 | `["hit", "critical"]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `damage_instance`
 
 
 **Definition:** Object defining the combat math and status effects applied upon successful hit.  
 **Total Count:** 2346
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -166,14 +171,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 `damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+
 ---
+
 
 ### Object: `passives`
 
 
 **Definition:** Object listing intrinsic passive modifiers.  
 **Total Count:** 733
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -536,14 +543,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ZeroKnockbackDamage`](./Enums.md) | Integer | If 1, the unit takes no damage from knockback effects. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `properties`
 
 
 **Definition:** General engine properties.  
 **Total Count:** 600
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -654,14 +663,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`inanimate_can_receive_specific_statuses`](./Arrays.md#array-inanimate_can_receive_specific_statuses) | Array | A list of statuses that an inanimate unit can receive. | 1 | `[Burn]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ai`
 
 
 **Definition:** Core block defining the AI behavior logic and weights.  
 **Total Count:** 583
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -699,14 +710,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dice_abilities`](./Arrays.md#array-dice_abilities) | Array | The list of ability names from which the AI randomly selects when rolling dice. | 1 ||
 
 </details>
+
+
 ---
+
 
 ### Object: `stats`
 
 
 **Definition:** Core character metrics (Health, Strength, etc.).  
 **Total Count:** 497
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -724,14 +737,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `luck` | Integer | The base luck stat, used for critical hits and random beneficial effects. | 160 | `1`<br>`10`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `abilities`
 
 
 **Definition:** Lists the ability IDs the character possesses.  
 **Total Count:** 460
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -746,14 +761,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `can_get_bonus` | Boolean | If true, the unit can gain bonus turns from abilities or effects. | 30 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `pattern`
 
 
 **Definition:** AI sequence logic.  
 **Total Count:** 296
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -778,14 +795,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_then_do_all`](./Arrays.md#array-move_then_do_all) | Array | The list of abilities the AI executes in sequence after moving. | 1 | `[LennyShove, LennyGrabDead, LennyGrab]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Normal`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Normal\' state.  
 **Total Count:** 231
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -802,14 +821,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Angry`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the \'Angry\' state.  
 **Total Count:** 221
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -822,14 +843,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FormChanger`
 
 
 **Definition:** AI Role: Designates the character as one that frequently shifts forms.  
 **Total Count:** 106
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -999,14 +1022,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ZealotBomb`](./Miscellaneous.md#object-zealotbomb) | Object  | Form state for the bomb zealot variant, with an explosion attack. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnOnDeath`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 79
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1020,14 +1045,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`additional_statuses`](./Miscellaneous.md#object-additional_statuses) | Object  | Additional status effects applied to the spawned unit on death. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sound`
 
 
 **Definition:** Audio bindings.  
 **Total Count:** 62
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1040,14 +1067,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_prefix`](./Enums.md#enum-animation_prefix) | Enum | Prefix used for the unit's animation sounds. | 1 | `RattleSnake` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Robot`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 46
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1059,14 +1088,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`alternate_energized_effect`](./Miscellaneous.md#object-alternate_energized_effect) | Object  | Effects applied when the robot becomes energized, such as form changes or stat boosts. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `turns`
 
 
 **Definition:** Turn counter tracking.  
 **Total Count:** 45
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1084,14 +1115,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `round_start_bonus_turns` | Integer | The number of extra turns the unit gains at the start of each round. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `equipment`
 
 
 **Definition:** List of item IDs the character spawns equipped with.  
 **Total Count:** 44
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1106,14 +1139,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weapon`](./Enums.md#enum-weapon) | Enum | The name of the weapon item the unit starts with. | 7 | `AstroTaser`<br>`ButcherHook`<br>`CaveCatClub` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mainturn_pattern`
 
 
 **Definition:** AI Logic: Determines standard ability usage during the main turn.  
 **Total Count:** 44
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1129,14 +1164,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_strict`](./Arrays.md#array-do_strict) | Array | The list of abilities the AI executes in strict sequence, without any alternative. | 2 | `[*CanCreeperSlide, MoveCenter]`<br>`[*CraterCreeperSlide, MoveCenter]`<br>`[*WizSpellShield, WizBlizzard]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Default`
 
 
 **Definition:** Character Form: The baseline default behavior state.  
 **Total Count:** 38
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1154,14 +1191,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FormChangeWhileHasStatus`
 
 
 **Definition:** Logic: Changes form automatically while possessing a specific status.  
 **Total Count:** 35
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1175,14 +1214,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form_has`](./Enums.md#enum-form_has) | Enum | Specifies a form that the unit must be in for the status-triggered form change to occur. | 25 | `BellyFull`<br>`CaveWomanHasCat`<br>`FireFull` |
 
 </details>
+
+
 ---
+
 
 ### Object: `keyword_tooltips`
 
 
 **Definition:** Forces specific UI tooltips to appear when hovering over the ability.  
 **Total Count:** 35
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1197,14 +1238,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `TVBotStop` | Integer | Defines the keyword tooltip for the TVBotStop status or ability. | 1 ||
 
 </details>
+
+
 ---
+
 
 ### Object: `virtual_abilities`
 
 
 **Definition:** Abilities that are evaluated but not directly castable by the player.  
 **Total Count:** 35
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1244,14 +1287,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Unflip`](./Miscellaneous.md#object-unflip) | Object  | Defines an AI virtual ability that teleports the unit to flip up and spin an enemy. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToBasicAttack`
 
 
 **Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
 **Total Count:** 32
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1282,14 +1327,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RemoteFlatLeech`](./Enums.md) | Integer | The flat amount of remote leech applied to the target on basic attack. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DeathRattle`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 29
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1307,14 +1354,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `target_killer` | Boolean | If true, the death rattle effect targets the killer. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `bonusturn_pattern`
 
 
 **Definition:** AI Logic: Determines ability usage during bonus turns.  
 **Total Count:** 27
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1330,14 +1379,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_then_do`](./Enums.md#enum-move_then_do) | Enum | The specific ability the AI executes after moving. | 1 | `CHuskCatShade`<br>`CerberubsBarrage`<br>`CerberubsCalm` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CatPartsTransform`
 
 
 **Definition:** Transforms specific body parts into different visual variants.  
 **Total Count:** 25
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1361,14 +1412,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `eye2` | Integer | The catalog ID for the cat's second eye part. | 3 | `-1`<br>`1013`<br>`1057` |
 
 </details>
+
+
 ---
+
 
 ### Object: `fallback`
 
 
 **Definition:** Logic executed if primary options fail.  
 **Total Count:** 23
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1386,14 +1439,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random`](./Arrays.md#array-do_random) | Array | The list of abilities from which the AI randomly selects one to execute. | 1 | `[**TVChangeObey **TVChangeStop **TVChangeDumb]`<br>`[AZ_BreakNeck AZ_BreakLeg AZ_BreakArm]`<br>`[CHSpawn CHCry]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BossRewards`
 
 
 **Definition:** Loot logic: Rewards dropped upon defeating a boss.  
 **Total Count:** 20
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1407,14 +1462,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`rare`](./Engine_EventKeys.md#valid-property-keys) | `String` | Defines the rare reward block for a boss encounter. | 16 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityReaction`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 19
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1436,14 +1493,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `verify_target` | Boolean | If true, the reaction verifies that the target is valid before triggering. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MeleeRevengeDamage`
 
 
 **Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
 **Total Count:** 19
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1461,14 +1520,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `cant_miss` | `Boolean` | If true, the damage instance always hits its target regardless of accuracy or evasion. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ally_rewards`
 
 
 **Definition:** Loot logic triggered if an ally dies.  
 **Total Count:** 18
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1484,14 +1545,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 |`damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+
 ---
+
 
 ### Object: `alt_spawn_pool`
 
 
 **Definition:** Alternative pools to draw minions from.  
 **Total Count:** 18
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1548,14 +1611,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Turtle`](./Engine_LogicKeys.md#object-turtle) | Integer / Object  | The number of turtle familiars spawned. | 1 | `{ . . . }`<br>`10` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BirdRewards`
 
 
 **Definition:** Loot logic: Rewards dropped by bird-type enemies.  
 **Total Count:** 18
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1568,14 +1633,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CharacterLightSource`
 
 
 **Definition:** Visual: Attaches a dynamic lighting source to the character.  
 **Total Count:** 16
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1589,14 +1656,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`glow`](./Arrays.md#array-glow) | Array | The RGBA glow color of the light source. | 8 | `[.3, .7, 1, .5]`<br>`[.7, .3, 1, .5]`<br>`[.7, .8, .9, .5]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HealthPickup`
 
 
 **Definition:** Pickup Logic: Defines what happens when a health item is collected.  
 **Total Count:** 16
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1612,14 +1681,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `force_frame` | Integer | Forces the health pickup to use a specific animation frame. | 1 | `12` |
 
 </details>
+
+
 ---
+
 
 ### Object: `statuses`
 
 
 **Definition:** Status effects possessed by the character.  
 **Total Count:** 14
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1634,14 +1705,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `default`
 
 
 **Definition:** Character Form: The baseline default behavior state.  
 **Total Count:** 13
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1652,13 +1725,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `effects`
 
+
 **Definition:** Non-damaging status applications and logic triggers executed on impact.  
 **Total Count:** 13
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1678,14 +1754,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `BlackHoleSuck` | `Number` | The strength of the black hole's pull effect. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ImmediateAbilityReaction`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 13
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1703,14 +1781,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `target_furthest_valid` | Boolean | If true, the reaction targets the furthest valid enemy. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityHealthThreshold`
 
 
 **Definition:** AI Trigger: Executes an ability when health drops below a specific threshold.  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1729,14 +1809,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`threshold_min`](./Math_Equations.md) | Equation | The minimum health threshold formula (e.g., X) for the ability to trigger. | 1 | `X` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveGroup`
 
 
 **Definition:** Passive: A collection of passives grouped together for easier management.  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1755,14 +1837,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TinkererBasicAttackSwitching`](./Passives_and_Statuses.md#object-tinkererbasicattackswitching) | Object  | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `round_end_bonusturn_pattern`
 
 
 **Definition:** AI Logic: Ability usage pattern during round-end bonus turns.  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1779,14 +1863,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_priority`](./Arrays.md#array-do_priority) | Array | The list of abilities the AI executes, evaluating them in order of highest priority. | 1 | `[ attack]`<br>`[**DestroyerThrowShield DestroyerHolyAttack]`<br>`[**DestroyerThrowShield attack]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawnThingOnDamage`
 
 
 **Definition:** Applies or references the 'SpawnThingOnDamage' effect/state.  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1805,14 +1891,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `melee_ability_only` | Boolean | If true, spawning only occurs in response to melee damage. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DeathRattleRevive`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 10
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1825,14 +1913,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 8 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveWhenDamaged`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 10
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1845,14 +1935,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 2 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Rage`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Rage\' state.  
 **Total Count:** 10
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1871,14 +1963,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FormChangeOnElementInfluence`
 
 
 **Definition:** Logic: Changes form when affected by an element.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1894,14 +1988,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 5 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ReflectProjectiles`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1912,14 +2008,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusCollector`
 
 
 **Definition:** Passive: Gains benefits based on the number of statuses applied to them.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1935,14 +2033,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `TransformInXTurns`
 
 
 **Definition:** Logic: Forces a form change after X turns.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1958,14 +2058,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TransformOnElementInfluence`
 
 
 **Definition:** Logic: Changes form when affected by elements.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1978,14 +2080,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 9 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FormChangeOffMap`
 
 
 **Definition:** Logic: Changes form when pushed off the map.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1998,14 +2102,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form_onmap`](./Enums.md#enum-form_onmap) | Enum | Specifies the form name to use when the unit returns to the map. | 8 | `Default`<br>`Default_Ground`<br>`FightPhase` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SmallRockBehavior`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2019,14 +2125,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chain` | Boolean | Specifies the ability to chain into and execute. | 2 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChanceToSpitOnDamage`
 
 
 **Definition:** Reaction: Probability to use a spit counter-attack when damaged.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2042,14 +2150,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `even_on_0_damage_if_knockback` | Boolean | If true, the reaction triggers on zero damage if knockback occurs. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MovementReaction`
 
 
 **Definition:** Reaction: Triggers an effect or ability when forced to move.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2067,14 +2177,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `self_move_exclude_self_abilities` | Boolean | If true, movement caused by the unit's own abilities does not trigger the reaction. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CaveFamilyEnrage`
 
 
 **Definition:** AI Trigger: Enrage logic triggered when a cave family member is killed.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2088,14 +2200,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FormChangeWhilePrimingAbility`
 
 
 **Definition:** Logic: Changes form while preparing/priming a specific ability.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2108,14 +2222,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`not_priming`](./Enums.md#enum-not_priming) | Enum | Specifies the form name to use when the unit is not priming an ability. | 6 | `DualSword`<br>`NotPriming`<br>`SwordAndShield` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveTowardsDamageSource`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2136,14 +2252,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `move_short` | Boolean | If true, the unit moves a shorter distance towards the damage source. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SecurityBotProtect`
 
 
 **Definition:** AI Logic: Guarding behavior for Security Bot units.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2159,14 +2277,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `not_on_kill` | Boolean | If true, the protection does not trigger when the protected unit is killed. | 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HasCat`
 
 
 **Definition:** Character Form: Behavior and stats for the \'HasCat\' state.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2184,14 +2304,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveTowardsKillers`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2204,14 +2326,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`character_filter`](./Arrays.md#array-character_filter) | Array | Specifies which characters to consider as killers when moving towards them. | 3 | `[SpiderCat, TallSpiderCat]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhileHasStatus`
 
 
 **Definition:** Passive: Activates only while the character has the specified status.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2225,14 +2349,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TransformOnDeathImmediately`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2245,14 +2371,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 4 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BaitAura`
 
 
 **Definition:** Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots).  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2264,14 +2392,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Big`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the \'Big\' state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2286,14 +2416,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Consumed`
 
 
 **Definition:** State object triggered when this object or entity is eaten/consumed by another character.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2312,14 +2444,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `use_placeholder` | Boolean | If true, renders the ability using a temporary placeholder animation instead of the final art. | 3 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ForceUseAbility`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2332,14 +2466,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `show_name` | Boolean | If true, displays the ability name when force used. | 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Holy`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Holy\' state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2353,14 +2489,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `hot`
 
 
 **Definition:** Visual effect indicator.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2375,14 +2513,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveAway`
 
 
 **Definition:** AI Movement: Moves away from the target.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2395,14 +2535,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveClose`
 
 
 **Definition:** AI Movement: Moves into melee range.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2416,14 +2558,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum | Specifies the ability that the unit needs to move close to use. | 3 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
 
 </details>
+
+
 ---
+
 
 ### Object: `OffMap`
 
 
 **Definition:** Character Form: Behavior and stats for the 'OffMap' state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2436,14 +2580,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `passive`
 
 
 **Definition:** Intrinsic passive modifier.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2455,14 +2601,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEnd`
 
 
 **Definition:** Applies or references the 'StatusEachTurnEnd' effect/state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2479,14 +2627,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnKill`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2500,14 +2650,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum  | Specifies an ability to use on kill that does not stack with itself. | 3 | `BBTransformZealot`<br>`GenericRage` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTookDamageFromAbility`
 
 
 **Definition:** Event Trigger: Applies statuses when taking damage from an ability.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2523,14 +2675,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TakeExtraTurn`](./Enums.md) | Integer | The number of extra turns granted to the source. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StunImmunity`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2542,14 +2696,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `cleanse_on_apply` | Boolean | If true, removes any existing stun effect when this immunity is applied. | 1 | `false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Trapper`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Trapper' state.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2564,14 +2720,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AllAlive`
 
 
 **Definition:** Encounter State: Logic executed when all specific entities are currently alive.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2582,14 +2740,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `ArmorPickup`
 
 
 **Definition:** Pickup Logic: Defines what happens when an armor item is collected.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2602,14 +2762,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 3 | `[1 2]`<br>`[11 12]`<br>`[13 13]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Bomb`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the 'Bomb' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2623,14 +2785,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Buddy`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2642,14 +2806,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `reclaim_if_lost` | Boolean | If true, the buddy can be reclaimed after being lost. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Cat`
 
 
 **Definition:** Character Form: Base form for standard cats.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2663,14 +2829,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CaveMan`
 
 
 **Definition:** Character Form: Behavior and stats for the \'CaveMan\' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2688,14 +2856,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Down`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Down\' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2712,14 +2882,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Fire`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Fire' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2734,14 +2906,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FormChangeHealthThreshold`
 
 
 **Definition:** Logic: Changes form when health crosses a threshold.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2757,14 +2931,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `count_shield` | Boolean | If true, shields count towards the health threshold calculation. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Full`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Full\' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2781,14 +2957,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ManaPickup`
 
 
 **Definition:** Pickup Logic: Defines what happens when a mana item is collected.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2801,14 +2979,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 3 | `[1 2]`<br>`[11 12]`<br>`[13 13]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NonCat`
 
 
 **Definition:** Character Form: Behavior and stats for the 'NonCat' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2822,14 +3002,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `OneAlive`
 
 
 **Definition:** Encounter State: Logic executed when exactly one target is alive.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2843,14 +3025,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RandomPassivePool`
 
 
 **Definition:** Logic: Grants a random passive from the specified pool upon spawning.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2865,14 +3049,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TransformInXTurns`](./Passives_and_Statuses.md#object-transforminxturns) | Object  | Defines a delayed transformation after a set number of turns, with optional target object and initiative handling. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ReplaceBrain`
 
 
 **Definition:** Applies the 'ReplaceBrain' effect.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2887,14 +3073,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pattern`](./Miscellaneous.md#object-pattern) | Object  | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SquirrelForm`
 
 
 **Definition:** Character Form: Behavior and stats for the 'SquirrelForm' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2910,14 +3098,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SupportFormChangeInsteadOfRun`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2930,14 +3120,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_till_turn` | Boolean | If true, the form change will not occur until the unit's next turn. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TwoAlive`
 
 
 **Definition:** Encounter State: Logic executed when exactly two targets are alive.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2951,14 +3143,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Up`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Up\' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2974,14 +3168,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Water`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Water\' state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2995,14 +3191,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityOnRoundEnd`
 
 
 **Definition:** AI Trigger: Executes an ability at the end of the combat round.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3015,14 +3213,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `force_display_name` | Boolean | If true, forces the display name to show for the ability. | 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
 **Definition:** AI Trigger: Executes an ability when a character with a specific tag moves adjacent.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3036,14 +3236,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 5 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `active`
 
 
 **Definition:** Defines actively executed abilities.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3054,14 +3256,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddTemporaryEffectsToBasicAttack`
 
 
 **Definition:** Applies the 'AddTemporaryEffectsToBasicAttack' effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3073,14 +3277,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Fury` | Integer | The amount of Fury (bonus damage or charges) gained. | 4 | `10`<br>`55`<br>`75` |
 
 </details>
+
+
 ---
+
 
 ### Object: `alternate_energized_effect`
 
 
 **Definition:** Overrides default energized visuals.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3095,14 +3301,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `AutocastEachRound`
 
 
 **Definition:** Forces the character to automatically cast a specific ability at the start of each combat round.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3115,14 +3323,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 6 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Bishop`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the \'Bishop\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3142,14 +3352,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BlackHole`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the \'BlackHole\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3166,14 +3378,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Boris`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the \'Boris\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3187,14 +3401,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BungaEntrance`
 
 
 **Definition:** Animation/AI State: Bunga entering the arena.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3209,14 +3425,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Specifies the tag used to identify allied warriors for this ability. | 2 | `bungawarrior`<br>`finalboss_clonecat` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CaveBaby`
 
 
 **Definition:** Character Form: Behavior and stats for the \'CaveBaby\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3234,14 +3452,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CaveManSpear`
 
 
 **Definition:** Character Form: Behavior and stats for the \'CaveManSpear\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3259,14 +3479,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CaveWoman`
 
 
 **Definition:** Character Form: Behavior and stats for the \'CaveWoman\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3284,14 +3506,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CherubimReaction`
 
 
 **Definition:** Reaction: Custom reaction triggers for Cherubim enemies.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3304,14 +3528,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Return`](./Engine_LogicKeys.md#object-return) | Enum / Object  | Specifies the ability used when this unit returns to the field. | 2 | `{ . . . }`<br>`CherubimReturn`<br>`LEReturn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_GoodRoll`
 
 
 **Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3326,14 +3552,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 5 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Cultist`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Cultist\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3351,14 +3579,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DashRandomly`
 
 
 **Definition:** AI Movement: Dashes to a random valid tile.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3371,14 +3601,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DiesToElement`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3392,14 +3624,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `dispersed_bonusturn_pattern`
 
 
 **Definition:** AI Logic: Alternative bonus turn ability pattern.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3411,14 +3645,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do`](./Enums.md#enum-do) | Enum | The single, specific ability the AI executes. | 2 | `**BombRatTurtle`<br>`**G3Shake`<br>`**RockySlam` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Empty`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Empty\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3430,14 +3666,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Escape`
 
 
 **Definition:** AI Movement: Logic for fleeing or escaping the map.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3450,14 +3688,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Explosive`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Explosive\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3471,14 +3711,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FaceLastDamage`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3490,14 +3732,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `use_turn_animations` | Boolean | If true, uses turn-based animations for the face change. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FireFull`
 
 
 **Definition:** Character Form: Behavior and stats for the 'FireFull' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3513,14 +3757,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Flush`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Flush' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3532,14 +3778,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FormChangeDuringWeatherElement`
 
 
 **Definition:** Logic: Changes form automatically during specific weather conditions.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3552,14 +3800,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 2 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Holding`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Holding\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3575,14 +3825,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Johnny`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Johnny' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3594,14 +3846,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `KnockUpAndAway`
 
 
 **Definition:** Displaces the target vertically and horizontally away from the source.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3617,14 +3871,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Damaging Keys}](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LastHit`
 
 
 **Definition:** Logic: Executes logic on the final hit of a multi-hit attack.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3636,14 +3892,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MotherTumorSpawnInCapture`
 
 
 **Definition:** Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3657,14 +3915,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Nothing`](./Miscellaneous.md#object-nothing) | Object  | Defines the behavior when nothing is captured, typically just an animation. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveCenter`
 
 
 **Definition:** AI Movement: Moves toward the center of the map.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3677,14 +3937,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveForThrow`
 
 
 **Definition:** AI Movement: Repositions to gain line of sight for throwing.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3698,14 +3960,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Mutant`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Mutant\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3725,14 +3989,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NeutronStar`
 
 
 **Definition:** Character Form: Behavior and stats for the 'NeutronStar' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>`damage_instance`<br>`spell`<br>`self_damage`
@@ -3746,14 +4012,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NotPriming`
 
 
 **Definition:** Character Form: Behavior and stats when not charging an ability.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3767,14 +4035,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag`
 
 </details>
+
+
 ---
+
 
 ### Object: `Nuke`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Nuke' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3792,14 +4062,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhileNotHasStatus`
 
 
 **Definition:** Passive: Activates only while the character does NOT have the specified status.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3813,14 +4085,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Priming`
 
 
 **Definition:** Character Form: Behavior and stats when charging an ability.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3834,14 +4108,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ProtectTargetedAllies`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3854,14 +4130,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`target_filter`](./Enums.md#enum-target_filter) | Enum | Specifies which targets the protection applies to, based on their unit type or tag. | 2 | `Kitten`<br>`any` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Rain`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Rain' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3873,14 +4151,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RemoveStatusStacks`
 
 
 **Definition:** Removes a specific number of stacks of a status effect.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3893,14 +4173,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 4 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SlotMachineRollPool`
 
 
 **Definition:** Logic: Defines the possible outcomes for slot machine enemies.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3915,14 +4197,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SlotResult_RandomPickup`](./Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object  | The result of a random pickup roll, or the weight of that result. | 1 | `{ . . . }`<br>`11` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Small`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Small\' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3935,14 +4219,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpearRun`
 
 
 **Definition:** AI Movement: Specific movement logic for Spear enemies.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3956,14 +4242,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `statuses_on_enter_form`
 
 
 **Definition:** Status effects instantly applied upon transitioning into this form.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3974,14 +4262,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusGroup`
 
 
 **Definition:** Groups multiple status effects together for batch application.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3994,14 +4284,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 2 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnSpawnIn`
 
 
 **Definition:** Event Trigger: Applies statuses immediately when spawned.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4012,14 +4304,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnTookDamage`
 
 
 **Definition:** Event Trigger: Applies nested statuses when took damage.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4034,14 +4328,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RemoveStatusStacks`](./Miscellaneous.md#object-removestatusstacks) | Object  | An object specifying a status name and the number of stacks to remove from the target. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TempPassiveUntilSettled`
 
 
 **Definition:** Passive: Active only until the physics engine stops moving the character.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4054,14 +4350,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TinkererBasicAttackSwitching`
 
 
 **Definition:** Logic: Allows Tinkerer to swap basic attacks.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4074,14 +4372,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | The ability used for the throw action in the Tinkerer's basic attack switching. | 3 | `TinkererThrow` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TransformOnElementInfluencex`
 
 
 **Definition:** Logic: Variant element influence transformation.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4094,14 +4394,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Turtled`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Turtled' state.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4118,7 +4420,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `WereMan`
 
@@ -4126,7 +4431,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'WereMan\' state.  
 **Total Count:** 2
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4143,7 +4447,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Zealot`
 
@@ -4151,7 +4458,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'Zealot\' state.  
 **Total Count:** 2
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4168,14 +4474,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `additional_statuses`
 
 
 **Definition:** Generic statuses added to the character.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4188,7 +4496,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`PermanentMadness`](./Enums.md) | Integer | The number of permanent madness stacks applied. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToReceivedDamage`
 
@@ -4196,7 +4507,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Modifier: Applies a status effect whenever the character takes damage.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4206,7 +4516,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToSpells`
 
@@ -4214,7 +4527,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Modifier: Injects a status effect into a specific action.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4224,14 +4536,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToTrampleDamage`
 
 
 **Definition:** Applies the 'AddStatusToTrampleDamage' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4242,14 +4556,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `AddStatusToWeapons`
 
 
 **Definition:** Applies the 'AddStatusToWeapons' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4262,14 +4578,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AdventureTokenPassivePool`
 
 
 **Definition:** Map/Metaprogression: Pool of passive modifiers applied by adventure tokens.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4293,14 +4611,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StacyMutant_Thorns`](./Miscellaneous.md#object-stacymutant_thorns) | Object  | A passive group granting thorns damage and cosmetic changes. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AggroTargetIsGovernedByHitEffect`
 
 
 **Definition:** AI Logic: Forces the character's aggro to follow specific hit effects rather than default proximity.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4312,14 +4632,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 1 | `false`<br>`true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ai_if_spawned_as_enemy`
 
 
 **Definition:** AI logic override used only if the character is spawned as an enemy.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4334,14 +4656,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pattern`](./Miscellaneous.md#object-pattern) | Object  | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Alert`
 
 
 **Definition:** AI State: The behavior profile used when the character is alerted to enemies.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4356,14 +4680,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `AllStatsAura`
 
 
 **Definition:** Passive: Projects an aura that modifies all primary stats of nearby characters.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4377,14 +4703,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Attacker`
 
 
 **Definition:** AI Role: Designates the character as an attacker rather than support.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4396,14 +4724,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BackflipWhenTargeted`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4416,14 +4746,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 7 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BattlefieldUniqueRandomPassive`
 
 
 **Definition:** Map Rule: Grants a unique random passive modifier to the battlefield.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4439,14 +4771,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `DemonicGlyph_Summon` | Integer | The weight for the demonic glyph of summon, or its configuration. | 1 | `1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BellyFull`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the \'BellyFull\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4461,7 +4795,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BigHolding`
 
@@ -4469,7 +4806,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form / AI State: Behavior and stats for the \'BigHolding\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4482,7 +4818,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BigHoldingCat`
 
@@ -4490,7 +4829,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4503,14 +4841,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Bully`
 
 
 **Definition:** Character Form / AI State: Behavior and stats for the 'Bully' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4525,14 +4865,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BungaCheers`
 
 
 **Definition:** Animation/AI State: Bunga cheering animation logic.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4548,14 +4890,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Specifies the tag used to identify allied warriors for this ability. | 1 | `bungawarrior`<br>`finalboss_clonecat` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CaveWomanHasCat`
 
 
 **Definition:** Character Form: Behavior and stats for the \'CaveWomanHasCat\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4573,14 +4917,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CerberubsAggroTargetBehavior`
 
 
 **Definition:** AI Logic: Custom aggro targeting rules for Cerberubs.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4593,7 +4939,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`default_form`](./Enums.md#enum-default_form) | Enum | Specifies the default form before aggro. | 1 | `Normal` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CerberubsJumpBlind`
 
@@ -4601,7 +4950,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Logic: Blind jump attack pattern for Cerberubs.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4613,7 +4961,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 1 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CerberubsJumpNormal`
 
@@ -4621,7 +4972,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Logic: Normal jump attack pattern for Cerberubs.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4633,14 +4983,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 1 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChanceToBackflip`
 
 
 **Definition:** Applies or references the 'ChanceToBackflip' effect/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4653,14 +5005,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 6 | `.02`<br>`.1`<br>`.15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChanceToFormChangeOnAbilityDamage`
 
 
 **Definition:** Reaction: Probability to change forms when taking ability damage.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4673,14 +5027,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 1 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChaosBossFormChangeGuide`
 
 
 **Definition:** Boss Logic: Maps the form transition phases for the Chaos Boss.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4694,14 +5050,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | An array of piece names that are considered passively part of the current form. | 1 | `[Host Nettle Bubs]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChaosBossPieces`
 
 
 **Definition:** Boss Logic: Defines the separate destructible pieces of the Chaos Boss.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4714,14 +5072,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | An array of piece names that are considered passively part of the current form. | 1 | `[Host Nettle Bubs]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChaosHeadDropIn`
 
 
 **Definition:** Boss Logic: Drop-in attack/animation for the Chaos Head.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4735,14 +5095,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Charging`
 
 
 **Definition:** Character Form / AI State: Behavior when charging an attack.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4758,14 +5120,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Close`
 
 
 **Definition:** AI Movement logic: Maneuvers into close/melee range.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4778,14 +5142,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CloseConvert`
 
 
 **Definition:** AI State: Logic for converting adjacent units.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4798,14 +5164,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_BadRoll`
 
 
 **Definition:** Conditional trigger: Executes nested logic based on a randomized bad outcome probability.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4819,14 +5187,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | [`Madness`](./Enums.md) | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_HasKnockback`
 
 
 **Definition:** Conditional: Executes logic if the triggering attack deals knockback.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4842,14 +5212,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Conditional_IsPhysicalAttack`
 
 
 **Definition:** Conditional: Executes logic if the triggering attack is physical.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4865,14 +5237,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CounterAttack`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4883,14 +5257,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `without_orienting` | Boolean | If true, the counter-attack does not rotate the character to face the attacker. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CreateGlobalModifiers`
 
 
 **Definition:** Generates global map or encounter rules/modifiers.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4904,7 +5280,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LowerAmbientLight`](./Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Damaged`
 
@@ -4912,7 +5291,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form / AI State: Behavior when health is critically low.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4923,7 +5301,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Default_Ceiling`
 
@@ -4931,7 +5312,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: The baseline behavior state while attached to the ceiling.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4945,7 +5325,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag`
 
 </details>
+
+
 ---
+
 
 ### Object: `Default_Ground`
 
@@ -4953,7 +5336,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: The baseline behavior state while on the ground.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4967,14 +5349,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag`
 
 </details>
+
+
 ---
+
 
 ### Object: `DelayedAutoRevive`
 
 
 **Definition:** Applies or references the 'DelayedAutoRevive' effect/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4987,14 +5371,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `rounds` | Integer | The number of rounds after which the auto-revive triggers. | 6 | `1`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DesireMech`
 
 
 **Definition:** Character Form: Behavior and stats for the 'DesireMech' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5006,14 +5392,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DiceBehavior`
 
 
 **Definition:** AI Logic: Custom behavior for Dice enemies.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5026,14 +5414,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `knockback_damage` | Integer | The amount of damage dealt by the knockback. | 1 | `5` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Die`
 
 
 **Definition:** Character Form / Logic: Forces the character to die.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5047,14 +5437,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag`
 
 </details>
+
+
 ---
+
 
 ### Object: `DiesToPiercingAndSpikes`
 
 
 **Definition:** Vulnerability: Character dies instantly if hit by piercing attacks or spikes.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5066,14 +5458,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `deferred` | Boolean | If true, the destruction is deferred until the character is settled. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DodgeWhenTargeted`
 
 
 **Definition:** Reaction: Executes a dodge maneuver when targeted.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5085,14 +5479,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Drunker`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Drunker' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5104,7 +5500,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DualSword`
 
@@ -5112,7 +5511,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'DualSword\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5129,7 +5527,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DualSword_Primed`
 
@@ -5137,7 +5538,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'DualSword_Primed\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5154,14 +5554,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Dumb`
 
 
 **Definition:** AI Profile: A simplified, less optimal decision-making profile.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5175,14 +5577,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DybbukPossessionFallback`
 
 
 **Definition:** Logic: Fallback state when a Dybbuk possession fails.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5195,14 +5599,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 1 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `eat_damage`
 
 
 **Definition:** Damage dealt when this entity consumes another.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5220,14 +5626,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Else`
 
 
 **Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5241,14 +5649,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `exit_animations`
 
 
 **Definition:** Animations played when leaving a form/state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5260,14 +5670,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Default`](./Miscellaneous.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Explody`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Explody' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5284,14 +5696,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FaceAwayLastDamage`
 
 
 **Definition:** Reaction: Forces the character to face away from the last damage source.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5305,14 +5719,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `use_turn_animations` | Boolean | If true, uses turn-based animations for the face change. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FightPhase`
 
 
 **Definition:** Boss Logic: Main combat phase.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5329,14 +5745,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossBeamQueue`
 
 
 **Definition:** Boss Logic: Attack queue for the final boss beam.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5350,14 +5768,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`transform`](./Enums.md#enum-transform) | Enum | Specifies the ability queued to transform the boss into its next form. | 1 | `TheChild_TransformBoris` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossBecomeTheChild`
 
 
 **Definition:** Boss Logic: Phase transition for the final boss.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5372,14 +5792,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossHitCountdownBoris`
 
 
 **Definition:** Boss Logic: Countdown trigger for Boris.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5395,7 +5817,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossHitCountdownExplosive`
 
@@ -5418,14 +5843,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossHitCountdownHoly`
 
 
 **Definition:** Boss Logic: Countdown trigger for holy attacks.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5439,14 +5866,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossPupils`
 
 
 **Definition:** Boss Logic: Pupil state management.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5464,14 +5893,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | A 3D vector representing the virtual position of the head for pupil tracking. | 1 | `[11 2 11]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossShieldHealth`
 
 
 **Definition:** Boss Logic: Shield health management.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5484,14 +5915,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`state_health`](./Arrays.md#array-state_health) | Array | An array of health thresholds defining state transitions. | 1 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FinalBossSyncAnimations`
 
 
 **Definition:** Boss Logic: Synchronizes multi-part boss animations.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5504,7 +5937,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`other_form_change_abilities`](./Miscellaneous.md#object-other_form_change_abilities) | Object  | An object mapping form names to the other character's form change abilities. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Flop`
 
@@ -5512,7 +5948,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'Flop\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5526,7 +5961,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Flop2`
 
@@ -5534,7 +5972,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'Flop2\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5548,14 +5985,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FlushBubs`
 
 
 **Definition:** Character Form: Behavior and stats for the 'FlushBubs' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5569,14 +6008,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FlushHost`
 
 
 **Definition:** Character Form: Behavior and stats for the 'FlushHost' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5591,14 +6032,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FlushNettle`
 
 
 **Definition:** Character Form: Behavior and stats for the 'FlushNettle' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5612,14 +6055,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FoodMove`
 
 
 **Definition:** AI Movement: Logic for seeking out food items.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5632,14 +6077,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ForceTrample`
 
 
 **Definition:** Logic: Forces movement to act as a trample attack.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5652,14 +6099,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 1 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ---
+
 
 ### Object: `GainDisorderFromPool`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5672,14 +6121,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Grappling`
 
 
 **Definition:** Character Form / AI State: Behavior while grappling an opponent.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5692,14 +6143,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Grown`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Grown\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5718,14 +6171,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `GuaranteedJackpot`
 
 
 **Definition:** Loot Logic: Guarantees a high-tier drop.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5736,14 +6191,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `Guarding`
 
 
 **Definition:** Character Form / AI State: Defensive behavior state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5758,7 +6215,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HalfDead`
 
@@ -5766,7 +6226,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'HalfDead\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5781,7 +6240,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HasDeadCat`
 
@@ -5789,7 +6251,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'HasDeadCat\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5804,7 +6265,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HasRock`
 
@@ -5812,7 +6276,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'HasRock\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5825,14 +6288,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Headless`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Headless\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5847,14 +6312,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HealNeighborsEachTurn`
 
 
 **Definition:** Passive: Restores health to adjacent allies at the start of the turn.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5867,7 +6334,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Hint_CrackedVisuals`
 
@@ -5875,7 +6345,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Visual: Overlay effects for cracked/damaged terrain or objects.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5886,7 +6355,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Hint_CrackedVisuals2`
 
@@ -5894,7 +6366,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Visual: Secondary cracked visual overlay.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5905,7 +6376,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Hint_CrackedVisuals3`
 
@@ -5913,7 +6387,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Visual: Tertiary cracked visual overlay.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5924,14 +6397,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HitlerExecute`
 
 
 **Definition:** Boss Logic: Specific execution or ultimate attack state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5946,14 +6421,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`threshold`](./Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HPAltStates`
 
 
 **Definition:** Visual: Alternative sprite states based on current health.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5966,14 +6443,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HumanDead`
 
 
 **Definition:** Character Form: Behavior and stats for the \'HumanDead\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5987,14 +6466,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `InfiniteRebirth`
 
 
 **Definition:** Applies the 'InfiniteRebirth' effect.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6008,14 +6489,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 1 | `false`<br>`true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `InitialPhase`
 
 
 **Definition:** Boss Logic: The starting phase of an encounter.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6032,7 +6515,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Insane_Ceiling`
 
@@ -6040,7 +6526,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Insane behavior state while attached to the ceiling.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6055,7 +6540,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Insane_Ground`
 
@@ -6063,7 +6551,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Insane behavior state while on the ground.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6078,14 +6565,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `JohnnyBubs`
 
 
 **Definition:** Character Form: Behavior and stats for the 'JohnnyBubs' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6099,14 +6588,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `JohnnyHost`
 
 
 **Definition:** Character Form: Behavior and stats for the 'JohnnyHost' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6121,14 +6612,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `JohnnyNeedsWashing`
 
 
 **Definition:** Character Form: Behavior and stats for the 'JohnnyNeedsWashing' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6141,14 +6634,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form_washed`](./Enums.md#enum-form_washed) | Enum | Specifies the form name for the washed state. | 1 | `Washed` |
 
 </details>
+
+
 ---
+
 
 ### Object: `JohnnyNettle`
 
 
 **Definition:** Character Form: Behavior and stats for the 'JohnnyNettle' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6162,14 +6657,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Joystick`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Joystick\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6183,14 +6680,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LeapClose`
 
 
 **Definition:** AI Movement: Executes a jumping maneuver to close distance.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6203,14 +6702,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Lifted`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Lifted\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6227,14 +6728,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Lit`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Lit' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6248,14 +6751,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `LowerAmbientLight`
 
 
 **Definition:** A visual effect that dims the map's lighting.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6268,14 +6773,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 3 | `.1`<br>`.25`<br>`.35` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MegaDinoDropController`
 
 
 **Definition:** Boss Logic: Manages loot drops for the Mega Dino.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6290,14 +6797,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stable_legs` | Integer | The number of legs that must be stable for the head to drop. | 1 | `3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ModularPickup`
 
 
 **Definition:** Pickup Logic: Defines what happens when a modular item is collected.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6311,14 +6820,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Key`<br>`Default`<br>`FormChange`
 
 </details>
+
+
 ---
+
 
 ### Object: `MonkCatReactionAbilities`
 
 
 **Definition:** Reaction: Specific counter-attack or dodge abilities used by the Monk class.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6334,14 +6845,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weapon`](./Enums.md#enum-weapon) | Enum | The name of the weapon item the unit starts with. | 1 | `AstroTaser`<br>`ButcherHook`<br>`CaveCatClub` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MotherGrowController`
 
 
 **Definition:** Boss Logic: Manages the growth phases of the Mother boss.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6354,14 +6867,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | Specifies the name of the tumor object to spawn. | 1 | `MotherTumor` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MotherTumorPassive`
 
 
 **Definition:** Boss Logic: Passive effects applied to the Mother's tumors.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6378,14 +6893,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`considered_forms`](./Arrays.md#array-considered_forms) | Array | An array of form names the tumor considers for interaction. | 1 | `[Big BigHolding BigHoldingCat]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Mount`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Mount' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6398,14 +6915,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`enter_ability`](./Enums.md#enum-enter_ability) | Enum | Specifies the ability used to enter the mount. | 1 | `EnterMech` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Mounted`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Mounted\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6417,14 +6936,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MouthFull`
 
 
 **Definition:** Character Form: Behavior and stats for the \'MouthFull\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6439,14 +6960,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveAfterAnyAttemptedAttack`
 
 
 **Definition:** AI Movement: Forces a move action immediately after attacking, even if it missed.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6458,14 +6981,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveAwayFromDamageSource`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6477,14 +7002,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 1 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveAwayWhenEnemyAdjacent`
 
 
 **Definition:** AI Movement: Moves away if an enemy enters an adjacent tile.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6498,7 +7025,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveForBarrage`
 
@@ -6506,7 +7036,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Repositions to optimize a barrage attack.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6519,7 +7048,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveForDash`
 
@@ -6527,7 +7059,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Repositions to set up a dash attack line.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6540,7 +7071,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveForGrass`
 
@@ -6548,7 +7082,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Moves toward grass tiles.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6561,7 +7094,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveForPounce`
 
@@ -6569,7 +7105,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Repositions to optimize a pounce trajectory.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6582,7 +7117,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveForSpin`
 
@@ -6590,7 +7128,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Repositions into a cluster of enemies for a spin attack.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6603,7 +7140,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveOneForPuke`
 
@@ -6611,7 +7151,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Specific positioning logic for puke attacks.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6624,7 +7163,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveSpaced`
 
@@ -6632,7 +7174,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Moves to maintain a specific distance from targets.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6644,7 +7185,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveToHead`
 
@@ -6652,7 +7196,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Navigates toward the 'head' or primary target.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6665,7 +7208,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoveTowards`
 
@@ -6673,7 +7219,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Movement: Moves toward the nearest target.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6686,14 +7231,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MultiSpawnOnDeath`
 
 
 **Definition:** Event Trigger: Spawns multiple entities upon death.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6706,14 +7253,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NCGravecrawlFAR`
 
 
 **Definition:** AI Movement: Specific grapple/crawl logic.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6726,14 +7275,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NoEyes`
 
 
 **Definition:** Character Form: Behavior and stats for the \'NoEyes\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6745,14 +7296,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NormalFull`
 
 
 **Definition:** Character Form: Behavior and stats for the 'NormalFull' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6768,14 +7321,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `NoStick`
 
 
 **Definition:** Character Form: Behavior and stats for the 'NoStick' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6788,14 +7343,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Nothing`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Nothing' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6807,14 +7364,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Obey`
 
 
 **Definition:** AI State: Enforced compliance logic (e.g., when Charmed).  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6828,14 +7387,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Off`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Off' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6847,14 +7408,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `OffScreen`
 
 
 **Definition:** Character Form: Behavior and stats for the 'OffScreen' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6868,14 +7431,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag`
 
 </details>
+
+
 ---
+
 
 ### Object: `OneEye`
 
 
 **Definition:** Character Form: Behavior and stats for the \'OneEye\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6889,14 +7454,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Open`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Open' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6912,14 +7479,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `OpenCat`
 
 
 **Definition:** Character Form: Behavior and stats for the 'OpenCat' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6933,14 +7502,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `other_form_change_abilities`
 
 
 **Definition:** Lists secondary abilities used to change forms.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6954,14 +7525,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Holy`](./Passives_and_Statuses.md#object-holy) | Enum / Object  | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Out`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Out' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6974,14 +7547,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhenAffectedByElement`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6995,14 +7570,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 18 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `PassiveWhenDead`
 
 
 **Definition:** State Trigger: Grants passives when this condition is met.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7013,14 +7590,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `Possessing`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Possessing\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7035,14 +7614,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Primed`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Primed' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7058,7 +7639,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Pulp2`
 
@@ -7066,7 +7650,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Pulp2' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7084,7 +7667,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Pulp3`
 
@@ -7092,7 +7678,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Pulp3' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7110,7 +7695,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Pulp4`
 
@@ -7118,7 +7706,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Pulp4' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7136,7 +7723,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Pulp5`
 
@@ -7144,7 +7734,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Pulp5' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7162,7 +7751,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Pulp6`
 
@@ -7170,7 +7762,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Pulp6' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7188,7 +7779,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Pulp7`
 
@@ -7196,7 +7790,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Pulp7' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7214,14 +7807,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RandomStatusFromPool`
 
 
 **Definition:** Selects and applies a random status effect from the provided nested object.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7234,14 +7829,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StatusGroup`](./Passives_and_Statuses.md#object-statusgroup) | Object  | A container grouping multiple status effects to be applied simultaneously. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ReturnA`
 
 
 **Definition:** Boss Logic: Specific phase return trigger.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7254,14 +7851,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RevengeDamage`
 
 
 **Definition:** Reaction trigger: Deals damage to the attacker when hit.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7275,14 +7874,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 3 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `round_start_bonusturn_pattern`
 
 
 **Definition:** AI Logic: Ability usage pattern during round-start bonus turns.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7294,6 +7895,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_priority`](./Arrays.md#array-do_priority) | Array | The list of abilities the AI executes, evaluating them in order of highest priority. | 1 | `[ attack]`<br>`[**DestroyerThrowShield DestroyerHolyAttack]`<br>`[**DestroyerThrowShield attack]` |
 
 </details>
+
+
 ---
 
 
@@ -7367,12 +7970,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag` |
 
 </details>
+
+
 ### Object: `RunFar`
 
 
 **Definition:** AI Movement: Maximize distance from targets.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7385,14 +7989,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `RunWhenLastPlayerCatIsCharmed`
 
 
 **Definition:** AI Logic: Flee logic when the player team is entirely crowd-controlled.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7405,14 +8011,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | Specifies the save key used to persist a legacy stolen cat ID. | 1 | `Legacy_Marshmallow_StolenCatID` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ScalingAttackAnimation`
 
 
 **Definition:** Visual: Animation scales based on damage output.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7425,14 +8033,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SharePickups`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7444,14 +8054,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `include_coins` | Boolean | If true, coins are included in the shared pickup pool. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Sitting`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Sitting' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7469,14 +8081,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SkipFirstRounds`
 
 
 **Definition:** AI Logic: Passes turn for the first X rounds of combat.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7489,7 +8103,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SmallHolding`
 
@@ -7497,7 +8114,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'SmallHolding\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7510,7 +8126,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SmallHoldingCat`
 
@@ -7518,7 +8137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'SmallHoldingCat\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7531,14 +8149,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpawningPhase`
 
 
 **Definition:** Boss Logic: Phase focused on summoning minions.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7552,14 +8172,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SpewerAltGraphics`
 
 
 **Definition:** Visual: Alternative graphics for Spewer enemies.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7576,14 +8198,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TarFull`](./Miscellaneous.md#object-tarfull) | Integer / Object  | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Brace`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Brace' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7598,14 +8222,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Counter`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Counter' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7621,14 +8247,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Damage`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Damage' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7644,14 +8272,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_DoubleHead`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_DoubleHead' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7666,14 +8296,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Fire`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Fire' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7690,14 +8322,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Health`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Health' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7714,14 +8348,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Holy`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Holy' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7736,14 +8372,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Ice`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Ice' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7761,14 +8399,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Lightning`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Lightning' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7785,14 +8425,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Mirror`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Mirror' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7808,14 +8450,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Speed`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Speed' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7832,14 +8476,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StacyMutant_Thorns`
 
 
 **Definition:** Character Form: Behavior and stats for the 'StacyMutant_Thorns' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7854,7 +8500,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `Standing`
 
@@ -7862,7 +8511,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Standing' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7878,7 +8526,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Standing2`
 
@@ -7886,7 +8537,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the 'Standing2' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7902,14 +8552,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Start_Ceiling`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Start_Ceiling' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7922,14 +8574,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusAfterXTurns`
 
 
 **Definition:** Event Trigger: Applies a status effect after X turns have passed.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7943,14 +8597,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnBeginIfHasStatus`
 
 
 **Definition:** Event Trigger: Applies a status at the start of the turn if a prerequisite status is met.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7969,14 +8625,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEndForEachTurn`
 
 
 **Definition:** Event Trigger: Applies nested statuses to each turn end for each turn.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7989,14 +8647,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 3 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusEachTurnEndIfEnabledAtStartOfTurn`
 
 
 **Definition:** Event Trigger: Applies a status at the end of the turn if an enabling condition was met at the start.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8009,14 +8669,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnDie`
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8030,7 +8692,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array  | List of global modifier names to remove upon death. | 1 | `[BloodRain]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEndMove`
 
@@ -8038,7 +8703,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8048,7 +8712,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnEnemyConfused`
 
@@ -8056,7 +8723,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Event Trigger: Applies statuses when an enemy becomes confused.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8066,14 +8732,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOnGainCoins`
 
 
 **Definition:** Event Trigger: Applies nested statuses when gain coins.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8087,14 +8755,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusOverlappingCharactersAndDie`
 
 
 **Definition:** Event Trigger: Applies statuses to overlapping entities, then destroys self.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8107,14 +8777,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusWhenStatusCompletelyRemoved`
 
 
 **Definition:** Event Trigger: Applies statuses when a tracked status effect is fully cleansed.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8129,14 +8801,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `Stop`
 
 
 **Definition:** AI Movement: Forces the character to cease movement.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8150,14 +8824,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SuckMF`
 
 
 **Definition:** Character Form: Behavior and stats for the 'SuckMF' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8171,14 +8847,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SupportDieInsteadOfRun`
 
 
 **Definition:** AI Logic: Forces a support unit to die rather than flee.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8191,14 +8869,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum | Specifies the alternative dying animation to use. | 1 | `shutdown` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SwimmingFormChange`
 
 
 **Definition:** Logic: Automates form change when entering/exiting water.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8211,14 +8891,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form_out`](./Enums.md#enum-form_out) | Enum | Determines the form to change into when leaving water. | 1 | `Out` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SwitchMusic`
 
 
 **Definition:** Changes the background music track or layer during combat.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8231,14 +8913,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`new_song`](./Enums.md#enum-new_song) | Enum | Specifies the song to switch to; 'same' keeps the current song playing on the new layer. | 6 | `same` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SwordAndShield`
 
 
 **Definition:** Character Form: Behavior and stats for the 'SwordAndShield' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8253,14 +8937,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SwordAndShield_Primed`
 
 
 **Definition:** Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8276,14 +8962,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SyncFormsWithBuddy`
 
 
 **Definition:** Logic: Forces this character's form to match their familiar/buddy.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8295,14 +8983,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`no_buddy`](./Enums.md#enum-no_buddy) | Enum | Specifies an alternative form to use when there is no buddy. | 1 | `Rage` |
 
 </details>
+
+
 ---
+
 
 ### Object: `T3HitlerSpawningPhase`
 
 
 **Definition:** Boss Logic: Minion spawn phase for the T3 Hitler boss.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8314,14 +9004,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array | List of spell use groups that the spawning phase can use. | 1 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Tar`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Tar' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8336,14 +9028,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TarFull`
 
 
 **Definition:** Character Form: Behavior and stats for the 'TarFull' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8359,14 +9053,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Terminator2Run`
 
 
 **Definition:** AI Movement: Specific run logic for Terminator2.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8379,14 +9075,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TerminatorChase`
 
 
 **Definition:** AI Movement: Specific chase logic for Terminator.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8399,14 +9097,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TerminatorSkin`
 
 
 **Definition:** Visual: Skin definition for Terminator.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8419,7 +9119,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`groups`](./Arrays.md#array-groups) | Array | Groups of actors that this skin applies to. | 1 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TF_TargetAllies`
 
@@ -8427,7 +9130,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Targeting: Prioritizes allies.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8439,7 +9141,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 1 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TF_TargetEnemies`
 
@@ -8447,7 +9152,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** AI Targeting: Prioritizes enemies.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -8459,14 +9163,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 1 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Throb`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Throb' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8478,14 +9184,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ThrobBubs`
 
 
 **Definition:** Character Form: Behavior and stats for the 'ThrobBubs' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8499,14 +9207,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ThrobHost`
 
 
 **Definition:** Character Form: Behavior and stats for the 'ThrobHost' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8521,14 +9231,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ThrobNettle`
 
 
 **Definition:** Character Form: Behavior and stats for the 'ThrobNettle' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8542,14 +9254,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Transformed`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Transformed' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8563,14 +9277,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag`
 
 </details>
+
+
 ---
+
 
 ### Object: `TransformOnStatusThreshold`
 
 
 **Definition:** Logic: Changes form when a status effect reaches a certain stack count.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8585,14 +9301,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`threshold`](./Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TVBotScreen`
 
 
 **Definition:** Visual: TV Bot screen state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8610,14 +9328,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TwisterFling`
 
 
 **Definition:** Logic: Fling behavior for tornado attacks.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8631,14 +9351,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TwoEyes`
 
 
 **Definition:** Character Form: Behavior and stats for the 'TwoEyes' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8649,14 +9371,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `Unflip`
 
 
 **Definition:** Logic: Reverses a flipped state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8670,14 +9394,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
+
+
 ---
+
 
 ### Object: `UnlimitedDeathRattleRevive`
 
 
 **Definition:** Logic: Endless resurrection on death.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8690,14 +9416,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Unlit`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Unlit' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8711,14 +9439,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Unwashed`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Unwashed' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8731,14 +9461,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `UseAbility`
 
 
 **Definition:** Forces the character or target to instantly use a specified ability.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8751,14 +9483,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `respect_prime` | Boolean | If true, the ability will only be used if the unit is primed for it. | 2 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `UseAbilityWhenOutOfStatus`
 
 
 **Definition:** Logic: Casts a specific ability the moment a status effect expires.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8771,14 +9505,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Washed`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Washed' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8792,14 +9528,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `Washer`
 
 
 **Definition:** Character Form: Behavior and stats for the \'Washer\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8817,14 +9555,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ZealotBomb`
 
 
 **Definition:** Character Form: Behavior and stats for the \'ZealotBomb\' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8842,15 +9582,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
 
 
 ---
+
 
 ## Auto-Discovered Objects
 
 
 ### Object: `BoneWormShotSmall`
+
 
 <details>
 <summary><b>Expand</b></summary>

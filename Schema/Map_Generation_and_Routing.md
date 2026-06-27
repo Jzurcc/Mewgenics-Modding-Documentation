@@ -10,6 +10,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ROOT`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -151,14 +152,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `boss`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 41
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -176,14 +179,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlockcheck_on_complete`](./Enums.md#enum-unlockcheck_on_complete) | Enum || 1 | `map_unlock_junkyard` |
 
 </details>
+
+
 ---
+
 
 ### Object: `exit0`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 27
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -199,14 +204,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `hidden` | Boolean || 10 | `false`<br>`true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `quest_event`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 24
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -220,14 +227,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `exit1`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -242,14 +251,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 3 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `hard_initial`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -262,14 +273,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `time_machine`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -283,7 +296,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 4 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BothObelisksUnlocked`
 
@@ -291,7 +307,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 2
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -302,7 +317,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `DimensionXUnlocked`
 
@@ -310,7 +328,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 2
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -321,14 +338,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `EndOfTimeUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -340,14 +359,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `HardPathUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -359,14 +380,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`hard_initial`](./Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MeatWorldUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -379,14 +402,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `miniboss_event`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -399,14 +424,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`level`](./Enums.md#enum-level) | Enum || 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_battle1`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -419,14 +446,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_boss`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -441,14 +470,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_earlyhome`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -461,14 +492,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_event1`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -481,14 +514,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_hard1`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -502,14 +537,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_home`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -522,14 +559,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_quest_event`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -544,14 +583,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_treasure`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -564,14 +605,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `VolcanoAntennaAttached`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -583,14 +626,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `battle`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -602,7 +647,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BoneyardUnlocked`
 
@@ -610,7 +658,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -621,7 +668,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `BunkerUnlocked`
 
@@ -629,7 +679,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -640,7 +689,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CavesUnlocked`
 
@@ -648,7 +700,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -659,7 +710,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ChaosAntennaAttached`
 
@@ -667,7 +721,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -678,7 +731,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CoreObeliskUnlocked`
 
@@ -686,7 +742,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -697,14 +752,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CoreUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -716,14 +773,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CraterUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -735,7 +794,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `dimensionx`
 
@@ -743,7 +805,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -754,7 +815,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `endoftime`
 
@@ -762,7 +826,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -773,14 +836,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `event`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -793,7 +858,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `exit_desert`
 
@@ -801,7 +869,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -816,7 +883,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `exit_lab`
 
@@ -824,7 +894,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -839,14 +908,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `future`
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Future' action.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -858,14 +929,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `FutureUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -877,14 +950,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `GenFlag_Boss_Spewer`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -896,14 +971,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `GenFlag_Boss_Stacy`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -916,14 +993,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`miniboss_event`](./Miscellaneous.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `home`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -935,14 +1014,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `iceage`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -954,14 +1035,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `IceAgeUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -973,14 +1056,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `JunkyardUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -992,14 +1077,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `jurassic`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1011,14 +1098,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `JurassicUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1030,14 +1119,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MeatWorldUnlockedFull`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1056,14 +1147,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mw_treasure`](./Miscellaneous.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoonObeliskUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1075,7 +1168,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `MoonUnlocked`
 
@@ -1083,7 +1179,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1094,7 +1189,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mw_altar`
 
@@ -1102,7 +1200,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1115,14 +1212,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `SewersUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1134,7 +1233,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `shop_cheapwater`
 
@@ -1142,7 +1244,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1155,7 +1256,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `shop_water`
 
@@ -1163,7 +1267,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1176,14 +1279,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `start`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1195,14 +1300,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `theend`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1214,14 +1321,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TheEndUnlocked`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1233,7 +1342,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ThrobbingArteryDone`
 
@@ -1241,7 +1353,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1252,7 +1363,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `treasure`
 
@@ -1260,7 +1374,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1272,14 +1385,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
+
 
 ### Object: `WallOfFleshDone`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1291,14 +1406,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `weather_event`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1311,17 +1428,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
+
+
 ---
 
 
-
 ---
+
 
 ## Auto-Discovered Objects
 
 
 ### Object: `alley`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1331,8 +1451,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `boneyard`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1342,8 +1465,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `bunker`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1353,8 +1479,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `caves`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1364,8 +1493,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `core`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1375,8 +1507,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `crater`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1386,8 +1521,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `desert`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1397,8 +1535,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `junkyard`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1408,8 +1549,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `lab`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1419,8 +1563,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `meatworld`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1430,8 +1577,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `moon`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1441,7 +1591,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ### Object: `sewers`
+
 
 <details>
 <summary><b>Expand</b></summary>

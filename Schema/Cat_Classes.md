@@ -10,6 +10,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ROOT`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -36,14 +37,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array | An array of passive ability names presented during tutorial level-up. | 1 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `graphics`
 
 
 **Definition:** Object defining visual animations and sequence timings.  
 **Total Count:** 2609
-
 
 <details>
 <summary><b>Expand</b></summary
@@ -59,14 +62,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `hud_palette` | Number | The HUD color palette index used for the class's UI elements. | 1 | `11` |
 
 </details>
+
+
 ---
+
 
 ### Object: `meta`
 
 
 **Definition:** Object defining UI display data (Name, Description, Icon).  
 **Total Count:** 2374
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -79,14 +84,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`description`](./Strings.md#string-description) | String | A string key for the localized description of the class. | 14 | `"CAT_CLASS_BUTCHER_DESC"`<br>`"CAT_CLASS_COLORLESS_DESC"`<br>`"CAT_CLASS_DRUID_DESC"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `stat_mods`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 13
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -104,14 +111,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`lck`](./Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ability_groups`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -126,14 +135,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`defense`](./Arrays.md#array-defense) | Array | An array of defensive ability names. | 10 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `innate_passives`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -149,14 +160,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TinkererBasicAttackSwitching`](./Passives_and_Statuses.md#object-tinkererbasicattackswitching) | Object  | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `innate_items`
 
 
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -169,14 +182,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trinket`](./Enums.md#enum-trinket) | Enum | The name of the trinket item the unit starts with. | 1 | `MCHadouken`<br>`MonkStyleChanger` |
 
 </details>
+
+
 ---
+
 
 ### Object: `TinkererBasicAttackSwitching`
 
 
 **Definition:** Logic: Allows Tinkerer to swap basic attacks.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -189,5 +204,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | The ability used for the throw action in the Tinkerer's basic attack switching. | 3 | `TinkererThrow` |
 
 </details>
----
 
+
+---

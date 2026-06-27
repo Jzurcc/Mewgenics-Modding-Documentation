@@ -1725,7 +1725,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 
 The following objects all behave as `{Status and Passive Keys}` containers. Each has its own unique parameters listed below its entry.
 
+
 ---
+
 
 #### `AddPassivesToCharmed`
 
@@ -1740,7 +1742,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 #### `AddPassivesToMinions`
 
@@ -1764,7 +1769,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `AddSelfStatusToBasicAttack`
 
@@ -1782,7 +1790,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomMagicMissile`](./Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. || `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `AddSelfStatusToWeapons`
 
@@ -1798,7 +1809,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 0 | `1`<br>`6`<br>`99` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToAllDamage`
 
@@ -1822,7 +1836,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `BonusKnockbackDamage` | Integer | The extra damage dealt per tile of knockback. | 0 | `2`<br>`3`<br>`5` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToBasicAttack`
 
@@ -1888,7 +1905,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToBasicMeleeAttack`
 
@@ -1909,7 +1929,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToElementDamage`
 
@@ -1927,7 +1950,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToKnockbackDamage`
 
@@ -1944,7 +1970,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToSpells`
 
@@ -1961,7 +1990,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `LeechPercent` | Integer | The percentage of damage dealt restored as health. | 0 | `50` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToTrampleDamage`
 
@@ -1978,7 +2010,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 0 | `{ . . . }`<br>`1` |
 
 </details>
+
+
 ---
+
 
 #### `AddStatusToWeapons`
 
@@ -1995,7 +2030,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `PullSourceToKnockbackImmuneTarget` | Integer | The amount of pull force applied to the source toward a knockback-immune target. || `1` |
 
 </details>
+
+
 ---
+
 
 #### `AdventureTokenPassivePool`
 
@@ -2008,7 +2046,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 #### `ApplyPassives`
 
@@ -2023,7 +2064,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 
 </details>
+
+
 ---
+
 
 #### `ApplyStatusIfCrit`
 
@@ -2040,7 +2084,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `ApplyStatusesToRandomEnemiesEachTurn`
 
@@ -2056,7 +2103,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`3`<br>`5` |
 
 </details>
+
+
 ---
+
 
 #### `CatchProjectiles`
 
@@ -2075,7 +2125,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 #### `CharacterTypeGainsStatusAtBattleStart`
 
@@ -2095,7 +2148,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `CritsApplyStatus`
 
@@ -2118,7 +2174,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `ExtraStatusWhenDealingDamage`
 
@@ -2133,7 +2192,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `MeleeRevengeDamage`
 
@@ -2161,7 +2223,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`StatusImmunity`](./Arrays.md#array-statusimmunity) | Array / Enum  | A list of status effect names the unit is immune to. | 0 | `Burn`<br>`Poison`<br>`Tarred` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveAfterXKills`
 
@@ -2176,7 +2241,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveAtHealthThreshold`
 
@@ -2192,7 +2260,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 9 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveAtStatThreshold`
 
@@ -2208,7 +2279,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 13 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveGroup`
 
@@ -2227,7 +2301,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveWhenAffectedByElement`
 
@@ -2242,7 +2319,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveWhenAtFullMana`
 
@@ -2258,7 +2338,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveWhenDead`
 
@@ -2276,7 +2359,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AddStatusToTrampleDamage`](./Passives_and_Statuses.md#object-addstatustotrampledamage) | Object  | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveWhileHasStatus`
 
@@ -2291,7 +2377,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 6 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
+
+
 ---
+
 
 #### `PassiveWhileInMonkMeleeStance`
 
@@ -2306,7 +2395,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Brace`](./Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `RandomPassivePool`
 
@@ -2320,7 +2412,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`TransformInXTurns`](./Passives_and_Statuses.md#object-transforminxturns) | Object  | Defines a delayed transformation after a set number of turns, with optional target object and initiative handling. || `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `RandomStatusFromPool`
 
@@ -2398,7 +2493,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempCounterAttack` | Integer | The number of turns TempCounterAttack lasts, ticking down at the start of the unit's turn. || `1` |
 
 </details>
+
+
 ---
+
 
 #### `RevengeDamage`
 
@@ -2416,7 +2514,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 | `[`<br>`[Heat Fire]` |
 
 </details>
+
+
 ---
+
 
 #### `StatusAfterCastSpell`
 
@@ -2433,7 +2534,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
+
+
 ---
+
 
 #### `StatusAfterXTurns`
 
@@ -2448,7 +2552,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. || `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
+
+
 ---
+
 
 #### `StatusAllCharactersOnSpawn`
 
@@ -2466,7 +2573,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `StatusAlliesEachTurn`
 
@@ -2483,7 +2593,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `exclude_self` | Boolean | If true, the effect does not apply to the source unit itself. | 1 | `false` |
 
 </details>
+
+
 ---
+
 
 #### `StatusAlliesOnBattleStart`
 
@@ -2504,7 +2617,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusAlliesOnDeath`
 
@@ -2522,7 +2638,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
 
 </details>
+
+
 ---
+
 
 #### `StatusEachRoundEnd`
 
@@ -2537,7 +2656,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
+
+
 ---
+
 
 #### `StatusEachTurnBegin`
 
@@ -2567,7 +2689,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Wet` | Integer | The number of stacks of the Wet status effect applied. || `1` |
 
 </details>
+
+
 ---
+
 
 #### `StatusEachTurnEnd`
 
@@ -2608,7 +2733,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusEachTurnEndForEachTurn`
 
@@ -2623,7 +2751,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomMagicMissile`](./Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. || `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusEveryXSpellCasts`
 
@@ -2646,7 +2777,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `1`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `StatusGroup`
 
@@ -2665,7 +2799,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `StatusIfUnusedMovePoints`
 
@@ -2686,7 +2823,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
+
+
 ---
+
 
 #### `StatusKilledCharacters`
 
@@ -2703,7 +2843,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AutoReanimate` | Number | The percentage chance for the unit to automatically reanimate upon death. | 0 | `100%`<br>`50%` |
 
 </details>
+
+
 ---
+
 
 #### `StatusKillers`
 
@@ -2720,7 +2863,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnAllyCatDeath`
 
@@ -2738,7 +2884,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnBattleEnd`
 
@@ -2761,7 +2910,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`TransformWeapon`](./Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. || `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnBattleStart`
 
@@ -2785,7 +2937,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StealthUntilBasicAttack` | Integer | The number of stacks of Stealth that are removed when the unit performs a basic attack. || `1` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnBreak`
 
@@ -2808,7 +2963,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnBreakItem`
 
@@ -2824,7 +2982,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`DoDamage`](./Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. || `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnCastSpell`
 
@@ -2840,7 +3001,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnCollectPickup`
 
@@ -2854,7 +3018,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnDie`
 
@@ -2872,7 +3039,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnEatFood`
 
@@ -2890,7 +3060,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnEatPill`
 
@@ -2906,7 +3079,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomPermanentStatsDistinct`](./Miscellaneous.md#object-randompermanentstatsdistinct) | Object  | An object defining a set of stat changes (positive and negative) that are randomly applied as permanent modifications. | 0 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnEndMove`
 
@@ -2934,7 +3110,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 0 | `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnGainCoins`
 
@@ -2951,7 +3130,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnHealed`
 
@@ -2967,7 +3149,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. || `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnKill`
 
@@ -3005,7 +3190,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Specifies an ability to use on kill that does not stack with itself. | 0 | `BBTransformZealot`<br>`GenericRage` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnKillEnemy`
 
@@ -3025,7 +3213,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnPickupCoins`
 
@@ -3041,7 +3232,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnPopCorpse`
 
@@ -3056,7 +3250,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `1`<br>`6`<br>`99` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnTookDamage`
 
@@ -3091,7 +3288,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. || `1`<br>`20`<br>`mov` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnTookDamageFromAbility`
 
@@ -3109,7 +3309,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. || `1` |
 
 </details>
+
+
 ---
+
 
 #### `StatusOnUseBasicAttack`
 
@@ -3124,7 +3327,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `StatusRandomEnemiesOnBattleStart`
 
@@ -3143,7 +3349,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
 
 </details>
+
+
 ---
+
 
 #### `StatusWhenAllySpendsMana`
 
@@ -3159,7 +3368,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`OneUseSpellDamageUp`](./Engine_StatusAndPassiveKeys.md#object-oneusespelldamageup) | Array / Number / Object  | Increases spell damage by the specified amount, but the effect is consumed after a single use. Alias for SpellDamageUp. || `{ . . . }`<br>`2` |
 
 </details>
+
+
 ---
+
 
 #### `TakeBonusTurnWithAIControl`
 
@@ -3174,7 +3386,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `end_of_round` | Boolean | If true, the effect triggers at the end of the round instead of at the start of the turn. | 1 | `true` |
 
 </details>
+
+
 ---
+
 
 #### `TakeBonusTurnWithStatus`
 
@@ -3190,7 +3405,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
+
+
 ---
+
 
 #### `TempPassiveWhileHasStatus`
 
@@ -3205,7 +3423,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
+
+
 ---
+
 
 #### `additional_passives`
 
@@ -3226,7 +3447,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
+
+
 ---
+
 
 #### `bonus_passives`
 
@@ -3247,7 +3471,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`XIsSpellStormRampAndReset`](./Miscellaneous.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. || `{ . . . }`<br>`0` |
 
 </details>
+
+
 ---
+
 
 #### `extra_statuses`
 
@@ -3266,7 +3493,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Tarred`](./Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
+
+
 ---
+
 
 #### `party_status_next_fight`
 
@@ -3289,7 +3519,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
+
+
 ---
+
 
 #### `passives`
 
@@ -3302,7 +3535,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 #### `self_status_next_fight`
 
@@ -3346,7 +3582,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
+
+
 ---
+
 
 #### `statuses`
 
@@ -3363,31 +3602,41 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 > These tables were auto-generated by the schema audit tool. They document objects found in the `.gon` files that were not previously documented.
 
+
 ### Object: `AlphaDodgeChance`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
+
 ### Object: `AlphaStatusOnTurnBegin`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DoubleCastSpellThisTurn` | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 2 | `1` |
 
+
 ### Object: `ApplyPassivesToSpawnerWhileAlive`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum  | Specifies which equipment slot is visually hidden. | 2 | `neck` |
 
+
 ### Object: `ApplyToRandomPartyMemberIfPossible`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`GainDisorderFromPool`](./Miscellaneous.md#object-gaindisorderfrompool) | Enum / Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 4 | `{ . . . }`<br>`all_disorders` |
 
+
 ### Object: `ApplyToSource`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3417,7 +3666,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 
+
 ### Object: `BlessingOfPeace`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3425,7 +3676,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
+
 ### Object: `BounceObject`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3433,7 +3686,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 4 | `.02`<br>`.1`<br>`.15` |
 | `slide` | Integer | The number of tiles the bounced object slides toward the target. | 2 | `10` |
 
+
 ### Object: `Bounty`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3441,7 +3696,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `ChangeTile`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3449,7 +3706,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `aoe` | Integer | The radius (in tiles) of the area affected by the tile change. | 4 | `1` |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 4 | `.02`<br>`.1`<br>`.15` |
 
+
 ### Object: `CharismaUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3459,7 +3718,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. || `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
 | `tooltip_stacks_pos` | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. || `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
+
 ### Object: `Charmed`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3467,7 +3728,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
+
 ### Object: `Cleanse`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3478,7 +3741,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `Cleave`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3487,7 +3752,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Conditional_Adjacent`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3496,7 +3763,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_Ally`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3516,7 +3785,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_BadRoll`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3526,7 +3797,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_Boss`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3539,7 +3812,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_Corpse`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3556,7 +3831,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_Enemy`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3580,7 +3857,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_FirstApplicationThisTurn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3591,7 +3870,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_GoodRoll`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3605,7 +3886,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_HasCleansableDebuffs`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3616,7 +3899,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_HasStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3630,7 +3915,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_HasTag`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3647,7 +3934,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_HealthThreshold`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3658,7 +3947,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_ManaThreshold`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3666,7 +3957,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_NotBoss`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3676,7 +3969,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_PartyMember`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3684,7 +3979,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `Conditional_Shielded`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3695,7 +3992,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
+
 ### Object: `ConstitutionUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3705,7 +4004,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. || `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
 | `tooltip_stacks_pos` | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. || `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
+
 ### Object: `Craft`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3720,7 +4021,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `CureDisease`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3728,7 +4031,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`disease`](./Enums.md#enum-disease) | Enum  | Determines which disease is applied when spreading disease. | 12 | `BirdFlu`<br>`Cancer`<br>`CommonCold` |
 | `can_apply_to_anything` | Boolean | If true, this disease can be spread to any unit, regardless of type. | 2 | `true` |
 
+
 ### Object: `DelayedPain`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3736,14 +4041,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `DestroyEquipmentAndAttachParasite`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 8 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 4 | `2`<br>`3`<br>`4` |
 
+
 ### Object: `DexterityUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3753,7 +4062,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. || `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
 | `tooltip_stacks_pos` | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. || `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
+
 ### Object: `DiminishingHealthRegen`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3761,14 +4072,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `DistanceBonusDamage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `min_range` | Integer | The minimum range of the ability. | 8 | `0`<br>`1`<br>`2` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `DoDamage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3778,21 +4093,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 8 | `{ . . . }` |
 | [`elements`](./Arrays.md#array-elements) | Array  | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. || `[`<br>`[Heat Fire]` |
 
+
 ### Object: `DoubleCastSpellThisTurn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+
 
 ### Object: `Drowsy`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Else`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3830,55 +4151,71 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AllyInfested`](./Miscellaneous.md#object-allyinfested) | Array / Number / Object  | Defines the AllyInfested object, which spawns an infested ally under the player's control. | 1 | `{ . . . }` |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
 
+
 ### Object: `Fear`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `ForceAttack`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 4 | `false`<br>`true` |
 
+
 ### Object: `ForceUseAbilityOnTarget`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 
+
 ### Object: `FormChange`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer  | Specifies the name of the form the unit changes into. | 150 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 
+
 ### Object: `Freeze`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `GainCoinsRange`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `max` | Integer | The maximum amount of coins that can be gained. | 22 | `10`<br>`2`<br>`25` |
 | `min` | Integer | The minimum amount of coins that will be gained. | 22 | `0`<br>`1`<br>`10` |
 
+
 ### Object: `GainDisorderFromPool`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 2 | `2`<br>`3`<br>`4` |
 
+
 ### Object: `Hex`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3886,21 +4223,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `ImmediateUseAbility`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 2 | `true` |
 
+
 ### Object: `IncAuxCounterClamped`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `change` | Integer | The amount to adjust the auxiliary counter by. | 6 | `-1`<br>`-2`<br>`-3` |
 | `max` | Integer | The maximum amount of coins that can be gained. | 6 | `10`<br>`2`<br>`25` |
 
+
 ### Object: `Infested`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3927,7 +4270,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `value` | Enum | The numeric value or formula associated with the buff. || `.5`<br>`0`<br>`1` |
 | [`voice`](./Enums.md#enum-voice) | Enum  | Determines which voice set or type is used for the character. || `ankylosaurus`<br>`female1`<br>`female10` |
 
+
 ### Object: `IntelligenceUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3937,14 +4282,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. || `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
 | `tooltip_stacks_pos` | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. || `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
+
 ### Object: `KnockOutCoin`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `KnockUpAndAway`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3955,21 +4304,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`self_damage`](./Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 4 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 | `circular_variance` | Integer | The random variance in the knockback direction, in tiles. | 2 | `2` |
 
+
 ### Object: `Knockback`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `KnockbackIfCrit`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 2 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `override_chain_knockback` | Integer | The distance in tiles the unit is knocked back if a critical hit triggers chain knockback. | 2 | `10` |
 
+
 ### Object: `Leech`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3980,7 +4335,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Leeches`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3996,21 +4353,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `MagicWeakness`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `ManaGainRange`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `max` | Integer | The maximum amount of coins that can be gained. | 2 | `10`<br>`2`<br>`25` |
 | `min` | Integer | The minimum amount of coins that will be gained. | 2 | `0`<br>`1`<br>`10` |
 
+
 ### Object: `ManaLeeches`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4020,7 +4383,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `Marked`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4033,14 +4398,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `ModifyAbility`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 4 | `{ . . . }` |
 
+
 ### Object: `MovementUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4051,21 +4420,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks_neg` | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. || `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
 | `tooltip_stacks_pos` | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. || `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
+
 ### Object: `NextBattleStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 4 | `-1`<br>`-2`<br>`1` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 4 | `0`<br>`1` |
 
+
 ### Object: `NoHealthRegen`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `NukeQuestFinalBossModifications`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4073,7 +4448,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 2 | `{ . . . }` |
 | [`splash_damage`](./Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 2 | `{ . . . }` |
 
+
 ### Object: `ObjectOnHitCharacter`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4081,26 +4458,34 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 10 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 4 | `.02`<br>`.1`<br>`.15` |
 
+
 ### Object: `OneUseSpellDamageUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
+
 ### Object: `Ostracized`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `PassiveWhileNotTakingTurn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 2 | `{ . . . }` |
 
+
 ### Object: `PermanentConfusion`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4108,7 +4493,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `Petrify`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4117,7 +4504,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
+
 ### Object: `PoisonLace`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4131,7 +4520,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `Possessed`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4139,9 +4530,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+
 
 ### Object: `PreEmptiveCounterNextAttacks`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
@@ -4149,7 +4542,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
+
 ### Object: `ProbeCharmed`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4157,7 +4552,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
+
 ### Object: `Purge`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4168,7 +4565,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `RandomInjury`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4176,7 +4575,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `RandomMagicMissile`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4186,13 +4587,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `RandomPermanentStatsDistinct`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
+
 ### Object: `RangeUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4200,7 +4605,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `Reanimate`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4211,7 +4618,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `Reflect`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4224,21 +4633,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
+
 ### Object: `RemoveStatusStacks`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`status`](./Enums.md#enum-status) | Enum  || 8 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
+
 ### Object: `ReplaceSpell`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 8 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`slot`](./Enums.md#enum-slot) | Enum / Integer  | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 8 | `0`<br>`1`<br>`2` |
 
+
 ### Object: `Revive`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4249,7 +4664,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `ReviveNextRound`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4263,35 +4680,45 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
+
 ### Object: `Rot`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `ScatterCoins`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stackable` | Boolean || 4 | `true` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `Scrambled`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `SetItemAux`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`slot`](./Enums.md#enum-slot) | Enum / Integer  | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 6 | `0`<br>`1`<br>`2` |
 | `value` | Enum | The numeric value or formula associated with the buff. | 6 | `.5`<br>`0`<br>`1` |
 
+
 ### Object: `Shield`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4299,7 +4726,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
+
 ### Object: `Sleep`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4307,7 +4736,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `SoulLink`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4320,20 +4751,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `SpeedUp_WithoutInitiative`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
+
 ### Object: `SpiderInfested`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `SpreadDisease`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4341,14 +4778,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 24 | `.02`<br>`.1`<br>`.15` |
 | `can_apply_to_anything` | Boolean | If true, this disease can be spread to any unit, regardless of type. | 12 | `true` |
 
+
 ### Object: `StacyMutant_Brace`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Brace`](./Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 2 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 
+
 ### Object: `StacyMutant_Counter`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4356,7 +4797,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 | [`CounterAttack`](./Passives_and_Statuses.md#object-counterattack) | Array / Enum / Object  | Specifies the ability used when the unit counterattacks after being hit. | 2 | `{ . . . }`<br>`BungaSwipe`<br>`CloakerHex`<br>`CollectiveCounter` |
 
+
 ### Object: `StacyMutant_Damage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4364,14 +4807,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AddMaxHealth` | Integer | The amount added to the unit's maximum health. Negative values reduce max health. | 2 | `-25`<br>`10`<br>`2` |
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 
+
 ### Object: `StacyMutant_DoubleHead`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 | `ExtraDispersedTurns` | Integer | The number of additional or fewer turns in the dispersed turn order. | 2 | `-1`<br>`1` |
 
+
 ### Object: `StacyMutant_Fire`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4380,7 +4827,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 2 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain) | Object  | Defines a replacement AI brain and behavior pattern for the mutant. | 2 | `{ . . . }` |
 
+
 ### Object: `StacyMutant_Health`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4389,14 +4838,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 | `SizeScale` | Number | The multiplier applied to the unit's visual and hitbox size. | 2 | `.4`<br>`.6`<br>`.7` |
 
+
 ### Object: `StacyMutant_Holy`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 2 | `1`<br>`2`<br>`4` |
 
+
 ### Object: `StacyMutant_Ice`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4406,7 +4859,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 2 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain) | Object  | Defines a replacement AI brain and behavior pattern for the mutant. | 2 | `{ . . . }` |
 
+
 ### Object: `StacyMutant_Lightning`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4415,7 +4870,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 2 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain) | Object  | Defines a replacement AI brain and behavior pattern for the mutant. | 2 | `{ . . . }` |
 
+
 ### Object: `StacyMutant_Mirror`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4423,7 +4880,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ReflectProjectiles`](./Passives_and_Statuses.md#object-reflectprojectiles) | Integer / Object  | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 2 | `{ . . . }`<br>`1`<br>`10%`<br>`100%` |
 | [`StatusEachTurnEndForEachTurn`](./Passives_and_Statuses.md#object-statuseachturnendforeachturn) | Object  | Statuses applied at the end of each turn, with the number of turns as nested values. | 2 | `{ . . . }` |
 
+
 ### Object: `StacyMutant_Speed`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4432,14 +4891,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 | `SizeScale` | Number | The multiplier applied to the unit's visual and hitbox size. | 2 | `.4`<br>`.6`<br>`.7` |
 
+
 ### Object: `StacyMutant_Thorns`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 2 | `{ . . . }` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 2 | `1`<br>`2`<br>`3` |
 
+
 ### Object: `StatusAfterXStacks`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4449,14 +4912,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 2 | `1` |
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 2 | `true` |
 
+
 ### Object: `StealthUntilBasicAttack`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Stun`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4464,7 +4931,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `Tangled`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4473,7 +4942,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Tarred`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4481,33 +4952,43 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `TempCounterAttack`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `TempDamageUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
+
 
 ### Object: `TempMovement`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
+
 ### Object: `TempPassiveUntilSettled`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 4 | `{ . . . }` |
 | `LimitHeal` | Integer | If 1, prevents the unit from being healed. | 2 | `0`<br>`1` |
 
+
 ### Object: `TempRangeUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4515,19 +4996,25 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `TempSpellDamageUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
+
 
 ### Object: `TempStrengthUp`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
+
 ### Object: `Temporary`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4540,28 +5027,36 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `expires_on_appliers_turn` | Boolean | If true, the temporary effect expires at the start of the applier's next turn. | 4 | `true` |
 | `expires_on_move` | Boolean | If true, the temporary effect expires when the target moves. | 2 | `true` |
 
+
 ### Object: `TransformWeapon`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`from`](./Enums.md#enum-from) | Enum  || 4 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 | [`to`](./Enums.md#enum-to) | Enum  || 4 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 
+
 ### Object: `Webbed`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+
 
 ### Object: `Wet`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `XIsSpellStormRampAndReset`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4587,7 +5082,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `WeaponAuxMultiplier` | Number ||| `.5` |
 
 </details>
+
+
 ---
+
 
 #### `Consumed`
 
@@ -4612,9 +5110,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `kill_on_consume` | Boolean | If true, the consumed unit is killed immediately upon consumption. | 1 | `true` |
 
 </details>
+
+
 ---
 
+
 ### Object: `AcidRain`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4642,66 +5144,86 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_scale` | String | A multiplier for particle speed. || `.05`<br>`.1`<br>`.2` |
 | `speed_start` | Number | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 
+
 ### Object: `AddPostProcessEffect`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `requires_framebuffer` | Boolean || 1 | `false` |
 | [`shader`](./Enums.md#enum-shader) | Enum  || 1 | `shimmervignette` |
 
+
 ### Object: `AddTilesetObjects`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  || 1 | `{ . . . }` |
 
+
 ### Object: `Adrenaline`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `ApplyMultipleTimes`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 6 | `{ . . . }` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 6 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `ApplyStatusesNextTurnBegin`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Quivered`](./Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`5` |
 
+
 ### Object: `ApplyToConsumed`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DeleteObject` | Integer || 6 | `1` |
 | [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 2 | `{ . . . }`<br>`1`<br>`6` |
 
+
 ### Object: `ApplyToOthersWithSharedTagAndFaction`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
 
+
 ### Object: `ApplyToRandomClosestAlly`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ForceMoveTowards` | Integer || 2 | `1` |
 
+
 ### Object: `ApplyToTile`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ObjectOnHit`](./Miscellaneous.md#object-objectonhit) | Enum / Object  || 4 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
 | `SpawnBearTrap` | Integer || 4 | `1` |
 
+
 ### Object: `ArcLightning`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4711,14 +5233,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 | `ignore_self` | Boolean || 2 | `true` |
 
+
 ### Object: `Bloodzerked`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `BodyGuard`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4732,7 +5258,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `BombRatTurtle`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4740,7 +5268,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `ButterflySwarm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4749,7 +5279,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `CanApplyToInanimate`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4761,14 +5293,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `PreventDeathTransforms` | Integer || 2 | `1` |
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 2 | `{ . . . }` |
 
+
 ### Object: `CastAgainWithStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `OverrideDamage` | Integer || 2 | `-10`<br>`0`<br>`1` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `CatPartsSizeScaleStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4777,14 +5313,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `body` | Number | The catalog ID for the cat's body part. | 2 | `-1`<br>`1`<br>`1.1` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 2 | `-1`<br>`-2`<br>`1` |
 
+
 ### Object: `ChampionUpgradeNextMinion`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `ChanceToBreakFree`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4792,7 +5332,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`fail_ability`](./Enums.md#enum-fail_ability) | Enum   || 6 | `CHuskDropFail`<br>`LennyStruggleFail`<br>`XXX` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 6 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `ChargeFists`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4806,7 +5348,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
+
 ### Object: `CockroachSwarm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4814,7 +5358,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `CollectsPickupsWithAltEffects`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4825,14 +5371,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 2 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
+
 ### Object: `CopySpells`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 2 | `true` |
 
+
 ### Object: `Counterspell`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4841,7 +5391,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `CurrentWeaponAddPoison`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4849,7 +5401,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `DelayCastAbility`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4857,20 +5411,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `lingering` | Boolean | If true, the ability effect lingers after the initial cast. | 2 | `true` |
 | `relative` | Boolean | If true, the delay is calculated relative to the current turn count rather than as an absolute time. | 2 | `false` |
 
+
 ### Object: `DelayedWind`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `distance` | Integer | The number of tiles the target is knocked back or pulled. | 2 | `-3`<br>`10`<br>`2` |
 
+
 ### Object: `DelayedWindCone`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `distance` | Integer | The number of tiles the target is knocked back or pulled. | 4 | `-3`<br>`10`<br>`2` |
 | `damage` | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
+
 ### Object: `DoDistortionRing`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4878,28 +5438,36 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`radius`](./Arrays.md#array-radius) | Array / Integer  || 12 | `0`<br>`1`<br>`13` |
 | [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 12 | `-30`<br>`-4`<br>`.5` |
 
+
 ### Object: `DoScreenShake`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 20 | `-1`<br>`-2`<br>`1` |
 | `time` | Number | The duration in seconds of the screen shake effect. | 20 | `.5`<br>`.75`<br>`1` |
 
+
 ### Object: `DoubleCast`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+
 
 ### Object: `DoubleCastSpell`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `DoubleLoot`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4909,7 +5477,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `Drag`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4917,20 +5487,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`desc`](./Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `DustOnHit`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 6 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
+
 ### Object: `EliteUpgradeNextMinion`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `EmptyMind`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4942,7 +5518,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Enlarge`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4954,14 +5532,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `FactionUprising`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`extra_statuses`](./Miscellaneous.md#object-extra_statuses) | Object  || 1 | `{ . . . }` |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
+
 ### Object: `FireArmor`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4975,7 +5557,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `FireArmor2`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4987,13 +5571,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `FireStorm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`combo`](./Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. || `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
 
+
 ### Object: `FireflySwarm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5001,7 +5589,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `FlySwarm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5016,7 +5606,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
+
 ### Object: `Fog`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5041,42 +5633,54 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`size_start`](./Arrays.md#array-size_start) | Array   | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
 | `speed_start` | String | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 
+
 ### Object: `ForceImmediateMoveAndAttack`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `even_if_cant_reach` | Boolean || 2 | `true` |
 
+
 ### Object: `ForceMoveTowardsTaggedObject`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 2 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
+
 ### Object: `GlobalSpawnOnRoundEnd`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`number`](./Arrays.md#array-number) | Array / Integer  ||| `1`<br>`10`<br>`2` |
 
+
 ### Object: `Grappled`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Grappling`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit_animations`](./Miscellaneous.md#object-exit_animations) | Object  || 2 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
+
 ### Object: `HealAlliesEachTurn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5084,7 +5688,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `mana` | Enum / Integer || 4 | `"4-clamp(floor(X/7), 0, 1)"`<br>`"max(4-X, 0)"`<br>`"max(7-2*X,0)"` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `HeatWave`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5095,7 +5701,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `HeavyHits`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5103,14 +5711,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tooltip_stackless`](./Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `HolyDamageBlessing`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 4 | `1`<br>`10`<br>`2` |
 | `damage_multiplier` | Number || 4 | `2`<br>`3` |
 
+
 ### Object: `IceArmor`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5124,21 +5736,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `IncAuxCounterCycle`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `change` | Integer | The amount to adjust the auxiliary counter by. | 2 | `-1`<br>`-2`<br>`-3` |
 | `max` | Integer | The maximum amount of coins that can be gained. | 2 | `10`<br>`2`<br>`25` |
 
+
 ### Object: `Invulnerable`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `JudgementDay`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5146,27 +5764,35 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `KillEnemyOfTypeAtBattleStart`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`enemy_type`](./Enums.md#enum-enemy_type) | Enum   || 2 | `any`<br>`cat` |
 | [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array   ||| `[TomTom Kitten CatCaller Mangy]` |
 
+
 ### Object: `LateStatusApplication`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `CurrentWeaponDamageUp` | Integer || 6 | `1`<br>`3`<br>`5` |
 | `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 2 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 
+
 ### Object: `LeaveBehind`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 8 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
+
 ### Object: `Math`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5180,21 +5806,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `Meaty`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `MergeDamageInstance`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `can_instapop` | Boolean || 2 | `false` |
 | `force_no_hit_animation` | Boolean || 2 | `true` |
 
+
 ### Object: `MeteorShower`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5202,7 +5834,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `Meteornado`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5228,7 +5862,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`size_start`](./Arrays.md#array-size_start) | Array   | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
 | `speed_start` | Number | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 
+
 ### Object: `Metronome`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5248,7 +5884,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tags`](./Arrays.md#array-tags) | Array / Enum  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). || `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `Muted`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5257,20 +5895,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
+
 ### Object: `NextAbilityHeals`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `NextActionLuckUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
+
 ### Object: `NextAttackBonusRange`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5278,7 +5922,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `NextAttackSpecialCrit`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5286,7 +5932,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `extra_coins_per_stack` | Integer || 2 | `2` |
 | `luck_increase` | Integer || 2 | `1` |
 
+
 ### Object: `NextBasicAttackCritsThisTurn`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5294,34 +5942,44 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 2 | `true` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `NextBattleStatusStacks`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `MadnessChanceOnTurnBegin` | Integer || 2 | `2` |
 | `fights` | Integer | The number of future battles the status effect will be applied at the start of. | 2 | `1`<br>`9999` |
 
+
 ### Object: `NextDamageReduceAndHealAllies`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+
 
 ### Object: `NextTurnDoubleRangedDamage`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `ObjectOnHit`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 4 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
+
 ### Object: `OverHealToStatuses`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5329,34 +5987,44 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 2 | `1` |
 | `stack_scale` | Integer | The scaling factor for how many stacks of the over-heal status are applied. | 2 | `0` |
 
+
 ### Object: `PoolMetronome`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. || `2`<br>`3`<br>`4` |
 
+
 ### Object: `QuakeAreaChance`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 4 | `.02`<br>`.1`<br>`.15` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer  || 4 | `0`<br>`1`<br>`13` |
 
+
 ### Object: `RandomDistanceDisplace`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 2 | `2`<br>`3`<br>`4` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `RandomKnockback`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `max` | Integer | The maximum amount of coins that can be gained. | 4 | `10`<br>`2`<br>`25` |
 | `min` | Integer | The minimum amount of coins that will be gained. | 4 | `0`<br>`1`<br>`10` |
 
+
 ### Object: `ReduceManaCostExcludeBrainstorm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5364,7 +6032,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `Regurge`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5376,14 +6046,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `RepressedMemoriesMetronome`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 4 | `2`<br>`3`<br>`4` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
+
 ### Object: `Sandstorm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5396,13 +6070,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `ScrambleLastUsedSpell`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `permanent` | Boolean || 2 | `true` |
 
+
 ### Object: `SerratedClaws`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5410,20 +6088,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `SetAnimationAlts`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`dead`](./Enums.md#enum-dead) | Enum  | Determines the animation set used when the unit is dead. | 2 | `deadShot` |
 | [`dying`](./Enums.md#enum-dying) | Enum  | Determines the animation set used when the unit is in a dying state. | 2 | `shot` |
 
+
 ### Object: `SetCrazyEyeBackgroundWeights`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. || `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
+
 ### Object: `Shatter`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5433,7 +6117,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `ShortCircuit`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5446,7 +6132,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `SmartMetronome`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5459,7 +6147,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tags`](./Arrays.md#array-tags) | Array / Enum  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). || `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `SmellBlood`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5469,7 +6159,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `Snow`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5503,7 +6195,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`size_start`](./Arrays.md#array-size_start) | Array   | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
 | [`speed_start`](./Arrays.md#array-speed_start) | Array   | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 
+
 ### Object: `SolarFlare`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5513,7 +6207,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`elements`](./Arrays.md#array-elements) | Array  | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. || `[`<br>`[Heat Fire]` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `SpawnTilePuddleOnBattleStart`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5521,7 +6217,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `min_radius` | Number || 1 | `.2`<br>`1`<br>`1.5` |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
+
 ### Object: `SpawnVolcanoOnBattleStart`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5531,20 +6229,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array / Enum   || 1 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
 | [`number`](./Arrays.md#array-number) | Array / Integer  ||| `1`<br>`10`<br>`2` |
 
+
 ### Object: `SpecialGodRays`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Big`](./Miscellaneous.md#object-big) | Object  || 2 | `{ . . . }` |
 
+
 ### Object: `SpellShield`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `StatBounty`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5552,7 +6256,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `StatusCharactersOnRoundEnd`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5561,7 +6267,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum   || 1 | `crow`<br>`grub_familiar`<br>`rock` |
 
+
 ### Object: `StatusCharactersOnRoundStart`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5569,13 +6277,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
+
 ### Object: `SwapWeapon`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. || `2`<br>`3`<br>`4` |
 
+
 ### Object: `SwitchMusic`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5583,7 +6295,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`new_song`](./Enums.md#enum-new_song) | Enum   || 12 | `same` |
 | `crossfade_speed` | Integer | The duration in seconds for the crossfade transition between music tracks. | 2 | `1` |
 
+
 ### Object: `Switcheroo`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5595,14 +6309,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `Taunting`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `TeamCastAbility`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5610,7 +6328,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum   | Specifies a tag that the target unit must have for the team cast to trigger. | 4 | `collective`<br>`dc_cat`<br>`dinofamily` |
 | `same_orientation` | Boolean | If true, the team cast ability only triggers if the caster and target face the same direction. | 2 | `true` |
 
+
 ### Object: `TempBackstab`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5618,29 +6338,37 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `TempBonusKnockback`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip_stackless`](./Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+
 
 ### Object: `TempBonusKnockbackDamage`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip_stackless`](./Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `TempCritChanceUp`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alias`](./Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
+
 ### Object: `TempInjuryImmunity`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5649,7 +6377,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 | `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
+
 ### Object: `TempManaCostReduction`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5657,14 +6387,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `TempPreEmptiveCounterAttack`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `TemporaryItem`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5672,35 +6406,45 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `TilesMovedToCritChance`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+
 
 ### Object: `TilesMovedToMana`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+
 
 ### Object: `TilesMovedToNeighborHeal`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+
 
 ### Object: `TilesMovedToStrength`
 
+
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `TimeDelayStatusApplication`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5716,14 +6460,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `RemoveAmbientLightEffects` | Number | The fade-out duration in seconds for ambient light effects. | 2 | `.5`<br>`4` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 2 | `1`<br>`20` |
 
+
 ### Object: `TowerDefenseStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `TowerDefenseStatus2`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5731,7 +6479,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
+
 ### Object: `TradeLife`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5743,7 +6493,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `TrailBlazer`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5755,14 +6507,18 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
+
 ### Object: `TransformEquipment`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`from`](./Enums.md#enum-from) | Enum  || 2 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 | [`to`](./Enums.md#enum-to) | Enum  || 2 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 
+
 ### Object: `TwisterDisplaceWithDamage`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5771,20 +6527,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 4 | `2`<br>`3`<br>`4` |
 | [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum   | Specifies a prefix string; units with a matching prefix in their ID are excluded from the displacement effect. | 2 | `Twister` |
 
+
 ### Object: `UseMoveAbilityWithAI`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum   | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
+
 ### Object: `VisualCountDownThenApplyStatus`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
+
 ### Object: `VisualFlySwarm`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5793,7 +6555,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
+
 ### Object: `WaggleClone`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5806,7 +6570,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
+
 ### Object: `Windy`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5820,20 +6586,23 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`particles`](./Arrays.md#array-particles) | Array  | A list of particle system identifiers used to render the weather effects. || `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 
+
 ### Object: `XIsTargetHealth`
+
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 4 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 
-
 ---
+
 
 ## Auto-Discovered Objects
 
 
 ### Object: `AbsorbBuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5864,8 +6633,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `BBTransformMutant`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5878,8 +6650,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BBTransformZealot`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5892,7 +6667,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicButcherMelee`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5908,7 +6686,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicDruidAbility`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5925,7 +6706,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicMagicMissile`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5942,8 +6726,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicMagicShortRanged`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5958,8 +6745,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicMedicMelee`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5974,7 +6764,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicMelee`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5989,7 +6782,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicMelee_4Hits`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6002,8 +6798,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BasicMonkMelee`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6018,8 +6817,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicNecroRanged`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6034,7 +6836,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicPsychicPull`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6051,7 +6856,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicRanged`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6066,7 +6874,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicStraightShot`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6082,7 +6893,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicSuplex`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6101,7 +6915,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BasicTankMelee`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6117,7 +6934,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BeefyCharmedLeech`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6133,7 +6953,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Bionic`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6148,8 +6971,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
+
+
 ### Object: `BloatEyeMovement2`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6162,8 +6988,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BloatyExplodey`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6179,8 +7008,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BoneWormShotMed`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6196,8 +7028,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BonusToss`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6213,7 +7048,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BonusToss2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6228,7 +7066,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `BoomerCatExplode`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6244,7 +7085,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BoyDino`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6261,7 +7105,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `BoyDinoCry`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6275,7 +7122,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BrambleRandomTileEvent`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6290,7 +7140,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `BungaSwipe`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6306,7 +7159,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `CatGoop`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6322,7 +7178,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `CatapultJump`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6338,7 +7197,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CatapultJump2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6352,7 +7214,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CaveCatDad`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6370,7 +7235,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CerberubsStraightReaction`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6385,7 +7253,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `CharmedDemonKitten`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6400,8 +7271,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedFly`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6413,8 +7287,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedFlySwarm`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6426,7 +7303,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedLeech`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6441,8 +7321,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedPooter`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6454,8 +7337,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedReaper`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6467,7 +7353,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CharmedTinySpider`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6481,8 +7370,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`graphics`](./Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `CharmedTinyTumor`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6496,8 +7388,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Chubs`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6513,7 +7408,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ChubsGoop`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6529,7 +7427,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ChubsRage`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6543,7 +7444,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `CookedChickenLeg`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6556,7 +7460,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `CraterCreeperOut`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6573,8 +7480,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `DarkOneStrike`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6589,8 +7499,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `DecoyExplode`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6605,7 +7518,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `DefaultMove`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6618,7 +7534,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `DestroyerShieldBash`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6632,7 +7551,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `Digest`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6651,7 +7573,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `DrMangler`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6668,7 +7593,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `EatShit`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6685,7 +7613,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `FireExtinguish_Steam`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6713,7 +7644,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`speed`](./Arrays.md#array-speed) | Array  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 
 </details>
+
+
 ### Object: `FlyBuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6744,7 +7678,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `GirlDino`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6761,7 +7698,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `GirlDinoCry`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6775,7 +7715,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `GrenadeExplode`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6792,8 +7735,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Guillotina2Body`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6809,8 +7755,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Guillotina2Head`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6826,8 +7775,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Guillotina3Body`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6843,8 +7795,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Guillotina3Head`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6860,7 +7815,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `HCHumanDie`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6874,7 +7832,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Haunt`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6891,7 +7852,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `HemBounce`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6906,7 +7870,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Hyde`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6944,7 +7911,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `voice` | String | Determines which voice set or type is used for the character. | 1 | `ankylosaurus`<br>`female1`<br>`female10` |
 
 </details>
+
+
 ### Object: `IDSprout`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6961,7 +7931,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Lava_Distortion`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -6993,7 +7966,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`speed_start`](./Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `LennyCatDies`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7011,7 +7987,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Maggot`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7028,7 +8007,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ManglerEnrage`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7042,7 +8024,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ManglerMonsterDashAttack`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7057,7 +8042,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ManglersMonster`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7074,7 +8062,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `MechExplode`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7091,7 +8082,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MegaFart`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7107,7 +8101,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MegaGuppy_SummonTheChild`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7124,7 +8121,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MockingbirdForm`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7141,7 +8141,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MoonHead_KillHands`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7157,7 +8160,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `MoveOne`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7170,7 +8176,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Necro_SoulDagger_Uncharged`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7186,7 +8195,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
+
+
 ### Object: `NoHead`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7217,7 +8229,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `voice` | String | Determines which voice set or type is used for the character. | 1 | `ankylosaurus`<br>`female1`<br>`female10` |
 
 </details>
+
+
 ### Object: `NonChampionFlySwarm`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7230,7 +8245,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `NubbyToss`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7247,7 +8265,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Nubs`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7264,7 +8285,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `NubsGoop`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7280,7 +8304,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `Ornstein`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7297,7 +8324,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Paper`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7312,7 +8342,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
+
+
 ### Object: `PassiveEnergized`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7341,7 +8374,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `unlit` | Boolean | If true, the effect is not affected by scene lighting. | 1 | `true` |
 
 </details>
+
+
 ### Object: `PassiveTar`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7372,7 +8408,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `spurt` | String | The name of the spurt particle effect to play. | 1 | `GibsBloodSpurt`<br>`GibsBloodSpurtHuge`<br>`PassiveTarSplat` |
 
 </details>
+
+
 ### Object: `PlayerCat_ThiefShade2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7387,7 +8426,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `RatKing`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7404,7 +8446,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ReaperRevenge`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7418,7 +8463,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `SandStormBuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7449,7 +8497,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `Shadowstep`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7463,7 +8514,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ShineBuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7494,7 +8548,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `Shove`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7509,8 +8566,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `SleepDart`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7526,8 +8586,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
+
+
 ### Object: `SleepDart2`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7543,7 +8606,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
+
+
 ### Object: `SmokeBuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7574,7 +8640,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `Smough`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7591,7 +8660,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `SparkleBuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7622,7 +8694,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `SpiderReturn`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7639,7 +8714,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `SpikeBuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7670,7 +8748,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `Spook`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7687,7 +8768,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TC_DashReaction`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7703,8 +8787,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`temporary_effects`](./Miscellaneous.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `TT_Thrash`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7718,8 +8805,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TVOff`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7732,7 +8822,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TattersFear`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7747,7 +8840,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TheCreator_SpawnCloneTeam`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7763,7 +8859,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ThornUp`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7778,7 +8877,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ThornUpX`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7792,7 +8894,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ThrobbingKing2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7809,8 +8914,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `ToadJump_BasicMove`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7826,8 +8934,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `TormentorRuneAbsorb`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7843,7 +8954,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ToxPuff`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7857,7 +8971,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `ToxicBubbles`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7882,8 +8999,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
+
+
 ### Object: `TrexSwitchTarget`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7897,8 +9017,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `UFO_BigExplode`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7912,7 +9035,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `UltraSmough`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7929,7 +9055,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
+
+
 ### Object: `Wood`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7944,7 +9073,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
+
+
 ### Object: `cWaggle`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7957,7 +9089,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `cWaggle2x2`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7974,7 +9109,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `cWaggle3x3`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7989,7 +9127,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `face_EatNeverstone`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8006,7 +9147,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `face_LeechBrood`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8021,7 +9165,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `neck_NukeBonus`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8038,7 +9185,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `neck_NukeExplode`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8057,7 +9207,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
+
+
 ### Object: `pyrophina`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8084,7 +9237,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `savefile_string` | String | A unique string identifier used to track the save file associated with this encounter. | 1 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3"` |
 
 </details>
+
+
 ### Object: `set_WitchJump`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -8097,7 +9253,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
+
+
 ### Object: `zaratana`
+
 
 <details>
 <summary><b>Expand</b></summary>

@@ -10,6 +10,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ROOT`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -55,14 +56,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `reward`
 
 
 **Definition:** Event Object: Story branch or dialog option representing the 'Reward' action.  
 **Total Count:** 757
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -96,14 +99,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_damage`](./Arrays.md#array-party_damage) | Array / Integer  || 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `common`
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Common' action.  
 **Total Count:** 633
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -171,14 +176,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `random` |
 
 </details>
+
+
 ---
+
 
 ### Object: `rare`
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Rare' action.  
 **Total Count:** 633
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -266,14 +273,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
 
 </details>
+
+
 ---
+
 
 ### Object: `good`
 
 
 **Definition:** `false`, `true`  
 **Total Count:** 550
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -341,14 +350,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `random` |
 
 </details>
+
+
 ---
+
 
 ### Object: `bad`
 
 
 **Definition:** Event Object: Story branch or dialog option representing the 'Bad' action.  
 **Total Count:** 341
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -382,14 +393,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 
 </details>
+
+
 ---
+
 
 ### Object: `intro`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 214
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -415,14 +428,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | `Number` || 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `main`
 
 
 **Definition:** Event Object: The central hub or recurring menu of a story event.  
 **Total Count:** 214
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -449,14 +464,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pick`](./Miscellaneous.md#object-pick) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `options`
 
 
 **Definition:** Event Object: Lists the available clickable dialog choices for the current story node.  
 **Total Count:** 210
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -679,14 +696,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`yellow_needle`](./Miscellaneous.md#object-yellow_needle) | Object  | Defines a dialogue option to interact with a yellow needle. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `requirements`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 203
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -711,14 +730,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `cat_has_parasite` | Boolean || 1 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `self_status_next_fight`
 
 
 **Definition:** Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter.  
 **Total Count:** 143
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -769,14 +790,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempStrengthUp`](./Enums.md) | Integer | The number of stacks of temporary Strength Up applied to the unit. | 1 | `1`<br>`2`<br>`X` |
 
 </details>
+
+
 ---
+
 
 ### Object: `permanent_stats`
 
 
 **Definition:** Event Reward: Permanently increases (or decreases) the core stats of a single character.  
 **Total Count:** 134
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -795,14 +818,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dex`](./Enums.md#enum-dex) | Enum / Integer  || 10 | `-1`<br>`-2`<br>`-3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `conditional_reward`
 
 
 **Definition:** Event Action: Provides a reward only if a specific condition is met.  
 **Total Count:** 126
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -818,14 +843,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ignore`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 57
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -844,14 +871,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 2 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
+
+
 ---
+
 
 ### Object: `examine`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 44
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -869,14 +898,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `spawn_unit_next_fight`
 
 
 **Definition:** Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter.  
 **Total Count:** 41
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -891,14 +922,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`side`](./Enums.md#enum-side) | Enum || 3 | `enemies` |
 
 </details>
+
+
 ---
+
 
 ### Object: `get_item_from_pool`
 
 
 **Definition:** Event Action: Rewards the player with an item drawn from a specific loot pool.  
 **Total Count:** 40
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -913,14 +946,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `else`
 
 
 **Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
 **Total Count:** 37
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -947,14 +982,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 
 </details>
+
+
 ---
+
 
 ### Object: `leave`
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Leave' action.  
 **Total Count:** 32
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -971,14 +1008,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `loot`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 25
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -996,14 +1035,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mutation`
 
 
 **Definition:** Event Object: Story branch or dialog option representing the 'Mutation' action.  
 **Total Count:** 24
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1029,14 +1070,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `eye2` | Integer | The catalog ID for the cat's second eye part. | 1 | `-1`<br>`1013`<br>`1057` |
 
 </details>
+
+
 ---
+
 
 ### Object: `party_status_next_fight`
 
 
 **Definition:** Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter.  
 **Total Count:** 24
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1060,14 +1103,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `eat`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 23
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1083,14 +1128,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 23 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `setup`
 
 
 **Definition:** Event Object: Pre-initialization logic executed before the event UI is drawn.  
 **Total Count:** 23
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1104,14 +1151,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | `Number` || 3 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `cutscene`
 
 
 **Definition:** Event Object: Triggers a narrative cutscene.  
 **Total Count:** 22
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1125,14 +1174,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `skip_result_screen` | Boolean || 21 | `true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `random_mutation_from_set`
 
 
 **Definition:** Event Reward: Applies a random mutation to a character from a specific pool.  
 **Total Count:** 22
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1157,14 +1208,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `texture` | Integer | The catalog ID for the cat's texture. | 1 | `-1`<br>`1`<br>`1000` |
 
 </details>
+
+
 ---
+
 
 ### Object: `random_mutation`
 
 
 **Definition:** Event Reward: Applies a completely random mutation to a character.  
 **Total Count:** 19
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1178,14 +1231,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `asymmetric` | Boolean || 8 | `false`<br>`true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `smash`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 16
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1202,14 +1257,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 2 | `examine`<br>`lever`<br>`open` |
 
 </details>
+
+
 ---
+
 
 ### Object: `destroy`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 14
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1225,14 +1282,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 13 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `bash`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 12
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1249,14 +1308,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `global_effect_next_fight`
 
 
 **Definition:** Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1273,14 +1334,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
+
+
 ---
+
 
 ### Object: `open`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Open' state.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1297,14 +1360,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 4 | `examine`<br>`lever`<br>`open` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sneak`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 11
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1321,14 +1386,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `leave_party_temporarily`
 
 
 **Definition:** Event Action: Removes a character from the active team until the next hub area.  
 **Total Count:** 9
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1342,14 +1409,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`return_during`](./Enums.md#enum-return_during) | Enum || 3 | `boss` |
 
 </details>
+
+
 ---
+
 
 ### Object: `take`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 8
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1366,14 +1435,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `a`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1388,14 +1459,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `attack`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1411,7 +1484,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
 
 </details>
+
+
 ---
+
 
 ### Object: `b`
 
@@ -1419,7 +1495,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 7
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1433,7 +1508,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `c`
 
@@ -1441,7 +1519,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 7
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1455,14 +1532,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `charm`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1479,14 +1558,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `fight`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1503,14 +1584,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `touch`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 7
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1527,7 +1610,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `activate_p`
 
@@ -1535,7 +1621,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 6
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1550,7 +1635,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 6 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `activate_z`
 
@@ -1558,7 +1646,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 6
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1573,14 +1660,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 6 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `d`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1595,14 +1684,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `enter`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1620,14 +1711,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
+
+
 ---
+
 
 ### Object: `inspect`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1643,14 +1736,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 6 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `lick`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1668,14 +1763,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `next_event_from_set`
 
 
 **Definition:** Event Action: Chains immediately into a randomly selected subsequent story event.  
 **Total Count:** 6
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1689,14 +1786,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 4 | `0`<br>`1`<br>`10` |
 
 </details>
+
+
 ---
+
 
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
 **Definition:** Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1712,14 +1811,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `drink`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1735,14 +1836,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 5 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `kiss`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1758,14 +1861,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 5 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `run`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 5
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1783,14 +1888,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `bite`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1807,14 +1914,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `damage`
 
 
 **Definition:** The base damage properties of an attack.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1829,14 +1938,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 3 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `go_around`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1853,14 +1964,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
+
+
 ---
+
 
 ### Object: `home`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1876,14 +1989,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 4 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `outcome`
 
 
 **Definition:** Event Object: Logic and text executed after selecting a specific dialog option.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1899,14 +2014,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weather_roll`](./Arrays.md#array-weather_roll) | Array || 1 | `[` |
 
 </details>
+
+
 ---
+
 
 ### Object: `party_permanent_stats_exclude_self`
 
 
 **Definition:** Event Reward: Permanently modifies stats for all party members except the one who initiated the action.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1924,14 +2041,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`str`](./Enums.md#enum-str) | Enum / Integer  || 4 | `-1`<br>`-2`<br>`-3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `past`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1948,14 +2067,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 4 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `skip`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 4
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1971,14 +2092,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `investigate`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1994,14 +2117,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `party_permanent_stats`
 
 
 **Definition:** Event Reward: Permanently increases (or decreases) the core stats of all party members.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2013,14 +2138,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
 
 </details>
+
+
 ---
+
 
 ### Object: `repell`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2036,14 +2163,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 3 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `spawn_reflection_next_fight`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2054,14 +2183,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
+
+
 ---
+
 
 ### Object: `StatusRandomEnemiesOnBattleStart`
 
 
 **Definition:** Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state.  
 **Total Count:** 3
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2076,14 +2207,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
+
+
 ---
+
 
 ### Object: `attach_antenna`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2099,14 +2232,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `boogers`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2121,14 +2256,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `copy`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2141,14 +2278,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `find_another_way`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2165,14 +2304,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `gain_familiar`
 
 
 **Definition:** Event Action: Adds a specific familiar to the party.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2183,14 +2324,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
+
+
 ---
+
 
 ### Object: `KillEnemyOfTypeAtBattleStart`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2203,14 +2346,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array || 1 | `[TomTom Kitten CatCaller Mangy]` |
 
 </details>
+
+
 ---
+
 
 ### Object: `move_closer`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2226,14 +2371,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `party_random_mutation_from_set`
 
 
 **Definition:** Event Reward: Applies a random mutation to the entire party from a specific pool.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2249,14 +2396,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 2 | `-1`<br>`-2`<br>`1` |
 
 </details>
+
+
 ---
+
 
 ### Object: `play`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2272,7 +2421,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `poop`
 
@@ -2280,7 +2432,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 2
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2294,7 +2445,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `print`
 
@@ -2302,7 +2456,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 2
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2314,14 +2467,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `protection`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2336,14 +2491,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `random_chance`
 
 
 **Definition:** Event Logic: Executes the nested outcome based on a percentage roll.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2357,14 +2514,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 1 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 
 </details>
+
+
 ---
+
 
 ### Object: `repair`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2381,14 +2540,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sacrifice`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2406,14 +2567,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `scale`
 
 
 **Definition:** Examples: `.75, 1.33, 1`  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2426,14 +2589,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `turnon`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 2
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2449,7 +2614,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `altar_sacrifice`
 
@@ -2457,7 +2625,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2470,7 +2637,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `arm`
 
@@ -2478,7 +2648,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2493,7 +2662,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `attach_amplifier`
 
@@ -2501,7 +2673,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2516,7 +2687,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `attach_leech`
 
@@ -2524,7 +2698,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2539,7 +2712,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `bash_past_alt`
 
@@ -2547,7 +2723,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2563,7 +2738,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `bite_it_off`
 
@@ -2571,7 +2749,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2586,7 +2763,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `blue`
 
@@ -2594,7 +2774,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2609,7 +2788,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `blue_needle`
 
@@ -2617,7 +2799,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2633,14 +2814,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `body`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2655,7 +2838,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `book`
 
@@ -2663,7 +2849,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2677,7 +2862,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `brace`
 
@@ -2685,7 +2873,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2699,14 +2886,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `break_ice`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2720,14 +2909,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `break_lock`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2743,14 +2934,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `bribe`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2766,14 +2959,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `button`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2789,7 +2984,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `buy1`
 
@@ -2797,7 +2995,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2815,7 +3012,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `catch`
 
@@ -2823,7 +3023,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2838,7 +3037,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `challenge_to_game`
 
@@ -2846,7 +3048,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2861,7 +3062,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `chaos_ending`
 
@@ -2869,7 +3073,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2882,7 +3085,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `chapter_cutscene`
 
@@ -2890,7 +3096,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2903,7 +3108,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `charm_past_alt`
 
@@ -2911,7 +3119,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2927,7 +3134,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `climb`
 
@@ -2935,7 +3145,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2950,7 +3159,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `comfort`
 
@@ -2958,7 +3170,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2973,7 +3184,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `communicate`
 
@@ -2981,7 +3195,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2996,7 +3209,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `concheck`
 
@@ -3004,7 +3220,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3019,7 +3234,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `counter`
 
@@ -3027,7 +3245,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3041,7 +3258,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `crack_open`
 
@@ -3049,7 +3269,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3064,7 +3283,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `cross`
 
@@ -3072,7 +3294,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3086,7 +3307,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `cut_wires`
 
@@ -3094,7 +3318,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3109,7 +3332,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `damage_1`
 
@@ -3117,7 +3343,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3132,7 +3357,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `damage_full`
 
@@ -3140,7 +3368,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3155,7 +3382,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `damage_half`
 
@@ -3163,7 +3393,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3178,7 +3407,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `desert_cutscene`
 
@@ -3186,7 +3418,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3199,7 +3430,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `dexcheck`
 
@@ -3207,7 +3441,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3222,7 +3455,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `dig`
 
@@ -3230,7 +3466,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3246,7 +3481,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `disarm`
 
@@ -3254,7 +3492,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3269,7 +3506,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `dive`
 
@@ -3277,7 +3517,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3292,7 +3531,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `donate`
 
@@ -3300,7 +3542,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3314,7 +3555,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `donate_10`
 
@@ -3322,7 +3566,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3342,7 +3585,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `donate_15`
 
@@ -3350,7 +3596,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3370,7 +3615,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `donate_20`
 
@@ -3378,7 +3626,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3398,7 +3645,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `donate_5`
 
@@ -3406,7 +3656,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3426,14 +3675,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ---
+
 
 ### Object: `double`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3448,14 +3699,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `eat_meat`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3471,14 +3724,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `enter_crater`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3493,7 +3748,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `face`
 
@@ -3501,7 +3759,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3513,7 +3770,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `fiddle`
 
@@ -3521,7 +3781,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3535,7 +3794,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `fill_jar`
 
@@ -3543,7 +3805,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3558,14 +3819,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `find`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3579,14 +3842,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `fire`
 
 
 **Definition:** Character Form: Behavior and stats for the 'Fire' state.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3601,14 +3866,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `flush_yourself`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3622,7 +3889,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `follow`
 
@@ -3630,7 +3900,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3645,7 +3914,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `free`
 
@@ -3653,7 +3925,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3668,14 +3939,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `future`
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Future' action.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3692,14 +3965,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `gain_clone_familiar`
 
 
 **Definition:** Event Action: Adds a clone of a character to the party as a familiar.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3711,14 +3986,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
+
+
 ---
+
 
 ### Object: `give_parasite`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3734,14 +4011,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `hack`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3756,7 +4035,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `head`
 
@@ -3764,7 +4046,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3776,7 +4057,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `holy`
 
@@ -3784,7 +4068,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Character Form: Behavior and stats for the \'Holy\' state.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3798,7 +4081,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `hp`
 
@@ -3806,7 +4092,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3820,7 +4105,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `ice`
 
@@ -3828,7 +4116,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3842,14 +4129,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `infinite`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3866,14 +4155,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `intcheck`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3888,7 +4179,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `intimidation`
 
@@ -3896,7 +4190,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3910,7 +4203,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `itchies`
 
@@ -3918,7 +4214,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3933,7 +4228,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `join`
 
@@ -3941,7 +4239,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3956,7 +4253,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `jump`
 
@@ -3964,7 +4264,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3979,7 +4278,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `jump_over`
 
@@ -3987,7 +4289,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4002,7 +4303,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `keep_going`
 
@@ -4010,7 +4314,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4024,7 +4327,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `kiss_meat`
 
@@ -4032,7 +4338,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4047,7 +4352,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `knife`
 
@@ -4055,7 +4363,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4069,14 +4376,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `leave_it_in`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4093,14 +4402,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `leg`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4116,14 +4427,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `lever`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4141,7 +4454,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `lick_alt`
 
@@ -4149,7 +4465,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4165,7 +4480,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `lightning`
 
@@ -4173,7 +4491,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4187,7 +4504,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `listen`
 
@@ -4195,7 +4515,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4209,7 +4528,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `looks`
 
@@ -4217,7 +4539,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4230,14 +4551,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `loot_heart`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4253,14 +4576,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `makeup`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4275,14 +4600,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `mind`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4296,7 +4623,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `neck`
 
@@ -4304,7 +4634,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4316,7 +4645,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `nothanks`
 
@@ -4324,7 +4656,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4338,7 +4669,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `outsmart`
 
@@ -4346,7 +4680,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4359,7 +4692,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `patch_up`
 
@@ -4367,7 +4703,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4382,7 +4717,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `pick_lock`
 
@@ -4390,7 +4728,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4405,7 +4742,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `pilfer`
 
@@ -4413,7 +4753,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4428,14 +4767,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `pirouette`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4450,14 +4791,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `place_gristle`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4473,14 +4816,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `power`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4494,14 +4839,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `pull`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4517,14 +4864,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `pull_it_out`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4540,7 +4889,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `pull_lever`
 
@@ -4548,7 +4900,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4562,7 +4913,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `purify`
 
@@ -4570,7 +4924,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4585,7 +4938,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `push_buttons`
 
@@ -4593,7 +4949,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4607,14 +4962,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `push_through`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4630,14 +4987,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `put_in_coins`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4657,7 +5016,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `put_out_of_misery`
 
@@ -4665,7 +5027,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4680,7 +5041,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `reach_inside`
 
@@ -4688,7 +5052,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4701,14 +5064,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `read`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4724,14 +5089,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `receive`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4747,14 +5114,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `red`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4772,7 +5141,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `red_needle`
 
@@ -4780,7 +5152,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4796,7 +5167,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `reflect`
 
@@ -4804,7 +5178,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4818,7 +5191,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `remove`
 
@@ -4826,7 +5202,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4841,7 +5216,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `remove_the_nail`
 
@@ -4849,7 +5227,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4864,7 +5241,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `repair_quest`
 
@@ -4872,7 +5252,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4886,7 +5265,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `rest`
 
@@ -4894,7 +5276,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4908,7 +5289,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `revive`
 
@@ -4916,7 +5300,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4930,7 +5313,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `rub`
 
@@ -4938,7 +5324,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4952,7 +5337,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `run_again`
 
@@ -4960,7 +5348,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4977,7 +5364,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `run_away`
 
@@ -4985,7 +5375,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5000,7 +5389,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sacrifice_full_favor`
 
@@ -5008,7 +5400,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5023,7 +5414,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sacrifice_normal`
 
@@ -5031,7 +5425,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5046,7 +5439,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sacrifice_partial_favor`
 
@@ -5054,7 +5450,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5071,7 +5466,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sacrifice_quest`
 
@@ -5079,7 +5477,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5094,7 +5491,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `scream`
 
@@ -5102,7 +5502,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5115,7 +5514,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `shake`
 
@@ -5123,7 +5525,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5137,7 +5538,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `slip_through`
 
@@ -5145,7 +5549,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5160,7 +5563,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sneak_by`
 
@@ -5168,7 +5574,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5183,7 +5588,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sneak_past_alt`
 
@@ -5191,7 +5599,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5207,7 +5614,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `soul`
 
@@ -5215,7 +5625,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5228,7 +5637,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `speed`
 
@@ -5236,7 +5648,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** Examples: `.5, 2, 20`  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5250,7 +5661,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `surprise`
 
@@ -5258,7 +5672,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5272,7 +5685,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `sweet_talk`
 
@@ -5280,7 +5696,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5295,7 +5710,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `swim`
 
@@ -5303,7 +5721,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5318,7 +5735,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `tail`
 
@@ -5326,7 +5746,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5341,7 +5760,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `take_blood`
 
@@ -5349,7 +5771,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5364,7 +5785,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `talk`
 
@@ -5372,7 +5796,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5387,7 +5810,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `talk_to`
 
@@ -5395,7 +5821,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5410,7 +5835,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `tappytoes`
 
@@ -5418,7 +5846,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5432,14 +5859,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `teleport`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5455,14 +5884,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `thorns`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5477,14 +5908,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `throw`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5499,14 +5932,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `timemachine`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5520,7 +5955,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `traverse`
 
@@ -5528,7 +5966,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5541,7 +5978,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
+
+
 ---
+
 
 ### Object: `upgrade_yourself`
 
@@ -5549,7 +5989,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5564,7 +6003,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `use_item`
 
@@ -5572,7 +6014,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5587,7 +6028,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `use_toilet_con`
 
@@ -5595,7 +6039,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5610,7 +6053,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `use_toilet_str`
 
@@ -5618,7 +6064,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5633,14 +6078,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `use_weapon`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5655,7 +6102,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
 
 </details>
+
+
 ---
+
 
 ### Object: `w1`
 
@@ -5663,7 +6113,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5677,7 +6126,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `w2`
 
@@ -5685,7 +6137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5699,7 +6150,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `w3`
 
@@ -5707,7 +6161,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5721,7 +6174,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `w4`
 
@@ -5729,7 +6185,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5743,7 +6198,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `w5`
 
@@ -5751,7 +6209,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5765,7 +6222,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `w6`
 
@@ -5773,7 +6233,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5787,14 +6246,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `wealth`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5808,14 +6269,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `wheezies`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5831,7 +6294,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
+
+
 ---
+
 
 ### Object: `wish_genes`
 
@@ -5839,7 +6305,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5853,7 +6318,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `wish_items`
 
@@ -5861,7 +6329,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5875,7 +6342,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `wish_levelups`
 
@@ -5883,7 +6353,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5897,7 +6366,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `wish_strength`
 
@@ -5905,7 +6377,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5919,7 +6390,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `withstand`
 
@@ -5927,7 +6401,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5942,7 +6415,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `yank_it_out`
 
@@ -5950,7 +6426,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 **Definition:** No definition provided.  
 **Total Count:** 1
 
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5965,14 +6440,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
+
 
 ### Object: `yellow_needle`
 
 
 **Definition:** No definition provided.  
 **Total Count:** 1
-
 
 <details>
 <summary><b>Expand</b></summary>
@@ -5989,17 +6466,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
+
+
 ---
 
 
-
 ---
+
 
 ## Auto-Discovered Objects
 
 
 ### Object: `buy2`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6017,8 +6497,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ### Object: `buy3`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6036,7 +6519,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
+
+
 ### Object: `pick`
+
 
 <details>
 <summary><b>Expand</b></summary>
