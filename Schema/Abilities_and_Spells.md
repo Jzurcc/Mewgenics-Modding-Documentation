@@ -715,9 +715,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Revive`](./Enums.md) | Integer | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `1`<br>`100%`<br>`50%` |
 | [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
-| [`Conditional_Displaceable`](./Miscellaneous.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
+| [`Conditional_Displaceable`](./Engine_LogicKeys.md#conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
 | [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 1 | `1` |
@@ -747,8 +747,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 | [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 1 | `{ . . . }`<br>`1` |
 | [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
-| [`Conditional_Object`](./Miscellaneous.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
-| [`Conditional_Speculative`](./Miscellaneous.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
+| [`Conditional_Object`](./Engine_LogicKeys.md#conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
 | [`CritChanceUp`](./Enums.md) | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
 | [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
@@ -858,7 +858,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 2 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 2 | `{ . . . }` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`Conditional_InForm`](./Miscellaneous.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
+| [`Conditional_InForm`](./Engine_LogicKeys.md#conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
 | `CrackMoonHead` | `Number` | If set, cracks the MoonHead's head, triggering its death sequence. | 1 | `1` |
 | `DeleteObject` | `Number` | If set, deletes the target object from the map. | 1 | `1` |
 | `DisplaceTowardsSource` | `Number` | If set, displaces the target towards the source of the effect. | 1 | `1` |
@@ -913,7 +913,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
-| [`Conditional_FinishedSpawning`](./Miscellaneous.md#object-conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
+| [`Conditional_FinishedSpawning`](./Engine_LogicKeys.md#conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
 | [`Doomed`](./Enums.md) | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. | 1 | `1`<br>`2`<br>`3` |
 | [`Hex`](./Enums.md) | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 1 | `1` |
 | [`Marked`](./Arrays.md#array-marked) | Array / Integer  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`3`<br>`5` |
@@ -1006,7 +1006,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSourceOnKill`](./Miscellaneous.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 1 | `{ . . . }` |
 | `ChanceToBreak` | `Number` | Specifies the percentage chance that the item breaks on use. | 1 | `100`<br>`15`<br>`20` |
 | [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Miscellaneous.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
+| [`Conditional_PlayerCat`](./Engine_LogicKeys.md#conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
 | `FullHeal` | `Number` | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 1 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `RepairAll` | `Number` | The amount of durability restored to all equipped items. | 1 | `1`<br>`10` |
@@ -1407,7 +1407,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Vaporize`](./Enums.md) | Integer | Removes the target from play, preventing its corpse from being interacted with. | 2 | `1`<br>`20` |
 | [`VaporizeInanimate`](./Enums.md) | Integer | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 2 | `1` |
 | [`CanApplyToInanimate`](./Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | [`PermanentCharm`](./Enums.md) | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 1 | `1` |
 
@@ -1599,7 +1599,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `IgnoreDamage` | `Number` | If set, the target ignores all damage for the duration. | 3 | `1` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | `BonusDamageBasedOnDistance` | `Number` | The flat bonus damage added per tile of distance between the source and target. | 2 | `1` |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | `CapDamage` | `Number` | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 1 | `1` |
 | `RandomBonusDamage` | `Number` | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 1 | `25` |
@@ -2775,7 +2775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BonusCritChance`](./Enums.md) | Integer | The flat percentage increase to critical hit chance. | 2 | `100`<br>`25`<br>`50` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [`Conditional_Speculative`](./Miscellaneous.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
+| [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3089,7 +3089,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
-| [`Conditional_InForm`](./Miscellaneous.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
+| [`Conditional_InForm`](./Engine_LogicKeys.md#conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
 | [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
@@ -4997,7 +4997,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ChanceToBreakFree`](./Miscellaneous.md#object-chancetobreakfree) | Object  | Defines the chance and ability used for a grappled or restrained unit to break free. | 11 | `{ . . . }` |
 | [`DoScreenShake`](./Miscellaneous.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 11 | `{ . . . }`<br>`1` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 11 | `0`<br>`1` |
-| [`Conditional_Speculative`](./Miscellaneous.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 10 | `{ . . . }` |
+| [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 10 | `{ . . . }` |
 | `RefreshActPoints` | `Number` | The amount of action points restored to the source. | 10 | `1` |
 | [`VisualFX`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the name of the visual effect to play. | 10 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` |
 | [`DexterityUp`](./Enums.md) | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 10 | `-1`<br>`1`<br>`2` |
@@ -5008,7 +5008,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array / Integer  | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`2`<br>`3` |
 | [`Marked`](./Arrays.md#array-marked) | Array / Integer  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 9 | `1`<br>`3`<br>`5` |
 | [`RandomMagicMissile`](./Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 9 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Conditional_FormulaIsPositive`](./Miscellaneous.md#object-conditional_formulaispositive) | Object  | Defines effects that apply only if a given formula evaluates to a positive value. | 8 | `{ . . . }` |
+| [`Conditional_FormulaIsPositive`](./Engine_LogicKeys.md#conditional_formulaispositive) | Object  | Defines effects that apply only if a given formula evaluates to a positive value. | 8 | `{ . . . }` |
 | [`CanApplyToInanimate`](./Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 8 | `{ . . . }` |
 | `ChanceToBreak` | Integer | Specifies the percentage chance that the item breaks on use. | 8 | `100`<br>`15`<br>`20` |
 | `OverrideChainKnockback` | `Number` | The custom number of tiles for chain knockback, overriding the default. | 8 | `0`<br>`1`<br>`10` |
@@ -5048,8 +5048,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CollectsPickupsWithAltEffects`](./Miscellaneous.md#object-collectspickupswithalteffects) | Object  | Contains alternative effects that are applied when collecting pickups. | 5 | `{ . . . }` |
 | [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 5 | `{ . . . }` |
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 5 | `{ . . . }` |
-| [`Conditional_Object`](./Miscellaneous.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 5 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Miscellaneous.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 5 | `{ . . . }` |
+| [`Conditional_Object`](./Engine_LogicKeys.md#conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 5 | `{ . . . }` |
+| [`Conditional_PlayerCat`](./Engine_LogicKeys.md#conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 5 | `{ . . . }` |
 | `FillMana` | `Number` | The amount of mana restored, or an [amount, probability] array. | 5 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | `FlatLeech` | `Number` | The flat amount of health restored to the source when dealing damage, applied after the hit. | 5 | `1`<br>`10`<br>`2` |
 | `ForceMoveAway` | `Number` | The distance to force the target away from the source. | 5 | `1` |
@@ -5078,7 +5078,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | `String` | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 4 | `Bait`<br>`BigFood`<br>`BiggestFood` |
 | [`ApplyToConsumed`](./Miscellaneous.md#object-applytoconsumed) | Object  | Container for effects that are applied to the consumed object. | 4 | `{ . . . }` |
 | [`ArcLightning`](./Miscellaneous.md#object-arclightning) | Object  | Configuration for arc lightning chain, with stacks, chance, max distance, and enemy-only flag. | 4 | `{ . . . }` |
-| [`Conditional_Familiar`](./Miscellaneous.md#object-conditional_familiar) | Object  | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
+| [`Conditional_Familiar`](./Engine_LogicKeys.md#conditional_familiar) | Object  | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
 | [`EnableWeather`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the weather effect to enable. | 4 | `KaijuFirestorm`<br>`KaijuMeteornado`<br>`KaijuMeteornadoSolo` |
 | `ExplosionIfHitSomething` | `Number` | The radius of explosion triggered if the attack hits an entity. | 4 | `5` |
 | `FaceCamera` | `Number` | If non-zero, forces the character to rotate and face the camera. | 4 | `1` |
@@ -5095,12 +5095,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 4 | `1`<br>`2`<br>`3` |
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 4 | `1`<br>`10`<br>`2` |
 | [`Reanimate`](./Enums.md) | Integer | The percentage chance to reanimate the target. | 4 | `100%`<br>`33%`<br>`50%` |
-| [`Conditional_InForm`](./Miscellaneous.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 3 | `{ . . . }` |
+| [`Conditional_InForm`](./Engine_LogicKeys.md#conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 3 | `{ . . . }` |
 | [`CatPartsSizeScaleStatus`](./Miscellaneous.md#object-catpartssizescalestatus) | Object  | Configures scale multipliers for individual cat body parts (body, arms, mouth). | 3 | `{ . . . }` |
 | [`CollideWithConsumed`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Damage formula for collision with consumed objects, e.g., '4+bonus_melee_damage'. | 3 | `1+bonus_melee_damage`<br>`4+bonus_melee_damage`<br>`5+bonus_melee_damage` |
-| [`Conditional_AffectedByElement`](./Miscellaneous.md#object-conditional_affectedbyelement) | Object  | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_AffectedByElement`](./Engine_LogicKeys.md#conditional_affectedbyelement) | Object  | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
 | [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
-| [`Conditional_LastHit`](./Miscellaneous.md#object-conditional_lasthit) | Object  | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_LastHit`](./Engine_LogicKeys.md#conditional_lasthit) | Object  | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
 | `CorpseVaporizer` | `Number` | The number of corpses vaporized on hit. | 3 | `1` |
 | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 3 | `1`<br>`3`<br>`5` |
 | `DeleteObject` | `Number` | If set, deletes the target object from the map. | 3 | `1` |
@@ -5149,15 +5149,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `CharmedForceAttack` | `Number` | If non-zero, forces the charmed target to use its basic attack on a random nearby unit. | 2 | `1` |
 | `CollideWithThrowTarget` | `Number` | Determines whether the thrown object collides with the primary target (0 disables collision). | 2 | `0` |
 | [`Conditional_BadRoll`](./Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 2 | `{ . . . }` |
-| [`Conditional_BossOrBig`](./Miscellaneous.md#object-conditional_bossorbig) | Object  | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
-| [`Conditional_Buddy`](./Miscellaneous.md#object-conditional_buddy) | Object  | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
-| [`Conditional_DestructibleCorpse`](./Miscellaneous.md#object-conditional_destructiblecorpse) | Object  | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
-| [`Conditional_IsSelf`](./Miscellaneous.md#object-conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 2 | `{ . . . }` |
-| [`Conditional_NotAlly`](./Miscellaneous.md#object-conditional_notally) | Object  | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
-| [`Conditional_NotBossOrBig`](./Miscellaneous.md#object-conditional_notbossorbig) | Object  | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
-| [`Conditional_NotShielded`](./Miscellaneous.md#object-conditional_notshielded) | Object  | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
-| [`Conditional_OncePerBattle`](./Miscellaneous.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
+| [`Conditional_BossOrBig`](./Engine_LogicKeys.md#conditional_bossorbig) | Object  | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_Buddy`](./Engine_LogicKeys.md#conditional_buddy) | Object  | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
+| [`Conditional_DestructibleCorpse`](./Engine_LogicKeys.md#conditional_destructiblecorpse) | Object  | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
+| [`Conditional_IsSelf`](./Engine_LogicKeys.md#conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 2 | `{ . . . }` |
+| [`Conditional_NotAlly`](./Engine_LogicKeys.md#conditional_notally) | Object  | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
+| [`Conditional_NotBossOrBig`](./Engine_LogicKeys.md#conditional_notbossorbig) | Object  | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_NotShielded`](./Engine_LogicKeys.md#conditional_notshielded) | Object  | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](./Engine_LogicKeys.md#conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
 | [`Conditional_Shielded`](./Passives_and_Statuses.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 2 | `{ . . . }` |
 | `CopySpells` | `Number` | The number of spells copied from the target, or an object specifying `stacks` and whether the copy is `upgraded`. | 2 | `1` |
 | `Counterspell` | `Number` | If non-zero, negates the next incoming enemy spell and triggers the configured counterspell effects. | 2 | `1` |
@@ -5251,18 +5251,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `CloneWeaponTemp` | `Number` | The number of turns the cloned weapon persists before being removed. | 1 | `1` |
 | [`CoinTossBounce`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the ability triggered when the coin lands on its edge after a bounce. | 1 | `X` |
 | [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 | `{ . . . }` |
-| [`Conditional_ActiveWeather_Any`](./Miscellaneous.md#object-conditional_activeweather_any) | Object  | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
-| [`Conditional_Backstab`](./Miscellaneous.md#object-conditional_backstab) | Object  | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
-| [`Conditional_CanBeHealed`](./Miscellaneous.md#object-conditional_canbehealed) | Object  | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
-| [`Conditional_DebuffRoll`](./Miscellaneous.md#object-conditional_debuffroll) | Object  | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
-| [`Conditional_Displaceable`](./Miscellaneous.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
-| [`Conditional_HasCleansableDebuffs`](./Miscellaneous.md#object-conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
-| [`Conditional_IsTrample`](./Miscellaneous.md#object-conditional_istrample) | Object  | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
-| [`Conditional_LivingPlayerCat`](./Miscellaneous.md#object-conditional_livingplayercat) | Object  | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
-| [`Conditional_NotBig`](./Miscellaneous.md#object-conditional_notbig) | Object  | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
-| [`Conditional_RandomChance`](./Miscellaneous.md#object-conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
-| [`Conditional_SourceAbilityHasTag`](./Miscellaneous.md#object-conditional_sourceabilityhastag) | Object  | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
-| [`Conditional_SourceHasStatus`](./Miscellaneous.md#object-conditional_sourcehasstatus) | Object  | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
+| [`Conditional_ActiveWeather_Any`](./Engine_LogicKeys.md#conditional_activeweather_any) | Object  | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
+| [`Conditional_Backstab`](./Engine_LogicKeys.md#conditional_backstab) | Object  | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
+| [`Conditional_CanBeHealed`](./Engine_LogicKeys.md#conditional_canbehealed) | Object  | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
+| [`Conditional_DebuffRoll`](./Engine_LogicKeys.md#conditional_debuffroll) | Object  | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_Displaceable`](./Engine_LogicKeys.md#conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
+| [`Conditional_HasCleansableDebuffs`](./Engine_LogicKeys.md#conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
+| [`Conditional_IsTrample`](./Engine_LogicKeys.md#conditional_istrample) | Object  | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
+| [`Conditional_LivingPlayerCat`](./Engine_LogicKeys.md#conditional_livingplayercat) | Object  | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
+| [`Conditional_NotBig`](./Engine_LogicKeys.md#conditional_notbig) | Object  | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
+| [`Conditional_RandomChance`](./Engine_LogicKeys.md#conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_SourceAbilityHasTag`](./Engine_LogicKeys.md#conditional_sourceabilityhastag) | Object  | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
+| [`Conditional_SourceHasStatus`](./Engine_LogicKeys.md#conditional_sourcehasstatus) | Object  | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
 | [`ConjureSingleUseBonusAbility`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the bonus ability to conjure for single use (e.g., 'random' for a random one). | 1 | `random` |
 | `CurrentWeaponAddElectricElement` | `Number` | The number of turns the current weapon gains the electric element. | 1 | `1` |
 | `DamageWeapon` | `Number` | The amount of durability damage dealt to the equipped weapon. | 1 | `1` |

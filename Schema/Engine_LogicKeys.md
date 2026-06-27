@@ -330,17 +330,22 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_ActiveWeather_Any`
+#### ``Conditional_ActiveWeather_Any`
+
+
+**Definition:** An object containing effects that execute only if any of the specified weather types are active.
+**Total Count:** 1
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 0 | `[FlySwarm FireflySwarm ButterflySwarm]` |
+| [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 1 | `[FlySwarm FireflySwarm ButterflySwarm]` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 
 </details>
 
@@ -348,7 +353,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Adjacent`
+
+
+#### ``Conditional_Adjacent`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -357,11 +365,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` |
-| [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Engine_LogicKeys.md#conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 
 </details>
 
@@ -369,19 +373,24 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_AffectedByElement`
+
+
+#### ``Conditional_AffectedByElement`
+
+
+**Definition:** Container for effects applied if the target is affected by a specified element, with optional Else block.
+**Total Count:** 3
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 3
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
-| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 3 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -389,31 +398,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Ally`
+
+
+#### ``Conditional_Ally`
+
+
+**Definition:** Defines effects that apply only if the target is an ally, with an optional else block for non-allies.
+**Total Count:** 37
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 37
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Miscellaneous.md#context-addstatustoelementabilities), [`Conditional_Adjacent`](./Miscellaneous.md#context-conditional_adjacent), [`Conditional_SourceHasTag`](./Miscellaneous.md#context-conditional_sourcehastag), [`ExtraStatusWhenDealingDamage`](./Miscellaneous.md#context-extrastatuswhendealingdamage), [`StatusKilledCharacters`](./Miscellaneous.md#context-statuskilledcharacters), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 | `1`<br>`2`<br>`3` |
-| `BleedThorns` | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 8 | `1`<br>`2`<br>`3` |
-| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
-| `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
-| [`Conditional_Corpse`](./Engine_LogicKeys.md#conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Engine_LogicKeys.md#conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | Default<br>FormChange<br>Druid |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
-| `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
-| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
-| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `-1`<br>`1`<br>`2` |
-| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `10`<br>`4`<br>`X` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 21 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 4 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -421,17 +422,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Backstab`
+
+
+#### ``Conditional_Backstab`
+
+
+**Definition:** An object containing effects that execute only if the attack lands on the target's back.
+**Total Count:** 1
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -439,19 +446,24 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_BadRoll`
+
+
+#### ``Conditional_BadRoll`
+
+
+**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.
+**Total Count:** 8
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 8
+> **Referenced by:** [`StatusEachTurnBegin`](./Miscellaneous.md#context-statuseachturnbegin), [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`odds`](./Engine_LogicKeys.md#valid-property-keys) | Variable | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 
 </details>
 
@@ -459,23 +471,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Boss`
+
+
+#### ``Conditional_Boss`
+
+
+**Definition:** Contains effects that apply only if the target is a boss enemy.
+**Total Count:** 21
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 21
+> **Referenced by:** [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag), [`StatusAllCharactersOnSpawn`](./Miscellaneous.md#context-statusallcharactersonspawn), [`StatusKillers`](./Miscellaneous.md#context-statuskillers), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](./Engine_LogicKeys.md#conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 6 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | Default<br>FormChange<br>Druid |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
-| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. || `1`<br>`8` |
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
-| [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 14 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -483,17 +495,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_BossOrBig`
+
+
+#### ``Conditional_BossOrBig`
+
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
+> **Total Count:** 0
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -501,25 +515,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Buddy`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_InForm`](./Engine_LogicKeys.md#conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
-
-</details>
 
 
----
+#### ``Conditional_Buddy`
 
-
-#### `Conditional_CanBeHealed`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -528,7 +527,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -536,35 +535,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Corpse`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 11
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
-| [`Conditional_Enemy`](./Engine_LogicKeys.md#conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
-| `HealRandomInjury` | Integer | The number of random injuries healed on the target. || `1` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
-| `RandomMutation` | Integer | The number of random mutations to apply. || `1`<br>`3` |
-| [`SafeDoomed`](./Enums.md#enum-safedoomed) | Enum / Integer  | The number of SafeDoomed stacks applied, or 'level' to scale with character level. || `1`<br>`2`<br>`level` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
-
-</details>
 
 
----
+#### ``Conditional_CanBeHealed`
 
-
-#### `Conditional_DebuffRoll`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -573,8 +547,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+`damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
 
@@ -582,16 +556,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_DestructibleCorpse`
+
+
+#### ``Conditional_Corpse`
+
+
+**Definition:** Contains an inner effect block that only executes if the target is a corpse.
+**Total Count:** 11
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
+> **Referenced by:** [`AddStatusToElementDamage`](./Miscellaneous.md#context-addstatustoelementdamage), [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally), [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll), [`StatusOnBattleEnd`](./Miscellaneous.md#context-statusonbattleend), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -599,17 +580,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Displaceable`
+
+
+#### ``Conditional_DebuffRoll`
+
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
+> **Total Count:** 0
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| `LaunchOffScreen` | String | A formula string that determines the knockback force to launch the unit off-screen. || `10+bonus_melee_ability_damage` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -617,44 +600,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Enemy`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 44
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
-| [`Confusion`](./Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Weakness`](./Passives_and_Statuses.md#object-weakness) | Array / Integer / Object  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 3 | `{ . . . }` |
-| [`Conditional_PartyMember`](./Engine_LogicKeys.md#conditional_partymember) | Object  | A conditional block that executes its child actions only if the target is a party member. | 2 | `{ . . . }` |
-| [`Leeches`](./Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object  | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Conditional_FinishedSpawning`](./Engine_LogicKeys.md#conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
-| [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. || `1` |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
-| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `1`<br>`2`<br>`3` |
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
-| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. || `1` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`3`<br>`5` |
-| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
-| [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
-| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `-1`<br>`1`<br>`2` |
-
-</details>
 
 
----
+#### ``Conditional_DestructibleCorpse`
 
-
-#### `Conditional_Familiar`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -663,11 +612,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 
 </details>
 
@@ -675,21 +620,92 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_FirstApplicationThisTurn`
+
+
+#### ``Conditional_Displaceable`
+
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 8
+> **Total Count:** 2
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_Enemy`
+
+
+**Definition:** An object containing status effects or actions applied only if the target is an enemy.
+**Total Count:** 44
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Miscellaneous.md#context-addstatustoelementabilities), [`AddStatusToSpells`](./Miscellaneous.md#context-addstatustospells), [`Conditional_Corpse`](./Miscellaneous.md#context-conditional_corpse), [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss), [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_Familiar`
+
+
+**Definition:** Container for effects applied if the unit has a familiar, with an optional Else block.
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_FirstApplicationThisTurn`
+
+
+**Definition:** Container for effects applied only on the first application of this ability during the turn.
+**Total Count:** 8
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`StatusOnEndMove`](./Miscellaneous.md#context-statusonendmove), [`StatusOnKill`](./Miscellaneous.md#context-statusonkill), [`StatusOnUseAbilityWithTag`](./Miscellaneous.md#context-statusonuseabilitywithtag), [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 5 | Default<br>FormChange<br>Druid |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | Default<br>FormChange<br>Druid |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `Charge` | Equation | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
-| `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. || `1`<br>`[1 .10]`<br>`[1 .25]` |
-| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
 
@@ -697,24 +713,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_FormulaIsPositive`
+
+
+#### ``Conditional_FormulaIsPositive`
+
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 10
+> **Total Count:** 8
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`formula`](./Enums.md#enum-formula) | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
-| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
-| [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
-| [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
-| [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
-| [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 
 </details>
 
@@ -722,24 +733,24 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_GoodRoll`
+
+
+#### ``Conditional_GoodRoll`
+
+
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
+**Total Count:** 37
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 37
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`Else`](./Miscellaneous.md#context-else), [`StatusCharactersOnRoundEnd`](./Miscellaneous.md#context-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](./Miscellaneous.md#context-statuscharactersonroundstart), [`StatusEachTurnBegin`](./Miscellaneous.md#context-statuseachturnbegin), [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend), [`StatusOnBattleEnd`](./Miscellaneous.md#context-statusonbattleend), [`StatusOnEndMove`](./Miscellaneous.md#context-statusonendmove), [`StatusOnKill`](./Miscellaneous.md#context-statusonkill), [`StatusOnTakeHealthOrShieldDamage`](./Miscellaneous.md#context-statusontakehealthorshielddamage), [`ally_rewards`](./Miscellaneous.md#context-ally_rewards), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
-| [`Conditional_Corpse`](./Engine_LogicKeys.md#conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | Default<br>FormChange<br>Druid |
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. || `DirtTile`<br>`GlassTile`<br>`LavaTile` |
-| [`FindItemFromPool`](./Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. || `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
-| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. || `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
-| [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. || `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
-| `RandomMutation` | Integer | The number of random mutations to apply. || `1`<br>`3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 15 | passives<br>class<br>	ag |
 
 </details>
 
@@ -747,7 +758,160 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_HasKnockback`
+
+
+#### ``Conditional_HasKnockback`
+
+
+**Definition:** An object containing actions that execute if the incoming damage has knockback.
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`Else`](./Miscellaneous.md#context-else)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_HasStatus`
+
+
+**Definition:** Contains an inner effect block that only executes if the target has the specified status effect.
+**Total Count:** 20
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`AddStatusToAllDamage`](./Miscellaneous.md#context-addstatustoalldamage), [`Conditional_Boss`](./Miscellaneous.md#context-conditional_boss), [`CritsApplyStatus`](./Miscellaneous.md#context-critsapplystatus), [`Else`](./Miscellaneous.md#context-else), [`StatusOnTookDamage`](./Miscellaneous.md#context-statusontookdamage), [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 20 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 22 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 10 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_HasTag`
+
+
+**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.
+**Total Count:** 47
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`AddStatusToAllDamage`](./Miscellaneous.md#context-addstatustoalldamage), [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`Conditional_Object`](./Miscellaneous.md#context-conditional_object), [`Else`](./Miscellaneous.md#context-else), [`effects`](./Miscellaneous.md#context-effects), [`extra_statuses`](./Miscellaneous.md#context-extra_statuses)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 49 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 43 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_HealthThreshold`
+
+
+**Definition:** Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`.
+**Total Count:** 7
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss), [`Conditional_Speculative`](./Miscellaneous.md#context-conditional_speculative), [`Else`](./Miscellaneous.md#context-else), [`StatusOnTookDamage`](./Miscellaneous.md#context-statusontookdamage), [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 7 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
+| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 5 | `0`<br>`10`<br>`3` |
+| `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
+| [`threshold_expr`](./Math_Equations.md) | Equation | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_InForm`
+
+
+**Definition:** Contains effects that apply only if the target is in the specified form.
+**Total Count:** 7
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`Conditional_Buddy`](./Miscellaneous.md#context-conditional_buddy), [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag), [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 7 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_IsPhysicalAttack`
+
+
+**Definition:** A conditional block that executes its child actions only if the triggering event is a physical attack.
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`AddStatusToReceivedDamage`](./Miscellaneous.md#context-addstatustoreceiveddamage)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_IsSelf`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -756,7 +920,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -764,7 +928,143 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_HasStatus`
+
+
+#### ``Conditional_IsTrample`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_LastHit`
+
+
+**Definition:** Container for effects applied only on the final hit of a multi-hit attack, with optional Else block.
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_LivingPlayerCat`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_ManaThreshold`
+
+
+**Definition:** Defines a conditional block that applies effects only if a unit's mana meets a specified threshold.
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 1 | `0`<br>`10`<br>`3` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_NotAlly`
+
+
+**Definition:** An object containing effects that are only applied if the target is not an ally of the source.
+**Total Count:** 2
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_NotBig`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_NotBoss`
+
 
 <details>
 <summary><b>Expand</b></summary>
@@ -773,15 +1073,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 20 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 | `1`<br>`2`<br>`5` |
-| [`Confusion`](./Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
-| [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 10 | Default<br>FormChange<br>Druid |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
-| [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -789,193 +1081,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_HasTag`
 
-<details>
-<summary><b>Expand</b></summary>
 
-> **Total Count:** 47
+#### ``Conditional_NotBossOrBig`
 
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 6 | `{ . . . }` |
-| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`Conditional_Boss`](./Engine_LogicKeys.md#conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 4 | `{ . . . }` |
-| [`Conditional_InForm`](./Engine_LogicKeys.md#conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 43 | Default<br>FormChange<br>Druid |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. || `DirtTile`<br>`GlassTile`<br>`LavaTile` |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
-| [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. || `{ . . . }`<br>`1`<br>`6` |
-| `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. || `5` |
-| [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. || `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
-| [`PopAndSpawn`](./Miscellaneous.md#object-popandspawn) | Enum / Object  | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. || `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
-| [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
-
-</details>
-
-
----
-
-
-#### `Conditional_HealthThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 7
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 5 | `0`<br>`10`<br>`3` |
-| `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
-| [`Conditional_OncePerBattle`](./Engine_LogicKeys.md#conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
-| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 7 | Default<br>FormChange<br>Druid |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. || `{ . . . }`<br>`1`<br>`6` |
-| `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. || `1`<br>`10`<br>`2` |
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
-
-</details>
-
-
----
-
-
-#### `Conditional_InForm`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 7
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
-| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 7 | Default<br>FormChange<br>Druid |
-| [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
-| [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
-
-</details>
-
-
----
-
-
-#### `Conditional_IsPhysicalAttack`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-#### `Conditional_IsSelf`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-#### `Conditional_IsTrample`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-#### `Conditional_LastHit`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-
-</details>
-
-
----
-
-
-#### `Conditional_LivingPlayerCat`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-#### `Conditional_ManaThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 1 | `0`<br>`10`<br>`3` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
-| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. || `1`<br>`99` |
-
-</details>
-
-
----
-
-
-#### `Conditional_NotAlly`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -984,8 +1093,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](./Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -993,16 +1101,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_NotBig`
+
+
+#### ``Conditional_NotShielded`
+
+
+**Definition:** An object containing effects that are only applied if the target does not have a shield active.
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -1010,21 +1125,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_NotBoss`
+
+
+#### ``Conditional_Object`
+
+
+**Definition:** Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block.
+**Total Count:** 6
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 16
+> **Referenced by:** [`Else`](./Miscellaneous.md#context-else), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_Enemy`](./Engine_LogicKeys.md#conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 2 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
-| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `1`<br>`2`<br>`3` |
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
-| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
 
 </details>
 
@@ -1032,75 +1149,24 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_NotBossOrBig`
+
+
+#### ``Conditional_OncePerBattle`
+
+
+**Definition:** An object containing effects that can only trigger once per battle, preventing double-activation.
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 2
+> **Referenced by:** [`Conditional_HealthThreshold`](./Miscellaneous.md#context-conditional_healththreshold), [`StatusOnFullMana`](./Miscellaneous.md#context-statusonfullmana), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-#### `Conditional_NotShielded`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
-
-</details>
-
-
----
-
-
-#### `Conditional_Object`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 3 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `1`<br>`6`<br>`99` |
-
-</details>
-
-
----
-
-
-#### `Conditional_OncePerBattle`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | Default<br>FormChange<br>Druid |
-| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. || `1`<br>`2` |
-| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `1`<br>`3` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -1108,67 +1174,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_PartyMember`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 6
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](./Engine_LogicKeys.md#conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 3 | `{ . . . }` |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 0 | `1`<br>`2`<br>`3` |
-| [`ApplyPassives`](./Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 0 | `{ . . . }` |
-
-</details>
 
 
----
+#### ``Conditional_PartyMember`
 
-
-#### `Conditional_PlayerCat`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 7
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
-| `Charge` | Equation | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
-| `Scrambled` | Integer | The number of stacks of Scrambled applied. || `1`<br>`2` |
-
-</details>
-
-
----
-
-
-#### `Conditional_RandomChance`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 4
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 4 | `.1`<br>`.16666666`<br>`.3` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-#### `Conditional_Shielded`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1177,11 +1186,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `{ . . . }`<br>`1` |
-| [`SetItemAux`](./Miscellaneous.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. || `{ . . . }` |
-| [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -1189,18 +1194,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_SourceAbilityHasTag`
+
+
+#### ``Conditional_PlayerCat`
+
+
+**Definition:** Defines effects that only apply if the target is a player-controlled cat.
+**Total Count:** 7
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Referenced by:** [`Conditional_Adjacent`](./Miscellaneous.md#context-conditional_adjacent), [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
-| [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `{ . . . }` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -1208,18 +1218,89 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_SourceHasStatus`
+
+
+#### ``Conditional_RandomChance`
+
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Total Count:** 0
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_Shielded`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 4
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_SourceAbilityHasTag`
+
+
+**Definition:** An object containing effects that execute only if the source ability has the specified tag.
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+
+
+#### ``Conditional_SourceHasStatus`
+
+
+**Definition:** An object containing effects that execute only if the source unit has the specified status.
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -1227,18 +1308,24 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_SourceHasTag`
+
+
+#### ``Conditional_SourceHasTag`
+
+
+**Definition:** Defines a conditional block that applies effects only if the source of the effect has a specified tag.
+**Total Count:** 1
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -1246,24 +1333,30 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 ---
 
 
-#### `Conditional_Speculative`
+
+
+#### ``Conditional_Speculative`
+
+
+**Definition:** Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts.
+**Total Count:** 12
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 12
+> **Referenced by:** [`Conditional_AffectedByElement`](./Miscellaneous.md#context-conditional_affectedbyelement), [`Else`](./Miscellaneous.md#context-else), [`effects`](./Miscellaneous.md#context-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
-| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 
 </details>
 
 
 ---
+
+
 
 
 #### `Else`
@@ -8194,4 +8287,61 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
 
+</details>#### ``Conditional_HasCleansableDebuffs`
+
+
+**Definition:** An object containing effects that execute only if the unit has cleansable debuffs.
+**Total Count:** 2
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend), [`effects`](./Miscellaneous.md#context-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
+
 </details>
+
+
+---
+
+
+#### ``Conditional_DoesDamage`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+
+#### ``Conditional_FinishedSpawning`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+
+</details>
+
+
+---
+
+

@@ -6840,7 +6840,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](./Miscellaneous.md#object-conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 1 | `{ . . . }` |
+| [`Conditional_IsSelf`](./Engine_LogicKeys.md#conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 1 | `{ . . . }` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` 
 
@@ -6850,7 +6850,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_IsPhysicalAttack`](./Miscellaneous.md#object-conditional_isphysicalattack) | Object | A conditional block that executes its child actions only if the triggering event is a physical attack. | 1 | `{ . . . }` |
+| [`Conditional_IsPhysicalAttack`](./Engine_LogicKeys.md#conditional_isphysicalattack) | Object | A conditional block that executes its child actions only if the triggering event is a physical attack. | 1 | `{ . . . }` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` 
 
@@ -8864,7 +8864,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_OncePerBattle`](./Miscellaneous.md#object-conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](./Engine_LogicKeys.md#conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
 
 
 ### Object: `StatusOnSetPieceBreak`
