@@ -40959,8 +40959,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 
+
+### Object: `AddSelfStatusToWeapons`
+
+
 <details>
-<summary><b>AddSelfStatusToWeapons</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -40969,8 +40973,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToBasicAttackWithCooldown`
+
+
 <details>
-<summary><b>AddStatusToBasicAttackWithCooldown</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -40979,8 +40990,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToFirstBasicAttack`
+
+
 <details>
-<summary><b>AddStatusToFirstBasicAttack</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -40989,8 +41007,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToFirstSpellEachTurn`
+
+
 <details>
-<summary><b>AddStatusToFirstSpellEachTurn</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -40999,8 +41024,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToKnockbackDamage`
+
+
 <details>
-<summary><b>AddStatusToKnockbackDamage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41009,8 +41041,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToMeleeDamage`
+
+
 <details>
-<summary><b>AddStatusToMeleeDamage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41019,8 +41058,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToReceivedDamage`
+
+
 <details>
-<summary><b>AddStatusToReceivedDamage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41029,8 +41075,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToReceivedDamage_ExcludeStatuses`
+
+
 <details>
-<summary><b>AddStatusToReceivedDamage_ExcludeStatuses</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41039,8 +41092,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `AddStatusToSpells`
+
+
 <details>
-<summary><b>AddStatusToSpells</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 3
 
@@ -41049,8 +41109,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>``damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+---
+
+
+### Object: `AddStatusToTrampleDamage`
+
+
 <details>
-<summary><b>AddStatusToTrampleDamage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41059,8 +41126,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `ApplyToOthersWithSharedTagAndFaction`
+
+
 <details>
-<summary><b>ApplyToOthersWithSharedTagAndFaction</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41069,8 +41143,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `ApplyToRandomPartyMemberIfPossible`
+
+
 <details>
-<summary><b>ApplyToRandomPartyMemberIfPossible</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41079,8 +41160,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_Adjacent`
+
+
 <details>
-<summary><b>Conditional_Adjacent</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 4
 
@@ -41089,8 +41177,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_BossOrBig`
+
+
 <details>
-<summary><b>Conditional_BossOrBig</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41099,8 +41194,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_Buddy`
+
+
 <details>
-<summary><b>Conditional_Buddy</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41109,8 +41211,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_CanBeHealed`
+
+
 <details>
-<summary><b>Conditional_CanBeHealed</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41120,8 +41229,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 `damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
+
+---
+
+
+### Object: `Conditional_DebuffRoll`
+
+
 <details>
-<summary><b>Conditional_DebuffRoll</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41130,8 +41246,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_DestructibleCorpse`
+
+
 <details>
-<summary><b>Conditional_DestructibleCorpse</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 4
 
@@ -41140,8 +41263,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_Displaceable`
+
+
 <details>
-<summary><b>Conditional_Displaceable</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41150,8 +41280,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_DoesDamage`
+
+
 <details>
-<summary><b>Conditional_DoesDamage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41160,8 +41297,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_FinishedSpawning`
+
+
 <details>
-<summary><b>Conditional_FinishedSpawning</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41170,8 +41314,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_FormulaIsPositive`
+
+
 <details>
-<summary><b>Conditional_FormulaIsPositive</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 8
 
@@ -41180,8 +41331,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_IsSelf`
+
+
 <details>
-<summary><b>Conditional_IsSelf</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41190,8 +41348,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_IsTrample`
+
+
 <details>
-<summary><b>Conditional_IsTrample</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41200,8 +41365,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_LivingPlayerCat`
+
+
 <details>
-<summary><b>Conditional_LivingPlayerCat</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41210,8 +41382,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_NotBig`
+
+
 <details>
-<summary><b>Conditional_NotBig</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41220,8 +41399,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_NotBoss`
+
+
 <details>
-<summary><b>Conditional_NotBoss</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 13
 
@@ -41230,8 +41416,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_NotBossOrBig`
+
+
 <details>
-<summary><b>Conditional_NotBossOrBig</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41240,8 +41433,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_PartyMember`
+
+
 <details>
-<summary><b>Conditional_PartyMember</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41250,8 +41450,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_RandomChance`
+
+
 <details>
-<summary><b>Conditional_RandomChance</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41260,8 +41467,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `Conditional_Shielded`
+
+
 <details>
-<summary><b>Conditional_Shielded</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 4
 
@@ -41270,8 +41484,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `ExtraStatusWhenDealingDamage`
+
+
 <details>
-<summary><b>ExtraStatusWhenDealingDamage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41280,8 +41501,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `GlobalFlowerTrapperAura`
+
+
 <details>
-<summary><b>GlobalFlowerTrapperAura</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41290,8 +41518,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `LateStatusApplication`
+
+
 <details>
-<summary><b>LateStatusApplication</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 4
 
@@ -41300,8 +41535,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `NextBattleStatus`
+
+
 <details>
-<summary><b>NextBattleStatus</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41310,8 +41552,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `PassiveLevelScaledStatus`
+
+
 <details>
-<summary><b>PassiveLevelScaledStatus</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41320,8 +41569,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `PassiveWhenDead`
+
+
 <details>
-<summary><b>PassiveWhenDead</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41330,8 +41586,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `PassiveWhileHasDurability`
+
+
 <details>
-<summary><b>PassiveWhileHasDurability</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41340,8 +41603,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `PassiveWhileNotTakingTurn`
+
+
 <details>
-<summary><b>PassiveWhileNotTakingTurn</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41350,8 +41620,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `ScaledStatusAlliesOnSpendMana`
+
+
 <details>
-<summary><b>ScaledStatusAlliesOnSpendMana</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41360,8 +41637,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusAdjacentOnTheirTurnBegin`
+
+
 <details>
-<summary><b>StatusAdjacentOnTheirTurnBegin</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41370,8 +41654,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusAlliesOnSpendMana`
+
+
 <details>
-<summary><b>StatusAlliesOnSpendMana</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41380,8 +41671,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusAnyCatAllyWhoKills`
+
+
 <details>
-<summary><b>StatusAnyCatAllyWhoKills</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41390,8 +41688,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusCharactersOnRoundStart`
+
+
 <details>
-<summary><b>StatusCharactersOnRoundStart</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41400,8 +41705,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusEnemiesOnDeath`
+
+
 <details>
-<summary><b>StatusEnemiesOnDeath</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41410,8 +41722,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusIfUnusedActPoints`
+
+
 <details>
-<summary><b>StatusIfUnusedActPoints</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41420,8 +41739,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusKilledCharacters`
+
+
 <details>
-<summary><b>StatusKilledCharacters</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41430,8 +41756,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusKillers`
+
+
 <details>
-<summary><b>StatusKillers</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 3
 
@@ -41440,8 +41773,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusOnDealtDamage`
+
+
 <details>
-<summary><b>StatusOnDealtDamage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41450,8 +41790,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusOnEatPill`
+
+
 <details>
-<summary><b>StatusOnEatPill</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41460,8 +41807,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusOnEndMove`
+
+
 <details>
-<summary><b>StatusOnEndMove</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 9
 
@@ -41470,8 +41824,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusOnEnemyConfused`
+
+
 <details>
-<summary><b>StatusOnEnemyConfused</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41480,8 +41841,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusOnFallAsleep`
+
+
 <details>
-<summary><b>StatusOnFallAsleep</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 1
 
@@ -41490,8 +41858,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusOnOverHealed`
+
+
 <details>
-<summary><b>StatusOnOverHealed</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 4
 
@@ -41500,8 +41875,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `StatusOnSpawnIn`
+
+
 <details>
-<summary><b>StatusOnSpawnIn</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41510,8 +41892,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `XIsTargetHealth`
+
+
 <details>
-<summary><b>XIsTargetHealth</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 2
 
@@ -41520,8 +41909,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 
 </details>
+
+---
+
+
+### Object: `empty_self_damage`
+
+
 <details>
-<summary><b>empty_self_damage</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
@@ -41530,8 +41926,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
+
+---
+
+
+### Object: `reverb`
+
+
 <details>
-<summary><b>reverb</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Total Count:** 0
 
