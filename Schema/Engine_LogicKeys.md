@@ -17,250 +17,250 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 199 ||
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 114 ||
-| [`Druid`](#object-druid) | Object | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 80 ||
-| [`Fighter`](#object-fighter) | Object | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 80 ||
-| [`Monk`](#object-monk) | Object | Defines a list of quotes for the Monk class. | 66 ||
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
-| [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). | 62 ||
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 50 ||
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 47 ||
+| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 199 | `{ . . . }`<br>`release` |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 114 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`Druid`](#object-druid) | Object | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 80 | `{ . . . }` |
+| [`Fighter`](#object-fighter) | Object | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 80 | `{ . . . }` |
+| [`Monk`](#object-monk) | Object | Defines a list of quotes for the Monk class. | 66 | `{ . . . }` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). | 62 | `{ . . . }`<br>`BlankTile`<br>`BrambleTile`<br>`CreepTile` |
+| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 50 | `.1`<br>`.16666666`<br>`.3` |
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 47 | `{ . . . }` |
 | `rock` | Variable | A variable used in logic contexts. | 46 ||
-| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 42 ||
-| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 38 ||
-| [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Specifies the name of the visual effect to play on the target tile. | 36 ||
-| [`BounceObject`](Abilities_and_Spells.md#object-bounceobject) | Enum / Object | Specifies the object or projectile to spawn and bounce from the target. | 35 ||
-| [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. | 29 ||
-| [`Petrify`](./Arrays.md#array-petrify) | Array / Integer | The amount of petrify stacks applied, or an [stacks, probability] array. | 28 ||
-| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 27 ||
-| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 26 ||
-| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 26 ||
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 24 ||
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 23 ||
-| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. | 21 ||
-| [`Sleep`](./Arrays.md#array-sleep) | Array / Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 21 ||
-| [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Contains effects that apply only if the target is a boss enemy. | 17 ||
-| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Specifies the name of the ability the consumed unit uses to attempt escape. | 17 ||
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 15 ||
-| `force_contact` | Boolean | If true, the consumed unit is forced into contact with the consumer. | 15 ||
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 14 ||
-| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 14 ||
-| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 12 ||
-| `instant` | Boolean | If true, the consumption happens immediately without a timer. | 12 ||
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | Specifies the mounting mode; values include 'auto' or 'true'. | 12 ||
-| `do_not_pop_corpse` | Boolean | If true, the consumed unit's corpse is not popped upon consumption. | 11 ||
-| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Determines if and how the consumed unit is dropped on death; values include 'true', 'false', or 'deferred'. | 11 ||
-| [`Conditional_FormulaIsPositive`](Abilities_and_Spells.md#object-conditional_formulaispositive) | Object | Defines effects that apply only if a given formula evaluates to a positive value. | 10 ||
-| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 10 ||
+| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 42 | `{ . . . }` |
+| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 38 | `{ . . . }` |
+| [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Specifies the name of the visual effect to play on the target tile. | 36 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
+| [`BounceObject`](Abilities_and_Spells.md#object-bounceobject) | Enum / Object | Specifies the object or projectile to spawn and bounce from the target. | 35 | `{ . . . }`<br>`AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
+| [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. | 29 | `1`<br>`2`<br>`[1 .01]` |
+| [`Petrify`](./Arrays.md#array-petrify) | Array / Integer | The amount of petrify stacks applied, or an [stacks, probability] array. | 28 | `1`<br>`[1 .15]`<br>`[1 .1]` |
+| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 27 | `{ . . . }` |
+| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 26 | `-1`<br>`-2`<br>`1` |
+| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 26 | `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
+| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 24 | `{ . . . }`<br>`0` |
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 23 | `{ . . . }` |
+| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. | 21 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| [`Sleep`](./Arrays.md#array-sleep) | Array / Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 21 | `1`<br>`2`<br>`3` |
+| [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Contains effects that apply only if the target is a boss enemy. | 17 | `{ . . . }` |
+| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Specifies the name of the ability the consumed unit uses to attempt escape. | 17 | `CHuskStruggle`<br>`CaveWomanEscape`<br>`LennyStruggle` |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 15 | `{ . . . }`<br>`1` |
+| `force_contact` | Boolean | If true, the consumed unit is forced into contact with the consumer. | 15 | `true` |
+| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 14 | `{ . . . }` |
+| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 14 | `{ . . . }` |
+| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 12 | `{ . . . }` |
+| `instant` | Boolean | If true, the consumption happens immediately without a timer. | 12 | `true` |
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | Specifies the mounting mode; values include 'auto' or 'true'. | 12 | `auto`<br>`true` |
+| `do_not_pop_corpse` | Boolean | If true, the consumed unit's corpse is not popped upon consumption. | 11 | `true` |
+| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Determines if and how the consumed unit is dropped on death; values include 'true', 'false', or 'deferred'. | 11 | `deferred`<br>`false`<br>`true` |
+| [`Conditional_FormulaIsPositive`](Abilities_and_Spells.md#object-conditional_formulaispositive) | Object | Defines effects that apply only if a given formula evaluates to a positive value. | 10 | `{ . . . }` |
+| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 10 | `-1`<br>`1`<br>`2` |
 | `X` | Variable | A generic variable placeholder often used for coordinates or unknown values. | 10 ||
-| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Defines a nuke form with no attack or movement options. | 10 ||
-| `OverrideChainKnockback` | Integer | The custom number of tiles for chain knockback, overriding the default. | 9 ||
-| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 8 ||
-| [`formula`](./Enums.md#enum-formula) | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 ||
-| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 8 ||
-| [`Tarred`](./Arrays.md#array-tarred) | Array / Integer | The amount of tarred stacks applied, or an [stacks, probability] array. | 8 ||
-| `wet` | Boolean | If true, the consumed unit is considered wet (e.g., for elemental interactions). | 8 ||
-| [`BlackShard`](#object-blackshard) | Object | Defines the BlackShard object, likely a collectible item or a specific entity in the game. | 8 ||
-| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 7 ||
-| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 7 ||
-| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 7 ||
-| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object | If set to 1, forces the target to perform an attack against a random or specified target. | 7 ||
-| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 ||
-| `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 7 ||
-| `TempRangeUp` | Integer | The amount of temporary range increase applied. | 7 ||
-| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 6 ||
-| [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 6 ||
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 6 ||
-| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. | 6 ||
-| `RandomInjury` | Integer | The number of random injuries applied. | 6 ||
-| `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 6 ||
-| [`TempSpeedUp`](./Enums.md#enum-tempspeedup) | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 6 ||
-| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 6 ||
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 6 ||
-| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 5 ||
-| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 5 ||
+| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Defines a nuke form with no attack or movement options. | 10 | `{ . . . }` |
+| `OverrideChainKnockback` | Integer | The custom number of tiles for chain knockback, overriding the default. | 9 | `0`<br>`1`<br>`10` |
+| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 8 | `{ . . . }` |
+| [`formula`](./Enums.md#enum-formula) | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
+| [`SpreadDisease`](Abilities_and_Spells.md#object-spreaddisease) | Object | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 8 | `{ . . . }` |
+| [`Tarred`](./Arrays.md#array-tarred) | Array / Integer | The amount of tarred stacks applied, or an [stacks, probability] array. | 8 | `1`<br>`2`<br>`[1 .1]` |
+| `wet` | Boolean | If true, the consumed unit is considered wet (e.g., for elemental interactions). | 8 | `false`<br>`true` |
+| [`BlackShard`](#object-blackshard) | Object | Defines the BlackShard object, likely a collectible item or a specific entity in the game. | 8 | `{ . . . }` |
+| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 7 | `{ . . . }` |
+| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 7 | `{ . . . }` |
+| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 7 | `1`<br>`8` |
+| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object | If set to 1, forces the target to perform an attack against a random or specified target. | 7 | `{ . . . }`<br>`1` |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
+| `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 7 | `-1`<br>`1`<br>`2` |
+| `TempRangeUp` | Integer | The amount of temporary range increase applied. | 7 | `1`<br>`2`<br>`20` |
+| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 6 | `{ . . . }` |
+| [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 6 | `{ . . . }` |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 6 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
+| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. | 6 | `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
+| `RandomInjury` | Integer | The number of random injuries applied. | 6 | `1` |
+| `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 6 | `1`<br>`2`<br>`4` |
+| [`TempSpeedUp`](./Enums.md#enum-tempspeedup) | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 6 | `10`<br>`4`<br>`X` |
+| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 6 | `0`<br>`10`<br>`3` |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 6 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
+| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 5 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 5 | `{ . . . }` |
 | `LavaTile` | Variable | Represents a tile of lava on the map, which deals damage to units standing on it. | 5 ||
-| `MovementUp` | Integer | The amount of movement increase or decrease applied. | 5 ||
-| `SafeDie` | Integer | The number of times the unit can survive a fatal hit. | 5 ||
-| [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array / Integer | The number of coins stolen from the target, or an array of `[number, probability]`. | 4 ||
-| [`Conditional_Familiar`](Abilities_and_Spells.md#object-conditional_familiar) | Object | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 ||
-| `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. | 4 ||
+| `MovementUp` | Integer | The amount of movement increase or decrease applied. | 5 | `-2`<br>`1`<br>`2` |
+| `SafeDie` | Integer | The number of times the unit can survive a fatal hit. | 5 | `1` |
+| [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array / Integer | The number of coins stolen from the target, or an array of `[number, probability]`. | 4 | `1`<br>`3`<br>`[1 .5]` |
+| [`Conditional_Familiar`](Abilities_and_Spells.md#object-conditional_familiar) | Object | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
+| `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. | 4 | `1`<br>`2` |
 | `moonhand` | Variable | A variable representing the Moon Hand, likely a limb or entity type associated with lunar or cosmic themes. | 4 ||
-| [`Reanimate`](Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object | The percentage chance to reanimate the target. | 4 ||
-| `RepairAll` | Integer | The amount of durability restored to all equipped items. | 4 ||
-| [`Thrash`](#object-thrash) | Object | Defines the Thrash ability, likely a close-range, multi-hit attack. | 4 ||
-| [`ZombieCatFamiliar`](#object-zombiecatfamiliar) | Object | Defines the ZombieCat familiar, a companion entity that follows the unit in combat. | 4 ||
-| [`BirthSquirrel`](#object-birthsquirrel) | Object | Defines the Birth Squirrel ability, which spawns a squirrel ally when used. | 4 ||
+| [`Reanimate`](Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object | The percentage chance to reanimate the target. | 4 | `{ . . . }`<br>`100%`<br>`33%`<br>`50%` |
+| `RepairAll` | Integer | The amount of durability restored to all equipped items. | 4 | `1`<br>`10` |
+| [`Thrash`](#object-thrash) | Object | Defines the Thrash ability, likely a close-range, multi-hit attack. | 4 | `{ . . . }` |
+| [`ZombieCatFamiliar`](#object-zombiecatfamiliar) | Object | Defines the ZombieCat familiar, a companion entity that follows the unit in combat. | 4 | `{ . . . }` |
+| [`BirthSquirrel`](#object-birthsquirrel) | Object | Defines the Birth Squirrel ability, which spawns a squirrel ally when used. | 4 | `{ . . . }` |
 | `WaterTile_Current` | Variable | Represents a water tile with a current, pushing units in a specific direction. | 4 ||
-| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. | 3 ||
-| [`Conditional_AffectedByElement`](Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 ||
-| [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Container for effects applied only on the first application of this ability during the turn. | 3 ||
-| [`Conditional_LastHit`](Abilities_and_Spells.md#object-conditional_lasthit) | Object | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 ||
-| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 3 ||
-| [`DoDamage`](Abilities_and_Spells.md#object-dodamage) | Object | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 3 ||
-| `drop_on_self_death` | Boolean | If true, the consumed unit is dropped when the consumer dies. | 3 ||
-| `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. | 3 ||
-| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 3 ||
-| `PullSourceToTarget` | Integer | The amount of tiles the source is pulled towards the target after the attack. | 3 ||
-| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object | The number of revives granted, or an object defining revive properties. | 3 ||
+| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. | 3 | `1` |
+| [`Conditional_AffectedByElement`](Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
+| [`Conditional_LastHit`](Abilities_and_Spells.md#object-conditional_lasthit) | Object | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 3 | `{ . . . }` |
+| [`DoDamage`](Abilities_and_Spells.md#object-dodamage) | Object | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 3 | `{ . . . }` |
+| `drop_on_self_death` | Boolean | If true, the consumed unit is dropped when the consumer dies. | 3 | `true` |
+| `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. | 3 | `1` |
+| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 3 | `1` |
+| `PullSourceToTarget` | Integer | The amount of tiles the source is pulled towards the target after the attack. | 3 | `1` |
+| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object | The number of revives granted, or an object defining revive properties. | 3 | `{ . . . }`<br>`2` |
 | `WaterTile` | Variable | Represents a standard water tile on the map, which may slow or hinder movement. | 3 ||
-| [`HeadTumor`](#object-headtumor) | Object | Defines the HeadTumor enemy, likely a swollen-headed unit with unique abilities. | 3 ||
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 ||
-| [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array / Integer | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 2 ||
-| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Specifies the loot pool and slot to craft an item for the source. | 2 ||
-| `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 ||
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | The number of backflip charges, or an object defining its ability. | 2 ||
-| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object | The number of status effects to purge from the target. | 2 ||
-| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object | The number of soul link stacks applied. | 2 ||
-| [`Stealth`](./Arrays.md#array-stealth) | Array / Integer | The number of stealth stacks applied. | 2 ||
-| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 ||
-| [`poop`](Events_and_Encounters.md#object-poop) | Object | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 ||
-| [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Contains an inner effect block that is applied to a random living party member if one exists. | 2 ||
-| `AutoReanimate` | Number | The percentage chance for the unit to automatically reanimate upon death. | 2 ||
-| [`Conditional_BossOrBig`](Abilities_and_Spells.md#object-conditional_bossorbig) | Object | An object containing effects that are only applied if the target is a boss or large unit. | 2 ||
-| [`Conditional_Buddy`](Abilities_and_Spells.md#object-conditional_buddy) | Object | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 ||
-| [`Conditional_DestructibleCorpse`](Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object | An object containing effects that are only applied if the corpse is destructible. | 2 ||
-| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 2 ||
-| [`Conditional_NotAlly`](Abilities_and_Spells.md#object-conditional_notally) | Object | An object containing effects that are only applied if the target is not an ally of the source. | 2 ||
-| [`Conditional_NotBossOrBig`](Abilities_and_Spells.md#object-conditional_notbossorbig) | Object | An object containing effects that are only applied if the target is not a boss or large unit. | 2 ||
-| [`Conditional_NotShielded`](Abilities_and_Spells.md#object-conditional_notshielded) | Object | An object containing effects that are only applied if the target does not have a shield active. | 2 ||
+| [`HeadTumor`](#object-headtumor) | Object | Defines the HeadTumor enemy, likely a swollen-headed unit with unique abilities. | 3 | `{ . . . }` |
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array / Integer | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`3` |
+| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Specifies the loot pool and slot to craft an item for the source. | 2 | `{ . . . }` |
+| `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
+| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | The number of backflip charges, or an object defining its ability. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
+| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object | The number of status effects to purge from the target. | 2 | `{ . . . }`<br>`0`<br>`3` |
+| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object | The number of soul link stacks applied. | 2 | `{ . . . }`<br>`1` |
+| [`Stealth`](./Arrays.md#array-stealth) | Array / Integer | The number of stealth stacks applied. | 2 | `1`<br>`2`<br>`[1 .1]` |
+| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `{ . . . }`<br>`"X/3"`<br>`"X/5"`<br>`1` |
+| [`poop`](Events_and_Encounters.md#object-poop) | Object | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 | `{ . . . }` |
+| [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Contains an inner effect block that is applied to a random living party member if one exists. | 2 | `{ . . . }` |
+| `AutoReanimate` | Number | The percentage chance for the unit to automatically reanimate upon death. | 2 | `100%`<br>`50%` |
+| [`Conditional_BossOrBig`](Abilities_and_Spells.md#object-conditional_bossorbig) | Object | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_Buddy`](Abilities_and_Spells.md#object-conditional_buddy) | Object | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
+| [`Conditional_DestructibleCorpse`](Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
+| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 2 | `{ . . . }` |
+| [`Conditional_NotAlly`](Abilities_and_Spells.md#object-conditional_notally) | Object | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
+| [`Conditional_NotBossOrBig`](Abilities_and_Spells.md#object-conditional_notbossorbig) | Object | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_NotShielded`](Abilities_and_Spells.md#object-conditional_notshielded) | Object | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
 | `FireTile` | Variable | Represents a tile of fire on the map, which deals damage to units on it over time. | 2 ||
-| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 2 ||
+| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 2 | `{ . . . }`<br>`all_disorders` |
 | `gamewin` | Variable | A variable that triggers the end of the game, typically set to true when victory conditions are met. | 2 ||
-| [`HornCharge`](#object-horncharge) | Object | Defines the Horn Charge ability, a dash attack that uses the character's horns to impale enemies. | 2 ||
+| [`HornCharge`](#object-horncharge) | Object | Defines the Horn Charge ability, a dash attack that uses the character's horns to impale enemies. | 2 | `{ . . . }` |
 | `humanoid` | Variable | A variable indicating whether the unit has a humanoid body type, affecting appearances and interactions. | 2 ||
-| `ManaLeeches` | Integer | The number of mana leech stacks applied. | 2 ||
-| [`OffMap`](Characters_and_Bosses.md#object-offmap) | Object | The form configuration applied when the unit is off the battlefield map. | 2 ||
+| `ManaLeeches` | Integer | The number of mana leech stacks applied. | 2 | `1`<br>`2` |
+| [`OffMap`](Characters_and_Bosses.md#object-offmap) | Object | The form configuration applied when the unit is off the battlefield map. | 2 | `{ . . . }` |
 | `OilTile` | Variable | Represents a tile covered in oil on the map, which can ignite and explode when exposed to fire. | 2 ||
-| `Ostracized` | Integer | The number of stacks of Ostracized applied. | 2 ||
+| `Ostracized` | Integer | The number of stacks of Ostracized applied. | 2 | `1`<br>`2`<br>`4` |
 | `PartyExplosion` | Variable | A variable that triggers a large explosive effect, often an event-based mechanic. | 2 ||
-| `PermanentStrength` | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 2 ||
-| [`Pilfer`](Events_and_Encounters.md#object-pilfer) | Object | Defines the Pilfer ability, which steals an item or resource from the target. | 2 ||
-| `Possessed` | Integer | The number of possession stacks applied, or a template with name and tooltips. | 2 ||
-| `PullSourceToKnockbackImmuneTarget` | Integer | The amount of pull force applied to the source toward a knockback-immune target. | 2 ||
-| [`Pulp2`](Characters_and_Bosses.md#object-pulp2) | Object | Form state for the second stage of pulping, with no attacks or movement. | 2 ||
-| [`RandomPickup`](#object-randompickup) | Object | Defines the RandomPickup object, likely a lootable item with random contents. | 2 ||
-| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. | 2 ||
-| `RepairWeaponCondition` | Integer | The amount of weapon condition restored. | 2 ||
-| `TallGrassTile` | Number | The percentage chance of this tile being tall grass, which provides cover or concealment. | 2 ||
-| `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. | 2 ||
-| `TempSpellDamageUp` | Integer | The amount of temporary spell damage increase applied. | 2 ||
+| `PermanentStrength` | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 2 | `1`<br>`2` |
+| [`Pilfer`](Events_and_Encounters.md#object-pilfer) | Object | Defines the Pilfer ability, which steals an item or resource from the target. | 2 | `{ . . . }` |
+| `Possessed` | Integer | The number of possession stacks applied, or a template with name and tooltips. | 2 | `1` |
+| `PullSourceToKnockbackImmuneTarget` | Integer | The amount of pull force applied to the source toward a knockback-immune target. | 2 | `1` |
+| [`Pulp2`](Characters_and_Bosses.md#object-pulp2) | Object | Form state for the second stage of pulping, with no attacks or movement. | 2 | `{ . . . }` |
+| [`RandomPickup`](#object-randompickup) | Object | Defines the RandomPickup object, likely a lootable item with random contents. | 2 | `{ . . . }` |
+| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. | 2 | `1`<br>`2` |
+| `RepairWeaponCondition` | Integer | The amount of weapon condition restored. | 2 | `1` |
+| `TallGrassTile` | Number | The percentage chance of this tile being tall grass, which provides cover or concealment. | 2 | `15`<br>`80` |
+| `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. | 2 | `1`<br>`20`<br>`mov` |
+| `TempSpellDamageUp` | Integer | The amount of temporary spell damage increase applied. | 2 | `1` |
 | `the_coven` | Variable | A variable representing a group of characters called The Coven, likely a faction or story element. | 2 ||
-| `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 ||
-| [`ThrowPoop`](#object-throwpoop) | Object | Defines the Throw Poop ability, which hurls a projectile of feces at the target. | 2 ||
-| [`AntlerSwipe`](#object-antlerswipe) | Object | Defines the Antler Swipe ability, a basic melee attack that uses the character's antlers. | 2 ||
-| [`BerserkDash`](#object-berserkdash) | Object | Defines the Berserk Dash ability, a close-range charge that damages and knocks back enemies. | 2 ||
-| `BlankTile` | Number | The number of blank tiles in a map segment, which are empty spaces with no special properties. | 2 ||
-| [`Boulder`](#object-boulder) | Object | Defines the Boulder object, a large rock that blocks movement and can be destroyed or pushed. | 2 ||
-| [`CharmTrap`](#object-charmtrap) | Object | Defines the Charm Trap, a hazard that charms units entering its area, turning them against allies. | 2 ||
+| `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
+| [`ThrowPoop`](#object-throwpoop) | Object | Defines the Throw Poop ability, which hurls a projectile of feces at the target. | 2 | `{ . . . }` |
+| [`AntlerSwipe`](#object-antlerswipe) | Object | Defines the Antler Swipe ability, a basic melee attack that uses the character's antlers. | 2 | `{ . . . }` |
+| [`BerserkDash`](#object-berserkdash) | Object | Defines the Berserk Dash ability, a close-range charge that damages and knocks back enemies. | 2 | `{ . . . }` |
+| `BlankTile` | Number | The number of blank tiles in a map segment, which are empty spaces with no special properties. | 2 | `5` |
+| [`Boulder`](#object-boulder) | Object | Defines the Boulder object, a large rock that blocks movement and can be destroyed or pushed. | 2 | `{ . . . }` |
+| [`CharmTrap`](#object-charmtrap) | Object | Defines the Charm Trap, a hazard that charms units entering its area, turning them against allies. | 2 | `{ . . . }` |
 | `flip` | Variable | A variable that triggers a flip animation or reverses the state of something. | 2 ||
-| [`HardenSkin`](#object-hardenskin) | Object | Defines the Harden Skin ability, which increases the unit's defense by making its skin tougher. | 2 ||
-| [`MonkeyThrow`](#object-monkeythrow) | Object | Defines the Monkey Throw ability, which hurls a projectile in a manner similar to a monkey. | 2 ||
-| [`MoonHandDrop`](#object-moonhanddrop) | Object | A variant of MoonHandThrow that includes bonus passives to enable a finisher. | 2 ||
-| [`Pounce`](#object-pounce) | Object | Defines the Pounce ability, a jumping attack that lunges at the target. | 2 ||
-| [`Prance`](#object-prance) | Object | Defines the Prance ability, a self-targeted buff that increases evasion or mobility. | 2 ||
-| [`Scavenge`](#object-scavenge) | Object | Defines the Scavenge ability, a movement skill that allows the unit to search for items. | 2 ||
-| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 ||
-| [`Synthesize`](#object-synthesize) | Object | Defines the Synthesize ability, a self-buff that creates or enhances items. | 2 ||
-| [`TaintedOffering`](#object-taintedoffering) | Object | Defines the Tainted Offering ability, a harmful or corrupted gift bestowed upon a target. | 2 ||
-| [`Tease`](#object-tease) | Object | Defines the Tease ability, a targeted status effect that provokes or irritates the target. | 2 ||
-| [`TheDestroyer`](#object-thedestroyer) | Object | Defines The Destroyer object, likely a powerful boss or destructive entity. | 2 ||
-| [`TigerSwipes`](#object-tigerswipes) | Object | Defines the Tiger Swipes ability, a rapid series of claw attacks. | 2 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
-| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 ||
+| [`HardenSkin`](#object-hardenskin) | Object | Defines the Harden Skin ability, which increases the unit's defense by making its skin tougher. | 2 | `{ . . . }` |
+| [`MonkeyThrow`](#object-monkeythrow) | Object | Defines the Monkey Throw ability, which hurls a projectile in a manner similar to a monkey. | 2 | `{ . . . }` |
+| [`MoonHandDrop`](#object-moonhanddrop) | Object | A variant of MoonHandThrow that includes bonus passives to enable a finisher. | 2 | `{ . . . }` |
+| [`Pounce`](#object-pounce) | Object | Defines the Pounce ability, a jumping attack that lunges at the target. | 2 | `{ . . . }` |
+| [`Prance`](#object-prance) | Object | Defines the Prance ability, a self-targeted buff that increases evasion or mobility. | 2 | `{ . . . }` |
+| [`Scavenge`](#object-scavenge) | Object | Defines the Scavenge ability, a movement skill that allows the unit to search for items. | 2 | `{ . . . }` |
+| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
+| [`Synthesize`](#object-synthesize) | Object | Defines the Synthesize ability, a self-buff that creates or enhances items. | 2 | `{ . . . }` |
+| [`TaintedOffering`](#object-taintedoffering) | Object | Defines the Tainted Offering ability, a harmful or corrupted gift bestowed upon a target. | 2 | `{ . . . }` |
+| [`Tease`](#object-tease) | Object | Defines the Tease ability, a targeted status effect that provokes or irritates the target. | 2 | `{ . . . }` |
+| [`TheDestroyer`](#object-thedestroyer) | Object | Defines The Destroyer object, likely a powerful boss or destructive entity. | 2 | `{ . . . }` |
+| [`TigerSwipes`](#object-tigerswipes) | Object | Defines the Tiger Swipes ability, a rapid series of claw attacks. | 2 | `{ . . . }` |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 | `{ . . . }` |
 | [`megadino`](#object-megadino) | Variable | A variable representing a Mega Dinosaur, likely a large, powerful enemy or form. | 1 ||
 | [`moonhead`](#object-moonhead) | Variable | A variable representing the Moon Head, likely a head type or entity associated with lunar themes. | 1 ||
 | `alien` | Variable | A variable indicating the unit is an alien, affecting its type and interactions. | 1 ||
-| [`AllyInfested`](#object-allyinfested) | Object | Defines the AllyInfested object, which spawns an infested ally under the player's control. | 1 ||
+| [`AllyInfested`](#object-allyinfested) | Object | Defines the AllyInfested object, which spawns an infested ally under the player's control. | 1 | `{ . . . }` |
 | `angeljunk` | Variable | A variable representing angel junk, likely a cosmetic or mechanical part of an angelic character. | 1 ||
-| [`AntlerSwipe2`](#object-antlerswipe2) | Object | A variant of Antler Swipe with a different description and potentially different parameters. | 1 ||
-| [`BasicDashAttackMove_NoKnockback`](#object-basicdashattackmove_noknockback) | Object | Defines a basic dash attack that deals damage without knocking back the target. | 1 ||
+| [`AntlerSwipe2`](#object-antlerswipe2) | Object | A variant of Antler Swipe with a different description and potentially different parameters. | 1 | `{ . . . }` |
+| [`BasicDashAttackMove_NoKnockback`](#object-basicdashattackmove_noknockback) | Object | Defines a basic dash attack that deals damage without knocking back the target. | 1 | `{ . . . }` |
 | `berserkIdle` | Variable | A variable that sets the unit's idle animation to a berserk state. | 1 ||
 | `bonusbird` | Variable | A variable representing a bonus bird, likely an additional familiar or entity. | 1 ||
-| [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 ||
+| [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
 | `BrambleTile` | Variable | Represents a tile of brambles on the map, which damages units crossing it. | 1 ||
 | `chapter_corpse_medium` | Variable | A variable representing a medium-sized corpse prop used in chapter environments. | 1 ||
-| [`Chitter`](#object-chitter) | Object | Defines the Chitter ability, a spell that deals magical damage or applies a status effect. | 1 ||
-| [`cm_RaptorEggSpawn`](#object-cm_raptoreggspawn) | Object | Defines the template and meta properties for spawning a raptor egg entity. | 1 ||
-| [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 ||
-| [`Conditional_ActiveWeather_Any`](Abilities_and_Spells.md#object-conditional_activeweather_any) | Object | An object containing effects that execute only if any of the specified weather types are active. | 1 ||
-| [`Conditional_Backstab`](Abilities_and_Spells.md#object-conditional_backstab) | Object | An object containing effects that execute only if the attack lands on the target's back. | 1 ||
-| [`Conditional_CanBeHealed`](Abilities_and_Spells.md#object-conditional_canbehealed) | Object | An object containing effects that execute only if the target can be healed. | 1 ||
-| [`Conditional_DebuffRoll`](Abilities_and_Spells.md#object-conditional_debuffroll) | Object | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 ||
-| [`Conditional_FinishedSpawning`](Abilities_and_Spells.md#object-conditional_finishedspawning) | Object | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 ||
-| [`Conditional_HasCleansableDebuffs`](Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object | An object containing effects that execute only if the unit has cleansable debuffs. | 1 ||
-| [`Conditional_HasKnockback`](Characters_and_Bosses.md#object-conditional_hasknockback) | Object | An object containing actions that execute if the incoming damage has knockback. | 1 ||
-| [`Conditional_IsPhysicalAttack`](Characters_and_Bosses.md#object-conditional_isphysicalattack) | Object | A conditional block that executes its child actions only if the triggering event is a physical attack. | 1 ||
-| [`Conditional_IsTrample`](Abilities_and_Spells.md#object-conditional_istrample) | Object | An object containing effects that execute only if the ability is a trample attack. | 1 ||
-| [`Conditional_LivingPlayerCat`](Abilities_and_Spells.md#object-conditional_livingplayercat) | Object | An object containing effects that execute only if the source is a living player-owned cat. | 1 ||
-| [`Conditional_NotBig`](Abilities_and_Spells.md#object-conditional_notbig) | Object | An object containing effects that execute only if the target is not a 'big' unit. | 1 ||
-| [`Conditional_SourceAbilityHasTag`](Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object | An object containing effects that execute only if the source ability has the specified tag. | 1 ||
-| [`Conditional_SourceHasStatus`](Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object | An object containing effects that execute only if the source unit has the specified status. | 1 ||
+| [`Chitter`](#object-chitter) | Object | Defines the Chitter ability, a spell that deals magical damage or applies a status effect. | 1 | `{ . . . }` |
+| [`cm_RaptorEggSpawn`](#object-cm_raptoreggspawn) | Object | Defines the template and meta properties for spawning a raptor egg entity. | 1 | `{ . . . }` |
+| [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 | `{ . . . }` |
+| [`Conditional_ActiveWeather_Any`](Abilities_and_Spells.md#object-conditional_activeweather_any) | Object | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
+| [`Conditional_Backstab`](Abilities_and_Spells.md#object-conditional_backstab) | Object | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
+| [`Conditional_CanBeHealed`](Abilities_and_Spells.md#object-conditional_canbehealed) | Object | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
+| [`Conditional_DebuffRoll`](Abilities_and_Spells.md#object-conditional_debuffroll) | Object | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_FinishedSpawning`](Abilities_and_Spells.md#object-conditional_finishedspawning) | Object | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
+| [`Conditional_HasCleansableDebuffs`](Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
+| [`Conditional_HasKnockback`](Characters_and_Bosses.md#object-conditional_hasknockback) | Object | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
+| [`Conditional_IsPhysicalAttack`](Characters_and_Bosses.md#object-conditional_isphysicalattack) | Object | A conditional block that executes its child actions only if the triggering event is a physical attack. | 1 | `{ . . . }` |
+| [`Conditional_IsTrample`](Abilities_and_Spells.md#object-conditional_istrample) | Object | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
+| [`Conditional_LivingPlayerCat`](Abilities_and_Spells.md#object-conditional_livingplayercat) | Object | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
+| [`Conditional_NotBig`](Abilities_and_Spells.md#object-conditional_notbig) | Object | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
+| [`Conditional_SourceAbilityHasTag`](Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
+| [`Conditional_SourceHasStatus`](Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
 | `container` | Variable | A variable representing a generic container or inventory slot for items. | 1 ||
-| [`DeathWormEat`](#object-deathwormeat) | Object | Defines the eat ability for Death Worm, using the return template and specifying its name and movement flag. | 1 ||
-| `deferred` | Boolean | If true, the destruction is deferred until the character is settled. | 1 ||
+| [`DeathWormEat`](#object-deathwormeat) | Object | Defines the eat ability for Death Worm, using the return template and specifying its name and movement flag. | 1 | `{ . . . }` |
+| `deferred` | Boolean | If true, the destruction is deferred until the character is settled. | 1 | `true` |
 | `DirtTile` | Variable | A variable representing a dirt tile type on the grid. | 1 ||
-| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Specifies the ability used to drop the consumed body. | 1 ||
-| [`DualSword`](Characters_and_Bosses.md#object-dualsword) | Object | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 ||
-| [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. | 1 ||
+| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Specifies the ability used to drop the consumed body. | 1 | `MoonHandDrop` |
+| [`DualSword`](Characters_and_Bosses.md#object-dualsword) | Object | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 | `{ . . . }` |
+| [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. | 1 | `{ . . . }` |
 | `EggSackTrap` | Variable | A variable representing an egg sack trap entity. | 1 ||
-| [`EtherSoakedRag`](#object-ethersoakedrag) | Object | An object defining the properties of the Ether Soaked Rag item. | 1 ||
-| [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 1 ||
-| `GenericBuff` | Integer | A generic buff value applied to the unit. | 1 ||
+| [`EtherSoakedRag`](#object-ethersoakedrag) | Object | An object defining the properties of the Ether Soaked Rag item. | 1 | `{ . . . }` |
+| [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
+| `GenericBuff` | Integer | A generic buff value applied to the unit. | 1 | `100`<br>`5` |
 | `ghost` | Variable | A variable representing a ghost unit or entity. | 1 ||
 | `GlassTile` | Variable | A variable representing a glass tile type on the grid. | 1 ||
 | `god` | Variable | A variable representing a god entity or modifier. | 1 ||
-| [`Grown`](Characters_and_Bosses.md#object-grown) | Object | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 ||
+| [`Grown`](Characters_and_Bosses.md#object-grown) | Object | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 | `{ . . . }` |
 | `grown_hitler_clone` | Variable | A variable representing a fully grown Hitler clone unit. | 1 ||
-| [`HalfDead`](Characters_and_Bosses.md#object-halfdead) | Object | Defines the half-dead form with reduced movement and a dash attack. | 1 ||
-| [`HardenSkin2`](#object-hardenskin2) | Object | An object defining the upgraded Harden Skin ability. | 1 ||
-| [`head_CrownOfHorns`](#object-head_crownofhorns) | Object | A logic key that applies the Crown of Horns head item effect, causing retaliatory damage when the unit is hit. | 1 ||
+| [`HalfDead`](Characters_and_Bosses.md#object-halfdead) | Object | Defines the half-dead form with reduced movement and a dash attack. | 1 | `{ . . . }` |
+| [`HardenSkin2`](#object-hardenskin2) | Object | An object defining the upgraded Harden Skin ability. | 1 | `{ . . . }` |
+| [`head_CrownOfHorns`](#object-head_crownofhorns) | Object | A logic key that applies the Crown of Horns head item effect, causing retaliatory damage when the unit is hit. | 1 | `{ . . . }` |
 | `hitler_clone` | Variable | A variable representing a Hitler clone unit. | 1 ||
 | `hitler_clone_fetus` | Variable | A variable representing the fetus stage of a Hitler clone. | 1 ||
-| [`Infested`](Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object | The number of stacks of Infested applied. | 1 ||
+| [`Infested`](Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object | The number of stacks of Infested applied. | 1 | `{ . . . }`<br>`1` |
 | `JesterMinusColorless` | Variable | A variable representing a Jester variant without colorless mechanics. | 1 ||
-| [`JewelOfDrog`](#object-jewelofdrog) | Object | An object defining the properties of the Jewel of Drog item. | 1 ||
-| `kill_on_consume` | Boolean | If true, the consumed unit is killed immediately upon consumption. | 1 ||
-| [`MegaGuppy`](#object-megaguppy) | Object | An object defining the properties of the Mega Guppy transformation or item. | 1 ||
-| [`MockSong`](#object-mocksong) | Object | Defines the Mock Song spell, the basic attack for mockingbird form, including its name and description. | 1 ||
-| [`MockSong2`](#object-mocksong2) | Object | Defines the upgraded Mock Song spell variant for mockingbird form. | 1 ||
-| [`MonkeyThrow2`](#object-monkeythrow2) | Object | An object defining the upgraded Monkey Throw ability. | 1 ||
-| [`MoonHeadFlail`](#object-moonheadflail) | Object | An object defining the Moon Head Flail ability or item. | 1 ||
+| [`JewelOfDrog`](#object-jewelofdrog) | Object | An object defining the properties of the Jewel of Drog item. | 1 | `{ . . . }` |
+| `kill_on_consume` | Boolean | If true, the consumed unit is killed immediately upon consumption. | 1 | `true` |
+| [`MegaGuppy`](#object-megaguppy) | Object | An object defining the properties of the Mega Guppy transformation or item. | 1 | `{ . . . }` |
+| [`MockSong`](#object-mocksong) | Object | Defines the Mock Song spell, the basic attack for mockingbird form, including its name and description. | 1 | `{ . . . }` |
+| [`MockSong2`](#object-mocksong2) | Object | Defines the upgraded Mock Song spell variant for mockingbird form. | 1 | `{ . . . }` |
+| [`MonkeyThrow2`](#object-monkeythrow2) | Object | An object defining the upgraded Monkey Throw ability. | 1 | `{ . . . }` |
+| [`MoonHeadFlail`](#object-moonheadflail) | Object | An object defining the Moon Head Flail ability or item. | 1 | `{ . . . }` |
 | `NoDeathrattle` | Variable | A variable flag that prevents the unit from triggering deathrattle effects. | 1 ||
-| `OverrideChainKnockbackDamage` | Equation | A formula string that overrides the damage dealt by chain knockback (e.g., "3+bonus_melee_ability_damage"). | 1 ||
-| `PermanentCharisma` | Integer | The amount of permanent Charisma added to the unit's base stats. | 1 ||
-| `PermanentLuck` | Integer | The amount of permanent Luck added to the unit's base stats. | 1 ||
-| [`Prance2`](#object-prance2) | Object | Defines an upgraded variant of the Prance ability, using a different description. | 1 ||
-| `ProbeCharmed` | Integer | The number of charm stacks applied by a probe. | 1 ||
+| `OverrideChainKnockbackDamage` | Equation | A formula string that overrides the damage dealt by chain knockback (e.g., "3+bonus_melee_ability_damage"). | 1 | `0`<br>`3+bonus_melee_ability_damage` |
+| `PermanentCharisma` | Integer | The amount of permanent Charisma added to the unit's base stats. | 1 | `1`<br>`2` |
+| `PermanentLuck` | Integer | The amount of permanent Luck added to the unit's base stats. | 1 | `1`<br>`2` |
+| [`Prance2`](#object-prance2) | Object | Defines an upgraded variant of the Prance ability, using a different description. | 1 | `{ . . . }` |
+| `ProbeCharmed` | Integer | The number of charm stacks applied by a probe. | 1 | `1` |
 | `rotate_right` | Variable | A variable representing a right rotation action or state. | 1 ||
-| [`Scavenge2`](#object-scavenge2) | Object | Defines an upgraded variant of the Scavenge ability, using a different description. | 1 ||
-| `Scrambled` | Integer | The number of stacks of Scrambled applied. | 1 ||
-| [`Small`](Characters_and_Bosses.md#object-small) | Object | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 1 ||
-| [`SmallHolding`](Characters_and_Bosses.md#object-smallholding) | Object | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 ||
-| [`SmallHoldingCat`](Characters_and_Bosses.md#object-smallholdingcat) | Object | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 ||
+| [`Scavenge2`](#object-scavenge2) | Object | Defines an upgraded variant of the Scavenge ability, using a different description. | 1 | `{ . . . }` |
+| `Scrambled` | Integer | The number of stacks of Scrambled applied. | 1 | `1`<br>`2` |
+| [`Small`](Characters_and_Bosses.md#object-small) | Object | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 1 | `{ . . . }` |
+| [`SmallHolding`](Characters_and_Bosses.md#object-smallholding) | Object | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
+| [`SmallHoldingCat`](Characters_and_Bosses.md#object-smallholdingcat) | Object | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
 | `spear` | Variable | A variable representing a spear weapon type. | 1 ||
-| `SplashDamage` | Integer | The radius (in tiles) for splash damage applied to adjacent targets. | 1 ||
-| [`Standing`](Characters_and_Bosses.md#object-standing) | Object | Form state where the unit is standing, with default movement and attack. | 1 ||
-| [`Synthesize2`](#object-synthesize2) | Object | Defines an upgraded variant of the Synthesize ability, using a different description. | 1 ||
-| [`TaintedOffering2`](#object-taintedoffering2) | Object | An object defining the upgraded Tainted Offering ability. | 1 ||
+| `SplashDamage` | Integer | The radius (in tiles) for splash damage applied to adjacent targets. | 1 | `1`<br>`2` |
+| [`Standing`](Characters_and_Bosses.md#object-standing) | Object | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
+| [`Synthesize2`](#object-synthesize2) | Object | Defines an upgraded variant of the Synthesize ability, using a different description. | 1 | `{ . . . }` |
+| [`TaintedOffering2`](#object-taintedoffering2) | Object | An object defining the upgraded Tainted Offering ability. | 1 | `{ . . . }` |
 | `TallFlowerTile` | Variable | A variable representing a tall flower tile type on the grid. | 1 ||
-| [`Tease2`](#object-tease2) | Object | Defines an upgraded variant of the Tease ability, using a different description. | 1 ||
+| [`Tease2`](#object-tease2) | Object | Defines an upgraded variant of the Tease ability, using a different description. | 1 | `{ . . . }` |
 | `the_nuke_bearer` | Variable | A variable representing the entity that carries the nuke. | 1 ||
 | `themotherspike` | Variable | A variable representing the Mother Spike entity. | 1 ||
-| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 ||
-| [`TigerSwipes2`](#object-tigerswipes2) | Object | An object defining the upgraded Tiger Swipes ability. | 1 ||
-| [`Timber`](#object-timber) | Object | Defines the Timber trample dash ability, an alt basic attack for Tree Form. | 1 ||
-| [`TinaFlail`](#object-tinaflail) | Object | An object defining the Tina Flail ability or item. | 1 ||
-| [`TinaFlailRage`](#object-tinaflailrage) | Object | An object defining the rage variant of the Tina Flail ability. | 1 ||
-| [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object | An object with `from` and `to` fields specifying the weapon transformation. | 1 ||
+| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
+| [`TigerSwipes2`](#object-tigerswipes2) | Object | An object defining the upgraded Tiger Swipes ability. | 1 | `{ . . . }` |
+| [`Timber`](#object-timber) | Object | Defines the Timber trample dash ability, an alt basic attack for Tree Form. | 1 | `{ . . . }` |
+| [`TinaFlail`](#object-tinaflail) | Object | An object defining the Tina Flail ability or item. | 1 | `{ . . . }` |
+| [`TinaFlailRage`](#object-tinaflailrage) | Object | An object defining the rage variant of the Tina Flail ability. | 1 | `{ . . . }` |
+| [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
 | `weapon_throw` | Variable | A variable representing a weapon throw action or projectile. | 1 ||
-| [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 1 ||
-| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. |||
-| `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 0 ||
-| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 0 ||
-| `two_way_contact` | Boolean | If true, contact effects apply to both the attacker and the target when the damage instance hits. | 0 ||
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 0 ||
+| [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 1 | `[FlySwarm FireflySwarm ButterflySwarm]` |
+| [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. || `passives`<br>`class`<br>`tag` |
+| `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 0 | `false` |
+| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 0 | `.1`<br>`.16666666`<br>`.3` |
+| `two_way_contact` | Boolean | If true, contact effects apply to both the attacker and the target when the damage instance hits. | 0 | `true` |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 0 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 </details>
 
 ### Valid Nested Objects
@@ -278,7 +278,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. || `all_disorders` (Enum), `{ ... }` (Object) |
+| [`GainDisorderFromPool`](Characters_and_Bosses.md#object-gaindisorderfrompool) | Enum / Object | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. || `{ . . . }`<br>`all_disorders` |
 
 </details>
 
@@ -293,31 +293,31 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `[1 .5]` (Array), `10` (Number), `4` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 6 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `MoveQuivered` | Integer | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
-| `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. || `-item_aux` (Enum), `2` (Number), `1` (Number), `"-max(min(X+1, item_aux), 0)"` (String) |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charge` | Integer | The number of charge stacks applied. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `EquipPermanentItem` | Enum | The name of the item to permanently equip to the source. || `BoneClub` (Enum), `Kidney` (Enum) |
-| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. || `Necromancer` (Enum), `Thief` (Enum), `{ ... }` (Object) |
-| `FindItem` | Enum | The name of the specific item to find and add to the source's inventory. || `BoneClub` (Enum), `Pearl` (Enum) |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. || `chapter_specific_item` (Enum), `chapter_common` (Enum), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. || `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `passive` (Enum), `Default` (Enum), `{ ... }` (Object) |
-| `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. || `{ ... }` (Object) |
-| `HealthGain` | Integer | The amount of health restored to the source. || `2*X` (Enum), `3*X` (Enum), `3` (Number), `8` (Number) |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `[1 .5]` (Array), `-4` (Number), `3` (Number), `{ ... }` (Object) |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 6 | `1`<br>`2`<br>`3` |
+| `MoveQuivered` | Integer | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`[1, 0.1]` |
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
+| `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
+| `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. || `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `ConstitutionUp` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `-1`<br>`-2`<br>`1` |
+| `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
+| `EquipPermanentItem` | Enum | The name of the item to permanently equip to the source. || `BoneClub`<br>`Kidney` |
+| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. || `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
+| `FindItem` | Enum | The name of the specific item to find and add to the source's inventory. || `BoneClub`<br>`Molars`<br>`Pearl` |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. || `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. || `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. || `1`<br>`2` |
+| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. || `{ . . . }` |
+| `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
+| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
+| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
+| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
 
@@ -332,8 +332,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 0 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 0 | `[FlySwarm FireflySwarm ButterflySwarm]` |
 
 </details>
 
@@ -348,11 +348,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
-| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 ||
-| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `2` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` |
+| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 | `{ . . . }` |
+| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
 
@@ -367,10 +367,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
-| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -385,22 +385,22 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
-| `BleedThorns` | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 8 | `[1 .5]` (Array), `6` (Number), `3` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 1 ||
-| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer | The amount of health restored to the source. || `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 | `1`<br>`2`<br>`3` |
+| `BleedThorns` | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 8 | `1`<br>`2`<br>`3` |
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
+| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
+| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
+| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
+| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `-1`<br>`1`<br>`2` |
+| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `10`<br>`4`<br>`X` |
 
 </details>
 
@@ -415,8 +415,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -431,10 +431,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 8 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `[25 .01]` (Array), `50` (Number), `999` (Number) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
+| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -449,14 +449,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 6 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. || `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 6 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. || `1`<br>`8` |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
+| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -471,8 +471,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -487,8 +487,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -503,7 +503,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -518,18 +518,18 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
-| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `HealRandomInjury` | Integer | The number of random injuries healed on the target. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomMutation` | Integer | The number of random mutations to apply. || `3` (Number), `1` (Number) |
-| `SafeDoomed` | Enum / Integer | The number of SafeDoomed stacks applied, or 'level' to scale with character level. || `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
+| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| `HealRandomInjury` | Integer | The number of random injuries healed on the target. || `1` |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
+| `RandomMutation` | Integer | The number of random mutations to apply. || `1`<br>`3` |
+| `SafeDoomed` | Enum / Integer | The number of SafeDoomed stacks applied, or 'level' to scale with character level. || `1`<br>`2`<br>`level` |
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -544,8 +544,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -560,7 +560,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -575,8 +575,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `LaunchOffScreen` | String | A formula string that determines the knockback force to launch the unit off-screen. || `10+bonus_melee_ability_damage` (Enum) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `LaunchOffScreen` | String | A formula string that determines the knockback force to launch the unit off-screen. || `10+bonus_melee_ability_damage` |
 
 </details>
 
@@ -591,27 +591,27 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 3 ||
-| [`Conditional_PartyMember`](#conditional_partymember) | Object | A conditional block that executes its child actions only if the target is a party member. | 2 ||
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Conditional_FinishedSpawning`](Abilities_and_Spells.md#object-conditional_finishedspawning) | Object | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 ||
-| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
-| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 3 | `{ . . . }` |
+| [`Conditional_PartyMember`](#conditional_partymember) | Object | A conditional block that executes its child actions only if the target is a party member. | 2 | `{ . . . }` |
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Conditional_FinishedSpawning`](Abilities_and_Spells.md#object-conditional_finishedspawning) | Object | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
+| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. || `1` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `1`<br>`2`<br>`3` |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
+| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. || `1` |
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`3`<br>`5` |
+| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
+| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
+| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `-1`<br>`1`<br>`2` |
 
 </details>
 
@@ -626,11 +626,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `[1 .5]` (Array), `6` (Number), `-2` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `-2` (Number), `5` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
 
 </details>
 
@@ -645,12 +645,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charge` | Integer | The number of charge stacks applied. || `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. || `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `X` (Enum), `item_aux` (Enum), `5` (Number), `2` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. || `1`<br>`[1 .10]`<br>`[1 .25]` |
+| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
 
@@ -665,15 +665,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`formula`](./Enums.md#enum-formula) | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 ||
-| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Freeze` | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| [`formula`](./Enums.md#enum-formula) | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
+| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Freeze` | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
+| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -688,15 +688,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 37 ||
-| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `ChangeTilesUnder` | Enum | The tile type to change the ground tiles under the target to. || `LavaTile` (Enum), `DirtTile` (Enum) |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. || `parasites` (Enum), `chapter_specific_item` (Enum), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. || `cm_RaptorEggSpawn` (Enum), `tk_WeirdEgg_Spawn` (Enum), `{ ... }` (Object) |
-| `Freeze` | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
-| `RandomMutation` | Integer | The number of random mutations to apply. || `3` (Number), `1` (Number) |
+| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
+| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `ChangeTilesUnder` | Enum | The tile type to change the ground tiles under the target to. || `DirtTile`<br>`GlassTile`<br>`LavaTile` |
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. || `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. || `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| `Freeze` | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
+| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| `RandomMutation` | Integer | The number of random mutations to apply. || `1`<br>`3` |
 
 </details>
 
@@ -711,7 +711,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -726,15 +726,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 20 ||
-| `Quivered` | Array / Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `passive` (Enum), `Bully` (Enum), `{ ... }` (Object) |
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 20 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
+| `Quivered` | Array / Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 | `1`<br>`2`<br>`5` |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 
 </details>
 
@@ -749,21 +749,21 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
-| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 6 ||
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Contains effects that apply only if the target is a boss enemy. | 4 ||
-| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `ChangeTilesUnder` | Enum | The tile type to change the ground tiles under the target to. || `LavaTile` (Enum), `DirtTile` (Enum) |
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. || `1` (Number), `6` (Number), `{ ... }` (Object) |
-| `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. || `[1 .5]` (Array), `5` (Number), `1` (Number), `{ ... }` (Object) |
-| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `HitlerCloneHeil` (Enum), `cm_Lard_Impl` (Enum), `{ ... }` (Object) |
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `[25 .01]` (Array), `50` (Number), `999` (Number) |
-| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. || `Sprout` (Enum), `TheDestroyer` (Enum), `{ ... }` (Object) |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. || `MegaGuppy_SummonTheChild` (Enum), `ManglerThrowRemote` (Enum), `{ ... }` (Object) |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 6 | `{ . . . }` |
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Contains effects that apply only if the target is a boss enemy. | 4 | `{ . . . }` |
+| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `ChangeTilesUnder` | Enum | The tile type to change the ground tiles under the target to. || `DirtTile`<br>`GlassTile`<br>`LavaTile` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. || `{ . . . }`<br>`1`<br>`6` |
+| `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. || `5` |
+| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
+| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. || `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
 
@@ -778,15 +778,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 5 ||
-| `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 ||
-| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 ||
-| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. || `1` (Number), `6` (Number), `{ ... }` (Object) |
-| `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. || `X` (Enum), `5` (Number), `2` (Number) |
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `[25 .01]` (Array), `50` (Number), `999` (Number) |
+| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 5 | `0`<br>`10`<br>`3` |
+| `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
+| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
+| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. || `{ . . . }`<br>`1`<br>`6` |
+| `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. || `1`<br>`10`<br>`2` |
+| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
 
 </details>
 
@@ -801,14 +801,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
-| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 ||
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `[1 .5]` (Array), `15` (Number), `20` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `Drunker` (Enum), `BigHolding` (Enum), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. || `MegaGuppy_SummonTheChild` (Enum), `ManglerThrowRemote` (Enum), `{ ... }` (Object) |
+| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
 
@@ -823,7 +823,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -838,7 +838,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -853,7 +853,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -868,9 +868,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
 
@@ -885,7 +885,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -900,9 +900,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. || `1` (Number), `99` (Number) |
+| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 1 | `0`<br>`10`<br>`3` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. || `1`<br>`99` |
 
 </details>
 
@@ -917,8 +917,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -933,7 +933,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -948,12 +948,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 2 ||
-| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
+| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 2 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `1`<br>`2`<br>`3` |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
+| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
 
 </details>
 
@@ -968,8 +968,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -984,8 +984,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `10` (Number), `3` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -1000,9 +1000,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 3 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `[1 .25]` (Array), `6` (Number), `1` (Number) |
+| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 3 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `1`<br>`6`<br>`99` |
 
 </details>
 
@@ -1017,11 +1017,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. || `1`<br>`2` |
+| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `1`<br>`3` |
 
 </details>
 
@@ -1036,12 +1036,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 3 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 0 ||
-| [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 0 ||
+| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 3 | `{ . . . }` |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 0 | `1`<br>`2`<br>`3` |
+| [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 0 | `{ . . . }` |
 
 </details>
 
@@ -1056,10 +1056,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Charge` | Integer | The number of charge stacks applied. || `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| `Scrambled` | Integer | The number of stacks of Scrambled applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `Scrambled` | Integer | The number of stacks of Scrambled applied. || `1`<br>`2` |
 
 </details>
 
@@ -1074,8 +1074,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 4 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 4 | `.1`<br>`.16666666`<br>`.3` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -1090,11 +1090,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`SetItemAux`](Engine_StatusAndPassiveKeys.md#object-setitemaux) | Object | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. || `{ ... }` (Object) |
-| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `{ . . . }`<br>`1` |
+| [`SetItemAux`](Engine_StatusAndPassiveKeys.md#object-setitemaux) | Object | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. || `{ . . . }` |
+| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -1109,9 +1109,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `{ . . . }` |
 
 </details>
 
@@ -1126,9 +1126,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -1143,9 +1143,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
-| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -1160,10 +1160,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `3` (Number), `10` (Number), `{ ... }` (Object) |
+| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -1178,48 +1178,48 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `[1 .5]` (Array), `-2` (Number), `3` (Number), `{ ... }` (Object) |
-| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `2` (Number), `10` (Number), `{ ... }` (Object) |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 2 ||
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `0` (Number), `1` (Number), `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `[1 .5]` (Array), `15` (Number), `66` (Number), `{ ... }` (Object) |
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `[1 .5]` (Array), `2` (Number), `3` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `10` (Number), `3` (Number) |
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
-| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 ||
-| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 ||
-| [`Conditional_HasKnockback`](Characters_and_Bosses.md#object-conditional_hasknockback) | Object | An object containing actions that execute if the incoming damage has knockback. | 1 ||
-| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 ||
-| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 ||
-| [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 ||
-| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`AllyInfested`](#object-allyinfested) | Array / Number / Object | Defines the AllyInfested object, which spawns an infested ally under the player's control. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `str` (Enum), `20+bonus_melee_damage` (Enum), `5` (Number), `-3` (Number), `"max(0, floor(X/2)-1)"` (String), `"max(0, floor(X/6)-1)"` (String) |
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .5]` (Array), `[1 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `passive` (Enum), `Holy` (Enum), `{ ... }` (Object) |
-| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. || `{ ... }` (Object) |
-| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `MoonHandMegaSqueeze` (Enum), `tk_ButterBean_Normal` (Enum), `{ ... }` (Object) |
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `[25 .01]` (Array), `50` (Number), `999` (Number) |
-| [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .5]` (Array), `5` (Number), `3` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. || `Maggot` (Enum), `BeefyCharmedLeech` (Enum), `{ ... }` (Object) |
-| `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. || `1` (Number), `9999` (Number) |
-| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. || `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `[1 .5]` (Array), `5` (Number), `{ ... }` (Object) |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
-| `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 2 | `{ . . . }` |
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
+| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
+| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
+| [`Conditional_HasKnockback`](Characters_and_Bosses.md#object-conditional_hasknockback) | Object | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
+| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| [`AllyInfested`](#object-allyinfested) | Array / Number / Object | Defines the AllyInfested object, which spawns an infested ally under the player's control. || `{ . . . }` |
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `{ . . . }`<br>`1` |
+| `ConstitutionUp` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `-1`<br>`-2`<br>`1` |
+| [`DybbukPossessed`](Abilities_and_Spells.md#object-dybbukpossessed) | Object | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. || `{ . . . }` |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. || `{ . . . }` |
+| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
+| [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`3`<br>`5` |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. || `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. || `1`<br>`9999` |
+| `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. || `1` |
+| `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. || `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
+| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `{ . . . }` |
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
+| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `10`<br>`4`<br>`X` |
+| `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
 
@@ -1234,164 +1234,164 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 38 ||
-| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `[1 .5]` (Array), `50` (Number), `20` (Number), `{ ... }` (Object) |
-| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 | `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
-| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 35 ||
-| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 25 ||
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 14 ||
-| `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 14 | `[3 X-8]` (Array), `[1 .5]` (Array), `9` (Number), `6` (Number), `{ ... }` (Object) |
-| [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Contains effects that apply only if the target is a boss enemy. | 13 ||
-| [`Conditional_FormulaIsPositive`](Abilities_and_Spells.md#object-conditional_formulaispositive) | Object | Defines effects that apply only if a given formula evaluates to a positive value. | 10 ||
-| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 10 ||
-| `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `[1 .1]` (Array), `[3 .1]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `[1 .1]` (Array), `[1 .5]` (Array), `3` (Number), `5` (Number), `{ ... }` (Object) |
-| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 6 ||
-| `Blind` | Array / Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `[1 .25]` (Array), `[1 .10]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `[1 .2]` (Array), `[1 .1]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `[1 .5]` (Array), `3` (Number), `2` (Number), `{ ... }` (Object) |
-| `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 6 | `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `MoveQuivered` | Integer | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `[1 0.1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 5 ||
-| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 5 ||
-| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 5 ||
-| [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 5 ||
-| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 5 ||
-| [`Conditional_Familiar`](Abilities_and_Spells.md#object-conditional_familiar) | Object | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 ||
-| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Reanimate`](Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object | The percentage chance to reanimate the target. | 4 | `50` (Number), `100` (Number), `{ ... }` (Object) |
-| `SizeScale` | Number | The multiplier applied to the unit's visual and hitbox size. | 4 | `1.1` (Number), `1.3` (Number), `.6` (String), `.8` (String) |
-| [`Conditional_AffectedByElement`](Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 ||
-| [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Container for effects applied only on the first application of this ability during the turn. | 3 ||
-| [`Conditional_LastHit`](Abilities_and_Spells.md#object-conditional_lasthit) | Object | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 ||
-| `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | The number of backflip charges, or an object defining its ability. | 2 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `[1 .5]` (Array), `15` (Number), `50` (Number), `{ ... }` (Object) |
-| `DrinkWater` | Integer | The number of water-drink actions performed. | 2 | `1` (Number) |
-| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 2 ||
-| [`Conditional_BossOrBig`](Abilities_and_Spells.md#object-conditional_bossorbig) | Object | An object containing effects that are only applied if the target is a boss or large unit. | 2 ||
-| [`Conditional_Buddy`](Abilities_and_Spells.md#object-conditional_buddy) | Object | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 ||
-| [`Conditional_DestructibleCorpse`](Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object | An object containing effects that are only applied if the corpse is destructible. | 2 ||
-| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 ||
-| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 2 ||
-| [`Conditional_NotAlly`](Abilities_and_Spells.md#object-conditional_notally) | Object | An object containing effects that are only applied if the target is not an ally of the source. | 2 ||
-| [`Conditional_NotBossOrBig`](Abilities_and_Spells.md#object-conditional_notbossorbig) | Object | An object containing effects that are only applied if the target is not a boss or large unit. | 2 ||
-| [`Conditional_NotShielded`](Abilities_and_Spells.md#object-conditional_notshielded) | Object | An object containing effects that are only applied if the target does not have a shield active. | 2 ||
-| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 ||
-| [`Conditional_Shielded`](Abilities_and_Spells.md#object-conditional_shielded) | Object | An object containing effects that are only applied if the target has a shield active. | 2 ||
-| `MagicWeakness` | Array / Integer | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 2 | `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object | The number of status effects to purge from the target. | 2 | `3` (Number), `0` (Number), `{ ... }` (Object) |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"` (Enum), `"ceil(X/3)"` (Enum), `3` (Number), `-3` (Number) |
-| [`Reflect`](Engine_StatusAndPassiveKeys.md#object-reflect) | Integer / Object | The amount of reflect stacks applied. | 2 | `[1 .5]` (Array), `1` (Number), `5` (Number), `{ ... }` (Object) |
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `1` (Number), `50` (Number), `{ ... }` (Object) |
-| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object | The number of soul link stacks applied. | 2 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Infested`](Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object | The number of stacks of Infested applied. | 1 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 ||
-| [`Conditional_ActiveWeather_Any`](Abilities_and_Spells.md#object-conditional_activeweather_any) | Object | An object containing effects that execute only if any of the specified weather types are active. | 1 ||
-| [`Conditional_Backstab`](Abilities_and_Spells.md#object-conditional_backstab) | Object | An object containing effects that execute only if the attack lands on the target's back. | 1 ||
-| [`Conditional_CanBeHealed`](Abilities_and_Spells.md#object-conditional_canbehealed) | Object | An object containing effects that execute only if the target can be healed. | 1 ||
-| [`Conditional_DebuffRoll`](Abilities_and_Spells.md#object-conditional_debuffroll) | Object | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 ||
-| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 ||
-| [`Conditional_HasCleansableDebuffs`](Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object | An object containing effects that execute only if the unit has cleansable debuffs. | 1 ||
-| [`Conditional_IsTrample`](Abilities_and_Spells.md#object-conditional_istrample) | Object | An object containing effects that execute only if the ability is a trample attack. | 1 ||
-| [`Conditional_LivingPlayerCat`](Abilities_and_Spells.md#object-conditional_livingplayercat) | Object | An object containing effects that execute only if the source is a living player-owned cat. | 1 ||
-| [`Conditional_NotBig`](Abilities_and_Spells.md#object-conditional_notbig) | Object | An object containing effects that execute only if the target is not a 'big' unit. | 1 ||
-| [`Conditional_RandomChance`](Abilities_and_Spells.md#object-conditional_randomchance) | Object | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 ||
-| [`Conditional_SourceAbilityHasTag`](Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object | An object containing effects that execute only if the source ability has the specified tag. | 1 ||
-| [`Conditional_SourceHasStatus`](Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object | An object containing effects that execute only if the source unit has the specified status. | 1 ||
-| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 | `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. |||
-| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`BounceObject`](Abilities_and_Spells.md#object-bounceobject) | Enum / Object | Specifies the object or projectile to spawn and bounce from the target. || `CharmedFlea_Champion` (Enum), `CharmedDip` (Enum), `{ ... }` (Object) |
-| `BurgleCoin` | Array / Integer | The number of coins stolen from the target, or an array of `[number, probability]`. || `[1 .5]` (Array), `3` (Number), `1` (Number) |
-| [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). || `FireTile` (Enum), `GrassTile` (Enum), `{ ... }` (Object) |
-| `ChangeTilesUnder` | Enum | The tile type to change the ground tiles under the target to. || `LavaTile` (Enum), `DirtTile` (Enum) |
-| `Charge` | Integer | The number of charge stacks applied. || `[1 .5]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. || `[1 .5]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `[1 .25]` (Array), `[1 .15]` (Array), `5` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ConstitutionUp` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | Defines global gameplay modifiers to activate. || `{ ... }` (Object) |
-| `DamageOrHealConditionally` | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). || `1` (Number) |
-| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `DiminishingHealthRegen` | Integer | The number of diminishing health regen stacks applied. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `[1 .5]` (Array), `[1 .33]` (Array), `4` (Number), `1` (Number), `{ ... }` (Object) |
-| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. || `[1 .5]` (Array), `8` (Number), `1` (Number), `{ ... }` (Object) |
-| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. || `Tinkerer` (Enum), `Fighter` (Enum), `{ ... }` (Object) |
-| `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `[1 .25]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. || `[1 .10]` (Array), `[1 .25]` (Array), `1` (Number) |
-| `FindExtraItemFromPoolOnBattleEnd` | Enum | Specifies the item pool from which an extra item is granted at the end of combat. || `combat_reward_easy` (Enum), `pills` (Enum) |
-| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object | If set to 1, forces the target to perform an attack against a random or specified target. || `1` (Number), `{ ... }` (Object) |
-| `ForceMoveAway` | Integer | The distance to force the target away from the source. || `1` (Number), `{ ... }` (Object) |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. || `neck_ChefsApron` (Enum), `head_HitlersToupe` (Enum), `{ ... }` (Object) |
-| `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Freeze` | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. || `[1 .25]` (Array), `[1 .15]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. || `{ ... }` (Object) |
-| `HealRandomInjury` | Integer | The number of random injuries healed on the target. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `HealthGain` | Integer | The amount of health restored to the source. || `2*X` (Enum), `3*X` (Enum), `10` (Number), `4` (Number) |
-| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `MoonHandMegaSqueeze` (Enum), `head_ThrobbingCrown` (Enum), `{ ... }` (Object) |
-| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `[25 .01]` (Array), `50` (Number), `999` (Number) |
-| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `3` (Number), `4` (Number), `{ ... }` (Object) |
-| [`KnockOutCoin`](Abilities_and_Spells.md#object-knockoutcoin) | Integer / Object | The number of coins knocked out, with an optional probability or an object with stacks and chance. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `Lifesteal` | Integer | The amount of lifesteal stacks applied. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `[1 .5]` (Array), `3` (Number), `-4` (Number), `{ ... }` (Object) |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `item_aux` (Enum), `X-1` (Enum), `2` (Number), `6` (Number), `"max(X*3, 0)"` (String), `"max((X-1)*2, 0)"` (String) |
-| `ManaLeeches` | Integer | The number of mana leech stacks applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `MovementUp` | Integer | The amount of movement increase or decrease applied. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `NonStackingDivineShield` | Integer | The number of Divine Shield stacks that do not stack with duplicates. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. || `SkeletonCatFamiliar` (Enum), `SmallRock` (Enum), `{ ... }` (Object) |
-| `Ostracized` | Integer | The number of stacks of Ostracized applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `OverrideChainKnockbackDamage` | String | A formula string that overrides the damage dealt by chain knockback (e.g., "3+bonus_melee_ability_damage"). || `3+bonus_melee_ability_damage` (Enum), `0` (Number) |
-| `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. || `1` (Number), `9999` (Number) |
-| `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. || `-1` (Number), `-2` (Number) |
-| `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. || `1` (Number), `2` (Number) |
-| `PermanentIntelligence` | Integer | The permanent amount of intelligence added or removed. || `1` (Number), `2` (Number) |
-| `PermanentSpeed` | Integer | The permanent amount of speed added or removed. || `1` (Number), `2` (Number) |
-| `Petrify` | Array / Integer | The amount of petrify stacks applied, or an [stacks, probability] array. || `[1 .15]` (Array), `[1 .2]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. || `TheDestroyer` (Enum), `StemCat_HalfHealth` (Enum), `{ ... }` (Object) |
-| `Possessed` | Integer | The number of possession stacks applied, or a template with name and tooltips. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ProbeCharmed` | Integer | The number of charm stacks applied by a probe. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `RandomInjury` | Integer | The number of random injuries applied. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, or an object defining its properties. || `[1 .5]` (Array), `5` (Number), `6` (Number), `{ ... }` (Object) |
-| `RandomPermanentStat` | Integer | The amount of a random permanent stat change (positive or negative). || `-1` (Number), `-2` (Number) |
-| `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. || `[1 .25]` (Array), `"ceil(X/3)"` (Enum), `"ceil(X/2)"` (Enum), `1` (Number) |
-| `RangeUp` | Integer | The number of stacks of bonus attack range applied. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `[1 .25]` (Array), `6` (Number), `1` (Number) |
-| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object | The number of revives granted, or an object defining revive properties. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `Rot` | Array / Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. || `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `SetDefaultFace` | Enum | Specifies the default facial expression, such as 'happy', 'sad', or 'insane'. || `insane` (Enum), `happy` (Enum) |
-| `Sleep` | Array / Integer | The amount of sleep stacks applied, or an [stacks, probability] array. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `SpawnCoinAnywhere` | Array / Integer | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. || `[1 .5]` (Array), `1` (Number) |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `[1 .5]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `SpiderInfested` | Integer | The number of spider infestation stacks applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`StatusAllCharactersOnSpawn`](House_and_Environment.md#object-statusallcharactersonspawn) | Object | Defines status effects applied to all characters when they spawn into the battlefield. || `{ ... }` (Object) |
-| [`StatusGroup`](Abilities_and_Spells.md#object-statusgroup) | Object | A container grouping multiple status effects to be applied simultaneously. || `{ ... }` (Object) |
-| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `[1 .5]` (Array), `-2` (Number), `2` (Number), `{ ... }` (Object) |
-| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. || `[1 .1]` (Array), `[1 .33]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
-| `Tarred` | Array / Integer | The amount of tarred stacks applied, or an [stacks, probability] array. || `[1 .1]` (Array), `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempCounterAttack` | Integer | The number of turns TempCounterAttack lasts, ticking down at the start of the unit's turn. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. || `[1 .5]` (Array), `20` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempRangeUp` | Integer | The amount of temporary range increase applied. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `[1 .5]` (Array), `10` (Number), `1` (Number), `{ ... }` (Object) |
-| `TempSpellDamageUp` | Integer | The amount of temporary spell damage increase applied. || `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `TempStrengthUp` | Enum | The number of stacks of temporary Strength Up applied to the unit. || `[1 .5]` (Array), `2` (Number), `1` (Number), `{ ... }` (Object) |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. || `MegaGuppy_SummonTheChild` (Enum), `TormentorRuneAbsorb` (Enum), `{ ... }` (Object) |
-| `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 38 | `{ . . . }` |
+| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
+| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 | `1`<br>`2`<br>`3` |
+| [`Conditional_Enemy`](Abilities_and_Spells.md#object-conditional_enemy) | Object | An object containing status effects or actions applied only if the target is an enemy. | 35 | `{ . . . }` |
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `1`<br>`2`<br>`3` |
+| [`Conditional_Ally`](Abilities_and_Spells.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 25 | `{ . . . }` |
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 14 | `{ . . . }` |
+| `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 14 | `1`<br>`3`<br>`4` |
+| [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object | Contains effects that apply only if the target is a boss enemy. | 13 | `{ . . . }` |
+| [`Conditional_FormulaIsPositive`](Abilities_and_Spells.md#object-conditional_formulaispositive) | Object | Defines effects that apply only if a given formula evaluates to a positive value. | 10 | `{ . . . }` |
+| [`Conditional_Speculative`](Abilities_and_Spells.md#object-conditional_speculative) | Object | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 10 | `{ . . . }` |
+| `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` |
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
+| [`Conditional_Corpse`](Abilities_and_Spells.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 6 | `{ . . . }` |
+| `Blind` | Array / Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `-1`<br>`1`<br>`2` |
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 6 | `1`<br>`2`<br>`3` |
+| `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `1`<br>`2` |
+| `MoveQuivered` | Integer | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`[1, 0.1]` |
+| [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 5 | `{ . . . }` |
+| [`Conditional_InForm`](Abilities_and_Spells.md#object-conditional_inform) | Object | Contains effects that apply only if the target is in the specified form. | 5 | `{ . . . }` |
+| [`Conditional_NotBoss`](Abilities_and_Spells.md#object-conditional_notboss) | Object | Contains effects that apply only if the target is not a boss enemy. | 5 | `{ . . . }` |
+| [`Conditional_Object`](Abilities_and_Spells.md#object-conditional_object) | Object | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 5 | `{ . . . }` |
+| [`Conditional_PlayerCat`](Abilities_and_Spells.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 5 | `{ . . . }` |
+| [`Conditional_Familiar`](Abilities_and_Spells.md#object-conditional_familiar) | Object | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
+| `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
+| [`Reanimate`](Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object | The percentage chance to reanimate the target. | 4 | `{ . . . }`<br>`100%`<br>`33%`<br>`50%` |
+| `SizeScale` | Number | The multiplier applied to the unit's visual and hitbox size. | 4 | `.4`<br>`.6`<br>`.7` |
+| [`Conditional_AffectedByElement`](Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_FirstApplicationThisTurn`](Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
+| [`Conditional_LastHit`](Abilities_and_Spells.md#object-conditional_lasthit) | Object | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
+| `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `1` |
+| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Enum / Integer / Object | The number of backflip charges, or an object defining its ability. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
+| `DrinkWater` | Integer | The number of water-drink actions performed. | 2 | `1` |
+| [`Leeches`](Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 2 | `{ . . . }` |
+| [`Conditional_BossOrBig`](Abilities_and_Spells.md#object-conditional_bossorbig) | Object | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_Buddy`](Abilities_and_Spells.md#object-conditional_buddy) | Object | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
+| [`Conditional_DestructibleCorpse`](Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](Abilities_and_Spells.md#object-conditional_healththreshold) | Object | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
+| [`Conditional_IsSelf`](Abilities_and_Spells.md#object-conditional_isself) | Object | An object containing effects that are only applied if the target is the source unit itself. | 2 | `{ . . . }` |
+| [`Conditional_NotAlly`](Abilities_and_Spells.md#object-conditional_notally) | Object | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
+| [`Conditional_NotBossOrBig`](Abilities_and_Spells.md#object-conditional_notbossorbig) | Object | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_NotShielded`](Abilities_and_Spells.md#object-conditional_notshielded) | Object | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](Abilities_and_Spells.md#object-conditional_onceperbattle) | Object | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
+| [`Conditional_Shielded`](Abilities_and_Spells.md#object-conditional_shielded) | Object | An object containing effects that are only applied if the target has a shield active. | 2 | `{ . . . }` |
+| `MagicWeakness` | Array / Integer | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`3` |
+| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `{ . . . }`<br>`"X/3"`<br>`"X/5"`<br>`1` |
+| [`Purge`](Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object | The number of status effects to purge from the target. | 2 | `{ . . . }`<br>`0`<br>`3` |
+| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| [`Reflect`](Engine_StatusAndPassiveKeys.md#object-reflect) | Integer / Object | The amount of reflect stacks applied. | 2 | `{ . . . }`<br>`1`<br>`5` |
+| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
+| [`SoulLink`](Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object | The number of soul link stacks applied. | 2 | `{ . . . }`<br>`1` |
+| [`Infested`](Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object | The number of stacks of Infested applied. | 1 | `{ . . . }`<br>`1` |
+| [`Conditional_AbilityTargetIsSelf`](Engine_Uncategorized_Resources.md#conditional_abilitytargetisself) | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 | `{ . . . }` |
+| [`Conditional_ActiveWeather_Any`](Abilities_and_Spells.md#object-conditional_activeweather_any) | Object | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
+| [`Conditional_Backstab`](Abilities_and_Spells.md#object-conditional_backstab) | Object | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
+| [`Conditional_CanBeHealed`](Abilities_and_Spells.md#object-conditional_canbehealed) | Object | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
+| [`Conditional_DebuffRoll`](Abilities_and_Spells.md#object-conditional_debuffroll) | Object | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_Displaceable`](Abilities_and_Spells.md#object-conditional_displaceable) | Object | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
+| [`Conditional_HasCleansableDebuffs`](Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
+| [`Conditional_IsTrample`](Abilities_and_Spells.md#object-conditional_istrample) | Object | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
+| [`Conditional_LivingPlayerCat`](Abilities_and_Spells.md#object-conditional_livingplayercat) | Object | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
+| [`Conditional_NotBig`](Abilities_and_Spells.md#object-conditional_notbig) | Object | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
+| [`Conditional_RandomChance`](Abilities_and_Spells.md#object-conditional_randomchance) | Object | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_SourceAbilityHasTag`](Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
+| [`Conditional_SourceHasStatus`](Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
+| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 | `{ . . . }` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
+| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. || `1` |
+| [`BounceObject`](Abilities_and_Spells.md#object-bounceobject) | Enum / Object | Specifies the object or projectile to spawn and bounce from the target. || `{ . . . }`<br>`AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
+| `BurgleCoin` | Array / Integer | The number of coins stolen from the target, or an array of `[number, probability]`. || `1`<br>`3`<br>`[1 .5]` |
+| [`ChangeTile`](Abilities_and_Spells.md#object-changetile) | Enum / Object | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). || `{ . . . }`<br>`BlankTile`<br>`BrambleTile`<br>`CreepTile` |
+| `ChangeTilesUnder` | Enum | The tile type to change the ground tiles under the target to. || `DirtTile`<br>`GlassTile`<br>`LavaTile` |
+| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. || `-1`<br>`-2`<br>`1` |
+| `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
+| [`Cleave`](Abilities_and_Spells.md#object-cleave) | Integer / Object | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `{ . . . }`<br>`1` |
+| `ConstitutionUp` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `-1`<br>`-2`<br>`1` |
+| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | Defines global gameplay modifiers to activate. || `{ . . . }` |
+| `DamageOrHealConditionally` | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). || `1` |
+| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. || `-1`<br>`1`<br>`2` |
+| `DiminishingHealthRegen` | Integer | The number of diminishing health regen stacks applied. || `1`<br>`2`<br>`3` |
+| `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
+| `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `1`<br>`2`<br>`3` |
+| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. || `1`<br>`8` |
+| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. || `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
+| `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. || `1` |
+| `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. || `1` |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
+| `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. || `1`<br>`[1 .10]`<br>`[1 .25]` |
+| `FindExtraItemFromPoolOnBattleEnd` | Enum | Specifies the item pool from which an extra item is granted at the end of combat. || `combat_reward_easy`<br>`pills` |
+| [`ForceAttack`](Abilities_and_Spells.md#object-forceattack) | Integer / Object | If set to 1, forces the target to perform an attack against a random or specified target. || `{ . . . }`<br>`1` |
+| `ForceMoveAway` | Integer | The distance to force the target away from the source. || `1` |
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. || `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. || `1`<br>`2` |
+| `Freeze` | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
+| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. || `{ . . . }` |
+| `HealRandomInjury` | Integer | The number of random injuries healed on the target. || `1` |
+| `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
+| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. || `1` |
+| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. || `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
+| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. || `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
+| [`KnockOutCoin`](Abilities_and_Spells.md#object-knockoutcoin) | Integer / Object | The number of coins knocked out, with an optional probability or an object with stacks and chance. || `{ . . . }`<br>`1`<br>`[1 .5]` |
+| `Lifesteal` | Integer | The amount of lifesteal stacks applied. || `1`<br>`3` |
+| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
+| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `ManaLeeches` | Integer | The number of mana leech stacks applied. || `1`<br>`2` |
+| `MovementUp` | Integer | The amount of movement increase or decrease applied. || `-2`<br>`1`<br>`2` |
+| `NonStackingDivineShield` | Integer | The number of Divine Shield stacks that do not stack with duplicates. || `1` |
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. || `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| `Ostracized` | Integer | The number of stacks of Ostracized applied. || `1`<br>`2`<br>`4` |
+| `OverrideChainKnockbackDamage` | String | A formula string that overrides the damage dealt by chain knockback (e.g., "3+bonus_melee_ability_damage"). || `0`<br>`3+bonus_melee_ability_damage` |
+| `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. || `1`<br>`9999` |
+| `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. || `-1`<br>`-2`<br>`1` |
+| `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. || `1`<br>`2` |
+| `PermanentIntelligence` | Integer | The permanent amount of intelligence added or removed. || `-1`<br>`1`<br>`2` |
+| `PermanentSpeed` | Integer | The permanent amount of speed added or removed. || `-1`<br>`1`<br>`2` |
+| `Petrify` | Array / Integer | The amount of petrify stacks applied, or an [stacks, probability] array. || `1`<br>`[1 .15]`<br>`[1 .1]` |
+| [`PopAndSpawn`](Abilities_and_Spells.md#object-popandspawn) | Enum / Object | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. || `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
+| `Possessed` | Integer | The number of possession stacks applied, or a template with name and tooltips. || `1` |
+| `ProbeCharmed` | Integer | The number of charm stacks applied by a probe. || `1` |
+| `RandomInjury` | Integer | The number of random injuries applied. || `1` |
+| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, or an object defining its properties. || `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| `RandomPermanentStat` | Integer | The amount of a random permanent stat change (positive or negative). || `-1`<br>`-2`<br>`-3` |
+| `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. || `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
+| `RangeUp` | Integer | The number of stacks of bonus attack range applied. || `1` |
+| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. || `1`<br>`2` |
+| `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `1`<br>`6`<br>`99` |
+| [`ReviveNextRound`](Abilities_and_Spells.md#object-revivenextround) | Integer / Object | The number of revives granted, or an object defining revive properties. || `{ . . . }`<br>`2` |
+| `Rot` | Array / Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. || `-999999`<br>`1`<br>`2` |
+| `SetDefaultFace` | Enum | Specifies the default facial expression, such as 'happy', 'sad', or 'insane'. || `happy`<br>`insane`<br>`sad` |
+| `Sleep` | Array / Integer | The amount of sleep stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`3` |
+| `SpawnCoinAnywhere` | Array / Integer | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. || `1`<br>`[1 .5]` |
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
+| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `1`<br>`3` |
+| `SpiderInfested` | Integer | The number of spider infestation stacks applied. || `1`<br>`2`<br>`4` |
+| [`StatusAllCharactersOnSpawn`](House_and_Environment.md#object-statusallcharactersonspawn) | Object | Defines status effects applied to all characters when they spawn into the battlefield. || `{ . . . }` |
+| [`StatusGroup`](Abilities_and_Spells.md#object-statusgroup) | Object | A container grouping multiple status effects to be applied simultaneously. || `{ . . . }` |
+| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
+| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. || `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
+| `Tarred` | Array / Integer | The amount of tarred stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
+| `TempCounterAttack` | Integer | The number of turns TempCounterAttack lasts, ticking down at the start of the unit's turn. || `1` |
+| `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `-1`<br>`1`<br>`2` |
+| `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. || `2`<br>`X` |
+| `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. || `1`<br>`20`<br>`mov` |
+| `TempRangeUp` | Integer | The amount of temporary range increase applied. || `1`<br>`2`<br>`20` |
+| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `10`<br>`4`<br>`X` |
+| `TempSpellDamageUp` | Integer | The amount of temporary spell damage increase applied. || `1` |
+| `TempStrengthUp` | Enum | The number of stacks of temporary Strength Up applied to the unit. || `1`<br>`2`<br>`X` |
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
+| `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
 
@@ -1408,9 +1408,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Alert` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1422,7 +1422,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
 
 </details>
 
@@ -1434,9 +1434,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `faction` | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies` (Enum) |
-| `object` | Array / Enum | Specifies the object or unit to be spawned. | 1 | `CharmedMaggot` (Enum) |
-| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `Infested` (Enum) |
+| `faction` | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
+| `object` | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
 
@@ -1448,8 +1448,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Angry"` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -1461,18 +1461,18 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_Antidote` (Enum) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_ANTIDOTE_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `2` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `103` (Number) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_ANTIDOTE_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_common` (Enum) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1484,8 +1484,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_APPEAL_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_APPEAL_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -1497,8 +1497,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 4 | `[1 .5]` (Array), `1` (Number), `{ ... }` (Object) |
-| `YOffset` | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 4 | `-.18` (String), `.35` (String) |
+| `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 4 | `1` |
+| `YOffset` | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 4 | `-.18`<br>`.25`<br>`.35` |
 
 </details>
 
@@ -1510,7 +1510,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1522,11 +1522,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_ATTRACTION_NAME"` (String) |
-| `name_reference_applier` | String | A localization key for the name displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_REF"` (String) |
-| `tooltip_reference_applier` | String | A localization key for the tooltip description displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_DESC_REF"` (String) |
-| `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ATTRACTION_DESC_STACKLESS"` (String) |
-| `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_ATTRACTION_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `name_reference_applier` | String | A localization key for the name displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
+| `tooltip_reference_applier` | String | A localization key for the tooltip description displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
+| `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 </details>
 
@@ -1538,13 +1538,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `tk_BagOfSeeds` (Enum) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_BAGOFSEEDS_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `182` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_BAGOFSEEDS_NAME"` (String) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `rare` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Druid` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -1556,11 +1556,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. || `5` (Number) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundBasement0` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `33` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -1572,11 +1572,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. || `5` (Number) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundBasement1` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `33` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -1588,11 +1588,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. || `5` (Number) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundBasement2` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `33` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -1604,11 +1604,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. || `5` (Number) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundBasement3` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `33` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -1620,11 +1620,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. || `5` (Number) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundBasement4` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `33` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -1636,8 +1636,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `MediumHouse` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Basement0` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1649,8 +1649,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Basement1` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1662,8 +1662,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade2` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Basement2` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1675,8 +1675,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade3` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Basement3` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1688,8 +1688,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade4` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Basement4` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1701,12 +1701,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -1718,9 +1718,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Belly"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1732,11 +1732,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `Big` (Enum), `"Big"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `GameteSpawn` (Enum) |
-| `follow_character_tag` | Enum | Determines which character this visual effect follows. | 2 | `zaratana` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `position` | Array | The world-space coordinates for this object. || `[4.5 4.5]` (Array) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `follow_character_tag` | Enum | Determines which character this visual effect follows. | 2 | `zaratana` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `position` | Array | The world-space coordinates for this object. || `10.5`<br>`[4.5 4.5]` |
 
 </details>
 
@@ -1748,10 +1748,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1763,10 +1763,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `FoodBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1778,8 +1778,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"BigHolding"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1791,8 +1791,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"BigHoldingCat"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1804,10 +1804,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1819,10 +1819,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `FoodBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1834,12 +1834,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_BIRDFEED_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `191` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_BIRDFEED_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -1851,14 +1851,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. || `-1` (Number) |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ARMOR_BIRDPOOPHAT_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `30` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `head` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ARMOR_BIRDPOOPHAT_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Fecal` (Enum) |
+| `cha` | Enum / Integer | The Charisma stat value or modifier. || `+1`<br>`-1`<br>`-2` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. || `true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -1870,20 +1870,20 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Bishop"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BBXLightning` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CULTISTBISHOP_NAME"` (String), `"ITEM_BISHOP_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CULTISTBISHOP_DESC"` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `2.5` (Number) |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `tk_Bishop` (Enum) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_BISHOP_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `6` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `201` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -1895,10 +1895,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdSmall` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1910,12 +1910,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"BlackHole"` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"OBJECT_BLACKHOLE_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"OBJECT_BLACKHOLE_DESC"` (String) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `NeutronStar` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1927,12 +1927,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. || `{ ... }` (Object) |
-| [`main`](Events_and_Encounters.md#object-main) | Object | An object containing the primary prompt and options for an event. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. || `{ . . . }` |
+| [`main`](Events_and_Encounters.md#object-main) | Object | An object containing the primary prompt and options for an event. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -1944,20 +1944,20 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Button` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `wp_Bomb` (Enum) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_BOMB_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `1` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `11` (Number) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `weapon` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_BOMB_NAME"` (String) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
 
 </details>
 
@@ -1969,7 +1969,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1981,8 +1981,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"2"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1994,7 +1994,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
 
@@ -2006,9 +2006,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2020,7 +2020,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2032,26 +2032,26 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate SkullBash Shred Chomp Succ...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_BUTCHER0" "TEAMNAME_ADJECTIVE_BUTCHER1" "TEAMNAME_ADJECTIVE_BUTCHER2" "TEAMNAME_ADJECTIVE_BUTCHER3" "TEAMNAME_ADJECTIVE_BUTCHER4" "TEAMNAME_ADJECTIVE_BUTCHER5" "TEAMNAME_ADJECTIVE_BUTCHER6" "TEAMNAME_ADJECTIVE_BUTCHER7" "TEAMNAME_ADJECTIVE_BUTCHER8" "TEAMNAME_ADJECTIVE_BUTCHER9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicButcherMelee]` (Array) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ ... }` (Object) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_BUTCHER_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`innate_items`](Cat_Classes.md#object-innate_items) | Object | An object specifying the class's starting equipment, with item slot names as keys. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[con str lck]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_BUTCHER_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_BUTCHER0" "TEAMNAME_NOUN_BUTCHER1" "TEAMNAME_NOUN_BUTCHER2" "TEAMNAME_NOUN_BUTCHER3" "TEAMNAME_NOUN_BUTCHER4" "TEAMNAME_NOUN_BUTCHER5" "TEAMNAME_NOUN_BUTCHER6" "TEAMNAME_NOUN_BUTCHER7" "TEAMNAME_NOUN_BUTCHER8" "TEAMNAME_NOUN_BUTCHER9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[Putrefy NeverFull MainCourse FreshMeat Masochist Glutton Hooked Stompy Barbed GrapplingHook...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[Succ HogRush Chomp BodySlam Vurp Tromp Spoil Grill Sharpen SliceAndDice]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `spell` (Enum) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`innate_items`](Cat_Classes.md#object-innate_items) | Object | An object specifying the class's starting equipment, with item slot names as keys. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -2063,9 +2063,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `formchange` | Enum | Specifies the form to change into. | 6 | `SmallHoldingCat` (Enum), `BigHoldingCat` (Enum) |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 4 | `{ ... }` (Object) |
-| `animation` | Enum | Specifies the animation played when the ability is used. | 2 | `spawnHoldingCat` (Enum) |
+| `formchange` | Enum | Specifies the form to change into. | 6 | `BigHolding`<br>`BigHoldingCat`<br>`SmallHolding` |
+| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 4 | `{ . . . }` |
+| `animation` | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
 
@@ -2077,12 +2077,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -2094,19 +2094,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_Catnip` (Enum) |
-| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `7` (Number) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_SMALLCATNIPBAGGY_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `1` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `22` (Number) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_SMALLCATNIPBAGGY_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_common` (Enum) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `-1`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2118,15 +2118,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_Catnip` (Enum) |
-| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `12` (Number) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_LARGECATNIPBAGGY_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `1` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `3` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_LARGECATNIPBAGGY_NAME"` (String) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_common` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `-1`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -2138,14 +2138,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"CaveBaby"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `CaveBabyMelee` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CAVEBABY_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CAVEBABY_DESC"` (String) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `CavePerson` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2157,13 +2157,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"CaveMan"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `CaveMan3HitCombo` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CAVEMANMAN_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CAVEMANMAN_DESC"` (String) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `CavePerson` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2175,12 +2175,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"SpearCaveMan"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `CaveManThrowSpear` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_SPEARCAVEMAN_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_SPEARCAVEMAN_DESC"` (String) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2192,14 +2192,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"CaveWoman"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `CaveWomanKick` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CAVEMANWOMAN_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CAVEMANWOMAN_DESC"` (String) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `CavePerson` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2211,12 +2211,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"CatCaveWoman"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `CaveWomanCatSlap` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CAVEMANWOMAN2_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CAVEMANWOMAN2_DESC"` (String) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2228,7 +2228,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2240,8 +2240,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `CerberubsJump` (Enum) |
-| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `nubs_fakeblind` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
 
@@ -2253,8 +2253,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `CerberubsJump` (Enum) |
-| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `default` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
 
@@ -2266,7 +2266,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2278,11 +2278,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | `[1 .1]` (Array), `[1 .05]` (Array), `10` (Number), `3` (Number), `{ ... }` (Object) |
-| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `[1 .5]` (Array), `-2` (Number), `-1` (Number), `{ ... }` (Object) |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ ... }` (Object) |
-| `Stealth` | Array / Integer | The number of stealth stacks applied. | 1 | `[1 .1]` (Array), `[1 .5]` (Array), `1` (Number), `2` (Number), `{ ... }` (Object) |
+| `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
+| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| `Stealth` | Array / Integer | The number of stealth stacks applied. | 1 | `1`<br>`2`<br>`[1 .1]` |
 
 </details>
 
@@ -2294,10 +2294,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `MoonHead_Blow` (Enum) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Charging"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2309,8 +2309,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Dip` (Enum) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2322,8 +2322,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Floater` (Enum) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2335,8 +2335,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Pile` (Enum) |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2348,9 +2348,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdSmall` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2362,19 +2362,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_Heal` (Enum) |
-| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `15` (Number) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_ROTISSERIECHICKEN_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `3` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `59` (Number) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_ROTISSERIECHICKEN_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_rare` (Enum) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdLarge` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `-1`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2386,7 +2386,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2398,8 +2398,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `MarshmallowConvert` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_close` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -2411,7 +2411,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `[0 20]` (Array), `[10 20]` (Array) |
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -2423,11 +2423,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2439,8 +2439,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Coin` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2452,8 +2452,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Coin` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2465,8 +2465,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Coin` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2478,8 +2478,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Coin` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2491,18 +2491,18 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[Block Rest Brace Roll SharpenClaws Reach ManaDrain SoothingGlow Ponder Brainstorm...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_COLORLESS0" "TEAMNAME_ADJECTIVE_COLORLESS1" "TEAMNAME_ADJECTIVE_COLORLESS2"]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicMelee BasicMelee BasicShortRanged BasicShortLobbed]` (Array) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[str dex con int spd cha lck]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `move_pool` | Array | An array of movement ability names available to the class. || `[DefaultMove]` (Array) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_COLORLESS0" "TEAMNAME_NOUN_COLORLESS1" "TEAMNAME_NOUN_COLORLESS2"]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[SelfAssured LuckDrain Infested Worms Amped Furious MetalDetector DeathProof Leader Mange...]` (Array) |
-| `tutorial_levelup_active_pool` | Array | An array of active ability names presented during tutorial level-up. || `[Block LickHeal Dump]` (Array) |
-| `tutorial_levelup_active_pool_2` | Array | An array of active ability names presented in a second tutorial level-up. || `[GainThorns ButtScoot Burst HireHitman]` (Array) |
-| `tutorial_levelup_passive_pool` | Array | An array of passive ability names presented during tutorial level-up. || `[Furious PressurePoints LateBloomer ZenkaiBoost]` (Array) |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `move_pool` | Array | An array of movement ability names available to the class. || `[` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| `tutorial_levelup_active_pool` | Array | An array of active ability names presented during tutorial level-up. || `[` |
+| `tutorial_levelup_active_pool_2` | Array | An array of active ability names presented in a second tutorial level-up. || `[` |
+| `tutorial_levelup_passive_pool` | Array | An array of passive ability names presented during tutorial level-up. || `[` |
 
 </details>
 
@@ -2514,8 +2514,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_COMFORT_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_COMFORT_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2527,9 +2527,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. || `[1 .1]` (Array), `[3 .1]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
-| `effects` | Object | Applies a list of status effects or visual effects to targets. | | |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | |
+| `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. || `1`<br>`10`<br>`2` |
+| `effects` | Object | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -2541,9 +2541,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Imprison` | Enum | Specifies the type of unit or object to summon as a prison. | 2 | `Fly` (Enum), `BeefyCharmedLeech` (Enum) |
-| `effects` | Object | Applies a list of status effects or visual effects to targets. | | |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | |
+| `Imprison` | Enum | Specifies the type of unit or object to summon as a prison. | 2 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` |
+| `effects` | Object | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
 
@@ -2555,7 +2555,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2567,7 +2567,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2579,7 +2579,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](Map_Generation_and_Routing.md#object-exit1) | Object | An object defining the properties of the second exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit1`](Map_Generation_and_Routing.md#object-exit1) | Object | An object defining the properties of the second exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2591,16 +2591,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Cultist"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BasicMelee` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CULTISTLACKEY_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CULTISTLACKEY_DESC"` (String) |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -2612,7 +2612,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2624,8 +2624,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `ShamblerDash` (Enum) |
-| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 4 | `blind` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 4 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
 
@@ -2637,16 +2637,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_EatHummingbird` (Enum) |
-| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `20` (Number) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_DEADHUMMINGBIRD_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `2` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `245` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_DEADHUMMINGBIRD_NAME"` (String) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_very_rare` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Feathered` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `-1`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -2658,14 +2658,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 54 | `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 20 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 4 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `LennyShove` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `LennyTrampleMove` (Enum) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""` (String) |
-| `set_house` | Enum | Specifies which house layout to use for this upgrade. | 2 | `House1` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Floor1_Large` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 54 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 20 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| `set_house` | Enum | Specifies which house layout to use for this upgrade. | 2 | `House1`<br>`House2`<br>`House3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -2677,9 +2677,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2691,9 +2691,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2705,8 +2705,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_TOR_BITE_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_TOR_BITE_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2718,8 +2718,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_TOR_BOUNCE_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_TOR_BOUNCE_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2731,8 +2731,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_TOR_FIRE_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_TOR_FIRE_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2744,8 +2744,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_TOR_MOVE_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_TOR_MOVE_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2757,8 +2757,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_TOR_SUMMON_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_TOR_SUMMON_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2770,7 +2770,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2782,8 +2782,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2795,7 +2795,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
 
@@ -2807,10 +2807,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdSmall` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2822,11 +2822,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"Down"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `ButtFart` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `TeleportFlipUp` (Enum) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
 </details>
 
@@ -2838,22 +2838,22 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[ManaBomb SongOfSpring GrantLife SquirrelSquad SummonSquirrel DruidSwap BattleCry SummonSnake SummonTurtle SummonToad...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_DRUID0" "TEAMNAME_ADJECTIVE_DRUID1" "TEAMNAME_ADJECTIVE_DRUID2" "TEAMNAME_ADJECTIVE_DRUID3" "TEAMNAME_ADJECTIVE_DRUID4" "TEAMNAME_ADJECTIVE_DRUID5" "TEAMNAME_ADJECTIVE_DRUID6" "TEAMNAME_ADJECTIVE_DRUID7" "TEAMNAME_ADJECTIVE_DRUID8" "TEAMNAME_ADJECTIVE_DRUID9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicDruidAbility]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_DRUID_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int str]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_DRUID_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_DRUID0" "TEAMNAME_NOUN_DRUID1" "TEAMNAME_NOUN_DRUID2" "TEAMNAME_NOUN_DRUID3" "TEAMNAME_NOUN_DRUID4" "TEAMNAME_NOUN_DRUID5" "TEAMNAME_NOUN_DRUID6" "TEAMNAME_NOUN_DRUID7" "TEAMNAME_NOUN_DRUID8" "TEAMNAME_NOUN_DRUID9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[SuperCrow NaturesGuidance PoisonIvy Pathfinder EmptyVessels WildAnimals BarkSkin SoothingSong Teamwork Bouquet...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[SummonSquirrel SummonToad Encourage Protection SongOfSpring BattleCry SafetyDance TigerForm RhinoForm InspirationalSong]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -2865,7 +2865,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Drunk` (Enum) |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -2877,12 +2877,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"2"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `DestroyerAttack2` (Enum) |
-| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `1.5` (Number) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_DESTROYER2_DESC"` (String) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `.5`<br>`.66`<br>`.75` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2894,12 +2894,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Holy2"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `DestroyerAttack2` (Enum) |
-| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `1.5` (Number) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_DESTROYER2_DESC"` (String) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `.5`<br>`.66`<br>`.75` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2911,8 +2911,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2924,10 +2924,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `exit_ability` | Enum | Determines the ability used when the Dybbuk possession ends. | 2 | `DybbukReturn` (Enum) |
-| `punch_self_ability` | Enum | Determines the ability used for the possessed unit to attack itself. | 2 | `Dybbuk_StopHittingYourself` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_DYBBUKED_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_DYBBUKED_DESC"` (String) |
+| `exit_ability` | Enum | Determines the ability used when the Dybbuk possession ends. | 2 | `DybbukReturn` |
+| `punch_self_ability` | Enum | Determines the ability used for the possessed unit to attack itself. | 2 | `Dybbuk_StopHittingYourself` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2939,11 +2939,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdLarge` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -2955,7 +2955,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Equation | Specifies the amount of damage dealt, can be a number or expression. | 4 | `X` (Equation) |
+| `damage` | Equation | Specifies the amount of damage dealt, can be a number or expression. | 4 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -2967,7 +2967,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `[1 .1]` (Array), `[1 .1*X]` (Array), `3` (Number), `1` (Number), `{ ... }` (Object) |
+| `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2979,7 +2979,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""` (String) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -2991,7 +2991,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 4 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 4 | `{ . . . }` |
 
 </details>
 
@@ -3003,8 +3003,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `DybbukEscape` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `keep_distance_always_move` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -3016,8 +3016,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_EVENTBOUNTY_NAME"` (String) |
-| `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_EVENTBOUNTY_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 </details>
 
@@ -3029,8 +3029,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_EVOLUTION_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_EVOLUTION_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -3042,8 +3042,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pool` | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 26 | `Fighter` (Enum), `Thief` (Enum) |
-| `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 26 | `true` (Boolean) |
+| `pool` | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 26 | `2`<br>`3`<br>`4` |
+| `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 26 | `true` |
 
 </details>
 
@@ -3055,11 +3055,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Expl` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `ToxExplode` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3071,8 +3071,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"3"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3084,11 +3084,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `T3Shoot` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `FloatMove` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3100,24 +3100,24 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[Spin Dash FirePunch IcePunch ThunderPunch FurySwipes SideSlash FighterLeap Uppercut Counter...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_FIGHTER0" "TEAMNAME_ADJECTIVE_FIGHTER1" "TEAMNAME_ADJECTIVE_FIGHTER2" "TEAMNAME_ADJECTIVE_FIGHTER3" "TEAMNAME_ADJECTIVE_FIGHTER4" "TEAMNAME_ADJECTIVE_FIGHTER5" "TEAMNAME_ADJECTIVE_FIGHTER6" "TEAMNAME_ADJECTIVE_FIGHTER7" "TEAMNAME_ADJECTIVE_FIGHTER8" "TEAMNAME_ADJECTIVE_FIGHTER9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicMelee_Fighter]` (Array) |
-| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[FalconPunch Exert Challenge Stoopzerk Grapple ThinkTooHard Zoomzerk Bloodzerk ExhaustingBlow ChaosRampage...]` (Array) |
-| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[ShoulderCheck DumbMuscle ThickSkull MostValuableCat HitMe]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_FIGHTER_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[str con spd]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_FIGHTER_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_FIGHTER0" "TEAMNAME_NOUN_FIGHTER1" "TEAMNAME_NOUN_FIGHTER2" "TEAMNAME_NOUN_FIGHTER3" "TEAMNAME_NOUN_FIGHTER4" "TEAMNAME_NOUN_FIGHTER5" "TEAMNAME_NOUN_FIGHTER6" "TEAMNAME_NOUN_FIGHTER7" "TEAMNAME_NOUN_FIGHTER8" "TEAMNAME_NOUN_FIGHTER9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[BloodLust Avenger Scars FasterWhenHit KillsHeal Vengeful HamsterStyle WeaponMaster ShoulderCheck SkullSmash...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. || `[1 .5]` (Array), `4` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[FurySwipes Dash Spin Confront FirePunch SideSlash Exert Berserk Stick Counter]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[` |
+| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. || `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -3129,10 +3129,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `4` (Number), `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `SpewerLobbed_Lava` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 4 | `1`<br>`10`<br>`2` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3144,11 +3144,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Full` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `SpewerSpit` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `combo` | Array | A list of particle effect names that are spawned together in sequence. || `[FireSmoke FirePlumes FireWaves FireBase FireWhites]` (Array) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `combo` | Array | A list of particle effect names that are spawned together in sequence. || `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
 
 </details>
 
@@ -3160,7 +3160,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `[0 2]` (Array) |
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -3172,7 +3172,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `20` (Number) |
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -3184,12 +3184,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 2 | `7` (Number) |
-| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 2 | `room1` (Enum) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 2 | `RoomBackgroundLargeF1` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 2 | `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 2 | `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. | 2 | `16` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. | 2 | `0`<br>`1`<br>`2` |
+| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 2 | `attic`<br>`room1`<br>`room2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 2 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 2 | `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 2 | `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. | 2 | `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -3201,12 +3201,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 2 | `7` (Number) |
-| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 2 | `room2` (Enum) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 2 | `RoomBackgroundSmallF1` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 2 | `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 2 | `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. | 2 | `16` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. | 2 | `0`<br>`1`<br>`2` |
+| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 2 | `attic`<br>`room1`<br>`room2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 2 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 2 | `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 2 | `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. | 2 | `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -3218,12 +3218,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. || `7` (Number) |
-| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. || `room3` (Enum) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundLargeF2` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `16` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. || `attic`<br>`room1`<br>`room2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -3235,12 +3235,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. || `7` (Number) |
-| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. || `room4` (Enum) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundSmallF2` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `16` (Number) |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. || `attic`<br>`room1`<br>`room2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -3252,9 +3252,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Down"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3266,9 +3266,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Down"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3280,13 +3280,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `spell` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -3298,8 +3298,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3311,9 +3311,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Host` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3325,8 +3325,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3338,16 +3338,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `[0 20]` (Array), `[10 20]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_FLY_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_FLY_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. || `0`<br>`1`<br>`10` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -3359,14 +3359,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allow_duplicates` | Boolean | If true, duplicate items of this type can appear in the same shop inventory. | 4 | `true` (Boolean) |
-| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `10` (Number) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `5` (Number) |
-| `weight` | Number | A multiplier or priority value for random selection or effect magnitude. | 2 | `5` (Number) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `FoodBase` (Enum) |
+| `allow_duplicates` | Boolean | If true, duplicate items of this type can appear in the same shop inventory. | 4 | `true` |
+| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
+| `weight` | Number | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -3378,15 +3378,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_Heal` (Enum) |
-| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `24` (Number) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_CATFOOD_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `1` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `2` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_CATFOOD_NAME"` (String) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_common` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `-1`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -3398,15 +3398,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_Heal` (Enum) |
-| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `12` (Number) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_ASNACK_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `1` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `21` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_ASNACK_NAME"` (String) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_common` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `-1`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -3418,8 +3418,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `CaveBabyFoodMove` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_close_move_if_possible` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -3431,7 +3431,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `free` | Boolean | If true, this option requires no cost to activate. | 2 | `false` (Boolean) |
+| `free` | Boolean | If true, this option requires no cost to activate. | 2 | `false` |
 
 </details>
 
@@ -3443,8 +3443,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `BirthwortTrample` (Enum) |
-| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast_careless` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
 
@@ -3456,8 +3456,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_FREESPELL_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_FREESPELL_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -3469,11 +3469,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"Full"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `KirbySpit` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ ... }` (Object) |
-| [`statuses_on_enter_form`](Characters_and_Bosses.md#object-statuses_on_enter_form) | Object | Statuses or abilities applied when entering this form. | 4 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
+| [`statuses_on_enter_form`](Characters_and_Bosses.md#object-statuses_on_enter_form) | Object | Statuses or abilities applied when entering this form. | 4 | `{ . . . }` |
 
 </details>
 
@@ -3485,7 +3485,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3497,7 +3497,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 2 | `{ ... }` (Object) |
+| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3509,8 +3509,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 2 | `{ ... }` (Object) |
-| [`miniboss_event`](Map_Generation_and_Routing.md#object-miniboss_event) | Object | An object defining the properties of a mini-boss event at this node. | 2 | `{ ... }` (Object) |
+| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 2 | `{ . . . }` |
+| [`miniboss_event`](Map_Generation_and_Routing.md#object-miniboss_event) | Object | An object defining the properties of a mini-boss event at this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3522,12 +3522,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_GLOWINGSEED_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `71` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_GLOWINGSEED_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -3539,12 +3539,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_GOLDENEGG_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `190` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_GOLDENEGG_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -3556,7 +3556,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `3` (Number), `6` (Number), `{ ... }` (Object) |
+| `Poison` | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 4 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -3568,7 +3568,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3580,13 +3580,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Grown` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `HitlerCloneSwipes` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_HITLERCLONE_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `1.5` (Number) |
-| `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 2 | `15` (Number) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
+| `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 2 | `0`<br>`1`<br>`15` |
 
 </details>
 
@@ -3598,7 +3598,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3610,9 +3610,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Guarding"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3624,10 +3624,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"2"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `RatKingDash` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3639,7 +3639,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`hard_initial`](Map_Generation_and_Routing.md#object-hard_initial) | Object | An object defining the properties of the initial hard path node. | 4 | `{ ... }` (Object) |
+| [`hard_initial`](Map_Generation_and_Routing.md#object-hard_initial) | Object | An object defining the properties of the initial hard path node. | 4 | `{ . . . }` |
 
 </details>
 
@@ -3651,9 +3651,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdLarge` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -3665,12 +3665,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `wp_HarpyClaw` (Enum) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_HARPYSCLAW_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `199` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `weapon` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_HARPYSCLAW_NAME"` (String) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `very_rare` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -3682,12 +3682,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 10 | `LennyCatSlap` (Enum), `MoonHandSqueeze` (Enum) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 8 | `"Grabbing"` (Enum), `"Cat"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 8 | `{ ... }` (Object) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Swallowed"` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 10 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 8 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 8 | `{ . . . }` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -3699,10 +3699,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"CatDead"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `LennyCatSlap` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3714,9 +3714,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"rock"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AmoebaRockBash` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
 
@@ -3728,9 +3728,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Headless"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3742,9 +3742,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number | The sprite frame index for the buff icon. || `158` (Number) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_HEALRANDOMINJURY_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_HEALRANDOMINJURY_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the buff icon. || `141`<br>`148`<br>`149` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -3756,8 +3756,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_HEALTH_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_HEALTH_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -3769,7 +3769,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Cracked"` (Enum) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3781,7 +3781,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"ChargingCracked"` (Enum) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3793,7 +3793,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"SwallowedCracked"` (Enum) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3805,10 +3805,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Holding"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3820,9 +3820,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 4 | `X` (Enum), `10` (Number), `1` (Number) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"1"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 4 | `1`<br>`10`<br>`2` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3834,12 +3834,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 2 | `{ ... }` (Object) |
-| `bg_placements_frame` | Enum | Specifies the background frame identifier used for positioning background elements. | 2 | `small` (Enum) |
-| `movieclip_bg` | Enum | Specifies the background movie clip asset for this house. | 2 | `HouseBackground1` (Enum) |
-| `movieclip_fg` | Enum | Specifies the foreground movie clip asset for this house. | 2 | `HouseForeground1` (Enum) |
-| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 2 | `{ ... }` (Object) |
-| `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.8` (String) |
+| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 2 | `{ . . . }` |
+| `bg_placements_frame` | Enum | Specifies the background frame identifier used for positioning background elements. | 2 | `large`<br>`small` |
+| `movieclip_bg` | Enum | Specifies the background movie clip asset for this house. | 2 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
+| `movieclip_fg` | Enum | Specifies the foreground movie clip asset for this house. | 2 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
+| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 2 | `{ . . . }` |
+| `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.6`<br>`.7`<br>`.8` |
 
 </details>
 
@@ -3851,12 +3851,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 2 | `{ ... }` (Object) |
-| `bg_placements_frame` | Enum | Specifies the background frame identifier used for positioning background elements. | 2 | `large` (Enum) |
-| `movieclip_bg` | Enum | Specifies the background movie clip asset for this house. | 2 | `HouseBackground2` (Enum) |
-| `movieclip_fg` | Enum | Specifies the foreground movie clip asset for this house. | 2 | `HouseForeground2` (Enum) |
-| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 2 | `{ ... }` (Object) |
-| `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.7` (String) |
+| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 2 | `{ . . . }` |
+| `bg_placements_frame` | Enum | Specifies the background frame identifier used for positioning background elements. | 2 | `large`<br>`small` |
+| `movieclip_bg` | Enum | Specifies the background movie clip asset for this house. | 2 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
+| `movieclip_fg` | Enum | Specifies the foreground movie clip asset for this house. | 2 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
+| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 2 | `{ . . . }` |
+| `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.6`<br>`.7`<br>`.8` |
 
 </details>
 
@@ -3868,12 +3868,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 2 | `{ ... }` (Object) |
-| `bg_placements_frame` | Enum | Specifies the background frame identifier used for positioning background elements. | 2 | `large` (Enum) |
-| `movieclip_bg` | Enum | Specifies the background movie clip asset for this house. | 2 | `HouseBackground3` (Enum) |
-| `movieclip_fg` | Enum | Specifies the foreground movie clip asset for this house. | 2 | `HouseForeground3` (Enum) |
-| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 2 | `{ ... }` (Object) |
-| `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.6` (String) |
+| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 2 | `{ . . . }` |
+| `bg_placements_frame` | Enum | Specifies the background frame identifier used for positioning background elements. | 2 | `large`<br>`small` |
+| `movieclip_bg` | Enum | Specifies the background movie clip asset for this house. | 2 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
+| `movieclip_fg` | Enum | Specifies the foreground movie clip asset for this house. | 2 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
+| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 2 | `{ . . . }` |
+| `zoomout_catvolume` | String | A multiplier for the volume of cat sounds when the camera is zoomed out. | 2 | `.6`<br>`.7`<br>`.8` |
 
 </details>
 
@@ -3885,9 +3885,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `DH` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `HCSpin` (Enum) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_HUMANCAT2_DESC"` (String) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -3899,10 +3899,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdSmall` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -3914,23 +3914,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[LineShot SpawnMaggotFriend SpawnPooterFriend Marked HailOfNails ScatterShot BrambleShot BearTrap TwinShot CrossShot...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_HUNTER0" "TEAMNAME_ADJECTIVE_HUNTER1" "TEAMNAME_ADJECTIVE_HUNTER2" "TEAMNAME_ADJECTIVE_HUNTER3" "TEAMNAME_ADJECTIVE_HUNTER4" "TEAMNAME_ADJECTIVE_HUNTER5" "TEAMNAME_ADJECTIVE_HUNTER6" "TEAMNAME_ADJECTIVE_HUNTER7" "TEAMNAME_ADJECTIVE_HUNTER8" "TEAMNAME_ADJECTIVE_HUNTER9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicRanged_Hunter]` (Array) |
-| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[Extend LastHit StakeOut Diversion ScoutMe CraftArrow BounceShot Vivisect SlopThePigs SpiderInjector...]` (Array) |
-| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[Hazardous Traps CatchProjectiles Host SleepDarts Survivalist]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_HUNTER_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[dex spd int]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_HUNTER_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_HUNTER0" "TEAMNAME_NOUN_HUNTER1" "TEAMNAME_NOUN_HUNTER2" "TEAMNAME_NOUN_HUNTER3" "TEAMNAME_NOUN_HUNTER4" "TEAMNAME_NOUN_HUNTER5" "TEAMNAME_NOUN_HUNTER6" "TEAMNAME_NOUN_HUNTER7" "TEAMNAME_NOUN_HUNTER8" "TEAMNAME_NOUN_HUNTER9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[TakeAim HuntersBoon BroodMother TaintedMother Quiver SplitShot Hazardous ThornArrows Traps CatchProjectiles...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[SpawnPooterFriend BrambleShot SpawnBaitTrap BearTrap TerrainWalk NeedleShot ScatterShot Marked FleaShot HeavyShot]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[` |
+| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -3942,7 +3942,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `[1 .1]` (Array), `[1 .25]` (Array), `-1` (Number), `3` (Number), `{ ... }` (Object) |
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 
 </details>
 
@@ -3954,7 +3954,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3966,11 +3966,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `T3Shoot` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `FloatMove` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3982,10 +3982,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Insane"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3997,10 +3997,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Insane"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -4012,10 +4012,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `15` (Number), `5` (Number) |
-| `pool` | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 18 | `[TutorialStick]` (Array), `[WaterBottle_Half]` (Array), `treasure_easy` (Enum), `rare` (Enum) |
-| `mandatory` | Boolean | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 14 | `true` (Boolean) |
-| `weight` | Number | A multiplier or priority value for random selection or effect magnitude. | 2 | `1` (Number) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `{ . . . }` |
+| `pool` | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 18 | `2`<br>`3`<br>`4` |
+| `mandatory` | Boolean | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 14 | `1`<br>`3`<br>`6` |
+| `weight` | Number | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -4027,10 +4027,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dialog` | String | Specifies a dialog entry or dialog tree to display. | 16 | `NPC_JACK_JACK_GAINALTFURNITURE_4` (String), `NPC_JACK_JACK_GAINALTFURNITURE_2` (String) |
-| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 8 | `closeup` (Enum), `blocking` (Enum) |
-| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 2 | `1` (Number) |
-| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 2 | `1` (Number) |
+| `dialog` | String | Specifies a dialog entry or dialog tree to display. | 16 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 8 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 2 | `1` |
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 2 | `1` |
 
 </details>
 
@@ -4042,19 +4042,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[SmartMetronome RNGCannon Bump PowerUp]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_JESTER0" "TEAMNAME_ADJECTIVE_JESTER1" "TEAMNAME_ADJECTIVE_JESTER2" "TEAMNAME_ADJECTIVE_JESTER3" "TEAMNAME_ADJECTIVE_JESTER4" "TEAMNAME_ADJECTIVE_JESTER5" "TEAMNAME_ADJECTIVE_JESTER6" "TEAMNAME_ADJECTIVE_JESTER7" "TEAMNAME_ADJECTIVE_JESTER8" "TEAMNAME_ADJECTIVE_JESTER9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicMelee_Fighter BasicRanged_Hunter BasicMagicShortRanged BasicTankMelee BasicStraightShot_Thief BasicMedicMelee BasicButcherMelee BasicPsychicPull BasicNecroRanged]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_JESTER_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[str dex con int spd cha lck]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_JESTER_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_JESTER0" "TEAMNAME_NOUN_JESTER1" "TEAMNAME_NOUN_JESTER2" "TEAMNAME_NOUN_JESTER3" "TEAMNAME_NOUN_JESTER4" "TEAMNAME_NOUN_JESTER5" "TEAMNAME_NOUN_JESTER6" "TEAMNAME_NOUN_JESTER7" "TEAMNAME_NOUN_JESTER8" "TEAMNAME_NOUN_JESTER9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[SuperLuck Goofball]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -4066,12 +4066,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -4083,8 +4083,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4096,9 +4096,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Host` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4110,8 +4110,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4123,8 +4123,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Joystick"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4136,7 +4136,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](Map_Generation_and_Routing.md#object-exit1) | Object | An object defining the properties of the second exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit1`](Map_Generation_and_Routing.md#object-exit1) | Object | An object defining the properties of the second exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4148,7 +4148,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4160,15 +4160,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `built_in_collision` | Array | A list of collision geometry definitions for the room. || `[[ 6 6 6 6 6 6 6 6 6...]` (Array) |
-| `extra_bound_planes` | Array | A list of additional boundary planes for the room. || `[{ p [ 0 0 ] n [ 1 -2...]` (Array) |
-| `height` | Integer | The height in tiles the target is launched into the air. || `9` (Number) |
-| `id` | Enum | The unique numerical identifier for this injury or status effect. || `Attic` (Enum) |
-| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. || `attic` (Enum) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RoomBackgroundAttic` (Enum) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
-| `width` | Number | The number of tiles the room spans horizontally. || `35` (Number) |
+| `built_in_collision` | Array | A list of collision geometry definitions for the room. || `[` |
+| `extra_bound_planes` | Array | A list of additional boundary planes for the room. || `[` |
+| `height` | Integer | The height in tiles the target is launched into the air. || `0`<br>`1`<br>`2` |
+| `id` | Enum | The unique numerical identifier for this injury or status effect. || `-1`<br>`0`<br>`1` |
+| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. || `attic`<br>`room1`<br>`room2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
+| `width` | Number | The number of tiles the room spans horizontally. || `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -4180,8 +4180,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -4193,8 +4193,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `MediumHouse` (Enum) |
-| `set_house` | Enum | Specifies which house layout to use for this upgrade. | 2 | `House3` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `set_house` | Enum | Specifies which house layout to use for this upgrade. | 2 | `House1`<br>`House2`<br>`House3` |
 
 </details>
 
@@ -4206,8 +4206,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `LargeHouse` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Floor2_Large` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -4219,8 +4219,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `LargeHouse` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Floor2_Small` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -4232,13 +4232,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `lobbed_attack` (Enum) |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4250,8 +4250,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `GKLeap` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `towards_aggro` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4263,11 +4263,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `leave` (Enum) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4279,7 +4279,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `10` (Number) |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
 
 </details>
 
@@ -4291,11 +4291,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Lift"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -4307,10 +4307,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ambient` | String | A multiplier for the ambient light intensity. | 10 | `.6` (String), `.8` (String) |
-| `smallray_clip` | Enum | Specifies the visual style or clip for small light rays. | 2 | `labligtht` (Enum), `Bunkerlight` (Enum) |
-| `bigrays` | Array | A two-value array defining the intensity or count of large light rays. || `[0 0]` (Array), `[1 1]` (Array) |
-| `smallrays` | Array | A two-value array defining the intensity or count of small light rays. || `[0 0]` (Array), `[4 8]` (Array) |
+| `ambient` | String | A multiplier for the ambient light intensity. | 10 | `.4`<br>`.5`<br>`.6` |
+| `smallray_clip` | Enum | Specifies the visual style or clip for small light rays. | 2 | `Bunkerlight`<br>`labligtht` |
+| `bigrays` | Array | A two-value array defining the intensity or count of large light rays. || `[0, 0]`<br>`[1, 1]` |
+| `smallrays` | Array | A two-value array defining the intensity or count of small light rays. || `[0, 0]`<br>`[1, 2]`<br>`[2, 6]` |
 
 </details>
 
@@ -4322,8 +4322,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Lit` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4335,12 +4335,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ARMOR_LOSTSOUL_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `180` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `neck` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ARMOR_LOSTSOUL_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `very_rare` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -4352,23 +4352,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[Surf Bolt Fireball FreezeRay MagicMissile Blast WallOfFire HyperBeam MeteorStorm MegaBlast...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_MAGE0" "TEAMNAME_ADJECTIVE_MAGE1" "TEAMNAME_ADJECTIVE_MAGE2" "TEAMNAME_ADJECTIVE_MAGE3" "TEAMNAME_ADJECTIVE_MAGE4" "TEAMNAME_ADJECTIVE_MAGE5" "TEAMNAME_ADJECTIVE_MAGE6" "TEAMNAME_ADJECTIVE_MAGE7" "TEAMNAME_ADJECTIVE_MAGE8" "TEAMNAME_ADJECTIVE_MAGE9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicMagicShortRanged]` (Array) |
-| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[DealWithTheDevil ForbiddenFlame ForbiddenFlood ForbiddenFulmination Corrupt FireSurge IceSurge LightningSurge Creshendo Divide...]` (Array) |
-| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[ElementalAttunement LatentEnergy MagicGuru One Two Four Five]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_MAGE_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[int cha dex]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_MAGE_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_MAGE0" "TEAMNAME_NOUN_MAGE1" "TEAMNAME_NOUN_MAGE2" "TEAMNAME_NOUN_MAGE3" "TEAMNAME_NOUN_MAGE4" "TEAMNAME_NOUN_MAGE5" "TEAMNAME_NOUN_MAGE6" "TEAMNAME_NOUN_MAGE7" "TEAMNAME_NOUN_MAGE8"]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[Micronaps HolyMantel Shrapnel BurningPaws LightningPaws IcePaws PawMissile Overload ChargeUp Recharged...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[MagicMissile Fireball FreezeRay Warp Surf WindSlash Absorb Bolt Inspire MegaBlast]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[` |
+| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -4380,12 +4380,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_MAGICSEED_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `113` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_MAGICSEED_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -4397,8 +4397,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 4 | `{ ... }` (Object) |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 4 | `{ . . . }` |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
 
@@ -4410,14 +4410,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`mw_battle1`](Map_Generation_and_Routing.md#object-mw_battle1) | Object | An object defining the properties of the first MeatWorld battle node. | 2 | `{ ... }` (Object) |
-| [`mw_boss`](Map_Generation_and_Routing.md#object-mw_boss) | Object | An object defining the properties of the MeatWorld boss node. | 2 | `{ ... }` (Object) |
-| [`mw_earlyhome`](Map_Generation_and_Routing.md#object-mw_earlyhome) | Object | An object defining the properties of the MeatWorld early home node. | 2 | `{ ... }` (Object) |
-| [`mw_event1`](Map_Generation_and_Routing.md#object-mw_event1) | Object | An object defining the properties of the first MeatWorld event node. | 2 | `{ ... }` (Object) |
-| [`mw_hard1`](Map_Generation_and_Routing.md#object-mw_hard1) | Object | An object defining the properties of the first MeatWorld hard path node. | 2 | `{ ... }` (Object) |
-| [`mw_home`](Map_Generation_and_Routing.md#object-mw_home) | Object | An object defining the properties of the MeatWorld home node. | 2 | `{ ... }` (Object) |
-| [`mw_quest_event`](Map_Generation_and_Routing.md#object-mw_quest_event) | Object | An object defining the properties of the MeatWorld quest event node. | 2 | `{ ... }` (Object) |
-| [`mw_treasure`](Map_Generation_and_Routing.md#object-mw_treasure) | Object | An object defining the properties of the MeatWorld treasure node. | 2 | `{ ... }` (Object) |
+| [`mw_battle1`](Map_Generation_and_Routing.md#object-mw_battle1) | Object | An object defining the properties of the first MeatWorld battle node. | 2 | `{ . . . }` |
+| [`mw_boss`](Map_Generation_and_Routing.md#object-mw_boss) | Object | An object defining the properties of the MeatWorld boss node. | 2 | `{ . . . }` |
+| [`mw_earlyhome`](Map_Generation_and_Routing.md#object-mw_earlyhome) | Object | An object defining the properties of the MeatWorld early home node. | 2 | `{ . . . }` |
+| [`mw_event1`](Map_Generation_and_Routing.md#object-mw_event1) | Object | An object defining the properties of the first MeatWorld event node. | 2 | `{ . . . }` |
+| [`mw_hard1`](Map_Generation_and_Routing.md#object-mw_hard1) | Object | An object defining the properties of the first MeatWorld hard path node. | 2 | `{ . . . }` |
+| [`mw_home`](Map_Generation_and_Routing.md#object-mw_home) | Object | An object defining the properties of the MeatWorld home node. | 2 | `{ . . . }` |
+| [`mw_quest_event`](Map_Generation_and_Routing.md#object-mw_quest_event) | Object | An object defining the properties of the MeatWorld quest event node. | 2 | `{ . . . }` |
+| [`mw_treasure`](Map_Generation_and_Routing.md#object-mw_treasure) | Object | An object defining the properties of the MeatWorld treasure node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4429,8 +4429,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -4442,10 +4442,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -4457,10 +4457,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -4472,19 +4472,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[RangedHeal MeleeHeal Malaise OpenWounds Prayer Convert Cleanse HereticMark Zealot Haste...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_MEDIC0" "TEAMNAME_ADJECTIVE_MEDIC1" "TEAMNAME_ADJECTIVE_MEDIC2" "TEAMNAME_ADJECTIVE_MEDIC3" "TEAMNAME_ADJECTIVE_MEDIC4" "TEAMNAME_ADJECTIVE_MEDIC5" "TEAMNAME_ADJECTIVE_MEDIC6" "TEAMNAME_ADJECTIVE_MEDIC7" "TEAMNAME_ADJECTIVE_MEDIC8" "TEAMNAME_ADJECTIVE_MEDIC9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicMedicMelee]` (Array) |
-| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[OpenWounds WitchHunt Adoubement DivineProtection ChosenWarrior SwiftSanctify DivineGift HolyWeapon GetDown Rebuke...]` (Array) |
-| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[RangedMedic ThouShaltNotKill BlessingOfHolyFire BlessingOfSpirit]` (Array) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_MEDIC0" "TEAMNAME_NOUN_MEDIC1" "TEAMNAME_NOUN_MEDIC2" "TEAMNAME_NOUN_MEDIC3" "TEAMNAME_NOUN_MEDIC4" "TEAMNAME_NOUN_MEDIC5" "TEAMNAME_NOUN_MEDIC6" "TEAMNAME_NOUN_MEDIC7" "TEAMNAME_NOUN_MEDIC8" "TEAMNAME_NOUN_MEDIC9"]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[HealingAura NaturalHealer Eternal Blessed EvilPatron AngelicInspiration TopOff SharingIsCaring Caretaker MoraleBoost...]` (Array) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[RangedHeal Rally Prayer FriendOrFoe HolyWeapon Zealot OpenWounds RallyCharge HallowedGround Cleanse]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[` |
+| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -4496,8 +4496,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `Default` (Enum) |
-| `set_house` | Enum | Specifies which house layout to use for this upgrade. | 2 | `House2` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `set_house` | Enum | Specifies which house layout to use for this upgrade. | 2 | `House1`<br>`House2`<br>`House3` |
 
 </details>
 
@@ -4509,8 +4509,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `MediumHouse` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Floor1_Small` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -4522,23 +4522,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[Propell Hadouken Cartwheel StoneFists Transcend HipToss Bruise Slapback Finisher Reverberate...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_MONK0" "TEAMNAME_ADJECTIVE_MONK1" "TEAMNAME_ADJECTIVE_MONK2" "TEAMNAME_ADJECTIVE_MONK3" "TEAMNAME_ADJECTIVE_MONK4" "TEAMNAME_ADJECTIVE_MONK5" "TEAMNAME_ADJECTIVE_MONK6" "TEAMNAME_ADJECTIVE_MONK7" "TEAMNAME_ADJECTIVE_MONK8" "TEAMNAME_ADJECTIVE_MONK9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicMonkMelee]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_MONK_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`innate_items`](Cat_Classes.md#object-innate_items) | Object | An object specifying the class's starting equipment, with item slot names as keys. || `{ ... }` (Object) |
-| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[int str lck]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_MONK_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_MONK0" "TEAMNAME_NOUN_MONK1" "TEAMNAME_NOUN_MONK2" "TEAMNAME_NOUN_MONK3" "TEAMNAME_NOUN_MONK4" "TEAMNAME_NOUN_MONK5" "TEAMNAME_NOUN_MONK6" "TEAMNAME_NOUN_MONK7" "TEAMNAME_NOUN_MONK8" "TEAMNAME_NOUN_MONK9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[SafeSwitching Mixup Turnabout MonkeyStyle BrickSkin JaggedEdges MindBreaker CobraStyle Tenderize LongArms...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[Propell Pogo ComboThrow ComboPull Bruise Anneal Hadouken ReallyFastRun Finisher UnbridledHits]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`innate_items`](Cat_Classes.md#object-innate_items) | Object | An object specifying the class's starting equipment, with item slot names as keys. || `{ . . . }` |
+| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -4550,7 +4550,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4562,7 +4562,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4574,7 +4574,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Cat"` (Enum) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4586,9 +4586,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"MouthFull"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4600,8 +4600,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 8 | `ExtraMove` (Enum), `MoveTwoCantrip` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 8 | `stay_far` (Enum), `keep_distance_always_move` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 8 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 8 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4613,8 +4613,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `move` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `stay_near_map_center` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4626,9 +4626,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 8 | `move` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 8 | `stay_close_avoid_allies` (Enum), `stay_close_always_move` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 6 | `Spin_Enemy` (Enum), `attack` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 8 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 8 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 6 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
 
 </details>
 
@@ -4640,9 +4640,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `move` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `ZaratanaVSBombardment` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_far` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4654,9 +4654,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `move` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `attack` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `keep_distance` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4668,9 +4668,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `StegoGrassStomp` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `StegoEatGrass` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `minimum_move` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4682,9 +4682,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `move` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `attack` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `keep_distance` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4696,9 +4696,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `PyrophinaVSRun` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `PyrophinaVSSpinThrow` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_close` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4710,9 +4710,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `move` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 4 | `PyrophinaVSCatThrow` (Enum), `PyrophinaSoloCatThrow` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `util_minmove` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 4 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4724,9 +4724,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AlienBeastMoveOne` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `keep_distance` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4738,8 +4738,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `move` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `terminator_keep_distance_always_move` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4751,9 +4751,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `G3RunToHead` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `G3GrabHead` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `minimum_move` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4765,9 +4765,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `move` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `attack` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_close` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4779,16 +4779,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Mutant"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BBMutantSwipe` (Enum) |
-| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `.5` (String) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CULTISTMUTANT_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CULTISTMUTANT_DESC"` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdMed` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `.5`<br>`.66`<br>`.75` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -4800,8 +4800,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `NCGravecrawl` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_far` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -4813,21 +4813,21 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[MaggotArmy Reanimate Rebirth Pestilence Weakness SoulSuck EvilIncarnate SoulLink WeAreOne BloodRain...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_NECROMANCER0" "TEAMNAME_ADJECTIVE_NECROMANCER1" "TEAMNAME_ADJECTIVE_NECROMANCER2" "TEAMNAME_ADJECTIVE_NECROMANCER3" "TEAMNAME_ADJECTIVE_NECROMANCER4" "TEAMNAME_ADJECTIVE_NECROMANCER5" "TEAMNAME_ADJECTIVE_NECROMANCER6" "TEAMNAME_ADJECTIVE_NECROMANCER7" "TEAMNAME_ADJECTIVE_NECROMANCER8" "TEAMNAME_ADJECTIVE_NECROMANCER9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicNecroRanged]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_NECROMANCER_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[dex cha con]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_NECROMANCER_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_NECROMANCER0" "TEAMNAME_NOUN_NECROMANCER1" "TEAMNAME_NOUN_NECROMANCER2" "TEAMNAME_NOUN_NECROMANCER3" "TEAMNAME_NOUN_NECROMANCER4" "TEAMNAME_NOUN_NECROMANCER5" "TEAMNAME_NOUN_NECROMANCER6" "TEAMNAME_NOUN_NECROMANCER7" "TEAMNAME_NOUN_NECROMANCER8" "TEAMNAME_NOUN_NECROMANCER9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[Vampirism OneWithNothing BedBugs WormLord InfiniteRebirth SacrificialLamb DeathIncarnate OffloadPain CambionConception Leechmother...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[SoulLink Reanimate Rebirth CarrionShot Pestilence BloodGeyser MaggotArmy Gravecrawl FullMoon CoffinFlop]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -4839,11 +4839,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -4855,7 +4855,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"0"` (Enum) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4867,8 +4867,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `ManglerJab` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
 
@@ -4880,9 +4880,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `formchange` | Enum | Specifies the form to change into. | 6 | `SmallHolding` (Enum), `BigHolding` (Enum) |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 4 | `{ ... }` (Object) |
-| `animation` | Enum | Specifies the animation played when the ability is used. | 2 | `spawnHolding` (Enum) |
+| `formchange` | Enum | Specifies the form to change into. | 6 | `BigHolding`<br>`BigHoldingCat`<br>`SmallHolding` |
+| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 4 | `{ . . . }` |
+| `animation` | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
 
@@ -4894,11 +4894,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 20 | `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `TinaBasicBigMeleeA` (Enum), `SpewerLobbed_Normal` (Enum) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Up"` (Enum) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 20 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -4910,10 +4910,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Full` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `SpewerSpit` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4925,8 +4925,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 4 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4938,7 +4938,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation` | Enum | Specifies the animation played when the ability is used. | 2 | `spawn` (Enum) |
+| `animation` | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
 
@@ -4950,25 +4950,25 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Nuke` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ARMOR_NUKE_DESC"` (String) |
-| `failable` | Boolean | If true, the event or action has a chance to fail. || `true` (Boolean) |
-| `frame` | Integer | The sprite frame index to display. || `77` (Number) |
-| `hint_destination` | Enum | Specifies the map destination hinted by this item or event. || `endoftime` (Enum) |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. || `true` (Boolean) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `neck` (Enum) |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. || `true` (Boolean) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ARMOR_NUKE_NAME"` (String) |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. || `true` (Boolean) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `quest` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Radioactive` (Enum) |
-| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. || `[1 .5]` (Array), `10` (Number) |
-| `spd` | Enum / Integer | The Speed stat value or modifier. || `-2` (Number) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `failable` | Boolean | If true, the event or action has a chance to fail. || `true` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `hint_destination` | Enum | Specifies the map destination hinted by this item or event. || `boneyard`<br>`caves`<br>`core` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. || `true` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. || `true` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. || `false`<br>`true` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. || `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `spd` | Enum / Integer | The Speed stat value or modifier. || `-1`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -4980,8 +4980,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4993,7 +4993,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Off` (Enum) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -5005,8 +5005,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 6 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 6 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5018,8 +5018,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5031,8 +5031,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5044,8 +5044,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"1"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5057,10 +5057,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Open` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `GSOpenAttack` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5072,8 +5072,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `OpenCat` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5085,7 +5085,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5097,14 +5097,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | The Constitution stat value or modifier. || `-1` (Number) |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_PAROUSWORM_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `271` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_PAROUSWORM_NAME"` (String) |
-| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. || `true` (Boolean) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
+| `con` | Enum / Integer | The Constitution stat value or modifier. || `-1`<br>`-2`<br>`-3` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. || `true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. || `true` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
 
 </details>
 
@@ -5116,10 +5116,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `force_end` | Number | The final force applied to particles over time, as a scalar or 3D vector. | 6 | `200` (Number), `500` (Number) |
-| `force_start` | Number | The initial force applied to particles, as a scalar or 3D vector. | 6 | `0` (Number) |
-| `force` | Number | The force vector applied to particles. | 1 | `100` (Number) |
-| `towards` | Array | A 3D vector point that the force pulls particles towards. || `[5 0 5]` (Array), `[0 .5 0]` (Array) |
+| `force_end` | Number | The final force applied to particles over time, as a scalar or 3D vector. | 6 | `200`<br>`500`<br>`[0 -1 0]` |
+| `force_start` | Number | The initial force applied to particles, as a scalar or 3D vector. | 6 | `0`<br>`[0 -10 0]`<br>`[0 -20 0]` |
+| `force` | Number | The force vector applied to particles. | 1 | `0`<br>`1`<br>`1.5` |
+| `towards` | Array | A 3D vector point that the force pulls particles towards. || `[0 .5 0]`<br>`[5 0 5]` |
 
 </details>
 
@@ -5131,11 +5131,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dampening` | Number / String | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 74 | `1` (Number), `0` (Number), `.1` (String), `.75` (String) |
-| `friction` | Number / String | A scalar or 3D vector multiplier for velocity reduction applied over time. | 70 | `5` (Number), `2` (Number), `.1` (String), `.2` (String) |
-| `plane` | Enum | Specifies the direction the particle bounces off. Valid values are "right" and "back". | 32 | `right` (Enum), `back` (Enum) |
-| `position` | Number | The world-space coordinates for this object. | 32 | `10.5` (Number) |
-| `rotation_dampening` | Number | The amount of rotational velocity retained after bouncing, where 1 is full retention. | 1 | `1` (Number) |
+| `dampening` | Number / String | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 74 | `.1`<br>`.25`<br>`.5` |
+| `friction` | Number / String | A scalar or 3D vector multiplier for velocity reduction applied over time. | 70 | `.1`<br>`.2`<br>`.5` |
+| `plane` | Enum | Specifies the direction the particle bounces off. Valid values are "right" and "back". | 32 | `back`<br>`right` |
+| `position` | Number | The world-space coordinates for this object. | 32 | `10.5`<br>`[4.5 4.5]` |
+| `rotation_dampening` | Number | The amount of rotational velocity retained after bouncing, where 1 is full retention. | 1 | `1` |
 
 </details>
 
@@ -5147,9 +5147,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `character_sphere_offset` | Number | The vertical offset of the character collision sphere from the character's origin. | 1 | `0` (Number) |
-| `inherit_velocity` | String | The fraction of the character's velocity inherited by the particle upon collision. | 1 | `.5` (String) |
-| `pushforce` | Number | The magnitude of force applied to push the character away from the particle on collision. | 1 | `2` (Number) |
+| `character_sphere_offset` | Number | The vertical offset of the character collision sphere from the character's origin. | 1 | `0` |
+| `inherit_velocity` | String | The fraction of the character's velocity inherited by the particle upon collision. | 1 | `.5` |
+| `pushforce` | Number | The magnitude of force applied to push the character away from the particle on collision. | 1 | `2` |
 
 </details>
 
@@ -5161,8 +5161,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 27 | `3` (Number), `1` (Number), `.1` (String), `.5` (String) |
-| `id` | Enum | The unique numerical identifier for this injury or status effect. | 27 | `Wind` (Enum) |
+| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 27 | `.1`<br>`.25`<br>`.35` |
+| `id` | Enum | The unique numerical identifier for this injury or status effect. | 27 | `-1`<br>`0`<br>`1` |
 
 </details>
 
@@ -5174,9 +5174,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dampening` | Number / String | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 6 | `1` (Number), `.5` (String) |
-| `friction` | Number | A scalar or 3D vector multiplier for velocity reduction applied over time. | 6 | `1` (Number), `0` (Number) |
-| `end_on_collision` | Boolean | If true, the particle is destroyed when it collides with a line. | 2 | `true` (Boolean) |
+| `dampening` | Number / String | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 6 | `.1`<br>`.25`<br>`.5` |
+| `friction` | Number | A scalar or 3D vector multiplier for velocity reduction applied over time. | 6 | `.1`<br>`.2`<br>`.5` |
+| `end_on_collision` | Boolean | If true, the particle is destroyed when it collides with a line. | 2 | `true` |
 
 </details>
 
@@ -5188,8 +5188,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `begin` | Array | The initial force applied to the particle as a 3D vector, where any axis can be a random range [min, max]. || `[0 -20 0]` (Array), `[0 -10 0]` (Array) |
-| `end` | Enum | Defines the final animation state or offset vector for a particle's lifespan. || `[0 -450 0]` (Array), `[0 [ 40 120 ] 0]` (Array) |
+| `begin` | Array | The initial force applied to the particle as a 3D vector, where any axis can be a random range [min, max]. || `[0, -10, 0]`<br>`[0, -20, 0]`<br>`[0, [-20, 20], 0]` |
+| `end` | Enum | Defines the final animation state or offset vector for a particle's lifespan. || `[-20, 0, 20]`<br>`[0, -450, 0]`<br>`[0, [200, 900], 0]` |
 
 </details>
 
@@ -5201,9 +5201,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `force` | Number | The force vector applied to particles. | 19 | `8` (Number), `5` (Number) |
-| `axis` | Array | The 3D vector defining the central axis around which the tornado force rotates. || `[0 -0.5 0]` (Array), `[0 1 0]` (Array) |
-| `point` | Array | The 3D position of the tornado's center point relative to the particle system. || `[1 1 1]` (Array), `[0 0 0]` (Array) |
+| `force` | Number | The force vector applied to particles. | 19 | `0`<br>`1`<br>`1.5` |
+| `axis` | Array | The 3D vector defining the central axis around which the tornado force rotates. || `[-1 0 0]`<br>`[0 -0.5 0]`<br>`[0 -1 0]` |
+| `point` | Array | The 3D position of the tornado's center point relative to the particle system. || `[0 -8 0]`<br>`[0 .8 0]`<br>`[0 0 0]` |
 
 </details>
 
@@ -5215,14 +5215,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ARMOR_PEACESYMBOL_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `91` (Number) |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. || `{ ... }` (Object) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `neck` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ARMOR_PEACESYMBOL_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `[Hippie Twine]` (Array) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. || `{ . . . }` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -5234,13 +5234,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ARMOR_PEACESYMBOLFACEPAINT_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `194` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ARMOR_PEACESYMBOLFACEPAINT_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `rare` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Hippie` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -5252,7 +5252,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `Charmed` (Enum) |
+| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
 
@@ -5264,10 +5264,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdMed` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -5279,10 +5279,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `object` | Array / Enum | Specifies the object or unit to be spawned. | 4 | `BoyShade` (Enum), `PlayerCat_ClotClone` (Enum) |
-| `clone_items` | Boolean | If true, the spawned unit clones the items of the original unit. | 2 | `false` (Boolean) |
-| `clone_referenced_catdata` | Boolean | If true, the spawned unit is a clone of the referenced cat data, including its stats and equipment. | 2 | `true` (Boolean) |
-| `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 2 | `false` (Boolean) |
+| `object` | Array / Enum | Specifies the object or unit to be spawned. | 4 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| `clone_items` | Boolean | If true, the spawned unit clones the items of the original unit. | 2 | `false`<br>`true` |
+| `clone_referenced_catdata` | Boolean | If true, the spawned unit is a clone of the referenced cat data, including its stats and equipment. | 2 | `true` |
+| `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 2 | `false`<br>`true` |
 
 </details>
 
@@ -5294,9 +5294,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Possessing"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5308,10 +5308,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `GA_Telekinesis_Big` (Enum) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `primed` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5323,8 +5323,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 4 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5336,22 +5336,22 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[Telekinesis Suggestion MindControl MegaGrav PsyFlutter MagnetPull MindBlast PsychicChoke SkyShatter Supernova...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_PSYCHIC0" "TEAMNAME_ADJECTIVE_PSYCHIC1" "TEAMNAME_ADJECTIVE_PSYCHIC2" "TEAMNAME_ADJECTIVE_PSYCHIC3" "TEAMNAME_ADJECTIVE_PSYCHIC4" "TEAMNAME_ADJECTIVE_PSYCHIC5" "TEAMNAME_ADJECTIVE_PSYCHIC6" "TEAMNAME_ADJECTIVE_PSYCHIC7" "TEAMNAME_ADJECTIVE_PSYCHIC8" "TEAMNAME_ADJECTIVE_PSYCHIC9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicPsychicPull]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_PSYCHIC_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[int cha spd]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_PSYCHIC_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_PSYCHIC0" "TEAMNAME_NOUN_PSYCHIC1" "TEAMNAME_NOUN_PSYCHIC2" "TEAMNAME_NOUN_PSYCHIC3" "TEAMNAME_NOUN_PSYCHIC4" "TEAMNAME_NOUN_PSYCHIC5" "TEAMNAME_NOUN_PSYCHIC6" "TEAMNAME_NOUN_PSYCHIC7" "TEAMNAME_NOUN_PSYCHIC8" "TEAMNAME_NOUN_PSYCHIC9"]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[Flying SoulShatter Glow Blink FullPower RealityShatter MentalStorm Wither Flourish PsySmack...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[Ping Telekinesis Suggestion SkyShatter MindMeld Glare MindCrack FlashForward CumulativeBlast IncreaseGravity]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -5363,13 +5363,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `2` (Number) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `1` (Number) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -5381,13 +5381,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `3` (Number) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `1` (Number) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -5399,13 +5399,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `4` (Number) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `1` (Number) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -5417,13 +5417,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `5` (Number) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `1` (Number) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -5435,13 +5435,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `6` (Number) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `1` (Number) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -5453,13 +5453,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `7` (Number) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `ENEMY_TERMINATOR3_HITLERHEAD_DESC` (String) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `1` (Number) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -5471,13 +5471,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 16 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 12 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 12 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 8 | `"Rage"` (Enum) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"Rage"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `ChubsSpinRage` (Enum) |
-| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `2` (Number) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 16 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 12 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 12 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 8 | `""`<br>`"Angry"`<br>`"Belly"` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 2 | `.5`<br>`.66`<br>`.75` |
 
 </details>
 
@@ -5489,36 +5489,36 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `adventure_weather` | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain` (Enum) |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_rain.ogg` (String) |
-| `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 | `5` (Number) |
-| `skybox_frame` | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain` (Enum) |
-| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). || `.5` (String) |
-| `chain` | Boolean | Specifies the ability to chain into and execute. || `splash` (Enum) |
-| `combo` | Array | A list of particle effect names that are spawned together in sequence. || `[RainB RainM RainF]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"WEATHER_RAIN_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. || `{ ... }` (Object) |
-| `emit_amount` | Number | The number of particles emitted per burst. || `1` (Number) |
-| `emit_box` | Array | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. || `[0 10 10 10 0 10]` (Array) |
-| `emit_direction` | Array | The initial direction vector for emitted particles. || `[0 -1 0]` (Array) |
-| `emit_rate` | Number | The rate of particle emission per second. || `200` (Number) |
-| `emit_spread` | Number | The angle spread for particle emission direction. || `0` (Number) |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. || `true` (Boolean) |
-| `force` | Array | The force vector applied to particles. || `[0 -10 0]` (Array) |
-| `hint_persistent_elements` | Array | A list of element types that remain persistent on the ground during this weather. || `[Water]` (Array) |
-| `live_bounds` | Array | The bounds within which particles can exist. || `[-999 999 0 999 -999 999]` (Array) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `RainParticle` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"WEATHER_RAIN_NAME"` (String) |
-| `particle_lifetime` | Number | The duration in seconds particles remain alive. || `5` (Number) |
-| `particles` | Array | A list of particle system identifiers used to render the weather effects. || `[Rain]` (Array) |
-| `projection_matrix` | Enum | The projection matrix mode for particle rendering (e.g., 'default'). || `default` (Enum) |
-| `render_mode` | Enum | The rendering mode for particles (e.g., 'default', 'separate'). || `separate` (Enum) |
-| [`scripts`](Miscellaneous.md#object-scripts) | Object | An object containing particle system scripts like forces or collisions. || `{ ... }` (Object) |
-| `simulation_space` | Enum | The coordinate space for particle simulation ('local' or 'global'). || `global` (Enum) |
-| `size_start` | String | The starting size of particles. || `.5` (String) |
-| `speed_scale` | String | A multiplier for particle speed. || `.1` (String) |
-| `speed_start` | Number | The initial speed of particles. || `10` (Number) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `adventure_weather` | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
+| `skybox_frame` | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). || `.005`<br>`.01`<br>`.03` |
+| `chain` | Boolean | Specifies the ability to chain into and execute. || `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
+| `combo` | Array | A list of particle effect names that are spawned together in sequence. || `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
+| `emit_amount` | Number | The number of particles emitted per burst. || `1`<br>`10`<br>`100` |
+| `emit_box` | Array | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. || `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `emit_direction` | Array | The initial direction vector for emitted particles. || `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_rate` | Number | The rate of particle emission per second. || `.5`<br>`1`<br>`10` |
+| `emit_spread` | Number | The angle spread for particle emission direction. || `0`<br>`1`<br>`10` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. || `false`<br>`true` |
+| `force` | Array | The force vector applied to particles. || `0`<br>`1`<br>`1.5` |
+| `hint_persistent_elements` | Array | A list of element types that remain persistent on the ground during this weather. || `[Fire]`<br>`[Heat]`<br>`[Holy]` |
+| `live_bounds` | Array | The bounds within which particles can exist. || `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `particle_lifetime` | Number | The duration in seconds particles remain alive. || `.`<br>`.025`<br>`.35` |
+| `particles` | Array | A list of particle system identifiers used to render the weather effects. || `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `projection_matrix` | Enum | The projection matrix mode for particle rendering (e.g., 'default'). || `default` |
+| `render_mode` | Enum | The rendering mode for particles (e.g., 'default', 'separate'). || `default`<br>`separate` |
+| [`scripts`](Miscellaneous.md#object-scripts) | Object | An object containing particle system scripts like forces or collisions. || `{ . . . }` |
+| `simulation_space` | Enum | The coordinate space for particle simulation ('local' or 'global'). || `global`<br>`local` |
+| `size_start` | String | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
+| `speed_scale` | String | A multiplier for particle speed. || `.05`<br>`.1`<br>`.2` |
+| `speed_start` | Number | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 
 </details>
 
@@ -5530,8 +5530,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -5543,8 +5543,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -5556,8 +5556,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -5569,8 +5569,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -5582,8 +5582,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -5595,8 +5595,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -5608,14 +5608,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_RaptorEgg` (Enum) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_RAPTOREGG_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `1` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `263` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_RAPTOREGG_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
 
 </details>
 
@@ -5627,10 +5627,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdMed` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -5642,13 +5642,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ARMOR_RAVENFEATHER_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `179` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `neck` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ARMOR_RAVENFEATHER_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `rare` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Feathered` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -5660,10 +5660,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `return` (Enum) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5675,8 +5675,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `HangerBotReturn` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_close` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -5688,8 +5688,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `PyrophinaVSRun` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `run_far` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -5701,14 +5701,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_SCRAP_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_SCRAP_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. || `[1 .5]` (Array), `3` (Number) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `PickupBase` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. || `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -5720,10 +5720,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdMed` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -5735,7 +5735,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5747,15 +5747,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `crit_chance` | Number | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 4 | `.05*X` (String) |
-| `class` | Enum | Specifies the class that this ability belongs to, used for categorization and restrictions. || `Thief` (Enum) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ ... }` (Object) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"PASSIVE_STEALTHED_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"PASSIVE_STEALTHED_NAME"` (String) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `teleport` (Enum) |
+| `crit_chance` | Number | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 4 | `-999999`<br>`.05*X`<br>`.25` |
+| `class` | Enum | Specifies the class that this ability belongs to, used for categorization and restrictions. || `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5767,8 +5767,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `999` (Number) |
-| `style` | Array | Specifies the visual styles (e.g., crit) used for the fake damage display. || `[crit]` (Array) |
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `style` | Array | Specifies the visual styles (e.g., crit) used for the fake damage display. || `[crit]` |
 
 </details>
 
@@ -5780,12 +5780,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Chair` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `DoNothing` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `DoNothing` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5797,11 +5797,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. || `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `spell` (Enum) |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. || `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5813,11 +5813,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. || `{ ... }` (Object) |
-| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. || `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `spawn` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. || `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. || `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5829,8 +5829,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `self_buff` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5842,10 +5842,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. || `{ ... }` (Object) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `spawn` (Enum) |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. || `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5857,8 +5857,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""` (String) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `GameteInflate` (Enum) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
 
@@ -5870,15 +5870,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 2 | `5` (Number) |
-| `id` | Enum | The unique numerical identifier for this injury or status effect. | 2 | `Attic` (Enum) |
-| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 2 | `attic` (Enum) |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 2 | `RoomBackgroundSmallAttic` (Enum) |
-| `width` | Number | The number of tiles the room spans horizontally. | 2 | `18` (Number) |
-| `built_in_collision` | Array | A list of collision geometry definitions for the room. || `[[ 6 6 6 6 6 6 6 6 6...]` (Array) |
-| `extra_bound_planes` | Array | A list of additional boundary planes for the room. || `[{ p [ 0 0 ] n [ 1 -2...]` (Array) |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ ... }` (Object) |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ ... }` (Object) |
+| `height` | Integer | The height in tiles the target is launched into the air. | 2 | `0`<br>`1`<br>`2` |
+| `id` | Enum | The unique numerical identifier for this injury or status effect. | 2 | `-1`<br>`0`<br>`1` |
+| `interstitial_bg_frame` | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 2 | `attic`<br>`room1`<br>`room2` |
+| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 2 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `width` | Number | The number of tiles the room spans horizontally. | 2 | `16`<br>`18`<br>`33` |
+| `built_in_collision` | Array | A list of collision geometry definitions for the room. || `[` |
+| `extra_bound_planes` | Array | A list of additional boundary planes for the room. || `[` |
+| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. || `{ . . . }` |
+| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. || `{ . . . }` |
 
 </details>
 
@@ -5890,8 +5890,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
 
 </details>
 
@@ -5903,8 +5903,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Holding"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5916,8 +5916,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"HoldingCat"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5929,8 +5929,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `Default` (Enum) |
-| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic` (Enum) |
+| `prereq` | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 2 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `unlock_room` | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 2 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -5942,12 +5942,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -5959,8 +5959,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5972,9 +5972,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `CaveManSpearRun` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 4 | `CaveManPickupSpear` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `util_minmove` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 4 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -5986,12 +5986,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -6003,18 +6003,18 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `BasicMelee` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `ENEMY_DRAVENSQUIRRELFORM_DESC` (String) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. || `{ ... }` (Object) |
-| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. || `{ ... }` (Object) |
-| `tags` | Array / Enum | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). || `[shapeshift summon]` (Array) |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `spawn` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. || `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. || `{ . . . }` |
+| `tags` | Array / Enum | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). || `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -6026,11 +6026,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BungaSmash` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `DefaultMove` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -6042,11 +6042,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BungaSmash` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BungaJumpMove` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -6058,7 +6058,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6070,8 +6070,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"KEYWORD_STIMULATION_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"KEYWORD_STIMULATION_DESC"` (String) |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6083,8 +6083,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6096,9 +6096,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `TormentorSuck` (Enum) |
-| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `careless` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `keep_distance` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -6110,9 +6110,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `DestroyerAttack` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6124,10 +6124,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Holy"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `DestroyerAttack` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6139,8 +6139,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `TwistingFlames` (Enum) |
-| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `util_target_allies` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
 
@@ -6152,8 +6152,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `TwistingFlames` (Enum) |
-| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `util_target_enemies` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `decision_weights` | Enum | Specifies the named set of decision weight presets used by the AI. | 2 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 
 </details>
 
@@ -6165,9 +6165,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number | The sprite frame index for the buff icon. || `155` (Number) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ENEMY_TVBOT_DIE_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"ENEMY_TVBOT_DIE_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the buff icon. || `141`<br>`148`<br>`149` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6179,9 +6179,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number | The sprite frame index for the buff icon. || `155` (Number) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ENEMY_TVBOT_DUMB_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"ENEMY_TVBOT_DUMB_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the buff icon. || `141`<br>`148`<br>`149` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6193,9 +6193,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number | The sprite frame index for the buff icon. || `155` (Number) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ENEMY_TVBOT_OBEY_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"ENEMY_TVBOT_OBEY_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the buff icon. || `141`<br>`148`<br>`149` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6207,9 +6207,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number | The sprite frame index for the buff icon. || `155` (Number) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ENEMY_TVBOT_STOP_NAME"` (String) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `"ENEMY_TVBOT_STOP_DESC"` (String) |
+| `icon_frame` | Number | The sprite frame index for the buff icon. || `141`<br>`148`<br>`149` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6221,23 +6221,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[HeadButt ThrowShield ChewCud AssBlast Chew BatterUp BackBreaker Suplex Intimidate Toss...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_TANK0" "TEAMNAME_ADJECTIVE_TANK1" "TEAMNAME_ADJECTIVE_TANK2" "TEAMNAME_ADJECTIVE_TANK3" "TEAMNAME_ADJECTIVE_TANK4" "TEAMNAME_ADJECTIVE_TANK5" "TEAMNAME_ADJECTIVE_TANK6" "TEAMNAME_ADJECTIVE_TANK7" "TEAMNAME_ADJECTIVE_TANK8" "TEAMNAME_ADJECTIVE_TANK9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicTankMelee]` (Array) |
-| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[TankRockSong FlipFlop Lunge PlantFeet IronHead Aftershock Demolish FullForce Thicken Spur]` (Array) |
-| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[Plow ChainKnockback Wrestlemaniac MyLeg SlowAndSteady ShovingMatch]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_TANK_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[con str spd]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_TANK_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_TANK0" "TEAMNAME_NOUN_TANK1" "TEAMNAME_NOUN_TANK2" "TEAMNAME_NOUN_TANK3" "TEAMNAME_NOUN_TANK4" "TEAMNAME_NOUN_TANK5" "TEAMNAME_NOUN_TANK6" "TEAMNAME_NOUN_TANK7" "TEAMNAME_NOUN_TANK8" "TEAMNAME_NOUN_TANK9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[Thorns HeavyHanded SlackOff Scabs ThunderThighs Plow PetRocks ToadStyle ChainKnockback ProtectiveAura...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[TankSwap Toss BellyFlop BatterUp Chew ThrowShield DrawAttention BodyGuard Earthquake Spur]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[` |
+| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -6249,9 +6249,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `SpewerLobbed_Tar` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6263,10 +6263,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `Full` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `SpewerSpit` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6278,7 +6278,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `DexterityUp` (Enum) |
+| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
 
@@ -6290,7 +6290,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 2 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 2 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -6302,7 +6302,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `SpeedUp` (Enum) |
+| `alias` | Enum | Specifies the reference name of another status effect to alias or copy properties from. || `AllStatsUp`<br>`Brace`<br>`Brittle` |
 
 </details>
 
@@ -6314,7 +6314,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ ... }` (Object) |
+| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6326,23 +6326,23 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[MoveAgain Assassinate BoostBackstab PoisonGas PoisonNail WeakeningNail SharpNail CoinToss Shadow TimeWalk...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_THIEF0" "TEAMNAME_ADJECTIVE_THIEF1" "TEAMNAME_ADJECTIVE_THIEF2" "TEAMNAME_ADJECTIVE_THIEF3" "TEAMNAME_ADJECTIVE_THIEF4" "TEAMNAME_ADJECTIVE_THIEF5" "TEAMNAME_ADJECTIVE_THIEF6" "TEAMNAME_ADJECTIVE_THIEF7" "TEAMNAME_ADJECTIVE_THIEF8" "TEAMNAME_ADJECTIVE_THIEF9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[BasicStraightShot_Thief]` (Array) |
-| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[QuickRoll Shadowshift SlingShade ThiefSwap Pierce TripleNails SkinDisguise PoisonDip]` (Array) |
-| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[BountyHunter AfterImage Agile FlipACoin]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_THIEF_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[spd dex lck]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_THIEF_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_THIEF0" "TEAMNAME_NOUN_THIEF1" "TEAMNAME_NOUN_THIEF2" "TEAMNAME_NOUN_THIEF3" "TEAMNAME_NOUN_THIEF4" "TEAMNAME_NOUN_THIEF5" "TEAMNAME_NOUN_THIEF6" "TEAMNAME_NOUN_THIEF7" "TEAMNAME_NOUN_THIEF8" "TEAMNAME_NOUN_THIEF9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[Backstabber GoldenClaws Shadow PoisonTips Burgle SwiftKiller DoubleThrow BountyHunter RazorClaws Looter...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[Shadow PoisonNail MoveAgain Backflip Distract Rebound Stalk Assassinate CutPurse SeverArtery]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `complicated_abilities` | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. || `[` |
+| `complicated_passives` | Array | An array of passive ability names flagged as complicated. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -6354,7 +6354,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6366,8 +6366,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6379,9 +6379,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Host` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6393,8 +6393,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6406,7 +6406,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6418,17 +6418,17 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `adventure_weather` | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Thunderstorm` (Enum) |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_thunderstorm.ogg` (String), `amb_heavyrain.ogg` (String) |
-| `lightning_fx` | Boolean | If true, lightning visual effects will occur during this thunderstorm. | 1 | `true` (Boolean) |
-| `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 | `5` (Number) |
-| `skybox_frame` | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_thunderstorm` (Enum) |
-| `combo` | Array | A list of particle effect names that are spawned together in sequence. || `[TRainB TRainM TRainF WindDust]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"WEATHER_THUNDERSTORM_DESC"` (String) |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. || `{ ... }` (Object) |
-| `hint_persistent_elements` | Array | A list of element types that remain persistent on the ground during this weather. || `[Water Wind]` (Array) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"WEATHER_THUNDERSTORM_NAME"` (String) |
-| `particles` | Array | A list of particle system identifiers used to render the weather effects. || `[Thunderstorm]` (Array) |
+| `adventure_weather` | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| `lightning_fx` | Boolean | If true, lightning visual effects will occur during this thunderstorm. | 1 | `true` |
+| `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
+| `skybox_frame` | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+| `combo` | Array | A list of particle effect names that are spawned together in sequence. || `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
+| `hint_persistent_elements` | Array | A list of element types that remain persistent on the ground during this weather. || `[Fire]`<br>`[Heat]`<br>`[Holy]` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `particles` | Array | A list of particle system identifiers used to render the weather effects. || `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 
 </details>
 
@@ -6440,13 +6440,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ARMOR_TIEDYEBANDANA_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `209` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `head` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ARMOR_TIEDYEBANDANA_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `rare` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Hippie` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -6458,22 +6458,22 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ ... }` (Object) |
-| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[Research Discharge Repair ShoddyJetpack SpawnDecoy SpringShoes AutoPilot Recycle BuildTurret RocketSkates...]` (Array) |
-| `adjectives` | Array | A list of descriptive words used to generate animal names. || `["TEAMNAME_ADJECTIVE_TINKERER0" "TEAMNAME_ADJECTIVE_TINKERER1" "TEAMNAME_ADJECTIVE_TINKERER2" "TEAMNAME_ADJECTIVE_TINKERER3" "TEAMNAME_ADJECTIVE_TINKERER4" "TEAMNAME_ADJECTIVE_TINKERER5" "TEAMNAME_ADJECTIVE_TINKERER6" "TEAMNAME_ADJECTIVE_TINKERER7" "TEAMNAME_ADJECTIVE_TINKERER8" "TEAMNAME_ADJECTIVE_TINKERER9"...]` (Array) |
-| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[TinkererCraft]` (Array) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"SETBONUS_TINKERER_DESC"` (String) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ ... }` (Object) |
-| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[dex cha int]` (Array) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"SETBONUS_TINKERER_NAME"` (String) |
-| `nouns` | Array | A list of naming words used to generate animal names. || `["TEAMNAME_NOUN_TINKERER0" "TEAMNAME_NOUN_TINKERER1" "TEAMNAME_NOUN_TINKERER2" "TEAMNAME_NOUN_TINKERER3" "TEAMNAME_NOUN_TINKERER4" "TEAMNAME_NOUN_TINKERER5" "TEAMNAME_NOUN_TINKERER6" "TEAMNAME_NOUN_TINKERER7" "TEAMNAME_NOUN_TINKERER8" "TEAMNAME_NOUN_TINKERER9"...]` (Array) |
-| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[VersionTwo WeaponProficiency LivingBattery FuzzyFeet ArmorSpecialist EMP MrMega EscapeSequence ItemProxy LightningRod...]` (Array) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` (Number) |
-| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[Research ArmorUp ShoddyJetpack BuildTurret RocketSkates Discharge Craft Catbot Electrolyze InstantBarrier]` (Array) |
-| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ ... }` (Object) |
+| [`ability_groups`](Cat_Classes.md#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. || `{ . . . }` |
+| `ability_pool` | Array | An array of ability names available in the class's ability pool. || `[` |
+| `adjectives` | Array | A list of descriptive words used to generate animal names. || `[` |
+| `attack_pool` | Array | An array of attack ability names available in the class's attack pool. || `[` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`innate_passives`](Cat_Classes.md#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. || `{ . . . }` |
+| `levelup_stats` | Array | An array of stat abbreviations that are randomly increased upon leveling up. || `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `nouns` | Array | A list of naming words used to generate animal names. || `[` |
+| `passive_pool` | Array | An array of passive ability names available in the class's passive pool. || `[` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. || `3` |
+| `starter_abilities` | Array | An array of ability names that the class starts with at level 1. || `[` |
+| [`stat_mods`](Cat_Classes.md#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. || `{ . . . }` |
 
 </details>
 
@@ -6485,12 +6485,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -6502,8 +6502,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6515,19 +6515,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_Heal` (Enum) |
-| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `15` (Number) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_TURKEY_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `7` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `244` (Number) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_TURKEY_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_rare` (Enum) |
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `BirdLarge` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. || `-1`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -6539,12 +6539,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ ... }` (Object) |
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. || `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). || `{ . . . }` |
 
 </details>
 
@@ -6556,11 +6556,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `Turtle` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `None` (Enum) |
-| `move` | Enum | Specifies the name of the class's default movement ability. | 4 | `None` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 4 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `move` | Enum | Specifies the name of the class's default movement ability. | 4 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
 
 </details>
 
@@ -6572,8 +6572,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ ... }` (Object) |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -6585,7 +6585,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6597,9 +6597,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `TeleportFlipUp` (Enum) |
-| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `Spin_Enemy` (Enum) |
-| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `stay_close_always_move` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `move_for_ability` | Enum | Specifies the ability that the unit needs to move close to use. | 2 | `AlienBeastPuke`<br>`CaveManPickupSpear`<br>`G3GrabHead` |
+| `move_weights` | Enum | Determines the movement strategy used by the AI when executing this move ability. | 2 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
 
@@ -6611,8 +6611,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Unlit` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6624,8 +6624,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `Unwashed` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -6637,10 +6637,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ ... }` (Object) |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `"Up"` (Enum) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"OBJECT_TIREUP_DESC"` (String) |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6652,7 +6652,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 4 | `{ . . . }` |
 
 </details>
 
@@ -6664,7 +6664,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ ... }` (Object) |
+| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6676,8 +6676,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6689,12 +6689,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BasicMelee` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CULTISTWASHER_NAME"` (String) |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Cultist"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CULTISTWASHER_DESC"` (String) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6706,8 +6706,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `"Water"` (Enum) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
+| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -6719,15 +6719,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_WEIRDEGG_DESC"` (String) |
-| `frame` | Integer | The sprite frame index to display. || `73` (Number) |
-| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. || `{ ... }` (Object) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| [`main`](Events_and_Encounters.md#object-main) | Object | An object containing the primary prompt and options for an event. || `{ ... }` (Object) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_WEIRDEGG_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ ... }` (Object) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `uncommon` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Baby` (Enum) |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. || `{ . . . }` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| [`main`](Events_and_Encounters.md#object-main) | Object | An object containing the primary prompt and options for an event. || `{ . . . }` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. || `{ . . . }` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -6739,14 +6739,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"WereMan"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `WereManFurySwipes` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_WEREMAN_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_WEREMAN_DESC"` (String) |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ ... }` (Object) |
-| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `CavePerson` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. || `{ . . . }` |
+| `variant_of` | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. || `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -6758,7 +6758,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `X` (Enum) |
+| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -6770,15 +6770,15 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `cm_WishBone` (Enum) |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `true` (Boolean) |
-| `desc` | Enum | Specifies the localized description string for the item or ability. || `"ITEM_WISHBONE_DESC"` (String) |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `1` (Number) |
-| `frame` | Integer | The sprite frame index to display. || `193` (Number) |
-| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `trinket` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `"ITEM_WISHBONE_NAME"` (String) |
-| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `consumable_very_rare` (Enum) |
-| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `Bone` (Enum) |
+| `ability` | Enum | Specifies the ability to be used or triggered when the parent condition is met. || `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. || `1`<br>`2`<br>`true` |
+| `desc` | Enum | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. || `0`<br>`1`<br>`10` |
+| `frame` | Integer | The sprite frame index to display. || `1`<br>`10`<br>`100` |
+| `kind` | Enum | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). || `face`<br>`head`<br>`modifier` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | Enum | Determines the rarity tier of the item, affecting drop rates and item quality. || `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. || `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -6790,17 +6790,17 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"Zealot"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BBStabby` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_CULTISTZEALOT_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_CULTISTZEALOT_DESC"` (String) |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ ... }` (Object) |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ ... }` (Object) |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ ... }` (Object) |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ ... }` (Object) |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `self_buff` (Enum) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -6812,12 +6812,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ ... }` (Object) |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `"BombZealot"` (Enum) |
-| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `BBExplode` (Enum) |
-| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `"ENEMY_BOMBZEALOT_NAME"` (String) |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ ... }` (Object) |
-| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `"ENEMY_BOMBZEALOT_DESC"` (String) |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `attack` | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `name` | Enum | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `tooltip` | Enum | The localization string key used for the tooltip displayed on hover. | 2 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6836,11 +6836,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `throw_attack` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -6853,9 +6853,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `AntlerSwipe` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -6868,11 +6868,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -6885,12 +6885,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -6903,13 +6903,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. | 1 ||
-| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `summon` |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `spawn` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. | 1 | `{ . . . }` |
+| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -6922,19 +6922,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_BlackShard` |
-| `aux` | Number | An auxiliary integer value used for item properties, such as hunger value. | 1 | `1` |
-| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_BLACKSHARD_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 1 | `164` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `core` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `aux` | Number | An auxiliary integer value used for item properties, such as hunger value. | 1 | `-1`<br>`1`<br>`10` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
 | `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
 | `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_BLACKSHARD_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Obelisk` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -6947,12 +6947,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 ||
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
-| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. | 1 ||
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`sound`](Characters_and_Bosses.md#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6965,13 +6965,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `lobbed_attack` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -6984,12 +6984,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `musical` |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `spell` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7002,12 +7002,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `return` |
-| [`temporary_effects`](Abilities_and_Spells.md#object-temporary_effects) | Object | Applies temporary status effects on the caster upon using the ability. | 1 ||
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`temporary_effects`](Abilities_and_Spells.md#object-temporary_effects) | Object | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7020,13 +7020,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_EtherSoakedRag` |
-| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_ETHERSOAKEDRAG_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 1 | `121` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_ETHERSOAKEDRAG_NAME"` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `uncommon` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Rag` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -7039,11 +7039,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `self_buff` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7056,9 +7056,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `HardenSkin` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7071,12 +7071,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 ||
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -7089,11 +7089,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7106,13 +7106,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_JEWELOFDROG_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 1 | `137` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `head` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_JEWELOFDROG_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `rare` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Gemstone` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -7125,12 +7125,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 ||
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -7143,12 +7143,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `musical` |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `spell` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7161,12 +7161,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `musical` |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `spell` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7179,12 +7179,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `throw_attack` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7197,9 +7197,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `MonkeyThrow` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7212,9 +7212,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bonus_passives`](Abilities_and_Spells.md#object-bonus_passives) | Object | Grants temporary passive abilities to the caster for the duration of the ability. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `MoonHandThrow` |
+| [`bonus_passives`](Abilities_and_Spells.md#object-bonus_passives) | Object | Grants temporary passive abilities to the caster for the duration of the ability. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7227,8 +7227,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `FlailBase` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7241,12 +7241,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `jump_attack` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7259,11 +7259,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `self_buff` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7276,9 +7276,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Prance` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7291,8 +7291,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
+| [`alt_spawn_pool`](Characters_and_Bosses.md#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. | 1 | `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7305,11 +7305,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `move` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7322,9 +7322,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`temporary_effects`](Abilities_and_Spells.md#object-temporary_effects) | Object | Applies temporary status effects on the caster upon using the ability. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Scavenge` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`temporary_effects`](Abilities_and_Spells.md#object-temporary_effects) | Object | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7337,11 +7337,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `self_buff` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7354,9 +7354,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Synthesize` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7369,12 +7369,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Object | Defines damage or effects applied to the caster when using the ability. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `jump_attack` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Object | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7387,9 +7387,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Object | Defines damage or effects applied to the caster when using the ability. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `TaintedOffering` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Object | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7402,13 +7402,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `musical` |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `targeted_status` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7421,9 +7421,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Tease` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7436,12 +7436,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 ||
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -7454,12 +7454,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `melee_attack` |
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7472,11 +7472,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `lobbed_attack` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7489,11 +7489,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `melee_attack` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7506,9 +7506,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `TigerSwipes` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7521,13 +7521,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 ||
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `trample_dash` |
-| [`temporary_effects`](Abilities_and_Spells.md#object-temporary_effects) | Object | Applies temporary status effects on the caster upon using the ability. | 1 ||
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`temporary_effects`](Abilities_and_Spells.md#object-temporary_effects) | Object | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7540,8 +7540,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `FlailBase` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7554,8 +7554,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `FlailBase` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -7568,12 +7568,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 ||
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -7586,12 +7586,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 ||
-| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. | 1 ||
-| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `summon` |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `spawn` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`spawn`](Abilities_and_Spells.md#object-spawn) | Object | Defines what object or unit is spawned when the ability is used. | 1 | `{ . . . }` |
+| `tags` | Array | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7604,10 +7604,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 ||
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 ||
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `straightshot_attack` |
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -7621,9 +7621,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `BOSS_MEGADINO_QUOTE_1` | String | The first boss quote spoken by Megadino. | 1 ||
-| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `MegaDino` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `BOSS_MEGADINO_NAME` |
-| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 ||
+| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
 
 </details>
 
@@ -7640,8 +7640,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `BOSS_MOONHEAD_QUOTE_2` | String | The second boss quote spoken by Moonhead. | 1 ||
 | `BOSS_MOONHEAD_QUOTE_3` | String | The third boss quote spoken by Moonhead. | 1 ||
 | `BOSS_MOONHEAD_QUOTE_4` | String | The fourth boss quote spoken by Moonhead. | 1 ||
-| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `MoonHead` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `BOSS_MOONHEAD_NAME` |
-| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 ||
+| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
 
 </details>
