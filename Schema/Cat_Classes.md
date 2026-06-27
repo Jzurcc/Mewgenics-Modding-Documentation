@@ -45,7 +45,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `graphics`
 
 
-**Definition:** Object defining visual animations and sequence timings.  
+**Definition:** An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects.
 **Total Count:** 2609
 
 <details>
@@ -70,7 +70,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `meta`
 
 
-**Definition:** Object defining UI display data (Name, Description, Icon).  
+**Definition:** Contains metadata for the ability including name, description, class, and type icon.
 **Total Count:** 2374
 
 <details>
@@ -92,7 +92,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `stat_mods`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values.
 **Total Count:** 13
 
 <details>
@@ -119,7 +119,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ability_groups`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection.
 **Total Count:** 12
 
 <details>
@@ -143,7 +143,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `innate_passives`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object defining innate passive abilities or effects that the class always possesses.
 **Total Count:** 4
 
 <details>
@@ -153,7 +153,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array | An array of stance ability names the Monk can switch between. | 1 | `[BasicMonkMelee BasicMonkRanged]` |
 | [`AddStartingMana`](./Enums.md) | Integer | The amount of bonus mana the unit starts each battle with. | 1 | `20`<br>`5` |
 | [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum  | Specifies the object that spawns adjacent to the unit at the start of battle. | 1 | `BeefyCharmedLeech`<br>`BuffCharmedKitten`<br>`CharmedCultist` |
@@ -168,7 +168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `innate_items`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object specifying the class's starting equipment, with item slot names as keys.
 **Total Count:** 2
 
 <details>
@@ -190,7 +190,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TinkererBasicAttackSwitching`
 
 
-**Definition:** Logic: Allows Tinkerer to swap basic attacks.  
+**Definition:** Defines the abilities used for the Tinkerer's basic attack switching mechanic.
 **Total Count:** 1
 
 <details>

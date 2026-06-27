@@ -37,7 +37,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Item`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the item pool, cost, weight, and mandatory flag used in an item group.
 **Total Count:** 37
 
 <details>
@@ -50,7 +50,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 37 | `2`<br>`3`<br>`4` |
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `{ . . . }` |
 | `mandatory` | Boolean | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 14 | `1`<br>`3`<br>`6` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
@@ -62,7 +62,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `meta`
 
 
-**Definition:** Object defining UI display data (Name, Description, Icon).  
+**Definition:** Contains metadata for the ability including name, description, class, and type icon.
 **Total Count:** 25
 
 <details>
@@ -91,7 +91,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `breakdown`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines the breakdown of item pools or rewards for a shop or event.
 **Total Count:** 24
 
 <details>
@@ -120,7 +120,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `item_groups`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines groups of items that can appear in a shop or loot.
 **Total Count:** 24
 
 <details>
@@ -150,7 +150,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `treasure`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a treasure node containing items or item pools.
 **Total Count:** 14
 
 <details>
@@ -171,7 +171,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `item_rarity_costs`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines the cost multipliers for each item rarity tier in a shop.
 **Total Count:** 9
 
 <details>
@@ -187,7 +187,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consumable_very_rare` | Number | The cost or quantity for very rare consumable items in an item shop. | 9 | `12`<br>`20`<br>`40` |
 | `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 9 | `10`<br>`20`<br>`30` |
 | `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 9 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 9 | `common`<br>`rare`<br>`cha` |
 | [`common`](./Enums.md) | Integer | Defines the common reward block for a boss encounter. | 9 | `100`<br>`14`<br>`5` |
 | [`rare`](./Enums.md) | Integer | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |
 
@@ -200,7 +200,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `button_nav`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons.
 **Total Count:** 7
 
 <details>
@@ -221,7 +221,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pool`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the name of the pool from which an ability is learned or an item is crafted.
 **Total Count:** 6
 
 <details>
@@ -242,7 +242,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `mandatory`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of guaranteed items to generate from this group, or an object specifying mandatory selection.
 **Total Count:** 5
 
 <details>
@@ -264,7 +264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Food`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of food pickups spawned.
 **Total Count:** 4
 
 <details>
@@ -277,7 +277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `allow_duplicates` | Boolean | If true, duplicate items of this type can appear in the same shop inventory. | 4 | `true` |
 | [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
@@ -289,7 +289,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LevelUp`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines the cost and pool for leveling up an item.
 **Total Count:** 3
 
 <details>
@@ -310,7 +310,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `levelup`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of level-up rewards offered, or an object defining their cost and pool.
 **Total Count:** 3
 
 <details>
@@ -331,7 +331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `breakdown2`
 
 
-**Definition:** No definition provided.  
+**Definition:** A loot table defining guaranteed item drops for player levels 5 to 9.
 **Total Count:** 2
 
 <details>
@@ -356,7 +356,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `breakdown3`
 
 
-**Definition:** No definition provided.  
+**Definition:** A loot table defining guaranteed item drops for player levels 10 to 14.
 **Total Count:** 2
 
 <details>
@@ -380,7 +380,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `breakdown4`
 
 
-**Definition:** No definition provided.  
+**Definition:** A loot table defining guaranteed item drops for player levels 15 and above.
 **Total Count:** 2
 
 <details>
@@ -404,7 +404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `common_item`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of common items offered, or an object defining their pool and cost.
 **Total Count:** 2
 
 <details>
@@ -425,7 +425,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `consumable`
 
 
-**Definition:** No definition provided.  
+**Definition:** If true, the item is consumed on use. Can also specify a number of uses or an item pool.
 **Total Count:** 2
 
 <details>
@@ -446,7 +446,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `guaranteed_food`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of guaranteed food items, or an object defining their amount, cost, and duplication rules.
 **Total Count:** 2
 
 <details>
@@ -467,7 +467,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `item`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the item to transform into, either by name, a nested item object, or a numeric value.
 **Total Count:** 2
 
 <details>
@@ -488,7 +488,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `mostly_food`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules.
 **Total Count:** 2
 
 <details>
@@ -510,7 +510,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `empty`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Empty\' state.  
+**Definition:** The number of empty items offered, or an object defining their pool and cost.
 **Total Count:** 1
 
 <details>

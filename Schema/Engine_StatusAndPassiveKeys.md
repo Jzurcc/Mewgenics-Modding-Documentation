@@ -3765,7 +3765,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 4 | `1`<br>`10`<br>`2` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 4 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_Ally`
@@ -3788,7 +3788,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 2 | `-1`<br>`1`<br>`2` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 2 | `1`<br>`2`<br>`3` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 4 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_BadRoll`
@@ -3801,7 +3801,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 2 | `25`<br>`50`<br>`999` |
 | [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_Boss`
@@ -3817,7 +3817,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 4 | `1`<br>`8` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 14 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_Corpse`
@@ -3837,7 +3837,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
 | [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_Enemy`
@@ -3864,7 +3864,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 2 | `-1`<br>`1`<br>`2` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_FirstApplicationThisTurn`
@@ -3878,7 +3878,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 2 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 5 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_GoodRoll`
@@ -3895,7 +3895,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 2 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 | [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 2 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_HasCleansableDebuffs`
@@ -3909,7 +3909,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 2 | `{ . . . }` |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum  | Specifies the name of the visual effect to play. | 2 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_HasStatus`
@@ -3926,7 +3926,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 2 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Quivered`](./Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`5` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 10 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 10 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_HasTag`
@@ -3946,7 +3946,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`PopAndSpawn`](./Miscellaneous.md#object-popandspawn) | Enum / Object  | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. | 2 | `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 2 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 43 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 43 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_HealthThreshold`
@@ -3960,7 +3960,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 2 | `1`<br>`10`<br>`2` |
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 2 | `25`<br>`50`<br>`999` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 7 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 7 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_ManaThreshold`
@@ -3971,7 +3971,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
 | `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 2 | `1`<br>`99` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_NotBoss`
@@ -3984,7 +3984,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 2 | `1` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_PartyMember`
@@ -3995,7 +3995,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 4 | `1`<br>`2`<br>`3` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `Conditional_Shielded`
@@ -4009,7 +4009,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`SetItemAux`](./Miscellaneous.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 2 | `{ . . . }` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 
 
 ### Object: `ConstitutionUp`
@@ -4525,7 +4525,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `PoisonLace`
@@ -4552,7 +4552,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `PreEmptiveCounterNextAttacks`
@@ -4563,7 +4563,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `ProbeCharmed`
@@ -4604,7 +4604,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `full_size` | Boolean || 4 | `true` |
+| `full_size` | Boolean | If true, the magic missile uses its full size instead of a reduced size. | 4 | `true` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `icon_frame` | Number | The sprite frame index for the buff icon. || `141`<br>`148`<br>`149` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
@@ -4654,7 +4654,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `RemoveStatusStacks`
@@ -4664,7 +4664,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | passives<br>class<br>	ag |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`status`](./Enums.md#enum-status) | Enum  || 8 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 8 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 
 ### Object: `ReplaceSpell`
@@ -4694,7 +4694,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `revive_health` | Integer || 8 | `1`<br>`100%`<br>`50%` |
+| `revive_health` | Integer | The amount of health (as a flat integer or percentage) the unit revives with. | 8 | `1`<br>`100%`<br>`50%` |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 6 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 4 | `-1`<br>`-2`<br>`1` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
@@ -4702,7 +4702,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `Rot`
@@ -4719,7 +4719,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stackable` | Boolean || 4 | `true` |
+| `stackable` | Boolean | If true, the scatter coins effect can stack with multiple applications. | 4 | `true` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 
@@ -4930,7 +4930,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stack_key`](./Enums.md#enum-stack_key) | Enum   || 4 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
+| [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 4 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 4 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 2 | `1` |
 | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 2 | `1` |
@@ -4961,7 +4961,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_art`](./Enums.md#enum-alt_art) | Enum   || 2 | `TangledMeat` |
+| [`alt_art`](./Enums.md#enum-alt_art) | Enum | Specifies an alternative art asset name to use for the status. | 2 | `TangledMeat` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. || `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
@@ -5044,9 +5044,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 114 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`status`](./Enums.md#enum-status) | Enum  || 112 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 112 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 104 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `expires_on_begin_turn` | Boolean || 50 | `true` |
+| `expires_on_begin_turn` | Boolean | If true, the temporary effect expires at the start of the target's turn. | 50 | `true` |
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 42 | `true` |
 | `data` | Integer | An integer value used for custom data associated with the temporary effect. | 4 | `2` |
 | `expires_on_appliers_turn` | Boolean | If true, the temporary effect expires at the start of the applier's next turn. | 4 | `true` |
@@ -5058,8 +5058,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum  || 4 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
-| [`to`](./Enums.md#enum-to) | Enum  || 4 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
+| [`from`](./Enums.md#enum-from) | Enum | Specifies the source equipment item to be transformed. | 4 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
+| [`to`](./Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 4 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 
 
 ### Object: `Webbed`
@@ -5085,7 +5085,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `reset_percent` | Integer || 2 | `50%` |
+| `reset_percent` | Integer | The percentage of the ramp-up value to reset to upon casting. | 2 | `50%` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 #### `ApplyToSourceOnKill`
@@ -5104,7 +5104,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
-| `WeaponAuxMultiplier` | Float ||| `.5` |
+| `WeaponAuxMultiplier` | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. |  | `.5` |
 
 </details>
 
@@ -5175,8 +5175,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `requires_framebuffer` | Boolean || 1 | `false` |
-| [`shader`](./Enums.md#enum-shader) | Enum  || 1 | `shimmervignette` |
+| `requires_framebuffer` | Boolean | If true, the post-process effect requires a framebuffer to be active. | 1 | `false` |
+| [`shader`](./Enums.md#enum-shader) | Enum | Specifies which shader to use for the post-process effect. | 1 | `shimmervignette` |
 
 
 ### Object: `AddTilesetObjects`
@@ -5184,7 +5184,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  || 1 | `{ . . . }` |
+| [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
 
 
 ### Object: `Adrenaline`
@@ -5220,7 +5220,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteObject` | Integer || 6 | `1` |
+| `DeleteObject` | Integer | If set, deletes the target object from the map. | 6 | `1` |
 | [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 2 | `{ . . . }`<br>`1`<br>`6` |
 
 
@@ -5237,7 +5237,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowards` | Integer || 2 | `1` |
+| `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 2 | `1` |
 
 
 ### Object: `ApplyToTile`
@@ -5245,8 +5245,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHit`](./Miscellaneous.md#object-objectonhit) | Enum / Object  || 4 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
-| `SpawnBearTrap` | Integer || 4 | `1` |
+| [`ObjectOnHit`](./Miscellaneous.md#object-objectonhit) | Enum / Object | Specifies the object to spawn on the hit tile. | 4 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
+| `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 4 | `1` |
 
 
 ### Object: `ArcLightning`
@@ -5255,10 +5255,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 8 | `false`<br>`true` |
-| `max_distance` | Integer || 8 | `1`<br>`2`<br>`3` |
+| `max_distance` | Integer | The maximum range in tiles for the arc lightning to chain to subsequent targets. | 8 | `1`<br>`2`<br>`3` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
-| `ignore_self` | Boolean || 2 | `true` |
+| `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 2 | `true` |
 
 
 ### Object: `Bloodzerked`
@@ -5313,11 +5313,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 20 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum  || 8 | `Coin`<br>`SmallRock` |
+| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Specifies the type of rock (e.g., 'Coin', 'SmallRock') to spawn when breaking an inanimate object. | 8 | `Coin`<br>`SmallRock` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 6 | `{ . . . }` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 6 | `1`<br>`20` |
-| `GetAggroTarget` | Integer || 4 | `1` |
-| `PreventDeathTransforms` | Integer || 2 | `1` |
+| `GetAggroTarget` | Integer | The number of aggro targets to acquire. | 4 | `1` |
+| `PreventDeathTransforms` | Integer | Number of death transforms prevented for non-boss characters. | 2 | `1` |
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 2 | `{ . . . }` |
 
 
@@ -5327,7 +5327,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
-| `OverrideDamage` | Integer || 2 | `-10`<br>`0`<br>`1` |
+| `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 2 | `-10`<br>`0`<br>`1` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 
@@ -5357,7 +5357,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 22 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum   || 6 | `CHuskDropFail`<br>`LennyStruggleFail`<br>`XXX` |
+| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | Specifies the ability to be used when the parent condition (e.g., breaking free) fails. | 6 | `CHuskDropFail`<br>`LennyStruggleFail`<br>`XXX` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 6 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 
@@ -5374,7 +5374,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `CockroachSwarm`
@@ -5393,7 +5393,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 4 | `1`<br>`3` |
-| `CurrentWeaponAddPoison` | Integer || 2 | `1` |
+| `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 2 | `1` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
 | [`Quivered`](./Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`5` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
@@ -5464,7 +5464,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 12 | `-1`<br>`-2`<br>`1` |
-| [`radius`](./Arrays.md#array-radius) | Array / Integer  || 12 | `0`<br>`1`<br>`13` |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 12 | `0`<br>`1`<br>`13` |
 | [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 12 | `-30`<br>`-4`<br>`.5` |
 
 
@@ -5568,7 +5568,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
-| [`extra_statuses`](./Miscellaneous.md#object-extra_statuses) | Object  || 1 | `{ . . . }` |
+| [`extra_statuses`](./Miscellaneous.md#object-extra_statuses) | Object | An object containing additional status effects (with stack counts) applied to the consumed unit. | 1 | `{ . . . }` |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 
@@ -5642,8 +5642,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alpha_end` | Float ||| `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float ||| `-1`<br>`.5`<br>`.8` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. |  | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. |  | `-1`<br>`.5`<br>`.8` |
 | [`desc`](./Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | `emit_amount` | Number | The number of particles emitted per burst. || `1`<br>`10`<br>`100` |
@@ -5670,7 +5670,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `even_if_cant_reach` | Boolean || 2 | `true` |
+| `even_if_cant_reach` | Boolean | If true, forces the unit to attempt to move and attack even if the target is not reachable. | 2 | `true` |
 
 
 ### Object: `ForceMoveTowardsTaggedObject`
@@ -5688,7 +5688,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`number`](./Arrays.md#array-number) | Array / Integer  ||| `1`<br>`10`<br>`2` |
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. |  | `1`<br>`10`<br>`2` |
 
 
 ### Object: `Grappled`
@@ -5705,7 +5705,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit_animations`](./Miscellaneous.md#object-exit_animations) | Object  || 2 | `{ . . . }` |
+| [`exit_animations`](./Miscellaneous.md#object-exit_animations) | Object | An object mapping exit conditions to their corresponding animation names. | 2 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 
@@ -5714,8 +5714,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `exclude_self` | Boolean || 4 | `false` |
-| `mana` | Equation || 4 | `"4-clamp(floor(X/7), 0, 1)"`<br>`"max(4-X, 0)"`<br>`"max(7-2*X,0)"` |
+| `exclude_self` | Boolean | If true, the effect does not apply to the source unit itself. | 4 | `false` |
+| `mana` | Equation | The amount of mana required to cast, as a formula or stat. | 4 | `"4-clamp(floor(X/7), 0, 1)"`<br>`"max(4-X, 0)"`<br>`"max(7-2*X,0)"` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 
@@ -5748,7 +5748,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 4 | `1`<br>`10`<br>`2` |
-| `damage_multiplier` | Number || 4 | `2`<br>`3` |
+| `damage_multiplier` | Number | A multiplier for holy damage dealt. | 4 | `2`<br>`3` |
 
 
 ### Object: `IceArmor`
@@ -5800,8 +5800,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum   || 2 | `any`<br>`cat` |
-| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array   ||| `[TomTom Kitten CatCaller Mangy]` |
+| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum | Specifies the type of enemy to kill at the start of battle. | 2 | `any`<br>`cat` |
+| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array | An array of enemy names to spawn as a fallback if no matching enemy type is present. |  | `[TomTom Kitten CatCaller Mangy]` |
 
 
 ### Object: `LateStatusApplication`
@@ -5809,7 +5809,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CurrentWeaponDamageUp` | Integer || 6 | `1`<br>`3`<br>`5` |
+| `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 6 | `1`<br>`3`<br>`5` |
 | `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 2 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 
 
@@ -5851,8 +5851,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `can_instapop` | Boolean || 2 | `false` |
-| `force_no_hit_animation` | Boolean || 2 | `true` |
+| `can_instapop` | Boolean | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 2 | `false` |
+| `force_no_hit_animation` | Boolean | If true, suppresses the hit animation when merging damage instances. | 2 | `true` |
 
 
 ### Object: `MeteorShower`
@@ -5870,8 +5870,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `alpha_in` | String ||| `.01`<br>`.05`<br>`.1` |
-| `alpha_out` | String ||| `.2`<br>`.3`<br>`.5` |
+| `alpha_in` | String | The alpha (opacity) value at the start of the effect's intro animation. |  | `.01`<br>`.05`<br>`.1` |
+| `alpha_out` | String | The alpha (opacity) value at the end of the effect's outro animation. |  | `.2`<br>`.3`<br>`.5` |
 | [`desc`](./Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. || `{ . . . }` |
 | `emit_amount` | Number | The number of particles emitted per burst. || `1`<br>`10`<br>`100` |
@@ -5885,8 +5885,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`particle_lifetime`](./Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. || `.`<br>`.025`<br>`.35` |
 | [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). || `default` |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). || `default`<br>`separate` |
-| [`rotation`](./Arrays.md#array-rotation) | Array  ||| `-90`<br>`90`<br>`[-10 10]` |
-| [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array   ||| `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
+| [`rotation`](./Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. |  | `-90`<br>`90`<br>`[-10 10]` |
+| [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. |  | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
 | [`scripts`](./Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. || `{ . . . }` |
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). || `global`<br>`local` |
 | [`size_start`](./Arrays.md#array-size_start) | Array   | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
@@ -5923,7 +5923,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `NextAbilityHeals`
@@ -5958,9 +5958,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `crit_multiplier_bonus` | Integer || 2 | `2` |
-| `extra_coins_per_stack` | Integer || 2 | `2` |
-| `luck_increase` | Integer || 2 | `1` |
+| `crit_multiplier_bonus` | Integer | The additional critical hit damage multiplier. | 2 | `2` |
+| `extra_coins_per_stack` | Integer | The number of extra coins gained per stack of the associated status. | 2 | `2` |
+| `luck_increase` | Integer | The flat increase to the unit's luck stat. | 2 | `1` |
 
 
 ### Object: `NextBasicAttackCritsThisTurn`
@@ -5980,7 +5980,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
-| `MadnessChanceOnTurnBegin` | Integer || 2 | `2` |
+| `MadnessChanceOnTurnBegin` | Integer | The chance (as a multiplier) to inflict Madness status at the start of each turn in the next battle. | 2 | `2` |
 | `fights` | Integer | The number of future battles the status effect will be applied at the start of. | 2 | `1`<br>`9999` |
 
 
@@ -6034,7 +6034,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 4 | `.02`<br>`.1`<br>`.15` |
-| [`radius`](./Arrays.md#array-radius) | Array / Integer  || 4 | `0`<br>`1`<br>`13` |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 4 | `0`<br>`1`<br>`13` |
 
 
 ### Object: `RandomDistanceDisplace`
@@ -6108,7 +6108,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `permanent` | Boolean || 2 | `true` |
+| `permanent` | Boolean | If true, the scrambled spell selection persists permanently rather than resetting after use. | 2 | `true` |
 
 
 ### Object: `SerratedClaws`
@@ -6218,12 +6218,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`particles`](./Arrays.md#array-particles) | Array  | A list of particle system identifiers used to render the weather effects. || `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 | [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). || `default` |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). || `default`<br>`separate` |
-| [`rotation`](./Arrays.md#array-rotation) | Array  ||| `-90`<br>`90`<br>`[-10 10]` |
-| [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array   ||| `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
-| `rotation_speed_end` | Number ||| `0` |
+| [`rotation`](./Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. |  | `-90`<br>`90`<br>`[-10 10]` |
+| [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. |  | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
+| `rotation_speed_end` | Number | The rotation speed (in degrees per second) of the effect at the end of its animation. |  | `0` |
 | [`scripts`](./Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. || `{ . . . }` |
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). || `global`<br>`local` |
-| `size_end` | Float ||| `.1`<br>`.2`<br>`.3` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. |  | `.1`<br>`.2`<br>`.3` |
 | [`size_start`](./Arrays.md#array-size_start) | Array   | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
 | [`speed_start`](./Arrays.md#array-speed_start) | Array   | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 
@@ -6245,8 +6245,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_radius` | Float || 1 | `2.2`<br>`3.5` |
-| `min_radius` | Float || 1 | `.2`<br>`1`<br>`1.5` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 
@@ -6256,10 +6256,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `max_radius` | Float || 2 | `2.2`<br>`3.5` |
-| `min_radius` | Float / String || 2 | `.2`<br>`1`<br>`1.5` |
-| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array / Enum   || 1 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
-| [`number`](./Arrays.md#array-number) | Array / Integer  ||| `1`<br>`10`<br>`2` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
+| `min_radius` | Float / String | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array / Enum | An array specifying the tile types to use for the puddle or volcano. | 1 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. |  | `1`<br>`10`<br>`2` |
 
 
 ### Object: `SpecialGodRays`
@@ -6267,7 +6267,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](./Miscellaneous.md#object-big) | Object  || 2 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
 
 
 ### Object: `SpellShield`
@@ -6296,9 +6296,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
 | [`Conditional_GoodRoll`](./Engine_LogicKeys.md#conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
-| `FloatingRockTrap` | Integer || 1 | `1` |
+| `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 1 | `1` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
-| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum   || 1 | `crow`<br>`grub_familiar`<br>`rock` |
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Specifies a tag (e.g., 'crow', 'rock', 'grub_familiar') used to filter which units a status or effect applies to. | 1 | `crow`<br>`grub_familiar`<br>`rock` |
 
 
 ### Object: `StatusCharactersOnRoundStart`
@@ -6324,8 +6324,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`new_layer`](./Enums.md#enum-new_layer) | Enum   || 14 | `battle`<br>`event`<br>`map` |
-| [`new_song`](./Enums.md#enum-new_song) | Enum   || 12 | `same` |
+| [`new_layer`](./Enums.md#enum-new_layer) | Enum | Specifies the music layer to switch to (e.g., 'event', 'battle', 'map'). | 14 | `battle`<br>`event`<br>`map` |
+| [`new_song`](./Enums.md#enum-new_song) | Enum | Specifies the song to switch to; 'same' keeps the current song playing on the new layer. | 12 | `same` |
 | `crossfade_speed` | Integer | The duration in seconds for the crossfade transition between music tracks. | 2 | `1` |
 
 
@@ -6408,7 +6408,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip_stackless`](./Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 | `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| `tooltip_stacks_singular` | String ||| `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| `tooltip_stacks_singular` | String | The localization key for the singular form of the stack count in the tooltip. |  | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `TempManaCostReduction`
@@ -6482,15 +6482,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
-| `delay` | Float || 8 | `.05`<br>`.1`<br>`.25` |
-| [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  || 4 | `{ . . . }` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 8 | `.05`<br>`.1`<br>`.25` |
+| [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 4 | `{ . . . }` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 2 | `{ . . . }` |
-| [`DoScreenShake`](./Miscellaneous.md#object-doscreenshake) | Integer / Object  || 2 | `{ . . . }`<br>`1` |
+| [`DoScreenShake`](./Miscellaneous.md#object-doscreenshake) | Integer / Object | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 2 | `{ . . . }`<br>`1` |
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 2 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 2 | `0`<br>`1` |
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum  || 2 | `MegaGuppy` |
-| `PlayBackground` | Integer || 2 | `0`<br>`1` |
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 2 | `MegaGuppy` |
+| `PlayBackground` | Integer | Specifies the background index to play. | 2 | `0`<br>`1` |
 | `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 2 | `.5`<br>`4` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 2 | `1`<br>`20` |
 
@@ -6519,7 +6519,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bonus_passives`](./Miscellaneous.md#object-bonus_passives) | Object  ||| `{ . . . }` |
+| [`bonus_passives`](./Miscellaneous.md#object-bonus_passives) | Object | Grants temporary passive abilities to the caster for the duration of the ability. |  | `{ . . . }` |
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
 | [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
 | [`graphics`](./Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
@@ -6547,8 +6547,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum  || 2 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
-| [`to`](./Enums.md#enum-to) | Enum  || 2 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
+| [`from`](./Enums.md#enum-from) | Enum | Specifies the source equipment item to be transformed. | 2 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
+| [`to`](./Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 2 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 
 
 ### Object: `TwisterDisplaceWithDamage`

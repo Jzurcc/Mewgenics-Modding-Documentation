@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 681 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 681 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`graphics`](./Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 2609 | `{ . . . }` |
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 2372 | `{ . . . }` |
 | [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 2344 | `{ . . . }` |
@@ -55,7 +55,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `graphics`
 
 
-**Definition:** Object defining visual animations and sequence timings.  
+**Definition:** An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects.
 **Total Count:** 2609
 
 <details>
@@ -193,7 +193,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `meta`
 
 
-**Definition:** Object defining UI display data (Name, Description, Icon).  
+**Definition:** Contains metadata for the ability including name, description, class, and type icon.
 **Total Count:** 2374
 
 <details>
@@ -231,7 +231,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_instance`
 
 
-**Definition:** Object defining the combat math and status effects applied upon successful hit.  
+**Definition:** Defines damage properties, effects, and healing for the ability's direct damage.
 **Total Count:** 2346
 
 <details>
@@ -241,9 +241,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1731 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1731 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1787 | `{ . . . }` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2208 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2208 | passives<br>class<br>	ag |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1447 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 359 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 352 | `[`<br>`[Heat Fire]` |
@@ -292,7 +292,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `target`
 
 
-**Definition:** Object defining the shape, range, and restrictions of the ability's aiming phase.  
+**Definition:** Defines targeting parameters like range, AoE, restrictions, and multihit behavior.
 **Total Count:** 1862
 
 <details>
@@ -374,7 +374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `redirect_location_if_blocked` | Boolean | If true, the target location is redirected if the original is blocked. | 2 | `true` |
 | `trample_allies_too` | Boolean | If true, the ability can trample or pass through allies. | 2 | `true` |
 | [`target_requires_element`](./Arrays.md#array-target_requires_element) | Array | Specifies the list of tile elements that the target must have. | 2 | `[grass water]`<br>`[grass]` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 6 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 6 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`adjust_target`](./Enums.md#enum-adjust_target) | Enum | Specifies the type of target adjustment. | 1 | `stalk` |
 | `allow_diagonal_passthrough` | Boolean | If true, the target can be diagonal and pass through diagonally. | 1 | `true` |
 | `ally_priority` | Integer | The priority value for targeting allies. | 1 | `1` |
@@ -412,7 +412,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `cost`
 
 
-**Definition:** Object defining resource requirements (Mana, Act Points, Moves) needed to cast.  
+**Definition:** Defines the resource cost (e.g., mana) and other casting requirements.
 **Total Count:** 1853
 
 <details>
@@ -475,7 +475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `self_damage`
 
 
-**Definition:** Recoil or self-inflicted damage/effects applied to the caster.  
+**Definition:** Defines damage or effects applied to the caster when using the ability.
 **Total Count:** 220
 
 <details>
@@ -485,7 +485,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 65 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 65 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 200 | `{ . . . }` |
 | [`damage`](./Abilities_and_Spells.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 47 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `piercing` | `Boolean` | If true, the damage instance ignores armor or damage reduction effects on the target. | 12 | `true` |
@@ -506,7 +506,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `spawn`
 
 
-**Definition:** Parameters for summoning new characters, objects, or entities.  
+**Definition:** Defines what object or unit is spawned when the ability is used.
 **Total Count:** 192
 
 <details>
@@ -517,7 +517,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 184 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 84 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 84 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 59 | `allies`<br>`auto`<br>`birds` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 31 | `-99999`<br>`-999999`<br>`1` |
 | [`additional_passives`](./Miscellaneous.md#object-additional_passives) | Object  | Additional passive abilities applied to the spawned unit. | 20 | `{ . . . }` |
@@ -549,7 +549,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bonus_passives`
 
 
-**Definition:** Passives granted to the character while this ability is equipped.  
+**Definition:** Grants temporary passive abilities to the caster for the duration of the ability.
 **Total Count:** 138
 
 <details>
@@ -559,7 +559,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 125 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 125 | passives<br>class<br>	ag |
 | [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum  | Specifies an alternative ability used when the unit is dead. | 12 | `CarrionShot_Afterlife`<br>`CarrionShot_Afterlife2`<br>`CoffinFlop_Afterlife` |
 | [`AbilityEnabledOncePerFightAtHealthThreshold`](./Enums.md) | Integer | The health threshold (absolute or percentage) at which this ability becomes enabled once per fight. | 7 | `16`<br>`25%`<br>`50%` |
 | [`XIsFreeArmorSlots`](./Enums.md) | Integer | The number of armor slots that are free (no cost) for the unit. | 7 | `1` |
@@ -645,7 +645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `temporary_effects`
 
 
-**Definition:** Status applications that wear off automatically or at the end of the turn.  
+**Definition:** Applies temporary status effects on the caster upon using the ability.
 **Total Count:** 88
 
 <details>
@@ -655,7 +655,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 35 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 35 | passives<br>class<br>	ag |
 | [`Trample`](./Enums.md) | Integer | The amount of bonus damage dealt when moving through an enemy. | 26 | `1`<br>`3`<br>`4` |
 | `CastAgain` | Integer / String | The number of additional times the ability can be cast this turn. | 20 | `1`<br>`2`<br>`3` |
 | `DisableTrample` | Integer | If set to 1, trample damage is disabled for the duration of the effect. | 10 | `1` |
@@ -671,7 +671,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`DoubleLoot`](./Enums.md) | Integer | The multiplier for loot drops, where 1 or 2 doubles the loot. | 1 | `1`<br>`2` |
 | [`KnockbackImmunity`](./Enums.md) | Integer | If set to 1, the unit cannot be knocked back. | 1 | `1` |
 | [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum  | Specifies the type of tile to place one tile ahead of the unit's movement. | 1 | `FireTile`<br>`FlowerTile`<br>`OilTile` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -682,7 +682,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Else`
 
 
-**Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
+**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.
 **Total Count:** 71
 
 <details>
@@ -692,8 +692,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 19 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 19 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 14 | Default<br>FormChange<br>Druid |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the pool of disorders the unit can gain after the spell is cast. | 7 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 6 | `{ . . . }` |
 | [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 6 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
@@ -772,7 +772,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyToSource`
 
 
-**Definition:** Redirects the nested effects to apply to the caster/source of the ability instead of the target.  
+**Definition:** An object of effects that are applied to the source of the ability (the caster).
 **Total Count:** 51
 
 <details>
@@ -782,8 +782,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 22 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 22 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 14 | Default<br>FormChange<br>Druid |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 6 | `-1`<br>`-2`<br>`1` |
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 6 | `1`<br>`10`<br>`2` |
 | [`StrengthUp`](./Enums.md) | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 6 | `"max(int, 0)"`<br>`-1`<br>`-2` |
@@ -831,7 +831,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_HasTag`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target possesses the specified entity tag.  
+**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.
 **Total Count:** 47
 
 <details>
@@ -841,9 +841,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 49 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 49 | passives<br>class<br>	ag |
 | [`tag`](./Enums.md#enum-tag) | Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 43 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 43 | Default<br>FormChange<br>Druid |
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 6 | `{ . . . }` |
 | `FloatingRockTrap` | `Number` | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 6 | `1` |
 | [`Conditional_Boss`](./Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 4 | `{ . . . }` |
@@ -884,7 +884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Enemy`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is hostile to the caster.  
+**Definition:** An object containing status effects or actions applied only if the target is an enemy.
 **Total Count:** 44
 
 <details>
@@ -894,8 +894,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
 | [`Confusion`](./Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 9 | `1`<br>`10`<br>`2` |
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 3 | `{ . . . }` |
 | [`DisplaceToAbilityTarget`](./Enums.md) | Integer | If set, displaces the source to the ability's target location. | 3 | `1` |
@@ -930,7 +930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Temporary`
 
 
-**Definition:** A wrapper object for applying status effects that automatically expire.  
+**Definition:** Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions.
 **Total Count:** 41
 
 <details>
@@ -958,7 +958,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sounds`
 
 
-**Definition:** Audio cues triggered by the ability.  
+**Definition:** Defines sound effects played at various points of the ability (e.g., ontrigger, oncastpoint).
 **Total Count:** 39
 
 <details>
@@ -982,7 +982,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Ally`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is friendly to the caster.  
+**Definition:** Defines effects that apply only if the target is an ally, with an optional else block for non-allies.
 **Total Count:** 37
 
 <details>
@@ -992,8 +992,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 21 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 21 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 4 | Default<br>FormChange<br>Druid |
 | [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 5 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `OverrideDamage` | `Number` | Overrides the damage of the current action to this flat value (can be negative to heal). | 4 | `-10`<br>`0`<br>`1` |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 4 | `-1`<br>`-2`<br>`1` |
@@ -1027,7 +1027,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_GoodRoll`
 
 
-**Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
 **Total Count:** 37
 
 <details>
@@ -1038,8 +1038,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 15 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 15 | passives<br>class<br>	ag |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the pool of disorders the unit can gain after the spell is cast. | 7 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` |
 | [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
@@ -1057,7 +1057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `keyword_tooltips`
 
 
-**Definition:** Forces specific UI tooltips to appear when hovering over the ability.  
+**Definition:** Associates keyword tooltips with the ability, often used for status effects.
 **Total Count:** 35
 
 <details>
@@ -1067,7 +1067,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 11 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 11 | passives<br>class<br>	ag |
 | [`BonusAbility`](./Enums.md#enum-bonusability) | Enum  | Specifies the name of a bonus ability granted. | 2 | `Bloodzerk`<br>`BonusToss`<br>`BonusToss2` |
 | [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 2 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 2 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
@@ -1090,7 +1090,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `splash_damage`
 
 
-**Definition:** Secondary Area of Effect blast parameters.  
+**Definition:** Defines additional damage or effects applied to nearby targets around the primary target.
 **Total Count:** 35
 
 <details>
@@ -1100,7 +1100,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 33 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 33 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 32 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 17 | `{ . . . }` |
 | [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
@@ -1123,7 +1123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Boss`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is a Boss.  
+**Definition:** Contains effects that apply only if the target is a boss enemy.
 **Total Count:** 21
 
 <details>
@@ -1133,8 +1133,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 14 | Default<br>FormChange<br>Druid |
 | [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 6 | `{ . . . }` |
 | `OverrideDamage` | `Number` | Overrides the damage of the current action to this flat value (can be negative to heal). | 4 | `-10`<br>`0`<br>`1` |
 | [`RemoveStatus`](./Engine_LogicKeys.md#valid-property-keys) | `String` | The name of the status effect to remove from the source. | 4 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
@@ -1159,7 +1159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `EvolveAbilityFromPool`
 
 
-**Definition:** Upgrades or transforms an existing ability into a new one from the specified pool.  
+**Definition:** Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it.
 **Total Count:** 21
 
 <details>
@@ -1181,7 +1181,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `KnockUpAndAway`
 
 
-**Definition:** Displaces the target vertically and horizontally away from the source.  
+**Definition:** Contains parameters for launching the target upward and away from the source, including stacks and distance.
 **Total Count:** 21
 
 <details>
@@ -1205,7 +1205,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `additional_passives`
 
 
-**Definition:** Passives granted intrinsically to a spawned entity.  
+**Definition:** Additional passive abilities applied to the spawned unit.
 **Total Count:** 20
 
 <details>
@@ -1215,7 +1215,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 17 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 17 | passives<br>class<br>	ag |
 | [`SafeDoomed`](./Enums.md#enum-safedoomed) | Enum / Integer  | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 11 | `1`<br>`2`<br>`level` |
 | [`InjuryImmunity`](./Enums.md) | Integer | The number of turns the unit is immune to injuries. | 7 | `1` |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
@@ -1242,7 +1242,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_HasStatus`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target currently has the specified status effect.  
+**Definition:** Contains an inner effect block that only executes if the target has the specified status effect.
 **Total Count:** 20
 
 <details>
@@ -1253,7 +1253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 20 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 22 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 22 | passives<br>class<br>	ag |
 | [`BonusDamage`](./Enums.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 6 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 10 | Default<br>FormChange<br>Druid |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
@@ -1273,7 +1273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RandomStatusFromPool`
 
 
-**Definition:** Selects and applies a random status effect from the provided nested object.  
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.
 **Total Count:** 19
 
 <details>
@@ -1283,7 +1283,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 31 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 31 | passives<br>class<br>	ag |
 | [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 12 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 12 | `Default`<br>`FormChange`<br>`Druid` | [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 24 | Default<br>FormChange<br>Druid |
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 9 | `1`<br>`2`<br>`4` |
@@ -1356,7 +1356,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Consumed`
 
 
-**Definition:** State object triggered when this object or entity is eaten/consumed by another character.  
+**Definition:** An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`.
 **Total Count:** 18
 
 <details>
@@ -1366,7 +1366,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 23 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 23 | Default<br>FormChange<br>Druid |
 | [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the name of the ability the consumed unit uses to attempt escape. | 17 | `CHuskStruggle`<br>`CaveWomanEscape`<br>`LennyStruggle` |
 | `force_contact` | `Boolean` | If true, the consumed unit is forced into contact with the consumer. | 15 | `true` |
 | `instant` | `Boolean` | If true, the consumption happens immediately without a timer. | 12 | `true` |
@@ -1389,7 +1389,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_NotBoss`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is NOT a Boss.  
+**Definition:** Contains effects that apply only if the target is not a boss enemy.
 **Total Count:** 16
 
 <details>
@@ -1420,7 +1420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FormChange`
 
 
-**Definition:** Transforms the character into a different state or form (e.g., Rage, HasCat).  
+**Definition:** Specifies the form the target transforms into, either as a string or an object with a `form` field.
 **Total Count:** 16
 
 <details>
@@ -1442,7 +1442,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyToSourceOnKill`
 
 
-**Definition:** Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action.  
+**Definition:** Contains effects that are applied to the source when it kills the target.
 **Total Count:** 15
 
 <details>
@@ -1452,8 +1452,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
 | [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the item ID to remove from the source on kill. | 2 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the item quest ID to mark as complete on kill. | 2 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
@@ -1477,7 +1477,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CanApplyToInanimate`
 
 
-**Definition:** Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters.  
+**Definition:** An object containing effects that can be applied to inanimate objects.
 **Total Count:** 15
 
 <details>
@@ -1487,10 +1487,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
 | [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Specifies the type of rock (e.g., 'Coin', 'SmallRock') to spawn when breaking an inanimate object. | 4 | `Coin`<br>`SmallRock` |
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 4 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 3 | `1`<br>`20` |
 | `GetAggroTarget` | Integer | The number of aggro targets to acquire. | 2 | `1` |
@@ -1506,7 +1506,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CatPartsTransform`
 
 
-**Definition:** Transforms specific body parts into different visual variants.  
+**Definition:** Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs.
 **Total Count:** 14
 
 <details>
@@ -1542,7 +1542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RandomMagicMissile`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of random magic missiles fired, or an object defining its properties.
 **Total Count:** 13
 
 <details>
@@ -1564,7 +1564,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ChangeTile`
 
 
-**Definition:** Transforms the terrain tile under the target.  
+**Definition:** Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect).
 **Total Count:** 12
 
 <details>
@@ -1585,7 +1585,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Speculative`
 
 
-**Definition:** A simulation object used by the AI to test hypothetical outcomes before committing to an action.  
+**Definition:** Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts.
 **Total Count:** 12
 
 <details>
@@ -1595,9 +1595,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | `IgnoreDamage` | `Number` | If set, the target ignores all damage for the duration. | 3 | `1` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | `BonusDamageBasedOnDistance` | `Number` | The flat bonus damage added per tile of distance between the source and target. | 2 | `1` |
 | [`Conditional_HealthThreshold`](./Miscellaneous.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
@@ -1615,7 +1615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DoScreenShake`
 
 
-**Definition:** Triggers a camera screen shake effect.  
+**Definition:** If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake.
 **Total Count:** 12
 
 <details>
@@ -1637,7 +1637,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ChanceToBreakFree`
 
 
-**Definition:** Provides a probability to escape a grapple or restraining effect.  
+**Definition:** Defines the chance and ability used for a grappled or restrained unit to break free.
 **Total Count:** 11
 
 <details>
@@ -1660,7 +1660,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Cleave`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt.
 **Total Count:** 11
 
 <details>
@@ -1680,7 +1680,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Corpse`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is a dead body/corpse.  
+**Definition:** Contains an inner effect block that only executes if the target is a corpse.
 **Total Count:** 11
 
 <details>
@@ -1690,11 +1690,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`Revive`](./Enums.md) | Integer | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 7 | `1`<br>`100%`<br>`50%` |
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 2 | `1` |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 | [`Conditional_Enemy`](./Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 1 | `{ . . . }` |
 | `FlatAIBonus` | `Number` | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 1 | `-999999`<br>`100`<br>`999999` |
 | [`HealRandomInjury`](./Enums.md) | Integer | The number of random injuries healed on the target. | 1 | `1` |
@@ -1709,7 +1709,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyPassives`
 
 
-**Definition:** Grants the nested passive abilities dynamically.  
+**Definition:** Specifies the passives or status effects to apply to the unit.
 **Total Count:** 10
 
 <details>
@@ -1719,7 +1719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 13 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 13 | passives<br>class<br>	ag |
 | [`StatusOnBattleEnd`](./Passives_and_Statuses.md#object-statusonbattleend) | Object  | An object containing status effects or passives applied to the unit when the battle ends. | 5 | `{ . . . }` |
 | [`AddTag`](./Enums.md#enum-addtag) | Enum  | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 2 | `bug`<br>`cat`<br>`fetus` |
 | [`Flying`](./Enums.md) | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
@@ -1739,7 +1739,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_FormulaIsPositive`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0.  
+**Definition:** Defines effects that apply only if a given formula evaluates to a positive value.
 **Total Count:** 10
 
 <details>
@@ -1750,7 +1750,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 9 | `passives`<br>`class`<br>`tag` | [`formula`](./Math_Equations.md) | Equation | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 1 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 2 | `0`<br>`1`<br>`10%` |
 | [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 2 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
@@ -1769,7 +1769,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Craft`
 
 
-**Definition:** Synthesizes or spawns a new item from a specific pool.  
+**Definition:** Specifies the loot pool and slot to craft an item for the source.
 **Total Count:** 9
 
 <details>
@@ -1793,7 +1793,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_BadRoll`
 
 
-**Definition:** Conditional trigger: Executes nested logic based on a randomized bad outcome probability.  
+**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.
 **Total Count:** 8
 
 <details>
@@ -1804,8 +1804,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 | `DieViolently` | `Number` | If true, causes the target to die with a violent, explosive visual effect. | 1 | `1` |
 | `Instakill` | `Number` | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 | `25`<br>`50`<br>`999` |
 
@@ -1818,7 +1818,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_FirstApplicationThisTurn`
 
 
-**Definition:** Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn.  
+**Definition:** Container for effects applied only on the first application of this ability during the turn.
 **Total Count:** 8
 
 <details>
@@ -1828,8 +1828,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 5 | Default<br>FormChange<br>Druid |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
 | [`TempPassiveWhileHasStatus`](./Miscellaneous.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 3 | `{ . . . }` |
 
@@ -1842,7 +1842,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyStatusIfCrit`
 
 
-**Definition:** Conditional trigger: Executes the nested logic only if the triggering action was a critical hit.  
+**Definition:** Defines effects that are applied only when the attack scores a critical hit.
 **Total Count:** 7
 
 <details>
@@ -1853,7 +1853,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 3 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`10`<br>`2` |
 | [`LuckUp`](./Enums.md) | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 
@@ -1866,7 +1866,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_HealthThreshold`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target's health falls below the specified threshold.  
+**Definition:** Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`.
 **Total Count:** 7
 
 <details>
@@ -1876,8 +1876,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 7 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 7 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 5 | `0`<br>`10`<br>`3` |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | `String` | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 2 | `Bait`<br>`BigFood`<br>`BiggestFood` |
 | `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
@@ -1902,7 +1902,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_InForm`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is currently in the specified transformation form.  
+**Definition:** Contains effects that apply only if the target is in the specified form.
 **Total Count:** 7
 
 <details>
@@ -1913,9 +1913,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 7 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 7 | Default<br>FormChange<br>Druid |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | `String` | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 5 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`ForceImmediateMoveAndAttack`](./Miscellaneous.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | `String` | The name of the ability the target is forced to use. | 1 | `GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 | [`CritChanceUp`](./Enums.md) | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
@@ -1932,7 +1932,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_PlayerCat`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is a player-controlled cat.  
+**Definition:** Defines effects that only apply if the target is a player-controlled cat.
 **Total Count:** 7
 
 <details>
@@ -1942,8 +1942,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 | `ConjureRandomAbilityFromCat` | `Number` | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 2 | `1` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | `GenericDebuff` | `Number` | The number of stacks of a generic, untooltipped debuff applied to the target. | 1 | `1`<br>`10`<br>`100` |
@@ -1962,7 +1962,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ForceAttack`
 
 
-**Definition:** No definition provided.  
+**Definition:** If set to 1, forces the target to perform an attack against a random or specified target.
 **Total Count:** 7
 
 <details>
@@ -1983,7 +1983,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BackflipWhenTargeted`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of backflip charges, or an object defining its ability.
 **Total Count:** 6
 
 <details>
@@ -2005,7 +2005,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_IsSelf`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is the caster themselves.  
+**Definition:** An object containing effects that are only applied if the target is the source unit itself.
 **Total Count:** 6
 
 <details>
@@ -2017,7 +2017,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 | `OverrideDamage` | `Number` | Overrides the damage of the current action to this flat value (can be negative to heal). | 1 | `-10`<br>`0`<br>`1` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -2028,7 +2028,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Object`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is an inanimate object or furniture.  
+**Definition:** Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block.
 **Total Count:** 6
 
 <details>
@@ -2039,9 +2039,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 3 | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 3 | `{ . . . }` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
 | [`CanApplyToInanimate`](./Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
 | [`RepairWeapon`](./Enums.md) | Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 1 | `1`<br>`6`<br>`99` |
 
@@ -2054,7 +2054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DoDistortionRing`
 
 
-**Definition:** Creates a visual distortion ring effect on the screen.  
+**Definition:** Configuration for a distortion ring visual effect, with speed, intensity, and radius.
 **Total Count:** 6
 
 <details>
@@ -2077,7 +2077,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Metronome`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of times Metronome triggers, or an object with stacks and banned abilities.
 **Total Count:** 6
 
 <details>
@@ -2099,7 +2099,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ObjectOnHitCharacter`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit.
 **Total Count:** 6
 
 <details>
@@ -2120,7 +2120,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SwitchMusic`
 
 
-**Definition:** Changes the background music track or layer during combat.  
+**Definition:** Defines a new song or layer for the background music.
 **Total Count:** 6
 
 <details>
@@ -2143,7 +2143,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TwisterDisplaceWithDamage`
 
 
-**Definition:** A whirlwind effect that randomly displaces targets and deals damage.  
+**Definition:** Configuration for a twister displacement that deals damage, with min/max distance and damage value.
 **Total Count:** 6
 
 <details>
@@ -2167,7 +2167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CollectsPickupsWithAltEffects`
 
 
-**Definition:** Triggers alternative nested effects when collecting items or pickups.  
+**Definition:** Contains alternative effects that are applied when collecting pickups.
 **Total Count:** 5
 
 <details>
@@ -2177,7 +2177,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`Tech`](./Enums.md) | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 2 | Default<br>FormChange<br>Druid |
 | [`LuckUp`](./Enums.md) | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
@@ -2194,7 +2194,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Shielded`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target currently has a Shield status.  
+**Definition:** An object containing effects that are only applied if the target has a shield active.
 **Total Count:** 5
 
 <details>
@@ -2205,7 +2205,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -2216,7 +2216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage`
 
 
-**Definition:** The base damage properties of an attack.  
+**Definition:** Specifies the amount of damage dealt, can be a number or expression.
 **Total Count:** 5
 
 <details>
@@ -2238,7 +2238,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DestroyEquipmentAndAttachParasite`
 
 
-**Definition:** Removes an equipped item and replaces it with a parasite from a specified pool.  
+**Definition:** Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool.
 **Total Count:** 5
 
 <details>
@@ -2258,7 +2258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DoDamage`
 
 
-**Definition:** Explicitly triggers a secondary damage instance independent of the main attack.  
+**Definition:** Contains damage parameters (amount, type, tile targets) to deal damage to the target.
 **Total Count:** 5
 
 <details>
@@ -2271,7 +2271,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | passives<br>class<br>	ag |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 7 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 7 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 7 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 7 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | Specifies whether the damage effect applies to tiles; 'all' damages every tile in the area. | 4 | `all` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 4 | `{ . . . }` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
@@ -2285,7 +2285,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ObjectOnHit`
 
 
-**Definition:** Spawns a specific physics/item object upon impact.  
+**Definition:** Specifies the object to spawn on the hit tile.
 **Total Count:** 5
 
 <details>
@@ -2305,7 +2305,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyToConsumed`
 
 
-**Definition:** Redirects the nested effects to apply to the entity that just consumed this object.  
+**Definition:** Container for effects that are applied to the consumed object.
 **Total Count:** 4
 
 <details>
@@ -2317,7 +2317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `DeleteObject` | `Number` | If set, deletes the target object from the map. | 3 | `1` |
 | `Die` | `Number` | If set, kills the target immediately. | 1 | `1`<br>`6` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -2328,7 +2328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ArcLightning`
 
 
-**Definition:** Executes a chain-lightning logic block that bounces between targets.  
+**Definition:** Configuration for arc lightning chain, with stacks, chance, max distance, and enemy-only flag.
 **Total Count:** 4
 
 <details>
@@ -2353,7 +2353,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Familiar`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is a familiar.  
+**Definition:** Container for effects applied if the unit has a familiar, with an optional Else block.
 **Total Count:** 4
 
 <details>
@@ -2363,7 +2363,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 2 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | [`BonusDamage`](./Enums.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
@@ -2379,7 +2379,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_OncePerBattle`
 
 
-**Definition:** Conditional trigger: Executes nested logic only once per encounter/battle.  
+**Definition:** An object containing effects that can only trigger once per battle, preventing double-activation.
 **Total Count:** 4
 
 <details>
@@ -2391,7 +2391,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the item quest ID to mark as complete on kill. | 2 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` |
 | `TriggerGameEnding` | `Number` | If set to 1, triggers the game's ending sequence; 0 disables it. | 2 | `0`<br>`1` |
 
@@ -2404,7 +2404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_RandomChance`
 
 
-**Definition:** Conditional trigger: Executes nested logic based on a flat percentage random roll.  
+**Definition:** An object containing effects that execute only if a random roll succeeds, with an odds value defined inside.
 **Total Count:** 4
 
 <details>
@@ -2415,9 +2415,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 4 | `.1`<br>`.16666666`<br>`.3` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 4 | Default<br>FormChange<br>Druid |
 | [`ApplyPassives`](./Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 2 | `{ . . . }` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -2428,7 +2428,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `extra_statuses`
 
 
-**Definition:** Additional generic status applications.  
+**Definition:** An object containing additional status effects (with stack counts) applied to the consumed unit.
 **Total Count:** 4
 
 <details>
@@ -2438,7 +2438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`Burn`](./Enums.md) | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 2 | Default<br>FormChange<br>Druid |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | [`Tarred`](./Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .1]` |
@@ -2452,7 +2452,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `GainCoinsRange`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object with `min` and `max` fields specifying a range for the amount of coins gained.
 **Total Count:** 4
 
 <details>
@@ -2474,7 +2474,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LateStatusApplication`
 
 
-**Definition:** Applies a status effect after all primary damage and effects have fully resolved.  
+**Definition:** Container for status effects that are applied late after the main effect.
 **Total Count:** 4
 
 <details>
@@ -2494,7 +2494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LeaveBehind`
 
 
-**Definition:** Spawns a specific object at the character's previous location when they move.  
+**Definition:** Specifies the object or entity to spawn after the unit leaves a tile.
 **Total Count:** 4
 
 <details>
@@ -2514,7 +2514,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `post_spawn_statuses`
 
 
-**Definition:** Status effects applied immediately after an entity spawns.  
+**Definition:** Status effects applied to the spawned unit immediately after it appears.
 **Total Count:** 4
 
 <details>
@@ -2524,11 +2524,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 | [`DoDamage`](./Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 2 | `{ . . . }` |
 | [`EnterMount`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the name of the mount status to apply to the unit. | 1 | `enter` |
 | [`VisualFXTile`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the name of the visual effect to play on the target tile. | 1 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 
 </details>
 
@@ -2539,7 +2539,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ReplaceSpell`
 
 
-**Definition:** Replaces a spell in the character's hand/deck with a different one.  
+**Definition:** Defines which spell slot to replace and with which ability.
 **Total Count:** 4
 
 <details>
@@ -2561,7 +2561,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ReviveNextRound`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of revives granted, or an object defining revive properties.
 **Total Count:** 4
 
 <details>
@@ -2572,7 +2572,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `revive_health` | Integer | The amount of health (as a flat integer or percentage) the unit revives with. | 4 | `1`<br>`100%`<br>`50%` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 3 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
@@ -2588,7 +2588,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `rocket_swirl`
 
 
-**Definition:** Visual parameters for swirling projectile paths.  
+**Definition:** An object defining the spiral rotation parameters for a rocket-style projectile.
 **Total Count:** 4
 
 <details>
@@ -2610,7 +2610,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TakeBonusTurnWithStatus`
 
 
-**Definition:** Grants the character an immediate extra turn while afflicted with specific statuses.  
+**Definition:** Container for status effects applied when taking a bonus turn.
 **Total Count:** 4
 
 <details>
@@ -2620,7 +2620,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [`TempNoManaRegen`](./Enums.md) | Integer | The number of turns the unit cannot regenerate mana. | 2 | `1` |
@@ -2636,7 +2636,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TempPassiveWhileHasStatus`
 
 
-**Definition:** Grants nested passives only while the character possesses the specified status.  
+**Definition:** An object defining passives temporarily granted to the unit while it has a specific status effect.
 **Total Count:** 4
 
 <details>
@@ -2646,7 +2646,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 2 | `{ . . . }` |
 | [`AddManaRegen`](./Enums.md) | Integer | The flat amount of mana regenerated per turn. | 1 | `1`<br>`2`<br>`3` |
@@ -2662,7 +2662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TimeDelayStatusApplication`
 
 
-**Definition:** Delays the nested effects by a specified amount of real-time seconds.  
+**Definition:** Container for status effects applied after a specified delay.
 **Total Count:** 4
 
 <details>
@@ -2673,9 +2673,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | [`DoScreenShake`](./Miscellaneous.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 | `{ . . . }`<br>`1` |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | `String` | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `FullHeal` | `Number` | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
@@ -2695,7 +2695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyMultipleTimes`
 
 
-**Definition:** A loop object that executes its nested logic multiple times.  
+**Definition:** An object containing a `stacks` value that specifies how many times the nested effects are applied.
 **Total Count:** 3
 
 <details>
@@ -2706,7 +2706,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 3 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -2719,7 +2719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BounceObject`
 
 
-**Definition:** Spawns a physics object that visually bounces off the target.  
+**Definition:** Specifies the object or projectile to spawn and bounce from the target.
 **Total Count:** 3
 
 <details>
@@ -2740,7 +2740,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CatPartsSizeScaleStatus`
 
 
-**Definition:** Visually scales specific body parts of a character.  
+**Definition:** Configures scale multipliers for individual cat body parts (body, arms, mouth).
 **Total Count:** 3
 
 <details>
@@ -2760,7 +2760,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_AffectedByElement`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is currently afflicted by the specified element.  
+**Definition:** Container for effects applied if the target is affected by a specified element, with optional Else block.
 **Total Count:** 3
 
 <details>
@@ -2771,9 +2771,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 3 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`BonusCritChance`](./Enums.md) | Integer | The flat percentage increase to critical hit chance. | 2 | `100`<br>`25`<br>`50` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 | [`Conditional_Speculative`](./Miscellaneous.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
 
@@ -2786,7 +2786,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_LastHit`
 
 
-**Definition:** Conditional trigger: Executes nested logic if this attack is the final hit of a multi-hit sequence.  
+**Definition:** Container for effects applied only on the final hit of a multi-hit attack, with optional Else block.
 **Total Count:** 3
 
 <details>
@@ -2797,8 +2797,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 2 | `{ . . . }` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`DelayCastAbility`](./Abilities_and_Spells.md#object-delaycastability) | `String` | Specifies the name of an ability to cast after a delay. | 1 | `HitlerNuke` |
 | [`Bruise`](./Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `1`<br>`2`<br>`3` |
@@ -2812,7 +2812,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DustOnHit`
 
 
-**Definition:** Spawns a specific particle or cloud object upon impact.  
+**Definition:** Configuration for a dust object spawned on hit.
 **Total Count:** 3
 
 <details>
@@ -2832,7 +2832,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `IncAuxCounterClamped`
 
 
-**Definition:** Increments a generic auxiliary counter on the character, capped by a maximum value.  
+**Definition:** An object with `change` and `max` properties modifying the auxiliary counter by `change`, clamped to `max`.
 **Total Count:** 3
 
 <details>
@@ -2854,7 +2854,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SetCrazyEyeBackgroundWeights`
 
 
-**Definition:** Adjusts visual rendering weights for the 'Crazy Eye' background effect.  
+**Definition:** An object containing a `weights` array that sets the weighting for which Crazy Eye background variant is displayed.
 **Total Count:** 3
 
 <details>
@@ -2875,7 +2875,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnBattleEnd`
 
 
-**Definition:** Applies the nested status effects when the encounter finishes.  
+**Definition:** An object containing status effects or passives applied to the unit when the battle ends.
 **Total Count:** 3
 
 <details>
@@ -2885,7 +2885,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 56 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 56 | passives<br>class<br>	ag |
 | `even_if_dead` | Boolean | If true, the effect triggers even if the unit is dead. | 25 | `true` |
 | [`RandomMutation`](./Enums.md) | Integer | The number of random mutations to apply. | 9 | `1`<br>`3` |
 | [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum  | Specifies the tag to filter random mutations by. | 2 | `bird`<br>`melted` |
@@ -2899,7 +2899,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Tangled`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`.
 **Total Count:** 3
 
 <details>
@@ -2921,7 +2921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddStatusToBasicAttack`
 
 
-**Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
+**Definition:** Contains status effects to add to the basic attack.
 **Total Count:** 2
 
 <details>
@@ -2931,7 +2931,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 121 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 121 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 56 | `Default`<br>`FormChange`<br>`Druid` | [`Bleed`](./Enums.md) | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 45 | Default<br>FormChange<br>Druid |
 | [`Bruise`](./Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 12 | `1`<br>`2`<br>`3` |
 
@@ -2944,7 +2944,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AfterImage`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the object or skill used to create an afterimage of the unit.
 **Total Count:** 2
 
 <details>
@@ -2966,7 +2966,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyToRandomPartyMemberIfPossible`
 
 
-**Definition:** Redirects the nested effects to apply to a random living member of the player's party.  
+**Definition:** Contains an inner effect block that is applied to a random living party member if one exists.
 **Total Count:** 2
 
 <details>
@@ -2977,7 +2977,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the pool of disorders the unit can gain after the spell is cast. | 2 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -2988,7 +2988,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyToTile`
 
 
-**Definition:** Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself.  
+**Definition:** Defines effects to apply to the target tile.
 **Total Count:** 2
 
 <details>
@@ -3000,7 +3000,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ObjectOnHit`](./Abilities_and_Spells.md#object-objectonhit) | `String` | Specifies the object to spawn on the hit tile. | 2 | `Bait`<br>`BiggestFood`<br>`Carcus` |
 | `SpawnBearTrap` | `Number` | If non-zero, spawns a bear trap on the tile. | 2 | `1` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3011,7 +3011,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AutocastEachRound`
 
 
-**Definition:** Forces the character to automatically cast a specific ability at the start of each combat round.  
+**Definition:** Contains an ability name and optional 'even_if_stunned' flag to autocast each round.
 **Total Count:** 2
 
 <details>
@@ -3033,7 +3033,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BodyGuard`
 
 
-**Definition:** Protects an ally by intercepting attacks directed at them.  
+**Definition:** An object that applies a bodyguard status, optionally linking to a swap ability.
 **Total Count:** 2
 
 <details>
@@ -3055,7 +3055,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_BossOrBig`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is a Boss or has a large size classification.  
+**Definition:** An object containing effects that are only applied if the target is a boss or large unit.
 **Total Count:** 2
 
 <details>
@@ -3066,7 +3066,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3077,7 +3077,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Buddy`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is the caster's summoned buddy/familiar.  
+**Definition:** An object containing effects that are only applied if the caster has a buddy (follower) unit.
 **Total Count:** 2
 
 <details>
@@ -3087,8 +3087,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 | [`Conditional_InForm`](./Miscellaneous.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
 | [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
@@ -3102,7 +3102,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_DestructibleCorpse`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is a corpse that can be destroyed or vaporized.  
+**Definition:** An object containing effects that are only applied if the corpse is destructible.
 **Total Count:** 2
 
 <details>
@@ -3115,7 +3115,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
 | [`ApplyToTile`](./Miscellaneous.md#object-applytotile) | Object  | Defines effects to apply to the target tile. | 2 | `{ . . . }` |
 | `VaporizeCorpse` | `Number` | If set, vaporizes the target's corpse, preventing revival. | 2 | `1` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3126,7 +3126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Displaceable`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement.  
+**Definition:** Contains an inner effect block that only executes if the target can be displaced (knocked back).
 **Total Count:** 2
 
 <details>
@@ -3139,7 +3139,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` | [`LaunchOffScreen`](./Enums.md) | String | A formula string that determines the knockback force to launch the unit off-screen. | 1 | passives<br>class<br>	ag |
 | [`LaunchOffScreenInstakill`](./Enums.md) | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 1 | `1` |
 | [`TempInitiativeChange`](./Enums.md) | Integer | The flat change to the unit's initiative value. | 1 | `-100`<br>`-999`<br>`100` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3150,7 +3150,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_HasCleansableDebuffs`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target currently has negative status effects that can be cleansed.  
+**Definition:** An object containing effects that execute only if the unit has cleansable debuffs.
 **Total Count:** 2
 
 <details>
@@ -3160,8 +3160,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | `GenericBuff` | `Number` | A generic buff value applied to the unit. | 1 | `100`<br>`5` |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 | [`PartialCleanse`](./Enums.md) | Integer | The number of stacks of temporary status effects to remove from the target. | 1 | `1`<br>`9999` |
@@ -3175,7 +3175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_NotAlly`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is NOT friendly to the caster.  
+**Definition:** An object containing effects that are only applied if the target is not an ally of the source.
 **Total Count:** 2
 
 <details>
@@ -3185,7 +3185,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`Confusion`](./Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
@@ -3199,7 +3199,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_NotBossOrBig`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is NEITHER a Boss nor large.  
+**Definition:** An object containing effects that are only applied if the target is not a boss or large unit.
 **Total Count:** 2
 
 <details>
@@ -3210,7 +3210,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3221,7 +3221,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_NotShielded`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target does NOT currently have a Shield status.  
+**Definition:** An object containing effects that are only applied if the target does not have a shield active.
 **Total Count:** 2
 
 <details>
@@ -3231,9 +3231,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | [`Knockback`](./Enums.md) | Equation | The number of tiles the target is pushed away from the source on hit. | 2 | `1`<br>`10`<br>`2` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3244,7 +3244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ConjureBonusAbility`
 
 
-**Definition:** Adds a temporary bonus ability to the character's hand/deck.  
+**Definition:** Specifies the name of the bonus ability to conjure.
 **Total Count:** 2
 
 <details>
@@ -3266,7 +3266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CopySpells`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of spells copied from the target, or an object specifying `stacks` and whether the copy is `upgraded`.
 **Total Count:** 2
 
 <details>
@@ -3289,7 +3289,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CreateGlobalModifiers`
 
 
-**Definition:** Generates global map or encounter rules/modifiers.  
+**Definition:** Defines global gameplay modifiers to activate.
 **Total Count:** 2
 
 <details>
@@ -3299,7 +3299,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Variable | Inherits game-wide rule modifiers. You can utilize any key from the Engine Global Modifier Keys list here to alter overarching game mechanics (e.g., changing gravity or stamina costs). | 5 | `CreateGlobalModifiers`<br>`BloodRain`<br>`NextPlayerCatTakesExtraTurn` |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Variable | If true, activates a global modifier effect on the house environment. | 5 | `CreateGlobalModifiers`<br>`BloodRain`<br>`NextPlayerCatTakesExtraTurn` |
 | [`LowerAmbientLight`](./Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 3 | `{ . . . }` |
 | [`BloodRain`](./Enums.md) | Integer | If non-zero, enables the blood rain visual effect. | 3 | `1` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | `passives`<br>`class`<br>`tag`
@@ -3313,7 +3313,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `empty_self_damage`
 
 
-**Definition:** Recoil damage specifically applied when the attack misses all targets.  
+**Definition:** Defines self-damage or effects when the ability is used with no target (empty).
 **Total Count:** 2
 
 <details>
@@ -3324,7 +3324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
 
@@ -3335,7 +3335,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FindItemFromPool`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the loot pool from which to find an item, with an optional chance.
 **Total Count:** 2
 
 <details>
@@ -3355,7 +3355,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ForceMoveTowardsTaggedObject`
 
 
-**Definition:** Forces the character to move towards the nearest object with a specific tag.  
+**Definition:** An object specifying the `ability` and optional `tag` used to forcibly move the unit towards a tagged object.
 **Total Count:** 2
 
 <details>
@@ -3375,7 +3375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `KnockOutCoin`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of coins knocked out, with an optional probability or an object with stacks and chance.
 **Total Count:** 2
 
 <details>
@@ -3398,7 +3398,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LowerAmbientLight`
 
 
-**Definition:** A visual effect that dims the map's lighting.  
+**Definition:** If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly.
 **Total Count:** 2
 
 <details>
@@ -3420,7 +3420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Math`
 
 
-**Definition:** Triggers the Tinkerer's Math ability sequence.  
+**Definition:** An object containing a `stacks` value that determines how many times the nested effects are applied.
 **Total Count:** 2
 
 <details>
@@ -3431,7 +3431,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
@@ -3445,7 +3445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MeleeRevengeDamage`
 
 
-**Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
+**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.
 **Total Count:** 2
 
 <details>
@@ -3455,7 +3455,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 36 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 36 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 47 | `{ . . . }` |
 
 </details>
@@ -3467,7 +3467,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NextAttackSpecialCrit`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of charges for a special crit on the next attack, or an object defining its bonus properties.
 **Total Count:** 2
 
 <details>
@@ -3490,7 +3490,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NukeQuestFinalBossModifications`
 
 
-**Definition:** Special encounter trigger for the Nuke Quest ending.  
+**Definition:** Contains modifications for the nuke quest final boss, such as damage_instance effects.
 **Total Count:** 2
 
 <details>
@@ -3513,7 +3513,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `OverHealToStatuses`
 
 
-**Definition:** Converts excessive healing beyond maximum health into specific status effects.  
+**Definition:** Specifies a set of statuses applied to the target based on the amount of over-healing dealt.
 **Total Count:** 2
 
 <details>
@@ -3523,7 +3523,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | `stack_scale` | Integer | The scaling factor for how many stacks of the over-heal status are applied. | 1 | `0` |
 | [`RandomStatUp`](./Enums.md) | Enum / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`TakeExtraTurn`](./Enums.md) | Integer | The number of extra turns granted to the source. | 1 | `1` |
@@ -3537,7 +3537,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `QuakeAreaChance`
 
 
-**Definition:** Provides a probability to trigger an earthquake Area of Effect.  
+**Definition:** An object containing a radius and a chance to trigger a quake area effect.
 **Total Count:** 2
 
 <details>
@@ -3559,7 +3559,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RandomDistanceDisplace`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of stacks of a random distance displacement effect, or an object with stacks, min_dist, and chance.
 **Total Count:** 2
 
 <details>
@@ -3581,7 +3581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RandomKnockback`
 
 
-**Definition:** Applies a randomized amount of knockback force.  
+**Definition:** An object defining the minimum and maximum distance in tiles for a random knockback.
 **Total Count:** 2
 
 <details>
@@ -3603,7 +3603,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ScatterCoins`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula.
 **Total Count:** 2
 
 <details>
@@ -3625,7 +3625,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SmartMetronome`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of stacks of a buff that increases damage by a percentage, with an optional upgrade flag.
 **Total Count:** 2
 
 <details>
@@ -3647,7 +3647,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TakeBonusTurnWithAIControl`
 
 
-**Definition:** Grants the character an immediate extra turn, but forces the AI to control them during it.  
+**Definition:** An object configuring whether the bonus turn happens at the end of the round and whether spells are included.
 **Total Count:** 2
 
 <details>
@@ -3668,7 +3668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TeamCastAbility`
 
 
-**Definition:** Requires or involves multiple characters to execute the ability.  
+**Definition:** Specifies the ability name for the team to cast, with optional tag restriction and same orientation.
 **Total Count:** 2
 
 <details>
@@ -3689,7 +3689,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `XIsSpellStormRampAndReset`
 
 
-**Definition:** No definition provided.  
+**Definition:** If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp.
 **Total Count:** 2
 
 <details>
@@ -3711,7 +3711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `XIsTargetHealth`
 
 
-**Definition:** Math variable assignment: Evaluates X as the target's current health.  
+**Definition:** Evaluates a bonus damage formula where X is the target's current health.
 **Total Count:** 2
 
 <details>
@@ -3731,7 +3731,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AlphaStatusOnTurnBegin`
 
 
-**Definition:** Grants a specific status effect to the 'Alpha' (the party leader) at the start of their turn.  
+**Definition:** Specifies status effects applied to the alpha at the start of each turn.
 **Total Count:** 1
 
 <details>
@@ -3741,7 +3741,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`DoubleCastSpellThisTurn`](./Enums.md) | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 1 | `1` |
 
 </details>
@@ -3753,7 +3753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyPassivesToSpawnerWhileAlive`
 
 
-**Definition:** Grants nested passives to the entity that spawned this object, lasting only as long as this object remains alive.  
+**Definition:** An object defining passives that are applied to the spawner while this unit is alive.
 **Total Count:** 1
 
 <details>
@@ -3763,7 +3763,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum  | Specifies which equipment slot is visually hidden. | 1 | `neck` |
 
 </details>
@@ -3775,7 +3775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyStatusesNextTurnBegin`
 
 
-**Definition:** Delays the application of the nested status effects until the start of the target's next turn.  
+**Definition:** Specifies a set of statuses to apply to the target at the beginning of their next turn.
 **Total Count:** 1
 
 <details>
@@ -3785,7 +3785,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`Quivered`](./Enums.md) | Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
 
 </details>
@@ -3797,7 +3797,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyToOthersWithSharedTagAndFaction`
 
 
-**Definition:** Redirects the nested effects to apply to all other entities on the map that share the target's faction and specified tags.  
+**Definition:** Specifies statuses to apply to other units that share a tag and faction with the target.
 **Total Count:** 1
 
 <details>
@@ -3817,7 +3817,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyToRandomClosestAlly`
 
 
-**Definition:** Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them.  
+**Definition:** Specifies statuses to apply to a random ally closest to the target.
 **Total Count:** 1
 
 <details>
@@ -3828,7 +3828,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ForceMoveTowards` | `Number` | The number of tiles to force the target to move toward the caster. | 1 | `1` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3839,7 +3839,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bonk_damage`
 
 
-**Definition:** Damage dealt when knocked into a wall or obstacle.  
+**Definition:** Defines damage and effects applied when a dash or move hits a wall or obstacle.
 **Total Count:** 1
 
 <details>
@@ -3851,7 +3851,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
 
@@ -3862,7 +3862,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_ActiveWeather_Any`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the current map weather matches any in the list.  
+**Definition:** An object containing effects that execute only if any of the specified weather types are active.
 **Total Count:** 1
 
 <details>
@@ -3885,7 +3885,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Backstab`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the attacker is positioned behind the target.  
+**Definition:** An object containing effects that execute only if the attack lands on the target's back.
 **Total Count:** 1
 
 <details>
@@ -3896,9 +3896,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `BonusCritChance` | `Number` | The flat percentage increase to critical hit chance. | 1 | `100`<br>`25`<br>`50` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3909,7 +3909,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_CanBeHealed`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target's health is below maximum and they are capable of receiving healing.  
+**Definition:** An object containing effects that execute only if the target can be healed.
 **Total Count:** 1
 
 <details>
@@ -3920,7 +3920,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3931,7 +3931,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_DebuffRoll`
 
 
-**Definition:** Conditional trigger: Executes nested logic based on a randomized debuff probability.  
+**Definition:** An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside.
 **Total Count:** 1
 
 <details>
@@ -3955,7 +3955,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_FinishedSpawning`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence.  
+**Definition:** Contains an inner effect block that only executes if the target has finished its spawning animation.
 **Total Count:** 1
 
 <details>
@@ -3967,7 +3967,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 | [`Imprison`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the type of unit or object to summon as a prison. | 1 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3978,7 +3978,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_IsTrample`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the current movement/attack is classified as a trample.  
+**Definition:** An object containing effects that execute only if the ability is a trample attack.
 **Total Count:** 1
 
 <details>
@@ -3990,7 +3990,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 | `SetKnockback` | `Number` | The knockback distance to set for the damage instance, overriding default. | 1 | `0` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -4001,7 +4001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_LivingPlayerCat`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is an alive player-controlled cat.  
+**Definition:** An object containing effects that execute only if the source is a living player-owned cat.
 **Total Count:** 1
 
 <details>
@@ -4011,9 +4011,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | [`TempPassiveWhileHasStatus`](./Miscellaneous.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 1 | `{ . . . }` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
 
@@ -4026,7 +4026,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_NotBig`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is NOT classified as large.  
+**Definition:** An object containing effects that execute only if the target is not a 'big' unit.
 **Total Count:** 1
 
 <details>
@@ -4038,7 +4038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
 | `DisplaceTowardsSource` | `Number` | If set, displaces the target towards the source of the effect. | 1 | `1` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -4049,7 +4049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_SourceAbilityHasTag`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the ability that triggered this effect has the specified tag.  
+**Definition:** An object containing effects that execute only if the source ability has the specified tag.
 **Total Count:** 1
 
 <details>
@@ -4059,7 +4059,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
 | [`tag`](./Enums.md#enum-tag) | Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
@@ -4074,7 +4074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_SourceHasStatus`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the caster currently has the specified status.  
+**Definition:** An object containing effects that execute only if the source unit has the specified status.
 **Total Count:** 1
 
 <details>
@@ -4085,7 +4085,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`Bruise`](./Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `1`<br>`2`<br>`3` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -4098,7 +4098,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_threshold_altanimations`
 
 
-**Definition:** Triggers different hit animations based on the amount of damage dealt.  
+**Definition:** A mapping of damage threshold values to alternate animation names, triggering different animations based on damage dealt.
 **Total Count:** 1
 
 <details>
@@ -4124,7 +4124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4134,7 +4134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4144,7 +4144,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4154,7 +4154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4164,7 +4164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4174,7 +4174,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4184,7 +4184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4194,7 +4194,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4204,7 +4204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4214,7 +4214,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4224,7 +4224,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4234,7 +4234,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4244,7 +4244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4254,7 +4254,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4264,7 +4264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4274,7 +4274,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4284,7 +4284,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4294,7 +4294,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4304,7 +4304,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -4314,7 +4314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 
@@ -4322,7 +4322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DelayCastAbility`
 
 
-**Definition:** Queues an ability to be cast automatically after a certain delay or trigger.  
+**Definition:** Specifies the name of an ability to cast after a delay.
 **Total Count:** 1
 
 <details>
@@ -4345,7 +4345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DelayedWindCone`
 
 
-**Definition:** Creates a delayed Area of Effect cone.  
+**Definition:** An object containing parameters for a delayed wind cone, such as damage and distance.
 **Total Count:** 1
 
 <details>
@@ -4367,7 +4367,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DybbukPossessed`
 
 
-**Definition:** Defines the abilities and behaviors available when possessing another entity.  
+**Definition:** Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability.
 **Total Count:** 1
 
 <details>
@@ -4389,7 +4389,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ForceImmediateMoveAndAttack`
 
 
-**Definition:** Forces the character to immediately move to a target and use a specified ability.  
+**Definition:** An object that forces the unit to instantly move toward the target and perform a specified ability attack.
 **Total Count:** 1
 
 <details>
@@ -4411,7 +4411,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `IncAuxCounterCycle`
 
 
-**Definition:** Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum.  
+**Definition:** An object containing parameters for incrementing an auxiliary counter with a change and maximum value.
 **Total Count:** 1
 
 <details>
@@ -4433,7 +4433,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Madness`
 
 
-**Definition:** No definition provided.  
+**Definition:** The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability].
 **Total Count:** 1
 
 <details>
@@ -4453,7 +4453,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MergeDamageInstance`
 
 
-**Definition:** Combines damage numbers or visual hit effects.  
+**Definition:** Specifies parameters to merge multiple damage instances into one, controlling hit animation and instant pop behavior.
 **Total Count:** 1
 
 <details>
@@ -4465,7 +4465,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `can_instapop` | `Boolean` | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 1 | `false` |
 | `force_no_hit_animation` | Boolean | If true, suppresses the hit animation when merging damage instances. | 1 | `true` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
 
@@ -4476,7 +4476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NextBasicAttackCritsThisTurn`
 
 
-**Definition:** Guarantees the next basic attack executed this turn will be a critical hit.  
+**Definition:** An object or number configuring the next basic attack to be a critical hit this turn. An object may contain stack, cant_miss, or piercing sub-keys.
 **Total Count:** 1
 
 <details>
@@ -4490,7 +4490,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `cant_miss` | `Boolean` | If true, the damage instance always hits its target regardless of accuracy or evasion. | 1 | `true` |
 | `piercing` | `Boolean` | If true, the damage instance ignores armor or damage reduction effects on the target. | 1 | `true` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
 
@@ -4501,7 +4501,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NextBattleStatusStacks`
 
 
-**Definition:** Carries over the specified status effects into the next encounter/battle.  
+**Definition:** An object specifying status effects and their stacks to be applied at the start of the next battle. Contains a "fights" counter and nested status keys.
 **Total Count:** 1
 
 <details>
@@ -4514,7 +4514,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
 | `MadnessChanceOnTurnBegin` | `Number` | The chance (as a multiplier) to inflict Madness status at the start of each turn in the next battle. | 1 | `2` |
 | [`fights`](./Enums.md) | Integer | The number of future battles the status effect will be applied at the start of. | 1 | `1`<br>`9999` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -4525,7 +4525,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PassiveWhileNotTakingTurn`
 
 
-**Definition:** Grants nested passives that are only active while it is NOT the character's turn.  
+**Definition:** A nested passive object that is active only while the unit is not currently taking its turn.
 **Total Count:** 1
 
 <details>
@@ -4546,7 +4546,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PoolMetronome`
 
 
-**Definition:** Executes a random ability drawn from a specific pool.  
+**Definition:** An object containing a "pool" array of ability names that the Metronome effect can randomly select from.
 **Total Count:** 1
 
 <details>
@@ -4566,7 +4566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PopAndSpawn`
 
 
-**Definition:** Destroys the target and replaces it with a new spawned entity.  
+**Definition:** The object (enemy or entity) to spawn on the target's tile, optionally with visual effects.
 **Total Count:** 1
 
 <details>
@@ -4590,7 +4590,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RemoveStatusStacks`
 
 
-**Definition:** Removes a specific number of stacks of a status effect.  
+**Definition:** An object specifying a status name and the number of stacks to remove from the target.
 **Total Count:** 1
 
 <details>
@@ -4613,7 +4613,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RevengeDamage`
 
 
-**Definition:** Reaction trigger: Deals damage to the attacker when hit.  
+**Definition:** An object defining the damage and effects that trigger when the unit is attacked.
 **Total Count:** 1
 
 <details>
@@ -4623,7 +4623,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 10 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 10 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 29 | `{ . . . }` |
 
 </details>
@@ -4635,7 +4635,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ScrambleLastUsedSpell`
 
 
-**Definition:** Randomizes or scrambles the properties of the last spell cast.  
+**Definition:** An object containing a "permanent" boolean. If true, permanently scrambles (randomizes) the last used spell.
 **Total Count:** 1
 
 <details>
@@ -4656,7 +4656,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SetAnimationAlts`
 
 
-**Definition:** Overrides specific animation states with alternative animations.  
+**Definition:** Specifies alternative animation names for the target's dying and dead states.
 **Total Count:** 1
 
 <details>
@@ -4678,7 +4678,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ShowFakeDamage`
 
 
-**Definition:** Displays a visual damage number without actually modifying health.  
+**Definition:** Displays a fake damage number (with optional style) for visual effect without actually changing health.
 **Total Count:** 1
 
 <details>
@@ -4700,7 +4700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpreadDisease`
 
 
-**Definition:** Provides a chance to transmit a disease status to adjacent targets.  
+**Definition:** Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target.
 **Total Count:** 1
 
 <details>
@@ -4722,7 +4722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusGroup`
 
 
-**Definition:** Groups multiple status effects together for batch application.  
+**Definition:** A container grouping multiple status effects to be applied simultaneously.
 **Total Count:** 1
 
 <details>
@@ -4732,7 +4732,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`DamageOrHealConditionally`](./Enums.md) | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). | 2 | Default<br>FormChange<br>Druid |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .01]` |
 
@@ -4745,7 +4745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusKillers`
 
 
-**Definition:** Instantly kills the target if they possess the specified status effects.  
+**Definition:** An object containing nested conditionals that apply status effects when the unit kills an enemy.
 **Total Count:** 1
 
 <details>
@@ -4765,7 +4765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SwapWeapon`
 
 
-**Definition:** Replaces the character's currently equipped weapon with one from a specified pool.  
+**Definition:** An object containing a "pool" array of weapon names to randomly swap to.
 **Total Count:** 1
 
 <details>
@@ -4785,7 +4785,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TransformEquipment`
 
 
-**Definition:** Upgrades or transforms a specific equipped item into another.  
+**Definition:** Defines an equipment transformation from one item to another, with 'from' and 'to' sub-keys.
 **Total Count:** 1
 
 <details>
@@ -4807,7 +4807,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TransformWeapon`
 
 
-**Definition:** Transforms the equipped weapon into another specific weapon state.  
+**Definition:** An object with `from` and `to` fields specifying the weapon transformation.
 **Total Count:** 1
 
 <details>
@@ -4829,7 +4829,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `UseAbility`
 
 
-**Definition:** Forces the character or target to instantly use a specified ability.  
+**Definition:** The name of the ability the target is forced to use.
 **Total Count:** 1
 
 <details>
@@ -4849,7 +4849,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `UseMoveAbilityWithAI`
 
 
-**Definition:** Forces the character to execute a movement ability using specific AI weights.  
+**Definition:** Defines a move ability to execute with AI-controlled movement weights.
 **Total Count:** 1
 
 <details>
@@ -4871,7 +4871,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `VisualCountDownThenApplyStatus`
 
 
-**Definition:** Displays a visual countdown above the target before applying the nested effects.  
+**Definition:** Contains a visual countdown sequence that culminates in applying a status effect, optionally forcing an ability use.
 **Total Count:** 1
 
 <details>
@@ -4881,7 +4881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
@@ -4893,7 +4893,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `WaggleClone`
 
 
-**Definition:** Spawns visual clones or alternative hitbox variants of the projectile.  
+**Definition:** Defines a waggle clone ability with health thresholds and object sizes.
 **Total Count:** 1
 
 <details>
@@ -4917,7 +4917,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `effects`
 
 
-**Definition:** Non-damaging status applications and logic triggers executed on impact.  
+**Definition:** Applies a list of status effects or visual effects to targets.
 **Total Count:** 0
 
 <details>
@@ -4927,8 +4927,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1085 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 624 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1085 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 624 | Default<br>FormChange<br>Druid |
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 102 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 98 | `1`<br>`2`<br>`3` |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 85 | `1`<br>`10`<br>`2` |

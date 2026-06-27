@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1571 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1571 | passives<br>class<br>	ag |
 | [`desc`](./Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 2423 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | [`shield`](./Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 191 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 89 | `+1`<br>`-1`<br>`-2` |
@@ -42,7 +42,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `passives`
 
 
-**Definition:** Object listing intrinsic passive modifiers.  
+**Definition:** A container object listing passive effects granted to the unit.
 **Total Count:** 284
 
 <details>
@@ -52,7 +52,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2628 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2628 | passives<br>class<br>	ag |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 133 | `{ . . . }` |
 | [`Brace`](./Enums.md) | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 94 | `1`<br>`10`<br>`2` |
 | [`Trample`](./Enums.md) | Integer | The amount of bonus damage dealt when moving through an enemy. | 88 | `1`<br>`3`<br>`4` |
@@ -156,7 +156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddStatusToBasicAttack`
 
 
-**Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
+**Definition:** Contains status effects to add to the basic attack.
 **Total Count:** 52
 
 <details>
@@ -166,7 +166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 121 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 121 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 56 | `Default`<br>`FormChange`<br>`Druid` | [`Bleed`](./Enums.md) | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 45 | Default<br>FormChange<br>Druid |
 | [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 29 | `1`<br>`10`<br>`2` |
 | [`Knockback`](./Enums.md) | Equation | The number of tiles the target is pushed away from the source on hit. | 24 | `1`<br>`10`<br>`2` |
@@ -200,7 +200,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PassiveWhenAffectedByElement`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element.
 **Total Count:** 12
 
 <details>
@@ -211,7 +211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 18 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 30 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 30 | passives<br>class<br>	ag |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 18 | `{ . . . }` |
 
 </details>
@@ -223,7 +223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `effects`
 
 
-**Definition:** Non-damaging status applications and logic triggers executed on impact.  
+**Definition:** Applies a list of status effects or visual effects to targets.
 **Total Count:** 10
 
 <details>
@@ -233,7 +233,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1085 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1085 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 750 | `Default`<br>`FormChange`<br>`Druid` | [`Confusion`](./Enums.md) | Array / Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 624 | Default<br>FormChange<br>Druid |
 | [`Fear`](./Arrays.md#array-fear) | Array  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 31 | `1`<br>`10`<br>`2` |
 | [`Blind`](./Arrays.md#array-blind) | Array / Integer  | The amount of blind stacks applied, or an [stacks, probability] array. | 24 | `-1`<br>`1`<br>`2` |
@@ -250,7 +250,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RevengeDamage`
 
 
-**Definition:** Reaction trigger: Deals damage to the attacker when hit.  
+**Definition:** An object defining the damage and effects that trigger when the unit is attacked.
 **Total Count:** 9
 
 <details>
@@ -260,7 +260,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 10 | `damage_instance`<br>`spell`<br>`false` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 10 | `damage_instance`<br>`spell`<br>`false` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 29 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 29 | `Default`<br>`FormChange`<br>`Druid` | [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 3 | Default<br>FormChange<br>Druid |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
@@ -273,7 +273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MeleeRevengeDamage`
 
 
-**Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
+**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.
 **Total Count:** 7
 
 <details>
@@ -283,9 +283,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 36 | `damage_instance`<br>`spell`<br>`false` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 36 | `damage_instance`<br>`spell`<br>`false` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 49 | `Default`<br>`FormChange`<br>`Druid` | [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 6 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 46 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 46 | passives<br>class<br>	ag |
 | [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 24 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 22 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 10 | `[attack move spell]`<br>`attack`<br>`battle` |
@@ -301,7 +301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnThingOnDamage`
 
 
-**Definition:** Applies or references the 'SpawnThingOnDamage' effect/state.  
+**Definition:** Specifies an object that spawns on the tile when the unit takes damage.
 **Total Count:** 7
 
 <details>
@@ -324,7 +324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddStatusToBasicMeleeAttack`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object listing status effects applied by the unit's basic melee attack.
 **Total Count:** 6
 
 <details>
@@ -334,7 +334,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`10`<br>`2` |
 | [`Knockback`](./Enums.md) | Equation | The number of tiles the target is pushed away from the source on hit. | 2 | `1`<br>`10`<br>`2` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`Immobile`](./Enums.md) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 0 | Default<br>FormChange<br>Druid |
@@ -349,7 +349,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnTookDamage`
 
 
-**Definition:** Event Trigger: Applies nested statuses when took damage.  
+**Definition:** Specifies status effects or actions triggered when the unit takes damage.
 **Total Count:** 6
 
 <details>
@@ -359,7 +359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 30 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 30 | passives<br>class<br>	ag |
 | [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 8 | `1`<br>`2`<br>`3` |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 2 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 | [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
@@ -373,7 +373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusEachTurnBegin`
 
 
-**Definition:** Event Trigger: Applies nested statuses to each turn begin.  
+**Definition:** Specifies status effects applied to the unit at the start of each of its turns.
 **Total Count:** 5
 
 <details>
@@ -383,7 +383,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 9 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 9 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | [`Quivered`](./Enums.md) | Array / Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 | Default<br>FormChange<br>Druid |
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
 | [`MissChance`](./Enums.md) | Integer | The flat percentage chance that the unit's attacks will miss. | 1 | `10`<br>`15`<br>`20` |
@@ -398,7 +398,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RandomStatusFromPool`
 
 
-**Definition:** Selects and applies a random status effect from the provided nested object.  
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.
 **Total Count:** 4
 
 <details>
@@ -408,7 +408,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 31 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 31 | passives<br>class<br>	ag |
 | [`Shield`](./Enums.md) | Equation | The amount of shield granted to the source, absorbing incoming damage. | 12 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 12 | `Default`<br>`FormChange`<br>`Druid` | [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 24 | Default<br>FormChange<br>Druid |
 | [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 9 | `1`<br>`2`<br>`3` |
@@ -430,7 +430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnEachTurn`
 
 
-**Definition:** Applies or references the 'SpawnEachTurn' effect/state.  
+**Definition:** Specifies an object that spawns on a random adjacent tile each turn, with optional chance.
 **Total Count:** 4
 
 <details>
@@ -453,7 +453,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusEachTurnEnd`
 
 
-**Definition:** Applies or references the 'StatusEachTurnEnd' effect/state.  
+**Definition:** Specifies status effects applied to the unit at the end of each of its turns.
 **Total Count:** 4
 
 <details>
@@ -463,7 +463,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 42 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 42 | passives<br>class<br>	ag |
 | [`Shield`](./Enums.md) | Equation | The amount of shield granted to the source, absorbing incoming damage. | 5 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | `Default`<br>`FormChange`<br>`Druid` | [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 7 | Default<br>FormChange<br>Druid |
 | [`IntelligenceUp`](./Enums.md) | Array / Equation | The amount of Intelligence added as a flat bonus. | 2 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
@@ -479,7 +479,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnOnBattleStartRandomEmptyTile`
 
 
-**Definition:** Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state.  
+**Definition:** Specifies an object that spawns on a random empty tile at the start of battle.
 **Total Count:** 3
 
 <details>
@@ -501,7 +501,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_RandomChance`
 
 
-**Definition:** Conditional trigger: Executes nested logic based on a flat percentage random roll.  
+**Definition:** An object containing effects that execute only if a random roll succeeds, with an odds value defined inside.
 **Total Count:** 2
 
 <details>
@@ -524,7 +524,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusEveryXSpellCasts`
 
 
-**Definition:** Applies or references the 'StatusEveryXSpellCasts' effect/state.  
+**Definition:** An object with `stacks` (number of spell casts) and status effects to apply after that many spell casts.
 **Total Count:** 2
 
 <details>
@@ -535,7 +535,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 9 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 9 | passives<br>class<br>	ag |
 | [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 2 | `1`<br>`2`<br>`3` |
 | [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
 
@@ -548,7 +548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusKilledCharacters`
 
 
-**Definition:** Event Trigger: Applies nested statuses to killed characters.  
+**Definition:** An object listing status effects applied to the unit when it kills a character.
 **Total Count:** 2
 
 <details>
@@ -568,7 +568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnBattleEnd`
 
 
-**Definition:** Applies the nested status effects when the encounter finishes.  
+**Definition:** An object containing status effects or passives applied to the unit when the battle ends.
 **Total Count:** 2
 
 <details>
@@ -578,7 +578,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 56 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 56 | passives<br>class<br>	ag |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 8 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | [`PermanentIntelligence`](./Enums.md) | Integer | The permanent amount of intelligence added or removed. | 3 | `-1`<br>`1`<br>`2` |
 
@@ -591,7 +591,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnEndMove`
 
 
-**Definition:** Event Trigger: Applies statuses when this action occurs.  
+**Definition:** Specifies status effects or actions triggered when the unit finishes moving.
 **Total Count:** 2
 
 <details>
@@ -611,7 +611,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnTookDamageFromAbility`
 
 
-**Definition:** Event Trigger: Applies statuses when taking damage from an ability.  
+**Definition:** Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental).
 **Total Count:** 2
 
 <details>
@@ -621,7 +621,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 2 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -634,7 +634,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
-**Definition:** AI Trigger: Executes an ability when a character with a specific tag moves adjacent.  
+**Definition:** An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range.
 **Total Count:** 1
 
 <details>
@@ -657,7 +657,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddDamageToElementDamage`
 
 
-**Definition:** Applies or references the 'AddDamageToElementDamage' effect/state.  
+**Definition:** Defines additional damage of a specific element added to the unit's attacks.
 **Total Count:** 1
 
 <details>
@@ -679,7 +679,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddTemporaryEffectsToBasicAttack`
 
 
-**Definition:** Applies the 'AddTemporaryEffectsToBasicAttack' effect.  
+**Definition:** A container object that lists temporary status effects applied to the unit's basic attack.
 **Total Count:** 1
 
 <details>
@@ -700,7 +700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BackflipWhenTargeted`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of backflip charges, or an object defining its ability.
 **Total Count:** 1
 
 <details>
@@ -722,7 +722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ChanceToBackflip`
 
 
-**Definition:** Applies or references the 'ChanceToBackflip' effect/state.  
+**Definition:** An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit.
 **Total Count:** 1
 
 <details>
@@ -744,7 +744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ClassManaCostReduction`
 
 
-**Definition:** Applies or references the 'ClassManaCostReduction' effect/state.  
+**Definition:** Defines a reduction in mana cost for abilities of a specific class.
 **Total Count:** 1
 
 <details>
@@ -766,7 +766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_FirstApplicationThisTurn`
 
 
-**Definition:** Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn.  
+**Definition:** Container for effects applied only on the first application of this ability during the turn.
 **Total Count:** 1
 
 <details>
@@ -776,8 +776,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 5 | Default<br>FormChange<br>Druid |
 | [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
@@ -789,7 +789,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_GoodRoll`
 
 
-**Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
 **Total Count:** 1
 
 <details>
@@ -800,8 +800,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 15 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 15 | passives<br>class<br>	ag |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 1 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 
 </details>
@@ -813,7 +813,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CounterAttack`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the ability used when the unit counterattacks after being hit.
 **Total Count:** 1
 
 <details>
@@ -835,7 +835,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `KnockUpAndAway`
 
 
-**Definition:** Displaces the target vertically and horizontally away from the source.  
+**Definition:** Contains parameters for launching the target upward and away from the source, including stacks and distance.
 **Total Count:** 1
 
 <details>
@@ -857,7 +857,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveWhenDamaged`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines movement behavior when the unit takes damage, such as weights and move ability.
 **Total Count:** 1
 
 <details>
@@ -879,7 +879,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PassiveWhenAtFullMana`
 
 
-**Definition:** State Trigger: Grants nested passives when at full mana.  
+**Definition:** An object listing passive effects that are active only while the unit's mana is full.
 **Total Count:** 1
 
 <details>
@@ -889,7 +889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 
 </details>
@@ -901,7 +901,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PassiveWhileHasStatus`
 
 
-**Definition:** Passive: Activates only while the character has the specified status.  
+**Definition:** An object containing `status` and `passives` that grants the listed passives while the unit has the specified status.
 **Total Count:** 1
 
 <details>
@@ -912,7 +912,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 6 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 10 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 10 | passives<br>class<br>	ag |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
 
 </details>
@@ -924,7 +924,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnExtraThingsOnBattleStart`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object with `object` and `number` (or range) defining what and how many objects to spawn at battle start.
 **Total Count:** 1
 
 <details>
@@ -946,7 +946,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusEachRoundEnd`
 
 
-**Definition:** Applies or references the 'StatusEachRoundEnd' effect/state.  
+**Definition:** An object listing status effects applied to the unit at the end of each round.
 **Total Count:** 1
 
 <details>
@@ -968,7 +968,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusEveryXSpellCastsEachTurn`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object with a 'stacks' value defining status effects applied every X spell casts within a single turn.
 **Total Count:** 1
 
 <details>
@@ -979,7 +979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -991,7 +991,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusIfDidntMove`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object containing status effects to apply to the unit if it did not move during its turn.
 **Total Count:** 1
 
 <details>
@@ -1001,7 +1001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
@@ -1013,7 +1013,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusIfUnusedMovePoints`
 
 
-**Definition:** Event Trigger: Applies nested statuses to if unused move points.  
+**Definition:** Specifies status effects applied if the unit ends its turn with unused movement points.
 **Total Count:** 1
 
 <details>
@@ -1023,7 +1023,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
 | [`ManaGain`](./Enums.md) | Equation | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -1036,7 +1036,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnAllyCatDeath`
 
 
-**Definition:** Event Trigger: Applies nested statuses when ally cat death.  
+**Definition:** An object listing status effects applied to the unit when an allied cat dies.
 **Total Count:** 1
 
 <details>
@@ -1046,7 +1046,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
 | [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 
 </details>
@@ -1058,7 +1058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnCastSpell`
 
 
-**Definition:** Event Trigger: Applies nested statuses when cast spell.  
+**Definition:** An object listing status effects applied to the unit whenever it casts a spell.
 **Total Count:** 1
 
 <details>
@@ -1068,7 +1068,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
 | [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 4 | `1`<br>`2`<br>`3` |
 
 </details>
@@ -1080,7 +1080,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnDie`
 
 
-**Definition:** Event Trigger: Applies statuses when this action occurs.  
+**Definition:** Specifies status effects or actions triggered when the unit dies.
 **Total Count:** 1
 
 <details>
@@ -1090,7 +1090,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array / Integer  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `5`<br>`[1 .5]` |
 
 </details>
@@ -1102,7 +1102,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnEatFood`
 
 
-**Definition:** Event Trigger: Applies nested statuses when eat food.  
+**Definition:** An object listing status effects applied to the unit when it eats food.
 **Total Count:** 1
 
 <details>
@@ -1112,7 +1112,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
 | [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
@@ -1124,7 +1124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnKill`
 
 
-**Definition:** Event Trigger: Applies statuses when this action occurs.  
+**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.
 **Total Count:** 1
 
 <details>
@@ -1134,7 +1134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 20 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 20 | passives<br>class<br>	ag |
 | [`RangeUp`](./Enums.md) | Integer | The number of stacks of bonus attack range applied. | 1 | `1` |
 
 </details>
@@ -1150,7 +1150,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -1160,7 +1160,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
 
 </details>
 <details>
@@ -1170,6 +1170,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | passives<br>class<br>	ag |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 8 | passives<br>class<br>	ag |
 
 </details>

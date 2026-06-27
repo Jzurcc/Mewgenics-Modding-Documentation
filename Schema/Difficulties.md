@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 155 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
 | [`hard`](./Miscellaneous.md#object-hard) | Object  | Configuration for hard difficulty, including elite/champ budgets and rewards. | 23 | `{ . . . }` |
 | [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 | `{ . . . }` |
 
@@ -31,7 +31,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `hard`
 
 
-**Definition:** No definition provided.  
+**Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.
 **Total Count:** 21
 
 <details>
@@ -51,7 +51,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `easy`
 
 
-**Definition:** No definition provided.  
+**Definition:** Configuration for easy difficulty, including elite/champ budgets and rewards.
 **Total Count:** 8
 
 <details>

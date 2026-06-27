@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 155 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
 | [`color`](./Arrays.md#array-color) | Array | The RGB color of the light source. | 26 | `[.27 .47 .18]`<br>`[.3, .7, 1]`<br>`[.32 .10 .10]` |
 | [`right_icon`](./Enums.md#enum-right_icon) | String | The name of the icon to display on the right side of the damage text. | 10 | `coin`<br>`divineshield`<br>`heal` |
 | [`back_icon`](./Enums.md#enum-back_icon) | String | The name of the icon to display behind the damage text. | 8 | `bleed`<br>`burn`<br>`confusion` |

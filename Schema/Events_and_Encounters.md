@@ -18,36 +18,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 883 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 883 | `common`<br>`rare`<br>`cha` |
 | [`intro`](./NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 239 | `{ . . . }` |
 | [`main`](./Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 227 | `{ . . . }` |
 | [`self_damage`](./Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 218 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 | [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 89 | `+1`<br>`-1`<br>`-2` |
 | [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 79 | `-1`<br>`-2`<br>`-3` |
 | [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 78 | `-1`<br>`-10`<br>`-2` |
-| [`int`](./Enums.md#enum-int) | Enum / Integer  || 66 | `-1`<br>`-10`<br>`-2` |
-| [`lck`](./Enums.md#enum-lck) | Enum / Integer  || 53 | `-1`<br>`-2`<br>`-3` |
-| [`str`](./Enums.md#enum-str) | Enum / Integer  || 45 | `-1`<br>`-2`<br>`-3` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 66 | `-1`<br>`-10`<br>`-2` |
+| [`lck`](./Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 53 | `-1`<br>`-2`<br>`-3` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 45 | `-1`<br>`-2`<br>`-3` |
 | [`rare`](./Enums.md#enum-rare) | Enum  | Defines the rare reward block for a boss encounter. | 34 | `1`<br>`10`<br>`15` |
-| [`dex`](./Enums.md#enum-dex) | Enum / Integer  || 30 | `-1`<br>`-2`<br>`-3` |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String || 25 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
-| [`normal`](./Arrays.md#array-normal) | Array  || 23 | `[` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 30 | `-1`<br>`-2`<br>`-3` |
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String | Defines a battle encounter by preset, level file path, or reverb settings. | 25 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
+| [`normal`](./Arrays.md#array-normal) | Array | An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances. | 23 | `[` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 13 | `{ . . . }` |
 | [`common`](./Enums.md#enum-common) | Enum  | Defines the common reward block for a boss encounter. | 11 | `100`<br>`14`<br>`5` |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | String || 9 | `BlackShard`<br>`CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 4 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| `set_frame` | `Number` || 4 | `1`<br>`10`<br>`15` |
-| [`label`](./Strings.md#string-label) | String || 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 3 | `cha`<br>`coins`<br>`con` |
+| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | String | Marks the specified item quest as completed. | 9 | `BlackShard`<br>`CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String | The text or localization key for the popup or prompt displayed to the player. | 4 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 4 | `1`<br>`10`<br>`15` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 3 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 | `false`<br>`true` |
 | [`reward`](./Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 3 | `{ . . . }` |
 | [`pick`](./Miscellaneous.md#object-pick) | Object  | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 2 | `{ . . . }` |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Grants an item from the specified pool or a specific item name. | 1 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | `weight` | `Number` | A multiplier or priority value for random selection or effect magnitude. | 1 | `.25`<br>`.5`<br>`1` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | [`open`](./Miscellaneous.md#object-open) | Object  | An object defining the player action to open a container, including its stat check and outcomes. | 1 | `{ . . . }` |
 | [`smash`](./Miscellaneous.md#object-smash) | Object  | An object defining the player action to smash an object, including its stat check and outcomes. | 1 | `{ . . . }` |
 | [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 1 | `{ . . . }` |
@@ -64,7 +64,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `reward`
 
 
-**Definition:** Event Object: Story branch or dialog option representing the 'Reward' action.  
+**Definition:** An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items.
 **Total Count:** 757
 
 <details>
@@ -74,29 +74,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1364 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1364 | `common`<br>`rare`<br>`cha` |
 | [`common`](./Enums.md#enum-common) | Enum  | Defines the common reward block for a boss encounter. | 633 | `100`<br>`14`<br>`5` |
 | [`rare`](./Enums.md#enum-rare) | Enum  | Defines the rare reward block for a boss encounter. | 623 | `1`<br>`10`<br>`15` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 70 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| `set_frame` | `Number` || 53 | `1`<br>`10`<br>`15` |
-| [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | `String` || 10 | `dimensionx_head2`<br>`endorb2`<br>`monkey_paw_1finger` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String | The text or localization key for the popup or prompt displayed to the player. | 70 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 53 | `1`<br>`10`<br>`15` |
+| [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which subject or frame to use for the event's visual. | 10 | `dimensionx_head2`<br>`endorb2`<br>`monkey_paw_1finger` |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Grants an item from the specified pool or a specific item name. | 9 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 9 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array  || 8 | `[` |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | String || 6 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasTakenNeedle`<br>`AdventureToken_RedNeedle` |
-| `next_event_bonus` | Number || 5 | `-1`<br>`-2`<br>`1` |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
-| [`play_animation`](./Arrays.md#array-play_animation) | Array  || 4 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 | `infinite_intro`<br>`king_intro` |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `bleeding`<br>`burned`<br>`cha` |
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array  || 2 | `1`<br>`10`<br>`15` |
-| `ambush_next_basic_fights` | Number || 1 | `1` |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 1 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 1 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String || 1 | `all`<br>`self` |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
-| [`party_damage`](./Arrays.md#array-party_damage) | Array / Integer  || 1 | `1`<br>`10`<br>`2` |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 9 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 8 | `[` |
+| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies an adventure token to clear (disable or mark as false) when this event triggers. | 6 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasTakenNeedle`<br>`AdventureToken_RedNeedle` |
+| `next_event_bonus` | Number | A modifier to the next event's outcome roll or selection chance. | 5 | `-1`<br>`-2`<br>`1` |
+| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified adventure or map unlock quest. | 5 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
+| [`play_animation`](./Arrays.md#array-play_animation) | Array | Specifies an animation to play, optionally as an array with a probability weight. | 4 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
+| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | `String` | Determines which cutscene to play when the player leaves the current location. | 3 | `infinite_intro`<br>`king_intro` |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a pool of disorders from which one is randomly gained. | 2 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies the type of injury applied, such as bleeding or stat reduction. | 2 | `bleeding`<br>`burned`<br>`cha` |
+| [`gain_coins`](./Arrays.md#array-gain_coins) | Array | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 2 | `1`<br>`10`<br>`15` |
+| `ambush_next_basic_fights` | Number | The number of basic fights to trigger as ambushes. | 1 | `1` |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String | Triggers the specified event immediately. | 1 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies the pool name or explicit list of parasites to obtain from. | 1 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies which units to level up, such as 'all' or 'self'. | 1 | `all`<br>`self` |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
+| [`party_damage`](./Arrays.md#array-party_damage) | Array / Integer | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -107,7 +107,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `common`
 
 
-**Definition:** Event Node: Story branch or dialog option representing the 'Common' action.  
+**Definition:** Defines the common reward block for a boss encounter.
 **Total Count:** 633
 
 <details>
@@ -117,63 +117,63 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 658 | `common`<br>`rare`<br>`cha` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 606 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| `set_frame` | `Number` || 151 | `1`<br>`10`<br>`15` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 658 | `common`<br>`rare`<br>`cha` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` | The text or localization key for the popup or prompt displayed to the player. | 606 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 151 | `1`<br>`10`<br>`15` |
 | [`self_status_next_fight`](./Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 92 | `{ . . . }` |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 66 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | [`permanent_stats`](./Miscellaneous.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 39 | `{ . . . }` |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 35 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array  || 35 | `[` |
-| [`gain_coins`](./Arrays.md#array-gain_coins) | `Array`  || 28 | `1`<br>`10`<br>`15` |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 26 | `bleeding`<br>`burned`<br>`cha` |
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 35 | `[` |
+| [`gain_coins`](./Arrays.md#array-gain_coins) | `Array` | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 28 | `1`<br>`10`<br>`15` |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the type of injury applied, such as bleeding or stat reduction. | 26 | `bleeding`<br>`burned`<br>`cha` |
 | `self_damage` | `Number` | Defines damage or effects applied to the caster when using the ability. | 26 | `1`<br>`10`<br>`100%` |
 | `random_mutation` | `Number` | The number of random mutations applied to the unit. | 25 | `1`<br>`10`<br>`2` |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 24 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` || 23 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
-| `gain_food` | `Number` || 21 | `-5`<br>`20`<br>`30` |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a pool of disorders from which one is randomly gained. | 24 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an animation to play, optionally as an array with a probability weight. | 23 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 21 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| `gain_food` | `Number` | An array specifying the minimum and maximum amount of food gained, or a single integer. | 21 | `-5`<br>`20`<br>`30` |
 | [`spawn_unit_next_fight`](./Miscellaneous.md#object-spawn_unit_next_fight) | Object  | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 18 | `{ . . . }` |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Specifies which familiar type (by its class name) the unit gains. | 15 | `CharmedBear`<br>`CharmedDaddyShark`<br>`CharmedDustDevil` |
-| `party_heal` | `Number` || 15 | `1`<br>`10`<br>`100%` |
-| `party_damage` | `Number` || 15 | `1`<br>`10`<br>`2` |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
+| `party_heal` | `Number` | The amount of health healed for the entire party. | 15 | `1`<br>`10`<br>`100%` |
+| `party_damage` | `Number` | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 15 | `1`<br>`10`<br>`2` |
+| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an item to add to the player's inventory when this event triggers. | 14 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
 | `heal` | `Equation` | An equation string that determines the amount of health restored by this damage instance. | 13 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a disorder to add to the current cat when this event triggers. | 12 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
+| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a custom prompt string to display for the end option of this event choice. | 11 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
 | [`party_status_next_fight`](./Miscellaneous.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 11 | `{ . . . }` |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
-| `ally_ambush_next_fights` | `Number` || 10 | `1`<br>`2` |
-| `full_heal` | `Number` || 10 | `1` |
-| `ambush_next_basic_fights` | `Number` || 9 | `1` |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the pool name or explicit list of parasites to obtain from. | 11 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
+| `ally_ambush_next_fights` | `Number` | The number of upcoming fights that will start with an ally ambush. | 10 | `1`<br>`2` |
+| `full_heal` | `Number` | If set to 1, fully restores the unit's health. | 10 | `1` |
+| `ambush_next_basic_fights` | `Number` | The number of basic fights to trigger as ambushes. | 9 | `1` |
 | [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 9 | `{ . . . }` |
 | [`random_mutation_from_set`](./Miscellaneous.md#object-random_mutation_from_set) | Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 8 | `{ . . . }` |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
-| `next_event_bonus` | `Number` || 7 | `-1`<br>`-2`<br>`1` |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasTakenNeedle`<br>`AdventureToken_RedNeedle` |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 7 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
+| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a parasite item to attach to a unit when this event triggers. | 7 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
+| `next_event_bonus` | `Number` | A modifier to the next event's outcome roll or selection chance. | 7 | `-1`<br>`-2`<br>`1` |
+| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an adventure token to clear (disable or mark as false) when this event triggers. | 6 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasTakenNeedle`<br>`AdventureToken_RedNeedle` |
 | [`global_effect_next_fight`](./Miscellaneous.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 6 | `{ . . . }` |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 | `cat` |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 | `equipped`<br>`inventory`<br>`parasite` |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy counter to increment by one when this event triggers. | 6 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` | Kills the specified target type (e.g., 'cat'). | 5 | `cat` |
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 5 | `equipped`<br>`inventory`<br>`parasite` |
+| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified shop to appear immediately. | 5 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a weather effect type to apply to the current map. | 4 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified event immediately. | 2 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
+| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Removes the specified item from the player's inventory. | 2 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
 | [`next_event_from_set`](./Miscellaneous.md#object-next_event_from_set) | Object  | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 2 | `{ . . . }` |
-| `party_heal_disorder` | `Number` || 2 | `2` |
+| `party_heal_disorder` | `Number` | The number of disorders to heal from all party members. | 2 | `2` |
 | [`party_permanent_stats_exclude_self`](./Miscellaneous.md#object-party_permanent_stats_exclude_self) | Object  | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 | `{ . . . }` |
-| [`spin`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `again` |
-| `clear_result_animation` | `Number` || 1 | `1` |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyToken_StartDigging` |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `Catnip`<br>`FlyLarva` |
-| `heal_disorder` | `Number` || 1 | `1`<br>`2`<br>`Anxiety` |
-| `heal_injury` | `Number` || 1 | `1`<br>`5` |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AnyUnlocked`<br>`Necromancer`<br>`[Smack Meow Hiss]` |
+| [`spin`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an action to re-roll or spin again, such as for a random reward wheel. | 2 | `again` |
+| `clear_result_animation` | `Number` | The number of result animations to clear or skip. | 1 | `1` |
+| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which legacy counter or token to decrement by one. | 1 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyToken_StartDigging` |
+| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the item to obtain and immediately equip. | 1 | `Catnip`<br>`FlyLarva` |
+| `heal_disorder` | `Number` | Specifies which disorder type to heal, or the number of disorders to heal. | 1 | `1`<br>`2`<br>`Anxiety` |
+| `heal_injury` | `Number` | The number of injury points to heal on the target unit. | 1 | `1`<br>`5` |
+| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | An array specifying a pool or list of abilities from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked ability. | 1 | `AnyUnlocked`<br>`Necromancer`<br>`[Smack Meow Hiss]` |
 | [`mutation`](./Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 1 | `{ . . . }` |
-| `self_heal` | `Number` || 1 | `10` |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `random` |
+| `self_heal` | `Number` | The amount of health the unit heals itself. | 1 | `10` |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
+| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 1 | `random` |
 
 </details>
 
@@ -184,7 +184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `rare`
 
 
-**Definition:** Event Node: Story branch or dialog option representing the 'Rare' action.  
+**Definition:** Defines the rare reward block for a boss encounter.
 **Total Count:** 633
 
 <details>
@@ -194,83 +194,83 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 705 | `common`<br>`rare`<br>`cha` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 611 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| `set_frame` | `Number` || 180 | `1`<br>`10`<br>`15` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 705 | `common`<br>`rare`<br>`cha` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` | The text or localization key for the popup or prompt displayed to the player. | 611 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 180 | `1`<br>`10`<br>`15` |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 84 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | [`permanent_stats`](./Miscellaneous.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 84 | `{ . . . }` |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 65 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 46 | `bleeding`<br>`burned`<br>`cha` |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 45 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a disorder to add to the current cat when this event triggers. | 65 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the type of injury applied, such as bleeding or stat reduction. | 46 | `bleeding`<br>`burned`<br>`cha` |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a pool of disorders from which one is randomly gained. | 45 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
 | [`self_status_next_fight`](./Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 40 | `{ . . . }` |
 | `random_mutation` | `Number` | The number of random mutations applied to the unit. | 38 | `1`<br>`10`<br>`2` |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 35 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 30 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array  || 28 | `[` |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 26 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
+| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an item to add to the player's inventory when this event triggers. | 35 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 30 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 28 | `[` |
+| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a parasite item to attach to a unit when this event triggers. | 26 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the pool name or explicit list of parasites to obtain from. | 21 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
 | [`spawn_unit_next_fight`](./Miscellaneous.md#object-spawn_unit_next_fight) | Object  | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 20 | `{ . . . }` |
 | [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 18 | `{ . . . }` |
 | [`mutation`](./Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 18 | `{ . . . }` |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 18 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`gain_coins`](./Arrays.md#array-gain_coins) | `Array`  || 17 | `1`<br>`10`<br>`15` |
+| [`gain_coins`](./Arrays.md#array-gain_coins) | `Array` | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 17 | `1`<br>`10`<br>`15` |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Specifies which familiar type (by its class name) the unit gains. | 15 | `CharmedBear`<br>`CharmedDaddyShark`<br>`CharmedDustDevil` |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
-| `next_event_bonus` | `Number` || 14 | `-1`<br>`-2`<br>`1` |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 14 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
+| `next_event_bonus` | `Number` | A modifier to the next event's outcome roll or selection chance. | 14 | `-1`<br>`-2`<br>`1` |
 | `self_damage` | `Number` | Defines damage or effects applied to the caster when using the ability. | 13 | `1`<br>`10`<br>`100%` |
 | [`party_status_next_fight`](./Miscellaneous.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 12 | `{ . . . }` |
 | [`random_mutation_from_set`](./Miscellaneous.md#object-random_mutation_from_set) | Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 11 | `{ . . . }` |
-| [`play_animation`](./Arrays.md#array-play_animation) | `Array`  || 11 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 10 | `Blessed`<br>`CobraStyle`<br>`DeathProof` |
-| `party_heal` | `Number` || 10 | `1`<br>`10`<br>`100%` |
-| `party_damage` | `Number` || 10 | `1`<br>`10`<br>`2` |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` || 9 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 8 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
-| `party_random_mutation` | `Number` || 8 | `1` |
-| `ambush_next_basic_fights` | `Number` || 7 | `1` |
+| [`play_animation`](./Arrays.md#array-play_animation) | `Array` | Specifies an animation to play, optionally as an array with a probability weight. | 11 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
+| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` | Teaches the unit the specified passive ability. | 10 | `Blessed`<br>`CobraStyle`<br>`DeathProof` |
+| `party_heal` | `Number` | The amount of health healed for the entire party. | 10 | `1`<br>`10`<br>`100%` |
+| `party_damage` | `Number` | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 10 | `1`<br>`10`<br>`2` |
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` | Defines a battle encounter by preset, level file path, or reverb settings. | 9 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
+| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a custom prompt string to display for the end option of this event choice. | 8 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
+| `party_random_mutation` | `Number` | The number of random mutations applied to the entire party. | 8 | `1` |
+| `ambush_next_basic_fights` | `Number` | The number of basic fights to trigger as ambushes. | 7 | `1` |
 | [`leave_party_temporarily`](./Miscellaneous.md#object-leave_party_temporarily) | Object  | Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions. | 7 | `{ . . . }` |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
-| `hide_appearance_changes` | `Number` || 6 | `1` |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
-| [`gain_food`](./Arrays.md#array-gain_food) | `Array`  || 6 | `-5`<br>`20`<br>`30` |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 | `equipped`<br>`inventory`<br>`parasite` |
-| `ally_ambush_next_fights` | `Number` || 5 | `1`<br>`2` |
-| `full_heal` | `Number` || 4 | `1` |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 | `BarfBall`<br>`FutureSight` |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyToken_StartDigging` |
-| `gain_cat_familiar` | `Number` || 3 | `1` |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 7 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
+| `hide_appearance_changes` | `Number` | If set to 1, visual appearance changes from status effects or mutations are not shown on the unit. | 6 | `1` |
+| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified shop to appear immediately. | 6 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
+| [`gain_food`](./Arrays.md#array-gain_food) | `Array` | An array specifying the minimum and maximum amount of food gained, or a single integer. | 6 | `-5`<br>`20`<br>`30` |
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy counter to increment by one when this event triggers. | 5 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 5 | `equipped`<br>`inventory`<br>`parasite` |
+| `ally_ambush_next_fights` | `Number` | The number of upcoming fights that will start with an ally ambush. | 5 | `1`<br>`2` |
+| `full_heal` | `Number` | If set to 1, fully restores the unit's health. | 4 | `1` |
+| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which specific ability the target unit learns. | 4 | `BarfBall`<br>`FutureSight` |
+| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which legacy counter or token to decrement by one. | 3 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyToken_StartDigging` |
+| `gain_cat_familiar` | `Number` | The number of cat familiars gained. | 3 | `1` |
 | [`global_effect_next_fight`](./Miscellaneous.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 3 | `{ . . . }` |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 | `cat` |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 | `self` |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` | Kills the specified target type (e.g., 'cat'). | 3 | `cat` |
+| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | `String` | Applies the 'old' status or age increase to the specified target, typically 'self'. | 3 | `self` |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | `String` | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 3 | `CatHole`<br>`Tragedy`<br>`WatchingHead2` |
 | `spawn_reflection_next_fight` | `Number` | The number of reflections to spawn in the next battle, optionally with a mutation. | 3 | `1` |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `all`<br>`self` |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
-| `party_heal_disorder` | `Number` || 2 | `2` |
-| `party_heal_injury` | `Number` || 2 | `99` |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a weather effect type to apply to the current map. | 2 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which units to level up, such as 'all' or 'self'. | 2 | `all`<br>`self` |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified event immediately. | 2 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
+| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Removes the specified item from the player's inventory. | 2 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
+| `party_heal_disorder` | `Number` | The number of disorders to heal from all party members. | 2 | `2` |
+| `party_heal_injury` | `Number` | The amount of injury to heal for the entire party. | 2 | `99` |
 | [`party_permanent_stats_exclude_self`](./Miscellaneous.md#object-party_permanent_stats_exclude_self) | Object  | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 | `{ . . . }` |
-| `set_age` | `Number` || 2 | `1` |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `random` |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `random` |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `cat` |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `"events/chupacabra.lvl"`<br>`putalevelhere.lvl` |
-| `clear_result_animation` | `Number` || 1 | `1` |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `CharmedFlea`<br>`CharmedFleaSpecial`<br>`CharmedPooter` |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `Catnip`<br>`FlyLarva` |
-| `heal_disorder` | `Number` || 1 | `1`<br>`2`<br>`Anxiety` |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AnyUnlocked`<br>`Necromancer`<br>`[Smack Meow Hiss]` |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AnyUnlocked`<br>`Necromancer`<br>`[MiniMe SkillShare]` |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `cat` |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `random` |
+| `set_age` | `Number` | The age value to set for the target unit. | 2 | `1` |
+| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 2 | `random` |
+| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which passive ability to upgrade, or 'random' for a random choice. | 2 | `random` |
+| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which item or item category is removed from the unit's inventory. | 1 | `cat` |
+| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the path to a level file for an ambush encounter. | 1 | `"events/chupacabra.lvl"`<br>`putalevelhere.lvl` |
+| `clear_result_animation` | `Number` | The number of result animations to clear or skip. | 1 | `1` |
+| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the immortal familiar to add to the party. | 1 | `CharmedFlea`<br>`CharmedFleaSpecial`<br>`CharmedPooter` |
+| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the item to obtain and immediately equip. | 1 | `Catnip`<br>`FlyLarva` |
+| `heal_disorder` | `Number` | Specifies which disorder type to heal, or the number of disorders to heal. | 1 | `1`<br>`2`<br>`Anxiety` |
+| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | An array specifying a pool or list of abilities from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked ability. | 1 | `AnyUnlocked`<br>`Necromancer`<br>`[Smack Meow Hiss]` |
+| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | An array specifying a pool or list of passives from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked passive. | 1 | `AnyUnlocked`<br>`Necromancer`<br>`[MiniMe SkillShare]` |
+| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the target (e.g., 'cat') from which to remove all currently equipped items. | 1 | `cat` |
+| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the type of injury to inflict on the party (e.g., 'random'). | 1 | `random` |
 | [`party_permanent_stats`](./Miscellaneous.md#object-party_permanent_stats) | Object  | An object defining permanent stat increases applied to the party. | 1 | `{ . . . }` |
 | [`party_random_mutation_from_set`](./Miscellaneous.md#object-party_random_mutation_from_set) | Object  | An object specifying the count and mutation parts to randomly apply to the party. | 1 | `{ . . . }` |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `resultVeryGood` |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `all` |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `all` |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
+| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which result animation to play (e.g., 'resultVeryGood'). | 1 | `resultVeryGood` |
+| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which abilities to randomize, such as 'all'. | 1 | `all` |
+| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which basic attacks to randomize or scramble. | 1 | `all` |
+| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified adventure or map unlock quest. | 1 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
 
 </details>
 
@@ -281,7 +281,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `good`
 
 
-**Definition:** `false`, `true`  
+**Definition:** If true, indicates the positive outcome branch for events or spawning contexts.
 **Total Count:** 550
 
 <details>
@@ -291,63 +291,63 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 464 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 464 | `common`<br>`rare`<br>`cha` |
 | [`reward`](./Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 326 | `{ . . . }` |
-| `set_frame` | `Number` || 285 | `1`<br>`10`<br>`15` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 184 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String || 111 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 285 | `1`<br>`10`<br>`15` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String | The text or localization key for the popup or prompt displayed to the player. | 184 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies an animation to play, optionally as an array with a probability weight. | 111 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 21 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Specifies the name of a cutscene to play. | 19 | `"chaos_ending_bad"`<br>`"chaos_ending_good"`<br>`"chapterintros/bunker"` |
 | [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 14 | `{ . . . }` |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 | `dimensionx.gon`<br>`endoftime.gon`<br>`future.gon` |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 | `BlackShard`<br>`CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full` |
+| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the chapter file to begin, transitioning to that chapter. | 12 | `dimensionx.gon`<br>`endoftime.gon`<br>`future.gon` |
+| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `String` | Marks the specified item quest as completed. | 12 | `BlackShard`<br>`CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full` |
 | `random_mutation` | Number | The number of random mutations applied to the unit. | 12 | `1`<br>`10`<br>`2` |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 12 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
 | [`rare`](./Enums.md#enum-rare) | Enum  | Defines the rare reward block for a boss encounter. | 10 | `1`<br>`10`<br>`15` |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 9 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | String || 9 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | String || 8 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | String || 7 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | String || 6 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | String || 6 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array  || 5 | `[` |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | String || 4 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String | Triggers the specified event immediately. | 9 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a world event that will now occur for the same cat category as the current event. | 9 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | String | Removes the specified item from the player's inventory. | 8 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a disorder to add to the current cat when this event triggers. | 7 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
+| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified adventure or map unlock quest. | 7 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a legacy counter to increment by one when this event triggers. | 6 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a weather effect type to apply to the current map. | 6 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 5 | `[` |
+| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies an item to add to the player's inventory when this event triggers. | 4 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Grants an item from the specified pool or a specific item name. | 4 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | [`mutation`](./Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 4 | `{ . . . }` |
-| [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array  || 4 | `[` |
-| `heal_disorder` | Number || 3 | `1`<br>`2`<br>`Anxiety` |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String || 3 | `all`<br>`self` |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | String || 3 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
-| `heal_injury` | `Number` || 3 | `1`<br>`5` |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | String || 3 | `cat` |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 | `CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full`<br>`JarOfChaos` |
-| [`transform_item`](./Arrays.md#array-transform_item) | Array  || 3 | `[JarOfRadiatedBlood JarOfChaos]`<br>`[JarOfRadiation JarOfRadiatedBlood]` |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `bleeding`<br>`burned`<br>`cha` |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `pyrophina`<br>`zaratana` |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `infinite_intro`<br>`king_intro` |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `AnyUnlocked`<br>`Necromancer`<br>`[Smack Meow Hiss]` |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `AnyUnlocked`<br>`Necromancer`<br>`[MiniMe SkillShare]` |
-| [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array  || 2 | `[Dwarfism]`<br>`[Gigantism]`<br>`all_disorders` |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 1 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
-| `ally_ambush_next_fights` | Number || 1 | `1`<br>`2` |
-| `clone_self_to_party` | `Number` || 1 | `1` |
-| `copy_items_to_party` | `Number` || 1 | `1` |
-| `copy_party_items` | `Number` || 1 | `1` |
+| [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | An array or weighted pool of rewards that are rolled considering the unit's luck stat. | 4 | `[` |
+| `heal_disorder` | Number | Specifies which disorder type to heal, or the number of disorders to heal. | 3 | `1`<br>`2`<br>`Anxiety` |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies which units to level up, such as 'all' or 'self'. | 3 | `all`<br>`self` |
+| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a parasite item to attach to a unit when this event triggers. | 3 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
+| `heal_injury` | `Number` | The number of injury points to heal on the target unit. | 3 | `1`<br>`5` |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | String | Kills the specified target type (e.g., 'cat'). | 3 | `cat` |
+| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the item whose quest is unlocked or advanced. | 3 | `CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full`<br>`JarOfChaos` |
+| [`transform_item`](./Arrays.md#array-transform_item) | Array | An array specifying source and destination item IDs to transform one into the other. | 3 | `[JarOfRadiatedBlood JarOfChaos]`<br>`[JarOfRadiation JarOfRadiatedBlood]` |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies the type of injury applied, such as bleeding or stat reduction. | 2 | `bleeding`<br>`burned`<br>`cha` |
+| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which surviving kaiju to clear or remove. | 2 | `pyrophina`<br>`zaratana` |
+| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | String | Determines which cutscene to play when the player leaves the current location. | 2 | `infinite_intro`<br>`king_intro` |
+| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a custom prompt string to display for the end option of this event choice. | 2 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
+| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String | An array specifying a pool or list of abilities from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked ability. | 2 | `AnyUnlocked`<br>`Necromancer`<br>`[Smack Meow Hiss]` |
+| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String | An array specifying a pool or list of passives from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked passive. | 2 | `AnyUnlocked`<br>`Necromancer`<br>`[MiniMe SkillShare]` |
+| [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | An array specifying the pool or list of disorders for the party to gain. | 2 | `[Dwarfism]`<br>`[Gigantism]`<br>`all_disorders` |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a pool of disorders from which one is randomly gained. | 1 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
+| `ally_ambush_next_fights` | Number | The number of upcoming fights that will start with an ally ambush. | 1 | `1`<br>`2` |
+| `clone_self_to_party` | `Number` | The number of clones of the unit added to the party. | 1 | `1` |
+| `copy_items_to_party` | `Number` | The number of times the unit's items are copied to the party. | 1 | `1` |
+| `copy_party_items` | `Number` | The number of times party items are copied to the unit. | 1 | `1` |
 | [`gain_clone_familiar`](./Miscellaneous.md#object-gain_clone_familiar) | Object  | An object that triggers the gaining of a clone familiar, with a specified object name. | 1 | `{ . . . }` |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `common` |
+| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the item pool rarity from which to generate a full set of items. | 1 | `common` |
 | [`global_effect_next_fight`](./Miscellaneous.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 1 | `{ . . . }` |
 | `heal` | `Equation` | An equation string that determines the amount of health restored by this damage instance. | 1 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | String || 1 | `equipped`<br>`inventory`<br>`parasite` |
-| `next_event_bonus` | Number || 1 | `-1`<br>`-2`<br>`1` |
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 1 | `equipped`<br>`inventory`<br>`parasite` |
+| `next_event_bonus` | Number | A modifier to the next event's outcome roll or selection chance. | 1 | `-1`<br>`-2`<br>`1` |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 1 | `CatHole`<br>`Tragedy`<br>`WatchingHead2` |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `all` |
-| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `all` |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
-| `trigger_butterfly_effect` | `Number` || 1 | `1` |
-| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `random` |
-| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `random` |
+| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which abilities to randomize, such as 'all'. | 1 | `all` |
+| [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which passive abilities to randomize or scramble. | 1 | `all` |
+| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified shop to appear immediately. | 1 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
+| `trigger_butterfly_effect` | `Number` | The number of times to trigger the butterfly effect event. | 1 | `1` |
+| [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 1 | `random` |
+| [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which passive ability to upgrade, or 'random' for a random choice. | 1 | `random` |
 
 </details>
 
@@ -358,7 +358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bad`
 
 
-**Definition:** Event Object: Story branch or dialog option representing the 'Bad' action.  
+**Definition:** Defines the bad outcome branch of an event option, including its frame and rewards.
 **Total Count:** 341
 
 <details>
@@ -368,29 +368,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 249 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 249 | `common`<br>`rare`<br>`cha` |
 | [`reward`](./Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 305 | `{ . . . }` |
-| `set_frame` | `Number` || 222 | `1`<br>`10`<br>`15` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 38 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String || 10 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 4 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 | `cat` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 222 | `1`<br>`10`<br>`15` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String | The text or localization key for the popup or prompt displayed to the player. | 38 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies an animation to play, optionally as an array with a probability weight. | 10 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` | Defines a battle encounter by preset, level file path, or reverb settings. | 4 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies a pool of disorders from which one is randomly gained. | 4 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` | Kills the specified target type (e.g., 'cat'). | 4 | `cat` |
 | [`self_status_next_fight`](./Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 4 | `{ . . . }` |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Specifies the name of a cutscene to play. | 3 | `"chaos_ending_bad"`<br>`"chaos_ending_good"`<br>`"chapterintros/bunker"` |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 3 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 3 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String | Triggers the specified event immediately. | 3 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 3 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies the pool name or explicit list of parasites to obtain from. | 3 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
 | [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 2 | `{ . . . }` |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `bleeding`<br>`burned`<br>`cha` |
-| `next_event_bonus` | Number || 2 | `-1`<br>`-2`<br>`1` |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `CharmedFlea`<br>`CharmedFleaSpecial`<br>`CharmedPooter` |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `equipped`<br>`inventory`<br>`parasite` |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | String | Specifies the type of injury applied, such as bleeding or stat reduction. | 2 | `bleeding`<br>`burned`<br>`cha` |
+| `next_event_bonus` | Number | A modifier to the next event's outcome roll or selection chance. | 2 | `-1`<br>`-2`<br>`1` |
+| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies the immortal familiar to add to the party. | 1 | `CharmedFlea`<br>`CharmedFleaSpecial`<br>`CharmedPooter` |
+| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a parasite item to attach to a unit when this event triggers. | 1 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 1 | `equipped`<br>`inventory`<br>`parasite` |
 | [`party_random_mutation_from_set`](./Miscellaneous.md#object-party_random_mutation_from_set) | Object  | An object specifying the count and mutation parts to randomly apply to the party. | 1 | `{ . . . }` |
 | [`permanent_stats`](./Miscellaneous.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 1 | `{ . . . }` |
-| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `glitched_items` |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
+| [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | `String` | Selects an item from a named pool for display in a cutscene without granting it. | 1 | `glitched_items` |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 
 </details>
 
@@ -401,7 +401,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `intro`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the introductory cutscene for the event, including title, cat selection, and visuals.
 **Total Count:** 214
 
 <details>
@@ -411,21 +411,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cat_choice`](./Enums.md#enum-cat_choice) | Enum || 214 | `random` |
-| [`event_clip`](./Enums.md#enum-event_clip) | Enum || 214 | `NonWheelEvent` |
-| [`subject_clip`](./Enums.md#enum-subject_clip) | Enum || 214 | `EventSubject` |
-| [`subject_frame`](./Enums.md#enum-subject_frame) | Enum || 214 | `a_beggar`<br>`a_few_coins`<br>`a_large_poop` |
-| [`title`](./Strings.md#string-title) | String || 214 | `"Ability Pool Test"`<br>`"Blessing!"`<br>`"EVENT_ABEGGAR_NAME"` |
-| [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum || 17 | `CryogenicTimeChamber_Full`<br>`GuillotinasHead`<br>`PutridLeech` |
-| `different_from_last_x_cats` | Number || 3 | `1`<br>`2`<br>`3` |
-| `subject_frame_inner` | Number || 3 | `2`<br>`4` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 214 | `common`<br>`rare`<br>`cha` |
-| [`choose_cat_with_highest_stat`](./Math_Equations.md) | Equation || 1 | `int` |
-| [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum || 1 | `weapon` |
-| `choose_cat_with_min_health` | Number || 1 | `75%` |
-| `choose_cat_with_most_injuries` | Boolean || 1 | `true` |
-| `choose_cat_with_parasite` | Boolean || 1 | `true` |
-| `set_frame` | `Number` || 1 | `1`<br>`10`<br>`15` |
+| [`cat_choice`](./Enums.md#enum-cat_choice) | Enum | Determines how the cat is selected for an event, such as randomly. | 214 | `random` |
+| [`event_clip`](./Enums.md#enum-event_clip) | Enum | Specifies the type of visual clip or animation used for the event frame. | 214 | `NonWheelEvent` |
+| [`subject_clip`](./Enums.md#enum-subject_clip) | Enum | Specifies the type of visual clip used for the subject frame. | 214 | `EventSubject` |
+| [`subject_frame`](./Enums.md#enum-subject_frame) | Enum | Specifies the specific art or visual frame used for the event's subject. | 214 | `a_beggar`<br>`a_few_coins`<br>`a_large_poop` |
+| [`title`](./Strings.md#string-title) | String | The display title or name of the event. | 214 | `"Ability Pool Test"`<br>`"Blessing!"`<br>`"EVENT_ABEGGAR_NAME"` |
+| [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum | Selects a cat that has a specific item equipped. | 17 | `CryogenicTimeChamber_Full`<br>`GuillotinasHead`<br>`PutridLeech` |
+| `different_from_last_x_cats` | Number | The number of past events the chosen cat must differ from to avoid repeats. | 3 | `1`<br>`2`<br>`3` |
+| `subject_frame_inner` | Number | An index for the inner frame variant of the subject art. | 3 | `2`<br>`4` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 214 | `common`<br>`rare`<br>`cha` |
+| [`choose_cat_with_highest_stat`](./Math_Equations.md) | Equation | Selects the cat with the highest value of the specified stat. | 1 | `int` |
+| [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum | Selects a cat that has an item equipped in the specified slot. | 1 | `weapon` |
+| `choose_cat_with_min_health` | Number | Selects a cat with at least the specified percentage of health remaining. | 1 | `75%` |
+| `choose_cat_with_most_injuries` | Boolean | If true, selects the cat with the highest number of injuries. | 1 | `true` |
+| `choose_cat_with_parasite` | Boolean | If true, selects a cat that has a parasite. | 1 | `true` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -436,7 +436,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `main`
 
 
-**Definition:** Event Object: The central hub or recurring menu of a story event.  
+**Definition:** An object containing the primary prompt and options for an event.
 **Total Count:** 214
 
 <details>
@@ -446,22 +446,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 220 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 220 | `common`<br>`rare`<br>`cha` |
 | [`options`](./Arrays.md#array-options) | Array  | An array of named option objects within an event, each defining a possible action the player can take. | 210 | `[smash bash open]` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 203 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String | The text or localization key for the popup or prompt displayed to the player. | 203 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 | [`setup`](./Miscellaneous.md#object-setup) | Object  | Defines actions or checks to run before the main event logic, often setting up conditions or tokens. | 23 | `{ . . . }` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
-| [`goto`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 | `end` |
+| [`goto`](./Engine_EventKeys.md#valid-property-keys) | `String` | Determines which labeled point in the event's script to jump to next, controlling flow. | 4 | `end` |
 | [`outcome`](./Miscellaneous.md#object-outcome) | Object  | An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations. | 4 | `{ . . . }` |
-| `max_options` | `Number` || 3 | `2`<br>`3` |
-| `shuffle_options` | `Boolean` || 3 | `true` |
+| `max_options` | `Number` | The maximum number of event options presented to the player. | 3 | `2`<br>`3` |
+| `shuffle_options` | `Boolean` | If true, randomizes the order of event options presented to the player. | 3 | `true` |
 | [`leave`](./Miscellaneous.md#object-leave) | Object  | An object defining the player action to leave or ignore the event, including its stat check and outcomes. | 3 | `{ . . . }` |
-| [`ignore`](./Miscellaneous.md#object-ignore) | Object  || 2 | `{ . . . }` |
-| [`open`](./Miscellaneous.md#object-open) | Object  || 2 | `{ . . . }` |
-| [`buy2`](./Miscellaneous.md#object-buy2) | Object  || 1 | `{ . . . }` |
-| [`buy3`](./Miscellaneous.md#object-buy3) | Object  || 1 | `{ . . . }` |
-| [`examine`](./Miscellaneous.md#object-examine) | Object  || 1 | `{ . . . }` |
-| [`pick`](./Miscellaneous.md#object-pick) | Object  || 1 | `{ . . . }` |
+| [`ignore`](./Miscellaneous.md#object-ignore) | Object | An object defining the player action to ignore the event, including its stat check and outcomes. | 2 | `{ . . . }` |
+| [`open`](./Miscellaneous.md#object-open) | Object | An object defining the player action to open a container, including its stat check and outcomes. | 2 | `{ . . . }` |
+| [`buy2`](./Miscellaneous.md#object-buy2) | Object | Defines an event option that allows the player to buy an item for 10 coins. | 1 | `{ . . . }` |
+| [`buy3`](./Miscellaneous.md#object-buy3) | Object | Defines an event option that allows the player to buy an item for 25 coins. | 1 | `{ . . . }` |
+| [`examine`](./Miscellaneous.md#object-examine) | Object | An object defining the player action to examine an object, including its stat check and outcomes. | 1 | `{ . . . }` |
+| [`pick`](./Miscellaneous.md#object-pick) | Object | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 1 | `{ . . . }` |
 
 </details>
 
@@ -472,7 +472,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `options`
 
 
-**Definition:** Event Object: Lists the available clickable dialog choices for the current story node.  
+**Definition:** An array of named option objects within an event, each defining a possible action the player can take.
 **Total Count:** 210
 
 <details>
@@ -489,7 +489,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`eat`](./Miscellaneous.md#object-eat) | Object  | An object defining the player action to consume something, including its stat check and outcomes. | 23 | `{ . . . }` |
 | [`smash`](./Miscellaneous.md#object-smash) | Object  | An object defining the player action to smash an object, including its stat check and outcomes. | 15 | `{ . . . }` |
 | [`destroy`](./Miscellaneous.md#object-destroy) | Object  | An object defining the player action to destroy an object, including its stat check and outcomes. | 13 | `{ . . . }` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 144 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 144 | `common`<br>`rare`<br>`cha` |
 | [`bash`](./Miscellaneous.md#object-bash) | Object  | An object defining the player action to bash open a container, including its stat check and outcomes. | 12 | `{ . . . }` |
 | [`sneak`](./Miscellaneous.md#object-sneak) | Object  | An object defining the player action to sneak past a threat, including its stat check and outcomes. | 11 | `{ . . . }` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 10 | `{ . . . }` |
@@ -534,7 +534,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`turnon`](./Miscellaneous.md#object-turnon) | Object  | Specifies the player character's attempt to turn on or activate the encounter. | 2 | `{ . . . }` |
 | [`altar_sacrifice`](./Miscellaneous.md#object-altar_sacrifice) | Object  | Specifies the player character's attempt to sacrifice a cat at the altar. | 1 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`arm`](./Miscellaneous.md#object-arm) | Object  | Specifies the player character's attempt to put their arm inside the encounter. | 1 | `{ . . . }` |
 | [`attach_amplifier`](./Miscellaneous.md#object-attach_amplifier) | Object  | Specifies the player character's attempt to attach an amplifier to the encounter. | 1 | `{ . . . }` |
 | [`attach_leech`](./Miscellaneous.md#object-attach_leech) | Object  | Specifies the player character's attempt to attach a leech to the encounter. | 1 | `{ . . . }` |
@@ -605,7 +605,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`keep_going`](./Miscellaneous.md#object-keep_going) | Object  | An event response to persevere, with no stat requirement. | 1 | `{ . . . }` |
 | [`kiss_meat`](./Miscellaneous.md#object-kiss_meat) | Object  | A charisma-based event response to kiss meat. | 1 | `{ . . . }` |
 | [`knife`](./Miscellaneous.md#object-knife) | Object  | An event response to obtain a knife, with no stat requirement. | 1 | `{ . . . }` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`leave_it_in`](./Miscellaneous.md#object-leave_it_in) | Object  | An event response to leave an object in place, with no stat requirement. | 1 | `{ . . . }` |
 | [`leg`](./Miscellaneous.md#object-leg) | Object  | A luck-based event response to use a leg. | 1 | `{ . . . }` |
 | [`lever`](./Miscellaneous.md#object-lever) | Object  | An event response to pull a lever, with a fixed chance and no stat requirement. | 1 | `{ . . . }` |
@@ -658,9 +658,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sneak_past_alt`](./Miscellaneous.md#object-sneak_past_alt) | Object  | The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters. | 1 | `{ . . . }` |
 | [`soul`](./Miscellaneous.md#object-soul) | Object  | The dialogue option for the Genie bad event that selects the curse soul reward. | 1 | `{ . . . }` |
 | [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | [`surprise`](./Miscellaneous.md#object-surprise) | Object  | The dialogue option for the Butch2 encounter that surprises the target. | 1 | `{ . . . }` |
 | [`sweet_talk`](./Miscellaneous.md#object-sweet_talk) | Object  | The dialogue option that uses the cha stat to sweet-talk Death. | 1 | `{ . . . }` |
 | [`swim`](./Miscellaneous.md#object-swim) | Object  | The dialogue option that uses the str stat to swim through a Strong Current. | 1 | `{ . . . }` |
@@ -704,7 +704,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `requirements`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the conditions that must be met for a reward or event branch to be available.
 **Total Count:** 203
 
 <details>
@@ -714,20 +714,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`has_token`](./Enums.md#enum-has_token) | Enum || 63 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
-| [`counter_range`](./Arrays.md#array-counter_range) | Array || 38 | `[WorldEventLegacyCounter_CrackInTheWall 1 1]`<br>`[WorldEventLegacyCounter_CrackInTheWall 2 2]`<br>`[WorldEventLegacyCounter_CrackInTheWall 3 3]` |
-| [`not_has_token`](./Enums.md#enum-not_has_token) | Enum || 30 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_MysteriousJarRepeat` |
-| [`counter_minimum`](./Arrays.md#array-counter_minimum) | Array || 26 | `[WorldEventLegacyCounter_CrackInTheWall 4]`<br>`[WorldEventLegacyCounter_FooCounter 5]`<br>`[WorldEventLegacyCounter_Jack 100]` |
-| [`cat_has_item_equipped`](./Enums.md#enum-cat_has_item_equipped) | Enum || 23 | `CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full`<br>`FaceCovering` |
-| [`counter_maximum`](./Arrays.md#array-counter_maximum) | Array || 19 | `[WorldEventLegacyCounter_CrackInTheWall 0]`<br>`[WorldEventLegacyCounter_CrackInTheWall 3]`<br>`[WorldEventLegacyCounter_FooCounter 10]` |
-| [`is_not_chapter`](./Arrays.md#array-is_not_chapter) | Array || 16 | `[future theend]`<br>`[iceage jurassic]`<br>`[jurassic iceage]` |
-| [`is_chapter`](./Arrays.md#array-is_chapter) | Array || 8 | `[future theend]`<br>`[future]`<br>`[iceage jurassic]` |
-| [`not_cat_has_item_equipped`](./Enums.md#enum-not_cat_has_item_equipped) | Enum || 3 | `CryogenicTimeChamber_Full`<br>`GuillotinasHead`<br>`Horns` |
-| `minimum_party_size` | Number || 2 | `2` |
-| `not_on_quest` | Number || 2 | `1` |
-| `cat_has_injury_count_min` | Number || 1 | `2` |
-| [`cat_has_item_slot_equipped`](./Enums.md#enum-cat_has_item_slot_equipped) | Enum || 1 | `weapon` |
-| `cat_has_parasite` | Boolean || 1 | `true` |
+| [`has_token`](./Enums.md#enum-has_token) | Enum | Requires the player to have a specific legacy token or flag. | 63 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
+| [`counter_range`](./Arrays.md#array-counter_range) | Array | Requires the value of a counter to fall within a specified inclusive range. | 38 | `[WorldEventLegacyCounter_CrackInTheWall 1 1]`<br>`[WorldEventLegacyCounter_CrackInTheWall 2 2]`<br>`[WorldEventLegacyCounter_CrackInTheWall 3 3]` |
+| [`not_has_token`](./Enums.md#enum-not_has_token) | Enum | Requires that the player does not have a specific legacy token or flag. | 30 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_MysteriousJarRepeat` |
+| [`counter_minimum`](./Arrays.md#array-counter_minimum) | Array | Requires the value of a counter to be at least the specified number. | 26 | `[WorldEventLegacyCounter_CrackInTheWall 4]`<br>`[WorldEventLegacyCounter_FooCounter 5]`<br>`[WorldEventLegacyCounter_Jack 100]` |
+| [`cat_has_item_equipped`](./Enums.md#enum-cat_has_item_equipped) | Enum | Requires that the selected cat has a specific item equipped. | 23 | `CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full`<br>`FaceCovering` |
+| [`counter_maximum`](./Arrays.md#array-counter_maximum) | Array | Requires the value of a counter to be at most the specified number. | 19 | `[WorldEventLegacyCounter_CrackInTheWall 0]`<br>`[WorldEventLegacyCounter_CrackInTheWall 3]`<br>`[WorldEventLegacyCounter_FooCounter 10]` |
+| [`is_not_chapter`](./Arrays.md#array-is_not_chapter) | Array | Requires that the current game chapter is not one of the specified chapters. | 16 | `[future theend]`<br>`[iceage jurassic]`<br>`[jurassic iceage]` |
+| [`is_chapter`](./Arrays.md#array-is_chapter) | Array | Requires that the current game chapter is one of the specified chapters. | 8 | `[future theend]`<br>`[future]`<br>`[iceage jurassic]` |
+| [`not_cat_has_item_equipped`](./Enums.md#enum-not_cat_has_item_equipped) | Enum | Requires that the selected cat does not have a specific item equipped. | 3 | `CryogenicTimeChamber_Full`<br>`GuillotinasHead`<br>`Horns` |
+| `minimum_party_size` | Number | The minimum number of cats required in the party. | 2 | `2` |
+| `not_on_quest` | Number | A quest ID that the party must not currently be on. | 2 | `1` |
+| `cat_has_injury_count_min` | Number | Requires that the selected cat has at least the specified number of injuries. | 1 | `2` |
+| [`cat_has_item_slot_equipped`](./Enums.md#enum-cat_has_item_slot_equipped) | Enum | Requires that the selected cat has an item equipped in the specified slot. | 1 | `weapon` |
+| `cat_has_parasite` | Boolean | If true, requires that the selected cat has a parasite. | 1 | `true` |
 
 </details>
 
@@ -738,7 +738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `self_status_next_fight`
 
 
-**Definition:** Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter.  
+**Definition:** An object defining status effects applied to the unit at the start of the next fight.
 **Total Count:** 143
 
 <details>
@@ -748,14 +748,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 105 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 105 | passives<br>class<br>	ag |
 | [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 29 | `1`<br>`10`<br>`2` |
 | [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 28 | `1`<br>`10`<br>`2` |
 | [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 20 | `1`<br>`10`<br>`2` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 13 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 13 | Default<br>FormChange<br>Druid |
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 5 | `-1`<br>`-2`<br>`-4` |
 | [`StrengthUp`](./Enums.md) | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 5 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum  || 4 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
+| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | Specifies the ability triggered instantly at the start of battle. | 4 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
 | [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 4 | `-1`<br>`-2`<br>`1` |
 | [`AddStartingMana`](./Enums.md) | Integer | The amount of bonus mana the unit starts each battle with. | 3 | `20`<br>`5` |
 | [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 3 | `1`<br>`10`<br>`2` |
@@ -770,12 +770,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`NoHealthRegen`](./Enums.md) | Integer | Prevents the unit from regenerating health normally. | 2 | `1` |
 | [`Sleep`](./Enums.md) | Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`3` |
 | [`Stun`](./Enums.md) | Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum  || 1 | `Flush`<br>`Heathens`<br>`Heathens2` |
+| [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum | Casts the specified ability when the battle begins. | 1 | `Flush`<br>`Heathens`<br>`Heathens2` |
 | [`AddInitiative`](./Enums.md) | Integer | The amount of bonus or penalty to the unit's turn order initiative value. | 1 | `-10`<br>`-100`<br>`-20` |
 | [`AlphaTurns`](./Enums.md) | Integer | The number of turns the unit acts first in battle; negative values may indicate last. | 1 | `-1`<br>`1` |
-| [`ChangeTileUnderCharacterAtStart`](./Enums.md#enum-changetileundercharacteratstart) | Enum  || 1 | `GlassTile` |
+| [`ChangeTileUnderCharacterAtStart`](./Enums.md#enum-changetileundercharacteratstart) | Enum | Specifies the tile type to change the tile under the character to at the start of battle. | 1 | `GlassTile` |
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
-| [`Fights`](./Enums.md) | Integer || 1 | `1`<br>`3`<br>`99` |
+| [`Fights`](./Enums.md) | Integer | The number of fights this status or effect persists for. | 1 | `1`<br>`3`<br>`99` |
 | [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 | [`Madness`](./Enums.md) | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 | [`MissChance`](./Enums.md) | Integer | The flat percentage chance that the unit's attacks will miss. | 1 | `10`<br>`15`<br>`20` |
@@ -798,7 +798,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `permanent_stats`
 
 
-**Definition:** Event Reward: Permanently increases (or decreases) the core stats of a single character.  
+**Definition:** Defines permanent stat changes to apply to the unit (e.g., con, cha).
 **Total Count:** 134
 
 <details>
@@ -809,13 +809,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 37 | `-1`<br>`-2`<br>`-3` |
-| `random` | Number || 25 | `-1`<br>`-2`<br>`1` |
-| [`int`](./Enums.md#enum-int) | Enum / Integer  || 23 | `-1`<br>`-10`<br>`-2` |
-| [`lck`](./Enums.md#enum-lck) | Enum / Integer  || 20 | `-1`<br>`-2`<br>`-3` |
+| `random` | Number | A random value used for stat or attribute adjustment. | 25 | `-1`<br>`-2`<br>`1` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 23 | `-1`<br>`-10`<br>`-2` |
+| [`lck`](./Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 20 | `-1`<br>`-2`<br>`-3` |
 | [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 20 | `-1`<br>`-10`<br>`-2` |
-| [`str`](./Enums.md#enum-str) | Enum / Integer  || 18 | `-1`<br>`-2`<br>`-3` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 18 | `-1`<br>`-2`<br>`-3` |
 | [`cha`](./Engine_EventKeys.md#valid-property-keys) | Variable | The Charisma stat value or modifier. | 16 | `+1`<br>`-1`<br>`-2` |
-| [`dex`](./Enums.md#enum-dex) | Enum / Integer  || 10 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 10 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -826,7 +826,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `conditional_reward`
 
 
-**Definition:** Event Action: Provides a reward only if a specific condition is met.  
+**Definition:** An object defining a reward that is granted only if specified conditions are met.
 **Total Count:** 126
 
 <details>
@@ -836,11 +836,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 174 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 174 | `common`<br>`rare`<br>`cha` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 125 | `{ . . . }` |
 | [`reward`](./Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 125 | `{ . . . }` |
 | [`else`](./Miscellaneous.md#object-else) | Object  | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 37 | `{ . . . }` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 2 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String | The text or localization key for the popup or prompt displayed to the player. | 2 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 
 </details>
 
@@ -851,7 +851,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ignore`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to ignore the event, including its stat check and outcomes.
 **Total Count:** 57
 
 <details>
@@ -861,14 +861,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 59 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 59 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 57 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 57 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 56 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 57 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 56 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 55 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 3 | `{ . . . }` |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 2 | `dimensionx`<br>`endoftime`<br>`future` |
+| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 2 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
 
@@ -879,7 +879,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `examine`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to examine an object, including its stat check and outcomes.
 **Total Count:** 44
 
 <details>
@@ -889,12 +889,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Strings.md#string-label) | Variable || 44 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 44 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 57 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 44 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 44 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 57 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 41 | `false`<br>`true` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 32 | `{ . . . }` |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum || 3 | `examine`<br>`lever`<br>`open` |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 3 | `examine`<br>`lever`<br>`open` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -906,7 +906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `spawn_unit_next_fight`
 
 
-**Definition:** Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter.  
+**Definition:** An object defining a unit to spawn during the next fight, including its object, count, and spawn side.
 **Total Count:** 41
 
 <details>
@@ -918,8 +918,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 40 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 34 | `0`<br>`1`<br>`10` |
-| [`spawn_side`](./Enums.md#enum-spawn_side) | Enum || 31 | `"cats"`<br>`anywhere`<br>`cats` |
-| [`side`](./Enums.md#enum-side) | Enum || 3 | `enemies` |
+| [`spawn_side`](./Enums.md#enum-spawn_side) | Enum | Specifies which side the spawned unit appears on. Possible values: "cats", "enemies", or "anywhere". | 31 | `"cats"`<br>`anywhere`<br>`cats` |
+| [`side`](./Enums.md#enum-side) | Enum | Determines the team the spawned unit belongs to. Possible values include "enemies". | 3 | `enemies` |
 
 </details>
 
@@ -930,7 +930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `get_item_from_pool`
 
 
-**Definition:** Event Action: Rewards the player with an item drawn from a specific loot pool.  
+**Definition:** Grants an item from the specified pool or a specific item name.
 **Total Count:** 40
 
 <details>
@@ -941,9 +941,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 39 | `2`<br>`3`<br>`4` |
-| [`restrict`](./Arrays.md#array-restrict) | Array || 30 | `[weapon armor]`<br>`[weapon consumables armor]`<br>`[weapon, trinket, armor]` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 32 | `common`<br>`rare`<br>`cha` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| [`restrict`](./Arrays.md#array-restrict) | Array | Limits the pool of items to specific categories such as weapon, armor, or consumables. | 30 | `[weapon armor]`<br>`[weapon consumables armor]`<br>`[weapon, trinket, armor]` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 32 | `common`<br>`rare`<br>`cha` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` | The text or localization key for the popup or prompt displayed to the player. | 1 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 
 </details>
 
@@ -954,7 +954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `else`
 
 
-**Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
+**Definition:** Specifies the fallback outcome when the primary condition in a conditional reward is not met.
 **Total Count:** 37
 
 <details>
@@ -964,22 +964,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 31 | `common`<br>`rare`<br>`cha` |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 20 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
-| `party_damage` | `Number` || 6 | `1`<br>`10`<br>`2` |
-| `set_frame` | `Number` || 5 | `1`<br>`10`<br>`15` |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
-| [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object  || 4 | `{ . . . }` |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array  || 3 | `[` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 31 | `common`<br>`rare`<br>`cha` |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` | The text or localization key for the popup or prompt displayed to the player. | 20 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 6 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 6 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
+| `party_damage` | `Number` | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 6 | `1`<br>`10`<br>`2` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 5 | `1`<br>`10`<br>`15` |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` | Triggers the specified event immediately. | 4 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
+| [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 4 | `{ . . . }` |
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 3 | `[` |
 | [`get_item_from_pool`](./Arrays.md#array-get_item_from_pool) | `Array`  | Grants an item from the specified pool or a specific item name. | 2 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a disorder to add to the current cat when this event triggers. | 2 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| `next_event_bonus` | `Number` || 1 | `-1`<br>`-2`<br>`1` |
+| `next_event_bonus` | `Number` | A modifier to the next event's outcome roll or selection chance. | 1 | `-1`<br>`-2`<br>`1` |
 | [`random_mutation`](./Miscellaneous.md#object-random_mutation) | Object  | The number of random mutations applied to the unit. | 1 | `{ . . . }` |
 | [`self_status_next_fight`](./Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 1 | `{ . . . }` |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 
 </details>
 
@@ -990,7 +990,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `leave`
 
 
-**Definition:** Event Node: Story branch or dialog option representing the 'Leave' action.  
+**Definition:** An object defining the player action to leave or ignore the event, including its stat check and outcomes.
 **Total Count:** 32
 
 <details>
@@ -1000,10 +1000,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 32 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 32 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 32 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 32 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 32 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 32 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 32 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 30 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 
@@ -1016,7 +1016,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `loot`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to loot a container or corpse, including its stat check and outcomes.
 **Total Count:** 25
 
 <details>
@@ -1026,11 +1026,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 63 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 63 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 25 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 25 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 25 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 25 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 25 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 25 | `cha`<br>`coins`<br>`con` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 23 | `{ . . . }` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
 
@@ -1043,7 +1043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `mutation`
 
 
-**Definition:** Event Object: Story branch or dialog option representing the 'Mutation' action.  
+**Definition:** An object defining specific body part mutations applied to the unit.
 **Total Count:** 24
 
 <details>
@@ -1053,18 +1053,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyes` | Number || 13 | `-1`<br>`-2`<br>`1029` |
+| `eyes` | Number | The ID for the eye mutation appearance. | 13 | `-1`<br>`-2`<br>`1029` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 11 | `-1`<br>`-2`<br>`1` |
-| `ears` | Number || 10 | `-1`<br>`-2`<br>`1500` |
-| `eyebrows` | Number || 8 | `-1`<br>`-2`<br>`440` |
+| `ears` | Number | The ID for the ear mutation appearance. | 10 | `-1`<br>`-2`<br>`1500` |
+| `eyebrows` | Number | The ID for the eyebrow mutation appearance. | 8 | `-1`<br>`-2`<br>`440` |
 | [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 7 | `-1`<br>`1`<br>`1.3` |
-| `legs` | Number || 7 | `-1`<br>`306`<br>`322` |
-| `arms` | Number || 6 | `900`<br>`[10 20]` |
+| `legs` | Number | The ID or range of IDs for the leg mutation appearance. | 7 | `-1`<br>`306`<br>`322` |
+| `arms` | Number | The ID or range of IDs for the arm mutation appearance. | 6 | `900`<br>`[10 20]` |
 | `body` | Float | The catalog ID for the cat's body part. | 6 | `-1`<br>`1`<br>`1.1` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 6 | `-1`<br>`1000`<br>`1001` |
 | `eye1` | Integer | The catalog ID for the cat's first eye part. | 3 | `-1`<br>`-2`<br>`1013` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 2 | `-1`<br>`-2`<br>`1` |
-| `ear1` | Integer || 2 | `-2`<br>`1005`<br>`1013` |
+| `ear1` | Integer | The catalog ID for the cat's first ear part. | 2 | `-2`<br>`1005`<br>`1013` |
 | `eyebrow1` | Integer | The catalog ID for the cat's first eyebrow part. | 2 | `-2`<br>`1069` |
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 2 | `-1`<br>`-2`<br>`1` |
 | `eye2` | Integer | The catalog ID for the cat's second eye part. | 1 | `-1`<br>`1013`<br>`1057` |
@@ -1078,7 +1078,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_status_next_fight`
 
 
-**Definition:** Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter.  
+**Definition:** An object defining status effects to apply to the party at the start of the next fight.
 **Total Count:** 24
 
 <details>
@@ -1088,10 +1088,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 22 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 22 | passives<br>class<br>	ag |
 | [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 6 | `1`<br>`10`<br>`2` |
 | [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 5 | `1`<br>`10`<br>`2` |
-| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum  || 3 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
+| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | Specifies the ability triggered instantly at the start of battle. | 3 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
 | [`NoHealthRegen`](./Enums.md) | Integer | Prevents the unit from regenerating health normally. | 3 | `1` |
 | [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
@@ -1111,7 +1111,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `eat`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to consume something, including its stat check and outcomes.
 **Total Count:** 23
 
 <details>
@@ -1121,11 +1121,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 66 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 66 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 23 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 23 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 23 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 23 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 23 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 23 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -1136,7 +1136,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `setup`
 
 
-**Definition:** Event Object: Pre-initialization logic executed before the event UI is drawn.  
+**Definition:** Defines actions or checks to run before the main event logic, often setting up conditions or tokens.
 **Total Count:** 23
 
 <details>
@@ -1146,9 +1146,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`conditional_reward`](./Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 20 | `{ . . . }` |
-| `set_frame` | `Number` || 3 | `1`<br>`10`<br>`15` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 3 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -1159,7 +1159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `cutscene`
 
 
-**Definition:** Event Object: Triggers a narrative cutscene.  
+**Definition:** Specifies the name of a cutscene to play.
 **Total Count:** 22
 
 <details>
@@ -1169,9 +1169,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 22 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 22 | `common`<br>`rare`<br>`cha` |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Specifies the name of a cutscene to play. | 21 | `"chaos_ending_bad"`<br>`"chaos_ending_good"`<br>`"chapterintros/bunker"` |
-| `skip_result_screen` | Boolean || 21 | `true` |
+| `skip_result_screen` | Boolean | If true, the result screen is skipped after the cutscene completes. | 21 | `true` |
 
 </details>
 
@@ -1182,7 +1182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `random_mutation_from_set`
 
 
-**Definition:** Event Reward: Applies a random mutation to a character from a specific pool.  
+**Definition:** Defines a set of mutation categories and their specific IDs to apply a random mutation from.
 **Total Count:** 22
 
 <details>
@@ -1195,11 +1195,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 9 | `-1`<br>`-2`<br>`1` |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 8 | `0`<br>`1`<br>`10` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 6 | `-1`<br>`1000`<br>`1001` |
-| `ears` | Number || 5 | `-1`<br>`-2`<br>`1500` |
-| `eyes` | Number || 5 | `-1`<br>`-2`<br>`1029` |
-| `legs` | Number || 5 | `-1`<br>`306`<br>`322` |
+| `ears` | Number | The ID for the ear mutation appearance. | 5 | `-1`<br>`-2`<br>`1500` |
+| `eyes` | Number | The ID for the eye mutation appearance. | 5 | `-1`<br>`-2`<br>`1029` |
+| `legs` | Number | The ID or range of IDs for the leg mutation appearance. | 5 | `-1`<br>`306`<br>`322` |
 | `body` | Float | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
-| `eyebrows` | Number || 3 | `-1`<br>`-2`<br>`440` |
+| `eyebrows` | Number | The ID for the eyebrow mutation appearance. | 3 | `-1`<br>`-2`<br>`440` |
 | [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 3 | `-1`<br>`1`<br>`1.3` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 2 | `-1`<br>`-2`<br>`1` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 2 | `-1`<br>`-2`<br>`1` |
@@ -1216,7 +1216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `random_mutation`
 
 
-**Definition:** Event Reward: Applies a completely random mutation to a character.  
+**Definition:** The number of random mutations applied to the unit.
 **Total Count:** 19
 
 <details>
@@ -1228,7 +1228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 15 | `0`<br>`1`<br>`10` |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 12 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| `asymmetric` | Boolean || 8 | `false`<br>`true` |
+| `asymmetric` | Boolean | If true, the mutation is applied asymmetrically (e.g., different on each side). | 8 | `false`<br>`true` |
 
 </details>
 
@@ -1239,7 +1239,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `smash`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to smash an object, including its stat check and outcomes.
 **Total Count:** 16
 
 <details>
@@ -1249,12 +1249,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Strings.md#string-label) | String || 16 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 16 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 18 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 16 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 16 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 18 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 14 | `false`<br>`true` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 12 | `{ . . . }` |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum || 2 | `examine`<br>`lever`<br>`open` |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 2 | `examine`<br>`lever`<br>`open` |
 
 </details>
 
@@ -1265,7 +1265,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `destroy`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to destroy an object, including its stat check and outcomes.
 **Total Count:** 14
 
 <details>
@@ -1275,10 +1275,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 22 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 22 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 14 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 14 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 14 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 14 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 14 | `cha`<br>`coins`<br>`con` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 13 | `{ . . . }` |
 
 </details>
@@ -1290,7 +1290,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bash`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to bash open a container, including its stat check and outcomes.
 **Total Count:** 12
 
 <details>
@@ -1300,11 +1300,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 16 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 16 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 12 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 12 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 12 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 12 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 12 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 12 | `cha`<br>`coins`<br>`con` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
@@ -1316,7 +1316,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `global_effect_next_fight`
 
 
-**Definition:** Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter.  
+**Definition:** Defines a global status effect or modifier to apply in the next fight.
 **Total Count:** 11
 
 <details>
@@ -1326,10 +1326,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 16 | passives<br>class<br>	ag |
-| [`Fights`](./Enums.md) | Integer || 6 | `1`<br>`3`<br>`99` |
-| [`CharacterTypeGainsStatusAtBattleStart`](./Miscellaneous.md#object-charactertypegainsstatusatbattlestart) | Object  || 5 | `{ . . . }` |
-| [`StatusRandomEnemiesOnBattleStart`](./Passives_and_Statuses.md#object-statusrandomenemiesonbattlestart) | Object  || 3 | `{ . . . }` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 16 | passives<br>class<br>	ag |
+| [`Fights`](./Enums.md) | Integer | The number of fights this status or effect persists for. | 6 | `1`<br>`3`<br>`99` |
+| [`CharacterTypeGainsStatusAtBattleStart`](./Miscellaneous.md#object-charactertypegainsstatusatbattlestart) | Object | Defines status effects applied to characters with a specific tag at the start of a battle. | 5 | `{ . . . }` |
+| [`StatusRandomEnemiesOnBattleStart`](./Passives_and_Statuses.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 3 | `{ . . . }` |
 | [`KillEnemyOfTypeAtBattleStart`](./Miscellaneous.md#object-killenemyoftypeatbattlestart) | Object  | Specifies that a specific enemy type is killed at the start of the next battle. | 2 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -1342,7 +1342,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `open`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Open' state.  
+**Definition:** An object defining the player action to open a container, including its stat check and outcomes.
 **Total Count:** 11
 
 <details>
@@ -1352,12 +1352,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Strings.md#string-label) | String || 11 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 11 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 12 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 11 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 11 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 12 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum || 4 | `examine`<br>`lever`<br>`open` |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 4 | `examine`<br>`lever`<br>`open` |
 
 </details>
 
@@ -1368,7 +1368,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sneak`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to sneak past a threat, including its stat check and outcomes.
 **Total Count:** 11
 
 <details>
@@ -1378,11 +1378,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 32 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 32 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 11 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 11 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 11 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 11 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 11 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 11 | `cha`<br>`coins`<br>`con` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
@@ -1394,7 +1394,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `leave_party_temporarily`
 
 
-**Definition:** Event Action: Removes a character from the active team until the next hub area.  
+**Definition:** Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions.
 **Total Count:** 9
 
 <details>
@@ -1404,9 +1404,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `fights_skipped` | Number || 7 | `0`<br>`1` |
-| [`return_as`](./Enums.md#enum-return_as) | Enum || 3 | `enemy` |
-| [`return_during`](./Enums.md#enum-return_during) | Enum || 3 | `boss` |
+| `fights_skipped` | Number | The number of fights the temporarily absent cat will skip before returning. | 7 | `0`<br>`1` |
+| [`return_as`](./Enums.md#enum-return_as) | Enum | Specifies the role or faction the temporarily absent cat returns as. | 3 | `enemy` |
+| [`return_during`](./Enums.md#enum-return_during) | Enum | Specifies the encounter type during which the temporarily absent cat returns. | 3 | `boss` |
 
 </details>
 
@@ -1417,7 +1417,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `take`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the player action to take an item, including its stat check and outcomes.
 **Total Count:** 8
 
 <details>
@@ -1427,11 +1427,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 17 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 17 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 8 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 8 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 8 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 8 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 8 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 8 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -1443,7 +1443,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `a`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the first custom option in a test or debug event.
 **Total Count:** 7
 
 <details>
@@ -1454,8 +1454,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 7 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -1467,7 +1467,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `attack`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the primary attack ability for the class, either as a string name or a detailed object.
 **Total Count:** 7
 
 <details>
@@ -1477,9 +1477,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 12 | `common`<br>`rare`<br>`cha` |
-| [`label`](./Strings.md#string-label) | String || 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 7 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 12 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
 
@@ -1492,7 +1492,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `b`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the second custom option in a test or debug event.
 **Total Count:** 7
 
 <details>
@@ -1503,8 +1503,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 7 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -1516,7 +1516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `c`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining the third custom option in a test or debug event.
 **Total Count:** 7
 
 <details>
@@ -1527,8 +1527,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 7 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -1540,7 +1540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `charm`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to charm or persuade the encounter.
 **Total Count:** 7
 
 <details>
@@ -1550,11 +1550,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 18 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 18 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 7 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
@@ -1566,7 +1566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `fight`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to fight or force their way through the encounter.
 **Total Count:** 7
 
 <details>
@@ -1576,10 +1576,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 13 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 13 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 7 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
@@ -1592,7 +1592,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `touch`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to physically touch or interact with the encounter.
 **Total Count:** 7
 
 <details>
@@ -1603,9 +1603,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 7 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 6 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
 
@@ -1618,7 +1618,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `activate_p`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to activate the object (press a button/lever).
 **Total Count:** 6
 
 <details>
@@ -1630,9 +1630,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 6 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 6 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 6 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -1643,7 +1643,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `activate_z`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to activate the object (pull a lever/switch).
 **Total Count:** 6
 
 <details>
@@ -1655,9 +1655,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 6 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 6 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 6 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -1668,7 +1668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `d`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies a debug or test option for game development purposes.
 **Total Count:** 6
 
 <details>
@@ -1679,8 +1679,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 6 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -1692,7 +1692,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `enter`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to enter or go inside the encounter location.
 **Total Count:** 6
 
 <details>
@@ -1702,13 +1702,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 10 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 10 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 5 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 | `dimensionx`<br>`endoftime`<br>`future` |
+| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 1 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
 
@@ -1719,7 +1719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `inspect`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to inspect or examine the encounter.
 **Total Count:** 6
 
 <details>
@@ -1731,9 +1731,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 6 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 6 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 6 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -1744,7 +1744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `lick`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to lick the encounter.
 **Total Count:** 6
 
 <details>
@@ -1754,10 +1754,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 11 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 11 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 6 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
@@ -1771,7 +1771,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `next_event_from_set`
 
 
-**Definition:** Event Action: Chains immediately into a randomly selected subsequent story event.  
+**Definition:** Specifies the next event to trigger, or defines a set of events with count and category constraints.
 **Total Count:** 6
 
 <details>
@@ -1781,8 +1781,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`event`](./Enums.md#enum-event) | Enum || 5 | `Blessing`<br>`Death`<br>`Tragedy` |
-| `same_cat` | Boolean || 5 | `true` |
+| [`event`](./Enums.md#enum-event) | Enum | Specifies the event to force, either by name or by a nested object defining its type and level. | 5 | `Blessing`<br>`Death`<br>`Tragedy` |
+| `same_cat` | Boolean | If true, the next event from the set uses the same cat as the previous event. | 5 | `true` |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 4 | `0`<br>`1`<br>`10` |
 
 </details>
@@ -1794,7 +1794,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
-**Definition:** Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle.  
+**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.
 **Total Count:** 5
 
 <details>
@@ -1805,7 +1805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 8 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 8 | passives<br>class<br>	ag |
 | [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
 | [`Stun`](./Enums.md) | Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | Default<br>FormChange<br>Druid |
@@ -1819,7 +1819,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `drink`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to drink from or consume the encounter.
 **Total Count:** 5
 
 <details>
@@ -1829,11 +1829,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 13 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 13 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 5 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -1844,7 +1844,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `kiss`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to kiss the encounter.
 **Total Count:** 5
 
 <details>
@@ -1854,11 +1854,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 13 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 13 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 5 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -1869,7 +1869,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `run`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to run away or flee from the encounter.
 **Total Count:** 5
 
 <details>
@@ -1879,11 +1879,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 9 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 9 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 5 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
@@ -1896,7 +1896,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bite`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to bite the encounter.
 **Total Count:** 4
 
 <details>
@@ -1909,9 +1909,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 4 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 4 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -1922,7 +1922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage`
 
 
-**Definition:** The base damage properties of an attack.  
+**Definition:** Specifies the amount of damage dealt, can be a number or expression.
 **Total Count:** 4
 
 <details>
@@ -1933,9 +1933,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 3 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 3 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -1946,7 +1946,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `go_around`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to go around or bypass the encounter.
 **Total Count:** 4
 
 <details>
@@ -1956,11 +1956,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 8 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 8 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 3 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -1972,7 +1972,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `home`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the option to go home (exit to the main hub).
 **Total Count:** 4
 
 <details>
@@ -1984,9 +1984,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 4 | `dimensionx`<br>`endoftime`<br>`future` |
-| [`label`](./Enums.md#enum-label) | Enum || 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 4 | `cha`<br>`coins`<br>`con` |
+| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 4 | `dimensionx`<br>`endoftime`<br>`future` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 4 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -1997,7 +1997,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `outcome`
 
 
-**Definition:** Event Object: Logic and text executed after selecting a specific dialog option.  
+**Definition:** An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations.
 **Total Count:** 4
 
 <details>
@@ -2007,11 +2007,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
-| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum  || 4 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array  || 3 | `[` |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
-| [`weather_roll`](./Arrays.md#array-weather_roll) | Array || 1 | `[` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
+| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum | Specifies an animation to play, optionally as an array with a probability weight. | 4 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 3 | `[` |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` | Specifies a weather effect type to apply to the current map. | 1 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
+| [`weather_roll`](./Arrays.md#array-weather_roll) | Array | An array that defines weather roll parameters for an outcome. | 1 | `[` |
 
 </details>
 
@@ -2022,7 +2022,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_permanent_stats_exclude_self`
 
 
-**Definition:** Event Reward: Permanently modifies stats for all party members except the one who initiated the action.  
+**Definition:** An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit.
 **Total Count:** 4
 
 <details>
@@ -2034,11 +2034,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 4 | `+1`<br>`-1`<br>`-2` |
 | [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](./Enums.md#enum-dex) | Enum / Integer  || 4 | `-1`<br>`-2`<br>`-3` |
-| [`int`](./Enums.md#enum-int) | Enum / Integer  || 4 | `-1`<br>`-10`<br>`-2` |
-| [`lck`](./Enums.md#enum-lck) | Enum / Integer  || 4 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
+| [`lck`](./Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
 | [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
-| [`str`](./Enums.md#enum-str) | Enum / Integer  || 4 | `-1`<br>`-2`<br>`-3` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -2049,7 +2049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `past`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the option to travel to a past era (Ice Age, Jurassic, etc.).
 **Total Count:** 4
 
 <details>
@@ -2061,10 +2061,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 4 | `dimensionx`<br>`endoftime`<br>`future` |
-| [`label`](./Enums.md#enum-label) | Enum || 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 4 | `dimensionx`<br>`endoftime`<br>`future` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 4 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 4 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 4 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2075,7 +2075,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `skip`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the option to skip or decline the current encounter.
 **Total Count:** 4
 
 <details>
@@ -2087,9 +2087,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
-| [`label`](./Strings.md#string-label) | String || 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 4 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 4 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 4 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -2100,7 +2100,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `investigate`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to investigate the encounter.
 **Total Count:** 3
 
 <details>
@@ -2112,9 +2112,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 3 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -2125,7 +2125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_permanent_stats`
 
 
-**Definition:** Event Reward: Permanently increases (or decreases) the core stats of all party members.  
+**Definition:** An object defining permanent stat increases applied to the party.
 **Total Count:** 3
 
 <details>
@@ -2146,7 +2146,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `repell`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to rappel down or climb into the encounter.
 **Total Count:** 3
 
 <details>
@@ -2156,11 +2156,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 8 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 8 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 3 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2171,7 +2171,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `spawn_reflection_next_fight`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number of reflections to spawn in the next battle, optionally with a mutation.
 **Total Count:** 3
 
 <details>
@@ -2191,7 +2191,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusRandomEnemiesOnBattleStart`
 
 
-**Definition:** Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state.  
+**Definition:** An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status.
 **Total Count:** 3
 
 <details>
@@ -2202,7 +2202,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 7 | `0`<br>`1`<br>`10` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
 | [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
 | [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
 
@@ -2215,7 +2215,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `attach_antenna`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to attach a device or antenna to the encounter.
 **Total Count:** 2
 
 <details>
@@ -2227,9 +2227,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2240,7 +2240,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `boogers`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to pick or examine boogers.
 **Total Count:** 2
 
 <details>
@@ -2252,8 +2252,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2264,7 +2264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `copy`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to copy or replicate something from the encounter.
 **Total Count:** 2
 
 <details>
@@ -2275,7 +2275,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -2286,7 +2286,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `find_another_way`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to find an alternative path around the encounter.
 **Total Count:** 2
 
 <details>
@@ -2298,10 +2298,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2312,7 +2312,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `gain_familiar`
 
 
-**Definition:** Event Action: Adds a specific familiar to the party.  
+**Definition:** Specifies which familiar type (by its class name) the unit gains.
 **Total Count:** 2
 
 <details>
@@ -2332,7 +2332,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `KillEnemyOfTypeAtBattleStart`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies that a specific enemy type is killed at the start of the next battle.
 **Total Count:** 2
 
 <details>
@@ -2342,8 +2342,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum || 2 | `any`<br>`cat` |
-| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array || 1 | `[TomTom Kitten CatCaller Mangy]` |
+| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum | Specifies the type of enemy to kill at the start of battle. | 2 | `any`<br>`cat` |
+| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array | An array of enemy names to spawn as a fallback if no matching enemy type is present. | 1 | `[TomTom Kitten CatCaller Mangy]` |
 
 </details>
 
@@ -2354,7 +2354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `move_closer`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to move closer to the encounter.
 **Total Count:** 2
 
 <details>
@@ -2364,11 +2364,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 4 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 2 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2379,7 +2379,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_random_mutation_from_set`
 
 
-**Definition:** Event Reward: Applies a random mutation to the entire party from a specific pool.  
+**Definition:** An object specifying the count and mutation parts to randomly apply to the party.
 **Total Count:** 2
 
 <details>
@@ -2390,9 +2390,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 | `0`<br>`1`<br>`10` |
-| `ears` | Number || 2 | `-1`<br>`-2`<br>`1500` |
-| `eyebrows` | Number || 2 | `-1`<br>`-2`<br>`440` |
-| `eyes` | Number || 2 | `-1`<br>`-2`<br>`1029` |
+| `ears` | Number | The ID for the ear mutation appearance. | 2 | `-1`<br>`-2`<br>`1500` |
+| `eyebrows` | Number | The ID for the eyebrow mutation appearance. | 2 | `-1`<br>`-2`<br>`440` |
+| `eyes` | Number | The ID for the eye mutation appearance. | 2 | `-1`<br>`-2`<br>`1029` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 2 | `-1`<br>`-2`<br>`1` |
 
 </details>
@@ -2404,7 +2404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `play`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to play or interact playfully with the encounter.
 **Total Count:** 2
 
 <details>
@@ -2414,11 +2414,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 4 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 2 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2429,7 +2429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `poop`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a poop event or interaction, often part of a random encounter or response in dialogue.
 **Total Count:** 2
 
 <details>
@@ -2441,8 +2441,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2453,7 +2453,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `print`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to print or output something from the encounter.
 **Total Count:** 2
 
 <details>
@@ -2464,7 +2464,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -2475,7 +2475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `protection`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to offer or ask for protection.
 **Total Count:** 2
 
 <details>
@@ -2487,8 +2487,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 2 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2499,7 +2499,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `random_chance`
 
 
-**Definition:** Event Logic: Executes the nested outcome based on a percentage roll.  
+**Definition:** Defines a block with a percentage chance and an action to execute if the chance succeeds.
 **Total Count:** 2
 
 <details>
@@ -2509,7 +2509,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 1 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 
@@ -2522,7 +2522,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `repair`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to repair the encounter object.
 **Total Count:** 2
 
 <details>
@@ -2533,9 +2533,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | Variable || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Variable || 2 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | Variable | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
@@ -2548,7 +2548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to make a sacrifice at the encounter.
 **Total Count:** 2
 
 <details>
@@ -2559,12 +2559,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2575,7 +2575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `scale`
 
 
-**Definition:** Examples: `.75, 1.33, 1`  
+**Definition:** The scale multiplier applied to the unit's visual size.
 **Total Count:** 2
 
 <details>
@@ -2586,7 +2586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -2597,7 +2597,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `turnon`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to turn on or activate the encounter.
 **Total Count:** 2
 
 <details>
@@ -2609,9 +2609,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 2 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -2622,7 +2622,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `altar_sacrifice`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to sacrifice a cat at the altar.
 **Total Count:** 1
 
 <details>
@@ -2633,8 +2633,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2645,7 +2645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `arm`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to put their arm inside the encounter.
 **Total Count:** 1
 
 <details>
@@ -2655,11 +2655,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2670,7 +2670,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `attach_amplifier`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to attach an amplifier to the encounter.
 **Total Count:** 1
 
 <details>
@@ -2682,9 +2682,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2695,7 +2695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `attach_leech`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to attach a leech to the encounter.
 **Total Count:** 1
 
 <details>
@@ -2707,9 +2707,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2720,7 +2720,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bash_past_alt`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to bash through the encounter (alternate version for specific chapters).
 **Total Count:** 1
 
 <details>
@@ -2730,12 +2730,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2746,7 +2746,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bite_it_off`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to bite off part of the encounter.
 **Total Count:** 1
 
 <details>
@@ -2756,11 +2756,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2771,7 +2771,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `blue`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to choose the blue option.
 **Total Count:** 1
 
 <details>
@@ -2782,10 +2782,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum || 1 | `examine`<br>`lever`<br>`open` |
-| `fixed_chance` | Number || 1 | `50%` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 1 | `examine`<br>`lever`<br>`open` |
+| `fixed_chance` | Number | A fixed percentage chance for a specific outcome or option to occur. | 1 | `50%` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2796,7 +2796,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `blue_needle`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to take the blue needle.
 **Total Count:** 1
 
 <details>
@@ -2806,12 +2806,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2822,7 +2822,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `body`
 
 
-**Definition:** No definition provided.  
+**Definition:** The catalog ID for the cat's body part.
 **Total Count:** 1
 
 <details>
@@ -2833,9 +2833,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -2846,7 +2846,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `book`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to read or take the book.
 **Total Count:** 1
 
 <details>
@@ -2858,8 +2858,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2870,7 +2870,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `brace`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to brace themselves for the encounter.
 **Total Count:** 1
 
 <details>
@@ -2882,8 +2882,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2894,7 +2894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `break_ice`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to break the ice covering the encounter.
 **Total Count:** 1
 
 <details>
@@ -2905,8 +2905,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2917,7 +2917,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `break_lock`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to break the lock on the encounter.
 **Total Count:** 1
 
 <details>
@@ -2929,9 +2929,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -2942,7 +2942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bribe`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to bribe the encounter.
 **Total Count:** 1
 
 <details>
@@ -2952,11 +2952,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2967,7 +2967,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `button`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to push the button.
 **Total Count:** 1
 
 <details>
@@ -2978,10 +2978,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum || 1 | `examine`<br>`lever`<br>`open` |
-| `fixed_chance` | Number || 1 | `50%` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 1 | `examine`<br>`lever`<br>`open` |
+| `fixed_chance` | Number | A fixed percentage chance for a specific outcome or option to occur. | 1 | `50%` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -2992,7 +2992,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `buy1`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to buy one of the offered items.
 **Total Count:** 1
 
 <details>
@@ -3002,14 +3002,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -3020,7 +3020,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `catch`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining a response option for catching an entity, including stat checks and rewards.
 **Total Count:** 1
 
 <details>
@@ -3030,11 +3030,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3045,7 +3045,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `challenge_to_game`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to challenge the encounter to a game.
 **Total Count:** 1
 
 <details>
@@ -3057,9 +3057,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -3070,7 +3070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `chaos_ending`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the option to trigger the chaos ending cutscene.
 **Total Count:** 1
 
 <details>
@@ -3081,8 +3081,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3093,7 +3093,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `chapter_cutscene`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the option to trigger a chapter intro cutscene.
 **Total Count:** 1
 
 <details>
@@ -3104,8 +3104,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3116,7 +3116,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `charm_past_alt`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to charm the encounter (alternate version for specific chapters).
 **Total Count:** 1
 
 <details>
@@ -3126,12 +3126,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3142,7 +3142,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `climb`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies the player character's attempt to climb over the encounter.
 **Total Count:** 1
 
 <details>
@@ -3152,11 +3152,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3167,7 +3167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `comfort`
 
 
-**Definition:** No definition provided.  
+**Definition:** A charisma-based event response that soothes the encounter subject.
 **Total Count:** 1
 
 <details>
@@ -3177,11 +3177,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3192,7 +3192,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `communicate`
 
 
-**Definition:** No definition provided.  
+**Definition:** A charisma-based event response to establish communication.
 **Total Count:** 1
 
 <details>
@@ -3204,9 +3204,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -3217,7 +3217,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `concheck`
 
 
-**Definition:** No definition provided.  
+**Definition:** A constitution-based event response to test endurance.
 **Total Count:** 1
 
 <details>
@@ -3229,9 +3229,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -3242,7 +3242,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `counter`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response that uses a countering action, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -3254,8 +3254,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3266,7 +3266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `crack_open`
 
 
-**Definition:** No definition provided.  
+**Definition:** A strength-based event response to break something open.
 **Total Count:** 1
 
 <details>
@@ -3278,9 +3278,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -3291,7 +3291,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `cross`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to traverse an obstacle, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -3303,8 +3303,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -3315,7 +3315,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `cut_wires`
 
 
-**Definition:** No definition provided.  
+**Definition:** An intelligence-based event response to disable wires.
 **Total Count:** 1
 
 <details>
@@ -3325,11 +3325,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3340,7 +3340,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_1`
 
 
-**Definition:** No definition provided.  
+**Definition:** A constitution-based event response that deals minor damage.
 **Total Count:** 1
 
 <details>
@@ -3350,11 +3350,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3365,7 +3365,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_full`
 
 
-**Definition:** No definition provided.  
+**Definition:** A constitution-based event response that deals full damage.
 **Total Count:** 1
 
 <details>
@@ -3377,9 +3377,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -3390,7 +3390,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_half`
 
 
-**Definition:** No definition provided.  
+**Definition:** A constitution-based event response that deals halved damage.
 **Total Count:** 1
 
 <details>
@@ -3400,11 +3400,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3415,7 +3415,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `desert_cutscene`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response that triggers a desert-themed cutscene, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -3426,8 +3426,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3438,7 +3438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `dexcheck`
 
 
-**Definition:** No definition provided.  
+**Definition:** A dexterity-based event response to test agility.
 **Total Count:** 1
 
 <details>
@@ -3450,9 +3450,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -3463,7 +3463,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `dig`
 
 
-**Definition:** No definition provided.  
+**Definition:** A strength-based event response to excavate, limited by a token counter maximum.
 **Total Count:** 1
 
 <details>
@@ -3473,12 +3473,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3489,7 +3489,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `disarm`
 
 
-**Definition:** No definition provided.  
+**Definition:** A dexterity-based event response to remove a trap.
 **Total Count:** 1
 
 <details>
@@ -3499,11 +3499,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3514,7 +3514,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `dive`
 
 
-**Definition:** No definition provided.  
+**Definition:** A dexterity-based event response to plunge into water.
 **Total Count:** 1
 
 <details>
@@ -3524,11 +3524,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3539,7 +3539,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to give a donation, with no stat requirement but a coin cost.
 **Total Count:** 1
 
 <details>
@@ -3551,8 +3551,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3563,7 +3563,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_10`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to donate 10 coins.
 **Total Count:** 1
 
 <details>
@@ -3573,16 +3573,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -3593,7 +3593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_15`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to donate 15 coins.
 **Total Count:** 1
 
 <details>
@@ -3603,16 +3603,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -3623,7 +3623,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_20`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to donate 20 coins.
 **Total Count:** 1
 
 <details>
@@ -3633,16 +3633,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -3653,7 +3653,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_5`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to donate 5 coins.
 **Total Count:** 1
 
 <details>
@@ -3663,16 +3663,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -3683,7 +3683,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `double`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response that doubles something, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -3695,8 +3695,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3707,7 +3707,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `eat_meat`
 
 
-**Definition:** No definition provided.  
+**Definition:** A constitution-based event response to consume meat.
 **Total Count:** 1
 
 <details>
@@ -3717,11 +3717,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3732,7 +3732,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `enter_crater`
 
 
-**Definition:** No definition provided.  
+**Definition:** A luck-based event response to enter a crater.
 **Total Count:** 1
 
 <details>
@@ -3743,9 +3743,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3756,7 +3756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `face`
 
 
-**Definition:** No definition provided.  
+**Definition:** The face equipment item assigned to the unit.
 **Total Count:** 1
 
 <details>
@@ -3767,7 +3767,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -3778,7 +3778,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `fiddle`
 
 
-**Definition:** No definition provided.  
+**Definition:** A quest-based event response to tamper, requiring no specific quest token.
 **Total Count:** 1
 
 <details>
@@ -3789,9 +3789,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3802,7 +3802,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `fill_jar`
 
 
-**Definition:** No definition provided.  
+**Definition:** A quest-based event response to fill a jar, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -3814,9 +3814,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3827,7 +3827,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `find`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to search, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -3838,8 +3838,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3850,7 +3850,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `fire`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Fire' state.  
+**Definition:** An event response that uses fire, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -3862,8 +3862,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3874,7 +3874,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `flush_yourself`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to flush oneself, requiring a minimum counter value.
 **Total Count:** 1
 
 <details>
@@ -3885,7 +3885,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
@@ -3897,7 +3897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `follow`
 
 
-**Definition:** No definition provided.  
+**Definition:** A speed-based event response to pursue.
 **Total Count:** 1
 
 <details>
@@ -3907,11 +3907,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3922,7 +3922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `free`
 
 
-**Definition:** No definition provided.  
+**Definition:** If true, this option requires no cost to activate.
 **Total Count:** 1
 
 <details>
@@ -3932,11 +3932,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3947,7 +3947,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `future`
 
 
-**Definition:** Event Node: Story branch or dialog option representing the 'Future' action.  
+**Definition:** Specifies the name, map flag, or connection for the Future area.
 **Total Count:** 1
 
 <details>
@@ -3959,10 +3959,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 | `dimensionx`<br>`endoftime`<br>`future` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 1 | `dimensionx`<br>`endoftime`<br>`future` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -3973,7 +3973,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `gain_clone_familiar`
 
 
-**Definition:** Event Action: Adds a clone of a character to the party as a familiar.  
+**Definition:** An object that triggers the gaining of a clone familiar, with a specified object name.
 **Total Count:** 1
 
 <details>
@@ -3994,7 +3994,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `give_parasite`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to give a parasite, requiring the cat to have a parasite.
 **Total Count:** 1
 
 <details>
@@ -4004,10 +4004,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
@@ -4019,7 +4019,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `hack`
 
 
-**Definition:** No definition provided.  
+**Definition:** An intelligence-based event response to hack a system.
 **Total Count:** 1
 
 <details>
@@ -4030,9 +4030,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4043,7 +4043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `head`
 
 
-**Definition:** No definition provided.  
+**Definition:** The catalog ID for the cat's head part.
 **Total Count:** 1
 
 <details>
@@ -4054,7 +4054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -4065,7 +4065,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `holy`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Holy\' state.  
+**Definition:** An event response that uses holy power, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4077,8 +4077,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4089,7 +4089,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `hp`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response that trades health, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4101,8 +4101,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4113,7 +4113,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ice`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response that uses ice, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4125,8 +4125,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4137,7 +4137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `infinite`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to choose infinite, with a chapter exit hint and no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4149,10 +4149,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 | `dimensionx`<br>`endoftime`<br>`future` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 1 | `dimensionx`<br>`endoftime`<br>`future` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4163,7 +4163,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `intcheck`
 
 
-**Definition:** No definition provided.  
+**Definition:** An intelligence-based event response to test intellect.
 **Total Count:** 1
 
 <details>
@@ -4174,9 +4174,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4187,7 +4187,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `intimidation`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response that intimidates, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4199,8 +4199,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4211,7 +4211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `itchies`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response that causes itches, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4223,9 +4223,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -4236,7 +4236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `join`
 
 
-**Definition:** No definition provided.  
+**Definition:** A charisma-based event response to join in.
 **Total Count:** 1
 
 <details>
@@ -4246,11 +4246,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4261,7 +4261,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `jump`
 
 
-**Definition:** No definition provided.  
+**Definition:** A speed-based event response to leap.
 **Total Count:** 1
 
 <details>
@@ -4271,11 +4271,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4286,7 +4286,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `jump_over`
 
 
-**Definition:** No definition provided.  
+**Definition:** A dexterity-based event response to vault over.
 **Total Count:** 1
 
 <details>
@@ -4296,11 +4296,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4311,7 +4311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `keep_going`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to persevere, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4323,8 +4323,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -4335,7 +4335,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `kiss_meat`
 
 
-**Definition:** No definition provided.  
+**Definition:** A charisma-based event response to kiss meat.
 **Total Count:** 1
 
 <details>
@@ -4345,11 +4345,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4360,7 +4360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `knife`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to obtain a knife, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4372,8 +4372,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4384,7 +4384,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `leave_it_in`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to leave an object in place, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4394,12 +4394,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4410,7 +4410,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `leg`
 
 
-**Definition:** No definition provided.  
+**Definition:** A luck-based event response to use a leg.
 **Total Count:** 1
 
 <details>
@@ -4420,11 +4420,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4435,7 +4435,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `lever`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response to pull a lever, with a fixed chance and no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4445,13 +4445,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| `fixed_chance` | Number || 1 | `50%` |
+| `fixed_chance` | Number | A fixed percentage chance for a specific outcome or option to occur. | 1 | `50%` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4462,7 +4462,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `lick_alt`
 
 
-**Definition:** No definition provided.  
+**Definition:** A constitution-based event response to lick, restricted to specific chapters.
 **Total Count:** 1
 
 <details>
@@ -4472,12 +4472,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4488,7 +4488,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `lightning`
 
 
-**Definition:** No definition provided.  
+**Definition:** An event response using lightning, with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -4500,8 +4500,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4512,7 +4512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `listen`
 
 
-**Definition:** No definition provided.  
+**Definition:** An intelligence-based event response to listen.
 **Total Count:** 1
 
 <details>
@@ -4523,9 +4523,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4536,7 +4536,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `looks`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the Genie good event that selects the looks reward.
 **Total Count:** 1
 
 <details>
@@ -4547,8 +4547,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4559,7 +4559,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `loot_heart`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to take the heart from the Dead King as a quest action.
 **Total Count:** 1
 
 <details>
@@ -4571,9 +4571,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4584,7 +4584,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `makeup`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the makeup event, associated with the Tink2 encounter.
 **Total Count:** 1
 
 <details>
@@ -4596,8 +4596,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4608,7 +4608,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `mind`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the Genie bad event that selects the curse mind reward.
 **Total Count:** 1
 
 <details>
@@ -4618,9 +4618,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4631,7 +4631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `neck`
 
 
-**Definition:** No definition provided.  
+**Definition:** The neck equipment item assigned to the unit.
 **Total Count:** 1
 
 <details>
@@ -4642,7 +4642,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -4653,7 +4653,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `nothanks`
 
 
-**Definition:** No definition provided.  
+**Definition:** The generic decline dialogue option that triggers a leave animation.
 **Total Count:** 1
 
 <details>
@@ -4665,8 +4665,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4677,7 +4677,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `outsmart`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the int stat to outsmart the tutorial encounter.
 **Total Count:** 1
 
 <details>
@@ -4688,8 +4688,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4700,7 +4700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `patch_up`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the int stat to patch up the dying fetus.
 **Total Count:** 1
 
 <details>
@@ -4712,9 +4712,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -4725,7 +4725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pick_lock`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the dex stat to pick a lock on a crate.
 **Total Count:** 1
 
 <details>
@@ -4735,11 +4735,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4750,7 +4750,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pilfer`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the lck stat to pilfer from a pile of skulls.
 **Total Count:** 1
 
 <details>
@@ -4762,9 +4762,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -4775,7 +4775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pirouette`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the Tink1 encounter that performs a pirouette.
 **Total Count:** 1
 
 <details>
@@ -4787,8 +4787,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4799,7 +4799,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `place_gristle`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to place gristle on the Wall of Flesh as a quest action.
 **Total Count:** 1
 
 <details>
@@ -4811,9 +4811,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4824,7 +4824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `power`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the Genie good event that selects the power reward.
 **Total Count:** 1
 
 <details>
@@ -4835,8 +4835,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4847,7 +4847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pull`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the str stat to pull a knife from a wall.
 **Total Count:** 1
 
 <details>
@@ -4859,9 +4859,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -4872,7 +4872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pull_it_out`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to pull out a stalactite from the Jagged Pathway.
 **Total Count:** 1
 
 <details>
@@ -4882,11 +4882,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4897,7 +4897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pull_lever`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to pull the lever on the Odd Device.
 **Total Count:** 1
 
 <details>
@@ -4907,10 +4907,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -4921,7 +4921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `purify`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the lck stat to purify the Mysterious Chamber.
 **Total Count:** 1
 
 <details>
@@ -4931,11 +4931,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -4946,7 +4946,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `push_buttons`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to push buttons on the Odd Device.
 **Total Count:** 1
 
 <details>
@@ -4956,10 +4956,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -4970,7 +4970,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `push_through`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the str stat to push through the Jagged Pathway.
 **Total Count:** 1
 
 <details>
@@ -4982,9 +4982,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -4995,7 +4995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `put_in_coins`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to put coins into the Vending Machine, requiring a minimum of 10 coins.
 **Total Count:** 1
 
 <details>
@@ -5006,14 +5006,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 | `choice_no_coins` |
+| [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -5024,7 +5024,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `put_out_of_misery`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the str stat to put the dying fetus out of its misery.
 **Total Count:** 1
 
 <details>
@@ -5036,9 +5036,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -5049,7 +5049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `reach_inside`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the spd stat to reach inside a Small Black Hole.
 **Total Count:** 1
 
 <details>
@@ -5060,8 +5060,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5072,7 +5072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `read`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the int stat to read the Mysterious Manual.
 **Total Count:** 1
 
 <details>
@@ -5084,9 +5084,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -5097,7 +5097,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `receive`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to receive an item from a legacy event.
 **Total Count:** 1
 
 <details>
@@ -5109,9 +5109,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5122,7 +5122,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `red`
 
 
-**Definition:** No definition provided.  
+**Definition:** Configuration for one of the dialog options (label 'EVENT_RED_ANSW'), with a fixed chance and associated animation, in a choice event.
 **Total Count:** 1
 
 <details>
@@ -5132,13 +5132,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| `fixed_chance` | Number || 1 | `50%` |
+| `fixed_chance` | Number | A fixed percentage chance for a specific outcome or option to occur. | 1 | `50%` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5149,7 +5149,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `red_needle`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the lck stat to select the red needle, requiring not having the RedNeedle token.
 **Total Count:** 1
 
 <details>
@@ -5159,12 +5159,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5175,7 +5175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `reflect`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the StacyMutant4 encounter that chooses to reflect.
 **Total Count:** 1
 
 <details>
@@ -5187,8 +5187,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5199,7 +5199,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `remove`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the str stat to remove a stuck corpse.
 **Total Count:** 1
 
 <details>
@@ -5211,9 +5211,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -5224,7 +5224,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `remove_the_nail`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the dex stat to remove the nail from a big toe.
 **Total Count:** 1
 
 <details>
@@ -5234,11 +5234,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5249,7 +5249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `repair_quest`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to repair the broken time machine as a quest action.
 **Total Count:** 1
 
 <details>
@@ -5260,9 +5260,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5273,7 +5273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `rest`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the lck stat to rest on a cat bed.
 **Total Count:** 1
 
 <details>
@@ -5284,9 +5284,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5297,7 +5297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `revive`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the lck stat to revive the Dead Mammoth.
 **Total Count:** 1
 
 <details>
@@ -5308,9 +5308,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5321,7 +5321,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `rub`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the lck stat to rub the Genie Lamp.
 **Total Count:** 1
 
 <details>
@@ -5332,9 +5332,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5345,7 +5345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `run_again`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the spd stat to run away from Death again, requiring he hasn't chased you yet.
 **Total Count:** 1
 
 <details>
@@ -5355,13 +5355,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5372,7 +5372,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `run_away`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the spd stat to run away from a Giant Sleeping Shark.
 **Total Count:** 1
 
 <details>
@@ -5384,9 +5384,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -5397,7 +5397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice_full_favor`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to sacrifice a cat at the Volcano with full favor as a quest action.
 **Total Count:** 1
 
 <details>
@@ -5409,9 +5409,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5422,7 +5422,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice_normal`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to perform a normal sacrifice at the Meat Altar, requiring the GuillotinasHead not equipped.
 **Total Count:** 1
 
 <details>
@@ -5434,9 +5434,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5447,7 +5447,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice_partial_favor`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to sacrifice a cat at the Volcano with partial favor as a quest action.
 **Total Count:** 1
 
 <details>
@@ -5460,10 +5460,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -5474,7 +5474,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice_quest`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to perform a quest sacrifice at the Meat Altar, requiring the GuillotinasHead equipped.
 **Total Count:** 1
 
 <details>
@@ -5486,9 +5486,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5499,7 +5499,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `scream`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to scream at the Meat Golem with no stat requirement.
 **Total Count:** 1
 
 <details>
@@ -5510,8 +5510,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5522,7 +5522,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `shake`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the str stat to shake the Vending Machine.
 **Total Count:** 1
 
 <details>
@@ -5533,9 +5533,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5546,7 +5546,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `slip_through`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the dex stat to slip through a Barbed Wire Fence.
 **Total Count:** 1
 
 <details>
@@ -5556,11 +5556,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5571,7 +5571,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sneak_by`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the dex stat to sneak by a Giant Sleeping Shark.
 **Total Count:** 1
 
 <details>
@@ -5581,11 +5581,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5596,7 +5596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sneak_past_alt`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters.
 **Total Count:** 1
 
 <details>
@@ -5606,12 +5606,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5622,7 +5622,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `soul`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the Genie bad event that selects the curse soul reward.
 **Total Count:** 1
 
 <details>
@@ -5632,9 +5632,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5645,7 +5645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `speed`
 
 
-**Definition:** Examples: `.5, 2, 20`  
+**Definition:** The speed of the projectile or move, can be a value or a range.
 **Total Count:** 1
 
 <details>
@@ -5657,8 +5657,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5669,7 +5669,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `surprise`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the Butch2 encounter that surprises the target.
 **Total Count:** 1
 
 <details>
@@ -5681,8 +5681,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5693,7 +5693,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sweet_talk`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the cha stat to sweet-talk Death.
 **Total Count:** 1
 
 <details>
@@ -5703,11 +5703,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5718,7 +5718,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `swim`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the str stat to swim through a Strong Current.
 **Total Count:** 1
 
 <details>
@@ -5728,11 +5728,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5743,7 +5743,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `tail`
 
 
-**Definition:** No definition provided.  
+**Definition:** The catalog ID for the cat's tail part.
 **Total Count:** 1
 
 <details>
@@ -5753,11 +5753,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5768,7 +5768,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `take_blood`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option to drain blood from the Dead King as a quest action.
 **Total Count:** 1
 
 <details>
@@ -5780,9 +5780,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5793,7 +5793,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `talk`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the cha stat to talk to a Spookie Apparation.
 **Total Count:** 1
 
 <details>
@@ -5803,11 +5803,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5818,7 +5818,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `talk_to`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option that uses the cha stat to talk to someone during a Dust Storm.
 **Total Count:** 1
 
 <details>
@@ -5830,9 +5830,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -5843,7 +5843,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `tappytoes`
 
 
-**Definition:** No definition provided.  
+**Definition:** The dialogue option for the Tink1 encounter that performs a tappytoes action.
 **Total Count:** 1
 
 <details>
@@ -5855,8 +5855,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5867,7 +5867,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `teleport`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that transports the unit to an alternative location in the event.
 **Total Count:** 1
 
 <details>
@@ -5877,11 +5877,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5892,7 +5892,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `thorns`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that applies a thorns effect to the unit.
 **Total Count:** 1
 
 <details>
@@ -5904,8 +5904,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5916,7 +5916,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `throw`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that allows the unit to throw an object.
 **Total Count:** 1
 
 <details>
@@ -5927,9 +5927,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5940,7 +5940,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `timemachine`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that triggers a time travel sequence.
 **Total Count:** 1
 
 <details>
@@ -5951,8 +5951,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -5963,7 +5963,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `traverse`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that moves the unit through a traversal area.
 **Total Count:** 1
 
 <details>
@@ -5973,9 +5973,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 
 </details>
 
@@ -5986,7 +5986,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `upgrade_yourself`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that upgrades the unit's attributes or abilities.
 **Total Count:** 1
 
 <details>
@@ -5996,11 +5996,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6011,7 +6011,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `use_item`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that prompts the unit to use an item from their inventory.
 **Total Count:** 1
 
 <details>
@@ -6023,9 +6023,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -6036,7 +6036,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `use_toilet_con`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that interacts with a toilet using the Constitution stat.
 **Total Count:** 1
 
 <details>
@@ -6046,11 +6046,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6061,7 +6061,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `use_toilet_str`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that interacts with a toilet using the Strength stat.
 **Total Count:** 1
 
 <details>
@@ -6073,9 +6073,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -6086,7 +6086,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `use_weapon`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that prompts the unit to use their equipped weapon.
 **Total Count:** 1
 
 <details>
@@ -6097,9 +6097,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`bad`](./Miscellaneous.md#object-bad) | Object  || 1 | `{ . . . }` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6110,7 +6110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w1`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option for the first weather choice in the Crater Weather event.
 **Total Count:** 1
 
 <details>
@@ -6122,8 +6122,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6134,7 +6134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w2`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option for the second weather choice in the Crater Weather event.
 **Total Count:** 1
 
 <details>
@@ -6146,8 +6146,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6158,7 +6158,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w3`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option for the third weather choice in the Crater Weather event.
 **Total Count:** 1
 
 <details>
@@ -6170,8 +6170,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6182,7 +6182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w4`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option for the fourth weather choice in the Crater Weather event.
 **Total Count:** 1
 
 <details>
@@ -6194,8 +6194,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6206,7 +6206,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w5`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option for the fifth weather choice in the Crater Weather event.
 **Total Count:** 1
 
 <details>
@@ -6218,8 +6218,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6230,7 +6230,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w6`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option for the sixth weather choice in the Crater Weather event.
 **Total Count:** 1
 
 <details>
@@ -6242,8 +6242,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6254,7 +6254,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wealth`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that grants the unit money or valuable items.
 **Total Count:** 1
 
 <details>
@@ -6265,8 +6265,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Enums.md#enum-label) | Enum || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6277,7 +6277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wheezies`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that triggers a wheezing effect or condition.
 **Total Count:** 1
 
 <details>
@@ -6289,9 +6289,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -6302,7 +6302,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wish_genes`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option in the Monkey Paw event that modifies the unit's genetics.
 **Total Count:** 1
 
 <details>
@@ -6313,9 +6313,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6326,7 +6326,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wish_items`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option in the Monkey Paw event that grants items.
 **Total Count:** 1
 
 <details>
@@ -6337,9 +6337,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6350,7 +6350,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wish_levelups`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option in the Monkey Paw event that grants level-ups.
 **Total Count:** 1
 
 <details>
@@ -6361,9 +6361,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6374,7 +6374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wish_strength`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option in the Monkey Paw event that increases Strength.
 **Total Count:** 1
 
 <details>
@@ -6385,9 +6385,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6398,7 +6398,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `withstand`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that allows the unit to withstand a hazard using Constitution.
 **Total Count:** 1
 
 <details>
@@ -6408,11 +6408,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6423,7 +6423,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `yank_it_out`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option that yanks out an object using Strength.
 **Total Count:** 1
 
 <details>
@@ -6433,11 +6433,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 
@@ -6448,7 +6448,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `yellow_needle`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a dialogue option to interact with a yellow needle.
 **Total Count:** 1
 
 <details>
@@ -6458,12 +6458,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`label`](./Strings.md#string-label) | String || 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`stat`](./Math_Equations.md) | Equation || 1 | `cha`<br>`coins`<br>`con` |
+| [`stat`](./Math_Equations.md) | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 
 </details>
 

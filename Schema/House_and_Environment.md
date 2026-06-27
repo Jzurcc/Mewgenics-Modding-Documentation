@@ -18,8 +18,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 681 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 155 | Default<br>FormChange<br>Druid |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 681 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
 | [`id`](./Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 14 | `-1`<br>`0`<br>`1` |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 12 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
@@ -29,30 +29,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `width` | Integer | The number of tiles the room spans horizontally. | 8 | `16`<br>`18`<br>`33` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 3 | `attic`<br>`room1`<br>`room2` |
 | `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](./Enums.md#enum-preset) | Enum || 2 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| [`n`](./Arrays.md#array-n) | Array || 2 | `[-1 -2]`<br>`[1 -2]` |
-| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  || 1 | `{ . . . }`<br>`release` |
-| `volume_adjustment` | Float || 1 | `1.3`<br>`1.35`<br>`1.5` |
-| [`BasementUpgrade`](./Miscellaneous.md#object-basementupgrade) | Object  || 1 | `{ . . . }` |
-| [`BasementUpgrade2`](./Miscellaneous.md#object-basementupgrade2) | Object  || 1 | `{ . . . }` |
-| [`BasementUpgrade3`](./Miscellaneous.md#object-basementupgrade3) | Object  || 1 | `{ . . . }` |
-| [`BasementUpgrade4`](./Miscellaneous.md#object-basementupgrade4) | Object  || 1 | `{ . . . }` |
-| [`BasementUpgrade5`](./Miscellaneous.md#object-basementupgrade5) | Object  || 1 | `{ . . . }` |
-| [`Floor1_Large`](./Miscellaneous.md#object-floor1_large) | Object  || 1 | `{ . . . }` |
-| [`Floor1_Small`](./Miscellaneous.md#object-floor1_small) | Object  || 1 | `{ . . . }` |
-| [`House1`](./Miscellaneous.md#object-house1) | Object  || 1 | `{ . . . }` |
-| [`House2`](./Miscellaneous.md#object-house2) | Object  || 1 | `{ . . . }` |
-| [`House3`](./Miscellaneous.md#object-house3) | Object  || 1 | `{ . . . }` |
-| [`LargeHouse`](./Miscellaneous.md#object-largehouse) | Object  || 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Large`](./Miscellaneous.md#object-largehouse_floor2large) | Object  || 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Small`](./Miscellaneous.md#object-largehouse_floor2small) | Object  || 1 | `{ . . . }` |
-| [`MediumHouse`](./Miscellaneous.md#object-mediumhouse) | Object  || 1 | `{ . . . }` |
-| [`MediumHouse_SmallRoom`](./Miscellaneous.md#object-mediumhouse_smallroom) | Object  || 1 | `{ . . . }` |
-| [`SmallAttic`](./Miscellaneous.md#object-smallattic) | Object  || 1 | `{ . . . }` |
-| [`SmallHouse_Attic`](./Miscellaneous.md#object-smallhouse_attic) | Object  || 1 | `{ . . . }` |
+| [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 2 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| [`n`](./Arrays.md#array-n) | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 2 | `[-1 -2]`<br>`[1 -2]` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 1 | `1.3`<br>`1.35`<br>`1.5` |
+| [`BasementUpgrade`](./Miscellaneous.md#object-basementupgrade) | Object | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade2`](./Miscellaneous.md#object-basementupgrade2) | Object | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade3`](./Miscellaneous.md#object-basementupgrade3) | Object | An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade4`](./Miscellaneous.md#object-basementupgrade4) | Object | An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade5`](./Miscellaneous.md#object-basementupgrade5) | Object | An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`Floor1_Large`](./Miscellaneous.md#object-floor1_large) | Object | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
+| [`Floor1_Small`](./Miscellaneous.md#object-floor1_small) | Object | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
+| [`House1`](./Miscellaneous.md#object-house1) | Object | Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`House2`](./Miscellaneous.md#object-house2) | Object | Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`House3`](./Miscellaneous.md#object-house3) | Object | Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`LargeHouse`](./Miscellaneous.md#object-largehouse) | Object | An upgrade that requires MediumHouse as a prerequisite and sets the house to House3. | 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Large`](./Miscellaneous.md#object-largehouse_floor2large) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Large room. | 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Small`](./Miscellaneous.md#object-largehouse_floor2small) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Small room. | 1 | `{ . . . }` |
+| [`MediumHouse`](./Miscellaneous.md#object-mediumhouse) | Object | An upgrade that requires the Default house as a prerequisite and sets the house to House2. | 1 | `{ . . . }` |
+| [`MediumHouse_SmallRoom`](./Miscellaneous.md#object-mediumhouse_smallroom) | Object | An upgrade that requires MediumHouse and unlocks the Floor1_Small room. | 1 | `{ . . . }` |
+| [`SmallAttic`](./Miscellaneous.md#object-smallattic) | Object | Room definition for the Small Attic, including its dimensions and position. | 1 | `{ . . . }` |
+| [`SmallHouse_Attic`](./Miscellaneous.md#object-smallhouse_attic) | Object | Upgrade that unlocks the Attic room in a small house. | 1 | `{ . . . }` |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
-| [`p`](./Arrays.md#array-p) | Array || 1 | `[18 0]`<br>`[35 0]` |
-| [`Thunderstorm`](./Miscellaneous.md#object-thunderstorm) | Object  || 1 | `{ . . . }` |
+| [`p`](./Arrays.md#array-p) | Array | A coordinate pair [x, y] representing a position. | 1 | `[18 0]`<br>`[35 0]` |
+| [`Thunderstorm`](./Miscellaneous.md#object-thunderstorm) | Object | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 1 | `{ . . . }` |
 
 </details>
 
@@ -63,7 +63,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `effects`
 
 
-**Definition:** Non-damaging status applications and logic triggers executed on impact.  
+**Definition:** Applies a list of status effects or visual effects to targets.
 **Total Count:** 2166
 
 <details>
@@ -73,10 +73,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1085 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 624 | Default<br>FormChange<br>Druid |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Variable | Inherits game-wide rule modifiers. You can utilize any key from the Engine Global Modifier Keys list here to alter overarching game mechanics (e.g., changing gravity or stamina costs). | 1 | `CreateGlobalModifiers`<br>`BloodRain`<br>`NextPlayerCatTakesExtraTurn` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 52 | `damage_instance`<br>`spell`<br>`false` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1085 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 624 | Default<br>FormChange<br>Druid |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Variable | If true, activates a global modifier effect on the house environment. | 1 | `CreateGlobalModifiers`<br>`BloodRain`<br>`NextPlayerCatTakesExtraTurn` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 52 | `damage_instance`<br>`spell`<br>`false` |
 
 `damage_instance`<br>`spell`<br>`self_damage`
 
@@ -90,7 +90,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Else`
 
 
-**Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
+**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.
 **Total Count:** 85
 
 <details>
@@ -100,9 +100,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 19 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | Default<br>FormChange<br>Druid |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 6 | `damage_instance`<br>`spell`<br>`false` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 19 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 14 | Default<br>FormChange<br>Druid |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 6 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 
@@ -112,7 +112,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnBattleEnd`
 
 
-**Definition:** Applies the nested status effects when the encounter finishes.  
+**Definition:** An object containing status effects or passives applied to the unit when the battle ends.
 **Total Count:** 53
 
 <details>
@@ -132,7 +132,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_HasTag`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target possesses the specified entity tag.  
+**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.
 **Total Count:** 47
 
 <details>
@@ -143,9 +143,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 49 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 43 | Default<br>FormChange<br>Druid |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 49 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 43 | Default<br>FormChange<br>Druid |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 
@@ -159,7 +159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Default`
 
 
-**Definition:** Character Form: The baseline default behavior state.  
+**Definition:** The default form configuration for a unit, containing its standard stats and abilities.
 **Total Count:** 38
 
 <details>
@@ -181,7 +181,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_GoodRoll`
 
 
-**Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
 **Total Count:** 37
 
 <details>
@@ -192,8 +192,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`odds`](./Math_Equations.md) | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | Default<br>FormChange<br>Druid |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 15 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 15 | passives<br>class<br>	ag |
 
 </details>
 
@@ -204,7 +204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RandomStatusFromPool`
 
 
-**Definition:** Selects and applies a random status effect from the provided nested object.  
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.
 **Total Count:** 35
 
 <details>
@@ -224,7 +224,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnExtraThingsOnBattleStart`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object with `object` and `number` (or range) defining what and how many objects to spawn at battle start.
 **Total Count:** 32
 
 <details>
@@ -234,10 +234,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`number`](./Arrays.md#array-number) | Array / Integer || 31 | `1`<br>`10`<br>`2` |
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 31 | `1`<br>`10`<br>`2` |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 23 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
-| [`trap`](./Enums.md#enum-trap) | Enum || 2 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
+| [`trap`](./Enums.md#enum-trap) | Enum | The type of trap to spawn. Specifies which trap template to use. | 2 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
 
 </details>
 
@@ -248,7 +248,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ApplyPassives`
 
 
-**Definition:** Grants the nested passive abilities dynamically.  
+**Definition:** Specifies the passives or status effects to apply to the unit.
 **Total Count:** 13
 
 <details>
@@ -258,7 +258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 13 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 13 | passives<br>class<br>	ag |
 
 </details>
 
@@ -269,7 +269,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_Corpse`
 
 
-**Definition:** Conditional trigger: Executes nested logic if the target is a dead body/corpse.  
+**Definition:** Contains an inner effect block that only executes if the target is a corpse.
 **Total Count:** 11
 
 <details>
@@ -280,7 +280,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -291,7 +291,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `reverb_empty`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment.
 **Total Count:** 11
 
 <details>
@@ -302,8 +302,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](./Enums.md#enum-preset) | Enum || 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| `volume_adjustment` | Float || 10 | `1.3`<br>`1.35`<br>`1.5` |
+| [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 10 | `1.3`<br>`1.35`<br>`1.5` |
 
 </details>
 
@@ -314,7 +314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `reverb_full`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines the audio reverb settings for a full room, including preset and amount.
 **Total Count:** 11
 
 <details>
@@ -325,7 +325,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](./Enums.md#enum-preset) | Enum || 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 
 </details>
 
@@ -336,7 +336,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
-**Definition:** Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle.  
+**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.
 **Total Count:** 8
 
 <details>
@@ -348,7 +348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 8 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 8 | passives<br>class<br>	ag |
 
 </details>
 
@@ -359,7 +359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_PartyMember`
 
 
-**Definition:** Conditional constraint. Nested properties only trigger if this is true.  
+**Definition:** A conditional block that executes its child actions only if the target is a party member.
 **Total Count:** 6
 
 <details>
@@ -370,7 +370,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -381,7 +381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Rain`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Rain' state.  
+**Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.
 **Total Count:** 6
 
 <details>
@@ -406,7 +406,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusAllCharactersOnSpawn`
 
 
-**Definition:** Applies or references the 'StatusAllCharactersOnSpawn' effect/state.  
+**Definition:** Defines status effects applied to all characters when they spawn into the battlefield.
 **Total Count:** 5
 
 <details>
@@ -416,7 +416,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>	ag |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 
 </details>
 
@@ -427,7 +427,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Big`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'Big\' state.  
+**Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.
 **Total Count:** 4
 
 <details>
@@ -449,7 +449,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `extra_statuses`
 
 
-**Definition:** Additional generic status applications.  
+**Definition:** An object containing additional status effects (with stack counts) applied to the consumed unit.
 **Total Count:** 4
 
 <details>
@@ -476,7 +476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 <details>
@@ -486,7 +486,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 <details>
@@ -496,8 +496,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 <details>
@@ -507,7 +507,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 <details>
@@ -517,8 +517,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 <details>
@@ -528,7 +528,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 <details>
@@ -538,7 +538,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`self_damage` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
 <details>
@@ -548,7 +548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 `damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
@@ -559,8 +559,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>	ag |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>	ag |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 `damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
@@ -571,7 +571,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 `damage_instance`<br>`spell`<br>`self_damage`
 
@@ -586,7 +586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 
@@ -596,7 +596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 `damage_instance`<br>`spell`<br>`self_damage`
 
-**Definition:** No definition provided.  
+**Definition:** The number of snow particle instances or the integer value controlling snow intensity for weather effects.
 **Total Count:** 4
 
 <details>
@@ -621,7 +621,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `aux_positions``damage_instance`<br>`spell`<br>`self_damage`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object containing named coordinates for auxiliary objects like spawn points within this house.
 **Total Count:** 3
 
 <details>
@@ -631,12 +631,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ButchBox`](./Arrays.md#array-butchbox) | Array || 3 | `[21, 0]`<br>`[38, 0]` |
-| [`HousePipe`](./Arrays.md#array-housepipe) | Array || 3 | `[-2 0]` |
-| [`Roof_LeftEdge`](./Arrays.md#array-roof_leftedge) | Array || 3 | `[-3.388 8.138]`<br>`[-3.482 16.11]`<br>`[-3.617 8.112]` |
-| [`Roof_RightEdge`](./Arrays.md#array-roof_rightedge) | Array || 3 | `[21.548 8.175]`<br>`[38.408 16.185]`<br>`[38.518 8.207]` |
-| [`Roof_Top`](./Arrays.md#array-roof_top) | Array || 3 | `[17.562 26.715]`<br>`[17.563 18.677]`<br>`[8.983 14.4]` |
-| [`StraySpawn`](./Arrays.md#array-strayspawn) | Array || 3 | `[-3 0]` |
+| [`ButchBox`](./Arrays.md#array-butchbox) | Array | An array [x, y] defining the auxiliary position offset for the ButchBox object on the house. | 3 | `[21, 0]`<br>`[38, 0]` |
+| [`HousePipe`](./Arrays.md#array-housepipe) | Array | The [X, Y] offset from the house origin where a pipe spawns on the exterior. | 3 | `[-2 0]` |
+| [`Roof_LeftEdge`](./Arrays.md#array-roof_leftedge) | Array | The [X, Y] position of the left edge of the roof relative to the house origin. | 3 | `[-3.388 8.138]`<br>`[-3.482 16.11]`<br>`[-3.617 8.112]` |
+| [`Roof_RightEdge`](./Arrays.md#array-roof_rightedge) | Array | The [X, Y] position of the right edge of the roof relative to the house origin. | 3 | `[21.548 8.175]`<br>`[38.408 16.185]`<br>`[38.518 8.207]` |
+| [`Roof_Top`](./Arrays.md#array-roof_top) | Array | The [X, Y] position of the top of the roof relative to the house origin. | 3 | `[17.562 26.715]`<br>`[17.563 18.677]`<br>`[8.983 14.4]` |
+| [`StraySpawn`](./Arrays.md#array-strayspawn) | Array | The [X, Y] offset from the house origin where a stray cat spawns. | 3 | `[-3 0]` |
 
 </details>
 
@@ -647,7 +647,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `room_positions`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object containing named coordinates for each room's position within the house layout.
 **Total Count:** 3
 
 <details>
@@ -657,17 +657,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Floor1_Large`](./Arrays.md#array-floor1_large) | Array || 3 | `[1, 1]` |
-| [`Basement0`](./Arrays.md#array-basement0) | Array || 2 | `[1 -6]` |
-| [`Basement1`](./Arrays.md#array-basement1) | Array || 2 | `[1 -12]` |
-| [`Basement2`](./Arrays.md#array-basement2) | Array || 2 | `[1 -18]` |
-| [`Basement3`](./Arrays.md#array-basement3) | Array || 2 | `[1 -24]` |
-| [`Basement4`](./Arrays.md#array-basement4) | Array || 2 | `[1 -30]` |
-| [`Floor1_Small`](./Arrays.md#array-floor1_small) | Array || 2 | `[18, 1]` |
-| [`LargeAttic`](./Arrays.md#array-largeattic) | Array || 2 | `[0, 17]`<br>`[0, 9]` |
-| [`Floor2_Large`](./Arrays.md#array-floor2_large) | Array || 1 | `[18, 9]` |
-| [`Floor2_Small`](./Arrays.md#array-floor2_small) | Array || 1 | `[1, 9]` |
-| [`SmallAttic`](./Arrays.md#array-smallattic) | Array || 1 | `[0, 9]` |
+| [`Floor1_Large`](./Arrays.md#array-floor1_large) | Array | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 3 | `[1, 1]` |
+| [`Basement0`](./Arrays.md#array-basement0) | Array | The grid position [x, y] of the first basement room. | 2 | `[1 -6]` |
+| [`Basement1`](./Arrays.md#array-basement1) | Array | The grid position [x, y] of the second basement room. | 2 | `[1 -12]` |
+| [`Basement2`](./Arrays.md#array-basement2) | Array | The grid position [x, y] of the third basement room. | 2 | `[1 -18]` |
+| [`Basement3`](./Arrays.md#array-basement3) | Array | The grid position [x, y] of the fourth basement room. | 2 | `[1 -24]` |
+| [`Basement4`](./Arrays.md#array-basement4) | Array | The grid position [x, y] of the fifth basement room. | 2 | `[1 -30]` |
+| [`Floor1_Small`](./Arrays.md#array-floor1_small) | Array | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 2 | `[18, 1]` |
+| [`LargeAttic`](./Arrays.md#array-largeattic) | Array | The grid position [x, y] of the large attic room. | 2 | `[0, 17]`<br>`[0, 9]` |
+| [`Floor2_Large`](./Arrays.md#array-floor2_large) | Array | The grid position [x, y] of the large room on the second floor. | 1 | `[18, 9]` |
+| [`Floor2_Small`](./Arrays.md#array-floor2_small) | Array | The grid position [x, y] of the small room on the second floor. | 1 | `[1, 9]` |
+| [`SmallAttic`](./Arrays.md#array-smallattic) | Array | Room definition for the Small Attic, including its dimensions and position. | 1 | `[0, 9]` |
 
 </details>
 
@@ -678,7 +678,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnVolcanoOnBattleStart`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object containing parameters (object type, tile, radius) for spawning a volcano effect at the start of battle.
 **Total Count:** 3
 
 <details>
@@ -689,10 +689,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `max_radius` | Float || 2 | `2.2`<br>`3.5` |
-| [`min_radius`](./Enums.md#enum-min_radius) | Float || 2 | `.2`<br>`1`<br>`1.5` |
-| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array  || 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
-| [`number`](./Arrays.md#array-number) | Array / Integer || 1 | `1`<br>`10`<br>`2` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
+| [`min_radius`](./Enums.md#enum-min_radius) | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -703,7 +703,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusCharactersOnRoundEnd`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object whose nested keys define statuses or effects applied to characters at the end of each round.
 **Total Count:** 3
 
 <details>
@@ -713,8 +713,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -725,7 +725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Thunderstorm`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect.
 **Total Count:** 3
 
 <details>
@@ -751,7 +751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AllyInfested`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** Defines the AllyInfested object, which spawns an infested ally under the player's control.
 **Total Count:** 2
 
 <details>
@@ -773,7 +773,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `GlobalSpawnOnRoundEnd`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** Specifies the object to spawn globally at the end of each round.
 **Total Count:** 2
 
 <details>
@@ -784,7 +784,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`number`](./Arrays.md#array-number) | Array / Integer || 1 | `1`<br>`10`<br>`2` |
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -795,7 +795,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SolarFlare`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn.
 **Total Count:** 2
 
 <details>
@@ -807,7 +807,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
 
@@ -818,7 +818,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpecialGodRays`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object defining visual god rays that follow a specific character tag, used for cinematic or boss effects.
 **Total Count:** 2
 
 <details>
@@ -828,7 +828,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](./Miscellaneous.md#object-big) | Object  || 2 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
 
 </details>
 
@@ -839,7 +839,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusCharactersOnRoundStart`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object containing status effects to apply to all characters on the battlefield at the start of each round.
 **Total Count:** 2
 
 <details>
@@ -859,7 +859,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Windy`
 
 
-**Definition:** No definition provided.  
+**Definition:** The number representing the Windy weather intensity or whether it is active.
 **Total Count:** 2
 
 <details>
@@ -884,7 +884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddPostProcessEffect`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** Specifies a post-process shader effect to apply to the scene.
 **Total Count:** 1
 
 <details>
@@ -894,8 +894,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `requires_framebuffer` | Boolean || 1 | `false` |
-| [`shader`](./Enums.md#enum-shader) | Enum || 1 | `shimmervignette` |
+| `requires_framebuffer` | Boolean | If true, the post-process effect requires a framebuffer to be active. | 1 | `false` |
+| [`shader`](./Enums.md#enum-shader) | Enum | Specifies which shader to use for the post-process effect. | 1 | `shimmervignette` |
 
 </details>
 
@@ -906,7 +906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddTilesetObjects`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** An object configuring the spawning of decorative debris or objects on the tileset for an effect.
 **Total Count:** 1
 
 <details>
@@ -916,7 +916,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  || 1 | `{ . . . }` |
+| [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
 
 </details>
 
@@ -927,7 +927,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BasementUpgrade`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met.
 **Total Count:** 1
 
 <details>
@@ -949,7 +949,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BasementUpgrade2`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met.
 **Total Count:** 1
 
 <details>
@@ -971,7 +971,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BasementUpgrade3`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met.
 **Total Count:** 1
 
 <details>
@@ -993,7 +993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BasementUpgrade4`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met.
 **Total Count:** 1
 
 <details>
@@ -1015,7 +1015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BasementUpgrade5`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met.
 **Total Count:** 1
 
 <details>
@@ -1037,7 +1037,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FactionUprising`
 
 
-**Definition:** No definition provided.  
+**Definition:** Specifies which faction triggers a global uprising event, adding allied units of that faction.
 **Total Count:** 1
 
 <details>
@@ -1057,7 +1057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FloatingDebris`
 
 
-**Definition:** No definition provided.  
+**Definition:** An object defining parameters for spawning floating debris tileset objects.
 **Total Count:** 1
 
 <details>
@@ -1078,7 +1078,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Floor1_Large`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.
 **Total Count:** 1
 
 <details>
@@ -1103,7 +1103,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Floor1_Small`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.
 **Total Count:** 1
 
 <details>
@@ -1128,7 +1128,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `House1`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume.
 **Total Count:** 1
 
 <details>
@@ -1154,7 +1154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `House2`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume.
 **Total Count:** 1
 
 <details>
@@ -1180,7 +1180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `House3`
 
 
-**Definition:** No definition provided.  
+**Definition:** Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume.
 **Total Count:** 1
 
 <details>
@@ -1206,7 +1206,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LargeHouse`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade that requires MediumHouse as a prerequisite and sets the house to House3.
 **Total Count:** 1
 
 <details>
@@ -1228,7 +1228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LargeHouse_Floor2Large`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Large room.
 **Total Count:** 1
 
 <details>
@@ -1250,7 +1250,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LargeHouse_Floor2Small`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Small room.
 **Total Count:** 1
 
 <details>
@@ -1272,7 +1272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MediumHouse`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade that requires the Default house as a prerequisite and sets the house to House2.
 **Total Count:** 1
 
 <details>
@@ -1294,7 +1294,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MediumHouse_SmallRoom`
 
 
-**Definition:** No definition provided.  
+**Definition:** An upgrade that requires MediumHouse and unlocks the Floor1_Small room.
 **Total Count:** 1
 
 <details>
@@ -1316,7 +1316,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SmallAttic`
 
 
-**Definition:** No definition provided.  
+**Definition:** Room definition for the Small Attic, including its dimensions and position.
 **Total Count:** 1
 
 <details>
@@ -1331,7 +1331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
-| [`n`](./Arrays.md#array-n) | Array || 1 | `[-1 -2]`<br>`[1 -2]` |
+| [`n`](./Arrays.md#array-n) | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 1 | `[-1 -2]`<br>`[1 -2]` |
 
 </details>
 
@@ -1342,7 +1342,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SmallHouse_Attic`
 
 
-**Definition:** No definition provided.  
+**Definition:** Upgrade that unlocks the Attic room in a small house.
 **Total Count:** 1
 
 <details>
@@ -1364,7 +1364,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnTilePuddleOnBattleStart`
 
 
-**Definition:** Examples: `{ ... }`  
+**Definition:** Defines a puddle of a specific tile type (e.g., OilTile) that is spawned on the battlefield at the start, with a radius range.
 **Total Count:** 1
 
 <details>
@@ -1374,8 +1374,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_radius` | Float || 1 | `2.2`<br>`3.5` |
-| `min_radius` | Float || 1 | `.2`<br>`1`<br>`1.5` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
