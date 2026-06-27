@@ -47,7 +47,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`shield`](./Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 191 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | `rightear` | Number | The sprite frame index for the character's right ear. | 188 | `1000`<br>`1001`<br>`1004` |
 | `leftear` | Number | The sprite frame index for the character's left ear. | 187 | `1`<br>`1000`<br>`1001` |
-| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 184 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 184 | `-1`<br>`1`<br>`1.3` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 182 | `-1`<br>`1000`<br>`1001` |
 | [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 181 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 179 | `-1`<br>`-2`<br>`1` |
@@ -55,10 +55,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 176 | `1`<br>`1000`<br>`1001` |
 | `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 175 | `1`<br>`1000`<br>`1001` |
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 174 | `-1`<br>`-2`<br>`1` |
-| `body` | Number | The catalog ID for the cat's body part. | 173 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 173 | `-1`<br>`1`<br>`1.1` |
 | `leg2` | Integer | The catalog ID for the cat's second leg part. | 172 | `-1`<br>`1`<br>`10` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 161 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| `emit_rate` | Number | The rate of particle emission per second. | 158 | `.5`<br>`1`<br>`10` |
+| `emit_rate` | Float | The rate of particle emission per second. | 158 | `.5`<br>`1`<br>`10` |
 | [`emit_amount`](./Arrays.md#array-emit_amount) | Array | The number of particles emitted per burst. | 158 | `1`<br>`10`<br>`100` |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum | The rendering mode for particles (e.g., 'default', 'separate'). | 157 | `default`<br>`separate` |
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum | The coordinate space for particle simulation ('local' or 'global'). | 157 | `global`<br>`local` |
@@ -66,7 +66,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum | The projection matrix mode for particle rendering (e.g., 'default'). | 156 | `default` |
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array | The initial direction vector for emitted particles. | 151 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
 | `emit_spread` | Number | The angle spread for particle emission direction. | 144 | `0`<br>`1`<br>`10` |
-| `speed_start` | Number | The initial speed of particles. | 139 | `-2`<br>`.001`<br>`.1` |
+| `speed_start` | Float | The initial speed of particles. | 139 | `-2`<br>`.001`<br>`.1` |
 | [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 131 | `{ . . . }` |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array | An array specifying [chapter, class] that must be completed to unlock this reward. | 129 | `[boneyard Butcher]`<br>`[boneyard Colorless]`<br>`[boneyard Druid]` |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum | Specifies which item is unlocked immediately when this unlock condition is met. | 127 | `AnointingOil`<br>`BagOfBags`<br>`BagOfSeeds` |
@@ -89,21 +89,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`frame_label`](./Enums.md#enum-frame_label) | Enum | Specifies the frame or cutscene animation label for the boss encounter. | 67 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
 | `Health` | Number | The amount of health provided by the furniture piece to the room. | 67 | `-1`<br>`-2`<br>`-5` |
 | [`int`](./Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 66 | `-1`<br>`-10`<br>`-2` |
-| `alpha_end` | Number | The alpha (opacity) value at the end of the effect's duration or animation. | 61 | `.2`<br>`.5`<br>`0` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 61 | `.2`<br>`.5`<br>`0` |
 | [`alias`](./Enums.md#enum-alias) | Enum | Specifies the reference name of another status effect to alias or copy properties from. | 57 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
-| `distance_to_ally` | Number | The preferred distance (in tiles) to maintain from allies; negative values or 0 disable the preference. | 55 | `-.1`<br>`-1`<br>`0` |
+| `distance_to_ally` | Float | The preferred distance (in tiles) to maintain from allies; negative values or 0 disable the preference. | 55 | `-.1`<br>`-1`<br>`0` |
 | `distance_to_character` | Number | The preferred distance (in tiles) to maintain from any character; negative values or 0 disable the preference. | 55 | `-1`<br>`0`<br>`1` |
-| `distance_to_enemy` | Number | The preferred distance (in tiles) to maintain from enemies; negative values or 0 disable the preference. | 55 | `-.01`<br>`-.5`<br>`-1` |
+| `distance_to_enemy` | Float | The preferred distance (in tiles) to maintain from enemies; negative values or 0 disable the preference. | 55 | `-.01`<br>`-.5`<br>`-1` |
 | `face_closest_enemy` | Number | If nonzero, the character will face the closest enemy. | 55 | `0`<br>`1` |
 | [`preferred_distance`](./Enums.md#enum-preferred_distance) | Variable | The ideal distance to maintain from a target, expressed either as an absolute tile count or relative to movement (e.g., `mov+2`) or reach (`mov+reach`). | 55 | `0`<br>`1`<br>`2` |
-| `total_distance_moved` | Number | The total distance the character has moved, used in movement weight calculations. | 55 | `-0.001`<br>`-0.01`<br>`-1` |
+| `total_distance_moved` | Float | The total distance the character has moved, used in movement weight calculations. | 55 | `-0.001`<br>`-0.01`<br>`-1` |
 | [`rotation`](./Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 55 | `-90`<br>`90`<br>`[-10 10]` |
 | [`value`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The numeric value or formula associated with the buff. | 54 | `.5`<br>`0`<br>`1` |
 | [`lck`](./Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 53 | `-1`<br>`-2`<br>`-3` |
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum | The name of an NPC dialogue sequence to trigger. | 53 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
 | `Evolution` | Number | The amount of evolution provided by the furniture piece to the room. | 53 | `1`<br>`2`<br>`4` |
-| `alpha_start` | Number | The alpha (opacity) value at the start of the effect's duration or animation. | 53 | `-1`<br>`.5`<br>`.8` |
-| [`size`](./Enums.md#enum-size) | Enum / Number  | The scale factor (size multiplier) of the spawned unit. | 51 | `.2`<br>`.5`<br>`1` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 53 | `-1`<br>`.5`<br>`.8` |
+| [`size`](./Enums.md#enum-size) | Enum / Float  | The scale factor (size multiplier) of the spawned unit. | 51 | `.2`<br>`.5`<br>`1` |
 | [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum | Specifies which house boss (or 'any') must be defeated to fulfill this unlock condition. | 48 | `any`<br>`guillotina_1`<br>`guillotina_2` |
 | [`str`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | The Strength stat value or modifier. | 45 | `-1`<br>`-2`<br>`-3` |
 | `alpha` | Variable | The alpha transparency value for the particle system (e.g., '0.03'). | 41 | `.005`<br>`.01`<br>`.03` |
@@ -125,14 +125,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consider_overkill` | Boolean | If true, the AI considers overkill damage when evaluating actions. | 32 | `false`<br>`true` |
 | `consider_secondary_damage` | Boolean | If true, the AI considers secondary damage (e.g., splash) when evaluating actions. | 32 | `false`<br>`true` |
 | `consider_total_damage` | Boolean | If true, the AI considers total damage output (including secondary) when evaluating actions. | 32 | `false`<br>`true` |
-| `damage_ally` | Number | A multiplier for damage dealt to ally units. Negative values reduce damage. | 32 | `-1`<br>`-100`<br>`.5` |
+| `damage_ally` | Float | A multiplier for damage dealt to ally units. Negative values reduce damage. | 32 | `-1`<br>`-100`<br>`.5` |
 | `damage_ally_corpse` | Number | The amount of damage dealt to ally corpses. | 32 | `0`<br>`1`<br>`100` |
 | `damage_enemy` | Number | The amount of damage dealt to enemy units. | 32 | `0`<br>`1`<br>`100` |
-| `damage_enemy_corpse` | Number | A multiplier for damage dealt to enemy corpses. | 32 | `.1`<br>`0`<br>`0.1` |
-| `damage_self` | Number | A multiplier for damage dealt to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
-| `debuff_ally` | Number | A multiplier for debuffs applied to ally units. | 32 | `-1`<br>`-100`<br>`.5` |
+| `damage_enemy_corpse` | Float | A multiplier for damage dealt to enemy corpses. | 32 | `.1`<br>`0`<br>`0.1` |
+| `damage_self` | Float | A multiplier for damage dealt to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
+| `debuff_ally` | Float | A multiplier for debuffs applied to ally units. | 32 | `-1`<br>`-100`<br>`.5` |
 | `debuff_enemy` | Number | The number of debuffs applied to enemy units. | 32 | `0`<br>`1`<br>`100` |
-| `debuff_self` | Number | A multiplier for debuffs applied to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
+| `debuff_self` | Float | A multiplier for debuffs applied to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
 | `heal_ally` | Number | The amount of health restored to ally units. | 32 | `0`<br>`1`<br>`10` |
 | `heal_enemy` | Number | The amount of health restored to enemy units. Negative values deal damage. | 32 | `-1`<br>`-100`<br>`0` |
 | `heal_self` | Number | The amount of health restored to the unit itself. Negative values deal damage. | 32 | `-1`<br>`-100`<br>`0` |
@@ -191,10 +191,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`large`](./Arrays.md#array-large) | Array | An array of enemy unit identifiers used as the large enemy pool for an area or boss encounter. | 19 | `[Carnibulb]`<br>`[KillDozer]`<br>`[MegaFetus]` |
 | [`medium`](./Arrays.md#array-medium) | Array | An array of enemy unit identifiers used as the medium enemy pool for an area or boss encounter. | 19 | `[Rat Leaper Pooter Kitten TomTom Mangy CatCaller]` |
 | [`small`](./Arrays.md#array-small) | Array | An array of enemy unit identifiers used as the small enemy pool for an area or boss encounter. | 19 | `[Amoeba]`<br>`[Flea Wisp Fly Maggot]`<br>`[Maggot Fly Flea Pinky]` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 19 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float | The speed of the projectile or move, can be a value or a range. | 19 | `-30`<br>`-4`<br>`.5` |
 | [`catdata`](./Enums.md#enum-catdata) | Enum | Specifies the cat data identifier for the spawned unit, linking to a character template. | 17 | `Beaver`<br>`Bigfoot`<br>`Bunny` |
 | [`gender`](./Enums.md#enum-gender) | Enum | Specifies the gender requirement for a breed or character. | 17 | `any`<br>`male` |
-| `champ_budget` | Number | The budget for champion units in an encounter. | 16 | `0`<br>`1`<br>`1.5` |
+| `champ_budget` | Float | The budget for champion units in an encounter. | 16 | `0`<br>`1`<br>`1.5` |
 | `elite_buffs` | Number | The number of buffs applied to elite units. | 16 | `1`<br>`10`<br>`15` |
 | [`lock_item_slot`](./Passives_and_Statuses.md#object-lock_item_slot) | Object  | An object that restricts which equipment slots can be used. | 16 | `{ . . . }` |
 | `rare_elite_buffs` | Number | The number of rare buffs applied to elite units. | 16 | `1`<br>`10`<br>`15` |
@@ -330,7 +330,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `no_breed` | Boolean | If true, the cat cannot be bred. | 4 | `true` |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `coins_bonus` | Variable | A multiplier for coin rewards in this act or chapter. | 3 | `.5`<br>`.75`<br>`1` |
-| `food_bonus` | Number | A multiplier for food rewards in this act or chapter. | 3 | `1`<br>`1.75`<br>`2.5` |
+| `food_bonus` | Float | A multiplier for food rewards in this act or chapter. | 3 | `1`<br>`1.75`<br>`2.5` |
 | [`dimensionx`](./Miscellaneous.md#object-dimensionx) | Object  | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 3 | `{ . . . }` |
 | [`meatworld`](./Miscellaneous.md#object-meatworld) | Object  | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 3 | `{ . . . }` |
 | [`boneyard`](./Miscellaneous.md#object-boneyard) | Object  | Specifies the name, map flag, or connection for the Boneyard area. | 3 | `{ . . . }` |
@@ -588,7 +588,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`steven_postendgame`](./NPC_Scripts.md#object-steven_postendgame) | Object  | A dialogue sequence for Steven that plays after the player has beaten the game and seen the final ending. | 1 | `{ . . . }` |
 | [`thiefcat`](./Enums.md#enum-thiefcat) | Enum | Specifies the miniboss configuration for ThiefCat, typically set to "auto". | 1 | `auto` |
 | [`tinkerercat`](./Enums.md#enum-tinkerercat) | Enum | Specifies the miniboss configuration for TinkerCat, typically set to "auto". | 1 | `auto` |
-| `volume_adjustment` | Number | A multiplier for the volume of audio in a given room or reverb zone. | 1 | `1.3`<br>`1.35`<br>`1.5` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 1 | `1.3`<br>`1.35`<br>`1.5` |
 | [`bumblefoot`](./Enums.md#enum-bumblefoot) | Enum | Specifies the Bumblefoot miniboss encounter. | 1 | `auto` |
 | [`cough`](./Miscellaneous.md#object-cough) | Object  | Defines the facial expression parameters for a coughing animation. | 1 | `{ . . . }` |
 | `female17` | Number | An integer flag enabling the female17 voice set for a character. | 1 | `1` |
@@ -616,7 +616,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum | Specifies the Abandoned Ones miniboss encounter. | 1 | `auto` |
 | `advance` | Number | The number of levels the nemesis advances when triggered. | 1 | `1` |
 | `ankylosaurus` | Number | An integer flag enabling the ankylosaurus voice set for a character. | 1 | `1` |
-| [`Antidote`](./Engine_LogicKeys.md#object-antidote) | Number / Object  | The multiplier for the number of antidote pickups spawned. | 1 | `{ . . . }`<br>`.5`<br>`1` |
+| [`Antidote`](./Engine_LogicKeys.md#object-antidote) | Float / Object  | The multiplier for the number of antidote pickups spawned. | 1 | `{ . . . }`<br>`.5`<br>`1` |
 | [`BagOfSeeds`](./Engine_LogicKeys.md#object-bagofseeds) | Object  | Defines a Bag of Seeds item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | [`BasementUpgrade`](./Miscellaneous.md#object-basementupgrade) | Object  | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
 | [`BasementUpgrade2`](./Miscellaneous.md#object-basementupgrade2) | Object  | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 1 | `{ . . . }` |
@@ -1085,7 +1085,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`try_again_melee_move`](./NPC_Scripts.md#object-try_again_melee_move) | Object  | A tutorial sequence prompting the player to try a melee move again. | 1 | `{ . . . }` |
 | [`Turkey`](./Engine_LogicKeys.md#object-turkey) | Integer / Object  | The number of turkeys spawned. | 1 | `{ . . . }`<br>`1000`<br>`2` |
 | [`tutorial_cat_dies`](./NPC_Scripts.md#object-tutorial_cat_dies) | Object  | A tutorial sequence explaining what happens when a cat dies. | 1 | `{ . . . }` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`unlock_item`](./Enums.md#enum-unlock_item) | Enum | The name of the item unlocked by this event. | 1 | `MomsKnife` |
 | [`unprompted1`](./NPC_Scripts.md#object-unprompted1) | Object  | An unprompted dialogue sequence from Beanies (part 1). | 1 | `{ . . . }` |
 | [`unprompted2`](./NPC_Scripts.md#object-unprompted2) | Object  | An unprompted dialogue sequence from Beanies (part 2). | 1 | `{ . . . }` |
@@ -1138,7 +1138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`built_in_collision`](./Arrays.md#array-built_in_collision) | Array | A list of collision geometry definitions for the room. | 1 | `[` |
 | [`butcher_portrait`](./Miscellaneous.md#object-butcher_portrait) | Object  | Defines the face expression for the butcher's portrait with offset, raised eyebrows, slight rotation, smile, and open eyes. | 1 | `{ . . . }` |
 | [`chain_chance`](./Enums.md#enum-chain_chance) | Enum | A probability (0.9) that a chain effect triggers. | 1 | `.9` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `choose_cat_with_min_health` | Number | Selects a cat with at least the specified percentage of health remaining. | 1 | `75%` |
 | [`choose_one`](./Arrays.md#array-choose_one) | Array | A list of generation flags from which exactly one is randomly selected. | 1 | `[GenFlag_Boss_Stacy, GenFlag_Boss_Spewer]` |
 | [`Colorless_Tutorial`](./Arrays.md#array-colorless_tutorial) | Array | An array of return quotes used for the Colorless tutorial. | 1 | `[` |
@@ -1469,7 +1469,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`passive0`](./Enums.md#enum-passive0) | Enum | Specifies the first passive ability assigned to the unit from a predefined list (e.g., SelfAssured, HotBlooded). | 2 | `HotBlooded`<br>`SelfAssured` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -1494,8 +1494,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 517 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 461 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 409 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 149 | `.5`<br>`1`<br>`1.3` |
-| `delay` | Number | The delay in seconds before the ability's effect triggers. | 93 | `.05`<br>`.1`<br>`.25` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 149 | `.5`<br>`1`<br>`1.3` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 93 | `.05`<br>`.1`<br>`.25` |
 | [`speed`](./Miscellaneous.md#object-speed) | Variable | The speed of the projectile or move, can be a value or a range. | 61 | `-30`<br>`-4`<br>`.5` |
 | `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 17 | `false`<br>`true` |
 | `move_speed_multiplier` | Variable | A multiplier for the unit's base movement speed. | 16 | `.5`<br>`.66`<br>`.75` |
@@ -1793,7 +1793,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
 | [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 34 | `-1`<br>`-2`<br>`-3` |
 | [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 27 | `-1`<br>`-10`<br>`-2` |
 | [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 24 | `+1`<br>`-1`<br>`-2` |
@@ -2014,7 +2014,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`poop`](./Miscellaneous.md#object-poop) | Object  | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
-| [`body`](./Miscellaneous.md#context-body) | Number | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
+| [`body`](./Miscellaneous.md#context-body) | Float | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
 | [`brace`](./Miscellaneous.md#object-brace) | Object  | Specifies the player character's attempt to brace themselves for the encounter. | 1 | `{ . . . }` |
 | [`catch`](./Miscellaneous.md#object-catch) | Object  | An object defining a response option for catching an entity, including stat checks and rewards. | 1 | `{ . . . }` |
 | [`free`](./Miscellaneous.md#object-free) | Object  | If true, this option requires no cost to activate. | 1 | `{ . . . }` |
@@ -2024,7 +2024,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pilfer`](./Miscellaneous.md#object-pilfer) | Object  | The dialogue option that uses the lck stat to pilfer from a pile of skulls. | 1 | `{ . . . }` |
 | [`reflect`](./Miscellaneous.md#object-reflect) | Object  | The dialogue option for the StacyMutant4 encounter that chooses to reflect. | 1 | `{ . . . }` |
 | [`revive`](./Miscellaneous.md#object-revive) | Object  | The dialogue option that uses the lck stat to revive the Dead Mammoth. | 1 | `{ . . . }` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 | [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
@@ -2273,7 +2273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SmallHolding`](./Miscellaneous.md#object-smallholding) | Object  | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
 | [`SmallHoldingCat`](./Miscellaneous.md#object-smallholdingcat) | Object  | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
 | [`Standing`](./Miscellaneous.md#object-standing) | Object  | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -2339,9 +2339,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `dampening` | Variable | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 74 | `.1`<br>`.25`<br>`.5` |
-| `friction` | Number | A scalar or 3D vector multiplier for velocity reduction applied over time. | 70 | `.1`<br>`.2`<br>`.5` |
+| `friction` | Float | A scalar or 3D vector multiplier for velocity reduction applied over time. | 70 | `.1`<br>`.2`<br>`.5` |
 | [`plane`](./Enums.md#enum-plane) | Enum | Specifies the direction the particle bounces off. Valid values are "right" and "back". | 32 | `back`<br>`right` |
-| `position` | Number | The world-space coordinates for this object. | 32 | `10.5`<br>`[4.5 4.5]` |
+| `position` | Float | The world-space coordinates for this object. | 32 | `10.5`<br>`[4.5 4.5]` |
 | `rotation_dampening` | Number | The amount of rotational velocity retained after bouncing, where 1 is full retention. | 1 | `1` |
 
 </details>
@@ -2525,7 +2525,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 19 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`boss_cutscene`](./Enums.md#enum-boss_cutscene) | Enum | Specifies which boss cutscene to play before this encounter. | 16 | `alienqueen`<br>`coven`<br>`dybbuk` |
 | [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Number | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `item_chance` | Float | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 | [`coins`](./Arrays.md#array-coins) | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
 | [`food`](./Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
 | `is_final_boss` | Boolean | If true, this encounter is the final boss of the chapter. | 2 | `true` |
@@ -2839,7 +2839,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 11 | `-1`<br>`-2`<br>`1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 10 | `-1`<br>`-2`<br>`1` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 8 | `-1`<br>`-2`<br>`1` |
-| `body` | Number | The catalog ID for the cat's body part. | 5 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 5 | `-1`<br>`1`<br>`1.1` |
 
 </details>
 
@@ -2977,7 +2977,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | `Default`<br>`FormChange`<br>`Druid` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 28 | `passives`<br>`class`<br>`tag` |
 
@@ -3434,7 +3434,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `eyes` | Number | The ID for the eye mutation appearance. | 13 | `-1`<br>`-2`<br>`1029` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 11 | `-1`<br>`-2`<br>`1` |
 | `ears` | Number | The ID for the ear mutation appearance. | 10 | `-1`<br>`-2`<br>`1500` |
-| `body` | Number | The catalog ID for the cat's body part. | 6 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 6 | `-1`<br>`1`<br>`1.1` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 6 | `-1`<br>`1000`<br>`1001` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 2 | `-1`<br>`-2`<br>`1` |
 
@@ -3540,7 +3540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 10 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 1 | `false`<br>`true` |
 
 </details>
@@ -3715,7 +3715,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 22 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 20 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 20 | `.02`<br>`.1`<br>`.15` |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 5 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
 | [`number`](./Arrays.md#array-number) | Array / Integer  | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 2 | `1`<br>`10`<br>`2` |
@@ -3830,7 +3830,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 8 | `0`<br>`1`<br>`10` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 6 | `-1`<br>`1000`<br>`1001` |
 | `ears` | Number | The ID for the ear mutation appearance. | 5 | `-1`<br>`-2`<br>`1500` |
-| `body` | Number | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 2 | `-1`<br>`-2`<br>`1` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 2 | `-1`<br>`-2`<br>`1` |
 
@@ -3919,7 +3919,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`axis`](./Arrays.md#array-axis) | Array | The 3D vector defining the central axis around which the tornado force rotates. | 19 | `[-1 0 0]`<br>`[0 -0.5 0]`<br>`[0 -1 0]` |
-| `force` | Number | The force vector applied to particles. | 19 | `0`<br>`1`<br>`1.5` |
+| `force` | Float | The force vector applied to particles. | 19 | `0`<br>`1`<br>`1.5` |
 | [`point`](./Arrays.md#array-point) | Array | The 3D position of the tornado's center point relative to the particle system. | 19 | `[0 -8 0]`<br>`[0 .8 0]`<br>`[0 0 0]` |
 
 </details>
@@ -4069,7 +4069,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Specifies the name of the form the unit changes into. | 75 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -4198,10 +4198,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `volume_adjustment` | Number | A multiplier for the volume of audio in a given room or reverb zone. | 14 | `1.3`<br>`1.35`<br>`1.5` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 14 | `1.3`<br>`1.35`<br>`1.5` |
 | [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 14 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 14 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| `DecayTime` | Number | The time in seconds for the reverb effect to decay to silence. | 11 | `1.68`<br>`1.8` |
+| `DecayTime` | Float | The time in seconds for the reverb effect to decay to silence. | 11 | `1.68`<br>`1.8` |
 | [`ReverbDelay`](./Enums.md#enum-reverbdelay) | Enum | The time in seconds before the initial reverb reflections begin. | 7 | `.2`<br>`.25`<br>`.45` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
@@ -4527,7 +4527,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
 | `can_apply_to_anything` | Boolean | If true, this disease can be spread to any unit, regardless of type. | 6 | `true` |
 
 </details>
@@ -4662,7 +4662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -4728,7 +4728,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `back` | Boolean | If true, the face is rendered facing away (back of head view). | 1 | `false`<br>`true` |
 | `ear_rotation` | Number | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -5297,7 +5297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 4 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
+| `move_speed_multiplier` | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 
 </details>
 
@@ -5320,7 +5320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| `volume_adjustment` | Number | A multiplier for the volume of audio in a given room or reverb zone. | 10 | `1.3`<br>`1.35`<br>`1.5` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 10 | `1.3`<br>`1.35`<br>`1.5` |
 
 </details>
 
@@ -5363,8 +5363,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
-| [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
+| [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
+| [`body`](./Arrays.md#array-body) | Float | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
 | [`arms`](./Arrays.md#array-arms) | Array | The ID or range of IDs for the arm mutation appearance. | 1 | `900`<br>`[10 20]` |
 | [`legs`](./Arrays.md#array-legs) | Array | The ID or range of IDs for the leg mutation appearance. | 1 | `-1`<br>`306`<br>`322` |
 | [`limbs`](./Arrays.md#array-limbs) | Array | Array of limb IDs associated with this scar. | 1 | `[21 31]` |
@@ -5567,7 +5567,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consumable_uncommon` | Number | The cost or quantity for uncommon consumable items in an item shop. | 9 | `14`<br>`5`<br>`7` |
 | `consumable_very_rare` | Number | The cost or quantity for very rare consumable items in an item shop. | 9 | `12`<br>`20`<br>`40` |
 | `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 9 | `10`<br>`20`<br>`30` |
-| `very_rare` | Number | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
+| `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 9 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -5592,7 +5592,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`towards`](./Arrays.md#array-towards) | Array | A 3D vector point that the force pulls particles towards. | 7 | `[0 .5 0]`<br>`[5 0 5]` |
 | `force_end` | Number | The final force applied to particles over time, as a scalar or 3D vector. | 6 | `200`<br>`500`<br>`[0 -1 0]` |
 | `force_start` | Number | The initial force applied to particles, as a scalar or 3D vector. | 6 | `0`<br>`[0 -10 0]`<br>`[0 -20 0]` |
-| `force` | Number | The force vector applied to particles. | 1 | `0`<br>`1`<br>`1.5` |
+| `force` | Float | The force vector applied to particles. | 1 | `0`<br>`1`<br>`1.5` |
 
 </details>
 
@@ -5942,7 +5942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `dampening` | Variable | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 6 | `.1`<br>`.25`<br>`.5` |
-| `friction` | Number | A scalar or 3D vector multiplier for velocity reduction applied over time. | 6 | `.1`<br>`.2`<br>`.5` |
+| `friction` | Float | A scalar or 3D vector multiplier for velocity reduction applied over time. | 6 | `.1`<br>`.2`<br>`.5` |
 | `end_on_collision` | Boolean | If true, the particle is destroyed when it collides with a line. | 2 | `true` |
 
 </details>
@@ -6933,7 +6933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 6 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 6 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 6 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -7065,7 +7065,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 6 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 6 | `.02`<br>`.1`<br>`.15` |
 | [`disease`](./Enums.md#enum-disease) | Enum | Determines which disease is applied when spreading disease. | 6 | `BirdFlu`<br>`Cancer`<br>`CommonCold` |
 | `can_apply_to_anything` | Boolean | If true, this disease can be spread to any unit, regardless of type. | 1 | `true` |
 
@@ -7156,7 +7156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 6 | `-1`<br>`-2`<br>`1` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 | `0`<br>`1`<br>`13` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -7548,7 +7548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Miscellaneous.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 | `common`<br>`rare`<br>`cha` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -7572,7 +7572,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 5 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 5 | `.02`<br>`.1`<br>`.15` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -8400,7 +8400,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 4 | `false`<br>`true` |
 | `max_distance` | Integer | The maximum range in tiles for the arc lightning to chain to subsequent targets. | 4 | `1`<br>`2`<br>`3` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 1 | `true` |
 
 </details>
@@ -8575,7 +8575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 4 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 4 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
@@ -9263,7 +9263,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 4 | `0`<br>`1`<br>`13` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 4 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float | The speed of the projectile or move, can be a value or a range. | 4 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -10019,7 +10019,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -10127,7 +10127,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 1 | `-1`<br>`-2`<br>`1` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 1 | `-1`<br>`-2`<br>`1` |
-| `body` | Number | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
 
 </details>
@@ -10149,7 +10149,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -10585,7 +10585,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
 | [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 3 | `.1`<br>`.25`<br>`.35` |
 
 </details>
@@ -10900,7 +10900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
 | [`min_radius`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
@@ -11645,7 +11645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `advantage_polarity` | Number | The polarity advantage for autocast timing; negative values give an advantage. | 1 | `-1` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -12305,7 +12305,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 5 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -12744,7 +12744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 3 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 3 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 2 | `2`<br>`3`<br>`4` |
 
 </details>
@@ -13507,7 +13507,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
@@ -13598,7 +13598,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 | `theshold` | Number | The health threshold below which allies receive the dodge chance aura. | 2 | `5` |
 
 </details>
@@ -14722,7 +14722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
@@ -14809,7 +14809,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 2 | `0`<br>`1`<br>`13` |
 
 </details>
@@ -15310,7 +15310,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 | `strength` | Integer | The base strength stat, used for physical damage calculations. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
@@ -17496,8 +17496,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `advantage_softcap` | Number | The soft cap multiplier for ability charge refund advantage. | 1 | `3.5` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `advantage_softcap` | Float | The soft cap multiplier for ability charge refund advantage. | 1 | `3.5` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -17900,7 +17900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
 
 </details>
@@ -17922,7 +17922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -18029,7 +18029,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -18266,7 +18266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -18290,7 +18290,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -18314,7 +18314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -18787,7 +18787,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -18902,7 +18902,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -21803,7 +21803,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -21872,7 +21872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -21896,7 +21896,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -22072,7 +22072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -22099,7 +22099,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -22847,7 +22847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -23404,7 +23404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -23425,7 +23425,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 1 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
@@ -24005,7 +24005,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -24117,7 +24117,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
@@ -24444,7 +24444,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -24754,7 +24754,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -24778,7 +24778,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -24803,7 +24803,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -24987,7 +24987,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -25012,7 +25012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -25187,7 +25187,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | [`eyebrow_up`](./Arrays.md#array-eyebrow_up) | Array | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -25604,7 +25604,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
+| `move_speed_multiplier` | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -25630,7 +25630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
+| `move_speed_multiplier` | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -25981,7 +25981,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -26165,7 +26165,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -26360,7 +26360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -26471,7 +26471,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -26496,7 +26496,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -26521,7 +26521,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -26568,7 +26568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -26593,7 +26593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -26619,7 +26619,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -26818,7 +26818,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -27061,7 +27061,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -27151,7 +27151,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -27216,7 +27216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -27548,7 +27548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | [`set_mood`](./Enums.md#enum-set_mood) | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 | `default`<br>`happy`<br>`pondering` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
@@ -27846,7 +27846,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
 
@@ -27979,7 +27979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -28498,7 +28498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
@@ -28673,7 +28673,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 1 | `0`<br>`1`<br>`15` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -28784,7 +28784,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -28831,7 +28831,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -28879,7 +28879,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -29204,7 +29204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
@@ -29369,7 +29369,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | [`request_cat_info`](./Enums.md#enum-request_cat_info) | Enum | Specifies the type of cat information to request (e.g., 'stray'). | 1 | `stray` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
@@ -29684,7 +29684,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -30094,7 +30094,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -30625,7 +30625,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `lock_mouse` | Number | If non-zero, locks the mouse cursor in place. | 1 | `1` |
 | `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 | `1` |
@@ -30851,7 +30851,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -30894,7 +30894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -31107,7 +31107,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -31543,7 +31543,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -32032,7 +32032,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
+| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
@@ -32123,7 +32123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -32395,7 +32395,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
@@ -32993,7 +32993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -33018,7 +33018,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -33269,7 +33269,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -33364,7 +33364,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33391,7 +33391,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33418,7 +33418,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33445,7 +33445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33472,7 +33472,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33499,7 +33499,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33817,7 +33817,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -34258,7 +34258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Arrays.md#array-eyes) | Array | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -34283,7 +34283,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Arrays.md#array-eyes) | Array | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -34744,7 +34744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -34770,7 +34770,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -35118,7 +35118,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -35143,7 +35143,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -35625,8 +35625,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
-| `min_radius` | Number | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
@@ -37376,7 +37376,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -37420,7 +37420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -37750,7 +37750,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |
@@ -37957,7 +37957,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -39888,7 +39888,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -40202,7 +40202,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40227,7 +40227,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40253,7 +40253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40277,7 +40277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40302,7 +40302,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40326,7 +40326,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40351,7 +40351,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40375,7 +40375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40399,7 +40399,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40424,7 +40424,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40448,7 +40448,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40473,7 +40473,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40498,7 +40498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40522,7 +40522,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -40547,7 +40547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | [`set_npc_voice`](./Enums.md#enum-set_npc_voice) | Enum | Specifies which NPC's voice preset to apply for the current sequence's dialog. | 1 | `beanies` |
@@ -40573,7 +40573,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40597,7 +40597,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -40668,7 +40668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -40717,7 +40717,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -40848,7 +40848,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -40873,7 +40873,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ear_rotation`](./Arrays.md#array-ear_rotation) | Array | The [left, right] ear rotation angles in degrees. | 1 | `0`<br>`[ -15, -15]`<br>`[ -20, -20]` |
-| `eyebrow_rotation` | Number | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
+| `eyebrow_rotation` | Float | The rotation angle (in degrees) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `-15`<br>`-22.5`<br>`-25` |
 | `eyebrow_up` | Number | The vertical offset (in pixels) for the eyebrows; can be a single value or an array [min max] for randomization. | 1 | `0`<br>`10`<br>`11` |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | The ID for the eye mutation appearance. | 1 | `-1`<br>`-2`<br>`1029` |
 | [`face_offset`](./Arrays.md#array-face_offset) | Array | The [X, Y] pixel offset applied to the face's position. | 1 | `[-10 -10]`<br>`[-10 -5]`<br>`[-10 0]` |

@@ -479,7 +479,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `ambush_next_basic_fights` | Integer | The number of basic fights to trigger as ambushes. | 9 | `1` |
 | [`party_damage`](./Arrays.md#array-party_damage) | Array / Number | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 9 | `1`<br>`10`<br>`2` |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 9 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
-| [`random_mutation_from_set`](./Miscellaneous.md#object-random_mutation_from_set) | Number / Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 8 | `{ . . . }` |
+| [`random_mutation_from_set`](./Miscellaneous.md#object-random_mutation_from_set) | Float / Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 8 | `{ . . . }` |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Specifies a parasite item to attach to a unit when this event triggers. | 7 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
 | [`permanent_stats`](./Miscellaneous.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 7 | `{ . . . }` |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array / Number | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 6 | `1`<br>`10`<br>`15` |
@@ -579,7 +579,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`mutation`](./Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 1 | `{ . . . }` |
 | `next_event_bonus` | Integer | A modifier to the next event's outcome roll or selection chance. | 1 | `-1`<br>`-2`<br>`1` |
 | [`next_event_from_set`](./Miscellaneous.md#object-next_event_from_set) | Object  | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 1 | `{ . . . }` |
-| [`random_mutation`](./Miscellaneous.md#object-random_mutation) | Number / Object  | The number of random mutations applied to the unit. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`random_mutation`](./Miscellaneous.md#object-random_mutation) | Float / Object  | The number of random mutations applied to the unit. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Specifies which abilities to randomize, such as 'all'. | 1 | `all` |
 | [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | Specifies which passive abilities to randomize or scramble. | 1 | `all` |
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum | Triggers the specified shop to appear immediately. | 1 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
@@ -652,7 +652,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Specifies a parasite item to attach to a unit when this event triggers. | 30 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 22 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
 | [`spawn_unit_next_fight`](./Miscellaneous.md#object-spawn_unit_next_fight) | Object  | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 20 | `{ . . . }` |
-| [`random_mutation_from_set`](./Miscellaneous.md#object-random_mutation_from_set) | Number / Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 13 | `{ . . . }` |
+| [`random_mutation_from_set`](./Miscellaneous.md#object-random_mutation_from_set) | Float / Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 13 | `{ . . . }` |
 | [`party_status_next_fight`](./Miscellaneous.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 12 | `{ . . . }` |
 | [`get_item_from_pool`](./Miscellaneous.md#object-get_item_from_pool) | Array / Enum / Object  | Grants an item from the specified pool or a specific item name. | 11 | `{ . . . }`<br>`Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Teaches the unit the specified passive ability. | 10 | `Blessed`<br>`CobraStyle`<br>`DeathProof` |
@@ -679,7 +679,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | Specifies which item or item category is removed from the unit's inventory. | 3 | `cat` |
 | [`make_old`](./Enums.md#enum-make_old) | Enum | Applies the 'old' status or age increase to the specified target, typically 'self'. | 3 | `self` |
 | [`next_event_from_set`](./Miscellaneous.md#object-next_event_from_set) | Enum / Object  | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 3 | `{ . . . }`<br>`CatHole`<br>`Tragedy`<br>`WatchingHead2` |
-| [`spawn_reflection_next_fight`](./Miscellaneous.md#object-spawn_reflection_next_fight) | Number / Object  | The number of reflections to spawn in the next battle, optionally with a mutation. | 3 | `{ . . . }`<br>`1` |
+| [`spawn_reflection_next_fight`](./Miscellaneous.md#object-spawn_reflection_next_fight) | Float / Object  | The number of reflections to spawn in the next battle, optionally with a mutation. | 3 | `{ . . . }`<br>`1` |
 | [`damage`](./Arrays.md#array-damage) | Array / Equation  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`battle`](./Math_Equations.md) | Enum / String | Defines a battle encounter by preset, level file path, or reverb settings. | 2 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
 | [`event_now`](./Enums.md#enum-event_now) | Enum | Triggers the specified event immediately. | 2 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |

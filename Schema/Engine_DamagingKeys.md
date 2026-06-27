@@ -145,7 +145,7 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `1`<br>`2`<br>`3` |
 | [`blocked_damage`](./Math_Equations.md) | Integer / String | An equation string that calculates the amount of damage that can be blocked or reduced by the target's defenses. | 24 | `"(3+bonus_melee_ability_damage)*2"`<br>`3+bonus_melee_ability_damage`<br>`5` |
 | [`raw_damage`](./Math_Equations.md) | Enum / Integer | An equation string that calculates the base damage before any modifiers or bonuses are applied. | 22 | `"(con+1)/2"`<br>`"8-X"`<br>`"max((X-1)*2, 0)"` |
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Number | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 16 | `-999999`<br>`.05*X`<br>`.25` |
+| [`crit_chance`](./Enums.md#enum-crit_chance) | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 16 | `-999999`<br>`.05*X`<br>`.25` |
 | `override_trample_damage` | Boolean | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 15 | `true` |
 | `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 14 | `false` |
 | `ranged` | Boolean | If true, the damage instance is considered a ranged attack, interacting with ranged-specific modifiers and passives. | 10 | `Ranged`<br>`true` |
@@ -153,7 +153,7 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | `show_damage_on_0` | Boolean | If true, the damage number is still displayed even when the resulting damage is zero. | 6 | `true` |
 | `force_play_hit_animation` | Boolean | If true, the hit animation is forced to play regardless of other conditions (e.g., miss or block). | 5 | `true` |
 | `blocked_multiplier` | Integer | A multiplier applied to blocked damage, increasing the effectiveness of the defensive reduction. | 4 | `2` |
-| [`accuracy`](./Enums.md#enum-accuracy) | Number | A decimal value (e.g., .5) representing the base hit chance of the damage instance, where 1.0 is guaranteed. | 3 | `.5` |
+| [`accuracy`](./Enums.md#enum-accuracy) | Float | A decimal value (e.g., .5) representing the base hit chance of the damage instance, where 1.0 is guaranteed. | 3 | `.5` |
 | `can_collect_pickups` | Boolean | If true, the damage instance can collect pickups from the target's tile as part of its effect. | 3 | `true` |
 | [`layer`](./Enums.md#enum-layer) | Enum | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 3 | `2`<br>`all`<br>`characters` |
 | `can_instapop` | Boolean | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 2 | `false` |

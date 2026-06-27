@@ -18,12 +18,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance_to_ally` | Number | The preferred distance (in tiles) to maintain from allies; negative values or 0 disable the preference. | 55 | `-.1`<br>`-1`<br>`0` |
+| `distance_to_ally` | Float | The preferred distance (in tiles) to maintain from allies; negative values or 0 disable the preference. | 55 | `-.1`<br>`-1`<br>`0` |
 | `distance_to_character` | Number | The preferred distance (in tiles) to maintain from any character; negative values or 0 disable the preference. | 55 | `-1`<br>`0`<br>`1` |
-| `distance_to_enemy` | Number | The preferred distance (in tiles) to maintain from enemies; negative values or 0 disable the preference. | 55 | `-.01`<br>`-.5`<br>`-1` |
+| `distance_to_enemy` | Float | The preferred distance (in tiles) to maintain from enemies; negative values or 0 disable the preference. | 55 | `-.01`<br>`-.5`<br>`-1` |
 | `face_closest_enemy` | Number | If nonzero, the character will face the closest enemy. | 55 | `0`<br>`1` |
 | [`preferred_distance`](./Enums.md#enum-preferred_distance) | Variable | The ideal distance to maintain from a target, expressed either as an absolute tile count or relative to movement (e.g., `mov+2`) or reach (`mov+reach`). | 55 | `0`<br>`1`<br>`2` |
-| `total_distance_moved` | Number | The total distance the character has moved, used in movement weight calculations. | 55 | `-0.001`<br>`-0.01`<br>`-1` |
+| `total_distance_moved` | Float | The total distance the character has moved, used in movement weight calculations. | 55 | `-0.001`<br>`-0.01`<br>`-1` |
 | `accurate_knockback` | Boolean | If true, knockback from attacks is applied accurately (e.g., straight line); if false, knockback may be erratic. | 32 | `false` |
 | `buff_ally` | Number | The number of buffs applied to ally units. | 32 | `0`<br>`1`<br>`10` |
 | `buff_enemy` | Number | The number of buffs applied to enemy units. Negative values may apply debuffs. | 32 | `-1`<br>`-100`<br>`0` |
@@ -31,14 +31,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consider_overkill` | Boolean | If true, the AI considers overkill damage when evaluating actions. | 32 | `false`<br>`true` |
 | `consider_secondary_damage` | Boolean | If true, the AI considers secondary damage (e.g., splash) when evaluating actions. | 32 | `false`<br>`true` |
 | `consider_total_damage` | Boolean | If true, the AI considers total damage output (including secondary) when evaluating actions. | 32 | `false`<br>`true` |
-| `damage_ally` | Number | A multiplier for damage dealt to ally units. Negative values reduce damage. | 32 | `-1`<br>`-100`<br>`.5` |
+| `damage_ally` | Float | A multiplier for damage dealt to ally units. Negative values reduce damage. | 32 | `-1`<br>`-100`<br>`.5` |
 | `damage_ally_corpse` | Number | The amount of damage dealt to ally corpses. | 32 | `0`<br>`1`<br>`100` |
 | `damage_enemy` | Number | The amount of damage dealt to enemy units. | 32 | `0`<br>`1`<br>`100` |
-| `damage_enemy_corpse` | Number | A multiplier for damage dealt to enemy corpses. | 32 | `.1`<br>`0`<br>`0.1` |
-| `damage_self` | Number | A multiplier for damage dealt to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
-| `debuff_ally` | Number | A multiplier for debuffs applied to ally units. | 32 | `-1`<br>`-100`<br>`.5` |
+| `damage_enemy_corpse` | Float | A multiplier for damage dealt to enemy corpses. | 32 | `.1`<br>`0`<br>`0.1` |
+| `damage_self` | Float | A multiplier for damage dealt to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
+| `debuff_ally` | Float | A multiplier for debuffs applied to ally units. | 32 | `-1`<br>`-100`<br>`.5` |
 | `debuff_enemy` | Number | The number of debuffs applied to enemy units. | 32 | `0`<br>`1`<br>`100` |
-| `debuff_self` | Number | A multiplier for debuffs applied to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
+| `debuff_self` | Float | A multiplier for debuffs applied to the unit itself. | 32 | `-0.1`<br>`-1`<br>`-1.1` |
 | `heal_ally` | Number | The amount of health restored to ally units. | 32 | `0`<br>`1`<br>`10` |
 | `heal_enemy` | Number | The amount of health restored to enemy units. Negative values deal damage. | 32 | `-1`<br>`-100`<br>`0` |
 | `heal_self` | Number | The amount of health restored to the unit itself. Negative values deal damage. | 32 | `-1`<br>`-100`<br>`0` |

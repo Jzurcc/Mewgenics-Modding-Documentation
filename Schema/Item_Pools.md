@@ -37,7 +37,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`FoodBig`](./Engine_LogicKeys.md#object-foodbig) | Object  | Specifies the definition and weight for a large food item in item pools. | 2 | `{ . . . }` |
 | [`FoodMedium`](./Engine_LogicKeys.md#object-foodmedium) | Object  | Specifies the definition and weight for a medium food item in item pools. | 2 | `{ . . . }` |
 | `shop_common` | Number | The number defining the weight or relative frequency for common shop items in a pool. | 2 | `1` |
-| [`Antidote`](./Engine_LogicKeys.md#object-antidote) | Number / Object  | The multiplier for the number of antidote pickups spawned. | 1 | `{ . . . }`<br>`.5`<br>`1` |
+| [`Antidote`](./Engine_LogicKeys.md#object-antidote) | Float / Object  | The multiplier for the number of antidote pickups spawned. | 1 | `{ . . . }`<br>`.5`<br>`1` |
 | [`BagOfSeeds`](./Engine_LogicKeys.md#object-bagofseeds) | Object  | Defines a Bag of Seeds item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | [`BirdFeed`](./Engine_LogicKeys.md#object-birdfeed) | Object  | Defines a Bird Feed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
 | [`BirdPoopHat`](./Engine_LogicKeys.md#object-birdpoophat) | Object  | Defines a Bird Poop Hat item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |

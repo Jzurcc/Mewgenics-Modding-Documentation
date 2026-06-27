@@ -71,8 +71,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
-| [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
+| [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
+| [`body`](./Arrays.md#array-body) | Float | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
 | [`arms`](./Arrays.md#array-arms) | Array || 1 | `900`<br>`[10 20]` |
 | [`legs`](./Arrays.md#array-legs) | Array || 1 | `-1`<br>`306`<br>`322` |
 | [`limbs`](./Arrays.md#array-limbs) | Array || 1 | `[21 31]` |

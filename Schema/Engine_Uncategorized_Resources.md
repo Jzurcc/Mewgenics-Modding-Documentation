@@ -167,7 +167,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
-| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
+| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
 
@@ -705,7 +705,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ApplyPassives`](./Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 1 | `{ . . . }` |
-| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
+| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
 
@@ -969,7 +969,7 @@
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 | `1` |
 | [`TransformWeapon`](./Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
 
 </details>
 
@@ -2424,7 +2424,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityDamageMultiplier` | Number | Multiplier for all ability damage dealt by the unit. | 1 | `1.5` |
+| `AbilityDamageMultiplier` | Float | Multiplier for all ability damage dealt by the unit. | 1 | `1.5` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3034,7 +3034,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Number | A multiplier applied to the unit's base stats. | 6 | `.25`<br>`.5`<br>`.666` |
+| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Float | A multiplier applied to the unit's base stats. | 6 | `.25`<br>`.5`<br>`.666` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3397,7 +3397,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Number | The catalog ID for the cat's head part. | 784 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Float | The catalog ID for the cat's head part. | 784 | `-1`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -3420,7 +3420,7 @@
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 386 | `-1`<br>`-2`<br>`1` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 358 | `-1`<br>`-2`<br>`1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 354 | `-1`<br>`-2`<br>`1` |
-| [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
+| [`body`](./Arrays.md#array-body) | Float | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
 
 </details>
 
@@ -5762,7 +5762,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
 | [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
@@ -5771,7 +5771,7 @@
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
 | `PlayBackground` | Integer | Specifies the background index to play. | 1 | `0`<br>`1` |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Float | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 
 </details>
@@ -5950,7 +5950,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 2 | `.5` |
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 2 | `.5` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7000,7 +7000,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -7020,7 +7020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -7187,7 +7187,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 6 | `-1`<br>`-2`<br>`1` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 | `0`<br>`1`<br>`13` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -7450,7 +7450,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`event`](./Enums.md#enum-event) | Enum | Specifies the event to force, either by name or by a nested object defining its type and level. | 3 | `Blessing`<br>`Death`<br>`Tragedy` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -7853,7 +7853,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -8216,7 +8216,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | The fade-out duration in seconds for ambient light effects. | 4 | `.5`<br>`4` |
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Float | The fade-out duration in seconds for ambient light effects. | 4 | `.5`<br>`4` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9746,8 +9746,8 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
-| `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
-| [`min_radius`](./Enums.md#enum-min_radius) | Number | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
+| [`min_radius`](./Enums.md#enum-min_radius) | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
 
 </details>
 
@@ -9768,8 +9768,8 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
-| [`min_radius`](./Enums.md#enum-min_radius) | Number | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
+| [`min_radius`](./Enums.md#enum-min_radius) | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
@@ -10676,7 +10676,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Number | The catalog ID for the cat's head part. | 784 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Float | The catalog ID for the cat's head part. | 784 | `-1`<br>`1`<br>`1.3` |
 | `texture` | Integer | The catalog ID for the cat's texture. | 422 | `-1`<br>`1`<br>`1000` |
 | [`palette`](./Enums.md#enum-palette) | Enum / Integer | Specifies the color palette index for the ability's visuals. | 420 | `-1`<br>`0`<br>`1` |
 | [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 386 | `-1`<br>`-2`<br>`1` |
@@ -10684,7 +10684,7 @@
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 358 | `-1`<br>`-2`<br>`1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 354 | `-1`<br>`-2`<br>`1` |
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 348 | `-1`<br>`-2`<br>`1` |
-| [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
+| [`body`](./Arrays.md#array-body) | Float | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
 | `leg2` | Integer | The catalog ID for the cat's second leg part. | 344 | `-1`<br>`1`<br>`10` |
 | `ear1` | Integer | The catalog ID for the cat's first ear part. | 10 | `-2`<br>`1005`<br>`1013` |
 | `ear2` | Integer | The catalog ID for the cat's second ear part. | 9 | `1005`<br>`1013`<br>`1036` |
@@ -10711,7 +10711,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 1 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
@@ -10796,7 +10796,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 75 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -11023,7 +11023,7 @@
 | [`Small`](./Miscellaneous.md#object-small) | Object  | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 | `{ . . . }` |
 | [`SquirrelForm`](./Miscellaneous.md#object-squirrelform) | Object  | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
 | [`Turtled`](./Miscellaneous.md#object-turtled) | Object  | Defines the 'Turtled' form, a defensive state where the unit cannot attack or move. | 2 | `{ . . . }` |
-| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
+| `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
 | [`Zealot`](./Miscellaneous.md#object-zealot) | Object  | Form state for the zealot variant of a cultist, with a stabbing attack. | 2 | `{ . . . }` |
 | [`Alert`](./Miscellaneous.md#object-alert) | Object  | Defines the 'Alert' form, an alerted state with a pattern brain AI. | 1 | `{ . . . }` |
 | [`Attacker`](./Miscellaneous.md#object-attacker) | Object  | Defines the 'Attacker' form, focusing on offensive actions like attacking and charging. | 1 | `{ . . . }` |
@@ -11520,7 +11520,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array / Number | The number of stacks and probability of triggering the werewolf transformation. | 14 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
+| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array / Float | The number of stacks and probability of triggering the werewolf transformation. | 14 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11960,10 +11960,10 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | A 3D vector offset from the head position that the pupils should look at. | 1 | `[0 2.5 0]` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 1 | `0`<br>`1`<br>`13` |
-| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Number | The half-life for the pupil position to reset to center when no target is available. | 1 | `.1` |
-| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Number | The half-life for the pupil position to reset to center during an animation. | 1 | `.05` |
-| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Number | The half-life for the pupil tracking to reacquire a target after a teleport. | 1 | `.01` |
-| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Number | The half-life for the pupil tracking to smoothly acquire a new target. | 1 | `.1` |
+| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Float | The half-life for the pupil position to reset to center when no target is available. | 1 | `.1` |
+| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Float | The half-life for the pupil position to reset to center during an animation. | 1 | `.05` |
+| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Float | The half-life for the pupil tracking to reacquire a target after a teleport. | 1 | `.01` |
+| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Float | The half-life for the pupil tracking to smoothly acquire a new target. | 1 | `.1` |
 | [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | A 3D vector representing the virtual position of the head for pupil tracking. | 1 | `[11 2 11]` |
 
 </details>
@@ -12649,7 +12649,7 @@
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 8 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | `KnockbackImmunity` | Integer | If set to 1, the unit cannot be knocked back. | 6 | `1` |
 | [`StatusOnBattleEnd`](./Passives_and_Statuses.md#object-statusonbattleend) | Object  | An object containing status effects or passives applied to the unit when the battle ends. | 6 | `{ . . . }` |
-| [`YOffset`](./Enums.md#enum-yoffset) | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
+| [`YOffset`](./Enums.md#enum-yoffset) | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
 | [`AddTag`](./Enums.md#enum-addtag) | Enum | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 2 | `bug`<br>`cat`<br>`fetus` |
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 | `Plant` | Integer | If set to 1, marks the unit as a Plant type, granting associated immunities and interactions. | 1 | `1` |
@@ -12777,7 +12777,7 @@
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 4 | `false`<br>`true` |
 | `max_distance` | Integer | The maximum range in tiles for the arc lightning to chain to subsequent targets. | 4 | `1`<br>`2`<br>`3` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 1 | `true` |
 
 </details>
@@ -13659,7 +13659,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`color`](./Arrays.md#array-color) | Array | The RGB color of the light source. | 10 | `[.27 .47 .18]`<br>`[.3, .7, 1]`<br>`[.32 .10 .10]` |
 | [`glow`](./Arrays.md#array-glow) | Array | The RGBA glow color of the light source. | 8 | `[.3, .7, 1, .5]`<br>`[.7, .3, 1, .5]`<br>`[.7, .8, .9, .5]` |
-| [`size`](./Enums.md#enum-size) | Enum / Number | The scale factor (size multiplier) of the spawned unit. | 3 | `.2`<br>`.5`<br>`1` |
+| [`size`](./Enums.md#enum-size) | Enum / Float | The scale factor (size multiplier) of the spawned unit. | 3 | `.2`<br>`.5`<br>`1` |
 
 </details>
 
@@ -14295,7 +14295,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
@@ -15642,7 +15642,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
@@ -16590,7 +16590,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 8 | `.1`<br>`.25`<br>`.35` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -17122,7 +17122,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -17664,7 +17664,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 2 | `0`<br>`1`<br>`13` |
-| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -19785,7 +19785,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Number | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
+| [`crit_chance`](./Enums.md#enum-crit_chance) | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
 
 </details>
 
@@ -19823,7 +19823,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Number | Specifies the delay in seconds before the unit regains turn control. | 2 | `.25` |
+| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Float | Specifies the delay in seconds before the unit regains turn control. | 2 | `.25` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -20410,7 +20410,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`YOffset`](./Enums.md#enum-yoffset) | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
+| [`YOffset`](./Enums.md#enum-yoffset) | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 

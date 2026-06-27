@@ -69,12 +69,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`particle`](./Enums.md#enum-particle) | Enum | Specifies the particle effect displayed. | 486 | `ArrowFromAbove`<br>`BigMagicMissileBlast`<br>`Bolt` |
 | [`projectile`](./Enums.md#enum-projectile) | Enum | Specifies the projectile spawned for the ability. | 227 | `AcidshotProjectile`<br>`AnimalEgg`<br>`ArmorPickup` |
 | `lob` | Boolean | If true, the projectile follows a lobbed trajectory. | 130 | `false`<br>`true` |
-| `delay` | Number | The delay in seconds before the ability's effect triggers. | 93 | `.05`<br>`.1`<br>`.25` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 93 | `.05`<br>`.1`<br>`.25` |
 | `dont_visualize_ai` | Boolean | If true, the AI's visualization of this ability is suppressed. | 86 | `true` |
 | `dont_orient` | Boolean | If true, the caster does not rotate to face the target. | 83 | `true` |
 | [`dash_animation`](./Enums.md#enum-dash_animation) | Enum | Specifies the animation played during the dash movement. | 65 | `dash`<br>`dash2`<br>`dashing` |
 | [`dash_start_animation`](./Enums.md#enum-dash_start_animation) | Enum | Specifies the animation played at the start of the dash. | 63 | `dashbegin`<br>`dashstart`<br>`dashstart2` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 61 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 61 | `-30`<br>`-4`<br>`.5` |
 | [`affected_particle`](./Enums.md#enum-affected_particle) | Enum | Specifies the particle effect on affected targets. | 51 | `Cleanse`<br>`ExclamationPointEnemy`<br>`HealBig` |
 | [`dash_attack_animation`](./Enums.md#enum-dash_attack_animation) | Enum | Specifies the animation played at the end of the dash when attacking. | 45 | `block`<br>`dashEnd`<br>`dashEnd2` |
 | `lob_height` | Integer | Controls the height of the lobbed projectile trajectory. | 45 | `-1`<br>`0`<br>`1` |
@@ -97,7 +97,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum | Determines which character animation plays at the end of a movement ability. | 13 | `backflipEnd`<br>`buttScootEnd`<br>`cartwheelEnd` |
 | `face_toss_target` | Boolean | If true, the unit rotates to face the target before performing a toss or throw. | 12 | `true` |
 | `ignore_slowtiles` | Boolean | If true, the unit's movement during this ability ignores tile-based speed penalties. | 12 | `true` |
-| [`chain_distance`](./Enums.md#enum-chain_distance) | Number | The distance between chain links, as a fraction of a tile. | 11 | `.25`<br>`.38` |
+| [`chain_distance`](./Enums.md#enum-chain_distance) | Float | The distance between chain links, as a fraction of a tile. | 11 | `.25`<br>`.38` |
 | [`chain_movieclip`](./Enums.md#enum-chain_movieclip) | Enum | Specifies the visual MovieClip asset used for the chain's links. | 11 | `Bramblechain`<br>`ChainLink`<br>`Frogchain` |
 | `darken_screen` | Boolean | If true, darkens the entire screen during the ability's execution. | 11 | `false`<br>`true` |
 | [`beam_cap`](./Enums.md#enum-beam_cap) | Enum | Specifies the MovieClip used for the visual cap (end) of a beam effect. | 10 | `Gambitmouthbeamcap`<br>`fx_bloatlasercap`<br>`fx_kingbloodlasercap` |
@@ -122,34 +122,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`custom_priming_animation`](./Enums.md#enum-custom_priming_animation) | Enum | Specifies a custom idle animation for the unit while it is priming an ability. | 6 | `idleCommand1`<br>`idleCommand2`<br>`idleCommand3` |
 | `darken_screen_exclude_self` | Boolean | If true, the casting unit is not darkened when the screen darkens. | 6 | `true` |
 | `darken_screen_start_early` | Boolean | If true, the screen darkening effect begins before the main ability animation. | 6 | `true` |
-| [`fall_randomize_timing`](./Enums.md#enum-fall_randomize_timing) | Number | The maximum random fraction of the fall duration added to stagger when objects fall from the sky. | 6 | `.3` |
-| `min_throw_height` | Number | The minimum height (in tiles) the projectile reaches during an arc or toss. | 6 | `.25`<br>`0`<br>`1.75` |
+| [`fall_randomize_timing`](./Enums.md#enum-fall_randomize_timing) | Float | The maximum random fraction of the fall duration added to stagger when objects fall from the sky. | 6 | `.3` |
+| `min_throw_height` | Float | The minimum height (in tiles) the projectile reaches during an arc or toss. | 6 | `.25`<br>`0`<br>`1.75` |
 | `single_projectile` | Boolean | If true, only a single projectile is spawned instead of a volley or spread. | 6 | `true` |
 | [`miss_random_delay`](./Arrays.md#array-miss_random_delay) | Array | A random range [min, max] in frames added to delay the miss particle effect. | 6 | `[0, 20]`<br>`[0, 60]` |
 | [`detatched_animation`](./Enums.md#enum-detatched_animation) | Enum | Specifies a visual MovieClip that plays independently from the unit's main body. | 5 | `LiquidMetalSpear`<br>`SpearGuyAttack`<br>`TinaSpear` |
 | `detatched_animation_reach` | Integer | The tile range at which the detached animation is displayed. | 5 | `20`<br>`3`<br>`4` |
 | [`empty_animation`](./Enums.md#enum-empty_animation) | Enum | Specifies the character animation that plays when the unit's ability has no charges remaining. | 5 | `empty` |
 | [`mode`](./Enums.md#enum-mode) | Enum | Specifies the comparison mode (equal, greater, less_or_equal, etc.) used for a conditional check. | 5 | `equal`<br>`greater`<br>`greater_or_equal` |
-| `fixed_jump_height` | Number | The fixed height (in tiles) the unit reaches during a jump, overriding default arc calculations. | 4 | `1`<br>`3.5` |
+| `fixed_jump_height` | Float | The fixed height (in tiles) the unit reaches during a jump, overriding default arc calculations. | 4 | `1`<br>`3.5` |
 | [`rocket_swirl`](./Miscellaneous.md#object-rocket_swirl) | Object  | An object defining the spiral rotation parameters for a rocket-style projectile. | 4 | `{ . . . }` |
 | `sync_frames` | Integer | The total number of animation frames used to synchronize a looping ability sequence. | 4 | `26`<br>`34` |
 | [`dash_decelerating_animation`](./Enums.md#enum-dash_decelerating_animation) | Enum | Specifies the character animation that plays when the unit begins slowing down during a dash. | 3 | `dashslow` |
 | `decelerate` | Integer | The number of frames over which the unit's dash movement decelerates to a stop. | 3 | `5` |
 | `delay_from_map_edge` | Boolean | If true, the projectile's initial delay is calculated based on its distance from the map edge. | 3 | `false`<br>`true` |
 | `easing` | Integer | The easing function index applied to the projectile's movement or rotation for smoothing. | 3 | `1` |
-| [`fixed_jump_speed`](./Enums.md#enum-fixed_jump_speed) | Number | The fixed horizontal speed (in tiles per second) the unit moves at while jumping. | 3 | `.8`<br>`1`<br>`2` |
+| [`fixed_jump_speed`](./Enums.md#enum-fixed_jump_speed) | Float | The fixed horizontal speed (in tiles per second) the unit moves at while jumping. | 3 | `.8`<br>`1`<br>`2` |
 | [`grab_animation`](./Enums.md#enum-grab_animation) | Enum | Specifies the character animation that plays when the unit grabs a target for a throw or carry. | 3 | `grab` |
-| [`lob_yoff`](./Enums.md#enum-lob_yoff) | Number | The vertical offset applied to the lob arc of a projectile or thrown object. | 3 | `-.5` |
+| [`lob_yoff`](./Enums.md#enum-lob_yoff) | Float | The vertical offset applied to the lob arc of a projectile or thrown object. | 3 | `-.5` |
 | `lock_orientation_during_dash` | Boolean | If true, the unit's facing direction is locked for the duration of the dash animation. | 3 | `true` |
 | `use_projectile_spawn_offset` | Boolean | If true, the projectile spawns at the offset defined by the ability's spawn offset rather than the unit's origin. | 3 | `true` |
 | `use_rotation_once` | Boolean | If true, the rotation is applied only once at the start of the animation rather than continuously. | 3 | `true` |
 | `always_play_animations` | Boolean | If true, the animation plays even when the game is paused or the unit is off-screen. | 2 | `true` |
 | `detatched_animation_cutoff` | Boolean | If true, the animation is cut off when the detachment state ends. | 2 | `true` |
 | `do_damage_immediately` | Boolean | If true, damage is applied at the start of the animation rather than at the impact frame. | 2 | `true` |
-| `jump_height_multiplier` | Number | A multiplier for the jump height during the ability's movement. | 2 | `.25`<br>`2` |
+| `jump_height_multiplier` | Float | A multiplier for the jump height during the ability's movement. | 2 | `.25`<br>`2` |
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum | Specifies the mask center point used for area-of-effect targeting. | 2 | `SpearMaskCenter` |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum | Specifies the mask extent (radius or shape) for area-of-effect targeting. | 2 | `SpearMaskExtent` |
-| `max_throw_height` | Number | The maximum height of the arc when throwing an object. | 2 | `1.75` |
+| `max_throw_height` | Float | The maximum height of the arc when throwing an object. | 2 | `1.75` |
 | [`particle_mat`](./Enums.md#enum-particle_mat) | Enum | Determines the material shader used for particles during the ability. | 2 | `shadow_occluded_spelldissolve` |
 | [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum | Specifies the animation played when the unit is selected to act. | 2 | `alertstart` |
 | [`primed_alt_animation`](./Strings.md#string-primed_alt_animation) | String | The name of the animation to play when the ability is primed (ready to fire). | 2 | `"shootPrimed"` |
@@ -161,8 +161,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Specifies the animation played on the target unit when it is affected by the ability. | 1 | `statDown` |
 | [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Specifies the animation played on an ally when targeted by a beneficial ability. | 1 | `lickAttack` |
 | [`animate_name`](./Enums.md#enum-animate_name) | Boolean / Enum | If true, the ability name is animated; if set to an enum, it specifies a specific animation type like 'pointout'. | 1 | `false`<br>`pointout`<br>`true` |
-| `apex_distance` | Number | The distance from the start point to the apex of a jump or lob arc. | 1 | `0.875` |
-| [`apex_time`](./Enums.md#enum-apex_time) | Number | The time (in seconds) to reach the apex of a jump or lob arc. | 1 | `.35` |
+| `apex_distance` | Float | The distance from the start point to the apex of a jump or lob arc. | 1 | `0.875` |
+| [`apex_time`](./Enums.md#enum-apex_time) | Float | The time (in seconds) to reach the apex of a jump or lob arc. | 1 | `.35` |
 | `bypass_combatspeed` | Boolean | If true, the ability animation ignores the combat speed setting. | 1 | `true` |
 | [`damage_threshold_altanimations`](./Miscellaneous.md#object-damage_threshold_altanimations) | Object  | A mapping of damage threshold values to alternate animation names, triggering different animations based on damage dealt. | 1 | `{ . . . }` |
 | [`dash_bonk_animation`](./Enums.md#enum-dash_bonk_animation) | Enum | Specifies the animation played when the unit collides with an obstacle during a dash. | 1 | `bonk` |
@@ -172,13 +172,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `do_not_clear_placeholder` | Boolean | If true, the placeholder object (e.g., a held item) is not cleared after the ability resolves. | 1 | `true` |
 | `face_targets` | Boolean | If true, the unit rotates to face its target during the animation. | 1 | `true` |
 | `first_castpoint_is_self_damage_only` | Boolean | If true, the first cast point of a multi-hit ability only applies self-damage. | 1 | `true` |
-| [`hang_time`](./Enums.md#enum-hang_time) | Number | The duration of the hang time at the apex of a jump or lob arc. | 1 | `.6` |
-| `jump_speed_multiplier` | Number | A multiplier for the horizontal speed during a jump. | 1 | `1.5` |
-| [`lob_speed`](./Enums.md#enum-lob_speed) | Number | The speed of a lobbed projectile's arc. | 1 | `.5` |
+| [`hang_time`](./Enums.md#enum-hang_time) | Float | The duration of the hang time at the apex of a jump or lob arc. | 1 | `.6` |
+| `jump_speed_multiplier` | Float | A multiplier for the horizontal speed during a jump. | 1 | `1.5` |
+| [`lob_speed`](./Enums.md#enum-lob_speed) | Float | The speed of a lobbed projectile's arc. | 1 | `.5` |
 | [`max_range`](./Enums.md#enum-max_range) | Enum / Integer   | The maximum range of the ability, can be a static number or an expression. | 1 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
 | `min_range` | Integer | The minimum range of the ability. | 1 | `0`<br>`1`<br>`2` |
 | `othercat_placeholder_available` | Boolean | If true, a placeholder for another cat (ally) is available for multi-cat abilities. | 1 | `true` |
-| [`precast_delay`](./Enums.md#enum-precast_delay) | Number | A delay (in seconds) before the casting animation begins. | 1 | `.25` |
+| [`precast_delay`](./Enums.md#enum-precast_delay) | Float | A delay (in seconds) before the casting animation begins. | 1 | `.25` |
 | `uncatchable` | Boolean | If true, the projectile or effect cannot be caught or intercepted. | 1 | `true` |
 | `use_directional_animations` | Boolean | If true, the ability uses directional animations based on the unit's facing or movement direction. | 1 | `true` |
 | `use_origin_offsets` | Boolean | If true, the animation uses offset values relative to the unit's origin point. | 1 | `false` |
@@ -351,7 +351,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `hint_can_target_pickups` | Boolean | If true, the ability can target pickups as valid targets. | 5 | `true` |
 | `max_bounces` | Integer | The maximum number of bounces for a projectile; -1 means infinite. | 5 | `-1`<br>`1`<br>`10` |
 | `splash_damage_aoe_begin` | Integer | The hit number at which splash damage area of effect begins for multihit abilities. | 5 | `1`<br>`999` |
-| [`aoe_chance`](./Enums.md#enum-aoe_chance) | Number / String | The probability (0 to 1) that the area of effect is applied per hit, or an expression using level. | 4 | `.33`<br>`.4+.2*level`<br>`.5` |
+| [`aoe_chance`](./Enums.md#enum-aoe_chance) | Float / String | The probability (0 to 1) that the area of effect is applied per hit, or an expression using level. | 4 | `.33`<br>`.4+.2*level`<br>`.5` |
 | `as_the_crow_flies` | Boolean | If true, movement ignores obstacles and uses straight-line distance. | 4 | `true` |
 | `force_ai_target_as_spell` | Boolean | If true, the AI treats this ability as a spell for targeting decisions. | 4 | `true` |
 | `range_display_include_aoe` | Boolean | If true, the range display also shows the area of effect. | 4 | `true` |
@@ -568,7 +568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum  | Specifies the tag that living allies must have for this passive to affect them. | 5 | `dc_crow`<br>`hitler_clone_fetus`<br>`terminator_mini` |
 | [`CatchBoomerang`](./Enums.md) | Integer | If set, allows the ability to catch a boomerang, with the integer representing the number of catches. | 4 | `1` |
 | [`CopyBasicAttackEffects`](./Enums.md) | Integer | If set, the ability copies the effects from the unit's basic attack. | 4 | `1` |
-| [`DownRankAIIfWeaponUsable`](./Enums.md) | Number | A multiplier that reduces the AI's priority to use this ability if the unit has a usable weapon. | 4 | `.001` |
+| [`DownRankAIIfWeaponUsable`](./Enums.md) | Float | A multiplier that reduces the AI's priority to use this ability if the unit has a usable weapon. | 4 | `.001` |
 | [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum  | Specifies the tag that a consumed character must have for the ability to be enabled. | 3 | `sp_pill_fire`<br>`sp_pill_normal`<br>`sp_pill_tar` |
 | [`AbilityEnabledOncePerRound`](./Enums.md) | Integer | If set, the ability can only be used once per round. | 3 | `1` |
 | [`AbilityInheritsWeaponEffects`](./Enums.md) | Integer | If set, the ability inherits properties from the unit's weapon, with higher values indicating different inheritance modes. | 3 | `1`<br>`2` |
@@ -1037,7 +1037,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | `Default`<br>`FormChange`<br>`Druid` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 28 | `passives`<br>`class`<br>`tag` |
 | [`GainDisorderFromPool_PostCast`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the pool of disorders the unit can gain after the spell is cast. | 7 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` |
@@ -1431,7 +1431,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Specifies the name of the form the unit changes into. | 75 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| [`chance`](./Enums.md) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -1527,7 +1527,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mouth`](./Enums.md) | Number | The catalog ID for the cat's mouth part. | 8 | `-1`<br>`-2`<br>`1` |
 | [`head`](./Enums.md) | Integer | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
 | [`texture`](./Enums.md) | Integer | The catalog ID for the cat's texture. | 6 | `-1`<br>`1`<br>`1000` |
-| [`body`](./Enums.md) | Number | The catalog ID for the cat's body part. | 5 | `-1`<br>`1`<br>`1.1` |
+| [`body`](./Enums.md) | Float | The catalog ID for the cat's body part. | 5 | `-1`<br>`1`<br>`1.1` |
 | `eye1` | Integer | The catalog ID for the cat's first eye part. | 3 | `-1`<br>`-2`<br>`1013` |
 | `eye2` | Integer | The catalog ID for the cat's second eye part. | 3 | `-1`<br>`1013`<br>`1057` |
 | `eyebrow1` | Integer | The catalog ID for the cat's first eyebrow part. | 1 | `-2`<br>`1069` |
@@ -1574,7 +1574,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 12 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 | `aoe` | Integer | The radius (in tiles) of the area affected by the tile change. | 2 | `1` |
-| [`chance`](./Enums.md) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -1724,7 +1724,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AddTag`](./Enums.md#enum-addtag) | Enum  | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 2 | `bug`<br>`cat`<br>`fetus` |
 | [`Flying`](./Enums.md) | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 | [`IgnoreTiles`](./Enums.md) | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 2 | `1` |
-| [`YOffset`](./Enums.md) | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 2 | `-.18`<br>`.25`<br>`.35` |
+| [`YOffset`](./Enums.md) | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 2 | `-.18`<br>`.25`<br>`.35` |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum  | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 1 | `Creep`<br>`Electric`<br>`Fire` |
 | [`KnockbackImmunity`](./Enums.md) | Integer | If set to 1, the unit cannot be knocked back. | 1 | `1` |
 | [`Plant`](./Enums.md) | Integer | If set to 1, marks the unit as a Plant type, granting associated immunities and interactions. | 1 | `1` |
@@ -1803,7 +1803,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
+| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | `passives`<br>`class`<br>`tag` |
 | `DieViolently` | `Number` | If true, causes the target to die with a violent, explosive visual effect. | 1 | `1` |
@@ -2065,7 +2065,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 6 | `-1`<br>`-2`<br>`1` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 | `0`<br>`1`<br>`13` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -2338,7 +2338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `max_distance` | Integer | The maximum range in tiles for the arc lightning to chain to subsequent targets. | 4 | `1`<br>`2`<br>`3` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 1 | `true` |
-| [`chance`](./Enums.md) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -2409,7 +2409,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 4 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 4 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` |
 | [`ApplyPassives`](./Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 2 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
@@ -2594,7 +2594,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 4 | `0`<br>`1`<br>`13` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 4 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 4 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -2679,7 +2679,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 | [`Cleanse`](./Enums.md) | Integer | The number of stacks of negative status effects removed from the target. | 1 | `0`<br>`1` |
 | [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
-| [`RemoveAmbientLightEffects`](./Enums.md) | Number | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
+| [`RemoveAmbientLightEffects`](./Enums.md) | Float | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
 
 </details>
 
@@ -2723,7 +2723,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 3 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
-| [`chance`](./Enums.md) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 | `slide` | Integer | The number of tiles the bounced object slides toward the target. | 1 | `10` |
 
 </details>
@@ -3377,7 +3377,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`chance`](./Enums.md) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -3399,7 +3399,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 3 | `.1`<br>`.25`<br>`.35` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -3538,7 +3538,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 2 | `0`<br>`1`<br>`13` |
-| [`chance`](./Enums.md) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -3930,7 +3930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -4692,7 +4692,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`disease`](./Enums.md#enum-disease) | Enum | Determines which disease is applied when spreading disease. | 13 | `BirdFlu`<br>`Cancer`<br>`CommonCold` |
-| [`chance`](./Enums.md) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
+| [`chance`](./Enums.md) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -5203,7 +5203,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Possessed`](./Enums.md) | Integer | The number of possession stacks applied, or a template with name and tooltips. | 2 | `1` |
 | [`RangeUp`](./Enums.md) | Integer | The number of stacks of bonus attack range applied. | 2 | `1` |
 | [`RepairWeapon`](./Enums.md) | Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 2 | `1`<br>`6`<br>`99` |
-| [`SizeScale`](./Enums.md) | Number | The multiplier applied to the unit's visual and hitbox size. | 2 | `.4`<br>`.6`<br>`.7` |
+| [`SizeScale`](./Enums.md) | Float | The multiplier applied to the unit's visual and hitbox size. | 2 | `.4`<br>`.6`<br>`.7` |
 | [`SpawnFlames`](./Arrays.md#array-spawnflames) | Array  | An array containing the number of flame tiles to spawn and the chance per tile. | 2 | `[1, .20+.1*level]`<br>`[1, .20]` |
 | [`TempCritChanceUp`](./Enums.md) | Integer | The amount of temporary critical hit chance (in percentage points) added. | 2 | `100`<br>`30` |
 | [`TempDexterityUp`](./Enums.md) | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. | 2 | `2`<br>`X` |

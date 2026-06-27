@@ -186,7 +186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consumable_uncommon` | Number | The cost or quantity for uncommon consumable items in an item shop. | 9 | `14`<br>`5`<br>`7` |
 | `consumable_very_rare` | Number | The cost or quantity for very rare consumable items in an item shop. | 9 | `12`<br>`20`<br>`40` |
 | `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 9 | `10`<br>`20`<br>`30` |
-| `very_rare` | Number | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
+| `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 9 | `common`<br>`rare`<br>`cha` |
 | [`common`](./Enums.md) | Integer | Defines the common reward block for a boss encounter. | 9 | `100`<br>`14`<br>`5` |
 | [`rare`](./Enums.md) | Integer | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |

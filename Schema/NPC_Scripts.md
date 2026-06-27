@@ -1301,7 +1301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -1466,7 +1466,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -4297,7 +4297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -5555,7 +5555,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | [`set_mood`](./Enums.md#enum-set_mood) | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 | `default`<br>`happy`<br>`pondering` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
@@ -6084,7 +6084,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
@@ -6249,7 +6249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | [`request_cat_info`](./Enums.md#enum-request_cat_info) | Enum | Specifies the type of cat information to request (e.g., 'stray'). | 1 | `stray` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
@@ -6951,7 +6951,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `lock_mouse` | Number | If non-zero, locks the mouse cursor in place. | 1 | `1` |
 | `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 | `1` |
@@ -11367,7 +11367,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11392,7 +11392,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11418,7 +11418,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -11442,7 +11442,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11467,7 +11467,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -11491,7 +11491,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11516,7 +11516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -11540,7 +11540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -11564,7 +11564,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11589,7 +11589,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -11613,7 +11613,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11638,7 +11638,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11663,7 +11663,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -11687,7 +11687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
@@ -11712,7 +11712,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | [`set_npc_voice`](./Enums.md#enum-set_npc_voice) | Enum | Specifies which NPC's voice preset to apply for the current sequence's dialog. | 1 | `beanies` |
@@ -11738,7 +11738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
@@ -11762,7 +11762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 

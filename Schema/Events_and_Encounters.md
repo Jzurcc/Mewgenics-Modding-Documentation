@@ -530,7 +530,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`protection`](./Miscellaneous.md#object-protection) | Object  | Specifies the player character's attempt to offer or ask for protection. | 2 | `{ . . . }` |
 | [`repair`](./Miscellaneous.md#object-repair) | Object  | Specifies the player character's attempt to repair the encounter object. | 2 | `{ . . . }` |
 | [`sacrifice`](./Miscellaneous.md#object-sacrifice) | Object  | Specifies the player character's attempt to make a sacrifice at the encounter. | 2 | `{ . . . }` |
-| [`scale`](./Events_and_Encounters.md#context-scale) | Number | The scale multiplier applied to the unit's visual size. | 2 | `.5`<br>`.6`<br>`.7` |
+| [`scale`](./Events_and_Encounters.md#context-scale) | Float | The scale multiplier applied to the unit's visual size. | 2 | `.5`<br>`.6`<br>`.7` |
 | [`turnon`](./Miscellaneous.md#object-turnon) | Object  | Specifies the player character's attempt to turn on or activate the encounter. | 2 | `{ . . . }` |
 | [`altar_sacrifice`](./Miscellaneous.md#object-altar_sacrifice) | Object  | Specifies the player character's attempt to sacrifice a cat at the altar. | 1 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
@@ -542,7 +542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bite_it_off`](./Miscellaneous.md#object-bite_it_off) | Object  | Specifies the player character's attempt to bite off part of the encounter. | 1 | `{ . . . }` |
 | [`blue`](./Miscellaneous.md#object-blue) | Object  | Specifies the player character's attempt to choose the blue option. | 1 | `{ . . . }` |
 | [`blue_needle`](./Miscellaneous.md#object-blue_needle) | Object  | Specifies the player character's attempt to take the blue needle. | 1 | `{ . . . }` |
-| [`body`](./Events_and_Encounters.md#context-body) | Number | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
+| [`body`](./Events_and_Encounters.md#context-body) | Float | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
 | [`book`](./Miscellaneous.md#object-book) | Object  | Specifies the player character's attempt to read or take the book. | 1 | `{ . . . }` |
 | [`brace`](./Miscellaneous.md#object-brace) | Object  | Specifies the player character's attempt to brace themselves for the encounter. | 1 | `{ . . . }` |
 | [`break_ice`](./Miscellaneous.md#object-break_ice) | Object  | Specifies the player character's attempt to break the ice covering the encounter. | 1 | `{ . . . }` |
@@ -591,7 +591,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`give_parasite`](./Miscellaneous.md#object-give_parasite) | Object  | An event response to give a parasite, requiring the cat to have a parasite. | 1 | `{ . . . }` |
 | [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`hack`](./Miscellaneous.md#object-hack) | Object  | An intelligence-based event response to hack a system. | 1 | `{ . . . }` |
-| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
 | [`holy`](./Miscellaneous.md#object-holy) | Object  | An event response that uses holy power, with no stat requirement. | 1 | `{ . . . }` |
 | [`hp`](./Miscellaneous.md#object-hp) | Object  | An event response that trades health, with no stat requirement. | 1 | `{ . . . }` |
 | [`ice`](./Passives_and_Statuses.md#object-ice) | Object  | An event response that uses ice, with no stat requirement. | 1 | `{ . . . }` |
@@ -657,7 +657,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sneak_by`](./Miscellaneous.md#object-sneak_by) | Object  | The dialogue option that uses the dex stat to sneak by a Giant Sleeping Shark. | 1 | `{ . . . }` |
 | [`sneak_past_alt`](./Miscellaneous.md#object-sneak_past_alt) | Object  | The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters. | 1 | `{ . . . }` |
 | [`soul`](./Miscellaneous.md#object-soul) | Object  | The dialogue option for the Genie bad event that selects the curse soul reward. | 1 | `{ . . . }` |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 | `cha`<br>`coins`<br>`con` |
 | `stat_max` | Number || 1 | `1`<br>`10`<br>`15` |
 | `stat_min` | Number || 1 | `1`<br>`10`<br>`15` |
@@ -1057,10 +1057,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 11 | `-1`<br>`-2`<br>`1` |
 | `ears` | Number || 10 | `-1`<br>`-2`<br>`1500` |
 | `eyebrows` | Number || 8 | `-1`<br>`-2`<br>`440` |
-| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 7 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 7 | `-1`<br>`1`<br>`1.3` |
 | `legs` | Number || 7 | `-1`<br>`306`<br>`322` |
 | `arms` | Number || 6 | `900`<br>`[10 20]` |
-| `body` | Number | The catalog ID for the cat's body part. | 6 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 6 | `-1`<br>`1`<br>`1.1` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 6 | `-1`<br>`1000`<br>`1001` |
 | `eye1` | Integer | The catalog ID for the cat's first eye part. | 3 | `-1`<br>`-2`<br>`1013` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 2 | `-1`<br>`-2`<br>`1` |
@@ -1198,9 +1198,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ears` | Number || 5 | `-1`<br>`-2`<br>`1500` |
 | `eyes` | Number || 5 | `-1`<br>`-2`<br>`1029` |
 | `legs` | Number || 5 | `-1`<br>`306`<br>`322` |
-| `body` | Number | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
 | `eyebrows` | Number || 3 | `-1`<br>`-2`<br>`440` |
-| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 3 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 3 | `-1`<br>`1`<br>`1.3` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 2 | `-1`<br>`-2`<br>`1` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 2 | `-1`<br>`-2`<br>`1` |
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 1 | `-1`<br>`-2`<br>`1` |
@@ -2510,7 +2510,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
-| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 1 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 
 </details>

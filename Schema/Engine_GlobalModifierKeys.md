@@ -58,7 +58,7 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | `emit_amount` | Number | The number of particles emitted per burst. || `1`<br>`10`<br>`100` |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. || `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. || `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_rate` | Number | The rate of particle emission per second. || `.5`<br>`1`<br>`10` |
+| `emit_rate` | Float | The rate of particle emission per second. || `.5`<br>`1`<br>`10` |
 | `emit_spread` | Number | The angle spread for particle emission direction. || `0`<br>`1`<br>`10` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. || `false`<br>`true` |
 | [`force`](./Arrays.md#array-force) | Array  | The force vector applied to particles. || `0`<br>`1`<br>`1.5` |
@@ -66,7 +66,7 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | [`live_bounds`](./Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. || `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
 | [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `particle_lifetime` | Number | The duration in seconds particles remain alive. || `.`<br>`.025`<br>`.35` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. || `.`<br>`.025`<br>`.35` |
 | [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). || `default` |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). || `default`<br>`separate` |
 | [`scripts`](./Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. || `{ . . . }` |
@@ -74,7 +74,7 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). || `global`<br>`local` |
 | [`size_start`](./Arrays.md#array-size_start) | Array   | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
 | `speed_scale` | String | A multiplier for particle speed. || `.05`<br>`.1`<br>`.2` |
-| `speed_start` | Number | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
+| `speed_start` | Float | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
 | [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
 | [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
@@ -84,5 +84,5 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 | [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). || `.1`<br>`.25`<br>`.35` |
